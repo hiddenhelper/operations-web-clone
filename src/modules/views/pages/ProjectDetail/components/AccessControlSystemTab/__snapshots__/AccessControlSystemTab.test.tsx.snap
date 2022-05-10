@@ -1,0 +1,1938 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AccessControlSystemTab should list handhelds at the end 1`] = `
+<div>
+  <div>
+    <div
+      class="makeStyles-filterActionsContainer-948 makeStyles-filterActionsContainerPadding-950"
+    >
+      <div
+        class="MuiBox-root MuiBox-root-1102 makeStyles-filterStatusContainer-951 makeStyles-autocompleteFilterStatus-968 makeStyles-acsFilterWrapper-1030"
+      >
+        <div
+          class="makeStyles-floatingFilterWrapper-957 makeStyles-filterWrapper-956  floatingFilterWrapper"
+        >
+          <span
+            class="makeStyles-floatingFilterButton-958"
+            data-testid="controlled-button"
+            tabindex="-1"
+          >
+            <button
+              aria-controls="false"
+              aria-haspopup="true"
+              class="MuiButtonBase-root MuiButton-root MuiButton-text makeStyles-buttonFilter-966"
+              data-testid="button-filter-open"
+              tabindex="0"
+              type="button"
+            >
+              <span
+                class="MuiButton-label"
+              >
+                All ACS
+                <span
+                  class="MuiButton-endIcon MuiButton-iconSizeMedium"
+                >
+                  <svg
+                    class="makeStyles-dropdownIcon-960"
+                  >
+                    expand.svg
+                  </svg>
+                </span>
+              </span>
+            </button>
+          </span>
+        </div>
+      </div>
+      <button
+        class="MuiButtonBase-root MuiButton-root MuiButton-contained makeStyles-createButton-978 makeStyles-primaryButtonExtraLarge-982 MuiButton-containedPrimary MuiButton-containedSizeLarge MuiButton-sizeLarge MuiButton-fullWidth"
+        data-testid="open-acs-modal-btn"
+        tabindex="0"
+        type="button"
+      >
+        <span
+          class="MuiButton-label"
+        >
+          Assign ACS
+        </span>
+        <span
+          class="MuiTouchRipple-root"
+        />
+      </button>
+    </div>
+    <div
+      class="MuiGrid-root makeStyles-acsListItemWrapper-1099 makeStyles-acsListHeader-1096 MuiGrid-container"
+    >
+      <div
+        class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-true"
+      >
+        <p
+          class="MuiTypography-root MuiTypography-body1"
+        >
+          Name
+        </p>
+      </div>
+      <div
+        class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-true"
+      >
+        <p
+          class="MuiTypography-root MuiTypography-body1"
+        >
+          Device Type
+        </p>
+      </div>
+      <div
+        class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-true"
+      >
+        <p
+          class="MuiTypography-root MuiTypography-body1"
+        >
+          Serial Number
+        </p>
+      </div>
+      <div
+        class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-true"
+      >
+        <p
+          class="MuiTypography-root MuiTypography-body1"
+        >
+          Reader 1
+        </p>
+      </div>
+      <div
+        class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-true"
+      >
+        <p
+          class="MuiTypography-root MuiTypography-body1"
+        >
+          Reader 2
+        </p>
+      </div>
+    </div>
+    <hr
+      class="MuiDivider-root makeStyles-acsListHeaderDivide-1097"
+    />
+    <div
+      class="MuiPaper-root MuiAccordion-root WithStyles(ForwardRef(Accordion))-root-1103 MuiAccordion-rounded MuiPaper-elevation1 MuiPaper-rounded"
+    >
+      <div
+        aria-controls="location-locationId-acs-list"
+        aria-disabled="false"
+        aria-expanded="false"
+        class="MuiButtonBase-root MuiAccordionSummary-root WithStyles(ForwardRef(AccordionSummary))-root-1105"
+        role="button"
+        tabindex="0"
+      >
+        <div
+          class="MuiAccordionSummary-content WithStyles(ForwardRef(AccordionSummary))-content-1106"
+        >
+          <p
+            class="MuiTypography-root MuiTypography-body1"
+          >
+            Front gate
+          </p>
+        </div>
+        <div
+          aria-disabled="false"
+          aria-hidden="true"
+          class="MuiButtonBase-root MuiIconButton-root MuiAccordionSummary-expandIcon WithStyles(ForwardRef(AccordionSummary))-expandIcon-1108 MuiIconButton-edgeEnd"
+        >
+          <span
+            class="MuiIconButton-label"
+          >
+            <svg
+              aria-hidden="true"
+              class="MuiSvgIcon-root"
+              focusable="false"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z"
+              />
+            </svg>
+          </span>
+          <span
+            class="MuiTouchRipple-root"
+          />
+        </div>
+      </div>
+      <div
+        class="MuiCollapse-container MuiCollapse-hidden"
+        style="min-height: 0px;"
+      >
+        <div
+          class="MuiCollapse-wrapper"
+        >
+          <div
+            class="MuiCollapse-wrapperInner"
+          >
+            <div
+              id="location-locationId-acs-list"
+              role="region"
+            >
+              <div
+                class="MuiAccordionDetails-root WithStyles(ForwardRef(AccordionDetails))-root-1109"
+              >
+                <div
+                  class="MuiGrid-root MuiGrid-container MuiGrid-align-items-xs-center"
+                  data-testid="acs-item"
+                  style="cursor: pointer; height: 100%;"
+                >
+                  <div
+                    class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-true"
+                  >
+                    <p
+                      class="MuiTypography-root MuiTypography-body1"
+                    >
+                      Test turnstile
+                    </p>
+                  </div>
+                  <div
+                    class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-true"
+                  >
+                    <p
+                      class="MuiTypography-root MuiTypography-body1"
+                    >
+                      Turnstile
+                    </p>
+                  </div>
+                  <div
+                    class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-true"
+                  >
+                    <p
+                      class="MuiTypography-root MuiTypography-body1"
+                    >
+                      NRFFJE3149 - 4991
+                    </p>
+                  </div>
+                  <div
+                    class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-true"
+                  >
+                    <p
+                      class="MuiTypography-root MuiTypography-body1"
+                    >
+                      -
+                    </p>
+                  </div>
+                  <div
+                    class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-true"
+                  >
+                    <p
+                      class="MuiTypography-root MuiTypography-body1"
+                    >
+                      -
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="MuiPaper-root MuiAccordion-root WithStyles(ForwardRef(Accordion))-root-1103 MuiAccordion-rounded MuiPaper-elevation1 MuiPaper-rounded"
+    >
+      <div
+        aria-controls="location-testLoc-acs-list"
+        aria-disabled="false"
+        aria-expanded="false"
+        class="MuiButtonBase-root MuiAccordionSummary-root WithStyles(ForwardRef(AccordionSummary))-root-1105"
+        role="button"
+        tabindex="0"
+      >
+        <div
+          class="MuiAccordionSummary-content WithStyles(ForwardRef(AccordionSummary))-content-1106"
+        >
+          <p
+            class="MuiTypography-root MuiTypography-body1"
+          >
+            testLoc
+          </p>
+        </div>
+        <div
+          aria-disabled="false"
+          aria-hidden="true"
+          class="MuiButtonBase-root MuiIconButton-root MuiAccordionSummary-expandIcon WithStyles(ForwardRef(AccordionSummary))-expandIcon-1108 MuiIconButton-edgeEnd"
+        >
+          <span
+            class="MuiIconButton-label"
+          >
+            <svg
+              aria-hidden="true"
+              class="MuiSvgIcon-root"
+              focusable="false"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z"
+              />
+            </svg>
+          </span>
+          <span
+            class="MuiTouchRipple-root"
+          />
+        </div>
+      </div>
+      <div
+        class="MuiCollapse-container MuiCollapse-hidden"
+        style="min-height: 0px;"
+      >
+        <div
+          class="MuiCollapse-wrapper"
+        >
+          <div
+            class="MuiCollapse-wrapperInner"
+          >
+            <div
+              id="location-testLoc-acs-list"
+              role="region"
+            >
+              <div
+                class="MuiAccordionDetails-root WithStyles(ForwardRef(AccordionDetails))-root-1109"
+              >
+                <div
+                  class="MuiGrid-root MuiGrid-container MuiGrid-align-items-xs-center"
+                  data-testid="acs-item"
+                  style="cursor: pointer; height: 100%;"
+                >
+                  <div
+                    class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-true"
+                  >
+                    <p
+                      class="MuiTypography-root MuiTypography-body1"
+                    >
+                      Test turnstile
+                    </p>
+                  </div>
+                  <div
+                    class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-true"
+                  >
+                    <p
+                      class="MuiTypography-root MuiTypography-body1"
+                    >
+                      Turnstile
+                    </p>
+                  </div>
+                  <div
+                    class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-true"
+                  >
+                    <p
+                      class="MuiTypography-root MuiTypography-body1"
+                    >
+                      NRFFJE3149 - 4991
+                    </p>
+                  </div>
+                  <div
+                    class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-true"
+                  >
+                    <p
+                      class="MuiTypography-root MuiTypography-body1"
+                    >
+                      -
+                    </p>
+                  </div>
+                  <div
+                    class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-true"
+                  >
+                    <p
+                      class="MuiTypography-root MuiTypography-body1"
+                    >
+                      -
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr
+      class="MuiDivider-root makeStyles-acsListDivider-1098"
+    />
+    <div
+      class="MuiBox-root MuiBox-root-1110 makeStyles-acsListItemWrapper-1099"
+      data-testid="no-location-item-wrapper"
+    >
+      <div
+        class="MuiBox-root MuiBox-root-1111 makeStyles-acsListItem-1100"
+      >
+        <div
+          class="MuiGrid-root MuiGrid-container MuiGrid-align-items-xs-center"
+          data-testid="acs-item"
+          style="cursor: pointer; height: 100%;"
+        >
+          <div
+            class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-true"
+          >
+            <p
+              class="MuiTypography-root MuiTypography-body1"
+            />
+          </div>
+          <div
+            class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-true"
+          >
+            <p
+              class="MuiTypography-root MuiTypography-body1"
+            >
+              Handheld
+            </p>
+          </div>
+          <div
+            class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-true"
+          >
+            <p
+              class="MuiTypography-root MuiTypography-body1"
+            >
+              NSDFJE3129 - 3354
+            </p>
+          </div>
+          <div
+            class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-true"
+          >
+            <p
+              class="MuiTypography-root MuiTypography-body1"
+            >
+              -
+            </p>
+          </div>
+          <div
+            class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-true"
+          >
+            <p
+              class="MuiTypography-root MuiTypography-body1"
+            >
+              -
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="MuiDrawer-root MuiDrawer-docked makeStyles-drawer-1135 makeStyles-close-1146 closed"
+      data-testid="drawer"
+    >
+      <div
+        class="MuiPaper-root MuiDrawer-paper makeStyles-drawerPaper-1136 MuiDrawer-paperAnchorRight MuiDrawer-paperAnchorDockedRight MuiPaper-elevation0"
+        style="visibility: hidden; webkit-transform: translateX(1024px) translateX(0px); transform: translateX(1024px) translateX(0px);"
+      >
+        <div
+          class="makeStyles-drawerButtonWrapper-1138"
+        >
+          <div
+            class="makeStyles-drawerButton-1139"
+          >
+            <button
+              class="MuiButtonBase-root MuiButton-root MuiButton-text"
+              data-testid="drawer-close-btn"
+              style="outline: none;"
+              tabindex="0"
+              type="button"
+            >
+              <span
+                class="MuiButton-label"
+              >
+                <svg>
+                  close.svg
+                </svg>
+              </span>
+              <span
+                class="MuiTouchRipple-root"
+              />
+            </button>
+          </div>
+          <div
+            class="makeStyles-drawerHeader-1137"
+          >
+            <p
+              class="MuiTypography-root makeStyles-drawerTitle-1140 MuiTypography-body1 MuiTypography-colorPrimary MuiTypography-alignLeft"
+            >
+              Device Information
+            </p>
+          </div>
+        </div>
+        <div
+          class="makeStyles-summaryDeviceDetail-1152"
+        >
+          <div
+            class="makeStyles-company-1153"
+          >
+            <div
+              class="makeStyles-drawerOverflowWrapper-1163"
+            >
+              <div
+                class="makeStyles-summaryText-1156"
+              >
+                <p
+                  class="MuiTypography-root makeStyles-deviceAccent-1154 makeStyles-entityTitle-1159 MuiTypography-body1"
+                >
+                  -
+                </p>
+                <div
+                  class="makeStyles-summaryMainText-1157"
+                >
+                  <span>
+                    Open Portal
+                  </span>
+                  <span>
+                    Reverse Installation 
+                    No
+                  </span>
+                </div>
+              </div>
+              <div
+                class="makeStyles-summarySection-1155"
+              >
+                <div
+                  class="makeStyles-summaryRowDirection-1162"
+                >
+                  <svg>
+                    device-status.svg
+                  </svg>
+                  <div
+                    class="makeStyles-summaryText-1156 makeStyles-summaryTextSeparation-1158"
+                  >
+                    <span />
+                    <span>
+                      New
+                    </span>
+                    <span>
+                      Last Maintenance Date: 
+                      -
+                    </span>
+                    <span>
+                      In Service Date: 
+                      -
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="makeStyles-summarySection-1155"
+              >
+                <svg>
+                  notes.svg
+                </svg>
+                <div
+                  class="makeStyles-summaryText-1156 makeStyles-summaryTextSeparation-1158"
+                >
+                  <span>
+                    -
+                  </span>
+                </div>
+              </div>
+              <div
+                class="makeStyles-summarySection-1155"
+              >
+                <div
+                  class="makeStyles-summaryText-1156"
+                >
+                  <p
+                    class="MuiTypography-root makeStyles-deviceAccent-1154 makeStyles-entityTitle-1159 MuiTypography-body1"
+                  >
+                    Reader 
+                    1
+                  </p>
+                  <div
+                    class="makeStyles-summaryMainText-1157"
+                  >
+                    <span>
+                      -
+                    </span>
+                    <span>
+                      Model 
+                      -
+                    </span>
+                    <span>
+                      Hostname 
+                      -
+                    </span>
+                    <span>
+                      Public IP 
+                      -
+                    </span>
+                    <span>
+                      -
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="makeStyles-summarySection-1155"
+              >
+                <svg>
+                  info.svg
+                </svg>
+                <div
+                  class="makeStyles-summaryText-1156 makeStyles-summaryTextSeparation-1158"
+                >
+                  <span>
+                    SSH Port Connection: 
+                    -
+                  </span>
+                  <span>
+                    TELNET Port Connection: 
+                    -
+                  </span>
+                  <span>
+                    HTTP Port Connection: 
+                    -
+                  </span>
+                  <span>
+                    TCP Port Connection: 
+                    -
+                  </span>
+                </div>
+              </div>
+              <div
+                class="makeStyles-summarySection-1155 makeStyles-drawerdevices-1160"
+              >
+                <div
+                  class="makeStyles-deviceWrapper-1161"
+                >
+                  <svg>
+                    device-status.svg
+                  </svg>
+                  <div
+                    class="makeStyles-summaryText-1156 makeStyles-summaryTextSeparation-1158"
+                  >
+                    <span>
+                      -
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="makeStyles-summarySection-1155"
+              >
+                <svg>
+                  notes.svg
+                </svg>
+                <div
+                  class="makeStyles-summaryText-1156 makeStyles-summaryTextSeparation-1158"
+                >
+                  <span>
+                    -
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr
+          class="MuiDivider-root makeStyles-drawerDivider-1041"
+        />
+        <div
+          class="makeStyles-ctaWrapper-1128"
+          style="padding: 0px;"
+        >
+          <span
+            class=""
+            data-testid="controlled-button"
+            tabindex="-1"
+          >
+            <button
+              class="MuiButtonBase-root MuiButton-root MuiButton-outlined makeStyles-drawerCTA-985 makeStyles-borderPrimaryButton-977"
+              data-testid="acs-edition-modal-open-btn"
+              style="max-width: 100%; width: 125px; padding: 6px 0px;"
+              tabindex="0"
+              type="button"
+            >
+              <span
+                class="MuiButton-label"
+              >
+                Edit Assignment
+              </span>
+            </button>
+          </span>
+          <span
+            class=""
+            data-testid="controlled-button"
+            tabindex="-1"
+          >
+            <button
+              class="MuiButtonBase-root MuiButton-root MuiButton-outlined makeStyles-drawerCTA-985 makeStyles-warningButton-986"
+              data-testid="unassign-btn"
+              tabindex="0"
+              type="button"
+            >
+              <span
+                class="MuiButton-label"
+              >
+                Unassign
+              </span>
+            </button>
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`AccessControlSystemTab should render 1`] = `
+<div>
+  <div>
+    <div
+      class="makeStyles-filterActionsContainer-723 makeStyles-filterActionsContainerPadding-725"
+    >
+      <div
+        class="MuiBox-root MuiBox-root-877 makeStyles-filterStatusContainer-726 makeStyles-autocompleteFilterStatus-743 makeStyles-acsFilterWrapper-805"
+      >
+        <div
+          class="makeStyles-floatingFilterWrapper-732 makeStyles-filterWrapper-731  floatingFilterWrapper"
+        >
+          <span
+            class="makeStyles-floatingFilterButton-733"
+            data-testid="controlled-button"
+            tabindex="-1"
+          >
+            <button
+              aria-controls="false"
+              aria-haspopup="true"
+              class="MuiButtonBase-root MuiButton-root MuiButton-text makeStyles-buttonFilter-741"
+              data-testid="button-filter-open"
+              tabindex="0"
+              type="button"
+            >
+              <span
+                class="MuiButton-label"
+              >
+                All ACS
+                <span
+                  class="MuiButton-endIcon MuiButton-iconSizeMedium"
+                >
+                  <svg
+                    class="makeStyles-dropdownIcon-735"
+                  >
+                    expand.svg
+                  </svg>
+                </span>
+              </span>
+            </button>
+          </span>
+        </div>
+      </div>
+      <button
+        class="MuiButtonBase-root MuiButton-root MuiButton-contained makeStyles-createButton-753 makeStyles-primaryButtonExtraLarge-757 MuiButton-containedPrimary MuiButton-containedSizeLarge MuiButton-sizeLarge MuiButton-fullWidth"
+        data-testid="open-acs-modal-btn"
+        tabindex="0"
+        type="button"
+      >
+        <span
+          class="MuiButton-label"
+        >
+          Assign ACS
+        </span>
+        <span
+          class="MuiTouchRipple-root"
+        />
+      </button>
+    </div>
+    <div
+      class="MuiGrid-root makeStyles-acsListItemWrapper-874 makeStyles-acsListHeader-871 MuiGrid-container"
+    >
+      <div
+        class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-true"
+      >
+        <p
+          class="MuiTypography-root MuiTypography-body1"
+        >
+          Name
+        </p>
+      </div>
+      <div
+        class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-true"
+      >
+        <p
+          class="MuiTypography-root MuiTypography-body1"
+        >
+          Device Type
+        </p>
+      </div>
+      <div
+        class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-true"
+      >
+        <p
+          class="MuiTypography-root MuiTypography-body1"
+        >
+          Serial Number
+        </p>
+      </div>
+      <div
+        class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-true"
+      >
+        <p
+          class="MuiTypography-root MuiTypography-body1"
+        >
+          Reader 1
+        </p>
+      </div>
+      <div
+        class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-true"
+      >
+        <p
+          class="MuiTypography-root MuiTypography-body1"
+        >
+          Reader 2
+        </p>
+      </div>
+    </div>
+    <hr
+      class="MuiDivider-root makeStyles-acsListHeaderDivide-872"
+    />
+    <div
+      class="MuiPaper-root MuiAccordion-root WithStyles(ForwardRef(Accordion))-root-878 MuiAccordion-rounded MuiPaper-elevation1 MuiPaper-rounded"
+    >
+      <div
+        aria-controls="location-locationId-acs-list"
+        aria-disabled="false"
+        aria-expanded="false"
+        class="MuiButtonBase-root MuiAccordionSummary-root WithStyles(ForwardRef(AccordionSummary))-root-880"
+        role="button"
+        tabindex="0"
+      >
+        <div
+          class="MuiAccordionSummary-content WithStyles(ForwardRef(AccordionSummary))-content-881"
+        >
+          <p
+            class="MuiTypography-root MuiTypography-body1"
+          >
+            Front gate
+          </p>
+        </div>
+        <div
+          aria-disabled="false"
+          aria-hidden="true"
+          class="MuiButtonBase-root MuiIconButton-root MuiAccordionSummary-expandIcon WithStyles(ForwardRef(AccordionSummary))-expandIcon-883 MuiIconButton-edgeEnd"
+        >
+          <span
+            class="MuiIconButton-label"
+          >
+            <svg
+              aria-hidden="true"
+              class="MuiSvgIcon-root"
+              focusable="false"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z"
+              />
+            </svg>
+          </span>
+          <span
+            class="MuiTouchRipple-root"
+          />
+        </div>
+      </div>
+      <div
+        class="MuiCollapse-container MuiCollapse-hidden"
+        style="min-height: 0px;"
+      >
+        <div
+          class="MuiCollapse-wrapper"
+        >
+          <div
+            class="MuiCollapse-wrapperInner"
+          >
+            <div
+              id="location-locationId-acs-list"
+              role="region"
+            >
+              <div
+                class="MuiAccordionDetails-root WithStyles(ForwardRef(AccordionDetails))-root-884"
+              >
+                <div
+                  class="MuiGrid-root MuiGrid-container MuiGrid-align-items-xs-center"
+                  data-testid="acs-item"
+                  style="cursor: pointer; height: 100%;"
+                >
+                  <div
+                    class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-true"
+                  >
+                    <p
+                      class="MuiTypography-root MuiTypography-body1"
+                    >
+                      Test turnstile
+                    </p>
+                  </div>
+                  <div
+                    class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-true"
+                  >
+                    <p
+                      class="MuiTypography-root MuiTypography-body1"
+                    >
+                      Turnstile
+                    </p>
+                  </div>
+                  <div
+                    class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-true"
+                  >
+                    <p
+                      class="MuiTypography-root MuiTypography-body1"
+                    >
+                      NRFFJE3149 - 4991
+                    </p>
+                  </div>
+                  <div
+                    class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-true"
+                  >
+                    <p
+                      class="MuiTypography-root MuiTypography-body1"
+                    >
+                      -
+                    </p>
+                  </div>
+                  <div
+                    class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-true"
+                  >
+                    <p
+                      class="MuiTypography-root MuiTypography-body1"
+                    >
+                      -
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="MuiDrawer-root MuiDrawer-docked makeStyles-drawer-908 makeStyles-close-919 closed"
+      data-testid="drawer"
+    >
+      <div
+        class="MuiPaper-root MuiDrawer-paper makeStyles-drawerPaper-909 MuiDrawer-paperAnchorRight MuiDrawer-paperAnchorDockedRight MuiPaper-elevation0"
+        style="visibility: hidden; webkit-transform: translateX(1024px) translateX(0px); transform: translateX(1024px) translateX(0px);"
+      >
+        <div
+          class="makeStyles-drawerButtonWrapper-911"
+        >
+          <div
+            class="makeStyles-drawerButton-912"
+          >
+            <button
+              class="MuiButtonBase-root MuiButton-root MuiButton-text"
+              data-testid="drawer-close-btn"
+              style="outline: none;"
+              tabindex="0"
+              type="button"
+            >
+              <span
+                class="MuiButton-label"
+              >
+                <svg>
+                  close.svg
+                </svg>
+              </span>
+              <span
+                class="MuiTouchRipple-root"
+              />
+            </button>
+          </div>
+          <div
+            class="makeStyles-drawerHeader-910"
+          >
+            <p
+              class="MuiTypography-root makeStyles-drawerTitle-913 MuiTypography-body1 MuiTypography-colorPrimary MuiTypography-alignLeft"
+            >
+              Device Information
+            </p>
+          </div>
+        </div>
+        <div
+          class="makeStyles-summaryDeviceDetail-925"
+        >
+          <div
+            class="makeStyles-company-926"
+          >
+            <div
+              class="makeStyles-drawerOverflowWrapper-936"
+            >
+              <div
+                class="makeStyles-summaryText-929"
+              >
+                <p
+                  class="MuiTypography-root makeStyles-deviceAccent-927 makeStyles-entityTitle-932 MuiTypography-body1"
+                >
+                  -
+                </p>
+                <div
+                  class="makeStyles-summaryMainText-930"
+                >
+                  <span>
+                    Open Portal
+                  </span>
+                  <span>
+                    Reverse Installation 
+                    No
+                  </span>
+                </div>
+              </div>
+              <div
+                class="makeStyles-summarySection-928"
+              >
+                <div
+                  class="makeStyles-summaryRowDirection-935"
+                >
+                  <svg>
+                    device-status.svg
+                  </svg>
+                  <div
+                    class="makeStyles-summaryText-929 makeStyles-summaryTextSeparation-931"
+                  >
+                    <span />
+                    <span>
+                      New
+                    </span>
+                    <span>
+                      Last Maintenance Date: 
+                      -
+                    </span>
+                    <span>
+                      In Service Date: 
+                      -
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="makeStyles-summarySection-928"
+              >
+                <svg>
+                  notes.svg
+                </svg>
+                <div
+                  class="makeStyles-summaryText-929 makeStyles-summaryTextSeparation-931"
+                >
+                  <span>
+                    -
+                  </span>
+                </div>
+              </div>
+              <div
+                class="makeStyles-summarySection-928"
+              >
+                <div
+                  class="makeStyles-summaryText-929"
+                >
+                  <p
+                    class="MuiTypography-root makeStyles-deviceAccent-927 makeStyles-entityTitle-932 MuiTypography-body1"
+                  >
+                    Reader 
+                    1
+                  </p>
+                  <div
+                    class="makeStyles-summaryMainText-930"
+                  >
+                    <span>
+                      -
+                    </span>
+                    <span>
+                      Model 
+                      -
+                    </span>
+                    <span>
+                      Hostname 
+                      -
+                    </span>
+                    <span>
+                      Public IP 
+                      -
+                    </span>
+                    <span>
+                      -
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="makeStyles-summarySection-928"
+              >
+                <svg>
+                  info.svg
+                </svg>
+                <div
+                  class="makeStyles-summaryText-929 makeStyles-summaryTextSeparation-931"
+                >
+                  <span>
+                    SSH Port Connection: 
+                    -
+                  </span>
+                  <span>
+                    TELNET Port Connection: 
+                    -
+                  </span>
+                  <span>
+                    HTTP Port Connection: 
+                    -
+                  </span>
+                  <span>
+                    TCP Port Connection: 
+                    -
+                  </span>
+                </div>
+              </div>
+              <div
+                class="makeStyles-summarySection-928 makeStyles-drawerdevices-933"
+              >
+                <div
+                  class="makeStyles-deviceWrapper-934"
+                >
+                  <svg>
+                    device-status.svg
+                  </svg>
+                  <div
+                    class="makeStyles-summaryText-929 makeStyles-summaryTextSeparation-931"
+                  >
+                    <span>
+                      -
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="makeStyles-summarySection-928"
+              >
+                <svg>
+                  notes.svg
+                </svg>
+                <div
+                  class="makeStyles-summaryText-929 makeStyles-summaryTextSeparation-931"
+                >
+                  <span>
+                    -
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr
+          class="MuiDivider-root makeStyles-drawerDivider-816"
+        />
+        <div
+          class="makeStyles-ctaWrapper-901"
+          style="padding: 0px;"
+        >
+          <span
+            class=""
+            data-testid="controlled-button"
+            tabindex="-1"
+          >
+            <button
+              class="MuiButtonBase-root MuiButton-root MuiButton-outlined makeStyles-drawerCTA-760 makeStyles-borderPrimaryButton-752"
+              data-testid="acs-edition-modal-open-btn"
+              style="max-width: 100%; width: 125px; padding: 6px 0px;"
+              tabindex="0"
+              type="button"
+            >
+              <span
+                class="MuiButton-label"
+              >
+                Edit Assignment
+              </span>
+            </button>
+          </span>
+          <span
+            class=""
+            data-testid="controlled-button"
+            tabindex="-1"
+          >
+            <button
+              class="MuiButtonBase-root MuiButton-root MuiButton-outlined makeStyles-drawerCTA-760 makeStyles-warningButton-761"
+              data-testid="unassign-btn"
+              tabindex="0"
+              type="button"
+            >
+              <span
+                class="MuiButton-label"
+              >
+                Unassign
+              </span>
+            </button>
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`AccessControlSystemTab should render empty 1`] = `
+<div>
+  <div>
+    <div
+      class="makeStyles-filterActionsContainer-486 makeStyles-filterActionsContainerPadding-488"
+    >
+      <div
+        class="MuiBox-root MuiBox-root-640 makeStyles-filterStatusContainer-489 makeStyles-autocompleteFilterStatus-506 makeStyles-acsFilterWrapper-568"
+      >
+        <div
+          class="makeStyles-floatingFilterWrapper-495 makeStyles-filterWrapper-494  floatingFilterWrapper"
+        >
+          <span
+            class="makeStyles-floatingFilterButton-496"
+            data-testid="controlled-button"
+            tabindex="-1"
+          >
+            <button
+              aria-controls="false"
+              aria-haspopup="true"
+              class="MuiButtonBase-root MuiButton-root MuiButton-text makeStyles-buttonFilter-504"
+              data-testid="button-filter-open"
+              tabindex="0"
+              type="button"
+            >
+              <span
+                class="MuiButton-label"
+              >
+                All ACS
+                <span
+                  class="MuiButton-endIcon MuiButton-iconSizeMedium"
+                >
+                  <svg
+                    class="makeStyles-dropdownIcon-498"
+                  >
+                    expand.svg
+                  </svg>
+                </span>
+              </span>
+            </button>
+          </span>
+        </div>
+      </div>
+      <button
+        class="MuiButtonBase-root MuiButton-root MuiButton-contained makeStyles-createButton-516 makeStyles-primaryButtonExtraLarge-520 MuiButton-containedPrimary MuiButton-containedSizeLarge MuiButton-sizeLarge MuiButton-fullWidth"
+        data-testid="open-acs-modal-btn"
+        tabindex="0"
+        type="button"
+      >
+        <span
+          class="MuiButton-label"
+        >
+          Assign ACS
+        </span>
+        <span
+          class="MuiTouchRipple-root"
+        />
+      </button>
+    </div>
+    <div
+      class=" makeStyles-container-641"
+    >
+      <div>
+        <div
+          class="MuiAvatar-root MuiAvatar-circle makeStyles-missingAvatarWrapper-652 makeStyles-missingAvatarBig-653 MuiAvatar-colorDefault"
+        >
+          <svg>
+            inventory.svg
+          </svg>
+        </div>
+      </div>
+      <p
+        class="MuiTypography-root makeStyles-missingListText-642 MuiTypography-body1"
+      >
+        There are no ACS assigned
+      </p>
+    </div>
+    <div
+      class="MuiDrawer-root MuiDrawer-docked makeStyles-drawer-683 makeStyles-close-694 closed"
+      data-testid="drawer"
+    >
+      <div
+        class="MuiPaper-root MuiDrawer-paper makeStyles-drawerPaper-684 MuiDrawer-paperAnchorRight MuiDrawer-paperAnchorDockedRight MuiPaper-elevation0"
+        style="visibility: hidden; webkit-transform: translateX(1024px) translateX(0px); transform: translateX(1024px) translateX(0px);"
+      >
+        <div
+          class="makeStyles-drawerButtonWrapper-686"
+        >
+          <div
+            class="makeStyles-drawerButton-687"
+          >
+            <button
+              class="MuiButtonBase-root MuiButton-root MuiButton-text"
+              data-testid="drawer-close-btn"
+              style="outline: none;"
+              tabindex="0"
+              type="button"
+            >
+              <span
+                class="MuiButton-label"
+              >
+                <svg>
+                  close.svg
+                </svg>
+              </span>
+              <span
+                class="MuiTouchRipple-root"
+              />
+            </button>
+          </div>
+          <div
+            class="makeStyles-drawerHeader-685"
+          >
+            <p
+              class="MuiTypography-root makeStyles-drawerTitle-688 MuiTypography-body1 MuiTypography-colorPrimary MuiTypography-alignLeft"
+            >
+              Device Information
+            </p>
+          </div>
+        </div>
+        <div
+          class="makeStyles-summaryDeviceDetail-700"
+        >
+          <div
+            class="makeStyles-company-701"
+          >
+            <div
+              class="makeStyles-drawerOverflowWrapper-711"
+            >
+              <div
+                class="makeStyles-summaryText-704"
+              >
+                <p
+                  class="MuiTypography-root makeStyles-deviceAccent-702 makeStyles-entityTitle-707 MuiTypography-body1"
+                >
+                  -
+                </p>
+                <div
+                  class="makeStyles-summaryMainText-705"
+                >
+                  <span>
+                    Open Portal
+                  </span>
+                  <span>
+                    Reverse Installation 
+                    No
+                  </span>
+                </div>
+              </div>
+              <div
+                class="makeStyles-summarySection-703"
+              >
+                <div
+                  class="makeStyles-summaryRowDirection-710"
+                >
+                  <svg>
+                    device-status.svg
+                  </svg>
+                  <div
+                    class="makeStyles-summaryText-704 makeStyles-summaryTextSeparation-706"
+                  >
+                    <span />
+                    <span>
+                      New
+                    </span>
+                    <span>
+                      Last Maintenance Date: 
+                      -
+                    </span>
+                    <span>
+                      In Service Date: 
+                      -
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="makeStyles-summarySection-703"
+              >
+                <svg>
+                  notes.svg
+                </svg>
+                <div
+                  class="makeStyles-summaryText-704 makeStyles-summaryTextSeparation-706"
+                >
+                  <span>
+                    -
+                  </span>
+                </div>
+              </div>
+              <div
+                class="makeStyles-summarySection-703"
+              >
+                <div
+                  class="makeStyles-summaryText-704"
+                >
+                  <p
+                    class="MuiTypography-root makeStyles-deviceAccent-702 makeStyles-entityTitle-707 MuiTypography-body1"
+                  >
+                    Reader 
+                    1
+                  </p>
+                  <div
+                    class="makeStyles-summaryMainText-705"
+                  >
+                    <span>
+                      -
+                    </span>
+                    <span>
+                      Model 
+                      -
+                    </span>
+                    <span>
+                      Hostname 
+                      -
+                    </span>
+                    <span>
+                      Public IP 
+                      -
+                    </span>
+                    <span>
+                      -
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="makeStyles-summarySection-703"
+              >
+                <svg>
+                  info.svg
+                </svg>
+                <div
+                  class="makeStyles-summaryText-704 makeStyles-summaryTextSeparation-706"
+                >
+                  <span>
+                    SSH Port Connection: 
+                    -
+                  </span>
+                  <span>
+                    TELNET Port Connection: 
+                    -
+                  </span>
+                  <span>
+                    HTTP Port Connection: 
+                    -
+                  </span>
+                  <span>
+                    TCP Port Connection: 
+                    -
+                  </span>
+                </div>
+              </div>
+              <div
+                class="makeStyles-summarySection-703 makeStyles-drawerdevices-708"
+              >
+                <div
+                  class="makeStyles-deviceWrapper-709"
+                >
+                  <svg>
+                    device-status.svg
+                  </svg>
+                  <div
+                    class="makeStyles-summaryText-704 makeStyles-summaryTextSeparation-706"
+                  >
+                    <span>
+                      -
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="makeStyles-summarySection-703"
+              >
+                <svg>
+                  notes.svg
+                </svg>
+                <div
+                  class="makeStyles-summaryText-704 makeStyles-summaryTextSeparation-706"
+                >
+                  <span>
+                    -
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr
+          class="MuiDivider-root makeStyles-drawerDivider-579"
+        />
+        <div
+          class="makeStyles-ctaWrapper-676"
+          style="padding: 0px;"
+        >
+          <span
+            class=""
+            data-testid="controlled-button"
+            tabindex="-1"
+          >
+            <button
+              class="MuiButtonBase-root MuiButton-root MuiButton-outlined makeStyles-drawerCTA-523 makeStyles-borderPrimaryButton-515"
+              data-testid="acs-edition-modal-open-btn"
+              style="max-width: 100%; width: 125px; padding: 6px 0px;"
+              tabindex="0"
+              type="button"
+            >
+              <span
+                class="MuiButton-label"
+              >
+                Edit Assignment
+              </span>
+            </button>
+          </span>
+          <span
+            class=""
+            data-testid="controlled-button"
+            tabindex="-1"
+          >
+            <button
+              class="MuiButtonBase-root MuiButton-root MuiButton-outlined makeStyles-drawerCTA-523 makeStyles-warningButton-524"
+              data-testid="unassign-btn"
+              tabindex="0"
+              type="button"
+            >
+              <span
+                class="MuiButton-label"
+              >
+                Unassign
+              </span>
+            </button>
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`AccessControlSystemTab should render loading 1`] = `
+<div>
+  Loading...
+</div>
+`;
+
+exports[`AccessControlSystemTab should render with empty location items 1`] = `
+<div>
+  <div>
+    <div
+      class="makeStyles-filterActionsContainer-1175 makeStyles-filterActionsContainerPadding-1177"
+    >
+      <div
+        class="MuiBox-root MuiBox-root-1329 makeStyles-filterStatusContainer-1178 makeStyles-autocompleteFilterStatus-1195 makeStyles-acsFilterWrapper-1257"
+      >
+        <div
+          class="makeStyles-floatingFilterWrapper-1184 makeStyles-filterWrapper-1183  floatingFilterWrapper"
+        >
+          <span
+            class="makeStyles-floatingFilterButton-1185"
+            data-testid="controlled-button"
+            tabindex="-1"
+          >
+            <button
+              aria-controls="false"
+              aria-haspopup="true"
+              class="MuiButtonBase-root MuiButton-root MuiButton-text makeStyles-buttonFilter-1193"
+              data-testid="button-filter-open"
+              tabindex="0"
+              type="button"
+            >
+              <span
+                class="MuiButton-label"
+              >
+                All ACS
+                <span
+                  class="MuiButton-endIcon MuiButton-iconSizeMedium"
+                >
+                  <svg
+                    class="makeStyles-dropdownIcon-1187"
+                  >
+                    expand.svg
+                  </svg>
+                </span>
+              </span>
+            </button>
+          </span>
+        </div>
+      </div>
+      <button
+        class="MuiButtonBase-root MuiButton-root MuiButton-contained makeStyles-createButton-1205 makeStyles-primaryButtonExtraLarge-1209 MuiButton-containedPrimary MuiButton-containedSizeLarge MuiButton-sizeLarge MuiButton-fullWidth"
+        data-testid="open-acs-modal-btn"
+        tabindex="0"
+        type="button"
+      >
+        <span
+          class="MuiButton-label"
+        >
+          Assign ACS
+        </span>
+        <span
+          class="MuiTouchRipple-root"
+        />
+      </button>
+    </div>
+    <div
+      class="MuiGrid-root makeStyles-acsListItemWrapper-1326 makeStyles-acsListHeader-1323 MuiGrid-container"
+    >
+      <div
+        class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-true"
+      >
+        <p
+          class="MuiTypography-root MuiTypography-body1"
+        >
+          Name
+        </p>
+      </div>
+      <div
+        class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-true"
+      >
+        <p
+          class="MuiTypography-root MuiTypography-body1"
+        >
+          Device Type
+        </p>
+      </div>
+      <div
+        class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-true"
+      >
+        <p
+          class="MuiTypography-root MuiTypography-body1"
+        >
+          Serial Number
+        </p>
+      </div>
+      <div
+        class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-true"
+      >
+        <p
+          class="MuiTypography-root MuiTypography-body1"
+        >
+          Reader 1
+        </p>
+      </div>
+      <div
+        class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-true"
+      >
+        <p
+          class="MuiTypography-root MuiTypography-body1"
+        >
+          Reader 2
+        </p>
+      </div>
+    </div>
+    <hr
+      class="MuiDivider-root makeStyles-acsListHeaderDivide-1324"
+    />
+    <div
+      class="MuiBox-root MuiBox-root-1330 makeStyles-acsListItemWrapper-1326"
+      data-testid="no-location-item-wrapper"
+    >
+      <div
+        class="MuiBox-root MuiBox-root-1331 makeStyles-acsListItem-1327"
+      >
+        <div
+          class="MuiGrid-root MuiGrid-container MuiGrid-align-items-xs-center"
+          data-testid="acs-item"
+          style="cursor: pointer; height: 100%;"
+        >
+          <div
+            class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-true"
+          >
+            <p
+              class="MuiTypography-root MuiTypography-body1"
+            />
+          </div>
+          <div
+            class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-true"
+          >
+            <p
+              class="MuiTypography-root MuiTypography-body1"
+            >
+              Handheld
+            </p>
+          </div>
+          <div
+            class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-true"
+          >
+            <p
+              class="MuiTypography-root MuiTypography-body1"
+            >
+              NSDFJE3129 - 3354
+            </p>
+          </div>
+          <div
+            class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-true"
+          >
+            <p
+              class="MuiTypography-root MuiTypography-body1"
+            >
+              -
+            </p>
+          </div>
+          <div
+            class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-true"
+          >
+            <p
+              class="MuiTypography-root MuiTypography-body1"
+            >
+              -
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="MuiDrawer-root MuiDrawer-docked makeStyles-drawer-1355 makeStyles-close-1366 closed"
+      data-testid="drawer"
+    >
+      <div
+        class="MuiPaper-root MuiDrawer-paper makeStyles-drawerPaper-1356 MuiDrawer-paperAnchorRight MuiDrawer-paperAnchorDockedRight MuiPaper-elevation0"
+        style="visibility: hidden; webkit-transform: translateX(1024px) translateX(0px); transform: translateX(1024px) translateX(0px);"
+      >
+        <div
+          class="makeStyles-drawerButtonWrapper-1358"
+        >
+          <div
+            class="makeStyles-drawerButton-1359"
+          >
+            <button
+              class="MuiButtonBase-root MuiButton-root MuiButton-text"
+              data-testid="drawer-close-btn"
+              style="outline: none;"
+              tabindex="0"
+              type="button"
+            >
+              <span
+                class="MuiButton-label"
+              >
+                <svg>
+                  close.svg
+                </svg>
+              </span>
+              <span
+                class="MuiTouchRipple-root"
+              />
+            </button>
+          </div>
+          <div
+            class="makeStyles-drawerHeader-1357"
+          >
+            <p
+              class="MuiTypography-root makeStyles-drawerTitle-1360 MuiTypography-body1 MuiTypography-colorPrimary MuiTypography-alignLeft"
+            >
+              Device Information
+            </p>
+          </div>
+        </div>
+        <div
+          class="makeStyles-summaryDeviceDetail-1372"
+        >
+          <div
+            class="makeStyles-company-1373"
+          >
+            <div
+              class="makeStyles-drawerOverflowWrapper-1383"
+            >
+              <div
+                class="makeStyles-summaryText-1376"
+              >
+                <p
+                  class="MuiTypography-root makeStyles-deviceAccent-1374 makeStyles-entityTitle-1379 MuiTypography-body1"
+                >
+                  -
+                </p>
+                <div
+                  class="makeStyles-summaryMainText-1377"
+                >
+                  <span>
+                    Open Portal
+                  </span>
+                  <span>
+                    Reverse Installation 
+                    No
+                  </span>
+                </div>
+              </div>
+              <div
+                class="makeStyles-summarySection-1375"
+              >
+                <div
+                  class="makeStyles-summaryRowDirection-1382"
+                >
+                  <svg>
+                    device-status.svg
+                  </svg>
+                  <div
+                    class="makeStyles-summaryText-1376 makeStyles-summaryTextSeparation-1378"
+                  >
+                    <span />
+                    <span>
+                      New
+                    </span>
+                    <span>
+                      Last Maintenance Date: 
+                      -
+                    </span>
+                    <span>
+                      In Service Date: 
+                      -
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="makeStyles-summarySection-1375"
+              >
+                <svg>
+                  notes.svg
+                </svg>
+                <div
+                  class="makeStyles-summaryText-1376 makeStyles-summaryTextSeparation-1378"
+                >
+                  <span>
+                    -
+                  </span>
+                </div>
+              </div>
+              <div
+                class="makeStyles-summarySection-1375"
+              >
+                <div
+                  class="makeStyles-summaryText-1376"
+                >
+                  <p
+                    class="MuiTypography-root makeStyles-deviceAccent-1374 makeStyles-entityTitle-1379 MuiTypography-body1"
+                  >
+                    Reader 
+                    1
+                  </p>
+                  <div
+                    class="makeStyles-summaryMainText-1377"
+                  >
+                    <span>
+                      -
+                    </span>
+                    <span>
+                      Model 
+                      -
+                    </span>
+                    <span>
+                      Hostname 
+                      -
+                    </span>
+                    <span>
+                      Public IP 
+                      -
+                    </span>
+                    <span>
+                      -
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="makeStyles-summarySection-1375"
+              >
+                <svg>
+                  info.svg
+                </svg>
+                <div
+                  class="makeStyles-summaryText-1376 makeStyles-summaryTextSeparation-1378"
+                >
+                  <span>
+                    SSH Port Connection: 
+                    -
+                  </span>
+                  <span>
+                    TELNET Port Connection: 
+                    -
+                  </span>
+                  <span>
+                    HTTP Port Connection: 
+                    -
+                  </span>
+                  <span>
+                    TCP Port Connection: 
+                    -
+                  </span>
+                </div>
+              </div>
+              <div
+                class="makeStyles-summarySection-1375 makeStyles-drawerdevices-1380"
+              >
+                <div
+                  class="makeStyles-deviceWrapper-1381"
+                >
+                  <svg>
+                    device-status.svg
+                  </svg>
+                  <div
+                    class="makeStyles-summaryText-1376 makeStyles-summaryTextSeparation-1378"
+                  >
+                    <span>
+                      -
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="makeStyles-summarySection-1375"
+              >
+                <svg>
+                  notes.svg
+                </svg>
+                <div
+                  class="makeStyles-summaryText-1376 makeStyles-summaryTextSeparation-1378"
+                >
+                  <span>
+                    -
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr
+          class="MuiDivider-root makeStyles-drawerDivider-1268"
+        />
+        <div
+          class="makeStyles-ctaWrapper-1348"
+          style="padding: 0px;"
+        >
+          <span
+            class=""
+            data-testid="controlled-button"
+            tabindex="-1"
+          >
+            <button
+              class="MuiButtonBase-root MuiButton-root MuiButton-outlined makeStyles-drawerCTA-1212 makeStyles-borderPrimaryButton-1204"
+              data-testid="acs-edition-modal-open-btn"
+              style="max-width: 100%; width: 125px; padding: 6px 0px;"
+              tabindex="0"
+              type="button"
+            >
+              <span
+                class="MuiButton-label"
+              >
+                Edit Assignment
+              </span>
+            </button>
+          </span>
+          <span
+            class=""
+            data-testid="controlled-button"
+            tabindex="-1"
+          >
+            <button
+              class="MuiButtonBase-root MuiButton-root MuiButton-outlined makeStyles-drawerCTA-1212 makeStyles-warningButton-1213"
+              data-testid="unassign-btn"
+              tabindex="0"
+              type="button"
+            >
+              <span
+                class="MuiButton-label"
+              >
+                Unassign
+              </span>
+            </button>
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Accepted</title>
+    <g id="accepted" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group-3">
+            <circle id="Oval-Copy" fill="#37A66C" cx="10" cy="10" r="10"></circle>
+            <g id="atoms/icons/check" fill="#FFFFFF">
+                <polygon id="Path-3" points="14.4340462 5.83333333 15.6125575 7.01184464 8.82455608 13.799846 5 9.97528996 6.1785113 8.79677866 8.82425565 11.442589"></polygon>
+            </g>
+        </g>
+    </g>
+</svg>

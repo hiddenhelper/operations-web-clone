@@ -1,0 +1,39 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AutocompleteFilter Component should render 1`] = `
+<div>
+  <div
+    class="makeStyles-floatingFilterWrapper-26 makeStyles-filterWrapper-25 makeStyles-buttonContainer-2 floatingFilterWrapper"
+  >
+    <span
+      class="makeStyles-floatingFilterButton-27"
+      data-testid="controlled-button"
+      tabindex="-1"
+    >
+      <button
+        aria-controls="false"
+        aria-haspopup="true"
+        class="MuiButtonBase-root MuiButton-root MuiButton-text makeStyles-buttonFilter-35"
+        data-testid="button-filter-open"
+        tabindex="0"
+        type="button"
+      >
+        <span
+          class="MuiButton-label"
+        >
+          Label
+          <span
+            class="MuiButton-endIcon MuiButton-iconSizeMedium"
+          >
+            <svg
+              class="makeStyles-dropdownIcon-29"
+            >
+              expand.svg
+            </svg>
+          </span>
+        </span>
+      </button>
+    </span>
+  </div>
+</div>
+`;

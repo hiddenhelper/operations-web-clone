@@ -1,0 +1,176 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AssignRow should render 1`] = `
+<div>
+  <div
+    class="MuiGrid-root makeStyles-formControlWrapper-52 makeStyles-rowsWrapper-12 MuiGrid-container"
+  >
+    <div
+      class="MuiGrid-root makeStyles-inputWrapper-53 MuiGrid-item MuiGrid-grid-xs-11"
+    >
+      <div
+        class="MuiFormControl-root makeStyles-formControl-81 makeStyles-autoCompleteWrapper-73 "
+      >
+        <h1
+          class="MuiTypography-root MuiTypography-caption MuiTypography-colorSecondary MuiTypography-alignLeft"
+        >
+          Client Name
+           
+        </h1>
+        <div>
+          <div>
+            <input
+              data-testid="assign-entity-item"
+              value="[object Object]"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="MuiGrid-root MuiGrid-item"
+    >
+      <span
+        class=""
+        data-testid="controlled-button"
+        tabindex="-1"
+      >
+        <button
+          class="MuiButtonBase-root MuiIconButton-root makeStyles-deleteButton-83 makeStyles-showDeleteButton-51"
+          data-testid="delete-entity-button"
+          tabindex="0"
+          type="button"
+        >
+          <span
+            class="MuiIconButton-label"
+          >
+            <svg>
+              delete.svg
+            </svg>
+          </span>
+        </button>
+      </span>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`AssignRow should show duplicity message 1`] = `
+<div>
+  <div
+    class="MuiGrid-root makeStyles-formControlWrapper-301 makeStyles-rowsWrapper-261 MuiGrid-container"
+  >
+    <div
+      class="MuiGrid-root makeStyles-inputWrapper-302 MuiGrid-item MuiGrid-grid-xs-11"
+    >
+      <div
+        class="MuiFormControl-root makeStyles-formControl-330 makeStyles-autoCompleteWrapper-322 "
+      >
+        <h1
+          class="MuiTypography-root MuiTypography-caption MuiTypography-colorSecondary MuiTypography-alignLeft"
+        >
+          Client Name
+           
+        </h1>
+        <div>
+          <div>
+            <input
+              data-testid="assign-entity-item"
+              value="[object Object]"
+            />
+          </div>
+        </div>
+      </div>
+      <h1
+        class="MuiTypography-root  makeStyles-errorMessage-321 errorMessage MuiTypography-caption MuiTypography-colorSecondary MuiTypography-alignLeft"
+      >
+        is duplicated
+      </h1>
+    </div>
+    <div
+      class="MuiGrid-root MuiGrid-item"
+    >
+      <span
+        class=""
+        data-testid="controlled-button"
+        tabindex="-1"
+      >
+        <button
+          class="MuiButtonBase-root MuiIconButton-root makeStyles-deleteButton-332 makeStyles-showDeleteButton-300"
+          data-testid="delete-entity-button"
+          tabindex="0"
+          type="button"
+        >
+          <span
+            class="MuiIconButton-label"
+          >
+            <svg>
+              delete.svg
+            </svg>
+          </span>
+        </button>
+      </span>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`AssignRow should show error message 1`] = `
+<div>
+  <div
+    class="MuiGrid-root makeStyles-formControlWrapper-384 makeStyles-rowsWrapper-344 MuiGrid-container"
+  >
+    <div
+      class="MuiGrid-root makeStyles-inputWrapper-385 MuiGrid-item MuiGrid-grid-xs-11"
+    >
+      <div
+        class="MuiFormControl-root makeStyles-formControl-413 makeStyles-autoCompleteWrapper-405 "
+      >
+        <h1
+          class="MuiTypography-root MuiTypography-caption MuiTypography-colorSecondary MuiTypography-alignLeft"
+        >
+          Client Name
+           
+        </h1>
+        <div>
+          <div>
+            <input
+              data-testid="assign-entity-item"
+              value="[object Object]"
+            />
+          </div>
+        </div>
+      </div>
+      <h1
+        class="MuiTypography-root  makeStyles-errorMessage-404 errorMessage MuiTypography-caption MuiTypography-colorSecondary MuiTypography-alignLeft"
+      >
+        error message
+      </h1>
+    </div>
+    <div
+      class="MuiGrid-root MuiGrid-item"
+    >
+      <span
+        class=""
+        data-testid="controlled-button"
+        tabindex="-1"
+      >
+        <button
+          class="MuiButtonBase-root MuiIconButton-root makeStyles-deleteButton-415 makeStyles-hideDeleteButton-382"
+          data-testid="delete-entity-button"
+          tabindex="0"
+          type="button"
+        >
+          <span
+            class="MuiIconButton-label"
+          >
+            <svg>
+              delete.svg
+            </svg>
+          </span>
+        </button>
+      </span>
+    </div>
+  </div>
+</div>
+`;

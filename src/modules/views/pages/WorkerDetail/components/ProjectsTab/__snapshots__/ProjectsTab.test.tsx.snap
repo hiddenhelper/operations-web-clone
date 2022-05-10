@@ -1,0 +1,964 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ProjectsTab should empty 1`] = `
+<div>
+  <div
+    class="makeStyles-tableWrapper-667"
+  >
+    <div
+      class="makeStyles-filterActionsContainer-678 makeStyles-filterActionsContainerPadding-680"
+    >
+      <div
+        class="MuiBox-root MuiBox-root-706 makeStyles-filterStatusContainer-681"
+      >
+        <div
+          class="makeStyles-floatingFilterWrapper-687 makeStyles-filterWrapper-686  floatingFilterWrapper"
+        >
+          <span
+            class="makeStyles-floatingFilterButton-688"
+            data-testid="controlled-button"
+            tabindex="-1"
+          >
+            <button
+              aria-controls="false"
+              aria-haspopup="true"
+              class="MuiButtonBase-root MuiButton-root MuiButton-text makeStyles-buttonFilter-696"
+              data-testid="button-filter-open"
+              tabindex="0"
+              type="button"
+            >
+              <span
+                class="MuiButton-label"
+              >
+                All Status in Project
+                <span
+                  class="MuiButton-endIcon MuiButton-iconSizeMedium"
+                >
+                  <svg
+                    class="makeStyles-dropdownIcon-690"
+                  >
+                    expand.svg
+                  </svg>
+                </span>
+              </span>
+            </button>
+          </span>
+        </div>
+      </div>
+    </div>
+    <div
+      class=" makeStyles-container-707"
+    >
+      <div>
+        <div
+          class="MuiAvatar-root MuiAvatar-circle makeStyles-missingAvatarWrapper-718 makeStyles-missingAvatarBig-719 MuiAvatar-colorDefault"
+        >
+          <svg>
+            workers.svg
+          </svg>
+        </div>
+      </div>
+      <p
+        class="MuiTypography-root makeStyles-missingListText-708 MuiTypography-body1"
+      >
+        There are no Projects assigned
+      </p>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`ProjectsTab should loading 1`] = `
+<div>
+  <div
+    class="makeStyles-tableWrapper-110"
+  >
+    <div
+      class="makeStyles-filterActionsContainer-121 makeStyles-filterActionsContainerPadding-123"
+    >
+      <div
+        class="MuiBox-root MuiBox-root-149 makeStyles-filterStatusContainer-124"
+      >
+        <div
+          class="makeStyles-floatingFilterWrapper-130 makeStyles-filterWrapper-129  floatingFilterWrapper"
+        >
+          <span
+            class="makeStyles-floatingFilterButton-131"
+            data-testid="controlled-button"
+            tabindex="-1"
+          >
+            <button
+              aria-controls="false"
+              aria-haspopup="true"
+              class="MuiButtonBase-root MuiButton-root MuiButton-text makeStyles-buttonFilter-139"
+              data-testid="button-filter-open"
+              tabindex="0"
+              type="button"
+            >
+              <span
+                class="MuiButton-label"
+              >
+                All Status in Project
+                <span
+                  class="MuiButton-endIcon MuiButton-iconSizeMedium"
+                >
+                  <svg
+                    class="makeStyles-dropdownIcon-133"
+                  >
+                    expand.svg
+                  </svg>
+                </span>
+              </span>
+            </button>
+          </span>
+        </div>
+      </div>
+    </div>
+    Loading...
+  </div>
+</div>
+`;
+
+exports[`ProjectsTab should render 1`] = `
+<div>
+  <div
+    class="makeStyles-tableWrapper-150"
+  >
+    <div
+      class="makeStyles-filterActionsContainer-161 makeStyles-filterActionsContainerPadding-163"
+    >
+      <div
+        class="MuiBox-root MuiBox-root-189 makeStyles-filterStatusContainer-164"
+      >
+        <div
+          class="makeStyles-floatingFilterWrapper-170 makeStyles-filterWrapper-169  floatingFilterWrapper"
+        >
+          <span
+            class="makeStyles-floatingFilterButton-171"
+            data-testid="controlled-button"
+            tabindex="-1"
+          >
+            <button
+              aria-controls="false"
+              aria-haspopup="true"
+              class="MuiButtonBase-root MuiButton-root MuiButton-text makeStyles-buttonFilter-179"
+              data-testid="button-filter-open"
+              tabindex="0"
+              type="button"
+            >
+              <span
+                class="MuiButton-label"
+              >
+                All Status in Project
+                <span
+                  class="MuiButton-endIcon MuiButton-iconSizeMedium"
+                >
+                  <svg
+                    class="makeStyles-dropdownIcon-173"
+                  >
+                    expand.svg
+                  </svg>
+                </span>
+              </span>
+            </button>
+          </span>
+        </div>
+      </div>
+    </div>
+    <table
+      aria-label="device-list"
+      class="MuiTable-root"
+    >
+      <thead
+        class="MuiTableHead-root"
+      >
+        <tr
+          class="MuiTableRow-root MuiTableRow-head"
+        >
+          <th
+            class="MuiTableCell-root MuiTableCell-head"
+            scope="col"
+          >
+            Project
+          </th>
+          <th
+            class="MuiTableCell-root MuiTableCell-head"
+            scope="col"
+          >
+            Job Site
+          </th>
+          <th
+            class="MuiTableCell-root MuiTableCell-head"
+            scope="col"
+            style="text-align: right;"
+          >
+            Status in Project
+          </th>
+          <th
+            class="MuiTableCell-root MuiTableCell-head"
+            scope="col"
+            style="display: flex; width: 92%; justify-content: flex-end;"
+          >
+            Documentation
+          </th>
+        </tr>
+      </thead>
+      <tbody
+        class="MuiTableBody-root"
+      >
+        <tr
+          class="MuiTableRow-root WithStyles(ForwardRef(TableRow))-root-255"
+          data-testid="project-list-row"
+        >
+          <td
+            class="MuiTableCell-root MuiTableCell-body makeStyles-listName-226"
+          >
+            <a
+              class="Link-root-256"
+              data-testid="project-list-row-open-button"
+              href="/projects/detail/1"
+              title="View Project details"
+            >
+              Project Awesome
+            </a>
+          </td>
+          <td
+            class="MuiTableCell-root MuiTableCell-body"
+          >
+            <span
+              class="makeStyles-projectRowFontColor-205"
+            >
+              21 Street, Dallas
+            </span>
+          </td>
+          <td
+            class="MuiTableCell-root MuiTableCell-body"
+            style="text-align: right;"
+          >
+            <span
+              class="makeStyles-projectRowFontColor-205"
+              style="margin-right: 30px;"
+            >
+              <div
+                class="MuiChip-root makeStyles-statusChip-243 makeStyles-statusChipMargin-208 makeStyles-Accepted-253 MuiChip-colorPrimary"
+              >
+                <span
+                  class="MuiChip-label"
+                >
+                  Accepted
+                </span>
+              </div>
+            </span>
+          </td>
+          <td
+            class="MuiTableCell-root MuiTableCell-body"
+          >
+            <div
+              class="makeStyles-projectRowLastCell-201"
+            >
+              <div
+                class="makeStyles-projectRowIconsWrapper-202"
+              >
+                <span
+                  class=""
+                  data-testid="controlled-button"
+                  tabindex="-1"
+                >
+                  <button
+                    aria-label="badge-modal"
+                    class="MuiButtonBase-root MuiIconButton-root"
+                    data-testid="open-badge-modal"
+                    tabindex="0"
+                    title="Deactivated"
+                    type="button"
+                  >
+                    <span
+                      class="MuiIconButton-label"
+                    >
+                      <svg
+                        class="makeStyles-projectRowIcon-203"
+                      >
+                        badge-deactivated.svg
+                      </svg>
+                    </span>
+                  </button>
+                </span>
+                <span
+                  class=""
+                  data-testid="controlled-button"
+                  tabindex="-1"
+                >
+                  <span
+                    class=""
+                    title="Consent Form"
+                  >
+                    <button
+                      class="MuiButtonBase-root MuiIconButton-root"
+                      data-testid="open-view-consent-form"
+                      tabindex="0"
+                      type="button"
+                    >
+                      <span
+                        class="MuiIconButton-label"
+                      >
+                        <svg
+                          class="makeStyles-activeRowIcon-206 makeStyles-projectRowIcon-203"
+                        >
+                          document.svg
+                        </svg>
+                      </span>
+                    </button>
+                  </span>
+                </span>
+                <span
+                  class=""
+                  data-testid="controlled-button"
+                  tabindex="-1"
+                >
+                  <span
+                    class=""
+                    title="Project Information"
+                  >
+                    <button
+                      class="MuiButtonBase-root MuiIconButton-root"
+                      data-testid="open-edit-consent-form"
+                      tabindex="0"
+                      type="button"
+                    >
+                      <span
+                        class="MuiIconButton-label"
+                      >
+                        <svg
+                          class="makeStyles-activeRowIcon-206 makeStyles-projectRowIcon-203"
+                        >
+                          document_edit.svg
+                        </svg>
+                      </span>
+                    </button>
+                  </span>
+                </span>
+              </div>
+            </div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <nav
+      aria-label="pagination navigation"
+      class="MuiPagination-root  makeStyles-pagination-258"
+      data-testid="pagination"
+    >
+      <ul
+        class="MuiPagination-ul"
+      >
+        <li>
+          <button
+            aria-label="Go to previous page"
+            class="MuiButtonBase-root MuiPaginationItem-root MuiPaginationItem-page Mui-disabled Mui-disabled"
+            disabled=""
+            tabindex="-1"
+            type="button"
+          >
+            <svg
+              aria-hidden="true"
+              class="MuiSvgIcon-root MuiPaginationItem-icon"
+              focusable="false"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"
+              />
+            </svg>
+          </button>
+        </li>
+        <li>
+          <button
+            aria-label="Go to next page"
+            class="MuiButtonBase-root MuiPaginationItem-root MuiPaginationItem-page"
+            tabindex="0"
+            type="button"
+          >
+            <svg
+              aria-hidden="true"
+              class="MuiSvgIcon-root MuiPaginationItem-icon"
+              focusable="false"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"
+              />
+            </svg>
+            <span
+              class="MuiTouchRipple-root"
+            />
+          </button>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</div>
+`;
+
+exports[`ProjectsTab should render consent form editable 1`] = `
+<div
+  aria-hidden="true"
+>
+  <div
+    class="makeStyles-tableWrapper-463"
+  >
+    <div
+      class="makeStyles-filterActionsContainer-474 makeStyles-filterActionsContainerPadding-476"
+    >
+      <div
+        class="MuiBox-root MuiBox-root-502 makeStyles-filterStatusContainer-477"
+      >
+        <div
+          class="makeStyles-floatingFilterWrapper-483 makeStyles-filterWrapper-482  floatingFilterWrapper"
+        >
+          <span
+            class="makeStyles-floatingFilterButton-484"
+            data-testid="controlled-button"
+            tabindex="-1"
+          >
+            <button
+              aria-controls="false"
+              aria-haspopup="true"
+              class="MuiButtonBase-root MuiButton-root MuiButton-text makeStyles-buttonFilter-492"
+              data-testid="button-filter-open"
+              tabindex="0"
+              type="button"
+            >
+              <span
+                class="MuiButton-label"
+              >
+                All Status in Project
+                <span
+                  class="MuiButton-endIcon MuiButton-iconSizeMedium"
+                >
+                  <svg
+                    class="makeStyles-dropdownIcon-486"
+                  >
+                    expand.svg
+                  </svg>
+                </span>
+              </span>
+            </button>
+          </span>
+        </div>
+      </div>
+    </div>
+    <table
+      aria-label="device-list"
+      class="MuiTable-root"
+    >
+      <thead
+        class="MuiTableHead-root"
+      >
+        <tr
+          class="MuiTableRow-root MuiTableRow-head"
+        >
+          <th
+            class="MuiTableCell-root MuiTableCell-head"
+            scope="col"
+          >
+            Project
+          </th>
+          <th
+            class="MuiTableCell-root MuiTableCell-head"
+            scope="col"
+          >
+            Job Site
+          </th>
+          <th
+            class="MuiTableCell-root MuiTableCell-head"
+            scope="col"
+            style="text-align: right;"
+          >
+            Status in Project
+          </th>
+          <th
+            class="MuiTableCell-root MuiTableCell-head"
+            scope="col"
+            style="display: flex; width: 92%; justify-content: flex-end;"
+          >
+            Documentation
+          </th>
+        </tr>
+      </thead>
+      <tbody
+        class="MuiTableBody-root"
+      >
+        <tr
+          class="MuiTableRow-root WithStyles(ForwardRef(TableRow))-root-568"
+          data-testid="project-list-row"
+        >
+          <td
+            class="MuiTableCell-root MuiTableCell-body makeStyles-listName-539"
+          >
+            <a
+              class="Link-root-569"
+              data-testid="project-list-row-open-button"
+              href="/projects/detail/1"
+              title="View Project details"
+            >
+              Project Awesome
+            </a>
+          </td>
+          <td
+            class="MuiTableCell-root MuiTableCell-body"
+          >
+            <span
+              class="makeStyles-projectRowFontColor-518"
+            >
+              21 Street, Dallas
+            </span>
+          </td>
+          <td
+            class="MuiTableCell-root MuiTableCell-body"
+            style="text-align: right;"
+          >
+            <span
+              class="makeStyles-projectRowFontColor-518"
+              style="margin-right: 30px;"
+            >
+              <div
+                class="MuiChip-root makeStyles-statusChip-556 makeStyles-statusChipMargin-521 makeStyles-Accepted-566 MuiChip-colorPrimary"
+              >
+                <span
+                  class="MuiChip-label"
+                >
+                  Accepted
+                </span>
+              </div>
+            </span>
+          </td>
+          <td
+            class="MuiTableCell-root MuiTableCell-body"
+          >
+            <div
+              class="makeStyles-projectRowLastCell-514"
+            >
+              <div
+                class="makeStyles-projectRowIconsWrapper-515"
+              >
+                <span
+                  class=""
+                  data-testid="controlled-button"
+                  tabindex="-1"
+                >
+                  <button
+                    aria-label="badge-modal"
+                    class="MuiButtonBase-root MuiIconButton-root"
+                    data-testid="open-badge-modal"
+                    tabindex="0"
+                    title="Deactivated"
+                    type="button"
+                  >
+                    <span
+                      class="MuiIconButton-label"
+                    >
+                      <svg
+                        class="makeStyles-projectRowIcon-516"
+                      >
+                        badge-deactivated.svg
+                      </svg>
+                    </span>
+                  </button>
+                </span>
+                <span
+                  class=""
+                  data-testid="controlled-button"
+                  tabindex="-1"
+                >
+                  <span
+                    class=""
+                    title="Consent Form"
+                  >
+                    <button
+                      class="MuiButtonBase-root MuiIconButton-root"
+                      data-testid="open-view-consent-form"
+                      tabindex="0"
+                      type="button"
+                    >
+                      <span
+                        class="MuiIconButton-label"
+                      >
+                        <svg
+                          class="makeStyles-activeRowIcon-519 makeStyles-projectRowIcon-516"
+                        >
+                          document.svg
+                        </svg>
+                      </span>
+                    </button>
+                  </span>
+                </span>
+                <span
+                  class=""
+                  data-testid="controlled-button"
+                  tabindex="-1"
+                >
+                  <span
+                    class=""
+                    title="Project Information"
+                  >
+                    <button
+                      class="MuiButtonBase-root MuiIconButton-root"
+                      data-testid="open-edit-consent-form"
+                      tabindex="0"
+                      type="button"
+                    >
+                      <span
+                        class="MuiIconButton-label"
+                      >
+                        <svg
+                          class="makeStyles-activeRowIcon-519 makeStyles-projectRowIcon-516"
+                        >
+                          document_edit.svg
+                        </svg>
+                      </span>
+                    </button>
+                  </span>
+                </span>
+              </div>
+            </div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <nav
+      aria-label="pagination navigation"
+      class="MuiPagination-root  makeStyles-pagination-571"
+      data-testid="pagination"
+    >
+      <ul
+        class="MuiPagination-ul"
+      >
+        <li>
+          <button
+            aria-label="Go to previous page"
+            class="MuiButtonBase-root MuiPaginationItem-root MuiPaginationItem-page Mui-disabled Mui-disabled"
+            disabled=""
+            tabindex="-1"
+            type="button"
+          >
+            <svg
+              aria-hidden="true"
+              class="MuiSvgIcon-root MuiPaginationItem-icon"
+              focusable="false"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"
+              />
+            </svg>
+          </button>
+        </li>
+        <li>
+          <button
+            aria-label="Go to next page"
+            class="MuiButtonBase-root MuiPaginationItem-root MuiPaginationItem-page"
+            tabindex="0"
+            type="button"
+          >
+            <svg
+              aria-hidden="true"
+              class="MuiSvgIcon-root MuiPaginationItem-icon"
+              focusable="false"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"
+              />
+            </svg>
+            <span
+              class="MuiTouchRipple-root"
+            />
+          </button>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</div>
+`;
+
+exports[`ProjectsTab should render consent form view 1`] = `
+<div
+  aria-hidden="true"
+>
+  <div
+    class="makeStyles-tableWrapper-259"
+  >
+    <div
+      class="makeStyles-filterActionsContainer-270 makeStyles-filterActionsContainerPadding-272"
+    >
+      <div
+        class="MuiBox-root MuiBox-root-298 makeStyles-filterStatusContainer-273"
+      >
+        <div
+          class="makeStyles-floatingFilterWrapper-279 makeStyles-filterWrapper-278  floatingFilterWrapper"
+        >
+          <span
+            class="makeStyles-floatingFilterButton-280"
+            data-testid="controlled-button"
+            tabindex="-1"
+          >
+            <button
+              aria-controls="false"
+              aria-haspopup="true"
+              class="MuiButtonBase-root MuiButton-root MuiButton-text makeStyles-buttonFilter-288"
+              data-testid="button-filter-open"
+              tabindex="0"
+              type="button"
+            >
+              <span
+                class="MuiButton-label"
+              >
+                All Status in Project
+                <span
+                  class="MuiButton-endIcon MuiButton-iconSizeMedium"
+                >
+                  <svg
+                    class="makeStyles-dropdownIcon-282"
+                  >
+                    expand.svg
+                  </svg>
+                </span>
+              </span>
+            </button>
+          </span>
+        </div>
+      </div>
+    </div>
+    <table
+      aria-label="device-list"
+      class="MuiTable-root"
+    >
+      <thead
+        class="MuiTableHead-root"
+      >
+        <tr
+          class="MuiTableRow-root MuiTableRow-head"
+        >
+          <th
+            class="MuiTableCell-root MuiTableCell-head"
+            scope="col"
+          >
+            Project
+          </th>
+          <th
+            class="MuiTableCell-root MuiTableCell-head"
+            scope="col"
+          >
+            Job Site
+          </th>
+          <th
+            class="MuiTableCell-root MuiTableCell-head"
+            scope="col"
+            style="text-align: right;"
+          >
+            Status in Project
+          </th>
+          <th
+            class="MuiTableCell-root MuiTableCell-head"
+            scope="col"
+            style="display: flex; width: 92%; justify-content: flex-end;"
+          >
+            Documentation
+          </th>
+        </tr>
+      </thead>
+      <tbody
+        class="MuiTableBody-root"
+      >
+        <tr
+          class="MuiTableRow-root WithStyles(ForwardRef(TableRow))-root-364"
+          data-testid="project-list-row"
+        >
+          <td
+            class="MuiTableCell-root MuiTableCell-body makeStyles-listName-335"
+          >
+            <a
+              class="Link-root-365"
+              data-testid="project-list-row-open-button"
+              href="/projects/detail/1"
+              title="View Project details"
+            >
+              Project Awesome
+            </a>
+          </td>
+          <td
+            class="MuiTableCell-root MuiTableCell-body"
+          >
+            <span
+              class="makeStyles-projectRowFontColor-314"
+            >
+              21 Street, Dallas
+            </span>
+          </td>
+          <td
+            class="MuiTableCell-root MuiTableCell-body"
+            style="text-align: right;"
+          >
+            <span
+              class="makeStyles-projectRowFontColor-314"
+              style="margin-right: 30px;"
+            >
+              <div
+                class="MuiChip-root makeStyles-statusChip-352 makeStyles-statusChipMargin-317 makeStyles-Accepted-362 MuiChip-colorPrimary"
+              >
+                <span
+                  class="MuiChip-label"
+                >
+                  Accepted
+                </span>
+              </div>
+            </span>
+          </td>
+          <td
+            class="MuiTableCell-root MuiTableCell-body"
+          >
+            <div
+              class="makeStyles-projectRowLastCell-310"
+            >
+              <div
+                class="makeStyles-projectRowIconsWrapper-311"
+              >
+                <span
+                  class=""
+                  data-testid="controlled-button"
+                  tabindex="-1"
+                >
+                  <button
+                    aria-label="badge-modal"
+                    class="MuiButtonBase-root MuiIconButton-root"
+                    data-testid="open-badge-modal"
+                    tabindex="0"
+                    title="Deactivated"
+                    type="button"
+                  >
+                    <span
+                      class="MuiIconButton-label"
+                    >
+                      <svg
+                        class="makeStyles-projectRowIcon-312"
+                      >
+                        badge-deactivated.svg
+                      </svg>
+                    </span>
+                  </button>
+                </span>
+                <span
+                  class=""
+                  data-testid="controlled-button"
+                  tabindex="-1"
+                >
+                  <span
+                    class=""
+                    title="Consent Form"
+                  >
+                    <button
+                      class="MuiButtonBase-root MuiIconButton-root"
+                      data-testid="open-view-consent-form"
+                      tabindex="0"
+                      type="button"
+                    >
+                      <span
+                        class="MuiIconButton-label"
+                      >
+                        <svg
+                          class="makeStyles-activeRowIcon-315 makeStyles-projectRowIcon-312"
+                        >
+                          document.svg
+                        </svg>
+                      </span>
+                    </button>
+                  </span>
+                </span>
+                <span
+                  class=""
+                  data-testid="controlled-button"
+                  tabindex="-1"
+                >
+                  <span
+                    class=""
+                    title="Project Information"
+                  >
+                    <button
+                      class="MuiButtonBase-root MuiIconButton-root"
+                      data-testid="open-edit-consent-form"
+                      tabindex="0"
+                      type="button"
+                    >
+                      <span
+                        class="MuiIconButton-label"
+                      >
+                        <svg
+                          class="makeStyles-activeRowIcon-315 makeStyles-projectRowIcon-312"
+                        >
+                          document_edit.svg
+                        </svg>
+                      </span>
+                    </button>
+                  </span>
+                </span>
+              </div>
+            </div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <nav
+      aria-label="pagination navigation"
+      class="MuiPagination-root  makeStyles-pagination-367"
+      data-testid="pagination"
+    >
+      <ul
+        class="MuiPagination-ul"
+      >
+        <li>
+          <button
+            aria-label="Go to previous page"
+            class="MuiButtonBase-root MuiPaginationItem-root MuiPaginationItem-page Mui-disabled Mui-disabled"
+            disabled=""
+            tabindex="-1"
+            type="button"
+          >
+            <svg
+              aria-hidden="true"
+              class="MuiSvgIcon-root MuiPaginationItem-icon"
+              focusable="false"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"
+              />
+            </svg>
+          </button>
+        </li>
+        <li>
+          <button
+            aria-label="Go to next page"
+            class="MuiButtonBase-root MuiPaginationItem-root MuiPaginationItem-page"
+            tabindex="0"
+            type="button"
+          >
+            <svg
+              aria-hidden="true"
+              class="MuiSvgIcon-root MuiPaginationItem-icon"
+              focusable="false"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"
+              />
+            </svg>
+            <span
+              class="MuiTouchRipple-root"
+            />
+          </button>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</div>
+`;

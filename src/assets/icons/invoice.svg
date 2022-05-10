@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g id="atoms/icons/invoice" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect id="Rectangle" x="0" y="0" width="24" height="24"></rect>
+        <path d="M20,1 L20,23 L18.6666667,21.3553893 L17.3333333,23 L16,21.3553893 L14.6666667,23 L13.3333333,21.3553893 L12,23 L10.6666667,21.3553893 L9.33333333,23 L8,21.3553893 L6.66666667,23 L5.33333333,21.3553893 L4,23 L4,1 L5.33333333,2.64461075 L6.66666667,1 L8,2.64461075 L9.33333333,1 L10.6666667,2.64461075 L12,1 L13.3333333,2.64461075 L14.6666667,1 L16,2.64461075 L17.3333333,1 L18.6666667,2.64461075 L20,1 Z M15,10 L9,10 L9,11.5 L15,11.5 L15,10 Z M17,7 L7,7 L7,8.5 L17,8.5 L17,7 Z" id="invoice" fill="#FFF"></path>
+    </g>
+</svg>

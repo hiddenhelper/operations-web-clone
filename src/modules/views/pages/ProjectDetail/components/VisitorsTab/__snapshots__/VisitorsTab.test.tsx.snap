@@ -1,0 +1,2287 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`VisitorsTab should avoid assign when Synchronizing 1`] = `
+<div>
+  <div>
+    <div
+      class="makeStyles-filterActionsContainer-2610 makeStyles-filterActionsContainerPadding-2612"
+    >
+      <div
+        class="MuiBox-root MuiBox-root-2764 makeStyles-filterStatusContainer-2613 makeStyles-autocompleteFilterStatus-2630"
+      >
+        <div
+          class="makeStyles-floatingFilterWrapper-2619 makeStyles-filterWrapper-2618  floatingFilterWrapper"
+        >
+          <span
+            class="makeStyles-floatingFilterButton-2620"
+            data-testid="controlled-button"
+            tabindex="-1"
+          >
+            <button
+              aria-controls="false"
+              aria-haspopup="true"
+              class="MuiButtonBase-root MuiButton-root MuiButton-text makeStyles-buttonFilter-2628"
+              data-testid="button-filter-open"
+              tabindex="0"
+              type="button"
+            >
+              <span
+                class="MuiButton-label"
+              >
+                All Entities
+                <span
+                  class="MuiButton-endIcon MuiButton-iconSizeMedium"
+                >
+                  <svg
+                    class="makeStyles-dropdownIcon-2622"
+                  >
+                    expand.svg
+                  </svg>
+                </span>
+              </span>
+            </button>
+          </span>
+        </div>
+      </div>
+      <button
+        class="MuiButtonBase-root MuiButton-root MuiButton-contained makeStyles-createButton-2640 makeStyles-primaryButtonLarge-2642 MuiButton-containedPrimary MuiButton-containedSizeLarge MuiButton-sizeLarge MuiButton-fullWidth"
+        data-testid="open-create-badge-modal-btn"
+        tabindex="0"
+        type="button"
+      >
+        <span
+          class="MuiButton-label"
+        >
+          Create Badges
+        </span>
+        <span
+          class="MuiTouchRipple-root"
+        />
+      </button>
+    </div>
+    <table
+      aria-label="visitor-badge-list"
+      class="MuiTable-root"
+    >
+      <thead
+        class="MuiTableHead-root"
+      >
+        <tr
+          class="MuiTableRow-root makeStyles-fontHeadAccent-2629 MuiTableRow-head"
+        >
+          <th
+            class="MuiTableCell-root MuiTableCell-head"
+            scope="col"
+          >
+            Badge ID
+          </th>
+          <th
+            class="MuiTableCell-root MuiTableCell-head"
+            scope="col"
+          >
+            Badge Code
+          </th>
+          <th
+            class="MuiTableCell-root MuiTableCell-head"
+            scope="col"
+          >
+            Visitor Name
+          </th>
+          <th
+            class="MuiTableCell-root MuiTableCell-head"
+            scope="col"
+          >
+            Entity
+          </th>
+          <th
+            class="MuiTableCell-root MuiTableCell-head"
+            scope="col"
+          >
+            Status
+          </th>
+        </tr>
+      </thead>
+      <tbody
+        class="MuiTableBody-root"
+      >
+        <tr
+          class="MuiTableRow-root WithStyles(ForwardRef(TableRow))-root-2777 makeStyles-visitorRow-2746"
+          data-testid="visitor-list-row"
+          style="cursor: pointer;"
+        >
+          <td
+            class="MuiTableCell-root MuiTableCell-body"
+          >
+            Visitor Badge 
+            10
+          </td>
+          <td
+            class="MuiTableCell-root MuiTableCell-body"
+          >
+            FD 60 IL
+          </td>
+          <td
+            class="MuiTableCell-root MuiTableCell-body"
+          >
+            Visitor Name 1
+          </td>
+          <td
+            class="MuiTableCell-root MuiTableCell-body"
+          >
+            -
+          </td>
+          <td
+            class="MuiTableCell-root MuiTableCell-body"
+          >
+            <div
+              class="makeStyles-visitorRowLastCell-2737"
+            >
+              <span
+                class="makeStyles-visitorRowStatusChip-2738"
+              >
+                <div
+                  class="MuiChip-root makeStyles-statusChip-2765 makeStyles-assigned-2769 MuiChip-colorPrimary"
+                >
+                  <span
+                    class="MuiChip-label"
+                  >
+                    Assigned
+                  </span>
+                </div>
+              </span>
+              <div
+                class="makeStyles-visitorRowIconsWrapper-2730"
+              >
+                <span
+                  class=""
+                  data-testid="controlled-button"
+                  tabindex="-1"
+                >
+                  <button
+                    aria-label="badge-modal"
+                    class="MuiButtonBase-root MuiIconButton-root"
+                    data-testid="open-visitor-badge-modal"
+                    tabindex="0"
+                    title="Revoked"
+                    type="button"
+                  >
+                    <span
+                      class="MuiIconButton-label"
+                    >
+                      <svg
+                        class="makeStyles-projectRowIcon-2731"
+                      >
+                        badge-revoked.svg
+                      </svg>
+                    </span>
+                  </button>
+                </span>
+              </div>
+            </div>
+          </td>
+        </tr>
+        <tr
+          class="MuiTableRow-root WithStyles(ForwardRef(TableRow))-root-2777 makeStyles-visitorRow-2746"
+          data-testid="visitor-list-row"
+          style="cursor: pointer;"
+        >
+          <td
+            class="MuiTableCell-root MuiTableCell-body"
+          >
+            Visitor Badge 
+            18
+          </td>
+          <td
+            class="MuiTableCell-root MuiTableCell-body"
+          >
+            WD 78 XZ
+          </td>
+          <td
+            class="MuiTableCell-root MuiTableCell-body"
+          >
+            Visitor Name 3
+          </td>
+          <td
+            class="MuiTableCell-root MuiTableCell-body"
+          >
+            company 1
+          </td>
+          <td
+            class="MuiTableCell-root MuiTableCell-body"
+          >
+            <div
+              class="makeStyles-visitorRowLastCell-2737"
+            >
+              <span
+                class="makeStyles-visitorRowStatusChip-2738"
+              >
+                <div
+                  class="MuiChip-root makeStyles-statusChip-2765 makeStyles-active-2771 MuiChip-colorPrimary"
+                >
+                  <span
+                    class="MuiChip-label"
+                  >
+                    Available
+                  </span>
+                </div>
+              </span>
+              <div
+                class="makeStyles-visitorRowIconsWrapper-2730"
+              >
+                <span
+                  class=""
+                  data-testid="controlled-button"
+                  tabindex="-1"
+                >
+                  <button
+                    aria-label="badge-modal"
+                    class="MuiButtonBase-root MuiIconButton-root"
+                    data-testid="open-visitor-badge-modal"
+                    tabindex="0"
+                    title="Active"
+                    type="button"
+                  >
+                    <span
+                      class="MuiIconButton-label"
+                    >
+                      <svg
+                        class="makeStyles-projectRowIcon-2731"
+                      >
+                        badge-active.svg
+                      </svg>
+                    </span>
+                  </button>
+                </span>
+              </div>
+            </div>
+          </td>
+        </tr>
+        <tr
+          class="MuiTableRow-root WithStyles(ForwardRef(TableRow))-root-2777 makeStyles-visitorRow-2746"
+          data-testid="visitor-list-row"
+          style="cursor: pointer;"
+        >
+          <td
+            class="MuiTableCell-root MuiTableCell-body"
+          >
+            Visitor Badge 
+            32
+          </td>
+          <td
+            class="MuiTableCell-root MuiTableCell-body"
+          >
+            EO 14 BW
+          </td>
+          <td
+            class="MuiTableCell-root MuiTableCell-body"
+          >
+            Visitor Name 4
+          </td>
+          <td
+            class="MuiTableCell-root MuiTableCell-body"
+          >
+            entity name
+          </td>
+          <td
+            class="MuiTableCell-root MuiTableCell-body"
+          >
+            <div
+              class="makeStyles-visitorRowLastCell-2737"
+            >
+              <span
+                class="makeStyles-visitorRowStatusChip-2738"
+              >
+                <div
+                  class="MuiChip-root makeStyles-statusChip-2765 makeStyles-assigned-2769 MuiChip-colorPrimary"
+                >
+                  <span
+                    class="MuiChip-label"
+                  >
+                    Assigned
+                  </span>
+                </div>
+              </span>
+              <div
+                class="makeStyles-visitorRowIconsWrapper-2730"
+              >
+                <span
+                  class=""
+                  data-testid="controlled-button"
+                  tabindex="-1"
+                >
+                  <button
+                    aria-label="badge-modal"
+                    class="MuiButtonBase-root MuiIconButton-root"
+                    data-testid="open-visitor-badge-modal"
+                    tabindex="0"
+                    title="Revoked"
+                    type="button"
+                  >
+                    <span
+                      class="MuiIconButton-label"
+                    >
+                      <svg
+                        class="makeStyles-projectRowIcon-2731"
+                      >
+                        badge-revoked.svg
+                      </svg>
+                    </span>
+                  </button>
+                </span>
+              </div>
+            </div>
+          </td>
+        </tr>
+        <tr
+          class="MuiTableRow-root WithStyles(ForwardRef(TableRow))-root-2777 makeStyles-visitorRow-2746"
+          data-testid="visitor-list-row"
+          style="cursor: pointer;"
+        >
+          <td
+            class="MuiTableCell-root MuiTableCell-body"
+          >
+            Visitor Badge 
+            34
+          </td>
+          <td
+            class="MuiTableCell-root MuiTableCell-body"
+          />
+          <td
+            class="MuiTableCell-root MuiTableCell-body"
+          >
+            -
+          </td>
+          <td
+            class="MuiTableCell-root MuiTableCell-body"
+          />
+          <td
+            class="MuiTableCell-root MuiTableCell-body"
+          >
+            <div
+              class="makeStyles-visitorRowLastCell-2737"
+            >
+              <span
+                class="makeStyles-visitorRowStatusChip-2738"
+              >
+                <div
+                  class="MuiChip-root makeStyles-statusChip-2765 makeStyles-active-2771 MuiChip-colorPrimary"
+                >
+                  <span
+                    class="MuiChip-label"
+                  >
+                    Available
+                  </span>
+                </div>
+              </span>
+              <div
+                class="makeStyles-visitorRowIconsWrapper-2730"
+              >
+                <span
+                  class=""
+                  data-testid="controlled-button"
+                  tabindex="-1"
+                >
+                  <button
+                    aria-label="badge-modal"
+                    class="MuiButtonBase-root MuiIconButton-root"
+                    data-testid="open-visitor-badge-modal"
+                    tabindex="0"
+                    title="Active"
+                    type="button"
+                  >
+                    <span
+                      class="MuiIconButton-label"
+                    >
+                      <svg
+                        class="makeStyles-badgeVipIcon-2732"
+                      >
+                        vip_active.svg
+                      </svg>
+                    </span>
+                  </button>
+                </span>
+              </div>
+            </div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <nav
+      aria-label="pagination navigation"
+      class="MuiPagination-root  makeStyles-pagination-2779"
+      data-testid="pagination"
+    >
+      <ul
+        class="MuiPagination-ul"
+      >
+        <li>
+          <button
+            aria-label="Go to previous page"
+            class="MuiButtonBase-root MuiPaginationItem-root MuiPaginationItem-page Mui-disabled Mui-disabled"
+            disabled=""
+            tabindex="-1"
+            type="button"
+          >
+            <svg
+              aria-hidden="true"
+              class="MuiSvgIcon-root MuiPaginationItem-icon"
+              focusable="false"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"
+              />
+            </svg>
+          </button>
+        </li>
+        <li>
+          <button
+            aria-label="Go to next page"
+            class="MuiButtonBase-root MuiPaginationItem-root MuiPaginationItem-page"
+            tabindex="0"
+            type="button"
+          >
+            <svg
+              aria-hidden="true"
+              class="MuiSvgIcon-root MuiPaginationItem-icon"
+              focusable="false"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"
+              />
+            </svg>
+            <span
+              class="MuiTouchRipple-root"
+            />
+          </button>
+        </li>
+      </ul>
+    </nav>
+  </div>
+  <div
+    class="MuiDrawer-root MuiDrawer-docked makeStyles-drawer-2782 open"
+    data-testid="badge-drawer-detail"
+  >
+    <div
+      class="MuiPaper-root MuiDrawer-paper makeStyles-drawerPaper-2783 MuiDrawer-paperAnchorRight MuiDrawer-paperAnchorDockedRight MuiPaper-elevation0"
+    >
+      <div
+        class="makeStyles-drawerButtonWrapper-2785"
+      >
+        <div
+          class="makeStyles-drawerButton-2786"
+        >
+          <button
+            class="MuiButtonBase-root MuiButton-root MuiButton-text"
+            data-testid="drawer-close-btn"
+            style="outline: none;"
+            tabindex="0"
+            type="button"
+          >
+            <span
+              class="MuiButton-label"
+            >
+              <svg>
+                close.svg
+              </svg>
+            </span>
+            <span
+              class="MuiTouchRipple-root"
+            />
+          </button>
+        </div>
+        <div
+          class="makeStyles-drawerHeader-2784"
+        >
+          <p
+            class="MuiTypography-root makeStyles-drawerTitle-2787 MuiTypography-body1 MuiTypography-colorPrimary MuiTypography-alignLeft"
+          >
+            Badge Information
+          </p>
+        </div>
+      </div>
+      <div
+        class="makeStyles-listDetail-2812"
+      >
+        <div
+          class="makeStyles-company-2813"
+        >
+          <div
+            class="makeStyles-drawerText-2789"
+          >
+            <p
+              class="MuiTypography-root makeStyles-listAccent-2814 makeStyles-entityTitle-2811 MuiTypography-body1"
+            >
+              Badge ID
+            </p>
+            <div
+              class="makeStyles-drawerMainText-2790"
+            >
+              <span>
+                #
+                34
+              </span>
+            </div>
+          </div>
+          <div
+            class="makeStyles-drawerSection-2788"
+          >
+            <span
+              class="makeStyles-badgeVip-2781"
+            >
+              <svg>
+                badge_vip.svg
+              </svg>
+            </span>
+            <div
+              class="makeStyles-drawerText-2789 makeStyles-drawerTextSeparation-2791"
+            >
+              <span
+                class="makeStyles-listAccent-2814"
+              >
+                Badge Code
+              </span>
+              <span>
+                -
+              </span>
+            </div>
+          </div>
+        </div>
+        <hr
+          class="MuiDivider-root makeStyles-drawerDivider-2792"
+        />
+        <div
+          class="makeStyles-ctaWrapper-2815"
+        >
+          <span
+            class=""
+            data-testid="controlled-button"
+            tabindex="-1"
+          >
+            <button
+              class="MuiButtonBase-root MuiButton-root MuiButton-outlined makeStyles-drawerCTA-2647   Mui-disabled Mui-disabled"
+              data-testid="assign-badgevisitor-btn"
+              disabled=""
+              tabindex="-1"
+              type="button"
+            >
+              <span
+                class="MuiButton-label"
+              >
+                Assign Badge
+              </span>
+            </button>
+          </span>
+        </div>
+        <div
+          class="makeStyles-isSynchronizingLegendContainer-2822"
+        >
+          <div>
+            <svg>
+              info.svg
+            </svg>
+          </div>
+          <div
+            class="makeStyles-isSynchronizingLegend-2823"
+          >
+            Actions are disabled at the moment, badge is being synchronized. Please wait a few minutes and refresh.
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`VisitorsTab should hide create badges when not FcAdmin 1`] = `
+<div>
+  <div>
+    <div
+      class="makeStyles-filterActionsContainer-850 makeStyles-filterActionsContainerPadding-852"
+    >
+      <div
+        class="MuiBox-root MuiBox-root-1004 makeStyles-filterStatusContainer-853 makeStyles-autocompleteFilterStatus-870"
+      >
+        <div
+          class="makeStyles-floatingFilterWrapper-859 makeStyles-filterWrapper-858  floatingFilterWrapper"
+        >
+          <span
+            class="makeStyles-floatingFilterButton-860"
+            data-testid="controlled-button"
+            tabindex="-1"
+          >
+            <button
+              aria-controls="false"
+              aria-haspopup="true"
+              class="MuiButtonBase-root MuiButton-root MuiButton-text makeStyles-buttonFilter-868"
+              data-testid="button-filter-open"
+              tabindex="0"
+              type="button"
+            >
+              <span
+                class="MuiButton-label"
+              >
+                All Entities
+                <span
+                  class="MuiButton-endIcon MuiButton-iconSizeMedium"
+                >
+                  <svg
+                    class="makeStyles-dropdownIcon-862"
+                  >
+                    expand.svg
+                  </svg>
+                </span>
+              </span>
+            </button>
+          </span>
+        </div>
+      </div>
+    </div>
+    <table
+      aria-label="visitor-badge-list"
+      class="MuiTable-root"
+    >
+      <thead
+        class="MuiTableHead-root"
+      >
+        <tr
+          class="MuiTableRow-root makeStyles-fontHeadAccent-869 MuiTableRow-head"
+        >
+          <th
+            class="MuiTableCell-root MuiTableCell-head"
+            scope="col"
+          >
+            Badge ID
+          </th>
+          <th
+            class="MuiTableCell-root MuiTableCell-head"
+            scope="col"
+          >
+            Badge Code
+          </th>
+          <th
+            class="MuiTableCell-root MuiTableCell-head"
+            scope="col"
+          >
+            Visitor Name
+          </th>
+          <th
+            class="MuiTableCell-root MuiTableCell-head"
+            scope="col"
+          >
+            Entity
+          </th>
+          <th
+            class="MuiTableCell-root MuiTableCell-head"
+            scope="col"
+          >
+            Status
+          </th>
+        </tr>
+      </thead>
+      <tbody
+        class="MuiTableBody-root"
+      >
+        <tr
+          class="MuiTableRow-root WithStyles(ForwardRef(TableRow))-root-1017 makeStyles-visitorRow-986"
+          data-testid="visitor-list-row"
+          style="cursor: pointer;"
+        >
+          <td
+            class="MuiTableCell-root MuiTableCell-body"
+          >
+            Visitor Badge 
+            10
+          </td>
+          <td
+            class="MuiTableCell-root MuiTableCell-body"
+          >
+            FD 60 IL
+          </td>
+          <td
+            class="MuiTableCell-root MuiTableCell-body"
+          >
+            Visitor Name 1
+          </td>
+          <td
+            class="MuiTableCell-root MuiTableCell-body"
+          >
+            -
+          </td>
+          <td
+            class="MuiTableCell-root MuiTableCell-body"
+          >
+            <div
+              class="makeStyles-visitorRowLastCell-977"
+            >
+              <span
+                class="makeStyles-visitorRowStatusChip-978"
+              >
+                <div
+                  class="MuiChip-root makeStyles-statusChip-1005 makeStyles-assigned-1009 MuiChip-colorPrimary"
+                >
+                  <span
+                    class="MuiChip-label"
+                  >
+                    Assigned
+                  </span>
+                </div>
+              </span>
+              <div
+                class="makeStyles-visitorRowIconsWrapper-970"
+              >
+                <span
+                  class=""
+                  data-testid="controlled-button"
+                  tabindex="-1"
+                >
+                  <button
+                    aria-label="badge-modal"
+                    class="MuiButtonBase-root MuiIconButton-root"
+                    data-testid="open-visitor-badge-modal"
+                    tabindex="0"
+                    title="Revoked"
+                    type="button"
+                  >
+                    <span
+                      class="MuiIconButton-label"
+                    >
+                      <svg
+                        class="makeStyles-projectRowIcon-971"
+                      >
+                        badge-revoked.svg
+                      </svg>
+                    </span>
+                  </button>
+                </span>
+              </div>
+            </div>
+          </td>
+        </tr>
+        <tr
+          class="MuiTableRow-root WithStyles(ForwardRef(TableRow))-root-1017 makeStyles-visitorRow-986"
+          data-testid="visitor-list-row"
+          style="cursor: pointer;"
+        >
+          <td
+            class="MuiTableCell-root MuiTableCell-body"
+          >
+            Visitor Badge 
+            18
+          </td>
+          <td
+            class="MuiTableCell-root MuiTableCell-body"
+          >
+            WD 78 XZ
+          </td>
+          <td
+            class="MuiTableCell-root MuiTableCell-body"
+          >
+            Visitor Name 3
+          </td>
+          <td
+            class="MuiTableCell-root MuiTableCell-body"
+          >
+            company 1
+          </td>
+          <td
+            class="MuiTableCell-root MuiTableCell-body"
+          >
+            <div
+              class="makeStyles-visitorRowLastCell-977"
+            >
+              <span
+                class="makeStyles-visitorRowStatusChip-978"
+              >
+                <div
+                  class="MuiChip-root makeStyles-statusChip-1005 makeStyles-active-1011 MuiChip-colorPrimary"
+                >
+                  <span
+                    class="MuiChip-label"
+                  >
+                    Available
+                  </span>
+                </div>
+              </span>
+              <div
+                class="makeStyles-visitorRowIconsWrapper-970"
+              >
+                <span
+                  class=""
+                  data-testid="controlled-button"
+                  tabindex="-1"
+                >
+                  <button
+                    aria-label="badge-modal"
+                    class="MuiButtonBase-root MuiIconButton-root"
+                    data-testid="open-visitor-badge-modal"
+                    tabindex="0"
+                    title="Active"
+                    type="button"
+                  >
+                    <span
+                      class="MuiIconButton-label"
+                    >
+                      <svg
+                        class="makeStyles-projectRowIcon-971"
+                      >
+                        badge-active.svg
+                      </svg>
+                    </span>
+                  </button>
+                </span>
+              </div>
+            </div>
+          </td>
+        </tr>
+        <tr
+          class="MuiTableRow-root WithStyles(ForwardRef(TableRow))-root-1017 makeStyles-visitorRow-986"
+          data-testid="visitor-list-row"
+          style="cursor: pointer;"
+        >
+          <td
+            class="MuiTableCell-root MuiTableCell-body"
+          >
+            Visitor Badge 
+            32
+          </td>
+          <td
+            class="MuiTableCell-root MuiTableCell-body"
+          >
+            EO 14 BW
+          </td>
+          <td
+            class="MuiTableCell-root MuiTableCell-body"
+          >
+            Visitor Name 4
+          </td>
+          <td
+            class="MuiTableCell-root MuiTableCell-body"
+          >
+            entity name
+          </td>
+          <td
+            class="MuiTableCell-root MuiTableCell-body"
+          >
+            <div
+              class="makeStyles-visitorRowLastCell-977"
+            >
+              <span
+                class="makeStyles-visitorRowStatusChip-978"
+              >
+                <div
+                  class="MuiChip-root makeStyles-statusChip-1005 makeStyles-assigned-1009 MuiChip-colorPrimary"
+                >
+                  <span
+                    class="MuiChip-label"
+                  >
+                    Assigned
+                  </span>
+                </div>
+              </span>
+              <div
+                class="makeStyles-visitorRowIconsWrapper-970"
+              >
+                <span
+                  class=""
+                  data-testid="controlled-button"
+                  tabindex="-1"
+                >
+                  <button
+                    aria-label="badge-modal"
+                    class="MuiButtonBase-root MuiIconButton-root"
+                    data-testid="open-visitor-badge-modal"
+                    tabindex="0"
+                    title="Revoked"
+                    type="button"
+                  >
+                    <span
+                      class="MuiIconButton-label"
+                    >
+                      <svg
+                        class="makeStyles-projectRowIcon-971"
+                      >
+                        badge-revoked.svg
+                      </svg>
+                    </span>
+                  </button>
+                </span>
+              </div>
+            </div>
+          </td>
+        </tr>
+        <tr
+          class="MuiTableRow-root WithStyles(ForwardRef(TableRow))-root-1017 makeStyles-visitorRow-986"
+          data-testid="visitor-list-row"
+          style="cursor: pointer;"
+        >
+          <td
+            class="MuiTableCell-root MuiTableCell-body"
+          >
+            Visitor Badge 
+            34
+          </td>
+          <td
+            class="MuiTableCell-root MuiTableCell-body"
+          />
+          <td
+            class="MuiTableCell-root MuiTableCell-body"
+          >
+            -
+          </td>
+          <td
+            class="MuiTableCell-root MuiTableCell-body"
+          />
+          <td
+            class="MuiTableCell-root MuiTableCell-body"
+          >
+            <div
+              class="makeStyles-visitorRowLastCell-977"
+            >
+              <span
+                class="makeStyles-visitorRowStatusChip-978"
+              >
+                <div
+                  class="MuiChip-root makeStyles-statusChip-1005 makeStyles-active-1011 MuiChip-colorPrimary"
+                >
+                  <span
+                    class="MuiChip-label"
+                  >
+                    Available
+                  </span>
+                </div>
+              </span>
+              <div
+                class="makeStyles-visitorRowIconsWrapper-970"
+              >
+                <span
+                  class=""
+                  data-testid="controlled-button"
+                  tabindex="-1"
+                >
+                  <button
+                    aria-label="badge-modal"
+                    class="MuiButtonBase-root MuiIconButton-root"
+                    data-testid="open-visitor-badge-modal"
+                    tabindex="0"
+                    title="Active"
+                    type="button"
+                  >
+                    <span
+                      class="MuiIconButton-label"
+                    >
+                      <svg
+                        class="makeStyles-badgeVipIcon-972"
+                      >
+                        vip_active.svg
+                      </svg>
+                    </span>
+                  </button>
+                </span>
+              </div>
+            </div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <nav
+      aria-label="pagination navigation"
+      class="MuiPagination-root  makeStyles-pagination-1019"
+      data-testid="pagination"
+    >
+      <ul
+        class="MuiPagination-ul"
+      >
+        <li>
+          <button
+            aria-label="Go to previous page"
+            class="MuiButtonBase-root MuiPaginationItem-root MuiPaginationItem-page Mui-disabled Mui-disabled"
+            disabled=""
+            tabindex="-1"
+            type="button"
+          >
+            <svg
+              aria-hidden="true"
+              class="MuiSvgIcon-root MuiPaginationItem-icon"
+              focusable="false"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"
+              />
+            </svg>
+          </button>
+        </li>
+        <li>
+          <button
+            aria-label="Go to next page"
+            class="MuiButtonBase-root MuiPaginationItem-root MuiPaginationItem-page"
+            tabindex="0"
+            type="button"
+          >
+            <svg
+              aria-hidden="true"
+              class="MuiSvgIcon-root MuiPaginationItem-icon"
+              focusable="false"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"
+              />
+            </svg>
+            <span
+              class="MuiTouchRipple-root"
+            />
+          </button>
+        </li>
+      </ul>
+    </nav>
+  </div>
+  <div
+    class="MuiDrawer-root MuiDrawer-docked makeStyles-drawer-1022 makeStyles-close-1033 closed"
+    data-testid="badge-drawer-detail"
+  >
+    <div
+      class="MuiPaper-root MuiDrawer-paper makeStyles-drawerPaper-1023 MuiDrawer-paperAnchorRight MuiDrawer-paperAnchorDockedRight MuiPaper-elevation0"
+      style="visibility: hidden; webkit-transform: translateX(1024px) translateX(0px); transform: translateX(1024px) translateX(0px);"
+    >
+      <div
+        class="makeStyles-drawerButtonWrapper-1025"
+      >
+        <div
+          class="makeStyles-drawerButton-1026"
+        >
+          <button
+            class="MuiButtonBase-root MuiButton-root MuiButton-text"
+            data-testid="drawer-close-btn"
+            style="outline: none;"
+            tabindex="0"
+            type="button"
+          >
+            <span
+              class="MuiButton-label"
+            >
+              <svg>
+                close.svg
+              </svg>
+            </span>
+            <span
+              class="MuiTouchRipple-root"
+            />
+          </button>
+        </div>
+        <div
+          class="makeStyles-drawerHeader-1024"
+        >
+          <p
+            class="MuiTypography-root makeStyles-drawerTitle-1027 MuiTypography-body1 MuiTypography-colorPrimary MuiTypography-alignLeft"
+          >
+            Badge Information
+          </p>
+        </div>
+      </div>
+      <div
+        class="makeStyles-listDetail-1052"
+      >
+        <div
+          class="makeStyles-company-1053"
+        >
+          <div
+            class="makeStyles-drawerText-1029"
+          >
+            <p
+              class="MuiTypography-root makeStyles-listAccent-1054 makeStyles-entityTitle-1051 MuiTypography-body1"
+            >
+              Badge ID
+            </p>
+            <div
+              class="makeStyles-drawerMainText-1030"
+            >
+              <span>
+                #
+              </span>
+            </div>
+          </div>
+          <div
+            class="makeStyles-drawerSection-1028"
+          >
+            <svg>
+              e-badge.svg
+            </svg>
+            <div
+              class="makeStyles-drawerText-1029 makeStyles-drawerTextSeparation-1031"
+            >
+              <span
+                class="makeStyles-listAccent-1054"
+              >
+                Badge Code
+              </span>
+              <span>
+                -
+              </span>
+            </div>
+          </div>
+        </div>
+        <hr
+          class="MuiDivider-root makeStyles-drawerDivider-1032"
+        />
+        <div
+          class="makeStyles-ctaWrapper-1055"
+        >
+          <span
+            class=""
+            data-testid="controlled-button"
+            tabindex="-1"
+          >
+            <button
+              class="MuiButtonBase-root MuiButton-root MuiButton-outlined makeStyles-drawerCTA-887 makeStyles-borderPrimaryButton-879 makeStyles-primaryButtonPadding-881"
+              data-testid="assign-badgevisitor-btn"
+              tabindex="0"
+              type="button"
+            >
+              <span
+                class="MuiButton-label"
+              >
+                Assign Badge
+              </span>
+            </button>
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`VisitorsTab should open assign visitor badge modal 1`] = `
+<div
+  aria-hidden="true"
+>
+  <div>
+    <div
+      class="makeStyles-filterActionsContainer-1729 makeStyles-filterActionsContainerPadding-1731"
+    >
+      <div
+        class="MuiBox-root MuiBox-root-1883 makeStyles-filterStatusContainer-1732 makeStyles-autocompleteFilterStatus-1749"
+      >
+        <div
+          class="makeStyles-floatingFilterWrapper-1738 makeStyles-filterWrapper-1737  floatingFilterWrapper"
+        >
+          <span
+            class="makeStyles-floatingFilterButton-1739"
+            data-testid="controlled-button"
+            tabindex="-1"
+          >
+            <button
+              aria-controls="false"
+              aria-haspopup="true"
+              class="MuiButtonBase-root MuiButton-root MuiButton-text makeStyles-buttonFilter-1747"
+              data-testid="button-filter-open"
+              tabindex="0"
+              type="button"
+            >
+              <span
+                class="MuiButton-label"
+              >
+                All Entities
+                <span
+                  class="MuiButton-endIcon MuiButton-iconSizeMedium"
+                >
+                  <svg
+                    class="makeStyles-dropdownIcon-1741"
+                  >
+                    expand.svg
+                  </svg>
+                </span>
+              </span>
+            </button>
+          </span>
+        </div>
+      </div>
+      <button
+        class="MuiButtonBase-root MuiButton-root MuiButton-contained makeStyles-createButton-1759 makeStyles-primaryButtonLarge-1761 MuiButton-containedPrimary MuiButton-containedSizeLarge MuiButton-sizeLarge MuiButton-fullWidth"
+        data-testid="open-create-badge-modal-btn"
+        tabindex="0"
+        type="button"
+      >
+        <span
+          class="MuiButton-label"
+        >
+          Create Badges
+        </span>
+        <span
+          class="MuiTouchRipple-root"
+        />
+      </button>
+    </div>
+    <table
+      aria-label="visitor-badge-list"
+      class="MuiTable-root"
+    >
+      <thead
+        class="MuiTableHead-root"
+      >
+        <tr
+          class="MuiTableRow-root makeStyles-fontHeadAccent-1748 MuiTableRow-head"
+        >
+          <th
+            class="MuiTableCell-root MuiTableCell-head"
+            scope="col"
+          >
+            Badge ID
+          </th>
+          <th
+            class="MuiTableCell-root MuiTableCell-head"
+            scope="col"
+          >
+            Badge Code
+          </th>
+          <th
+            class="MuiTableCell-root MuiTableCell-head"
+            scope="col"
+          >
+            Visitor Name
+          </th>
+          <th
+            class="MuiTableCell-root MuiTableCell-head"
+            scope="col"
+          >
+            Entity
+          </th>
+          <th
+            class="MuiTableCell-root MuiTableCell-head"
+            scope="col"
+          >
+            Status
+          </th>
+        </tr>
+      </thead>
+      <tbody
+        class="MuiTableBody-root"
+      >
+        <tr
+          class="MuiTableRow-root WithStyles(ForwardRef(TableRow))-root-1896 makeStyles-visitorRow-1865"
+          data-testid="visitor-list-row"
+          style="cursor: pointer;"
+        >
+          <td
+            class="MuiTableCell-root MuiTableCell-body"
+          >
+            Visitor Badge 
+            5
+          </td>
+          <td
+            class="MuiTableCell-root MuiTableCell-body"
+          >
+            QB 81 PG
+          </td>
+          <td
+            class="MuiTableCell-root MuiTableCell-body"
+          >
+            Visitor Name 2
+          </td>
+          <td
+            class="MuiTableCell-root MuiTableCell-body"
+          >
+            -
+          </td>
+          <td
+            class="MuiTableCell-root MuiTableCell-body"
+          >
+            <div
+              class="makeStyles-visitorRowLastCell-1856"
+            >
+              <span
+                class="makeStyles-visitorRowStatusChip-1857"
+              >
+                <div
+                  class="MuiChip-root makeStyles-statusChip-1884 makeStyles-active-1890 MuiChip-colorPrimary"
+                >
+                  <span
+                    class="MuiChip-label"
+                  >
+                    Available
+                  </span>
+                </div>
+              </span>
+              <div
+                class="makeStyles-visitorRowIconsWrapper-1849"
+              >
+                <span
+                  class=""
+                  data-testid="controlled-button"
+                  tabindex="-1"
+                >
+                  <button
+                    aria-label="badge-modal"
+                    class="MuiButtonBase-root MuiIconButton-root"
+                    data-testid="open-visitor-badge-modal"
+                    tabindex="0"
+                    title="Active"
+                    type="button"
+                  >
+                    <span
+                      class="MuiIconButton-label"
+                    >
+                      <svg
+                        class="makeStyles-badgeVipIcon-1851"
+                      >
+                        vip_active.svg
+                      </svg>
+                    </span>
+                  </button>
+                </span>
+              </div>
+            </div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <nav
+      aria-label="pagination navigation"
+      class="MuiPagination-root  makeStyles-pagination-1898"
+      data-testid="pagination"
+    >
+      <ul
+        class="MuiPagination-ul"
+      >
+        <li>
+          <button
+            aria-label="Go to previous page"
+            class="MuiButtonBase-root MuiPaginationItem-root MuiPaginationItem-page Mui-disabled Mui-disabled"
+            disabled=""
+            tabindex="-1"
+            type="button"
+          >
+            <svg
+              aria-hidden="true"
+              class="MuiSvgIcon-root MuiPaginationItem-icon"
+              focusable="false"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"
+              />
+            </svg>
+          </button>
+        </li>
+        <li>
+          <button
+            aria-label="Go to next page"
+            class="MuiButtonBase-root MuiPaginationItem-root MuiPaginationItem-page"
+            tabindex="0"
+            type="button"
+          >
+            <svg
+              aria-hidden="true"
+              class="MuiSvgIcon-root MuiPaginationItem-icon"
+              focusable="false"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"
+              />
+            </svg>
+            <span
+              class="MuiTouchRipple-root"
+            />
+          </button>
+        </li>
+      </ul>
+    </nav>
+  </div>
+  <div
+    class="MuiDrawer-root MuiDrawer-docked makeStyles-drawer-1901 open"
+    data-testid="badge-drawer-detail"
+  >
+    <div
+      class="MuiPaper-root MuiDrawer-paper makeStyles-drawerPaper-1902 MuiDrawer-paperAnchorRight MuiDrawer-paperAnchorDockedRight MuiPaper-elevation0"
+    >
+      <div
+        class="makeStyles-drawerButtonWrapper-1904"
+      >
+        <div
+          class="makeStyles-drawerButton-1905"
+        >
+          <button
+            class="MuiButtonBase-root MuiButton-root MuiButton-text"
+            data-testid="drawer-close-btn"
+            style="outline: none;"
+            tabindex="0"
+            type="button"
+          >
+            <span
+              class="MuiButton-label"
+            >
+              <svg>
+                close.svg
+              </svg>
+            </span>
+            <span
+              class="MuiTouchRipple-root"
+            />
+          </button>
+        </div>
+        <div
+          class="makeStyles-drawerHeader-1903"
+        >
+          <p
+            class="MuiTypography-root makeStyles-drawerTitle-1906 MuiTypography-body1 MuiTypography-colorPrimary MuiTypography-alignLeft"
+          >
+            Badge Information
+          </p>
+        </div>
+      </div>
+      <div
+        class="makeStyles-listDetail-1931"
+      >
+        <div
+          class="makeStyles-company-1932"
+        >
+          <div
+            class="makeStyles-drawerText-1908"
+          >
+            <p
+              class="MuiTypography-root makeStyles-listAccent-1933 makeStyles-entityTitle-1930 MuiTypography-body1"
+            >
+              Badge ID
+            </p>
+            <div
+              class="makeStyles-drawerMainText-1909"
+            >
+              <span>
+                #
+                5
+              </span>
+            </div>
+          </div>
+          <div
+            class="makeStyles-drawerSection-1907"
+          >
+            <span
+              class="makeStyles-badgeVip-1900"
+            >
+              <svg>
+                badge_vip.svg
+              </svg>
+            </span>
+            <div
+              class="makeStyles-drawerText-1908 makeStyles-drawerTextSeparation-1910"
+            >
+              <span
+                class="makeStyles-listAccent-1933"
+              >
+                Badge Code
+              </span>
+              <span>
+                QB 81 PG
+              </span>
+            </div>
+          </div>
+        </div>
+        <hr
+          class="MuiDivider-root makeStyles-drawerDivider-1911"
+        />
+        <div
+          class="makeStyles-ctaWrapper-1934"
+        >
+          <span
+            class=""
+            data-testid="controlled-button"
+            tabindex="-1"
+          >
+            <button
+              class="MuiButtonBase-root MuiButton-root MuiButton-outlined makeStyles-drawerCTA-1766 makeStyles-borderPrimaryButton-1758 makeStyles-primaryButtonPadding-1760"
+              data-testid="assign-badgevisitor-btn"
+              tabindex="0"
+              type="button"
+            >
+              <span
+                class="MuiButton-label"
+              >
+                Assign Badge
+              </span>
+            </button>
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`VisitorsTab should render 1`] = `
+<div>
+  <div>
+    <div
+      class="makeStyles-filterActionsContainer-404 makeStyles-filterActionsContainerPadding-406"
+    >
+      <div
+        class="MuiBox-root MuiBox-root-558 makeStyles-filterStatusContainer-407 makeStyles-autocompleteFilterStatus-424"
+      >
+        <div
+          class="makeStyles-floatingFilterWrapper-413 makeStyles-filterWrapper-412  floatingFilterWrapper"
+        >
+          <span
+            class="makeStyles-floatingFilterButton-414"
+            data-testid="controlled-button"
+            tabindex="-1"
+          >
+            <button
+              aria-controls="false"
+              aria-haspopup="true"
+              class="MuiButtonBase-root MuiButton-root MuiButton-text makeStyles-buttonFilter-422"
+              data-testid="button-filter-open"
+              tabindex="0"
+              type="button"
+            >
+              <span
+                class="MuiButton-label"
+              >
+                All Entities
+                <span
+                  class="MuiButton-endIcon MuiButton-iconSizeMedium"
+                >
+                  <svg
+                    class="makeStyles-dropdownIcon-416"
+                  >
+                    expand.svg
+                  </svg>
+                </span>
+              </span>
+            </button>
+          </span>
+        </div>
+      </div>
+      <button
+        class="MuiButtonBase-root MuiButton-root MuiButton-contained makeStyles-createButton-434 makeStyles-primaryButtonLarge-436 MuiButton-containedPrimary MuiButton-containedSizeLarge MuiButton-sizeLarge MuiButton-fullWidth"
+        data-testid="open-create-badge-modal-btn"
+        tabindex="0"
+        type="button"
+      >
+        <span
+          class="MuiButton-label"
+        >
+          Create Badges
+        </span>
+        <span
+          class="MuiTouchRipple-root"
+        />
+      </button>
+    </div>
+    <table
+      aria-label="visitor-badge-list"
+      class="MuiTable-root"
+    >
+      <thead
+        class="MuiTableHead-root"
+      >
+        <tr
+          class="MuiTableRow-root makeStyles-fontHeadAccent-423 MuiTableRow-head"
+        >
+          <th
+            class="MuiTableCell-root MuiTableCell-head"
+            scope="col"
+          >
+            Badge ID
+          </th>
+          <th
+            class="MuiTableCell-root MuiTableCell-head"
+            scope="col"
+          >
+            Badge Code
+          </th>
+          <th
+            class="MuiTableCell-root MuiTableCell-head"
+            scope="col"
+          >
+            Visitor Name
+          </th>
+          <th
+            class="MuiTableCell-root MuiTableCell-head"
+            scope="col"
+          >
+            Entity
+          </th>
+          <th
+            class="MuiTableCell-root MuiTableCell-head"
+            scope="col"
+          >
+            Status
+          </th>
+        </tr>
+      </thead>
+      <tbody
+        class="MuiTableBody-root"
+      >
+        <tr
+          class="MuiTableRow-root WithStyles(ForwardRef(TableRow))-root-571 makeStyles-visitorRow-540"
+          data-testid="visitor-list-row"
+          style="cursor: pointer;"
+        >
+          <td
+            class="MuiTableCell-root MuiTableCell-body"
+          >
+            Visitor Badge 
+            10
+          </td>
+          <td
+            class="MuiTableCell-root MuiTableCell-body"
+          >
+            FD 60 IL
+          </td>
+          <td
+            class="MuiTableCell-root MuiTableCell-body"
+          >
+            Visitor Name 1
+          </td>
+          <td
+            class="MuiTableCell-root MuiTableCell-body"
+          >
+            -
+          </td>
+          <td
+            class="MuiTableCell-root MuiTableCell-body"
+          >
+            <div
+              class="makeStyles-visitorRowLastCell-531"
+            >
+              <span
+                class="makeStyles-visitorRowStatusChip-532"
+              >
+                <div
+                  class="MuiChip-root makeStyles-statusChip-559 makeStyles-assigned-563 MuiChip-colorPrimary"
+                >
+                  <span
+                    class="MuiChip-label"
+                  >
+                    Assigned
+                  </span>
+                </div>
+              </span>
+              <div
+                class="makeStyles-visitorRowIconsWrapper-524"
+              >
+                <span
+                  class=""
+                  data-testid="controlled-button"
+                  tabindex="-1"
+                >
+                  <button
+                    aria-label="badge-modal"
+                    class="MuiButtonBase-root MuiIconButton-root"
+                    data-testid="open-visitor-badge-modal"
+                    tabindex="0"
+                    title="Revoked"
+                    type="button"
+                  >
+                    <span
+                      class="MuiIconButton-label"
+                    >
+                      <svg
+                        class="makeStyles-projectRowIcon-525"
+                      >
+                        badge-revoked.svg
+                      </svg>
+                    </span>
+                  </button>
+                </span>
+              </div>
+            </div>
+          </td>
+        </tr>
+        <tr
+          class="MuiTableRow-root WithStyles(ForwardRef(TableRow))-root-571 makeStyles-visitorRow-540"
+          data-testid="visitor-list-row"
+          style="cursor: pointer;"
+        >
+          <td
+            class="MuiTableCell-root MuiTableCell-body"
+          >
+            Visitor Badge 
+            18
+          </td>
+          <td
+            class="MuiTableCell-root MuiTableCell-body"
+          >
+            WD 78 XZ
+          </td>
+          <td
+            class="MuiTableCell-root MuiTableCell-body"
+          >
+            Visitor Name 3
+          </td>
+          <td
+            class="MuiTableCell-root MuiTableCell-body"
+          >
+            company 1
+          </td>
+          <td
+            class="MuiTableCell-root MuiTableCell-body"
+          >
+            <div
+              class="makeStyles-visitorRowLastCell-531"
+            >
+              <span
+                class="makeStyles-visitorRowStatusChip-532"
+              >
+                <div
+                  class="MuiChip-root makeStyles-statusChip-559 makeStyles-active-565 MuiChip-colorPrimary"
+                >
+                  <span
+                    class="MuiChip-label"
+                  >
+                    Available
+                  </span>
+                </div>
+              </span>
+              <div
+                class="makeStyles-visitorRowIconsWrapper-524"
+              >
+                <span
+                  class=""
+                  data-testid="controlled-button"
+                  tabindex="-1"
+                >
+                  <button
+                    aria-label="badge-modal"
+                    class="MuiButtonBase-root MuiIconButton-root"
+                    data-testid="open-visitor-badge-modal"
+                    tabindex="0"
+                    title="Active"
+                    type="button"
+                  >
+                    <span
+                      class="MuiIconButton-label"
+                    >
+                      <svg
+                        class="makeStyles-projectRowIcon-525"
+                      >
+                        badge-active.svg
+                      </svg>
+                    </span>
+                  </button>
+                </span>
+              </div>
+            </div>
+          </td>
+        </tr>
+        <tr
+          class="MuiTableRow-root WithStyles(ForwardRef(TableRow))-root-571 makeStyles-visitorRow-540"
+          data-testid="visitor-list-row"
+          style="cursor: pointer;"
+        >
+          <td
+            class="MuiTableCell-root MuiTableCell-body"
+          >
+            Visitor Badge 
+            32
+          </td>
+          <td
+            class="MuiTableCell-root MuiTableCell-body"
+          >
+            EO 14 BW
+          </td>
+          <td
+            class="MuiTableCell-root MuiTableCell-body"
+          >
+            Visitor Name 4
+          </td>
+          <td
+            class="MuiTableCell-root MuiTableCell-body"
+          >
+            entity name
+          </td>
+          <td
+            class="MuiTableCell-root MuiTableCell-body"
+          >
+            <div
+              class="makeStyles-visitorRowLastCell-531"
+            >
+              <span
+                class="makeStyles-visitorRowStatusChip-532"
+              >
+                <div
+                  class="MuiChip-root makeStyles-statusChip-559 makeStyles-assigned-563 MuiChip-colorPrimary"
+                >
+                  <span
+                    class="MuiChip-label"
+                  >
+                    Assigned
+                  </span>
+                </div>
+              </span>
+              <div
+                class="makeStyles-visitorRowIconsWrapper-524"
+              >
+                <span
+                  class=""
+                  data-testid="controlled-button"
+                  tabindex="-1"
+                >
+                  <button
+                    aria-label="badge-modal"
+                    class="MuiButtonBase-root MuiIconButton-root"
+                    data-testid="open-visitor-badge-modal"
+                    tabindex="0"
+                    title="Revoked"
+                    type="button"
+                  >
+                    <span
+                      class="MuiIconButton-label"
+                    >
+                      <svg
+                        class="makeStyles-projectRowIcon-525"
+                      >
+                        badge-revoked.svg
+                      </svg>
+                    </span>
+                  </button>
+                </span>
+              </div>
+            </div>
+          </td>
+        </tr>
+        <tr
+          class="MuiTableRow-root WithStyles(ForwardRef(TableRow))-root-571 makeStyles-visitorRow-540"
+          data-testid="visitor-list-row"
+          style="cursor: pointer;"
+        >
+          <td
+            class="MuiTableCell-root MuiTableCell-body"
+          >
+            Visitor Badge 
+            34
+          </td>
+          <td
+            class="MuiTableCell-root MuiTableCell-body"
+          />
+          <td
+            class="MuiTableCell-root MuiTableCell-body"
+          >
+            -
+          </td>
+          <td
+            class="MuiTableCell-root MuiTableCell-body"
+          />
+          <td
+            class="MuiTableCell-root MuiTableCell-body"
+          >
+            <div
+              class="makeStyles-visitorRowLastCell-531"
+            >
+              <span
+                class="makeStyles-visitorRowStatusChip-532"
+              >
+                <div
+                  class="MuiChip-root makeStyles-statusChip-559 makeStyles-active-565 MuiChip-colorPrimary"
+                >
+                  <span
+                    class="MuiChip-label"
+                  >
+                    Available
+                  </span>
+                </div>
+              </span>
+              <div
+                class="makeStyles-visitorRowIconsWrapper-524"
+              >
+                <span
+                  class=""
+                  data-testid="controlled-button"
+                  tabindex="-1"
+                >
+                  <button
+                    aria-label="badge-modal"
+                    class="MuiButtonBase-root MuiIconButton-root"
+                    data-testid="open-visitor-badge-modal"
+                    tabindex="0"
+                    title="Active"
+                    type="button"
+                  >
+                    <span
+                      class="MuiIconButton-label"
+                    >
+                      <svg
+                        class="makeStyles-badgeVipIcon-526"
+                      >
+                        vip_active.svg
+                      </svg>
+                    </span>
+                  </button>
+                </span>
+              </div>
+            </div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <nav
+      aria-label="pagination navigation"
+      class="MuiPagination-root  makeStyles-pagination-573"
+      data-testid="pagination"
+    >
+      <ul
+        class="MuiPagination-ul"
+      >
+        <li>
+          <button
+            aria-label="Go to previous page"
+            class="MuiButtonBase-root MuiPaginationItem-root MuiPaginationItem-page Mui-disabled Mui-disabled"
+            disabled=""
+            tabindex="-1"
+            type="button"
+          >
+            <svg
+              aria-hidden="true"
+              class="MuiSvgIcon-root MuiPaginationItem-icon"
+              focusable="false"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"
+              />
+            </svg>
+          </button>
+        </li>
+        <li>
+          <button
+            aria-label="Go to next page"
+            class="MuiButtonBase-root MuiPaginationItem-root MuiPaginationItem-page"
+            tabindex="0"
+            type="button"
+          >
+            <svg
+              aria-hidden="true"
+              class="MuiSvgIcon-root MuiPaginationItem-icon"
+              focusable="false"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"
+              />
+            </svg>
+            <span
+              class="MuiTouchRipple-root"
+            />
+          </button>
+        </li>
+      </ul>
+    </nav>
+  </div>
+  <div
+    class="MuiDrawer-root MuiDrawer-docked makeStyles-drawer-576 makeStyles-close-587 closed"
+    data-testid="badge-drawer-detail"
+  >
+    <div
+      class="MuiPaper-root MuiDrawer-paper makeStyles-drawerPaper-577 MuiDrawer-paperAnchorRight MuiDrawer-paperAnchorDockedRight MuiPaper-elevation0"
+      style="visibility: hidden; webkit-transform: translateX(1024px) translateX(0px); transform: translateX(1024px) translateX(0px);"
+    >
+      <div
+        class="makeStyles-drawerButtonWrapper-579"
+      >
+        <div
+          class="makeStyles-drawerButton-580"
+        >
+          <button
+            class="MuiButtonBase-root MuiButton-root MuiButton-text"
+            data-testid="drawer-close-btn"
+            style="outline: none;"
+            tabindex="0"
+            type="button"
+          >
+            <span
+              class="MuiButton-label"
+            >
+              <svg>
+                close.svg
+              </svg>
+            </span>
+            <span
+              class="MuiTouchRipple-root"
+            />
+          </button>
+        </div>
+        <div
+          class="makeStyles-drawerHeader-578"
+        >
+          <p
+            class="MuiTypography-root makeStyles-drawerTitle-581 MuiTypography-body1 MuiTypography-colorPrimary MuiTypography-alignLeft"
+          >
+            Badge Information
+          </p>
+        </div>
+      </div>
+      <div
+        class="makeStyles-listDetail-606"
+      >
+        <div
+          class="makeStyles-company-607"
+        >
+          <div
+            class="makeStyles-drawerText-583"
+          >
+            <p
+              class="MuiTypography-root makeStyles-listAccent-608 makeStyles-entityTitle-605 MuiTypography-body1"
+            >
+              Badge ID
+            </p>
+            <div
+              class="makeStyles-drawerMainText-584"
+            >
+              <span>
+                #
+              </span>
+            </div>
+          </div>
+          <div
+            class="makeStyles-drawerSection-582"
+          >
+            <svg>
+              e-badge.svg
+            </svg>
+            <div
+              class="makeStyles-drawerText-583 makeStyles-drawerTextSeparation-585"
+            >
+              <span
+                class="makeStyles-listAccent-608"
+              >
+                Badge Code
+              </span>
+              <span>
+                -
+              </span>
+            </div>
+          </div>
+        </div>
+        <hr
+          class="MuiDivider-root makeStyles-drawerDivider-586"
+        />
+        <div
+          class="makeStyles-ctaWrapper-609"
+        >
+          <span
+            class=""
+            data-testid="controlled-button"
+            tabindex="-1"
+          >
+            <button
+              class="MuiButtonBase-root MuiButton-root MuiButton-outlined makeStyles-drawerCTA-441 makeStyles-borderPrimaryButton-433 makeStyles-primaryButtonPadding-435"
+              data-testid="assign-badgevisitor-btn"
+              tabindex="0"
+              type="button"
+            >
+              <span
+                class="MuiButton-label"
+              >
+                Assign Badge
+              </span>
+            </button>
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`VisitorsTab should render empty 1`] = `
+<div>
+  <div>
+    <div
+      class="makeStyles-filterActionsContainer-12 makeStyles-filterActionsContainerPadding-14"
+    >
+      <div
+        class="MuiBox-root MuiBox-root-166 makeStyles-filterStatusContainer-15 makeStyles-autocompleteFilterStatus-32"
+      >
+        <div
+          class="makeStyles-floatingFilterWrapper-21 makeStyles-filterWrapper-20  floatingFilterWrapper"
+        >
+          <span
+            class="makeStyles-floatingFilterButton-22"
+            data-testid="controlled-button"
+            tabindex="-1"
+          >
+            <button
+              aria-controls="false"
+              aria-haspopup="true"
+              class="MuiButtonBase-root MuiButton-root MuiButton-text makeStyles-buttonFilter-30"
+              data-testid="button-filter-open"
+              tabindex="0"
+              type="button"
+            >
+              <span
+                class="MuiButton-label"
+              >
+                All Entities
+                <span
+                  class="MuiButton-endIcon MuiButton-iconSizeMedium"
+                >
+                  <svg
+                    class="makeStyles-dropdownIcon-24"
+                  >
+                    expand.svg
+                  </svg>
+                </span>
+              </span>
+            </button>
+          </span>
+        </div>
+      </div>
+      <button
+        class="MuiButtonBase-root MuiButton-root MuiButton-contained makeStyles-createButton-42 makeStyles-primaryButtonLarge-44 MuiButton-containedPrimary MuiButton-containedSizeLarge MuiButton-sizeLarge MuiButton-fullWidth"
+        data-testid="open-create-badge-modal-btn"
+        tabindex="0"
+        type="button"
+      >
+        <span
+          class="MuiButton-label"
+        >
+          Create Badges
+        </span>
+        <span
+          class="MuiTouchRipple-root"
+        />
+      </button>
+    </div>
+    <div
+      class="makeStyles-emptyTabBadgeIcon-147 makeStyles-container-167"
+    >
+      <div>
+        <div
+          class="MuiAvatar-root MuiAvatar-circle makeStyles-missingAvatarWrapper-178 makeStyles-missingAvatarBig-179 MuiAvatar-colorDefault"
+        >
+          <svg>
+            e-badge.svg
+          </svg>
+        </div>
+      </div>
+      <p
+        class="MuiTypography-root makeStyles-missingListText-168 MuiTypography-body1"
+      >
+        There are no Visitor Badges
+      </p>
+    </div>
+  </div>
+  <div
+    class="MuiDrawer-root MuiDrawer-docked makeStyles-drawer-188 makeStyles-close-199 closed"
+    data-testid="badge-drawer-detail"
+  >
+    <div
+      class="MuiPaper-root MuiDrawer-paper makeStyles-drawerPaper-189 MuiDrawer-paperAnchorRight MuiDrawer-paperAnchorDockedRight MuiPaper-elevation0"
+      style="visibility: hidden; webkit-transform: translateX(1024px) translateX(0px); transform: translateX(1024px) translateX(0px);"
+    >
+      <div
+        class="makeStyles-drawerButtonWrapper-191"
+      >
+        <div
+          class="makeStyles-drawerButton-192"
+        >
+          <button
+            class="MuiButtonBase-root MuiButton-root MuiButton-text"
+            data-testid="drawer-close-btn"
+            style="outline: none;"
+            tabindex="0"
+            type="button"
+          >
+            <span
+              class="MuiButton-label"
+            >
+              <svg>
+                close.svg
+              </svg>
+            </span>
+            <span
+              class="MuiTouchRipple-root"
+            />
+          </button>
+        </div>
+        <div
+          class="makeStyles-drawerHeader-190"
+        >
+          <p
+            class="MuiTypography-root makeStyles-drawerTitle-193 MuiTypography-body1 MuiTypography-colorPrimary MuiTypography-alignLeft"
+          >
+            Badge Information
+          </p>
+        </div>
+      </div>
+      <div
+        class="makeStyles-listDetail-218"
+      >
+        <div
+          class="makeStyles-company-219"
+        >
+          <div
+            class="makeStyles-drawerText-195"
+          >
+            <p
+              class="MuiTypography-root makeStyles-listAccent-220 makeStyles-entityTitle-217 MuiTypography-body1"
+            >
+              Badge ID
+            </p>
+            <div
+              class="makeStyles-drawerMainText-196"
+            >
+              <span>
+                #
+              </span>
+            </div>
+          </div>
+          <div
+            class="makeStyles-drawerSection-194"
+          >
+            <svg>
+              e-badge.svg
+            </svg>
+            <div
+              class="makeStyles-drawerText-195 makeStyles-drawerTextSeparation-197"
+            >
+              <span
+                class="makeStyles-listAccent-220"
+              >
+                Badge Code
+              </span>
+              <span>
+                -
+              </span>
+            </div>
+          </div>
+        </div>
+        <hr
+          class="MuiDivider-root makeStyles-drawerDivider-198"
+        />
+        <div
+          class="makeStyles-ctaWrapper-221"
+        >
+          <span
+            class=""
+            data-testid="controlled-button"
+            tabindex="-1"
+          >
+            <button
+              class="MuiButtonBase-root MuiButton-root MuiButton-outlined makeStyles-drawerCTA-49 makeStyles-borderPrimaryButton-41 makeStyles-primaryButtonPadding-43"
+              data-testid="assign-badgevisitor-btn"
+              tabindex="0"
+              type="button"
+            >
+              <span
+                class="MuiButton-label"
+              >
+                Assign Badge
+              </span>
+            </button>
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`VisitorsTab should render loading 1`] = `
+<div>
+  Loading...
+</div>
+`;

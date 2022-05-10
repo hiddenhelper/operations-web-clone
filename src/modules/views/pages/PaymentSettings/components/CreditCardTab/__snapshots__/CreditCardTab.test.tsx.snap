@@ -1,0 +1,48 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CreditCardTab should render 1`] = `
+<div>
+  <div
+    class="MuiBox-root MuiBox-root-5 makeStyles-box-2"
+  >
+    <div
+      class="makeStyles-formContainer-4 makeStyles-creditCardContainer-1"
+    >
+      <div
+        class="makeStyles-formContainerWrapper-3"
+      >
+        <div
+          class="MuiGrid-root makeStyles-adminCards-9 MuiGrid-container"
+        >
+          <div
+            class="MuiGrid-root MuiGrid-item MuiGrid-grid-lg-12 MuiGrid-grid-xl-12"
+          >
+            <div
+              class="makeStyles-emptyCardItem-42 false"
+            >
+              <button
+                class="MuiButtonBase-root MuiButton-root MuiButton-text makeStyles-addNewCardButton-64 MuiButton-textPrimary"
+                data-testid="add-card-btn"
+                tabindex="0"
+                type="button"
+              >
+                <span
+                  class="MuiButton-label"
+                >
+                  <svg>
+                    credit-card.svg
+                  </svg>
+                  ADD NEW CREDIT CARD
+                </span>
+                <span
+                  class="MuiTouchRipple-root"
+                />
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

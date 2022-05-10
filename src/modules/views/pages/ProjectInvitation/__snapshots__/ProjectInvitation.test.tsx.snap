@@ -1,0 +1,3153 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ProjectInvitation should render 1`] = `
+<div>
+  <div
+    class="makeStyles-generalListMarginBottom-269"
+    id="projectInformation"
+    style="width: 100%; background-color: rgb(245, 245, 245); padding: 2.5rem;"
+  >
+    <div
+      class="client-list-header"
+    >
+      <p
+        class="MuiTypography-root makeStyles-stepWrapper-236 MuiTypography-body1 MuiTypography-colorPrimary MuiTypography-alignLeft"
+      >
+        <a
+          href="/projects"
+        >
+          Project List
+        </a>
+         
+        &gt;
+         
+        Project Information
+         
+        
+      </p>
+      <h1
+        class="MuiTypography-root makeStyles-title-271 MuiTypography-h5 MuiTypography-colorPrimary MuiTypography-alignLeft"
+      >
+        Project Name
+      </h1>
+    </div>
+    <div
+      class="makeStyles-actionBarPadding-241"
+    >
+      <div
+        class="MuiPaper-root makeStyles-container-433 makeStyles-boxShadow-310 MuiPaper-outlined MuiPaper-rounded"
+      >
+        <div
+          class="MuiGrid-root MuiGrid-container MuiGrid-align-items-xs-center MuiGrid-justify-xs-space-between"
+        >
+          <div
+            class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-auto"
+          >
+            <h1
+              class="MuiTypography-root makeStyles-title-434 MuiTypography-h1"
+            >
+              General Information
+            </h1>
+          </div>
+          <div
+            class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-auto"
+          />
+        </div>
+        <hr
+          class="MuiDivider-root makeStyles-divider-436"
+        />
+        <div
+          class="makeStyles-reviewCardBody-315"
+        >
+          <div
+            class="MuiGrid-root cardBody-row MuiGrid-container"
+          >
+            <div
+              class="MuiGrid-root cardBody-item MuiGrid-item MuiGrid-grid-xs-6"
+            >
+              <p
+                class="MuiTypography-root makeStyles-cardFont-294 makeStyles-cardHeavyAccent-297 makeStyles-cardTitle-299 MuiTypography-body1"
+              >
+                Project Name
+              </p>
+              <p
+                class="MuiTypography-root makeStyles-cardFont-294 makeStyles-descriptionTitle-349 MuiTypography-body1"
+              >
+                Project Name
+              </p>
+              <p
+                class="MuiTypography-root makeStyles-cardFont-294 makeStyles-descriptionFont-348 MuiTypography-body1"
+              >
+                description
+              </p>
+            </div>
+            <div
+              class="MuiGrid-root cardBody-item MuiGrid-item MuiGrid-grid-xs-6"
+            >
+              <p
+                class="MuiTypography-root makeStyles-cardFont-294 makeStyles-cardHeavyAccent-297 makeStyles-cardTitle-299 MuiTypography-body1"
+              >
+                Information
+              </p>
+              <div
+                class="MuiGrid-root MuiGrid-container"
+              >
+                <div
+                  class="MuiGrid-root cardBody-item MuiGrid-item MuiGrid-grid-xs-6"
+                >
+                  <p
+                    class="MuiTypography-root makeStyles-cardFont-294 MuiTypography-body1"
+                  >
+                    Category:
+                  </p>
+                </div>
+                <div
+                  class="MuiGrid-root cardBody-item MuiGrid-item MuiGrid-grid-xs-6"
+                >
+                  <span
+                    class="makeStyles-cardFontAccent-296 makeStyles-spanEllipsis-368"
+                  >
+                    category-1
+                  </span>
+                </div>
+                <div
+                  class="MuiGrid-root cardBody-item MuiGrid-item MuiGrid-grid-xs-6"
+                >
+                  <p
+                    class="MuiTypography-root makeStyles-cardFont-294 MuiTypography-body1"
+                  >
+                    FCA Region:
+                  </p>
+                </div>
+                <div
+                  class="MuiGrid-root cardBody-item MuiGrid-item MuiGrid-grid-xs-6"
+                >
+                  <span
+                    class="makeStyles-cardFontAccent-296 makeStyles-spanEllipsis-368"
+                  >
+                    region-1
+                  </span>
+                </div>
+                <div
+                  class="MuiGrid-root cardBody-item MuiGrid-item MuiGrid-grid-xs-6"
+                >
+                  <p
+                    class="MuiTypography-root makeStyles-cardFont-294 MuiTypography-body1"
+                  >
+                    FCA NAE:
+                  </p>
+                </div>
+                <div
+                  class="MuiGrid-root cardBody-item MuiGrid-item MuiGrid-grid-xs-6"
+                >
+                  <span
+                    class="makeStyles-cardFontAccent-296 makeStyles-spanEllipsis-368"
+                  >
+                    -
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="MuiGrid-root cardBody-row MuiGrid-container"
+          >
+            <div
+              class="MuiGrid-root cardBody-item MuiGrid-item MuiGrid-grid-xs-6"
+            >
+              <p
+                class="MuiTypography-root makeStyles-cardFont-294 makeStyles-cardHeavyAccent-297 makeStyles-cardTitle-299 MuiTypography-body1"
+              >
+                Duration
+              </p>
+              <div
+                class="MuiGrid-root MuiGrid-container"
+              >
+                <div
+                  class="MuiGrid-root cardBody-item MuiGrid-item MuiGrid-grid-xs-6"
+                >
+                  <p
+                    class="MuiTypography-root makeStyles-cardFont-294 MuiTypography-body1"
+                  >
+                    Start Date:
+                  </p>
+                </div>
+                <div
+                  class="MuiGrid-root cardBody-item MuiGrid-item MuiGrid-grid-xs-6"
+                >
+                  <span
+                    class="makeStyles-cardFontAccent-296"
+                  >
+                    Jul 15, 2020
+                  </span>
+                </div>
+                <div
+                  class="MuiGrid-root cardBody-item MuiGrid-item MuiGrid-grid-xs-6"
+                >
+                  <p
+                    class="MuiTypography-root makeStyles-cardFont-294 MuiTypography-body1"
+                  >
+                    End Date:
+                  </p>
+                </div>
+                <div
+                  class="MuiGrid-root cardBody-item MuiGrid-item MuiGrid-grid-xs-6"
+                >
+                  <span
+                    class="makeStyles-cardFontAccent-296"
+                  >
+                    Jul 15, 2020
+                  </span>
+                </div>
+                <div
+                  class="MuiGrid-root cardBody-item MuiGrid-item MuiGrid-grid-xs-6"
+                >
+                  <p
+                    class="MuiTypography-root makeStyles-cardFont-294 MuiTypography-body1"
+                  >
+                    Planned Months:
+                  </p>
+                </div>
+                <div
+                  class="MuiGrid-root cardBody-item MuiGrid-item MuiGrid-grid-xs-6"
+                >
+                  <span
+                    class="makeStyles-cardFontAccent-296"
+                  >
+                    0
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="MuiGrid-root cardBody-row MuiGrid-container"
+          >
+            <div
+              class="MuiGrid-root cardBody-item MuiGrid-item MuiGrid-grid-xs-6"
+            >
+              <p
+                class="MuiTypography-root makeStyles-cardFont-294 makeStyles-cardHeavyAccent-297 makeStyles-cardTitle-299 MuiTypography-body1"
+              >
+                Time Zone
+              </p>
+              <div
+                class="MuiGrid-root MuiGrid-container"
+              >
+                <div
+                  class="MuiGrid-root cardBody-item MuiGrid-item MuiGrid-grid-xs-6"
+                >
+                  <p
+                    class="MuiTypography-root makeStyles-cardFont-294 MuiTypography-body1"
+                  >
+                    Project Time Zone:
+                  </p>
+                </div>
+                <div
+                  class="MuiGrid-root cardBody-item MuiGrid-item MuiGrid-grid-xs-6"
+                >
+                  <span
+                    class="makeStyles-cardFontAccent-296 makeStyles-noWrap-293"
+                  >
+                    -
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="MuiGrid-root cardBody-row MuiGrid-container"
+          >
+            <div
+              class="MuiGrid-root cardBody-item MuiGrid-item MuiGrid-grid-xs-12"
+            >
+              <p
+                class="MuiTypography-root makeStyles-cardFont-294 makeStyles-cardHeavyAccent-297 makeStyles-cardTitle-299 MuiTypography-body1"
+              >
+                NYC LL196
+              </p>
+            </div>
+            <div
+              class="MuiGrid-root MuiGrid-container"
+            >
+              <div
+                class="MuiGrid-root cardBody-item MuiGrid-item MuiGrid-grid-xs-12"
+              >
+                <p
+                  class="MuiTypography-root makeStyles-cardFont-294 MuiTypography-body1"
+                >
+                  No
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="MuiPaper-root makeStyles-container-433 makeStyles-boxShadow-310 MuiPaper-outlined MuiPaper-rounded"
+      >
+        <div
+          class="MuiGrid-root MuiGrid-container MuiGrid-align-items-xs-center MuiGrid-justify-xs-space-between"
+        >
+          <div
+            class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-auto"
+          >
+            <h1
+              class="MuiTypography-root makeStyles-title-434 MuiTypography-h1"
+            >
+              Billing Model
+            </h1>
+          </div>
+          <div
+            class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-auto"
+          />
+        </div>
+        <hr
+          class="MuiDivider-root makeStyles-divider-436"
+        />
+        <div
+          class="makeStyles-reviewCardBody-315"
+        >
+          <div
+            class="MuiGrid-root cardBody-row MuiGrid-container"
+          >
+            <div
+              class="MuiGrid-root cardBody-item MuiGrid-item MuiGrid-grid-xs-6"
+            >
+              <p
+                class="MuiTypography-root makeStyles-cardFont-294 makeStyles-cardFontAccent-296 makeStyles-cardTitle-299 makeStyles-cardHeavyAccent-297 MuiTypography-body1"
+              >
+                Badge Model
+              </p>
+              <div
+                class="MuiGrid-root MuiGrid-container"
+              >
+                <div
+                  class="MuiGrid-root cardBody-item MuiGrid-item MuiGrid-grid-xs-6"
+                >
+                  <p
+                    class="MuiTypography-root makeStyles-cardFont-294 MuiTypography-body1"
+                  >
+                    Worker Badge Price:
+                  </p>
+                </div>
+                <div
+                  class="MuiGrid-root cardBody-item MuiGrid-item MuiGrid-grid-xs-6"
+                >
+                  <p
+                    class="MuiTypography-root makeStyles-cardFont-294 MuiTypography-body1"
+                  >
+                    <strong>
+                      -
+                    </strong>
+                  </p>
+                </div>
+                <div
+                  class="MuiGrid-root cardBody-item MuiGrid-item MuiGrid-grid-xs-6"
+                >
+                  <p
+                    class="MuiTypography-root makeStyles-cardFont-294 MuiTypography-body1"
+                  >
+                    Worker Badge Reprint Price:
+                  </p>
+                </div>
+                <div
+                  class="MuiGrid-root cardBody-item MuiGrid-item MuiGrid-grid-xs-6"
+                >
+                  <p
+                    class="MuiTypography-root makeStyles-cardFont-294 MuiTypography-body1"
+                  >
+                    <strong>
+                      -
+                    </strong>
+                  </p>
+                </div>
+                <div
+                  class="MuiGrid-root cardBody-item MuiGrid-item MuiGrid-grid-xs-6"
+                >
+                  <p
+                    class="MuiTypography-root makeStyles-cardFont-294 MuiTypography-body1"
+                  >
+                    Visitor Badge Price:
+                  </p>
+                </div>
+                <div
+                  class="MuiGrid-root cardBody-item MuiGrid-item MuiGrid-grid-xs-6"
+                >
+                  <p
+                    class="MuiTypography-root makeStyles-cardFont-294 MuiTypography-body1"
+                  >
+                    <strong>
+                      -
+                    </strong>
+                  </p>
+                </div>
+                <div
+                  class="MuiGrid-root cardBody-item MuiGrid-item MuiGrid-grid-xs-6"
+                >
+                  <p
+                    class="MuiTypography-root makeStyles-cardFont-294 MuiTypography-body1"
+                  >
+                    Visitor Badge Reprint Price:
+                  </p>
+                </div>
+                <div
+                  class="MuiGrid-root cardBody-item MuiGrid-item MuiGrid-grid-xs-6"
+                >
+                  <p
+                    class="MuiTypography-root makeStyles-cardFont-294 MuiTypography-body1"
+                  >
+                    <strong>
+                      -
+                    </strong>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div
+              class="MuiGrid-root cardBody-item MuiGrid-item MuiGrid-grid-xs-6"
+            >
+              <p
+                class="MuiTypography-root makeStyles-cardFont-294 makeStyles-cardFontAccent-296 makeStyles-cardTitle-299 makeStyles-cardHeavyAccent-297 MuiTypography-body1"
+              >
+                Responsible for billing
+              </p>
+              <p
+                class="MuiTypography-root makeStyles-cardFont-294 MuiTypography-body1"
+              >
+                Each client pays for its own workers
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="MuiPaper-root makeStyles-container-433 makeStyles-boxShadow-310 MuiPaper-outlined MuiPaper-rounded"
+      >
+        <div
+          class="MuiGrid-root MuiGrid-container MuiGrid-align-items-xs-center MuiGrid-justify-xs-space-between"
+        >
+          <div
+            class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-auto"
+          >
+            <h1
+              class="MuiTypography-root makeStyles-title-434 MuiTypography-h1"
+            >
+              Addresses and Locations
+            </h1>
+          </div>
+          <div
+            class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-auto"
+          />
+        </div>
+        <hr
+          class="MuiDivider-root makeStyles-divider-436"
+        />
+        <div
+          class="makeStyles-reviewCardBody-315"
+        >
+          <div
+            class="MuiGrid-root cardBody-row MuiGrid-container"
+          >
+            <div
+              class="MuiGrid-root cardBody-item MuiGrid-item MuiGrid-grid-xs-6"
+            >
+              <p
+                class="MuiTypography-root makeStyles-cardFont-294 makeStyles-cardHeavyAccent-297 makeStyles-cardTitle-299 MuiTypography-body1"
+              >
+                Job Site Address
+              </p>
+              <p
+                class="MuiTypography-root makeStyles-cardFont-294  MuiTypography-body1"
+              >
+                
+                <span
+                  class=" "
+                >
+                  -
+                </span>
+              </p>
+              <p
+                class="MuiTypography-root makeStyles-cardFont-294  MuiTypography-body1"
+              >
+                
+                
+                
+                
+              </p>
+              <div />
+            </div>
+            <div
+              class="MuiGrid-root cardBody-item MuiGrid-item MuiGrid-grid-xs-6"
+            >
+              <p
+                class="MuiTypography-root makeStyles-cardFont-294 makeStyles-cardHeavyAccent-297 makeStyles-cardTitle-299 MuiTypography-body1"
+              >
+                Badging Site Address
+              </p>
+              <p
+                class="MuiTypography-root makeStyles-cardFont-294 MuiTypography-body1"
+              >
+                Same as Job Site Address
+              </p>
+            </div>
+          </div>
+          <div
+            class="MuiGrid-root cardBody-row MuiGrid-container"
+          >
+            <div
+              class="MuiGrid-root cardBody-item MuiGrid-item MuiGrid-grid-xs-6"
+            >
+              <p
+                class="MuiTypography-root makeStyles-cardFont-294 makeStyles-cardHeavyAccent-297 makeStyles-cardTitle-299 MuiTypography-body1"
+              >
+                Locations
+              </p>
+            </div>
+          </div>
+          <div
+            class="MuiGrid-root cardBody-row MuiGrid-container"
+          >
+            <div
+              class="MuiGrid-root cardBody-item MuiGrid-item MuiGrid-grid-xs-6"
+            >
+              <p
+                class="MuiTypography-root makeStyles-cardFont-294 makeStyles-cardHeavyAccent-297 makeStyles-cardTitle-299 MuiTypography-body1"
+              >
+                Mailing Address
+              </p>
+              <p
+                class="MuiTypography-root makeStyles-cardFont-294 MuiTypography-body1"
+              >
+                Same as
+                 
+                Job Site Address
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="MuiPaper-root makeStyles-container-433 makeStyles-boxShadow-310 MuiPaper-outlined MuiPaper-rounded"
+      >
+        <div
+          class="MuiGrid-root MuiGrid-container MuiGrid-align-items-xs-center MuiGrid-justify-xs-space-between"
+        >
+          <div
+            class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-auto"
+          >
+            <h1
+              class="MuiTypography-root makeStyles-title-434 MuiTypography-h1"
+            >
+              Certifications and Trainings
+            </h1>
+          </div>
+          <div
+            class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-auto"
+          />
+        </div>
+        <hr
+          class="MuiDivider-root makeStyles-divider-436"
+        />
+        <div
+          class="makeStyles-reviewCardBody-315"
+        >
+          <div
+            class="MuiGrid-root cardBody-row MuiGrid-container"
+          >
+            <div
+              class="MuiGrid-root cardBody-item MuiGrid-item MuiGrid-grid-xs-6"
+            >
+              <p
+                class="MuiTypography-root makeStyles-cardFont-294 makeStyles-cardFontAccent-296 makeStyles-cardTitle-299 makeStyles-cardHeavyAccent-297 MuiTypography-body1"
+              >
+                Certifications
+              </p>
+              <p
+                class="MuiTypography-root makeStyles-cardFontNoEllipsis-295 makeStyles-cardFont-294 MuiTypography-body1"
+              >
+                Group Name.
+              </p>
+            </div>
+            <div
+              class="MuiGrid-root cardBody-item MuiGrid-item MuiGrid-grid-xs-6"
+            >
+              <p
+                class="MuiTypography-root makeStyles-cardFont-294 makeStyles-cardFontAccent-296 makeStyles-cardTitle-299 makeStyles-cardHeavyAccent-297 MuiTypography-body1"
+              >
+                Trainings
+              </p>
+              <p
+                class="MuiTypography-root makeStyles-cardFontNoEllipsis-295 makeStyles-cardFont-294 MuiTypography-body1"
+              >
+                -
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="MuiPaper-root makeStyles-container-433 makeStyles-boxShadow-310 MuiPaper-outlined MuiPaper-rounded"
+      >
+        <div
+          class="MuiGrid-root MuiGrid-container MuiGrid-align-items-xs-center MuiGrid-justify-xs-space-between"
+        >
+          <div
+            class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-auto"
+          >
+            <h1
+              class="MuiTypography-root makeStyles-title-434 MuiTypography-h1"
+            >
+              Worker Consent Form
+            </h1>
+          </div>
+          <div
+            class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-auto"
+          />
+        </div>
+        <hr
+          class="MuiDivider-root makeStyles-divider-436"
+        />
+        <div
+          class="makeStyles-reviewCardBody-315"
+        >
+          <div
+            class="MuiGrid-root cardBody-row MuiGrid-container"
+          >
+            <div
+              class="MuiGrid-root cardBody-item MuiGrid-item MuiGrid-grid-xs-12"
+            >
+              <p
+                class="MuiTypography-root makeStyles-cardFont-294 makeStyles-cardHeavyAccent-297 makeStyles-cardTitle-299 MuiTypography-body1"
+              >
+                Consent Form Name
+              </p>
+              <div
+                class="MuiGrid-root cardBody-row MuiGrid-container"
+              >
+                <div
+                  class="MuiGrid-root cardBody-item MuiGrid-item MuiGrid-grid-xs-2"
+                >
+                  <p
+                    class="MuiTypography-root makeStyles-cardFont-294 MuiTypography-body1"
+                  >
+                    English Version:
+                  </p>
+                </div>
+                <div
+                  class="MuiGrid-root cardBody-item MuiGrid-item MuiGrid-grid-xs-10"
+                >
+                  <p
+                    class="MuiTypography-root makeStyles-cardFont-294 MuiTypography-body1"
+                  >
+                    <strong />
+                  </p>
+                </div>
+              </div>
+              <div
+                class="MuiGrid-root cardBody-row MuiGrid-container"
+              >
+                <div
+                  class="MuiGrid-root cardBody-item MuiGrid-item MuiGrid-grid-xs-2"
+                >
+                  <p
+                    class="MuiTypography-root makeStyles-cardFont-294 MuiTypography-body1"
+                  >
+                    Spanish Version:
+                  </p>
+                </div>
+                <div
+                  class="MuiGrid-root cardBody-item MuiGrid-item MuiGrid-grid-xs-10"
+                >
+                  <p
+                    class="MuiTypography-root makeStyles-cardFont-294 MuiTypography-body1"
+                  >
+                    <strong />
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="MuiGrid-root cardBody-row MuiGrid-container"
+          >
+            <div
+              class="MuiGrid-root cardBody-item MuiGrid-item MuiGrid-grid-xs-12"
+            >
+              <p
+                class="MuiTypography-root makeStyles-cardFont-294 makeStyles-cardFontAccent-296 makeStyles-cardTitle-299 makeStyles-cardHeavyAccent-297 MuiTypography-body1"
+              >
+                Predefined Inputs
+              </p>
+              <p
+                class="MuiTypography-root makeStyles-cardFont-294 makeStyles-cardFontNoEllipsis-295 MuiTypography-body1"
+              >
+                <span>
+                  -
+                </span>
+              </p>
+            </div>
+          </div>
+          <div
+            class="MuiGrid-root cardBody-row MuiGrid-container"
+          >
+            <div
+              class="MuiGrid-root cardBody-item MuiGrid-item MuiGrid-grid-xs-12"
+            >
+              <p
+                class="MuiTypography-root makeStyles-cardFont-294 makeStyles-cardHeavyAccent-297 makeStyles-cardTitle-299 MuiTypography-body1"
+              >
+                Legal
+              </p>
+              <div
+                class="MuiGrid-root cardBody-row MuiGrid-container"
+              >
+                <div
+                  class="MuiGrid-root cardBody-item MuiGrid-item MuiGrid-grid-xs-2"
+                >
+                  <p
+                    class="MuiTypography-root makeStyles-cardFont-294 MuiTypography-body1"
+                  >
+                    English Version:
+                  </p>
+                </div>
+                <div
+                  class="MuiGrid-root cardBody-item MuiGrid-item MuiGrid-grid-xs-10"
+                >
+                  <p
+                    class="MuiTypography-root makeStyles-cardFont-294 MuiTypography-body1"
+                  >
+                    <strong>
+                      Consent from
+                    </strong>
+                  </p>
+                </div>
+              </div>
+              <div
+                class="MuiGrid-root cardBody-row MuiGrid-container"
+              >
+                <div
+                  class="MuiGrid-root cardBody-item MuiGrid-item MuiGrid-grid-xs-2"
+                >
+                  <p
+                    class="MuiTypography-root makeStyles-cardFont-294 MuiTypography-body1"
+                  >
+                    Spanish Version:
+                  </p>
+                </div>
+                <div
+                  class="MuiGrid-root cardBody-item MuiGrid-item MuiGrid-grid-xs-10"
+                >
+                  <p
+                    class="MuiTypography-root makeStyles-cardFont-294 MuiTypography-body1"
+                  >
+                    <strong>
+                      Formulario de consentimiento
+                    </strong>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="MuiPaper-root makeStyles-container-433 makeStyles-boxShadow-310 MuiPaper-outlined MuiPaper-rounded"
+      >
+        <div
+          class="MuiGrid-root MuiGrid-container MuiGrid-align-items-xs-center MuiGrid-justify-xs-space-between"
+        >
+          <div
+            class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-auto"
+          >
+            <h1
+              class="MuiTypography-root makeStyles-title-434 MuiTypography-h1"
+            >
+              Credit Card
+            </h1>
+          </div>
+          <div
+            class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-auto"
+          />
+        </div>
+        <hr
+          class="MuiDivider-root makeStyles-divider-436"
+        />
+        <div
+          class="makeStyles-cardContainer-374"
+        >
+          <div
+            class="MuiPaper-root MuiCard-root  makeStyles-cardItem-439 makeStyles-cardItemClickable-440 makeStyles-cardItemSelected-446 MuiPaper-elevation1 MuiPaper-rounded"
+            data-testid="card-item"
+            role="button"
+          >
+            <p
+              class="MuiTypography-root makeStyles-creditCardTitle-449 MuiTypography-body1"
+            >
+              CREDIT CARD
+            </p>
+            <div
+              class="makeStyles-cardNumberWrapper-458"
+            >
+              <p
+                class="MuiTypography-root makeStyles-creditCardNumber-451 MuiTypography-body1"
+              >
+                **** **** **** undefined
+              </p>
+              <div
+                class="makeStyles-creditCardLogoContainer-453"
+              >
+                <div
+                  class="makeStyles-creditCardLogo-452"
+                >
+                  <svg
+                    class="makeStyles-creditCardIconImage-448"
+                  >
+                    credit-card.svg
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <div>
+              <p
+                class="MuiTypography-root makeStyles-creditCardHolder-450 MuiTypography-body1"
+              >
+                
+              </p>
+              <p
+                class="MuiTypography-root makeStyles-creditCardHolder-450 MuiTypography-body1"
+              />
+            </div>
+            <span
+              class="makeStyles-cardSelectedIcon-447"
+            >
+              <svg>
+                accepted.svg
+              </svg>
+            </span>
+          </div>
+        </div>
+      </div>
+      <div
+        class="MuiPaper-root makeStyles-container-433  MuiPaper-outlined MuiPaper-rounded"
+      >
+        <div
+          class="MuiGrid-root MuiGrid-container MuiGrid-align-items-xs-center MuiGrid-justify-xs-space-between"
+        >
+          <div
+            class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-auto"
+          >
+            <h1
+              class="MuiTypography-root makeStyles-title-434 MuiTypography-h1"
+            >
+              Service Agreement
+            </h1>
+          </div>
+          <div
+            class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-auto"
+          >
+            <span
+              class=" makeStyles-secondaryActions-435"
+            />
+          </div>
+        </div>
+        <hr
+          class="MuiDivider-root makeStyles-divider-436"
+        />
+        <div
+          class="makeStyles-cardContentPadding-238"
+        >
+          <p
+            class="MuiTypography-root makeStyles-cardFontParagraph-298 MuiTypography-body1"
+          >
+            Hereinafter referred to as the “Contractor”, for the considerations hereinafter expressed, agree together as follows:
+
+    The purpose of this agreement is to allow the Contractor to use the services provided by FC Construction Services (FCA) as a risk management tool in screening workers for jobsite access.
+
+    FCA will invoice weekly. All invoices are due and payable upon receipt. FCA will automatically debit the credit card provided by the Contractor on the date of invoice. Invoices are made available to the Contractor via FCA website. Contractor is responsible for payment of any unpaid invoices for services utilized by Contractor’s subcontractor(s).
+
+    It is the sole responsibility of the Contractor to secure and to furnish FCA proper and correct information for each applicant sufficient for FCA to perform the services contracted. The Contractor certifies to FCA that it will comply with all applicable state and federal laws, including, but not limited to, the Fair Credit Reporting Act (15 USC 1681) and that information received from FCA will not be used in violation of any equal employment opportunity law or regulation. Contractor hereby releases FCA and its affiliated companies and the officers, agents, employees and independent contractors of FCA and its affiliated companies from liability for Contractor’s noncompliance with all applicable laws, rules and regulations.
+
+    This agreement shall become effective on Contractor date of sign up and shall remain in force and effect until modified or suspended by either party with thirty days advance written notice.
+          </p>
+          <label
+            class="MuiFormControlLabel-root makeStyles-serviceAgreementCheckbox-239"
+          >
+            <span
+              aria-disabled="false"
+              class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-464 MuiCheckbox-root MuiCheckbox-colorSecondary MuiIconButton-colorSecondary"
+              data-testid="multiple-checkbox"
+            >
+              <span
+                class="MuiIconButton-label"
+              >
+                <input
+                  class="PrivateSwitchBase-input-467"
+                  data-indeterminate="false"
+                  data-testid="service-agreement-accept"
+                  name="serviceAgreementAccept"
+                  type="checkbox"
+                  value="serviceAgreementAccept"
+                />
+                <svg
+                  aria-hidden="true"
+                  class="MuiSvgIcon-root makeStyles-iconRoot-462 "
+                  focusable="false"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z"
+                  />
+                </svg>
+              </span>
+              <span
+                class="MuiTouchRipple-root"
+              />
+            </span>
+            <span
+              class="MuiTypography-root MuiFormControlLabel-label MuiTypography-body1"
+            >
+              By accepting the project you accept the Project Service Agreement.
+            </span>
+          </label>
+        </div>
+      </div>
+    </div>
+    <header
+      class="MuiPaper-root MuiAppBar-root MuiAppBar-positionFixed MuiAppBar-colorDefault makeStyles-floatingActionBar-237 mui-fixed MuiPaper-elevation4"
+    >
+      <button
+        class="MuiButtonBase-root MuiButton-root MuiButton-contained false makeStyles-createButton-244 makeStyles-floatingAppBarButton-262 makeStyles-primaryButtonLarger-249 MuiButton-containedPrimary MuiButton-containedSizeLarge MuiButton-sizeLarge Mui-disabled MuiButton-fullWidth Mui-disabled"
+        data-testid="accept-project"
+        disabled=""
+        tabindex="-1"
+        type="submit"
+      >
+        <span
+          class="MuiButton-label"
+        >
+          <span
+            class="makeStyles-textWrapper-470"
+          >
+            Go to Payment Method
+          </span>
+        </span>
+      </button>
+    </header>
+  </div>
+</div>
+`;
+
+exports[`ProjectInvitation should render alternative service agreement form 1`] = `
+<div>
+  <div
+    class="makeStyles-generalListMarginBottom-974"
+    id="projectInformation"
+    style="width: 100%; background-color: rgb(245, 245, 245); padding: 2.5rem;"
+  >
+    <div
+      class="client-list-header"
+    >
+      <p
+        class="MuiTypography-root makeStyles-stepWrapper-941 MuiTypography-body1 MuiTypography-colorPrimary MuiTypography-alignLeft"
+      >
+        <a
+          href="/projects"
+        >
+          Project List
+        </a>
+         
+        &gt;
+         
+        Project Information
+         
+        
+      </p>
+      <h1
+        class="MuiTypography-root makeStyles-title-976 MuiTypography-h5 MuiTypography-colorPrimary MuiTypography-alignLeft"
+      >
+        Project Name
+      </h1>
+    </div>
+    <div
+      class="makeStyles-actionBarPadding-946"
+    >
+      <div
+        class="MuiPaper-root makeStyles-container-1138 makeStyles-boxShadow-1015 MuiPaper-outlined MuiPaper-rounded"
+      >
+        <div
+          class="MuiGrid-root MuiGrid-container MuiGrid-align-items-xs-center MuiGrid-justify-xs-space-between"
+        >
+          <div
+            class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-auto"
+          >
+            <h1
+              class="MuiTypography-root makeStyles-title-1139 MuiTypography-h1"
+            >
+              General Information
+            </h1>
+          </div>
+          <div
+            class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-auto"
+          />
+        </div>
+        <hr
+          class="MuiDivider-root makeStyles-divider-1141"
+        />
+        <div
+          class="makeStyles-reviewCardBody-1020"
+        >
+          <div
+            class="MuiGrid-root cardBody-row MuiGrid-container"
+          >
+            <div
+              class="MuiGrid-root cardBody-item MuiGrid-item MuiGrid-grid-xs-6"
+            >
+              <p
+                class="MuiTypography-root makeStyles-cardFont-999 makeStyles-cardHeavyAccent-1002 makeStyles-cardTitle-1004 MuiTypography-body1"
+              >
+                Project Name
+              </p>
+              <p
+                class="MuiTypography-root makeStyles-cardFont-999 makeStyles-descriptionTitle-1054 MuiTypography-body1"
+              >
+                Project Name
+              </p>
+              <p
+                class="MuiTypography-root makeStyles-cardFont-999 makeStyles-descriptionFont-1053 MuiTypography-body1"
+              >
+                description
+              </p>
+            </div>
+            <div
+              class="MuiGrid-root cardBody-item MuiGrid-item MuiGrid-grid-xs-6"
+            >
+              <p
+                class="MuiTypography-root makeStyles-cardFont-999 makeStyles-cardHeavyAccent-1002 makeStyles-cardTitle-1004 MuiTypography-body1"
+              >
+                Information
+              </p>
+              <div
+                class="MuiGrid-root MuiGrid-container"
+              >
+                <div
+                  class="MuiGrid-root cardBody-item MuiGrid-item MuiGrid-grid-xs-6"
+                >
+                  <p
+                    class="MuiTypography-root makeStyles-cardFont-999 MuiTypography-body1"
+                  >
+                    Category:
+                  </p>
+                </div>
+                <div
+                  class="MuiGrid-root cardBody-item MuiGrid-item MuiGrid-grid-xs-6"
+                >
+                  <span
+                    class="makeStyles-cardFontAccent-1001 makeStyles-spanEllipsis-1073"
+                  >
+                    category-1
+                  </span>
+                </div>
+                <div
+                  class="MuiGrid-root cardBody-item MuiGrid-item MuiGrid-grid-xs-6"
+                >
+                  <p
+                    class="MuiTypography-root makeStyles-cardFont-999 MuiTypography-body1"
+                  >
+                    FCA Region:
+                  </p>
+                </div>
+                <div
+                  class="MuiGrid-root cardBody-item MuiGrid-item MuiGrid-grid-xs-6"
+                >
+                  <span
+                    class="makeStyles-cardFontAccent-1001 makeStyles-spanEllipsis-1073"
+                  >
+                    region-1
+                  </span>
+                </div>
+                <div
+                  class="MuiGrid-root cardBody-item MuiGrid-item MuiGrid-grid-xs-6"
+                >
+                  <p
+                    class="MuiTypography-root makeStyles-cardFont-999 MuiTypography-body1"
+                  >
+                    FCA NAE:
+                  </p>
+                </div>
+                <div
+                  class="MuiGrid-root cardBody-item MuiGrid-item MuiGrid-grid-xs-6"
+                >
+                  <span
+                    class="makeStyles-cardFontAccent-1001 makeStyles-spanEllipsis-1073"
+                  >
+                    -
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="MuiGrid-root cardBody-row MuiGrid-container"
+          >
+            <div
+              class="MuiGrid-root cardBody-item MuiGrid-item MuiGrid-grid-xs-6"
+            >
+              <p
+                class="MuiTypography-root makeStyles-cardFont-999 makeStyles-cardHeavyAccent-1002 makeStyles-cardTitle-1004 MuiTypography-body1"
+              >
+                Duration
+              </p>
+              <div
+                class="MuiGrid-root MuiGrid-container"
+              >
+                <div
+                  class="MuiGrid-root cardBody-item MuiGrid-item MuiGrid-grid-xs-6"
+                >
+                  <p
+                    class="MuiTypography-root makeStyles-cardFont-999 MuiTypography-body1"
+                  >
+                    Start Date:
+                  </p>
+                </div>
+                <div
+                  class="MuiGrid-root cardBody-item MuiGrid-item MuiGrid-grid-xs-6"
+                >
+                  <span
+                    class="makeStyles-cardFontAccent-1001"
+                  >
+                    Jul 15, 2020
+                  </span>
+                </div>
+                <div
+                  class="MuiGrid-root cardBody-item MuiGrid-item MuiGrid-grid-xs-6"
+                >
+                  <p
+                    class="MuiTypography-root makeStyles-cardFont-999 MuiTypography-body1"
+                  >
+                    End Date:
+                  </p>
+                </div>
+                <div
+                  class="MuiGrid-root cardBody-item MuiGrid-item MuiGrid-grid-xs-6"
+                >
+                  <span
+                    class="makeStyles-cardFontAccent-1001"
+                  >
+                    Jul 15, 2020
+                  </span>
+                </div>
+                <div
+                  class="MuiGrid-root cardBody-item MuiGrid-item MuiGrid-grid-xs-6"
+                >
+                  <p
+                    class="MuiTypography-root makeStyles-cardFont-999 MuiTypography-body1"
+                  >
+                    Planned Months:
+                  </p>
+                </div>
+                <div
+                  class="MuiGrid-root cardBody-item MuiGrid-item MuiGrid-grid-xs-6"
+                >
+                  <span
+                    class="makeStyles-cardFontAccent-1001"
+                  >
+                    0
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="MuiGrid-root cardBody-row MuiGrid-container"
+          >
+            <div
+              class="MuiGrid-root cardBody-item MuiGrid-item MuiGrid-grid-xs-6"
+            >
+              <p
+                class="MuiTypography-root makeStyles-cardFont-999 makeStyles-cardHeavyAccent-1002 makeStyles-cardTitle-1004 MuiTypography-body1"
+              >
+                Time Zone
+              </p>
+              <div
+                class="MuiGrid-root MuiGrid-container"
+              >
+                <div
+                  class="MuiGrid-root cardBody-item MuiGrid-item MuiGrid-grid-xs-6"
+                >
+                  <p
+                    class="MuiTypography-root makeStyles-cardFont-999 MuiTypography-body1"
+                  >
+                    Project Time Zone:
+                  </p>
+                </div>
+                <div
+                  class="MuiGrid-root cardBody-item MuiGrid-item MuiGrid-grid-xs-6"
+                >
+                  <span
+                    class="makeStyles-cardFontAccent-1001 makeStyles-noWrap-998"
+                  >
+                    -
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="MuiGrid-root cardBody-row MuiGrid-container"
+          >
+            <div
+              class="MuiGrid-root cardBody-item MuiGrid-item MuiGrid-grid-xs-12"
+            >
+              <p
+                class="MuiTypography-root makeStyles-cardFont-999 makeStyles-cardHeavyAccent-1002 makeStyles-cardTitle-1004 MuiTypography-body1"
+              >
+                NYC LL196
+              </p>
+            </div>
+            <div
+              class="MuiGrid-root MuiGrid-container"
+            >
+              <div
+                class="MuiGrid-root cardBody-item MuiGrid-item MuiGrid-grid-xs-12"
+              >
+                <p
+                  class="MuiTypography-root makeStyles-cardFont-999 MuiTypography-body1"
+                >
+                  No
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="MuiPaper-root makeStyles-container-1138 makeStyles-boxShadow-1015 MuiPaper-outlined MuiPaper-rounded"
+      >
+        <div
+          class="MuiGrid-root MuiGrid-container MuiGrid-align-items-xs-center MuiGrid-justify-xs-space-between"
+        >
+          <div
+            class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-auto"
+          >
+            <h1
+              class="MuiTypography-root makeStyles-title-1139 MuiTypography-h1"
+            >
+              Billing Model
+            </h1>
+          </div>
+          <div
+            class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-auto"
+          />
+        </div>
+        <hr
+          class="MuiDivider-root makeStyles-divider-1141"
+        />
+        <div
+          class="makeStyles-reviewCardBody-1020"
+        >
+          <div
+            class="MuiGrid-root cardBody-row MuiGrid-container"
+          >
+            <div
+              class="MuiGrid-root cardBody-item MuiGrid-item MuiGrid-grid-xs-6"
+            >
+              <p
+                class="MuiTypography-root makeStyles-cardFont-999 makeStyles-cardFontAccent-1001 makeStyles-cardTitle-1004 makeStyles-cardHeavyAccent-1002 MuiTypography-body1"
+              >
+                Badge Model
+              </p>
+              <div
+                class="MuiGrid-root MuiGrid-container"
+              >
+                <div
+                  class="MuiGrid-root cardBody-item MuiGrid-item MuiGrid-grid-xs-6"
+                >
+                  <p
+                    class="MuiTypography-root makeStyles-cardFont-999 MuiTypography-body1"
+                  >
+                    Worker Badge Price:
+                  </p>
+                </div>
+                <div
+                  class="MuiGrid-root cardBody-item MuiGrid-item MuiGrid-grid-xs-6"
+                >
+                  <p
+                    class="MuiTypography-root makeStyles-cardFont-999 MuiTypography-body1"
+                  >
+                    <strong>
+                      -
+                    </strong>
+                  </p>
+                </div>
+                <div
+                  class="MuiGrid-root cardBody-item MuiGrid-item MuiGrid-grid-xs-6"
+                >
+                  <p
+                    class="MuiTypography-root makeStyles-cardFont-999 MuiTypography-body1"
+                  >
+                    Worker Badge Reprint Price:
+                  </p>
+                </div>
+                <div
+                  class="MuiGrid-root cardBody-item MuiGrid-item MuiGrid-grid-xs-6"
+                >
+                  <p
+                    class="MuiTypography-root makeStyles-cardFont-999 MuiTypography-body1"
+                  >
+                    <strong>
+                      -
+                    </strong>
+                  </p>
+                </div>
+                <div
+                  class="MuiGrid-root cardBody-item MuiGrid-item MuiGrid-grid-xs-6"
+                >
+                  <p
+                    class="MuiTypography-root makeStyles-cardFont-999 MuiTypography-body1"
+                  >
+                    Visitor Badge Price:
+                  </p>
+                </div>
+                <div
+                  class="MuiGrid-root cardBody-item MuiGrid-item MuiGrid-grid-xs-6"
+                >
+                  <p
+                    class="MuiTypography-root makeStyles-cardFont-999 MuiTypography-body1"
+                  >
+                    <strong>
+                      -
+                    </strong>
+                  </p>
+                </div>
+                <div
+                  class="MuiGrid-root cardBody-item MuiGrid-item MuiGrid-grid-xs-6"
+                >
+                  <p
+                    class="MuiTypography-root makeStyles-cardFont-999 MuiTypography-body1"
+                  >
+                    Visitor Badge Reprint Price:
+                  </p>
+                </div>
+                <div
+                  class="MuiGrid-root cardBody-item MuiGrid-item MuiGrid-grid-xs-6"
+                >
+                  <p
+                    class="MuiTypography-root makeStyles-cardFont-999 MuiTypography-body1"
+                  >
+                    <strong>
+                      -
+                    </strong>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div
+              class="MuiGrid-root cardBody-item MuiGrid-item MuiGrid-grid-xs-6"
+            >
+              <p
+                class="MuiTypography-root makeStyles-cardFont-999 makeStyles-cardFontAccent-1001 makeStyles-cardTitle-1004 makeStyles-cardHeavyAccent-1002 MuiTypography-body1"
+              >
+                Responsible for billing
+              </p>
+              <p
+                class="MuiTypography-root makeStyles-cardFont-999 MuiTypography-body1"
+              >
+                Each client pays for its own workers
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="MuiPaper-root makeStyles-container-1138 makeStyles-boxShadow-1015 MuiPaper-outlined MuiPaper-rounded"
+      >
+        <div
+          class="MuiGrid-root MuiGrid-container MuiGrid-align-items-xs-center MuiGrid-justify-xs-space-between"
+        >
+          <div
+            class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-auto"
+          >
+            <h1
+              class="MuiTypography-root makeStyles-title-1139 MuiTypography-h1"
+            >
+              Addresses and Locations
+            </h1>
+          </div>
+          <div
+            class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-auto"
+          />
+        </div>
+        <hr
+          class="MuiDivider-root makeStyles-divider-1141"
+        />
+        <div
+          class="makeStyles-reviewCardBody-1020"
+        >
+          <div
+            class="MuiGrid-root cardBody-row MuiGrid-container"
+          >
+            <div
+              class="MuiGrid-root cardBody-item MuiGrid-item MuiGrid-grid-xs-6"
+            >
+              <p
+                class="MuiTypography-root makeStyles-cardFont-999 makeStyles-cardHeavyAccent-1002 makeStyles-cardTitle-1004 MuiTypography-body1"
+              >
+                Job Site Address
+              </p>
+              <p
+                class="MuiTypography-root makeStyles-cardFont-999  MuiTypography-body1"
+              >
+                
+                <span
+                  class=" "
+                >
+                  -
+                </span>
+              </p>
+              <p
+                class="MuiTypography-root makeStyles-cardFont-999  MuiTypography-body1"
+              >
+                
+                
+                
+                
+              </p>
+              <div />
+            </div>
+            <div
+              class="MuiGrid-root cardBody-item MuiGrid-item MuiGrid-grid-xs-6"
+            >
+              <p
+                class="MuiTypography-root makeStyles-cardFont-999 makeStyles-cardHeavyAccent-1002 makeStyles-cardTitle-1004 MuiTypography-body1"
+              >
+                Badging Site Address
+              </p>
+              <p
+                class="MuiTypography-root makeStyles-cardFont-999 MuiTypography-body1"
+              >
+                Same as Job Site Address
+              </p>
+            </div>
+          </div>
+          <div
+            class="MuiGrid-root cardBody-row MuiGrid-container"
+          >
+            <div
+              class="MuiGrid-root cardBody-item MuiGrid-item MuiGrid-grid-xs-6"
+            >
+              <p
+                class="MuiTypography-root makeStyles-cardFont-999 makeStyles-cardHeavyAccent-1002 makeStyles-cardTitle-1004 MuiTypography-body1"
+              >
+                Locations
+              </p>
+            </div>
+          </div>
+          <div
+            class="MuiGrid-root cardBody-row MuiGrid-container"
+          >
+            <div
+              class="MuiGrid-root cardBody-item MuiGrid-item MuiGrid-grid-xs-6"
+            >
+              <p
+                class="MuiTypography-root makeStyles-cardFont-999 makeStyles-cardHeavyAccent-1002 makeStyles-cardTitle-1004 MuiTypography-body1"
+              >
+                Mailing Address
+              </p>
+              <p
+                class="MuiTypography-root makeStyles-cardFont-999 MuiTypography-body1"
+              >
+                Same as
+                 
+                Job Site Address
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="MuiPaper-root makeStyles-container-1138 makeStyles-boxShadow-1015 MuiPaper-outlined MuiPaper-rounded"
+      >
+        <div
+          class="MuiGrid-root MuiGrid-container MuiGrid-align-items-xs-center MuiGrid-justify-xs-space-between"
+        >
+          <div
+            class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-auto"
+          >
+            <h1
+              class="MuiTypography-root makeStyles-title-1139 MuiTypography-h1"
+            >
+              Certifications and Trainings
+            </h1>
+          </div>
+          <div
+            class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-auto"
+          />
+        </div>
+        <hr
+          class="MuiDivider-root makeStyles-divider-1141"
+        />
+        <div
+          class="makeStyles-reviewCardBody-1020"
+        >
+          <div
+            class="MuiGrid-root cardBody-row MuiGrid-container"
+          >
+            <div
+              class="MuiGrid-root cardBody-item MuiGrid-item MuiGrid-grid-xs-6"
+            >
+              <p
+                class="MuiTypography-root makeStyles-cardFont-999 makeStyles-cardFontAccent-1001 makeStyles-cardTitle-1004 makeStyles-cardHeavyAccent-1002 MuiTypography-body1"
+              >
+                Certifications
+              </p>
+              <p
+                class="MuiTypography-root makeStyles-cardFontNoEllipsis-1000 makeStyles-cardFont-999 MuiTypography-body1"
+              >
+                Group Name.
+              </p>
+            </div>
+            <div
+              class="MuiGrid-root cardBody-item MuiGrid-item MuiGrid-grid-xs-6"
+            >
+              <p
+                class="MuiTypography-root makeStyles-cardFont-999 makeStyles-cardFontAccent-1001 makeStyles-cardTitle-1004 makeStyles-cardHeavyAccent-1002 MuiTypography-body1"
+              >
+                Trainings
+              </p>
+              <p
+                class="MuiTypography-root makeStyles-cardFontNoEllipsis-1000 makeStyles-cardFont-999 MuiTypography-body1"
+              >
+                -
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="MuiPaper-root makeStyles-container-1138 makeStyles-boxShadow-1015 MuiPaper-outlined MuiPaper-rounded"
+      >
+        <div
+          class="MuiGrid-root MuiGrid-container MuiGrid-align-items-xs-center MuiGrid-justify-xs-space-between"
+        >
+          <div
+            class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-auto"
+          >
+            <h1
+              class="MuiTypography-root makeStyles-title-1139 MuiTypography-h1"
+            >
+              Worker Consent Form
+            </h1>
+          </div>
+          <div
+            class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-auto"
+          />
+        </div>
+        <hr
+          class="MuiDivider-root makeStyles-divider-1141"
+        />
+        <div
+          class="makeStyles-reviewCardBody-1020"
+        >
+          <div
+            class="MuiGrid-root cardBody-row MuiGrid-container"
+          >
+            <div
+              class="MuiGrid-root cardBody-item MuiGrid-item MuiGrid-grid-xs-12"
+            >
+              <p
+                class="MuiTypography-root makeStyles-cardFont-999 makeStyles-cardHeavyAccent-1002 makeStyles-cardTitle-1004 MuiTypography-body1"
+              >
+                Consent Form Name
+              </p>
+              <div
+                class="MuiGrid-root cardBody-row MuiGrid-container"
+              >
+                <div
+                  class="MuiGrid-root cardBody-item MuiGrid-item MuiGrid-grid-xs-2"
+                >
+                  <p
+                    class="MuiTypography-root makeStyles-cardFont-999 MuiTypography-body1"
+                  >
+                    English Version:
+                  </p>
+                </div>
+                <div
+                  class="MuiGrid-root cardBody-item MuiGrid-item MuiGrid-grid-xs-10"
+                >
+                  <p
+                    class="MuiTypography-root makeStyles-cardFont-999 MuiTypography-body1"
+                  >
+                    <strong />
+                  </p>
+                </div>
+              </div>
+              <div
+                class="MuiGrid-root cardBody-row MuiGrid-container"
+              >
+                <div
+                  class="MuiGrid-root cardBody-item MuiGrid-item MuiGrid-grid-xs-2"
+                >
+                  <p
+                    class="MuiTypography-root makeStyles-cardFont-999 MuiTypography-body1"
+                  >
+                    Spanish Version:
+                  </p>
+                </div>
+                <div
+                  class="MuiGrid-root cardBody-item MuiGrid-item MuiGrid-grid-xs-10"
+                >
+                  <p
+                    class="MuiTypography-root makeStyles-cardFont-999 MuiTypography-body1"
+                  >
+                    <strong />
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="MuiGrid-root cardBody-row MuiGrid-container"
+          >
+            <div
+              class="MuiGrid-root cardBody-item MuiGrid-item MuiGrid-grid-xs-12"
+            >
+              <p
+                class="MuiTypography-root makeStyles-cardFont-999 makeStyles-cardFontAccent-1001 makeStyles-cardTitle-1004 makeStyles-cardHeavyAccent-1002 MuiTypography-body1"
+              >
+                Predefined Inputs
+              </p>
+              <p
+                class="MuiTypography-root makeStyles-cardFont-999 makeStyles-cardFontNoEllipsis-1000 MuiTypography-body1"
+              >
+                <span>
+                  -
+                </span>
+              </p>
+            </div>
+          </div>
+          <div
+            class="MuiGrid-root cardBody-row MuiGrid-container"
+          >
+            <div
+              class="MuiGrid-root cardBody-item MuiGrid-item MuiGrid-grid-xs-12"
+            >
+              <p
+                class="MuiTypography-root makeStyles-cardFont-999 makeStyles-cardHeavyAccent-1002 makeStyles-cardTitle-1004 MuiTypography-body1"
+              >
+                Legal
+              </p>
+              <div
+                class="MuiGrid-root cardBody-row MuiGrid-container"
+              >
+                <div
+                  class="MuiGrid-root cardBody-item MuiGrid-item MuiGrid-grid-xs-2"
+                >
+                  <p
+                    class="MuiTypography-root makeStyles-cardFont-999 MuiTypography-body1"
+                  >
+                    English Version:
+                  </p>
+                </div>
+                <div
+                  class="MuiGrid-root cardBody-item MuiGrid-item MuiGrid-grid-xs-10"
+                >
+                  <p
+                    class="MuiTypography-root makeStyles-cardFont-999 MuiTypography-body1"
+                  >
+                    <strong>
+                      Consent from
+                    </strong>
+                  </p>
+                </div>
+              </div>
+              <div
+                class="MuiGrid-root cardBody-row MuiGrid-container"
+              >
+                <div
+                  class="MuiGrid-root cardBody-item MuiGrid-item MuiGrid-grid-xs-2"
+                >
+                  <p
+                    class="MuiTypography-root makeStyles-cardFont-999 MuiTypography-body1"
+                  >
+                    Spanish Version:
+                  </p>
+                </div>
+                <div
+                  class="MuiGrid-root cardBody-item MuiGrid-item MuiGrid-grid-xs-10"
+                >
+                  <p
+                    class="MuiTypography-root makeStyles-cardFont-999 MuiTypography-body1"
+                  >
+                    <strong>
+                      Formulario de consentimiento
+                    </strong>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="MuiPaper-root makeStyles-container-1138 makeStyles-boxShadow-1015 MuiPaper-outlined MuiPaper-rounded"
+      >
+        <div
+          class="MuiGrid-root MuiGrid-container MuiGrid-align-items-xs-center MuiGrid-justify-xs-space-between"
+        >
+          <div
+            class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-auto"
+          >
+            <h1
+              class="MuiTypography-root makeStyles-title-1139 MuiTypography-h1"
+            >
+              Credit Card
+            </h1>
+          </div>
+          <div
+            class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-auto"
+          />
+        </div>
+        <hr
+          class="MuiDivider-root makeStyles-divider-1141"
+        />
+        <div
+          class="makeStyles-cardContainer-1079"
+        >
+          <div
+            class="MuiPaper-root MuiCard-root  makeStyles-cardItem-1144 makeStyles-cardItemClickable-1145 makeStyles-cardItemSelected-1151 MuiPaper-elevation1 MuiPaper-rounded"
+            data-testid="card-item"
+            role="button"
+          >
+            <p
+              class="MuiTypography-root makeStyles-creditCardTitle-1154 MuiTypography-body1"
+            >
+              CREDIT CARD
+            </p>
+            <div
+              class="makeStyles-cardNumberWrapper-1163"
+            >
+              <p
+                class="MuiTypography-root makeStyles-creditCardNumber-1156 MuiTypography-body1"
+              >
+                **** **** **** undefined
+              </p>
+              <div
+                class="makeStyles-creditCardLogoContainer-1158"
+              >
+                <div
+                  class="makeStyles-creditCardLogo-1157"
+                >
+                  <svg
+                    class="makeStyles-creditCardIconImage-1153"
+                  >
+                    credit-card.svg
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <div>
+              <p
+                class="MuiTypography-root makeStyles-creditCardHolder-1155 MuiTypography-body1"
+              >
+                
+              </p>
+              <p
+                class="MuiTypography-root makeStyles-creditCardHolder-1155 MuiTypography-body1"
+              />
+            </div>
+            <span
+              class="makeStyles-cardSelectedIcon-1152"
+            >
+              <svg>
+                accepted.svg
+              </svg>
+            </span>
+          </div>
+        </div>
+      </div>
+      <div
+        class="MuiPaper-root makeStyles-container-1138  MuiPaper-outlined MuiPaper-rounded"
+      >
+        <div
+          class="MuiGrid-root MuiGrid-container MuiGrid-align-items-xs-center MuiGrid-justify-xs-space-between"
+        >
+          <div
+            class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-auto"
+          >
+            <h1
+              class="MuiTypography-root makeStyles-title-1139 MuiTypography-h1"
+            >
+              Service Agreement
+            </h1>
+          </div>
+          <div
+            class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-auto"
+          >
+            <span
+              class=" makeStyles-secondaryActions-1140"
+            />
+          </div>
+        </div>
+        <hr
+          class="MuiDivider-root makeStyles-divider-1141"
+        />
+        <div
+          class="makeStyles-cardContentPadding-943"
+        >
+          <p
+            class="MuiTypography-root makeStyles-cardFontParagraph-1003 MuiTypography-body1"
+          >
+            Hereinafter referred to as the “Contractor”, for the considerations hereinafter expressed, agree together as follows:
+
+    The purpose of this agreement is to allow the Contractor to use the services provided by FC Construction Services (FCA) as a risk management tool in screening workers for jobsite access.
+
+    FCA will invoice weekly. All invoices are due and payable upon receipt. FCA will automatically debit the credit card provided by the Contractor on the date of invoice. Invoices are made available to the Contractor via FCA website. Contractor is responsible for payment of any unpaid invoices for services utilized by Contractor’s subcontractor(s).
+
+    It is the sole responsibility of the Contractor to secure and to furnish FCA proper and correct information for each applicant sufficient for FCA to perform the services contracted. The Contractor certifies to FCA that it will comply with all applicable state and federal laws, including, but not limited to, the Fair Credit Reporting Act (15 USC 1681) and that information received from FCA will not be used in violation of any equal employment opportunity law or regulation. Contractor hereby releases FCA and its affiliated companies and the officers, agents, employees and independent contractors of FCA and its affiliated companies from liability for Contractor’s noncompliance with all applicable laws, rules and regulations.
+
+    This agreement shall become effective on Contractor date of sign up and shall remain in force and effect until modified or suspended by either party with thirty days advance written notice.
+          </p>
+          <label
+            class="MuiFormControlLabel-root makeStyles-serviceAgreementCheckbox-944"
+          >
+            <span
+              aria-disabled="false"
+              class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-1169 MuiCheckbox-root MuiCheckbox-colorSecondary MuiIconButton-colorSecondary"
+              data-testid="multiple-checkbox"
+            >
+              <span
+                class="MuiIconButton-label"
+              >
+                <input
+                  class="PrivateSwitchBase-input-1172"
+                  data-indeterminate="false"
+                  data-testid="service-agreement-accept"
+                  name="serviceAgreementAccept"
+                  type="checkbox"
+                  value="serviceAgreementAccept"
+                />
+                <svg
+                  aria-hidden="true"
+                  class="MuiSvgIcon-root makeStyles-iconRoot-1167 "
+                  focusable="false"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z"
+                  />
+                </svg>
+              </span>
+              <span
+                class="MuiTouchRipple-root"
+              />
+            </span>
+            <span
+              class="MuiTypography-root MuiFormControlLabel-label MuiTypography-body1"
+            >
+              By accepting the project you accept the Project Service Agreement.
+            </span>
+          </label>
+        </div>
+      </div>
+    </div>
+    <header
+      class="MuiPaper-root MuiAppBar-root MuiAppBar-positionFixed MuiAppBar-colorDefault makeStyles-floatingActionBar-942 mui-fixed MuiPaper-elevation4"
+    >
+      <button
+        class="MuiButtonBase-root MuiButton-root MuiButton-contained false makeStyles-createButton-949 makeStyles-floatingAppBarButton-967 makeStyles-primaryButtonLarger-954 MuiButton-containedPrimary MuiButton-containedSizeLarge MuiButton-sizeLarge Mui-disabled MuiButton-fullWidth Mui-disabled"
+        data-testid="accept-project"
+        disabled=""
+        tabindex="-1"
+        type="submit"
+      >
+        <span
+          class="MuiButton-label"
+        >
+          <span
+            class="makeStyles-textWrapper-1175"
+          >
+            Go to Payment Method
+          </span>
+        </span>
+      </button>
+    </header>
+  </div>
+</div>
+`;
+
+exports[`ProjectInvitation should render payment settings step 1`] = `
+<div>
+  <div
+    class="makeStyles-generalListMarginBottom-1209"
+    id="projectInformation"
+    style="width: 100%; background-color: rgb(245, 245, 245); padding: 2.5rem;"
+  >
+    <div
+      class="client-list-header"
+    >
+      <p
+        class="MuiTypography-root makeStyles-stepWrapper-1176 MuiTypography-body1 MuiTypography-colorPrimary MuiTypography-alignLeft"
+      >
+        <a
+          href="/projects"
+        >
+          Project List
+        </a>
+         
+        &gt;
+         
+        <a
+          href="/projects/invitation/9164e4c4-6521-47bb-97fd-c75ac02b2cf2"
+        >
+          Project Information
+        </a>
+         
+        &gt; Enter Credit Card Information
+      </p>
+      <h1
+        class="MuiTypography-root makeStyles-title-1211 MuiTypography-h5 MuiTypography-colorPrimary MuiTypography-alignLeft"
+      >
+        Project Name
+      </h1>
+    </div>
+    <div
+      class="makeStyles-actionBarPadding-1181"
+    >
+      <div
+        class="MuiPaper-root makeStyles-container-1232  MuiPaper-outlined MuiPaper-rounded"
+      >
+        <div
+          class="MuiGrid-root MuiGrid-container MuiGrid-align-items-xs-center MuiGrid-justify-xs-space-between"
+        >
+          <div
+            class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-auto"
+          >
+            <h1
+              class="MuiTypography-root makeStyles-title-1233 MuiTypography-h1"
+            >
+              Select Credit Card
+            </h1>
+          </div>
+          <div
+            class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-auto"
+          >
+            <span
+              class=" makeStyles-secondaryActions-1234"
+            />
+          </div>
+        </div>
+        <hr
+          class="MuiDivider-root makeStyles-divider-1235"
+        />
+        <p
+          class="MuiTypography-root makeStyles-note-1241 MuiTypography-body1"
+        >
+          Select or add a new Credit Card. The selected card will be charged every payment cycle as long as it is associated with current Project.
+        </p>
+        <div
+          class="MuiGrid-root makeStyles-selectedCards-1239 MuiGrid-container"
+        >
+          <div
+            class="MuiGrid-root MuiGrid-item MuiGrid-grid-lg-12 MuiGrid-grid-xl-12"
+          >
+            <div
+              class="makeStyles-emptyCardItem-1273 false"
+            >
+              <button
+                class="MuiButtonBase-root MuiButton-root MuiButton-text makeStyles-addNewCardButton-1295 MuiButton-textPrimary"
+                data-testid="add-card-btn"
+                tabindex="0"
+                type="button"
+              >
+                <span
+                  class="MuiButton-label"
+                >
+                  <svg>
+                    credit-card.svg
+                  </svg>
+                  ADD NEW CREDIT CARD
+                </span>
+                <span
+                  class="MuiTouchRipple-root"
+                />
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <header
+      class="MuiPaper-root MuiAppBar-root MuiAppBar-positionFixed MuiAppBar-colorDefault makeStyles-floatingActionBar-1177 mui-fixed MuiPaper-elevation4"
+    >
+      <button
+        class="MuiButtonBase-root MuiButton-root MuiButton-contained false makeStyles-createButton-1184 makeStyles-floatingAppBarButton-1202 makeStyles-primaryButtonLarger-1189 MuiButton-containedPrimary MuiButton-containedSizeLarge MuiButton-sizeLarge Mui-disabled MuiButton-fullWidth Mui-disabled"
+        data-testid="accept-project"
+        disabled=""
+        tabindex="-1"
+        type="submit"
+      >
+        <span
+          class="MuiButton-label"
+        >
+          <span
+            class="makeStyles-textWrapper-1299"
+          >
+            Accept Project
+          </span>
+        </span>
+      </button>
+    </header>
+  </div>
+</div>
+`;
+
+exports[`ProjectInvitation should show loading button 1`] = `
+<div>
+  <div
+    class="makeStyles-generalListMarginBottom-739"
+    id="projectInformation"
+    style="width: 100%; background-color: rgb(245, 245, 245); padding: 2.5rem;"
+  >
+    <div
+      class="client-list-header"
+    >
+      <p
+        class="MuiTypography-root makeStyles-stepWrapper-706 MuiTypography-body1 MuiTypography-colorPrimary MuiTypography-alignLeft"
+      >
+        <a
+          href="/projects"
+        >
+          Project List
+        </a>
+         
+        &gt;
+         
+        Project Information
+         
+        
+      </p>
+      <h1
+        class="MuiTypography-root makeStyles-title-741 MuiTypography-h5 MuiTypography-colorPrimary MuiTypography-alignLeft"
+      >
+        Project Name
+      </h1>
+    </div>
+    <div
+      class="makeStyles-actionBarPadding-711"
+    >
+      <div
+        class="MuiPaper-root makeStyles-container-903 makeStyles-boxShadow-780 MuiPaper-outlined MuiPaper-rounded"
+      >
+        <div
+          class="MuiGrid-root MuiGrid-container MuiGrid-align-items-xs-center MuiGrid-justify-xs-space-between"
+        >
+          <div
+            class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-auto"
+          >
+            <h1
+              class="MuiTypography-root makeStyles-title-904 MuiTypography-h1"
+            >
+              General Information
+            </h1>
+          </div>
+          <div
+            class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-auto"
+          />
+        </div>
+        <hr
+          class="MuiDivider-root makeStyles-divider-906"
+        />
+        <div
+          class="makeStyles-reviewCardBody-785"
+        >
+          <div
+            class="MuiGrid-root cardBody-row MuiGrid-container"
+          >
+            <div
+              class="MuiGrid-root cardBody-item MuiGrid-item MuiGrid-grid-xs-6"
+            >
+              <p
+                class="MuiTypography-root makeStyles-cardFont-764 makeStyles-cardHeavyAccent-767 makeStyles-cardTitle-769 MuiTypography-body1"
+              >
+                Project Name
+              </p>
+              <p
+                class="MuiTypography-root makeStyles-cardFont-764 makeStyles-descriptionTitle-819 MuiTypography-body1"
+              >
+                Project Name
+              </p>
+              <p
+                class="MuiTypography-root makeStyles-cardFont-764 makeStyles-descriptionFont-818 MuiTypography-body1"
+              >
+                description
+              </p>
+            </div>
+            <div
+              class="MuiGrid-root cardBody-item MuiGrid-item MuiGrid-grid-xs-6"
+            >
+              <p
+                class="MuiTypography-root makeStyles-cardFont-764 makeStyles-cardHeavyAccent-767 makeStyles-cardTitle-769 MuiTypography-body1"
+              >
+                Information
+              </p>
+              <div
+                class="MuiGrid-root MuiGrid-container"
+              >
+                <div
+                  class="MuiGrid-root cardBody-item MuiGrid-item MuiGrid-grid-xs-6"
+                >
+                  <p
+                    class="MuiTypography-root makeStyles-cardFont-764 MuiTypography-body1"
+                  >
+                    Category:
+                  </p>
+                </div>
+                <div
+                  class="MuiGrid-root cardBody-item MuiGrid-item MuiGrid-grid-xs-6"
+                >
+                  <span
+                    class="makeStyles-cardFontAccent-766 makeStyles-spanEllipsis-838"
+                  >
+                    category-1
+                  </span>
+                </div>
+                <div
+                  class="MuiGrid-root cardBody-item MuiGrid-item MuiGrid-grid-xs-6"
+                >
+                  <p
+                    class="MuiTypography-root makeStyles-cardFont-764 MuiTypography-body1"
+                  >
+                    FCA Region:
+                  </p>
+                </div>
+                <div
+                  class="MuiGrid-root cardBody-item MuiGrid-item MuiGrid-grid-xs-6"
+                >
+                  <span
+                    class="makeStyles-cardFontAccent-766 makeStyles-spanEllipsis-838"
+                  >
+                    region-1
+                  </span>
+                </div>
+                <div
+                  class="MuiGrid-root cardBody-item MuiGrid-item MuiGrid-grid-xs-6"
+                >
+                  <p
+                    class="MuiTypography-root makeStyles-cardFont-764 MuiTypography-body1"
+                  >
+                    FCA NAE:
+                  </p>
+                </div>
+                <div
+                  class="MuiGrid-root cardBody-item MuiGrid-item MuiGrid-grid-xs-6"
+                >
+                  <span
+                    class="makeStyles-cardFontAccent-766 makeStyles-spanEllipsis-838"
+                  >
+                    -
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="MuiGrid-root cardBody-row MuiGrid-container"
+          >
+            <div
+              class="MuiGrid-root cardBody-item MuiGrid-item MuiGrid-grid-xs-6"
+            >
+              <p
+                class="MuiTypography-root makeStyles-cardFont-764 makeStyles-cardHeavyAccent-767 makeStyles-cardTitle-769 MuiTypography-body1"
+              >
+                Duration
+              </p>
+              <div
+                class="MuiGrid-root MuiGrid-container"
+              >
+                <div
+                  class="MuiGrid-root cardBody-item MuiGrid-item MuiGrid-grid-xs-6"
+                >
+                  <p
+                    class="MuiTypography-root makeStyles-cardFont-764 MuiTypography-body1"
+                  >
+                    Start Date:
+                  </p>
+                </div>
+                <div
+                  class="MuiGrid-root cardBody-item MuiGrid-item MuiGrid-grid-xs-6"
+                >
+                  <span
+                    class="makeStyles-cardFontAccent-766"
+                  >
+                    Jul 15, 2020
+                  </span>
+                </div>
+                <div
+                  class="MuiGrid-root cardBody-item MuiGrid-item MuiGrid-grid-xs-6"
+                >
+                  <p
+                    class="MuiTypography-root makeStyles-cardFont-764 MuiTypography-body1"
+                  >
+                    End Date:
+                  </p>
+                </div>
+                <div
+                  class="MuiGrid-root cardBody-item MuiGrid-item MuiGrid-grid-xs-6"
+                >
+                  <span
+                    class="makeStyles-cardFontAccent-766"
+                  >
+                    Jul 15, 2020
+                  </span>
+                </div>
+                <div
+                  class="MuiGrid-root cardBody-item MuiGrid-item MuiGrid-grid-xs-6"
+                >
+                  <p
+                    class="MuiTypography-root makeStyles-cardFont-764 MuiTypography-body1"
+                  >
+                    Planned Months:
+                  </p>
+                </div>
+                <div
+                  class="MuiGrid-root cardBody-item MuiGrid-item MuiGrid-grid-xs-6"
+                >
+                  <span
+                    class="makeStyles-cardFontAccent-766"
+                  >
+                    0
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="MuiGrid-root cardBody-row MuiGrid-container"
+          >
+            <div
+              class="MuiGrid-root cardBody-item MuiGrid-item MuiGrid-grid-xs-6"
+            >
+              <p
+                class="MuiTypography-root makeStyles-cardFont-764 makeStyles-cardHeavyAccent-767 makeStyles-cardTitle-769 MuiTypography-body1"
+              >
+                Time Zone
+              </p>
+              <div
+                class="MuiGrid-root MuiGrid-container"
+              >
+                <div
+                  class="MuiGrid-root cardBody-item MuiGrid-item MuiGrid-grid-xs-6"
+                >
+                  <p
+                    class="MuiTypography-root makeStyles-cardFont-764 MuiTypography-body1"
+                  >
+                    Project Time Zone:
+                  </p>
+                </div>
+                <div
+                  class="MuiGrid-root cardBody-item MuiGrid-item MuiGrid-grid-xs-6"
+                >
+                  <span
+                    class="makeStyles-cardFontAccent-766 makeStyles-noWrap-763"
+                  >
+                    -
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="MuiGrid-root cardBody-row MuiGrid-container"
+          >
+            <div
+              class="MuiGrid-root cardBody-item MuiGrid-item MuiGrid-grid-xs-12"
+            >
+              <p
+                class="MuiTypography-root makeStyles-cardFont-764 makeStyles-cardHeavyAccent-767 makeStyles-cardTitle-769 MuiTypography-body1"
+              >
+                NYC LL196
+              </p>
+            </div>
+            <div
+              class="MuiGrid-root MuiGrid-container"
+            >
+              <div
+                class="MuiGrid-root cardBody-item MuiGrid-item MuiGrid-grid-xs-12"
+              >
+                <p
+                  class="MuiTypography-root makeStyles-cardFont-764 MuiTypography-body1"
+                >
+                  No
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="MuiPaper-root makeStyles-container-903 makeStyles-boxShadow-780 MuiPaper-outlined MuiPaper-rounded"
+      >
+        <div
+          class="MuiGrid-root MuiGrid-container MuiGrid-align-items-xs-center MuiGrid-justify-xs-space-between"
+        >
+          <div
+            class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-auto"
+          >
+            <h1
+              class="MuiTypography-root makeStyles-title-904 MuiTypography-h1"
+            >
+              Billing Model
+            </h1>
+          </div>
+          <div
+            class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-auto"
+          />
+        </div>
+        <hr
+          class="MuiDivider-root makeStyles-divider-906"
+        />
+        <div
+          class="makeStyles-reviewCardBody-785"
+        >
+          <div
+            class="MuiGrid-root cardBody-row MuiGrid-container"
+          >
+            <div
+              class="MuiGrid-root cardBody-item MuiGrid-item MuiGrid-grid-xs-6"
+            >
+              <p
+                class="MuiTypography-root makeStyles-cardFont-764 makeStyles-cardFontAccent-766 makeStyles-cardTitle-769 makeStyles-cardHeavyAccent-767 MuiTypography-body1"
+              >
+                Badge Model
+              </p>
+              <div
+                class="MuiGrid-root MuiGrid-container"
+              >
+                <div
+                  class="MuiGrid-root cardBody-item MuiGrid-item MuiGrid-grid-xs-6"
+                >
+                  <p
+                    class="MuiTypography-root makeStyles-cardFont-764 MuiTypography-body1"
+                  >
+                    Worker Badge Price:
+                  </p>
+                </div>
+                <div
+                  class="MuiGrid-root cardBody-item MuiGrid-item MuiGrid-grid-xs-6"
+                >
+                  <p
+                    class="MuiTypography-root makeStyles-cardFont-764 MuiTypography-body1"
+                  >
+                    <strong>
+                      -
+                    </strong>
+                  </p>
+                </div>
+                <div
+                  class="MuiGrid-root cardBody-item MuiGrid-item MuiGrid-grid-xs-6"
+                >
+                  <p
+                    class="MuiTypography-root makeStyles-cardFont-764 MuiTypography-body1"
+                  >
+                    Worker Badge Reprint Price:
+                  </p>
+                </div>
+                <div
+                  class="MuiGrid-root cardBody-item MuiGrid-item MuiGrid-grid-xs-6"
+                >
+                  <p
+                    class="MuiTypography-root makeStyles-cardFont-764 MuiTypography-body1"
+                  >
+                    <strong>
+                      -
+                    </strong>
+                  </p>
+                </div>
+                <div
+                  class="MuiGrid-root cardBody-item MuiGrid-item MuiGrid-grid-xs-6"
+                >
+                  <p
+                    class="MuiTypography-root makeStyles-cardFont-764 MuiTypography-body1"
+                  >
+                    Visitor Badge Price:
+                  </p>
+                </div>
+                <div
+                  class="MuiGrid-root cardBody-item MuiGrid-item MuiGrid-grid-xs-6"
+                >
+                  <p
+                    class="MuiTypography-root makeStyles-cardFont-764 MuiTypography-body1"
+                  >
+                    <strong>
+                      -
+                    </strong>
+                  </p>
+                </div>
+                <div
+                  class="MuiGrid-root cardBody-item MuiGrid-item MuiGrid-grid-xs-6"
+                >
+                  <p
+                    class="MuiTypography-root makeStyles-cardFont-764 MuiTypography-body1"
+                  >
+                    Visitor Badge Reprint Price:
+                  </p>
+                </div>
+                <div
+                  class="MuiGrid-root cardBody-item MuiGrid-item MuiGrid-grid-xs-6"
+                >
+                  <p
+                    class="MuiTypography-root makeStyles-cardFont-764 MuiTypography-body1"
+                  >
+                    <strong>
+                      -
+                    </strong>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div
+              class="MuiGrid-root cardBody-item MuiGrid-item MuiGrid-grid-xs-6"
+            >
+              <p
+                class="MuiTypography-root makeStyles-cardFont-764 makeStyles-cardFontAccent-766 makeStyles-cardTitle-769 makeStyles-cardHeavyAccent-767 MuiTypography-body1"
+              >
+                Responsible for billing
+              </p>
+              <p
+                class="MuiTypography-root makeStyles-cardFont-764 MuiTypography-body1"
+              >
+                Each client pays for its own workers
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="MuiPaper-root makeStyles-container-903 makeStyles-boxShadow-780 MuiPaper-outlined MuiPaper-rounded"
+      >
+        <div
+          class="MuiGrid-root MuiGrid-container MuiGrid-align-items-xs-center MuiGrid-justify-xs-space-between"
+        >
+          <div
+            class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-auto"
+          >
+            <h1
+              class="MuiTypography-root makeStyles-title-904 MuiTypography-h1"
+            >
+              Addresses and Locations
+            </h1>
+          </div>
+          <div
+            class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-auto"
+          />
+        </div>
+        <hr
+          class="MuiDivider-root makeStyles-divider-906"
+        />
+        <div
+          class="makeStyles-reviewCardBody-785"
+        >
+          <div
+            class="MuiGrid-root cardBody-row MuiGrid-container"
+          >
+            <div
+              class="MuiGrid-root cardBody-item MuiGrid-item MuiGrid-grid-xs-6"
+            >
+              <p
+                class="MuiTypography-root makeStyles-cardFont-764 makeStyles-cardHeavyAccent-767 makeStyles-cardTitle-769 MuiTypography-body1"
+              >
+                Job Site Address
+              </p>
+              <p
+                class="MuiTypography-root makeStyles-cardFont-764  MuiTypography-body1"
+              >
+                
+                <span
+                  class=" "
+                >
+                  -
+                </span>
+              </p>
+              <p
+                class="MuiTypography-root makeStyles-cardFont-764  MuiTypography-body1"
+              >
+                
+                
+                
+                
+              </p>
+              <div />
+            </div>
+            <div
+              class="MuiGrid-root cardBody-item MuiGrid-item MuiGrid-grid-xs-6"
+            >
+              <p
+                class="MuiTypography-root makeStyles-cardFont-764 makeStyles-cardHeavyAccent-767 makeStyles-cardTitle-769 MuiTypography-body1"
+              >
+                Badging Site Address
+              </p>
+              <p
+                class="MuiTypography-root makeStyles-cardFont-764 MuiTypography-body1"
+              >
+                Same as Job Site Address
+              </p>
+            </div>
+          </div>
+          <div
+            class="MuiGrid-root cardBody-row MuiGrid-container"
+          >
+            <div
+              class="MuiGrid-root cardBody-item MuiGrid-item MuiGrid-grid-xs-6"
+            >
+              <p
+                class="MuiTypography-root makeStyles-cardFont-764 makeStyles-cardHeavyAccent-767 makeStyles-cardTitle-769 MuiTypography-body1"
+              >
+                Locations
+              </p>
+            </div>
+          </div>
+          <div
+            class="MuiGrid-root cardBody-row MuiGrid-container"
+          >
+            <div
+              class="MuiGrid-root cardBody-item MuiGrid-item MuiGrid-grid-xs-6"
+            >
+              <p
+                class="MuiTypography-root makeStyles-cardFont-764 makeStyles-cardHeavyAccent-767 makeStyles-cardTitle-769 MuiTypography-body1"
+              >
+                Mailing Address
+              </p>
+              <p
+                class="MuiTypography-root makeStyles-cardFont-764 MuiTypography-body1"
+              >
+                Same as
+                 
+                Job Site Address
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="MuiPaper-root makeStyles-container-903 makeStyles-boxShadow-780 MuiPaper-outlined MuiPaper-rounded"
+      >
+        <div
+          class="MuiGrid-root MuiGrid-container MuiGrid-align-items-xs-center MuiGrid-justify-xs-space-between"
+        >
+          <div
+            class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-auto"
+          >
+            <h1
+              class="MuiTypography-root makeStyles-title-904 MuiTypography-h1"
+            >
+              Certifications and Trainings
+            </h1>
+          </div>
+          <div
+            class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-auto"
+          />
+        </div>
+        <hr
+          class="MuiDivider-root makeStyles-divider-906"
+        />
+        <div
+          class="makeStyles-reviewCardBody-785"
+        >
+          <div
+            class="MuiGrid-root cardBody-row MuiGrid-container"
+          >
+            <div
+              class="MuiGrid-root cardBody-item MuiGrid-item MuiGrid-grid-xs-6"
+            >
+              <p
+                class="MuiTypography-root makeStyles-cardFont-764 makeStyles-cardFontAccent-766 makeStyles-cardTitle-769 makeStyles-cardHeavyAccent-767 MuiTypography-body1"
+              >
+                Certifications
+              </p>
+              <p
+                class="MuiTypography-root makeStyles-cardFontNoEllipsis-765 makeStyles-cardFont-764 MuiTypography-body1"
+              >
+                Group Name.
+              </p>
+            </div>
+            <div
+              class="MuiGrid-root cardBody-item MuiGrid-item MuiGrid-grid-xs-6"
+            >
+              <p
+                class="MuiTypography-root makeStyles-cardFont-764 makeStyles-cardFontAccent-766 makeStyles-cardTitle-769 makeStyles-cardHeavyAccent-767 MuiTypography-body1"
+              >
+                Trainings
+              </p>
+              <p
+                class="MuiTypography-root makeStyles-cardFontNoEllipsis-765 makeStyles-cardFont-764 MuiTypography-body1"
+              >
+                -
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="MuiPaper-root makeStyles-container-903 makeStyles-boxShadow-780 MuiPaper-outlined MuiPaper-rounded"
+      >
+        <div
+          class="MuiGrid-root MuiGrid-container MuiGrid-align-items-xs-center MuiGrid-justify-xs-space-between"
+        >
+          <div
+            class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-auto"
+          >
+            <h1
+              class="MuiTypography-root makeStyles-title-904 MuiTypography-h1"
+            >
+              Worker Consent Form
+            </h1>
+          </div>
+          <div
+            class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-auto"
+          />
+        </div>
+        <hr
+          class="MuiDivider-root makeStyles-divider-906"
+        />
+        <div
+          class="makeStyles-reviewCardBody-785"
+        >
+          <div
+            class="MuiGrid-root cardBody-row MuiGrid-container"
+          >
+            <div
+              class="MuiGrid-root cardBody-item MuiGrid-item MuiGrid-grid-xs-12"
+            >
+              <p
+                class="MuiTypography-root makeStyles-cardFont-764 makeStyles-cardHeavyAccent-767 makeStyles-cardTitle-769 MuiTypography-body1"
+              >
+                Consent Form Name
+              </p>
+              <div
+                class="MuiGrid-root cardBody-row MuiGrid-container"
+              >
+                <div
+                  class="MuiGrid-root cardBody-item MuiGrid-item MuiGrid-grid-xs-2"
+                >
+                  <p
+                    class="MuiTypography-root makeStyles-cardFont-764 MuiTypography-body1"
+                  >
+                    English Version:
+                  </p>
+                </div>
+                <div
+                  class="MuiGrid-root cardBody-item MuiGrid-item MuiGrid-grid-xs-10"
+                >
+                  <p
+                    class="MuiTypography-root makeStyles-cardFont-764 MuiTypography-body1"
+                  >
+                    <strong />
+                  </p>
+                </div>
+              </div>
+              <div
+                class="MuiGrid-root cardBody-row MuiGrid-container"
+              >
+                <div
+                  class="MuiGrid-root cardBody-item MuiGrid-item MuiGrid-grid-xs-2"
+                >
+                  <p
+                    class="MuiTypography-root makeStyles-cardFont-764 MuiTypography-body1"
+                  >
+                    Spanish Version:
+                  </p>
+                </div>
+                <div
+                  class="MuiGrid-root cardBody-item MuiGrid-item MuiGrid-grid-xs-10"
+                >
+                  <p
+                    class="MuiTypography-root makeStyles-cardFont-764 MuiTypography-body1"
+                  >
+                    <strong />
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="MuiGrid-root cardBody-row MuiGrid-container"
+          >
+            <div
+              class="MuiGrid-root cardBody-item MuiGrid-item MuiGrid-grid-xs-12"
+            >
+              <p
+                class="MuiTypography-root makeStyles-cardFont-764 makeStyles-cardFontAccent-766 makeStyles-cardTitle-769 makeStyles-cardHeavyAccent-767 MuiTypography-body1"
+              >
+                Predefined Inputs
+              </p>
+              <p
+                class="MuiTypography-root makeStyles-cardFont-764 makeStyles-cardFontNoEllipsis-765 MuiTypography-body1"
+              >
+                <span>
+                  -
+                </span>
+              </p>
+            </div>
+          </div>
+          <div
+            class="MuiGrid-root cardBody-row MuiGrid-container"
+          >
+            <div
+              class="MuiGrid-root cardBody-item MuiGrid-item MuiGrid-grid-xs-12"
+            >
+              <p
+                class="MuiTypography-root makeStyles-cardFont-764 makeStyles-cardHeavyAccent-767 makeStyles-cardTitle-769 MuiTypography-body1"
+              >
+                Legal
+              </p>
+              <div
+                class="MuiGrid-root cardBody-row MuiGrid-container"
+              >
+                <div
+                  class="MuiGrid-root cardBody-item MuiGrid-item MuiGrid-grid-xs-2"
+                >
+                  <p
+                    class="MuiTypography-root makeStyles-cardFont-764 MuiTypography-body1"
+                  >
+                    English Version:
+                  </p>
+                </div>
+                <div
+                  class="MuiGrid-root cardBody-item MuiGrid-item MuiGrid-grid-xs-10"
+                >
+                  <p
+                    class="MuiTypography-root makeStyles-cardFont-764 MuiTypography-body1"
+                  >
+                    <strong>
+                      Consent from
+                    </strong>
+                  </p>
+                </div>
+              </div>
+              <div
+                class="MuiGrid-root cardBody-row MuiGrid-container"
+              >
+                <div
+                  class="MuiGrid-root cardBody-item MuiGrid-item MuiGrid-grid-xs-2"
+                >
+                  <p
+                    class="MuiTypography-root makeStyles-cardFont-764 MuiTypography-body1"
+                  >
+                    Spanish Version:
+                  </p>
+                </div>
+                <div
+                  class="MuiGrid-root cardBody-item MuiGrid-item MuiGrid-grid-xs-10"
+                >
+                  <p
+                    class="MuiTypography-root makeStyles-cardFont-764 MuiTypography-body1"
+                  >
+                    <strong>
+                      Formulario de consentimiento
+                    </strong>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="MuiPaper-root makeStyles-container-903 makeStyles-boxShadow-780 MuiPaper-outlined MuiPaper-rounded"
+      >
+        <div
+          class="MuiGrid-root MuiGrid-container MuiGrid-align-items-xs-center MuiGrid-justify-xs-space-between"
+        >
+          <div
+            class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-auto"
+          >
+            <h1
+              class="MuiTypography-root makeStyles-title-904 MuiTypography-h1"
+            >
+              Credit Card
+            </h1>
+          </div>
+          <div
+            class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-auto"
+          />
+        </div>
+        <hr
+          class="MuiDivider-root makeStyles-divider-906"
+        />
+        <div
+          class="makeStyles-cardContainer-844"
+        >
+          <div
+            class="MuiPaper-root MuiCard-root  makeStyles-cardItem-909 makeStyles-cardItemClickable-910 makeStyles-cardItemSelected-916 MuiPaper-elevation1 MuiPaper-rounded"
+            data-testid="card-item"
+            role="button"
+          >
+            <p
+              class="MuiTypography-root makeStyles-creditCardTitle-919 MuiTypography-body1"
+            >
+              CREDIT CARD
+            </p>
+            <div
+              class="makeStyles-cardNumberWrapper-928"
+            >
+              <p
+                class="MuiTypography-root makeStyles-creditCardNumber-921 MuiTypography-body1"
+              >
+                **** **** **** undefined
+              </p>
+              <div
+                class="makeStyles-creditCardLogoContainer-923"
+              >
+                <div
+                  class="makeStyles-creditCardLogo-922"
+                >
+                  <svg
+                    class="makeStyles-creditCardIconImage-918"
+                  >
+                    credit-card.svg
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <div>
+              <p
+                class="MuiTypography-root makeStyles-creditCardHolder-920 MuiTypography-body1"
+              >
+                
+              </p>
+              <p
+                class="MuiTypography-root makeStyles-creditCardHolder-920 MuiTypography-body1"
+              />
+            </div>
+            <span
+              class="makeStyles-cardSelectedIcon-917"
+            >
+              <svg>
+                accepted.svg
+              </svg>
+            </span>
+          </div>
+        </div>
+      </div>
+      <div
+        class="MuiPaper-root makeStyles-container-903  MuiPaper-outlined MuiPaper-rounded"
+      >
+        <div
+          class="MuiGrid-root MuiGrid-container MuiGrid-align-items-xs-center MuiGrid-justify-xs-space-between"
+        >
+          <div
+            class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-auto"
+          >
+            <h1
+              class="MuiTypography-root makeStyles-title-904 MuiTypography-h1"
+            >
+              Service Agreement
+            </h1>
+          </div>
+          <div
+            class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-auto"
+          >
+            <span
+              class=" makeStyles-secondaryActions-905"
+            />
+          </div>
+        </div>
+        <hr
+          class="MuiDivider-root makeStyles-divider-906"
+        />
+        <div
+          class="makeStyles-cardContentPadding-708"
+        >
+          <p
+            class="MuiTypography-root makeStyles-cardFontParagraph-768 MuiTypography-body1"
+          >
+            Hereinafter referred to as the “Contractor”, for the considerations hereinafter expressed, agree together as follows:
+
+    The purpose of this agreement is to allow the Contractor to use the services provided by FC Construction Services (FCA) as a risk management tool in screening workers for jobsite access.
+
+    FCA will invoice weekly. All invoices are due and payable upon receipt. FCA will automatically debit the credit card provided by the Contractor on the date of invoice. Invoices are made available to the Contractor via FCA website. Contractor is responsible for payment of any unpaid invoices for services utilized by Contractor’s subcontractor(s).
+
+    It is the sole responsibility of the Contractor to secure and to furnish FCA proper and correct information for each applicant sufficient for FCA to perform the services contracted. The Contractor certifies to FCA that it will comply with all applicable state and federal laws, including, but not limited to, the Fair Credit Reporting Act (15 USC 1681) and that information received from FCA will not be used in violation of any equal employment opportunity law or regulation. Contractor hereby releases FCA and its affiliated companies and the officers, agents, employees and independent contractors of FCA and its affiliated companies from liability for Contractor’s noncompliance with all applicable laws, rules and regulations.
+
+    This agreement shall become effective on Contractor date of sign up and shall remain in force and effect until modified or suspended by either party with thirty days advance written notice.
+          </p>
+          <label
+            class="MuiFormControlLabel-root makeStyles-serviceAgreementCheckbox-709"
+          >
+            <span
+              aria-disabled="false"
+              class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-934 MuiCheckbox-root MuiCheckbox-colorSecondary MuiIconButton-colorSecondary"
+              data-testid="multiple-checkbox"
+            >
+              <span
+                class="MuiIconButton-label"
+              >
+                <input
+                  class="PrivateSwitchBase-input-937"
+                  data-indeterminate="false"
+                  data-testid="service-agreement-accept"
+                  name="serviceAgreementAccept"
+                  type="checkbox"
+                  value="serviceAgreementAccept"
+                />
+                <svg
+                  aria-hidden="true"
+                  class="MuiSvgIcon-root makeStyles-iconRoot-932 "
+                  focusable="false"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z"
+                  />
+                </svg>
+              </span>
+              <span
+                class="MuiTouchRipple-root"
+              />
+            </span>
+            <span
+              class="MuiTypography-root MuiFormControlLabel-label MuiTypography-body1"
+            >
+              By accepting the project you accept the Project Service Agreement.
+            </span>
+          </label>
+        </div>
+      </div>
+    </div>
+    <header
+      class="MuiPaper-root MuiAppBar-root MuiAppBar-positionFixed MuiAppBar-colorDefault makeStyles-floatingActionBar-707 mui-fixed MuiPaper-elevation4"
+    >
+      <button
+        class="MuiButtonBase-root MuiButton-root MuiButton-contained makeStyles-loading-938 makeStyles-createButton-714 makeStyles-floatingAppBarButton-732 makeStyles-primaryButtonLarger-719 MuiButton-containedPrimary MuiButton-containedSizeLarge MuiButton-sizeLarge Mui-disabled MuiButton-fullWidth Mui-disabled"
+        data-testid="accept-project"
+        disabled=""
+        tabindex="-1"
+        type="submit"
+      >
+        <span
+          class="MuiButton-label"
+        >
+          <span
+            class="makeStyles-spinnerWrapper-939"
+            data-testid="button-spinner"
+          >
+            <svg
+              class="indicator_4oezz7"
+              height="23.2"
+              width="23.2"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g
+                stroke="rgba(0, 0, 0, 0.3843137254901961)"
+                stroke-linecap="round"
+                stroke-width="2.3"
+                transform="translate(11.6, 11.6)"
+              >
+                <line
+                  style="opacity: 1;"
+                  transform="rotate(0)"
+                  x1="0"
+                  x2="0"
+                  y1="6.6"
+                  y2="9.6"
+                />
+                <line
+                  style="opacity: 0.8860544217687075;"
+                  transform="rotate(-30)"
+                  x1="0"
+                  x2="0"
+                  y1="6.6"
+                  y2="9.6"
+                />
+                <line
+                  style="opacity: 0.7721088435374149;"
+                  transform="rotate(-60)"
+                  x1="0"
+                  x2="0"
+                  y1="6.6"
+                  y2="9.6"
+                />
+                <line
+                  style="opacity: 0.6581632653061225;"
+                  transform="rotate(-90)"
+                  x1="0"
+                  x2="0"
+                  y1="6.6"
+                  y2="9.6"
+                />
+                <line
+                  style="opacity: 0.5442176870748299;"
+                  transform="rotate(-120)"
+                  x1="0"
+                  x2="0"
+                  y1="6.6"
+                  y2="9.6"
+                />
+                <line
+                  style="opacity: 0.4302721088435374;"
+                  transform="rotate(-150)"
+                  x1="0"
+                  x2="0"
+                  y1="6.6"
+                  y2="9.6"
+                />
+                <line
+                  style="opacity: 0.3163265306122449;"
+                  transform="rotate(-180)"
+                  x1="0"
+                  x2="0"
+                  y1="6.6"
+                  y2="9.6"
+                />
+                <line
+                  style="opacity: 0.3163265306122449;"
+                  transform="rotate(-210)"
+                  x1="0"
+                  x2="0"
+                  y1="6.6"
+                  y2="9.6"
+                />
+                <line
+                  style="opacity: 0.3163265306122449;"
+                  transform="rotate(-240)"
+                  x1="0"
+                  x2="0"
+                  y1="6.6"
+                  y2="9.6"
+                />
+                <line
+                  style="opacity: 0.3163265306122449;"
+                  transform="rotate(-270)"
+                  x1="0"
+                  x2="0"
+                  y1="6.6"
+                  y2="9.6"
+                />
+                <line
+                  style="opacity: 0.3163265306122449;"
+                  transform="rotate(-300)"
+                  x1="0"
+                  x2="0"
+                  y1="6.6"
+                  y2="9.6"
+                />
+                <line
+                  style="opacity: 0.3163265306122449;"
+                  transform="rotate(-330)"
+                  x1="0"
+                  x2="0"
+                  y1="6.6"
+                  y2="9.6"
+                />
+              </g>
+            </svg>
+          </span>
+          <span
+            class="makeStyles-textWrapper-940"
+          >
+            Accepting...
+          </span>
+        </span>
+      </button>
+    </header>
+  </div>
+</div>
+`;
+
+exports[`ProjectInvitation should show payment settings loading 1`] = `
+<div>
+  <div
+    class="makeStyles-generalListMarginBottom-1692"
+    id="projectInformation"
+    style="width: 100%; background-color: rgb(245, 245, 245); padding: 2.5rem;"
+  >
+    <div
+      class="client-list-header"
+    >
+      <p
+        class="MuiTypography-root makeStyles-stepWrapper-1659 MuiTypography-body1 MuiTypography-colorPrimary MuiTypography-alignLeft"
+      >
+        <a
+          href="/projects"
+        >
+          Project List
+        </a>
+         
+        &gt;
+         
+        <a
+          href="/projects/invitation/9164e4c4-6521-47bb-97fd-c75ac02b2cf2"
+        >
+          Project Information
+        </a>
+         
+        &gt; Enter Credit Card Information
+      </p>
+      <h1
+        class="MuiTypography-root makeStyles-title-1694 MuiTypography-h5 MuiTypography-colorPrimary MuiTypography-alignLeft"
+      >
+        Project Name
+      </h1>
+    </div>
+    <div
+      class="makeStyles-actionBarPadding-1664"
+    >
+      <div
+        class="MuiPaper-root makeStyles-container-1715  MuiPaper-outlined MuiPaper-rounded"
+      >
+        <div
+          class="MuiGrid-root MuiGrid-container MuiGrid-align-items-xs-center MuiGrid-justify-xs-space-between"
+        >
+          <div
+            class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-auto"
+          >
+            <h1
+              class="MuiTypography-root makeStyles-title-1716 MuiTypography-h1"
+            >
+              Select Credit Card
+            </h1>
+          </div>
+          <div
+            class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-auto"
+          >
+            <span
+              class=" makeStyles-secondaryActions-1717"
+            />
+          </div>
+        </div>
+        <hr
+          class="MuiDivider-root makeStyles-divider-1718"
+        />
+        <p
+          class="MuiTypography-root makeStyles-note-1724 MuiTypography-body1"
+        >
+          Select or add a new Credit Card. The selected card will be charged every payment cycle as long as it is associated with current Project.
+        </p>
+        Loading...
+      </div>
+    </div>
+    <header
+      class="MuiPaper-root MuiAppBar-root MuiAppBar-positionFixed MuiAppBar-colorDefault makeStyles-floatingActionBar-1660 mui-fixed MuiPaper-elevation4"
+    >
+      <button
+        class="MuiButtonBase-root MuiButton-root MuiButton-contained false makeStyles-createButton-1667 makeStyles-floatingAppBarButton-1685 makeStyles-primaryButtonLarger-1672 MuiButton-containedPrimary MuiButton-containedSizeLarge MuiButton-sizeLarge Mui-disabled MuiButton-fullWidth Mui-disabled"
+        data-testid="accept-project"
+        disabled=""
+        tabindex="-1"
+        type="submit"
+      >
+        <span
+          class="MuiButton-label"
+        >
+          <span
+            class="makeStyles-textWrapper-1758"
+          >
+            Accept Project
+          </span>
+        </span>
+      </button>
+    </header>
+  </div>
+</div>
+`;

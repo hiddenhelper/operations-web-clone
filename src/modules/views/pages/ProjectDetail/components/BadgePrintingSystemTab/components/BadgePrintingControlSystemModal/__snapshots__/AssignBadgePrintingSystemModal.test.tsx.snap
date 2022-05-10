@@ -1,0 +1,653 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AssignBadgePrintingSystemModal should render 1`] = `
+<body
+  style="padding-right: 0px; overflow: hidden;"
+>
+  <div
+    aria-hidden="true"
+  />
+  <div
+    class="MuiDialog-root makeStyles-root-254 makeStyles-modalWrapper-156 "
+    data-testid="modal-dialog"
+    role="presentation"
+    style="position: fixed; z-index: 1000; right: 0px; bottom: 0px; top: 0px; left: 0px;"
+  >
+    <div
+      aria-hidden="true"
+      class="MuiBackdrop-root"
+      style="opacity: 1; webkit-transition: opacity 225ms cubic-bezier(0.4, 0, 0.2, 1) 0ms; transition: opacity 225ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;"
+    />
+    <div
+      data-test="sentinelStart"
+      tabindex="0"
+    />
+    <div
+      class="MuiDialog-container MuiDialog-scrollPaper"
+      role="none presentation"
+      style="opacity: 1; webkit-transition: opacity 225ms cubic-bezier(0.4, 0, 0.2, 1) 0ms; transition: opacity 225ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;"
+      tabindex="-1"
+    >
+      <div
+        aria-describedby="scroll-dialog-description"
+        aria-labelledby="scroll-dialog-title"
+        class="MuiPaper-root MuiDialog-paper makeStyles-dialogPaper-157 MuiDialog-paperScrollPaper MuiDialog-paperWidthSm MuiPaper-elevation24 MuiPaper-rounded"
+        role="dialog"
+      >
+        <div
+          class="MuiDialogTitle-root makeStyles-titleContainer-144"
+          id="alert-dialog-title"
+        >
+          <h1
+            class="MuiTypography-root makeStyles-title-244 MuiTypography-h6 MuiTypography-colorSecondary MuiTypography-alignLeft"
+          >
+            Assign BPS
+          </h1>
+        </div>
+        <div
+          class="MuiDialogContent-root makeStyles-tableWrapper-205  makeStyles-tableBackground-208 makeStyles-assignTableSpacing-158 MuiDialogContent-dividers"
+        >
+          <div>
+            <div
+              class="MuiBox-root MuiBox-root-279 makeStyles-filterStatusContainer-186 makeStyles-filterStatusSpaced-187 makeStyles-filterAssignSpacing-146"
+            >
+              <div
+                class="MuiFormControl-root MuiTextField-root makeStyles-searchInput-176 makeStyles-searchSvg-177"
+                data-testid="assign-search-wrapper"
+              >
+                <div
+                  class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-formControl MuiInputBase-adornedStart MuiOutlinedInput-adornedStart"
+                >
+                  <svg>
+                    search.svg
+                  </svg>
+                  <input
+                    aria-invalid="false"
+                    autocomplete="off"
+                    class="MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputAdornedStart MuiOutlinedInput-inputAdornedStart"
+                    data-testid="search-filter"
+                    name="find"
+                    placeholder="Find a BPS..."
+                    type="text"
+                    value=""
+                  />
+                  <fieldset
+                    aria-hidden="true"
+                    class="PrivateNotchedOutline-root-280 MuiOutlinedInput-notchedOutline"
+                    style="padding-left: 8px;"
+                  >
+                    <legend
+                      class="PrivateNotchedOutline-legend-281"
+                      style="width: 0.01px;"
+                    >
+                      <span>
+                        ​
+                      </span>
+                    </legend>
+                  </fieldset>
+                </div>
+              </div>
+              <div
+                class="makeStyles-assignFilters-149"
+              >
+                <div
+                  class="makeStyles-filterElement-150"
+                >
+                  <p
+                    class="MuiTypography-root makeStyles-filterTextColor-151 MuiTypography-body1"
+                  >
+                    Show 
+                    all
+                  </p>
+                  <span
+                    class="makeStyles-dropdownIcon-228 makeStyles-boldFilter-152"
+                  >
+                    <div>
+                      <button
+                        data-testid="filter-show-all"
+                      >
+                        Show 
+                        Show all
+                      </button>
+                      <button
+                        data-testid="filter-show-selected"
+                      >
+                        Show 
+                        Show selected
+                      </button>
+                    </div>
+                  </span>
+                </div>
+                <div
+                  class="makeStyles-boldFilter-152 makeStyles-filterTextColor-151"
+                >
+                  16
+                   BPS. 
+                  0
+                   Selected
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="makeStyles-assignSkeletonWrapper-162"
+          >
+            <table
+              aria-label="badgePrintingSystem-list"
+              class="MuiTable-root"
+            >
+              <thead
+                class="MuiTableHead-root"
+              >
+                <tr
+                  class="MuiTableRow-root MuiTableRow-head"
+                >
+                  <th
+                    class="MuiTableCell-root MuiTableCell-head"
+                    scope="col"
+                  >
+                    Name
+                  </th>
+                  <th
+                    class="MuiTableCell-root MuiTableCell-head"
+                    scope="col"
+                  >
+                    Laptop Serial Number
+                  </th>
+                  <th
+                    class="MuiTableCell-root MuiTableCell-head"
+                    scope="col"
+                  >
+                    Printer Serial Number
+                  </th>
+                  <th
+                    class="MuiTableCell-root MuiTableCell-head"
+                    scope="col"
+                  >
+                    Scanner Serial Number
+                  </th>
+                  <th
+                    class="MuiTableCell-root MuiTableCell-head"
+                    scope="col"
+                  >
+                    Shipping Date
+                  </th>
+                </tr>
+              </thead>
+              <tbody
+                class="MuiTableBody-root"
+              >
+                <tr
+                  class="MuiTableRow-root WithStyles(ForwardRef(TableRow))-root-366"
+                  data-testid="assign-list-row"
+                >
+                  <td
+                    class="MuiTableCell-root MuiTableCell-body"
+                  >
+                    <div
+                      class="makeStyles-tableColoredEllipsis-209 makeStyles-assignNameLeftSpace-304"
+                    >
+                      <span
+                        aria-disabled="false"
+                        class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-369 MuiCheckbox-root MuiCheckbox-colorSecondary MuiIconButton-colorSecondary"
+                        data-testid="multiple-checkbox"
+                      >
+                        <span
+                          class="MuiIconButton-label"
+                        >
+                          <input
+                            class="PrivateSwitchBase-input-372"
+                            data-indeterminate="false"
+                            name="badgePrintingSystem"
+                            type="checkbox"
+                            value="3"
+                          />
+                          <svg
+                            aria-hidden="true"
+                            class="MuiSvgIcon-root makeStyles-iconRoot-367 "
+                            focusable="false"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z"
+                            />
+                          </svg>
+                        </span>
+                        <span
+                          class="MuiTouchRipple-root"
+                        />
+                      </span>
+                       
+                      Badge Printer Name 2
+                    </div>
+                  </td>
+                  <td
+                    class="MuiTableCell-root MuiTableCell-body"
+                  >
+                    AFF12903112
+                  </td>
+                  <td
+                    class="MuiTableCell-root MuiTableCell-body"
+                  >
+                    332182912
+                  </td>
+                  <td
+                    class="MuiTableCell-root MuiTableCell-body"
+                  >
+                    BBF19021
+                  </td>
+                  <td
+                    class="MuiTableCell-root MuiTableCell-body"
+                  >
+                    <div
+                      class="react-datepicker-wrapper"
+                    >
+                      <div
+                        class="react-datepicker__input-container"
+                      >
+                        <div
+                          class="MuiFormControl-root MuiTextField-root makeStyles-datePicker-358 makeStyles-adornmentStart-361 makeStyles-leftInput-363 makeStyles-adornmentEnd-362 makeStyles-baseInput-364 makeStyles-datePickerInline-321"
+                          data-testid="keyboard-date-picker"
+                        >
+                          <div
+                            class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-formControl MuiInputBase-adornedStart MuiOutlinedInput-adornedStart"
+                          >
+                            <div
+                              class="MuiInputAdornment-root MuiInputAdornment-positionStart"
+                            >
+                              <svg>
+                                calendar.svg
+                              </svg>
+                            </div>
+                            <input
+                              aria-invalid="false"
+                              class="MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputAdornedStart MuiOutlinedInput-inputAdornedStart"
+                              placeholder="Select Date"
+                              type="text"
+                              value=""
+                            />
+                            <fieldset
+                              aria-hidden="true"
+                              class="PrivateNotchedOutline-root-280 MuiOutlinedInput-notchedOutline"
+                              style="padding-left: 8px;"
+                            >
+                              <legend
+                                class="PrivateNotchedOutline-legend-281"
+                                style="width: 0.01px;"
+                              >
+                                <span>
+                                  ​
+                                </span>
+                              </legend>
+                            </fieldset>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+                <tr
+                  class="MuiTableRow-root WithStyles(ForwardRef(TableRow))-root-366"
+                  data-testid="assign-list-row"
+                >
+                  <td
+                    class="MuiTableCell-root MuiTableCell-body"
+                  >
+                    <div
+                      class="makeStyles-tableColoredEllipsis-209 makeStyles-assignNameLeftSpace-304"
+                    >
+                      <span
+                        aria-disabled="false"
+                        class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-369 MuiCheckbox-root MuiCheckbox-colorSecondary MuiIconButton-colorSecondary"
+                        data-testid="multiple-checkbox"
+                      >
+                        <span
+                          class="MuiIconButton-label"
+                        >
+                          <input
+                            class="PrivateSwitchBase-input-372"
+                            data-indeterminate="false"
+                            name="badgePrintingSystem"
+                            type="checkbox"
+                            value="77afbfce-1bca-31c3-b512-3a1ed78742bb"
+                          />
+                          <svg
+                            aria-hidden="true"
+                            class="MuiSvgIcon-root makeStyles-iconRoot-367 "
+                            focusable="false"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z"
+                            />
+                          </svg>
+                        </span>
+                        <span
+                          class="MuiTouchRipple-root"
+                        />
+                      </span>
+                       
+                      Badge Printer Name
+                    </div>
+                  </td>
+                  <td
+                    class="MuiTableCell-root MuiTableCell-body"
+                  >
+                    AFF12903112
+                  </td>
+                  <td
+                    class="MuiTableCell-root MuiTableCell-body"
+                  >
+                    12904328913
+                  </td>
+                  <td
+                    class="MuiTableCell-root MuiTableCell-body"
+                  >
+                    BBF19021
+                  </td>
+                  <td
+                    class="MuiTableCell-root MuiTableCell-body"
+                  >
+                    <div
+                      class="react-datepicker-wrapper"
+                    >
+                      <div
+                        class="react-datepicker__input-container"
+                      >
+                        <div
+                          class="MuiFormControl-root MuiTextField-root makeStyles-datePicker-358 makeStyles-adornmentStart-361 makeStyles-leftInput-363 makeStyles-adornmentEnd-362 makeStyles-baseInput-364 makeStyles-datePickerInline-321"
+                          data-testid="keyboard-date-picker"
+                        >
+                          <div
+                            class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-formControl MuiInputBase-adornedStart MuiOutlinedInput-adornedStart"
+                          >
+                            <div
+                              class="MuiInputAdornment-root MuiInputAdornment-positionStart"
+                            >
+                              <svg>
+                                calendar.svg
+                              </svg>
+                            </div>
+                            <input
+                              aria-invalid="false"
+                              class="MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputAdornedStart MuiOutlinedInput-inputAdornedStart"
+                              placeholder="Select Date"
+                              type="text"
+                              value=""
+                            />
+                            <fieldset
+                              aria-hidden="true"
+                              class="PrivateNotchedOutline-root-280 MuiOutlinedInput-notchedOutline"
+                              style="padding-left: 8px;"
+                            >
+                              <legend
+                                class="PrivateNotchedOutline-legend-281"
+                                style="width: 0.01px;"
+                              >
+                                <span>
+                                  ​
+                                </span>
+                              </legend>
+                            </fieldset>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+                <tr
+                  class="MuiTableRow-root WithStyles(ForwardRef(TableRow))-root-366"
+                  data-testid="assign-list-row"
+                >
+                  <td
+                    class="MuiTableCell-root MuiTableCell-body"
+                  >
+                    <div
+                      class="makeStyles-tableColoredEllipsis-209 makeStyles-assignNameLeftSpace-304"
+                    >
+                      <span
+                        aria-disabled="false"
+                        class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-369 MuiCheckbox-root MuiCheckbox-colorSecondary MuiIconButton-colorSecondary"
+                        data-testid="multiple-checkbox"
+                      >
+                        <span
+                          class="MuiIconButton-label"
+                        >
+                          <input
+                            class="PrivateSwitchBase-input-372"
+                            data-indeterminate="false"
+                            name="badgePrintingSystem"
+                            type="checkbox"
+                            value="6631aacb-21fa-91cc-c5ff-55b12cbaf33b"
+                          />
+                          <svg
+                            aria-hidden="true"
+                            class="MuiSvgIcon-root makeStyles-iconRoot-367 "
+                            focusable="false"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z"
+                            />
+                          </svg>
+                        </span>
+                        <span
+                          class="MuiTouchRipple-root"
+                        />
+                      </span>
+                       
+                      Badge Printer Name 2
+                    </div>
+                  </td>
+                  <td
+                    class="MuiTableCell-root MuiTableCell-body"
+                  >
+                    AFF12903112
+                  </td>
+                  <td
+                    class="MuiTableCell-root MuiTableCell-body"
+                  >
+                    332182912
+                  </td>
+                  <td
+                    class="MuiTableCell-root MuiTableCell-body"
+                  >
+                    BBF19021
+                  </td>
+                  <td
+                    class="MuiTableCell-root MuiTableCell-body"
+                  >
+                    <div
+                      class="react-datepicker-wrapper"
+                    >
+                      <div
+                        class="react-datepicker__input-container"
+                      >
+                        <div
+                          class="MuiFormControl-root MuiTextField-root makeStyles-datePicker-358 makeStyles-adornmentStart-361 makeStyles-leftInput-363 makeStyles-adornmentEnd-362 makeStyles-baseInput-364 makeStyles-datePickerInline-321"
+                          data-testid="keyboard-date-picker"
+                        >
+                          <div
+                            class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-formControl MuiInputBase-adornedStart MuiOutlinedInput-adornedStart"
+                          >
+                            <div
+                              class="MuiInputAdornment-root MuiInputAdornment-positionStart"
+                            >
+                              <svg>
+                                calendar.svg
+                              </svg>
+                            </div>
+                            <input
+                              aria-invalid="false"
+                              class="MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputAdornedStart MuiOutlinedInput-inputAdornedStart"
+                              placeholder="Select Date"
+                              type="text"
+                              value=""
+                            />
+                            <fieldset
+                              aria-hidden="true"
+                              class="PrivateNotchedOutline-root-280 MuiOutlinedInput-notchedOutline"
+                              style="padding-left: 8px;"
+                            >
+                              <legend
+                                class="PrivateNotchedOutline-legend-281"
+                                style="width: 0.01px;"
+                              >
+                                <span>
+                                  ​
+                                </span>
+                              </legend>
+                            </fieldset>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <nav
+              aria-label="pagination navigation"
+              class="MuiPagination-root makeStyles-assignPagination-165 makeStyles-pagination-373"
+              data-testid="pagination"
+            >
+              <ul
+                class="MuiPagination-ul"
+              >
+                <li>
+                  <button
+                    aria-label="Go to previous page"
+                    class="MuiButtonBase-root MuiPaginationItem-root MuiPaginationItem-page Mui-disabled Mui-disabled"
+                    disabled=""
+                    tabindex="-1"
+                    type="button"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      class="MuiSvgIcon-root MuiPaginationItem-icon"
+                      focusable="false"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"
+                      />
+                    </svg>
+                  </button>
+                </li>
+                <li>
+                  <button
+                    aria-current="true"
+                    aria-label="page 1"
+                    class="MuiButtonBase-root MuiPaginationItem-root MuiPaginationItem-page Mui-selected"
+                    tabindex="0"
+                    type="button"
+                  >
+                    1
+                    <span
+                      class="MuiTouchRipple-root"
+                    />
+                  </button>
+                </li>
+                <li>
+                  <button
+                    aria-label="Go to page 2"
+                    class="MuiButtonBase-root MuiPaginationItem-root MuiPaginationItem-page"
+                    tabindex="0"
+                    type="button"
+                  >
+                    2
+                    <span
+                      class="MuiTouchRipple-root"
+                    />
+                  </button>
+                </li>
+                <li>
+                  <button
+                    aria-label="Go to page 3"
+                    class="MuiButtonBase-root MuiPaginationItem-root MuiPaginationItem-page"
+                    tabindex="0"
+                    type="button"
+                  >
+                    3
+                    <span
+                      class="MuiTouchRipple-root"
+                    />
+                  </button>
+                </li>
+                <li>
+                  <button
+                    aria-label="Go to next page"
+                    class="MuiButtonBase-root MuiPaginationItem-root MuiPaginationItem-page"
+                    tabindex="0"
+                    type="button"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      class="MuiSvgIcon-root MuiPaginationItem-icon"
+                      focusable="false"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"
+                      />
+                    </svg>
+                    <span
+                      class="MuiTouchRipple-root"
+                    />
+                  </button>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+        <div
+          class="MuiDialogActions-root makeStyles-buttonsContainer-159 MuiDialogActions-spacing"
+        >
+          <button
+            class="MuiButtonBase-root MuiButton-root MuiButton-text makeStyles-closeButton-160 makeStyles-boldButton-161 MuiButton-textPrimary"
+            data-testid="assign-btn-close"
+            tabindex="0"
+            type="button"
+          >
+            <span
+              class="MuiButton-label"
+            >
+              Close
+            </span>
+            <span
+              class="MuiTouchRipple-root"
+            />
+          </button>
+          <button
+            class="MuiButtonBase-root MuiButton-root MuiButton-contained false makeStyles-saveButton-153 makeStyles-assignButtonWidth-154 makeStyles-assignButtonRightSpace-155 MuiButton-containedPrimary Mui-disabled Mui-disabled"
+            data-testid="assign-btn-confirm"
+            disabled=""
+            tabindex="-1"
+            type="button"
+          >
+            <span
+              class="MuiButton-label"
+            >
+              <span
+                class="makeStyles-textWrapper-376"
+              >
+                Assign
+              </span>
+            </span>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div
+      data-test="sentinelEnd"
+      tabindex="0"
+    />
+  </div>
+</body>
+`;
+
+exports[`AssignBadgePrintingSystemModal should render loading 1`] = `
+<div
+  aria-hidden="true"
+/>
+`;

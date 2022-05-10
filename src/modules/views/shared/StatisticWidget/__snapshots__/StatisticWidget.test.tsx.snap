@@ -1,0 +1,232 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`StatisticWidget should render 1`] = `
+<body>
+  <div>
+    <div
+      class="MuiPaper-root makeStyles-widget-13 makeStyles-noDetail-40 MuiPaper-elevation0 MuiPaper-rounded"
+    >
+      <div
+        class="makeStyles-widgetContainer-14"
+      >
+        <p
+          class="MuiTypography-root makeStyles-widgetTitle-15 makeStyles-widgetTitleBottomMargin-19 MuiTypography-body1"
+        >
+          Title
+        </p>
+        <div
+          class="makeStyles-widgetContentWrapper-20 makeStyles-widgetContentWrapperBottomMargin-21"
+        >
+          <span
+            class="makeStyles-widgetContentResponsive-26 makeStyles-widgetContent-25"
+          >
+            284
+          </span>
+          <div
+            class="makeStyles-chipStatusLeftMargin-35"
+          />
+        </div>
+        <div
+          class=""
+        />
+      </div>
+      <div
+        class="makeStyles-widgetContentWrapperNoTopMargin-22"
+      />
+    </div>
+  </div>
+</body>
+`;
+
+exports[`StatisticWidget should render with inline content 1`] = `
+<body>
+  <div>
+    <div
+      class="MuiPaper-root makeStyles-widget-109 makeStyles-noDetail-136 MuiPaper-elevation0 MuiPaper-rounded"
+    >
+      <div
+        class="makeStyles-widgetContainer-110"
+      >
+        <div>
+          <div
+            class="makeStyles-widgetInlineStatusWrapper-125"
+          >
+            <div
+              class="makeStyles-widgetContentWrapper-116 "
+            >
+              <span
+                class="makeStyles-widgetContent-121 makeStyles-widgetInlineMargin-123"
+              >
+                284
+              </span>
+              <p
+                class="MuiTypography-root  makeStyles-widgetTitle-111 makeStyles-widgetTitleInlinePosition-126 MuiTypography-body1"
+              >
+                Title
+              </p>
+              <div
+                class="makeStyles-chipStatusLeftMargin-131"
+              />
+            </div>
+            <div
+              class=""
+            >
+              <div>
+                renderActivity
+              </div>
+            </div>
+          </div>
+          <p
+            class="MuiTypography-root makeStyles-widgetSubtitle-112 makeStyles-widgetSubtitleInlinePosition-114 MuiTypography-body1"
+          />
+        </div>
+        <div
+          class="makeStyles-widgetAuxContentPadding-120"
+        >
+          <div>
+            renderAuxContent
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+`;
+
+exports[`StatisticWidget should render with loading status 1`] = `
+<body>
+  <div>
+    <div
+      class="MuiPaper-root makeStyles-widget-157 makeStyles-noDetail-184 MuiPaper-elevation0 MuiPaper-rounded"
+    >
+      <div>
+        <p
+          class="MuiTypography-root makeStyles-widgetTitle-159 makeStyles-widgetTitleBottomMargin-163 MuiTypography-body1"
+        >
+          Title
+        </p>
+        <div
+          class="makeStyles-columnMainContent-147"
+          data-testid="statistics-widget-skeleton"
+        >
+          <span
+            class="MuiSkeleton-root MuiSkeleton-text makeStyles-columnContent-148 MuiSkeleton-wave"
+            style="width: 270px; height: 63px;"
+          />
+          <span
+            class="MuiSkeleton-root MuiSkeleton-rect makeStyles-columnAuxContent-149 MuiSkeleton-wave"
+            style="width: 100%; height: 168px;"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+`;
+
+exports[`StatisticWidget should render with loading status and inline content 1`] = `
+<body>
+  <div>
+    <div
+      class="MuiPaper-root makeStyles-widget-253 makeStyles-noDetail-280 MuiPaper-elevation0 MuiPaper-rounded"
+    >
+      <div>
+        <div
+          class="makeStyles-wrapper-241"
+        >
+          <span
+            class="MuiSkeleton-root MuiSkeleton-text makeStyles-inlineMain-248 MuiSkeleton-wave"
+            style="width: 270px; height: 58px;"
+          />
+          <span
+            class="MuiSkeleton-root MuiSkeleton-text makeStyles-inlineActivity-249 MuiSkeleton-wave"
+            style="width: 270px; height: 25px;"
+          />
+        </div>
+        <span
+          class="MuiSkeleton-root MuiSkeleton-rect makeStyles-inlineAuxContent-250 MuiSkeleton-wave"
+          style="width: 100%; height: 216px;"
+        />
+        <span
+          class="MuiSkeleton-root MuiSkeleton-text makeStyles-inlineCta-251 MuiSkeleton-wave"
+          style="width: 120px; height: 23px;"
+        />
+      </div>
+    </div>
+  </div>
+</body>
+`;
+
+exports[`StatisticWidget should render with loading status with no auxContent 1`] = `
+<body>
+  <div>
+    <div
+      class="MuiPaper-root makeStyles-widget-205 makeStyles-noDetail-232 MuiPaper-elevation0 MuiPaper-rounded"
+    >
+      <div>
+        <p
+          class="MuiTypography-root makeStyles-widgetTitle-207 makeStyles-widgetTitleBottomMargin-211 MuiTypography-body1"
+        >
+          Title
+        </p>
+        <div
+          class="makeStyles-columnMainContent-195"
+          data-testid="statistics-widget-skeleton"
+        >
+          <span
+            class="MuiSkeleton-root MuiSkeleton-text makeStyles-columnContent-196 MuiSkeleton-wave"
+            style="width: 270px; height: 63px;"
+          />
+        </div>
+        <span
+          class="MuiSkeleton-root MuiSkeleton-text makeStyles-columnActivity-198 MuiSkeleton-wave"
+          style="width: 200px; height: 23px;"
+        />
+      </div>
+    </div>
+  </div>
+</body>
+`;
+
+exports[`StatisticWidget should render with secondary values 1`] = `
+<body>
+  <div>
+    <div
+      class="MuiPaper-root makeStyles-widget-61 makeStyles-noDetail-88 MuiPaper-elevation0 MuiPaper-rounded"
+    >
+      <div
+        class="makeStyles-widgetContainer-62"
+      >
+        <p
+          class="MuiTypography-root makeStyles-widgetTitle-63 makeStyles-widgetTitleBottomMargin-67 MuiTypography-body1"
+        >
+          Title
+        </p>
+        <p
+          class="MuiTypography-root makeStyles-widgetSubtitle-64 makeStyles-widgetSubtitlePosition-65 MuiTypography-body1"
+        >
+          Subtitle
+        </p>
+        <div
+          class="makeStyles-widgetContentWrapper-68 makeStyles-widgetTitleMarginBottom-87"
+        >
+          <span
+            class="makeStyles-widgetContentResponsive-74 makeStyles-widgetContent-73"
+          >
+            284
+          </span>
+          <div
+            class="makeStyles-chipStatusLeftMargin-83"
+          />
+        </div>
+        <div
+          class=""
+        />
+      </div>
+      <div
+        class="makeStyles-widgetContentWrapperNoTopMargin-70"
+      />
+    </div>
+  </div>
+</body>
+`;

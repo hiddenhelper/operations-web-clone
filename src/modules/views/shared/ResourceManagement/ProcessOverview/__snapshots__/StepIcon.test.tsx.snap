@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Step Icon should render 1`] = `
+<body>
+  <div>
+    <div
+      class="makeStyles-root-1"
+      data-testid="step-icon"
+    >
+      <div
+        class="makeStyles-circle-8 makeStyles-active-3    "
+      />
+      
+    </div>
+  </div>
+</body>
+`;

@@ -1,0 +1,924 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AssignList should disable Add 1`] = `
+<div>
+  <div
+    class="MuiPaper-root makeStyles-container-1131  MuiPaper-outlined MuiPaper-rounded"
+  >
+    <div
+      class="MuiGrid-root MuiGrid-container MuiGrid-align-items-xs-center MuiGrid-justify-xs-space-between"
+    >
+      <div
+        class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-auto"
+      >
+        <h1
+          class="MuiTypography-root makeStyles-title-1132 MuiTypography-h1"
+        >
+          title
+        </h1>
+      </div>
+      <div
+        class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-auto"
+      >
+        <span
+          class="makeStyles-userAction-1081 makeStyles-secondaryActions-1133"
+        >
+          
+        </span>
+      </div>
+    </div>
+    <hr
+      class="MuiDivider-root makeStyles-divider-1134"
+    />
+    <div
+      class="MuiGrid-root makeStyles-formControlWrapper-1111 makeStyles-rowsWrapper-1071 MuiGrid-container"
+    >
+      <div
+        class="MuiGrid-root makeStyles-inputWrapper-1112 MuiGrid-item MuiGrid-grid-xs-11"
+      >
+        <div
+          class="MuiFormControl-root makeStyles-formControl-1145 makeStyles-autoCompleteWrapper-1137 "
+        >
+          <h1
+            class="MuiTypography-root MuiTypography-caption MuiTypography-colorSecondary MuiTypography-alignLeft"
+          >
+            Client Name
+             
+          </h1>
+          <div>
+            <div
+              aria-expanded="false"
+              class="MuiAutocomplete-root"
+              data-testid="autocomplete-wrapper"
+              role="combobox"
+            >
+              <div
+                class="MuiFormControl-root MuiTextField-root MuiFormControl-fullWidth"
+              >
+                <div
+                  class="MuiInputBase-root MuiOutlinedInput-root MuiAutocomplete-inputRoot MuiInputBase-fullWidth MuiInputBase-formControl MuiInputBase-adornedEnd MuiOutlinedInput-adornedEnd"
+                >
+                  <input
+                    aria-autocomplete="list"
+                    aria-invalid="false"
+                    autocapitalize="none"
+                    autocomplete="off"
+                    class="MuiInputBase-input MuiOutlinedInput-input MuiAutocomplete-input MuiAutocomplete-inputFocused MuiInputBase-inputAdornedEnd MuiOutlinedInput-inputAdornedEnd"
+                    id="autocomplete-assign"
+                    placeholder="Client Name"
+                    spellcheck="false"
+                    type="text"
+                    value=""
+                  />
+                  <div
+                    class="MuiAutocomplete-endAdornment"
+                  />
+                  <fieldset
+                    aria-hidden="true"
+                    class="PrivateNotchedOutline-root-1147 MuiOutlinedInput-notchedOutline"
+                    style="padding-left: 8px;"
+                  >
+                    <legend
+                      class="PrivateNotchedOutline-legend-1148"
+                      style="width: 0.01px;"
+                    >
+                      <span>
+                        ​
+                      </span>
+                    </legend>
+                  </fieldset>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <p
+          class="MuiTypography-root makeStyles-entityResponse-1113 MuiTypography-body1"
+          data-testid="entity-row"
+        >
+          "
+          
+          " is 
+          <span
+            class="makeStyles-accent-1114"
+          >
+            Active
+          </span>
+          .
+        </p>
+      </div>
+      <div
+        class="MuiGrid-root MuiGrid-item"
+      >
+        <span
+          class=""
+          data-testid="controlled-button"
+          tabindex="-1"
+        >
+          <button
+            class="MuiButtonBase-root MuiIconButton-root makeStyles-deleteButton-1151 makeStyles-hideDeleteButton-1109"
+            data-testid="delete-entity-button"
+            tabindex="0"
+            type="button"
+          >
+            <span
+              class="MuiIconButton-label"
+            >
+              <svg>
+                delete.svg
+              </svg>
+            </span>
+          </button>
+        </span>
+      </div>
+    </div>
+    <span
+      class=""
+      data-testid="controlled-button"
+      tabindex="-1"
+    >
+      <button
+        class="MuiButtonBase-root MuiButton-root MuiButton-text makeStyles-addEntityButton-1152 makeStyles-disableButton-1153 Mui-disabled Mui-disabled"
+        data-testid="add-item-button"
+        disabled=""
+        tabindex="-1"
+        type="button"
+      >
+        <span
+          class="MuiButton-label"
+        >
+          <span
+            class="MuiButton-startIcon MuiButton-iconSizeMedium"
+          >
+            <svg>
+              add.svg
+            </svg>
+          </span>
+          Add 
+          title
+        </span>
+      </button>
+    </span>
+  </div>
+</div>
+`;
+
+exports[`AssignList should render 1`] = `
+<div>
+  <div
+    class="MuiPaper-root makeStyles-container-72  MuiPaper-outlined MuiPaper-rounded"
+  >
+    <div
+      class="MuiGrid-root MuiGrid-container MuiGrid-align-items-xs-center MuiGrid-justify-xs-space-between"
+    >
+      <div
+        class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-auto"
+      >
+        <h1
+          class="MuiTypography-root makeStyles-title-73 MuiTypography-h1"
+        >
+          title
+        </h1>
+      </div>
+      <div
+        class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-auto"
+      >
+        <span
+          class="makeStyles-userAction-22 makeStyles-secondaryActions-74"
+        >
+          
+        </span>
+      </div>
+    </div>
+    <hr
+      class="MuiDivider-root makeStyles-divider-75"
+    />
+    <div
+      class="MuiGrid-root makeStyles-formControlWrapper-52 makeStyles-rowsWrapper-12 MuiGrid-container"
+    >
+      <div
+        class="MuiGrid-root makeStyles-inputWrapper-53 MuiGrid-item MuiGrid-grid-xs-11"
+      >
+        <div
+          class="MuiFormControl-root makeStyles-formControl-86 makeStyles-autoCompleteWrapper-78 "
+        >
+          <h1
+            class="MuiTypography-root MuiTypography-caption MuiTypography-colorSecondary MuiTypography-alignLeft"
+          >
+            Client Name
+             
+          </h1>
+          <div>
+            <div
+              aria-expanded="false"
+              class="MuiAutocomplete-root"
+              data-testid="autocomplete-wrapper"
+              role="combobox"
+            >
+              <div
+                class="MuiFormControl-root MuiTextField-root MuiFormControl-fullWidth"
+              >
+                <div
+                  class="MuiInputBase-root MuiOutlinedInput-root MuiAutocomplete-inputRoot MuiInputBase-fullWidth MuiInputBase-formControl MuiInputBase-adornedEnd MuiOutlinedInput-adornedEnd"
+                >
+                  <input
+                    aria-autocomplete="list"
+                    aria-invalid="false"
+                    autocapitalize="none"
+                    autocomplete="off"
+                    class="MuiInputBase-input MuiOutlinedInput-input MuiAutocomplete-input MuiAutocomplete-inputFocused MuiInputBase-inputAdornedEnd MuiOutlinedInput-inputAdornedEnd"
+                    id="autocomplete-assign"
+                    placeholder="Client Name"
+                    spellcheck="false"
+                    type="text"
+                    value="company 1"
+                  />
+                  <div
+                    class="MuiAutocomplete-endAdornment"
+                  />
+                  <fieldset
+                    aria-hidden="true"
+                    class="PrivateNotchedOutline-root-88 MuiOutlinedInput-notchedOutline"
+                    style="padding-left: 8px;"
+                  >
+                    <legend
+                      class="PrivateNotchedOutline-legend-89"
+                      style="width: 0.01px;"
+                    >
+                      <span>
+                        ​
+                      </span>
+                    </legend>
+                  </fieldset>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <p
+          class="MuiTypography-root makeStyles-entityResponse-54 MuiTypography-body1"
+          data-testid="entity-row"
+        >
+          "
+          company 1
+          " is 
+          <span
+            class="makeStyles-accent-55"
+          >
+            Active
+          </span>
+          .
+        </p>
+      </div>
+      <div
+        class="MuiGrid-root MuiGrid-item"
+      >
+        <span
+          class=""
+          data-testid="controlled-button"
+          tabindex="-1"
+        >
+          <button
+            class="MuiButtonBase-root MuiIconButton-root makeStyles-deleteButton-92 makeStyles-showDeleteButton-51"
+            data-testid="delete-entity-button"
+            tabindex="0"
+            type="button"
+          >
+            <span
+              class="MuiIconButton-label"
+            >
+              <svg>
+                delete.svg
+              </svg>
+            </span>
+          </button>
+        </span>
+      </div>
+    </div>
+    <div
+      class="MuiGrid-root makeStyles-formControlWrapper-52 makeStyles-rowsWrapper-12 MuiGrid-container"
+    >
+      <div
+        class="MuiGrid-root makeStyles-inputWrapper-53 MuiGrid-item MuiGrid-grid-xs-11"
+      >
+        <div
+          class="MuiFormControl-root makeStyles-formControl-86 makeStyles-autoCompleteWrapper-78 "
+        >
+          <h1
+            class="MuiTypography-root MuiTypography-caption MuiTypography-colorSecondary MuiTypography-alignLeft"
+          >
+            Client Name
+             
+          </h1>
+          <div>
+            <div
+              aria-expanded="false"
+              class="MuiAutocomplete-root"
+              data-testid="autocomplete-wrapper"
+              role="combobox"
+            >
+              <div
+                class="MuiFormControl-root MuiTextField-root MuiFormControl-fullWidth"
+              >
+                <div
+                  class="MuiInputBase-root MuiOutlinedInput-root MuiAutocomplete-inputRoot MuiInputBase-fullWidth MuiInputBase-formControl MuiInputBase-adornedEnd MuiOutlinedInput-adornedEnd"
+                >
+                  <input
+                    aria-autocomplete="list"
+                    aria-invalid="false"
+                    autocapitalize="none"
+                    autocomplete="off"
+                    class="MuiInputBase-input MuiOutlinedInput-input MuiAutocomplete-input MuiAutocomplete-inputFocused MuiInputBase-inputAdornedEnd MuiOutlinedInput-inputAdornedEnd"
+                    id="autocomplete-assign"
+                    placeholder="Client Name"
+                    spellcheck="false"
+                    type="text"
+                    value="company 2"
+                  />
+                  <div
+                    class="MuiAutocomplete-endAdornment"
+                  />
+                  <fieldset
+                    aria-hidden="true"
+                    class="PrivateNotchedOutline-root-88 MuiOutlinedInput-notchedOutline"
+                    style="padding-left: 8px;"
+                  >
+                    <legend
+                      class="PrivateNotchedOutline-legend-89"
+                      style="width: 0.01px;"
+                    >
+                      <span>
+                        ​
+                      </span>
+                    </legend>
+                  </fieldset>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <p
+          class="MuiTypography-root makeStyles-entityResponse-54 MuiTypography-body1"
+          data-testid="entity-row"
+        >
+          "
+          company 2
+          " is 
+          <span
+            class="makeStyles-accent-55"
+          >
+            Active
+          </span>
+          .
+        </p>
+      </div>
+      <div
+        class="MuiGrid-root MuiGrid-item"
+      >
+        <span
+          class=""
+          data-testid="controlled-button"
+          tabindex="-1"
+        >
+          <button
+            class="MuiButtonBase-root MuiIconButton-root makeStyles-deleteButton-92 makeStyles-showDeleteButton-51"
+            data-testid="delete-entity-button"
+            tabindex="0"
+            type="button"
+          >
+            <span
+              class="MuiIconButton-label"
+            >
+              <svg>
+                delete.svg
+              </svg>
+            </span>
+          </button>
+        </span>
+      </div>
+    </div>
+    <div
+      class="MuiGrid-root makeStyles-formControlWrapper-52 makeStyles-rowsWrapper-12 MuiGrid-container"
+    >
+      <div
+        class="MuiGrid-root makeStyles-inputWrapper-53 MuiGrid-item MuiGrid-grid-xs-11"
+      >
+        <div
+          class="MuiFormControl-root makeStyles-formControl-86 makeStyles-autoCompleteWrapper-78 "
+        >
+          <h1
+            class="MuiTypography-root MuiTypography-caption MuiTypography-colorSecondary MuiTypography-alignLeft"
+          >
+            Client Name
+             
+          </h1>
+          <div>
+            <div
+              aria-expanded="false"
+              class="MuiAutocomplete-root"
+              data-testid="autocomplete-wrapper"
+              role="combobox"
+            >
+              <div
+                class="MuiFormControl-root MuiTextField-root MuiFormControl-fullWidth"
+              >
+                <div
+                  class="MuiInputBase-root MuiOutlinedInput-root MuiAutocomplete-inputRoot MuiInputBase-fullWidth MuiInputBase-formControl MuiInputBase-adornedEnd MuiOutlinedInput-adornedEnd"
+                >
+                  <input
+                    aria-autocomplete="list"
+                    aria-invalid="false"
+                    autocapitalize="none"
+                    autocomplete="off"
+                    class="MuiInputBase-input MuiOutlinedInput-input MuiAutocomplete-input MuiAutocomplete-inputFocused MuiInputBase-inputAdornedEnd MuiOutlinedInput-inputAdornedEnd"
+                    id="autocomplete-assign"
+                    placeholder="Client Name"
+                    spellcheck="false"
+                    type="text"
+                    value="company 3"
+                  />
+                  <div
+                    class="MuiAutocomplete-endAdornment"
+                  />
+                  <fieldset
+                    aria-hidden="true"
+                    class="PrivateNotchedOutline-root-88 MuiOutlinedInput-notchedOutline"
+                    style="padding-left: 8px;"
+                  >
+                    <legend
+                      class="PrivateNotchedOutline-legend-89"
+                      style="width: 0.01px;"
+                    >
+                      <span>
+                        ​
+                      </span>
+                    </legend>
+                  </fieldset>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <p
+          class="MuiTypography-root makeStyles-entityResponse-54 MuiTypography-body1"
+          data-testid="entity-row"
+        >
+          "
+          company 3
+          " is 
+          <span
+            class="makeStyles-accent-55"
+          >
+            Draft
+          </span>
+          .
+           
+          You can add more information and approve it in
+           
+          <a
+            class="makeStyles-accent-55 makeStyles-editAccentColor-56"
+            href="/clients/wizard/ff14e4c4-6521-a5cb-64fd-c75ac02b2cf3"
+          >
+            Edit Client
+          </a>
+        </p>
+      </div>
+      <div
+        class="MuiGrid-root MuiGrid-item"
+      >
+        <span
+          class=""
+          data-testid="controlled-button"
+          tabindex="-1"
+        >
+          <button
+            class="MuiButtonBase-root MuiIconButton-root makeStyles-deleteButton-92 makeStyles-showDeleteButton-51"
+            data-testid="delete-entity-button"
+            tabindex="0"
+            type="button"
+          >
+            <span
+              class="MuiIconButton-label"
+            >
+              <svg>
+                delete.svg
+              </svg>
+            </span>
+          </button>
+        </span>
+      </div>
+    </div>
+    <span
+      class=""
+      data-testid="controlled-button"
+      tabindex="-1"
+    >
+      <button
+        class="MuiButtonBase-root MuiButton-root MuiButton-text makeStyles-addEntityButton-93 makeStyles-enableButton-95"
+        data-testid="add-item-button"
+        tabindex="0"
+        type="button"
+      >
+        <span
+          class="MuiButton-label"
+        >
+          <span
+            class="MuiButton-startIcon MuiButton-iconSizeMedium"
+          >
+            <svg>
+              add.svg
+            </svg>
+          </span>
+          Add 
+          title
+        </span>
+      </button>
+    </span>
+  </div>
+</div>
+`;
+
+exports[`AssignList should render highlighted option 1`] = `
+<div>
+  <div
+    class="MuiPaper-root makeStyles-container-547  MuiPaper-outlined MuiPaper-rounded"
+  >
+    <div
+      class="MuiGrid-root MuiGrid-container MuiGrid-align-items-xs-center MuiGrid-justify-xs-space-between"
+    >
+      <div
+        class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-auto"
+      >
+        <h1
+          class="MuiTypography-root makeStyles-title-548 MuiTypography-h1"
+        >
+          title
+        </h1>
+      </div>
+      <div
+        class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-auto"
+      >
+        <span
+          class="makeStyles-userAction-497 makeStyles-secondaryActions-549"
+        >
+          
+        </span>
+      </div>
+    </div>
+    <hr
+      class="MuiDivider-root makeStyles-divider-550"
+    />
+    <div
+      class="MuiGrid-root makeStyles-formControlWrapper-527 makeStyles-rowsWrapper-487 MuiGrid-container"
+    >
+      <div
+        class="MuiGrid-root makeStyles-inputWrapper-528 MuiGrid-item MuiGrid-grid-xs-11"
+      >
+        <div
+          class="MuiFormControl-root makeStyles-formControl-561 makeStyles-autoCompleteWrapper-553 "
+        >
+          <h1
+            class="MuiTypography-root MuiTypography-caption MuiTypography-colorSecondary MuiTypography-alignLeft"
+          >
+            Client Name
+             
+          </h1>
+          <div>
+            <div
+              aria-expanded="true"
+              aria-owns="autocomplete-assign-popup"
+              class="MuiAutocomplete-root"
+              data-testid="autocomplete-wrapper"
+              role="combobox"
+            >
+              <div
+                class="MuiFormControl-root MuiTextField-root MuiFormControl-fullWidth"
+              >
+                <div
+                  class="MuiInputBase-root MuiOutlinedInput-root MuiAutocomplete-inputRoot MuiInputBase-fullWidth MuiInputBase-formControl MuiInputBase-adornedEnd MuiOutlinedInput-adornedEnd"
+                >
+                  <input
+                    aria-autocomplete="list"
+                    aria-controls="autocomplete-assign-popup"
+                    aria-invalid="false"
+                    autocapitalize="none"
+                    autocomplete="off"
+                    class="MuiInputBase-input MuiOutlinedInput-input MuiAutocomplete-input MuiAutocomplete-inputFocused MuiInputBase-inputAdornedEnd MuiOutlinedInput-inputAdornedEnd"
+                    id="autocomplete-assign"
+                    placeholder="Client Name"
+                    spellcheck="false"
+                    type="text"
+                    value="pan"
+                  />
+                  <div
+                    class="MuiAutocomplete-endAdornment"
+                  />
+                  <fieldset
+                    aria-hidden="true"
+                    class="PrivateNotchedOutline-root-563 MuiOutlinedInput-notchedOutline"
+                    style="padding-left: 8px;"
+                  >
+                    <legend
+                      class="PrivateNotchedOutline-legend-564"
+                      style="width: 0.01px;"
+                    >
+                      <span>
+                        ​
+                      </span>
+                    </legend>
+                  </fieldset>
+                </div>
+              </div>
+            </div>
+            <div
+              class="MuiAutocomplete-popper"
+              role="presentation"
+              style="position: absolute; top: 0px; left: 0px; display: block; width: 100%;"
+            >
+              <div
+                class="MuiPaper-root MuiAutocomplete-paper MuiPaper-elevation1 MuiPaper-rounded"
+              >
+                <ul
+                  aria-labelledby="autocomplete-assign-label"
+                  class="MuiAutocomplete-listbox"
+                  id="autocomplete-assign-popup"
+                  role="listbox"
+                >
+                  <li
+                    aria-disabled="false"
+                    aria-selected="false"
+                    class="MuiAutocomplete-option"
+                    data-option-index="0"
+                    id="autocomplete-assign-option-0"
+                    role="option"
+                    tabindex="-1"
+                  >
+                    <div
+                      data-testid="search-option-item"
+                    >
+                      <span
+                        style="font-weight: 400;"
+                      >
+                        com
+                      </span>
+                      <span
+                        style="font-weight: 600;"
+                      >
+                        pan
+                      </span>
+                      <span
+                        style="font-weight: 400;"
+                      >
+                        y 1
+                      </span>
+                    </div>
+                    <div
+                      class="MuiChip-root makeStyles-statusChip-572 makeStyles-statusChipActive-577  MuiChip-colorPrimary MuiChip-outlined MuiChip-outlinedPrimary"
+                      data-testid="search-option-chip"
+                    >
+                      <span
+                        class="MuiChip-label"
+                      >
+                        Active
+                      </span>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <p
+          class="MuiTypography-root makeStyles-entityResponse-529 MuiTypography-body1"
+          data-testid="entity-row"
+        >
+          "
+          company 1
+          " is 
+          <span
+            class="makeStyles-accent-530"
+          >
+            Active
+          </span>
+          .
+        </p>
+      </div>
+      <div
+        class="MuiGrid-root MuiGrid-item"
+      >
+        <span
+          class=""
+          data-testid="controlled-button"
+          tabindex="-1"
+        >
+          <button
+            class="MuiButtonBase-root MuiIconButton-root makeStyles-deleteButton-567 makeStyles-showDeleteButton-526"
+            data-testid="delete-entity-button"
+            tabindex="0"
+            type="button"
+          >
+            <span
+              class="MuiIconButton-label"
+            >
+              <svg>
+                delete.svg
+              </svg>
+            </span>
+          </button>
+        </span>
+      </div>
+    </div>
+    <span
+      class=""
+      data-testid="controlled-button"
+      tabindex="-1"
+    >
+      <button
+        class="MuiButtonBase-root MuiButton-root MuiButton-text makeStyles-addEntityButton-568 makeStyles-enableButton-570"
+        data-testid="add-item-button"
+        tabindex="0"
+        type="button"
+      >
+        <span
+          class="MuiButton-label"
+        >
+          <span
+            class="MuiButton-startIcon MuiButton-iconSizeMedium"
+          >
+            <svg>
+              add.svg
+            </svg>
+          </span>
+          Add 
+          title
+        </span>
+      </button>
+    </span>
+  </div>
+</div>
+`;
+
+exports[`AssignList should render option 1`] = `
+<div>
+  <div
+    class="MuiPaper-root makeStyles-container-452  MuiPaper-outlined MuiPaper-rounded"
+  >
+    <div
+      class="MuiGrid-root MuiGrid-container MuiGrid-align-items-xs-center MuiGrid-justify-xs-space-between"
+    >
+      <div
+        class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-auto"
+      >
+        <h1
+          class="MuiTypography-root makeStyles-title-453 MuiTypography-h1"
+        >
+          title
+        </h1>
+      </div>
+      <div
+        class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-auto"
+      >
+        <span
+          class="makeStyles-userAction-402 makeStyles-secondaryActions-454"
+        >
+          
+        </span>
+      </div>
+    </div>
+    <hr
+      class="MuiDivider-root makeStyles-divider-455"
+    />
+    <div
+      class="MuiGrid-root makeStyles-formControlWrapper-432 makeStyles-rowsWrapper-392 MuiGrid-container"
+    >
+      <div
+        class="MuiGrid-root makeStyles-inputWrapper-433 MuiGrid-item MuiGrid-grid-xs-11"
+      >
+        <div
+          class="MuiFormControl-root makeStyles-formControl-466 makeStyles-autoCompleteWrapper-458 "
+        >
+          <h1
+            class="MuiTypography-root MuiTypography-caption MuiTypography-colorSecondary MuiTypography-alignLeft"
+          >
+            Client Name
+             
+          </h1>
+          <div>
+            <div
+              aria-expanded="true"
+              aria-owns="autocomplete-assign-popup"
+              class="MuiAutocomplete-root"
+              data-testid="autocomplete-wrapper"
+              role="combobox"
+            >
+              <div
+                class="MuiFormControl-root MuiTextField-root MuiFormControl-fullWidth"
+              >
+                <div
+                  class="MuiInputBase-root MuiOutlinedInput-root MuiAutocomplete-inputRoot MuiInputBase-fullWidth MuiInputBase-formControl MuiInputBase-adornedEnd MuiOutlinedInput-adornedEnd"
+                >
+                  <input
+                    aria-activedescendant=""
+                    aria-autocomplete="list"
+                    aria-controls="autocomplete-assign-popup"
+                    aria-invalid="false"
+                    autocapitalize="none"
+                    autocomplete="off"
+                    class="MuiInputBase-input MuiOutlinedInput-input MuiAutocomplete-input MuiAutocomplete-inputFocused MuiInputBase-inputAdornedEnd MuiOutlinedInput-inputAdornedEnd"
+                    id="autocomplete-assign"
+                    placeholder="Client Name"
+                    spellcheck="false"
+                    type="text"
+                    value="company 1"
+                  />
+                  <div
+                    class="MuiAutocomplete-endAdornment"
+                  />
+                  <fieldset
+                    aria-hidden="true"
+                    class="PrivateNotchedOutline-root-468 MuiOutlinedInput-notchedOutline"
+                    style="padding-left: 8px;"
+                  >
+                    <legend
+                      class="PrivateNotchedOutline-legend-469"
+                      style="width: 0.01px;"
+                    >
+                      <span>
+                        ​
+                      </span>
+                    </legend>
+                  </fieldset>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <p
+          class="MuiTypography-root makeStyles-entityResponse-434 MuiTypography-body1"
+          data-testid="entity-row"
+        >
+          "
+          company 1
+          " is 
+          <span
+            class="makeStyles-accent-435"
+          >
+            Active
+          </span>
+          .
+        </p>
+      </div>
+      <div
+        class="MuiGrid-root MuiGrid-item"
+      >
+        <span
+          class=""
+          data-testid="controlled-button"
+          tabindex="-1"
+        >
+          <button
+            class="MuiButtonBase-root MuiIconButton-root makeStyles-deleteButton-472 makeStyles-showDeleteButton-431"
+            data-testid="delete-entity-button"
+            tabindex="0"
+            type="button"
+          >
+            <span
+              class="MuiIconButton-label"
+            >
+              <svg>
+                delete.svg
+              </svg>
+            </span>
+          </button>
+        </span>
+      </div>
+    </div>
+    <span
+      class=""
+      data-testid="controlled-button"
+      tabindex="-1"
+    >
+      <button
+        class="MuiButtonBase-root MuiButton-root MuiButton-text makeStyles-addEntityButton-473 makeStyles-enableButton-475"
+        data-testid="add-item-button"
+        tabindex="0"
+        type="button"
+      >
+        <span
+          class="MuiButton-label"
+        >
+          <span
+            class="MuiButton-startIcon MuiButton-iconSizeMedium"
+          >
+            <svg>
+              add.svg
+            </svg>
+          </span>
+          Add 
+          title
+        </span>
+      </button>
+    </span>
+  </div>
+</div>
+`;

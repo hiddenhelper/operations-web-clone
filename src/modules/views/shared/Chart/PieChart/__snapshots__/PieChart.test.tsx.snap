@@ -1,0 +1,416 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PieChart should render 1`] = `
+<div>
+  <div
+    class="MuiGrid-root MuiGrid-container"
+    style="flex-direction: row; height: 100%;"
+  >
+    <div
+      class="MuiGrid-root makeStyles-pieChartClass-2 MuiGrid-item MuiGrid-grid-lg-12 MuiGrid-grid-xl-12"
+      style="padding-right: 0px; text-align: center; height: 100%;"
+    >
+      <div
+        class="VictoryContainer"
+        style="width: 100%; height: 100%; pointer-events: none; position: relative;"
+      >
+        <svg
+          height="400"
+          role="img"
+          style="pointer-events: all; width: 100%; height: 100%;"
+          viewBox="0 0 400 400"
+          width="400"
+        >
+          <g>
+            <path
+              d="M3.9352582219360586,-149.94837025698774A150,150,0,0,1,3.9352582219360586,149.94837025698774L3.935258221936044,9.19313563082177A10,10,0,0,0,3.935258221936044,-9.19313563082177Z"
+              role="presentation"
+              shape-rendering="auto"
+              style="fill: #37A66C; padding: 10px; stroke: transparent; stroke-width: 1;"
+              transform="translate(200, 200)"
+            />
+            <path
+              d="M-3.93525822193604,149.94837025698774A150,150,0,0,1,-3.9352582219360435,-149.94837025698774L-3.935258221936047,-9.193135630821768A10,10,0,0,0,-3.9352582219360426,9.19313563082177Z"
+              role="presentation"
+              shape-rendering="auto"
+              style="fill: #1F86E8; padding: 10px; stroke: transparent; stroke-width: 1;"
+              transform="translate(200, 200)"
+            />
+            <text
+              direction="inherit"
+              dx="0"
+              id="pie-labels-0"
+              x="370"
+              y="204.97"
+            >
+              <tspan
+                dx="0"
+                dy="0"
+                style="padding: 20px; font-family: 'Gill Sans', 'Seravek', 'Trebuchet MS', sans-serif; font-size: 14px; letter-spacing: normal; fill: #252525; stroke: transparent;"
+                text-anchor="start"
+                x="370"
+              />
+            </text>
+            <text
+              direction="inherit"
+              dx="0"
+              id="pie-labels-1"
+              x="30"
+              y="204.97"
+            >
+              <tspan
+                dx="0"
+                dy="0"
+                style="padding: 20px; font-family: 'Gill Sans', 'Seravek', 'Trebuchet MS', sans-serif; font-size: 14px; letter-spacing: normal; fill: #252525; stroke: transparent;"
+                text-anchor="end"
+                x="30"
+              />
+            </text>
+          </g>
+        </svg>
+        <div
+          style="z-index: 99; position: absolute; top: 0px; left: 0px; width: 100%; height: 100%;"
+        >
+          <svg
+            height="400"
+            style="overflow: visible; width: 100%; height: 100%;"
+            viewBox="0 0 400 400"
+            width="400"
+          />
+        </div>
+      </div>
+    </div>
+    <div
+      class="MuiGrid-root MuiGrid-item MuiGrid-grid-lg-12 MuiGrid-grid-xl-12"
+    >
+      <div
+        class="MuiGrid-root MuiGrid-container"
+      >
+        <div
+          class="MuiGrid-root MuiGrid-item MuiGrid-grid-lg-9 MuiGrid-grid-xl-9"
+        >
+          <div
+            class=" makeStyles-bulletLabelWrapper-3"
+          >
+            <span
+              class="makeStyles-statusCircle-4"
+              style="background-color: rgb(55, 166, 108);"
+            />
+            <p
+              class="MuiTypography-root makeStyles-statusText-5 MuiTypography-body1"
+            >
+              Active
+            </p>
+          </div>
+        </div>
+        <div
+          class="MuiGrid-root MuiGrid-item MuiGrid-grid-lg-2 MuiGrid-grid-xl-2"
+        >
+          <p
+            class="MuiTypography-root MuiTypography-body1"
+            style="color: rgb(76, 76, 76); font-size: 15px; text-align: right;"
+          >
+            0.5
+            %
+          </p>
+        </div>
+        <div
+          class="MuiGrid-root MuiGrid-item MuiGrid-grid-lg-1 MuiGrid-grid-xl-1"
+        >
+          <p
+            class="MuiTypography-root MuiTypography-body1"
+            style="color: rgb(76, 76, 76); font-size: 15px; font-weight: bold; text-align: right;"
+          >
+            1
+          </p>
+        </div>
+      </div>
+      <div
+        class="MuiGrid-root MuiGrid-container"
+      >
+        <div
+          class="MuiGrid-root MuiGrid-item MuiGrid-grid-lg-9 MuiGrid-grid-xl-9"
+        >
+          <div
+            class=" makeStyles-bulletLabelWrapper-3"
+          >
+            <span
+              class="makeStyles-statusCircle-4"
+              style="background-color: rgb(233, 166, 31);"
+            />
+            <p
+              class="MuiTypography-root makeStyles-statusText-5 MuiTypography-body1"
+            >
+              Pending Approval
+            </p>
+          </div>
+        </div>
+        <div
+          class="MuiGrid-root MuiGrid-item MuiGrid-grid-lg-2 MuiGrid-grid-xl-2"
+        >
+          <p
+            class="MuiTypography-root MuiTypography-body1"
+            style="color: rgb(76, 76, 76); font-size: 15px; text-align: right;"
+          >
+            0
+            %
+          </p>
+        </div>
+        <div
+          class="MuiGrid-root MuiGrid-item MuiGrid-grid-lg-1 MuiGrid-grid-xl-1"
+        >
+          <p
+            class="MuiTypography-root MuiTypography-body1"
+            style="color: rgb(76, 76, 76); font-size: 15px; font-weight: bold; text-align: right;"
+          >
+            0
+          </p>
+        </div>
+      </div>
+      <div
+        class="MuiGrid-root MuiGrid-container"
+      >
+        <div
+          class="MuiGrid-root MuiGrid-item MuiGrid-grid-lg-9 MuiGrid-grid-xl-9"
+        >
+          <div
+            class=" makeStyles-bulletLabelWrapper-3"
+          >
+            <span
+              class="makeStyles-statusCircle-4"
+              style="background-color: rgb(31, 134, 232);"
+            />
+            <p
+              class="MuiTypography-root makeStyles-statusText-5 MuiTypography-body1"
+            >
+              Draft
+            </p>
+          </div>
+        </div>
+        <div
+          class="MuiGrid-root MuiGrid-item MuiGrid-grid-lg-2 MuiGrid-grid-xl-2"
+        >
+          <p
+            class="MuiTypography-root MuiTypography-body1"
+            style="color: rgb(76, 76, 76); font-size: 15px; text-align: right;"
+          >
+            0.5
+            %
+          </p>
+        </div>
+        <div
+          class="MuiGrid-root MuiGrid-item MuiGrid-grid-lg-1 MuiGrid-grid-xl-1"
+        >
+          <p
+            class="MuiTypography-root MuiTypography-body1"
+            style="color: rgb(76, 76, 76); font-size: 15px; font-weight: bold; text-align: right;"
+          >
+            1
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`PieChart should render empty 1`] = `
+<div>
+  <div
+    class="MuiGrid-root MuiGrid-container"
+    style="flex-direction: row; height: 100%;"
+  >
+    <div
+      class="MuiGrid-root makeStyles-pieChartClass-14 MuiGrid-item MuiGrid-grid-lg-12 MuiGrid-grid-xl-12"
+      style="padding-right: 0px; text-align: center; height: 100%;"
+    >
+      <div
+        class="VictoryContainer"
+        style="width: 100%; height: 100%; pointer-events: none; position: relative;"
+      >
+        <svg
+          height="400"
+          role="img"
+          style="pointer-events: all; width: 100%; height: 100%;"
+          viewBox="0 0 400 400"
+          width="400"
+        >
+          <g>
+            <path
+              d="M9.184850993605149e-15,-150A150,150,0,1,1,-9.184850993605149e-15,150A150,150,0,1,1,9.184850993605149e-15,-150M-1.8369701987210296e-15,-10A10,10,0,1,0,1.8369701987210296e-15,10A10,10,0,1,0,-1.8369701987210296e-15,-10Z"
+              role="presentation"
+              shape-rendering="auto"
+              style="fill: #878787; padding: 10px; stroke: transparent; stroke-width: 1;"
+              transform="translate(200, 200)"
+            />
+            <text
+              direction="inherit"
+              dx="0"
+              id="pie-labels-0"
+              x="200"
+              y="381.97"
+            >
+              <tspan
+                dx="0"
+                dy="0"
+                style="padding: 20px; font-family: 'Gill Sans', 'Seravek', 'Trebuchet MS', sans-serif; font-size: 14px; letter-spacing: normal; fill: #252525; stroke: transparent;"
+                text-anchor="middle"
+                x="200"
+              />
+            </text>
+          </g>
+        </svg>
+        <div
+          style="z-index: 99; position: absolute; top: 0px; left: 0px; width: 100%; height: 100%;"
+        >
+          <svg
+            height="400"
+            style="overflow: visible; width: 100%; height: 100%;"
+            viewBox="0 0 400 400"
+            width="400"
+          />
+        </div>
+      </div>
+    </div>
+    <div
+      class="MuiGrid-root MuiGrid-item MuiGrid-grid-lg-12 MuiGrid-grid-xl-12"
+    >
+      <div
+        class="MuiGrid-root MuiGrid-container"
+      >
+        <div
+          class="MuiGrid-root MuiGrid-item MuiGrid-grid-lg-9 MuiGrid-grid-xl-9"
+        >
+          <div
+            class=" makeStyles-bulletLabelWrapper-15"
+          >
+            <span
+              class="makeStyles-statusCircle-16"
+              style="background-color: rgb(55, 166, 108);"
+            />
+            <p
+              class="MuiTypography-root makeStyles-statusText-17 MuiTypography-body1"
+            >
+              Active
+            </p>
+          </div>
+        </div>
+        <div
+          class="MuiGrid-root MuiGrid-item MuiGrid-grid-lg-2 MuiGrid-grid-xl-2"
+        >
+          <p
+            class="MuiTypography-root MuiTypography-body1"
+            style="color: rgb(76, 76, 76); font-size: 15px; text-align: right;"
+          >
+            0.5
+            %
+          </p>
+        </div>
+        <div
+          class="MuiGrid-root MuiGrid-item MuiGrid-grid-lg-1 MuiGrid-grid-xl-1"
+        >
+          <p
+            class="MuiTypography-root MuiTypography-body1"
+            style="color: rgb(76, 76, 76); font-size: 15px; font-weight: bold; text-align: right;"
+          >
+            0
+          </p>
+        </div>
+      </div>
+      <div
+        class="MuiGrid-root MuiGrid-container"
+      >
+        <div
+          class="MuiGrid-root MuiGrid-item MuiGrid-grid-lg-9 MuiGrid-grid-xl-9"
+        >
+          <div
+            class=" makeStyles-bulletLabelWrapper-15"
+          >
+            <span
+              class="makeStyles-statusCircle-16"
+              style="background-color: rgb(233, 166, 31);"
+            />
+            <p
+              class="MuiTypography-root makeStyles-statusText-17 MuiTypography-body1"
+            >
+              Pending Approval
+            </p>
+          </div>
+        </div>
+        <div
+          class="MuiGrid-root MuiGrid-item MuiGrid-grid-lg-2 MuiGrid-grid-xl-2"
+        >
+          <p
+            class="MuiTypography-root MuiTypography-body1"
+            style="color: rgb(76, 76, 76); font-size: 15px; text-align: right;"
+          >
+            0
+            %
+          </p>
+        </div>
+        <div
+          class="MuiGrid-root MuiGrid-item MuiGrid-grid-lg-1 MuiGrid-grid-xl-1"
+        >
+          <p
+            class="MuiTypography-root MuiTypography-body1"
+            style="color: rgb(76, 76, 76); font-size: 15px; font-weight: bold; text-align: right;"
+          >
+            0
+          </p>
+        </div>
+      </div>
+      <div
+        class="MuiGrid-root MuiGrid-container"
+      >
+        <div
+          class="MuiGrid-root MuiGrid-item MuiGrid-grid-lg-9 MuiGrid-grid-xl-9"
+        >
+          <div
+            class=" makeStyles-bulletLabelWrapper-15"
+          >
+            <span
+              class="makeStyles-statusCircle-16"
+              style="background-color: rgb(31, 134, 232);"
+            />
+            <p
+              class="MuiTypography-root makeStyles-statusText-17 MuiTypography-body1"
+            >
+              Draft
+            </p>
+          </div>
+        </div>
+        <div
+          class="MuiGrid-root MuiGrid-item MuiGrid-grid-lg-2 MuiGrid-grid-xl-2"
+        >
+          <p
+            class="MuiTypography-root MuiTypography-body1"
+            style="color: rgb(76, 76, 76); font-size: 15px; text-align: right;"
+          >
+            0.5
+            %
+          </p>
+        </div>
+        <div
+          class="MuiGrid-root MuiGrid-item MuiGrid-grid-lg-1 MuiGrid-grid-xl-1"
+        >
+          <p
+            class="MuiTypography-root MuiTypography-body1"
+            style="color: rgb(76, 76, 76); font-size: 15px; font-weight: bold; text-align: right;"
+          >
+            0
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`PieChart should render skeleton 1`] = `
+<div>
+  <div
+    class="MuiSkeleton-root MuiSkeleton-rect MuiSkeleton-wave"
+    style="width: 100%; height: 96%;"
+  />
+</div>
+`;

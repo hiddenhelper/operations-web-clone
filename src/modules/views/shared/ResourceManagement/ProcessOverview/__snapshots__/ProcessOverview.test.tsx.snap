@@ -1,0 +1,219 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Process Overview should render 1`] = `
+<body>
+  <div>
+    <div
+      class="makeStyles-processOverviewContainer-9"
+    >
+      <p
+        class="MuiTypography-root makeStyles-processOverviewTitle-8 MuiTypography-body1"
+      >
+        Progress:
+      </p>
+      <div
+        class="MuiPaper-root MuiStepper-root MuiStepper-vertical makeStyles-stepperContainer-10 MuiPaper-elevation0"
+      >
+        <div
+          class="MuiStep-root MuiStep-vertical makeStyles-step-1"
+        >
+          <span
+            class=""
+            data-testid="controlled-button"
+            tabindex="-1"
+          >
+            <button
+              class="MuiButtonBase-root MuiStepButton-root makeStyles-stepButton-11"
+              data-testid="step-button"
+              tabindex="0"
+              type="button"
+            >
+              <span
+                class="MuiStepLabel-root MuiStepLabel-horizontal makeStyles-label-2"
+              >
+                <span
+                  class="MuiStepLabel-iconContainer makeStyles-iconContainer-7"
+                />
+                <span
+                  class="MuiStepLabel-labelContainer"
+                >
+                  <span
+                    class="MuiTypography-root MuiStepLabel-label MuiTypography-body2 MuiTypography-displayBlock"
+                  >
+                    <p
+                      class="MuiTypography-root makeStyles-typography-3  makeStyles-active-5 MuiTypography-body1"
+                    >
+                      <span>
+                        General Information
+                      </span>
+                      <span>
+                        1/2
+                      </span>
+                    </p>
+                  </span>
+                </span>
+              </span>
+              <span
+                class="MuiTouchRipple-root MuiStepButton-touchRipple"
+              />
+            </button>
+          </span>
+        </div>
+        <div
+          class="MuiStepConnector-root WithStyles(ForwardRef(StepConnector))-root-12 MuiStepConnector-vertical"
+        >
+          <span
+            class="MuiStepConnector-line WithStyles(ForwardRef(StepConnector))-line-13 MuiStepConnector-lineVertical"
+          />
+        </div>
+        <div
+          class="MuiStep-root MuiStep-vertical makeStyles-step-1"
+        >
+          <span
+            class=""
+            data-testid="controlled-button"
+            tabindex="-1"
+          >
+            <button
+              class="MuiButtonBase-root MuiStepButton-root makeStyles-stepButton-11"
+              data-testid="step-button"
+              tabindex="0"
+              type="button"
+            >
+              <span
+                class="MuiStepLabel-root MuiStepLabel-horizontal makeStyles-label-2"
+              >
+                <span
+                  class="MuiStepLabel-iconContainer makeStyles-iconContainer-7"
+                />
+                <span
+                  class="MuiStepLabel-labelContainer"
+                >
+                  <span
+                    class="MuiTypography-root MuiStepLabel-label MuiTypography-body2 MuiTypography-displayBlock"
+                  >
+                    <p
+                      class="MuiTypography-root makeStyles-typography-3   MuiTypography-body1"
+                    >
+                      <span>
+                        Addresses
+                      </span>
+                      <span>
+                        2/3
+                      </span>
+                    </p>
+                  </span>
+                </span>
+              </span>
+              <span
+                class="MuiTouchRipple-root MuiStepButton-touchRipple"
+              />
+            </button>
+          </span>
+        </div>
+        <div
+          class="MuiStepConnector-root WithStyles(ForwardRef(StepConnector))-root-12 MuiStepConnector-vertical"
+        >
+          <span
+            class="MuiStepConnector-line WithStyles(ForwardRef(StepConnector))-line-13 MuiStepConnector-lineVertical"
+          />
+        </div>
+        <div
+          class="MuiStep-root MuiStep-vertical makeStyles-step-1"
+        >
+          <span
+            class=""
+            data-testid="controlled-button"
+            tabindex="-1"
+          >
+            <button
+              class="MuiButtonBase-root MuiStepButton-root makeStyles-stepButton-11"
+              data-testid="step-button"
+              tabindex="0"
+              type="button"
+            >
+              <span
+                class="MuiStepLabel-root MuiStepLabel-horizontal makeStyles-label-2"
+              >
+                <span
+                  class="MuiStepLabel-iconContainer makeStyles-iconContainer-7"
+                />
+                <span
+                  class="MuiStepLabel-labelContainer"
+                >
+                  <span
+                    class="MuiTypography-root MuiStepLabel-label MuiTypography-body2 MuiTypography-displayBlock"
+                  >
+                    <p
+                      class="MuiTypography-root makeStyles-typography-3 makeStyles-completed-4  MuiTypography-body1"
+                    >
+                      <span>
+                        Users
+                      </span>
+                      <span>
+                        2/2
+                      </span>
+                    </p>
+                  </span>
+                </span>
+              </span>
+              <span
+                class="MuiTouchRipple-root MuiStepButton-touchRipple"
+              />
+            </button>
+          </span>
+        </div>
+        <div
+          class="MuiStepConnector-root WithStyles(ForwardRef(StepConnector))-root-12 MuiStepConnector-vertical"
+        >
+          <span
+            class="MuiStepConnector-line WithStyles(ForwardRef(StepConnector))-line-13 MuiStepConnector-lineVertical"
+          />
+        </div>
+        <div
+          class="MuiStep-root MuiStep-vertical makeStyles-step-1"
+        >
+          <span
+            class=""
+            data-testid="controlled-button"
+            tabindex="-1"
+          >
+            <button
+              class="MuiButtonBase-root MuiStepButton-root makeStyles-stepButton-11"
+              data-testid="step-button"
+              tabindex="0"
+              type="button"
+            >
+              <span
+                class="MuiStepLabel-root MuiStepLabel-horizontal makeStyles-label-2"
+              >
+                <span
+                  class="MuiStepLabel-iconContainer makeStyles-iconContainer-7"
+                />
+                <span
+                  class="MuiStepLabel-labelContainer"
+                >
+                  <span
+                    class="MuiTypography-root MuiStepLabel-label MuiTypography-body2 MuiTypography-displayBlock"
+                  >
+                    <p
+                      class="MuiTypography-root makeStyles-typography-3   MuiTypography-body1"
+                    >
+                      <span>
+                        Review
+                      </span>
+                    </p>
+                  </span>
+                </span>
+              </span>
+              <span
+                class="MuiTouchRipple-root MuiStepButton-touchRipple"
+              />
+            </button>
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+`;

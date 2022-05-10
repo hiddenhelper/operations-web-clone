@@ -1,0 +1,66 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`DashboardTableRow Component should render 1`] = `
+<div>
+  <table>
+    <tbody>
+      <tr
+        class="MuiTableRow-root WithStyles(ForwardRef(TableRow))-root-27 makeStyles-invertedRow-23"
+        data-testid="worker-list-row"
+      >
+        <td
+          class="MuiTableCell-root makeStyles-listName-10"
+        >
+          <div
+            class="makeStyles-workerRow-1"
+          >
+            <div
+              class="makeStyles-workerCenter-3"
+            >
+              <span
+                class=""
+                data-testid="controlled-button"
+                tabindex="-1"
+              >
+                <button
+                  class="MuiButtonBase-root MuiButton-root MuiButton-text"
+                  data-testid="navigate-btn"
+                  tabindex="0"
+                  type="button"
+                >
+                  <span
+                    class="MuiButton-label"
+                  >
+                    Test Name 1
+                  </span>
+                </button>
+              </span>
+            </div>
+          </div>
+        </td>
+        <td
+          class="MuiTableCell-root"
+        >
+          Jan 14, 2021
+        </td>
+        <td
+          class="MuiTableCell-root"
+        >
+          56
+        </td>
+        <td
+          class="MuiTableCell-root"
+        >
+          32
+        </td>
+        <td
+          class="MuiTableCell-root"
+        >
+          $ 
+          3,200
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+`;

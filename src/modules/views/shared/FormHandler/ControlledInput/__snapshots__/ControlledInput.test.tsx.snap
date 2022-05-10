@@ -1,0 +1,54 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Controlled Input should render with mark 1`] = `
+<body>
+  <div>
+    <div
+      class="MuiFormControl-root makeStyles-formControl-4 "
+    >
+      <h1
+        class="MuiTypography-root MuiTypography-caption MuiTypography-colorSecondary MuiTypography-alignLeft"
+      >
+        label
+         
+        <span
+          class="makeStyles-requiredMark-5"
+        >
+          *
+        </span>
+      </h1>
+      <div
+        data-testid="testid"
+      >
+        <div>
+          input
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+`;
+
+exports[`Controlled Input should render without mark 1`] = `
+<body>
+  <div>
+    <div
+      class="MuiFormControl-root makeStyles-formControl-9 "
+    >
+      <h1
+        class="MuiTypography-root MuiTypography-caption MuiTypography-colorSecondary MuiTypography-alignLeft"
+      >
+        label
+         
+      </h1>
+      <div
+        data-testid="testid"
+      >
+        <div>
+          input
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+`;

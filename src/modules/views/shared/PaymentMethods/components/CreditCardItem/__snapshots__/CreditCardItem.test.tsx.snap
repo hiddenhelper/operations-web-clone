@@ -1,0 +1,201 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Credit Card Item should render 1`] = `
+<div>
+  <div
+    class="MuiPaper-root MuiCard-root  makeStyles-cardItem-2 makeStyles-cardItemClickable-3  MuiPaper-elevation1 MuiPaper-rounded"
+    data-testid="card-item"
+    role="button"
+  >
+    <p
+      class="MuiTypography-root makeStyles-creditCardTitle-12 MuiTypography-body1"
+    >
+      CREDIT CARD
+    </p>
+    <div
+      class="makeStyles-cardNumberWrapper-21"
+    >
+      <p
+        class="MuiTypography-root makeStyles-creditCardNumber-14 MuiTypography-body1"
+      >
+        **** **** **** 4312
+      </p>
+      <div
+        class="makeStyles-creditCardLogoContainer-16"
+      >
+        <div
+          class="makeStyles-creditCardLogo-15"
+        >
+          <img
+            alt="Credit Card Logo"
+            class="makeStyles-creditCardIconImage-11"
+            src="card-logo-visa.png"
+          />
+        </div>
+      </div>
+    </div>
+    <div>
+      <p
+        class="MuiTypography-root makeStyles-creditCardHolder-13 MuiTypography-body1"
+      >
+        Rodolfo Perez
+        
+      </p>
+      <p
+        class="MuiTypography-root makeStyles-creditCardHolder-13 MuiTypography-body1"
+      >
+        USA
+      </p>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Credit Card Item should render compact 1`] = `
+<div>
+  <div
+    class="MuiPaper-root MuiCard-root makeStyles-compactCardItem-28 makeStyles-cardItem-26 makeStyles-cardItemClickable-27  MuiPaper-elevation1 MuiPaper-rounded"
+    data-testid="card-item"
+    role="button"
+  >
+    <p
+      class="MuiTypography-root makeStyles-creditCardTitle-36 MuiTypography-body1"
+    >
+      CREDIT CARD
+    </p>
+    <div
+      class="makeStyles-cardNumberWrapper-45"
+    >
+      <p
+        class="MuiTypography-root makeStyles-creditCardNumber-38 MuiTypography-body1"
+      >
+        **** **** **** 4312
+      </p>
+      <div
+        class="makeStyles-creditCardLogoContainer-40"
+      >
+        <div
+          class="makeStyles-creditCardLogo-39"
+        >
+          <img
+            alt="Credit Card Logo"
+            class="makeStyles-creditCardIconImage-35"
+            src="card-logo-visa.png"
+          />
+        </div>
+        <span
+          class="makeStyles-icon-41 makeStyles-activeIcon-42 "
+        />
+      </div>
+    </div>
+    <div>
+      <p
+        class="MuiTypography-root makeStyles-creditCardHolder-37 MuiTypography-body1"
+      >
+        Rodolfo Perez
+         - USA
+      </p>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Credit Card Item should render default brand 1`] = `
+<div>
+  <div
+    class="MuiPaper-root MuiCard-root  makeStyles-cardItem-74 makeStyles-cardItemClickable-75  MuiPaper-elevation1 MuiPaper-rounded"
+    data-testid="card-item"
+    role="button"
+  >
+    <p
+      class="MuiTypography-root makeStyles-creditCardTitle-84 MuiTypography-body1"
+    >
+      CREDIT CARD
+    </p>
+    <div
+      class="makeStyles-cardNumberWrapper-93"
+    >
+      <p
+        class="MuiTypography-root makeStyles-creditCardNumber-86 MuiTypography-body1"
+      >
+        **** **** **** 7468
+      </p>
+      <div
+        class="makeStyles-creditCardLogoContainer-88"
+      >
+        <div
+          class="makeStyles-creditCardLogo-87"
+        >
+          <svg
+            class="makeStyles-creditCardIconImage-83"
+          >
+            credit-card.svg
+          </svg>
+        </div>
+      </div>
+    </div>
+    <div>
+      <p
+        class="MuiTypography-root makeStyles-creditCardHolder-85 MuiTypography-body1"
+      >
+        Nico  Monetto
+        
+      </p>
+      <p
+        class="MuiTypography-root makeStyles-creditCardHolder-85 MuiTypography-body1"
+      >
+        USA
+      </p>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Credit Card Item should render selected 1`] = `
+<div>
+  <div
+    class="MuiPaper-root MuiCard-root makeStyles-compactCardItem-52 makeStyles-cardItem-50 makeStyles-cardItemClickable-51 makeStyles-cardItemSelected-57 MuiPaper-elevation1 MuiPaper-rounded"
+    data-testid="card-item"
+    role="button"
+  >
+    <p
+      class="MuiTypography-root makeStyles-creditCardTitle-60 MuiTypography-body1"
+    >
+      CREDIT CARD
+    </p>
+    <div
+      class="makeStyles-cardNumberWrapper-69"
+    >
+      <p
+        class="MuiTypography-root makeStyles-creditCardNumber-62 MuiTypography-body1"
+      >
+        **** **** **** 4312
+      </p>
+      <div
+        class="makeStyles-creditCardLogoContainer-64"
+      >
+        <div
+          class="makeStyles-creditCardLogo-63"
+        >
+          <img
+            alt="Credit Card Logo"
+            class="makeStyles-creditCardIconImage-59"
+            src="card-logo-visa.png"
+          />
+        </div>
+        <span
+          class="makeStyles-icon-65 makeStyles-activeIcon-66 makeStyles-checkedIcon-68"
+        />
+      </div>
+    </div>
+    <div>
+      <p
+        class="MuiTypography-root makeStyles-creditCardHolder-61 MuiTypography-body1"
+      >
+        Rodolfo Perez
+         - USA
+      </p>
+    </div>
+  </div>
+</div>
+`;

@@ -1,0 +1,2099 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Review Step should render 1`] = `
+<div>
+  <div
+    class="MuiPaper-root makeStyles-container-98  MuiPaper-outlined MuiPaper-rounded"
+  >
+    <div
+      class="MuiGrid-root MuiGrid-container MuiGrid-align-items-xs-center MuiGrid-justify-xs-space-between"
+    >
+      <div
+        class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-auto"
+      >
+        <h1
+          class="MuiTypography-root makeStyles-title-99 MuiTypography-h1"
+        >
+          General Information
+        </h1>
+      </div>
+      <div
+        class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-auto"
+      >
+        <span
+          class=" makeStyles-secondaryActions-100"
+        >
+          <span
+            class=""
+            data-testid="controlled-button"
+            tabindex="-1"
+          >
+            <button
+              class="MuiButtonBase-root MuiButton-root MuiButton-text makeStyles-fieldWrapper-103 makeStyles-fieldsCompleted-105"
+              data-testid="missing-fields-btn"
+              tabindex="0"
+              type="button"
+            >
+              <span
+                class="MuiButton-label"
+              >
+                All required fields completed
+                <span
+                  class="MuiButton-endIcon MuiButton-iconSizeMedium"
+                >
+                  <svg
+                    aria-hidden="true"
+                    class="MuiSvgIcon-root"
+                    focusable="false"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM20.71 7.04c.39-.39.39-1.02 0-1.41l-2.34-2.34a.9959.9959 0 00-1.41 0l-1.83 1.83 3.75 3.75 1.83-1.83z"
+                    />
+                  </svg>
+                </span>
+              </span>
+            </button>
+          </span>
+        </span>
+      </div>
+    </div>
+    <hr
+      class="MuiDivider-root makeStyles-divider-101"
+    />
+    <div
+      class="makeStyles-reviewGeneralInformation-53 makeStyles-reviewGeneralInformationDirection-56"
+    >
+      <div
+        class="makeStyles-informationBlocksWrapper-55"
+      >
+        <div
+          class="makeStyles-informationBlock-52"
+        >
+          <p
+            class="MuiTypography-root makeStyles-cardFont-30 makeStyles-cardFontAccent-32 makeStyles-cardTitle-35 MuiTypography-body1"
+          >
+            Client Name
+          </p>
+          <p
+            class="MuiTypography-root makeStyles-cardFont-30 MuiTypography-body1"
+          >
+            -
+          </p>
+        </div>
+        <div
+          class="makeStyles-informationBlock-52 makeStyles-informationMiddleBlock-57"
+        >
+          <p
+            class="MuiTypography-root makeStyles-cardFont-30 makeStyles-cardFontAccent-32 makeStyles-cardTitle-35 MuiTypography-body1"
+          >
+            Legal Information
+          </p>
+          <div
+            class="makeStyles-cardData-39"
+          >
+            <p
+              class="MuiTypography-root makeStyles-cardFont-30 makeStyles-cardDataTitle-40 MuiTypography-body1"
+            >
+              Taxpayer Identification Number:
+            </p>
+            <p
+              class="MuiTypography-root makeStyles-cardFont-30 makeStyles-cardFontAccent-32 MuiTypography-body1"
+            >
+              -
+            </p>
+          </div>
+          <div
+            class="makeStyles-cardData-39"
+          >
+            <p
+              class="MuiTypography-root makeStyles-cardFont-30 makeStyles-cardDataTitle-40 MuiTypography-body1"
+            >
+              MBE/WBE:
+            </p>
+            <p
+              class="MuiTypography-root makeStyles-cardFont-30 makeStyles-cardFontAccent-32 MuiTypography-body1"
+            >
+              -
+            </p>
+          </div>
+        </div>
+      </div>
+      <div
+        class="makeStyles-informationBlock-52 makeStyles-lastInformationBlock-58"
+        data-testid="trade-names"
+      >
+        <p
+          class="MuiTypography-root makeStyles-cardFont-30 makeStyles-cardFontAccent-32 makeStyles-cardTitle-35 makeStyles-lastInformationTitle-59 MuiTypography-body1"
+        >
+          Trades
+        </p>
+        <span
+          class="makeStyles-cardTrades-38"
+        >
+          <span>
+            -
+          </span>
+        </span>
+      </div>
+      <div
+        class="makeStyles-informationBlocksWrapper-55 makeStyles-lastInformationBlock-58"
+      >
+        <div
+          class="makeStyles-informationBlock-52 makeStyles-lastInformationTitle-59"
+        >
+          <p
+            class="MuiTypography-root makeStyles-cardFont-30 makeStyles-cardFontAccent-32 makeStyles-cardTitle-35 MuiTypography-body1"
+          >
+            Universal Badge
+          </p>
+          <div
+            class="makeStyles-cardData-39"
+          >
+            <p
+              class="MuiTypography-root makeStyles-cardFont-30 makeStyles-cardDataTitle-40 MuiTypography-body1"
+            >
+              Universal Badge:
+            </p>
+            <p
+              class="MuiTypography-root makeStyles-cardFont-30 makeStyles-cardFontAccent-32 MuiTypography-body1"
+            >
+              No
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    class="MuiPaper-root makeStyles-container-98  MuiPaper-outlined MuiPaper-rounded"
+  >
+    <div
+      class="MuiGrid-root MuiGrid-container MuiGrid-align-items-xs-center MuiGrid-justify-xs-space-between"
+    >
+      <div
+        class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-auto"
+      >
+        <h1
+          class="MuiTypography-root makeStyles-title-99 MuiTypography-h1"
+        >
+          Addresses
+        </h1>
+      </div>
+      <div
+        class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-auto"
+      >
+        <span
+          class=" makeStyles-secondaryActions-100"
+        >
+          <span
+            class=""
+            data-testid="controlled-button"
+            tabindex="-1"
+          >
+            <button
+              class="MuiButtonBase-root MuiButton-root MuiButton-text makeStyles-fieldWrapper-103 makeStyles-fieldsCompleted-105"
+              data-testid="missing-fields-btn"
+              tabindex="0"
+              type="button"
+            >
+              <span
+                class="MuiButton-label"
+              >
+                All required fields completed
+                <span
+                  class="MuiButton-endIcon MuiButton-iconSizeMedium"
+                >
+                  <svg
+                    aria-hidden="true"
+                    class="MuiSvgIcon-root"
+                    focusable="false"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM20.71 7.04c.39-.39.39-1.02 0-1.41l-2.34-2.34a.9959.9959 0 00-1.41 0l-1.83 1.83 3.75 3.75 1.83-1.83z"
+                    />
+                  </svg>
+                </span>
+              </span>
+            </button>
+          </span>
+        </span>
+      </div>
+    </div>
+    <hr
+      class="MuiDivider-root makeStyles-divider-101"
+    />
+    <div
+      class="MuiGrid-root makeStyles-addressesWrapper-75 MuiGrid-container"
+    >
+      <div
+        class="MuiGrid-root makeStyles-addressItem-77 MuiGrid-item MuiGrid-grid-xs-4"
+      >
+        <div
+          class="makeStyles-informationBlock-52 makeStyles-addressInformationBlock-76"
+        >
+          <p
+            class="MuiTypography-root makeStyles-cardFont-30 makeStyles-cardFontAccent-32 makeStyles-cardAddressTitle-41 MuiTypography-body1"
+          >
+            Billing Address
+          </p>
+          <p
+            class="MuiTypography-root makeStyles-cardFont-30  MuiTypography-body1"
+          >
+            
+            <span
+              class=" "
+            >
+              -
+            </span>
+          </p>
+          <p
+            class="MuiTypography-root makeStyles-cardFont-30  MuiTypography-body1"
+          >
+            
+            
+            
+            
+          </p>
+        </div>
+      </div>
+      <hr
+        class="MuiDivider-root makeStyles-dividerColor-91 MuiDivider-flexItem MuiDivider-vertical"
+      />
+      <div
+        class="MuiGrid-root makeStyles-addressItem-77 MuiGrid-item MuiGrid-grid-xs-4"
+      >
+        <div>
+          <p
+            class="MuiTypography-root makeStyles-cardFont-30 makeStyles-cardFontAccent-32 makeStyles-cardAddressTitle-41 MuiTypography-body1"
+          >
+            Mailing Address
+          </p>
+          <p
+            class="MuiTypography-root makeStyles-cardFont-30 makeStyles-cardAddressTitle-41 MuiTypography-body1"
+          >
+            Same as Billing Address
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    class="MuiPaper-root makeStyles-container-98  MuiPaper-outlined MuiPaper-rounded"
+  >
+    <div
+      class="MuiGrid-root MuiGrid-container MuiGrid-align-items-xs-center MuiGrid-justify-xs-space-between"
+    >
+      <div
+        class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-auto"
+      >
+        <h1
+          class="MuiTypography-root makeStyles-title-99 MuiTypography-h1"
+        >
+          Users
+        </h1>
+      </div>
+      <div
+        class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-auto"
+      >
+        <span
+          class=" makeStyles-secondaryActions-100"
+        >
+          <span
+            class=""
+            data-testid="controlled-button"
+            tabindex="-1"
+          >
+            <button
+              class="MuiButtonBase-root MuiButton-root MuiButton-text makeStyles-fieldWrapper-103 makeStyles-fieldsCompleted-105"
+              data-testid="missing-fields-btn"
+              tabindex="0"
+              type="button"
+            >
+              <span
+                class="MuiButton-label"
+              >
+                All required fields completed
+                <span
+                  class="MuiButton-endIcon MuiButton-iconSizeMedium"
+                >
+                  <svg
+                    aria-hidden="true"
+                    class="MuiSvgIcon-root"
+                    focusable="false"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM20.71 7.04c.39-.39.39-1.02 0-1.41l-2.34-2.34a.9959.9959 0 00-1.41 0l-1.83 1.83 3.75 3.75 1.83-1.83z"
+                    />
+                  </svg>
+                </span>
+              </span>
+            </button>
+          </span>
+        </span>
+      </div>
+    </div>
+    <hr
+      class="MuiDivider-root makeStyles-divider-101"
+    />
+    <div
+      class="makeStyles-tableWrapper-66"
+    >
+      <table
+        class="MuiTable-root"
+      >
+        <thead
+          class="MuiTableHead-root"
+        >
+          <tr
+            class="MuiTableRow-root MuiTableRow-head"
+          >
+            <th
+              class="MuiTableCell-root MuiTableCell-head"
+              scope="col"
+            >
+              Name
+            </th>
+            <th
+              class="MuiTableCell-root MuiTableCell-head"
+              scope="col"
+            >
+              Email
+            </th>
+            <th
+              class="MuiTableCell-root MuiTableCell-head"
+              scope="col"
+            >
+              Mobile Number
+            </th>
+            <th
+              class="MuiTableCell-root MuiTableCell-head"
+              scope="col"
+            >
+              Office Number
+            </th>
+            <th
+              class="MuiTableCell-root MuiTableCell-head"
+              scope="col"
+            >
+              Preferred
+            </th>
+          </tr>
+        </thead>
+        <tbody
+          class="MuiTableBody-root"
+        />
+      </table>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Review Step should render default 1`] = `
+<div>
+  <div
+    class="MuiPaper-root makeStyles-container-520  MuiPaper-outlined MuiPaper-rounded"
+  >
+    <div
+      class="MuiGrid-root MuiGrid-container MuiGrid-align-items-xs-center MuiGrid-justify-xs-space-between"
+    >
+      <div
+        class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-auto"
+      >
+        <h1
+          class="MuiTypography-root makeStyles-title-521 MuiTypography-h1"
+        >
+          General Information
+        </h1>
+      </div>
+      <div
+        class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-auto"
+      >
+        <span
+          class=" makeStyles-secondaryActions-522"
+        >
+          <span
+            class=""
+            data-testid="controlled-button"
+            tabindex="-1"
+          >
+            <button
+              class="MuiButtonBase-root MuiButton-root MuiButton-text makeStyles-fieldWrapper-525 makeStyles-fieldsCompleted-527"
+              data-testid="missing-fields-btn"
+              tabindex="0"
+              type="button"
+            >
+              <span
+                class="MuiButton-label"
+              >
+                All required fields completed
+                <span
+                  class="MuiButton-endIcon MuiButton-iconSizeMedium"
+                >
+                  <svg
+                    aria-hidden="true"
+                    class="MuiSvgIcon-root"
+                    focusable="false"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM20.71 7.04c.39-.39.39-1.02 0-1.41l-2.34-2.34a.9959.9959 0 00-1.41 0l-1.83 1.83 3.75 3.75 1.83-1.83z"
+                    />
+                  </svg>
+                </span>
+              </span>
+            </button>
+          </span>
+        </span>
+      </div>
+    </div>
+    <hr
+      class="MuiDivider-root makeStyles-divider-523"
+    />
+    <div
+      class="makeStyles-reviewGeneralInformation-475 makeStyles-reviewGeneralInformationDirection-478"
+    >
+      <div
+        class="makeStyles-informationBlocksWrapper-477"
+      >
+        <div
+          class="makeStyles-informationBlock-474"
+        >
+          <p
+            class="MuiTypography-root makeStyles-cardFont-452 makeStyles-cardFontAccent-454 makeStyles-cardTitle-457 MuiTypography-body1"
+          >
+            Client Name
+          </p>
+          <p
+            class="MuiTypography-root makeStyles-cardFont-452 MuiTypography-body1"
+          >
+            -
+          </p>
+        </div>
+        <div
+          class="makeStyles-informationBlock-474 makeStyles-informationMiddleBlock-479"
+        >
+          <p
+            class="MuiTypography-root makeStyles-cardFont-452 makeStyles-cardFontAccent-454 makeStyles-cardTitle-457 MuiTypography-body1"
+          >
+            Legal Information
+          </p>
+          <div
+            class="makeStyles-cardData-461"
+          >
+            <p
+              class="MuiTypography-root makeStyles-cardFont-452 makeStyles-cardDataTitle-462 MuiTypography-body1"
+            >
+              Taxpayer Identification Number:
+            </p>
+            <p
+              class="MuiTypography-root makeStyles-cardFont-452 makeStyles-cardFontAccent-454 MuiTypography-body1"
+            >
+              -
+            </p>
+          </div>
+          <div
+            class="makeStyles-cardData-461"
+          >
+            <p
+              class="MuiTypography-root makeStyles-cardFont-452 makeStyles-cardDataTitle-462 MuiTypography-body1"
+            >
+              MBE/WBE:
+            </p>
+            <p
+              class="MuiTypography-root makeStyles-cardFont-452 makeStyles-cardFontAccent-454 MuiTypography-body1"
+            >
+              -
+            </p>
+          </div>
+        </div>
+      </div>
+      <div
+        class="makeStyles-informationBlock-474 makeStyles-lastInformationBlock-480"
+        data-testid="trade-names"
+      >
+        <p
+          class="MuiTypography-root makeStyles-cardFont-452 makeStyles-cardFontAccent-454 makeStyles-cardTitle-457 makeStyles-lastInformationTitle-481 MuiTypography-body1"
+        >
+          Trades
+        </p>
+        <span
+          class="makeStyles-cardTrades-460"
+        >
+          <span>
+            -
+          </span>
+        </span>
+      </div>
+      <div
+        class="makeStyles-informationBlocksWrapper-477 makeStyles-lastInformationBlock-480"
+      >
+        <div
+          class="makeStyles-informationBlock-474 makeStyles-lastInformationTitle-481"
+        >
+          <p
+            class="MuiTypography-root makeStyles-cardFont-452 makeStyles-cardFontAccent-454 makeStyles-cardTitle-457 MuiTypography-body1"
+          >
+            Universal Badge
+          </p>
+          <div
+            class="makeStyles-cardData-461"
+          >
+            <p
+              class="MuiTypography-root makeStyles-cardFont-452 makeStyles-cardDataTitle-462 MuiTypography-body1"
+            >
+              Universal Badge:
+            </p>
+            <p
+              class="MuiTypography-root makeStyles-cardFont-452 makeStyles-cardFontAccent-454 MuiTypography-body1"
+            >
+              No
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    class="MuiPaper-root makeStyles-container-520  MuiPaper-outlined MuiPaper-rounded"
+  >
+    <div
+      class="MuiGrid-root MuiGrid-container MuiGrid-align-items-xs-center MuiGrid-justify-xs-space-between"
+    >
+      <div
+        class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-auto"
+      >
+        <h1
+          class="MuiTypography-root makeStyles-title-521 MuiTypography-h1"
+        >
+          Addresses
+        </h1>
+      </div>
+      <div
+        class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-auto"
+      >
+        <span
+          class=" makeStyles-secondaryActions-522"
+        >
+          <span
+            class=""
+            data-testid="controlled-button"
+            tabindex="-1"
+          >
+            <button
+              class="MuiButtonBase-root MuiButton-root MuiButton-text makeStyles-fieldWrapper-525 makeStyles-fieldsCompleted-527"
+              data-testid="missing-fields-btn"
+              tabindex="0"
+              type="button"
+            >
+              <span
+                class="MuiButton-label"
+              >
+                All required fields completed
+                <span
+                  class="MuiButton-endIcon MuiButton-iconSizeMedium"
+                >
+                  <svg
+                    aria-hidden="true"
+                    class="MuiSvgIcon-root"
+                    focusable="false"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM20.71 7.04c.39-.39.39-1.02 0-1.41l-2.34-2.34a.9959.9959 0 00-1.41 0l-1.83 1.83 3.75 3.75 1.83-1.83z"
+                    />
+                  </svg>
+                </span>
+              </span>
+            </button>
+          </span>
+        </span>
+      </div>
+    </div>
+    <hr
+      class="MuiDivider-root makeStyles-divider-523"
+    />
+    <div
+      class="MuiGrid-root makeStyles-addressesWrapper-497 MuiGrid-container"
+    >
+      <div
+        class="MuiGrid-root makeStyles-addressItem-499 MuiGrid-item MuiGrid-grid-xs-4"
+      >
+        <div
+          class="makeStyles-informationBlock-474 makeStyles-addressInformationBlock-498"
+        >
+          <p
+            class="MuiTypography-root makeStyles-cardFont-452 makeStyles-cardFontAccent-454 makeStyles-cardAddressTitle-463 MuiTypography-body1"
+          >
+            Billing Address
+          </p>
+          <p
+            class="MuiTypography-root makeStyles-cardFont-452  MuiTypography-body1"
+          >
+            
+            <span
+              class=" "
+            >
+              -
+            </span>
+          </p>
+          <p
+            class="MuiTypography-root makeStyles-cardFont-452  MuiTypography-body1"
+          >
+            
+            
+            
+            
+          </p>
+        </div>
+      </div>
+      <hr
+        class="MuiDivider-root makeStyles-dividerColor-513 MuiDivider-flexItem MuiDivider-vertical"
+      />
+      <div
+        class="MuiGrid-root makeStyles-addressItem-499 MuiGrid-item MuiGrid-grid-xs-4"
+      >
+        <div>
+          <p
+            class="MuiTypography-root makeStyles-cardFont-452 makeStyles-cardFontAccent-454 makeStyles-cardAddressTitle-463 MuiTypography-body1"
+          >
+            Mailing Address
+          </p>
+          <p
+            class="MuiTypography-root makeStyles-cardFont-452 makeStyles-cardAddressTitle-463 MuiTypography-body1"
+          >
+            Same as Billing Address
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    class="MuiPaper-root makeStyles-container-520  MuiPaper-outlined MuiPaper-rounded"
+  >
+    <div
+      class="MuiGrid-root MuiGrid-container MuiGrid-align-items-xs-center MuiGrid-justify-xs-space-between"
+    >
+      <div
+        class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-auto"
+      >
+        <h1
+          class="MuiTypography-root makeStyles-title-521 MuiTypography-h1"
+        >
+          Users
+        </h1>
+      </div>
+      <div
+        class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-auto"
+      >
+        <span
+          class=" makeStyles-secondaryActions-522"
+        >
+          <span
+            class=""
+            data-testid="controlled-button"
+            tabindex="-1"
+          >
+            <button
+              class="MuiButtonBase-root MuiButton-root MuiButton-text makeStyles-fieldWrapper-525 makeStyles-fieldsCompleted-527"
+              data-testid="missing-fields-btn"
+              tabindex="0"
+              type="button"
+            >
+              <span
+                class="MuiButton-label"
+              >
+                All required fields completed
+                <span
+                  class="MuiButton-endIcon MuiButton-iconSizeMedium"
+                >
+                  <svg
+                    aria-hidden="true"
+                    class="MuiSvgIcon-root"
+                    focusable="false"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM20.71 7.04c.39-.39.39-1.02 0-1.41l-2.34-2.34a.9959.9959 0 00-1.41 0l-1.83 1.83 3.75 3.75 1.83-1.83z"
+                    />
+                  </svg>
+                </span>
+              </span>
+            </button>
+          </span>
+        </span>
+      </div>
+    </div>
+    <hr
+      class="MuiDivider-root makeStyles-divider-523"
+    />
+    <div
+      class="makeStyles-tableWrapper-488"
+    >
+      <table
+        class="MuiTable-root"
+      >
+        <thead
+          class="MuiTableHead-root"
+        >
+          <tr
+            class="MuiTableRow-root MuiTableRow-head"
+          >
+            <th
+              class="MuiTableCell-root MuiTableCell-head"
+              scope="col"
+            >
+              Name
+            </th>
+            <th
+              class="MuiTableCell-root MuiTableCell-head"
+              scope="col"
+            >
+              Email
+            </th>
+            <th
+              class="MuiTableCell-root MuiTableCell-head"
+              scope="col"
+            >
+              Mobile Number
+            </th>
+            <th
+              class="MuiTableCell-root MuiTableCell-head"
+              scope="col"
+            >
+              Office Number
+            </th>
+            <th
+              class="MuiTableCell-root MuiTableCell-head"
+              scope="col"
+            >
+              Preferred
+            </th>
+          </tr>
+        </thead>
+        <tbody
+          class="MuiTableBody-root"
+        />
+      </table>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Review Step should render developer 1`] = `
+<div>
+  <div
+    class="MuiPaper-root makeStyles-container-415  MuiPaper-outlined MuiPaper-rounded"
+  >
+    <div
+      class="MuiGrid-root MuiGrid-container MuiGrid-align-items-xs-center MuiGrid-justify-xs-space-between"
+    >
+      <div
+        class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-auto"
+      >
+        <h1
+          class="MuiTypography-root makeStyles-title-416 MuiTypography-h1"
+        >
+          General Information
+        </h1>
+      </div>
+      <div
+        class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-auto"
+      >
+        <span
+          class=" makeStyles-secondaryActions-417"
+        >
+          <span
+            class=""
+            data-testid="controlled-button"
+            tabindex="-1"
+          >
+            <button
+              class="MuiButtonBase-root MuiButton-root MuiButton-text makeStyles-fieldWrapper-420 makeStyles-fieldsCompleted-422"
+              data-testid="missing-fields-btn"
+              tabindex="0"
+              type="button"
+            >
+              <span
+                class="MuiButton-label"
+              >
+                All required fields completed
+                <span
+                  class="MuiButton-endIcon MuiButton-iconSizeMedium"
+                >
+                  <svg
+                    aria-hidden="true"
+                    class="MuiSvgIcon-root"
+                    focusable="false"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM20.71 7.04c.39-.39.39-1.02 0-1.41l-2.34-2.34a.9959.9959 0 00-1.41 0l-1.83 1.83 3.75 3.75 1.83-1.83z"
+                    />
+                  </svg>
+                </span>
+              </span>
+            </button>
+          </span>
+        </span>
+      </div>
+    </div>
+    <hr
+      class="MuiDivider-root makeStyles-divider-418"
+    />
+    <div
+      class="makeStyles-reviewGeneralInformation-370 makeStyles-reviewGeneralInformationDirection-373"
+    >
+      <div
+        class="makeStyles-informationBlocksWrapper-372"
+      >
+        <div
+          class="makeStyles-informationBlock-369"
+        >
+          <p
+            class="MuiTypography-root makeStyles-cardFont-347 makeStyles-cardFontAccent-349 makeStyles-cardTitle-352 MuiTypography-body1"
+          >
+            Client Name
+          </p>
+          <p
+            class="MuiTypography-root makeStyles-cardFont-347 MuiTypography-body1"
+          >
+            Martin
+          </p>
+          <p
+            class="MuiTypography-root makeStyles-cardFont-347 MuiTypography-body1"
+          >
+            Developer
+          </p>
+        </div>
+        <div
+          class="makeStyles-informationBlock-369 makeStyles-informationMiddleBlock-374"
+        >
+          <p
+            class="MuiTypography-root makeStyles-cardFont-347 makeStyles-cardFontAccent-349 makeStyles-cardTitle-352 MuiTypography-body1"
+          >
+            Legal Information
+          </p>
+          <div
+            class="makeStyles-cardData-356"
+          >
+            <p
+              class="MuiTypography-root makeStyles-cardFont-347 makeStyles-cardDataTitle-357 MuiTypography-body1"
+            >
+              Taxpayer Identification Number:
+            </p>
+            <p
+              class="MuiTypography-root makeStyles-cardFont-347 makeStyles-cardFontAccent-349 MuiTypography-body1"
+            >
+              -
+            </p>
+          </div>
+          <div
+            class="makeStyles-cardData-356"
+          >
+            <p
+              class="MuiTypography-root makeStyles-cardFont-347 makeStyles-cardDataTitle-357 MuiTypography-body1"
+            >
+              MBE/WBE:
+            </p>
+            <p
+              class="MuiTypography-root makeStyles-cardFont-347 makeStyles-cardFontAccent-349 MuiTypography-body1"
+            >
+              -
+            </p>
+          </div>
+        </div>
+      </div>
+      <div
+        class="makeStyles-informationBlock-369 makeStyles-lastInformationBlock-375"
+        data-testid="trade-names"
+      >
+        <p
+          class="MuiTypography-root makeStyles-cardFont-347 makeStyles-cardFontAccent-349 makeStyles-cardTitle-352 makeStyles-lastInformationTitle-376 MuiTypography-body1"
+        >
+          Trades
+        </p>
+        <span
+          class="makeStyles-cardTrades-355"
+        >
+          <span>
+            -
+          </span>
+        </span>
+      </div>
+      <div
+        class="makeStyles-informationBlocksWrapper-372 makeStyles-lastInformationBlock-375"
+      >
+        <div
+          class="makeStyles-informationBlock-369 makeStyles-lastInformationTitle-376"
+        >
+          <p
+            class="MuiTypography-root makeStyles-cardFont-347 makeStyles-cardFontAccent-349 makeStyles-cardTitle-352 MuiTypography-body1"
+          >
+            Universal Badge
+          </p>
+          <div
+            class="makeStyles-cardData-356"
+          >
+            <p
+              class="MuiTypography-root makeStyles-cardFont-347 makeStyles-cardDataTitle-357 MuiTypography-body1"
+            >
+              Universal Badge:
+            </p>
+            <p
+              class="MuiTypography-root makeStyles-cardFont-347 makeStyles-cardFontAccent-349 MuiTypography-body1"
+            >
+              No
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    class="MuiPaper-root makeStyles-container-415  MuiPaper-outlined MuiPaper-rounded"
+  >
+    <div
+      class="MuiGrid-root MuiGrid-container MuiGrid-align-items-xs-center MuiGrid-justify-xs-space-between"
+    >
+      <div
+        class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-auto"
+      >
+        <h1
+          class="MuiTypography-root makeStyles-title-416 MuiTypography-h1"
+        >
+          Addresses
+        </h1>
+      </div>
+      <div
+        class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-auto"
+      >
+        <span
+          class=" makeStyles-secondaryActions-417"
+        >
+          <span
+            class=""
+            data-testid="controlled-button"
+            tabindex="-1"
+          >
+            <button
+              class="MuiButtonBase-root MuiButton-root MuiButton-text makeStyles-fieldWrapper-420 makeStyles-fieldsCompleted-422"
+              data-testid="missing-fields-btn"
+              tabindex="0"
+              type="button"
+            >
+              <span
+                class="MuiButton-label"
+              >
+                All required fields completed
+                <span
+                  class="MuiButton-endIcon MuiButton-iconSizeMedium"
+                >
+                  <svg
+                    aria-hidden="true"
+                    class="MuiSvgIcon-root"
+                    focusable="false"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM20.71 7.04c.39-.39.39-1.02 0-1.41l-2.34-2.34a.9959.9959 0 00-1.41 0l-1.83 1.83 3.75 3.75 1.83-1.83z"
+                    />
+                  </svg>
+                </span>
+              </span>
+            </button>
+          </span>
+        </span>
+      </div>
+    </div>
+    <hr
+      class="MuiDivider-root makeStyles-divider-418"
+    />
+    <div
+      class="MuiGrid-root makeStyles-addressesWrapper-392 MuiGrid-container"
+    >
+      <div
+        class="MuiGrid-root makeStyles-addressItem-394 MuiGrid-item MuiGrid-grid-xs-4"
+      >
+        <div
+          class="makeStyles-informationBlock-369 makeStyles-addressInformationBlock-393"
+        >
+          <p
+            class="MuiTypography-root makeStyles-cardFont-347 makeStyles-cardFontAccent-349 makeStyles-cardAddressTitle-358 MuiTypography-body1"
+          >
+            Billing Address
+          </p>
+          <p
+            class="MuiTypography-root makeStyles-cardFont-347  MuiTypography-body1"
+          >
+            
+            <span
+              class=" "
+            >
+              -
+            </span>
+          </p>
+          <p
+            class="MuiTypography-root makeStyles-cardFont-347  MuiTypography-body1"
+          >
+            
+            
+            
+            
+          </p>
+        </div>
+      </div>
+      <hr
+        class="MuiDivider-root makeStyles-dividerColor-408 MuiDivider-flexItem MuiDivider-vertical"
+      />
+      <div
+        class="MuiGrid-root makeStyles-addressItem-394 MuiGrid-item MuiGrid-grid-xs-4"
+      >
+        <div>
+          <p
+            class="MuiTypography-root makeStyles-cardFont-347 makeStyles-cardFontAccent-349 makeStyles-cardAddressTitle-358 MuiTypography-body1"
+          >
+            Mailing Address
+          </p>
+          <p
+            class="MuiTypography-root makeStyles-cardFont-347 makeStyles-cardAddressTitle-358 MuiTypography-body1"
+          >
+            Same as Billing Address
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    class="MuiPaper-root makeStyles-container-415  MuiPaper-outlined MuiPaper-rounded"
+  >
+    <div
+      class="MuiGrid-root MuiGrid-container MuiGrid-align-items-xs-center MuiGrid-justify-xs-space-between"
+    >
+      <div
+        class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-auto"
+      >
+        <h1
+          class="MuiTypography-root makeStyles-title-416 MuiTypography-h1"
+        >
+          Users
+        </h1>
+      </div>
+      <div
+        class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-auto"
+      >
+        <span
+          class=" makeStyles-secondaryActions-417"
+        >
+          <span
+            class=""
+            data-testid="controlled-button"
+            tabindex="-1"
+          >
+            <button
+              class="MuiButtonBase-root MuiButton-root MuiButton-text makeStyles-fieldWrapper-420 makeStyles-fieldsCompleted-422"
+              data-testid="missing-fields-btn"
+              tabindex="0"
+              type="button"
+            >
+              <span
+                class="MuiButton-label"
+              >
+                All required fields completed
+                <span
+                  class="MuiButton-endIcon MuiButton-iconSizeMedium"
+                >
+                  <svg
+                    aria-hidden="true"
+                    class="MuiSvgIcon-root"
+                    focusable="false"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM20.71 7.04c.39-.39.39-1.02 0-1.41l-2.34-2.34a.9959.9959 0 00-1.41 0l-1.83 1.83 3.75 3.75 1.83-1.83z"
+                    />
+                  </svg>
+                </span>
+              </span>
+            </button>
+          </span>
+        </span>
+      </div>
+    </div>
+    <hr
+      class="MuiDivider-root makeStyles-divider-418"
+    />
+    <div
+      class="makeStyles-tableWrapper-383"
+    >
+      <table
+        class="MuiTable-root"
+      >
+        <thead
+          class="MuiTableHead-root"
+        >
+          <tr
+            class="MuiTableRow-root MuiTableRow-head"
+          >
+            <th
+              class="MuiTableCell-root MuiTableCell-head"
+              scope="col"
+            >
+              Name
+            </th>
+            <th
+              class="MuiTableCell-root MuiTableCell-head"
+              scope="col"
+            >
+              Email
+            </th>
+            <th
+              class="MuiTableCell-root MuiTableCell-head"
+              scope="col"
+            >
+              Mobile Number
+            </th>
+            <th
+              class="MuiTableCell-root MuiTableCell-head"
+              scope="col"
+            >
+              Office Number
+            </th>
+            <th
+              class="MuiTableCell-root MuiTableCell-head"
+              scope="col"
+            >
+              Preferred
+            </th>
+          </tr>
+        </thead>
+        <tbody
+          class="MuiTableBody-root"
+        />
+      </table>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Review Step should render with secondary values 1`] = `
+<div>
+  <div
+    class="MuiPaper-root makeStyles-container-309  MuiPaper-outlined MuiPaper-rounded"
+  >
+    <div
+      class="MuiGrid-root MuiGrid-container MuiGrid-align-items-xs-center MuiGrid-justify-xs-space-between"
+    >
+      <div
+        class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-auto"
+      >
+        <h1
+          class="MuiTypography-root makeStyles-title-310 MuiTypography-h1"
+        >
+          General Information
+        </h1>
+      </div>
+      <div
+        class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-auto"
+      >
+        <span
+          class=" makeStyles-secondaryActions-311"
+        >
+          <span
+            class=""
+            data-testid="controlled-button"
+            tabindex="-1"
+          >
+            <button
+              class="MuiButtonBase-root MuiButton-root MuiButton-text makeStyles-fieldWrapper-314 makeStyles-fieldsMissing-315"
+              data-testid="missing-fields-btn"
+              tabindex="0"
+              type="button"
+            >
+              <span
+                class="MuiButton-label"
+              >
+                Some required fields are missing
+                <span
+                  class="MuiButton-endIcon MuiButton-iconSizeMedium"
+                >
+                  <svg
+                    aria-hidden="true"
+                    class="MuiSvgIcon-root"
+                    focusable="false"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM20.71 7.04c.39-.39.39-1.02 0-1.41l-2.34-2.34a.9959.9959 0 00-1.41 0l-1.83 1.83 3.75 3.75 1.83-1.83z"
+                    />
+                  </svg>
+                </span>
+              </span>
+            </button>
+          </span>
+        </span>
+      </div>
+    </div>
+    <hr
+      class="MuiDivider-root makeStyles-divider-312"
+    />
+    <div
+      class="makeStyles-reviewGeneralInformation-264 makeStyles-reviewGeneralInformationDirection-267"
+    >
+      <div
+        class="makeStyles-informationBlocksWrapper-266"
+      >
+        <div
+          class="makeStyles-informationBlock-263"
+        >
+          <p
+            class="MuiTypography-root makeStyles-cardFont-241 makeStyles-cardFontAccent-243 makeStyles-cardTitle-246 MuiTypography-body1"
+          >
+            Client Name
+          </p>
+          <p
+            class="MuiTypography-root makeStyles-cardFont-241 MuiTypography-body1"
+          >
+            Martin Fowler
+          </p>
+        </div>
+        <div
+          class="makeStyles-informationBlock-263 makeStyles-informationMiddleBlock-268"
+        >
+          <p
+            class="MuiTypography-root makeStyles-cardFont-241 makeStyles-cardFontAccent-243 makeStyles-cardTitle-246 MuiTypography-body1"
+          >
+            Legal Information
+          </p>
+          <div
+            class="makeStyles-cardData-250"
+          >
+            <p
+              class="MuiTypography-root makeStyles-cardFont-241 makeStyles-cardDataTitle-251 MuiTypography-body1"
+            >
+              Taxpayer Identification Number:
+            </p>
+            <p
+              class="MuiTypography-root makeStyles-cardFont-241 makeStyles-cardFontAccent-243 MuiTypography-body1"
+            >
+              1212346789
+            </p>
+          </div>
+          <div
+            class="makeStyles-cardData-250"
+          >
+            <p
+              class="MuiTypography-root makeStyles-cardFont-241 makeStyles-cardDataTitle-251 MuiTypography-body1"
+            >
+              MBE/WBE:
+            </p>
+            <p
+              class="MuiTypography-root makeStyles-cardFont-241 makeStyles-cardFontAccent-243 MuiTypography-body1"
+            >
+              -
+            </p>
+          </div>
+        </div>
+      </div>
+      <div
+        class="makeStyles-informationBlock-263 makeStyles-lastInformationBlock-269"
+        data-testid="trade-names"
+      >
+        <p
+          class="MuiTypography-root makeStyles-cardFont-241 makeStyles-cardFontAccent-243 makeStyles-cardTitle-246 makeStyles-lastInformationTitle-270 MuiTypography-body1"
+        >
+          Trades
+        </p>
+        <span
+          class="makeStyles-cardTrades-249"
+        >
+          <span>
+            trade 1, trade 2, trade 3, some trade.
+          </span>
+        </span>
+      </div>
+      <div
+        class="makeStyles-informationBlocksWrapper-266 makeStyles-lastInformationBlock-269"
+      >
+        <div
+          class="makeStyles-informationBlock-263 makeStyles-lastInformationTitle-270"
+        >
+          <p
+            class="MuiTypography-root makeStyles-cardFont-241 makeStyles-cardFontAccent-243 makeStyles-cardTitle-246 MuiTypography-body1"
+          >
+            Universal Badge
+          </p>
+          <div
+            class="makeStyles-cardData-250"
+          >
+            <p
+              class="MuiTypography-root makeStyles-cardFont-241 makeStyles-cardDataTitle-251 MuiTypography-body1"
+            >
+              Universal Badge:
+            </p>
+            <p
+              class="MuiTypography-root makeStyles-cardFont-241 makeStyles-cardFontAccent-243 MuiTypography-body1"
+            >
+              Yes
+            </p>
+          </div>
+          <div
+            class="makeStyles-cardData-250"
+          >
+            <p
+              class="MuiTypography-root makeStyles-cardFont-241 makeStyles-cardDataTitle-251 MuiTypography-body1"
+            >
+              Price:
+            </p>
+            <p
+              class="MuiTypography-root makeStyles-cardFont-241 makeStyles-cardFontAccent-243 MuiTypography-body1"
+            >
+              $ 123
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    class="MuiPaper-root makeStyles-container-309  MuiPaper-outlined MuiPaper-rounded"
+  >
+    <div
+      class="MuiGrid-root MuiGrid-container MuiGrid-align-items-xs-center MuiGrid-justify-xs-space-between"
+    >
+      <div
+        class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-auto"
+      >
+        <h1
+          class="MuiTypography-root makeStyles-title-310 MuiTypography-h1"
+        >
+          Addresses
+        </h1>
+      </div>
+      <div
+        class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-auto"
+      >
+        <span
+          class=" makeStyles-secondaryActions-311"
+        >
+          <span
+            class=""
+            data-testid="controlled-button"
+            tabindex="-1"
+          >
+            <button
+              class="MuiButtonBase-root MuiButton-root MuiButton-text makeStyles-fieldWrapper-314 makeStyles-fieldsCompleted-316"
+              data-testid="missing-fields-btn"
+              tabindex="0"
+              type="button"
+            >
+              <span
+                class="MuiButton-label"
+              >
+                All required fields completed
+                <span
+                  class="MuiButton-endIcon MuiButton-iconSizeMedium"
+                >
+                  <svg
+                    aria-hidden="true"
+                    class="MuiSvgIcon-root"
+                    focusable="false"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM20.71 7.04c.39-.39.39-1.02 0-1.41l-2.34-2.34a.9959.9959 0 00-1.41 0l-1.83 1.83 3.75 3.75 1.83-1.83z"
+                    />
+                  </svg>
+                </span>
+              </span>
+            </button>
+          </span>
+        </span>
+      </div>
+    </div>
+    <hr
+      class="MuiDivider-root makeStyles-divider-312"
+    />
+    <div
+      class="MuiGrid-root makeStyles-addressesWrapper-286 MuiGrid-container"
+    >
+      <div
+        class="MuiGrid-root makeStyles-addressItem-288 MuiGrid-item MuiGrid-grid-xs-4"
+      >
+        <div
+          class="makeStyles-informationBlock-263 makeStyles-addressInformationBlock-287"
+        >
+          <p
+            class="MuiTypography-root makeStyles-cardFont-241 makeStyles-cardFontAccent-243 makeStyles-cardAddressTitle-252 MuiTypography-body1"
+          >
+            Billing Address
+          </p>
+          <p
+            class="MuiTypography-root makeStyles-cardFont-241  MuiTypography-body1"
+          >
+            
+            <span
+              class=" "
+            >
+              -
+            </span>
+          </p>
+          <p
+            class="MuiTypography-root makeStyles-cardFont-241  MuiTypography-body1"
+          >
+            
+            
+            
+            
+          </p>
+        </div>
+      </div>
+      <hr
+        class="MuiDivider-root makeStyles-dividerColor-302 MuiDivider-flexItem MuiDivider-vertical"
+      />
+      <div
+        class="MuiGrid-root makeStyles-addressItem-288 MuiGrid-item MuiGrid-grid-xs-4"
+      >
+        <div>
+          <p
+            class="MuiTypography-root makeStyles-cardFont-241 makeStyles-cardFontAccent-243 makeStyles-cardAddressTitle-252 MuiTypography-body1"
+          >
+            Mailing Address
+          </p>
+          <p
+            class="MuiTypography-root makeStyles-cardFont-241 makeStyles-cardAddressTitle-252 MuiTypography-body1"
+          >
+            Same as Billing Address
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    class="MuiPaper-root makeStyles-container-309  MuiPaper-outlined MuiPaper-rounded"
+  >
+    <div
+      class="MuiGrid-root MuiGrid-container MuiGrid-align-items-xs-center MuiGrid-justify-xs-space-between"
+    >
+      <div
+        class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-auto"
+      >
+        <h1
+          class="MuiTypography-root makeStyles-title-310 MuiTypography-h1"
+        >
+          Users
+        </h1>
+      </div>
+      <div
+        class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-auto"
+      >
+        <span
+          class=" makeStyles-secondaryActions-311"
+        >
+          <span
+            class=""
+            data-testid="controlled-button"
+            tabindex="-1"
+          >
+            <button
+              class="MuiButtonBase-root MuiButton-root MuiButton-text makeStyles-fieldWrapper-314 makeStyles-fieldsMissing-315"
+              data-testid="missing-fields-btn"
+              tabindex="0"
+              type="button"
+            >
+              <span
+                class="MuiButton-label"
+              >
+                Some required fields are missing
+                <span
+                  class="MuiButton-endIcon MuiButton-iconSizeMedium"
+                >
+                  <svg
+                    aria-hidden="true"
+                    class="MuiSvgIcon-root"
+                    focusable="false"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM20.71 7.04c.39-.39.39-1.02 0-1.41l-2.34-2.34a.9959.9959 0 00-1.41 0l-1.83 1.83 3.75 3.75 1.83-1.83z"
+                    />
+                  </svg>
+                </span>
+              </span>
+            </button>
+          </span>
+        </span>
+      </div>
+    </div>
+    <hr
+      class="MuiDivider-root makeStyles-divider-312"
+    />
+    <div
+      class="makeStyles-tableWrapper-277"
+    >
+      <table
+        class="MuiTable-root"
+      >
+        <thead
+          class="MuiTableHead-root"
+        >
+          <tr
+            class="MuiTableRow-root MuiTableRow-head"
+          >
+            <th
+              class="MuiTableCell-root MuiTableCell-head"
+              scope="col"
+            >
+              Name
+            </th>
+            <th
+              class="MuiTableCell-root MuiTableCell-head"
+              scope="col"
+            >
+              Email
+            </th>
+            <th
+              class="MuiTableCell-root MuiTableCell-head"
+              scope="col"
+            >
+              Mobile Number
+            </th>
+            <th
+              class="MuiTableCell-root MuiTableCell-head"
+              scope="col"
+            >
+              Office Number
+            </th>
+            <th
+              class="MuiTableCell-root MuiTableCell-head"
+              scope="col"
+            >
+              Preferred
+            </th>
+          </tr>
+        </thead>
+        <tbody
+          class="MuiTableBody-root"
+        >
+          <tr
+            class="MuiTableRow-root WithStyles(ForwardRef(TableRow))-root-317"
+          >
+            <td
+              class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignLeft"
+            >
+              -
+            </td>
+            <td
+              class="MuiTableCell-root MuiTableCell-body makeStyles-emailParentAccent-293 MuiTableCell-alignLeft"
+            >
+              <a
+                href="mailto:test"
+              >
+                test
+              </a>
+            </td>
+            <td
+              class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignLeft"
+            >
+              <a
+                data-testid="user-phone-label"
+                href="tel:+12133734253"
+              >
+                +1 213 373 4253
+              </a>
+            </td>
+            <td
+              class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignLeft"
+            >
+              <a
+                data-testid="user-phone-label"
+                href="tel:+12133734253"
+              >
+                +1 213 373 4253
+              </a>
+            </td>
+            <td
+              class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignLeft"
+            >
+              Phone
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Review Step should render with values 1`] = `
+<div>
+  <div
+    class="MuiPaper-root makeStyles-container-203  MuiPaper-outlined MuiPaper-rounded"
+  >
+    <div
+      class="MuiGrid-root MuiGrid-container MuiGrid-align-items-xs-center MuiGrid-justify-xs-space-between"
+    >
+      <div
+        class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-auto"
+      >
+        <h1
+          class="MuiTypography-root makeStyles-title-204 MuiTypography-h1"
+        >
+          General Information
+        </h1>
+      </div>
+      <div
+        class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-auto"
+      >
+        <span
+          class=" makeStyles-secondaryActions-205"
+        >
+          <span
+            class=""
+            data-testid="controlled-button"
+            tabindex="-1"
+          >
+            <button
+              class="MuiButtonBase-root MuiButton-root MuiButton-text makeStyles-fieldWrapper-208 makeStyles-fieldsMissing-209"
+              data-testid="missing-fields-btn"
+              tabindex="0"
+              type="button"
+            >
+              <span
+                class="MuiButton-label"
+              >
+                Some required fields are missing
+                <span
+                  class="MuiButton-endIcon MuiButton-iconSizeMedium"
+                >
+                  <svg
+                    aria-hidden="true"
+                    class="MuiSvgIcon-root"
+                    focusable="false"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM20.71 7.04c.39-.39.39-1.02 0-1.41l-2.34-2.34a.9959.9959 0 00-1.41 0l-1.83 1.83 3.75 3.75 1.83-1.83z"
+                    />
+                  </svg>
+                </span>
+              </span>
+            </button>
+          </span>
+        </span>
+      </div>
+    </div>
+    <hr
+      class="MuiDivider-root makeStyles-divider-206"
+    />
+    <div
+      class="makeStyles-reviewGeneralInformation-158 makeStyles-reviewGeneralInformationDirection-161"
+    >
+      <div
+        class="makeStyles-informationBlocksWrapper-160"
+      >
+        <div
+          class="makeStyles-informationBlock-157"
+        >
+          <p
+            class="MuiTypography-root makeStyles-cardFont-135 makeStyles-cardFontAccent-137 makeStyles-cardTitle-140 MuiTypography-body1"
+          >
+            Client Name
+          </p>
+          <p
+            class="MuiTypography-root makeStyles-cardFont-135 MuiTypography-body1"
+          >
+            Robert C. Martin
+          </p>
+        </div>
+        <div
+          class="makeStyles-informationBlock-157 makeStyles-informationMiddleBlock-162"
+        >
+          <p
+            class="MuiTypography-root makeStyles-cardFont-135 makeStyles-cardFontAccent-137 makeStyles-cardTitle-140 MuiTypography-body1"
+          >
+            Legal Information
+          </p>
+          <div
+            class="makeStyles-cardData-144"
+          >
+            <p
+              class="MuiTypography-root makeStyles-cardFont-135 makeStyles-cardDataTitle-145 MuiTypography-body1"
+            >
+              Taxpayer Identification Number:
+            </p>
+            <p
+              class="MuiTypography-root makeStyles-cardFont-135 makeStyles-cardFontAccent-137 MuiTypography-body1"
+            >
+              LOZG-780211-7B9
+            </p>
+          </div>
+          <div
+            class="makeStyles-cardData-144"
+          >
+            <p
+              class="MuiTypography-root makeStyles-cardFont-135 makeStyles-cardDataTitle-145 MuiTypography-body1"
+            >
+              MBE/WBE:
+            </p>
+            <p
+              class="MuiTypography-root makeStyles-cardFont-135 makeStyles-cardFontAccent-137 MuiTypography-body1"
+            >
+              Option 1
+            </p>
+          </div>
+        </div>
+      </div>
+      <div
+        class="makeStyles-informationBlock-157 makeStyles-lastInformationBlock-163"
+        data-testid="trade-names"
+      >
+        <p
+          class="MuiTypography-root makeStyles-cardFont-135 makeStyles-cardFontAccent-137 makeStyles-cardTitle-140 makeStyles-lastInformationTitle-164 MuiTypography-body1"
+        >
+          Trades
+        </p>
+        <span
+          class="makeStyles-cardTrades-143"
+        >
+          <span>
+            trade 1, trade 2.
+          </span>
+        </span>
+      </div>
+      <div
+        class="makeStyles-informationBlocksWrapper-160 makeStyles-lastInformationBlock-163"
+      >
+        <div
+          class="makeStyles-informationBlock-157 makeStyles-lastInformationTitle-164"
+        >
+          <p
+            class="MuiTypography-root makeStyles-cardFont-135 makeStyles-cardFontAccent-137 makeStyles-cardTitle-140 MuiTypography-body1"
+          >
+            Universal Badge
+          </p>
+          <div
+            class="makeStyles-cardData-144"
+          >
+            <p
+              class="MuiTypography-root makeStyles-cardFont-135 makeStyles-cardDataTitle-145 MuiTypography-body1"
+            >
+              Universal Badge:
+            </p>
+            <p
+              class="MuiTypography-root makeStyles-cardFont-135 makeStyles-cardFontAccent-137 MuiTypography-body1"
+            >
+              Yes
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    class="MuiPaper-root makeStyles-container-203  MuiPaper-outlined MuiPaper-rounded"
+  >
+    <div
+      class="MuiGrid-root MuiGrid-container MuiGrid-align-items-xs-center MuiGrid-justify-xs-space-between"
+    >
+      <div
+        class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-auto"
+      >
+        <h1
+          class="MuiTypography-root makeStyles-title-204 MuiTypography-h1"
+        >
+          Addresses
+        </h1>
+      </div>
+      <div
+        class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-auto"
+      >
+        <span
+          class=" makeStyles-secondaryActions-205"
+        >
+          <span
+            class=""
+            data-testid="controlled-button"
+            tabindex="-1"
+          >
+            <button
+              class="MuiButtonBase-root MuiButton-root MuiButton-text makeStyles-fieldWrapper-208 makeStyles-fieldsCompleted-210"
+              data-testid="missing-fields-btn"
+              tabindex="0"
+              type="button"
+            >
+              <span
+                class="MuiButton-label"
+              >
+                All required fields completed
+                <span
+                  class="MuiButton-endIcon MuiButton-iconSizeMedium"
+                >
+                  <svg
+                    aria-hidden="true"
+                    class="MuiSvgIcon-root"
+                    focusable="false"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM20.71 7.04c.39-.39.39-1.02 0-1.41l-2.34-2.34a.9959.9959 0 00-1.41 0l-1.83 1.83 3.75 3.75 1.83-1.83z"
+                    />
+                  </svg>
+                </span>
+              </span>
+            </button>
+          </span>
+        </span>
+      </div>
+    </div>
+    <hr
+      class="MuiDivider-root makeStyles-divider-206"
+    />
+    <div
+      class="MuiGrid-root makeStyles-addressesWrapper-180 MuiGrid-container"
+    >
+      <div
+        class="MuiGrid-root makeStyles-addressItem-182 MuiGrid-item MuiGrid-grid-xs-4"
+      >
+        <div
+          class="makeStyles-informationBlock-157 makeStyles-addressInformationBlock-181"
+        >
+          <p
+            class="MuiTypography-root makeStyles-cardFont-135 makeStyles-cardFontAccent-137 makeStyles-cardAddressTitle-146 MuiTypography-body1"
+          >
+            Billing Address
+          </p>
+          <p
+            class="MuiTypography-root makeStyles-cardFont-135  MuiTypography-body1"
+          >
+            
+            <span
+              class=" "
+            >
+              -
+            </span>
+          </p>
+          <p
+            class="MuiTypography-root makeStyles-cardFont-135  MuiTypography-body1"
+          >
+            
+            
+            
+            
+          </p>
+        </div>
+      </div>
+      <hr
+        class="MuiDivider-root makeStyles-dividerColor-196 MuiDivider-flexItem MuiDivider-vertical"
+      />
+      <div
+        class="MuiGrid-root makeStyles-addressItem-182 MuiGrid-item MuiGrid-grid-xs-4"
+      >
+        <div>
+          <p
+            class="MuiTypography-root makeStyles-cardFont-135 makeStyles-cardFontAccent-137 makeStyles-cardAddressTitle-146 MuiTypography-body1"
+          >
+            Mailing Address
+          </p>
+          <p
+            class="MuiTypography-root makeStyles-cardFont-135 makeStyles-cardAddressTitle-146 MuiTypography-body1"
+          >
+            Same as Billing Address
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    class="MuiPaper-root makeStyles-container-203  MuiPaper-outlined MuiPaper-rounded"
+  >
+    <div
+      class="MuiGrid-root MuiGrid-container MuiGrid-align-items-xs-center MuiGrid-justify-xs-space-between"
+    >
+      <div
+        class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-auto"
+      >
+        <h1
+          class="MuiTypography-root makeStyles-title-204 MuiTypography-h1"
+        >
+          Users
+        </h1>
+      </div>
+      <div
+        class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-auto"
+      >
+        <span
+          class=" makeStyles-secondaryActions-205"
+        >
+          <span
+            class=""
+            data-testid="controlled-button"
+            tabindex="-1"
+          >
+            <button
+              class="MuiButtonBase-root MuiButton-root MuiButton-text makeStyles-fieldWrapper-208 makeStyles-fieldsCompleted-210"
+              data-testid="missing-fields-btn"
+              tabindex="0"
+              type="button"
+            >
+              <span
+                class="MuiButton-label"
+              >
+                All required fields completed
+                <span
+                  class="MuiButton-endIcon MuiButton-iconSizeMedium"
+                >
+                  <svg
+                    aria-hidden="true"
+                    class="MuiSvgIcon-root"
+                    focusable="false"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM20.71 7.04c.39-.39.39-1.02 0-1.41l-2.34-2.34a.9959.9959 0 00-1.41 0l-1.83 1.83 3.75 3.75 1.83-1.83z"
+                    />
+                  </svg>
+                </span>
+              </span>
+            </button>
+          </span>
+        </span>
+      </div>
+    </div>
+    <hr
+      class="MuiDivider-root makeStyles-divider-206"
+    />
+    <div
+      class="makeStyles-tableWrapper-171"
+    >
+      <table
+        class="MuiTable-root"
+      >
+        <thead
+          class="MuiTableHead-root"
+        >
+          <tr
+            class="MuiTableRow-root MuiTableRow-head"
+          >
+            <th
+              class="MuiTableCell-root MuiTableCell-head"
+              scope="col"
+            >
+              Name
+            </th>
+            <th
+              class="MuiTableCell-root MuiTableCell-head"
+              scope="col"
+            >
+              Email
+            </th>
+            <th
+              class="MuiTableCell-root MuiTableCell-head"
+              scope="col"
+            >
+              Mobile Number
+            </th>
+            <th
+              class="MuiTableCell-root MuiTableCell-head"
+              scope="col"
+            >
+              Office Number
+            </th>
+            <th
+              class="MuiTableCell-root MuiTableCell-head"
+              scope="col"
+            >
+              Preferred
+            </th>
+          </tr>
+        </thead>
+        <tbody
+          class="MuiTableBody-root"
+        >
+          <tr
+            class="MuiTableRow-root WithStyles(ForwardRef(TableRow))-root-211"
+          >
+            <td
+              class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignLeft"
+            >
+              Pedro Martin
+            </td>
+            <td
+              class="MuiTableCell-root MuiTableCell-body makeStyles-emailParentAccent-187 MuiTableCell-alignLeft"
+            >
+              <a
+                href="mailto:user@test.com"
+              >
+                user@test.com
+              </a>
+            </td>
+            <td
+              class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignLeft"
+            >
+              <a
+                data-testid="user-phone-label"
+              >
+                -
+              </a>
+            </td>
+            <td
+              class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignLeft"
+            >
+              -
+            </td>
+            <td
+              class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignLeft"
+            >
+              Email
+            </td>
+          </tr>
+          <tr
+            class="MuiTableRow-root WithStyles(ForwardRef(TableRow))-root-211"
+          >
+            <td
+              class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignLeft"
+            >
+              Test One
+            </td>
+            <td
+              class="MuiTableCell-root MuiTableCell-body makeStyles-emailParentAccent-187 MuiTableCell-alignLeft"
+            >
+              <a
+                href="mailto:user@test.com"
+              >
+                user@test.com
+              </a>
+            </td>
+            <td
+              class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignLeft"
+            >
+              <a
+                data-testid="user-phone-label"
+              >
+                -
+              </a>
+            </td>
+            <td
+              class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignLeft"
+            >
+              <a
+                data-testid="user-phone-label"
+                href="tel:+5678947895"
+              >
+                +56 78 947 895
+              </a>
+            </td>
+            <td
+              class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignLeft"
+            >
+              Email
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+`;

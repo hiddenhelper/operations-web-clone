@@ -1,0 +1,1750 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`BadgePrintingSystemTab should render 1`] = `
+<div>
+  <div>
+    <div
+      class="makeStyles-filterActionsContainer-543 makeStyles-filterActionsContainerPadding-545 makeStyles-buttonWithoutFilter-601"
+    >
+      <button
+        class="MuiButtonBase-root MuiButton-root MuiButton-contained makeStyles-createButton-573 makeStyles-primaryButtonExtraLarge-577 MuiButton-containedPrimary MuiButton-containedSizeLarge MuiButton-sizeLarge MuiButton-fullWidth"
+        data-testid="open-bps-modal-btn"
+        tabindex="0"
+        type="button"
+      >
+        <span
+          class="MuiButton-label"
+        >
+          Assign BPS
+        </span>
+        <span
+          class="MuiTouchRipple-root"
+        />
+      </button>
+    </div>
+    <table
+      aria-label="client-list"
+      class="MuiTable-root"
+    >
+      <thead
+        class="MuiTableHead-root"
+      >
+        <tr
+          class="MuiTableRow-root MuiTableRow-head"
+        >
+          <th
+            class="MuiTableCell-root MuiTableCell-head"
+            scope="col"
+          >
+            Name
+          </th>
+          <th
+            class="MuiTableCell-root MuiTableCell-head"
+            scope="col"
+          >
+            Laptop Serial Number
+          </th>
+          <th
+            class="MuiTableCell-root MuiTableCell-head"
+            scope="col"
+          >
+            Printer Serial Number
+          </th>
+          <th
+            class="MuiTableCell-root MuiTableCell-head"
+            scope="col"
+          >
+            Scanner Serial Number
+          </th>
+          <th
+            class="MuiTableCell-root MuiTableCell-head"
+            scope="col"
+          >
+            Shipping Date
+          </th>
+        </tr>
+      </thead>
+      <tbody
+        class="MuiTableBody-root"
+      >
+        <tr
+          class="MuiTableRow-root WithStyles(ForwardRef(TableRow))-root-695 makeStyles-clickableRow-693"
+          data-testid="bps-list-row"
+        >
+          <td
+            class="MuiTableCell-root MuiTableCell-body"
+          >
+            <a
+              class="Link-root-696"
+              href="/inventory/badge-printing-system/wizard/77afbfce-1bca-31c3-b512-3a1ed78742bb"
+              title="Edit BPS"
+            >
+              Badge Printer Name
+            </a>
+          </td>
+          <td
+            class="MuiTableCell-root MuiTableCell-body"
+          >
+            AFF12903112
+          </td>
+          <td
+            class="MuiTableCell-root MuiTableCell-body"
+          >
+            12904328913
+          </td>
+          <td
+            class="MuiTableCell-root MuiTableCell-body"
+          >
+            BBF19021
+          </td>
+          <td
+            class="MuiTableCell-root MuiTableCell-body"
+          >
+            May 19, 2020
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <nav
+      aria-label="pagination navigation"
+      class="MuiPagination-root  makeStyles-pagination-697"
+      data-testid="pagination"
+    >
+      <ul
+        class="MuiPagination-ul"
+      >
+        <li>
+          <button
+            aria-label="Go to previous page"
+            class="MuiButtonBase-root MuiPaginationItem-root MuiPaginationItem-page Mui-disabled Mui-disabled"
+            disabled=""
+            tabindex="-1"
+            type="button"
+          >
+            <svg
+              aria-hidden="true"
+              class="MuiSvgIcon-root MuiPaginationItem-icon"
+              focusable="false"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"
+              />
+            </svg>
+          </button>
+        </li>
+        <li>
+          <button
+            aria-current="true"
+            aria-label="page 1"
+            class="MuiButtonBase-root MuiPaginationItem-root MuiPaginationItem-page Mui-selected"
+            tabindex="0"
+            type="button"
+          >
+            1
+            <span
+              class="MuiTouchRipple-root"
+            />
+          </button>
+        </li>
+        <li>
+          <button
+            aria-label="Go to next page"
+            class="MuiButtonBase-root MuiPaginationItem-root MuiPaginationItem-page Mui-disabled Mui-disabled"
+            disabled=""
+            tabindex="-1"
+            type="button"
+          >
+            <svg
+              aria-hidden="true"
+              class="MuiSvgIcon-root MuiPaginationItem-icon"
+              focusable="false"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"
+              />
+            </svg>
+          </button>
+        </li>
+      </ul>
+    </nav>
+    <div
+      class="MuiDrawer-root MuiDrawer-docked makeStyles-drawer-706 makeStyles-close-717 closed"
+      data-testid="drawer"
+    >
+      <div
+        class="MuiPaper-root MuiDrawer-paper makeStyles-drawerPaper-707 MuiDrawer-paperAnchorRight MuiDrawer-paperAnchorDockedRight MuiPaper-elevation0"
+        style="visibility: hidden; webkit-transform: translateX(1024px) translateX(0px); transform: translateX(1024px) translateX(0px);"
+      >
+        <div
+          class="makeStyles-drawerButtonWrapper-709"
+        >
+          <div
+            class="makeStyles-drawerButton-710"
+          >
+            <button
+              class="MuiButtonBase-root MuiButton-root MuiButton-text"
+              data-testid="drawer-close-btn"
+              style="outline: none;"
+              tabindex="0"
+              type="button"
+            >
+              <span
+                class="MuiButton-label"
+              >
+                <svg>
+                  close.svg
+                </svg>
+              </span>
+              <span
+                class="MuiTouchRipple-root"
+              />
+            </button>
+          </div>
+          <div
+            class="makeStyles-drawerHeader-708"
+          >
+            <p
+              class="MuiTypography-root makeStyles-drawerTitle-711 MuiTypography-body1 MuiTypography-colorPrimary MuiTypography-alignLeft"
+            >
+              Device Information
+            </p>
+          </div>
+        </div>
+        <div
+          class="makeStyles-summaryDeviceDetail-723"
+        >
+          <div
+            class="makeStyles-company-727"
+          >
+            <div
+              class="makeStyles-drawerOverflowWrapper-742"
+            >
+              <div
+                class="makeStyles-drawerText-734"
+              >
+                <p
+                  class="MuiTypography-root makeStyles-deviceAccent-728 makeStyles-entityTitle-737 MuiTypography-body1"
+                />
+                <div
+                  class="makeStyles-drawerMainText-735"
+                >
+                  <span>
+                    No project assigned
+                  </span>
+                  <span />
+                </div>
+              </div>
+              <div
+                class="makeStyles-drawerSection-730"
+              >
+                <svg
+                  class="makeStyles-drawerNotesIcon-731"
+                >
+                  notes.svg
+                </svg>
+                <div
+                  class="makeStyles-drawerText-734 makeStyles-drawerTextSeparation-736"
+                >
+                  <span>
+                    -
+                  </span>
+                </div>
+              </div>
+              <div
+                class="makeStyles-drawerSection-730"
+              >
+                <div
+                  class="makeStyles-drawerText-734"
+                >
+                  <p
+                    class="MuiTypography-root makeStyles-deviceAccent-728 makeStyles-entityTitle-737 MuiTypography-body1"
+                  >
+                    Laptop
+                  </p>
+                  <div
+                    class="makeStyles-drawerMainText-735"
+                  >
+                    <span>
+                      -
+                    </span>
+                    <span>
+                      -
+                    </span>
+                    <span>
+                      -
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="makeStyles-drawerSection-730"
+              >
+                <div
+                  class="makeStyles-drawerColumnDirection-741"
+                >
+                  <div
+                    class="makeStyles-drawerRowDirection-740"
+                  >
+                    <svg
+                      class="makeStyles-drawerMonetizationIcon-733 makeStyles-bpsIconSize-743"
+                    >
+                      monetization.svg
+                    </svg>
+                    <div
+                      class="makeStyles-drawerText-734 makeStyles-drawerTextSeparation-736"
+                    >
+                      <span>
+                        $
+                        -
+                      </span>
+                      <span>
+                        -
+                      </span>
+                      <span>
+                        Invoiced 
+                        -
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="makeStyles-drawerSection-730"
+              >
+                <div
+                  class="makeStyles-drawerRowDirection-740"
+                >
+                  <svg
+                    class="makeStyles-bpsIconSize-743"
+                  >
+                    device-status.svg
+                  </svg>
+                  <div
+                    class="makeStyles-drawerText-734 makeStyles-drawerTextSeparation-736"
+                  >
+                    <span>
+                      Order/Purchase Date:
+                       
+                      
+                    </span>
+                    <span>
+                      Warranty Expiration Date:
+                       
+                      
+                    </span>
+                    <span>
+                      In Service Date:
+                       
+                      
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="makeStyles-drawerSection-730"
+              >
+                <svg
+                  class="makeStyles-drawerSecondaryNotesIcon-732"
+                >
+                  notes.svg
+                </svg>
+                <div
+                  class="makeStyles-drawerText-734 makeStyles-drawerTextSeparation-736"
+                >
+                  <span>
+                    -
+                  </span>
+                </div>
+              </div>
+              <div
+                class="makeStyles-drawerSection-730"
+              >
+                <div
+                  class="makeStyles-drawerText-734"
+                >
+                  <p
+                    class="MuiTypography-root makeStyles-deviceAccent-728 makeStyles-entityTitle-737 MuiTypography-body1"
+                  >
+                    Printer
+                  </p>
+                  <div
+                    class="makeStyles-drawerMainText-735"
+                  >
+                    <span>
+                      -
+                    </span>
+                    <span>
+                      -
+                    </span>
+                    <span>
+                      -
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="makeStyles-drawerSection-730"
+              >
+                <div
+                  class="makeStyles-drawerColumnDirection-741"
+                >
+                  <div
+                    class="makeStyles-drawerRowDirection-740"
+                  >
+                    <svg
+                      class="makeStyles-drawerMonetizationIcon-733"
+                    >
+                      monetization.svg
+                    </svg>
+                    <div
+                      class="makeStyles-drawerText-734 makeStyles-drawerTextSeparation-736"
+                    >
+                      <span>
+                        $
+                        -
+                      </span>
+                      <span>
+                        -
+                      </span>
+                      <span>
+                        Invoiced 
+                        -
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="makeStyles-drawerSection-730"
+              >
+                <div
+                  class="makeStyles-drawerRowDirection-740"
+                >
+                  <svg
+                    class="makeStyles-bpsIconSize-743"
+                  >
+                    device-status.svg
+                  </svg>
+                  <div
+                    class="makeStyles-drawerText-734 makeStyles-drawerTextSeparation-736"
+                  >
+                    <span>
+                      Order/Purchase Date:
+                       
+                      
+                    </span>
+                    <span>
+                      Warranty Expiration Date:
+                       
+                      
+                    </span>
+                    <span>
+                      Last Maintenance Date:
+                       
+                      
+                    </span>
+                    <span>
+                      In Service Date:
+                       
+                      
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="makeStyles-drawerSection-730"
+              >
+                <svg
+                  class="makeStyles-drawerSecondaryNotesIcon-732"
+                >
+                  notes.svg
+                </svg>
+                <div
+                  class="makeStyles-drawerText-734 makeStyles-drawerTextSeparation-736"
+                >
+                  <span>
+                    -
+                  </span>
+                </div>
+              </div>
+              <div
+                class="makeStyles-drawerSection-730"
+              >
+                <div
+                  class="makeStyles-drawerText-734"
+                >
+                  <p
+                    class="MuiTypography-root makeStyles-deviceAccent-728 makeStyles-entityTitle-737 MuiTypography-body1"
+                  >
+                    Scanner
+                  </p>
+                  <div
+                    class="makeStyles-drawerMainText-735"
+                  >
+                    <span>
+                      -
+                    </span>
+                    <span>
+                      -
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="makeStyles-drawerSection-730"
+              >
+                <div
+                  class="makeStyles-drawerColumnDirection-741"
+                >
+                  <div
+                    class="makeStyles-drawerRowDirection-740"
+                  >
+                    <svg
+                      class="makeStyles-drawerMonetizationIcon-733"
+                    >
+                      monetization.svg
+                    </svg>
+                    <div
+                      class="makeStyles-drawerText-734 makeStyles-drawerTextSeparation-736"
+                    >
+                      <span>
+                        $
+                        -
+                      </span>
+                      <span>
+                        -
+                      </span>
+                      <span>
+                        Invoiced 
+                        -
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="makeStyles-drawerSection-730"
+              >
+                <div
+                  class="makeStyles-drawerRowDirection-740"
+                >
+                  <svg
+                    class="makeStyles-bpsIconSize-743"
+                  >
+                    device-status.svg
+                  </svg>
+                  <div
+                    class="makeStyles-drawerText-734 makeStyles-drawerTextSeparation-736"
+                  >
+                    <span>
+                      Order/Purchase Date:
+                       
+                      
+                    </span>
+                    <span>
+                      Warranty Expiration Date:
+                       
+                      
+                    </span>
+                    <span>
+                      In Service Date:
+                       
+                      
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="makeStyles-drawerSection-730"
+              >
+                <svg
+                  class="makeStyles-drawerSecondaryNotesIcon-732"
+                >
+                  notes.svg
+                </svg>
+                <div
+                  class="makeStyles-drawerText-734 makeStyles-drawerTextSeparation-736"
+                >
+                  <span>
+                    -
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr
+          class="MuiDivider-root makeStyles-drawerDivider-611"
+        />
+        <div
+          class="makeStyles-ctaWrapper-688"
+        >
+          <span
+            class=""
+            data-testid="controlled-button"
+            tabindex="-1"
+          >
+            <button
+              class="MuiButtonBase-root MuiButton-root MuiButton-outlined makeStyles-drawerCTA-580 makeStyles-borderPrimaryButton-572"
+              data-testid="bps-edition-modal-open-btn"
+              tabindex="0"
+              type="button"
+            >
+              <span
+                class="MuiButton-label"
+              >
+                Edit Date
+              </span>
+            </button>
+          </span>
+          <span
+            class=""
+            data-testid="controlled-button"
+            tabindex="-1"
+          >
+            <button
+              class="MuiButtonBase-root MuiButton-root MuiButton-outlined makeStyles-drawerCTA-580 makeStyles-warningButton-581"
+              data-testid="unassign-btn"
+              tabindex="0"
+              type="button"
+            >
+              <span
+                class="MuiButton-label"
+              >
+                Unassign
+              </span>
+            </button>
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`BadgePrintingSystemTab should render empty 1`] = `
+<div>
+  <div>
+    <div
+      class="makeStyles-filterActionsContainer-37 makeStyles-filterActionsContainerPadding-39 makeStyles-buttonWithoutFilter-95"
+    >
+      <button
+        class="MuiButtonBase-root MuiButton-root MuiButton-contained makeStyles-createButton-67 makeStyles-primaryButtonExtraLarge-71 MuiButton-containedPrimary MuiButton-containedSizeLarge MuiButton-sizeLarge MuiButton-fullWidth"
+        data-testid="open-bps-modal-btn"
+        tabindex="0"
+        type="button"
+      >
+        <span
+          class="MuiButton-label"
+        >
+          Assign BPS
+        </span>
+        <span
+          class="MuiTouchRipple-root"
+        />
+      </button>
+    </div>
+    <div
+      class=" makeStyles-container-166"
+    >
+      <div>
+        <div
+          class="MuiAvatar-root MuiAvatar-circle makeStyles-missingAvatarWrapper-177 makeStyles-missingAvatarBig-178 MuiAvatar-colorDefault"
+        >
+          <svg>
+            inventory.svg
+          </svg>
+        </div>
+      </div>
+      <p
+        class="MuiTypography-root makeStyles-missingListText-167 MuiTypography-body1"
+      >
+        There are no BPS assigned
+      </p>
+    </div>
+    <div
+      class="MuiDrawer-root MuiDrawer-docked makeStyles-drawer-216 makeStyles-close-227 closed"
+      data-testid="drawer"
+    >
+      <div
+        class="MuiPaper-root MuiDrawer-paper makeStyles-drawerPaper-217 MuiDrawer-paperAnchorRight MuiDrawer-paperAnchorDockedRight MuiPaper-elevation0"
+        style="visibility: hidden; webkit-transform: translateX(1024px) translateX(0px); transform: translateX(1024px) translateX(0px);"
+      >
+        <div
+          class="makeStyles-drawerButtonWrapper-219"
+        >
+          <div
+            class="makeStyles-drawerButton-220"
+          >
+            <button
+              class="MuiButtonBase-root MuiButton-root MuiButton-text"
+              data-testid="drawer-close-btn"
+              style="outline: none;"
+              tabindex="0"
+              type="button"
+            >
+              <span
+                class="MuiButton-label"
+              >
+                <svg>
+                  close.svg
+                </svg>
+              </span>
+              <span
+                class="MuiTouchRipple-root"
+              />
+            </button>
+          </div>
+          <div
+            class="makeStyles-drawerHeader-218"
+          >
+            <p
+              class="MuiTypography-root makeStyles-drawerTitle-221 MuiTypography-body1 MuiTypography-colorPrimary MuiTypography-alignLeft"
+            >
+              Device Information
+            </p>
+          </div>
+        </div>
+        <div
+          class="makeStyles-summaryDeviceDetail-233"
+        >
+          <div
+            class="makeStyles-company-237"
+          >
+            <div
+              class="makeStyles-drawerOverflowWrapper-252"
+            >
+              <div
+                class="makeStyles-drawerText-244"
+              >
+                <p
+                  class="MuiTypography-root makeStyles-deviceAccent-238 makeStyles-entityTitle-247 MuiTypography-body1"
+                />
+                <div
+                  class="makeStyles-drawerMainText-245"
+                >
+                  <span>
+                    No project assigned
+                  </span>
+                  <span />
+                </div>
+              </div>
+              <div
+                class="makeStyles-drawerSection-240"
+              >
+                <svg
+                  class="makeStyles-drawerNotesIcon-241"
+                >
+                  notes.svg
+                </svg>
+                <div
+                  class="makeStyles-drawerText-244 makeStyles-drawerTextSeparation-246"
+                >
+                  <span>
+                    -
+                  </span>
+                </div>
+              </div>
+              <div
+                class="makeStyles-drawerSection-240"
+              >
+                <div
+                  class="makeStyles-drawerText-244"
+                >
+                  <p
+                    class="MuiTypography-root makeStyles-deviceAccent-238 makeStyles-entityTitle-247 MuiTypography-body1"
+                  >
+                    Laptop
+                  </p>
+                  <div
+                    class="makeStyles-drawerMainText-245"
+                  >
+                    <span>
+                      -
+                    </span>
+                    <span>
+                      -
+                    </span>
+                    <span>
+                      -
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="makeStyles-drawerSection-240"
+              >
+                <div
+                  class="makeStyles-drawerColumnDirection-251"
+                >
+                  <div
+                    class="makeStyles-drawerRowDirection-250"
+                  >
+                    <svg
+                      class="makeStyles-drawerMonetizationIcon-243 makeStyles-bpsIconSize-253"
+                    >
+                      monetization.svg
+                    </svg>
+                    <div
+                      class="makeStyles-drawerText-244 makeStyles-drawerTextSeparation-246"
+                    >
+                      <span>
+                        $
+                        -
+                      </span>
+                      <span>
+                        -
+                      </span>
+                      <span>
+                        Invoiced 
+                        -
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="makeStyles-drawerSection-240"
+              >
+                <div
+                  class="makeStyles-drawerRowDirection-250"
+                >
+                  <svg
+                    class="makeStyles-bpsIconSize-253"
+                  >
+                    device-status.svg
+                  </svg>
+                  <div
+                    class="makeStyles-drawerText-244 makeStyles-drawerTextSeparation-246"
+                  >
+                    <span>
+                      Order/Purchase Date:
+                       
+                      
+                    </span>
+                    <span>
+                      Warranty Expiration Date:
+                       
+                      
+                    </span>
+                    <span>
+                      In Service Date:
+                       
+                      
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="makeStyles-drawerSection-240"
+              >
+                <svg
+                  class="makeStyles-drawerSecondaryNotesIcon-242"
+                >
+                  notes.svg
+                </svg>
+                <div
+                  class="makeStyles-drawerText-244 makeStyles-drawerTextSeparation-246"
+                >
+                  <span>
+                    -
+                  </span>
+                </div>
+              </div>
+              <div
+                class="makeStyles-drawerSection-240"
+              >
+                <div
+                  class="makeStyles-drawerText-244"
+                >
+                  <p
+                    class="MuiTypography-root makeStyles-deviceAccent-238 makeStyles-entityTitle-247 MuiTypography-body1"
+                  >
+                    Printer
+                  </p>
+                  <div
+                    class="makeStyles-drawerMainText-245"
+                  >
+                    <span>
+                      -
+                    </span>
+                    <span>
+                      -
+                    </span>
+                    <span>
+                      -
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="makeStyles-drawerSection-240"
+              >
+                <div
+                  class="makeStyles-drawerColumnDirection-251"
+                >
+                  <div
+                    class="makeStyles-drawerRowDirection-250"
+                  >
+                    <svg
+                      class="makeStyles-drawerMonetizationIcon-243"
+                    >
+                      monetization.svg
+                    </svg>
+                    <div
+                      class="makeStyles-drawerText-244 makeStyles-drawerTextSeparation-246"
+                    >
+                      <span>
+                        $
+                        -
+                      </span>
+                      <span>
+                        -
+                      </span>
+                      <span>
+                        Invoiced 
+                        -
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="makeStyles-drawerSection-240"
+              >
+                <div
+                  class="makeStyles-drawerRowDirection-250"
+                >
+                  <svg
+                    class="makeStyles-bpsIconSize-253"
+                  >
+                    device-status.svg
+                  </svg>
+                  <div
+                    class="makeStyles-drawerText-244 makeStyles-drawerTextSeparation-246"
+                  >
+                    <span>
+                      Order/Purchase Date:
+                       
+                      
+                    </span>
+                    <span>
+                      Warranty Expiration Date:
+                       
+                      
+                    </span>
+                    <span>
+                      Last Maintenance Date:
+                       
+                      
+                    </span>
+                    <span>
+                      In Service Date:
+                       
+                      
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="makeStyles-drawerSection-240"
+              >
+                <svg
+                  class="makeStyles-drawerSecondaryNotesIcon-242"
+                >
+                  notes.svg
+                </svg>
+                <div
+                  class="makeStyles-drawerText-244 makeStyles-drawerTextSeparation-246"
+                >
+                  <span>
+                    -
+                  </span>
+                </div>
+              </div>
+              <div
+                class="makeStyles-drawerSection-240"
+              >
+                <div
+                  class="makeStyles-drawerText-244"
+                >
+                  <p
+                    class="MuiTypography-root makeStyles-deviceAccent-238 makeStyles-entityTitle-247 MuiTypography-body1"
+                  >
+                    Scanner
+                  </p>
+                  <div
+                    class="makeStyles-drawerMainText-245"
+                  >
+                    <span>
+                      -
+                    </span>
+                    <span>
+                      -
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="makeStyles-drawerSection-240"
+              >
+                <div
+                  class="makeStyles-drawerColumnDirection-251"
+                >
+                  <div
+                    class="makeStyles-drawerRowDirection-250"
+                  >
+                    <svg
+                      class="makeStyles-drawerMonetizationIcon-243"
+                    >
+                      monetization.svg
+                    </svg>
+                    <div
+                      class="makeStyles-drawerText-244 makeStyles-drawerTextSeparation-246"
+                    >
+                      <span>
+                        $
+                        -
+                      </span>
+                      <span>
+                        -
+                      </span>
+                      <span>
+                        Invoiced 
+                        -
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="makeStyles-drawerSection-240"
+              >
+                <div
+                  class="makeStyles-drawerRowDirection-250"
+                >
+                  <svg
+                    class="makeStyles-bpsIconSize-253"
+                  >
+                    device-status.svg
+                  </svg>
+                  <div
+                    class="makeStyles-drawerText-244 makeStyles-drawerTextSeparation-246"
+                  >
+                    <span>
+                      Order/Purchase Date:
+                       
+                      
+                    </span>
+                    <span>
+                      Warranty Expiration Date:
+                       
+                      
+                    </span>
+                    <span>
+                      In Service Date:
+                       
+                      
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="makeStyles-drawerSection-240"
+              >
+                <svg
+                  class="makeStyles-drawerSecondaryNotesIcon-242"
+                >
+                  notes.svg
+                </svg>
+                <div
+                  class="makeStyles-drawerText-244 makeStyles-drawerTextSeparation-246"
+                >
+                  <span>
+                    -
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr
+          class="MuiDivider-root makeStyles-drawerDivider-105"
+        />
+        <div
+          class="makeStyles-ctaWrapper-209"
+        >
+          <span
+            class=""
+            data-testid="controlled-button"
+            tabindex="-1"
+          >
+            <button
+              class="MuiButtonBase-root MuiButton-root MuiButton-outlined makeStyles-drawerCTA-74 makeStyles-borderPrimaryButton-66"
+              data-testid="bps-edition-modal-open-btn"
+              tabindex="0"
+              type="button"
+            >
+              <span
+                class="MuiButton-label"
+              >
+                Edit Date
+              </span>
+            </button>
+          </span>
+          <span
+            class=""
+            data-testid="controlled-button"
+            tabindex="-1"
+          >
+            <button
+              class="MuiButtonBase-root MuiButton-root MuiButton-outlined makeStyles-drawerCTA-74 makeStyles-warningButton-75"
+              data-testid="unassign-btn"
+              tabindex="0"
+              type="button"
+            >
+              <span
+                class="MuiButton-label"
+              >
+                Unassign
+              </span>
+            </button>
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`BadgePrintingSystemTab should render loading 1`] = `
+<div>
+  Loading...
+</div>
+`;
+
+exports[`BadgePrintingSystemTab should render without date 1`] = `
+<div>
+  <div>
+    <div
+      class="makeStyles-filterActionsContainer-945 makeStyles-filterActionsContainerPadding-947 makeStyles-buttonWithoutFilter-1003"
+    >
+      <button
+        class="MuiButtonBase-root MuiButton-root MuiButton-contained makeStyles-createButton-975 makeStyles-primaryButtonExtraLarge-979 MuiButton-containedPrimary MuiButton-containedSizeLarge MuiButton-sizeLarge MuiButton-fullWidth"
+        data-testid="open-bps-modal-btn"
+        tabindex="0"
+        type="button"
+      >
+        <span
+          class="MuiButton-label"
+        >
+          Assign BPS
+        </span>
+        <span
+          class="MuiTouchRipple-root"
+        />
+      </button>
+    </div>
+    <table
+      aria-label="client-list"
+      class="MuiTable-root"
+    >
+      <thead
+        class="MuiTableHead-root"
+      >
+        <tr
+          class="MuiTableRow-root MuiTableRow-head"
+        >
+          <th
+            class="MuiTableCell-root MuiTableCell-head"
+            scope="col"
+          >
+            Name
+          </th>
+          <th
+            class="MuiTableCell-root MuiTableCell-head"
+            scope="col"
+          >
+            Laptop Serial Number
+          </th>
+          <th
+            class="MuiTableCell-root MuiTableCell-head"
+            scope="col"
+          >
+            Printer Serial Number
+          </th>
+          <th
+            class="MuiTableCell-root MuiTableCell-head"
+            scope="col"
+          >
+            Scanner Serial Number
+          </th>
+          <th
+            class="MuiTableCell-root MuiTableCell-head"
+            scope="col"
+          >
+            Shipping Date
+          </th>
+        </tr>
+      </thead>
+      <tbody
+        class="MuiTableBody-root"
+      >
+        <tr
+          class="MuiTableRow-root WithStyles(ForwardRef(TableRow))-root-1097 makeStyles-clickableRow-1095"
+          data-testid="bps-list-row"
+        >
+          <td
+            class="MuiTableCell-root MuiTableCell-body"
+          >
+            <a
+              class="Link-root-1098"
+              href="/inventory/badge-printing-system/wizard/77afbfce-1bca-31c3-b512-3a1ed78742bb"
+              title="Edit BPS"
+            >
+              Badge Printer Name
+            </a>
+          </td>
+          <td
+            class="MuiTableCell-root MuiTableCell-body"
+          >
+            AFF12903112
+          </td>
+          <td
+            class="MuiTableCell-root MuiTableCell-body"
+          >
+            12904328913
+          </td>
+          <td
+            class="MuiTableCell-root MuiTableCell-body"
+          >
+            BBF19021
+          </td>
+          <td
+            class="MuiTableCell-root MuiTableCell-body"
+          >
+            -
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <nav
+      aria-label="pagination navigation"
+      class="MuiPagination-root  makeStyles-pagination-1099"
+      data-testid="pagination"
+    >
+      <ul
+        class="MuiPagination-ul"
+      >
+        <li>
+          <button
+            aria-label="Go to previous page"
+            class="MuiButtonBase-root MuiPaginationItem-root MuiPaginationItem-page Mui-disabled Mui-disabled"
+            disabled=""
+            tabindex="-1"
+            type="button"
+          >
+            <svg
+              aria-hidden="true"
+              class="MuiSvgIcon-root MuiPaginationItem-icon"
+              focusable="false"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"
+              />
+            </svg>
+          </button>
+        </li>
+        <li>
+          <button
+            aria-current="true"
+            aria-label="page 1"
+            class="MuiButtonBase-root MuiPaginationItem-root MuiPaginationItem-page Mui-selected"
+            tabindex="0"
+            type="button"
+          >
+            1
+            <span
+              class="MuiTouchRipple-root"
+            />
+          </button>
+        </li>
+        <li>
+          <button
+            aria-label="Go to next page"
+            class="MuiButtonBase-root MuiPaginationItem-root MuiPaginationItem-page Mui-disabled Mui-disabled"
+            disabled=""
+            tabindex="-1"
+            type="button"
+          >
+            <svg
+              aria-hidden="true"
+              class="MuiSvgIcon-root MuiPaginationItem-icon"
+              focusable="false"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"
+              />
+            </svg>
+          </button>
+        </li>
+      </ul>
+    </nav>
+    <div
+      class="MuiDrawer-root MuiDrawer-docked makeStyles-drawer-1108 makeStyles-close-1119 closed"
+      data-testid="drawer"
+    >
+      <div
+        class="MuiPaper-root MuiDrawer-paper makeStyles-drawerPaper-1109 MuiDrawer-paperAnchorRight MuiDrawer-paperAnchorDockedRight MuiPaper-elevation0"
+        style="visibility: hidden; webkit-transform: translateX(1024px) translateX(0px); transform: translateX(1024px) translateX(0px);"
+      >
+        <div
+          class="makeStyles-drawerButtonWrapper-1111"
+        >
+          <div
+            class="makeStyles-drawerButton-1112"
+          >
+            <button
+              class="MuiButtonBase-root MuiButton-root MuiButton-text"
+              data-testid="drawer-close-btn"
+              style="outline: none;"
+              tabindex="0"
+              type="button"
+            >
+              <span
+                class="MuiButton-label"
+              >
+                <svg>
+                  close.svg
+                </svg>
+              </span>
+              <span
+                class="MuiTouchRipple-root"
+              />
+            </button>
+          </div>
+          <div
+            class="makeStyles-drawerHeader-1110"
+          >
+            <p
+              class="MuiTypography-root makeStyles-drawerTitle-1113 MuiTypography-body1 MuiTypography-colorPrimary MuiTypography-alignLeft"
+            >
+              Device Information
+            </p>
+          </div>
+        </div>
+        <div
+          class="makeStyles-summaryDeviceDetail-1125"
+        >
+          <div
+            class="makeStyles-company-1129"
+          >
+            <div
+              class="makeStyles-drawerOverflowWrapper-1144"
+            >
+              <div
+                class="makeStyles-drawerText-1136"
+              >
+                <p
+                  class="MuiTypography-root makeStyles-deviceAccent-1130 makeStyles-entityTitle-1139 MuiTypography-body1"
+                />
+                <div
+                  class="makeStyles-drawerMainText-1137"
+                >
+                  <span>
+                    No project assigned
+                  </span>
+                  <span />
+                </div>
+              </div>
+              <div
+                class="makeStyles-drawerSection-1132"
+              >
+                <svg
+                  class="makeStyles-drawerNotesIcon-1133"
+                >
+                  notes.svg
+                </svg>
+                <div
+                  class="makeStyles-drawerText-1136 makeStyles-drawerTextSeparation-1138"
+                >
+                  <span>
+                    -
+                  </span>
+                </div>
+              </div>
+              <div
+                class="makeStyles-drawerSection-1132"
+              >
+                <div
+                  class="makeStyles-drawerText-1136"
+                >
+                  <p
+                    class="MuiTypography-root makeStyles-deviceAccent-1130 makeStyles-entityTitle-1139 MuiTypography-body1"
+                  >
+                    Laptop
+                  </p>
+                  <div
+                    class="makeStyles-drawerMainText-1137"
+                  >
+                    <span>
+                      -
+                    </span>
+                    <span>
+                      -
+                    </span>
+                    <span>
+                      -
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="makeStyles-drawerSection-1132"
+              >
+                <div
+                  class="makeStyles-drawerColumnDirection-1143"
+                >
+                  <div
+                    class="makeStyles-drawerRowDirection-1142"
+                  >
+                    <svg
+                      class="makeStyles-drawerMonetizationIcon-1135 makeStyles-bpsIconSize-1145"
+                    >
+                      monetization.svg
+                    </svg>
+                    <div
+                      class="makeStyles-drawerText-1136 makeStyles-drawerTextSeparation-1138"
+                    >
+                      <span>
+                        $
+                        -
+                      </span>
+                      <span>
+                        -
+                      </span>
+                      <span>
+                        Invoiced 
+                        -
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="makeStyles-drawerSection-1132"
+              >
+                <div
+                  class="makeStyles-drawerRowDirection-1142"
+                >
+                  <svg
+                    class="makeStyles-bpsIconSize-1145"
+                  >
+                    device-status.svg
+                  </svg>
+                  <div
+                    class="makeStyles-drawerText-1136 makeStyles-drawerTextSeparation-1138"
+                  >
+                    <span>
+                      Order/Purchase Date:
+                       
+                      
+                    </span>
+                    <span>
+                      Warranty Expiration Date:
+                       
+                      
+                    </span>
+                    <span>
+                      In Service Date:
+                       
+                      
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="makeStyles-drawerSection-1132"
+              >
+                <svg
+                  class="makeStyles-drawerSecondaryNotesIcon-1134"
+                >
+                  notes.svg
+                </svg>
+                <div
+                  class="makeStyles-drawerText-1136 makeStyles-drawerTextSeparation-1138"
+                >
+                  <span>
+                    -
+                  </span>
+                </div>
+              </div>
+              <div
+                class="makeStyles-drawerSection-1132"
+              >
+                <div
+                  class="makeStyles-drawerText-1136"
+                >
+                  <p
+                    class="MuiTypography-root makeStyles-deviceAccent-1130 makeStyles-entityTitle-1139 MuiTypography-body1"
+                  >
+                    Printer
+                  </p>
+                  <div
+                    class="makeStyles-drawerMainText-1137"
+                  >
+                    <span>
+                      -
+                    </span>
+                    <span>
+                      -
+                    </span>
+                    <span>
+                      -
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="makeStyles-drawerSection-1132"
+              >
+                <div
+                  class="makeStyles-drawerColumnDirection-1143"
+                >
+                  <div
+                    class="makeStyles-drawerRowDirection-1142"
+                  >
+                    <svg
+                      class="makeStyles-drawerMonetizationIcon-1135"
+                    >
+                      monetization.svg
+                    </svg>
+                    <div
+                      class="makeStyles-drawerText-1136 makeStyles-drawerTextSeparation-1138"
+                    >
+                      <span>
+                        $
+                        -
+                      </span>
+                      <span>
+                        -
+                      </span>
+                      <span>
+                        Invoiced 
+                        -
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="makeStyles-drawerSection-1132"
+              >
+                <div
+                  class="makeStyles-drawerRowDirection-1142"
+                >
+                  <svg
+                    class="makeStyles-bpsIconSize-1145"
+                  >
+                    device-status.svg
+                  </svg>
+                  <div
+                    class="makeStyles-drawerText-1136 makeStyles-drawerTextSeparation-1138"
+                  >
+                    <span>
+                      Order/Purchase Date:
+                       
+                      
+                    </span>
+                    <span>
+                      Warranty Expiration Date:
+                       
+                      
+                    </span>
+                    <span>
+                      Last Maintenance Date:
+                       
+                      
+                    </span>
+                    <span>
+                      In Service Date:
+                       
+                      
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="makeStyles-drawerSection-1132"
+              >
+                <svg
+                  class="makeStyles-drawerSecondaryNotesIcon-1134"
+                >
+                  notes.svg
+                </svg>
+                <div
+                  class="makeStyles-drawerText-1136 makeStyles-drawerTextSeparation-1138"
+                >
+                  <span>
+                    -
+                  </span>
+                </div>
+              </div>
+              <div
+                class="makeStyles-drawerSection-1132"
+              >
+                <div
+                  class="makeStyles-drawerText-1136"
+                >
+                  <p
+                    class="MuiTypography-root makeStyles-deviceAccent-1130 makeStyles-entityTitle-1139 MuiTypography-body1"
+                  >
+                    Scanner
+                  </p>
+                  <div
+                    class="makeStyles-drawerMainText-1137"
+                  >
+                    <span>
+                      -
+                    </span>
+                    <span>
+                      -
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="makeStyles-drawerSection-1132"
+              >
+                <div
+                  class="makeStyles-drawerColumnDirection-1143"
+                >
+                  <div
+                    class="makeStyles-drawerRowDirection-1142"
+                  >
+                    <svg
+                      class="makeStyles-drawerMonetizationIcon-1135"
+                    >
+                      monetization.svg
+                    </svg>
+                    <div
+                      class="makeStyles-drawerText-1136 makeStyles-drawerTextSeparation-1138"
+                    >
+                      <span>
+                        $
+                        -
+                      </span>
+                      <span>
+                        -
+                      </span>
+                      <span>
+                        Invoiced 
+                        -
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="makeStyles-drawerSection-1132"
+              >
+                <div
+                  class="makeStyles-drawerRowDirection-1142"
+                >
+                  <svg
+                    class="makeStyles-bpsIconSize-1145"
+                  >
+                    device-status.svg
+                  </svg>
+                  <div
+                    class="makeStyles-drawerText-1136 makeStyles-drawerTextSeparation-1138"
+                  >
+                    <span>
+                      Order/Purchase Date:
+                       
+                      
+                    </span>
+                    <span>
+                      Warranty Expiration Date:
+                       
+                      
+                    </span>
+                    <span>
+                      In Service Date:
+                       
+                      
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="makeStyles-drawerSection-1132"
+              >
+                <svg
+                  class="makeStyles-drawerSecondaryNotesIcon-1134"
+                >
+                  notes.svg
+                </svg>
+                <div
+                  class="makeStyles-drawerText-1136 makeStyles-drawerTextSeparation-1138"
+                >
+                  <span>
+                    -
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr
+          class="MuiDivider-root makeStyles-drawerDivider-1013"
+        />
+        <div
+          class="makeStyles-ctaWrapper-1090"
+        >
+          <span
+            class=""
+            data-testid="controlled-button"
+            tabindex="-1"
+          >
+            <button
+              class="MuiButtonBase-root MuiButton-root MuiButton-outlined makeStyles-drawerCTA-982 makeStyles-borderPrimaryButton-974"
+              data-testid="bps-edition-modal-open-btn"
+              tabindex="0"
+              type="button"
+            >
+              <span
+                class="MuiButton-label"
+              >
+                Edit Date
+              </span>
+            </button>
+          </span>
+          <span
+            class=""
+            data-testid="controlled-button"
+            tabindex="-1"
+          >
+            <button
+              class="MuiButtonBase-root MuiButton-root MuiButton-outlined makeStyles-drawerCTA-982 makeStyles-warningButton-983"
+              data-testid="unassign-btn"
+              tabindex="0"
+              type="button"
+            >
+              <span
+                class="MuiButton-label"
+              >
+                Unassign
+              </span>
+            </button>
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

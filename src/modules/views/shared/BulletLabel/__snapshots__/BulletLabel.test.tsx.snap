@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`BulletLabel Component should render with content 1`] = `
+<div>
+  <div
+    class=" makeStyles-bulletLabelWrapper-1"
+  >
+    <span
+      class="makeStyles-statusCircle-2"
+      style="background-color: gray;"
+    />
+    <p
+      class="MuiTypography-root makeStyles-statusText-3 MuiTypography-body1"
+    >
+      test
+    </p>
+  </div>
+</div>
+`;

@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ProjectBadgeModal should render 1`] = `
+<div
+  aria-hidden="true"
+/>
+`;
+
+exports[`ProjectBadgeModal should render fallback 1`] = `
+<div
+  aria-hidden="true"
+/>
+`;

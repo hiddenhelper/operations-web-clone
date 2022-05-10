@@ -1,0 +1,721 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AssignUser assign tab should render 1`] = `
+<body
+  style="padding-right: 0px; overflow: hidden;"
+>
+  <div
+    aria-hidden="true"
+  />
+  <div
+    class="MuiDialog-root makeStyles-root-536 makeStyles-modalWrapper-432 "
+    data-testid="modal-dialog"
+    role="presentation"
+    style="position: fixed; z-index: 1000; right: 0px; bottom: 0px; top: 0px; left: 0px;"
+  >
+    <div
+      aria-hidden="true"
+      class="MuiBackdrop-root"
+      style="opacity: 1; webkit-transition: opacity 225ms cubic-bezier(0.4, 0, 0.2, 1) 0ms; transition: opacity 225ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;"
+    />
+    <div
+      data-test="sentinelStart"
+      tabindex="0"
+    />
+    <div
+      class="MuiDialog-container MuiDialog-scrollPaper"
+      role="none presentation"
+      style="opacity: 1; webkit-transition: opacity 225ms cubic-bezier(0.4, 0, 0.2, 1) 0ms; transition: opacity 225ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;"
+      tabindex="-1"
+    >
+      <div
+        aria-describedby="scroll-dialog-description"
+        aria-labelledby="scroll-dialog-title"
+        class="MuiPaper-root MuiDialog-paper makeStyles-dialogPaper-433 MuiDialog-paperScrollPaper MuiDialog-paperWidthSm MuiPaper-elevation24 MuiPaper-rounded"
+        role="dialog"
+      >
+        <div
+          class="MuiDialogTitle-root makeStyles-titleContainer-420"
+          id="alert-dialog-title"
+        >
+          <h1
+            class="MuiTypography-root makeStyles-title-526 MuiTypography-h6 MuiTypography-colorSecondary MuiTypography-alignLeft"
+          >
+            Assign User
+          </h1>
+        </div>
+        <div
+          class="MuiDialogContent-root makeStyles-tableWrapper-452  makeStyles-tableBackground-455 makeStyles-assignTableSpacing-434 MuiDialogContent-dividers"
+        >
+          <div>
+            <div
+              class="MuiBox-root MuiBox-root-561 makeStyles-filterStatusContainer-466 makeStyles-filterStatusSpaced-421 makeStyles-filterAssignSpacing-422"
+            >
+              <div
+                class="MuiFormControl-root MuiTextField-root makeStyles-searchInput-491 makeStyles-searchSvg-492"
+                data-testid="assign-search-wrapper"
+              >
+                <div
+                  class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-formControl MuiInputBase-adornedStart MuiOutlinedInput-adornedStart"
+                >
+                  <svg>
+                    search.svg
+                  </svg>
+                  <input
+                    aria-invalid="false"
+                    autocomplete="off"
+                    class="MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputAdornedStart MuiOutlinedInput-inputAdornedStart"
+                    data-testid="search-filter"
+                    name="find"
+                    placeholder="Find a user..."
+                    type="text"
+                    value=""
+                  />
+                  <fieldset
+                    aria-hidden="true"
+                    class="PrivateNotchedOutline-root-562 MuiOutlinedInput-notchedOutline"
+                    style="padding-left: 8px;"
+                  >
+                    <legend
+                      class="PrivateNotchedOutline-legend-563"
+                      style="width: 0.01px;"
+                    >
+                      <span>
+                        ​
+                      </span>
+                    </legend>
+                  </fieldset>
+                </div>
+              </div>
+              <div
+                class="makeStyles-assignFilters-425"
+              >
+                <div
+                  class="makeStyles-filterElement-426"
+                >
+                  <p
+                    class="MuiTypography-root makeStyles-filterTextColor-427 MuiTypography-body1"
+                  >
+                    Show 
+                    all
+                  </p>
+                  <span
+                    class="makeStyles-dropdownIcon-475 makeStyles-boldFilter-428"
+                  >
+                    <div>
+                      <button
+                        data-testid="filter-show-all"
+                      >
+                        Show 
+                        Show all
+                      </button>
+                      <button
+                        data-testid="filter-show-selected"
+                      >
+                        Show 
+                        Show selected
+                      </button>
+                    </div>
+                  </span>
+                </div>
+                <hr
+                  class="MuiDivider-root makeStyles-dividerColor-476 MuiDivider-flexItem MuiDivider-vertical"
+                />
+                <div
+                  class="MuiBox-root MuiBox-root-566 makeStyles-filterStatusContainer-466 makeStyles-leftFilterStatusContainer-470 makeStyles-locationModalFilter-444"
+                >
+                  <div
+                    class="MuiBox-root MuiBox-root-568 makeStyles-filterStatusContainer-466 makeStyles-autocompleteFilterPosition-567"
+                  >
+                    <div
+                      class="makeStyles-floatingFilterWrapper-472 makeStyles-filterWrapper-471 makeStyles-buttonContainer-570 floatingFilterWrapper"
+                    >
+                      <span
+                        class="makeStyles-floatingFilterButton-473"
+                        data-testid="controlled-button"
+                        tabindex="-1"
+                      >
+                        <button
+                          aria-controls="false"
+                          aria-haspopup="true"
+                          class="MuiButtonBase-root MuiButton-root MuiButton-text makeStyles-buttonFilter-481"
+                          data-testid="button-filter-open"
+                          tabindex="0"
+                          type="button"
+                        >
+                          <span
+                            class="MuiButton-label"
+                          >
+                            All Clients
+                            <span
+                              class="MuiButton-endIcon MuiButton-iconSizeMedium"
+                            >
+                              <svg
+                                class="makeStyles-dropdownIcon-475"
+                              >
+                                expand.svg
+                              </svg>
+                            </span>
+                          </span>
+                        </button>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="makeStyles-boldFilter-428 makeStyles-filterTextColor-427"
+                >
+                  16
+                   Users. 
+                  0
+                   Selected
+                </div>
+                <div
+                  class="makeStyles-filterElement-426"
+                >
+                  <button
+                    class="MuiButtonBase-root MuiButton-root MuiButton-contained makeStyles-saveButton-499 makeStyles-assignButtonWidth-430 MuiButton-containedPrimary"
+                    data-testid="tab-create-new-btn"
+                    tabindex="0"
+                    type="button"
+                  >
+                    <span
+                      class="MuiButton-label"
+                    >
+                      New User
+                    </span>
+                    <span
+                      class="MuiTouchRipple-root"
+                    />
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="makeStyles-assignSkeletonWrapper-438"
+          >
+            <table
+              aria-label="user-list"
+              class="MuiTable-root"
+            >
+              <thead
+                class="MuiTableHead-root"
+              >
+                <tr
+                  class="MuiTableRow-root MuiTableRow-head"
+                />
+              </thead>
+              <tbody
+                class="MuiTableBody-root"
+              >
+                <tr
+                  class="MuiTableRow-root WithStyles(ForwardRef(TableRow))-root-664"
+                  data-testid="assign-list-row"
+                >
+                  <td
+                    class="MuiTableCell-root MuiTableCell-body makeStyles-assignUserInitialCell-613"
+                  >
+                    <div
+                      class="makeStyles-tableEllipsis-458 makeStyles-assignNameLeftSpace-610"
+                    >
+                      <span
+                        aria-disabled="false"
+                        class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-667 MuiCheckbox-root MuiCheckbox-colorSecondary MuiIconButton-colorSecondary"
+                        data-testid="multiple-checkbox"
+                      >
+                        <span
+                          class="MuiIconButton-label"
+                        >
+                          <input
+                            class="PrivateSwitchBase-input-670"
+                            data-indeterminate="false"
+                            name="user"
+                            type="checkbox"
+                            value="1"
+                          />
+                          <svg
+                            aria-hidden="true"
+                            class="MuiSvgIcon-root makeStyles-iconRoot-665 "
+                            focusable="false"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z"
+                            />
+                          </svg>
+                        </span>
+                        <span
+                          class="MuiTouchRipple-root"
+                        />
+                      </span>
+                       
+                      <span
+                        class="MuiBadge-root makeStyles-avatarWithSmallBadge-576"
+                      >
+                        <div
+                          class="MuiAvatar-root MuiAvatar-circle makeStyles-avatarWrapper-574 makeStyles-avatarSecondaryMargin-575 MuiAvatar-colorDefault"
+                        >
+                          <svg
+                            class="MuiSvgIcon-root"
+                            focusable="false"
+                            role="img"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"
+                            />
+                            <title>
+                              Do not invite
+                            </title>
+                          </svg>
+                        </div>
+                        <span
+                          class="MuiBadge-badge MuiBadge-anchorOriginBottomRightCircle MuiBadge-invisible"
+                        />
+                      </span>
+                      <span>
+                        test 1
+                         
+                        Martin
+                      </span>
+                    </div>
+                  </td>
+                  <td
+                    class="MuiTableCell-root MuiTableCell-body"
+                  />
+                  <td
+                    class="MuiTableCell-root MuiTableCell-body"
+                  >
+                    Constructions INC.
+                  </td>
+                  <td
+                    class="MuiTableCell-root MuiTableCell-body"
+                  >
+                    <div
+                      class="MuiFormControl-root makeStyles-formControl-673 makeStyles-minimalisticSelectWrapper-647 makeStyles-minimalisticSelect-493"
+                    >
+                      <div
+                        class="MuiInputBase-root MuiInput-root MuiInput-underline   makeStyles-selectElement-674  MuiInputBase-fullWidth MuiInput-fullWidth MuiInputBase-formControl MuiInput-formControl"
+                        data-testid="user-role-select"
+                      >
+                        <div
+                          aria-haspopup="listbox"
+                          aria-labelledby="demo-simple-select-outlined-label demo-simple-select-outlined"
+                          class="MuiSelect-root MuiSelect-select MuiSelect-selectMenu MuiInputBase-input MuiInput-input"
+                          id="demo-simple-select-outlined"
+                          role="button"
+                          tabindex="0"
+                        >
+                          Select Role
+                        </div>
+                        <input
+                          aria-hidden="true"
+                          class="MuiSelect-nativeInput"
+                          name="userRole"
+                          tabindex="-1"
+                          value=""
+                        />
+                        <svg
+                          aria-hidden="true"
+                          class="MuiSvgIcon-root MuiSelect-icon"
+                          focusable="false"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            d="M7 10l5 5 5-5z"
+                          />
+                        </svg>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+                <tr
+                  class="MuiTableRow-root WithStyles(ForwardRef(TableRow))-root-664"
+                  data-testid="assign-list-row"
+                >
+                  <td
+                    class="MuiTableCell-root MuiTableCell-body makeStyles-assignUserInitialCell-613"
+                  >
+                    <div
+                      class="makeStyles-tableEllipsis-458 makeStyles-assignNameLeftSpace-610"
+                    >
+                      <span
+                        aria-disabled="false"
+                        class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-667 MuiCheckbox-root MuiCheckbox-colorSecondary MuiIconButton-colorSecondary"
+                        data-testid="multiple-checkbox"
+                      >
+                        <span
+                          class="MuiIconButton-label"
+                        >
+                          <input
+                            class="PrivateSwitchBase-input-670"
+                            data-indeterminate="false"
+                            name="user"
+                            type="checkbox"
+                            value="2"
+                          />
+                          <svg
+                            aria-hidden="true"
+                            class="MuiSvgIcon-root makeStyles-iconRoot-665 "
+                            focusable="false"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z"
+                            />
+                          </svg>
+                        </span>
+                        <span
+                          class="MuiTouchRipple-root"
+                        />
+                      </span>
+                       
+                      <span
+                        class="MuiBadge-root makeStyles-avatarWithSmallBadge-576"
+                      >
+                        <div
+                          class="MuiAvatar-root MuiAvatar-circle makeStyles-avatarWrapper-574 makeStyles-avatarSecondaryMargin-575 MuiAvatar-colorDefault"
+                        >
+                          <svg
+                            class="MuiSvgIcon-root"
+                            focusable="false"
+                            role="img"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"
+                            />
+                            <title>
+                              Do not invite
+                            </title>
+                          </svg>
+                        </div>
+                        <span
+                          class="MuiBadge-badge MuiBadge-anchorOriginBottomRightCircle MuiBadge-invisible"
+                        />
+                      </span>
+                      <span>
+                        test 2
+                         
+                        Martin
+                      </span>
+                    </div>
+                  </td>
+                  <td
+                    class="MuiTableCell-root MuiTableCell-body"
+                  />
+                  <td
+                    class="MuiTableCell-root MuiTableCell-body"
+                  >
+                    Constructions INC.
+                  </td>
+                  <td
+                    class="MuiTableCell-root MuiTableCell-body"
+                  >
+                    <div
+                      class="MuiFormControl-root makeStyles-formControl-673 makeStyles-minimalisticSelectWrapper-647 makeStyles-minimalisticSelect-493"
+                    >
+                      <div
+                        class="MuiInputBase-root MuiInput-root MuiInput-underline   makeStyles-selectElement-674  MuiInputBase-fullWidth MuiInput-fullWidth MuiInputBase-formControl MuiInput-formControl"
+                        data-testid="user-role-select"
+                      >
+                        <div
+                          aria-haspopup="listbox"
+                          aria-labelledby="demo-simple-select-outlined-label demo-simple-select-outlined"
+                          class="MuiSelect-root MuiSelect-select MuiSelect-selectMenu MuiInputBase-input MuiInput-input"
+                          id="demo-simple-select-outlined"
+                          role="button"
+                          tabindex="0"
+                        >
+                          Select Role
+                        </div>
+                        <input
+                          aria-hidden="true"
+                          class="MuiSelect-nativeInput"
+                          name="userRole"
+                          tabindex="-1"
+                          value=""
+                        />
+                        <svg
+                          aria-hidden="true"
+                          class="MuiSvgIcon-root MuiSelect-icon"
+                          focusable="false"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            d="M7 10l5 5 5-5z"
+                          />
+                        </svg>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+                <tr
+                  class="MuiTableRow-root WithStyles(ForwardRef(TableRow))-root-664"
+                  data-testid="assign-list-row"
+                >
+                  <td
+                    class="MuiTableCell-root MuiTableCell-body makeStyles-assignUserInitialCell-613"
+                  >
+                    <div
+                      class="makeStyles-tableEllipsis-458 makeStyles-assignNameLeftSpace-610"
+                    >
+                      <span
+                        aria-disabled="false"
+                        class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-667 MuiCheckbox-root MuiCheckbox-colorSecondary MuiIconButton-colorSecondary"
+                        data-testid="multiple-checkbox"
+                      >
+                        <span
+                          class="MuiIconButton-label"
+                        >
+                          <input
+                            class="PrivateSwitchBase-input-670"
+                            data-indeterminate="false"
+                            name="user"
+                            type="checkbox"
+                            value="9164e4c4-6521-47bb-97fd-c75ac02b2cf3"
+                          />
+                          <svg
+                            aria-hidden="true"
+                            class="MuiSvgIcon-root makeStyles-iconRoot-665 "
+                            focusable="false"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z"
+                            />
+                          </svg>
+                        </span>
+                        <span
+                          class="MuiTouchRipple-root"
+                        />
+                      </span>
+                       
+                      <span
+                        class="MuiBadge-root makeStyles-avatarWithSmallBadge-576"
+                      >
+                        <div
+                          class="MuiAvatar-root MuiAvatar-circle makeStyles-avatarWrapper-574 makeStyles-avatarSecondaryMargin-575 MuiAvatar-colorDefault"
+                        >
+                          <svg
+                            class="MuiSvgIcon-root"
+                            focusable="false"
+                            role="img"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"
+                            />
+                            <title>
+                              Do not invite
+                            </title>
+                          </svg>
+                        </div>
+                        <span
+                          class="MuiBadge-badge MuiBadge-anchorOriginBottomRightCircle MuiBadge-invisible"
+                        />
+                      </span>
+                      <span>
+                        Pedro
+                         
+                        Martin
+                      </span>
+                    </div>
+                  </td>
+                  <td
+                    class="MuiTableCell-root MuiTableCell-body"
+                  />
+                  <td
+                    class="MuiTableCell-root MuiTableCell-body"
+                  >
+                    Constructions INC.
+                  </td>
+                  <td
+                    class="MuiTableCell-root MuiTableCell-body"
+                  >
+                    <div
+                      class="MuiFormControl-root makeStyles-formControl-673 makeStyles-minimalisticSelectWrapper-647 makeStyles-minimalisticSelect-493"
+                    >
+                      <div
+                        class="MuiInputBase-root MuiInput-root MuiInput-underline   makeStyles-selectElement-674  MuiInputBase-fullWidth MuiInput-fullWidth MuiInputBase-formControl MuiInput-formControl"
+                        data-testid="user-role-select"
+                      >
+                        <div
+                          aria-haspopup="listbox"
+                          aria-labelledby="demo-simple-select-outlined-label demo-simple-select-outlined"
+                          class="MuiSelect-root MuiSelect-select MuiSelect-selectMenu MuiInputBase-input MuiInput-input"
+                          id="demo-simple-select-outlined"
+                          role="button"
+                          tabindex="0"
+                        >
+                          Select Role
+                        </div>
+                        <input
+                          aria-hidden="true"
+                          class="MuiSelect-nativeInput"
+                          name="userRole"
+                          tabindex="-1"
+                          value=""
+                        />
+                        <svg
+                          aria-hidden="true"
+                          class="MuiSvgIcon-root MuiSelect-icon"
+                          focusable="false"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            d="M7 10l5 5 5-5z"
+                          />
+                        </svg>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <nav
+              aria-label="pagination navigation"
+              class="MuiPagination-root  makeStyles-pagination-678"
+              data-testid="pagination"
+            >
+              <ul
+                class="MuiPagination-ul"
+              >
+                <li>
+                  <button
+                    aria-label="Go to previous page"
+                    class="MuiButtonBase-root MuiPaginationItem-root MuiPaginationItem-page Mui-disabled Mui-disabled"
+                    disabled=""
+                    tabindex="-1"
+                    type="button"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      class="MuiSvgIcon-root MuiPaginationItem-icon"
+                      focusable="false"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"
+                      />
+                    </svg>
+                  </button>
+                </li>
+                <li>
+                  <button
+                    aria-current="true"
+                    aria-label="page 1"
+                    class="MuiButtonBase-root MuiPaginationItem-root MuiPaginationItem-page Mui-selected"
+                    tabindex="0"
+                    type="button"
+                  >
+                    1
+                    <span
+                      class="MuiTouchRipple-root"
+                    />
+                  </button>
+                </li>
+                <li>
+                  <button
+                    aria-label="Go to page 2"
+                    class="MuiButtonBase-root MuiPaginationItem-root MuiPaginationItem-page"
+                    tabindex="0"
+                    type="button"
+                  >
+                    2
+                    <span
+                      class="MuiTouchRipple-root"
+                    />
+                  </button>
+                </li>
+                <li>
+                  <button
+                    aria-label="Go to page 3"
+                    class="MuiButtonBase-root MuiPaginationItem-root MuiPaginationItem-page"
+                    tabindex="0"
+                    type="button"
+                  >
+                    3
+                    <span
+                      class="MuiTouchRipple-root"
+                    />
+                  </button>
+                </li>
+                <li>
+                  <button
+                    aria-label="Go to next page"
+                    class="MuiButtonBase-root MuiPaginationItem-root MuiPaginationItem-page"
+                    tabindex="0"
+                    type="button"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      class="MuiSvgIcon-root MuiPaginationItem-icon"
+                      focusable="false"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"
+                      />
+                    </svg>
+                    <span
+                      class="MuiTouchRipple-root"
+                    />
+                  </button>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+        <div
+          class="MuiDialogActions-root makeStyles-buttonsContainer-435 MuiDialogActions-spacing"
+        >
+          <button
+            class="MuiButtonBase-root MuiButton-root MuiButton-text makeStyles-closeButton-436 makeStyles-boldButton-437 MuiButton-textPrimary"
+            data-testid="assign-btn-close"
+            tabindex="0"
+            type="button"
+          >
+            <span
+              class="MuiButton-label"
+            >
+              Close
+            </span>
+            <span
+              class="MuiTouchRipple-root"
+            />
+          </button>
+          <button
+            class="MuiButtonBase-root MuiButton-root MuiButton-contained false makeStyles-saveButton-429 makeStyles-assignButtonWidth-430 makeStyles-assignButtonRightSpace-431 MuiButton-containedPrimary Mui-disabled Mui-disabled"
+            data-testid="assign-btn-confirm"
+            disabled=""
+            tabindex="-1"
+            type="button"
+          >
+            <span
+              class="MuiButton-label"
+            >
+              <span
+                class="makeStyles-textWrapper-681"
+              >
+                Assign
+              </span>
+            </span>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div
+      data-test="sentinelEnd"
+      tabindex="0"
+    />
+  </div>
+</body>
+`;
+
+exports[`AssignUser assign tab should render loading 1`] = `
+<div
+  aria-hidden="true"
+/>
+`;

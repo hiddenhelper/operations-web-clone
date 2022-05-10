@@ -1,0 +1,26 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`DeleteEntityButton should render 1`] = `
+<div>
+  <span
+    class=""
+    data-testid="controlled-button"
+    tabindex="-1"
+  >
+    <button
+      class="MuiButtonBase-root MuiIconButton-root makeStyles-deleteButton-1 "
+      data-testid="delete-entity-button"
+      tabindex="0"
+      type="button"
+    >
+      <span
+        class="MuiIconButton-label"
+      >
+        <svg>
+          delete.svg
+        </svg>
+      </span>
+    </button>
+  </span>
+</div>
+`;

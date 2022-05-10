@@ -1,0 +1,61 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Sidebar should render CardItem 1`] = `
+<div>
+  <div
+    class="makeStyles-cardContainer-1"
+    data-testid="procoreCard"
+  >
+    <div
+      class="makeStyles-titleContainer-2"
+    >
+      <div
+        class="makeStyles-logoContainer-3"
+      >
+        <div
+          class="makeStyles-grayCircle-4"
+        >
+          <svg
+            fill="#1E86E8"
+            height="38px"
+            width="38px"
+          >
+            procore.svg
+          </svg>
+        </div>
+      </div>
+      <div>
+        <p
+          class="MuiTypography-root makeStyles-title-5 MuiTypography-body1"
+        >
+          title
+        </p>
+      </div>
+    </div>
+    <div
+      class="makeStyles-bodyContainer-6"
+    >
+      <p
+        class="MuiTypography-root MuiTypography-body1"
+      >
+        first line
+      </p>
+      <p
+        class="MuiTypography-root MuiTypography-body1"
+      >
+        second line
+      </p>
+    </div>
+    <div
+      class="makeStyles-linkContanier-7"
+    >
+      <a
+        color="inherit"
+        href="/procore-clients"
+      >
+        link description
+      </a>
+    </div>
+  </div>
+</div>
+`;

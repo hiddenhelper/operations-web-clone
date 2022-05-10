@@ -1,0 +1,112 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SearchLocation should render 1`] = `
+<div>
+  <div
+    aria-expanded="false"
+    class="MuiAutocomplete-root makeStyles-root-1 makeStyles-outlined-3 "
+    data-testid="search-autocomplete"
+    role="combobox"
+  >
+    <div>
+      <div
+        aria-autocomplete="list"
+        autocapitalize="none"
+        class="MuiFormControl-root MuiTextField-root MuiAutocomplete-input MuiAutocomplete-inputFocused"
+        spellcheck="false"
+      >
+        <div
+          class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-formControl MuiInputBase-adornedEnd MuiOutlinedInput-adornedEnd"
+        >
+          <input
+            aria-invalid="false"
+            autocomplete="off"
+            class="MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputAdornedEnd MuiOutlinedInput-inputAdornedEnd"
+            id="search-autocomplete-undefined"
+            placeholder="search"
+            type="text"
+            value="location 1"
+          />
+          <div
+            class="MuiInputAdornment-root MuiInputAdornment-positionEnd"
+          >
+            <svg
+              aria-hidden="true"
+              class="MuiSvgIcon-root"
+              focusable="false"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM20.71 7.04c.39-.39.39-1.02 0-1.41l-2.34-2.34a.9959.9959 0 00-1.41 0l-1.83 1.83 3.75 3.75 1.83-1.83z"
+              />
+            </svg>
+          </div>
+          <fieldset
+            aria-hidden="true"
+            class="PrivateNotchedOutline-root-5 MuiOutlinedInput-notchedOutline"
+            style="padding-left: 8px;"
+          >
+            <legend
+              class="PrivateNotchedOutline-legend-6"
+              style="width: 0.01px;"
+            >
+              <span>
+                ​
+              </span>
+            </legend>
+          </fieldset>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`SearchLocation should render disabled 1`] = `
+<div>
+  <div
+    aria-expanded="false"
+    class="MuiAutocomplete-root makeStyles-root-9 makeStyles-outlined-11 makeStyles-disabled-12"
+    data-testid="search-autocomplete"
+    role="combobox"
+  >
+    <div>
+      <div
+        aria-autocomplete="list"
+        autocapitalize="none"
+        class="MuiFormControl-root MuiTextField-root MuiAutocomplete-input MuiAutocomplete-inputFocused"
+        spellcheck="false"
+      >
+        <div
+          class="MuiInputBase-root MuiOutlinedInput-root Mui-disabled Mui-disabled MuiInputBase-formControl"
+        >
+          <input
+            aria-invalid="false"
+            autocomplete="off"
+            class="MuiInputBase-input MuiOutlinedInput-input Mui-disabled Mui-disabled"
+            disabled=""
+            id="search-autocomplete-undefined"
+            placeholder="search"
+            type="text"
+            value="location 1"
+          />
+          <fieldset
+            aria-hidden="true"
+            class="PrivateNotchedOutline-root-13 MuiOutlinedInput-notchedOutline"
+            style="padding-left: 8px;"
+          >
+            <legend
+              class="PrivateNotchedOutline-legend-14"
+              style="width: 0.01px;"
+            >
+              <span>
+                ​
+              </span>
+            </legend>
+          </fieldset>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

@@ -1,0 +1,57 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`StatusWidget should render 1`] = `
+<div>
+  <div
+    class="MuiPaper-root makeStyles-widget-1 MuiPaper-elevation0 MuiPaper-rounded"
+  >
+    <span
+      class="makeStyles-totalFont-2"
+    >
+      10
+    </span>
+    <div
+      class="makeStyles-contentContainer-5"
+    >
+      <span
+        class="makeStyles-statusFont-3"
+      >
+        status
+      </span>
+      <span
+        class="makeStyles-contentFont-4"
+      >
+        some content
+      </span>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`StatusWidget should render loading 1`] = `
+<div>
+  <div
+    class="MuiPaper-root makeStyles-widget-6 MuiPaper-elevation0 MuiPaper-rounded"
+  >
+    <span
+      class="makeStyles-totalFont-7"
+    >
+      10
+    </span>
+    <div
+      class="makeStyles-contentContainer-10"
+    >
+      <span
+        class="makeStyles-statusFont-8"
+      >
+        status
+      </span>
+      <span
+        class="makeStyles-contentFont-9"
+      >
+        some content
+      </span>
+    </div>
+  </div>
+</div>
+`;

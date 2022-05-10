@@ -1,0 +1,1714 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`WorkerList should render 1`] = `
+<div>
+  <div
+    style="width: 100%; background-color: rgb(245, 245, 245); padding: 2.5rem;"
+  >
+    <div
+      class=""
+    >
+      <div
+        class="MuiBox-root MuiBox-root-90"
+        style="height: 50px; margin-bottom: 13px; width: 100%;"
+      >
+        <div
+          class="MuiBox-root MuiBox-root-91"
+          style="display: flex; align-items: center; justify-content: space-between;"
+        >
+          <div>
+            <div
+              class="MuiBox-root MuiBox-root-92"
+              style="display: flex; align-items: center; margin-top: 5px;"
+            >
+              <h2
+                class="MuiTypography-root MuiTypography-h1"
+                style="color: rgb(68, 68, 68); font-size: 2.25rem; font-weight: 600; letter-spacing: 0; margin-right: 0.5rem;"
+              >
+                Workers
+              </h2>
+            </div>
+          </div>
+          <button
+            class="MuiButtonBase-root MuiButton-root MuiButton-contained makeStyles-createButton-42 makeStyles-primaryButtonLarge-44 MuiButton-containedPrimary MuiButton-containedSizeLarge MuiButton-sizeLarge MuiButton-fullWidth"
+            data-testid="invite-worker-btn"
+            tabindex="0"
+            type="button"
+          >
+            <span
+              class="MuiButton-label"
+            >
+              Create Worker
+            </span>
+            <span
+              class="MuiTouchRipple-root"
+            />
+          </button>
+        </div>
+      </div>
+      <div
+        class="makeStyles-widgetsWrapper-76"
+        id="summary-widgets"
+      >
+        <div
+          class="MuiPaper-root makeStyles-widget-93 MuiPaper-elevation0 MuiPaper-rounded"
+        >
+          <span
+            class="makeStyles-totalFont-94"
+          >
+            234
+          </span>
+          <div
+            class="makeStyles-contentContainer-97"
+          >
+            <span
+              class="makeStyles-statusFont-95"
+            >
+              Pending Invitation
+            </span>
+            <span
+              class="makeStyles-contentFont-96"
+            >
+              <a
+                href="/workers?status=4"
+              >
+                Review
+              </a>
+            </span>
+          </div>
+        </div>
+        <div
+          class="MuiPaper-root makeStyles-widget-93 MuiPaper-elevation0 MuiPaper-rounded"
+        >
+          <span
+            class="makeStyles-totalFont-94"
+          >
+            4
+          </span>
+          <div
+            class="makeStyles-contentContainer-97"
+          >
+            <span
+              class="makeStyles-statusFont-95"
+            >
+              Pending Registration
+            </span>
+            <span
+              class="makeStyles-contentFont-96"
+            >
+              <a
+                href="/workers?status=2"
+              >
+                Review
+              </a>
+            </span>
+          </div>
+        </div>
+        <div
+          class="MuiPaper-root makeStyles-widget-93 MuiPaper-elevation0 MuiPaper-rounded"
+        >
+          <span
+            class="makeStyles-totalFont-94"
+          >
+            1256
+          </span>
+          <div
+            class="makeStyles-contentContainer-97"
+          >
+            <span
+              class="makeStyles-statusFont-95"
+            >
+              Active
+            </span>
+            <span
+              class="makeStyles-contentFont-96"
+            >
+              <a
+                href="/workers?status=1"
+              >
+                Review
+              </a>
+            </span>
+          </div>
+        </div>
+      </div>
+      <div
+        class="makeStyles-tableWrapper-1"
+      >
+        <div
+          class="makeStyles-filterContainer-9"
+        >
+          <div
+            class="makeStyles-statusFilter-10"
+          >
+            <button
+              class="MuiButtonBase-root MuiButton-root MuiButton-text makeStyles-activeFilter-11"
+              data-testid="filter-status-opt"
+              tabindex="0"
+              type="button"
+            >
+              <span
+                class="MuiButton-label"
+              >
+                Pending Invitation
+              </span>
+              <span
+                class="MuiTouchRipple-root"
+              />
+            </button>
+            <button
+              class="MuiButtonBase-root MuiButton-root MuiButton-text"
+              data-testid="filter-status-opt"
+              tabindex="0"
+              type="button"
+            >
+              <span
+                class="MuiButton-label"
+              >
+                Pending Registration
+              </span>
+              <span
+                class="MuiTouchRipple-root"
+              />
+            </button>
+            <button
+              class="MuiButtonBase-root MuiButton-root MuiButton-text"
+              data-testid="filter-status-opt"
+              tabindex="0"
+              type="button"
+            >
+              <span
+                class="MuiButton-label"
+              >
+                Active
+              </span>
+              <span
+                class="MuiTouchRipple-root"
+              />
+            </button>
+          </div>
+          <div
+            class="makeStyles-filterActionsContainer-12"
+          >
+            <div
+              class="MuiBox-root MuiBox-root-98 makeStyles-filterStatusContainer-15"
+            >
+              <div
+                class="makeStyles-floatingFilterWrapper-21 makeStyles-filterWrapper-20 makeStyles-buttonContainer-100 floatingFilterWrapper"
+              >
+                <span
+                  class="makeStyles-floatingFilterButton-22"
+                  data-testid="controlled-button"
+                  tabindex="-1"
+                >
+                  <button
+                    aria-controls="false"
+                    aria-haspopup="true"
+                    class="MuiButtonBase-root MuiButton-root MuiButton-text makeStyles-buttonFilter-30"
+                    data-testid="button-filter-open"
+                    tabindex="0"
+                    type="button"
+                  >
+                    <span
+                      class="MuiButton-label"
+                    >
+                      All Locations
+                      <span
+                        class="MuiButton-endIcon MuiButton-iconSizeMedium"
+                      >
+                        <svg
+                          class="makeStyles-dropdownIcon-24"
+                        >
+                          expand.svg
+                        </svg>
+                      </span>
+                    </span>
+                  </button>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <table
+          aria-label="worker-list"
+          class="MuiTable-root"
+        >
+          <thead
+            class="MuiTableHead-root"
+          >
+            <tr
+              class="MuiTableRow-root MuiTableRow-head"
+            >
+              <th
+                class="MuiTableCell-root MuiTableCell-head"
+                scope="col"
+              >
+                Worker Name
+              </th>
+              <th
+                class="MuiTableCell-root MuiTableCell-head"
+                scope="col"
+              >
+                Location
+              </th>
+              <th
+                class="MuiTableCell-root MuiTableCell-head"
+                scope="col"
+              >
+                Client
+              </th>
+              <th
+                class="MuiTableCell-root MuiTableCell-head"
+                scope="col"
+              >
+                Trades
+              </th>
+              <th
+                class="MuiTableCell-root MuiTableCell-head"
+                scope="col"
+              >
+                Projects Assigned
+              </th>
+            </tr>
+          </thead>
+          <tbody
+            class="MuiTableBody-root"
+          >
+            <tr
+              class="MuiTableRow-root WithStyles(ForwardRef(TableRow))-root-124 makeStyles-clickableRow-88"
+              data-testid="worker-list-row"
+            >
+              <td
+                class="MuiTableCell-root MuiTableCell-body makeStyles-listName-73"
+              >
+                <div
+                  class="MuiBox-root MuiBox-root-125 makeStyles-workerRow-105"
+                >
+                  <div
+                    class="MuiBox-root MuiBox-root-126 makeStyles-workerCenter-107"
+                  >
+                    <span
+                      class="MuiBadge-root makeStyles-avatarPosition-104 makeStyles-avatarWithSmallBadge-110"
+                    >
+                      <div
+                        class="MuiAvatar-root MuiAvatar-circle makeStyles-avatarWrapper-108 makeStyles-avatarMedium-111 MuiAvatar-colorDefault"
+                      >
+                        <svg
+                          aria-hidden="true"
+                          class="MuiSvgIcon-root"
+                          focusable="false"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"
+                          />
+                        </svg>
+                      </div>
+                      <span
+                        class="MuiBadge-badge MuiBadge-anchorOriginBottomRightCircle"
+                      >
+                        <svg>
+                          accepted.svg
+                        </svg>
+                      </span>
+                    </span>
+                    <a
+                      class="Link-root-127"
+                      data-testid="worker-list-row-open-button"
+                      href="/workers/detail/2"
+                      title="Review worker details"
+                    >
+                      John Doe
+                    </a>
+                  </div>
+                </div>
+              </td>
+              <td
+                class="MuiTableCell-root MuiTableCell-body"
+              >
+                -
+              </td>
+              <td
+                class="MuiTableCell-root MuiTableCell-body"
+              >
+                -
+              </td>
+              <td
+                class="MuiTableCell-root MuiTableCell-body"
+              >
+                -
+              </td>
+              <td
+                class="MuiTableCell-root MuiTableCell-body"
+              >
+                0
+              </td>
+            </tr>
+            <tr
+              class="MuiTableRow-root WithStyles(ForwardRef(TableRow))-root-124 makeStyles-clickableRow-88"
+              data-testid="worker-list-row"
+            >
+              <td
+                class="MuiTableCell-root MuiTableCell-body makeStyles-listName-73"
+              >
+                <div
+                  class="MuiBox-root MuiBox-root-128 makeStyles-workerRow-105"
+                >
+                  <div
+                    class="MuiBox-root MuiBox-root-129 makeStyles-workerCenter-107"
+                  >
+                    <span
+                      class="MuiBadge-root makeStyles-avatarPosition-104 makeStyles-avatarWithSmallBadge-110"
+                    >
+                      <div
+                        class="MuiAvatar-root MuiAvatar-circle makeStyles-avatarWrapper-108 makeStyles-avatarMedium-111 MuiAvatar-colorDefault"
+                      >
+                        <svg
+                          aria-hidden="true"
+                          class="MuiSvgIcon-root"
+                          focusable="false"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"
+                          />
+                        </svg>
+                      </div>
+                      <span
+                        class="MuiBadge-badge MuiBadge-anchorOriginBottomRightCircle"
+                      >
+                        <svg>
+                          accepted.svg
+                        </svg>
+                      </span>
+                    </span>
+                    <a
+                      class="Link-root-127"
+                      data-testid="worker-list-row-open-button"
+                      href="/workers/detail/11029ead-e3eb-48d5-a658-cd818a70719f"
+                      title="Review worker details"
+                    >
+                      John Doe
+                    </a>
+                  </div>
+                </div>
+              </td>
+              <td
+                class="MuiTableCell-root MuiTableCell-body"
+              >
+                <span>
+                  Dallas, null
+                </span>
+              </td>
+              <td
+                class="MuiTableCell-root MuiTableCell-body"
+              >
+                -
+              </td>
+              <td
+                class="MuiTableCell-root MuiTableCell-body"
+              >
+                Ceiling, Plumbing
+              </td>
+              <td
+                class="MuiTableCell-root MuiTableCell-body"
+              >
+                0
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <nav
+          aria-label="pagination navigation"
+          class="MuiPagination-root  makeStyles-pagination-130"
+          data-testid="pagination"
+        >
+          <ul
+            class="MuiPagination-ul"
+          >
+            <li>
+              <button
+                aria-label="Go to previous page"
+                class="MuiButtonBase-root MuiPaginationItem-root MuiPaginationItem-page Mui-disabled Mui-disabled"
+                disabled=""
+                tabindex="-1"
+                type="button"
+              >
+                <svg
+                  aria-hidden="true"
+                  class="MuiSvgIcon-root MuiPaginationItem-icon"
+                  focusable="false"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"
+                  />
+                </svg>
+              </button>
+            </li>
+            <li>
+              <button
+                aria-current="true"
+                aria-label="page 1"
+                class="MuiButtonBase-root MuiPaginationItem-root MuiPaginationItem-page Mui-selected"
+                tabindex="0"
+                type="button"
+              >
+                1
+                <span
+                  class="MuiTouchRipple-root"
+                />
+              </button>
+            </li>
+            <li>
+              <button
+                aria-label="Go to next page"
+                class="MuiButtonBase-root MuiPaginationItem-root MuiPaginationItem-page Mui-disabled Mui-disabled"
+                disabled=""
+                tabindex="-1"
+                type="button"
+              >
+                <svg
+                  aria-hidden="true"
+                  class="MuiSvgIcon-root MuiPaginationItem-icon"
+                  focusable="false"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"
+                  />
+                </svg>
+              </button>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <div
+      class="MuiDrawer-root MuiDrawer-docked makeStyles-drawer-131 makeStyles-close-142 closed"
+      data-testid="worker-drawer-detail"
+    >
+      <div
+        class="MuiPaper-root MuiDrawer-paper makeStyles-drawerPaper-132 MuiDrawer-paperAnchorRight MuiDrawer-paperAnchorDockedRight MuiPaper-elevation0"
+        style="visibility: hidden; webkit-transform: translateX(1024px) translateX(0px); transform: translateX(1024px) translateX(0px);"
+      >
+        <div
+          class="makeStyles-drawerButtonWrapper-134"
+        >
+          <div
+            class="makeStyles-drawerButton-135"
+          >
+            <button
+              class="MuiButtonBase-root MuiButton-root MuiButton-text"
+              data-testid="drawer-close-btn"
+              style="outline: none;"
+              tabindex="0"
+              type="button"
+            >
+              <span
+                class="MuiButton-label"
+              >
+                <svg>
+                  close.svg
+                </svg>
+              </span>
+              <span
+                class="MuiTouchRipple-root"
+              />
+            </button>
+          </div>
+          <div
+            class="makeStyles-drawerHeader-133"
+          >
+            <p
+              class="MuiTypography-root makeStyles-drawerTitle-136 MuiTypography-body1 MuiTypography-colorPrimary MuiTypography-alignLeft"
+            >
+              Worker Information
+            </p>
+          </div>
+        </div>
+        <div
+          class="makeStyles-listDetail-80"
+        >
+          <div
+            class="makeStyles-company-81"
+          >
+            <div
+              class="makeStyles-drawerText-138"
+            >
+              <p
+                class="MuiTypography-root makeStyles-listAccent-82 makeStyles-entityTitle-79 MuiTypography-body1"
+              >
+                 
+              </p>
+              <div
+                class="makeStyles-drawerMainText-139"
+              >
+                <span>
+                  -
+                </span>
+              </div>
+            </div>
+            <div
+              class="makeStyles-drawerSection-137"
+            >
+              <div
+                class="makeStyles-drawerColumnDirection-146"
+              >
+                <div
+                  class="makeStyles-drawerRowDirection-147"
+                >
+                  <svg
+                    aria-hidden="true"
+                    class="MuiSvgIcon-root"
+                    focusable="false"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"
+                    />
+                  </svg>
+                  <div
+                    class="makeStyles-drawerText-138 makeStyles-drawerTextSeparation-140"
+                  >
+                    <p
+                      class="MuiTypography-root makeStyles-cardFont-150  MuiTypography-body1"
+                    >
+                      
+                      <span
+                        class=" "
+                      >
+                        -
+                      </span>
+                    </p>
+                    <p
+                      class="MuiTypography-root makeStyles-cardFont-150  MuiTypography-body1"
+                    >
+                      
+                      
+                      
+                      
+                    </p>
+                    <p
+                      class="MuiTypography-root makeStyles-cardFont-150  MuiTypography-body1"
+                    >
+                      -
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="makeStyles-drawerSection-137"
+            >
+              <div
+                class="makeStyles-drawerColumnDirection-146"
+              >
+                <div
+                  class="makeStyles-drawerRowDirection-147"
+                >
+                  <svg
+                    aria-hidden="true"
+                    class="MuiSvgIcon-root"
+                    focusable="false"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"
+                    />
+                  </svg>
+                  <div
+                    class="makeStyles-drawerText-138 makeStyles-drawerTextSeparation-140"
+                  />
+                </div>
+              </div>
+            </div>
+            <div
+              class="makeStyles-drawerSection-137"
+            >
+              <div
+                class="makeStyles-drawerColumnDirection-146"
+              >
+                <div
+                  class="makeStyles-drawerRowDirection-147"
+                >
+                  <svg
+                    class="MuiSvgIcon-root"
+                  >
+                    emergency-contact.svg
+                  </svg>
+                  <div
+                    class="makeStyles-drawerText-138 makeStyles-drawerTextSeparation-140"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <hr
+            class="MuiDivider-root makeStyles-drawerDivider-141"
+          />
+          <div
+            class="makeStyles-ctaWrapper-83"
+          >
+            <span
+              class=""
+              data-testid="controlled-button"
+              tabindex="-1"
+            >
+              <a
+                aria-disabled="false"
+                class="MuiButtonBase-root MuiButton-root MuiButton-outlined makeStyles-drawerCTA-49 makeStyles-borderPrimaryButton-41 makeStyles-primaryButtonPadding-43"
+                data-testid="drawerButton"
+                href="/workers/detail/null"
+                tabindex="0"
+              >
+                <span
+                  class="MuiButton-label"
+                >
+                  Worker Detail
+                </span>
+              </a>
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`WorkerList should show loading 1`] = `
+<div>
+  <div
+    style="width: 100%; background-color: rgb(245, 245, 245); padding: 2.5rem;"
+  >
+    <div
+      class=""
+    >
+      <div
+        class="MuiBox-root MuiBox-root-251"
+        style="height: 50px; margin-bottom: 13px; width: 100%;"
+      >
+        <div
+          class="MuiBox-root MuiBox-root-252"
+          style="display: flex; align-items: center; justify-content: space-between;"
+        >
+          <div>
+            <div
+              class="MuiBox-root MuiBox-root-253"
+              style="display: flex; align-items: center; margin-top: 5px;"
+            >
+              <h2
+                class="MuiTypography-root MuiTypography-h1"
+                style="color: rgb(68, 68, 68); font-size: 2.25rem; font-weight: 600; letter-spacing: 0; margin-right: 0.5rem;"
+              >
+                Workers
+              </h2>
+            </div>
+          </div>
+          <button
+            class="MuiButtonBase-root MuiButton-root MuiButton-contained makeStyles-createButton-203 makeStyles-primaryButtonLarge-205 MuiButton-containedPrimary MuiButton-containedSizeLarge MuiButton-sizeLarge MuiButton-fullWidth"
+            data-testid="invite-worker-btn"
+            tabindex="0"
+            type="button"
+          >
+            <span
+              class="MuiButton-label"
+            >
+              Create Worker
+            </span>
+            <span
+              class="MuiTouchRipple-root"
+            />
+          </button>
+        </div>
+      </div>
+      <div
+        class="makeStyles-widgetsWrapper-237"
+        id="summary-widgets"
+      >
+        <div
+          class="MuiPaper-root makeStyles-widget-254 MuiPaper-elevation0 MuiPaper-rounded"
+        >
+          <span
+            class="makeStyles-totalFont-255"
+          >
+            234
+          </span>
+          <div
+            class="makeStyles-contentContainer-258"
+          >
+            <span
+              class="makeStyles-statusFont-256"
+            >
+              Pending Invitation
+            </span>
+            <span
+              class="makeStyles-contentFont-257"
+            >
+              <a
+                href="/workers?status=4"
+              >
+                Review
+              </a>
+            </span>
+          </div>
+        </div>
+        <div
+          class="MuiPaper-root makeStyles-widget-254 MuiPaper-elevation0 MuiPaper-rounded"
+        >
+          <span
+            class="makeStyles-totalFont-255"
+          >
+            4
+          </span>
+          <div
+            class="makeStyles-contentContainer-258"
+          >
+            <span
+              class="makeStyles-statusFont-256"
+            >
+              Pending Registration
+            </span>
+            <span
+              class="makeStyles-contentFont-257"
+            >
+              <a
+                href="/workers?status=2"
+              >
+                Review
+              </a>
+            </span>
+          </div>
+        </div>
+        <div
+          class="MuiPaper-root makeStyles-widget-254 MuiPaper-elevation0 MuiPaper-rounded"
+        >
+          <span
+            class="makeStyles-totalFont-255"
+          >
+            1256
+          </span>
+          <div
+            class="makeStyles-contentContainer-258"
+          >
+            <span
+              class="makeStyles-statusFont-256"
+            >
+              Active
+            </span>
+            <span
+              class="makeStyles-contentFont-257"
+            >
+              <a
+                href="/workers?status=1"
+              >
+                Review
+              </a>
+            </span>
+          </div>
+        </div>
+      </div>
+      <div
+        class="makeStyles-tableWrapper-162"
+      >
+        <div
+          class="makeStyles-filterContainer-170"
+        >
+          <div
+            class="makeStyles-statusFilter-171"
+          >
+            <button
+              class="MuiButtonBase-root MuiButton-root MuiButton-text makeStyles-activeFilter-172"
+              data-testid="filter-status-opt"
+              tabindex="0"
+              type="button"
+            >
+              <span
+                class="MuiButton-label"
+              >
+                Pending Invitation
+              </span>
+              <span
+                class="MuiTouchRipple-root"
+              />
+            </button>
+            <button
+              class="MuiButtonBase-root MuiButton-root MuiButton-text"
+              data-testid="filter-status-opt"
+              tabindex="0"
+              type="button"
+            >
+              <span
+                class="MuiButton-label"
+              >
+                Pending Registration
+              </span>
+              <span
+                class="MuiTouchRipple-root"
+              />
+            </button>
+            <button
+              class="MuiButtonBase-root MuiButton-root MuiButton-text"
+              data-testid="filter-status-opt"
+              tabindex="0"
+              type="button"
+            >
+              <span
+                class="MuiButton-label"
+              >
+                Active
+              </span>
+              <span
+                class="MuiTouchRipple-root"
+              />
+            </button>
+          </div>
+          <div
+            class="makeStyles-filterActionsContainer-173"
+          >
+            <div
+              class="MuiBox-root MuiBox-root-259 makeStyles-filterStatusContainer-176"
+            >
+              <div
+                class="makeStyles-floatingFilterWrapper-182 makeStyles-filterWrapper-181 makeStyles-buttonContainer-261 floatingFilterWrapper"
+              >
+                <span
+                  class="makeStyles-floatingFilterButton-183"
+                  data-testid="controlled-button"
+                  tabindex="-1"
+                >
+                  <button
+                    aria-controls="false"
+                    aria-haspopup="true"
+                    class="MuiButtonBase-root MuiButton-root MuiButton-text makeStyles-buttonFilter-191"
+                    data-testid="button-filter-open"
+                    tabindex="0"
+                    type="button"
+                  >
+                    <span
+                      class="MuiButton-label"
+                    >
+                      All Locations
+                      <span
+                        class="MuiButton-endIcon MuiButton-iconSizeMedium"
+                      >
+                        <svg
+                          class="makeStyles-dropdownIcon-185"
+                        >
+                          expand.svg
+                        </svg>
+                      </span>
+                    </span>
+                  </button>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+        Loading...
+      </div>
+    </div>
+    <div
+      class="MuiDrawer-root MuiDrawer-docked makeStyles-drawer-265 makeStyles-close-276 closed"
+      data-testid="worker-drawer-detail"
+    >
+      <div
+        class="MuiPaper-root MuiDrawer-paper makeStyles-drawerPaper-266 MuiDrawer-paperAnchorRight MuiDrawer-paperAnchorDockedRight MuiPaper-elevation0"
+        style="visibility: hidden; webkit-transform: translateX(1024px) translateX(0px); transform: translateX(1024px) translateX(0px);"
+      >
+        <div
+          class="makeStyles-drawerButtonWrapper-268"
+        >
+          <div
+            class="makeStyles-drawerButton-269"
+          >
+            <button
+              class="MuiButtonBase-root MuiButton-root MuiButton-text"
+              data-testid="drawer-close-btn"
+              style="outline: none;"
+              tabindex="0"
+              type="button"
+            >
+              <span
+                class="MuiButton-label"
+              >
+                <svg>
+                  close.svg
+                </svg>
+              </span>
+              <span
+                class="MuiTouchRipple-root"
+              />
+            </button>
+          </div>
+          <div
+            class="makeStyles-drawerHeader-267"
+          >
+            <p
+              class="MuiTypography-root makeStyles-drawerTitle-270 MuiTypography-body1 MuiTypography-colorPrimary MuiTypography-alignLeft"
+            >
+              Worker Information
+            </p>
+          </div>
+        </div>
+        <div
+          class="makeStyles-listDetail-241"
+        >
+          <div
+            class="makeStyles-company-242"
+          >
+            <div
+              class="makeStyles-drawerText-272"
+            >
+              <p
+                class="MuiTypography-root makeStyles-listAccent-243 makeStyles-entityTitle-240 MuiTypography-body1"
+              >
+                 
+              </p>
+              <div
+                class="makeStyles-drawerMainText-273"
+              >
+                <span>
+                  -
+                </span>
+              </div>
+            </div>
+            <div
+              class="makeStyles-drawerSection-271"
+            >
+              <div
+                class="makeStyles-drawerColumnDirection-280"
+              >
+                <div
+                  class="makeStyles-drawerRowDirection-281"
+                >
+                  <svg
+                    aria-hidden="true"
+                    class="MuiSvgIcon-root"
+                    focusable="false"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"
+                    />
+                  </svg>
+                  <div
+                    class="makeStyles-drawerText-272 makeStyles-drawerTextSeparation-274"
+                  >
+                    <p
+                      class="MuiTypography-root makeStyles-cardFont-284  MuiTypography-body1"
+                    >
+                      
+                      <span
+                        class=" "
+                      >
+                        -
+                      </span>
+                    </p>
+                    <p
+                      class="MuiTypography-root makeStyles-cardFont-284  MuiTypography-body1"
+                    >
+                      
+                      
+                      
+                      
+                    </p>
+                    <p
+                      class="MuiTypography-root makeStyles-cardFont-284  MuiTypography-body1"
+                    >
+                      -
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="makeStyles-drawerSection-271"
+            >
+              <div
+                class="makeStyles-drawerColumnDirection-280"
+              >
+                <div
+                  class="makeStyles-drawerRowDirection-281"
+                >
+                  <svg
+                    aria-hidden="true"
+                    class="MuiSvgIcon-root"
+                    focusable="false"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"
+                    />
+                  </svg>
+                  <div
+                    class="makeStyles-drawerText-272 makeStyles-drawerTextSeparation-274"
+                  />
+                </div>
+              </div>
+            </div>
+            <div
+              class="makeStyles-drawerSection-271"
+            >
+              <div
+                class="makeStyles-drawerColumnDirection-280"
+              >
+                <div
+                  class="makeStyles-drawerRowDirection-281"
+                >
+                  <svg
+                    class="MuiSvgIcon-root"
+                  >
+                    emergency-contact.svg
+                  </svg>
+                  <div
+                    class="makeStyles-drawerText-272 makeStyles-drawerTextSeparation-274"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <hr
+            class="MuiDivider-root makeStyles-drawerDivider-275"
+          />
+          <div
+            class="makeStyles-ctaWrapper-244"
+          >
+            <span
+              class=""
+              data-testid="controlled-button"
+              tabindex="-1"
+            >
+              <a
+                aria-disabled="false"
+                class="MuiButtonBase-root MuiButton-root MuiButton-outlined makeStyles-drawerCTA-210 makeStyles-borderPrimaryButton-202 makeStyles-primaryButtonPadding-204"
+                data-testid="drawerButton"
+                href="/workers/detail/null"
+                tabindex="0"
+              >
+                <span
+                  class="MuiButton-label"
+                >
+                  Worker Detail
+                </span>
+              </a>
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`WorkerList should show loading widgets 1`] = `
+<div>
+  <div
+    style="width: 100%; background-color: rgb(245, 245, 245); padding: 2.5rem;"
+  >
+    <div
+      class=""
+    >
+      <div
+        class="MuiBox-root MuiBox-root-385"
+        style="height: 50px; margin-bottom: 13px; width: 100%;"
+      >
+        <div
+          class="MuiBox-root MuiBox-root-386"
+          style="display: flex; align-items: center; justify-content: space-between;"
+        >
+          <div>
+            <div
+              class="MuiBox-root MuiBox-root-387"
+              style="display: flex; align-items: center; margin-top: 5px;"
+            >
+              <h2
+                class="MuiTypography-root MuiTypography-h1"
+                style="color: rgb(68, 68, 68); font-size: 2.25rem; font-weight: 600; letter-spacing: 0; margin-right: 0.5rem;"
+              >
+                Workers
+              </h2>
+            </div>
+          </div>
+          <button
+            class="MuiButtonBase-root MuiButton-root MuiButton-contained makeStyles-createButton-337 makeStyles-primaryButtonLarge-339 MuiButton-containedPrimary MuiButton-containedSizeLarge MuiButton-sizeLarge MuiButton-fullWidth"
+            data-testid="invite-worker-btn"
+            tabindex="0"
+            type="button"
+          >
+            <span
+              class="MuiButton-label"
+            >
+              Create Worker
+            </span>
+            <span
+              class="MuiTouchRipple-root"
+            />
+          </button>
+        </div>
+      </div>
+      <div
+        class="makeStyles-widgetsWrapper-371"
+        id="summary-widgets"
+      >
+        <div
+          class="MuiPaper-root makeStyles-widget-388 MuiPaper-elevation0 MuiPaper-rounded"
+        >
+          Loading...
+        </div>
+        <div
+          class="MuiPaper-root makeStyles-widget-388 MuiPaper-elevation0 MuiPaper-rounded"
+        >
+          Loading...
+        </div>
+        <div
+          class="MuiPaper-root makeStyles-widget-388 MuiPaper-elevation0 MuiPaper-rounded"
+        >
+          Loading...
+        </div>
+      </div>
+      <div
+        class="makeStyles-tableWrapper-296"
+      >
+        <div
+          class="makeStyles-filterContainer-304"
+        >
+          <div
+            class="makeStyles-statusFilter-305"
+          >
+            <button
+              class="MuiButtonBase-root MuiButton-root MuiButton-text makeStyles-activeFilter-306"
+              data-testid="filter-status-opt"
+              tabindex="0"
+              type="button"
+            >
+              <span
+                class="MuiButton-label"
+              >
+                Pending Invitation
+              </span>
+              <span
+                class="MuiTouchRipple-root"
+              />
+            </button>
+            <button
+              class="MuiButtonBase-root MuiButton-root MuiButton-text"
+              data-testid="filter-status-opt"
+              tabindex="0"
+              type="button"
+            >
+              <span
+                class="MuiButton-label"
+              >
+                Pending Registration
+              </span>
+              <span
+                class="MuiTouchRipple-root"
+              />
+            </button>
+            <button
+              class="MuiButtonBase-root MuiButton-root MuiButton-text"
+              data-testid="filter-status-opt"
+              tabindex="0"
+              type="button"
+            >
+              <span
+                class="MuiButton-label"
+              >
+                Active
+              </span>
+              <span
+                class="MuiTouchRipple-root"
+              />
+            </button>
+          </div>
+          <div
+            class="makeStyles-filterActionsContainer-307"
+          >
+            <div
+              class="MuiBox-root MuiBox-root-393 makeStyles-filterStatusContainer-310"
+            >
+              <div
+                class="makeStyles-floatingFilterWrapper-316 makeStyles-filterWrapper-315 makeStyles-buttonContainer-395 floatingFilterWrapper"
+              >
+                <span
+                  class="makeStyles-floatingFilterButton-317"
+                  data-testid="controlled-button"
+                  tabindex="-1"
+                >
+                  <button
+                    aria-controls="false"
+                    aria-haspopup="true"
+                    class="MuiButtonBase-root MuiButton-root MuiButton-text makeStyles-buttonFilter-325"
+                    data-testid="button-filter-open"
+                    tabindex="0"
+                    type="button"
+                  >
+                    <span
+                      class="MuiButton-label"
+                    >
+                      All Locations
+                      <span
+                        class="MuiButton-endIcon MuiButton-iconSizeMedium"
+                      >
+                        <svg
+                          class="makeStyles-dropdownIcon-319"
+                        >
+                          expand.svg
+                        </svg>
+                      </span>
+                    </span>
+                  </button>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <table
+          aria-label="worker-list"
+          class="MuiTable-root"
+        >
+          <thead
+            class="MuiTableHead-root"
+          >
+            <tr
+              class="MuiTableRow-root MuiTableRow-head"
+            >
+              <th
+                class="MuiTableCell-root MuiTableCell-head"
+                scope="col"
+              >
+                Worker Name
+              </th>
+              <th
+                class="MuiTableCell-root MuiTableCell-head"
+                scope="col"
+              >
+                Location
+              </th>
+              <th
+                class="MuiTableCell-root MuiTableCell-head"
+                scope="col"
+              >
+                Client
+              </th>
+              <th
+                class="MuiTableCell-root MuiTableCell-head"
+                scope="col"
+              >
+                Trades
+              </th>
+              <th
+                class="MuiTableCell-root MuiTableCell-head"
+                scope="col"
+              >
+                Projects Assigned
+              </th>
+            </tr>
+          </thead>
+          <tbody
+            class="MuiTableBody-root"
+          >
+            <tr
+              class="MuiTableRow-root WithStyles(ForwardRef(TableRow))-root-419 makeStyles-clickableRow-383"
+              data-testid="worker-list-row"
+            >
+              <td
+                class="MuiTableCell-root MuiTableCell-body makeStyles-listName-368"
+              >
+                <div
+                  class="MuiBox-root MuiBox-root-420 makeStyles-workerRow-400"
+                >
+                  <div
+                    class="MuiBox-root MuiBox-root-421 makeStyles-workerCenter-402"
+                  >
+                    <span
+                      class="MuiBadge-root makeStyles-avatarPosition-399 makeStyles-avatarWithSmallBadge-405"
+                    >
+                      <div
+                        class="MuiAvatar-root MuiAvatar-circle makeStyles-avatarWrapper-403 makeStyles-avatarMedium-406 MuiAvatar-colorDefault"
+                      >
+                        <svg
+                          aria-hidden="true"
+                          class="MuiSvgIcon-root"
+                          focusable="false"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"
+                          />
+                        </svg>
+                      </div>
+                      <span
+                        class="MuiBadge-badge MuiBadge-anchorOriginBottomRightCircle"
+                      >
+                        <svg>
+                          accepted.svg
+                        </svg>
+                      </span>
+                    </span>
+                    <a
+                      class="Link-root-422"
+                      data-testid="worker-list-row-open-button"
+                      href="/workers/detail/2"
+                      title="Review worker details"
+                    >
+                      John Doe
+                    </a>
+                  </div>
+                </div>
+              </td>
+              <td
+                class="MuiTableCell-root MuiTableCell-body"
+              >
+                -
+              </td>
+              <td
+                class="MuiTableCell-root MuiTableCell-body"
+              >
+                -
+              </td>
+              <td
+                class="MuiTableCell-root MuiTableCell-body"
+              >
+                -
+              </td>
+              <td
+                class="MuiTableCell-root MuiTableCell-body"
+              >
+                0
+              </td>
+            </tr>
+            <tr
+              class="MuiTableRow-root WithStyles(ForwardRef(TableRow))-root-419 makeStyles-clickableRow-383"
+              data-testid="worker-list-row"
+            >
+              <td
+                class="MuiTableCell-root MuiTableCell-body makeStyles-listName-368"
+              >
+                <div
+                  class="MuiBox-root MuiBox-root-423 makeStyles-workerRow-400"
+                >
+                  <div
+                    class="MuiBox-root MuiBox-root-424 makeStyles-workerCenter-402"
+                  >
+                    <span
+                      class="MuiBadge-root makeStyles-avatarPosition-399 makeStyles-avatarWithSmallBadge-405"
+                    >
+                      <div
+                        class="MuiAvatar-root MuiAvatar-circle makeStyles-avatarWrapper-403 makeStyles-avatarMedium-406 MuiAvatar-colorDefault"
+                      >
+                        <svg
+                          aria-hidden="true"
+                          class="MuiSvgIcon-root"
+                          focusable="false"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"
+                          />
+                        </svg>
+                      </div>
+                      <span
+                        class="MuiBadge-badge MuiBadge-anchorOriginBottomRightCircle"
+                      >
+                        <svg>
+                          accepted.svg
+                        </svg>
+                      </span>
+                    </span>
+                    <a
+                      class="Link-root-422"
+                      data-testid="worker-list-row-open-button"
+                      href="/workers/detail/11029ead-e3eb-48d5-a658-cd818a70719f"
+                      title="Review worker details"
+                    >
+                      John Doe
+                    </a>
+                  </div>
+                </div>
+              </td>
+              <td
+                class="MuiTableCell-root MuiTableCell-body"
+              >
+                <span>
+                  Dallas, null
+                </span>
+              </td>
+              <td
+                class="MuiTableCell-root MuiTableCell-body"
+              >
+                -
+              </td>
+              <td
+                class="MuiTableCell-root MuiTableCell-body"
+              >
+                Ceiling, Plumbing
+              </td>
+              <td
+                class="MuiTableCell-root MuiTableCell-body"
+              >
+                0
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <nav
+          aria-label="pagination navigation"
+          class="MuiPagination-root  makeStyles-pagination-425"
+          data-testid="pagination"
+        >
+          <ul
+            class="MuiPagination-ul"
+          >
+            <li>
+              <button
+                aria-label="Go to previous page"
+                class="MuiButtonBase-root MuiPaginationItem-root MuiPaginationItem-page Mui-disabled Mui-disabled"
+                disabled=""
+                tabindex="-1"
+                type="button"
+              >
+                <svg
+                  aria-hidden="true"
+                  class="MuiSvgIcon-root MuiPaginationItem-icon"
+                  focusable="false"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"
+                  />
+                </svg>
+              </button>
+            </li>
+            <li>
+              <button
+                aria-current="true"
+                aria-label="page 1"
+                class="MuiButtonBase-root MuiPaginationItem-root MuiPaginationItem-page Mui-selected"
+                tabindex="0"
+                type="button"
+              >
+                1
+                <span
+                  class="MuiTouchRipple-root"
+                />
+              </button>
+            </li>
+            <li>
+              <button
+                aria-label="Go to next page"
+                class="MuiButtonBase-root MuiPaginationItem-root MuiPaginationItem-page Mui-disabled Mui-disabled"
+                disabled=""
+                tabindex="-1"
+                type="button"
+              >
+                <svg
+                  aria-hidden="true"
+                  class="MuiSvgIcon-root MuiPaginationItem-icon"
+                  focusable="false"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"
+                  />
+                </svg>
+              </button>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <div
+      class="MuiDrawer-root MuiDrawer-docked makeStyles-drawer-426 makeStyles-close-437 closed"
+      data-testid="worker-drawer-detail"
+    >
+      <div
+        class="MuiPaper-root MuiDrawer-paper makeStyles-drawerPaper-427 MuiDrawer-paperAnchorRight MuiDrawer-paperAnchorDockedRight MuiPaper-elevation0"
+        style="visibility: hidden; webkit-transform: translateX(1024px) translateX(0px); transform: translateX(1024px) translateX(0px);"
+      >
+        <div
+          class="makeStyles-drawerButtonWrapper-429"
+        >
+          <div
+            class="makeStyles-drawerButton-430"
+          >
+            <button
+              class="MuiButtonBase-root MuiButton-root MuiButton-text"
+              data-testid="drawer-close-btn"
+              style="outline: none;"
+              tabindex="0"
+              type="button"
+            >
+              <span
+                class="MuiButton-label"
+              >
+                <svg>
+                  close.svg
+                </svg>
+              </span>
+              <span
+                class="MuiTouchRipple-root"
+              />
+            </button>
+          </div>
+          <div
+            class="makeStyles-drawerHeader-428"
+          >
+            <p
+              class="MuiTypography-root makeStyles-drawerTitle-431 MuiTypography-body1 MuiTypography-colorPrimary MuiTypography-alignLeft"
+            >
+              Worker Information
+            </p>
+          </div>
+        </div>
+        <div
+          class="makeStyles-listDetail-375"
+        >
+          <div
+            class="makeStyles-company-376"
+          >
+            <div
+              class="makeStyles-drawerText-433"
+            >
+              <p
+                class="MuiTypography-root makeStyles-listAccent-377 makeStyles-entityTitle-374 MuiTypography-body1"
+              >
+                 
+              </p>
+              <div
+                class="makeStyles-drawerMainText-434"
+              >
+                <span>
+                  -
+                </span>
+              </div>
+            </div>
+            <div
+              class="makeStyles-drawerSection-432"
+            >
+              <div
+                class="makeStyles-drawerColumnDirection-441"
+              >
+                <div
+                  class="makeStyles-drawerRowDirection-442"
+                >
+                  <svg
+                    aria-hidden="true"
+                    class="MuiSvgIcon-root"
+                    focusable="false"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"
+                    />
+                  </svg>
+                  <div
+                    class="makeStyles-drawerText-433 makeStyles-drawerTextSeparation-435"
+                  >
+                    <p
+                      class="MuiTypography-root makeStyles-cardFont-445  MuiTypography-body1"
+                    >
+                      
+                      <span
+                        class=" "
+                      >
+                        -
+                      </span>
+                    </p>
+                    <p
+                      class="MuiTypography-root makeStyles-cardFont-445  MuiTypography-body1"
+                    >
+                      
+                      
+                      
+                      
+                    </p>
+                    <p
+                      class="MuiTypography-root makeStyles-cardFont-445  MuiTypography-body1"
+                    >
+                      -
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="makeStyles-drawerSection-432"
+            >
+              <div
+                class="makeStyles-drawerColumnDirection-441"
+              >
+                <div
+                  class="makeStyles-drawerRowDirection-442"
+                >
+                  <svg
+                    aria-hidden="true"
+                    class="MuiSvgIcon-root"
+                    focusable="false"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"
+                    />
+                  </svg>
+                  <div
+                    class="makeStyles-drawerText-433 makeStyles-drawerTextSeparation-435"
+                  />
+                </div>
+              </div>
+            </div>
+            <div
+              class="makeStyles-drawerSection-432"
+            >
+              <div
+                class="makeStyles-drawerColumnDirection-441"
+              >
+                <div
+                  class="makeStyles-drawerRowDirection-442"
+                >
+                  <svg
+                    class="MuiSvgIcon-root"
+                  >
+                    emergency-contact.svg
+                  </svg>
+                  <div
+                    class="makeStyles-drawerText-433 makeStyles-drawerTextSeparation-435"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <hr
+            class="MuiDivider-root makeStyles-drawerDivider-436"
+          />
+          <div
+            class="makeStyles-ctaWrapper-378"
+          >
+            <span
+              class=""
+              data-testid="controlled-button"
+              tabindex="-1"
+            >
+              <a
+                aria-disabled="false"
+                class="MuiButtonBase-root MuiButton-root MuiButton-outlined makeStyles-drawerCTA-344 makeStyles-borderPrimaryButton-336 makeStyles-primaryButtonPadding-338"
+                data-testid="drawerButton"
+                href="/workers/detail/null"
+                tabindex="0"
+              >
+                <span
+                  class="MuiButton-label"
+                >
+                  Worker Detail
+                </span>
+              </a>
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

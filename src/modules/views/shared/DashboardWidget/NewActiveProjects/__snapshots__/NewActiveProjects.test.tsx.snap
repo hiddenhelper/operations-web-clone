@@ -1,0 +1,86 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`NewActiveProjects Component should render 1`] = `
+<div>
+  <div
+    class="MuiPaper-root makeStyles-widgetMinHeight-85 makeStyles-widget-57 MuiPaper-elevation0 MuiPaper-rounded"
+  >
+    <div
+      class=""
+    >
+      <div
+        class=" makeStyles-widgetInlineStatusWrapper-73"
+      >
+        <div
+          class="makeStyles-widgetContentWrapper-64 makeStyles-widgetContentWrapperBottomMargin-65 undefined"
+        >
+          <span
+            class="makeStyles-widgetContent-69 makeStyles-widgetInlineMargin-71"
+          >
+            2
+          </span>
+          <p
+            class="MuiTypography-root  makeStyles-widgetTitle-59 makeStyles-widgetTitleInlinePosition-74 MuiTypography-body1"
+          >
+            New Active Projects
+          </p>
+          <div
+            class="makeStyles-chipStatusLeftMargin-79"
+          />
+        </div>
+      </div>
+    </div>
+    <div
+      class="makeStyles-temporalPlaceholder-14 makeStyles-temporalLargePlaceholder-16"
+      style="height: 380px;"
+    >
+      <div
+        class="makeStyles-temporalPlaceholder-14 makeStyles-temporalLargePlaceholder-16"
+        style="height: 100%;"
+      >
+        <div
+          class="makeStyles-mapWrapper-96"
+          id="review-mailing-map"
+        />
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`NewActiveProjects Component should render loading 1`] = `
+<div>
+  <div
+    class="MuiPaper-root makeStyles-widgetMinHeight-277 makeStyles-widget-249 MuiPaper-elevation0 MuiPaper-rounded"
+  >
+    <div
+      class=""
+    >
+      <div
+        class=" makeStyles-widgetInlineStatusWrapper-265"
+      >
+        <div
+          class="makeStyles-widgetContentWrapper-256 makeStyles-widgetContentWrapperBottomMargin-257 undefined"
+        >
+          <div
+            class="MuiSkeleton-root MuiSkeleton-rect makeStyles-valueWrapper-285 MuiSkeleton-wave"
+            style="width: 68px; height: 40px;"
+          />
+          <div
+            class="MuiSkeleton-root MuiSkeleton-rect MuiSkeleton-wave"
+            style="width: 120px; height: 25px;"
+          />
+          <div
+            class="MuiSkeleton-root MuiSkeleton-rect makeStyles-pillMarginLeft-287 MuiSkeleton-wave"
+            style="width: 50px; height: 25px;"
+          />
+        </div>
+      </div>
+    </div>
+    <div
+      class="MuiSkeleton-root MuiSkeleton-rect MuiSkeleton-wave"
+      style="width: 100%; height: 334px;"
+    />
+  </div>
+</div>
+`;

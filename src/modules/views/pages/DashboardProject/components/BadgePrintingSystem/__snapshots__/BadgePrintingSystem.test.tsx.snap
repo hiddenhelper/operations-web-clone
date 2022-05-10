@@ -1,0 +1,135 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`BadgePrintingSystem Component should render 1`] = `
+<div>
+  <div
+    class="MuiPaper-root makeStyles-smallWidgetMinHeight-41 makeStyles-widgetCenterContent-43 makeStyles-widget-72 MuiPaper-elevation0 MuiPaper-rounded"
+  >
+    <div
+      style="display: flex; height: 100%; justify-content: flex-start; align-items: center;"
+    >
+      <div
+        style="width: 230px; height: 100%; margin-right: 38px; position: relative; display: flex; justify-content: center; align-items: center;"
+      >
+        <div
+          class="VictoryContainer"
+          style="height: 100%; width: 100%; pointer-events: none; position: relative;"
+        >
+          <svg
+            height="400"
+            role="img"
+            style="pointer-events: all; width: 100%; height: 100%;"
+            viewBox="0 0 400 400"
+            width="400"
+          >
+            <g>
+              <path
+                d="M9.184850993605149e-15,-150A150,150,0,1,1,-147.012384163859,-29.78856999686184L-117.6099073310872,-23.830855997489472A120,120,0,1,0,7.34788079488412e-15,-120Z"
+                role="presentation"
+                shape-rendering="auto"
+                style="fill: #E5E5E5; padding: 10px; stroke: transparent; stroke-width: 1;"
+                transform="translate(200, 200)"
+              />
+              <path
+                d="M-147.012384163859,-29.78856999686184A150,150,0,0,1,-2.7554552980815446e-14,-150L-2.2043642384652355e-14,-120A120,120,0,0,0,-117.6099073310872,-23.830855997489472Z"
+                role="presentation"
+                shape-rendering="auto"
+                style="fill: #006DF7; padding: 10px; stroke: transparent; stroke-width: 1;"
+                transform="translate(200, 200)"
+              />
+              <text
+                direction="inherit"
+                dx="0"
+                id="pie-labels-0"
+                x="308"
+                y="343.97"
+              >
+                <tspan
+                  dx="0"
+                  dy="0"
+                  style="padding: 20px; font-family: 'Gill Sans', 'Seravek', 'Trebuchet MS', sans-serif; font-size: 14px; letter-spacing: normal; fill: #252525; stroke: transparent;"
+                  text-anchor="middle"
+                  x="308"
+                />
+              </text>
+              <text
+                direction="inherit"
+                dx="0"
+                id="pie-labels-1"
+                x="92"
+                y="65.97"
+              >
+                <tspan
+                  dx="0"
+                  dy="0"
+                  style="padding: 20px; font-family: 'Gill Sans', 'Seravek', 'Trebuchet MS', sans-serif; font-size: 14px; letter-spacing: normal; fill: #252525; stroke: transparent;"
+                  text-anchor="middle"
+                  x="92"
+                />
+              </text>
+            </g>
+          </svg>
+          <div
+            style="z-index: 99; position: absolute; top: 0px; left: 0px; width: 100%; height: 100%;"
+          >
+            <svg
+              height="400"
+              style="overflow: visible; width: 100%; height: 100%;"
+              viewBox="0 0 400 400"
+              width="400"
+            />
+          </div>
+        </div>
+        <span
+          style="font-size: 38px; position: absolute; color: rgba(0, 0, 0, 0.7); display: flex; flex-direction: column; justify-content: center; align-items: center;"
+        >
+          120
+          <span
+            style="display: block; font-size: 15px; margin-top: -12px;"
+          >
+            devices
+          </span>
+        </span>
+      </div>
+      <div
+        class="makeStyles-columnNoActivity-60 makeStyles-columnSummaryWrapper-108"
+      >
+        <p
+          class="MuiTypography-root makeStyles-columnSummaryTitle-109 MuiTypography-body1"
+        >
+          Badge Printing System
+        </p>
+        <p
+          class="MuiTypography-root makeStyles-columnSummarySubtitle-110 MuiTypography-body1"
+        >
+          From a total of 430 devices
+        </p>
+        <div
+          class="makeStyles-columnSummaryActivity-111"
+        />
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`BadgePrintingSystem Component should render loading 1`] = `
+<div>
+  <div
+    class="MuiPaper-root makeStyles-smallWidgetMinHeight-265 makeStyles-widgetCenterContent-267 makeStyles-widget-296 MuiPaper-elevation0 MuiPaper-rounded"
+  >
+    <div
+      style="display: flex; height: 100%; justify-content: flex-start; align-items: center;"
+    >
+      <div
+        class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-wave"
+        style="width: 126px; height: 126px;"
+      />
+      <div
+        class="MuiSkeleton-root MuiSkeleton-rect makeStyles-skeletonTextWrapper-336 MuiSkeleton-wave"
+        style="width: 100%; height: 75px;"
+      />
+    </div>
+  </div>
+</div>
+`;

@@ -1,0 +1,541 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ObservationsTab should render 1`] = `
+<div>
+  <div
+    class="makeStyles-filterActionsContainer-12 makeStyles-filterActionsContainerPadding-14"
+  >
+    <div
+      class="makeStyles-filterActionsContainerLeft-13"
+    >
+      <div
+        class="MuiBox-root MuiBox-root-92 makeStyles-filterStatusContainer-15 makeStyles-autocompleteFilterStatus-32"
+      >
+        <div
+          class="makeStyles-floatingFilterWrapper-21 makeStyles-filterWrapper-20 makeStyles-buttonContainer-94 floatingFilterWrapper"
+        >
+          <span
+            class="makeStyles-floatingFilterButton-22"
+            data-testid="controlled-button"
+            tabindex="-1"
+          >
+            <button
+              aria-controls="false"
+              aria-haspopup="true"
+              class="MuiButtonBase-root MuiButton-root MuiButton-text makeStyles-buttonFilter-30"
+              data-testid="button-filter-open"
+              tabindex="0"
+              type="button"
+            >
+              <span
+                class="MuiButton-label"
+              >
+                All Projects
+                <span
+                  class="MuiButton-endIcon MuiButton-iconSizeMedium"
+                >
+                  <svg
+                    class="makeStyles-dropdownIcon-24"
+                  >
+                    expand.svg
+                  </svg>
+                </span>
+              </span>
+            </button>
+          </span>
+        </div>
+      </div>
+      <hr
+        class="MuiDivider-root makeStyles-dividerColor-25 MuiDivider-flexItem MuiDivider-vertical"
+      />
+      <div
+        class="MuiBox-root MuiBox-root-98 makeStyles-filterStatusContainer-15 makeStyles-leftFilterStatusContainer-19"
+      >
+        <div
+          class="makeStyles-floatingFilterWrapper-21 makeStyles-filterWrapper-20  floatingFilterWrapper"
+        >
+          <span
+            class="makeStyles-floatingFilterButton-22"
+            data-testid="controlled-button"
+            tabindex="-1"
+          >
+            <button
+              aria-controls="false"
+              aria-haspopup="true"
+              class="MuiButtonBase-root MuiButton-root MuiButton-text makeStyles-buttonFilter-30"
+              data-testid="button-filter-open"
+              tabindex="0"
+              type="button"
+            >
+              <span
+                class="MuiButton-label"
+              >
+                All Times
+                <span
+                  class="MuiButton-endIcon MuiButton-iconSizeMedium"
+                >
+                  <svg
+                    class="makeStyles-dropdownIcon-24"
+                  >
+                    expand.svg
+                  </svg>
+                </span>
+              </span>
+            </button>
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <table
+    aria-label="project-list"
+    class="MuiTable-root"
+  >
+    <thead
+      class="MuiTableHead-root"
+    >
+      <tr
+        class="MuiTableRow-root MuiTableRow-head"
+      >
+        <th
+          class="MuiTableCell-root MuiTableCell-head"
+          scope="col"
+        >
+          Type
+        </th>
+        <th
+          class="MuiTableCell-root MuiTableCell-head"
+          scope="col"
+        >
+          Date
+        </th>
+        <th
+          class="MuiTableCell-root MuiTableCell-head"
+          scope="col"
+        >
+          Project
+        </th>
+        <th
+          class="MuiTableCell-root MuiTableCell-head"
+          scope="col"
+        >
+          Standard Description
+        </th>
+      </tr>
+    </thead>
+    <tbody
+      class="MuiTableBody-root"
+    >
+      <tr
+        class="MuiTableRow-root WithStyles(ForwardRef(TableRow))-root-99"
+        data-testid="observation-list-row"
+      >
+        <td
+          class="MuiTableCell-root MuiTableCell-body makeStyles-buttonCell-38"
+          data-testid="observation-row-type"
+        >
+          Ladder
+        </td>
+        <td
+          class="MuiTableCell-root MuiTableCell-body"
+        >
+          Dec 15, 2020 07:00 pm
+        </td>
+        <td
+          class="MuiTableCell-root MuiTableCell-body"
+        >
+          <a
+            class="Link-root-100"
+            href="/projects/detail/1"
+            title="View Project detail"
+          >
+            prj1
+          </a>
+        </td>
+        <td
+          class="MuiTableCell-root MuiTableCell-body"
+        >
+          Not using the ladder properly
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <nav
+    aria-label="pagination navigation"
+    class="MuiPagination-root  makeStyles-pagination-101"
+    data-testid="pagination"
+  >
+    <ul
+      class="MuiPagination-ul"
+    >
+      <li>
+        <button
+          aria-label="Go to previous page"
+          class="MuiButtonBase-root MuiPaginationItem-root MuiPaginationItem-page Mui-disabled Mui-disabled"
+          disabled=""
+          tabindex="-1"
+          type="button"
+        >
+          <svg
+            aria-hidden="true"
+            class="MuiSvgIcon-root MuiPaginationItem-icon"
+            focusable="false"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"
+            />
+          </svg>
+        </button>
+      </li>
+      <li>
+        <button
+          aria-label="Go to next page"
+          class="MuiButtonBase-root MuiPaginationItem-root MuiPaginationItem-page"
+          tabindex="0"
+          type="button"
+        >
+          <svg
+            aria-hidden="true"
+            class="MuiSvgIcon-root MuiPaginationItem-icon"
+            focusable="false"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"
+            />
+          </svg>
+          <span
+            class="MuiTouchRipple-root"
+          />
+        </button>
+      </li>
+    </ul>
+  </nav>
+</div>
+`;
+
+exports[`ObservationsTab should render empty list 1`] = `
+<div>
+  <div
+    class="makeStyles-filterActionsContainer-113 makeStyles-filterActionsContainerPadding-115"
+  >
+    <div
+      class="makeStyles-filterActionsContainerLeft-114"
+    >
+      <div
+        class="MuiBox-root MuiBox-root-193 makeStyles-filterStatusContainer-116 makeStyles-autocompleteFilterStatus-133"
+      >
+        <div
+          class="makeStyles-floatingFilterWrapper-122 makeStyles-filterWrapper-121 makeStyles-buttonContainer-195 floatingFilterWrapper"
+        >
+          <span
+            class="makeStyles-floatingFilterButton-123"
+            data-testid="controlled-button"
+            tabindex="-1"
+          >
+            <button
+              aria-controls="false"
+              aria-haspopup="true"
+              class="MuiButtonBase-root MuiButton-root MuiButton-text makeStyles-buttonFilter-131"
+              data-testid="button-filter-open"
+              tabindex="0"
+              type="button"
+            >
+              <span
+                class="MuiButton-label"
+              >
+                All Projects
+                <span
+                  class="MuiButton-endIcon MuiButton-iconSizeMedium"
+                >
+                  <svg
+                    class="makeStyles-dropdownIcon-125"
+                  >
+                    expand.svg
+                  </svg>
+                </span>
+              </span>
+            </button>
+          </span>
+        </div>
+      </div>
+      <hr
+        class="MuiDivider-root makeStyles-dividerColor-126 MuiDivider-flexItem MuiDivider-vertical"
+      />
+      <div
+        class="MuiBox-root MuiBox-root-199 makeStyles-filterStatusContainer-116 makeStyles-leftFilterStatusContainer-120"
+      >
+        <div
+          class="makeStyles-floatingFilterWrapper-122 makeStyles-filterWrapper-121  floatingFilterWrapper"
+        >
+          <span
+            class="makeStyles-floatingFilterButton-123"
+            data-testid="controlled-button"
+            tabindex="-1"
+          >
+            <button
+              aria-controls="false"
+              aria-haspopup="true"
+              class="MuiButtonBase-root MuiButton-root MuiButton-text makeStyles-buttonFilter-131"
+              data-testid="button-filter-open"
+              tabindex="0"
+              type="button"
+            >
+              <span
+                class="MuiButton-label"
+              >
+                All Times
+                <span
+                  class="MuiButton-endIcon MuiButton-iconSizeMedium"
+                >
+                  <svg
+                    class="makeStyles-dropdownIcon-125"
+                  >
+                    expand.svg
+                  </svg>
+                </span>
+              </span>
+            </button>
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    class=" makeStyles-container-200"
+  >
+    <div>
+      <div
+        class="MuiAvatar-root MuiAvatar-circle makeStyles-missingAvatarWrapper-211 makeStyles-missingAvatarBig-212 MuiAvatar-colorDefault"
+      >
+        <svg>
+          workers.svg
+        </svg>
+      </div>
+    </div>
+    <p
+      class="MuiTypography-root makeStyles-missingListText-201 MuiTypography-body1"
+    >
+      There are no Observations
+    </p>
+  </div>
+</div>
+`;
+
+exports[`ObservationsTab should show detail loading 1`] = `
+<div
+  aria-hidden="true"
+>
+  <div
+    class="makeStyles-filterActionsContainer-356 makeStyles-filterActionsContainerPadding-358"
+  >
+    <div
+      class="makeStyles-filterActionsContainerLeft-357"
+    >
+      <div
+        class="MuiBox-root MuiBox-root-436 makeStyles-filterStatusContainer-359 makeStyles-autocompleteFilterStatus-376"
+      >
+        <div
+          class="makeStyles-floatingFilterWrapper-365 makeStyles-filterWrapper-364 makeStyles-buttonContainer-438 floatingFilterWrapper"
+        >
+          <span
+            class="makeStyles-floatingFilterButton-366"
+            data-testid="controlled-button"
+            tabindex="-1"
+          >
+            <button
+              aria-controls="false"
+              aria-haspopup="true"
+              class="MuiButtonBase-root MuiButton-root MuiButton-text makeStyles-buttonFilter-374"
+              data-testid="button-filter-open"
+              tabindex="0"
+              type="button"
+            >
+              <span
+                class="MuiButton-label"
+              >
+                All Projects
+                <span
+                  class="MuiButton-endIcon MuiButton-iconSizeMedium"
+                >
+                  <svg
+                    class="makeStyles-dropdownIcon-368"
+                  >
+                    expand.svg
+                  </svg>
+                </span>
+              </span>
+            </button>
+          </span>
+        </div>
+      </div>
+      <hr
+        class="MuiDivider-root makeStyles-dividerColor-369 MuiDivider-flexItem MuiDivider-vertical"
+      />
+      <div
+        class="MuiBox-root MuiBox-root-442 makeStyles-filterStatusContainer-359 makeStyles-leftFilterStatusContainer-363"
+      >
+        <div
+          class="makeStyles-floatingFilterWrapper-365 makeStyles-filterWrapper-364  floatingFilterWrapper"
+        >
+          <span
+            class="makeStyles-floatingFilterButton-366"
+            data-testid="controlled-button"
+            tabindex="-1"
+          >
+            <button
+              aria-controls="false"
+              aria-haspopup="true"
+              class="MuiButtonBase-root MuiButton-root MuiButton-text makeStyles-buttonFilter-374"
+              data-testid="button-filter-open"
+              tabindex="0"
+              type="button"
+            >
+              <span
+                class="MuiButton-label"
+              >
+                All Times
+                <span
+                  class="MuiButton-endIcon MuiButton-iconSizeMedium"
+                >
+                  <svg
+                    class="makeStyles-dropdownIcon-368"
+                  >
+                    expand.svg
+                  </svg>
+                </span>
+              </span>
+            </button>
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <table
+    aria-label="project-list"
+    class="MuiTable-root"
+  >
+    <thead
+      class="MuiTableHead-root"
+    >
+      <tr
+        class="MuiTableRow-root MuiTableRow-head"
+      >
+        <th
+          class="MuiTableCell-root MuiTableCell-head"
+          scope="col"
+        >
+          Type
+        </th>
+        <th
+          class="MuiTableCell-root MuiTableCell-head"
+          scope="col"
+        >
+          Date
+        </th>
+        <th
+          class="MuiTableCell-root MuiTableCell-head"
+          scope="col"
+        >
+          Project
+        </th>
+        <th
+          class="MuiTableCell-root MuiTableCell-head"
+          scope="col"
+        >
+          Standard Description
+        </th>
+      </tr>
+    </thead>
+    <tbody
+      class="MuiTableBody-root"
+    >
+      <tr
+        class="MuiTableRow-root WithStyles(ForwardRef(TableRow))-root-443"
+        data-testid="observation-list-row"
+      >
+        <td
+          class="MuiTableCell-root MuiTableCell-body makeStyles-buttonCell-382"
+          data-testid="observation-row-type"
+        >
+          Ladder
+        </td>
+        <td
+          class="MuiTableCell-root MuiTableCell-body"
+        >
+          Dec 15, 2020 07:00 pm
+        </td>
+        <td
+          class="MuiTableCell-root MuiTableCell-body"
+        >
+          <a
+            class="Link-root-444"
+            href="/projects/detail/1"
+            title="View Project detail"
+          >
+            prj1
+          </a>
+        </td>
+        <td
+          class="MuiTableCell-root MuiTableCell-body"
+        >
+          Not using the ladder properly
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <nav
+    aria-label="pagination navigation"
+    class="MuiPagination-root  makeStyles-pagination-445"
+    data-testid="pagination"
+  >
+    <ul
+      class="MuiPagination-ul"
+    >
+      <li>
+        <button
+          aria-label="Go to previous page"
+          class="MuiButtonBase-root MuiPaginationItem-root MuiPaginationItem-page Mui-disabled Mui-disabled"
+          disabled=""
+          tabindex="-1"
+          type="button"
+        >
+          <svg
+            aria-hidden="true"
+            class="MuiSvgIcon-root MuiPaginationItem-icon"
+            focusable="false"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"
+            />
+          </svg>
+        </button>
+      </li>
+      <li>
+        <button
+          aria-label="Go to next page"
+          class="MuiButtonBase-root MuiPaginationItem-root MuiPaginationItem-page"
+          tabindex="0"
+          type="button"
+        >
+          <svg
+            aria-hidden="true"
+            class="MuiSvgIcon-root MuiPaginationItem-icon"
+            focusable="false"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"
+            />
+          </svg>
+          <span
+            class="MuiTouchRipple-root"
+          />
+        </button>
+      </li>
+    </ul>
+  </nav>
+</div>
+`;

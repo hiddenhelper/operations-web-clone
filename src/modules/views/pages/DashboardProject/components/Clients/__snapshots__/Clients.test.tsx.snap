@@ -1,0 +1,290 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Clients Component should render 1`] = `
+<div>
+  <div
+    class="MuiPaper-root makeStyles-maxHeight-1 makeStyles-pieContainer-2 makeStyles-widget-7 MuiPaper-elevation0 MuiPaper-rounded"
+  >
+    <div
+      style="display: flex; justify-content: space-between;"
+    >
+      <div
+        class="makeStyles-headerRow-37"
+        style="width: 100%;"
+      >
+        <div
+          class=""
+        >
+          <div
+            class=" makeStyles-widgetInlineStatusWrapper-23"
+          >
+            <div
+              class="makeStyles-widgetContentWrapper-14 makeStyles-widgetContentWrapperBottomMargin-15 makeStyles-marginNull-6"
+            >
+              <span
+                class="makeStyles-widgetContent-19 makeStyles-widgetInlineMargin-21"
+              >
+                100
+              </span>
+              <p
+                class="MuiTypography-root  makeStyles-widgetTitle-9 makeStyles-widgetTitleInlinePosition-24 MuiTypography-body1"
+              >
+                Clients
+              </p>
+              <div
+                class="makeStyles-chipStatusLeftMargin-29"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="MuiGrid-root makeStyles-pieWidgetDefault-41 MuiGrid-container"
+    >
+      <div
+        class="MuiGrid-root makeStyles-pieWidgetItemDefault-42 MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-md-12 MuiGrid-grid-lg-12 MuiGrid-grid-xl-12"
+      >
+        <div
+          class="MuiGrid-root MuiGrid-container"
+          style="flex-direction: row; height: 100%;"
+        >
+          <div
+            class="MuiGrid-root makeStyles-pieChartClass-46 MuiGrid-item MuiGrid-grid-lg-12 MuiGrid-grid-xl-12"
+            style="padding-right: 0px; text-align: center; height: 100%;"
+          >
+            <div
+              class="VictoryContainer"
+              style="max-height: 275px; display: inline-block; width: auto; max-width: 255px; text-align: center; margin-bottom: 0px; height: 100%; pointer-events: none; position: relative;"
+            >
+              <svg
+                height="400"
+                role="img"
+                style="pointer-events: all; width: 100%; height: 100%;"
+                viewBox="0 0 400 400"
+                width="400"
+              >
+                <g>
+                  <path
+                    d="M6.927352299505378,-149.8399539179005A150,150,0,0,1,6.927352299505378,149.8399539179005L6.927352299505364,129.81529875218305A130,130,0,0,0,6.927352299505364,-129.81529875218305Z"
+                    role="presentation"
+                    shape-rendering="auto"
+                    style="fill: #00346B; padding: 10px; stroke: transparent; stroke-width: 1;"
+                    transform="translate(200, 200)"
+                  />
+                  <path
+                    d="M-6.927352299505359,149.8399539179005A150,150,0,0,1,-6.927352299505329,-149.8399539179005L-6.9273522995053805,-129.81529875218305A130,130,0,0,0,-6.9273522995053485,129.81529875218305Z"
+                    role="presentation"
+                    shape-rendering="auto"
+                    style="fill: #59A0FA; padding: 10px; stroke: transparent; stroke-width: 1;"
+                    transform="translate(200, 200)"
+                  />
+                  <text
+                    direction="inherit"
+                    dx="0"
+                    id="pie-labels-0"
+                    x="370"
+                    y="204.97"
+                  >
+                    <tspan
+                      dx="0"
+                      dy="0"
+                      style="padding: 20px; font-family: 'Gill Sans', 'Seravek', 'Trebuchet MS', sans-serif; font-size: 14px; letter-spacing: normal; fill: #252525; stroke: transparent;"
+                      text-anchor="start"
+                      x="370"
+                    />
+                  </text>
+                  <text
+                    direction="inherit"
+                    dx="0"
+                    id="pie-labels-1"
+                    x="30"
+                    y="204.97"
+                  >
+                    <tspan
+                      dx="0"
+                      dy="0"
+                      style="padding: 20px; font-family: 'Gill Sans', 'Seravek', 'Trebuchet MS', sans-serif; font-size: 14px; letter-spacing: normal; fill: #252525; stroke: transparent;"
+                      text-anchor="end"
+                      x="30"
+                    />
+                  </text>
+                </g>
+              </svg>
+              <div
+                style="z-index: 99; position: absolute; top: 0px; left: 0px; width: 100%; height: 100%;"
+              >
+                <svg
+                  height="400"
+                  style="overflow: visible; width: 100%; height: 100%;"
+                  viewBox="0 0 400 400"
+                  width="400"
+                />
+              </div>
+            </div>
+          </div>
+          <div
+            class="MuiGrid-root MuiGrid-item MuiGrid-grid-lg-12 MuiGrid-grid-xl-12"
+          >
+            <div
+              class="MuiGrid-root MuiGrid-container"
+            >
+              <div
+                class="MuiGrid-root MuiGrid-item MuiGrid-grid-lg-9 MuiGrid-grid-xl-9"
+              >
+                <div
+                  class=" makeStyles-bulletLabelWrapper-47"
+                >
+                  <span
+                    class="makeStyles-statusCircle-48"
+                    style="background-color: rgb(0, 52, 107);"
+                  />
+                  <p
+                    class="MuiTypography-root makeStyles-statusText-49 MuiTypography-body1"
+                  >
+                    Subcontractor
+                  </p>
+                </div>
+              </div>
+              <div
+                class="MuiGrid-root MuiGrid-item MuiGrid-grid-lg-2 MuiGrid-grid-xl-2"
+              >
+                <p
+                  class="MuiTypography-root MuiTypography-body1"
+                  style="color: rgb(76, 76, 76); font-size: 15px; text-align: right;"
+                >
+                  50
+                  %
+                </p>
+              </div>
+              <div
+                class="MuiGrid-root MuiGrid-item MuiGrid-grid-lg-1 MuiGrid-grid-xl-1"
+              >
+                <p
+                  class="MuiTypography-root MuiTypography-body1"
+                  style="color: rgb(76, 76, 76); font-size: 15px; font-weight: bold; text-align: right;"
+                >
+                  50
+                </p>
+              </div>
+            </div>
+            <div
+              class="MuiGrid-root MuiGrid-container"
+            >
+              <div
+                class="MuiGrid-root MuiGrid-item MuiGrid-grid-lg-9 MuiGrid-grid-xl-9"
+              >
+                <div
+                  class=" makeStyles-bulletLabelWrapper-47"
+                >
+                  <span
+                    class="makeStyles-statusCircle-48"
+                    style="background-color: rgb(0, 109, 247);"
+                  />
+                  <p
+                    class="MuiTypography-root makeStyles-statusText-49 MuiTypography-body1"
+                  >
+                    General Contractor
+                  </p>
+                </div>
+              </div>
+              <div
+                class="MuiGrid-root MuiGrid-item MuiGrid-grid-lg-2 MuiGrid-grid-xl-2"
+              >
+                <p
+                  class="MuiTypography-root MuiTypography-body1"
+                  style="color: rgb(76, 76, 76); font-size: 15px; text-align: right;"
+                >
+                  0
+                  %
+                </p>
+              </div>
+              <div
+                class="MuiGrid-root MuiGrid-item MuiGrid-grid-lg-1 MuiGrid-grid-xl-1"
+              >
+                <p
+                  class="MuiTypography-root MuiTypography-body1"
+                  style="color: rgb(76, 76, 76); font-size: 15px; font-weight: bold; text-align: right;"
+                >
+                  0
+                </p>
+              </div>
+            </div>
+            <div
+              class="MuiGrid-root MuiGrid-container"
+            >
+              <div
+                class="MuiGrid-root MuiGrid-item MuiGrid-grid-lg-9 MuiGrid-grid-xl-9"
+              >
+                <div
+                  class=" makeStyles-bulletLabelWrapper-47"
+                >
+                  <span
+                    class="makeStyles-statusCircle-48"
+                    style="background-color: rgb(89, 160, 250);"
+                  />
+                  <p
+                    class="MuiTypography-root makeStyles-statusText-49 MuiTypography-body1"
+                  >
+                    Developer
+                  </p>
+                </div>
+              </div>
+              <div
+                class="MuiGrid-root MuiGrid-item MuiGrid-grid-lg-2 MuiGrid-grid-xl-2"
+              >
+                <p
+                  class="MuiTypography-root MuiTypography-body1"
+                  style="color: rgb(76, 76, 76); font-size: 15px; text-align: right;"
+                >
+                  50
+                  %
+                </p>
+              </div>
+              <div
+                class="MuiGrid-root MuiGrid-item MuiGrid-grid-lg-1 MuiGrid-grid-xl-1"
+              >
+                <p
+                  class="MuiTypography-root MuiTypography-body1"
+                  style="color: rgb(76, 76, 76); font-size: 15px; font-weight: bold; text-align: right;"
+                >
+                  50
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Clients Component should render loading 1`] = `
+<div>
+  <div
+    class="MuiPaper-root makeStyles-maxHeight-104 makeStyles-pieContainer-105 makeStyles-widget-110 MuiPaper-elevation0 MuiPaper-rounded"
+  >
+    <div
+      style="display: flex; justify-content: space-between;"
+    >
+      <div
+        class="MuiSkeleton-root MuiSkeleton-rect MuiSkeleton-wave"
+        style="width: 100%; height: 30px;"
+      />
+    </div>
+    <div
+      class="MuiGrid-root makeStyles-pieWidgetDefault-144 MuiGrid-container"
+    >
+      <div
+        class="MuiGrid-root makeStyles-pieWidgetItemDefault-145 MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-md-12 MuiGrid-grid-lg-12 MuiGrid-grid-xl-12"
+      >
+        <div
+          class="MuiSkeleton-root MuiSkeleton-rect MuiSkeleton-wave"
+          style="width: 100%; height: 96%;"
+        />
+      </div>
+    </div>
+  </div>
+</div>
+`;

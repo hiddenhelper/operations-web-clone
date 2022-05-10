@@ -1,0 +1,2639 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`IntegrationsTab should close Connect Modal 1`] = `
+<body
+  style="padding-right: 0px; overflow: hidden;"
+>
+  <div
+    aria-hidden="true"
+  >
+    <div
+      class="MuiPaper-root MuiCard-root makeStyles-root-602 MuiPaper-elevation1 MuiPaper-rounded"
+    >
+      <div
+        class="MuiCardContent-root"
+      >
+        <div
+          class="makeStyles-containerLogo-608"
+        >
+          <img
+            alt="logo-procore"
+            class="makeStyles-logo-607"
+            src="procore.logo.png"
+          />
+        </div>
+        <p
+          class="MuiTypography-root makeStyles-title-604 MuiTypography-body1"
+        >
+          Procore
+        </p>
+        <p
+          class="MuiTypography-root makeStyles-body-603 MuiTypography-body1"
+        >
+          This Integration allows you to 
+          <br />
+          Synchronize information between Procore and 
+          <br />
+          FC Analytics in an Easy way.
+        </p>
+      </div>
+      <div
+        class="MuiCardActions-root MuiCardActions-spacing"
+      >
+        <div
+          class="makeStyles-containerButtons-605"
+        >
+          <button
+            class="MuiButtonBase-root MuiButton-root MuiButton-outlined makeStyles-createButton-613 makeStyles-primaryButtonLarge-615 makeStyles-marginButtons-606 MuiButton-outlinedPrimary"
+            data-testid="watch-tutorial-button"
+            tabindex="0"
+            type="button"
+          >
+            <span
+              class="MuiButton-label"
+            >
+              Watch Tutorial
+            </span>
+          </button>
+          <button
+            class="MuiButtonBase-root MuiButton-root MuiButton-contained makeStyles-createButton-613 makeStyles-primaryButtonLarge-615 makeStyles-marginButtons-606 makeStyles-primaryButtonDisableHover-616 makeStyles-primaryColor-609"
+            data-testid="connect-button"
+            tabindex="0"
+            type="button"
+          >
+            <span
+              class="MuiButton-label"
+            >
+              Connect
+            </span>
+            <span
+              class="MuiTouchRipple-root"
+            />
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    class="MuiDialog-root makeStyles-root-650"
+    data-testid="modal-dialog"
+    role="presentation"
+    style="position: fixed; z-index: 1000; right: 0px; bottom: 0px; top: 0px; left: 0px;"
+  >
+    <div
+      aria-hidden="true"
+      class="MuiBackdrop-root"
+      style="opacity: 0; webkit-transition: opacity 195ms cubic-bezier(0.4, 0, 0.2, 1) 0ms; transition: opacity 195ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;"
+    />
+    <div
+      data-test="sentinelStart"
+      tabindex="0"
+    />
+    <div
+      class="MuiDialog-container MuiDialog-scrollPaper"
+      role="none presentation"
+      style="opacity: 0; webkit-transition: opacity 195ms cubic-bezier(0.4, 0, 0.2, 1) 0ms; transition: opacity 195ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;"
+      tabindex="-1"
+    >
+      <div
+        aria-describedby="scroll-dialog-description"
+        aria-labelledby="scroll-dialog-title"
+        class="MuiPaper-root MuiDialog-paper MuiDialog-paperScrollPaper MuiDialog-paperWidthSm MuiPaper-elevation24 MuiPaper-rounded"
+        role="dialog"
+      >
+        <div
+          class="MuiDialogTitle-root"
+          data-testid="modal-title"
+          id="alert-dialog-title"
+        >
+          <h1
+            class="MuiTypography-root MuiTypography-h6 MuiTypography-colorSecondary MuiTypography-alignLeft"
+          >
+            Connect with Procore
+          </h1>
+        </div>
+        <div
+          class="MuiDialogContent-root makeStyles-dialogContent-643"
+        >
+          <div
+            class="MuiPaper-root MuiCard-root makeStyles-cardContent-644 MuiPaper-elevation1 MuiPaper-rounded"
+          >
+            <div
+              class="MuiGrid-root"
+            >
+              <div
+                class="MuiGrid-root"
+              >
+                <div
+                  class="makeStyles-subTitle-645"
+                >
+                  <h1>
+                    Service Accounts Information
+                  </h1>
+                </div>
+                <div
+                  class="MuiGrid-root MuiGrid-item"
+                >
+                  <div
+                    class="makeStyles-errorInputWrapper-646"
+                  >
+                    <div
+                      class="MuiFormControl-root makeStyles-formControl-660 makeStyles-inputLabel-649"
+                    >
+                      <h1
+                        class="MuiTypography-root MuiTypography-caption MuiTypography-colorSecondary MuiTypography-alignLeft"
+                      >
+                        Client ID
+                         
+                      </h1>
+                      <div>
+                        <div
+                          class="MuiFormControl-root MuiTextField-root MuiFormControl-fullWidth"
+                        >
+                          <div
+                            class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-fullWidth MuiInputBase-formControl"
+                          >
+                            <input
+                              aria-invalid="false"
+                              autocomplete="off"
+                              class="MuiInputBase-input MuiOutlinedInput-input"
+                              data-testid="client-id-input"
+                              name="clientID"
+                              required=""
+                              type="text"
+                              value=""
+                            />
+                            <fieldset
+                              aria-hidden="true"
+                              class="PrivateNotchedOutline-root-662 MuiOutlinedInput-notchedOutline"
+                              style="padding-left: 8px;"
+                            >
+                              <legend
+                                class="PrivateNotchedOutline-legend-663"
+                                style="width: 0.01px;"
+                              >
+                                <span>
+                                  ​
+                                </span>
+                              </legend>
+                            </fieldset>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="MuiGrid-root MuiGrid-item"
+                >
+                  <div
+                    class="makeStyles-errorInputWrapper-646"
+                  >
+                    <div
+                      class="MuiFormControl-root makeStyles-formControl-660 makeStyles-secretInput-648 makeStyles-inputLabel-649"
+                    >
+                      <h1
+                        class="MuiTypography-root MuiTypography-caption MuiTypography-colorSecondary MuiTypography-alignLeft"
+                      >
+                        Client Secret
+                         
+                      </h1>
+                      <div>
+                        <div
+                          class="MuiFormControl-root MuiTextField-root MuiFormControl-fullWidth"
+                        >
+                          <div
+                            class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-fullWidth MuiInputBase-formControl"
+                          >
+                            <input
+                              aria-invalid="false"
+                              autocomplete="off"
+                              class="MuiInputBase-input MuiOutlinedInput-input"
+                              data-testid="client-secret-input"
+                              name="clientSecret"
+                              required=""
+                              type="text"
+                              value=""
+                            />
+                            <fieldset
+                              aria-hidden="true"
+                              class="PrivateNotchedOutline-root-662 MuiOutlinedInput-notchedOutline"
+                              style="padding-left: 8px;"
+                            >
+                              <legend
+                                class="PrivateNotchedOutline-legend-663"
+                                style="width: 0.01px;"
+                              >
+                                <span>
+                                  ​
+                                </span>
+                              </legend>
+                            </fieldset>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="MuiDialogActions-root MuiDialogActions-spacing"
+        >
+          <div
+            class="MuiGrid-root MuiGrid-container MuiGrid-justify-xs-space-between"
+          >
+            <div
+              class="MuiGrid-root MuiGrid-item"
+            >
+              <button
+                class="MuiButtonBase-root MuiButton-root MuiButton-contained makeStyles-regular-638 MuiButton-containedPrimary"
+                data-testid="close-procore"
+                tabindex="0"
+                type="button"
+              >
+                <span
+                  class="MuiButton-label"
+                >
+                  Close
+                </span>
+                <span
+                  class="MuiTouchRipple-root"
+                />
+              </button>
+            </div>
+            <div
+              class="MuiGrid-root MuiGrid-item"
+            >
+              <button
+                class="MuiButtonBase-root MuiButton-root MuiButton-contained false makeStyles-regular-638 MuiButton-containedPrimary MuiButton-containedSizeLarge MuiButton-sizeLarge Mui-disabled Mui-disabled"
+                data-testid="connect-procore"
+                disabled=""
+                tabindex="-1"
+                type="button"
+              >
+                <span
+                  class="MuiButton-label"
+                >
+                  <span
+                    class="makeStyles-textWrapper-668"
+                  >
+                    Connect
+                  </span>
+                </span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      data-test="sentinelEnd"
+      tabindex="0"
+    />
+  </div>
+</body>
+`;
+
+exports[`IntegrationsTab should close modal 1`] = `
+<body
+  style="padding-right: 0px; overflow: hidden;"
+>
+  <div
+    aria-hidden="true"
+  >
+    <div
+      class="MuiPaper-root MuiCard-root makeStyles-root-109 MuiPaper-elevation1 MuiPaper-rounded"
+    >
+      <div
+        class="MuiCardContent-root"
+      >
+        <div
+          class="makeStyles-containerLogo-115"
+        >
+          <img
+            alt="logo-procore"
+            class="makeStyles-logo-114"
+            src="procore.logo.png"
+          />
+        </div>
+        <p
+          class="MuiTypography-root makeStyles-title-111 MuiTypography-body1"
+        >
+          Procore
+        </p>
+        <p
+          class="MuiTypography-root makeStyles-body-110 MuiTypography-body1"
+        >
+          This Integration allows you to 
+          <br />
+          Synchronize information between Procore and 
+          <br />
+          FC Analytics in an Easy way.
+        </p>
+      </div>
+      <div
+        class="MuiCardActions-root MuiCardActions-spacing"
+      >
+        <div
+          class="makeStyles-containerButtons-112"
+        >
+          <button
+            class="MuiButtonBase-root MuiButton-root MuiButton-outlined makeStyles-createButton-120 makeStyles-primaryButtonLarge-122 makeStyles-marginButtons-113 MuiButton-outlinedPrimary"
+            data-testid="watch-tutorial-button"
+            tabindex="0"
+            type="button"
+          >
+            <span
+              class="MuiButton-label"
+            >
+              Watch Tutorial
+            </span>
+          </button>
+          <button
+            class="MuiButtonBase-root MuiButton-root MuiButton-contained makeStyles-createButton-120 makeStyles-primaryButtonLarge-122 makeStyles-marginButtons-113 makeStyles-primaryButtonDisableHover-123 makeStyles-primaryColor-116"
+            data-testid="connect-button"
+            tabindex="0"
+            type="button"
+          >
+            <span
+              class="MuiButton-label"
+            >
+              Connect
+            </span>
+            <span
+              class="MuiTouchRipple-root"
+            />
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    class="MuiDialog-root makeStyles-root-157"
+    data-testid="modal-dialog"
+    role="presentation"
+    style="position: fixed; z-index: 1000; right: 0px; bottom: 0px; top: 0px; left: 0px;"
+  >
+    <div
+      aria-hidden="true"
+      class="MuiBackdrop-root"
+      style="opacity: 0; webkit-transition: opacity 195ms cubic-bezier(0.4, 0, 0.2, 1) 0ms; transition: opacity 195ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;"
+    />
+    <div
+      data-test="sentinelStart"
+      tabindex="0"
+    />
+    <div
+      class="MuiDialog-container MuiDialog-scrollPaper"
+      role="none presentation"
+      style="opacity: 0; webkit-transition: opacity 195ms cubic-bezier(0.4, 0, 0.2, 1) 0ms; transition: opacity 195ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;"
+      tabindex="-1"
+    >
+      <div
+        aria-describedby="scroll-dialog-description"
+        aria-labelledby="scroll-dialog-title"
+        class="MuiPaper-root MuiDialog-paper MuiDialog-paperScrollPaper MuiDialog-paperWidthSm MuiPaper-elevation24 MuiPaper-rounded"
+        role="dialog"
+      >
+        <div
+          class="MuiDialogTitle-root"
+          data-testid="modal-title"
+          id="alert-dialog-title"
+        >
+          <h1
+            class="MuiTypography-root MuiTypography-h6 MuiTypography-colorSecondary MuiTypography-alignLeft"
+          >
+            Integrate with Procore
+          </h1>
+        </div>
+        <div
+          class="MuiDialogContent-root"
+        >
+          <div
+            class="makeStyles-containerVideo-162"
+          >
+            <div
+              style="width: 100%; height: 100%;"
+            >
+              <video
+                controls=""
+                preload="auto"
+                src="undefined"
+                style="width: 100%; height: 100%;"
+              />
+            </div>
+          </div>
+        </div>
+        <div
+          class="MuiDialogActions-root MuiDialogActions-spacing"
+        >
+          <button
+            class="MuiButtonBase-root MuiButton-root MuiButton-contained makeStyles-regular-145 MuiButton-containedPrimary"
+            data-testid="close-watch-tutorial"
+            tabindex="0"
+            type="button"
+          >
+            <span
+              class="MuiButton-label"
+            >
+              Close
+            </span>
+            <span
+              class="MuiTouchRipple-root"
+            />
+          </button>
+        </div>
+      </div>
+    </div>
+    <div
+      data-test="sentinelEnd"
+      tabindex="0"
+    />
+  </div>
+</body>
+`;
+
+exports[`IntegrationsTab should inputs be empty 1`] = `
+<body
+  style="padding-right: 0px; overflow: hidden;"
+>
+  <div
+    aria-hidden="true"
+  >
+    <div
+      class="MuiPaper-root MuiCard-root makeStyles-root-736 MuiPaper-elevation1 MuiPaper-rounded"
+    >
+      <div
+        class="MuiCardContent-root"
+      >
+        <div
+          class="makeStyles-containerLogo-742"
+        >
+          <img
+            alt="logo-procore"
+            class="makeStyles-logo-741"
+            src="procore.logo.png"
+          />
+        </div>
+        <p
+          class="MuiTypography-root makeStyles-title-738 MuiTypography-body1"
+        >
+          Procore
+        </p>
+        <p
+          class="MuiTypography-root makeStyles-body-737 MuiTypography-body1"
+        >
+          This Integration allows you to 
+          <br />
+          Synchronize information between Procore and 
+          <br />
+          FC Analytics in an Easy way.
+        </p>
+      </div>
+      <div
+        class="MuiCardActions-root MuiCardActions-spacing"
+      >
+        <div
+          class="makeStyles-containerButtons-739"
+        >
+          <button
+            class="MuiButtonBase-root MuiButton-root MuiButton-outlined makeStyles-createButton-747 makeStyles-primaryButtonLarge-749 makeStyles-marginButtons-740 MuiButton-outlinedPrimary"
+            data-testid="watch-tutorial-button"
+            tabindex="0"
+            type="button"
+          >
+            <span
+              class="MuiButton-label"
+            >
+              Watch Tutorial
+            </span>
+          </button>
+          <button
+            class="MuiButtonBase-root MuiButton-root MuiButton-contained makeStyles-createButton-747 makeStyles-primaryButtonLarge-749 makeStyles-marginButtons-740 makeStyles-primaryButtonDisableHover-750 makeStyles-primaryColor-743"
+            data-testid="connect-button"
+            tabindex="0"
+            type="button"
+          >
+            <span
+              class="MuiButton-label"
+            >
+              Connect
+            </span>
+            <span
+              class="MuiTouchRipple-root"
+            />
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    class="MuiDialog-root makeStyles-root-784"
+    data-testid="modal-dialog"
+    role="presentation"
+    style="position: fixed; z-index: 1000; right: 0px; bottom: 0px; top: 0px; left: 0px;"
+  >
+    <div
+      aria-hidden="true"
+      class="MuiBackdrop-root"
+      style="opacity: 1; webkit-transition: opacity 225ms cubic-bezier(0.4, 0, 0.2, 1) 0ms; transition: opacity 225ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;"
+    />
+    <div
+      data-test="sentinelStart"
+      tabindex="0"
+    />
+    <div
+      class="MuiDialog-container MuiDialog-scrollPaper"
+      role="none presentation"
+      style="opacity: 1; webkit-transition: opacity 225ms cubic-bezier(0.4, 0, 0.2, 1) 0ms; transition: opacity 225ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;"
+      tabindex="-1"
+    >
+      <div
+        aria-describedby="scroll-dialog-description"
+        aria-labelledby="scroll-dialog-title"
+        class="MuiPaper-root MuiDialog-paper MuiDialog-paperScrollPaper MuiDialog-paperWidthSm MuiPaper-elevation24 MuiPaper-rounded"
+        role="dialog"
+      >
+        <div
+          class="MuiDialogTitle-root"
+          data-testid="modal-title"
+          id="alert-dialog-title"
+        >
+          <h1
+            class="MuiTypography-root MuiTypography-h6 MuiTypography-colorSecondary MuiTypography-alignLeft"
+          >
+            Connect with Procore
+          </h1>
+        </div>
+        <div
+          class="MuiDialogContent-root makeStyles-dialogContent-777"
+        >
+          <div
+            class="MuiPaper-root MuiCard-root makeStyles-cardContent-778 MuiPaper-elevation1 MuiPaper-rounded"
+          >
+            <div
+              class="MuiGrid-root"
+            >
+              <div
+                class="MuiGrid-root"
+              >
+                <div
+                  class="makeStyles-subTitle-779"
+                >
+                  <h1>
+                    Service Accounts Information
+                  </h1>
+                </div>
+                <div
+                  class="MuiGrid-root MuiGrid-item"
+                >
+                  <div
+                    class="makeStyles-errorInputWrapper-780"
+                  >
+                    <div
+                      class="MuiFormControl-root makeStyles-formControl-794 makeStyles-inputLabel-783"
+                    >
+                      <h1
+                        class="MuiTypography-root MuiTypography-caption MuiTypography-colorSecondary MuiTypography-alignLeft"
+                      >
+                        Client ID
+                         
+                      </h1>
+                      <div>
+                        <div
+                          class="MuiFormControl-root MuiTextField-root MuiFormControl-fullWidth"
+                        >
+                          <div
+                            class="MuiInputBase-root MuiOutlinedInput-root Mui-error Mui-error MuiInputBase-fullWidth MuiInputBase-formControl"
+                          >
+                            <input
+                              aria-invalid="true"
+                              autocomplete="off"
+                              class="MuiInputBase-input MuiOutlinedInput-input"
+                              data-testid="client-id-input"
+                              name="clientID"
+                              required=""
+                              type="text"
+                              value=""
+                            />
+                            <fieldset
+                              aria-hidden="true"
+                              class="PrivateNotchedOutline-root-796 MuiOutlinedInput-notchedOutline"
+                              style="padding-left: 8px;"
+                            >
+                              <legend
+                                class="PrivateNotchedOutline-legend-797"
+                                style="width: 0.01px;"
+                              >
+                                <span>
+                                  ​
+                                </span>
+                              </legend>
+                            </fieldset>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <h1
+                      class="MuiTypography-root makeStyles-errorPositionProcore-781 makeStyles-errorMessage-790 errorMessage MuiTypography-caption MuiTypography-colorSecondary MuiTypography-alignLeft"
+                    >
+                      ClientID is required.
+                    </h1>
+                  </div>
+                </div>
+                <div
+                  class="MuiGrid-root MuiGrid-item"
+                >
+                  <div
+                    class="makeStyles-errorInputWrapper-780"
+                  >
+                    <div
+                      class="MuiFormControl-root makeStyles-formControl-794 makeStyles-secretInput-782 makeStyles-inputLabel-783"
+                    >
+                      <h1
+                        class="MuiTypography-root MuiTypography-caption MuiTypography-colorSecondary MuiTypography-alignLeft"
+                      >
+                        Client Secret
+                         
+                      </h1>
+                      <div>
+                        <div
+                          class="MuiFormControl-root MuiTextField-root MuiFormControl-fullWidth"
+                        >
+                          <div
+                            class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-fullWidth MuiInputBase-formControl"
+                          >
+                            <input
+                              aria-invalid="false"
+                              autocomplete="off"
+                              class="MuiInputBase-input MuiOutlinedInput-input"
+                              data-testid="client-secret-input"
+                              name="clientSecret"
+                              required=""
+                              type="text"
+                              value="321"
+                            />
+                            <fieldset
+                              aria-hidden="true"
+                              class="PrivateNotchedOutline-root-796 MuiOutlinedInput-notchedOutline"
+                              style="padding-left: 8px;"
+                            >
+                              <legend
+                                class="PrivateNotchedOutline-legend-797"
+                                style="width: 0.01px;"
+                              >
+                                <span>
+                                  ​
+                                </span>
+                              </legend>
+                            </fieldset>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="MuiDialogActions-root MuiDialogActions-spacing"
+        >
+          <div
+            class="MuiGrid-root MuiGrid-container MuiGrid-justify-xs-space-between"
+          >
+            <div
+              class="MuiGrid-root MuiGrid-item"
+            >
+              <button
+                class="MuiButtonBase-root MuiButton-root MuiButton-contained makeStyles-regular-772 MuiButton-containedPrimary"
+                data-testid="close-procore"
+                tabindex="0"
+                type="button"
+              >
+                <span
+                  class="MuiButton-label"
+                >
+                  Close
+                </span>
+                <span
+                  class="MuiTouchRipple-root"
+                />
+              </button>
+            </div>
+            <div
+              class="MuiGrid-root MuiGrid-item"
+            >
+              <button
+                class="MuiButtonBase-root MuiButton-root MuiButton-contained false makeStyles-regular-772 MuiButton-containedPrimary MuiButton-containedSizeLarge MuiButton-sizeLarge"
+                data-testid="connect-procore"
+                tabindex="0"
+                type="button"
+              >
+                <span
+                  class="MuiButton-label"
+                >
+                  <span
+                    class="makeStyles-textWrapper-802"
+                  >
+                    Connect
+                  </span>
+                </span>
+                <span
+                  class="MuiTouchRipple-root"
+                />
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      data-test="sentinelEnd"
+      tabindex="0"
+    />
+  </div>
+</body>
+`;
+
+exports[`IntegrationsTab should render 1`] = `
+<body>
+  <div>
+    <div
+      class="MuiPaper-root MuiCard-root makeStyles-root-1 MuiPaper-elevation1 MuiPaper-rounded"
+    >
+      <div
+        class="MuiCardContent-root"
+      >
+        <div
+          class="makeStyles-containerLogo-7"
+        >
+          <img
+            alt="logo-procore"
+            class="makeStyles-logo-6"
+            src="procore.logo.png"
+          />
+        </div>
+        <p
+          class="MuiTypography-root makeStyles-title-3 MuiTypography-body1"
+        >
+          Procore
+        </p>
+        <p
+          class="MuiTypography-root makeStyles-body-2 MuiTypography-body1"
+        >
+          This Integration allows you to 
+          <br />
+          Synchronize information between Procore and 
+          <br />
+          FC Analytics in an Easy way.
+        </p>
+      </div>
+      <div
+        class="MuiCardActions-root MuiCardActions-spacing"
+      >
+        <div
+          class="makeStyles-containerButtons-4"
+        >
+          <button
+            class="MuiButtonBase-root MuiButton-root MuiButton-outlined makeStyles-createButton-12 makeStyles-primaryButtonLarge-14 makeStyles-marginButtons-5 MuiButton-outlinedPrimary"
+            data-testid="watch-tutorial-button"
+            tabindex="0"
+            type="button"
+          >
+            <span
+              class="MuiButton-label"
+            >
+              Watch Tutorial
+            </span>
+          </button>
+          <button
+            class="MuiButtonBase-root MuiButton-root MuiButton-contained makeStyles-createButton-12 makeStyles-primaryButtonLarge-14 makeStyles-marginButtons-5 makeStyles-primaryButtonDisableHover-15 makeStyles-primaryColor-8"
+            data-testid="connect-button"
+            tabindex="0"
+            type="button"
+          >
+            <span
+              class="MuiButton-label"
+            >
+              Connect
+            </span>
+            <span
+              class="MuiTouchRipple-root"
+            />
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+`;
+
+exports[`IntegrationsTab should show connect after clicking disconnect 1`] = `
+<body
+  style="padding-right: 0px; overflow: hidden;"
+>
+  <div
+    aria-hidden="true"
+  >
+    <div
+      class="MuiPaper-root MuiCard-root makeStyles-root-376 MuiPaper-elevation1 MuiPaper-rounded"
+    >
+      <div
+        class="MuiCardContent-root"
+      >
+        <div
+          class="makeStyles-containerLogo-382"
+        >
+          <img
+            alt="logo-procore"
+            class="makeStyles-logo-381"
+            src="procore.logo.png"
+          />
+        </div>
+        <p
+          class="MuiTypography-root makeStyles-title-378 MuiTypography-body1"
+        >
+          Procore
+        </p>
+        <p
+          class="MuiTypography-root makeStyles-body-377 MuiTypography-body1"
+        >
+          This Integration allows you to 
+          <br />
+          Synchronize information between Procore and 
+          <br />
+          FC Analytics in an Easy way.
+        </p>
+      </div>
+      <div
+        class="MuiCardActions-root MuiCardActions-spacing"
+      >
+        <div
+          class="makeStyles-containerButtons-379"
+        >
+          <button
+            class="MuiButtonBase-root MuiButton-root MuiButton-outlined makeStyles-createButton-387 makeStyles-primaryButtonLarge-389 makeStyles-marginButtons-380 MuiButton-outlinedPrimary"
+            data-testid="watch-tutorial-button"
+            tabindex="0"
+            type="button"
+          >
+            <span
+              class="MuiButton-label"
+            >
+              Watch Tutorial
+            </span>
+          </button>
+          <button
+            class="MuiButtonBase-root MuiButton-root MuiButton-contained makeStyles-createButton-387 makeStyles-primaryButtonLarge-389 makeStyles-marginButtons-380 makeStyles-primaryButtonDisableHover-390 makeStyles-deleteColor-384"
+            data-testid="connect-button"
+            tabindex="0"
+            type="button"
+          >
+            <span
+              class="MuiButton-label"
+            >
+              Disconnect
+            </span>
+            <span
+              class="MuiTouchRipple-root"
+            />
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    class="MuiDialog-root makeStyles-root-430  makeStyles-root-425"
+    data-testid="modal-dialog"
+    role="presentation"
+    style="position: fixed; z-index: 1000; right: 0px; bottom: 0px; top: 0px; left: 0px;"
+  >
+    <div
+      aria-hidden="true"
+      class="MuiBackdrop-root"
+      style="opacity: 1; webkit-transition: opacity 225ms cubic-bezier(0.4, 0, 0.2, 1) 0ms; transition: opacity 225ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;"
+    />
+    <div
+      data-test="sentinelStart"
+      tabindex="0"
+    />
+    <div
+      class="MuiDialog-container MuiDialog-scrollPaper"
+      role="none presentation"
+      style="opacity: 1; webkit-transition: opacity 225ms cubic-bezier(0.4, 0, 0.2, 1) 0ms; transition: opacity 225ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;"
+      tabindex="-1"
+    >
+      <div
+        aria-describedby="scroll-dialog-description"
+        aria-labelledby="scroll-dialog-title"
+        class="MuiPaper-root MuiDialog-paper MuiDialog-paperScrollPaper MuiDialog-paperWidthSm MuiPaper-elevation24 MuiPaper-rounded"
+        role="dialog"
+      >
+        <div
+          class="MuiDialogTitle-root"
+        >
+          <h2
+            class="MuiTypography-root MuiTypography-h6"
+          >
+            <div
+              class="makeStyles-title-426"
+            >
+              Are you sure you want to disconnect?
+            </div>
+          </h2>
+        </div>
+        <div
+          class="MuiDialogContent-root"
+        >
+          <p
+            class="MuiTypography-root makeStyles-body-427 MuiTypography-body1"
+          >
+            If you confirm this action, information in FC Analytics will not be sent to Procore.
+          </p>
+        </div>
+        <div
+          class="MuiDialogActions-root makeStyles-actions-428 MuiDialogActions-spacing"
+        >
+          <button
+            class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary"
+            tabindex="0"
+            type="button"
+          >
+            <span
+              class="MuiButton-label"
+            >
+              Cancel
+            </span>
+            <span
+              class="MuiTouchRipple-root"
+            />
+          </button>
+          <button
+            class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary"
+            data-testid="disconnect-button"
+            tabindex="0"
+            type="button"
+          >
+            <span
+              class="MuiButton-label"
+            >
+              Yes, Confirm
+            </span>
+            <span
+              class="MuiTouchRipple-root"
+            />
+          </button>
+        </div>
+      </div>
+    </div>
+    <div
+      data-test="sentinelEnd"
+      tabindex="0"
+    />
+  </div>
+</body>
+`;
+
+exports[`IntegrationsTab should show connect after clicking disconnect 2`] = `
+<body
+  style="padding-right: 0px; overflow: hidden;"
+>
+  <div
+    aria-hidden="true"
+  >
+    <div
+      class="MuiPaper-root MuiCard-root makeStyles-root-376 MuiPaper-elevation1 MuiPaper-rounded"
+    >
+      <div
+        class="MuiCardContent-root"
+      >
+        <div
+          class="makeStyles-containerLogo-382"
+        >
+          <img
+            alt="logo-procore"
+            class="makeStyles-logo-381"
+            src="procore.logo.png"
+          />
+        </div>
+        <p
+          class="MuiTypography-root makeStyles-title-378 MuiTypography-body1"
+        >
+          Procore
+        </p>
+        <p
+          class="MuiTypography-root makeStyles-body-377 MuiTypography-body1"
+        >
+          This Integration allows you to 
+          <br />
+          Synchronize information between Procore and 
+          <br />
+          FC Analytics in an Easy way.
+        </p>
+      </div>
+      <div
+        class="MuiCardActions-root MuiCardActions-spacing"
+      >
+        <div
+          class="makeStyles-containerButtons-379"
+        >
+          <button
+            class="MuiButtonBase-root MuiButton-root MuiButton-outlined makeStyles-createButton-387 makeStyles-primaryButtonLarge-389 makeStyles-marginButtons-380 MuiButton-outlinedPrimary"
+            data-testid="watch-tutorial-button"
+            tabindex="0"
+            type="button"
+          >
+            <span
+              class="MuiButton-label"
+            >
+              Watch Tutorial
+            </span>
+          </button>
+          <button
+            class="MuiButtonBase-root MuiButton-root MuiButton-contained makeStyles-createButton-387 makeStyles-primaryButtonLarge-389 makeStyles-marginButtons-380 makeStyles-primaryButtonDisableHover-390 makeStyles-primaryColor-383"
+            data-testid="connect-button"
+            tabindex="0"
+            type="button"
+          >
+            <span
+              class="MuiButton-label"
+            >
+              Connect
+            </span>
+            <span
+              class="MuiTouchRipple-root"
+            />
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    class="MuiDialog-root makeStyles-root-424"
+    data-testid="modal-dialog"
+    role="presentation"
+    style="position: fixed; z-index: 1000; right: 0px; bottom: 0px; top: 0px; left: 0px;"
+  >
+    <div
+      aria-hidden="true"
+      class="MuiBackdrop-root"
+      style="opacity: 1; webkit-transition: opacity 225ms cubic-bezier(0.4, 0, 0.2, 1) 0ms; transition: opacity 225ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;"
+    />
+    <div
+      data-test="sentinelStart"
+      tabindex="0"
+    />
+    <div
+      class="MuiDialog-container MuiDialog-scrollPaper"
+      role="none presentation"
+      style="opacity: 1; webkit-transition: opacity 225ms cubic-bezier(0.4, 0, 0.2, 1) 0ms; transition: opacity 225ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;"
+      tabindex="-1"
+    >
+      <div
+        aria-describedby="scroll-dialog-description"
+        aria-labelledby="scroll-dialog-title"
+        class="MuiPaper-root MuiDialog-paper MuiDialog-paperScrollPaper MuiDialog-paperWidthSm MuiPaper-elevation24 MuiPaper-rounded"
+        role="dialog"
+      >
+        <div
+          class="MuiDialogTitle-root"
+          data-testid="modal-title"
+          id="alert-dialog-title"
+        >
+          <h1
+            class="MuiTypography-root MuiTypography-h6 MuiTypography-colorSecondary MuiTypography-alignLeft"
+          >
+            Connect with Procore
+          </h1>
+        </div>
+        <div
+          class="MuiDialogContent-root makeStyles-dialogContent-417"
+        >
+          <div
+            class="MuiPaper-root MuiCard-root makeStyles-cardContent-418 MuiPaper-elevation1 MuiPaper-rounded"
+          >
+            <div
+              class="MuiGrid-root"
+            >
+              <div
+                class="MuiGrid-root"
+              >
+                <div
+                  class="makeStyles-subTitle-419"
+                >
+                  <h1>
+                    Service Accounts Information
+                  </h1>
+                </div>
+                <div
+                  class="MuiGrid-root MuiGrid-item"
+                >
+                  <div
+                    class="makeStyles-errorInputWrapper-420"
+                  >
+                    <div
+                      class="MuiFormControl-root makeStyles-formControl-459 makeStyles-inputLabel-423"
+                    >
+                      <h1
+                        class="MuiTypography-root MuiTypography-caption MuiTypography-colorSecondary MuiTypography-alignLeft"
+                      >
+                        Client ID
+                         
+                      </h1>
+                      <div>
+                        <div
+                          class="MuiFormControl-root MuiTextField-root MuiFormControl-fullWidth"
+                        >
+                          <div
+                            class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-fullWidth MuiInputBase-formControl"
+                          >
+                            <input
+                              aria-invalid="false"
+                              autocomplete="off"
+                              class="MuiInputBase-input MuiOutlinedInput-input"
+                              data-testid="client-id-input"
+                              name="clientID"
+                              required=""
+                              type="text"
+                              value="123"
+                            />
+                            <fieldset
+                              aria-hidden="true"
+                              class="PrivateNotchedOutline-root-461 MuiOutlinedInput-notchedOutline"
+                              style="padding-left: 8px;"
+                            >
+                              <legend
+                                class="PrivateNotchedOutline-legend-462"
+                                style="width: 0.01px;"
+                              >
+                                <span>
+                                  ​
+                                </span>
+                              </legend>
+                            </fieldset>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="MuiGrid-root MuiGrid-item"
+                >
+                  <div
+                    class="makeStyles-errorInputWrapper-420"
+                  >
+                    <div
+                      class="MuiFormControl-root makeStyles-formControl-459 makeStyles-secretInput-422 makeStyles-inputLabel-423"
+                    >
+                      <h1
+                        class="MuiTypography-root MuiTypography-caption MuiTypography-colorSecondary MuiTypography-alignLeft"
+                      >
+                        Client Secret
+                         
+                      </h1>
+                      <div>
+                        <div
+                          class="MuiFormControl-root MuiTextField-root MuiFormControl-fullWidth"
+                        >
+                          <div
+                            class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-fullWidth MuiInputBase-formControl"
+                          >
+                            <input
+                              aria-invalid="false"
+                              autocomplete="off"
+                              class="MuiInputBase-input MuiOutlinedInput-input"
+                              data-testid="client-secret-input"
+                              name="clientSecret"
+                              required=""
+                              type="text"
+                              value="123"
+                            />
+                            <fieldset
+                              aria-hidden="true"
+                              class="PrivateNotchedOutline-root-461 MuiOutlinedInput-notchedOutline"
+                              style="padding-left: 8px;"
+                            >
+                              <legend
+                                class="PrivateNotchedOutline-legend-462"
+                                style="width: 0.01px;"
+                              >
+                                <span>
+                                  ​
+                                </span>
+                              </legend>
+                            </fieldset>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="MuiDialogActions-root MuiDialogActions-spacing"
+        >
+          <div
+            class="MuiGrid-root MuiGrid-container MuiGrid-justify-xs-space-between"
+          >
+            <div
+              class="MuiGrid-root MuiGrid-item"
+            >
+              <button
+                class="MuiButtonBase-root MuiButton-root MuiButton-contained makeStyles-regular-412 MuiButton-containedPrimary"
+                data-testid="close-procore"
+                tabindex="0"
+                type="button"
+              >
+                <span
+                  class="MuiButton-label"
+                >
+                  Close
+                </span>
+                <span
+                  class="MuiTouchRipple-root"
+                />
+              </button>
+            </div>
+            <div
+              class="MuiGrid-root MuiGrid-item"
+            >
+              <button
+                class="MuiButtonBase-root MuiButton-root MuiButton-contained false makeStyles-regular-412 MuiButton-containedPrimary MuiButton-containedSizeLarge MuiButton-sizeLarge Mui-disabled Mui-disabled"
+                data-testid="connect-procore"
+                disabled=""
+                tabindex="-1"
+                type="button"
+              >
+                <span
+                  class="MuiButton-label"
+                >
+                  <span
+                    class="makeStyles-textWrapper-467"
+                  >
+                    Connect
+                  </span>
+                </span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      data-test="sentinelEnd"
+      tabindex="0"
+    />
+  </div>
+</body>
+`;
+
+exports[`IntegrationsTab should show connect modal 1`] = `
+<body
+  style="padding-right: 0px; overflow: hidden;"
+>
+  <div
+    aria-hidden="true"
+  >
+    <div
+      class="MuiPaper-root MuiCard-root makeStyles-root-163 MuiPaper-elevation1 MuiPaper-rounded"
+    >
+      <div
+        class="MuiCardContent-root"
+      >
+        <div
+          class="makeStyles-containerLogo-169"
+        >
+          <img
+            alt="logo-procore"
+            class="makeStyles-logo-168"
+            src="procore.logo.png"
+          />
+        </div>
+        <p
+          class="MuiTypography-root makeStyles-title-165 MuiTypography-body1"
+        >
+          Procore
+        </p>
+        <p
+          class="MuiTypography-root makeStyles-body-164 MuiTypography-body1"
+        >
+          This Integration allows you to 
+          <br />
+          Synchronize information between Procore and 
+          <br />
+          FC Analytics in an Easy way.
+        </p>
+      </div>
+      <div
+        class="MuiCardActions-root MuiCardActions-spacing"
+      >
+        <div
+          class="makeStyles-containerButtons-166"
+        >
+          <button
+            class="MuiButtonBase-root MuiButton-root MuiButton-outlined makeStyles-createButton-174 makeStyles-primaryButtonLarge-176 makeStyles-marginButtons-167 MuiButton-outlinedPrimary"
+            data-testid="watch-tutorial-button"
+            tabindex="0"
+            type="button"
+          >
+            <span
+              class="MuiButton-label"
+            >
+              Watch Tutorial
+            </span>
+          </button>
+          <button
+            class="MuiButtonBase-root MuiButton-root MuiButton-contained makeStyles-createButton-174 makeStyles-primaryButtonLarge-176 makeStyles-marginButtons-167 makeStyles-primaryButtonDisableHover-177 makeStyles-primaryColor-170"
+            data-testid="connect-button"
+            tabindex="0"
+            type="button"
+          >
+            <span
+              class="MuiButton-label"
+            >
+              Connect
+            </span>
+            <span
+              class="MuiTouchRipple-root"
+            />
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    class="MuiDialog-root makeStyles-root-211"
+    data-testid="modal-dialog"
+    role="presentation"
+    style="position: fixed; z-index: 1000; right: 0px; bottom: 0px; top: 0px; left: 0px;"
+  >
+    <div
+      aria-hidden="true"
+      class="MuiBackdrop-root"
+      style="opacity: 1; webkit-transition: opacity 225ms cubic-bezier(0.4, 0, 0.2, 1) 0ms; transition: opacity 225ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;"
+    />
+    <div
+      data-test="sentinelStart"
+      tabindex="0"
+    />
+    <div
+      class="MuiDialog-container MuiDialog-scrollPaper"
+      role="none presentation"
+      style="opacity: 1; webkit-transition: opacity 225ms cubic-bezier(0.4, 0, 0.2, 1) 0ms; transition: opacity 225ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;"
+      tabindex="-1"
+    >
+      <div
+        aria-describedby="scroll-dialog-description"
+        aria-labelledby="scroll-dialog-title"
+        class="MuiPaper-root MuiDialog-paper MuiDialog-paperScrollPaper MuiDialog-paperWidthSm MuiPaper-elevation24 MuiPaper-rounded"
+        role="dialog"
+      >
+        <div
+          class="MuiDialogTitle-root"
+          data-testid="modal-title"
+          id="alert-dialog-title"
+        >
+          <h1
+            class="MuiTypography-root MuiTypography-h6 MuiTypography-colorSecondary MuiTypography-alignLeft"
+          >
+            Connect with Procore
+          </h1>
+        </div>
+        <div
+          class="MuiDialogContent-root makeStyles-dialogContent-204"
+        >
+          <div
+            class="MuiPaper-root MuiCard-root makeStyles-cardContent-205 MuiPaper-elevation1 MuiPaper-rounded"
+          >
+            <div
+              class="MuiGrid-root"
+            >
+              <div
+                class="MuiGrid-root"
+              >
+                <div
+                  class="makeStyles-subTitle-206"
+                >
+                  <h1>
+                    Service Accounts Information
+                  </h1>
+                </div>
+                <div
+                  class="MuiGrid-root MuiGrid-item"
+                >
+                  <div
+                    class="makeStyles-errorInputWrapper-207"
+                  >
+                    <div
+                      class="MuiFormControl-root makeStyles-formControl-221 makeStyles-inputLabel-210"
+                    >
+                      <h1
+                        class="MuiTypography-root MuiTypography-caption MuiTypography-colorSecondary MuiTypography-alignLeft"
+                      >
+                        Client ID
+                         
+                      </h1>
+                      <div>
+                        <div
+                          class="MuiFormControl-root MuiTextField-root MuiFormControl-fullWidth"
+                        >
+                          <div
+                            class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-fullWidth MuiInputBase-formControl"
+                          >
+                            <input
+                              aria-invalid="false"
+                              autocomplete="off"
+                              class="MuiInputBase-input MuiOutlinedInput-input"
+                              data-testid="client-id-input"
+                              name="clientID"
+                              required=""
+                              type="text"
+                              value=""
+                            />
+                            <fieldset
+                              aria-hidden="true"
+                              class="PrivateNotchedOutline-root-223 MuiOutlinedInput-notchedOutline"
+                              style="padding-left: 8px;"
+                            >
+                              <legend
+                                class="PrivateNotchedOutline-legend-224"
+                                style="width: 0.01px;"
+                              >
+                                <span>
+                                  ​
+                                </span>
+                              </legend>
+                            </fieldset>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="MuiGrid-root MuiGrid-item"
+                >
+                  <div
+                    class="makeStyles-errorInputWrapper-207"
+                  >
+                    <div
+                      class="MuiFormControl-root makeStyles-formControl-221 makeStyles-secretInput-209 makeStyles-inputLabel-210"
+                    >
+                      <h1
+                        class="MuiTypography-root MuiTypography-caption MuiTypography-colorSecondary MuiTypography-alignLeft"
+                      >
+                        Client Secret
+                         
+                      </h1>
+                      <div>
+                        <div
+                          class="MuiFormControl-root MuiTextField-root MuiFormControl-fullWidth"
+                        >
+                          <div
+                            class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-fullWidth MuiInputBase-formControl"
+                          >
+                            <input
+                              aria-invalid="false"
+                              autocomplete="off"
+                              class="MuiInputBase-input MuiOutlinedInput-input"
+                              data-testid="client-secret-input"
+                              name="clientSecret"
+                              required=""
+                              type="text"
+                              value=""
+                            />
+                            <fieldset
+                              aria-hidden="true"
+                              class="PrivateNotchedOutline-root-223 MuiOutlinedInput-notchedOutline"
+                              style="padding-left: 8px;"
+                            >
+                              <legend
+                                class="PrivateNotchedOutline-legend-224"
+                                style="width: 0.01px;"
+                              >
+                                <span>
+                                  ​
+                                </span>
+                              </legend>
+                            </fieldset>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="MuiDialogActions-root MuiDialogActions-spacing"
+        >
+          <div
+            class="MuiGrid-root MuiGrid-container MuiGrid-justify-xs-space-between"
+          >
+            <div
+              class="MuiGrid-root MuiGrid-item"
+            >
+              <button
+                class="MuiButtonBase-root MuiButton-root MuiButton-contained makeStyles-regular-199 MuiButton-containedPrimary"
+                data-testid="close-procore"
+                tabindex="0"
+                type="button"
+              >
+                <span
+                  class="MuiButton-label"
+                >
+                  Close
+                </span>
+                <span
+                  class="MuiTouchRipple-root"
+                />
+              </button>
+            </div>
+            <div
+              class="MuiGrid-root MuiGrid-item"
+            >
+              <button
+                class="MuiButtonBase-root MuiButton-root MuiButton-contained false makeStyles-regular-199 MuiButton-containedPrimary MuiButton-containedSizeLarge MuiButton-sizeLarge Mui-disabled Mui-disabled"
+                data-testid="connect-procore"
+                disabled=""
+                tabindex="-1"
+                type="button"
+              >
+                <span
+                  class="MuiButton-label"
+                >
+                  <span
+                    class="makeStyles-textWrapper-229"
+                  >
+                    Connect
+                  </span>
+                </span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      data-test="sentinelEnd"
+      tabindex="0"
+    />
+  </div>
+</body>
+`;
+
+exports[`IntegrationsTab should show error Connect Modal 1`] = `
+<body
+  style="padding-right: 0px; overflow: hidden;"
+>
+  <div
+    aria-hidden="true"
+  >
+    <div
+      class="MuiPaper-root MuiCard-root makeStyles-root-669 MuiPaper-elevation1 MuiPaper-rounded"
+    >
+      <div
+        class="MuiCardContent-root"
+      >
+        <div
+          class="makeStyles-containerLogo-675"
+        >
+          <img
+            alt="logo-procore"
+            class="makeStyles-logo-674"
+            src="procore.logo.png"
+          />
+        </div>
+        <p
+          class="MuiTypography-root makeStyles-title-671 MuiTypography-body1"
+        >
+          Procore
+        </p>
+        <p
+          class="MuiTypography-root makeStyles-body-670 MuiTypography-body1"
+        >
+          This Integration allows you to 
+          <br />
+          Synchronize information between Procore and 
+          <br />
+          FC Analytics in an Easy way.
+        </p>
+      </div>
+      <div
+        class="MuiCardActions-root MuiCardActions-spacing"
+      >
+        <div
+          class="makeStyles-containerButtons-672"
+        >
+          <button
+            class="MuiButtonBase-root MuiButton-root MuiButton-outlined makeStyles-createButton-680 makeStyles-primaryButtonLarge-682 makeStyles-marginButtons-673 MuiButton-outlinedPrimary"
+            data-testid="watch-tutorial-button"
+            tabindex="0"
+            type="button"
+          >
+            <span
+              class="MuiButton-label"
+            >
+              Watch Tutorial
+            </span>
+          </button>
+          <button
+            class="MuiButtonBase-root MuiButton-root MuiButton-contained makeStyles-createButton-680 makeStyles-primaryButtonLarge-682 makeStyles-marginButtons-673 makeStyles-primaryButtonDisableHover-683 makeStyles-primaryColor-676"
+            data-testid="connect-button"
+            tabindex="0"
+            type="button"
+          >
+            <span
+              class="MuiButton-label"
+            >
+              Connect
+            </span>
+            <span
+              class="MuiTouchRipple-root"
+            />
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    class="MuiDialog-root makeStyles-root-717"
+    data-testid="modal-dialog"
+    role="presentation"
+    style="position: fixed; z-index: 1000; right: 0px; bottom: 0px; top: 0px; left: 0px;"
+  >
+    <div
+      aria-hidden="true"
+      class="MuiBackdrop-root"
+      style="opacity: 1; webkit-transition: opacity 225ms cubic-bezier(0.4, 0, 0.2, 1) 0ms; transition: opacity 225ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;"
+    />
+    <div
+      data-test="sentinelStart"
+      tabindex="0"
+    />
+    <div
+      class="MuiDialog-container MuiDialog-scrollPaper"
+      role="none presentation"
+      style="opacity: 1; webkit-transition: opacity 225ms cubic-bezier(0.4, 0, 0.2, 1) 0ms; transition: opacity 225ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;"
+      tabindex="-1"
+    >
+      <div
+        aria-describedby="scroll-dialog-description"
+        aria-labelledby="scroll-dialog-title"
+        class="MuiPaper-root MuiDialog-paper MuiDialog-paperScrollPaper MuiDialog-paperWidthSm MuiPaper-elevation24 MuiPaper-rounded"
+        role="dialog"
+      >
+        <div
+          class="MuiDialogTitle-root"
+          data-testid="modal-title"
+          id="alert-dialog-title"
+        >
+          <h1
+            class="MuiTypography-root MuiTypography-h6 MuiTypography-colorSecondary MuiTypography-alignLeft"
+          >
+            Connect with Procore
+          </h1>
+        </div>
+        <div
+          class="MuiDialogContent-root makeStyles-dialogContent-710"
+        >
+          <div
+            class="MuiPaper-root MuiCard-root makeStyles-cardContent-711 MuiPaper-elevation1 MuiPaper-rounded"
+          >
+            <div
+              class="MuiGrid-root"
+            >
+              <div
+                class="MuiGrid-root"
+              >
+                <div
+                  class="makeStyles-subTitle-712"
+                >
+                  <h1>
+                    Service Accounts Information
+                  </h1>
+                </div>
+                <div
+                  class="MuiGrid-root MuiGrid-item"
+                >
+                  <div
+                    class="makeStyles-errorInputWrapper-713"
+                  >
+                    <div
+                      class="MuiFormControl-root makeStyles-formControl-727 makeStyles-inputLabel-716"
+                    >
+                      <h1
+                        class="MuiTypography-root MuiTypography-caption MuiTypography-colorSecondary MuiTypography-alignLeft"
+                      >
+                        Client ID
+                         
+                      </h1>
+                      <div>
+                        <div
+                          class="MuiFormControl-root MuiTextField-root MuiFormControl-fullWidth"
+                        >
+                          <div
+                            class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-fullWidth MuiInputBase-formControl"
+                          >
+                            <input
+                              aria-invalid="false"
+                              autocomplete="off"
+                              class="MuiInputBase-input MuiOutlinedInput-input"
+                              data-testid="client-id-input"
+                              name="clientID"
+                              required=""
+                              type="text"
+                              value=""
+                            />
+                            <fieldset
+                              aria-hidden="true"
+                              class="PrivateNotchedOutline-root-729 MuiOutlinedInput-notchedOutline"
+                              style="padding-left: 8px;"
+                            >
+                              <legend
+                                class="PrivateNotchedOutline-legend-730"
+                                style="width: 0.01px;"
+                              >
+                                <span>
+                                  ​
+                                </span>
+                              </legend>
+                            </fieldset>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="MuiGrid-root MuiGrid-item"
+                >
+                  <div
+                    class="makeStyles-errorInputWrapper-713"
+                  >
+                    <div
+                      class="MuiFormControl-root makeStyles-formControl-727 makeStyles-secretInput-715 makeStyles-inputLabel-716"
+                    >
+                      <h1
+                        class="MuiTypography-root MuiTypography-caption MuiTypography-colorSecondary MuiTypography-alignLeft"
+                      >
+                        Client Secret
+                         
+                      </h1>
+                      <div>
+                        <div
+                          class="MuiFormControl-root MuiTextField-root MuiFormControl-fullWidth"
+                        >
+                          <div
+                            class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-fullWidth MuiInputBase-formControl"
+                          >
+                            <input
+                              aria-invalid="false"
+                              autocomplete="off"
+                              class="MuiInputBase-input MuiOutlinedInput-input"
+                              data-testid="client-secret-input"
+                              name="clientSecret"
+                              required=""
+                              type="text"
+                              value=""
+                            />
+                            <fieldset
+                              aria-hidden="true"
+                              class="PrivateNotchedOutline-root-729 MuiOutlinedInput-notchedOutline"
+                              style="padding-left: 8px;"
+                            >
+                              <legend
+                                class="PrivateNotchedOutline-legend-730"
+                                style="width: 0.01px;"
+                              >
+                                <span>
+                                  ​
+                                </span>
+                              </legend>
+                            </fieldset>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="MuiDialogActions-root MuiDialogActions-spacing"
+        >
+          <div
+            class="MuiGrid-root MuiGrid-container MuiGrid-justify-xs-space-between"
+          >
+            <div
+              class="MuiGrid-root MuiGrid-item"
+            >
+              <button
+                class="MuiButtonBase-root MuiButton-root MuiButton-contained makeStyles-regular-705 MuiButton-containedPrimary"
+                data-testid="close-procore"
+                tabindex="0"
+                type="button"
+              >
+                <span
+                  class="MuiButton-label"
+                >
+                  Close
+                </span>
+                <span
+                  class="MuiTouchRipple-root"
+                />
+              </button>
+            </div>
+            <div
+              class="MuiGrid-root MuiGrid-item"
+            >
+              <button
+                class="MuiButtonBase-root MuiButton-root MuiButton-contained false makeStyles-regular-705 MuiButton-containedPrimary MuiButton-containedSizeLarge MuiButton-sizeLarge Mui-disabled Mui-disabled"
+                data-testid="connect-procore"
+                disabled=""
+                tabindex="-1"
+                type="button"
+              >
+                <span
+                  class="MuiButton-label"
+                >
+                  <span
+                    class="makeStyles-textWrapper-735"
+                  >
+                    Connect
+                  </span>
+                </span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      data-test="sentinelEnd"
+      tabindex="0"
+    />
+  </div>
+</body>
+`;
+
+exports[`IntegrationsTab should show value changed 1`] = `
+<body
+  style="padding-right: 0px; overflow: hidden;"
+>
+  <div
+    aria-hidden="true"
+  >
+    <div
+      class="MuiPaper-root MuiCard-root makeStyles-root-468 MuiPaper-elevation1 MuiPaper-rounded"
+    >
+      <div
+        class="MuiCardContent-root"
+      >
+        <div
+          class="makeStyles-containerLogo-474"
+        >
+          <img
+            alt="logo-procore"
+            class="makeStyles-logo-473"
+            src="procore.logo.png"
+          />
+        </div>
+        <p
+          class="MuiTypography-root makeStyles-title-470 MuiTypography-body1"
+        >
+          Procore
+        </p>
+        <p
+          class="MuiTypography-root makeStyles-body-469 MuiTypography-body1"
+        >
+          This Integration allows you to 
+          <br />
+          Synchronize information between Procore and 
+          <br />
+          FC Analytics in an Easy way.
+        </p>
+      </div>
+      <div
+        class="MuiCardActions-root MuiCardActions-spacing"
+      >
+        <div
+          class="makeStyles-containerButtons-471"
+        >
+          <button
+            class="MuiButtonBase-root MuiButton-root MuiButton-outlined makeStyles-createButton-479 makeStyles-primaryButtonLarge-481 makeStyles-marginButtons-472 MuiButton-outlinedPrimary"
+            data-testid="watch-tutorial-button"
+            tabindex="0"
+            type="button"
+          >
+            <span
+              class="MuiButton-label"
+            >
+              Watch Tutorial
+            </span>
+          </button>
+          <button
+            class="MuiButtonBase-root MuiButton-root MuiButton-contained makeStyles-createButton-479 makeStyles-primaryButtonLarge-481 makeStyles-marginButtons-472 makeStyles-primaryButtonDisableHover-482 makeStyles-primaryColor-475"
+            data-testid="connect-button"
+            tabindex="0"
+            type="button"
+          >
+            <span
+              class="MuiButton-label"
+            >
+              Connect
+            </span>
+            <span
+              class="MuiTouchRipple-root"
+            />
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    class="MuiDialog-root makeStyles-root-516"
+    data-testid="modal-dialog"
+    role="presentation"
+    style="position: fixed; z-index: 1000; right: 0px; bottom: 0px; top: 0px; left: 0px;"
+  >
+    <div
+      aria-hidden="true"
+      class="MuiBackdrop-root"
+      style="opacity: 1; webkit-transition: opacity 225ms cubic-bezier(0.4, 0, 0.2, 1) 0ms; transition: opacity 225ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;"
+    />
+    <div
+      data-test="sentinelStart"
+      tabindex="0"
+    />
+    <div
+      class="MuiDialog-container MuiDialog-scrollPaper"
+      role="none presentation"
+      style="opacity: 1; webkit-transition: opacity 225ms cubic-bezier(0.4, 0, 0.2, 1) 0ms; transition: opacity 225ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;"
+      tabindex="-1"
+    >
+      <div
+        aria-describedby="scroll-dialog-description"
+        aria-labelledby="scroll-dialog-title"
+        class="MuiPaper-root MuiDialog-paper MuiDialog-paperScrollPaper MuiDialog-paperWidthSm MuiPaper-elevation24 MuiPaper-rounded"
+        role="dialog"
+      >
+        <div
+          class="MuiDialogTitle-root"
+          data-testid="modal-title"
+          id="alert-dialog-title"
+        >
+          <h1
+            class="MuiTypography-root MuiTypography-h6 MuiTypography-colorSecondary MuiTypography-alignLeft"
+          >
+            Connect with Procore
+          </h1>
+        </div>
+        <div
+          class="MuiDialogContent-root makeStyles-dialogContent-509"
+        >
+          <div
+            class="MuiPaper-root MuiCard-root makeStyles-cardContent-510 MuiPaper-elevation1 MuiPaper-rounded"
+          >
+            <div
+              class="MuiGrid-root"
+            >
+              <div
+                class="MuiGrid-root"
+              >
+                <div
+                  class="makeStyles-subTitle-511"
+                >
+                  <h1>
+                    Service Accounts Information
+                  </h1>
+                </div>
+                <div
+                  class="MuiGrid-root MuiGrid-item"
+                >
+                  <div
+                    class="makeStyles-errorInputWrapper-512"
+                  >
+                    <div
+                      class="MuiFormControl-root makeStyles-formControl-526 makeStyles-inputLabel-515"
+                    >
+                      <h1
+                        class="MuiTypography-root MuiTypography-caption MuiTypography-colorSecondary MuiTypography-alignLeft"
+                      >
+                        Client ID
+                         
+                      </h1>
+                      <div>
+                        <div
+                          class="MuiFormControl-root MuiTextField-root MuiFormControl-fullWidth"
+                        >
+                          <div
+                            class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-fullWidth MuiInputBase-formControl"
+                          >
+                            <input
+                              aria-invalid="false"
+                              autocomplete="off"
+                              class="MuiInputBase-input MuiOutlinedInput-input"
+                              data-testid="client-id-input"
+                              name="clientID"
+                              required=""
+                              type="text"
+                              value="123"
+                            />
+                            <fieldset
+                              aria-hidden="true"
+                              class="PrivateNotchedOutline-root-528 MuiOutlinedInput-notchedOutline"
+                              style="padding-left: 8px;"
+                            >
+                              <legend
+                                class="PrivateNotchedOutline-legend-529"
+                                style="width: 0.01px;"
+                              >
+                                <span>
+                                  ​
+                                </span>
+                              </legend>
+                            </fieldset>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="MuiGrid-root MuiGrid-item"
+                >
+                  <div
+                    class="makeStyles-errorInputWrapper-512"
+                  >
+                    <div
+                      class="MuiFormControl-root makeStyles-formControl-526 makeStyles-secretInput-514 makeStyles-inputLabel-515"
+                    >
+                      <h1
+                        class="MuiTypography-root MuiTypography-caption MuiTypography-colorSecondary MuiTypography-alignLeft"
+                      >
+                        Client Secret
+                         
+                      </h1>
+                      <div>
+                        <div
+                          class="MuiFormControl-root MuiTextField-root MuiFormControl-fullWidth"
+                        >
+                          <div
+                            class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-fullWidth MuiInputBase-formControl"
+                          >
+                            <input
+                              aria-invalid="false"
+                              autocomplete="off"
+                              class="MuiInputBase-input MuiOutlinedInput-input"
+                              data-testid="client-secret-input"
+                              name="clientSecret"
+                              required=""
+                              type="text"
+                              value=""
+                            />
+                            <fieldset
+                              aria-hidden="true"
+                              class="PrivateNotchedOutline-root-528 MuiOutlinedInput-notchedOutline"
+                              style="padding-left: 8px;"
+                            >
+                              <legend
+                                class="PrivateNotchedOutline-legend-529"
+                                style="width: 0.01px;"
+                              >
+                                <span>
+                                  ​
+                                </span>
+                              </legend>
+                            </fieldset>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="MuiDialogActions-root MuiDialogActions-spacing"
+        >
+          <div
+            class="MuiGrid-root MuiGrid-container MuiGrid-justify-xs-space-between"
+          >
+            <div
+              class="MuiGrid-root MuiGrid-item"
+            >
+              <button
+                class="MuiButtonBase-root MuiButton-root MuiButton-contained makeStyles-regular-504 MuiButton-containedPrimary"
+                data-testid="close-procore"
+                tabindex="0"
+                type="button"
+              >
+                <span
+                  class="MuiButton-label"
+                >
+                  Close
+                </span>
+                <span
+                  class="MuiTouchRipple-root"
+                />
+              </button>
+            </div>
+            <div
+              class="MuiGrid-root MuiGrid-item"
+            >
+              <button
+                class="MuiButtonBase-root MuiButton-root MuiButton-contained false makeStyles-regular-504 MuiButton-containedPrimary MuiButton-containedSizeLarge MuiButton-sizeLarge"
+                data-testid="connect-procore"
+                tabindex="0"
+                type="button"
+              >
+                <span
+                  class="MuiButton-label"
+                >
+                  <span
+                    class="makeStyles-textWrapper-534"
+                  >
+                    Connect
+                  </span>
+                </span>
+                <span
+                  class="MuiTouchRipple-root"
+                />
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      data-test="sentinelEnd"
+      tabindex="0"
+    />
+  </div>
+</body>
+`;
+
+exports[`IntegrationsTab should show watch tutorial modal 1`] = `
+<body
+  style="padding-right: 0px; overflow: hidden;"
+>
+  <div
+    aria-hidden="true"
+  >
+    <div
+      class="MuiPaper-root MuiCard-root makeStyles-root-55 MuiPaper-elevation1 MuiPaper-rounded"
+    >
+      <div
+        class="MuiCardContent-root"
+      >
+        <div
+          class="makeStyles-containerLogo-61"
+        >
+          <img
+            alt="logo-procore"
+            class="makeStyles-logo-60"
+            src="procore.logo.png"
+          />
+        </div>
+        <p
+          class="MuiTypography-root makeStyles-title-57 MuiTypography-body1"
+        >
+          Procore
+        </p>
+        <p
+          class="MuiTypography-root makeStyles-body-56 MuiTypography-body1"
+        >
+          This Integration allows you to 
+          <br />
+          Synchronize information between Procore and 
+          <br />
+          FC Analytics in an Easy way.
+        </p>
+      </div>
+      <div
+        class="MuiCardActions-root MuiCardActions-spacing"
+      >
+        <div
+          class="makeStyles-containerButtons-58"
+        >
+          <button
+            class="MuiButtonBase-root MuiButton-root MuiButton-outlined makeStyles-createButton-66 makeStyles-primaryButtonLarge-68 makeStyles-marginButtons-59 MuiButton-outlinedPrimary"
+            data-testid="watch-tutorial-button"
+            tabindex="0"
+            type="button"
+          >
+            <span
+              class="MuiButton-label"
+            >
+              Watch Tutorial
+            </span>
+          </button>
+          <button
+            class="MuiButtonBase-root MuiButton-root MuiButton-contained makeStyles-createButton-66 makeStyles-primaryButtonLarge-68 makeStyles-marginButtons-59 makeStyles-primaryButtonDisableHover-69 makeStyles-primaryColor-62"
+            data-testid="connect-button"
+            tabindex="0"
+            type="button"
+          >
+            <span
+              class="MuiButton-label"
+            >
+              Connect
+            </span>
+            <span
+              class="MuiTouchRipple-root"
+            />
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    class="MuiDialog-root makeStyles-root-103"
+    data-testid="modal-dialog"
+    role="presentation"
+    style="position: fixed; z-index: 1000; right: 0px; bottom: 0px; top: 0px; left: 0px;"
+  >
+    <div
+      aria-hidden="true"
+      class="MuiBackdrop-root"
+      style="opacity: 1; webkit-transition: opacity 225ms cubic-bezier(0.4, 0, 0.2, 1) 0ms; transition: opacity 225ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;"
+    />
+    <div
+      data-test="sentinelStart"
+      tabindex="0"
+    />
+    <div
+      class="MuiDialog-container MuiDialog-scrollPaper"
+      role="none presentation"
+      style="opacity: 1; webkit-transition: opacity 225ms cubic-bezier(0.4, 0, 0.2, 1) 0ms; transition: opacity 225ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;"
+      tabindex="-1"
+    >
+      <div
+        aria-describedby="scroll-dialog-description"
+        aria-labelledby="scroll-dialog-title"
+        class="MuiPaper-root MuiDialog-paper MuiDialog-paperScrollPaper MuiDialog-paperWidthSm MuiPaper-elevation24 MuiPaper-rounded"
+        role="dialog"
+      >
+        <div
+          class="MuiDialogTitle-root"
+          data-testid="modal-title"
+          id="alert-dialog-title"
+        >
+          <h1
+            class="MuiTypography-root MuiTypography-h6 MuiTypography-colorSecondary MuiTypography-alignLeft"
+          >
+            Integrate with Procore
+          </h1>
+        </div>
+        <div
+          class="MuiDialogContent-root"
+        >
+          <div
+            class="makeStyles-containerVideo-108"
+          >
+            <div
+              style="width: 100%; height: 100%;"
+            />
+          </div>
+        </div>
+        <div
+          class="MuiDialogActions-root MuiDialogActions-spacing"
+        >
+          <button
+            class="MuiButtonBase-root MuiButton-root MuiButton-contained makeStyles-regular-91 MuiButton-containedPrimary"
+            data-testid="close-watch-tutorial"
+            tabindex="0"
+            type="button"
+          >
+            <span
+              class="MuiButton-label"
+            >
+              Close
+            </span>
+            <span
+              class="MuiTouchRipple-root"
+            />
+          </button>
+        </div>
+      </div>
+    </div>
+    <div
+      data-test="sentinelEnd"
+      tabindex="0"
+    />
+  </div>
+</body>
+`;
+
+exports[`IntegrationsTab should submit 1`] = `
+<body
+  style="padding-right: 0px; overflow: hidden;"
+>
+  <div
+    aria-hidden="true"
+  >
+    <div
+      class="MuiPaper-root MuiCard-root makeStyles-root-535 MuiPaper-elevation1 MuiPaper-rounded"
+    >
+      <div
+        class="MuiCardContent-root"
+      >
+        <div
+          class="makeStyles-containerLogo-541"
+        >
+          <img
+            alt="logo-procore"
+            class="makeStyles-logo-540"
+            src="procore.logo.png"
+          />
+        </div>
+        <p
+          class="MuiTypography-root makeStyles-title-537 MuiTypography-body1"
+        >
+          Procore
+        </p>
+        <p
+          class="MuiTypography-root makeStyles-body-536 MuiTypography-body1"
+        >
+          This Integration allows you to 
+          <br />
+          Synchronize information between Procore and 
+          <br />
+          FC Analytics in an Easy way.
+        </p>
+      </div>
+      <div
+        class="MuiCardActions-root MuiCardActions-spacing"
+      >
+        <div
+          class="makeStyles-containerButtons-538"
+        >
+          <button
+            class="MuiButtonBase-root MuiButton-root MuiButton-outlined makeStyles-createButton-546 makeStyles-primaryButtonLarge-548 makeStyles-marginButtons-539 MuiButton-outlinedPrimary"
+            data-testid="watch-tutorial-button"
+            tabindex="0"
+            type="button"
+          >
+            <span
+              class="MuiButton-label"
+            >
+              Watch Tutorial
+            </span>
+          </button>
+          <button
+            class="MuiButtonBase-root MuiButton-root MuiButton-contained makeStyles-createButton-546 makeStyles-primaryButtonLarge-548 makeStyles-marginButtons-539 makeStyles-primaryButtonDisableHover-549 makeStyles-primaryColor-542"
+            data-testid="connect-button"
+            tabindex="0"
+            type="button"
+          >
+            <span
+              class="MuiButton-label"
+            >
+              Connect
+            </span>
+            <span
+              class="MuiTouchRipple-root"
+            />
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    class="MuiDialog-root makeStyles-root-583"
+    data-testid="modal-dialog"
+    role="presentation"
+    style="position: fixed; z-index: 1000; right: 0px; bottom: 0px; top: 0px; left: 0px;"
+  >
+    <div
+      aria-hidden="true"
+      class="MuiBackdrop-root"
+      style="opacity: 1; webkit-transition: opacity 225ms cubic-bezier(0.4, 0, 0.2, 1) 0ms; transition: opacity 225ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;"
+    />
+    <div
+      data-test="sentinelStart"
+      tabindex="0"
+    />
+    <div
+      class="MuiDialog-container MuiDialog-scrollPaper"
+      role="none presentation"
+      style="opacity: 1; webkit-transition: opacity 225ms cubic-bezier(0.4, 0, 0.2, 1) 0ms; transition: opacity 225ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;"
+      tabindex="-1"
+    >
+      <div
+        aria-describedby="scroll-dialog-description"
+        aria-labelledby="scroll-dialog-title"
+        class="MuiPaper-root MuiDialog-paper MuiDialog-paperScrollPaper MuiDialog-paperWidthSm MuiPaper-elevation24 MuiPaper-rounded"
+        role="dialog"
+      >
+        <div
+          class="MuiDialogTitle-root"
+          data-testid="modal-title"
+          id="alert-dialog-title"
+        >
+          <h1
+            class="MuiTypography-root MuiTypography-h6 MuiTypography-colorSecondary MuiTypography-alignLeft"
+          >
+            Connect with Procore
+          </h1>
+        </div>
+        <div
+          class="MuiDialogContent-root makeStyles-dialogContent-576"
+        >
+          <div
+            class="MuiPaper-root MuiCard-root makeStyles-cardContent-577 MuiPaper-elevation1 MuiPaper-rounded"
+          >
+            <div
+              class="MuiGrid-root"
+            >
+              <div
+                class="MuiGrid-root"
+              >
+                <div
+                  class="makeStyles-subTitle-578"
+                >
+                  <h1>
+                    Service Accounts Information
+                  </h1>
+                </div>
+                <div
+                  class="MuiGrid-root MuiGrid-item"
+                >
+                  <div
+                    class="makeStyles-errorInputWrapper-579"
+                  >
+                    <div
+                      class="MuiFormControl-root makeStyles-formControl-593 makeStyles-inputLabel-582"
+                    >
+                      <h1
+                        class="MuiTypography-root MuiTypography-caption MuiTypography-colorSecondary MuiTypography-alignLeft"
+                      >
+                        Client ID
+                         
+                      </h1>
+                      <div>
+                        <div
+                          class="MuiFormControl-root MuiTextField-root MuiFormControl-fullWidth"
+                        >
+                          <div
+                            class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-fullWidth MuiInputBase-formControl"
+                          >
+                            <input
+                              aria-invalid="false"
+                              autocomplete="off"
+                              class="MuiInputBase-input MuiOutlinedInput-input"
+                              data-testid="client-id-input"
+                              name="clientID"
+                              required=""
+                              type="text"
+                              value=""
+                            />
+                            <fieldset
+                              aria-hidden="true"
+                              class="PrivateNotchedOutline-root-595 MuiOutlinedInput-notchedOutline"
+                              style="padding-left: 8px;"
+                            >
+                              <legend
+                                class="PrivateNotchedOutline-legend-596"
+                                style="width: 0.01px;"
+                              >
+                                <span>
+                                  ​
+                                </span>
+                              </legend>
+                            </fieldset>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="MuiGrid-root MuiGrid-item"
+                >
+                  <div
+                    class="makeStyles-errorInputWrapper-579"
+                  >
+                    <div
+                      class="MuiFormControl-root makeStyles-formControl-593 makeStyles-secretInput-581 makeStyles-inputLabel-582"
+                    >
+                      <h1
+                        class="MuiTypography-root MuiTypography-caption MuiTypography-colorSecondary MuiTypography-alignLeft"
+                      >
+                        Client Secret
+                         
+                      </h1>
+                      <div>
+                        <div
+                          class="MuiFormControl-root MuiTextField-root MuiFormControl-fullWidth"
+                        >
+                          <div
+                            class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-fullWidth MuiInputBase-formControl"
+                          >
+                            <input
+                              aria-invalid="false"
+                              autocomplete="off"
+                              class="MuiInputBase-input MuiOutlinedInput-input"
+                              data-testid="client-secret-input"
+                              name="clientSecret"
+                              required=""
+                              type="text"
+                              value=""
+                            />
+                            <fieldset
+                              aria-hidden="true"
+                              class="PrivateNotchedOutline-root-595 MuiOutlinedInput-notchedOutline"
+                              style="padding-left: 8px;"
+                            >
+                              <legend
+                                class="PrivateNotchedOutline-legend-596"
+                                style="width: 0.01px;"
+                              >
+                                <span>
+                                  ​
+                                </span>
+                              </legend>
+                            </fieldset>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="MuiDialogActions-root MuiDialogActions-spacing"
+        >
+          <div
+            class="MuiGrid-root MuiGrid-container MuiGrid-justify-xs-space-between"
+          >
+            <div
+              class="MuiGrid-root MuiGrid-item"
+            >
+              <button
+                class="MuiButtonBase-root MuiButton-root MuiButton-contained makeStyles-regular-571 MuiButton-containedPrimary"
+                data-testid="close-procore"
+                tabindex="0"
+                type="button"
+              >
+                <span
+                  class="MuiButton-label"
+                >
+                  Close
+                </span>
+                <span
+                  class="MuiTouchRipple-root"
+                />
+              </button>
+            </div>
+            <div
+              class="MuiGrid-root MuiGrid-item"
+            >
+              <button
+                class="MuiButtonBase-root MuiButton-root MuiButton-contained false makeStyles-regular-571 MuiButton-containedPrimary MuiButton-containedSizeLarge MuiButton-sizeLarge Mui-disabled Mui-disabled"
+                data-testid="connect-procore"
+                disabled=""
+                tabindex="-1"
+                type="button"
+              >
+                <span
+                  class="MuiButton-label"
+                >
+                  <span
+                    class="makeStyles-textWrapper-601"
+                  >
+                    Connect
+                  </span>
+                </span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      data-test="sentinelEnd"
+      tabindex="0"
+    />
+  </div>
+</body>
+`;

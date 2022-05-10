@@ -1,0 +1,271 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Project Drawer should render 1`] = `
+<div>
+  <div
+    class="MuiDrawer-root MuiDrawer-docked makeStyles-drawer-53 open"
+    data-testid="project-drawer-detail"
+  >
+    <div
+      class="MuiPaper-root MuiDrawer-paper makeStyles-drawerPaper-54 MuiDrawer-paperAnchorRight MuiDrawer-paperAnchorDockedRight MuiPaper-elevation0"
+    >
+      <div
+        class="makeStyles-drawerButtonWrapper-56"
+      >
+        <div
+          class="makeStyles-drawerButton-57"
+        >
+          <button
+            class="MuiButtonBase-root MuiButton-root MuiButton-text"
+            data-testid="drawer-close-btn"
+            style="outline: none;"
+            tabindex="0"
+            type="button"
+          >
+            <span
+              class="MuiButton-label"
+            >
+              <svg>
+                close.svg
+              </svg>
+            </span>
+            <span
+              class="MuiTouchRipple-root"
+            />
+          </button>
+        </div>
+        <div
+          class="makeStyles-drawerHeader-55"
+        >
+          <p
+            class="MuiTypography-root makeStyles-drawerTitle-58 MuiTypography-body1 MuiTypography-colorPrimary MuiTypography-alignLeft"
+          >
+            Project Information
+          </p>
+        </div>
+      </div>
+      <div
+        class="makeStyles-listDetail-83"
+      >
+        <div
+          class="makeStyles-company-84"
+        >
+          <div
+            class="makeStyles-drawerText-60"
+          >
+            <p
+              class="MuiTypography-root makeStyles-listAccent-85 makeStyles-entityTitle-82 MuiTypography-body1"
+            >
+              Project Name
+            </p>
+            <div
+              class="makeStyles-drawerMainText-61"
+            >
+              <span>
+                category-1
+              </span>
+              <span>
+                -
+              </span>
+              <span>
+                region-1
+              </span>
+            </div>
+          </div>
+          <div
+            class="makeStyles-drawerSection-59 makeStyles-drawerProjectColumn-67"
+          >
+            <div
+              class="makeStyles-projectWrapper-65"
+              data-testid=""
+            >
+              <svg>
+                location.svg
+              </svg>
+              <div
+                class="makeStyles-drawerText-60 makeStyles-drawerTextSeparation-62"
+              >
+                <span>
+                  -
+                </span>
+              </div>
+            </div>
+          </div>
+          <div
+            class="makeStyles-drawerSection-59 makeStyles-drawerProjectColumn-67"
+          >
+            <div
+              class="makeStyles-projectWrapper-65"
+              data-testid=""
+            >
+              <svg>
+                location.svg
+              </svg>
+              <div
+                class="makeStyles-drawerText-60 makeStyles-drawerTextSeparation-62"
+              >
+                <span>
+                  -
+                </span>
+              </div>
+            </div>
+          </div>
+          <div
+            class="makeStyles-drawerSection-59 makeStyles-drawerProjectColumn-67"
+          >
+            <div
+              class="makeStyles-projectWrapper-65"
+              data-testid=""
+            >
+              <svg>
+                location.svg
+              </svg>
+              <div
+                class="makeStyles-drawerText-60 makeStyles-drawerTextSeparation-62"
+              >
+                <span>
+                  -
+                </span>
+              </div>
+            </div>
+          </div>
+          <div
+            class="makeStyles-drawerSection-59"
+          >
+            <div
+              class="makeStyles-drawerColumnDirection-68"
+            >
+              <div
+                class="makeStyles-drawerRowDirection-69"
+              >
+                <svg>
+                  monetization.svg
+                </svg>
+                <div
+                  class="makeStyles-drawerText-60 makeStyles-drawerTextSeparation-62"
+                >
+                  <span
+                    class="makeStyles-listAccent-85"
+                  >
+                    Badge Model
+                  </span>
+                  <span>
+                    Worker Badge Price $ -
+                  </span>
+                  <span>
+                    Worker Badge Reprint Price $
+                          -
+                  </span>
+                  <span>
+                    Visitor Badge Price $ -
+                  </span>
+                  <span>
+                    Visitor Badge Reprint Price $
+                          -
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr
+          class="MuiDivider-root makeStyles-drawerDivider-63"
+        />
+        <div
+          class="makeStyles-ctaWrapper-86"
+        >
+          <span
+            class=""
+            data-testid="controlled-button"
+            tabindex="-1"
+          >
+            <a
+              aria-disabled="false"
+              class="MuiButtonBase-root MuiButton-root MuiButton-outlined makeStyles-drawerCTA-35 makeStyles-borderPrimaryButton-27 makeStyles-primaryButtonPadding-29"
+              data-testid="drawerProjectButton"
+              href="/projects/wizard/9164e4c4-6521-47bb-97fd-c75ac02b2cf2"
+              tabindex="0"
+            >
+              <span
+                class="MuiButton-label"
+              >
+                Edit
+              </span>
+            </a>
+          </span>
+          <span
+            class=""
+            data-testid="controlled-button"
+            tabindex="-1"
+          >
+            <button
+              class="MuiButtonBase-root MuiButton-root MuiButton-outlined makeStyles-drawerCTA-35 makeStyles-warningButton-36"
+              data-testid="deleteProjectButton"
+              tabindex="0"
+              type="button"
+            >
+              <span
+                class="MuiButton-label"
+              >
+                Delete
+              </span>
+            </button>
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Project Drawer should show loading 1`] = `
+<div>
+  <div
+    class="MuiDrawer-root MuiDrawer-docked makeStyles-drawer-145 open"
+    data-testid="project-drawer-detail"
+  >
+    <div
+      class="MuiPaper-root MuiDrawer-paper makeStyles-drawerPaper-146 MuiDrawer-paperAnchorRight MuiDrawer-paperAnchorDockedRight MuiPaper-elevation0"
+    >
+      <div
+        class="makeStyles-drawerButtonWrapper-148"
+      >
+        <div
+          class="makeStyles-drawerButton-149"
+        >
+          <button
+            class="MuiButtonBase-root MuiButton-root MuiButton-text"
+            data-testid="drawer-close-btn"
+            style="outline: none;"
+            tabindex="0"
+            type="button"
+          >
+            <span
+              class="MuiButton-label"
+            >
+              <svg>
+                close.svg
+              </svg>
+            </span>
+            <span
+              class="MuiTouchRipple-root"
+            />
+          </button>
+        </div>
+        <div
+          class="makeStyles-drawerHeader-147"
+        >
+          <p
+            class="MuiTypography-root makeStyles-drawerTitle-150 MuiTypography-body1 MuiTypography-colorPrimary MuiTypography-alignLeft"
+          >
+            Project Information
+          </p>
+        </div>
+      </div>
+      <div>
+        Loading...
+      </div>
+    </div>
+  </div>
+</div>
+`;

@@ -1,0 +1,19 @@
+{
+  "applinks": {
+    "details": [
+      {
+        "appID": "2EP3EANH62.com.fca.WorkerApp",
+        "paths": [
+          "/users/*"
+        ]
+      },
+      {
+        "appID": "2EP3EANH62.com.fca.OSRApp",
+        "paths": [
+          "/users/*"
+        ]
+      }
+    ],
+    "apps": []
+  }
+}

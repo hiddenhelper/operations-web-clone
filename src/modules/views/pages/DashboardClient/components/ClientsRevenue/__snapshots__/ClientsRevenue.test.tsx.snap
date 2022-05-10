@@ -1,0 +1,602 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ClientsRevenue Component should render 1`] = `
+<div>
+  <div
+    class="MuiPaper-root  makeStyles-widget-3 MuiPaper-elevation0 MuiPaper-rounded"
+  >
+    <div
+      class="makeStyles-widgetTitleMarginBottom-1"
+    >
+      <p
+        class="MuiTypography-root makeStyles-widgetTitle-5 makeStyles-widgetTitleBottomMargin-9 MuiTypography-body1"
+      >
+        Clients Revenue
+      </p>
+      <div
+        class="makeStyles-widgetContentWrapper-10"
+      >
+        <span
+          class="makeStyles-widgetContentResponsive-16 makeStyles-widgetContent-15"
+        >
+          $1,232
+        </span>
+        <div
+          class="makeStyles-chipStatusLeftMargin-25"
+        />
+      </div>
+    </div>
+    <div
+      class="MuiGrid-root MuiGrid-container"
+      style="display: flex; justify-content: center; align-items: center; min-height: 335px;"
+    >
+      <div
+        class="MuiGrid-root makeStyles-revenueWidgetContent-2 MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-md-12 MuiGrid-grid-lg-12 MuiGrid-grid-xl-12"
+        style="max-height: 370px; height: 370px;"
+      >
+        <div
+          class="VictoryContainer"
+          style="height: 100%; width: 100%; user-select: none; pointer-events: none; position: relative;"
+        >
+          <svg
+            height="530"
+            role="img"
+            style="pointer-events: all; width: 100%; height: 100%;"
+            viewBox="0 0 600 530"
+            width="600"
+          >
+            <g
+              role="presentation"
+            >
+              <line
+                role="presentation"
+                shape-rendering="auto"
+                style="stroke: #90A4AE; stroke-width: 0; fill: transparent; stroke-linecap: round; stroke-linejoin: round;"
+                vector-effect="non-scaling-stroke"
+                x1="30"
+                x2="30"
+                y1="30"
+                y2="490"
+              />
+              <g
+                role="presentation"
+              >
+                <line
+                  role="presentation"
+                  shape-rendering="auto"
+                  style="stroke: #ECEFF1; stroke-dasharray: 1; stroke-width: 1; fill: none; stroke-linecap: round; stroke-linejoin: round; pointer-events: painted;"
+                  vector-effect="non-scaling-stroke"
+                  x1="30"
+                  x2="590"
+                  y1="368.9983164983165"
+                  y2="368.9983164983165"
+                />
+                <line
+                  role="presentation"
+                  shape-rendering="auto"
+                  style="stroke: white; size: 0; fill: transparent; stroke-width: 1; stroke-linecap: round; stroke-linejoin: round;"
+                  vector-effect="non-scaling-stroke"
+                  x1="30"
+                  x2="30"
+                  y1="368.9983164983165"
+                  y2="368.9983164983165"
+                />
+                <text
+                  direction="inherit"
+                  dx="0"
+                  id="chart-axis-0-tickLabels-0"
+                  x="22"
+                  y="374.6783164983165"
+                >
+                  <tspan
+                    dx="0"
+                    dy="0"
+                    style="font-size: 16px; fill: #878787; font-family: 'Helvetica Neue', 'Helvetica', sans-serif; letter-spacing: normal; padding: 8px; stroke: transparent; stroke-width: 0;"
+                    text-anchor="end"
+                    x="22"
+                  >
+                    50k
+                  </tspan>
+                </text>
+              </g>
+              <g
+                role="presentation"
+              >
+                <line
+                  role="presentation"
+                  shape-rendering="auto"
+                  style="stroke: #ECEFF1; stroke-dasharray: 1; stroke-width: 1; fill: none; stroke-linecap: round; stroke-linejoin: round; pointer-events: painted;"
+                  vector-effect="non-scaling-stroke"
+                  x1="30"
+                  x2="590"
+                  y1="247.99663299663302"
+                  y2="247.99663299663302"
+                />
+                <line
+                  role="presentation"
+                  shape-rendering="auto"
+                  style="stroke: white; size: 0; fill: transparent; stroke-width: 1; stroke-linecap: round; stroke-linejoin: round;"
+                  vector-effect="non-scaling-stroke"
+                  x1="30"
+                  x2="30"
+                  y1="247.99663299663302"
+                  y2="247.99663299663302"
+                />
+                <text
+                  direction="inherit"
+                  dx="0"
+                  id="chart-axis-0-tickLabels-1"
+                  x="22"
+                  y="253.67663299663303"
+                >
+                  <tspan
+                    dx="0"
+                    dy="0"
+                    style="font-size: 16px; fill: #878787; font-family: 'Helvetica Neue', 'Helvetica', sans-serif; letter-spacing: normal; padding: 8px; stroke: transparent; stroke-width: 0;"
+                    text-anchor="end"
+                    x="22"
+                  >
+                    100k
+                  </tspan>
+                </text>
+              </g>
+              <g
+                role="presentation"
+              >
+                <line
+                  role="presentation"
+                  shape-rendering="auto"
+                  style="stroke: #ECEFF1; stroke-dasharray: 1; stroke-width: 1; fill: none; stroke-linecap: round; stroke-linejoin: round; pointer-events: painted;"
+                  vector-effect="non-scaling-stroke"
+                  x1="30"
+                  x2="590"
+                  y1="126.9949494949495"
+                  y2="126.9949494949495"
+                />
+                <line
+                  role="presentation"
+                  shape-rendering="auto"
+                  style="stroke: white; size: 0; fill: transparent; stroke-width: 1; stroke-linecap: round; stroke-linejoin: round;"
+                  vector-effect="non-scaling-stroke"
+                  x1="30"
+                  x2="30"
+                  y1="126.9949494949495"
+                  y2="126.9949494949495"
+                />
+                <text
+                  direction="inherit"
+                  dx="0"
+                  id="chart-axis-0-tickLabels-2"
+                  x="22"
+                  y="132.6749494949495"
+                >
+                  <tspan
+                    dx="0"
+                    dy="0"
+                    style="font-size: 16px; fill: #878787; font-family: 'Helvetica Neue', 'Helvetica', sans-serif; letter-spacing: normal; padding: 8px; stroke: transparent; stroke-width: 0;"
+                    text-anchor="end"
+                    x="22"
+                  >
+                    150k
+                  </tspan>
+                </text>
+              </g>
+            </g>
+            <g
+              role="presentation"
+            >
+              <line
+                role="presentation"
+                shape-rendering="auto"
+                style="stroke: #eceff1; stroke-width: 1; fill: transparent; stroke-linecap: round; stroke-linejoin: round;"
+                vector-effect="non-scaling-stroke"
+                x1="30"
+                x2="590"
+                y1="490"
+                y2="490"
+              />
+              <g
+                role="presentation"
+              >
+                <line
+                  role="presentation"
+                  shape-rendering="auto"
+                  style="stroke: #ECEFF1; stroke-dasharray: 1; stroke-width: 1; display: none; fill: none; stroke-linecap: round; stroke-linejoin: round; pointer-events: painted;"
+                  vector-effect="non-scaling-stroke"
+                  x1="30"
+                  x2="30"
+                  y1="490"
+                  y2="30"
+                />
+                <line
+                  role="presentation"
+                  shape-rendering="auto"
+                  style="stroke: white; size: 0; fill: transparent; stroke-width: 1; stroke-linecap: round; stroke-linejoin: round;"
+                  vector-effect="non-scaling-stroke"
+                  x1="30"
+                  x2="30"
+                  y1="490"
+                  y2="490"
+                />
+                <text
+                  direction="inherit"
+                  dx="15"
+                  id="chart-axis-1-tickLabels-0"
+                  x="30"
+                  y="511.68"
+                >
+                  <tspan
+                    dx="15"
+                    dy="0"
+                    style="font-size: 16px; fill: #878787; dominant-baseline: hanging; display: block; font-family: 'Helvetica Neue', 'Helvetica', sans-serif; letter-spacing: normal; padding: 8px; stroke: transparent; stroke-width: 0;"
+                    text-anchor="middle"
+                    x="30"
+                  >
+                    07 Jan
+                  </tspan>
+                </text>
+              </g>
+              <g
+                role="presentation"
+              >
+                <line
+                  role="presentation"
+                  shape-rendering="auto"
+                  style="stroke: #ECEFF1; stroke-dasharray: 1; stroke-width: 1; display: block; fill: none; stroke-linecap: round; stroke-linejoin: round; pointer-events: painted;"
+                  vector-effect="non-scaling-stroke"
+                  x1="110"
+                  x2="110"
+                  y1="490"
+                  y2="30"
+                />
+                <line
+                  role="presentation"
+                  shape-rendering="auto"
+                  style="stroke: white; size: 0; fill: transparent; stroke-width: 1; stroke-linecap: round; stroke-linejoin: round;"
+                  vector-effect="non-scaling-stroke"
+                  x1="110"
+                  x2="110"
+                  y1="490"
+                  y2="490"
+                />
+                <text
+                  direction="inherit"
+                  dx="0"
+                  id="chart-axis-1-tickLabels-1"
+                  x="110"
+                  y="511.68"
+                >
+                  <tspan
+                    dx="0"
+                    dy="0"
+                    style="font-size: 16px; fill: #878787; dominant-baseline: hanging; display: block; font-family: 'Helvetica Neue', 'Helvetica', sans-serif; letter-spacing: normal; padding: 8px; stroke: transparent; stroke-width: 0;"
+                    text-anchor="middle"
+                    x="110"
+                  >
+                    08 Jan
+                  </tspan>
+                </text>
+              </g>
+              <g
+                role="presentation"
+              >
+                <line
+                  role="presentation"
+                  shape-rendering="auto"
+                  style="stroke: #ECEFF1; stroke-dasharray: 1; stroke-width: 1; display: block; fill: none; stroke-linecap: round; stroke-linejoin: round; pointer-events: painted;"
+                  vector-effect="non-scaling-stroke"
+                  x1="190"
+                  x2="190"
+                  y1="490"
+                  y2="30"
+                />
+                <line
+                  role="presentation"
+                  shape-rendering="auto"
+                  style="stroke: white; size: 0; fill: transparent; stroke-width: 1; stroke-linecap: round; stroke-linejoin: round;"
+                  vector-effect="non-scaling-stroke"
+                  x1="190"
+                  x2="190"
+                  y1="490"
+                  y2="490"
+                />
+                <text
+                  direction="inherit"
+                  dx="0"
+                  id="chart-axis-1-tickLabels-2"
+                  x="190"
+                  y="511.68"
+                >
+                  <tspan
+                    dx="0"
+                    dy="0"
+                    style="font-size: 16px; fill: #878787; dominant-baseline: hanging; display: block; font-family: 'Helvetica Neue', 'Helvetica', sans-serif; letter-spacing: normal; padding: 8px; stroke: transparent; stroke-width: 0;"
+                    text-anchor="middle"
+                    x="190"
+                  >
+                    09 Jan
+                  </tspan>
+                </text>
+              </g>
+              <g
+                role="presentation"
+              >
+                <line
+                  role="presentation"
+                  shape-rendering="auto"
+                  style="stroke: #ECEFF1; stroke-dasharray: 1; stroke-width: 1; display: block; fill: none; stroke-linecap: round; stroke-linejoin: round; pointer-events: painted;"
+                  vector-effect="non-scaling-stroke"
+                  x1="270"
+                  x2="270"
+                  y1="490"
+                  y2="30"
+                />
+                <line
+                  role="presentation"
+                  shape-rendering="auto"
+                  style="stroke: white; size: 0; fill: transparent; stroke-width: 1; stroke-linecap: round; stroke-linejoin: round;"
+                  vector-effect="non-scaling-stroke"
+                  x1="270"
+                  x2="270"
+                  y1="490"
+                  y2="490"
+                />
+                <text
+                  direction="inherit"
+                  dx="0"
+                  id="chart-axis-1-tickLabels-3"
+                  x="270"
+                  y="511.68"
+                >
+                  <tspan
+                    dx="0"
+                    dy="0"
+                    style="font-size: 16px; fill: #878787; dominant-baseline: hanging; display: block; font-family: 'Helvetica Neue', 'Helvetica', sans-serif; letter-spacing: normal; padding: 8px; stroke: transparent; stroke-width: 0;"
+                    text-anchor="middle"
+                    x="270"
+                  >
+                    10 Jan
+                  </tspan>
+                </text>
+              </g>
+              <g
+                role="presentation"
+              >
+                <line
+                  role="presentation"
+                  shape-rendering="auto"
+                  style="stroke: #ECEFF1; stroke-dasharray: 1; stroke-width: 1; display: block; fill: none; stroke-linecap: round; stroke-linejoin: round; pointer-events: painted;"
+                  vector-effect="non-scaling-stroke"
+                  x1="349.99999999999994"
+                  x2="349.99999999999994"
+                  y1="490"
+                  y2="30"
+                />
+                <line
+                  role="presentation"
+                  shape-rendering="auto"
+                  style="stroke: white; size: 0; fill: transparent; stroke-width: 1; stroke-linecap: round; stroke-linejoin: round;"
+                  vector-effect="non-scaling-stroke"
+                  x1="349.99999999999994"
+                  x2="349.99999999999994"
+                  y1="490"
+                  y2="490"
+                />
+                <text
+                  direction="inherit"
+                  dx="0"
+                  id="chart-axis-1-tickLabels-4"
+                  x="349.99999999999994"
+                  y="511.68"
+                >
+                  <tspan
+                    dx="0"
+                    dy="0"
+                    style="font-size: 16px; fill: #878787; dominant-baseline: hanging; display: block; font-family: 'Helvetica Neue', 'Helvetica', sans-serif; letter-spacing: normal; padding: 8px; stroke: transparent; stroke-width: 0;"
+                    text-anchor="middle"
+                    x="349.99999999999994"
+                  >
+                    11 Jan
+                  </tspan>
+                </text>
+              </g>
+              <g
+                role="presentation"
+              >
+                <line
+                  role="presentation"
+                  shape-rendering="auto"
+                  style="stroke: #ECEFF1; stroke-dasharray: 1; stroke-width: 1; display: block; fill: none; stroke-linecap: round; stroke-linejoin: round; pointer-events: painted;"
+                  vector-effect="non-scaling-stroke"
+                  x1="430"
+                  x2="430"
+                  y1="490"
+                  y2="30"
+                />
+                <line
+                  role="presentation"
+                  shape-rendering="auto"
+                  style="stroke: white; size: 0; fill: transparent; stroke-width: 1; stroke-linecap: round; stroke-linejoin: round;"
+                  vector-effect="non-scaling-stroke"
+                  x1="430"
+                  x2="430"
+                  y1="490"
+                  y2="490"
+                />
+                <text
+                  direction="inherit"
+                  dx="0"
+                  id="chart-axis-1-tickLabels-5"
+                  x="430"
+                  y="511.68"
+                >
+                  <tspan
+                    dx="0"
+                    dy="0"
+                    style="font-size: 16px; fill: #878787; dominant-baseline: hanging; display: block; font-family: 'Helvetica Neue', 'Helvetica', sans-serif; letter-spacing: normal; padding: 8px; stroke: transparent; stroke-width: 0;"
+                    text-anchor="middle"
+                    x="430"
+                  >
+                    12 Jan
+                  </tspan>
+                </text>
+              </g>
+              <g
+                role="presentation"
+              >
+                <line
+                  role="presentation"
+                  shape-rendering="auto"
+                  style="stroke: #ECEFF1; stroke-dasharray: 1; stroke-width: 1; display: block; fill: none; stroke-linecap: round; stroke-linejoin: round; pointer-events: painted;"
+                  vector-effect="non-scaling-stroke"
+                  x1="509.99999999999994"
+                  x2="509.99999999999994"
+                  y1="490"
+                  y2="30"
+                />
+                <line
+                  role="presentation"
+                  shape-rendering="auto"
+                  style="stroke: white; size: 0; fill: transparent; stroke-width: 1; stroke-linecap: round; stroke-linejoin: round;"
+                  vector-effect="non-scaling-stroke"
+                  x1="509.99999999999994"
+                  x2="509.99999999999994"
+                  y1="490"
+                  y2="490"
+                />
+                <text
+                  direction="inherit"
+                  dx="0"
+                  id="chart-axis-1-tickLabels-6"
+                  x="509.99999999999994"
+                  y="511.68"
+                >
+                  <tspan
+                    dx="0"
+                    dy="0"
+                    style="font-size: 16px; fill: #878787; dominant-baseline: hanging; display: block; font-family: 'Helvetica Neue', 'Helvetica', sans-serif; letter-spacing: normal; padding: 8px; stroke: transparent; stroke-width: 0;"
+                    text-anchor="middle"
+                    x="509.99999999999994"
+                  >
+                    13 Jan
+                  </tspan>
+                </text>
+              </g>
+              <g
+                role="presentation"
+              >
+                <line
+                  role="presentation"
+                  shape-rendering="auto"
+                  style="stroke: #ECEFF1; stroke-dasharray: 1; stroke-width: 1; display: none; fill: none; stroke-linecap: round; stroke-linejoin: round; pointer-events: painted;"
+                  vector-effect="non-scaling-stroke"
+                  x1="590"
+                  x2="590"
+                  y1="490"
+                  y2="30"
+                />
+                <line
+                  role="presentation"
+                  shape-rendering="auto"
+                  style="stroke: white; size: 0; fill: transparent; stroke-width: 1; stroke-linecap: round; stroke-linejoin: round;"
+                  vector-effect="non-scaling-stroke"
+                  x1="590"
+                  x2="590"
+                  y1="490"
+                  y2="490"
+                />
+                <text
+                  direction="inherit"
+                  dx="-20"
+                  id="chart-axis-1-tickLabels-7"
+                  x="590"
+                  y="511.68"
+                >
+                  <tspan
+                    dx="-20"
+                    dy="0"
+                    style="font-size: 16px; fill: #878787; dominant-baseline: hanging; display: block; font-family: 'Helvetica Neue', 'Helvetica', sans-serif; letter-spacing: normal; padding: 8px; stroke: transparent; stroke-width: 0;"
+                    text-anchor="middle"
+                    x="590"
+                  >
+                    14 Jan
+                  </tspan>
+                </text>
+              </g>
+            </g>
+            <g
+              clip-path="url(#victory-clip-2)"
+              style="height: 100%; width: 100%; user-select: none;"
+            >
+              <defs>
+                <clippath
+                  id="victory-clip-2"
+                >
+                  <rect
+                    height="460"
+                    vector-effect="non-scaling-stroke"
+                    width="560"
+                    x="30"
+                    y="30"
+                  />
+                </clippath>
+              </defs>
+              <path
+                d="M30,30L110,490L190,490L270,452.60745475589226L349.99999999999994,487.4976851851852L430,490L509.99999999999994,490L590,490"
+                role="presentation"
+                shape-rendering="auto"
+                style="fill: transparent; stroke: #1F86E8; stroke-width: 3; opacity: 1;"
+              />
+            </g>
+          </svg>
+          <div
+            style="z-index: 99; position: absolute; top: 0px; left: 0px; width: 100%; height: 100%;"
+          >
+            <svg
+              height="530"
+              style="overflow: visible; width: 100%; height: 100%;"
+              viewBox="0 0 600 530"
+              width="600"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`ClientsRevenue Component should render loading 1`] = `
+<div>
+  <div
+    class="MuiPaper-root  makeStyles-widget-105 MuiPaper-elevation0 MuiPaper-rounded"
+  >
+    <div
+      class="makeStyles-widgetTitleMarginBottom-103"
+    >
+      <div
+        class="MuiSkeleton-root MuiSkeleton-rect MuiSkeleton-wave"
+        style="width: 200px; height: 25px;"
+      />
+      <div
+        class="MuiSkeleton-root MuiSkeleton-rect makeStyles-headerMarginTop-153 MuiSkeleton-wave"
+        style="width: 200px; height: 25px;"
+      />
+    </div>
+    <div
+      class="MuiGrid-root MuiGrid-container"
+      style="display: flex; justify-content: center; align-items: center; min-height: 335px;"
+    >
+      <div
+        class="MuiGrid-root makeStyles-revenueWidgetContent-104 MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-md-12 MuiGrid-grid-lg-12 MuiGrid-grid-xl-12"
+        style="max-height: 370px; height: 370px;"
+      >
+        <div
+          class="MuiSkeleton-root MuiSkeleton-rect MuiSkeleton-wave"
+          style="width: 99%; height: 100%;"
+        />
+      </div>
+    </div>
+  </div>
+</div>
+`;

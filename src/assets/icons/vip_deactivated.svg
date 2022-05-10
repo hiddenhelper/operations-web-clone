@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g id="vip.active" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="atoms/icons/delete-copy-3" fill="#E9A61F">
+            <path d="M18,2 C19.1045695,2 20,2.8954305 20,4 L20,20 C20,21.1045695 19.1045695,22 18,22 L6,22 C4.8954305,22 4,21.1045695 4,20 L4,4 C4,2.8954305 4.8954305,2 6,2 L18,2 Z M15,18 L9,18 L9,19 L15,19 L15,18 Z M17,15 L7,15 L7,16 L17,16 L17,15 Z M12,4 L10.5305369,6.97745751 L7.24471742,7.45491503 L9.62235871,9.77254249 L9.06107374,13.045085 L12,11.5 L14.9389263,13.045085 L14.3776413,9.77254249 L16.7552826,7.45491503 L13.4694631,6.97745751 L12,4 Z" id="Combined-Shape"></path>
+        </g>
+        <g id="atoms/icons/status/accepted" transform="translate(13.000000, 13.000000)">
+            <circle id="Oval-Copy-2" fill="#444444" cx="5.5" cy="5.5" r="5.5"></circle>
+            <g id="atoms/icons/check-copy" transform="translate(1.100000, 1.100000)" fill="#FFFFFF">
+                <polygon id="Path" points="6.96666667 2.35033333 6.44966667 1.83333333 4.4 3.883 2.35033333 1.83333333 1.83333333 2.35033333 3.883 4.4 1.83333333 6.44966667 2.35033333 6.96666667 4.4 4.917 6.44966667 6.96666667 6.96666667 6.44966667 4.917 4.4"></polygon>
+            </g>
+        </g>
+    </g>
+</svg>

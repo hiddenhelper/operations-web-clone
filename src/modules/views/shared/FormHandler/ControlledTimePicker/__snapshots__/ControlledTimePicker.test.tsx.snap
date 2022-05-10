@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ControlledTimePicker should render 1`] = `
+<div>
+  <div>
+    <input
+      data-testid="datepicker-item"
+      value="2020/10/10"
+    />
+  </div>
+</div>
+`;

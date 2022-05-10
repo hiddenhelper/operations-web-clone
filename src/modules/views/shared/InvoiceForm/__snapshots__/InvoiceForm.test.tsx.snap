@@ -1,0 +1,769 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`InvoiceForm should render 1`] = `
+<div>
+  <form
+    autocomplete="off"
+    novalidate=""
+  >
+    <div
+      class="MuiGrid-root MuiGrid-container"
+    >
+      <div
+        class="MuiGrid-root makeStyles-inputMarginBottom-5 MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-lg-12 MuiGrid-grid-xl-12"
+      >
+        <div
+          class="makeStyles-errorInputWrapper-1"
+        >
+          <div
+            class="MuiFormControl-root makeStyles-formControl-89 makeStyles-autoCompleteWrapper-81 makeStyles-autocompleteInput-3"
+          >
+            <h1
+              class="MuiTypography-root MuiTypography-caption MuiTypography-colorSecondary MuiTypography-alignLeft"
+            >
+              Bill To
+               
+            </h1>
+            <div>
+              <div
+                aria-expanded="false"
+                class="MuiAutocomplete-root MuiAutocomplete-hasClearIcon"
+                data-testid="autocomplete-wrapper"
+                role="combobox"
+              >
+                <div
+                  class="MuiFormControl-root MuiTextField-root MuiFormControl-fullWidth"
+                >
+                  <div
+                    class="MuiInputBase-root MuiOutlinedInput-root MuiAutocomplete-inputRoot MuiInputBase-fullWidth MuiInputBase-formControl MuiInputBase-adornedEnd MuiOutlinedInput-adornedEnd"
+                  >
+                    <input
+                      aria-autocomplete="list"
+                      aria-invalid="false"
+                      autocapitalize="none"
+                      autocomplete="off"
+                      class="MuiInputBase-input MuiOutlinedInput-input MuiAutocomplete-input MuiAutocomplete-inputFocused MuiInputBase-inputAdornedEnd MuiOutlinedInput-inputAdornedEnd"
+                      id="autocomplete-assign"
+                      placeholder="Select Client"
+                      spellcheck="false"
+                      type="text"
+                      value=""
+                    />
+                    <div
+                      class="MuiAutocomplete-endAdornment"
+                    >
+                      <button
+                        aria-label="Clear"
+                        class="MuiButtonBase-root MuiIconButton-root MuiAutocomplete-clearIndicator"
+                        tabindex="-1"
+                        title="Clear"
+                        type="button"
+                      >
+                        <span
+                          class="MuiIconButton-label"
+                        >
+                          <svg
+                            aria-hidden="true"
+                            class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall"
+                            focusable="false"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
+                            />
+                          </svg>
+                        </span>
+                        <span
+                          class="MuiTouchRipple-root"
+                        />
+                      </button>
+                    </div>
+                    <fieldset
+                      aria-hidden="true"
+                      class="PrivateNotchedOutline-root-91 MuiOutlinedInput-notchedOutline"
+                      style="padding-left: 8px;"
+                    >
+                      <legend
+                        class="PrivateNotchedOutline-legend-92"
+                        style="width: 0.01px;"
+                      >
+                        <span>
+                          ​
+                        </span>
+                      </legend>
+                    </fieldset>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="MuiGrid-root makeStyles-inputMarginBottom-5 makeStyles-tableWrapper-26 MuiGrid-item MuiGrid-grid-lg-12 MuiGrid-grid-xl-12"
+      >
+        <table
+          aria-label="invoice-services"
+          class="MuiTable-root"
+        >
+          <thead
+            class="MuiTableHead-root"
+          >
+            <tr
+              class="MuiTableRow-root MuiTableRow-head"
+            >
+              <th
+                class="MuiTableCell-root MuiTableCell-head"
+                scope="col"
+              >
+                Service
+              </th>
+              <th
+                class="MuiTableCell-root MuiTableCell-head"
+                scope="col"
+              >
+                Detail
+              </th>
+              <th
+                class="MuiTableCell-root MuiTableCell-head"
+                scope="col"
+              >
+                Amount
+              </th>
+            </tr>
+          </thead>
+          <tbody
+            class="MuiTableBody-root"
+          >
+            <tr
+              class="MuiTableRow-root"
+            >
+              <td
+                class="MuiTableCell-root MuiTableCell-body"
+                style="padding: 0px; border: 0px;"
+              >
+                <span
+                  class=""
+                  data-testid="controlled-button"
+                  tabindex="-1"
+                >
+                  <button
+                    class="MuiButtonBase-root MuiButton-root MuiButton-text makeStyles-addEntityButton-95 makeStyles-enableButton-97"
+                    data-testid="add-item-button"
+                    tabindex="0"
+                    type="button"
+                  >
+                    <span
+                      class="MuiButton-label"
+                    >
+                      <span
+                        class="MuiButton-startIcon MuiButton-iconSizeMedium"
+                      >
+                        <svg>
+                          add.svg
+                        </svg>
+                      </span>
+                      Add 
+                      Service
+                    </span>
+                  </button>
+                </span>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div
+        class="MuiGrid-root makeStyles-errorPosition-2 MuiGrid-item MuiGrid-grid-lg-12 MuiGrid-grid-xl-12"
+      >
+        <div
+          class="MuiFormControl-root makeStyles-formControl-89 makeStyles-descriptionInput-4"
+        >
+          <h1
+            class="MuiTypography-root MuiTypography-caption MuiTypography-colorSecondary MuiTypography-alignLeft"
+          >
+            Notes (Optional)
+             
+          </h1>
+          <div>
+            <div
+              class="MuiFormControl-root MuiTextField-root MuiFormControl-fullWidth"
+              data-testid="invoice-notes-wrapper"
+            >
+              <div
+                class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-fullWidth MuiInputBase-formControl MuiInputBase-multiline MuiOutlinedInput-multiline"
+              >
+                <textarea
+                  aria-invalid="false"
+                  autocomplete="off"
+                  class="MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputMultiline MuiOutlinedInput-inputMultiline"
+                  data-testid="invoice-notes"
+                  name="notes"
+                  placeholder="Notes"
+                  rows="2"
+                />
+                <fieldset
+                  aria-hidden="true"
+                  class="PrivateNotchedOutline-root-91 MuiOutlinedInput-notchedOutline"
+                  style="padding-left: 8px;"
+                >
+                  <legend
+                    class="PrivateNotchedOutline-legend-92"
+                    style="width: 0.01px;"
+                  >
+                    <span>
+                      ​
+                    </span>
+                  </legend>
+                </fieldset>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </form>
+</div>
+`;
+
+exports[`InvoiceForm should render with convenience fee 1`] = `
+<div>
+  <form
+    autocomplete="off"
+    novalidate=""
+  >
+    <div
+      class="MuiGrid-root MuiGrid-container"
+    >
+      <div
+        class="MuiGrid-root makeStyles-inputMarginBottom-102 MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-lg-12 MuiGrid-grid-xl-12"
+      >
+        <div
+          class="makeStyles-errorInputWrapper-98"
+        >
+          <div
+            class="MuiFormControl-root makeStyles-formControl-186 makeStyles-autoCompleteWrapper-178 makeStyles-autocompleteInput-100"
+          >
+            <h1
+              class="MuiTypography-root MuiTypography-caption MuiTypography-colorSecondary MuiTypography-alignLeft"
+            >
+              Bill To
+               
+            </h1>
+            <div>
+              <div
+                aria-expanded="false"
+                class="MuiAutocomplete-root MuiAutocomplete-hasClearIcon"
+                data-testid="autocomplete-wrapper"
+                role="combobox"
+              >
+                <div
+                  class="MuiFormControl-root MuiTextField-root MuiFormControl-fullWidth"
+                >
+                  <div
+                    class="MuiInputBase-root MuiOutlinedInput-root MuiAutocomplete-inputRoot MuiInputBase-fullWidth MuiInputBase-formControl MuiInputBase-adornedEnd MuiOutlinedInput-adornedEnd"
+                  >
+                    <input
+                      aria-autocomplete="list"
+                      aria-invalid="false"
+                      autocapitalize="none"
+                      autocomplete="off"
+                      class="MuiInputBase-input MuiOutlinedInput-input MuiAutocomplete-input MuiAutocomplete-inputFocused MuiInputBase-inputAdornedEnd MuiOutlinedInput-inputAdornedEnd"
+                      id="autocomplete-assign"
+                      placeholder="Select Client"
+                      spellcheck="false"
+                      type="text"
+                      value=""
+                    />
+                    <div
+                      class="MuiAutocomplete-endAdornment"
+                    >
+                      <button
+                        aria-label="Clear"
+                        class="MuiButtonBase-root MuiIconButton-root MuiAutocomplete-clearIndicator"
+                        tabindex="-1"
+                        title="Clear"
+                        type="button"
+                      >
+                        <span
+                          class="MuiIconButton-label"
+                        >
+                          <svg
+                            aria-hidden="true"
+                            class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall"
+                            focusable="false"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
+                            />
+                          </svg>
+                        </span>
+                        <span
+                          class="MuiTouchRipple-root"
+                        />
+                      </button>
+                    </div>
+                    <fieldset
+                      aria-hidden="true"
+                      class="PrivateNotchedOutline-root-188 MuiOutlinedInput-notchedOutline"
+                      style="padding-left: 8px;"
+                    >
+                      <legend
+                        class="PrivateNotchedOutline-legend-189"
+                        style="width: 0.01px;"
+                      >
+                        <span>
+                          ​
+                        </span>
+                      </legend>
+                    </fieldset>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="MuiGrid-root makeStyles-inputMarginBottom-102 makeStyles-tableWrapper-123 MuiGrid-item MuiGrid-grid-lg-12 MuiGrid-grid-xl-12"
+      >
+        <table
+          aria-label="invoice-services"
+          class="MuiTable-root"
+        >
+          <thead
+            class="MuiTableHead-root"
+          >
+            <tr
+              class="MuiTableRow-root MuiTableRow-head"
+            >
+              <th
+                class="MuiTableCell-root MuiTableCell-head"
+                scope="col"
+              >
+                Service
+              </th>
+              <th
+                class="MuiTableCell-root MuiTableCell-head"
+                scope="col"
+              >
+                Detail
+              </th>
+              <th
+                class="MuiTableCell-root MuiTableCell-head"
+                scope="col"
+              >
+                Amount
+              </th>
+            </tr>
+          </thead>
+          <tbody
+            class="MuiTableBody-root"
+          >
+            <tr
+              class="MuiTableRow-root"
+            >
+              <td
+                class="MuiTableCell-root MuiTableCell-body"
+                style="padding: 0px; border: 0px;"
+              >
+                <span
+                  class=""
+                  data-testid="controlled-button"
+                  tabindex="-1"
+                >
+                  <button
+                    class="MuiButtonBase-root MuiButton-root MuiButton-text makeStyles-addEntityButton-192 makeStyles-enableButton-194"
+                    data-testid="add-item-button"
+                    tabindex="0"
+                    type="button"
+                  >
+                    <span
+                      class="MuiButton-label"
+                    >
+                      <span
+                        class="MuiButton-startIcon MuiButton-iconSizeMedium"
+                      >
+                        <svg>
+                          add.svg
+                        </svg>
+                      </span>
+                      Add 
+                      Service
+                    </span>
+                  </button>
+                </span>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div
+        class="MuiGrid-root makeStyles-errorPosition-99 MuiGrid-item MuiGrid-grid-lg-12 MuiGrid-grid-xl-12"
+      >
+        <div
+          class="MuiFormControl-root makeStyles-formControl-186 makeStyles-descriptionInput-101"
+        >
+          <h1
+            class="MuiTypography-root MuiTypography-caption MuiTypography-colorSecondary MuiTypography-alignLeft"
+          >
+            Notes (Optional)
+             
+          </h1>
+          <div>
+            <div
+              class="MuiFormControl-root MuiTextField-root MuiFormControl-fullWidth"
+              data-testid="invoice-notes-wrapper"
+            >
+              <div
+                class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-fullWidth MuiInputBase-formControl MuiInputBase-multiline MuiOutlinedInput-multiline"
+              >
+                <textarea
+                  aria-invalid="false"
+                  autocomplete="off"
+                  class="MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputMultiline MuiOutlinedInput-inputMultiline"
+                  data-testid="invoice-notes"
+                  name="notes"
+                  placeholder="Notes"
+                  rows="2"
+                />
+                <fieldset
+                  aria-hidden="true"
+                  class="PrivateNotchedOutline-root-188 MuiOutlinedInput-notchedOutline"
+                  style="padding-left: 8px;"
+                >
+                  <legend
+                    class="PrivateNotchedOutline-legend-189"
+                    style="width: 0.01px;"
+                  >
+                    <span>
+                      ​
+                    </span>
+                  </legend>
+                </fieldset>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </form>
+</div>
+`;
+
+exports[`InvoiceForm should validations 1`] = `
+<div>
+  <form
+    autocomplete="off"
+    novalidate=""
+  >
+    <div
+      class="MuiGrid-root MuiGrid-container"
+    >
+      <div
+        class="MuiGrid-root makeStyles-inputMarginBottom-603 MuiGrid-item MuiGrid-grid-xs-6 MuiGrid-grid-lg-6 MuiGrid-grid-xl-6"
+      >
+        <div
+          class="makeStyles-errorInputWrapper-599"
+        >
+          <div
+            class="MuiFormControl-root makeStyles-formControl-687 makeStyles-autoCompleteWrapper-679 makeStyles-middleInput-667 makeStyles-autocompleteInput-601"
+          >
+            <h1
+              class="MuiTypography-root MuiTypography-caption MuiTypography-colorSecondary MuiTypography-alignLeft"
+            >
+              Project
+               
+            </h1>
+            <div>
+              <div
+                aria-expanded="false"
+                class="MuiAutocomplete-root MuiAutocomplete-hasClearIcon"
+                data-testid="autocomplete-wrapper"
+                role="combobox"
+              >
+                <div
+                  class="MuiFormControl-root MuiTextField-root MuiFormControl-fullWidth"
+                >
+                  <div
+                    class="MuiInputBase-root MuiOutlinedInput-root MuiAutocomplete-inputRoot MuiInputBase-fullWidth MuiInputBase-formControl MuiInputBase-adornedEnd MuiOutlinedInput-adornedEnd"
+                  >
+                    <input
+                      aria-autocomplete="list"
+                      aria-invalid="false"
+                      autocapitalize="none"
+                      autocomplete="off"
+                      class="MuiInputBase-input MuiOutlinedInput-input MuiAutocomplete-input MuiAutocomplete-inputFocused MuiInputBase-inputAdornedEnd MuiOutlinedInput-inputAdornedEnd"
+                      id="autocomplete-assign"
+                      placeholder="Select Project"
+                      spellcheck="false"
+                      type="text"
+                      value=""
+                    />
+                    <div
+                      class="MuiAutocomplete-endAdornment"
+                    >
+                      <button
+                        aria-label="Clear"
+                        class="MuiButtonBase-root MuiIconButton-root MuiAutocomplete-clearIndicator"
+                        tabindex="-1"
+                        title="Clear"
+                        type="button"
+                      >
+                        <span
+                          class="MuiIconButton-label"
+                        >
+                          <svg
+                            aria-hidden="true"
+                            class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall"
+                            focusable="false"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
+                            />
+                          </svg>
+                        </span>
+                        <span
+                          class="MuiTouchRipple-root"
+                        />
+                      </button>
+                    </div>
+                    <fieldset
+                      aria-hidden="true"
+                      class="PrivateNotchedOutline-root-689 MuiOutlinedInput-notchedOutline"
+                      style="padding-left: 8px;"
+                    >
+                      <legend
+                        class="PrivateNotchedOutline-legend-690"
+                        style="width: 0.01px;"
+                      >
+                        <span>
+                          ​
+                        </span>
+                      </legend>
+                    </fieldset>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <h1
+            class="MuiTypography-root  makeStyles-errorMessage-623 errorMessage MuiTypography-caption MuiTypography-colorSecondary MuiTypography-alignLeft"
+          >
+            Please enter a Project.
+          </h1>
+        </div>
+      </div>
+      <div
+        class="MuiGrid-root makeStyles-inputMarginBottom-603 MuiGrid-item MuiGrid-grid-xs-6 MuiGrid-grid-lg-6 MuiGrid-grid-xl-6"
+      >
+        <div
+          class="makeStyles-errorInputWrapper-599"
+        >
+          <div
+            class="MuiFormControl-root makeStyles-formControl-687 makeStyles-autoCompleteWrapper-679 makeStyles-autocompleteInput-601"
+          >
+            <h1
+              class="MuiTypography-root MuiTypography-caption MuiTypography-colorSecondary MuiTypography-alignLeft"
+            >
+              Bill To
+               
+            </h1>
+            <div>
+              <div
+                aria-expanded="false"
+                class="MuiAutocomplete-root"
+                data-testid="autocomplete-wrapper"
+                role="combobox"
+              >
+                <div
+                  class="MuiFormControl-root MuiTextField-root MuiFormControl-fullWidth"
+                >
+                  <div
+                    class="MuiInputBase-root MuiOutlinedInput-root MuiAutocomplete-inputRoot Mui-disabled Mui-disabled MuiInputBase-fullWidth MuiInputBase-formControl MuiInputBase-adornedEnd MuiOutlinedInput-adornedEnd"
+                  >
+                    <input
+                      aria-autocomplete="list"
+                      aria-invalid="false"
+                      autocapitalize="none"
+                      autocomplete="off"
+                      class="MuiInputBase-input MuiOutlinedInput-input MuiAutocomplete-input MuiAutocomplete-inputFocused Mui-disabled Mui-disabled MuiInputBase-inputAdornedEnd MuiOutlinedInput-inputAdornedEnd"
+                      disabled=""
+                      id="autocomplete-assign"
+                      placeholder="Select Client"
+                      spellcheck="false"
+                      type="text"
+                      value=""
+                    />
+                    <div
+                      class="MuiAutocomplete-endAdornment"
+                    />
+                    <fieldset
+                      aria-hidden="true"
+                      class="PrivateNotchedOutline-root-689 MuiOutlinedInput-notchedOutline"
+                      style="padding-left: 8px;"
+                    >
+                      <legend
+                        class="PrivateNotchedOutline-legend-690"
+                        style="width: 0.01px;"
+                      >
+                        <span>
+                          ​
+                        </span>
+                      </legend>
+                    </fieldset>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <h1
+            class="MuiTypography-root  makeStyles-errorMessage-623 errorMessage MuiTypography-caption MuiTypography-colorSecondary MuiTypography-alignLeft"
+          >
+            Please enter a Client.
+          </h1>
+        </div>
+      </div>
+      <div
+        class="MuiGrid-root makeStyles-inputMarginBottom-603 makeStyles-tableWrapper-624 MuiGrid-item MuiGrid-grid-lg-12 MuiGrid-grid-xl-12"
+      >
+        <table
+          aria-label="invoice-services"
+          class="MuiTable-root"
+        >
+          <thead
+            class="MuiTableHead-root"
+          >
+            <tr
+              class="MuiTableRow-root MuiTableRow-head"
+            >
+              <th
+                class="MuiTableCell-root MuiTableCell-head"
+                scope="col"
+              >
+                Service
+              </th>
+              <th
+                class="MuiTableCell-root MuiTableCell-head"
+                scope="col"
+              >
+                Detail
+              </th>
+              <th
+                class="MuiTableCell-root MuiTableCell-head"
+                scope="col"
+              >
+                Amount
+              </th>
+            </tr>
+          </thead>
+          <tbody
+            class="MuiTableBody-root"
+          >
+            <tr
+              class="MuiTableRow-root"
+            >
+              <td
+                class="MuiTableCell-root MuiTableCell-body makeStyles-errorPosition-600"
+                style="padding: 0px; border: 0px;"
+              >
+                <h1
+                  class="MuiTypography-root makeStyles-errorMessage-623 MuiTypography-caption MuiTypography-colorSecondary MuiTypography-alignLeft"
+                  style="position: relative; margin: 5px 0px -5px 5px;"
+                >
+                  At least one item is required.
+                </h1>
+              </td>
+            </tr>
+            <tr
+              class="MuiTableRow-root"
+            >
+              <td
+                class="MuiTableCell-root MuiTableCell-body"
+                style="padding: 0px; border: 0px;"
+              >
+                <span
+                  class=""
+                  data-testid="controlled-button"
+                  tabindex="-1"
+                >
+                  <button
+                    class="MuiButtonBase-root MuiButton-root MuiButton-text makeStyles-addEntityButton-693 makeStyles-enableButton-695"
+                    data-testid="add-item-button"
+                    tabindex="0"
+                    type="button"
+                  >
+                    <span
+                      class="MuiButton-label"
+                    >
+                      <span
+                        class="MuiButton-startIcon MuiButton-iconSizeMedium"
+                      >
+                        <svg>
+                          add.svg
+                        </svg>
+                      </span>
+                      Add 
+                      Service
+                    </span>
+                  </button>
+                </span>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div
+        class="MuiGrid-root makeStyles-errorPosition-600 MuiGrid-item MuiGrid-grid-lg-12 MuiGrid-grid-xl-12"
+      >
+        <div
+          class="MuiFormControl-root makeStyles-formControl-687 makeStyles-descriptionInput-602"
+        >
+          <h1
+            class="MuiTypography-root MuiTypography-caption MuiTypography-colorSecondary MuiTypography-alignLeft"
+          >
+            Notes (Optional)
+             
+          </h1>
+          <div>
+            <div
+              class="MuiFormControl-root MuiTextField-root MuiFormControl-fullWidth"
+              data-testid="invoice-notes-wrapper"
+            >
+              <div
+                class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-fullWidth MuiInputBase-formControl MuiInputBase-multiline MuiOutlinedInput-multiline"
+              >
+                <textarea
+                  aria-invalid="false"
+                  autocomplete="off"
+                  class="MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputMultiline MuiOutlinedInput-inputMultiline"
+                  data-testid="invoice-notes"
+                  name="notes"
+                  placeholder="Notes"
+                  rows="2"
+                />
+                <fieldset
+                  aria-hidden="true"
+                  class="PrivateNotchedOutline-root-689 MuiOutlinedInput-notchedOutline"
+                  style="padding-left: 8px;"
+                >
+                  <legend
+                    class="PrivateNotchedOutline-legend-690"
+                    style="width: 0.01px;"
+                  >
+                    <span>
+                      ​
+                    </span>
+                  </legend>
+                </fieldset>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </form>
+</div>
+`;

@@ -1,0 +1,955 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`NewWorkers Component should render 1`] = `
+<div>
+  <div
+    class="MuiPaper-root makeStyles-widgetMinHeight-29 makeStyles-widget-1 MuiPaper-elevation0 MuiPaper-rounded"
+  >
+    <div
+      class="makeStyles-headerRow-31"
+    >
+      <div
+        class=""
+      >
+        <div
+          class=" makeStyles-widgetInlineStatusWrapper-17"
+        >
+          <div
+            class="makeStyles-widgetContentWrapper-8 makeStyles-widgetContentWrapperBottomMargin-9 undefined"
+          >
+            <span
+              class="makeStyles-widgetContent-13 makeStyles-widgetInlineMargin-15"
+            >
+              11
+            </span>
+            <p
+              class="MuiTypography-root  makeStyles-widgetTitle-3 makeStyles-widgetTitleInlinePosition-18 MuiTypography-body1"
+            >
+              New Workers
+            </p>
+            <div
+              class="makeStyles-chipStatusLeftMargin-23"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="MuiGrid-root MuiGrid-container"
+      style="margin-bottom: 10px; min-height: 350px;"
+    >
+      <div
+        class="MuiGrid-root makeStyles-lineChartWithPieContent-32 MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-md-12 MuiGrid-grid-lg-8 MuiGrid-grid-xl-8"
+      >
+        <div
+          class="VictoryContainer"
+          style="height: 100%; width: 100%; user-select: none; pointer-events: none; position: relative;"
+        >
+          <svg
+            height="350"
+            role="img"
+            style="pointer-events: all; width: 100%; height: 100%;"
+            viewBox="0 0 0 350"
+            width="0"
+          >
+            <g
+              role="presentation"
+            >
+              <line
+                role="presentation"
+                shape-rendering="auto"
+                style="stroke: #90A4AE; stroke-width: 0; fill: transparent; stroke-linecap: round; stroke-linejoin: round;"
+                vector-effect="non-scaling-stroke"
+                x1="30"
+                x2="30"
+                y1="30"
+                y2="320"
+              />
+              <g
+                role="presentation"
+              >
+                <line
+                  role="presentation"
+                  shape-rendering="auto"
+                  style="stroke: #ECEFF1; stroke-dasharray: 1; stroke-width: 1; fill: none; stroke-linecap: round; stroke-linejoin: round; pointer-events: painted;"
+                  vector-effect="non-scaling-stroke"
+                  x1="30"
+                  x2="-20"
+                  y1="262"
+                  y2="262"
+                />
+                <line
+                  role="presentation"
+                  shape-rendering="auto"
+                  style="stroke: white; size: 0; fill: transparent; stroke-width: 1; stroke-linecap: round; stroke-linejoin: round;"
+                  vector-effect="non-scaling-stroke"
+                  x1="30"
+                  x2="30"
+                  y1="262"
+                  y2="262"
+                />
+                <text
+                  direction="inherit"
+                  dx="0"
+                  id="chart-axis-0-tickLabels-0"
+                  x="22"
+                  y="266.26"
+                >
+                  <tspan
+                    dx="0"
+                    dy="0"
+                    style="font-size: 12px; fill: #878787; font-family: 'Helvetica Neue', 'Helvetica', sans-serif; letter-spacing: normal; padding: 8px; stroke: transparent; stroke-width: 0;"
+                    text-anchor="end"
+                    x="22"
+                  >
+                    1
+                  </tspan>
+                </text>
+              </g>
+              <g
+                role="presentation"
+              >
+                <line
+                  role="presentation"
+                  shape-rendering="auto"
+                  style="stroke: #ECEFF1; stroke-dasharray: 1; stroke-width: 1; fill: none; stroke-linecap: round; stroke-linejoin: round; pointer-events: painted;"
+                  vector-effect="non-scaling-stroke"
+                  x1="30"
+                  x2="-20"
+                  y1="204"
+                  y2="204"
+                />
+                <line
+                  role="presentation"
+                  shape-rendering="auto"
+                  style="stroke: white; size: 0; fill: transparent; stroke-width: 1; stroke-linecap: round; stroke-linejoin: round;"
+                  vector-effect="non-scaling-stroke"
+                  x1="30"
+                  x2="30"
+                  y1="204"
+                  y2="204"
+                />
+                <text
+                  direction="inherit"
+                  dx="0"
+                  id="chart-axis-0-tickLabels-1"
+                  x="22"
+                  y="208.26"
+                >
+                  <tspan
+                    dx="0"
+                    dy="0"
+                    style="font-size: 12px; fill: #878787; font-family: 'Helvetica Neue', 'Helvetica', sans-serif; letter-spacing: normal; padding: 8px; stroke: transparent; stroke-width: 0;"
+                    text-anchor="end"
+                    x="22"
+                  >
+                    2
+                  </tspan>
+                </text>
+              </g>
+              <g
+                role="presentation"
+              >
+                <line
+                  role="presentation"
+                  shape-rendering="auto"
+                  style="stroke: #ECEFF1; stroke-dasharray: 1; stroke-width: 1; fill: none; stroke-linecap: round; stroke-linejoin: round; pointer-events: painted;"
+                  vector-effect="non-scaling-stroke"
+                  x1="30"
+                  x2="-20"
+                  y1="146"
+                  y2="146"
+                />
+                <line
+                  role="presentation"
+                  shape-rendering="auto"
+                  style="stroke: white; size: 0; fill: transparent; stroke-width: 1; stroke-linecap: round; stroke-linejoin: round;"
+                  vector-effect="non-scaling-stroke"
+                  x1="30"
+                  x2="30"
+                  y1="146"
+                  y2="146"
+                />
+                <text
+                  direction="inherit"
+                  dx="0"
+                  id="chart-axis-0-tickLabels-2"
+                  x="22"
+                  y="150.26"
+                >
+                  <tspan
+                    dx="0"
+                    dy="0"
+                    style="font-size: 12px; fill: #878787; font-family: 'Helvetica Neue', 'Helvetica', sans-serif; letter-spacing: normal; padding: 8px; stroke: transparent; stroke-width: 0;"
+                    text-anchor="end"
+                    x="22"
+                  >
+                    3
+                  </tspan>
+                </text>
+              </g>
+              <g
+                role="presentation"
+              >
+                <line
+                  role="presentation"
+                  shape-rendering="auto"
+                  style="stroke: #ECEFF1; stroke-dasharray: 1; stroke-width: 1; fill: none; stroke-linecap: round; stroke-linejoin: round; pointer-events: painted;"
+                  vector-effect="non-scaling-stroke"
+                  x1="30"
+                  x2="-20"
+                  y1="87.99999999999999"
+                  y2="87.99999999999999"
+                />
+                <line
+                  role="presentation"
+                  shape-rendering="auto"
+                  style="stroke: white; size: 0; fill: transparent; stroke-width: 1; stroke-linecap: round; stroke-linejoin: round;"
+                  vector-effect="non-scaling-stroke"
+                  x1="30"
+                  x2="30"
+                  y1="87.99999999999999"
+                  y2="87.99999999999999"
+                />
+                <text
+                  direction="inherit"
+                  dx="0"
+                  id="chart-axis-0-tickLabels-3"
+                  x="22"
+                  y="92.25999999999999"
+                >
+                  <tspan
+                    dx="0"
+                    dy="0"
+                    style="font-size: 12px; fill: #878787; font-family: 'Helvetica Neue', 'Helvetica', sans-serif; letter-spacing: normal; padding: 8px; stroke: transparent; stroke-width: 0;"
+                    text-anchor="end"
+                    x="22"
+                  >
+                    4
+                  </tspan>
+                </text>
+              </g>
+              <g
+                role="presentation"
+              >
+                <line
+                  role="presentation"
+                  shape-rendering="auto"
+                  style="stroke: #ECEFF1; stroke-dasharray: 1; stroke-width: 1; fill: none; stroke-linecap: round; stroke-linejoin: round; pointer-events: painted;"
+                  vector-effect="non-scaling-stroke"
+                  x1="30"
+                  x2="-20"
+                  y1="30"
+                  y2="30"
+                />
+                <line
+                  role="presentation"
+                  shape-rendering="auto"
+                  style="stroke: white; size: 0; fill: transparent; stroke-width: 1; stroke-linecap: round; stroke-linejoin: round;"
+                  vector-effect="non-scaling-stroke"
+                  x1="30"
+                  x2="30"
+                  y1="30"
+                  y2="30"
+                />
+                <text
+                  direction="inherit"
+                  dx="0"
+                  id="chart-axis-0-tickLabels-4"
+                  x="22"
+                  y="34.26"
+                >
+                  <tspan
+                    dx="0"
+                    dy="0"
+                    style="font-size: 12px; fill: #878787; font-family: 'Helvetica Neue', 'Helvetica', sans-serif; letter-spacing: normal; padding: 8px; stroke: transparent; stroke-width: 0;"
+                    text-anchor="end"
+                    x="22"
+                  >
+                    5
+                  </tspan>
+                </text>
+              </g>
+            </g>
+            <g
+              role="presentation"
+            >
+              <line
+                role="presentation"
+                shape-rendering="auto"
+                style="stroke: #eceff1; stroke-width: 1; fill: transparent; stroke-linecap: round; stroke-linejoin: round;"
+                vector-effect="non-scaling-stroke"
+                x1="30"
+                x2="-20"
+                y1="320"
+                y2="320"
+              />
+              <g
+                role="presentation"
+              >
+                <line
+                  role="presentation"
+                  shape-rendering="auto"
+                  style="stroke: #ECEFF1; stroke-dasharray: 1; stroke-width: 1; display: none; fill: none; stroke-linecap: round; stroke-linejoin: round; pointer-events: painted;"
+                  vector-effect="non-scaling-stroke"
+                  x1="30"
+                  x2="30"
+                  y1="320"
+                  y2="30"
+                />
+                <line
+                  role="presentation"
+                  shape-rendering="auto"
+                  style="stroke: white; size: 0; fill: transparent; stroke-width: 1; stroke-linecap: round; stroke-linejoin: round;"
+                  vector-effect="non-scaling-stroke"
+                  x1="30"
+                  x2="30"
+                  y1="320"
+                  y2="320"
+                />
+                <text
+                  direction="inherit"
+                  dx="15"
+                  id="chart-axis-1-tickLabels-0"
+                  x="30"
+                  y="338.26"
+                >
+                  <tspan
+                    dx="15"
+                    dy="0"
+                    style="font-size: 12px; fill: #878787; dominant-baseline: hanging; display: block; font-family: 'Helvetica Neue', 'Helvetica', sans-serif; letter-spacing: normal; padding: 8px; stroke: transparent; stroke-width: 0;"
+                    text-anchor="middle"
+                    x="30"
+                  >
+                    15 Dec
+                  </tspan>
+                </text>
+              </g>
+              <g
+                role="presentation"
+              >
+                <line
+                  role="presentation"
+                  shape-rendering="auto"
+                  style="stroke: #ECEFF1; stroke-dasharray: 1; stroke-width: 1; display: block; fill: none; stroke-linecap: round; stroke-linejoin: round; pointer-events: painted;"
+                  vector-effect="non-scaling-stroke"
+                  x1="22.857142857142858"
+                  x2="22.857142857142858"
+                  y1="320"
+                  y2="30"
+                />
+                <line
+                  role="presentation"
+                  shape-rendering="auto"
+                  style="stroke: white; size: 0; fill: transparent; stroke-width: 1; stroke-linecap: round; stroke-linejoin: round;"
+                  vector-effect="non-scaling-stroke"
+                  x1="22.857142857142858"
+                  x2="22.857142857142858"
+                  y1="320"
+                  y2="320"
+                />
+                <text
+                  direction="inherit"
+                  dx="0"
+                  id="chart-axis-1-tickLabels-1"
+                  x="22.857142857142858"
+                  y="338.26"
+                >
+                  <tspan
+                    dx="0"
+                    dy="0"
+                    style="font-size: 12px; fill: #878787; dominant-baseline: hanging; display: block; font-family: 'Helvetica Neue', 'Helvetica', sans-serif; letter-spacing: normal; padding: 8px; stroke: transparent; stroke-width: 0;"
+                    text-anchor="middle"
+                    x="22.857142857142858"
+                  >
+                    14 Dec
+                  </tspan>
+                </text>
+              </g>
+              <g
+                role="presentation"
+              >
+                <line
+                  role="presentation"
+                  shape-rendering="auto"
+                  style="stroke: #ECEFF1; stroke-dasharray: 1; stroke-width: 1; display: block; fill: none; stroke-linecap: round; stroke-linejoin: round; pointer-events: painted;"
+                  vector-effect="non-scaling-stroke"
+                  x1="15.714285714285717"
+                  x2="15.714285714285717"
+                  y1="320"
+                  y2="30"
+                />
+                <line
+                  role="presentation"
+                  shape-rendering="auto"
+                  style="stroke: white; size: 0; fill: transparent; stroke-width: 1; stroke-linecap: round; stroke-linejoin: round;"
+                  vector-effect="non-scaling-stroke"
+                  x1="15.714285714285717"
+                  x2="15.714285714285717"
+                  y1="320"
+                  y2="320"
+                />
+                <text
+                  direction="inherit"
+                  dx="0"
+                  id="chart-axis-1-tickLabels-2"
+                  x="15.714285714285717"
+                  y="338.26"
+                >
+                  <tspan
+                    dx="0"
+                    dy="0"
+                    style="font-size: 12px; fill: #878787; dominant-baseline: hanging; display: block; font-family: 'Helvetica Neue', 'Helvetica', sans-serif; letter-spacing: normal; padding: 8px; stroke: transparent; stroke-width: 0;"
+                    text-anchor="middle"
+                    x="15.714285714285717"
+                  >
+                    13 Dec
+                  </tspan>
+                </text>
+              </g>
+              <g
+                role="presentation"
+              >
+                <line
+                  role="presentation"
+                  shape-rendering="auto"
+                  style="stroke: #ECEFF1; stroke-dasharray: 1; stroke-width: 1; display: block; fill: none; stroke-linecap: round; stroke-linejoin: round; pointer-events: painted;"
+                  vector-effect="non-scaling-stroke"
+                  x1="8.571428571428571"
+                  x2="8.571428571428571"
+                  y1="320"
+                  y2="30"
+                />
+                <line
+                  role="presentation"
+                  shape-rendering="auto"
+                  style="stroke: white; size: 0; fill: transparent; stroke-width: 1; stroke-linecap: round; stroke-linejoin: round;"
+                  vector-effect="non-scaling-stroke"
+                  x1="8.571428571428571"
+                  x2="8.571428571428571"
+                  y1="320"
+                  y2="320"
+                />
+                <text
+                  direction="inherit"
+                  dx="0"
+                  id="chart-axis-1-tickLabels-3"
+                  x="8.571428571428571"
+                  y="338.26"
+                >
+                  <tspan
+                    dx="0"
+                    dy="0"
+                    style="font-size: 12px; fill: #878787; dominant-baseline: hanging; display: block; font-family: 'Helvetica Neue', 'Helvetica', sans-serif; letter-spacing: normal; padding: 8px; stroke: transparent; stroke-width: 0;"
+                    text-anchor="middle"
+                    x="8.571428571428571"
+                  >
+                    12 Dec
+                  </tspan>
+                </text>
+              </g>
+              <g
+                role="presentation"
+              >
+                <line
+                  role="presentation"
+                  shape-rendering="auto"
+                  style="stroke: #ECEFF1; stroke-dasharray: 1; stroke-width: 1; display: block; fill: none; stroke-linecap: round; stroke-linejoin: round; pointer-events: painted;"
+                  vector-effect="non-scaling-stroke"
+                  x1="1.4285714285714306"
+                  x2="1.4285714285714306"
+                  y1="320"
+                  y2="30"
+                />
+                <line
+                  role="presentation"
+                  shape-rendering="auto"
+                  style="stroke: white; size: 0; fill: transparent; stroke-width: 1; stroke-linecap: round; stroke-linejoin: round;"
+                  vector-effect="non-scaling-stroke"
+                  x1="1.4285714285714306"
+                  x2="1.4285714285714306"
+                  y1="320"
+                  y2="320"
+                />
+                <text
+                  direction="inherit"
+                  dx="0"
+                  id="chart-axis-1-tickLabels-4"
+                  x="1.4285714285714306"
+                  y="338.26"
+                >
+                  <tspan
+                    dx="0"
+                    dy="0"
+                    style="font-size: 12px; fill: #878787; dominant-baseline: hanging; display: block; font-family: 'Helvetica Neue', 'Helvetica', sans-serif; letter-spacing: normal; padding: 8px; stroke: transparent; stroke-width: 0;"
+                    text-anchor="middle"
+                    x="1.4285714285714306"
+                  >
+                    11 Dec
+                  </tspan>
+                </text>
+              </g>
+              <g
+                role="presentation"
+              >
+                <line
+                  role="presentation"
+                  shape-rendering="auto"
+                  style="stroke: #ECEFF1; stroke-dasharray: 1; stroke-width: 1; display: block; fill: none; stroke-linecap: round; stroke-linejoin: round; pointer-events: painted;"
+                  vector-effect="non-scaling-stroke"
+                  x1="-5.714285714285715"
+                  x2="-5.714285714285715"
+                  y1="320"
+                  y2="30"
+                />
+                <line
+                  role="presentation"
+                  shape-rendering="auto"
+                  style="stroke: white; size: 0; fill: transparent; stroke-width: 1; stroke-linecap: round; stroke-linejoin: round;"
+                  vector-effect="non-scaling-stroke"
+                  x1="-5.714285714285715"
+                  x2="-5.714285714285715"
+                  y1="320"
+                  y2="320"
+                />
+                <text
+                  direction="inherit"
+                  dx="0"
+                  id="chart-axis-1-tickLabels-5"
+                  x="-5.714285714285715"
+                  y="338.26"
+                >
+                  <tspan
+                    dx="0"
+                    dy="0"
+                    style="font-size: 12px; fill: #878787; dominant-baseline: hanging; display: block; font-family: 'Helvetica Neue', 'Helvetica', sans-serif; letter-spacing: normal; padding: 8px; stroke: transparent; stroke-width: 0;"
+                    text-anchor="middle"
+                    x="-5.714285714285715"
+                  >
+                    10 Dec
+                  </tspan>
+                </text>
+              </g>
+              <g
+                role="presentation"
+              >
+                <line
+                  role="presentation"
+                  shape-rendering="auto"
+                  style="stroke: #ECEFF1; stroke-dasharray: 1; stroke-width: 1; display: block; fill: none; stroke-linecap: round; stroke-linejoin: round; pointer-events: painted;"
+                  vector-effect="non-scaling-stroke"
+                  x1="-12.857142857142854"
+                  x2="-12.857142857142854"
+                  y1="320"
+                  y2="30"
+                />
+                <line
+                  role="presentation"
+                  shape-rendering="auto"
+                  style="stroke: white; size: 0; fill: transparent; stroke-width: 1; stroke-linecap: round; stroke-linejoin: round;"
+                  vector-effect="non-scaling-stroke"
+                  x1="-12.857142857142854"
+                  x2="-12.857142857142854"
+                  y1="320"
+                  y2="320"
+                />
+                <text
+                  direction="inherit"
+                  dx="0"
+                  id="chart-axis-1-tickLabels-6"
+                  x="-12.857142857142854"
+                  y="338.26"
+                >
+                  <tspan
+                    dx="0"
+                    dy="0"
+                    style="font-size: 12px; fill: #878787; dominant-baseline: hanging; display: block; font-family: 'Helvetica Neue', 'Helvetica', sans-serif; letter-spacing: normal; padding: 8px; stroke: transparent; stroke-width: 0;"
+                    text-anchor="middle"
+                    x="-12.857142857142854"
+                  >
+                    09 Dec
+                  </tspan>
+                </text>
+              </g>
+              <g
+                role="presentation"
+              >
+                <line
+                  role="presentation"
+                  shape-rendering="auto"
+                  style="stroke: #ECEFF1; stroke-dasharray: 1; stroke-width: 1; display: none; fill: none; stroke-linecap: round; stroke-linejoin: round; pointer-events: painted;"
+                  vector-effect="non-scaling-stroke"
+                  x1="-20"
+                  x2="-20"
+                  y1="320"
+                  y2="30"
+                />
+                <line
+                  role="presentation"
+                  shape-rendering="auto"
+                  style="stroke: white; size: 0; fill: transparent; stroke-width: 1; stroke-linecap: round; stroke-linejoin: round;"
+                  vector-effect="non-scaling-stroke"
+                  x1="-20"
+                  x2="-20"
+                  y1="320"
+                  y2="320"
+                />
+                <text
+                  direction="inherit"
+                  dx="-20"
+                  id="chart-axis-1-tickLabels-7"
+                  x="-20"
+                  y="338.26"
+                >
+                  <tspan
+                    dx="-20"
+                    dy="0"
+                    style="font-size: 12px; fill: #878787; dominant-baseline: hanging; display: block; font-family: 'Helvetica Neue', 'Helvetica', sans-serif; letter-spacing: normal; padding: 8px; stroke: transparent; stroke-width: 0;"
+                    text-anchor="middle"
+                    x="-20"
+                  >
+                    08 Dec
+                  </tspan>
+                </text>
+              </g>
+            </g>
+            <g
+              clip-path="url(#victory-clip-2)"
+              style="height: 100%; width: 100%; user-select: none;"
+            >
+              <defs>
+                <clippath
+                  id="victory-clip-2"
+                >
+                  <rect
+                    height="290"
+                    vector-effect="non-scaling-stroke"
+                    width="50"
+                    x="-20"
+                    y="30"
+                  />
+                </clippath>
+              </defs>
+              <path
+                d="M30,262L22.857142857142858,204L15.714285714285717,320L8.571428571428571,30L1.4285714285714306,320L-5.714285714285715,204L-12.857142857142854,320L-20,262"
+                role="presentation"
+                shape-rendering="auto"
+                style="fill: transparent; stroke: #1F86E8; stroke-width: 2; opacity: 1;"
+              />
+            </g>
+          </svg>
+          <div
+            style="z-index: 99; position: absolute; top: 0px; left: 0px; width: 100%; height: 100%;"
+          >
+            <svg
+              height="350"
+              style="overflow: visible; width: 100%; height: 100%;"
+              viewBox="0 0 0 350"
+              width="0"
+            />
+          </div>
+        </div>
+      </div>
+      <div
+        class="MuiGrid-root makeStyles-pieChartWithLineDefaultContainer-33 MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-md-12 MuiGrid-grid-lg-4 MuiGrid-grid-xl-4"
+      >
+        <div
+          class="MuiGrid-root MuiGrid-container"
+          style="flex-direction: row; height: 100%;"
+        >
+          <div
+            class="MuiGrid-root makeStyles-pieChartClass-40 MuiGrid-item MuiGrid-grid-lg-12 MuiGrid-grid-xl-12"
+            style="padding-right: 0px; text-align: center; height: 73%;"
+          >
+            <div
+              class="VictoryContainer"
+              style="width: 100%; height: 100%; pointer-events: none; position: relative;"
+            >
+              <svg
+                height="400"
+                role="img"
+                style="pointer-events: all; width: 100%; height: 100%;"
+                viewBox="0 0 400 400"
+                width="400"
+              >
+                <g>
+                  <path
+                    d="M6.927352299505378,-149.8399539179005A150,150,0,0,1,6.927352299505378,149.8399539179005L6.927352299505364,129.81529875218305A130,130,0,0,0,6.927352299505364,-129.81529875218305Z"
+                    role="presentation"
+                    shape-rendering="auto"
+                    style="fill: #E03535; padding: 10px; stroke: transparent; stroke-width: 1;"
+                    transform="translate(200, 200)"
+                  />
+                  <path
+                    d="M-6.927352299505359,149.8399539179005A150,150,0,0,1,-6.927352299505329,-149.8399539179005L-6.9273522995053805,-129.81529875218305A130,130,0,0,0,-6.9273522995053485,129.81529875218305Z"
+                    role="presentation"
+                    shape-rendering="auto"
+                    style="fill: #37A66C; padding: 10px; stroke: transparent; stroke-width: 1;"
+                    transform="translate(200, 200)"
+                  />
+                  <text
+                    direction="inherit"
+                    dx="0"
+                    id="pie-labels-0"
+                    x="370"
+                    y="204.97"
+                  >
+                    <tspan
+                      dx="0"
+                      dy="0"
+                      style="padding: 20px; font-family: 'Gill Sans', 'Seravek', 'Trebuchet MS', sans-serif; font-size: 14px; letter-spacing: normal; fill: #252525; stroke: transparent;"
+                      text-anchor="start"
+                      x="370"
+                    />
+                  </text>
+                  <text
+                    direction="inherit"
+                    dx="0"
+                    id="pie-labels-1"
+                    x="30"
+                    y="204.97"
+                  >
+                    <tspan
+                      dx="0"
+                      dy="0"
+                      style="padding: 20px; font-family: 'Gill Sans', 'Seravek', 'Trebuchet MS', sans-serif; font-size: 14px; letter-spacing: normal; fill: #252525; stroke: transparent;"
+                      text-anchor="end"
+                      x="30"
+                    />
+                  </text>
+                </g>
+              </svg>
+              <div
+                style="z-index: 99; position: absolute; top: 0px; left: 0px; width: 100%; height: 100%;"
+              >
+                <svg
+                  height="400"
+                  style="overflow: visible; width: 100%; height: 100%;"
+                  viewBox="0 0 400 400"
+                  width="400"
+                />
+              </div>
+            </div>
+          </div>
+          <div
+            class="MuiGrid-root MuiGrid-item MuiGrid-grid-lg-12 MuiGrid-grid-xl-12"
+          >
+            <div
+              class="MuiGrid-root MuiGrid-container"
+            >
+              <div
+                class="MuiGrid-root MuiGrid-item MuiGrid-grid-lg-9 MuiGrid-grid-xl-9"
+              >
+                <div
+                  class=" makeStyles-bulletLabelWrapper-41"
+                >
+                  <span
+                    class="makeStyles-statusCircle-42"
+                    style="background-color: rgb(224, 53, 53);"
+                  />
+                  <p
+                    class="MuiTypography-root makeStyles-statusText-43 MuiTypography-body1"
+                  >
+                    Expired
+                  </p>
+                </div>
+              </div>
+              <div
+                class="MuiGrid-root MuiGrid-item MuiGrid-grid-lg-2 MuiGrid-grid-xl-2"
+              >
+                <p
+                  class="MuiTypography-root MuiTypography-body1"
+                  style="color: rgb(76, 76, 76); font-size: 15px; text-align: right;"
+                >
+                  0.5
+                  %
+                </p>
+              </div>
+              <div
+                class="MuiGrid-root MuiGrid-item MuiGrid-grid-lg-1 MuiGrid-grid-xl-1"
+              >
+                <p
+                  class="MuiTypography-root MuiTypography-body1"
+                  style="color: rgb(76, 76, 76); font-size: 15px; font-weight: bold; text-align: right;"
+                >
+                  1
+                </p>
+              </div>
+            </div>
+            <div
+              class="MuiGrid-root MuiGrid-container"
+            >
+              <div
+                class="MuiGrid-root MuiGrid-item MuiGrid-grid-lg-9 MuiGrid-grid-xl-9"
+              >
+                <div
+                  class=" makeStyles-bulletLabelWrapper-41"
+                >
+                  <span
+                    class="makeStyles-statusCircle-42"
+                    style="background-color: rgb(233, 166, 31);"
+                  />
+                  <p
+                    class="MuiTypography-root makeStyles-statusText-43 MuiTypography-body1"
+                  >
+                    Pending
+                  </p>
+                </div>
+              </div>
+              <div
+                class="MuiGrid-root MuiGrid-item MuiGrid-grid-lg-2 MuiGrid-grid-xl-2"
+              >
+                <p
+                  class="MuiTypography-root MuiTypography-body1"
+                  style="color: rgb(76, 76, 76); font-size: 15px; text-align: right;"
+                >
+                  0
+                  %
+                </p>
+              </div>
+              <div
+                class="MuiGrid-root MuiGrid-item MuiGrid-grid-lg-1 MuiGrid-grid-xl-1"
+              >
+                <p
+                  class="MuiTypography-root MuiTypography-body1"
+                  style="color: rgb(76, 76, 76); font-size: 15px; font-weight: bold; text-align: right;"
+                >
+                  0
+                </p>
+              </div>
+            </div>
+            <div
+              class="MuiGrid-root MuiGrid-container"
+            >
+              <div
+                class="MuiGrid-root MuiGrid-item MuiGrid-grid-lg-9 MuiGrid-grid-xl-9"
+              >
+                <div
+                  class=" makeStyles-bulletLabelWrapper-41"
+                >
+                  <span
+                    class="makeStyles-statusCircle-42"
+                    style="background-color: rgb(55, 166, 108);"
+                  />
+                  <p
+                    class="MuiTypography-root makeStyles-statusText-43 MuiTypography-body1"
+                  >
+                    Active
+                  </p>
+                </div>
+              </div>
+              <div
+                class="MuiGrid-root MuiGrid-item MuiGrid-grid-lg-2 MuiGrid-grid-xl-2"
+              >
+                <p
+                  class="MuiTypography-root MuiTypography-body1"
+                  style="color: rgb(76, 76, 76); font-size: 15px; text-align: right;"
+                >
+                  0.5
+                  %
+                </p>
+              </div>
+              <div
+                class="MuiGrid-root MuiGrid-item MuiGrid-grid-lg-1 MuiGrid-grid-xl-1"
+              >
+                <p
+                  class="MuiTypography-root MuiTypography-body1"
+                  style="color: rgb(76, 76, 76); font-size: 15px; font-weight: bold; text-align: right;"
+                >
+                  1
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr
+      class="MuiDivider-root makeStyles-widgetDivider-21"
+    />
+    <div
+      style="width: 100%; display: flex;"
+    >
+      <a
+        class="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorPrimary"
+        href="/dashboard/workers?stateCode=&period=0"
+      >
+        <span
+          class="makeStyles-widgetCta-22"
+        >
+          See more details
+        </span>
+      </a>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`NewWorkers Component should render loading 1`] = `
+<div>
+  <div
+    class="MuiPaper-root makeStyles-widgetMinHeight-120 makeStyles-widget-92 MuiPaper-elevation0 MuiPaper-rounded"
+  >
+    <div
+      class="makeStyles-headerRow-122"
+    >
+      <div
+        class=""
+      >
+        <div
+          class=" makeStyles-widgetInlineStatusWrapper-108"
+        >
+          <div
+            class="makeStyles-widgetContentWrapper-99 makeStyles-widgetContentWrapperBottomMargin-100 undefined"
+          >
+            <div
+              class="MuiSkeleton-root MuiSkeleton-rect makeStyles-valueWrapper-128 MuiSkeleton-wave"
+              style="width: 68px; height: 40px;"
+            />
+            <div
+              class="MuiSkeleton-root MuiSkeleton-rect MuiSkeleton-wave"
+              style="width: 120px; height: 25px;"
+            />
+            <div
+              class="MuiSkeleton-root MuiSkeleton-rect makeStyles-pillMarginLeft-130 MuiSkeleton-wave"
+              style="width: 50px; height: 25px;"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="MuiGrid-root MuiGrid-container"
+      style="margin-bottom: 10px; min-height: 350px;"
+    >
+      <div
+        class="MuiGrid-root makeStyles-lineChartWithPieContent-123 MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-md-12 MuiGrid-grid-lg-8 MuiGrid-grid-xl-8"
+      >
+        <div
+          class="MuiSkeleton-root MuiSkeleton-rect MuiSkeleton-wave"
+          style="width: 99%; height: 100%;"
+        />
+      </div>
+      <div
+        class="MuiGrid-root makeStyles-pieChartWithLineDefaultContainer-124 MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-md-12 MuiGrid-grid-lg-4 MuiGrid-grid-xl-4"
+      >
+        <div
+          class="MuiSkeleton-root MuiSkeleton-rect MuiSkeleton-wave"
+          style="width: 100%; height: 96%;"
+        />
+      </div>
+    </div>
+    <hr
+      class="MuiDivider-root makeStyles-widgetDivider-112"
+    />
+    <div
+      style="width: 100%; display: flex;"
+    >
+      <div
+        class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-wave"
+        style="width: 120px; height: 20px;"
+      />
+    </div>
+  </div>
+</div>
+`;

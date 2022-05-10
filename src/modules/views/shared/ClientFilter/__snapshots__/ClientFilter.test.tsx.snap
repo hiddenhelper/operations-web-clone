@@ -1,0 +1,85 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ClientFilter should render 1`] = `
+<div>
+  <div
+    class="MuiBox-root MuiBox-root-41 makeStyles-filterStatusContainer-16 makeStyles-autocompleteFilterPosition-1"
+  >
+    <div
+      class="makeStyles-floatingFilterWrapper-22 makeStyles-filterWrapper-21 makeStyles-buttonContainer-43 floatingFilterWrapper"
+    >
+      <span
+        class="makeStyles-floatingFilterButton-23"
+        data-testid="controlled-button"
+        tabindex="-1"
+      >
+        <button
+          aria-controls="false"
+          aria-haspopup="true"
+          class="MuiButtonBase-root MuiButton-root MuiButton-text makeStyles-buttonFilter-31"
+          data-testid="button-filter-open"
+          tabindex="0"
+          type="button"
+        >
+          <span
+            class="MuiButton-label"
+          >
+            All Clients
+            <span
+              class="MuiButton-endIcon MuiButton-iconSizeMedium"
+            >
+              <svg
+                class="makeStyles-dropdownIcon-25"
+              >
+                expand.svg
+              </svg>
+            </span>
+          </span>
+        </button>
+      </span>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`ClientFilter should render default 1`] = `
+<div>
+  <div
+    class="MuiBox-root MuiBox-root-87 makeStyles-filterStatusContainer-62 makeStyles-autocompleteFilterPosition-47"
+  >
+    <div
+      class="makeStyles-floatingFilterWrapper-68 makeStyles-filterWrapper-67 makeStyles-buttonContainer-89 floatingFilterWrapper"
+    >
+      <span
+        class="makeStyles-floatingFilterButton-69"
+        data-testid="controlled-button"
+        tabindex="-1"
+      >
+        <button
+          aria-controls="false"
+          aria-haspopup="true"
+          class="MuiButtonBase-root MuiButton-root MuiButton-text makeStyles-buttonFilter-77"
+          data-testid="button-filter-open"
+          tabindex="0"
+          type="button"
+        >
+          <span
+            class="MuiButton-label"
+          >
+            All Clients
+            <span
+              class="MuiButton-endIcon MuiButton-iconSizeMedium"
+            >
+              <svg
+                class="makeStyles-dropdownIcon-71"
+              >
+                expand.svg
+              </svg>
+            </span>
+          </span>
+        </button>
+      </span>
+    </div>
+  </div>
+</div>
+`;

@@ -1,0 +1,356 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`DuplicatedWorkerModalContent should render 1`] = `
+Object {
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <div
+        class="makeStyles-duplicatedWorkerModalContent-40"
+      >
+        <p
+          class="MuiTypography-root makeStyles-workerModalSecondaryTextPosition-41 makeStyles-secondaryText-9 MuiTypography-body1"
+        >
+          This information matches with an existing worker.
+        </p>
+        <div
+          class="makeStyles-avatarWrapper-47"
+        >
+          <div>
+            <div
+              class="MuiAvatar-root MuiAvatar-circle makeStyles-workerModalAvatarPosition-42 makeStyles-avatarWrapper-11 makeStyles-workerMedium-26"
+            >
+              <img
+                alt="Worker profile"
+                class="MuiAvatar-img"
+                src="https://cdn.business2community.com/wp-content/uploads/2017/08/blank-profile-picture-973460_640.png"
+              />
+            </div>
+          </div>
+          <span>
+            <ul
+              class="makeStyles-listWrapper-46"
+            >
+              <li
+                class="match makeStyles-labelWrapper-52"
+              >
+                <div
+                  class="makeStyles-workerModalIconMargin-51"
+                >
+                  <svg
+                    class="makeStyles-workerModalIcon-50"
+                  >
+                    accepted.svg
+                  </svg>
+                </div>
+                <p
+                  class="MuiTypography-root makeStyles-workerAccent-44 MuiTypography-body1"
+                />
+              </li>
+              <li
+                class="noMatch makeStyles-labelWrapper-52"
+              >
+                <div
+                  class="makeStyles-workerModalIconMargin-51"
+                >
+                  <svg
+                    class="makeStyles-workerModalIcon-50"
+                  >
+                    expired.svg
+                  </svg>
+                </div>
+                <p
+                  class="MuiTypography-root makeStyles-companyAccent-45 MuiTypography-body1"
+                >
+                  Alpha Construction
+                </p>
+              </li>
+              <li
+                class="noMatch makeStyles-labelWrapper-52"
+              >
+                <div
+                  class="makeStyles-workerModalIconMargin-51"
+                >
+                  <svg
+                    class="makeStyles-workerModalIcon-50"
+                  >
+                    expired.svg
+                  </svg>
+                </div>
+                Date of Birth: 
+                Jan 1, 2001
+              </li>
+              <li
+                class="match makeStyles-labelWrapper-52"
+              >
+                <div
+                  class="makeStyles-workerModalIconMargin-51"
+                >
+                  <svg
+                    class="makeStyles-workerModalIcon-50"
+                  >
+                    accepted.svg
+                  </svg>
+                </div>
+                <p
+                  class="MuiTypography-root MuiTypography-body1"
+                >
+                  <a
+                    class="makeStyles-emailAccent-48"
+                    href="mailto:test@test.com"
+                  >
+                    test@test.com
+                  </a>
+                </p>
+              </li>
+              <li
+                class="noMatch makeStyles-labelWrapper-52"
+              >
+                <div
+                  class="makeStyles-workerModalIconMargin-51"
+                >
+                  <svg
+                    class="makeStyles-workerModalIcon-50"
+                  >
+                    expired.svg
+                  </svg>
+                </div>
+                Mobile Phone: 
+                1619123456
+              </li>
+              <li
+                class="noMatch makeStyles-labelWrapper-52"
+              >
+                <div
+                  class="makeStyles-workerModalIconMargin-51"
+                >
+                  <svg
+                    class="makeStyles-workerModalIcon-50"
+                  >
+                    expired.svg
+                  </svg>
+                </div>
+                Last 4 SSN: 
+                123456789
+              </li>
+              <li
+                class="noMatch makeStyles-labelWrapper-52"
+              >
+                <div
+                  class="makeStyles-workerModalIconMargin-51"
+                >
+                  <svg
+                    class="makeStyles-workerModalIcon-50"
+                  >
+                    expired.svg
+                  </svg>
+                </div>
+                State: 
+              </li>
+            </ul>
+          </span>
+        </div>
+      </div>
+    </div>
+  </body>,
+  "container": <div>
+    <div
+      class="makeStyles-duplicatedWorkerModalContent-40"
+    >
+      <p
+        class="MuiTypography-root makeStyles-workerModalSecondaryTextPosition-41 makeStyles-secondaryText-9 MuiTypography-body1"
+      >
+        This information matches with an existing worker.
+      </p>
+      <div
+        class="makeStyles-avatarWrapper-47"
+      >
+        <div>
+          <div
+            class="MuiAvatar-root MuiAvatar-circle makeStyles-workerModalAvatarPosition-42 makeStyles-avatarWrapper-11 makeStyles-workerMedium-26"
+          >
+            <img
+              alt="Worker profile"
+              class="MuiAvatar-img"
+              src="https://cdn.business2community.com/wp-content/uploads/2017/08/blank-profile-picture-973460_640.png"
+            />
+          </div>
+        </div>
+        <span>
+          <ul
+            class="makeStyles-listWrapper-46"
+          >
+            <li
+              class="match makeStyles-labelWrapper-52"
+            >
+              <div
+                class="makeStyles-workerModalIconMargin-51"
+              >
+                <svg
+                  class="makeStyles-workerModalIcon-50"
+                >
+                  accepted.svg
+                </svg>
+              </div>
+              <p
+                class="MuiTypography-root makeStyles-workerAccent-44 MuiTypography-body1"
+              />
+            </li>
+            <li
+              class="noMatch makeStyles-labelWrapper-52"
+            >
+              <div
+                class="makeStyles-workerModalIconMargin-51"
+              >
+                <svg
+                  class="makeStyles-workerModalIcon-50"
+                >
+                  expired.svg
+                </svg>
+              </div>
+              <p
+                class="MuiTypography-root makeStyles-companyAccent-45 MuiTypography-body1"
+              >
+                Alpha Construction
+              </p>
+            </li>
+            <li
+              class="noMatch makeStyles-labelWrapper-52"
+            >
+              <div
+                class="makeStyles-workerModalIconMargin-51"
+              >
+                <svg
+                  class="makeStyles-workerModalIcon-50"
+                >
+                  expired.svg
+                </svg>
+              </div>
+              Date of Birth: 
+              Jan 1, 2001
+            </li>
+            <li
+              class="match makeStyles-labelWrapper-52"
+            >
+              <div
+                class="makeStyles-workerModalIconMargin-51"
+              >
+                <svg
+                  class="makeStyles-workerModalIcon-50"
+                >
+                  accepted.svg
+                </svg>
+              </div>
+              <p
+                class="MuiTypography-root MuiTypography-body1"
+              >
+                <a
+                  class="makeStyles-emailAccent-48"
+                  href="mailto:test@test.com"
+                >
+                  test@test.com
+                </a>
+              </p>
+            </li>
+            <li
+              class="noMatch makeStyles-labelWrapper-52"
+            >
+              <div
+                class="makeStyles-workerModalIconMargin-51"
+              >
+                <svg
+                  class="makeStyles-workerModalIcon-50"
+                >
+                  expired.svg
+                </svg>
+              </div>
+              Mobile Phone: 
+              1619123456
+            </li>
+            <li
+              class="noMatch makeStyles-labelWrapper-52"
+            >
+              <div
+                class="makeStyles-workerModalIconMargin-51"
+              >
+                <svg
+                  class="makeStyles-workerModalIcon-50"
+                >
+                  expired.svg
+                </svg>
+              </div>
+              Last 4 SSN: 
+              123456789
+            </li>
+            <li
+              class="noMatch makeStyles-labelWrapper-52"
+            >
+              <div
+                class="makeStyles-workerModalIconMargin-51"
+              >
+                <svg
+                  class="makeStyles-workerModalIcon-50"
+                >
+                  expired.svg
+                </svg>
+              </div>
+              State: 
+            </li>
+          </ul>
+        </span>
+      </div>
+    </div>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;

@@ -1,0 +1,345 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CreditCard should render 1`] = `
+<div>
+  <div
+    class="MuiGrid-root MuiGrid-container"
+    style="justify-content: center; align-items: center;"
+  >
+    <div
+      class="MuiGrid-root MuiGrid-item MuiGrid-grid-lg-9 MuiGrid-grid-xl-9"
+    >
+      <div
+        class="MuiGrid-root MuiGrid-container"
+      >
+        <div
+          class="MuiGrid-root makeStyles-inputSeparator-5 MuiGrid-item MuiGrid-grid-lg-12 MuiGrid-grid-xl-12"
+        >
+          <h1
+            class="MuiTypography-root makeStyles-title-1 MuiTypography-h5 MuiTypography-colorPrimary MuiTypography-alignLeft"
+          >
+            Pay With Card
+          </h1>
+        </div>
+        <div
+          class="MuiGrid-root makeStyles-inputSeparator-5 MuiGrid-item MuiGrid-grid-lg-12 MuiGrid-grid-xl-12"
+        >
+          <div
+            class="MuiFormControl-root makeStyles-formControl-12 "
+          >
+            <h1
+              class="MuiTypography-root MuiTypography-caption MuiTypography-colorSecondary MuiTypography-alignLeft"
+            >
+              Card Information
+               
+            </h1>
+            <div>
+              <div
+                style="border-radius: 4px; padding: 15.5px 14px; border: 2px solid;"
+              >
+                <input
+                  data-testid="credit-card"
+                  options="[object Object]"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="MuiGrid-root makeStyles-inputSeparator-5 MuiGrid-item MuiGrid-grid-lg-12 MuiGrid-grid-xl-12"
+        >
+          <div
+            class="MuiFormControl-root makeStyles-formControl-12 "
+          >
+            <h1
+              class="MuiTypography-root MuiTypography-caption MuiTypography-colorSecondary MuiTypography-alignLeft"
+            >
+              Name On Card
+               
+            </h1>
+            <div>
+              <div
+                class="MuiFormControl-root MuiTextField-root MuiFormControl-fullWidth"
+              >
+                <div
+                  class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-fullWidth MuiInputBase-formControl"
+                >
+                  <input
+                    aria-invalid="false"
+                    autocomplete="off"
+                    class="MuiInputBase-input MuiOutlinedInput-input"
+                    data-testid="name-on-card"
+                    name="nameOnCard"
+                    placeholder="Name on card"
+                    required=""
+                    type="text"
+                    value=""
+                  />
+                  <fieldset
+                    aria-hidden="true"
+                    class="PrivateNotchedOutline-root-14 MuiOutlinedInput-notchedOutline"
+                    style="padding-left: 8px;"
+                  >
+                    <legend
+                      class="PrivateNotchedOutline-legend-15"
+                      style="width: 0.01px;"
+                    >
+                      <span>
+                        ​
+                      </span>
+                    </legend>
+                  </fieldset>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="MuiGrid-root makeStyles-inputSeparator-5 MuiGrid-item MuiGrid-grid-lg-12 MuiGrid-grid-xl-12"
+        >
+          <div
+            class="MuiFormControl-root makeStyles-formControl-12 "
+          >
+            <h1
+              class="MuiTypography-root MuiTypography-caption MuiTypography-colorSecondary MuiTypography-alignLeft"
+            >
+              Country Or Region
+               
+            </h1>
+            <div>
+              <div
+                class="MuiFormControl-root MuiTextField-root MuiFormControl-fullWidth"
+              >
+                <div
+                  class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-fullWidth MuiInputBase-formControl"
+                >
+                  <input
+                    aria-invalid="false"
+                    autocomplete="off"
+                    class="MuiInputBase-input MuiOutlinedInput-input"
+                    data-testid="country-or-region"
+                    name="countryOrRegion"
+                    placeholder="Country or region"
+                    required=""
+                    type="text"
+                    value=""
+                  />
+                  <fieldset
+                    aria-hidden="true"
+                    class="PrivateNotchedOutline-root-14 MuiOutlinedInput-notchedOutline"
+                    style="padding-left: 8px;"
+                  >
+                    <legend
+                      class="PrivateNotchedOutline-legend-15"
+                      style="width: 0.01px;"
+                    >
+                      <span>
+                        ​
+                      </span>
+                    </legend>
+                  </fieldset>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="MuiGrid-root makeStyles-inputSeparator-5 MuiGrid-item MuiGrid-grid-lg-12 MuiGrid-grid-xl-12"
+        >
+          <button
+            class="MuiButtonBase-root MuiButton-root MuiButton-contained false undefined MuiButton-containedPrimary MuiButton-containedSizeLarge MuiButton-sizeLarge MuiButton-fullWidth"
+            data-testid="save-payment-method-btn"
+            tabindex="0"
+            type="submit"
+          >
+            <span
+              class="MuiButton-label"
+            >
+              <span
+                class="makeStyles-textWrapper-20"
+              >
+                Save Card Information
+              </span>
+            </span>
+            <span
+              class="MuiTouchRipple-root"
+            />
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`CreditCard should render loading 1`] = `
+<div>
+  <div
+    class="MuiGrid-root MuiGrid-container"
+    style="justify-content: center; align-items: center;"
+  >
+    <div
+      class="MuiGrid-root MuiGrid-item MuiGrid-grid-lg-9 MuiGrid-grid-xl-9"
+    >
+      <div
+        class="MuiGrid-root MuiGrid-container"
+      >
+        <div
+          class="MuiGrid-root makeStyles-inputSeparator-25 MuiGrid-item MuiGrid-grid-lg-12 MuiGrid-grid-xl-12"
+        >
+          <h1
+            class="MuiTypography-root makeStyles-title-21 MuiTypography-h5 MuiTypography-colorPrimary MuiTypography-alignLeft"
+          >
+            Pay With Card
+          </h1>
+        </div>
+        <div
+          class="MuiGrid-root makeStyles-inputSeparator-25 MuiGrid-item MuiGrid-grid-lg-12 MuiGrid-grid-xl-12"
+        >
+          <div
+            class="MuiFormControl-root makeStyles-formControl-32 "
+          >
+            <h1
+              class="MuiTypography-root MuiTypography-caption MuiTypography-colorSecondary MuiTypography-alignLeft"
+            >
+              Card Information
+               
+            </h1>
+            <div>
+              <div
+                style="border-radius: 4px; padding: 15.5px 14px; border: 2px solid;"
+              >
+                <input
+                  data-testid="credit-card"
+                  options="[object Object]"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="MuiGrid-root makeStyles-inputSeparator-25 MuiGrid-item MuiGrid-grid-lg-12 MuiGrid-grid-xl-12"
+        >
+          <div
+            class="MuiFormControl-root makeStyles-formControl-32 "
+          >
+            <h1
+              class="MuiTypography-root MuiTypography-caption MuiTypography-colorSecondary MuiTypography-alignLeft"
+            >
+              Name On Card
+               
+            </h1>
+            <div>
+              <div
+                class="MuiFormControl-root MuiTextField-root MuiFormControl-fullWidth"
+              >
+                <div
+                  class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-fullWidth MuiInputBase-formControl"
+                >
+                  <input
+                    aria-invalid="false"
+                    autocomplete="off"
+                    class="MuiInputBase-input MuiOutlinedInput-input"
+                    data-testid="name-on-card"
+                    name="nameOnCard"
+                    placeholder="Name on card"
+                    required=""
+                    type="text"
+                    value=""
+                  />
+                  <fieldset
+                    aria-hidden="true"
+                    class="PrivateNotchedOutline-root-34 MuiOutlinedInput-notchedOutline"
+                    style="padding-left: 8px;"
+                  >
+                    <legend
+                      class="PrivateNotchedOutline-legend-35"
+                      style="width: 0.01px;"
+                    >
+                      <span>
+                        ​
+                      </span>
+                    </legend>
+                  </fieldset>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="MuiGrid-root makeStyles-inputSeparator-25 MuiGrid-item MuiGrid-grid-lg-12 MuiGrid-grid-xl-12"
+        >
+          <div
+            class="MuiFormControl-root makeStyles-formControl-32 "
+          >
+            <h1
+              class="MuiTypography-root MuiTypography-caption MuiTypography-colorSecondary MuiTypography-alignLeft"
+            >
+              Country Or Region
+               
+            </h1>
+            <div>
+              <div
+                class="MuiFormControl-root MuiTextField-root MuiFormControl-fullWidth"
+              >
+                <div
+                  class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-fullWidth MuiInputBase-formControl"
+                >
+                  <input
+                    aria-invalid="false"
+                    autocomplete="off"
+                    class="MuiInputBase-input MuiOutlinedInput-input"
+                    data-testid="country-or-region"
+                    name="countryOrRegion"
+                    placeholder="Country or region"
+                    required=""
+                    type="text"
+                    value=""
+                  />
+                  <fieldset
+                    aria-hidden="true"
+                    class="PrivateNotchedOutline-root-34 MuiOutlinedInput-notchedOutline"
+                    style="padding-left: 8px;"
+                  >
+                    <legend
+                      class="PrivateNotchedOutline-legend-35"
+                      style="width: 0.01px;"
+                    >
+                      <span>
+                        ​
+                      </span>
+                    </legend>
+                  </fieldset>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="MuiGrid-root makeStyles-inputSeparator-25 MuiGrid-item MuiGrid-grid-lg-12 MuiGrid-grid-xl-12"
+        >
+          <button
+            class="MuiButtonBase-root MuiButton-root MuiButton-contained false undefined MuiButton-containedPrimary MuiButton-containedSizeLarge MuiButton-sizeLarge MuiButton-fullWidth"
+            data-testid="save-payment-method-btn"
+            tabindex="0"
+            type="submit"
+          >
+            <span
+              class="MuiButton-label"
+            >
+              <span
+                class="makeStyles-textWrapper-40"
+              >
+                Save Card Information
+              </span>
+            </span>
+            <span
+              class="MuiTouchRipple-root"
+            />
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

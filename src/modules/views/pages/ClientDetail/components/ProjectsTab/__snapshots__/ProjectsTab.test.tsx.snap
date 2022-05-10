@@ -1,0 +1,1070 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ProjectsTab should render 1`] = `
+<div>
+  <div
+    class="makeStyles-filterActionsContainer-278 makeStyles-filterActionsContainerPadding-280"
+  >
+    <div
+      class="MuiBox-root MuiBox-root-306 makeStyles-filterStatusContainer-281"
+    >
+      <div
+        class="makeStyles-floatingFilterWrapper-287 makeStyles-filterWrapper-286  floatingFilterWrapper"
+      >
+        <span
+          class="makeStyles-floatingFilterButton-288"
+          data-testid="controlled-button"
+          tabindex="-1"
+        >
+          <button
+            aria-controls="false"
+            aria-haspopup="true"
+            class="MuiButtonBase-root MuiButton-root MuiButton-text makeStyles-buttonFilter-296"
+            data-testid="button-filter-open"
+            tabindex="0"
+            type="button"
+          >
+            <span
+              class="MuiButton-label"
+            >
+              All Roles
+              <span
+                class="MuiButton-endIcon MuiButton-iconSizeMedium"
+              >
+                <svg
+                  class="makeStyles-dropdownIcon-290"
+                >
+                  expand.svg
+                </svg>
+              </span>
+            </span>
+          </button>
+        </span>
+      </div>
+    </div>
+  </div>
+  <table
+    aria-label="project-list"
+    class="MuiTable-root"
+  >
+    <thead
+      class="MuiTableHead-root"
+    >
+      <tr
+        class="MuiTableRow-root MuiTableRow-head"
+      >
+        <th
+          class="MuiTableCell-root MuiTableCell-head"
+          scope="col"
+        >
+          Project Name
+        </th>
+        <th
+          class="MuiTableCell-root MuiTableCell-head"
+          scope="col"
+        >
+          Job Site Address
+        </th>
+        <th
+          class="MuiTableCell-root MuiTableCell-head"
+          scope="col"
+        >
+          Estimated Date
+        </th>
+        <th
+          class="MuiTableCell-root MuiTableCell-head"
+          scope="col"
+        >
+          Clients
+        </th>
+      </tr>
+    </thead>
+    <tbody
+      class="MuiTableBody-root"
+    >
+      <tr
+        class="MuiTableRow-root WithStyles(ForwardRef(TableRow))-root-307 makeStyles-clickableRow-265"
+        data-testid="project-client-list-row"
+      >
+        <td
+          class="MuiTableCell-root MuiTableCell-body makeStyles-cellAvatarRowDirection-243 makeStyles-cellAvatar-293"
+        >
+          <div
+            class="MuiAvatar-root MuiAvatar-circle MuiAvatar-colorDefault"
+          >
+            <svg
+              aria-hidden="true"
+              class="MuiSvgIcon-root"
+              focusable="false"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"
+              />
+            </svg>
+          </div>
+          <a
+            class="Link-root-308"
+            href="/projects/detail/9164e4c4-6521-47bb-97fd-c75ac02b2cf2"
+            title="View Project detail"
+          >
+            Project Name
+          </a>
+        </td>
+        <td
+          class="MuiTableCell-root MuiTableCell-body"
+        >
+          -
+          
+        </td>
+        <td
+          class="MuiTableCell-root MuiTableCell-body"
+        >
+          Jul 15, 2020 to Jul We, 2020
+        </td>
+        <td
+          class="MuiTableCell-root MuiTableCell-body"
+        />
+      </tr>
+      <tr
+        class="MuiTableRow-root WithStyles(ForwardRef(TableRow))-root-307 makeStyles-clickableRow-265"
+        data-testid="project-client-list-row"
+      >
+        <td
+          class="MuiTableCell-root MuiTableCell-body makeStyles-cellAvatarRowDirection-243 makeStyles-cellAvatar-293"
+        >
+          <div
+            class="MuiAvatar-root MuiAvatar-circle MuiAvatar-colorDefault"
+          >
+            <svg
+              aria-hidden="true"
+              class="MuiSvgIcon-root"
+              focusable="false"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"
+              />
+            </svg>
+          </div>
+          <a
+            class="Link-root-308"
+            href="/projects/detail/acf2231a-1331-c5cb-27fd-ca4bc12f2cff"
+            title="View Project detail"
+          >
+            Project Name 5
+          </a>
+        </td>
+        <td
+          class="MuiTableCell-root MuiTableCell-body"
+        >
+          21 Street, 
+          Apt 3
+           state name, Dallas
+        </td>
+        <td
+          class="MuiTableCell-root MuiTableCell-body"
+        >
+          Jul 15, 2020 to Jul We, 2020
+        </td>
+        <td
+          class="MuiTableCell-root MuiTableCell-body"
+        />
+      </tr>
+    </tbody>
+  </table>
+  <nav
+    aria-label="pagination navigation"
+    class="MuiPagination-root  makeStyles-pagination-309"
+    data-testid="pagination"
+  >
+    <ul
+      class="MuiPagination-ul"
+    >
+      <li>
+        <button
+          aria-label="Go to previous page"
+          class="MuiButtonBase-root MuiPaginationItem-root MuiPaginationItem-page Mui-disabled Mui-disabled"
+          disabled=""
+          tabindex="-1"
+          type="button"
+        >
+          <svg
+            aria-hidden="true"
+            class="MuiSvgIcon-root MuiPaginationItem-icon"
+            focusable="false"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"
+            />
+          </svg>
+        </button>
+      </li>
+      <li>
+        <button
+          aria-label="Go to next page"
+          class="MuiButtonBase-root MuiPaginationItem-root MuiPaginationItem-page"
+          tabindex="0"
+          type="button"
+        >
+          <svg
+            aria-hidden="true"
+            class="MuiSvgIcon-root MuiPaginationItem-icon"
+            focusable="false"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"
+            />
+          </svg>
+          <span
+            class="MuiTouchRipple-root"
+          />
+        </button>
+      </li>
+    </ul>
+  </nav>
+  <div
+    class="MuiDrawer-root MuiDrawer-docked makeStyles-drawer-362 makeStyles-close-373 closed"
+    data-testid="project-drawer-detail"
+  >
+    <div
+      class="MuiPaper-root MuiDrawer-paper makeStyles-drawerPaper-363 MuiDrawer-paperAnchorRight MuiDrawer-paperAnchorDockedRight MuiPaper-elevation0"
+      style="visibility: hidden; webkit-transform: translateX(1024px) translateX(0px); transform: translateX(1024px) translateX(0px);"
+    >
+      <div
+        class="makeStyles-drawerButtonWrapper-365"
+      >
+        <div
+          class="makeStyles-drawerButton-366"
+        >
+          <button
+            class="MuiButtonBase-root MuiButton-root MuiButton-text"
+            data-testid="drawer-close-btn"
+            style="outline: none;"
+            tabindex="0"
+            type="button"
+          >
+            <span
+              class="MuiButton-label"
+            >
+              <svg>
+                close.svg
+              </svg>
+            </span>
+            <span
+              class="MuiTouchRipple-root"
+            />
+          </button>
+        </div>
+        <div
+          class="makeStyles-drawerHeader-364"
+        >
+          <p
+            class="MuiTypography-root makeStyles-drawerTitle-367 MuiTypography-body1 MuiTypography-colorPrimary MuiTypography-alignLeft"
+          >
+            Project Information
+          </p>
+        </div>
+      </div>
+      <div
+        class="makeStyles-listDetail-257"
+      >
+        <div
+          class="makeStyles-company-258"
+        >
+          <div
+            class="makeStyles-drawerText-369"
+          >
+            <p
+              class="MuiTypography-root makeStyles-listAccent-259 makeStyles-entityTitle-256 MuiTypography-body1"
+            >
+              -
+            </p>
+            <div
+              class="makeStyles-drawerMainText-370"
+            >
+              <span>
+                -
+              </span>
+              <span>
+                -
+              </span>
+              <span>
+                -
+              </span>
+            </div>
+          </div>
+          <div
+            class="makeStyles-drawerSection-368 makeStyles-drawerProjectColumn-376"
+          >
+            <div
+              class="makeStyles-projectWrapper-374"
+              data-testid=""
+            >
+              <svg>
+                location.svg
+              </svg>
+              <div
+                class="makeStyles-drawerText-369 makeStyles-drawerTextSeparation-371"
+              >
+                <span>
+                  -
+                </span>
+              </div>
+            </div>
+          </div>
+          <div
+            class="makeStyles-drawerSection-368 makeStyles-drawerProjectColumn-376"
+          >
+            <div
+              class="makeStyles-projectWrapper-374"
+              data-testid=""
+            >
+              <svg>
+                location.svg
+              </svg>
+              <div
+                class="makeStyles-drawerText-369 makeStyles-drawerTextSeparation-371"
+              >
+                <span>
+                  -
+                </span>
+              </div>
+            </div>
+          </div>
+          <div
+            class="makeStyles-drawerSection-368 makeStyles-drawerProjectColumn-376"
+          >
+            <div
+              class="makeStyles-projectWrapper-374"
+              data-testid=""
+            >
+              <svg>
+                location.svg
+              </svg>
+              <div
+                class="makeStyles-drawerText-369 makeStyles-drawerTextSeparation-371"
+              >
+                <span>
+                  -
+                </span>
+              </div>
+            </div>
+          </div>
+          <div
+            class="makeStyles-drawerSection-368"
+          >
+            <div
+              class="makeStyles-drawerColumnDirection-377"
+            >
+              <div
+                class="makeStyles-drawerRowDirection-378"
+              >
+                <svg>
+                  monetization.svg
+                </svg>
+                <div
+                  class="makeStyles-drawerText-369 makeStyles-drawerTextSeparation-371"
+                >
+                  <span
+                    class="makeStyles-listAccent-259"
+                  >
+                    Badge Model
+                  </span>
+                  <span>
+                    Worker Badge Price $ -
+                  </span>
+                  <span>
+                    Worker Badge Reprint Price $
+                          -
+                  </span>
+                  <span>
+                    Visitor Badge Price $ -
+                  </span>
+                  <span>
+                    Visitor Badge Reprint Price $
+                          -
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr
+          class="MuiDivider-root makeStyles-drawerDivider-372"
+        />
+        <div
+          class="makeStyles-ctaWrapper-260"
+        >
+          <span
+            class=""
+            data-testid="controlled-button"
+            tabindex="-1"
+          >
+            <a
+              aria-disabled="false"
+              class="MuiButtonBase-root MuiButton-root MuiButton-outlined makeStyles-drawerCTA-344 makeStyles-borderPrimaryButton-336 makeStyles-primaryButtonPadding-338"
+              data-testid="drawerProjectButton"
+              href="/projects/wizard/undefined"
+              tabindex="0"
+            >
+              <span
+                class="MuiButton-label"
+              >
+                Edit
+              </span>
+            </a>
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`ProjectsTab should render empty 1`] = `
+<div>
+  <div
+    class="makeStyles-filterActionsContainer-45 makeStyles-filterActionsContainerPadding-47"
+  >
+    <div
+      class="MuiBox-root MuiBox-root-73 makeStyles-filterStatusContainer-48"
+    >
+      <div
+        class="makeStyles-floatingFilterWrapper-54 makeStyles-filterWrapper-53  floatingFilterWrapper"
+      >
+        <span
+          class="makeStyles-floatingFilterButton-55"
+          data-testid="controlled-button"
+          tabindex="-1"
+        >
+          <button
+            aria-controls="false"
+            aria-haspopup="true"
+            class="MuiButtonBase-root MuiButton-root MuiButton-text makeStyles-buttonFilter-63"
+            data-testid="button-filter-open"
+            tabindex="0"
+            type="button"
+          >
+            <span
+              class="MuiButton-label"
+            >
+              All Roles
+              <span
+                class="MuiButton-endIcon MuiButton-iconSizeMedium"
+              >
+                <svg
+                  class="makeStyles-dropdownIcon-57"
+                >
+                  expand.svg
+                </svg>
+              </span>
+            </span>
+          </button>
+        </span>
+      </div>
+    </div>
+  </div>
+  <div
+    class=" makeStyles-container-74"
+  >
+    <div>
+      <div
+        class="MuiAvatar-root MuiAvatar-circle makeStyles-missingAvatarWrapper-85 makeStyles-missingAvatarBig-86 MuiAvatar-colorDefault"
+      >
+        <svg>
+          projects.svg
+        </svg>
+      </div>
+    </div>
+    <p
+      class="MuiTypography-root makeStyles-missingListText-75 MuiTypography-body1"
+    >
+      There are no Projects assigned
+    </p>
+  </div>
+  <div
+    class="MuiDrawer-root MuiDrawer-docked makeStyles-drawer-145 makeStyles-close-156 closed"
+    data-testid="project-drawer-detail"
+  >
+    <div
+      class="MuiPaper-root MuiDrawer-paper makeStyles-drawerPaper-146 MuiDrawer-paperAnchorRight MuiDrawer-paperAnchorDockedRight MuiPaper-elevation0"
+      style="visibility: hidden; webkit-transform: translateX(1024px) translateX(0px); transform: translateX(1024px) translateX(0px);"
+    >
+      <div
+        class="makeStyles-drawerButtonWrapper-148"
+      >
+        <div
+          class="makeStyles-drawerButton-149"
+        >
+          <button
+            class="MuiButtonBase-root MuiButton-root MuiButton-text"
+            data-testid="drawer-close-btn"
+            style="outline: none;"
+            tabindex="0"
+            type="button"
+          >
+            <span
+              class="MuiButton-label"
+            >
+              <svg>
+                close.svg
+              </svg>
+            </span>
+            <span
+              class="MuiTouchRipple-root"
+            />
+          </button>
+        </div>
+        <div
+          class="makeStyles-drawerHeader-147"
+        >
+          <p
+            class="MuiTypography-root makeStyles-drawerTitle-150 MuiTypography-body1 MuiTypography-colorPrimary MuiTypography-alignLeft"
+          >
+            Project Information
+          </p>
+        </div>
+      </div>
+      <div
+        class="makeStyles-listDetail-24"
+      >
+        <div
+          class="makeStyles-company-25"
+        >
+          <div
+            class="makeStyles-drawerText-152"
+          >
+            <p
+              class="MuiTypography-root makeStyles-listAccent-26 makeStyles-entityTitle-23 MuiTypography-body1"
+            >
+              -
+            </p>
+            <div
+              class="makeStyles-drawerMainText-153"
+            >
+              <span>
+                -
+              </span>
+              <span>
+                -
+              </span>
+              <span>
+                -
+              </span>
+            </div>
+          </div>
+          <div
+            class="makeStyles-drawerSection-151 makeStyles-drawerProjectColumn-159"
+          >
+            <div
+              class="makeStyles-projectWrapper-157"
+              data-testid=""
+            >
+              <svg>
+                location.svg
+              </svg>
+              <div
+                class="makeStyles-drawerText-152 makeStyles-drawerTextSeparation-154"
+              >
+                <span>
+                  -
+                </span>
+              </div>
+            </div>
+          </div>
+          <div
+            class="makeStyles-drawerSection-151 makeStyles-drawerProjectColumn-159"
+          >
+            <div
+              class="makeStyles-projectWrapper-157"
+              data-testid=""
+            >
+              <svg>
+                location.svg
+              </svg>
+              <div
+                class="makeStyles-drawerText-152 makeStyles-drawerTextSeparation-154"
+              >
+                <span>
+                  -
+                </span>
+              </div>
+            </div>
+          </div>
+          <div
+            class="makeStyles-drawerSection-151 makeStyles-drawerProjectColumn-159"
+          >
+            <div
+              class="makeStyles-projectWrapper-157"
+              data-testid=""
+            >
+              <svg>
+                location.svg
+              </svg>
+              <div
+                class="makeStyles-drawerText-152 makeStyles-drawerTextSeparation-154"
+              >
+                <span>
+                  -
+                </span>
+              </div>
+            </div>
+          </div>
+          <div
+            class="makeStyles-drawerSection-151"
+          >
+            <div
+              class="makeStyles-drawerColumnDirection-160"
+            >
+              <div
+                class="makeStyles-drawerRowDirection-161"
+              >
+                <svg>
+                  monetization.svg
+                </svg>
+                <div
+                  class="makeStyles-drawerText-152 makeStyles-drawerTextSeparation-154"
+                >
+                  <span
+                    class="makeStyles-listAccent-26"
+                  >
+                    Badge Model
+                  </span>
+                  <span>
+                    Worker Badge Price $ -
+                  </span>
+                  <span>
+                    Worker Badge Reprint Price $
+                          -
+                  </span>
+                  <span>
+                    Visitor Badge Price $ -
+                  </span>
+                  <span>
+                    Visitor Badge Reprint Price $
+                          -
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr
+          class="MuiDivider-root makeStyles-drawerDivider-155"
+        />
+        <div
+          class="makeStyles-ctaWrapper-27"
+        >
+          <span
+            class=""
+            data-testid="controlled-button"
+            tabindex="-1"
+          >
+            <a
+              aria-disabled="false"
+              class="MuiButtonBase-root MuiButton-root MuiButton-outlined makeStyles-drawerCTA-127 makeStyles-borderPrimaryButton-119 makeStyles-primaryButtonPadding-121"
+              data-testid="drawerProjectButton"
+              href="/projects/wizard/undefined"
+              tabindex="0"
+            >
+              <span
+                class="MuiButton-label"
+              >
+                Edit
+              </span>
+            </a>
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`ProjectsTab should render loading 1`] = `
+<div>
+  Loading...
+</div>
+`;
+
+exports[`ProjectsTab should render secondary values 1`] = `
+<div>
+  <div
+    class="makeStyles-filterActionsContainer-423 makeStyles-filterActionsContainerPadding-425"
+  >
+    <div
+      class="MuiBox-root MuiBox-root-451 makeStyles-filterStatusContainer-426"
+    >
+      <div
+        class="makeStyles-floatingFilterWrapper-432 makeStyles-filterWrapper-431  floatingFilterWrapper"
+      >
+        <span
+          class="makeStyles-floatingFilterButton-433"
+          data-testid="controlled-button"
+          tabindex="-1"
+        >
+          <button
+            aria-controls="false"
+            aria-haspopup="true"
+            class="MuiButtonBase-root MuiButton-root MuiButton-text makeStyles-buttonFilter-441"
+            data-testid="button-filter-open"
+            tabindex="0"
+            type="button"
+          >
+            <span
+              class="MuiButton-label"
+            >
+              All Roles
+              <span
+                class="MuiButton-endIcon MuiButton-iconSizeMedium"
+              >
+                <svg
+                  class="makeStyles-dropdownIcon-435"
+                >
+                  expand.svg
+                </svg>
+              </span>
+            </span>
+          </button>
+        </span>
+      </div>
+    </div>
+  </div>
+  <table
+    aria-label="project-list"
+    class="MuiTable-root"
+  >
+    <thead
+      class="MuiTableHead-root"
+    >
+      <tr
+        class="MuiTableRow-root MuiTableRow-head"
+      >
+        <th
+          class="MuiTableCell-root MuiTableCell-head"
+          scope="col"
+        >
+          Project Name
+        </th>
+        <th
+          class="MuiTableCell-root MuiTableCell-head"
+          scope="col"
+        >
+          Job Site Address
+        </th>
+        <th
+          class="MuiTableCell-root MuiTableCell-head"
+          scope="col"
+        >
+          Estimated Date
+        </th>
+        <th
+          class="MuiTableCell-root MuiTableCell-head"
+          scope="col"
+        >
+          Clients
+        </th>
+      </tr>
+    </thead>
+    <tbody
+      class="MuiTableBody-root"
+    >
+      <tr
+        class="MuiTableRow-root WithStyles(ForwardRef(TableRow))-root-452 makeStyles-clickableRow-410"
+        data-testid="project-client-list-row"
+      >
+        <td
+          class="MuiTableCell-root MuiTableCell-body makeStyles-cellAvatarRowDirection-388 makeStyles-cellAvatar-438"
+        >
+          <div
+            class="MuiAvatar-root MuiAvatar-circle MuiAvatar-colorDefault"
+          >
+            <svg
+              aria-hidden="true"
+              class="MuiSvgIcon-root"
+              focusable="false"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"
+              />
+            </svg>
+          </div>
+          <a
+            class="Link-root-453"
+            href="/projects/detail/cbb1c4c4-2221-f7bb-27fd-ff5ac02b2cda"
+            title="View Project detail"
+          >
+            Project Name 4
+          </a>
+        </td>
+        <td
+          class="MuiTableCell-root MuiTableCell-body"
+        >
+          -
+          
+        </td>
+        <td
+          class="MuiTableCell-root MuiTableCell-body"
+        >
+          -
+        </td>
+        <td
+          class="MuiTableCell-root MuiTableCell-body"
+        />
+      </tr>
+    </tbody>
+  </table>
+  <nav
+    aria-label="pagination navigation"
+    class="MuiPagination-root  makeStyles-pagination-454"
+    data-testid="pagination"
+  >
+    <ul
+      class="MuiPagination-ul"
+    >
+      <li>
+        <button
+          aria-label="Go to previous page"
+          class="MuiButtonBase-root MuiPaginationItem-root MuiPaginationItem-page Mui-disabled Mui-disabled"
+          disabled=""
+          tabindex="-1"
+          type="button"
+        >
+          <svg
+            aria-hidden="true"
+            class="MuiSvgIcon-root MuiPaginationItem-icon"
+            focusable="false"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"
+            />
+          </svg>
+        </button>
+      </li>
+      <li>
+        <button
+          aria-label="Go to next page"
+          class="MuiButtonBase-root MuiPaginationItem-root MuiPaginationItem-page"
+          tabindex="0"
+          type="button"
+        >
+          <svg
+            aria-hidden="true"
+            class="MuiSvgIcon-root MuiPaginationItem-icon"
+            focusable="false"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"
+            />
+          </svg>
+          <span
+            class="MuiTouchRipple-root"
+          />
+        </button>
+      </li>
+    </ul>
+  </nav>
+  <div
+    class="MuiDrawer-root MuiDrawer-docked makeStyles-drawer-507 makeStyles-close-518 closed"
+    data-testid="project-drawer-detail"
+  >
+    <div
+      class="MuiPaper-root MuiDrawer-paper makeStyles-drawerPaper-508 MuiDrawer-paperAnchorRight MuiDrawer-paperAnchorDockedRight MuiPaper-elevation0"
+      style="visibility: hidden; webkit-transform: translateX(1024px) translateX(0px); transform: translateX(1024px) translateX(0px);"
+    >
+      <div
+        class="makeStyles-drawerButtonWrapper-510"
+      >
+        <div
+          class="makeStyles-drawerButton-511"
+        >
+          <button
+            class="MuiButtonBase-root MuiButton-root MuiButton-text"
+            data-testid="drawer-close-btn"
+            style="outline: none;"
+            tabindex="0"
+            type="button"
+          >
+            <span
+              class="MuiButton-label"
+            >
+              <svg>
+                close.svg
+              </svg>
+            </span>
+            <span
+              class="MuiTouchRipple-root"
+            />
+          </button>
+        </div>
+        <div
+          class="makeStyles-drawerHeader-509"
+        >
+          <p
+            class="MuiTypography-root makeStyles-drawerTitle-512 MuiTypography-body1 MuiTypography-colorPrimary MuiTypography-alignLeft"
+          >
+            Project Information
+          </p>
+        </div>
+      </div>
+      <div
+        class="makeStyles-listDetail-402"
+      >
+        <div
+          class="makeStyles-company-403"
+        >
+          <div
+            class="makeStyles-drawerText-514"
+          >
+            <p
+              class="MuiTypography-root makeStyles-listAccent-404 makeStyles-entityTitle-401 MuiTypography-body1"
+            >
+              -
+            </p>
+            <div
+              class="makeStyles-drawerMainText-515"
+            >
+              <span>
+                -
+              </span>
+              <span>
+                -
+              </span>
+              <span>
+                -
+              </span>
+            </div>
+          </div>
+          <div
+            class="makeStyles-drawerSection-513 makeStyles-drawerProjectColumn-521"
+          >
+            <div
+              class="makeStyles-projectWrapper-519"
+              data-testid=""
+            >
+              <svg>
+                location.svg
+              </svg>
+              <div
+                class="makeStyles-drawerText-514 makeStyles-drawerTextSeparation-516"
+              >
+                <span>
+                  -
+                </span>
+              </div>
+            </div>
+          </div>
+          <div
+            class="makeStyles-drawerSection-513 makeStyles-drawerProjectColumn-521"
+          >
+            <div
+              class="makeStyles-projectWrapper-519"
+              data-testid=""
+            >
+              <svg>
+                location.svg
+              </svg>
+              <div
+                class="makeStyles-drawerText-514 makeStyles-drawerTextSeparation-516"
+              >
+                <span>
+                  -
+                </span>
+              </div>
+            </div>
+          </div>
+          <div
+            class="makeStyles-drawerSection-513 makeStyles-drawerProjectColumn-521"
+          >
+            <div
+              class="makeStyles-projectWrapper-519"
+              data-testid=""
+            >
+              <svg>
+                location.svg
+              </svg>
+              <div
+                class="makeStyles-drawerText-514 makeStyles-drawerTextSeparation-516"
+              >
+                <span>
+                  -
+                </span>
+              </div>
+            </div>
+          </div>
+          <div
+            class="makeStyles-drawerSection-513"
+          >
+            <div
+              class="makeStyles-drawerColumnDirection-522"
+            >
+              <div
+                class="makeStyles-drawerRowDirection-523"
+              >
+                <svg>
+                  monetization.svg
+                </svg>
+                <div
+                  class="makeStyles-drawerText-514 makeStyles-drawerTextSeparation-516"
+                >
+                  <span
+                    class="makeStyles-listAccent-404"
+                  >
+                    Badge Model
+                  </span>
+                  <span>
+                    Worker Badge Price $ -
+                  </span>
+                  <span>
+                    Worker Badge Reprint Price $
+                          -
+                  </span>
+                  <span>
+                    Visitor Badge Price $ -
+                  </span>
+                  <span>
+                    Visitor Badge Reprint Price $
+                          -
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr
+          class="MuiDivider-root makeStyles-drawerDivider-517"
+        />
+        <div
+          class="makeStyles-ctaWrapper-405"
+        >
+          <span
+            class=""
+            data-testid="controlled-button"
+            tabindex="-1"
+          >
+            <a
+              aria-disabled="false"
+              class="MuiButtonBase-root MuiButton-root MuiButton-outlined makeStyles-drawerCTA-489 makeStyles-borderPrimaryButton-481 makeStyles-primaryButtonPadding-483"
+              data-testid="drawerProjectButton"
+              href="/projects/wizard/undefined"
+              tabindex="0"
+            >
+              <span
+                class="MuiButton-label"
+              >
+                Edit
+              </span>
+            </a>
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

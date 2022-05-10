@@ -1,0 +1,94 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Button Menu should render 1`] = `
+<div>
+  <div
+    class="MuiBox-root MuiBox-root-40 makeStyles-filterStatusContainer-15 buttonMenuContainer"
+  >
+    <div
+      class="makeStyles-filterWrapper-20 buttonMenuWrapper"
+    >
+      <hr
+        class="MuiDivider-root makeStyles-dividerNoSpacing-26 MuiDivider-flexItem MuiDivider-vertical"
+      />
+      <span
+        class=""
+        data-testid="controlled-button"
+        tabindex="-1"
+      >
+        <button
+          aria-controls="false"
+          aria-haspopup="true"
+          class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary"
+          data-testid="popover-button"
+          tabindex="0"
+          type="button"
+        >
+          <span
+            class="MuiButton-label"
+          >
+            
+          </span>
+        </button>
+      </span>
+      <span
+        class=""
+      >
+        <div
+          class="makeStyles-iconInactive-41"
+          data-testid="popover-wrapper"
+        >
+          
+        </div>
+      </span>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Button Menu should render with secondary values 1`] = `
+<div>
+  <div
+    class="MuiBox-root MuiBox-root-89 makeStyles-filterStatusContainer-59 buttonMenuContainer"
+  >
+    <div
+      class="makeStyles-filterWrapper-64 buttonMenuWrapper"
+    >
+      <hr
+        class="MuiDivider-root makeStyles-dividerNoSpacing-70 MuiDivider-flexItem MuiDivider-vertical"
+      />
+      <span
+        class=""
+        data-testid="controlled-button"
+        tabindex="-1"
+      >
+        <button
+          aria-controls="false"
+          aria-haspopup="true"
+          class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary Mui-disabled Mui-disabled"
+          data-testid="popover-button"
+          disabled=""
+          tabindex="-1"
+          type="button"
+        >
+          <span
+            class="MuiButton-label"
+          >
+            
+          </span>
+        </button>
+      </span>
+      <span
+        class=""
+      >
+        <div
+          class="makeStyles-iconInactive-85"
+          data-testid="popover-wrapper"
+        >
+          
+        </div>
+      </span>
+    </div>
+  </div>
+</div>
+`;

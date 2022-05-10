@@ -1,0 +1,1108 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CertificationTab should render 1`] = `
+<div>
+  <div
+    class="makeStyles-tableWrapper-227"
+  >
+    <div
+      class="makeStyles-filterActionsContainer-238 makeStyles-filterActionsContainerPadding-240"
+    >
+      <div
+        class="MuiBox-root MuiBox-root-318 makeStyles-filterStatusContainer-241"
+      >
+        <div
+          class="MuiBox-root MuiBox-root-319 makeStyles-filterStatusContainer-241 makeStyles-autocompleteFilterStatus-258"
+        >
+          <div
+            class="makeStyles-floatingFilterWrapper-247 makeStyles-filterWrapper-246 makeStyles-buttonContainer-321 floatingFilterWrapper"
+          >
+            <span
+              class="makeStyles-floatingFilterButton-248"
+              data-testid="controlled-button"
+              tabindex="-1"
+            >
+              <button
+                aria-controls="false"
+                aria-haspopup="true"
+                class="MuiButtonBase-root MuiButton-root MuiButton-text makeStyles-buttonFilter-256"
+                data-testid="button-filter-open"
+                tabindex="0"
+                type="button"
+              >
+                <span
+                  class="MuiButton-label"
+                >
+                  All Projects
+                  <span
+                    class="MuiButton-endIcon MuiButton-iconSizeMedium"
+                  >
+                    <svg
+                      class="makeStyles-dropdownIcon-250"
+                    >
+                      expand.svg
+                    </svg>
+                  </span>
+                </span>
+              </button>
+            </span>
+          </div>
+        </div>
+      </div>
+      <button
+        class="MuiButtonBase-root MuiButton-root MuiButton-contained makeStyles-createButton-293 makeStyles-primaryButtonLarge-295 MuiButton-containedPrimary MuiButton-containedSizeLarge MuiButton-sizeLarge MuiButton-fullWidth"
+        data-testid="open-certification-modal-btn"
+        tabindex="0"
+        type="button"
+      >
+        <span
+          class="MuiButton-label"
+        >
+          Add Certification
+        </span>
+        <span
+          class="MuiTouchRipple-root"
+        />
+      </button>
+    </div>
+    <table
+      aria-label="device-list"
+      class="MuiTable-root"
+    >
+      <thead
+        class="MuiTableHead-root"
+      >
+        <tr
+          class="MuiTableRow-root MuiTableRow-head"
+        >
+          <th
+            class="MuiTableCell-root MuiTableCell-head"
+            scope="col"
+          >
+            Name
+          </th>
+          <th
+            class="MuiTableCell-root MuiTableCell-head"
+            scope="col"
+          >
+            Certification ID
+          </th>
+          <th
+            class="MuiTableCell-root MuiTableCell-head"
+            scope="col"
+          >
+            Completion Date
+          </th>
+          <th
+            class="MuiTableCell-root MuiTableCell-head"
+            scope="col"
+          >
+            Expiration Date
+          </th>
+          <th
+            class="MuiTableCell-root MuiTableCell-head"
+            scope="col"
+          >
+            Project
+          </th>
+        </tr>
+      </thead>
+      <tbody
+        class="MuiTableBody-root"
+      >
+        <tr
+          class="MuiTableRow-root WithStyles(ForwardRef(TableRow))-root-325"
+          data-testid="certification-list-row"
+          style="cursor: pointer;"
+        >
+          <td
+            class="MuiTableCell-root MuiTableCell-body"
+          >
+            test certification-g
+          </td>
+          <td
+            class="MuiTableCell-root MuiTableCell-body"
+          >
+            1892132
+          </td>
+          <td
+            class="MuiTableCell-root MuiTableCell-body"
+            data-testid="row-completion"
+          >
+            January 01, 2001
+          </td>
+          <td
+            class="MuiTableCell-root MuiTableCell-body"
+            data-testid="row-expiration"
+          >
+            January 01, 2001
+             
+          </td>
+          <td
+            class="MuiTableCell-root MuiTableCell-body makeStyles-noTopCell-265 makeStyles-threeDotsWrapper-254"
+            data-testid="row-project"
+          >
+            <a
+              class="Link-root-326"
+              href="/projects/detail/9164e4c4-6521-47bb-97fd-c75ac02b2cf2"
+              title="View Project detail"
+            >
+              Project Name
+            </a>
+          </td>
+          <td
+            class="MuiTableCell-root MuiTableCell-body"
+            data-testid="update-delete-cell"
+          >
+            <span
+              class="makeStyles-invoiceRowButton-328"
+              data-testid="controlled-button"
+              tabindex="-1"
+            >
+              <div
+                class="MuiBox-root MuiBox-root-330 makeStyles-filterStatusContainer-241 buttonMenuContainer"
+              >
+                <div
+                  class="makeStyles-filterWrapper-246 buttonMenuWrapper"
+                >
+                  <span
+                    class=""
+                    data-testid="controlled-button"
+                    tabindex="-1"
+                  >
+                    <button
+                      aria-controls="false"
+                      aria-haspopup="true"
+                      class="MuiButtonBase-root MuiButton-root MuiButton-contained makeStyles-invoiceActionsButton-329 MuiButton-containedPrimary"
+                      data-testid="popover-button"
+                      tabindex="0"
+                      type="button"
+                    >
+                      <span
+                        class="MuiButton-label"
+                      >
+                        
+                        <span
+                          class="MuiButton-endIcon MuiButton-iconSizeMedium"
+                        >
+                          <svg
+                            class="makeStyles-invoiceIconDisabled-327"
+                          >
+                            three-dots.svg
+                          </svg>
+                        </span>
+                      </span>
+                    </button>
+                  </span>
+                  <span
+                    class=""
+                  >
+                    <div
+                      class="makeStyles-iconInactive-331"
+                      data-testid="popover-wrapper"
+                    >
+                      
+                    </div>
+                  </span>
+                </div>
+              </div>
+            </span>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <nav
+      aria-label="pagination navigation"
+      class="MuiPagination-root  makeStyles-pagination-335"
+      data-testid="pagination"
+    >
+      <ul
+        class="MuiPagination-ul"
+      >
+        <li>
+          <button
+            aria-label="Go to previous page"
+            class="MuiButtonBase-root MuiPaginationItem-root MuiPaginationItem-page Mui-disabled Mui-disabled"
+            disabled=""
+            tabindex="-1"
+            type="button"
+          >
+            <svg
+              aria-hidden="true"
+              class="MuiSvgIcon-root MuiPaginationItem-icon"
+              focusable="false"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"
+              />
+            </svg>
+          </button>
+        </li>
+        <li>
+          <button
+            aria-current="true"
+            aria-label="page 1"
+            class="MuiButtonBase-root MuiPaginationItem-root MuiPaginationItem-page Mui-selected"
+            tabindex="0"
+            type="button"
+          >
+            1
+            <span
+              class="MuiTouchRipple-root"
+            />
+          </button>
+        </li>
+        <li>
+          <button
+            aria-label="Go to next page"
+            class="MuiButtonBase-root MuiPaginationItem-root MuiPaginationItem-page Mui-disabled Mui-disabled"
+            disabled=""
+            tabindex="-1"
+            type="button"
+          >
+            <svg
+              aria-hidden="true"
+              class="MuiSvgIcon-root MuiPaginationItem-icon"
+              focusable="false"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"
+              />
+            </svg>
+          </button>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</div>
+`;
+
+exports[`CertificationTab should render detail loading 1`] = `
+<div
+  aria-hidden="true"
+>
+  <div
+    class="makeStyles-tableWrapper-545"
+  >
+    <div
+      class="makeStyles-filterActionsContainer-556 makeStyles-filterActionsContainerPadding-558"
+    >
+      <div
+        class="MuiBox-root MuiBox-root-636 makeStyles-filterStatusContainer-559"
+      >
+        <div
+          class="MuiBox-root MuiBox-root-637 makeStyles-filterStatusContainer-559 makeStyles-autocompleteFilterStatus-576"
+        >
+          <div
+            class="makeStyles-floatingFilterWrapper-565 makeStyles-filterWrapper-564 makeStyles-buttonContainer-639 floatingFilterWrapper"
+          >
+            <span
+              class="makeStyles-floatingFilterButton-566"
+              data-testid="controlled-button"
+              tabindex="-1"
+            >
+              <button
+                aria-controls="false"
+                aria-haspopup="true"
+                class="MuiButtonBase-root MuiButton-root MuiButton-text makeStyles-buttonFilter-574"
+                data-testid="button-filter-open"
+                tabindex="0"
+                type="button"
+              >
+                <span
+                  class="MuiButton-label"
+                >
+                  All Projects
+                  <span
+                    class="MuiButton-endIcon MuiButton-iconSizeMedium"
+                  >
+                    <svg
+                      class="makeStyles-dropdownIcon-568"
+                    >
+                      expand.svg
+                    </svg>
+                  </span>
+                </span>
+              </button>
+            </span>
+          </div>
+        </div>
+      </div>
+      <button
+        class="MuiButtonBase-root MuiButton-root MuiButton-contained makeStyles-createButton-611 makeStyles-primaryButtonLarge-613 MuiButton-containedPrimary MuiButton-containedSizeLarge MuiButton-sizeLarge MuiButton-fullWidth"
+        data-testid="open-certification-modal-btn"
+        tabindex="0"
+        type="button"
+      >
+        <span
+          class="MuiButton-label"
+        >
+          Add Certification
+        </span>
+        <span
+          class="MuiTouchRipple-root"
+        />
+      </button>
+    </div>
+    <table
+      aria-label="device-list"
+      class="MuiTable-root"
+    >
+      <thead
+        class="MuiTableHead-root"
+      >
+        <tr
+          class="MuiTableRow-root MuiTableRow-head"
+        >
+          <th
+            class="MuiTableCell-root MuiTableCell-head"
+            scope="col"
+          >
+            Name
+          </th>
+          <th
+            class="MuiTableCell-root MuiTableCell-head"
+            scope="col"
+          >
+            Certification ID
+          </th>
+          <th
+            class="MuiTableCell-root MuiTableCell-head"
+            scope="col"
+          >
+            Completion Date
+          </th>
+          <th
+            class="MuiTableCell-root MuiTableCell-head"
+            scope="col"
+          >
+            Expiration Date
+          </th>
+          <th
+            class="MuiTableCell-root MuiTableCell-head"
+            scope="col"
+          >
+            Project
+          </th>
+        </tr>
+      </thead>
+      <tbody
+        class="MuiTableBody-root"
+      >
+        <tr
+          class="MuiTableRow-root WithStyles(ForwardRef(TableRow))-root-643"
+          data-testid="certification-list-row"
+          style="cursor: pointer;"
+        >
+          <td
+            class="MuiTableCell-root MuiTableCell-body"
+          >
+            test certification-g
+          </td>
+          <td
+            class="MuiTableCell-root MuiTableCell-body"
+          >
+            1892132
+          </td>
+          <td
+            class="MuiTableCell-root MuiTableCell-body"
+            data-testid="row-completion"
+          >
+            January 01, 2001
+          </td>
+          <td
+            class="MuiTableCell-root MuiTableCell-body"
+            data-testid="row-expiration"
+          >
+            January 01, 2001
+             
+          </td>
+          <td
+            class="MuiTableCell-root MuiTableCell-body makeStyles-noTopCell-583 makeStyles-threeDotsWrapper-572"
+            data-testid="row-project"
+          >
+            <a
+              class="Link-root-644"
+              href="/projects/detail/9164e4c4-6521-47bb-97fd-c75ac02b2cf2"
+              title="View Project detail"
+            >
+              Project Name
+            </a>
+          </td>
+          <td
+            class="MuiTableCell-root MuiTableCell-body"
+            data-testid="update-delete-cell"
+          >
+            <span
+              class="makeStyles-invoiceRowButton-646"
+              data-testid="controlled-button"
+              tabindex="-1"
+            >
+              <div
+                class="MuiBox-root MuiBox-root-648 makeStyles-filterStatusContainer-559 buttonMenuContainer"
+              >
+                <div
+                  class="makeStyles-filterWrapper-564 buttonMenuWrapper"
+                >
+                  <span
+                    class=""
+                    data-testid="controlled-button"
+                    tabindex="-1"
+                  >
+                    <button
+                      aria-controls="false"
+                      aria-haspopup="true"
+                      class="MuiButtonBase-root MuiButton-root MuiButton-contained makeStyles-invoiceActionsButton-647 MuiButton-containedPrimary"
+                      data-testid="popover-button"
+                      tabindex="0"
+                      type="button"
+                    >
+                      <span
+                        class="MuiButton-label"
+                      >
+                        
+                        <span
+                          class="MuiButton-endIcon MuiButton-iconSizeMedium"
+                        >
+                          <svg
+                            class="makeStyles-invoiceIconDisabled-645"
+                          >
+                            three-dots.svg
+                          </svg>
+                        </span>
+                      </span>
+                    </button>
+                  </span>
+                  <span
+                    class=""
+                  >
+                    <div
+                      class="makeStyles-iconInactive-649"
+                      data-testid="popover-wrapper"
+                    >
+                      
+                    </div>
+                  </span>
+                </div>
+              </div>
+            </span>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <nav
+      aria-label="pagination navigation"
+      class="MuiPagination-root  makeStyles-pagination-653"
+      data-testid="pagination"
+    >
+      <ul
+        class="MuiPagination-ul"
+      >
+        <li>
+          <button
+            aria-label="Go to previous page"
+            class="MuiButtonBase-root MuiPaginationItem-root MuiPaginationItem-page Mui-disabled Mui-disabled"
+            disabled=""
+            tabindex="-1"
+            type="button"
+          >
+            <svg
+              aria-hidden="true"
+              class="MuiSvgIcon-root MuiPaginationItem-icon"
+              focusable="false"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"
+              />
+            </svg>
+          </button>
+        </li>
+        <li>
+          <button
+            aria-current="true"
+            aria-label="page 1"
+            class="MuiButtonBase-root MuiPaginationItem-root MuiPaginationItem-page Mui-selected"
+            tabindex="0"
+            type="button"
+          >
+            1
+            <span
+              class="MuiTouchRipple-root"
+            />
+          </button>
+        </li>
+        <li>
+          <button
+            aria-label="Go to next page"
+            class="MuiButtonBase-root MuiPaginationItem-root MuiPaginationItem-page Mui-disabled Mui-disabled"
+            disabled=""
+            tabindex="-1"
+            type="button"
+          >
+            <svg
+              aria-hidden="true"
+              class="MuiSvgIcon-root MuiPaginationItem-icon"
+              focusable="false"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"
+              />
+            </svg>
+          </button>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</div>
+`;
+
+exports[`CertificationTab should render loading 1`] = `
+<div>
+  <div
+    class="makeStyles-tableWrapper-447"
+  >
+    <div
+      class="makeStyles-filterActionsContainer-458 makeStyles-filterActionsContainerPadding-460"
+    >
+      <div
+        class="MuiBox-root MuiBox-root-538 makeStyles-filterStatusContainer-461"
+      >
+        <div
+          class="MuiBox-root MuiBox-root-539 makeStyles-filterStatusContainer-461 makeStyles-autocompleteFilterStatus-478"
+        >
+          <div
+            class="makeStyles-floatingFilterWrapper-467 makeStyles-filterWrapper-466 makeStyles-buttonContainer-541 floatingFilterWrapper"
+          >
+            <span
+              class="makeStyles-floatingFilterButton-468"
+              data-testid="controlled-button"
+              tabindex="-1"
+            >
+              <button
+                aria-controls="false"
+                aria-haspopup="true"
+                class="MuiButtonBase-root MuiButton-root MuiButton-text makeStyles-buttonFilter-476"
+                data-testid="button-filter-open"
+                tabindex="0"
+                type="button"
+              >
+                <span
+                  class="MuiButton-label"
+                >
+                  All Projects
+                  <span
+                    class="MuiButton-endIcon MuiButton-iconSizeMedium"
+                  >
+                    <svg
+                      class="makeStyles-dropdownIcon-470"
+                    >
+                      expand.svg
+                    </svg>
+                  </span>
+                </span>
+              </button>
+            </span>
+          </div>
+        </div>
+      </div>
+      <button
+        class="MuiButtonBase-root MuiButton-root MuiButton-contained makeStyles-createButton-513 makeStyles-primaryButtonLarge-515 MuiButton-containedPrimary MuiButton-containedSizeLarge MuiButton-sizeLarge MuiButton-fullWidth"
+        data-testid="open-certification-modal-btn"
+        tabindex="0"
+        type="button"
+      >
+        <span
+          class="MuiButton-label"
+        >
+          Add Certification
+        </span>
+        <span
+          class="MuiTouchRipple-root"
+        />
+      </button>
+    </div>
+    Loading...
+  </div>
+</div>
+`;
+
+exports[`CertificationTab should render with secondary values 1`] = `
+<div>
+  <div
+    class="makeStyles-tableWrapper-336"
+  >
+    <div
+      class="makeStyles-filterActionsContainer-347 makeStyles-filterActionsContainerPadding-349"
+    >
+      <div
+        class="MuiBox-root MuiBox-root-427 makeStyles-filterStatusContainer-350"
+      >
+        <div
+          class="MuiBox-root MuiBox-root-428 makeStyles-filterStatusContainer-350 makeStyles-autocompleteFilterStatus-367"
+        >
+          <div
+            class="makeStyles-floatingFilterWrapper-356 makeStyles-filterWrapper-355 makeStyles-buttonContainer-430 floatingFilterWrapper"
+          >
+            <span
+              class="makeStyles-floatingFilterButton-357"
+              data-testid="controlled-button"
+              tabindex="-1"
+            >
+              <button
+                aria-controls="false"
+                aria-haspopup="true"
+                class="MuiButtonBase-root MuiButton-root MuiButton-text makeStyles-buttonFilter-365"
+                data-testid="button-filter-open"
+                tabindex="0"
+                type="button"
+              >
+                <span
+                  class="MuiButton-label"
+                >
+                  All Projects
+                  <span
+                    class="MuiButton-endIcon MuiButton-iconSizeMedium"
+                  >
+                    <svg
+                      class="makeStyles-dropdownIcon-359"
+                    >
+                      expand.svg
+                    </svg>
+                  </span>
+                </span>
+              </button>
+            </span>
+          </div>
+        </div>
+      </div>
+      <button
+        class="MuiButtonBase-root MuiButton-root MuiButton-contained makeStyles-createButton-402 makeStyles-primaryButtonLarge-404 MuiButton-containedPrimary MuiButton-containedSizeLarge MuiButton-sizeLarge MuiButton-fullWidth"
+        data-testid="open-certification-modal-btn"
+        tabindex="0"
+        type="button"
+      >
+        <span
+          class="MuiButton-label"
+        >
+          Add Certification
+        </span>
+        <span
+          class="MuiTouchRipple-root"
+        />
+      </button>
+    </div>
+    <table
+      aria-label="device-list"
+      class="MuiTable-root"
+    >
+      <thead
+        class="MuiTableHead-root"
+      >
+        <tr
+          class="MuiTableRow-root MuiTableRow-head"
+        >
+          <th
+            class="MuiTableCell-root MuiTableCell-head"
+            scope="col"
+          >
+            Name
+          </th>
+          <th
+            class="MuiTableCell-root MuiTableCell-head"
+            scope="col"
+          >
+            Certification ID
+          </th>
+          <th
+            class="MuiTableCell-root MuiTableCell-head"
+            scope="col"
+          >
+            Completion Date
+          </th>
+          <th
+            class="MuiTableCell-root MuiTableCell-head"
+            scope="col"
+          >
+            Expiration Date
+          </th>
+          <th
+            class="MuiTableCell-root MuiTableCell-head"
+            scope="col"
+          >
+            Project
+          </th>
+        </tr>
+      </thead>
+      <tbody
+        class="MuiTableBody-root"
+      >
+        <tr
+          class="MuiTableRow-root WithStyles(ForwardRef(TableRow))-root-434"
+          data-testid="certification-list-row"
+          style="cursor: pointer;"
+        >
+          <td
+            class="MuiTableCell-root MuiTableCell-body"
+          >
+            test certification-g
+          </td>
+          <td
+            class="MuiTableCell-root MuiTableCell-body"
+          >
+            1892132
+          </td>
+          <td
+            class="MuiTableCell-root MuiTableCell-body"
+            data-testid="row-completion"
+          >
+            January 01, 2001
+          </td>
+          <td
+            class="MuiTableCell-root MuiTableCell-body"
+            data-testid="row-expiration"
+          >
+            January 01, 2001
+             
+          </td>
+          <td
+            class="MuiTableCell-root MuiTableCell-body makeStyles-noTopCell-374 makeStyles-threeDotsWrapper-363"
+            data-testid="row-project"
+          >
+            <a
+              class="Link-root-435"
+              href="/projects/detail/9164e4c4-6521-47bb-97fd-c75ac02b2cf2"
+              title="View Project detail"
+            >
+              Project Name
+            </a>
+          </td>
+          <td
+            class="MuiTableCell-root MuiTableCell-body"
+            data-testid="update-delete-cell"
+          >
+            <span
+              class="makeStyles-invoiceRowButton-437"
+              data-testid="controlled-button"
+              tabindex="-1"
+            >
+              <div
+                class="MuiBox-root MuiBox-root-439 makeStyles-filterStatusContainer-350 buttonMenuContainer"
+              >
+                <div
+                  class="makeStyles-filterWrapper-355 buttonMenuWrapper"
+                >
+                  <span
+                    class=""
+                    data-testid="controlled-button"
+                    tabindex="-1"
+                  >
+                    <button
+                      aria-controls="false"
+                      aria-haspopup="true"
+                      class="MuiButtonBase-root MuiButton-root MuiButton-contained makeStyles-invoiceActionsButton-438 MuiButton-containedPrimary"
+                      data-testid="popover-button"
+                      tabindex="0"
+                      type="button"
+                    >
+                      <span
+                        class="MuiButton-label"
+                      >
+                        
+                        <span
+                          class="MuiButton-endIcon MuiButton-iconSizeMedium"
+                        >
+                          <svg
+                            class="makeStyles-invoiceIconDisabled-436"
+                          >
+                            three-dots.svg
+                          </svg>
+                        </span>
+                      </span>
+                    </button>
+                  </span>
+                  <span
+                    class=""
+                  >
+                    <div
+                      class="makeStyles-iconInactive-440"
+                      data-testid="popover-wrapper"
+                    >
+                      
+                    </div>
+                  </span>
+                </div>
+              </div>
+            </span>
+          </td>
+        </tr>
+        <tr
+          class="MuiTableRow-root WithStyles(ForwardRef(TableRow))-root-434"
+          data-testid="certification-list-row"
+          style="cursor: pointer;"
+        >
+          <td
+            class="MuiTableCell-root MuiTableCell-body"
+          >
+            test other cert
+          </td>
+          <td
+            class="MuiTableCell-root MuiTableCell-body"
+          >
+            329812
+          </td>
+          <td
+            class="MuiTableCell-root MuiTableCell-body"
+            data-testid="row-completion"
+          >
+            -
+          </td>
+          <td
+            class="MuiTableCell-root MuiTableCell-body"
+            data-testid="row-expiration"
+          >
+            -
+             
+          </td>
+          <td
+            class="MuiTableCell-root MuiTableCell-body makeStyles-noTopCell-374 makeStyles-threeDotsWrapper-363"
+            data-testid="row-project"
+          >
+            <a
+              class="Link-root-435"
+              href="/projects/detail/8aa1c4c4-6521-47bb-27fd-af5ac02b2cd8"
+              title="View Project detail"
+            >
+              Project Name 2
+            </a>
+          </td>
+          <td
+            class="MuiTableCell-root MuiTableCell-body"
+            data-testid="update-delete-cell"
+          >
+            <span
+              class="makeStyles-invoiceRowButton-437"
+              data-testid="controlled-button"
+              tabindex="-1"
+            >
+              <div
+                class="MuiBox-root MuiBox-root-444 makeStyles-filterStatusContainer-350 buttonMenuContainer"
+              >
+                <div
+                  class="makeStyles-filterWrapper-355 buttonMenuWrapper"
+                >
+                  <span
+                    class=""
+                    data-testid="controlled-button"
+                    tabindex="-1"
+                  >
+                    <button
+                      aria-controls="false"
+                      aria-haspopup="true"
+                      class="MuiButtonBase-root MuiButton-root MuiButton-contained makeStyles-invoiceActionsButton-438 MuiButton-containedPrimary"
+                      data-testid="popover-button"
+                      tabindex="0"
+                      type="button"
+                    >
+                      <span
+                        class="MuiButton-label"
+                      >
+                        
+                        <span
+                          class="MuiButton-endIcon MuiButton-iconSizeMedium"
+                        >
+                          <svg
+                            class="makeStyles-invoiceIconDisabled-436"
+                          >
+                            three-dots.svg
+                          </svg>
+                        </span>
+                      </span>
+                    </button>
+                  </span>
+                  <span
+                    class=""
+                  >
+                    <div
+                      class="makeStyles-iconInactive-440"
+                      data-testid="popover-wrapper"
+                    >
+                      
+                    </div>
+                  </span>
+                </div>
+              </div>
+            </span>
+          </td>
+        </tr>
+        <tr
+          class="MuiTableRow-root WithStyles(ForwardRef(TableRow))-root-434"
+          data-testid="certification-list-row"
+          style="cursor: pointer;"
+        >
+          <td
+            class="MuiTableCell-root MuiTableCell-body"
+          >
+            test other cert
+          </td>
+          <td
+            class="MuiTableCell-root MuiTableCell-body"
+          >
+            -
+          </td>
+          <td
+            class="MuiTableCell-root MuiTableCell-body"
+            data-testid="row-completion"
+          >
+            -
+          </td>
+          <td
+            class="MuiTableCell-root MuiTableCell-body"
+            data-testid="row-expiration"
+          >
+            -
+             
+          </td>
+          <td
+            class="MuiTableCell-root MuiTableCell-body makeStyles-noTopCell-374 makeStyles-threeDotsWrapper-363"
+            data-testid="row-project"
+          >
+            <a
+              class="Link-root-435"
+              href="/projects/detail/8aa1c4c4-6521-47bb-27fd-af5ac02b2cd8"
+              title="View Project detail"
+            >
+              Project Name 2
+            </a>
+          </td>
+          <td
+            class="MuiTableCell-root MuiTableCell-body"
+            data-testid="update-delete-cell"
+          >
+            <span
+              class="makeStyles-invoiceRowButton-437"
+              data-testid="controlled-button"
+              tabindex="-1"
+            >
+              <div
+                class="MuiBox-root MuiBox-root-445 makeStyles-filterStatusContainer-350 buttonMenuContainer"
+              >
+                <div
+                  class="makeStyles-filterWrapper-355 buttonMenuWrapper"
+                >
+                  <span
+                    class=""
+                    data-testid="controlled-button"
+                    tabindex="-1"
+                  >
+                    <button
+                      aria-controls="false"
+                      aria-haspopup="true"
+                      class="MuiButtonBase-root MuiButton-root MuiButton-contained makeStyles-invoiceActionsButton-438 MuiButton-containedPrimary"
+                      data-testid="popover-button"
+                      tabindex="0"
+                      type="button"
+                    >
+                      <span
+                        class="MuiButton-label"
+                      >
+                        
+                        <span
+                          class="MuiButton-endIcon MuiButton-iconSizeMedium"
+                        >
+                          <svg
+                            class="makeStyles-invoiceIconDisabled-436"
+                          >
+                            three-dots.svg
+                          </svg>
+                        </span>
+                      </span>
+                    </button>
+                  </span>
+                  <span
+                    class=""
+                  >
+                    <div
+                      class="makeStyles-iconInactive-440"
+                      data-testid="popover-wrapper"
+                    >
+                      
+                    </div>
+                  </span>
+                </div>
+              </div>
+            </span>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <nav
+      aria-label="pagination navigation"
+      class="MuiPagination-root  makeStyles-pagination-446"
+      data-testid="pagination"
+    >
+      <ul
+        class="MuiPagination-ul"
+      >
+        <li>
+          <button
+            aria-label="Go to previous page"
+            class="MuiButtonBase-root MuiPaginationItem-root MuiPaginationItem-page Mui-disabled Mui-disabled"
+            disabled=""
+            tabindex="-1"
+            type="button"
+          >
+            <svg
+              aria-hidden="true"
+              class="MuiSvgIcon-root MuiPaginationItem-icon"
+              focusable="false"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"
+              />
+            </svg>
+          </button>
+        </li>
+        <li>
+          <button
+            aria-current="true"
+            aria-label="page 1"
+            class="MuiButtonBase-root MuiPaginationItem-root MuiPaginationItem-page Mui-selected"
+            tabindex="0"
+            type="button"
+          >
+            1
+            <span
+              class="MuiTouchRipple-root"
+            />
+          </button>
+        </li>
+        <li>
+          <button
+            aria-label="Go to next page"
+            class="MuiButtonBase-root MuiPaginationItem-root MuiPaginationItem-page Mui-disabled Mui-disabled"
+            disabled=""
+            tabindex="-1"
+            type="button"
+          >
+            <svg
+              aria-hidden="true"
+              class="MuiSvgIcon-root MuiPaginationItem-icon"
+              focusable="false"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"
+              />
+            </svg>
+          </button>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</div>
+`;

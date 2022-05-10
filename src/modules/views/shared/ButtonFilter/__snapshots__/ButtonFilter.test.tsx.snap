@@ -1,0 +1,148 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ButtonFilter Component should close 1`] = `
+<div>
+  <div
+    class="makeStyles-floatingFilterWrapper-99 makeStyles-filterWrapper-98  floatingFilterWrapper"
+  >
+    <hr
+      class="MuiDivider-root makeStyles-dividerNoSpacing-104 MuiDivider-flexItem MuiDivider-vertical"
+    />
+    <span
+      class="makeStyles-floatingFilterButton-100"
+      data-testid="controlled-button"
+      tabindex="-1"
+    >
+      <button
+        aria-controls="false"
+        aria-haspopup="true"
+        class="MuiButtonBase-root MuiButton-root MuiButton-contained makeStyles-buttonFilter-108"
+        data-testid="button-filter-open"
+        tabindex="0"
+        type="button"
+      >
+        <span
+          class="MuiButton-label"
+        >
+          
+          <span
+            class="MuiButton-endIcon MuiButton-iconSizeMedium"
+          >
+            <svg
+              class="makeStyles-dropdownIcon-102"
+            >
+              expand.svg
+            </svg>
+          </span>
+        </span>
+      </button>
+    </span>
+    <div>
+      <button
+        data-testid="button-filter-close"
+      >
+        Close
+      </button>
+      Children Node
+    </div>
+  </div>
+</div>
+`;
+
+exports[`ButtonFilter Component should render 1`] = `
+<div>
+  <div
+    class="makeStyles-floatingFilterWrapper-21 makeStyles-filterWrapper-20  floatingFilterWrapper"
+  >
+    <hr
+      class="MuiDivider-root makeStyles-dividerNoSpacing-26 MuiDivider-flexItem MuiDivider-vertical"
+    />
+    <span
+      class="makeStyles-floatingFilterButton-22"
+      data-testid="controlled-button"
+      tabindex="-1"
+    >
+      <button
+        aria-controls="false"
+        aria-haspopup="true"
+        class="MuiButtonBase-root MuiButton-root MuiButton-contained makeStyles-buttonFilter-30"
+        data-testid="button-filter-open"
+        tabindex="0"
+        type="button"
+      >
+        <span
+          class="MuiButton-label"
+        >
+          
+          <span
+            class="MuiButton-endIcon MuiButton-iconSizeMedium"
+          >
+            <svg
+              class="makeStyles-dropdownIcon-24"
+            >
+              expand.svg
+            </svg>
+          </span>
+        </span>
+      </button>
+    </span>
+    <div>
+      <button
+        data-testid="button-filter-close"
+      >
+        Close
+      </button>
+      Children Node
+    </div>
+  </div>
+</div>
+`;
+
+exports[`ButtonFilter Component should toggle 1`] = `
+<div>
+  <div
+    class="makeStyles-floatingFilterWrapper-60 makeStyles-filterWrapper-59  floatingFilterWrapper"
+  >
+    <hr
+      class="MuiDivider-root makeStyles-dividerNoSpacing-65 MuiDivider-flexItem MuiDivider-vertical"
+    />
+    <span
+      class="makeStyles-floatingFilterButton-61"
+      data-testid="controlled-button"
+      tabindex="-1"
+    >
+      <button
+        aria-controls="menu-list-grow"
+        aria-haspopup="true"
+        class="MuiButtonBase-root MuiButton-root MuiButton-contained makeStyles-buttonFilter-69"
+        data-testid="button-filter-open"
+        tabindex="0"
+        type="button"
+      >
+        <span
+          class="MuiButton-label"
+        >
+          
+          <span
+            class="MuiButton-endIcon MuiButton-iconSizeMedium"
+          >
+            <svg
+              class="makeStyles-dropdownIcon-63"
+            >
+              expand.svg
+            </svg>
+          </span>
+        </span>
+      </button>
+    </span>
+    <div>
+      <button
+        data-testid="button-filter-close"
+      >
+        Close
+      </button>
+      Children Node
+    </div>
+  </div>
+</div>
+`;

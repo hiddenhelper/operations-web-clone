@@ -1,0 +1,92 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Sidebar should render admin tab 1`] = `
+<div>
+  <div
+    style="width: 100%; background-color: rgb(245, 245, 245); padding: 2.5rem;"
+  >
+    <div
+      class="MuiBox-root MuiBox-root-10"
+      style="height: 50px; margin-bottom: 13px; width: 100%;"
+    >
+      <div
+        class="MuiBox-root MuiBox-root-11"
+        style="display: flex; align-items: center; justify-content: space-between;"
+      >
+        <div>
+          <div
+            class="MuiBox-root MuiBox-root-12"
+            style="display: flex; align-items: center; margin-top: 5px;"
+          >
+            <h2
+              class="MuiTypography-root MuiTypography-h1"
+              style="color: rgb(68, 68, 68); font-size: 2.25rem; font-weight: 600; letter-spacing: 0; margin-right: 0.5rem;"
+            >
+              System Administration
+            </h2>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="makeStyles-cardsWrapper-1"
+    >
+      <div
+        class="makeStyles-cardContainer-13"
+        data-testid="procoreCard"
+      >
+        <div
+          class="makeStyles-titleContainer-14"
+        >
+          <div
+            class="makeStyles-logoContainer-15"
+          >
+            <div
+              class="makeStyles-grayCircle-16"
+            >
+              <svg
+                fill="#1E86E8"
+                height="38px"
+                width="38px"
+              >
+                procore.svg
+              </svg>
+            </div>
+          </div>
+          <div>
+            <p
+              class="MuiTypography-root makeStyles-title-17 MuiTypography-body1"
+            >
+              Procore Integration
+            </p>
+          </div>
+        </div>
+        <div
+          class="makeStyles-bodyContainer-18"
+        >
+          <p
+            class="MuiTypography-root MuiTypography-body1"
+          >
+            FCA Procore integration allows for accurate daily
+          </p>
+          <p
+            class="MuiTypography-root MuiTypography-body1"
+          >
+            census data via automated mapping of clients.
+          </p>
+        </div>
+        <div
+          class="makeStyles-linkContanier-19"
+        >
+          <a
+            color="inherit"
+            href="/procore-clients"
+          >
+            Map Clients with Procore
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Controlled Multiple Select should render 1`] = `
+<div>
+  <div>
+    <fieldset
+      class="MuiFormControl-root makeStyles-formControlRoot-5"
+    >
+      <div
+        class="MuiFormGroup-root makeStyles-formGroupRoot-3"
+      />
+    </fieldset>
+  </div>
+</div>
+`;

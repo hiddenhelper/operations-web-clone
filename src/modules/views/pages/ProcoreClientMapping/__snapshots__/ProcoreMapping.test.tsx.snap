@@ -1,0 +1,241 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Procore Mapping should render empty with the project tabs 1`] = `
+<div>
+  <div
+    id="project-detail"
+    style="width: 100%; background-color: rgb(245, 245, 245); padding: 2.5rem;"
+  >
+    <div
+      class="MuiBox-root MuiBox-root-66"
+      style="height: 72px; margin-bottom: 13px; width: 100%;"
+    >
+      <div
+        class="MuiBox-root MuiBox-root-67"
+        style="display: flex; align-items: center; justify-content: space-between;"
+      >
+        <div>
+          <p
+            class="MuiTypography-root makeStyles-stepWrapper-68 MuiTypography-body1 MuiTypography-colorPrimary MuiTypography-alignLeft"
+          >
+            <span
+              class="makeStyles-step-69"
+            >
+              <a
+                href="/procore-clients"
+              >
+                Procore Clients
+              </a>
+              <span>
+                &gt;
+              </span>
+            </span>
+            <span
+              class="makeStyles-step-69"
+            >
+              Client Mapping
+            </span>
+          </p>
+          <div
+            class="MuiBox-root MuiBox-root-70"
+            style="display: flex; align-items: center; margin-top: 5px;"
+          >
+            <h2
+              class="MuiTypography-root MuiTypography-h1"
+              style="color: rgb(68, 68, 68); font-size: 2.25rem; font-weight: 600; letter-spacing: 0; margin-right: 0.5rem;"
+            />
+          </div>
+        </div>
+        <div
+          class="makeStyles-container-71 undefined"
+          data-testid="action-configure-report-frequency-container"
+        >
+          <span
+            class="makeStyles-text-72"
+          >
+            Daily / Hourly
+          </span>
+          <svg
+            aria-hidden="true"
+            class="MuiSvgIcon-root makeStyles-icon-73"
+            focusable="false"
+            height="18px"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM20.71 7.04c.39-.39.39-1.02 0-1.41l-2.34-2.34a.9959.9959 0 00-1.41 0l-1.83 1.83 3.75 3.75 1.83-1.83z"
+            />
+          </svg>
+        </div>
+      </div>
+    </div>
+    <div
+      class="makeStyles-statusFilter-23"
+    >
+      <a
+        data-testid="filter-status-opt"
+        href="/procore-clients/client-mapping/null/projects"
+        tabindex="-1"
+      >
+        <button
+          class="MuiButtonBase-root MuiButton-root MuiButton-text makeStyles-activeFilter-24"
+          tabindex="0"
+          type="button"
+        >
+          <span
+            class="MuiButton-label"
+          >
+            Projects
+          </span>
+          <span
+            class="MuiTouchRipple-root"
+          />
+        </button>
+      </a>
+      <a
+        data-testid="filter-status-opt"
+        href="/procore-clients/client-mapping/null/vendors"
+        tabindex="-1"
+      >
+        <button
+          class="MuiButtonBase-root MuiButton-root MuiButton-text"
+          tabindex="0"
+          type="button"
+        >
+          <span
+            class="MuiButton-label"
+          >
+            Vendors
+          </span>
+          <span
+            class="MuiTouchRipple-root"
+          />
+        </button>
+      </a>
+    </div>
+    <div
+      class="makeStyles-tableWrapper-27"
+    />
+  </div>
+</div>
+`;
+
+exports[`Procore Mapping should render empty with the vendors tabs 1`] = `
+<div>
+  <div
+    id="project-detail"
+    style="width: 100%; background-color: rgb(245, 245, 245); padding: 2.5rem;"
+  >
+    <div
+      class="MuiBox-root MuiBox-root-290"
+      style="height: 72px; margin-bottom: 13px; width: 100%;"
+    >
+      <div
+        class="MuiBox-root MuiBox-root-291"
+        style="display: flex; align-items: center; justify-content: space-between;"
+      >
+        <div>
+          <p
+            class="MuiTypography-root makeStyles-stepWrapper-292 MuiTypography-body1 MuiTypography-colorPrimary MuiTypography-alignLeft"
+          >
+            <span
+              class="makeStyles-step-293"
+            >
+              <a
+                href="/procore-clients"
+              >
+                Procore Clients
+              </a>
+              <span>
+                &gt;
+              </span>
+            </span>
+            <span
+              class="makeStyles-step-293"
+            >
+              Client Mapping
+            </span>
+          </p>
+          <div
+            class="MuiBox-root MuiBox-root-294"
+            style="display: flex; align-items: center; margin-top: 5px;"
+          >
+            <h2
+              class="MuiTypography-root MuiTypography-h1"
+              style="color: rgb(68, 68, 68); font-size: 2.25rem; font-weight: 600; letter-spacing: 0; margin-right: 0.5rem;"
+            />
+          </div>
+        </div>
+        <div
+          class="makeStyles-container-295 undefined"
+          data-testid="action-configure-report-frequency-container"
+        >
+          <span
+            class="makeStyles-text-296"
+          >
+            Daily / Hourly
+          </span>
+          <svg
+            aria-hidden="true"
+            class="MuiSvgIcon-root makeStyles-icon-297"
+            focusable="false"
+            height="18px"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM20.71 7.04c.39-.39.39-1.02 0-1.41l-2.34-2.34a.9959.9959 0 00-1.41 0l-1.83 1.83 3.75 3.75 1.83-1.83z"
+            />
+          </svg>
+        </div>
+      </div>
+    </div>
+    <div
+      class="makeStyles-statusFilter-247"
+    >
+      <a
+        data-testid="filter-status-opt"
+        href="/procore-clients/client-mapping/null/projects"
+        tabindex="-1"
+      >
+        <button
+          class="MuiButtonBase-root MuiButton-root MuiButton-text"
+          tabindex="0"
+          type="button"
+        >
+          <span
+            class="MuiButton-label"
+          >
+            Projects
+          </span>
+          <span
+            class="MuiTouchRipple-root"
+          />
+        </button>
+      </a>
+      <a
+        data-testid="filter-status-opt"
+        href="/procore-clients/client-mapping/null/vendors"
+        tabindex="-1"
+      >
+        <button
+          class="MuiButtonBase-root MuiButton-root MuiButton-text makeStyles-activeFilter-248"
+          tabindex="0"
+          type="button"
+        >
+          <span
+            class="MuiButton-label"
+          >
+            Vendors
+          </span>
+          <span
+            class="MuiTouchRipple-root"
+          />
+        </button>
+      </a>
+    </div>
+    <div
+      class="makeStyles-tableWrapper-251"
+    />
+  </div>
+</div>
+`;

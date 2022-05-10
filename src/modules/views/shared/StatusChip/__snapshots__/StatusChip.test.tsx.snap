@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`StatusChip should render 1`] = `
+<div>
+  <div
+    class="MuiChip-root makeStyles-statusChip-1  MuiChip-colorPrimary"
+  >
+    <span
+      class="MuiChip-label"
+    >
+      test
+    </span>
+  </div>
+</div>
+`;

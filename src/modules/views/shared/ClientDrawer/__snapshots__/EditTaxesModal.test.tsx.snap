@@ -1,0 +1,121 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`EditTaxesModal should render 1`] = `
+<div>
+  <div
+    class="MuiDialogTitle-root makeStyles-title-1"
+    id="alert-dialog-title"
+  >
+    <h2
+      class="MuiTypography-root MuiTypography-h6"
+    >
+      Edit Tax Condition
+    </h2>
+  </div>
+  <div
+    class="MuiDialogContent-root"
+  >
+    <div
+      class="MuiFormControl-root makeStyles-formControl-8 "
+    >
+      
+      <div
+        class="MuiInputBase-root MuiOutlinedInput-root   makeStyles-selectElement-9  MuiInputBase-fullWidth MuiInputBase-formControl"
+        data-testid="tax-condition-select"
+      >
+        <div
+          aria-haspopup="listbox"
+          aria-labelledby="demo-simple-select-outlined-label demo-simple-select-outlined"
+          class="MuiSelect-root MuiSelect-select MuiSelect-selectMenu MuiSelect-outlined MuiInputBase-input MuiOutlinedInput-input"
+          id="demo-simple-select-outlined"
+          role="button"
+          tabindex="0"
+        >
+          Exempt
+        </div>
+        <input
+          aria-hidden="true"
+          class="MuiSelect-nativeInput"
+          name="isTaxExempt"
+          tabindex="-1"
+          value="1"
+        />
+        <svg
+          aria-hidden="true"
+          class="MuiSvgIcon-root MuiSelect-icon MuiSelect-iconOutlined"
+          focusable="false"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M7 10l5 5 5-5z"
+          />
+        </svg>
+        <fieldset
+          aria-hidden="true"
+          class="PrivateNotchedOutline-root-13 MuiOutlinedInput-notchedOutline"
+          style="padding-left: 8px;"
+        >
+          <legend
+            class="PrivateNotchedOutline-legend-14"
+            style="width: 0.01px;"
+          >
+            <span>
+              ​
+            </span>
+          </legend>
+        </fieldset>
+      </div>
+    </div>
+  </div>
+  <div
+    class="MuiDialogActions-root MuiDialogActions-spacing"
+  >
+    <div
+      class="MuiGrid-root MuiGrid-container"
+    >
+      <div
+        class="MuiGrid-root makeStyles-cancelButtonWrapper-2 MuiGrid-item MuiGrid-grid-xs-3"
+      >
+        <button
+          class="MuiButtonBase-root MuiButton-root MuiButton-text makeStyles-closeButton-3 MuiButton-textPrimary"
+          data-testid="cancel-button"
+          tabindex="0"
+          type="button"
+        >
+          <span
+            class="MuiButton-label"
+          >
+            Close
+          </span>
+          <span
+            class="MuiTouchRipple-root"
+          />
+        </button>
+      </div>
+      <div
+        class="MuiGrid-root makeStyles-buttonsWrapper-4 MuiGrid-item MuiGrid-grid-xs-9"
+      >
+        <button
+          class="MuiButtonBase-root MuiButton-root MuiButton-contained false makeStyles-primaryButton-5 MuiButton-containedPrimary"
+          data-testid="confirm-button"
+          tabindex="0"
+          type="button"
+        >
+          <span
+            class="MuiButton-label"
+          >
+            <span
+              class="makeStyles-textWrapper-19"
+            >
+              Save
+            </span>
+          </span>
+          <span
+            class="MuiTouchRipple-root"
+          />
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+`;

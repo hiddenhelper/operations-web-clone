@@ -1,0 +1,87 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Controlled Radio should render 1`] = `
+<body>
+  <div>
+    <div
+      class=" makeStyles-controlledRadioContainer-2 controlledRadioContainer"
+      data-testid="controlled-radio"
+    >
+      <fieldset
+        class="MuiFormControl-root"
+      >
+        <legend
+          class="MuiFormLabel-root makeStyles-controlledRadioLabel-1"
+          id="radio-label-Test"
+        >
+          Test
+        </legend>
+        <div
+          aria-labelledby="radio-label-Test"
+          class="MuiFormGroup-root"
+          data-testid="controlled-radio-group"
+          role="radiogroup"
+        >
+          <label
+            class="MuiFormControlLabel-root"
+          >
+            <span
+              aria-disabled="false"
+              class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-9 MuiRadio-root makeStyles-root-3 PrivateSwitchBase-checked-10 Mui-checked"
+            >
+              <span
+                class="MuiIconButton-label"
+              >
+                <input
+                  checked=""
+                  class="PrivateSwitchBase-input-12"
+                  data-testid="controlled-radio-button"
+                  name="Test"
+                  type="radio"
+                  value="item1"
+                />
+                <span
+                  class="makeStyles-icon-4 makeStyles-checkedIcon-7 "
+                />
+              </span>
+            </span>
+            <span
+              class="MuiTypography-root MuiFormControlLabel-label MuiTypography-body1"
+            >
+              Item 1
+            </span>
+          </label>
+          <label
+            class="MuiFormControlLabel-root"
+          >
+            <span
+              aria-disabled="false"
+              class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-9 MuiRadio-root makeStyles-root-3"
+            >
+              <span
+                class="MuiIconButton-label"
+              >
+                <input
+                  class="PrivateSwitchBase-input-12"
+                  data-testid="controlled-radio-button"
+                  name="Test"
+                  type="radio"
+                  value="item2"
+                />
+                <span
+                  class="makeStyles-icon-4 makeStyles-unactiveIcon-6"
+                />
+              </span>
+            </span>
+            <span
+              class="MuiTypography-root MuiFormControlLabel-label MuiTypography-body1"
+            >
+              Item 2
+            </span>
+          </label>
+        </div>
+      </fieldset>
+    </div>
+  </div>
+</body>
+`;

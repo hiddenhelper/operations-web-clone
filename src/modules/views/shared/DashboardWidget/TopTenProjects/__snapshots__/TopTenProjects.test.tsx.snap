@@ -1,0 +1,319 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TopTenProjects Component should render 1`] = `
+<div>
+  <div
+    class="makeStyles-tableWrapper-33"
+  >
+    <div
+      class="MuiPaper-root MuiPaper-elevation0 MuiPaper-rounded"
+    >
+      <p
+        class="MuiTypography-root makeStyles-tableTitle-35 makeStyles-tableTitlePaddingBottom-36 MuiTypography-body1"
+      >
+        Top 10 Projects
+      </p>
+      <div
+        class="makeStyles-tableOverflow-34"
+      >
+        <table
+          aria-label="main-projects"
+          class="MuiTable-root"
+        >
+          <thead
+            class="MuiTableHead-root"
+          >
+            <tr
+              class="MuiTableRow-root MuiTableRow-head"
+            >
+              <th
+                class="MuiTableCell-root MuiTableCell-head"
+                scope="col"
+              >
+                Name
+              </th>
+              <th
+                class="MuiTableCell-root MuiTableCell-head"
+                scope="col"
+              >
+                Creation Date
+              </th>
+              <th
+                class="MuiTableCell-root MuiTableCell-head"
+                scope="col"
+              >
+                Clients
+              </th>
+              <th
+                class="MuiTableCell-root MuiTableCell-head"
+                scope="col"
+              >
+                Workers
+              </th>
+              <th
+                class="MuiTableCell-root MuiTableCell-head"
+                scope="col"
+              >
+                Revenue
+              </th>
+            </tr>
+          </thead>
+          <tbody
+            class="MuiTableBody-root"
+          >
+            <tr
+              class="MuiTableRow-root WithStyles(ForwardRef(TableRow))-root-83 makeStyles-invertedRow-79"
+              data-testid="worker-list-row"
+            >
+              <td
+                class="MuiTableCell-root MuiTableCell-body makeStyles-listName-66"
+              >
+                <div
+                  class="makeStyles-workerRow-57"
+                >
+                  <div
+                    class="makeStyles-workerCenter-59"
+                  >
+                    <span
+                      class=""
+                      data-testid="controlled-button"
+                      tabindex="-1"
+                    >
+                      <button
+                        class="MuiButtonBase-root MuiButton-root MuiButton-text"
+                        data-testid="navigate-btn"
+                        tabindex="0"
+                        type="button"
+                      >
+                        <span
+                          class="MuiButton-label"
+                        >
+                          Test Name 1
+                        </span>
+                      </button>
+                    </span>
+                  </div>
+                </div>
+              </td>
+              <td
+                class="MuiTableCell-root MuiTableCell-body"
+              >
+                Jan 14, 2021
+              </td>
+              <td
+                class="MuiTableCell-root MuiTableCell-body"
+              >
+                56
+              </td>
+              <td
+                class="MuiTableCell-root MuiTableCell-body"
+              >
+                32
+              </td>
+              <td
+                class="MuiTableCell-root MuiTableCell-body"
+              >
+                $ 
+                3,200
+              </td>
+            </tr>
+            <tr
+              class="MuiTableRow-root WithStyles(ForwardRef(TableRow))-root-83 makeStyles-invertedRow-79"
+              data-testid="worker-list-row"
+            >
+              <td
+                class="MuiTableCell-root MuiTableCell-body makeStyles-listName-66"
+              >
+                <div
+                  class="makeStyles-workerRow-57"
+                >
+                  <div
+                    class="makeStyles-workerCenter-59"
+                  >
+                    <span
+                      class=""
+                      data-testid="controlled-button"
+                      tabindex="-1"
+                    >
+                      <button
+                        class="MuiButtonBase-root MuiButton-root MuiButton-text"
+                        data-testid="navigate-btn"
+                        tabindex="0"
+                        type="button"
+                      >
+                        <span
+                          class="MuiButton-label"
+                        >
+                          Test Name 2
+                        </span>
+                      </button>
+                    </span>
+                  </div>
+                </div>
+              </td>
+              <td
+                class="MuiTableCell-root MuiTableCell-body"
+              >
+                Jan 14, 2021
+              </td>
+              <td
+                class="MuiTableCell-root MuiTableCell-body"
+              >
+                20
+              </td>
+              <td
+                class="MuiTableCell-root MuiTableCell-body"
+              >
+                18
+              </td>
+              <td
+                class="MuiTableCell-root MuiTableCell-body"
+              >
+                $ 
+                1,204
+              </td>
+            </tr>
+            <tr
+              class="MuiTableRow-root WithStyles(ForwardRef(TableRow))-root-83 makeStyles-invertedRow-79"
+              data-testid="worker-list-row"
+            >
+              <td
+                class="MuiTableCell-root MuiTableCell-body makeStyles-listName-66"
+              >
+                <div
+                  class="makeStyles-workerRow-57"
+                >
+                  <div
+                    class="makeStyles-workerCenter-59"
+                  >
+                    <span
+                      class=""
+                      data-testid="controlled-button"
+                      tabindex="-1"
+                    >
+                      <button
+                        class="MuiButtonBase-root MuiButton-root MuiButton-text"
+                        data-testid="navigate-btn"
+                        tabindex="0"
+                        type="button"
+                      >
+                        <span
+                          class="MuiButton-label"
+                        >
+                          Test Name 3
+                        </span>
+                      </button>
+                    </span>
+                  </div>
+                </div>
+              </td>
+              <td
+                class="MuiTableCell-root MuiTableCell-body"
+              >
+                Jan 14, 2021
+              </td>
+              <td
+                class="MuiTableCell-root MuiTableCell-body"
+              >
+                16
+              </td>
+              <td
+                class="MuiTableCell-root MuiTableCell-body"
+              >
+                21
+              </td>
+              <td
+                class="MuiTableCell-root MuiTableCell-body"
+              >
+                $ 
+                1,400
+              </td>
+            </tr>
+            <tr
+              class="MuiTableRow-root WithStyles(ForwardRef(TableRow))-root-83 makeStyles-invertedRow-79"
+              data-testid="worker-list-row"
+            >
+              <td
+                class="MuiTableCell-root MuiTableCell-body makeStyles-listName-66"
+              >
+                <div
+                  class="makeStyles-workerRow-57"
+                >
+                  <div
+                    class="makeStyles-workerCenter-59"
+                  >
+                    <span
+                      class=""
+                      data-testid="controlled-button"
+                      tabindex="-1"
+                    >
+                      <button
+                        class="MuiButtonBase-root MuiButton-root MuiButton-text"
+                        data-testid="navigate-btn"
+                        tabindex="0"
+                        type="button"
+                      >
+                        <span
+                          class="MuiButton-label"
+                        >
+                          Test Name 4
+                        </span>
+                      </button>
+                    </span>
+                  </div>
+                </div>
+              </td>
+              <td
+                class="MuiTableCell-root MuiTableCell-body"
+              >
+                Jan 14, 2021
+              </td>
+              <td
+                class="MuiTableCell-root MuiTableCell-body"
+              >
+                32
+              </td>
+              <td
+                class="MuiTableCell-root MuiTableCell-body"
+              >
+                32
+              </td>
+              <td
+                class="MuiTableCell-root MuiTableCell-body"
+              >
+                $ 
+                32
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`TopTenProjects Component should render loading 1`] = `
+<div>
+  <div
+    class="makeStyles-tableWrapper-172"
+  >
+    <div
+      class="MuiPaper-root MuiPaper-elevation0 MuiPaper-rounded"
+    >
+      <div
+        class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-wave"
+        style="width: 180px; height: 25px;"
+      />
+      <div
+        class="makeStyles-tableOverflow-173"
+      >
+        <div
+          class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-wave"
+          style="width: 100%;"
+        />
+      </div>
+    </div>
+  </div>
+</div>
+`;

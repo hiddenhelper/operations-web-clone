@@ -1,0 +1,99 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`New Credit Card Item should render 1`] = `
+<div>
+  <div
+    class="makeStyles-emptyCardItem-1 false"
+  >
+    <button
+      class="MuiButtonBase-root MuiButton-root MuiButton-text makeStyles-addNewCardButton-23 MuiButton-textPrimary"
+      data-testid="add-card-btn"
+      tabindex="0"
+      type="button"
+    >
+      <span
+        class="MuiButton-label"
+      >
+        <svg>
+          credit-card.svg
+        </svg>
+        ADD NEW CREDIT CARD
+      </span>
+      <span
+        class="MuiTouchRipple-root"
+      />
+    </button>
+  </div>
+</div>
+`;
+
+exports[`New Credit Card Item should render credit card form 1`] = `
+<div>
+  <div
+    class="false makeStyles-formCardItem-71"
+  >
+    <div
+      class="makeStyles-newCardContainer-54"
+    >
+      <button
+        class="MuiButtonBase-root MuiButton-root MuiButton-text makeStyles-closeButton-80 makeStyles-closeButton-73"
+        data-testid="close-credit-card-form"
+        tabindex="0"
+        type="button"
+      >
+        <span
+          class="MuiButton-label"
+        >
+          <svg>
+            close.svg
+          </svg>
+        </span>
+      </button>
+      <h1
+        class="MuiTypography-root makeStyles-cardFormTitle-56 MuiTypography-h5 MuiTypography-colorPrimary MuiTypography-alignLeft"
+      >
+        Enter Credit Card Information
+      </h1>
+      <p
+        class="MuiTypography-root makeStyles-cardFormSubtitle-57 MuiTypography-body1"
+      >
+        Please enter your Credit Card details. This card will be charged every payment cycle (weekly or monthly) as long as it is associated with a Project.
+      </p>
+      <div
+        class="makeStyles-newCardFormContainer-55"
+      >
+        <div>
+          <div />
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`New Credit Card Item should render credit card form 2`] = `
+<div>
+  <div
+    class="makeStyles-emptyCardItem-50 false"
+  >
+    <button
+      class="MuiButtonBase-root MuiButton-root MuiButton-text makeStyles-addNewCardButton-72 MuiButton-textPrimary"
+      data-testid="add-card-btn"
+      tabindex="0"
+      type="button"
+    >
+      <span
+        class="MuiButton-label"
+      >
+        <svg>
+          credit-card.svg
+        </svg>
+        ADD NEW CREDIT CARD
+      </span>
+      <span
+        class="MuiTouchRipple-root"
+      />
+    </button>
+  </div>
+</div>
+`;

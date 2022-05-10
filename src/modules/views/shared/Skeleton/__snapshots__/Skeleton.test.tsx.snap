@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Skeleton should render 1`] = `
+<div>
+  <div>
+    test
+  </div>
+</div>
+`;
+
+exports[`Skeleton should show loading 1`] = `
+<div>
+  <div
+    class="MuiSkeleton-root MuiSkeleton-rect MuiSkeleton-pulse"
+    style="width: 300px; height: 300px;"
+  />
+</div>
+`;

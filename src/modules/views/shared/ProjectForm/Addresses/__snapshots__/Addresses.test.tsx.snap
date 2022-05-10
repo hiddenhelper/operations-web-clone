@@ -1,0 +1,1823 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Addresses should change matching address 1`] = `
+<div>
+  <div
+    class="MuiPaper-root makeStyles-container-275  MuiPaper-outlined MuiPaper-rounded"
+  >
+    <div
+      class="MuiGrid-root MuiGrid-container MuiGrid-align-items-xs-center MuiGrid-justify-xs-space-between"
+    >
+      <div
+        class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-auto"
+      >
+        <h1
+          class="MuiTypography-root makeStyles-title-276 MuiTypography-h1"
+        >
+          Job Site Address
+        </h1>
+      </div>
+      <div
+        class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-auto"
+      >
+        <span
+          class=" makeStyles-secondaryActions-277"
+        />
+      </div>
+    </div>
+    <hr
+      class="MuiDivider-root makeStyles-divider-278"
+    />
+    <div
+      class="MuiGrid-root MuiGrid-container"
+    >
+      <div
+        class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12"
+      >
+        <div
+          class="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-3 MuiGrid-align-items-xs-center"
+        >
+          <div
+            class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-lg-6"
+          >
+            <div
+              class="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-3"
+            >
+              <div
+                class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12"
+              >
+                <div
+                  class="makeStyles-errorInputWrapper-351"
+                >
+                  <div
+                    class="MuiFormControl-root makeStyles-formControl-357 "
+                  >
+                    <h1
+                      class="MuiTypography-root MuiTypography-caption MuiTypography-colorSecondary MuiTypography-alignLeft"
+                    >
+                      Address Line 1
+                       
+                    </h1>
+                    <div>
+                      <div
+                        class="MuiFormControl-root MuiTextField-root MuiFormControl-fullWidth"
+                        data-testid="addr-line1-wrapper"
+                      >
+                        <div
+                          class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-fullWidth MuiInputBase-formControl"
+                        >
+                          <input
+                            aria-invalid="false"
+                            autocomplete="off"
+                            class="MuiInputBase-input MuiOutlinedInput-input"
+                            data-testid="addr-line1"
+                            name="name"
+                            placeholder="Address"
+                            type="text"
+                            value=""
+                          />
+                          <fieldset
+                            aria-hidden="true"
+                            class="PrivateNotchedOutline-root-359 MuiOutlinedInput-notchedOutline"
+                            style="padding-left: 8px;"
+                          >
+                            <legend
+                              class="PrivateNotchedOutline-legend-360"
+                              style="width: 0.01px;"
+                            >
+                              <span>
+                                ​
+                              </span>
+                            </legend>
+                          </fieldset>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12"
+              >
+                <div
+                  class="makeStyles-errorInputWrapper-289"
+                >
+                  <div
+                    class="MuiFormControl-root makeStyles-formControl-357 "
+                  >
+                    <h1
+                      class="MuiTypography-root MuiTypography-caption MuiTypography-colorSecondary MuiTypography-alignLeft"
+                    >
+                      Address Line 2 (Optional)
+                       
+                    </h1>
+                    <div>
+                      <div
+                        class="MuiFormControl-root MuiTextField-root MuiFormControl-fullWidth"
+                      >
+                        <div
+                          class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-fullWidth MuiInputBase-formControl"
+                        >
+                          <input
+                            aria-invalid="false"
+                            autocomplete="off"
+                            class="MuiInputBase-input MuiOutlinedInput-input"
+                            data-testid="addr-line2"
+                            name="line2"
+                            placeholder="Attention, Office, Building, etc"
+                            type="text"
+                            value=""
+                          />
+                          <fieldset
+                            aria-hidden="true"
+                            class="PrivateNotchedOutline-root-359 MuiOutlinedInput-notchedOutline"
+                            style="padding-left: 8px;"
+                          >
+                            <legend
+                              class="PrivateNotchedOutline-legend-360"
+                              style="width: 0.01px;"
+                            >
+                              <span>
+                                ​
+                              </span>
+                            </legend>
+                          </fieldset>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12"
+              >
+                <div
+                  class="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-3"
+                >
+                  <div
+                    class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-6"
+                  >
+                    <div
+                      class="makeStyles-errorInputWrapper-289"
+                    >
+                      <div
+                        class="MuiFormControl-root makeStyles-formControl-365 "
+                      >
+                        <h1
+                          class="MuiTypography-root MuiTypography-caption MuiTypography-colorSecondary MuiTypography-alignLeft"
+                        >
+                          Country
+                           
+                        </h1>
+                        <div
+                          class="MuiInputBase-root MuiOutlinedInput-root   makeStyles-selectElement-366 makeStyles-inactiveOption-367 MuiInputBase-fullWidth MuiInputBase-formControl"
+                          data-testid=""
+                        >
+                          <div
+                            aria-haspopup="listbox"
+                            aria-labelledby="demo-simple-select-outlined-label demo-simple-select-outlined"
+                            class="MuiSelect-root MuiSelect-select MuiSelect-selectMenu MuiSelect-outlined MuiInputBase-input MuiOutlinedInput-input"
+                            id="demo-simple-select-outlined"
+                            role="button"
+                            tabindex="0"
+                          >
+                            Select Option
+                          </div>
+                          <input
+                            aria-hidden="true"
+                            class="MuiSelect-nativeInput"
+                            data-testid="addr-country"
+                            name="countryId"
+                            tabindex="-1"
+                            value=""
+                          />
+                          <svg
+                            aria-hidden="true"
+                            class="MuiSvgIcon-root MuiSelect-icon MuiSelect-iconOutlined"
+                            focusable="false"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              d="M7 10l5 5 5-5z"
+                            />
+                          </svg>
+                          <fieldset
+                            aria-hidden="true"
+                            class="PrivateNotchedOutline-root-359 MuiOutlinedInput-notchedOutline"
+                            style="padding-left: 8px;"
+                          >
+                            <legend
+                              class="PrivateNotchedOutline-legend-360"
+                              style="width: 0.01px;"
+                            >
+                              <span>
+                                ​
+                              </span>
+                            </legend>
+                          </fieldset>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-6"
+                  >
+                    <div
+                      class="makeStyles-errorInputWrapper-289"
+                    >
+                      <div
+                        class="MuiFormControl-root makeStyles-formControl-365 "
+                      >
+                        <h1
+                          class="MuiTypography-root MuiTypography-caption MuiTypography-colorSecondary MuiTypography-alignLeft"
+                        >
+                          State
+                           
+                        </h1>
+                        <div
+                          class="MuiInputBase-root MuiOutlinedInput-root   makeStyles-selectElement-366 makeStyles-inactiveOption-367 MuiInputBase-fullWidth MuiInputBase-formControl"
+                          data-testid=""
+                        >
+                          <div
+                            aria-haspopup="listbox"
+                            aria-labelledby="demo-simple-select-outlined-label demo-simple-select-outlined"
+                            class="MuiSelect-root MuiSelect-select MuiSelect-selectMenu MuiSelect-outlined MuiInputBase-input MuiOutlinedInput-input"
+                            id="demo-simple-select-outlined"
+                            role="button"
+                            tabindex="0"
+                          >
+                            Select Option
+                          </div>
+                          <input
+                            aria-hidden="true"
+                            class="MuiSelect-nativeInput"
+                            data-testid="addr-state"
+                            name="stateCode"
+                            tabindex="-1"
+                            value=""
+                          />
+                          <svg
+                            aria-hidden="true"
+                            class="MuiSvgIcon-root MuiSelect-icon MuiSelect-iconOutlined"
+                            focusable="false"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              d="M7 10l5 5 5-5z"
+                            />
+                          </svg>
+                          <fieldset
+                            aria-hidden="true"
+                            class="PrivateNotchedOutline-root-359 MuiOutlinedInput-notchedOutline"
+                            style="padding-left: 8px;"
+                          >
+                            <legend
+                              class="PrivateNotchedOutline-legend-360"
+                              style="width: 0.01px;"
+                            >
+                              <span>
+                                ​
+                              </span>
+                            </legend>
+                          </fieldset>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12"
+              >
+                <div
+                  class="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-3"
+                >
+                  <div
+                    class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-3"
+                  >
+                    <div
+                      class="makeStyles-errorInputWrapper-289"
+                    >
+                      <div
+                        class="MuiFormControl-root makeStyles-formControl-357 "
+                      >
+                        <h1
+                          class="MuiTypography-root MuiTypography-caption MuiTypography-colorSecondary MuiTypography-alignLeft"
+                        >
+                          Zip Code
+                           
+                        </h1>
+                        <div>
+                          <div
+                            class="MuiFormControl-root MuiTextField-root MuiFormControl-fullWidth"
+                          >
+                            <div
+                              class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-fullWidth MuiInputBase-formControl"
+                            >
+                              <input
+                                aria-invalid="false"
+                                autocomplete="off"
+                                class="MuiInputBase-input MuiOutlinedInput-input"
+                                data-testid="zip-code"
+                                maxlength="10"
+                                name="zipCode"
+                                placeholder="00000"
+                                type="text"
+                                value=""
+                              />
+                              <fieldset
+                                aria-hidden="true"
+                                class="PrivateNotchedOutline-root-359 MuiOutlinedInput-notchedOutline"
+                                style="padding-left: 8px;"
+                              >
+                                <legend
+                                  class="PrivateNotchedOutline-legend-360"
+                                  style="width: 0.01px;"
+                                >
+                                  <span>
+                                    ​
+                                  </span>
+                                </legend>
+                              </fieldset>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-9"
+                  >
+                    <div
+                      class="makeStyles-errorInputWrapper-289"
+                    >
+                      <div
+                        class="MuiFormControl-root makeStyles-formControl-357 "
+                      >
+                        <h1
+                          class="MuiTypography-root MuiTypography-caption MuiTypography-colorSecondary MuiTypography-alignLeft"
+                        >
+                          City
+                           
+                        </h1>
+                        <div>
+                          <div
+                            class="MuiFormControl-root MuiTextField-root MuiFormControl-fullWidth"
+                          >
+                            <div
+                              class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-fullWidth MuiInputBase-formControl"
+                            >
+                              <input
+                                aria-invalid="false"
+                                autocomplete="off"
+                                class="MuiInputBase-input MuiOutlinedInput-input"
+                                data-testid="addr-city"
+                                name="city"
+                                placeholder="City"
+                                type="text"
+                                value=""
+                              />
+                              <fieldset
+                                aria-hidden="true"
+                                class="PrivateNotchedOutline-root-359 MuiOutlinedInput-notchedOutline"
+                                style="padding-left: 8px;"
+                              >
+                                <legend
+                                  class="PrivateNotchedOutline-legend-360"
+                                  style="width: 0.01px;"
+                                >
+                                  <span>
+                                    ​
+                                  </span>
+                                </legend>
+                              </fieldset>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-lg-12"
+              />
+            </div>
+          </div>
+          <div
+            class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-lg-6"
+          >
+            <div
+              class="makeStyles-mapWrapper-316 makeStyles-mapWrapper-290"
+            >
+              <div
+                class="makeStyles-mapWrapper-316  "
+                id="jobSiteAddress-map"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    class="MuiPaper-root makeStyles-container-275  MuiPaper-outlined MuiPaper-rounded"
+  >
+    <div
+      class="MuiGrid-root MuiGrid-container MuiGrid-align-items-xs-center MuiGrid-justify-xs-space-between"
+    >
+      <div
+        class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-auto"
+      >
+        <h1
+          class="MuiTypography-root makeStyles-title-276 MuiTypography-h1"
+        >
+          Project Locations
+        </h1>
+      </div>
+      <div
+        class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-auto"
+      >
+        <span
+          class=" makeStyles-secondaryActions-277"
+        />
+      </div>
+    </div>
+    <hr
+      class="MuiDivider-root makeStyles-divider-278"
+    />
+    <div>
+      <div
+        class="MuiGrid-root MuiGrid-container"
+        data-testid="user-row-item"
+      >
+        <div
+          class="MuiGrid-root MuiGrid-item MuiGrid-grid-lg-12"
+        >
+          <div
+            class="MuiGrid-root MuiGrid-container"
+          >
+            <div
+              class="MuiGrid-root makeStyles-rowsWrapper-299 makeStyles-field-397 MuiGrid-container"
+            >
+              <div
+                class="makeStyles-errorInputWrapper-399"
+              >
+                <div
+                  class="MuiFormControl-root makeStyles-formControl-357 "
+                >
+                  <h1
+                    class="MuiTypography-root MuiTypography-caption MuiTypography-colorSecondary MuiTypography-alignLeft"
+                  >
+                    Location Name
+                     
+                  </h1>
+                  <div>
+                    <div
+                      class="MuiFormControl-root MuiTextField-root MuiFormControl-fullWidth"
+                    >
+                      <div
+                        class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-fullWidth Mui-focused Mui-focused MuiInputBase-formControl"
+                      >
+                        <input
+                          aria-invalid="false"
+                          autocomplete="off"
+                          class="MuiInputBase-input MuiOutlinedInput-input"
+                          data-testid="project-location-name"
+                          name="name"
+                          placeholder="Location Name"
+                          required=""
+                          type="text"
+                          value=""
+                        />
+                        <fieldset
+                          aria-hidden="true"
+                          class="PrivateNotchedOutline-root-359 MuiOutlinedInput-notchedOutline"
+                          style="padding-left: 8px;"
+                        >
+                          <legend
+                            class="PrivateNotchedOutline-legend-360"
+                            style="width: 0.01px;"
+                          >
+                            <span>
+                              ​
+                            </span>
+                          </legend>
+                        </fieldset>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr
+        class="MuiDivider-root makeStyles-divider-398"
+      />
+    </div>
+    <span
+      class=""
+      data-testid="controlled-button"
+      tabindex="-1"
+    >
+      <button
+        class="MuiButtonBase-root MuiButton-root MuiButton-text makeStyles-addButtonRow-400 makeStyles-addUserButton-384 makeStyles-disableUserButton-323"
+        data-testid="add-location-button"
+        tabindex="0"
+        type="button"
+      >
+        <span
+          class="MuiButton-label"
+        >
+          <span
+            class="MuiButton-startIcon MuiButton-iconSizeMedium"
+          >
+            <svg>
+              add.svg
+            </svg>
+          </span>
+          Add Location
+        </span>
+      </button>
+    </span>
+  </div>
+  <div
+    class="MuiPaper-root makeStyles-container-275 makeStyles-addressWrapper-226 MuiPaper-outlined MuiPaper-rounded"
+  >
+    <div
+      class="MuiGrid-root MuiGrid-container MuiGrid-align-items-xs-center MuiGrid-justify-xs-space-between"
+    >
+      <div
+        class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-auto"
+      >
+        <h1
+          class="MuiTypography-root makeStyles-title-276 MuiTypography-h1"
+        >
+          Badging Site Address
+        </h1>
+      </div>
+      <div
+        class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-auto"
+      >
+        <span
+          class=" makeStyles-secondaryActions-277"
+        />
+      </div>
+    </div>
+    <hr
+      class="MuiDivider-root makeStyles-divider-278"
+    />
+    <label
+      class="MuiFormControlLabel-root makeStyles-addressCheckbox-224"
+    >
+      <span
+        aria-disabled="false"
+        class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-403 MuiCheckbox-root MuiCheckbox-colorSecondary MuiIconButton-colorSecondary"
+        data-testid="multiple-checkbox"
+      >
+        <span
+          class="MuiIconButton-label"
+        >
+          <input
+            class="PrivateSwitchBase-input-406"
+            data-indeterminate="false"
+            data-testid="badgingMatchJobSite"
+            name="badgingSiteAddressMatchesJobSiteAddress"
+            type="checkbox"
+            value="badgingSiteAddressMatchesJobSiteAddress"
+          />
+          <svg
+            aria-hidden="true"
+            class="MuiSvgIcon-root makeStyles-iconRoot-401 "
+            focusable="false"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z"
+            />
+          </svg>
+        </span>
+        <span
+          class="MuiTouchRipple-root"
+        />
+      </span>
+      <span
+        class="MuiTypography-root MuiFormControlLabel-label MuiTypography-body1"
+      >
+        Same as Job Site Address
+      </span>
+    </label>
+    <hr
+      class="MuiDivider-root makeStyles-divider-205"
+    />
+    <div
+      class="MuiGrid-root MuiGrid-container"
+    >
+      <div
+        class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12"
+      >
+        <div
+          class="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-3 MuiGrid-align-items-xs-center"
+        >
+          <div
+            class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-lg-6"
+          >
+            <div
+              class="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-3"
+            >
+              <div
+                class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12"
+              >
+                <div
+                  class="makeStyles-errorInputWrapper-351"
+                >
+                  <div
+                    class="MuiFormControl-root makeStyles-formControl-357 "
+                  >
+                    <h1
+                      class="MuiTypography-root MuiTypography-caption MuiTypography-colorSecondary MuiTypography-alignLeft"
+                    >
+                      Address Line 1
+                       
+                    </h1>
+                    <div>
+                      <div
+                        class="MuiFormControl-root MuiTextField-root MuiFormControl-fullWidth"
+                        data-testid="addr-line1-wrapper"
+                      >
+                        <div
+                          class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-fullWidth MuiInputBase-formControl"
+                        >
+                          <input
+                            aria-invalid="false"
+                            autocomplete="off"
+                            class="MuiInputBase-input MuiOutlinedInput-input"
+                            data-testid="addr-line1"
+                            name="name"
+                            placeholder="Address"
+                            type="text"
+                            value=""
+                          />
+                          <fieldset
+                            aria-hidden="true"
+                            class="PrivateNotchedOutline-root-359 MuiOutlinedInput-notchedOutline"
+                            style="padding-left: 8px;"
+                          >
+                            <legend
+                              class="PrivateNotchedOutline-legend-360"
+                              style="width: 0.01px;"
+                            >
+                              <span>
+                                ​
+                              </span>
+                            </legend>
+                          </fieldset>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12"
+              >
+                <div
+                  class="makeStyles-errorInputWrapper-289"
+                >
+                  <div
+                    class="MuiFormControl-root makeStyles-formControl-357 "
+                  >
+                    <h1
+                      class="MuiTypography-root MuiTypography-caption MuiTypography-colorSecondary MuiTypography-alignLeft"
+                    >
+                      Address Line 2 (Optional)
+                       
+                    </h1>
+                    <div>
+                      <div
+                        class="MuiFormControl-root MuiTextField-root MuiFormControl-fullWidth"
+                      >
+                        <div
+                          class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-fullWidth MuiInputBase-formControl"
+                        >
+                          <input
+                            aria-invalid="false"
+                            autocomplete="off"
+                            class="MuiInputBase-input MuiOutlinedInput-input"
+                            data-testid="addr-line2"
+                            name="line2"
+                            placeholder="Attention, Office, Building, etc"
+                            type="text"
+                            value=""
+                          />
+                          <fieldset
+                            aria-hidden="true"
+                            class="PrivateNotchedOutline-root-359 MuiOutlinedInput-notchedOutline"
+                            style="padding-left: 8px;"
+                          >
+                            <legend
+                              class="PrivateNotchedOutline-legend-360"
+                              style="width: 0.01px;"
+                            >
+                              <span>
+                                ​
+                              </span>
+                            </legend>
+                          </fieldset>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12"
+              >
+                <div
+                  class="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-3"
+                >
+                  <div
+                    class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-6"
+                  >
+                    <div
+                      class="makeStyles-errorInputWrapper-289"
+                    >
+                      <div
+                        class="MuiFormControl-root makeStyles-formControl-365 "
+                      >
+                        <h1
+                          class="MuiTypography-root MuiTypography-caption MuiTypography-colorSecondary MuiTypography-alignLeft"
+                        >
+                          Country
+                           
+                        </h1>
+                        <div
+                          class="MuiInputBase-root MuiOutlinedInput-root   makeStyles-selectElement-366 makeStyles-inactiveOption-367 MuiInputBase-fullWidth MuiInputBase-formControl"
+                          data-testid=""
+                        >
+                          <div
+                            aria-haspopup="listbox"
+                            aria-labelledby="demo-simple-select-outlined-label demo-simple-select-outlined"
+                            class="MuiSelect-root MuiSelect-select MuiSelect-selectMenu MuiSelect-outlined MuiInputBase-input MuiOutlinedInput-input"
+                            id="demo-simple-select-outlined"
+                            role="button"
+                            tabindex="0"
+                          >
+                            Select Option
+                          </div>
+                          <input
+                            aria-hidden="true"
+                            class="MuiSelect-nativeInput"
+                            data-testid="addr-country"
+                            name="countryId"
+                            tabindex="-1"
+                            value=""
+                          />
+                          <svg
+                            aria-hidden="true"
+                            class="MuiSvgIcon-root MuiSelect-icon MuiSelect-iconOutlined"
+                            focusable="false"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              d="M7 10l5 5 5-5z"
+                            />
+                          </svg>
+                          <fieldset
+                            aria-hidden="true"
+                            class="PrivateNotchedOutline-root-359 MuiOutlinedInput-notchedOutline"
+                            style="padding-left: 8px;"
+                          >
+                            <legend
+                              class="PrivateNotchedOutline-legend-360"
+                              style="width: 0.01px;"
+                            >
+                              <span>
+                                ​
+                              </span>
+                            </legend>
+                          </fieldset>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-6"
+                  >
+                    <div
+                      class="makeStyles-errorInputWrapper-289"
+                    >
+                      <div
+                        class="MuiFormControl-root makeStyles-formControl-365 "
+                      >
+                        <h1
+                          class="MuiTypography-root MuiTypography-caption MuiTypography-colorSecondary MuiTypography-alignLeft"
+                        >
+                          State
+                           
+                        </h1>
+                        <div
+                          class="MuiInputBase-root MuiOutlinedInput-root   makeStyles-selectElement-366 makeStyles-inactiveOption-367 MuiInputBase-fullWidth MuiInputBase-formControl"
+                          data-testid=""
+                        >
+                          <div
+                            aria-haspopup="listbox"
+                            aria-labelledby="demo-simple-select-outlined-label demo-simple-select-outlined"
+                            class="MuiSelect-root MuiSelect-select MuiSelect-selectMenu MuiSelect-outlined MuiInputBase-input MuiOutlinedInput-input"
+                            id="demo-simple-select-outlined"
+                            role="button"
+                            tabindex="0"
+                          >
+                            Select Option
+                          </div>
+                          <input
+                            aria-hidden="true"
+                            class="MuiSelect-nativeInput"
+                            data-testid="addr-state"
+                            name="stateCode"
+                            tabindex="-1"
+                            value=""
+                          />
+                          <svg
+                            aria-hidden="true"
+                            class="MuiSvgIcon-root MuiSelect-icon MuiSelect-iconOutlined"
+                            focusable="false"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              d="M7 10l5 5 5-5z"
+                            />
+                          </svg>
+                          <fieldset
+                            aria-hidden="true"
+                            class="PrivateNotchedOutline-root-359 MuiOutlinedInput-notchedOutline"
+                            style="padding-left: 8px;"
+                          >
+                            <legend
+                              class="PrivateNotchedOutline-legend-360"
+                              style="width: 0.01px;"
+                            >
+                              <span>
+                                ​
+                              </span>
+                            </legend>
+                          </fieldset>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12"
+              >
+                <div
+                  class="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-3"
+                >
+                  <div
+                    class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-3"
+                  >
+                    <div
+                      class="makeStyles-errorInputWrapper-289"
+                    >
+                      <div
+                        class="MuiFormControl-root makeStyles-formControl-357 "
+                      >
+                        <h1
+                          class="MuiTypography-root MuiTypography-caption MuiTypography-colorSecondary MuiTypography-alignLeft"
+                        >
+                          Zip Code
+                           
+                        </h1>
+                        <div>
+                          <div
+                            class="MuiFormControl-root MuiTextField-root MuiFormControl-fullWidth"
+                          >
+                            <div
+                              class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-fullWidth MuiInputBase-formControl"
+                            >
+                              <input
+                                aria-invalid="false"
+                                autocomplete="off"
+                                class="MuiInputBase-input MuiOutlinedInput-input"
+                                data-testid="zip-code"
+                                maxlength="10"
+                                name="zipCode"
+                                placeholder="00000"
+                                type="text"
+                                value=""
+                              />
+                              <fieldset
+                                aria-hidden="true"
+                                class="PrivateNotchedOutline-root-359 MuiOutlinedInput-notchedOutline"
+                                style="padding-left: 8px;"
+                              >
+                                <legend
+                                  class="PrivateNotchedOutline-legend-360"
+                                  style="width: 0.01px;"
+                                >
+                                  <span>
+                                    ​
+                                  </span>
+                                </legend>
+                              </fieldset>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-9"
+                  >
+                    <div
+                      class="makeStyles-errorInputWrapper-289"
+                    >
+                      <div
+                        class="MuiFormControl-root makeStyles-formControl-357 "
+                      >
+                        <h1
+                          class="MuiTypography-root MuiTypography-caption MuiTypography-colorSecondary MuiTypography-alignLeft"
+                        >
+                          City
+                           
+                        </h1>
+                        <div>
+                          <div
+                            class="MuiFormControl-root MuiTextField-root MuiFormControl-fullWidth"
+                          >
+                            <div
+                              class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-fullWidth MuiInputBase-formControl"
+                            >
+                              <input
+                                aria-invalid="false"
+                                autocomplete="off"
+                                class="MuiInputBase-input MuiOutlinedInput-input"
+                                data-testid="addr-city"
+                                name="city"
+                                placeholder="City"
+                                type="text"
+                                value=""
+                              />
+                              <fieldset
+                                aria-hidden="true"
+                                class="PrivateNotchedOutline-root-359 MuiOutlinedInput-notchedOutline"
+                                style="padding-left: 8px;"
+                              >
+                                <legend
+                                  class="PrivateNotchedOutline-legend-360"
+                                  style="width: 0.01px;"
+                                >
+                                  <span>
+                                    ​
+                                  </span>
+                                </legend>
+                              </fieldset>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-lg-12"
+              />
+            </div>
+          </div>
+          <div
+            class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-lg-6"
+          >
+            <div
+              class="makeStyles-mapWrapper-316 makeStyles-mapWrapper-290"
+            >
+              <div
+                class="makeStyles-mapWrapper-316  "
+                id="badgingSiteAddress-map"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    class="MuiPaper-root makeStyles-container-275 makeStyles-addressWrapper-226 MuiPaper-outlined MuiPaper-rounded"
+  >
+    <div
+      class="MuiGrid-root MuiGrid-container MuiGrid-align-items-xs-center MuiGrid-justify-xs-space-between"
+    >
+      <div
+        class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-auto"
+      >
+        <h1
+          class="MuiTypography-root makeStyles-title-276 MuiTypography-h1"
+        >
+          Mailing Address
+        </h1>
+      </div>
+      <div
+        class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-auto"
+      >
+        <span
+          class=" makeStyles-secondaryActions-277"
+        />
+      </div>
+    </div>
+    <hr
+      class="MuiDivider-root makeStyles-divider-278"
+    />
+    <hr
+      class="MuiDivider-root makeStyles-divider-205"
+    />
+    <label
+      class="MuiFormControlLabel-root makeStyles-addressCheckbox-224"
+    >
+      <span
+        aria-disabled="false"
+        class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-403 MuiCheckbox-root MuiCheckbox-colorSecondary PrivateSwitchBase-checked-404 Mui-checked MuiIconButton-colorSecondary"
+        data-testid="multiple-checkbox"
+      >
+        <span
+          class="MuiIconButton-label"
+        >
+          <input
+            checked=""
+            class="PrivateSwitchBase-input-406"
+            data-indeterminate="false"
+            data-testid="mailingMatchNone"
+            name="mailingAddressNoneMatches"
+            type="checkbox"
+            value="mailingAddressNoneMatches"
+          />
+          <svg
+            aria-hidden="true"
+            class="MuiSvgIcon-root"
+            focusable="false"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M19 3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.11 0 2-.9 2-2V5c0-1.1-.89-2-2-2zm-9 14l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"
+            />
+          </svg>
+        </span>
+        <span
+          class="MuiTouchRipple-root"
+        />
+      </span>
+      <span
+        class="MuiTypography-root MuiFormControlLabel-label MuiTypography-body1"
+      >
+        <div
+          class="MuiFormControl-root makeStyles-inlineSelect-368 makeStyles-formControl-365 "
+        >
+          <h1
+            class="MuiTypography-root MuiTypography-caption MuiTypography-colorSecondary MuiTypography-alignLeft"
+          >
+            Same as
+             
+          </h1>
+          <div
+            class="MuiInputBase-root MuiOutlinedInput-root   makeStyles-selectElement-366  MuiInputBase-fullWidth MuiInputBase-formControl"
+            data-testid=""
+          >
+            <div
+              aria-haspopup="listbox"
+              aria-labelledby="demo-simple-select-outlined-label demo-simple-select-outlined"
+              class="MuiSelect-root MuiSelect-select MuiSelect-selectMenu MuiSelect-outlined MuiInputBase-input MuiOutlinedInput-input"
+              id="demo-simple-select-outlined"
+              role="button"
+              tabindex="0"
+            >
+              Job Site Address
+            </div>
+            <input
+              aria-hidden="true"
+              class="MuiSelect-nativeInput"
+              data-testid="mailingMatchType"
+              name="mailingAddressMatchingType"
+              tabindex="-1"
+              value="1"
+            />
+            <svg
+              aria-hidden="true"
+              class="MuiSvgIcon-root MuiSelect-icon MuiSelect-iconOutlined"
+              focusable="false"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M7 10l5 5 5-5z"
+              />
+            </svg>
+            <fieldset
+              aria-hidden="true"
+              class="PrivateNotchedOutline-root-359 MuiOutlinedInput-notchedOutline"
+              style="padding-left: 8px;"
+            >
+              <legend
+                class="PrivateNotchedOutline-legend-360"
+                style="width: 0.01px;"
+              >
+                <span>
+                  ​
+                </span>
+              </legend>
+            </fieldset>
+          </div>
+        </div>
+      </span>
+    </label>
+  </div>
+</div>
+`;
+
+exports[`Addresses should render fallback address 1`] = `
+<div>
+  <div
+    class="MuiPaper-root makeStyles-container-72  MuiPaper-outlined MuiPaper-rounded"
+  >
+    <div
+      class="MuiGrid-root MuiGrid-container MuiGrid-align-items-xs-center MuiGrid-justify-xs-space-between"
+    >
+      <div
+        class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-auto"
+      >
+        <h1
+          class="MuiTypography-root makeStyles-title-73 MuiTypography-h1"
+        >
+          Job Site Address
+        </h1>
+      </div>
+      <div
+        class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-auto"
+      >
+        <span
+          class=" makeStyles-secondaryActions-74"
+        />
+      </div>
+    </div>
+    <hr
+      class="MuiDivider-root makeStyles-divider-75"
+    />
+    <div
+      class="MuiGrid-root MuiGrid-container"
+    >
+      <div
+        class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12"
+      >
+        <div
+          class="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-3 MuiGrid-align-items-xs-center"
+        >
+          <div
+            class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-lg-6"
+          >
+            <div
+              class="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-3"
+            >
+              <div
+                class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12"
+              >
+                <div
+                  class="makeStyles-errorInputWrapper-148"
+                >
+                  <div
+                    class="MuiFormControl-root makeStyles-formControl-154 "
+                  >
+                    <h1
+                      class="MuiTypography-root MuiTypography-caption MuiTypography-colorSecondary MuiTypography-alignLeft"
+                    >
+                      Address Line 1
+                       
+                    </h1>
+                    <div>
+                      <div
+                        class="MuiFormControl-root MuiTextField-root MuiFormControl-fullWidth"
+                        data-testid="addr-line1-wrapper"
+                      >
+                        <div
+                          class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-fullWidth MuiInputBase-formControl"
+                        >
+                          <input
+                            aria-invalid="false"
+                            autocomplete="off"
+                            class="MuiInputBase-input MuiOutlinedInput-input"
+                            data-testid="addr-line1"
+                            name="name"
+                            placeholder="Address"
+                            type="text"
+                            value=""
+                          />
+                          <fieldset
+                            aria-hidden="true"
+                            class="PrivateNotchedOutline-root-156 MuiOutlinedInput-notchedOutline"
+                            style="padding-left: 8px;"
+                          >
+                            <legend
+                              class="PrivateNotchedOutline-legend-157"
+                              style="width: 0.01px;"
+                            >
+                              <span>
+                                ​
+                              </span>
+                            </legend>
+                          </fieldset>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12"
+              >
+                <div
+                  class="makeStyles-errorInputWrapper-86"
+                >
+                  <div
+                    class="MuiFormControl-root makeStyles-formControl-154 "
+                  >
+                    <h1
+                      class="MuiTypography-root MuiTypography-caption MuiTypography-colorSecondary MuiTypography-alignLeft"
+                    >
+                      Address Line 2 (Optional)
+                       
+                    </h1>
+                    <div>
+                      <div
+                        class="MuiFormControl-root MuiTextField-root MuiFormControl-fullWidth"
+                      >
+                        <div
+                          class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-fullWidth MuiInputBase-formControl"
+                        >
+                          <input
+                            aria-invalid="false"
+                            autocomplete="off"
+                            class="MuiInputBase-input MuiOutlinedInput-input"
+                            data-testid="addr-line2"
+                            name="line2"
+                            placeholder="Attention, Office, Building, etc"
+                            type="text"
+                            value=""
+                          />
+                          <fieldset
+                            aria-hidden="true"
+                            class="PrivateNotchedOutline-root-156 MuiOutlinedInput-notchedOutline"
+                            style="padding-left: 8px;"
+                          >
+                            <legend
+                              class="PrivateNotchedOutline-legend-157"
+                              style="width: 0.01px;"
+                            >
+                              <span>
+                                ​
+                              </span>
+                            </legend>
+                          </fieldset>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12"
+              >
+                <div
+                  class="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-3"
+                >
+                  <div
+                    class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-6"
+                  >
+                    <div
+                      class="makeStyles-errorInputWrapper-86"
+                    >
+                      <div
+                        class="MuiFormControl-root makeStyles-formControl-162 "
+                      >
+                        <h1
+                          class="MuiTypography-root MuiTypography-caption MuiTypography-colorSecondary MuiTypography-alignLeft"
+                        >
+                          Country
+                           
+                        </h1>
+                        <div
+                          class="MuiInputBase-root MuiOutlinedInput-root   makeStyles-selectElement-163 makeStyles-inactiveOption-164 MuiInputBase-fullWidth MuiInputBase-formControl"
+                          data-testid=""
+                        >
+                          <div
+                            aria-haspopup="listbox"
+                            aria-labelledby="demo-simple-select-outlined-label demo-simple-select-outlined"
+                            class="MuiSelect-root MuiSelect-select MuiSelect-selectMenu MuiSelect-outlined MuiInputBase-input MuiOutlinedInput-input"
+                            id="demo-simple-select-outlined"
+                            role="button"
+                            tabindex="0"
+                          >
+                            Select Option
+                          </div>
+                          <input
+                            aria-hidden="true"
+                            class="MuiSelect-nativeInput"
+                            data-testid="addr-country"
+                            name="countryId"
+                            tabindex="-1"
+                            value=""
+                          />
+                          <svg
+                            aria-hidden="true"
+                            class="MuiSvgIcon-root MuiSelect-icon MuiSelect-iconOutlined"
+                            focusable="false"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              d="M7 10l5 5 5-5z"
+                            />
+                          </svg>
+                          <fieldset
+                            aria-hidden="true"
+                            class="PrivateNotchedOutline-root-156 MuiOutlinedInput-notchedOutline"
+                            style="padding-left: 8px;"
+                          >
+                            <legend
+                              class="PrivateNotchedOutline-legend-157"
+                              style="width: 0.01px;"
+                            >
+                              <span>
+                                ​
+                              </span>
+                            </legend>
+                          </fieldset>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-6"
+                  >
+                    <div
+                      class="makeStyles-errorInputWrapper-86"
+                    >
+                      <div
+                        class="MuiFormControl-root makeStyles-formControl-162 "
+                      >
+                        <h1
+                          class="MuiTypography-root MuiTypography-caption MuiTypography-colorSecondary MuiTypography-alignLeft"
+                        >
+                          State
+                           
+                        </h1>
+                        <div
+                          class="MuiInputBase-root MuiOutlinedInput-root   makeStyles-selectElement-163 makeStyles-inactiveOption-164 MuiInputBase-fullWidth MuiInputBase-formControl"
+                          data-testid=""
+                        >
+                          <div
+                            aria-haspopup="listbox"
+                            aria-labelledby="demo-simple-select-outlined-label demo-simple-select-outlined"
+                            class="MuiSelect-root MuiSelect-select MuiSelect-selectMenu MuiSelect-outlined MuiInputBase-input MuiOutlinedInput-input"
+                            id="demo-simple-select-outlined"
+                            role="button"
+                            tabindex="0"
+                          >
+                            Select Option
+                          </div>
+                          <input
+                            aria-hidden="true"
+                            class="MuiSelect-nativeInput"
+                            data-testid="addr-state"
+                            name="stateCode"
+                            tabindex="-1"
+                            value=""
+                          />
+                          <svg
+                            aria-hidden="true"
+                            class="MuiSvgIcon-root MuiSelect-icon MuiSelect-iconOutlined"
+                            focusable="false"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              d="M7 10l5 5 5-5z"
+                            />
+                          </svg>
+                          <fieldset
+                            aria-hidden="true"
+                            class="PrivateNotchedOutline-root-156 MuiOutlinedInput-notchedOutline"
+                            style="padding-left: 8px;"
+                          >
+                            <legend
+                              class="PrivateNotchedOutline-legend-157"
+                              style="width: 0.01px;"
+                            >
+                              <span>
+                                ​
+                              </span>
+                            </legend>
+                          </fieldset>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12"
+              >
+                <div
+                  class="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-3"
+                >
+                  <div
+                    class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-3"
+                  >
+                    <div
+                      class="makeStyles-errorInputWrapper-86"
+                    >
+                      <div
+                        class="MuiFormControl-root makeStyles-formControl-154 "
+                      >
+                        <h1
+                          class="MuiTypography-root MuiTypography-caption MuiTypography-colorSecondary MuiTypography-alignLeft"
+                        >
+                          Zip Code
+                           
+                        </h1>
+                        <div>
+                          <div
+                            class="MuiFormControl-root MuiTextField-root MuiFormControl-fullWidth"
+                          >
+                            <div
+                              class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-fullWidth MuiInputBase-formControl"
+                            >
+                              <input
+                                aria-invalid="false"
+                                autocomplete="off"
+                                class="MuiInputBase-input MuiOutlinedInput-input"
+                                data-testid="zip-code"
+                                maxlength="10"
+                                name="zipCode"
+                                placeholder="00000"
+                                type="text"
+                                value=""
+                              />
+                              <fieldset
+                                aria-hidden="true"
+                                class="PrivateNotchedOutline-root-156 MuiOutlinedInput-notchedOutline"
+                                style="padding-left: 8px;"
+                              >
+                                <legend
+                                  class="PrivateNotchedOutline-legend-157"
+                                  style="width: 0.01px;"
+                                >
+                                  <span>
+                                    ​
+                                  </span>
+                                </legend>
+                              </fieldset>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-9"
+                  >
+                    <div
+                      class="makeStyles-errorInputWrapper-86"
+                    >
+                      <div
+                        class="MuiFormControl-root makeStyles-formControl-154 "
+                      >
+                        <h1
+                          class="MuiTypography-root MuiTypography-caption MuiTypography-colorSecondary MuiTypography-alignLeft"
+                        >
+                          City
+                           
+                        </h1>
+                        <div>
+                          <div
+                            class="MuiFormControl-root MuiTextField-root MuiFormControl-fullWidth"
+                          >
+                            <div
+                              class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-fullWidth MuiInputBase-formControl"
+                            >
+                              <input
+                                aria-invalid="false"
+                                autocomplete="off"
+                                class="MuiInputBase-input MuiOutlinedInput-input"
+                                data-testid="addr-city"
+                                name="city"
+                                placeholder="City"
+                                type="text"
+                                value=""
+                              />
+                              <fieldset
+                                aria-hidden="true"
+                                class="PrivateNotchedOutline-root-156 MuiOutlinedInput-notchedOutline"
+                                style="padding-left: 8px;"
+                              >
+                                <legend
+                                  class="PrivateNotchedOutline-legend-157"
+                                  style="width: 0.01px;"
+                                >
+                                  <span>
+                                    ​
+                                  </span>
+                                </legend>
+                              </fieldset>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-lg-12"
+              />
+            </div>
+          </div>
+          <div
+            class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-lg-6"
+          >
+            <div
+              class="makeStyles-mapWrapper-113 makeStyles-mapWrapper-87"
+            >
+              <div
+                class="makeStyles-mapWrapper-113  "
+                id="jobSiteAddress-map"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    class="MuiPaper-root makeStyles-container-72  MuiPaper-outlined MuiPaper-rounded"
+  >
+    <div
+      class="MuiGrid-root MuiGrid-container MuiGrid-align-items-xs-center MuiGrid-justify-xs-space-between"
+    >
+      <div
+        class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-auto"
+      >
+        <h1
+          class="MuiTypography-root makeStyles-title-73 MuiTypography-h1"
+        >
+          Project Locations
+        </h1>
+      </div>
+      <div
+        class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-auto"
+      >
+        <span
+          class=" makeStyles-secondaryActions-74"
+        />
+      </div>
+    </div>
+    <hr
+      class="MuiDivider-root makeStyles-divider-75"
+    />
+    <div>
+      <div
+        class="MuiGrid-root MuiGrid-container"
+        data-testid="user-row-item"
+      >
+        <div
+          class="MuiGrid-root MuiGrid-item MuiGrid-grid-lg-12"
+        >
+          <div
+            class="MuiGrid-root MuiGrid-container"
+          >
+            <div
+              class="MuiGrid-root makeStyles-rowsWrapper-96 makeStyles-field-194 MuiGrid-container"
+            >
+              <div
+                class="makeStyles-errorInputWrapper-196"
+              >
+                <div
+                  class="MuiFormControl-root makeStyles-formControl-154 "
+                >
+                  <h1
+                    class="MuiTypography-root MuiTypography-caption MuiTypography-colorSecondary MuiTypography-alignLeft"
+                  >
+                    Location Name
+                     
+                  </h1>
+                  <div>
+                    <div
+                      class="MuiFormControl-root MuiTextField-root MuiFormControl-fullWidth"
+                    >
+                      <div
+                        class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-fullWidth Mui-focused Mui-focused MuiInputBase-formControl"
+                      >
+                        <input
+                          aria-invalid="false"
+                          autocomplete="off"
+                          class="MuiInputBase-input MuiOutlinedInput-input"
+                          data-testid="project-location-name"
+                          name="name"
+                          placeholder="Location Name"
+                          required=""
+                          type="text"
+                          value=""
+                        />
+                        <fieldset
+                          aria-hidden="true"
+                          class="PrivateNotchedOutline-root-156 MuiOutlinedInput-notchedOutline"
+                          style="padding-left: 8px;"
+                        >
+                          <legend
+                            class="PrivateNotchedOutline-legend-157"
+                            style="width: 0.01px;"
+                          >
+                            <span>
+                              ​
+                            </span>
+                          </legend>
+                        </fieldset>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr
+        class="MuiDivider-root makeStyles-divider-195"
+      />
+    </div>
+    <span
+      class=""
+      data-testid="controlled-button"
+      tabindex="-1"
+    >
+      <button
+        class="MuiButtonBase-root MuiButton-root MuiButton-text makeStyles-addButtonRow-197 makeStyles-addUserButton-181 makeStyles-disableUserButton-120"
+        data-testid="add-location-button"
+        tabindex="0"
+        type="button"
+      >
+        <span
+          class="MuiButton-label"
+        >
+          <span
+            class="MuiButton-startIcon MuiButton-iconSizeMedium"
+          >
+            <svg>
+              add.svg
+            </svg>
+          </span>
+          Add Location
+        </span>
+      </button>
+    </span>
+  </div>
+  <div
+    class="MuiPaper-root makeStyles-container-72 makeStyles-addressWrapper-23 MuiPaper-outlined MuiPaper-rounded"
+  >
+    <div
+      class="MuiGrid-root MuiGrid-container MuiGrid-align-items-xs-center MuiGrid-justify-xs-space-between"
+    >
+      <div
+        class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-auto"
+      >
+        <h1
+          class="MuiTypography-root makeStyles-title-73 MuiTypography-h1"
+        >
+          Badging Site Address
+        </h1>
+      </div>
+      <div
+        class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-auto"
+      >
+        <span
+          class=" makeStyles-secondaryActions-74"
+        />
+      </div>
+    </div>
+    <hr
+      class="MuiDivider-root makeStyles-divider-75"
+    />
+    <label
+      class="MuiFormControlLabel-root makeStyles-addressCheckbox-21"
+    >
+      <span
+        aria-disabled="false"
+        class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-200 MuiCheckbox-root MuiCheckbox-colorSecondary PrivateSwitchBase-checked-201 Mui-checked MuiIconButton-colorSecondary"
+        data-testid="multiple-checkbox"
+      >
+        <span
+          class="MuiIconButton-label"
+        >
+          <input
+            checked=""
+            class="PrivateSwitchBase-input-203"
+            data-indeterminate="false"
+            data-testid="badgingMatchJobSite"
+            name="badgingSiteAddressMatchesJobSiteAddress"
+            type="checkbox"
+            value="badgingSiteAddressMatchesJobSiteAddress"
+          />
+          <svg
+            aria-hidden="true"
+            class="MuiSvgIcon-root"
+            focusable="false"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M19 3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.11 0 2-.9 2-2V5c0-1.1-.89-2-2-2zm-9 14l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"
+            />
+          </svg>
+        </span>
+        <span
+          class="MuiTouchRipple-root"
+        />
+      </span>
+      <span
+        class="MuiTypography-root MuiFormControlLabel-label MuiTypography-body1"
+      >
+        Same as Job Site Address
+      </span>
+    </label>
+    <hr
+      class="MuiDivider-root makeStyles-divider-2"
+    />
+  </div>
+  <div
+    class="MuiPaper-root makeStyles-container-72 makeStyles-addressWrapper-23 MuiPaper-outlined MuiPaper-rounded"
+  >
+    <div
+      class="MuiGrid-root MuiGrid-container MuiGrid-align-items-xs-center MuiGrid-justify-xs-space-between"
+    >
+      <div
+        class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-auto"
+      >
+        <h1
+          class="MuiTypography-root makeStyles-title-73 MuiTypography-h1"
+        >
+          Mailing Address
+        </h1>
+      </div>
+      <div
+        class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-auto"
+      >
+        <span
+          class=" makeStyles-secondaryActions-74"
+        />
+      </div>
+    </div>
+    <hr
+      class="MuiDivider-root makeStyles-divider-75"
+    />
+    <label
+      class="MuiFormControlLabel-root makeStyles-addressCheckbox-21"
+    >
+      <span
+        aria-disabled="false"
+        class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-200 MuiCheckbox-root MuiCheckbox-colorSecondary PrivateSwitchBase-checked-201 Mui-checked MuiIconButton-colorSecondary"
+        data-testid="multiple-checkbox"
+      >
+        <span
+          class="MuiIconButton-label"
+        >
+          <input
+            checked=""
+            class="PrivateSwitchBase-input-203"
+            data-indeterminate="false"
+            data-testid="mailingMatchJobSite"
+            name="mailingAddressMatchesJobSiteAddress"
+            type="checkbox"
+            value="mailingAddressMatchesJobSiteAddress"
+          />
+          <svg
+            aria-hidden="true"
+            class="MuiSvgIcon-root"
+            focusable="false"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M19 3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.11 0 2-.9 2-2V5c0-1.1-.89-2-2-2zm-9 14l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"
+            />
+          </svg>
+        </span>
+        <span
+          class="MuiTouchRipple-root"
+        />
+      </span>
+      <span
+        class="MuiTypography-root MuiFormControlLabel-label MuiTypography-body1"
+      >
+        Same as Job Site Address
+      </span>
+    </label>
+    <hr
+      class="MuiDivider-root makeStyles-divider-2"
+    />
+  </div>
+</div>
+`;

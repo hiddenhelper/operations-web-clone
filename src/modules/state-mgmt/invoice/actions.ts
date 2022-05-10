@@ -1,0 +1,76 @@
+import { GeneralModel, InvoiceModel } from '../../models';
+
+export enum ActionType {
+  FETCH_INVOICE_LIST_START = '[invoice] fetch invoice list start',
+  FETCH_INVOICE_LIST_SUCCESS = '[invoice] fetch invoice list success',
+  SAVE_INVOICE_START = '[invoice] save invoice start',
+  SAVE_INVOICE_SUCCESS = '[invoice] save invoice success',
+  FETCH_SERVICE_TYPE_LIST_START = '[invoice] fetch service type list start',
+  FETCH_SERVICE_TYPE_LIST_SUCCESS = '[invoice] fetch service type list success',
+  FETCH_INVOICE_SUMMARY_START = '[invoice] fetch invoice summary start',
+  FETCH_INVOICE_SUMMARY_SUCCESS = '[invoice] fetch invoice summary success',
+  CLEAR_INVOICE_MAP = '[invoice] clear invoice map',
+  DELETE_INVOICE_START = '[invoice] delete invoice start',
+  DELETE_INVOICE_SUCCESS = '[invoice] delete invoice success',
+  MARK_AS_PAID_INVOICE_START = '[invoice] mark as paid invoice start',
+  MARK_AS_PAID_INVOICE_SUCCESS = '[invoice] mark as paid invoice success',
+  MARK_AS_VOID_INVOICE_START = '[invoice] mark as void invoice start',
+  MARK_AS_VOID_INVOICE_SUCCESS = '[invoice] mark as void invoice success',
+  PAY_INVOICE_START = '[invoice] pay invoice start',
+  PAY_INVOICE_SUCCESS = '[invoice] pay invoice success',
+  EDIT_INVOICE_START = '[invoice] edit invoice start',
+  EDIT_INVOICE_SUCCESS = '[invoice] edit invoice success',
+  FETCH_INVOICE_START = '[invoice] fetch invoice start',
+  FETCH_INVOICE_SUCCESS = '[invoice] fetch invoice success',
+  CONFIRM_INVOICE_START = '[invoice] confirm invoice start',
+  CONFIRM_INVOICE_SUCCESS = '[invoice] confirm invoice success',
+  DOWNLOAD_INVOICE_START = '[invoice] download invoice start',
+}
+
+export const actions = {
+  fetchInvoiceListStart: (query: GeneralModel.IQueryParams) => ({
+    type: ActionType.FETCH_INVOICE_LIST_START,
+    payload: { query },
+  }),
+  fetchInvoiceListSuccess: (list: InvoiceModel.IInvoice[], count: number) => ({
+    type: ActionType.FETCH_INVOICE_LIST_SUCCESS,
+    payload: { list, count },
+  }),
+  fetchServiceTypeListStart: () => ({ type: ActionType.FETCH_SERVICE_TYPE_LIST_START, payload: {} }),
+  fetchServiceTypeListSuccess: (list: GeneralModel.INamedEntity[]) => ({ type: ActionType.FETCH_SERVICE_TYPE_LIST_SUCCESS, payload: { list } }),
+  saveInvoiceStart: (invoice: InvoiceModel.IInvoice, action: InvoiceModel.InvoiceStep, queryParams?: GeneralModel.IQueryParams) => ({
+    type: ActionType.SAVE_INVOICE_START,
+    payload: { invoice, action, queryParams },
+  }),
+  saveInvoiceSuccess: () => ({ type: ActionType.SAVE_INVOICE_SUCCESS, payload: {} }),
+  fetchInvoiceSummaryStart: (id: string) => ({ type: ActionType.FETCH_INVOICE_SUMMARY_START, payload: { id } }),
+  fetchInvoiceSummarySuccess: (invoice: InvoiceModel.IInvoice) => ({ type: ActionType.FETCH_INVOICE_SUMMARY_SUCCESS, payload: { invoice } }),
+  clearInvoiceMap: () => ({ type: ActionType.CLEAR_INVOICE_MAP, payload: {} }),
+  deleteInvoiceStart: (id: string, queryParams: GeneralModel.IQueryParams) => ({ type: ActionType.DELETE_INVOICE_START, payload: { id, queryParams } }),
+  deleteInvoiceSuccess: (id: string) => ({ type: ActionType.DELETE_INVOICE_SUCCESS, payload: { id } }),
+  markAsPaidInvoiceStart: (id: string, queryParams: GeneralModel.IQueryParams) => ({
+    type: ActionType.MARK_AS_PAID_INVOICE_START,
+    payload: { id, queryParams },
+  }),
+  markAsPaidInvoiceSuccess: (id: string) => ({ type: ActionType.MARK_AS_PAID_INVOICE_SUCCESS, payload: { id } }),
+  payInvoiceStart: (id: string, queryParams: GeneralModel.IQueryParams) => ({ type: ActionType.PAY_INVOICE_START, payload: { id, queryParams } }),
+  payInvoiceSuccess: (id: string) => ({ type: ActionType.PAY_INVOICE_SUCCESS, payload: { id } }),
+  editInvoiceStart: (id: string, invoice: InvoiceModel.IInvoice, action: InvoiceModel.InvoiceStep) => ({
+    type: ActionType.EDIT_INVOICE_START,
+    payload: { id, invoice, action },
+  }),
+  editInvoiceSuccess: () => ({ type: ActionType.EDIT_INVOICE_SUCCESS, payload: {} }),
+  fetchInvoiceStart: (id: string) => ({ type: ActionType.FETCH_INVOICE_START, payload: { id } }),
+  fetchInvoiceSuccess: (invoice: InvoiceModel.IInvoice) => ({ type: ActionType.FETCH_INVOICE_SUCCESS, payload: { invoice } }),
+  confirmInvoiceStart: (id: string, queryParams: GeneralModel.IQueryParams, showConfirmation = true) => ({
+    type: ActionType.CONFIRM_INVOICE_START,
+    payload: { id, showConfirmation, queryParams },
+  }),
+  confirmInvoiceSuccess: () => ({ type: ActionType.CONFIRM_INVOICE_SUCCESS, payload: {} }),
+  markAsVoidInvoiceStart: (id: string, queryParams: GeneralModel.IQueryParams) => ({
+    type: ActionType.MARK_AS_VOID_INVOICE_START,
+    payload: { id, queryParams },
+  }),
+  markAsVoidInvoiceSuccess: (id: string) => ({ type: ActionType.MARK_AS_VOID_INVOICE_SUCCESS, payload: { id } }),
+  downloadStart: (id: string, name: string) => ({ type: ActionType.DOWNLOAD_INVOICE_START, payload: { id, name } }),
+};

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Pending</title>
+    <defs>
+        <filter id="filter-1">
+            <feColorMatrix in="SourceGraphic" type="matrix" values="0 0 0 0 1.000000 0 0 0 0 1.000000 0 0 0 0 1.000000 0 0 0 1.000000 0"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="waiting" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group-8">
+            <circle id="Oval-Copy-4" fill="#E9A61F" cx="10" cy="10" r="10"></circle>
+            <g filter="url(#filter-1)" id="Group">
+                <g transform="translate(4.000000, 4.000000)">
+                    <path d="M6,0.127695652 C2.76208696,0.127695652 0.127695652,2.76208696 0.127695652,6 C0.127695652,9.23791304 2.76208696,11.8723043 6,11.8723043 C9.23791304,11.8723043 11.8723043,9.23791304 11.8723043,6 C11.8723043,2.76208696 9.23791304,0.127695652 6,0.127695652 Z M6,10.6983913 C3.40930435,10.6983913 1.3016087,8.59069565 1.3016087,6 C1.3016087,3.40930435 3.40930435,1.3016087 6,1.3016087 C8.59069565,1.3016087 10.6983913,3.40943478 10.6983913,6 C10.6983913,8.59056522 8.59069565,10.6983913 6,10.6983913 Z" id="Shape" fill="#000000" fill-rule="nonzero"></path>
+                    <polygon id="Path" fill="#000000" fill-rule="nonzero" points="6.58695652 2.59226087 5.41304348 2.59226087 5.41304348 5.75778261 5.41304348 6.24404348 7.87173913 8.68956522 8.6996087 7.85713043 6.58695652 5.75595652"></polygon>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

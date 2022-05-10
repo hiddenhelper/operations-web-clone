@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Calendar</title>
+    <g id="atoms/icons/calendar" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M8,2 L8,4 L16,4 L16,2 L18,2 L18,4 L19,4 C20.05,4 20.9177686,4.82004132 20.9944872,5.85130541 L21,6 L21,20 C21,21.05 20.1799587,21.9177686 19.1486946,21.9944872 L19,22 L5,22 C3.94045455,22 3.08136364,21.1799587 3.00545361,20.1486946 L3,20 L3.01,6 C3.01,4.95 3.81181818,4.0822314 4.85012303,4.00551277 L5,4 L6,4 L6,2 L8,2 Z M19,9 L5,9 L5,20 L19,20 L19,9 Z M9,11 L9,13 L7,13 L7,11 L9,11 Z M13,11 L13,13 L11,13 L11,11 L13,11 Z M17,11 L17,13 L15,13 L15,11 L17,11 Z" id="Shape" fill="#000000"></path>
+    </g>
+</svg>

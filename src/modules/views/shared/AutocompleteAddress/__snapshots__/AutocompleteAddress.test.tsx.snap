@@ -1,0 +1,163 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AutocompleteAddress Component should render 1`] = `
+<div>
+  <div
+    class="makeStyles-errorInputWrapper-2"
+  >
+    <div
+      class="MuiFormControl-root makeStyles-formControl-8 "
+    >
+      <h1
+        class="MuiTypography-root MuiTypography-caption MuiTypography-colorSecondary MuiTypography-alignLeft"
+      >
+        Address Line 1
+         
+      </h1>
+      <div>
+        <div
+          class="MuiFormControl-root MuiTextField-root MuiFormControl-fullWidth"
+          data-testid="addr-line1-wrapper"
+        >
+          <div
+            class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-fullWidth MuiInputBase-formControl"
+          >
+            <input
+              aria-invalid="false"
+              autocomplete="off"
+              class="MuiInputBase-input MuiOutlinedInput-input"
+              data-testid="addr-line1"
+              name="name"
+              placeholder="Address"
+              type="text"
+              value=""
+            />
+            <fieldset
+              aria-hidden="true"
+              class="PrivateNotchedOutline-root-10 MuiOutlinedInput-notchedOutline"
+              style="padding-left: 8px;"
+            >
+              <legend
+                class="PrivateNotchedOutline-legend-11"
+                style="width: 0.01px;"
+              >
+                <span>
+                  ​
+                </span>
+              </legend>
+            </fieldset>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`AutocompleteAddress Component should render with initalized location 1`] = `
+<div>
+  <div
+    class="makeStyles-errorInputWrapper-15"
+  >
+    <div
+      class="MuiFormControl-root makeStyles-formControl-21 "
+    >
+      <h1
+        class="MuiTypography-root MuiTypography-caption MuiTypography-colorSecondary MuiTypography-alignLeft"
+      >
+        Address Line 1
+         
+      </h1>
+      <div>
+        <div
+          class="MuiFormControl-root MuiTextField-root MuiFormControl-fullWidth"
+          data-testid="addr-line1-wrapper"
+        >
+          <div
+            class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-fullWidth MuiInputBase-formControl"
+          >
+            <input
+              aria-invalid="false"
+              autocomplete="off"
+              class="MuiInputBase-input MuiOutlinedInput-input"
+              data-testid="addr-line1"
+              name="name"
+              placeholder="Address"
+              type="text"
+              value=""
+            />
+            <fieldset
+              aria-hidden="true"
+              class="PrivateNotchedOutline-root-23 MuiOutlinedInput-notchedOutline"
+              style="padding-left: 8px;"
+            >
+              <legend
+                class="PrivateNotchedOutline-legend-24"
+                style="width: 0.01px;"
+              >
+                <span>
+                  ​
+                </span>
+              </legend>
+            </fieldset>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`AutocompleteAddress Component should render with initalized map 1`] = `
+<div>
+  <div
+    class="makeStyles-errorInputWrapper-28"
+  >
+    <div
+      class="MuiFormControl-root makeStyles-formControl-34 "
+    >
+      <h1
+        class="MuiTypography-root MuiTypography-caption MuiTypography-colorSecondary MuiTypography-alignLeft"
+      >
+        Address Line 1
+         
+      </h1>
+      <div>
+        <div
+          class="MuiFormControl-root MuiTextField-root MuiFormControl-fullWidth"
+          data-testid="addr-line1-wrapper"
+        >
+          <div
+            class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-fullWidth MuiInputBase-formControl"
+          >
+            <input
+              aria-invalid="false"
+              autocomplete="off"
+              class="MuiInputBase-input MuiOutlinedInput-input"
+              data-testid="addr-line1"
+              name="name"
+              placeholder="Address"
+              type="text"
+              value=""
+            />
+            <fieldset
+              aria-hidden="true"
+              class="PrivateNotchedOutline-root-36 MuiOutlinedInput-notchedOutline"
+              style="padding-left: 8px;"
+            >
+              <legend
+                class="PrivateNotchedOutline-legend-37"
+                style="width: 0.01px;"
+              >
+                <span>
+                  ​
+                </span>
+              </legend>
+            </fieldset>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

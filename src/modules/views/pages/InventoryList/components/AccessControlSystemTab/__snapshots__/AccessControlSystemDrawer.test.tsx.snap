@@ -1,0 +1,1306 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AccessControlSystemDrawer should render 1`] = `
+<div>
+  <div
+    class="MuiDrawer-root MuiDrawer-docked makeStyles-drawer-82 open"
+    data-testid="acs-drawer-detail"
+  >
+    <div
+      class="MuiPaper-root MuiDrawer-paper makeStyles-drawerPaper-83 MuiDrawer-paperAnchorRight MuiDrawer-paperAnchorDockedRight MuiPaper-elevation0"
+    >
+      <div
+        class="makeStyles-drawerButtonWrapper-85"
+      >
+        <div
+          class="makeStyles-drawerButton-86"
+        >
+          <button
+            class="MuiButtonBase-root MuiButton-root MuiButton-text"
+            data-testid="drawer-close-btn"
+            style="outline: none;"
+            tabindex="0"
+            type="button"
+          >
+            <span
+              class="MuiButton-label"
+            >
+              <svg>
+                close.svg
+              </svg>
+            </span>
+            <span
+              class="MuiTouchRipple-root"
+            />
+          </button>
+        </div>
+        <div
+          class="makeStyles-drawerHeader-84"
+        >
+          <p
+            class="MuiTypography-root makeStyles-drawerTitle-87 MuiTypography-body1 MuiTypography-colorPrimary MuiTypography-alignLeft"
+          >
+            Device Information
+          </p>
+        </div>
+      </div>
+      <div
+        class="makeStyles-listDetail-72"
+      >
+        <div
+          class="makeStyles-summaryDeviceDetail-99"
+        >
+          <div
+            class="makeStyles-company-100"
+          >
+            <div
+              class="makeStyles-drawerOverflowWrapper-110"
+            >
+              <div
+                class="makeStyles-summaryText-103"
+              >
+                <p
+                  class="MuiTypography-root makeStyles-deviceAccent-101 makeStyles-entityTitle-106 MuiTypography-body1"
+                >
+                  NRFFJE3149 - 4991
+                </p>
+                <div
+                  class="makeStyles-summaryMainText-104"
+                >
+                  <span>
+                    Turnstile
+                  </span>
+                  <span>
+                    V3Facial
+                  </span>
+                  <span>
+                    Reverse Installation 
+                    No
+                  </span>
+                </div>
+              </div>
+              <div
+                class="makeStyles-summarySection-102 makeStyles-drawerdevices-107"
+              >
+                <div
+                  class="makeStyles-deviceWrapper-108"
+                >
+                  <svg
+                    aria-hidden="true"
+                    class="MuiSvgIcon-root"
+                    focusable="false"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"
+                    />
+                  </svg>
+                  <div
+                    class="makeStyles-summaryText-103 makeStyles-summaryTextSeparation-105"
+                  >
+                    <span>
+                      Front gate
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="makeStyles-summarySection-102"
+              >
+                <div
+                  class="makeStyles-summaryRowDirection-109"
+                >
+                  <svg>
+                    device-status.svg
+                  </svg>
+                  <div
+                    class="makeStyles-summaryText-103 makeStyles-summaryTextSeparation-105"
+                  >
+                    <span>
+                      Available
+                    </span>
+                    <span>
+                      New
+                    </span>
+                    <span>
+                      Last Refurbished: 
+                      May 19, 2020
+                    </span>
+                    <span>
+                      Last Maintenance Date: 
+                      May 19, 2020
+                    </span>
+                    <span>
+                      In Service Date: 
+                      May 19, 2020
+                    </span>
+                    <span>
+                      Warranty Expiration Date: 
+                      May 19, 2020
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="makeStyles-summarySection-102"
+              >
+                <div
+                  class="makeStyles-summaryRowDirection-109"
+                >
+                  <svg>
+                    notes.svg
+                  </svg>
+                  <div
+                    class="makeStyles-summaryText-103 makeStyles-summaryTextSeparation-105"
+                  >
+                    <span>
+                      Working Properly
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="makeStyles-summarySection-102"
+              >
+                <div
+                  class="makeStyles-summaryText-103"
+                >
+                  <p
+                    class="MuiTypography-root makeStyles-deviceAccent-101 makeStyles-entityTitle-106 MuiTypography-body1"
+                  >
+                    Reader 
+                    1
+                  </p>
+                  <div
+                    class="makeStyles-summaryMainText-104"
+                  >
+                    <span>
+                      MXT-NEKFOEFJ31293
+                    </span>
+                    <span>
+                      Model 
+                      Model 4923
+                    </span>
+                    <span>
+                      Hostname 
+                      -
+                    </span>
+                    <span>
+                      Public IP 
+                      -
+                    </span>
+                    <span>
+                      -
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="makeStyles-summarySection-102"
+              >
+                <svg>
+                  info.svg
+                </svg>
+                <div
+                  class="makeStyles-summaryText-103 makeStyles-summaryTextSeparation-105"
+                >
+                  <span>
+                    SSH Port Connection: 
+                    -
+                  </span>
+                  <span>
+                    TELNET Port Connection: 
+                    -
+                  </span>
+                  <span>
+                    HTTP Port Connection: 
+                    -
+                  </span>
+                  <span>
+                    TCP Port Connection: 
+                    -
+                  </span>
+                </div>
+              </div>
+              <div
+                class="makeStyles-summarySection-102 makeStyles-drawerdevices-107"
+              >
+                <div
+                  class="makeStyles-deviceWrapper-108"
+                >
+                  <svg>
+                    device-status.svg
+                  </svg>
+                  <div
+                    class="makeStyles-summaryText-103 makeStyles-summaryTextSeparation-105"
+                  >
+                    <span>
+                      Last Repair: 
+                      May 19, 2020
+                    </span>
+                    <span>
+                      In Service Date: 
+                      May 19, 2020
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="makeStyles-summarySection-102"
+              >
+                <div
+                  class="makeStyles-summaryRowDirection-109"
+                >
+                  <svg>
+                    notes.svg
+                  </svg>
+                  <div
+                    class="makeStyles-summaryText-103 makeStyles-summaryTextSeparation-105"
+                  >
+                    <span>
+                      Working properly as well.
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="makeStyles-summarySection-102"
+              >
+                <div
+                  class="makeStyles-summaryText-103"
+                >
+                  <p
+                    class="MuiTypography-root makeStyles-deviceAccent-101 makeStyles-entityTitle-106 MuiTypography-body1"
+                  >
+                    Reader 
+                    2
+                  </p>
+                  <div
+                    class="makeStyles-summaryMainText-104"
+                  >
+                    <span>
+                      TMX-ZZZFOEFJ312F0
+                    </span>
+                    <span>
+                      Model 
+                      Model 7218
+                    </span>
+                    <span>
+                      Hostname 
+                      -
+                    </span>
+                    <span>
+                      Public IP 
+                      -
+                    </span>
+                    <span>
+                      BiDirectional By Spec
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="makeStyles-summarySection-102"
+              >
+                <svg>
+                  info.svg
+                </svg>
+                <div
+                  class="makeStyles-summaryText-103 makeStyles-summaryTextSeparation-105"
+                >
+                  <span>
+                    SSH Port Connection: 
+                    -
+                  </span>
+                  <span>
+                    TELNET Port Connection: 
+                    -
+                  </span>
+                  <span>
+                    HTTP Port Connection: 
+                    -
+                  </span>
+                  <span>
+                    TCP Port Connection: 
+                    -
+                  </span>
+                </div>
+              </div>
+              <div
+                class="makeStyles-summarySection-102 makeStyles-drawerdevices-107"
+              >
+                <div
+                  class="makeStyles-deviceWrapper-108"
+                >
+                  <svg>
+                    device-status.svg
+                  </svg>
+                  <div
+                    class="makeStyles-summaryText-103 makeStyles-summaryTextSeparation-105"
+                  >
+                    <span>
+                      Last Repair: 
+                      May 19, 2020
+                    </span>
+                    <span>
+                      In Service Date: 
+                      May 19, 2020
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="makeStyles-summarySection-102"
+              >
+                <div
+                  class="makeStyles-summaryRowDirection-109"
+                >
+                  <svg>
+                    notes.svg
+                  </svg>
+                  <div
+                    class="makeStyles-summaryText-103 makeStyles-summaryTextSeparation-105"
+                  >
+                    <span>
+                      Working properly as well.
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr
+          class="MuiDivider-root makeStyles-drawerDivider-4"
+        />
+        <div
+          class="makeStyles-ctaWrapper-75"
+        >
+          <a
+            href="/inventory/access-control-system/wizard/13315742-0a3a-4916-af26-e983632a6484"
+          >
+            <span
+              class=""
+              data-testid="controlled-button"
+              tabindex="-1"
+            >
+              <button
+                class="MuiButtonBase-root MuiButton-root MuiButton-outlined makeStyles-drawerCTA-41 makeStyles-borderPrimaryButton-33"
+                tabindex="0"
+                type="button"
+              >
+                <span
+                  class="MuiButton-label"
+                >
+                  Edit
+                </span>
+              </button>
+            </span>
+          </a>
+          <span
+            class=""
+            data-testid="controlled-button"
+            tabindex="-1"
+          >
+            <button
+              class="MuiButtonBase-root MuiButton-root MuiButton-outlined makeStyles-drawerCTA-41 makeStyles-warningButton-42"
+              data-testid="deleteAcsBtn"
+              tabindex="0"
+              type="button"
+            >
+              <span
+                class="MuiButton-label"
+              >
+                Delete
+              </span>
+            </button>
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`AccessControlSystemDrawer should render alternative reader values 1`] = `
+<div>
+  <div
+    class="MuiDrawer-root MuiDrawer-docked makeStyles-drawer-400 open"
+    data-testid="acs-drawer-detail"
+  >
+    <div
+      class="MuiPaper-root MuiDrawer-paper makeStyles-drawerPaper-401 MuiDrawer-paperAnchorRight MuiDrawer-paperAnchorDockedRight MuiPaper-elevation0"
+    >
+      <div
+        class="makeStyles-drawerButtonWrapper-403"
+      >
+        <div
+          class="makeStyles-drawerButton-404"
+        >
+          <button
+            class="MuiButtonBase-root MuiButton-root MuiButton-text"
+            data-testid="drawer-close-btn"
+            style="outline: none;"
+            tabindex="0"
+            type="button"
+          >
+            <span
+              class="MuiButton-label"
+            >
+              <svg>
+                close.svg
+              </svg>
+            </span>
+            <span
+              class="MuiTouchRipple-root"
+            />
+          </button>
+        </div>
+        <div
+          class="makeStyles-drawerHeader-402"
+        >
+          <p
+            class="MuiTypography-root makeStyles-drawerTitle-405 MuiTypography-body1 MuiTypography-colorPrimary MuiTypography-alignLeft"
+          >
+            Device Information
+          </p>
+        </div>
+      </div>
+      <div
+        class="makeStyles-listDetail-390"
+      >
+        <div
+          class="makeStyles-summaryDeviceDetail-417"
+        >
+          <div
+            class="makeStyles-company-418"
+          >
+            <div
+              class="makeStyles-drawerOverflowWrapper-428"
+            >
+              <div
+                class="makeStyles-summaryText-421"
+              >
+                <p
+                  class="MuiTypography-root makeStyles-deviceAccent-419 makeStyles-entityTitle-424 MuiTypography-body1"
+                >
+                  NRFFJE3149 - 4991
+                </p>
+                <div
+                  class="makeStyles-summaryMainText-422"
+                >
+                  <span>
+                    Turnstile
+                  </span>
+                  <span>
+                    V3Facial
+                  </span>
+                  <span>
+                    Reverse Installation 
+                    No
+                  </span>
+                </div>
+              </div>
+              <div
+                class="makeStyles-summarySection-420 makeStyles-drawerdevices-425"
+              >
+                <div
+                  class="makeStyles-deviceWrapper-426"
+                >
+                  <svg
+                    aria-hidden="true"
+                    class="MuiSvgIcon-root"
+                    focusable="false"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"
+                    />
+                  </svg>
+                  <div
+                    class="makeStyles-summaryText-421 makeStyles-summaryTextSeparation-423"
+                  >
+                    <span>
+                      Front gate
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="makeStyles-summarySection-420"
+              >
+                <div
+                  class="makeStyles-summaryRowDirection-427"
+                >
+                  <svg>
+                    device-status.svg
+                  </svg>
+                  <div
+                    class="makeStyles-summaryText-421 makeStyles-summaryTextSeparation-423"
+                  >
+                    <span>
+                      Available
+                    </span>
+                    <span>
+                      New
+                    </span>
+                    <span>
+                      Last Refurbished: 
+                      May 19, 2020
+                    </span>
+                    <span>
+                      Last Maintenance Date: 
+                      May 19, 2020
+                    </span>
+                    <span>
+                      In Service Date: 
+                      May 19, 2020
+                    </span>
+                    <span>
+                      Warranty Expiration Date: 
+                      May 19, 2020
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="makeStyles-summarySection-420"
+              >
+                <div
+                  class="makeStyles-summaryRowDirection-427"
+                >
+                  <svg>
+                    notes.svg
+                  </svg>
+                  <div
+                    class="makeStyles-summaryText-421 makeStyles-summaryTextSeparation-423"
+                  >
+                    <span>
+                      Working Properly
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="makeStyles-summarySection-420"
+              >
+                <div
+                  class="makeStyles-summaryText-421"
+                >
+                  <p
+                    class="MuiTypography-root makeStyles-deviceAccent-419 makeStyles-entityTitle-424 MuiTypography-body1"
+                  >
+                    Reader 
+                    1
+                  </p>
+                  <div
+                    class="makeStyles-summaryMainText-422"
+                  >
+                    <span>
+                      MXT-NEKFOEFJ31293
+                    </span>
+                    <span>
+                      Model 
+                      Model 4923
+                    </span>
+                    <span>
+                      Hostname 
+                      -
+                    </span>
+                    <span>
+                      Public IP 
+                      -
+                    </span>
+                    <span>
+                      -
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="makeStyles-summarySection-420"
+              >
+                <svg>
+                  info.svg
+                </svg>
+                <div
+                  class="makeStyles-summaryText-421 makeStyles-summaryTextSeparation-423"
+                >
+                  <span>
+                    SSH Port Connection: 
+                    -
+                  </span>
+                  <span>
+                    TELNET Port Connection: 
+                    -
+                  </span>
+                  <span>
+                    HTTP Port Connection: 
+                    -
+                  </span>
+                  <span>
+                    TCP Port Connection: 
+                    -
+                  </span>
+                </div>
+              </div>
+              <div
+                class="makeStyles-summarySection-420 makeStyles-drawerdevices-425"
+              >
+                <div
+                  class="makeStyles-deviceWrapper-426"
+                >
+                  <svg>
+                    device-status.svg
+                  </svg>
+                  <div
+                    class="makeStyles-summaryText-421 makeStyles-summaryTextSeparation-423"
+                  >
+                    <span>
+                      Last Repair: 
+                      Jan 13, 2021
+                    </span>
+                    <span>
+                      In Service Date: 
+                      May 19, 2020
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="makeStyles-summarySection-420"
+              >
+                <div
+                  class="makeStyles-summaryRowDirection-427"
+                >
+                  <svg>
+                    notes.svg
+                  </svg>
+                  <div
+                    class="makeStyles-summaryText-421 makeStyles-summaryTextSeparation-423"
+                  >
+                    <span>
+                      acs reader 1
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="makeStyles-summarySection-420"
+              >
+                <div
+                  class="makeStyles-summaryText-421"
+                >
+                  <p
+                    class="MuiTypography-root makeStyles-deviceAccent-419 makeStyles-entityTitle-424 MuiTypography-body1"
+                  >
+                    Reader 
+                    2
+                  </p>
+                  <div
+                    class="makeStyles-summaryMainText-422"
+                  >
+                    <span>
+                      MXT-NEKFOEFJ31293
+                    </span>
+                    <span>
+                      Model 
+                      Model 4923
+                    </span>
+                    <span>
+                      Hostname 
+                      -
+                    </span>
+                    <span>
+                      Public IP 
+                      -
+                    </span>
+                    <span>
+                      -
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="makeStyles-summarySection-420"
+              >
+                <svg>
+                  info.svg
+                </svg>
+                <div
+                  class="makeStyles-summaryText-421 makeStyles-summaryTextSeparation-423"
+                >
+                  <span>
+                    SSH Port Connection: 
+                    -
+                  </span>
+                  <span>
+                    TELNET Port Connection: 
+                    -
+                  </span>
+                  <span>
+                    HTTP Port Connection: 
+                    -
+                  </span>
+                  <span>
+                    TCP Port Connection: 
+                    -
+                  </span>
+                </div>
+              </div>
+              <div
+                class="makeStyles-summarySection-420 makeStyles-drawerdevices-425"
+              >
+                <div
+                  class="makeStyles-deviceWrapper-426"
+                >
+                  <svg>
+                    device-status.svg
+                  </svg>
+                  <div
+                    class="makeStyles-summaryText-421 makeStyles-summaryTextSeparation-423"
+                  >
+                    <span>
+                      -
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="makeStyles-summarySection-420"
+              >
+                <div
+                  class="makeStyles-summaryRowDirection-427"
+                >
+                  <svg>
+                    notes.svg
+                  </svg>
+                  <div
+                    class="makeStyles-summaryText-421 makeStyles-summaryTextSeparation-423"
+                  >
+                    <span>
+                      acs reader 2
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr
+          class="MuiDivider-root makeStyles-drawerDivider-322"
+        />
+        <div
+          class="makeStyles-ctaWrapper-393"
+        >
+          <a
+            href="/inventory/access-control-system/wizard/13315742-0a3a-4916-af26-e983632a6484"
+          >
+            <span
+              class=""
+              data-testid="controlled-button"
+              tabindex="-1"
+            >
+              <button
+                class="MuiButtonBase-root MuiButton-root MuiButton-outlined makeStyles-drawerCTA-359 makeStyles-borderPrimaryButton-351"
+                tabindex="0"
+                type="button"
+              >
+                <span
+                  class="MuiButton-label"
+                >
+                  Edit
+                </span>
+              </button>
+            </span>
+          </a>
+          <span
+            class=""
+            data-testid="controlled-button"
+            tabindex="-1"
+          >
+            <button
+              class="MuiButtonBase-root MuiButton-root MuiButton-outlined makeStyles-drawerCTA-359 makeStyles-warningButton-360"
+              data-testid="deleteAcsBtn"
+              tabindex="0"
+              type="button"
+            >
+              <span
+                class="MuiButton-label"
+              >
+                Delete
+              </span>
+            </button>
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`AccessControlSystemDrawer should render alternative values 1`] = `
+<div>
+  <div
+    class="MuiDrawer-root MuiDrawer-docked makeStyles-drawer-290 open"
+    data-testid="acs-drawer-detail"
+  >
+    <div
+      class="MuiPaper-root MuiDrawer-paper makeStyles-drawerPaper-291 MuiDrawer-paperAnchorRight MuiDrawer-paperAnchorDockedRight MuiPaper-elevation0"
+    >
+      <div
+        class="makeStyles-drawerButtonWrapper-293"
+      >
+        <div
+          class="makeStyles-drawerButton-294"
+        >
+          <button
+            class="MuiButtonBase-root MuiButton-root MuiButton-text"
+            data-testid="drawer-close-btn"
+            style="outline: none;"
+            tabindex="0"
+            type="button"
+          >
+            <span
+              class="MuiButton-label"
+            >
+              <svg>
+                close.svg
+              </svg>
+            </span>
+            <span
+              class="MuiTouchRipple-root"
+            />
+          </button>
+        </div>
+        <div
+          class="makeStyles-drawerHeader-292"
+        >
+          <p
+            class="MuiTypography-root makeStyles-drawerTitle-295 MuiTypography-body1 MuiTypography-colorPrimary MuiTypography-alignLeft"
+          >
+            Device Information
+          </p>
+        </div>
+      </div>
+      <div
+        class="makeStyles-listDetail-280"
+      >
+        <div
+          class="makeStyles-summaryDeviceDetail-307"
+        >
+          <div
+            class="makeStyles-company-308"
+          >
+            <div
+              class="makeStyles-drawerOverflowWrapper-318"
+            >
+              <div
+                class="makeStyles-summaryText-311"
+              >
+                <p
+                  class="MuiTypography-root makeStyles-deviceAccent-309 makeStyles-entityTitle-314 MuiTypography-body1"
+                >
+                  NRFFJE3149 - 4991
+                </p>
+                <div
+                  class="makeStyles-summaryMainText-312"
+                >
+                  <span>
+                    Turnstile
+                  </span>
+                  <span>
+                    V3Facial
+                  </span>
+                  <span>
+                    Reverse Installation 
+                    No
+                  </span>
+                </div>
+              </div>
+              <div
+                class="makeStyles-summarySection-310 makeStyles-drawerdevices-315"
+              >
+                <div
+                  class="makeStyles-deviceWrapper-316"
+                >
+                  <svg
+                    aria-hidden="true"
+                    class="MuiSvgIcon-root"
+                    focusable="false"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"
+                    />
+                  </svg>
+                  <div
+                    class="makeStyles-summaryText-311 makeStyles-summaryTextSeparation-313"
+                  >
+                    <span>
+                      Front gate
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="makeStyles-summarySection-310"
+              >
+                <div
+                  class="makeStyles-summaryRowDirection-317"
+                >
+                  <svg>
+                    device-status.svg
+                  </svg>
+                  <div
+                    class="makeStyles-summaryText-311 makeStyles-summaryTextSeparation-313"
+                  >
+                    <span>
+                      Available
+                    </span>
+                    <span>
+                      New
+                    </span>
+                    <span>
+                      Last Refurbished: 
+                      May 19, 2020
+                    </span>
+                    <span>
+                      Last Maintenance Date: 
+                      May 19, 2020
+                    </span>
+                    <span>
+                      In Service Date: 
+                      May 19, 2020
+                    </span>
+                    <span>
+                      Warranty Expiration Date: 
+                      May 19, 2020
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="makeStyles-summarySection-310"
+              >
+                <div
+                  class="makeStyles-summaryRowDirection-317"
+                >
+                  <svg>
+                    notes.svg
+                  </svg>
+                  <div
+                    class="makeStyles-summaryText-311 makeStyles-summaryTextSeparation-313"
+                  >
+                    <span>
+                      Working Properly
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="makeStyles-summarySection-310"
+              >
+                <div
+                  class="makeStyles-summaryText-311"
+                >
+                  <p
+                    class="MuiTypography-root makeStyles-deviceAccent-309 makeStyles-entityTitle-314 MuiTypography-body1"
+                  >
+                    Reader 
+                    1
+                  </p>
+                  <div
+                    class="makeStyles-summaryMainText-312"
+                  >
+                    <span>
+                      MXT-NEKFOEFJ31293
+                    </span>
+                    <span>
+                      Model 
+                      Model 4923
+                    </span>
+                    <span>
+                      Hostname 
+                      -
+                    </span>
+                    <span>
+                      Public IP 
+                      -
+                    </span>
+                    <span>
+                      -
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="makeStyles-summarySection-310"
+              >
+                <svg>
+                  info.svg
+                </svg>
+                <div
+                  class="makeStyles-summaryText-311 makeStyles-summaryTextSeparation-313"
+                >
+                  <span>
+                    SSH Port Connection: 
+                    -
+                  </span>
+                  <span>
+                    TELNET Port Connection: 
+                    -
+                  </span>
+                  <span>
+                    HTTP Port Connection: 
+                    -
+                  </span>
+                  <span>
+                    TCP Port Connection: 
+                    -
+                  </span>
+                </div>
+              </div>
+              <div
+                class="makeStyles-summarySection-310 makeStyles-drawerdevices-315"
+              >
+                <div
+                  class="makeStyles-deviceWrapper-316"
+                >
+                  <svg>
+                    device-status.svg
+                  </svg>
+                  <div
+                    class="makeStyles-summaryText-311 makeStyles-summaryTextSeparation-313"
+                  >
+                    <span>
+                      Last Repair: 
+                      -
+                    </span>
+                    <span>
+                      In Service Date: 
+                      May 19, 2020
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="makeStyles-summarySection-310"
+              >
+                <svg>
+                  notes.svg
+                </svg>
+                <div
+                  class="makeStyles-summaryText-311 makeStyles-summaryTextSeparation-313"
+                >
+                  <span>
+                    -
+                  </span>
+                </div>
+              </div>
+              <div
+                class="makeStyles-summarySection-310"
+              >
+                <div
+                  class="makeStyles-summaryText-311"
+                >
+                  <p
+                    class="MuiTypography-root makeStyles-deviceAccent-309 makeStyles-entityTitle-314 MuiTypography-body1"
+                  >
+                    Reader 
+                    2
+                  </p>
+                  <div
+                    class="makeStyles-summaryMainText-312"
+                  >
+                    <span>
+                      MXT-NEKFOEFJ31293
+                    </span>
+                    <span>
+                      Model 
+                      Model 4923
+                    </span>
+                    <span>
+                      Hostname 
+                      -
+                    </span>
+                    <span>
+                      Public IP 
+                      -
+                    </span>
+                    <span>
+                      -
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="makeStyles-summarySection-310"
+              >
+                <svg>
+                  info.svg
+                </svg>
+                <div
+                  class="makeStyles-summaryText-311 makeStyles-summaryTextSeparation-313"
+                >
+                  <span>
+                    SSH Port Connection: 
+                    -
+                  </span>
+                  <span>
+                    TELNET Port Connection: 
+                    -
+                  </span>
+                  <span>
+                    HTTP Port Connection: 
+                    -
+                  </span>
+                  <span>
+                    TCP Port Connection: 
+                    -
+                  </span>
+                </div>
+              </div>
+              <div
+                class="makeStyles-summarySection-310 makeStyles-drawerdevices-315"
+              >
+                <div
+                  class="makeStyles-deviceWrapper-316"
+                >
+                  <svg>
+                    device-status.svg
+                  </svg>
+                  <div
+                    class="makeStyles-summaryText-311 makeStyles-summaryTextSeparation-313"
+                  >
+                    <span>
+                      Last Repair: 
+                      -
+                    </span>
+                    <span>
+                      In Service Date: 
+                      May 19, 2020
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="makeStyles-summarySection-310"
+              >
+                <svg>
+                  notes.svg
+                </svg>
+                <div
+                  class="makeStyles-summaryText-311 makeStyles-summaryTextSeparation-313"
+                >
+                  <span>
+                    -
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr
+          class="MuiDivider-root makeStyles-drawerDivider-212"
+        />
+        <div
+          class="makeStyles-ctaWrapper-283"
+        >
+          <a
+            href="/inventory/access-control-system/wizard/13315742-0a3a-4916-af26-e983632a6484"
+          >
+            <span
+              class=""
+              data-testid="controlled-button"
+              tabindex="-1"
+            >
+              <button
+                class="MuiButtonBase-root MuiButton-root MuiButton-outlined makeStyles-drawerCTA-249 makeStyles-borderPrimaryButton-241"
+                tabindex="0"
+                type="button"
+              >
+                <span
+                  class="MuiButton-label"
+                >
+                  Edit
+                </span>
+              </button>
+            </span>
+          </a>
+          <span
+            class=""
+            data-testid="controlled-button"
+            tabindex="-1"
+          >
+            <button
+              class="MuiButtonBase-root MuiButton-root MuiButton-outlined makeStyles-drawerCTA-249 makeStyles-warningButton-250"
+              data-testid="deleteAcsBtn"
+              tabindex="0"
+              type="button"
+            >
+              <span
+                class="MuiButton-label"
+              >
+                Delete
+              </span>
+            </button>
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`AccessControlSystemDrawer should show loading 1`] = `
+<div>
+  <div
+    class="MuiDrawer-root MuiDrawer-docked makeStyles-drawer-192 open"
+    data-testid="acs-drawer-detail"
+  >
+    <div
+      class="MuiPaper-root MuiDrawer-paper makeStyles-drawerPaper-193 MuiDrawer-paperAnchorRight MuiDrawer-paperAnchorDockedRight MuiPaper-elevation0"
+    >
+      <div
+        class="makeStyles-drawerButtonWrapper-195"
+      >
+        <div
+          class="makeStyles-drawerButton-196"
+        >
+          <button
+            class="MuiButtonBase-root MuiButton-root MuiButton-text"
+            data-testid="drawer-close-btn"
+            style="outline: none;"
+            tabindex="0"
+            type="button"
+          >
+            <span
+              class="MuiButton-label"
+            >
+              <svg>
+                close.svg
+              </svg>
+            </span>
+            <span
+              class="MuiTouchRipple-root"
+            />
+          </button>
+        </div>
+        <div
+          class="makeStyles-drawerHeader-194"
+        >
+          <p
+            class="MuiTypography-root makeStyles-drawerTitle-197 MuiTypography-body1 MuiTypography-colorPrimary MuiTypography-alignLeft"
+          >
+            Device Information
+          </p>
+        </div>
+      </div>
+      <div>
+        Loading...
+      </div>
+    </div>
+  </div>
+</div>
+`;

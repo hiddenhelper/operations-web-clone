@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`RoleGuard should render fallback 1`] = `
+<div>
+  <p>
+    fallback
+  </p>
+</div>
+`;
+
+exports[`RoleGuard should render should NOT render when role DOES NOT match 1`] = `<div />`;
+
+exports[`RoleGuard should render should render when role matches with one of the roleList 1`] = `
+<div>
+  <p>
+    render me
+  </p>
+</div>
+`;

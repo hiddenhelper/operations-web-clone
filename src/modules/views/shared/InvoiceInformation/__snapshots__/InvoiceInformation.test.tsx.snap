@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`InvoiceList should render 1`] = `
+<div
+  aria-hidden="true"
+/>
+`;
+
+exports[`InvoiceList should render tax exempt 1`] = `
+<div
+  aria-hidden="true"
+/>
+`;
+
+exports[`InvoiceList should show loading 1`] = `
+<div
+  aria-hidden="true"
+/>
+`;

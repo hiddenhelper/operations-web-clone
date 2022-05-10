@@ -1,0 +1,388 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`WorkersByDemographicData Component should render 1`] = `
+<div>
+  <div
+    class="MuiPaper-root makeStyles-maxHeight-40 makeStyles-pieContainer-41 makeStyles-widget-46 MuiPaper-elevation0 MuiPaper-rounded"
+  >
+    <div
+      style="display: flex; justify-content: space-between;"
+    >
+      <div
+        class="makeStyles-headerRow-76"
+        style="width: 50%;"
+      >
+        <div
+          class=""
+        >
+          <div
+            class="makeStyles-widgetPaddingTitle-61 makeStyles-widgetInlineStatusWrapper-62"
+          >
+            <div
+              class="makeStyles-widgetContentWrapper-53 makeStyles-widgetContentWrapperBottomMargin-54 makeStyles-marginNull-45"
+            >
+              <p
+                class="MuiTypography-root  makeStyles-widgetTitle-48 makeStyles-widgetTitleInlinePosition-63 MuiTypography-body1"
+              >
+                Workers by Demographic Data
+              </p>
+              <div
+                class="makeStyles-chipStatusLeftMargin-68"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="MuiBox-root MuiBox-root-85 makeStyles-filterStatusContainer-15 makeStyles-subFilterContainer-16"
+        style="padding-top: 18px;"
+      >
+        <div
+          class="makeStyles-floatingFilterWrapper-21 makeStyles-filterWrapper-20  floatingFilterWrapper"
+        >
+          <span
+            class="makeStyles-floatingFilterButton-22"
+            data-testid="controlled-button"
+            tabindex="-1"
+          >
+            <button
+              aria-controls="false"
+              aria-haspopup="true"
+              class="MuiButtonBase-root MuiButton-root MuiButton-text makeStyles-buttonFilter-30"
+              data-testid="button-filter-open"
+              tabindex="0"
+              type="button"
+            >
+              <span
+                class="MuiButton-label"
+              >
+                Primary Language
+                <span
+                  class="MuiButton-endIcon MuiButton-iconSizeMedium"
+                >
+                  <svg
+                    class="makeStyles-dropdownIcon-24"
+                  >
+                    expand.svg
+                  </svg>
+                </span>
+              </span>
+            </button>
+          </span>
+        </div>
+      </div>
+    </div>
+    <div
+      class="MuiGrid-root MuiGrid-container"
+      style="height: 100%;"
+    >
+      <div
+        class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-md-12 MuiGrid-grid-lg-12 MuiGrid-grid-xl-12"
+        style="height: 100%;"
+      >
+        <div
+          class="MuiGrid-root MuiGrid-container"
+          style="flex-direction: row; height: 100%;"
+        >
+          <div
+            class="MuiGrid-root makeStyles-pieChartClass-86 MuiGrid-item MuiGrid-grid-lg-12 MuiGrid-grid-xl-12"
+            style="padding-right: 0px; text-align: center; height: 100%;"
+          >
+            <div
+              class="VictoryContainer"
+              style="max-height: 275px; display: inline-block; width: auto; max-width: 255px; text-align: center; margin-bottom: 0px; margin-top: -15px; height: 100%; pointer-events: none; position: relative;"
+            >
+              <svg
+                height="400"
+                role="img"
+                style="pointer-events: all; width: 100%; height: 100%;"
+                viewBox="0 0 400 400"
+                width="400"
+              >
+                <g>
+                  <path
+                    d="M6.927352299505378,-149.8399539179005A150,150,0,1,1,-149.85386216367772,6.619667259725397L-129.8292492115011,6.660784426623013A130,130,0,1,0,6.927352299505364,-129.81529875218305Z"
+                    role="presentation"
+                    shape-rendering="auto"
+                    style="fill: #AAAAAA; padding: 10px; stroke: transparent; stroke-width: 1;"
+                    transform="translate(200, 200)"
+                  />
+                  <path
+                    d="M-149.82541392341588,-7.235008132483373A150,150,0,0,1,-91.00834109523188,-119.23708253347165L-79.60702479283131,-102.77510206092495A130,130,0,0,0,-129.80080097123925,-7.193890965585735Z"
+                    role="presentation"
+                    shape-rendering="auto"
+                    style="fill: #00346B; padding: 10px; stroke: transparent; stroke-width: 1;"
+                    transform="translate(200, 200)"
+                  />
+                  <path
+                    d="M-79.61858807954498,-127.12545155168472A150,150,0,0,1,-6.927352299505329,-149.8399539179005L-6.927352299505265,-129.81529875218305A130,130,0,0,0,-68.21727177714453,-110.66347107913795Z"
+                    role="presentation"
+                    shape-rendering="auto"
+                    style="fill: #006DF7; padding: 10px; stroke: transparent; stroke-width: 1;"
+                    transform="translate(200, 200)"
+                  />
+                  <text
+                    direction="inherit"
+                    dx="0"
+                    id="pie-labels-0"
+                    x="320"
+                    y="331.97"
+                  >
+                    <tspan
+                      dx="0"
+                      dy="0"
+                      style="padding: 20px; font-family: 'Gill Sans', 'Seravek', 'Trebuchet MS', sans-serif; font-size: 14px; letter-spacing: normal; fill: #252525; stroke: transparent;"
+                      text-anchor="middle"
+                      x="320"
+                    />
+                  </text>
+                  <text
+                    direction="inherit"
+                    dx="0"
+                    id="pie-labels-1"
+                    x="49"
+                    y="125.97"
+                  >
+                    <tspan
+                      dx="0"
+                      dy="0"
+                      style="padding: 20px; font-family: 'Gill Sans', 'Seravek', 'Trebuchet MS', sans-serif; font-size: 14px; letter-spacing: normal; fill: #252525; stroke: transparent;"
+                      text-anchor="end"
+                      x="49"
+                    />
+                  </text>
+                  <text
+                    direction="inherit"
+                    dx="0"
+                    id="pie-labels-2"
+                    x="149"
+                    y="35.97"
+                  >
+                    <tspan
+                      dx="0"
+                      dy="0"
+                      style="padding: 20px; font-family: 'Gill Sans', 'Seravek', 'Trebuchet MS', sans-serif; font-size: 14px; letter-spacing: normal; fill: #252525; stroke: transparent;"
+                      text-anchor="middle"
+                      x="149"
+                    />
+                  </text>
+                </g>
+              </svg>
+              <div
+                style="z-index: 99; position: absolute; top: 0px; left: 0px; width: 100%; height: 100%;"
+              >
+                <svg
+                  height="400"
+                  style="overflow: visible; width: 100%; height: 100%;"
+                  viewBox="0 0 400 400"
+                  width="400"
+                />
+              </div>
+            </div>
+          </div>
+          <div
+            class="MuiGrid-root MuiGrid-item MuiGrid-grid-lg-12 MuiGrid-grid-xl-12"
+            style="margin-top: -20px;"
+          >
+            <div
+              class="MuiGrid-root MuiGrid-container"
+            >
+              <div
+                class="MuiGrid-root MuiGrid-item MuiGrid-grid-lg-9 MuiGrid-grid-xl-9"
+              >
+                <div
+                  class=" makeStyles-bulletLabelWrapper-87"
+                >
+                  <span
+                    class="makeStyles-statusCircle-88"
+                    style="background-color: rgb(170, 170, 170);"
+                  />
+                  <p
+                    class="MuiTypography-root makeStyles-statusText-89 MuiTypography-body1"
+                  >
+                    Not Defined
+                  </p>
+                </div>
+              </div>
+              <div
+                class="MuiGrid-root MuiGrid-item MuiGrid-grid-lg-2 MuiGrid-grid-xl-2"
+              >
+                <p
+                  class="MuiTypography-root MuiTypography-body1"
+                  style="color: rgb(76, 76, 76); font-size: 15px; text-align: right;"
+                >
+                  63.41
+                  %
+                </p>
+              </div>
+              <div
+                class="MuiGrid-root MuiGrid-item MuiGrid-grid-lg-1 MuiGrid-grid-xl-1"
+              >
+                <p
+                  class="MuiTypography-root MuiTypography-body1"
+                  style="color: rgb(76, 76, 76); font-size: 15px; font-weight: bold; text-align: right;"
+                >
+                  26
+                </p>
+              </div>
+            </div>
+            <div
+              class="MuiGrid-root MuiGrid-container"
+            >
+              <div
+                class="MuiGrid-root MuiGrid-item MuiGrid-grid-lg-9 MuiGrid-grid-xl-9"
+              >
+                <div
+                  class=" makeStyles-bulletLabelWrapper-87"
+                >
+                  <span
+                    class="makeStyles-statusCircle-88"
+                    style="background-color: rgb(0, 52, 107);"
+                  />
+                  <p
+                    class="MuiTypography-root makeStyles-statusText-89 MuiTypography-body1"
+                  >
+                    English
+                  </p>
+                </div>
+              </div>
+              <div
+                class="MuiGrid-root MuiGrid-item MuiGrid-grid-lg-2 MuiGrid-grid-xl-2"
+              >
+                <p
+                  class="MuiTypography-root MuiTypography-body1"
+                  style="color: rgb(76, 76, 76); font-size: 15px; text-align: right;"
+                >
+                  12.2
+                  %
+                </p>
+              </div>
+              <div
+                class="MuiGrid-root MuiGrid-item MuiGrid-grid-lg-1 MuiGrid-grid-xl-1"
+              >
+                <p
+                  class="MuiTypography-root MuiTypography-body1"
+                  style="color: rgb(76, 76, 76); font-size: 15px; font-weight: bold; text-align: right;"
+                >
+                  5
+                </p>
+              </div>
+            </div>
+            <div
+              class="MuiGrid-root MuiGrid-container"
+            >
+              <div
+                class="MuiGrid-root MuiGrid-item MuiGrid-grid-lg-9 MuiGrid-grid-xl-9"
+              >
+                <div
+                  class=" makeStyles-bulletLabelWrapper-87"
+                >
+                  <span
+                    class="makeStyles-statusCircle-88"
+                    style="background-color: rgb(0, 109, 247);"
+                  />
+                  <p
+                    class="MuiTypography-root makeStyles-statusText-89 MuiTypography-body1"
+                  >
+                    Spanish
+                  </p>
+                </div>
+              </div>
+              <div
+                class="MuiGrid-root MuiGrid-item MuiGrid-grid-lg-2 MuiGrid-grid-xl-2"
+              >
+                <p
+                  class="MuiTypography-root MuiTypography-body1"
+                  style="color: rgb(76, 76, 76); font-size: 15px; text-align: right;"
+                >
+                  7.32
+                  %
+                </p>
+              </div>
+              <div
+                class="MuiGrid-root MuiGrid-item MuiGrid-grid-lg-1 MuiGrid-grid-xl-1"
+              >
+                <p
+                  class="MuiTypography-root MuiTypography-body1"
+                  style="color: rgb(76, 76, 76); font-size: 15px; font-weight: bold; text-align: right;"
+                >
+                  3
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`WorkersByDemographicData Component should render loading 1`] = `
+<div>
+  <div
+    class="MuiPaper-root makeStyles-maxHeight-223 makeStyles-pieContainer-224 makeStyles-widget-229 MuiPaper-elevation0 MuiPaper-rounded"
+  >
+    <div
+      style="display: flex; justify-content: space-between;"
+    >
+      <div
+        class="MuiSkeleton-root MuiSkeleton-rect MuiSkeleton-wave"
+        style="width: 50%; height: 30px;"
+      />
+      <div
+        class="MuiBox-root MuiBox-root-265 makeStyles-filterStatusContainer-198 makeStyles-subFilterContainer-199"
+        style="padding-top: 18px;"
+      >
+        <div
+          class="makeStyles-floatingFilterWrapper-204 makeStyles-filterWrapper-203  floatingFilterWrapper"
+        >
+          <span
+            class="makeStyles-floatingFilterButton-205"
+            data-testid="controlled-button"
+            tabindex="-1"
+          >
+            <button
+              aria-controls="false"
+              aria-haspopup="true"
+              class="MuiButtonBase-root MuiButton-root MuiButton-text makeStyles-buttonFilter-213"
+              data-testid="button-filter-open"
+              tabindex="0"
+              type="button"
+            >
+              <span
+                class="MuiButton-label"
+              >
+                Primary Language
+                <span
+                  class="MuiButton-endIcon MuiButton-iconSizeMedium"
+                >
+                  <svg
+                    class="makeStyles-dropdownIcon-207"
+                  >
+                    expand.svg
+                  </svg>
+                </span>
+              </span>
+            </button>
+          </span>
+        </div>
+      </div>
+    </div>
+    <div
+      class="MuiGrid-root MuiGrid-container"
+      style="height: 100%;"
+    >
+      <div
+        class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-md-12 MuiGrid-grid-lg-12 MuiGrid-grid-xl-12"
+        style="height: 100%;"
+      >
+        <div
+          class="MuiSkeleton-root MuiSkeleton-rect MuiSkeleton-wave"
+          style="width: 100%; height: 96%;"
+        />
+      </div>
+    </div>
+  </div>
+</div>
+`;

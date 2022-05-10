@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ControlledError should not render errors 1`] = `
+<div>
+  <div>
+    Component
+  </div>
+</div>
+`;
+
+exports[`ControlledError should render 1`] = `
+<div>
+  <div>
+    Component
+  </div>
+  <h1
+    class="MuiTypography-root  makeStyles-errorMessage-1 errorMessage MuiTypography-caption MuiTypography-colorSecondary MuiTypography-alignLeft"
+  />
+</div>
+`;

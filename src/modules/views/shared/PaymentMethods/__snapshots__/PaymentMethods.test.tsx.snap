@@ -1,0 +1,902 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PaymentMethods should render admin mode 1`] = `
+<div>
+  <div
+    class="MuiGrid-root makeStyles-adminCards-160 MuiGrid-container"
+  >
+    <div
+      class="MuiGrid-root MuiGrid-item MuiGrid-grid-lg-12 MuiGrid-grid-xl-12"
+    >
+      <div
+        class="MuiPaper-root MuiCard-root makeStyles-cardItem-194 MuiPaper-elevation1 MuiPaper-rounded"
+        data-testid="card-item"
+      >
+        <p
+          class="MuiTypography-root makeStyles-creditCardTitle-204 MuiTypography-body1"
+        >
+          CREDIT CARD
+        </p>
+        <div
+          class="makeStyles-cardNumberWrapper-213"
+        >
+          <p
+            class="MuiTypography-root makeStyles-creditCardNumber-206 MuiTypography-body1"
+          >
+            **** **** **** 4312
+          </p>
+          <div
+            class="makeStyles-creditCardLogoContainer-208"
+          >
+            <div
+              class="makeStyles-creditCardLogo-207"
+            >
+              <img
+                alt="Credit Card Logo"
+                class="makeStyles-creditCardIconImage-203"
+                src="card-logo-visa.png"
+              />
+            </div>
+          </div>
+        </div>
+        <div>
+          <p
+            class="MuiTypography-root makeStyles-creditCardHolder-205 MuiTypography-body1"
+          >
+            Rodolfo Perez
+          </p>
+          <p
+            class="MuiTypography-root makeStyles-creditCardHolder-205 MuiTypography-body1"
+          >
+            USA
+          </p>
+        </div>
+        <span
+          class="makeStyles-cardSelectedIcon-202 makeStyles-cardItemClickable-195"
+          data-testid="credit-card-item-delete"
+          role="button"
+        >
+          <svg
+            style="cursor: pointer;"
+            title="Delete Card"
+          >
+            trash-can.svg
+          </svg>
+        </span>
+      </div>
+    </div>
+    <div
+      class="MuiGrid-root MuiGrid-item MuiGrid-grid-lg-12 MuiGrid-grid-xl-12"
+    >
+      <div
+        class="makeStyles-emptyCardItem-193 false"
+      >
+        <button
+          class="MuiButtonBase-root MuiButton-root MuiButton-text makeStyles-addNewCardButton-215 MuiButton-textPrimary"
+          data-testid="add-card-btn"
+          tabindex="0"
+          type="button"
+        >
+          <span
+            class="MuiButton-label"
+          >
+            <svg>
+              credit-card.svg
+            </svg>
+            ADD NEW CREDIT CARD
+          </span>
+          <span
+            class="MuiTouchRipple-root"
+          />
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`PaymentMethods should render admin mode and no open the modal if the payment with error does not exist 1`] = `
+<div>
+  <div
+    class="MuiGrid-root makeStyles-adminCards-552 MuiGrid-container"
+  >
+    <div
+      class="MuiGrid-root MuiGrid-item MuiGrid-grid-lg-12 MuiGrid-grid-xl-12"
+    >
+      <div
+        class="MuiPaper-root MuiCard-root makeStyles-cardItem-586 MuiPaper-elevation1 MuiPaper-rounded"
+        data-testid="card-item"
+      >
+        <p
+          class="MuiTypography-root makeStyles-creditCardTitle-596 MuiTypography-body1"
+        >
+          CREDIT CARD
+        </p>
+        <div
+          class="makeStyles-cardNumberWrapper-605"
+        >
+          <p
+            class="MuiTypography-root makeStyles-creditCardNumber-598 MuiTypography-body1"
+          >
+            **** **** **** 6213
+          </p>
+          <div
+            class="makeStyles-creditCardLogoContainer-600"
+          >
+            <div
+              class="makeStyles-creditCardLogo-599"
+            >
+              <img
+                alt="Credit Card Logo"
+                class="makeStyles-creditCardIconImage-595"
+                src="card-logo-mastercard.png"
+              />
+            </div>
+          </div>
+        </div>
+        <div>
+          <p
+            class="MuiTypography-root makeStyles-creditCardHolder-597 MuiTypography-body1"
+          >
+            Lucas Marquez
+          </p>
+          <p
+            class="MuiTypography-root makeStyles-creditCardHolder-597 MuiTypography-body1"
+          >
+            USA
+          </p>
+        </div>
+        <span
+          class="makeStyles-cardSelectedIcon-594 makeStyles-cardItemClickable-587"
+          data-testid="credit-card-item-delete"
+          role="button"
+        >
+          <svg
+            style="cursor: pointer;"
+            title="Delete Card"
+          >
+            trash-can.svg
+          </svg>
+        </span>
+      </div>
+    </div>
+    <div
+      class="MuiGrid-root MuiGrid-item MuiGrid-grid-lg-12 MuiGrid-grid-xl-12"
+    >
+      <div
+        class="MuiPaper-root MuiCard-root makeStyles-cardItem-586 MuiPaper-elevation1 MuiPaper-rounded"
+        data-testid="card-item"
+      >
+        <p
+          class="MuiTypography-root makeStyles-creditCardTitle-596 MuiTypography-body1"
+        >
+          CREDIT CARD
+        </p>
+        <div
+          class="makeStyles-cardNumberWrapper-605"
+        >
+          <p
+            class="MuiTypography-root makeStyles-creditCardNumber-598 MuiTypography-body1"
+          >
+            **** **** **** 7468
+          </p>
+          <div
+            class="makeStyles-creditCardLogoContainer-600"
+          >
+            <div
+              class="makeStyles-creditCardLogo-599"
+            >
+              <svg
+                class="makeStyles-creditCardIconImage-595"
+              >
+                credit-card.svg
+              </svg>
+            </div>
+          </div>
+        </div>
+        <div>
+          <p
+            class="MuiTypography-root makeStyles-creditCardHolder-597 MuiTypography-body1"
+          >
+            Nico  Monetto
+          </p>
+          <p
+            class="MuiTypography-root makeStyles-creditCardHolder-597 MuiTypography-body1"
+          >
+            USA
+          </p>
+        </div>
+        <span
+          class="makeStyles-cardSelectedIcon-594 makeStyles-cardItemClickable-587"
+          data-testid="credit-card-item-delete"
+          role="button"
+        >
+          <svg
+            style="cursor: pointer;"
+            title="Delete Card"
+          >
+            trash-can.svg
+          </svg>
+        </span>
+      </div>
+    </div>
+    <div
+      class="MuiGrid-root MuiGrid-item MuiGrid-grid-lg-12 MuiGrid-grid-xl-12"
+    >
+      <div
+        class="makeStyles-emptyCardItem-585 false"
+      >
+        <button
+          class="MuiButtonBase-root MuiButton-root MuiButton-text makeStyles-addNewCardButton-607 MuiButton-textPrimary"
+          data-testid="add-card-btn"
+          tabindex="0"
+          type="button"
+        >
+          <span
+            class="MuiButton-label"
+          >
+            <svg>
+              credit-card.svg
+            </svg>
+            ADD NEW CREDIT CARD
+          </span>
+          <span
+            class="MuiTouchRipple-root"
+          />
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`PaymentMethods should render admin mode with the modal and do not delete if user close the modal 1`] = `
+<div
+  aria-hidden="true"
+>
+  <div
+    class="MuiGrid-root makeStyles-adminCards-446 MuiGrid-container"
+  >
+    <div
+      class="MuiGrid-root MuiGrid-item MuiGrid-grid-lg-12 MuiGrid-grid-xl-12"
+    >
+      <div
+        class="MuiPaper-root MuiCard-root makeStyles-cardItem-480 MuiPaper-elevation1 MuiPaper-rounded"
+        data-testid="card-item"
+      >
+        <p
+          class="MuiTypography-root makeStyles-creditCardTitle-490 MuiTypography-body1"
+        >
+          CREDIT CARD
+        </p>
+        <div
+          class="makeStyles-cardNumberWrapper-499"
+        >
+          <p
+            class="MuiTypography-root makeStyles-creditCardNumber-492 MuiTypography-body1"
+          >
+            **** **** **** 4312
+          </p>
+          <div
+            class="makeStyles-creditCardLogoContainer-494"
+          >
+            <div
+              class="makeStyles-creditCardLogo-493"
+            >
+              <img
+                alt="Credit Card Logo"
+                class="makeStyles-creditCardIconImage-489"
+                src="card-logo-visa.png"
+              />
+            </div>
+          </div>
+        </div>
+        <div>
+          <p
+            class="MuiTypography-root makeStyles-creditCardHolder-491 MuiTypography-body1"
+          >
+            Rodolfo Perez
+          </p>
+          <p
+            class="MuiTypography-root makeStyles-creditCardHolder-491 MuiTypography-body1"
+          >
+            USA
+          </p>
+        </div>
+        <span
+          class="makeStyles-cardSelectedIcon-488 makeStyles-cardItemClickable-481"
+          data-testid="credit-card-item-delete"
+          role="button"
+        >
+          <svg
+            style="cursor: pointer;"
+            title="Delete Card"
+          >
+            trash-can.svg
+          </svg>
+        </span>
+      </div>
+    </div>
+    <div
+      class="MuiGrid-root MuiGrid-item MuiGrid-grid-lg-12 MuiGrid-grid-xl-12"
+    >
+      <div
+        class="MuiPaper-root MuiCard-root makeStyles-cardItem-480 MuiPaper-elevation1 MuiPaper-rounded"
+        data-testid="card-item"
+      >
+        <p
+          class="MuiTypography-root makeStyles-creditCardTitle-490 MuiTypography-body1"
+        >
+          CREDIT CARD
+        </p>
+        <div
+          class="makeStyles-cardNumberWrapper-499"
+        >
+          <p
+            class="MuiTypography-root makeStyles-creditCardNumber-492 MuiTypography-body1"
+          >
+            **** **** **** 6213
+          </p>
+          <div
+            class="makeStyles-creditCardLogoContainer-494"
+          >
+            <div
+              class="makeStyles-creditCardLogo-493"
+            >
+              <img
+                alt="Credit Card Logo"
+                class="makeStyles-creditCardIconImage-489"
+                src="card-logo-mastercard.png"
+              />
+            </div>
+          </div>
+        </div>
+        <div>
+          <p
+            class="MuiTypography-root makeStyles-creditCardHolder-491 MuiTypography-body1"
+          >
+            Lucas Marquez
+          </p>
+          <p
+            class="MuiTypography-root makeStyles-creditCardHolder-491 MuiTypography-body1"
+          >
+            USA
+          </p>
+        </div>
+        <span
+          class="makeStyles-cardSelectedIcon-488 makeStyles-cardItemClickable-481"
+          data-testid="credit-card-item-delete"
+          role="button"
+        >
+          <svg
+            style="cursor: pointer;"
+            title="Delete Card"
+          >
+            trash-can.svg
+          </svg>
+        </span>
+      </div>
+    </div>
+    <div
+      class="MuiGrid-root MuiGrid-item MuiGrid-grid-lg-12 MuiGrid-grid-xl-12"
+    >
+      <div
+        class="MuiPaper-root MuiCard-root makeStyles-cardItem-480 MuiPaper-elevation1 MuiPaper-rounded"
+        data-testid="card-item"
+      >
+        <p
+          class="MuiTypography-root makeStyles-creditCardTitle-490 MuiTypography-body1"
+        >
+          CREDIT CARD
+        </p>
+        <div
+          class="makeStyles-cardNumberWrapper-499"
+        >
+          <p
+            class="MuiTypography-root makeStyles-creditCardNumber-492 MuiTypography-body1"
+          >
+            **** **** **** 7468
+          </p>
+          <div
+            class="makeStyles-creditCardLogoContainer-494"
+          >
+            <div
+              class="makeStyles-creditCardLogo-493"
+            >
+              <svg
+                class="makeStyles-creditCardIconImage-489"
+              >
+                credit-card.svg
+              </svg>
+            </div>
+          </div>
+        </div>
+        <div>
+          <p
+            class="MuiTypography-root makeStyles-creditCardHolder-491 MuiTypography-body1"
+          >
+            Nico  Monetto
+          </p>
+          <p
+            class="MuiTypography-root makeStyles-creditCardHolder-491 MuiTypography-body1"
+          >
+            USA
+          </p>
+        </div>
+        <span
+          class="makeStyles-cardSelectedIcon-488 makeStyles-cardItemClickable-481"
+          data-testid="credit-card-item-delete"
+          role="button"
+        >
+          <svg
+            style="cursor: pointer;"
+            title="Delete Card"
+          >
+            trash-can.svg
+          </svg>
+        </span>
+      </div>
+    </div>
+    <div
+      class="MuiGrid-root MuiGrid-item MuiGrid-grid-lg-12 MuiGrid-grid-xl-12"
+    >
+      <div
+        class="makeStyles-emptyCardItem-479 false"
+      >
+        <button
+          class="MuiButtonBase-root MuiButton-root MuiButton-text makeStyles-addNewCardButton-501 MuiButton-textPrimary"
+          data-testid="add-card-btn"
+          tabindex="0"
+          type="button"
+        >
+          <span
+            class="MuiButton-label"
+          >
+            <svg>
+              credit-card.svg
+            </svg>
+            ADD NEW CREDIT CARD
+          </span>
+          <span
+            class="MuiTouchRipple-root"
+          />
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`PaymentMethods should render admin mode with the modal to resolve conflict 1`] = `
+<div
+  aria-hidden="true"
+>
+  <div
+    class="MuiGrid-root makeStyles-adminCards-340 MuiGrid-container"
+  >
+    <div
+      class="MuiGrid-root MuiGrid-item MuiGrid-grid-lg-12 MuiGrid-grid-xl-12"
+    >
+      <div
+        class="MuiPaper-root MuiCard-root makeStyles-cardItem-374 MuiPaper-elevation1 MuiPaper-rounded"
+        data-testid="card-item"
+      >
+        <p
+          class="MuiTypography-root makeStyles-creditCardTitle-384 MuiTypography-body1"
+        >
+          CREDIT CARD
+        </p>
+        <div
+          class="makeStyles-cardNumberWrapper-393"
+        >
+          <p
+            class="MuiTypography-root makeStyles-creditCardNumber-386 MuiTypography-body1"
+          >
+            **** **** **** 4312
+          </p>
+          <div
+            class="makeStyles-creditCardLogoContainer-388"
+          >
+            <div
+              class="makeStyles-creditCardLogo-387"
+            >
+              <img
+                alt="Credit Card Logo"
+                class="makeStyles-creditCardIconImage-383"
+                src="card-logo-visa.png"
+              />
+            </div>
+          </div>
+        </div>
+        <div>
+          <p
+            class="MuiTypography-root makeStyles-creditCardHolder-385 MuiTypography-body1"
+          >
+            Rodolfo Perez
+          </p>
+          <p
+            class="MuiTypography-root makeStyles-creditCardHolder-385 MuiTypography-body1"
+          >
+            USA
+          </p>
+        </div>
+        <span
+          class="makeStyles-cardSelectedIcon-382 makeStyles-cardItemClickable-375"
+          data-testid="credit-card-item-delete"
+          role="button"
+        >
+          <svg
+            style="cursor: pointer;"
+            title="Delete Card"
+          >
+            trash-can.svg
+          </svg>
+        </span>
+      </div>
+    </div>
+    <div
+      class="MuiGrid-root MuiGrid-item MuiGrid-grid-lg-12 MuiGrid-grid-xl-12"
+    >
+      <div
+        class="MuiPaper-root MuiCard-root makeStyles-cardItem-374 MuiPaper-elevation1 MuiPaper-rounded"
+        data-testid="card-item"
+      >
+        <p
+          class="MuiTypography-root makeStyles-creditCardTitle-384 MuiTypography-body1"
+        >
+          CREDIT CARD
+        </p>
+        <div
+          class="makeStyles-cardNumberWrapper-393"
+        >
+          <p
+            class="MuiTypography-root makeStyles-creditCardNumber-386 MuiTypography-body1"
+          >
+            **** **** **** 6213
+          </p>
+          <div
+            class="makeStyles-creditCardLogoContainer-388"
+          >
+            <div
+              class="makeStyles-creditCardLogo-387"
+            >
+              <img
+                alt="Credit Card Logo"
+                class="makeStyles-creditCardIconImage-383"
+                src="card-logo-mastercard.png"
+              />
+            </div>
+          </div>
+        </div>
+        <div>
+          <p
+            class="MuiTypography-root makeStyles-creditCardHolder-385 MuiTypography-body1"
+          >
+            Lucas Marquez
+          </p>
+          <p
+            class="MuiTypography-root makeStyles-creditCardHolder-385 MuiTypography-body1"
+          >
+            USA
+          </p>
+        </div>
+        <span
+          class="makeStyles-cardSelectedIcon-382 makeStyles-cardItemClickable-375"
+          data-testid="credit-card-item-delete"
+          role="button"
+        >
+          <svg
+            style="cursor: pointer;"
+            title="Delete Card"
+          >
+            trash-can.svg
+          </svg>
+        </span>
+      </div>
+    </div>
+    <div
+      class="MuiGrid-root MuiGrid-item MuiGrid-grid-lg-12 MuiGrid-grid-xl-12"
+    >
+      <div
+        class="MuiPaper-root MuiCard-root makeStyles-cardItem-374 MuiPaper-elevation1 MuiPaper-rounded"
+        data-testid="card-item"
+      >
+        <p
+          class="MuiTypography-root makeStyles-creditCardTitle-384 MuiTypography-body1"
+        >
+          CREDIT CARD
+        </p>
+        <div
+          class="makeStyles-cardNumberWrapper-393"
+        >
+          <p
+            class="MuiTypography-root makeStyles-creditCardNumber-386 MuiTypography-body1"
+          >
+            **** **** **** 7468
+          </p>
+          <div
+            class="makeStyles-creditCardLogoContainer-388"
+          >
+            <div
+              class="makeStyles-creditCardLogo-387"
+            >
+              <svg
+                class="makeStyles-creditCardIconImage-383"
+              >
+                credit-card.svg
+              </svg>
+            </div>
+          </div>
+        </div>
+        <div>
+          <p
+            class="MuiTypography-root makeStyles-creditCardHolder-385 MuiTypography-body1"
+          >
+            Nico  Monetto
+          </p>
+          <p
+            class="MuiTypography-root makeStyles-creditCardHolder-385 MuiTypography-body1"
+          >
+            USA
+          </p>
+        </div>
+        <span
+          class="makeStyles-cardSelectedIcon-382 makeStyles-cardItemClickable-375"
+          data-testid="credit-card-item-delete"
+          role="button"
+        >
+          <svg
+            style="cursor: pointer;"
+            title="Delete Card"
+          >
+            trash-can.svg
+          </svg>
+        </span>
+      </div>
+    </div>
+    <div
+      class="MuiGrid-root MuiGrid-item MuiGrid-grid-lg-12 MuiGrid-grid-xl-12"
+    >
+      <div
+        class="makeStyles-emptyCardItem-373 false"
+      >
+        <button
+          class="MuiButtonBase-root MuiButton-root MuiButton-text makeStyles-addNewCardButton-395 MuiButton-textPrimary"
+          data-testid="add-card-btn"
+          tabindex="0"
+          type="button"
+        >
+          <span
+            class="MuiButton-label"
+          >
+            <svg>
+              credit-card.svg
+            </svg>
+            ADD NEW CREDIT CARD
+          </span>
+          <span
+            class="MuiTouchRipple-root"
+          />
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`PaymentMethods should render the disclamer modal and let the user to close the modal 1`] = `
+<div
+  aria-hidden="true"
+>
+  <div
+    class="MuiGrid-root makeStyles-adminCards-612 MuiGrid-container"
+  >
+    <div
+      class="MuiGrid-root MuiGrid-item MuiGrid-grid-lg-12 MuiGrid-grid-xl-12"
+    >
+      <div
+        class="MuiPaper-root MuiCard-root makeStyles-cardItem-646 MuiPaper-elevation1 MuiPaper-rounded"
+        data-testid="card-item"
+      >
+        <p
+          class="MuiTypography-root makeStyles-creditCardTitle-656 MuiTypography-body1"
+        >
+          CREDIT CARD
+        </p>
+        <div
+          class="makeStyles-cardNumberWrapper-665"
+        >
+          <p
+            class="MuiTypography-root makeStyles-creditCardNumber-658 MuiTypography-body1"
+          >
+            **** **** **** 4312
+          </p>
+          <div
+            class="makeStyles-creditCardLogoContainer-660"
+          >
+            <div
+              class="makeStyles-creditCardLogo-659"
+            >
+              <img
+                alt="Credit Card Logo"
+                class="makeStyles-creditCardIconImage-655"
+                src="card-logo-visa.png"
+              />
+            </div>
+          </div>
+        </div>
+        <div>
+          <p
+            class="MuiTypography-root makeStyles-creditCardHolder-657 MuiTypography-body1"
+          >
+            Rodolfo Perez
+          </p>
+          <p
+            class="MuiTypography-root makeStyles-creditCardHolder-657 MuiTypography-body1"
+          >
+            USA
+          </p>
+        </div>
+        <span
+          class="makeStyles-cardSelectedIcon-654 makeStyles-cardItemClickable-647"
+          data-testid="credit-card-item-delete"
+          role="button"
+        >
+          <svg
+            style="cursor: pointer;"
+            title="Delete Card"
+          >
+            trash-can.svg
+          </svg>
+        </span>
+      </div>
+    </div>
+    <div
+      class="MuiGrid-root MuiGrid-item MuiGrid-grid-lg-12 MuiGrid-grid-xl-12"
+    >
+      <div
+        class="MuiPaper-root MuiCard-root makeStyles-cardItem-646 MuiPaper-elevation1 MuiPaper-rounded"
+        data-testid="card-item"
+      >
+        <p
+          class="MuiTypography-root makeStyles-creditCardTitle-656 MuiTypography-body1"
+        >
+          CREDIT CARD
+        </p>
+        <div
+          class="makeStyles-cardNumberWrapper-665"
+        >
+          <p
+            class="MuiTypography-root makeStyles-creditCardNumber-658 MuiTypography-body1"
+          >
+            **** **** **** 6213
+          </p>
+          <div
+            class="makeStyles-creditCardLogoContainer-660"
+          >
+            <div
+              class="makeStyles-creditCardLogo-659"
+            >
+              <img
+                alt="Credit Card Logo"
+                class="makeStyles-creditCardIconImage-655"
+                src="card-logo-mastercard.png"
+              />
+            </div>
+          </div>
+        </div>
+        <div>
+          <p
+            class="MuiTypography-root makeStyles-creditCardHolder-657 MuiTypography-body1"
+          >
+            Lucas Marquez
+          </p>
+          <p
+            class="MuiTypography-root makeStyles-creditCardHolder-657 MuiTypography-body1"
+          >
+            USA
+          </p>
+        </div>
+        <span
+          class="makeStyles-cardSelectedIcon-654 makeStyles-cardItemClickable-647"
+          data-testid="credit-card-item-delete"
+          role="button"
+        >
+          <svg
+            style="cursor: pointer;"
+            title="Delete Card"
+          >
+            trash-can.svg
+          </svg>
+        </span>
+      </div>
+    </div>
+    <div
+      class="MuiGrid-root MuiGrid-item MuiGrid-grid-lg-12 MuiGrid-grid-xl-12"
+    >
+      <div
+        class="MuiPaper-root MuiCard-root makeStyles-cardItem-646 MuiPaper-elevation1 MuiPaper-rounded"
+        data-testid="card-item"
+      >
+        <p
+          class="MuiTypography-root makeStyles-creditCardTitle-656 MuiTypography-body1"
+        >
+          CREDIT CARD
+        </p>
+        <div
+          class="makeStyles-cardNumberWrapper-665"
+        >
+          <p
+            class="MuiTypography-root makeStyles-creditCardNumber-658 MuiTypography-body1"
+          >
+            **** **** **** 7468
+          </p>
+          <div
+            class="makeStyles-creditCardLogoContainer-660"
+          >
+            <div
+              class="makeStyles-creditCardLogo-659"
+            >
+              <svg
+                class="makeStyles-creditCardIconImage-655"
+              >
+                credit-card.svg
+              </svg>
+            </div>
+          </div>
+        </div>
+        <div>
+          <p
+            class="MuiTypography-root makeStyles-creditCardHolder-657 MuiTypography-body1"
+          >
+            Nico  Monetto
+          </p>
+          <p
+            class="MuiTypography-root makeStyles-creditCardHolder-657 MuiTypography-body1"
+          >
+            USA
+          </p>
+        </div>
+        <span
+          class="makeStyles-cardSelectedIcon-654 makeStyles-cardItemClickable-647"
+          data-testid="credit-card-item-delete"
+          role="button"
+        >
+          <svg
+            style="cursor: pointer;"
+            title="Delete Card"
+          >
+            trash-can.svg
+          </svg>
+        </span>
+      </div>
+    </div>
+    <div
+      class="MuiGrid-root MuiGrid-item MuiGrid-grid-lg-12 MuiGrid-grid-xl-12"
+    >
+      <div
+        class="makeStyles-emptyCardItem-645 false"
+      >
+        <button
+          class="MuiButtonBase-root MuiButton-root MuiButton-text makeStyles-addNewCardButton-667 MuiButton-textPrimary"
+          data-testid="add-card-btn"
+          tabindex="0"
+          type="button"
+        >
+          <span
+            class="MuiButton-label"
+          >
+            <svg>
+              credit-card.svg
+            </svg>
+            ADD NEW CREDIT CARD
+          </span>
+          <span
+            class="MuiTouchRipple-root"
+          />
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+`;

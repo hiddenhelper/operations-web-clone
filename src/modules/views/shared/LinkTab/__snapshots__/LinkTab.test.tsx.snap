@@ -1,0 +1,30 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`LinkTab should render 1`] = `
+<body>
+  <div>
+    <a
+      aria-controls="tabpanel-1"
+      aria-disabled="false"
+      aria-selected="true"
+      class="MuiButtonBase-root MuiTab-root MuiTab-textColorInherit Mui-selected MuiTab-labelIcon"
+      data-testid="tab-1"
+      href="/clients"
+      role="tab"
+      tabindex="0"
+    >
+      <span
+        class="MuiTab-wrapper"
+      >
+        <svg>
+          dashboard.svg
+        </svg>
+        Clients
+      </span>
+      <span
+        class="MuiTouchRipple-root"
+      />
+    </a>
+  </div>
+</body>
+`;

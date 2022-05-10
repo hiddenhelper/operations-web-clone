@@ -1,0 +1,39 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SelectFilter Component should render 1`] = `
+<div>
+  <div
+    class="makeStyles-floatingFilterWrapper-21 makeStyles-filterWrapper-20  floatingFilterWrapper"
+  >
+    <span
+      class="makeStyles-floatingFilterButton-22"
+      data-testid="controlled-button"
+      tabindex="-1"
+    >
+      <button
+        aria-controls="false"
+        aria-haspopup="true"
+        class="MuiButtonBase-root MuiButton-root MuiButton-text makeStyles-buttonFilter-30"
+        data-testid="button-filter-open"
+        tabindex="0"
+        type="button"
+      >
+        <span
+          class="MuiButton-label"
+        >
+          
+          <span
+            class="MuiButton-endIcon MuiButton-iconSizeMedium"
+          >
+            <svg
+              class="makeStyles-dropdownIcon-24"
+            >
+              expand.svg
+            </svg>
+          </span>
+        </span>
+      </button>
+    </span>
+  </div>
+</div>
+`;

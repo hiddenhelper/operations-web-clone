@@ -1,0 +1,106 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PageTitle Component should render 1`] = `
+<body>
+  <div>
+    <div
+      class="MuiBox-root MuiBox-root-1"
+      style="height: 50px; margin-bottom: 13px; width: 100%;"
+    >
+      <div
+        class="MuiBox-root MuiBox-root-2"
+        style="display: flex; align-items: center; justify-content: space-between;"
+      >
+        <div>
+          <div
+            class="MuiBox-root MuiBox-root-3"
+            style="display: flex; align-items: center; margin-top: 5px;"
+          >
+            <h2
+              class="MuiTypography-root MuiTypography-h1"
+              style="color: rgb(68, 68, 68); font-size: 2.25rem; font-weight: 600; letter-spacing: 0; margin-right: 0.5rem;"
+            >
+              Hello
+            </h2>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+`;
+
+exports[`PageTitle Component should render content on the right 1`] = `
+<body>
+  <div>
+    <div
+      class="MuiBox-root MuiBox-root-7"
+      style="height: 50px; margin-bottom: 13px; width: 100%;"
+    >
+      <div
+        class="MuiBox-root MuiBox-root-8"
+        style="display: flex; align-items: center; justify-content: space-between;"
+      >
+        <div>
+          <div
+            class="MuiBox-root MuiBox-root-9"
+            style="display: flex; align-items: center; margin-top: 5px;"
+          >
+            <h2
+              class="MuiTypography-root MuiTypography-h1"
+              style="color: rgb(68, 68, 68); font-size: 2.25rem; font-weight: 600; letter-spacing: 0; margin-right: 0.5rem;"
+            >
+              Hello
+            </h2>
+            <p
+              class="MuiTypography-root MuiTypography-body1"
+              style="color: rgb(68, 68, 68); font-size: 1.9375rem; font-weight: 300; letter-spacing: 0;"
+            >
+              Welcome!
+            </p>
+          </div>
+        </div>
+        <button>
+          Click Me!
+        </button>
+      </div>
+    </div>
+  </div>
+</body>
+`;
+
+exports[`PageTitle Component should render subtitle 1`] = `
+<body>
+  <div>
+    <div
+      class="MuiBox-root MuiBox-root-4"
+      style="height: 50px; margin-bottom: 13px; width: 100%;"
+    >
+      <div
+        class="MuiBox-root MuiBox-root-5"
+        style="display: flex; align-items: center; justify-content: space-between;"
+      >
+        <div>
+          <div
+            class="MuiBox-root MuiBox-root-6"
+            style="display: flex; align-items: center; margin-top: 5px;"
+          >
+            <h2
+              class="MuiTypography-root MuiTypography-h1"
+              style="color: rgb(68, 68, 68); font-size: 2.25rem; font-weight: 600; letter-spacing: 0; margin-right: 0.5rem;"
+            >
+              Hello
+            </h2>
+            <p
+              class="MuiTypography-root MuiTypography-body1"
+              style="color: rgb(68, 68, 68); font-size: 1.9375rem; font-weight: 300; letter-spacing: 0;"
+            >
+              Welcome!
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+`;

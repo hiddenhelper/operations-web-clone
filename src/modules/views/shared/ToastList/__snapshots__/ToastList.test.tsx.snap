@@ -1,0 +1,31 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ToastList should render 1`] = `
+<div>
+  <div
+    class="makeStyles-container-1"
+  >
+    <div
+      class="makeStyles-toastItem-2 makeStyles-success-3"
+    >
+      <p>
+        the blah was blah succesfully. the blah was blah succesfully
+      </p>
+    </div>
+    <div
+      class="makeStyles-toastItem-2 makeStyles-info-6"
+    >
+      <p>
+        something somehting
+      </p>
+    </div>
+    <div
+      class="makeStyles-toastItem-2 undefined"
+    >
+      <p>
+        warn something somehting
+      </p>
+    </div>
+  </div>
+</div>
+`;

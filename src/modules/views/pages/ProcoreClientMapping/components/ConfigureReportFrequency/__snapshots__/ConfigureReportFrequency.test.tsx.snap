@@ -1,0 +1,83 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Configure Report Frequency With Suggested Mappings should open modal and close the modal 1`] = `
+<div
+  aria-hidden="true"
+>
+  <div
+    class="makeStyles-container-43 undefined"
+    data-testid="action-configure-report-frequency-container"
+  >
+    <span
+      class="makeStyles-text-44"
+    >
+      Daily
+    </span>
+    <svg
+      aria-hidden="true"
+      class="MuiSvgIcon-root makeStyles-icon-45"
+      focusable="false"
+      height="18px"
+      viewBox="0 0 24 24"
+    >
+      <path
+        d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM20.71 7.04c.39-.39.39-1.02 0-1.41l-2.34-2.34a.9959.9959 0 00-1.41 0l-1.83 1.83 3.75 3.75 1.83-1.83z"
+      />
+    </svg>
+  </div>
+</div>
+`;
+
+exports[`Configure Report Frequency With Suggested Mappings should open modal and close the modal 2`] = `
+<div
+  aria-hidden="true"
+>
+  <div
+    class="makeStyles-container-43 undefined"
+    data-testid="action-configure-report-frequency-container"
+  >
+    <span
+      class="makeStyles-text-44"
+    >
+      Daily
+    </span>
+    <svg
+      aria-hidden="true"
+      class="MuiSvgIcon-root makeStyles-icon-45"
+      focusable="false"
+      height="18px"
+      viewBox="0 0 24 24"
+    >
+      <path
+        d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM20.71 7.04c.39-.39.39-1.02 0-1.41l-2.34-2.34a.9959.9959 0 00-1.41 0l-1.83 1.83 3.75 3.75 1.83-1.83z"
+      />
+    </svg>
+  </div>
+</div>
+`;
+
+exports[`Configure Report Frequency With Suggested Mappings should render 1`] = `
+<div>
+  <div
+    class="makeStyles-container-1 undefined"
+    data-testid="action-configure-report-frequency-container"
+  >
+    <span
+      class="makeStyles-text-2"
+    >
+      Daily
+    </span>
+    <svg
+      aria-hidden="true"
+      class="MuiSvgIcon-root makeStyles-icon-3"
+      focusable="false"
+      height="18px"
+      viewBox="0 0 24 24"
+    >
+      <path
+        d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM20.71 7.04c.39-.39.39-1.02 0-1.41l-2.34-2.34a.9959.9959 0 00-1.41 0l-1.83 1.83 3.75 3.75 1.83-1.83z"
+      />
+    </svg>
+  </div>
+</div>
+`;

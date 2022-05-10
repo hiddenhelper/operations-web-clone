@@ -1,0 +1,73 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ControlledDatePicker should render 1`] = `
+<div>
+  <div
+    class="react-datepicker-wrapper"
+  >
+    <div
+      class="react-datepicker__input-container"
+    >
+      <div
+        class="MuiFormControl-root MuiTextField-root"
+        data-testid="keyboard-date-picker"
+      >
+        <div
+          class="MuiInputBase-root MuiInput-root MuiInput-underline MuiInputBase-formControl MuiInput-formControl MuiInputBase-adornedStart"
+        >
+          <div
+            class="MuiInputAdornment-root MuiInputAdornment-positionStart"
+          >
+            <svg>
+              calendar.svg
+            </svg>
+          </div>
+          <input
+            aria-invalid="false"
+            class="MuiInputBase-input MuiInput-input MuiInputBase-inputAdornedStart"
+            placeholder=""
+            type="text"
+            value="10/10/2020"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`ControlledDatePicker should render past dates of startDate disabled 1`] = `
+<div>
+  <div
+    class="react-datepicker-wrapper"
+  >
+    <div
+      class="react-datepicker__input-container"
+    >
+      <div
+        class="MuiFormControl-root MuiTextField-root"
+        data-testid="keyboard-date-picker"
+      >
+        <div
+          class="MuiInputBase-root MuiInput-root MuiInput-underline MuiInputBase-formControl MuiInput-formControl MuiInputBase-adornedStart"
+        >
+          <div
+            class="MuiInputAdornment-root MuiInputAdornment-positionStart"
+          >
+            <svg>
+              calendar.svg
+            </svg>
+          </div>
+          <input
+            aria-invalid="false"
+            class="MuiInputBase-input MuiInput-input MuiInputBase-inputAdornedStart"
+            placeholder=""
+            type="text"
+            value="10/10/2020"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

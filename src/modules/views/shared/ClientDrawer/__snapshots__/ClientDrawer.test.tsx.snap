@@ -1,0 +1,450 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ClientDrawer should render 1`] = `
+<div>
+  <div
+    class="MuiDrawer-root MuiDrawer-docked makeStyles-drawer-1 open"
+    data-testid="client-drawer-detail"
+  >
+    <div
+      class="MuiPaper-root MuiDrawer-paper makeStyles-drawerPaper-2 MuiDrawer-paperAnchorRight MuiDrawer-paperAnchorDockedRight MuiPaper-elevation0"
+    >
+      <div
+        class="makeStyles-drawerButtonWrapper-4"
+      >
+        <div
+          class="makeStyles-drawerButton-5"
+        >
+          <button
+            class="MuiButtonBase-root MuiButton-root MuiButton-text"
+            data-testid="drawer-close-btn"
+            style="outline: none;"
+            tabindex="0"
+            type="button"
+          >
+            <span
+              class="MuiButton-label"
+            >
+              <svg>
+                close.svg
+              </svg>
+            </span>
+            <span
+              class="MuiTouchRipple-root"
+            />
+          </button>
+        </div>
+        <div
+          class="makeStyles-drawerHeader-3"
+        >
+          <p
+            class="MuiTypography-root makeStyles-drawerTitle-6 MuiTypography-body1 MuiTypography-colorPrimary MuiTypography-alignLeft"
+          >
+            Client Information
+          </p>
+        </div>
+      </div>
+      <div
+        class="makeStyles-listDetail-31"
+      >
+        <div
+          class="makeStyles-company-32"
+        >
+          <div
+            class="makeStyles-drawerText-8"
+          >
+            <p
+              class="MuiTypography-root makeStyles-listAccent-33 makeStyles-entityTitle-30 MuiTypography-body1"
+            >
+              Robert C. Martin
+            </p>
+            <div
+              class="makeStyles-drawerMainText-9"
+            >
+              <span>
+                trade 1, trade 2
+              </span>
+              <span>
+                LOZG-780211-7B9
+              </span>
+              <span />
+            </div>
+          </div>
+          <div
+            class="makeStyles-drawerSection-7"
+          >
+            <svg>
+              location.svg
+            </svg>
+            <div
+              class="makeStyles-drawerText-8 makeStyles-drawerTextSeparation-10"
+            >
+              <p
+                class="MuiTypography-root makeStyles-cardFont-95  MuiTypography-body1"
+              >
+                
+                <span
+                  class=" "
+                >
+                  -
+                </span>
+              </p>
+              <p
+                class="MuiTypography-root makeStyles-cardFont-95  MuiTypography-body1"
+              >
+                
+                
+                
+                
+              </p>
+            </div>
+          </div>
+          <div
+            class="makeStyles-drawerSection-7"
+          >
+            <svg
+              aria-hidden="true"
+              class="MuiSvgIcon-root"
+              focusable="false"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"
+              />
+            </svg>
+            <div
+              class="makeStyles-drawerText-8 makeStyles-drawerTextSeparation-10"
+            >
+              -
+            </div>
+          </div>
+          <div
+            class="makeStyles-drawerSection-7"
+          >
+            <svg
+              aria-hidden="true"
+              class="MuiSvgIcon-root"
+              focusable="false"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"
+              />
+            </svg>
+            <div
+              class="makeStyles-drawerText-8 makeStyles-drawerTextSeparation-10"
+            >
+              <span
+                class="makeStyles-listAccent-33"
+              >
+                -
+              </span>
+              <span>
+                -
+              </span>
+              <span>
+                -
+              </span>
+            </div>
+          </div>
+        </div>
+        <hr
+          class="MuiDivider-root makeStyles-drawerDivider-11"
+        />
+        <div
+          class="makeStyles-ctaWrapper-34"
+        >
+          <span
+            class=""
+            data-testid="controlled-button"
+            tabindex="-1"
+          >
+            <button
+              class="MuiButtonBase-root MuiButton-root MuiButton-outlined makeStyles-drawerCTA-75 makeStyles-borderPrimaryButton-67"
+              data-testid="drawerClientButton"
+              tabindex="0"
+              type="button"
+            >
+              <span
+                class="MuiButton-label"
+              >
+                Edit
+              </span>
+            </button>
+          </span>
+          <span
+            class=""
+            data-testid="controlled-button"
+            tabindex="-1"
+          >
+            <button
+              class="MuiButtonBase-root MuiButton-root MuiButton-outlined makeStyles-drawerCTA-75 makeStyles-warningButton-76"
+              data-testid="deleteClientButton"
+              tabindex="0"
+              type="button"
+            >
+              <span
+                class="MuiButton-label"
+              >
+                Delete
+              </span>
+            </button>
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`ClientDrawer should render tax exempt 1`] = `
+<div>
+  <div
+    class="MuiDrawer-root MuiDrawer-docked makeStyles-drawer-107 open"
+    data-testid="client-drawer-detail"
+  >
+    <div
+      class="MuiPaper-root MuiDrawer-paper makeStyles-drawerPaper-108 MuiDrawer-paperAnchorRight MuiDrawer-paperAnchorDockedRight MuiPaper-elevation0"
+    >
+      <div
+        class="makeStyles-drawerButtonWrapper-110"
+      >
+        <div
+          class="makeStyles-drawerButton-111"
+        >
+          <button
+            class="MuiButtonBase-root MuiButton-root MuiButton-text"
+            data-testid="drawer-close-btn"
+            style="outline: none;"
+            tabindex="0"
+            type="button"
+          >
+            <span
+              class="MuiButton-label"
+            >
+              <svg>
+                close.svg
+              </svg>
+            </span>
+            <span
+              class="MuiTouchRipple-root"
+            />
+          </button>
+        </div>
+        <div
+          class="makeStyles-drawerHeader-109"
+        >
+          <p
+            class="MuiTypography-root makeStyles-drawerTitle-112 MuiTypography-body1 MuiTypography-colorPrimary MuiTypography-alignLeft"
+          >
+            Client Information
+          </p>
+        </div>
+      </div>
+      <div
+        class="makeStyles-listDetail-137"
+      >
+        <div
+          class="makeStyles-company-138"
+        >
+          <div
+            class="makeStyles-drawerText-114"
+          >
+            <p
+              class="MuiTypography-root makeStyles-listAccent-139 makeStyles-entityTitle-136 MuiTypography-body1"
+            >
+              Robert C. Martin
+            </p>
+            <div
+              class="makeStyles-drawerMainText-115"
+            >
+              <span>
+                trade 1, trade 2
+              </span>
+              <span>
+                LOZG-780211-7B9
+              </span>
+              <span />
+              <span>
+                Tax Exempt
+              </span>
+            </div>
+          </div>
+          <div
+            class="makeStyles-drawerSection-113"
+          >
+            <svg>
+              location.svg
+            </svg>
+            <div
+              class="makeStyles-drawerText-114 makeStyles-drawerTextSeparation-116"
+            >
+              <p
+                class="MuiTypography-root makeStyles-cardFont-201  MuiTypography-body1"
+              >
+                
+                <span
+                  class=" "
+                >
+                  -
+                </span>
+              </p>
+              <p
+                class="MuiTypography-root makeStyles-cardFont-201  MuiTypography-body1"
+              >
+                
+                
+                
+                
+              </p>
+            </div>
+          </div>
+          <div
+            class="makeStyles-drawerSection-113"
+          >
+            <svg
+              aria-hidden="true"
+              class="MuiSvgIcon-root"
+              focusable="false"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"
+              />
+            </svg>
+            <div
+              class="makeStyles-drawerText-114 makeStyles-drawerTextSeparation-116"
+            >
+              -
+            </div>
+          </div>
+          <div
+            class="makeStyles-drawerSection-113"
+          >
+            <svg
+              aria-hidden="true"
+              class="MuiSvgIcon-root"
+              focusable="false"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"
+              />
+            </svg>
+            <div
+              class="makeStyles-drawerText-114 makeStyles-drawerTextSeparation-116"
+            >
+              <span
+                class="makeStyles-listAccent-139"
+              >
+                -
+              </span>
+              <span>
+                -
+              </span>
+              <span>
+                -
+              </span>
+            </div>
+          </div>
+        </div>
+        <hr
+          class="MuiDivider-root makeStyles-drawerDivider-117"
+        />
+        <div
+          class="makeStyles-ctaWrapper-140"
+        >
+          <span
+            class=""
+            data-testid="controlled-button"
+            tabindex="-1"
+          >
+            <button
+              class="MuiButtonBase-root MuiButton-root MuiButton-outlined makeStyles-drawerCTA-181 makeStyles-borderPrimaryButton-173"
+              data-testid="drawerClientButton"
+              tabindex="0"
+              type="button"
+            >
+              <span
+                class="MuiButton-label"
+              >
+                Edit
+              </span>
+            </button>
+          </span>
+          <span
+            class=""
+            data-testid="controlled-button"
+            tabindex="-1"
+          >
+            <button
+              class="MuiButtonBase-root MuiButton-root MuiButton-outlined makeStyles-drawerCTA-181 makeStyles-warningButton-182"
+              data-testid="deleteClientButton"
+              tabindex="0"
+              type="button"
+            >
+              <span
+                class="MuiButton-label"
+              >
+                Delete
+              </span>
+            </button>
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`ClientDrawer should show loading 1`] = `
+<div>
+  <div
+    class="MuiDrawer-root MuiDrawer-docked makeStyles-drawer-213 open"
+    data-testid="client-drawer-detail"
+  >
+    <div
+      class="MuiPaper-root MuiDrawer-paper makeStyles-drawerPaper-214 MuiDrawer-paperAnchorRight MuiDrawer-paperAnchorDockedRight MuiPaper-elevation0"
+    >
+      <div
+        class="makeStyles-drawerButtonWrapper-216"
+      >
+        <div
+          class="makeStyles-drawerButton-217"
+        >
+          <button
+            class="MuiButtonBase-root MuiButton-root MuiButton-text"
+            data-testid="drawer-close-btn"
+            style="outline: none;"
+            tabindex="0"
+            type="button"
+          >
+            <span
+              class="MuiButton-label"
+            >
+              <svg>
+                close.svg
+              </svg>
+            </span>
+            <span
+              class="MuiTouchRipple-root"
+            />
+          </button>
+        </div>
+        <div
+          class="makeStyles-drawerHeader-215"
+        >
+          <p
+            class="MuiTypography-root makeStyles-drawerTitle-218 MuiTypography-body1 MuiTypography-colorPrimary MuiTypography-alignLeft"
+          >
+            Client Information
+          </p>
+        </div>
+      </div>
+      <div>
+        Loading...
+      </div>
+    </div>
+  </div>
+</div>
+`;

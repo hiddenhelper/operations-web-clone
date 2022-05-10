@@ -1,0 +1,35 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Popover should render 1`] = `
+<body>
+  <div>
+    <div
+      class="makeStyles-iconInactive-1"
+      data-testid="popover-wrapper"
+    >
+      
+    </div>
+  </div>
+</body>
+`;
+
+exports[`Popover should render with secondary values 1`] = `
+<body>
+  <div>
+    <div
+      class="makeStyles-iconInactive-5"
+      data-testid="popover-wrapper"
+    >
+      
+    </div>
+  </div>
+  <div>
+    <div
+      class="makeStyles-iconInactive-5"
+      data-testid="popover-wrapper"
+    >
+      
+    </div>
+  </div>
+</body>
+`;

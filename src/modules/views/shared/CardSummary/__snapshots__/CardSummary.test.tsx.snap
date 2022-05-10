@@ -1,0 +1,2314 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CardSummary Component should click editAction 1`] = `
+Object {
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <div
+        class="MuiPaper-root makeStyles-root-114  MuiPaper-outlined MuiPaper-rounded"
+      >
+        <div
+          class="makeStyles-header-115"
+        >
+          <div
+            class="MuiGrid-root MuiGrid-container"
+          >
+            <div
+              class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-5"
+            >
+              <h3
+                class="MuiTypography-root makeStyles-headerTitle-116 MuiTypography-h3"
+              >
+                Worker Summary
+              </h3>
+              <p
+                class="MuiTypography-root makeStyles-subtitle-117 MuiTypography-body1"
+              >
+                Created on 
+              </p>
+            </div>
+            <div
+              class="MuiGrid-root MuiGrid-container MuiGrid-item MuiGrid-justify-xs-flex-end MuiGrid-grid-xs-7"
+            >
+              <div
+                class="makeStyles-widget-118"
+              >
+                <span
+                  class="makeStyles-widgetTotal-119"
+                />
+                <span
+                  class="makeStyles-widgetDescription-120"
+                >
+                  Certifications
+                </span>
+              </div>
+              <div
+                class="makeStyles-widget-118"
+              >
+                <span
+                  class="makeStyles-widgetTotal-119"
+                />
+                <span
+                  class="makeStyles-widgetDescription-120"
+                >
+                  Trainings
+                </span>
+              </div>
+              <div
+                class="makeStyles-widget-118"
+              >
+                <span
+                  class="makeStyles-widgetTotal-119"
+                />
+                <span
+                  class="makeStyles-widgetDescription-120"
+                >
+                  Observations
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr
+          class="MuiDivider-root makeStyles-divider-122"
+        />
+        <div
+          class="makeStyles-body-123"
+        >
+          <div
+            class="MuiGrid-root MuiGrid-container"
+          >
+            <div
+              class="MuiGrid-root makeStyles-informationColumn-124 makeStyles-borderRight-125 MuiGrid-item MuiGrid-grid-xs-4"
+            >
+              <svg
+                aria-hidden="true"
+                class="MuiSvgIcon-root makeStyles-informationColumnIcon-128"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"
+                />
+              </svg>
+              <div
+                class="makeStyles-informationColumnText-127"
+              >
+                <p
+                  class="MuiTypography-root makeStyles-cardFont-139  MuiTypography-body1"
+                >
+                  Apt 3. 
+                  <span
+                    class="makeStyles-cardFontAccent-141 "
+                  >
+                    21 Street
+                  </span>
+                </p>
+                <p
+                  class="MuiTypography-root makeStyles-cardFont-139  MuiTypography-body1"
+                >
+                  Dallas, 
+                  
+                  12345
+                  
+                </p>
+                <p
+                  class="MuiTypography-root makeStyles-cardFont-139  MuiTypography-body1"
+                >
+                  -
+                </p>
+              </div>
+            </div>
+            <div
+              class="MuiGrid-root makeStyles-informationColumn-124 makeStyles-borderRight-125 makeStyles-paddingLeft-126 MuiGrid-item MuiGrid-grid-xs-4"
+            >
+              <svg
+                aria-hidden="true"
+                class="MuiSvgIcon-root makeStyles-informationColumnIcon-128"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56-.35-.12-.74-.03-1.01.24l-1.57 1.97c-2.83-1.35-5.48-3.9-6.89-6.83l1.95-1.66c.27-.28.35-.67.24-1.02-.37-1.11-.56-2.3-.56-3.53 0-.54-.45-.99-.99-.99H4.19C3.65 3 3 3.24 3 3.99 3 13.28 10.73 21 20.01 21c.71 0 .99-.63.99-1.18v-3.45c0-.54-.45-.99-.99-.99z"
+                />
+              </svg>
+              <div
+                class="makeStyles-informationColumnText-127 makeStyles-textEllipsis-135"
+              >
+                <span
+                  class="makeStyles-columnFont-131"
+                >
+                  Phone: -
+                </span>
+                <span
+                  class="makeStyles-columnFont-131"
+                >
+                  Mobile: +1 612 222 2222
+                </span>
+                <span
+                  class="makeStyles-textEllipsis-135"
+                >
+                  <a
+                    class="makeStyles-emailAnchor-129"
+                    href="mailto:test@test.com"
+                  >
+                    test@test.com
+                  </a>
+                </span>
+              </div>
+            </div>
+            <div
+              class="MuiGrid-root makeStyles-informationColumn-124 makeStyles-paddingLeft-126 MuiGrid-item MuiGrid-grid-xs-4"
+            >
+              <svg
+                class="makeStyles-informationColumnIcon-128 makeStyles-emergencyContactIcon-130"
+              >
+                emergency-contact.svg
+              </svg>
+              <div
+                class="makeStyles-informationColumnText-127"
+              >
+                <span
+                  class="makeStyles-columnFont-131"
+                >
+                  Jane
+                </span>
+                <span
+                  class="makeStyles-columnFont-131"
+                >
+                  Wife
+                </span>
+                <span
+                  class="makeStyles-columnFont-131"
+                >
+                  -
+                </span>
+              </div>
+            </div>
+            <div
+              class="MuiGrid-root makeStyles-tradeWrapper-133 MuiGrid-item MuiGrid-grid-xs-12"
+            >
+              <div
+                class="MuiChip-root makeStyles-cardSummaryChip-132"
+              >
+                <span
+                  class="MuiChip-label"
+                >
+                  Ceiling
+                </span>
+              </div>
+              <div
+                class="MuiChip-root makeStyles-cardSummaryChip-132"
+              >
+                <span
+                  class="MuiChip-label"
+                >
+                  Plumbing
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div>
+      <div
+        class="MuiPaper-root makeStyles-root-114  MuiPaper-outlined MuiPaper-rounded"
+      >
+        <div
+          class="makeStyles-header-115"
+        >
+          <div
+            class="MuiGrid-root MuiGrid-container"
+          >
+            <div
+              class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-5"
+            >
+              <h3
+                class="MuiTypography-root makeStyles-headerTitle-116 MuiTypography-h3"
+              >
+                Worker Summary
+              </h3>
+              <p
+                class="MuiTypography-root makeStyles-subtitle-117 MuiTypography-body1"
+              >
+                Created on 
+              </p>
+            </div>
+            <div
+              class="MuiGrid-root MuiGrid-container MuiGrid-item MuiGrid-justify-xs-flex-end MuiGrid-grid-xs-7"
+            >
+              <div
+                class="makeStyles-widget-118"
+              >
+                <span
+                  class="makeStyles-widgetTotal-119"
+                />
+                <span
+                  class="makeStyles-widgetDescription-120"
+                >
+                  Certifications
+                </span>
+              </div>
+              <div
+                class="makeStyles-widget-118"
+              >
+                <span
+                  class="makeStyles-widgetTotal-119"
+                />
+                <span
+                  class="makeStyles-widgetDescription-120"
+                >
+                  Trainings
+                </span>
+              </div>
+              <div
+                class="makeStyles-widget-118"
+              >
+                <span
+                  class="makeStyles-widgetTotal-119"
+                />
+                <span
+                  class="makeStyles-widgetDescription-120"
+                >
+                  Observations
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr
+          class="MuiDivider-root makeStyles-divider-122"
+        />
+        <div
+          class="makeStyles-body-123"
+        >
+          <div
+            class="MuiGrid-root MuiGrid-container"
+          >
+            <div
+              class="MuiGrid-root makeStyles-informationColumn-124 makeStyles-borderRight-125 MuiGrid-item MuiGrid-grid-xs-4"
+            >
+              <svg
+                aria-hidden="true"
+                class="MuiSvgIcon-root makeStyles-informationColumnIcon-128"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"
+                />
+              </svg>
+              <div
+                class="makeStyles-informationColumnText-127"
+              >
+                <p
+                  class="MuiTypography-root makeStyles-cardFont-139  MuiTypography-body1"
+                >
+                  Apt 3. 
+                  <span
+                    class="makeStyles-cardFontAccent-141 "
+                  >
+                    21 Street
+                  </span>
+                </p>
+                <p
+                  class="MuiTypography-root makeStyles-cardFont-139  MuiTypography-body1"
+                >
+                  Dallas, 
+                  
+                  12345
+                  
+                </p>
+                <p
+                  class="MuiTypography-root makeStyles-cardFont-139  MuiTypography-body1"
+                >
+                  -
+                </p>
+              </div>
+            </div>
+            <div
+              class="MuiGrid-root makeStyles-informationColumn-124 makeStyles-borderRight-125 makeStyles-paddingLeft-126 MuiGrid-item MuiGrid-grid-xs-4"
+            >
+              <svg
+                aria-hidden="true"
+                class="MuiSvgIcon-root makeStyles-informationColumnIcon-128"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56-.35-.12-.74-.03-1.01.24l-1.57 1.97c-2.83-1.35-5.48-3.9-6.89-6.83l1.95-1.66c.27-.28.35-.67.24-1.02-.37-1.11-.56-2.3-.56-3.53 0-.54-.45-.99-.99-.99H4.19C3.65 3 3 3.24 3 3.99 3 13.28 10.73 21 20.01 21c.71 0 .99-.63.99-1.18v-3.45c0-.54-.45-.99-.99-.99z"
+                />
+              </svg>
+              <div
+                class="makeStyles-informationColumnText-127 makeStyles-textEllipsis-135"
+              >
+                <span
+                  class="makeStyles-columnFont-131"
+                >
+                  Phone: -
+                </span>
+                <span
+                  class="makeStyles-columnFont-131"
+                >
+                  Mobile: +1 612 222 2222
+                </span>
+                <span
+                  class="makeStyles-textEllipsis-135"
+                >
+                  <a
+                    class="makeStyles-emailAnchor-129"
+                    href="mailto:test@test.com"
+                  >
+                    test@test.com
+                  </a>
+                </span>
+              </div>
+            </div>
+            <div
+              class="MuiGrid-root makeStyles-informationColumn-124 makeStyles-paddingLeft-126 MuiGrid-item MuiGrid-grid-xs-4"
+            >
+              <svg
+                class="makeStyles-informationColumnIcon-128 makeStyles-emergencyContactIcon-130"
+              >
+                emergency-contact.svg
+              </svg>
+              <div
+                class="makeStyles-informationColumnText-127"
+              >
+                <span
+                  class="makeStyles-columnFont-131"
+                >
+                  Jane
+                </span>
+                <span
+                  class="makeStyles-columnFont-131"
+                >
+                  Wife
+                </span>
+                <span
+                  class="makeStyles-columnFont-131"
+                >
+                  -
+                </span>
+              </div>
+            </div>
+            <div
+              class="MuiGrid-root makeStyles-tradeWrapper-133 MuiGrid-item MuiGrid-grid-xs-12"
+            >
+              <div
+                class="MuiChip-root makeStyles-cardSummaryChip-132"
+              >
+                <span
+                  class="MuiChip-label"
+                >
+                  Ceiling
+                </span>
+              </div>
+              <div
+                class="MuiChip-root makeStyles-cardSummaryChip-132"
+              >
+                <span
+                  class="MuiChip-label"
+                >
+                  Plumbing
+                </span>
+              </div>
+            </div>
+          </div>
+          <button
+            class="MuiButtonBase-root MuiIconButton-root makeStyles-headerEditButton-121"
+            data-testid="edit-button"
+            tabindex="0"
+            type="button"
+          >
+            <span
+              class="MuiIconButton-label"
+            >
+              <svg
+                aria-hidden="true"
+                class="MuiSvgIcon-root"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM20.71 7.04c.39-.39.39-1.02 0-1.41l-2.34-2.34a.9959.9959 0 00-1.41 0l-1.83 1.83 3.75 3.75 1.83-1.83z"
+                />
+              </svg>
+            </span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </body>,
+  "container": <div>
+    <div
+      class="MuiPaper-root makeStyles-root-114  MuiPaper-outlined MuiPaper-rounded"
+    >
+      <div
+        class="makeStyles-header-115"
+      >
+        <div
+          class="MuiGrid-root MuiGrid-container"
+        >
+          <div
+            class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-5"
+          >
+            <h3
+              class="MuiTypography-root makeStyles-headerTitle-116 MuiTypography-h3"
+            >
+              Worker Summary
+            </h3>
+            <p
+              class="MuiTypography-root makeStyles-subtitle-117 MuiTypography-body1"
+            >
+              Created on 
+            </p>
+          </div>
+          <div
+            class="MuiGrid-root MuiGrid-container MuiGrid-item MuiGrid-justify-xs-flex-end MuiGrid-grid-xs-7"
+          >
+            <div
+              class="makeStyles-widget-118"
+            >
+              <span
+                class="makeStyles-widgetTotal-119"
+              />
+              <span
+                class="makeStyles-widgetDescription-120"
+              >
+                Certifications
+              </span>
+            </div>
+            <div
+              class="makeStyles-widget-118"
+            >
+              <span
+                class="makeStyles-widgetTotal-119"
+              />
+              <span
+                class="makeStyles-widgetDescription-120"
+              >
+                Trainings
+              </span>
+            </div>
+            <div
+              class="makeStyles-widget-118"
+            >
+              <span
+                class="makeStyles-widgetTotal-119"
+              />
+              <span
+                class="makeStyles-widgetDescription-120"
+              >
+                Observations
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr
+        class="MuiDivider-root makeStyles-divider-122"
+      />
+      <div
+        class="makeStyles-body-123"
+      >
+        <div
+          class="MuiGrid-root MuiGrid-container"
+        >
+          <div
+            class="MuiGrid-root makeStyles-informationColumn-124 makeStyles-borderRight-125 MuiGrid-item MuiGrid-grid-xs-4"
+          >
+            <svg
+              aria-hidden="true"
+              class="MuiSvgIcon-root makeStyles-informationColumnIcon-128"
+              focusable="false"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"
+              />
+            </svg>
+            <div
+              class="makeStyles-informationColumnText-127"
+            >
+              <p
+                class="MuiTypography-root makeStyles-cardFont-139  MuiTypography-body1"
+              >
+                Apt 3. 
+                <span
+                  class="makeStyles-cardFontAccent-141 "
+                >
+                  21 Street
+                </span>
+              </p>
+              <p
+                class="MuiTypography-root makeStyles-cardFont-139  MuiTypography-body1"
+              >
+                Dallas, 
+                
+                12345
+                
+              </p>
+              <p
+                class="MuiTypography-root makeStyles-cardFont-139  MuiTypography-body1"
+              >
+                -
+              </p>
+            </div>
+          </div>
+          <div
+            class="MuiGrid-root makeStyles-informationColumn-124 makeStyles-borderRight-125 makeStyles-paddingLeft-126 MuiGrid-item MuiGrid-grid-xs-4"
+          >
+            <svg
+              aria-hidden="true"
+              class="MuiSvgIcon-root makeStyles-informationColumnIcon-128"
+              focusable="false"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56-.35-.12-.74-.03-1.01.24l-1.57 1.97c-2.83-1.35-5.48-3.9-6.89-6.83l1.95-1.66c.27-.28.35-.67.24-1.02-.37-1.11-.56-2.3-.56-3.53 0-.54-.45-.99-.99-.99H4.19C3.65 3 3 3.24 3 3.99 3 13.28 10.73 21 20.01 21c.71 0 .99-.63.99-1.18v-3.45c0-.54-.45-.99-.99-.99z"
+              />
+            </svg>
+            <div
+              class="makeStyles-informationColumnText-127 makeStyles-textEllipsis-135"
+            >
+              <span
+                class="makeStyles-columnFont-131"
+              >
+                Phone: -
+              </span>
+              <span
+                class="makeStyles-columnFont-131"
+              >
+                Mobile: +1 612 222 2222
+              </span>
+              <span
+                class="makeStyles-textEllipsis-135"
+              >
+                <a
+                  class="makeStyles-emailAnchor-129"
+                  href="mailto:test@test.com"
+                >
+                  test@test.com
+                </a>
+              </span>
+            </div>
+          </div>
+          <div
+            class="MuiGrid-root makeStyles-informationColumn-124 makeStyles-paddingLeft-126 MuiGrid-item MuiGrid-grid-xs-4"
+          >
+            <svg
+              class="makeStyles-informationColumnIcon-128 makeStyles-emergencyContactIcon-130"
+            >
+              emergency-contact.svg
+            </svg>
+            <div
+              class="makeStyles-informationColumnText-127"
+            >
+              <span
+                class="makeStyles-columnFont-131"
+              >
+                Jane
+              </span>
+              <span
+                class="makeStyles-columnFont-131"
+              >
+                Wife
+              </span>
+              <span
+                class="makeStyles-columnFont-131"
+              >
+                -
+              </span>
+            </div>
+          </div>
+          <div
+            class="MuiGrid-root makeStyles-tradeWrapper-133 MuiGrid-item MuiGrid-grid-xs-12"
+          >
+            <div
+              class="MuiChip-root makeStyles-cardSummaryChip-132"
+            >
+              <span
+                class="MuiChip-label"
+              >
+                Ceiling
+              </span>
+            </div>
+            <div
+              class="MuiChip-root makeStyles-cardSummaryChip-132"
+            >
+              <span
+                class="MuiChip-label"
+              >
+                Plumbing
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;
+
+exports[`CardSummary Component should render with null values 1`] = `
+Object {
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <div
+        class="MuiPaper-root makeStyles-root-76  MuiPaper-outlined MuiPaper-rounded"
+      >
+        <div
+          class="makeStyles-header-77"
+        >
+          <div
+            class="MuiGrid-root MuiGrid-container"
+          >
+            <div
+              class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-5"
+            >
+              <h3
+                class="MuiTypography-root makeStyles-headerTitle-78 MuiTypography-h3"
+              >
+                Worker Summary
+              </h3>
+              <p
+                class="MuiTypography-root makeStyles-subtitle-79 MuiTypography-body1"
+              >
+                Created on 
+              </p>
+            </div>
+            <div
+              class="MuiGrid-root MuiGrid-container MuiGrid-item MuiGrid-justify-xs-flex-end MuiGrid-grid-xs-7"
+            >
+              <div
+                class="makeStyles-widget-80"
+              >
+                <span
+                  class="makeStyles-widgetTotal-81"
+                />
+                <span
+                  class="makeStyles-widgetDescription-82"
+                >
+                  Certifications
+                </span>
+              </div>
+              <div
+                class="makeStyles-widget-80"
+              >
+                <span
+                  class="makeStyles-widgetTotal-81"
+                />
+                <span
+                  class="makeStyles-widgetDescription-82"
+                >
+                  Trainings
+                </span>
+              </div>
+              <div
+                class="makeStyles-widget-80"
+              >
+                <span
+                  class="makeStyles-widgetTotal-81"
+                />
+                <span
+                  class="makeStyles-widgetDescription-82"
+                >
+                  Observations
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr
+          class="MuiDivider-root makeStyles-divider-84"
+        />
+        <div
+          class="makeStyles-body-85"
+        >
+          <div
+            class="MuiGrid-root MuiGrid-container"
+          >
+            <div
+              class="MuiGrid-root makeStyles-informationColumn-86 makeStyles-borderRight-87 MuiGrid-item MuiGrid-grid-xs-4"
+            >
+              <svg
+                aria-hidden="true"
+                class="MuiSvgIcon-root makeStyles-informationColumnIcon-90"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"
+                />
+              </svg>
+              <div
+                class="makeStyles-informationColumnText-89"
+              >
+                <p
+                  class="MuiTypography-root makeStyles-cardFont-101  MuiTypography-body1"
+                >
+                  Apt 3. 
+                  <span
+                    class="makeStyles-cardFontAccent-103 "
+                  >
+                    21 Street
+                  </span>
+                </p>
+                <p
+                  class="MuiTypography-root makeStyles-cardFont-101  MuiTypography-body1"
+                >
+                  Dallas, 
+                  
+                  12345
+                  
+                </p>
+                <p
+                  class="MuiTypography-root makeStyles-cardFont-101  MuiTypography-body1"
+                >
+                  -
+                </p>
+              </div>
+            </div>
+            <div
+              class="MuiGrid-root makeStyles-informationColumn-86 makeStyles-borderRight-87 makeStyles-paddingLeft-88 MuiGrid-item MuiGrid-grid-xs-4"
+            >
+              <svg
+                aria-hidden="true"
+                class="MuiSvgIcon-root makeStyles-informationColumnIcon-90"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56-.35-.12-.74-.03-1.01.24l-1.57 1.97c-2.83-1.35-5.48-3.9-6.89-6.83l1.95-1.66c.27-.28.35-.67.24-1.02-.37-1.11-.56-2.3-.56-3.53 0-.54-.45-.99-.99-.99H4.19C3.65 3 3 3.24 3 3.99 3 13.28 10.73 21 20.01 21c.71 0 .99-.63.99-1.18v-3.45c0-.54-.45-.99-.99-.99z"
+                />
+              </svg>
+              <div
+                class="makeStyles-informationColumnText-89 makeStyles-textEllipsis-97"
+              >
+                <span
+                  class="makeStyles-columnFont-93"
+                >
+                  Phone: -
+                </span>
+                <span
+                  class="makeStyles-columnFont-93"
+                >
+                  Mobile: +1 612 222 2222
+                </span>
+                <span
+                  class="makeStyles-textEllipsis-97"
+                >
+                  <a
+                    class="makeStyles-emailAnchor-91"
+                    href="mailto:test@test.com"
+                  >
+                    test@test.com
+                  </a>
+                </span>
+              </div>
+            </div>
+            <div
+              class="MuiGrid-root makeStyles-informationColumn-86 makeStyles-paddingLeft-88 MuiGrid-item MuiGrid-grid-xs-4"
+            >
+              <svg
+                class="makeStyles-informationColumnIcon-90 makeStyles-emergencyContactIcon-92"
+              >
+                emergency-contact.svg
+              </svg>
+              <div
+                class="makeStyles-informationColumnText-89"
+              >
+                <span
+                  class="makeStyles-columnFont-93"
+                >
+                  Jane
+                </span>
+                <span
+                  class="makeStyles-columnFont-93"
+                >
+                  Wife
+                </span>
+                <span
+                  class="makeStyles-columnFont-93"
+                >
+                  -
+                </span>
+              </div>
+            </div>
+            <div
+              class="MuiGrid-root makeStyles-tradeWrapper-95 MuiGrid-item MuiGrid-grid-xs-12"
+            >
+              <div
+                class="MuiChip-root makeStyles-cardSummaryChip-94"
+              >
+                <span
+                  class="MuiChip-label"
+                >
+                  Ceiling
+                </span>
+              </div>
+              <div
+                class="MuiChip-root makeStyles-cardSummaryChip-94"
+              >
+                <span
+                  class="MuiChip-label"
+                >
+                  Plumbing
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div>
+      <div
+        class="MuiPaper-root makeStyles-root-76  MuiPaper-outlined MuiPaper-rounded"
+      >
+        <div
+          class="makeStyles-header-77"
+        >
+          <div
+            class="MuiGrid-root MuiGrid-container"
+          >
+            <div
+              class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-5"
+            >
+              <h3
+                class="MuiTypography-root makeStyles-headerTitle-78 MuiTypography-h3"
+              >
+                Worker Summary
+              </h3>
+              <p
+                class="MuiTypography-root makeStyles-subtitle-79 MuiTypography-body1"
+              >
+                Created on 
+              </p>
+            </div>
+            <div
+              class="MuiGrid-root MuiGrid-container MuiGrid-item MuiGrid-justify-xs-flex-end MuiGrid-grid-xs-7"
+            >
+              <div
+                class="makeStyles-widget-80"
+              >
+                <span
+                  class="makeStyles-widgetTotal-81"
+                />
+                <span
+                  class="makeStyles-widgetDescription-82"
+                >
+                  Certifications
+                </span>
+              </div>
+              <div
+                class="makeStyles-widget-80"
+              >
+                <span
+                  class="makeStyles-widgetTotal-81"
+                />
+                <span
+                  class="makeStyles-widgetDescription-82"
+                >
+                  Trainings
+                </span>
+              </div>
+              <div
+                class="makeStyles-widget-80"
+              >
+                <span
+                  class="makeStyles-widgetTotal-81"
+                />
+                <span
+                  class="makeStyles-widgetDescription-82"
+                >
+                  Observations
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr
+          class="MuiDivider-root makeStyles-divider-84"
+        />
+        <div
+          class="makeStyles-body-85"
+        >
+          <div
+            class="MuiGrid-root MuiGrid-container"
+          >
+            <div
+              class="MuiGrid-root makeStyles-informationColumn-86 makeStyles-borderRight-87 MuiGrid-item MuiGrid-grid-xs-4"
+            >
+              <svg
+                aria-hidden="true"
+                class="MuiSvgIcon-root makeStyles-informationColumnIcon-90"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"
+                />
+              </svg>
+              <div
+                class="makeStyles-informationColumnText-89"
+              >
+                <p
+                  class="MuiTypography-root makeStyles-cardFont-101  MuiTypography-body1"
+                >
+                  
+                  <span
+                    class=" "
+                  >
+                    -
+                  </span>
+                </p>
+                <p
+                  class="MuiTypography-root makeStyles-cardFont-101  MuiTypography-body1"
+                >
+                  
+                  
+                  
+                  
+                </p>
+                <p
+                  class="MuiTypography-root makeStyles-cardFont-101  MuiTypography-body1"
+                >
+                  -
+                </p>
+              </div>
+            </div>
+            <div
+              class="MuiGrid-root makeStyles-informationColumn-86 makeStyles-borderRight-87 makeStyles-paddingLeft-88 MuiGrid-item MuiGrid-grid-xs-4"
+            >
+              <svg
+                aria-hidden="true"
+                class="MuiSvgIcon-root makeStyles-informationColumnIcon-90"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56-.35-.12-.74-.03-1.01.24l-1.57 1.97c-2.83-1.35-5.48-3.9-6.89-6.83l1.95-1.66c.27-.28.35-.67.24-1.02-.37-1.11-.56-2.3-.56-3.53 0-.54-.45-.99-.99-.99H4.19C3.65 3 3 3.24 3 3.99 3 13.28 10.73 21 20.01 21c.71 0 .99-.63.99-1.18v-3.45c0-.54-.45-.99-.99-.99z"
+                />
+              </svg>
+              <div
+                class="makeStyles-informationColumnText-89 makeStyles-textEllipsis-97"
+              >
+                <span
+                  class="makeStyles-columnFont-93"
+                >
+                  Phone: -
+                </span>
+                <span
+                  class="makeStyles-columnFont-93"
+                >
+                  Mobile: -
+                </span>
+                <span
+                  class="makeStyles-textEllipsis-97"
+                >
+                  -
+                </span>
+              </div>
+            </div>
+            <div
+              class="MuiGrid-root makeStyles-informationColumn-86 makeStyles-paddingLeft-88 MuiGrid-item MuiGrid-grid-xs-4"
+            >
+              <svg
+                class="makeStyles-informationColumnIcon-90 makeStyles-emergencyContactIcon-92"
+              >
+                emergency-contact.svg
+              </svg>
+              <div
+                class="makeStyles-informationColumnText-89"
+              >
+                <span
+                  class="makeStyles-columnFont-93"
+                >
+                  -
+                </span>
+                <span
+                  class="makeStyles-columnFont-93"
+                >
+                  -
+                </span>
+                <span
+                  class="makeStyles-columnFont-93"
+                >
+                  -
+                </span>
+              </div>
+            </div>
+            <div
+              class="MuiGrid-root makeStyles-tradeWrapper-95 MuiGrid-item MuiGrid-grid-xs-12"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>,
+  "container": <div>
+    <div
+      class="MuiPaper-root makeStyles-root-76  MuiPaper-outlined MuiPaper-rounded"
+    >
+      <div
+        class="makeStyles-header-77"
+      >
+        <div
+          class="MuiGrid-root MuiGrid-container"
+        >
+          <div
+            class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-5"
+          >
+            <h3
+              class="MuiTypography-root makeStyles-headerTitle-78 MuiTypography-h3"
+            >
+              Worker Summary
+            </h3>
+            <p
+              class="MuiTypography-root makeStyles-subtitle-79 MuiTypography-body1"
+            >
+              Created on 
+            </p>
+          </div>
+          <div
+            class="MuiGrid-root MuiGrid-container MuiGrid-item MuiGrid-justify-xs-flex-end MuiGrid-grid-xs-7"
+          >
+            <div
+              class="makeStyles-widget-80"
+            >
+              <span
+                class="makeStyles-widgetTotal-81"
+              />
+              <span
+                class="makeStyles-widgetDescription-82"
+              >
+                Certifications
+              </span>
+            </div>
+            <div
+              class="makeStyles-widget-80"
+            >
+              <span
+                class="makeStyles-widgetTotal-81"
+              />
+              <span
+                class="makeStyles-widgetDescription-82"
+              >
+                Trainings
+              </span>
+            </div>
+            <div
+              class="makeStyles-widget-80"
+            >
+              <span
+                class="makeStyles-widgetTotal-81"
+              />
+              <span
+                class="makeStyles-widgetDescription-82"
+              >
+                Observations
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr
+        class="MuiDivider-root makeStyles-divider-84"
+      />
+      <div
+        class="makeStyles-body-85"
+      >
+        <div
+          class="MuiGrid-root MuiGrid-container"
+        >
+          <div
+            class="MuiGrid-root makeStyles-informationColumn-86 makeStyles-borderRight-87 MuiGrid-item MuiGrid-grid-xs-4"
+          >
+            <svg
+              aria-hidden="true"
+              class="MuiSvgIcon-root makeStyles-informationColumnIcon-90"
+              focusable="false"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"
+              />
+            </svg>
+            <div
+              class="makeStyles-informationColumnText-89"
+            >
+              <p
+                class="MuiTypography-root makeStyles-cardFont-101  MuiTypography-body1"
+              >
+                
+                <span
+                  class=" "
+                >
+                  -
+                </span>
+              </p>
+              <p
+                class="MuiTypography-root makeStyles-cardFont-101  MuiTypography-body1"
+              >
+                
+                
+                
+                
+              </p>
+              <p
+                class="MuiTypography-root makeStyles-cardFont-101  MuiTypography-body1"
+              >
+                -
+              </p>
+            </div>
+          </div>
+          <div
+            class="MuiGrid-root makeStyles-informationColumn-86 makeStyles-borderRight-87 makeStyles-paddingLeft-88 MuiGrid-item MuiGrid-grid-xs-4"
+          >
+            <svg
+              aria-hidden="true"
+              class="MuiSvgIcon-root makeStyles-informationColumnIcon-90"
+              focusable="false"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56-.35-.12-.74-.03-1.01.24l-1.57 1.97c-2.83-1.35-5.48-3.9-6.89-6.83l1.95-1.66c.27-.28.35-.67.24-1.02-.37-1.11-.56-2.3-.56-3.53 0-.54-.45-.99-.99-.99H4.19C3.65 3 3 3.24 3 3.99 3 13.28 10.73 21 20.01 21c.71 0 .99-.63.99-1.18v-3.45c0-.54-.45-.99-.99-.99z"
+              />
+            </svg>
+            <div
+              class="makeStyles-informationColumnText-89 makeStyles-textEllipsis-97"
+            >
+              <span
+                class="makeStyles-columnFont-93"
+              >
+                Phone: -
+              </span>
+              <span
+                class="makeStyles-columnFont-93"
+              >
+                Mobile: -
+              </span>
+              <span
+                class="makeStyles-textEllipsis-97"
+              >
+                -
+              </span>
+            </div>
+          </div>
+          <div
+            class="MuiGrid-root makeStyles-informationColumn-86 makeStyles-paddingLeft-88 MuiGrid-item MuiGrid-grid-xs-4"
+          >
+            <svg
+              class="makeStyles-informationColumnIcon-90 makeStyles-emergencyContactIcon-92"
+            >
+              emergency-contact.svg
+            </svg>
+            <div
+              class="makeStyles-informationColumnText-89"
+            >
+              <span
+                class="makeStyles-columnFont-93"
+              >
+                -
+              </span>
+              <span
+                class="makeStyles-columnFont-93"
+              >
+                -
+              </span>
+              <span
+                class="makeStyles-columnFont-93"
+              >
+                -
+              </span>
+            </div>
+          </div>
+          <div
+            class="MuiGrid-root makeStyles-tradeWrapper-95 MuiGrid-item MuiGrid-grid-xs-12"
+          />
+        </div>
+      </div>
+    </div>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;
+
+exports[`CardSummary Component should render with optional values 1`] = `
+Object {
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <div
+        class="MuiPaper-root makeStyles-root-38  MuiPaper-outlined MuiPaper-rounded"
+      >
+        <div
+          class="makeStyles-header-39"
+        >
+          <div
+            class="MuiGrid-root MuiGrid-container"
+          >
+            <div
+              class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-5"
+            >
+              <h3
+                class="MuiTypography-root makeStyles-headerTitle-40 MuiTypography-h3"
+              >
+                Worker Summary
+              </h3>
+              <p
+                class="MuiTypography-root makeStyles-subtitle-41 MuiTypography-body1"
+              >
+                Created on 
+              </p>
+            </div>
+            <div
+              class="MuiGrid-root MuiGrid-container MuiGrid-item MuiGrid-justify-xs-flex-end MuiGrid-grid-xs-7"
+            >
+              <div
+                class="makeStyles-widget-42"
+              >
+                <span
+                  class="makeStyles-widgetTotal-43"
+                />
+                <span
+                  class="makeStyles-widgetDescription-44"
+                >
+                  Certifications
+                </span>
+              </div>
+              <div
+                class="makeStyles-widget-42"
+              >
+                <span
+                  class="makeStyles-widgetTotal-43"
+                />
+                <span
+                  class="makeStyles-widgetDescription-44"
+                >
+                  Trainings
+                </span>
+              </div>
+              <div
+                class="makeStyles-widget-42"
+              >
+                <span
+                  class="makeStyles-widgetTotal-43"
+                />
+                <span
+                  class="makeStyles-widgetDescription-44"
+                >
+                  Observations
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr
+          class="MuiDivider-root makeStyles-divider-46"
+        />
+        <div
+          class="makeStyles-body-47"
+        >
+          <div
+            class="MuiGrid-root MuiGrid-container"
+          >
+            <div
+              class="MuiGrid-root makeStyles-informationColumn-48 makeStyles-borderRight-49 MuiGrid-item MuiGrid-grid-xs-4"
+            >
+              <svg
+                aria-hidden="true"
+                class="MuiSvgIcon-root makeStyles-informationColumnIcon-52"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"
+                />
+              </svg>
+              <div
+                class="makeStyles-informationColumnText-51"
+              >
+                <p
+                  class="MuiTypography-root makeStyles-cardFont-63  MuiTypography-body1"
+                >
+                  Apt 3. 
+                  <span
+                    class="makeStyles-cardFontAccent-65 "
+                  >
+                    21 Street
+                  </span>
+                </p>
+                <p
+                  class="MuiTypography-root makeStyles-cardFont-63  MuiTypography-body1"
+                >
+                  Dallas, 
+                  
+                  12345
+                  
+                </p>
+                <p
+                  class="MuiTypography-root makeStyles-cardFont-63  MuiTypography-body1"
+                >
+                  -
+                </p>
+              </div>
+            </div>
+            <div
+              class="MuiGrid-root makeStyles-informationColumn-48 makeStyles-borderRight-49 makeStyles-paddingLeft-50 MuiGrid-item MuiGrid-grid-xs-4"
+            >
+              <svg
+                aria-hidden="true"
+                class="MuiSvgIcon-root makeStyles-informationColumnIcon-52"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56-.35-.12-.74-.03-1.01.24l-1.57 1.97c-2.83-1.35-5.48-3.9-6.89-6.83l1.95-1.66c.27-.28.35-.67.24-1.02-.37-1.11-.56-2.3-.56-3.53 0-.54-.45-.99-.99-.99H4.19C3.65 3 3 3.24 3 3.99 3 13.28 10.73 21 20.01 21c.71 0 .99-.63.99-1.18v-3.45c0-.54-.45-.99-.99-.99z"
+                />
+              </svg>
+              <div
+                class="makeStyles-informationColumnText-51 makeStyles-textEllipsis-59"
+              >
+                <span
+                  class="makeStyles-columnFont-55"
+                >
+                  Phone: -
+                </span>
+                <span
+                  class="makeStyles-columnFont-55"
+                >
+                  Mobile: +1 612 222 2222
+                </span>
+                <span
+                  class="makeStyles-textEllipsis-59"
+                >
+                  <a
+                    class="makeStyles-emailAnchor-53"
+                    href="mailto:test@test.com"
+                  >
+                    test@test.com
+                  </a>
+                </span>
+              </div>
+            </div>
+            <div
+              class="MuiGrid-root makeStyles-informationColumn-48 makeStyles-paddingLeft-50 MuiGrid-item MuiGrid-grid-xs-4"
+            >
+              <svg
+                class="makeStyles-informationColumnIcon-52 makeStyles-emergencyContactIcon-54"
+              >
+                emergency-contact.svg
+              </svg>
+              <div
+                class="makeStyles-informationColumnText-51"
+              >
+                <span
+                  class="makeStyles-columnFont-55"
+                >
+                  Jane
+                </span>
+                <span
+                  class="makeStyles-columnFont-55"
+                >
+                  Wife
+                </span>
+                <span
+                  class="makeStyles-columnFont-55"
+                >
+                  -
+                </span>
+              </div>
+            </div>
+            <div
+              class="MuiGrid-root makeStyles-tradeWrapper-57 MuiGrid-item MuiGrid-grid-xs-12"
+            >
+              <div
+                class="MuiChip-root makeStyles-cardSummaryChip-56"
+              >
+                <span
+                  class="MuiChip-label"
+                >
+                  Ceiling
+                </span>
+              </div>
+              <div
+                class="MuiChip-root makeStyles-cardSummaryChip-56"
+              >
+                <span
+                  class="MuiChip-label"
+                >
+                  Plumbing
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div>
+      <div
+        class="MuiPaper-root makeStyles-root-38  MuiPaper-outlined MuiPaper-rounded"
+      >
+        <div
+          class="makeStyles-header-39"
+        >
+          <div
+            class="MuiGrid-root MuiGrid-container"
+          >
+            <div
+              class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-5"
+            >
+              <h3
+                class="MuiTypography-root makeStyles-headerTitle-40 MuiTypography-h3"
+              >
+                Worker Summary
+              </h3>
+              <p
+                class="MuiTypography-root makeStyles-subtitle-41 MuiTypography-body1"
+              >
+                Created on 
+              </p>
+            </div>
+            <div
+              class="MuiGrid-root MuiGrid-container MuiGrid-item MuiGrid-justify-xs-flex-end MuiGrid-grid-xs-7"
+            >
+              <div
+                class="makeStyles-widget-42"
+              >
+                <span
+                  class="makeStyles-widgetTotal-43"
+                />
+                <span
+                  class="makeStyles-widgetDescription-44"
+                >
+                  Certifications
+                </span>
+              </div>
+              <div
+                class="makeStyles-widget-42"
+              >
+                <span
+                  class="makeStyles-widgetTotal-43"
+                />
+                <span
+                  class="makeStyles-widgetDescription-44"
+                >
+                  Trainings
+                </span>
+              </div>
+              <div
+                class="makeStyles-widget-42"
+              >
+                <span
+                  class="makeStyles-widgetTotal-43"
+                />
+                <span
+                  class="makeStyles-widgetDescription-44"
+                >
+                  Observations
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr
+          class="MuiDivider-root makeStyles-divider-46"
+        />
+        <div
+          class="makeStyles-body-47"
+        >
+          <div
+            class="MuiGrid-root MuiGrid-container"
+          >
+            <div
+              class="MuiGrid-root makeStyles-informationColumn-48 makeStyles-borderRight-49 MuiGrid-item MuiGrid-grid-xs-4"
+            >
+              <svg
+                aria-hidden="true"
+                class="MuiSvgIcon-root makeStyles-informationColumnIcon-52"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"
+                />
+              </svg>
+              <div
+                class="makeStyles-informationColumnText-51"
+              >
+                <p
+                  class="MuiTypography-root makeStyles-cardFont-63  MuiTypography-body1"
+                >
+                  Apt 3. 
+                  <span
+                    class="makeStyles-cardFontAccent-65 "
+                  >
+                    21 Street
+                  </span>
+                </p>
+                <p
+                  class="MuiTypography-root makeStyles-cardFont-63  MuiTypography-body1"
+                >
+                  Dallas, 
+                  
+                  12345
+                  
+                </p>
+                <p
+                  class="MuiTypography-root makeStyles-cardFont-63  MuiTypography-body1"
+                >
+                  -
+                </p>
+              </div>
+            </div>
+            <div
+              class="MuiGrid-root makeStyles-informationColumn-48 makeStyles-borderRight-49 makeStyles-paddingLeft-50 MuiGrid-item MuiGrid-grid-xs-4"
+            >
+              <svg
+                aria-hidden="true"
+                class="MuiSvgIcon-root makeStyles-informationColumnIcon-52"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56-.35-.12-.74-.03-1.01.24l-1.57 1.97c-2.83-1.35-5.48-3.9-6.89-6.83l1.95-1.66c.27-.28.35-.67.24-1.02-.37-1.11-.56-2.3-.56-3.53 0-.54-.45-.99-.99-.99H4.19C3.65 3 3 3.24 3 3.99 3 13.28 10.73 21 20.01 21c.71 0 .99-.63.99-1.18v-3.45c0-.54-.45-.99-.99-.99z"
+                />
+              </svg>
+              <div
+                class="makeStyles-informationColumnText-51 makeStyles-textEllipsis-59"
+              >
+                <span
+                  class="makeStyles-columnFont-55"
+                >
+                  Phone: -
+                </span>
+                <span
+                  class="makeStyles-columnFont-55"
+                >
+                  Mobile: +1 612 222 2222
+                </span>
+                <span
+                  class="makeStyles-textEllipsis-59"
+                >
+                  <a
+                    class="makeStyles-emailAnchor-53"
+                    href="mailto:test@test.com"
+                  >
+                    test@test.com
+                  </a>
+                </span>
+              </div>
+            </div>
+            <div
+              class="MuiGrid-root makeStyles-informationColumn-48 makeStyles-paddingLeft-50 MuiGrid-item MuiGrid-grid-xs-4"
+            >
+              <svg
+                class="makeStyles-informationColumnIcon-52 makeStyles-emergencyContactIcon-54"
+              >
+                emergency-contact.svg
+              </svg>
+              <div
+                class="makeStyles-informationColumnText-51"
+              >
+                <span
+                  class="makeStyles-columnFont-55"
+                >
+                  Jane
+                </span>
+                <span
+                  class="makeStyles-columnFont-55"
+                >
+                  Wife
+                </span>
+                <span
+                  class="makeStyles-columnFont-55"
+                >
+                  -
+                </span>
+              </div>
+            </div>
+            <div
+              class="MuiGrid-root makeStyles-tradeWrapper-57 MuiGrid-item MuiGrid-grid-xs-12"
+            >
+              <div
+                class="MuiChip-root makeStyles-cardSummaryChip-56"
+              >
+                <span
+                  class="MuiChip-label"
+                >
+                  Ceiling
+                </span>
+              </div>
+              <div
+                class="MuiChip-root makeStyles-cardSummaryChip-56"
+              >
+                <span
+                  class="MuiChip-label"
+                >
+                  Ceiling
+                </span>
+              </div>
+              <div
+                class="MuiChip-root makeStyles-cardSummaryChip-56"
+              >
+                <span
+                  class="MuiChip-label"
+                >
+                  Ceiling
+                </span>
+              </div>
+              <div
+                class="MuiChip-root makeStyles-cardSummaryChip-56"
+              >
+                <span
+                  class="MuiChip-label"
+                >
+                  2+
+                </span>
+              </div>
+            </div>
+          </div>
+          <button
+            class="MuiButtonBase-root MuiIconButton-root makeStyles-headerEditButton-45"
+            data-testid="edit-button"
+            tabindex="0"
+            type="button"
+          >
+            <span
+              class="MuiIconButton-label"
+            >
+              <svg
+                aria-hidden="true"
+                class="MuiSvgIcon-root"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM20.71 7.04c.39-.39.39-1.02 0-1.41l-2.34-2.34a.9959.9959 0 00-1.41 0l-1.83 1.83 3.75 3.75 1.83-1.83z"
+                />
+              </svg>
+            </span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </body>,
+  "container": <div>
+    <div
+      class="MuiPaper-root makeStyles-root-38  MuiPaper-outlined MuiPaper-rounded"
+    >
+      <div
+        class="makeStyles-header-39"
+      >
+        <div
+          class="MuiGrid-root MuiGrid-container"
+        >
+          <div
+            class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-5"
+          >
+            <h3
+              class="MuiTypography-root makeStyles-headerTitle-40 MuiTypography-h3"
+            >
+              Worker Summary
+            </h3>
+            <p
+              class="MuiTypography-root makeStyles-subtitle-41 MuiTypography-body1"
+            >
+              Created on 
+            </p>
+          </div>
+          <div
+            class="MuiGrid-root MuiGrid-container MuiGrid-item MuiGrid-justify-xs-flex-end MuiGrid-grid-xs-7"
+          >
+            <div
+              class="makeStyles-widget-42"
+            >
+              <span
+                class="makeStyles-widgetTotal-43"
+              />
+              <span
+                class="makeStyles-widgetDescription-44"
+              >
+                Certifications
+              </span>
+            </div>
+            <div
+              class="makeStyles-widget-42"
+            >
+              <span
+                class="makeStyles-widgetTotal-43"
+              />
+              <span
+                class="makeStyles-widgetDescription-44"
+              >
+                Trainings
+              </span>
+            </div>
+            <div
+              class="makeStyles-widget-42"
+            >
+              <span
+                class="makeStyles-widgetTotal-43"
+              />
+              <span
+                class="makeStyles-widgetDescription-44"
+              >
+                Observations
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr
+        class="MuiDivider-root makeStyles-divider-46"
+      />
+      <div
+        class="makeStyles-body-47"
+      >
+        <div
+          class="MuiGrid-root MuiGrid-container"
+        >
+          <div
+            class="MuiGrid-root makeStyles-informationColumn-48 makeStyles-borderRight-49 MuiGrid-item MuiGrid-grid-xs-4"
+          >
+            <svg
+              aria-hidden="true"
+              class="MuiSvgIcon-root makeStyles-informationColumnIcon-52"
+              focusable="false"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"
+              />
+            </svg>
+            <div
+              class="makeStyles-informationColumnText-51"
+            >
+              <p
+                class="MuiTypography-root makeStyles-cardFont-63  MuiTypography-body1"
+              >
+                Apt 3. 
+                <span
+                  class="makeStyles-cardFontAccent-65 "
+                >
+                  21 Street
+                </span>
+              </p>
+              <p
+                class="MuiTypography-root makeStyles-cardFont-63  MuiTypography-body1"
+              >
+                Dallas, 
+                
+                12345
+                
+              </p>
+              <p
+                class="MuiTypography-root makeStyles-cardFont-63  MuiTypography-body1"
+              >
+                -
+              </p>
+            </div>
+          </div>
+          <div
+            class="MuiGrid-root makeStyles-informationColumn-48 makeStyles-borderRight-49 makeStyles-paddingLeft-50 MuiGrid-item MuiGrid-grid-xs-4"
+          >
+            <svg
+              aria-hidden="true"
+              class="MuiSvgIcon-root makeStyles-informationColumnIcon-52"
+              focusable="false"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56-.35-.12-.74-.03-1.01.24l-1.57 1.97c-2.83-1.35-5.48-3.9-6.89-6.83l1.95-1.66c.27-.28.35-.67.24-1.02-.37-1.11-.56-2.3-.56-3.53 0-.54-.45-.99-.99-.99H4.19C3.65 3 3 3.24 3 3.99 3 13.28 10.73 21 20.01 21c.71 0 .99-.63.99-1.18v-3.45c0-.54-.45-.99-.99-.99z"
+              />
+            </svg>
+            <div
+              class="makeStyles-informationColumnText-51 makeStyles-textEllipsis-59"
+            >
+              <span
+                class="makeStyles-columnFont-55"
+              >
+                Phone: -
+              </span>
+              <span
+                class="makeStyles-columnFont-55"
+              >
+                Mobile: +1 612 222 2222
+              </span>
+              <span
+                class="makeStyles-textEllipsis-59"
+              >
+                <a
+                  class="makeStyles-emailAnchor-53"
+                  href="mailto:test@test.com"
+                >
+                  test@test.com
+                </a>
+              </span>
+            </div>
+          </div>
+          <div
+            class="MuiGrid-root makeStyles-informationColumn-48 makeStyles-paddingLeft-50 MuiGrid-item MuiGrid-grid-xs-4"
+          >
+            <svg
+              class="makeStyles-informationColumnIcon-52 makeStyles-emergencyContactIcon-54"
+            >
+              emergency-contact.svg
+            </svg>
+            <div
+              class="makeStyles-informationColumnText-51"
+            >
+              <span
+                class="makeStyles-columnFont-55"
+              >
+                Jane
+              </span>
+              <span
+                class="makeStyles-columnFont-55"
+              >
+                Wife
+              </span>
+              <span
+                class="makeStyles-columnFont-55"
+              >
+                -
+              </span>
+            </div>
+          </div>
+          <div
+            class="MuiGrid-root makeStyles-tradeWrapper-57 MuiGrid-item MuiGrid-grid-xs-12"
+          >
+            <div
+              class="MuiChip-root makeStyles-cardSummaryChip-56"
+            >
+              <span
+                class="MuiChip-label"
+              >
+                Ceiling
+              </span>
+            </div>
+            <div
+              class="MuiChip-root makeStyles-cardSummaryChip-56"
+            >
+              <span
+                class="MuiChip-label"
+              >
+                Ceiling
+              </span>
+            </div>
+            <div
+              class="MuiChip-root makeStyles-cardSummaryChip-56"
+            >
+              <span
+                class="MuiChip-label"
+              >
+                Ceiling
+              </span>
+            </div>
+            <div
+              class="MuiChip-root makeStyles-cardSummaryChip-56"
+            >
+              <span
+                class="MuiChip-label"
+              >
+                2+
+              </span>
+            </div>
+          </div>
+        </div>
+        <button
+          class="MuiButtonBase-root MuiIconButton-root makeStyles-headerEditButton-45"
+          data-testid="edit-button"
+          tabindex="0"
+          type="button"
+        >
+          <span
+            class="MuiIconButton-label"
+          >
+            <svg
+              aria-hidden="true"
+              class="MuiSvgIcon-root"
+              focusable="false"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM20.71 7.04c.39-.39.39-1.02 0-1.41l-2.34-2.34a.9959.9959 0 00-1.41 0l-1.83 1.83 3.75 3.75 1.83-1.83z"
+              />
+            </svg>
+          </span>
+        </button>
+      </div>
+    </div>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;
+
+exports[`CardSummary Component should render with required values 1`] = `
+<body>
+  <div>
+    <div
+      class="MuiPaper-root makeStyles-root-1  MuiPaper-outlined MuiPaper-rounded"
+    >
+      <div
+        class="makeStyles-header-2"
+      >
+        <div
+          class="MuiGrid-root MuiGrid-container"
+        >
+          <div
+            class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-5"
+          >
+            <h3
+              class="MuiTypography-root makeStyles-headerTitle-3 MuiTypography-h3"
+            >
+              Worker Summary
+            </h3>
+            <p
+              class="MuiTypography-root makeStyles-subtitle-4 MuiTypography-body1"
+            >
+              Created on 
+            </p>
+          </div>
+          <div
+            class="MuiGrid-root MuiGrid-container MuiGrid-item MuiGrid-justify-xs-flex-end MuiGrid-grid-xs-7"
+          >
+            <div
+              class="makeStyles-widget-5"
+            >
+              <span
+                class="makeStyles-widgetTotal-6"
+              />
+              <span
+                class="makeStyles-widgetDescription-7"
+              >
+                Certifications
+              </span>
+            </div>
+            <div
+              class="makeStyles-widget-5"
+            >
+              <span
+                class="makeStyles-widgetTotal-6"
+              />
+              <span
+                class="makeStyles-widgetDescription-7"
+              >
+                Trainings
+              </span>
+            </div>
+            <div
+              class="makeStyles-widget-5"
+            >
+              <span
+                class="makeStyles-widgetTotal-6"
+              />
+              <span
+                class="makeStyles-widgetDescription-7"
+              >
+                Observations
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr
+        class="MuiDivider-root makeStyles-divider-9"
+      />
+      <div
+        class="makeStyles-body-10"
+      >
+        <div
+          class="MuiGrid-root MuiGrid-container"
+        >
+          <div
+            class="MuiGrid-root makeStyles-informationColumn-11 makeStyles-borderRight-12 MuiGrid-item MuiGrid-grid-xs-4"
+          >
+            <svg
+              aria-hidden="true"
+              class="MuiSvgIcon-root makeStyles-informationColumnIcon-15"
+              focusable="false"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"
+              />
+            </svg>
+            <div
+              class="makeStyles-informationColumnText-14"
+            >
+              <p
+                class="MuiTypography-root makeStyles-cardFont-26  MuiTypography-body1"
+              >
+                Apt 3. 
+                <span
+                  class="makeStyles-cardFontAccent-28 "
+                >
+                  21 Street
+                </span>
+              </p>
+              <p
+                class="MuiTypography-root makeStyles-cardFont-26  MuiTypography-body1"
+              >
+                Dallas, 
+                
+                12345
+                
+              </p>
+              <p
+                class="MuiTypography-root makeStyles-cardFont-26  MuiTypography-body1"
+              >
+                -
+              </p>
+            </div>
+          </div>
+          <div
+            class="MuiGrid-root makeStyles-informationColumn-11 makeStyles-borderRight-12 makeStyles-paddingLeft-13 MuiGrid-item MuiGrid-grid-xs-4"
+          >
+            <svg
+              aria-hidden="true"
+              class="MuiSvgIcon-root makeStyles-informationColumnIcon-15"
+              focusable="false"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56-.35-.12-.74-.03-1.01.24l-1.57 1.97c-2.83-1.35-5.48-3.9-6.89-6.83l1.95-1.66c.27-.28.35-.67.24-1.02-.37-1.11-.56-2.3-.56-3.53 0-.54-.45-.99-.99-.99H4.19C3.65 3 3 3.24 3 3.99 3 13.28 10.73 21 20.01 21c.71 0 .99-.63.99-1.18v-3.45c0-.54-.45-.99-.99-.99z"
+              />
+            </svg>
+            <div
+              class="makeStyles-informationColumnText-14 makeStyles-textEllipsis-22"
+            >
+              <span
+                class="makeStyles-columnFont-18"
+              >
+                Phone: -
+              </span>
+              <span
+                class="makeStyles-columnFont-18"
+              >
+                Mobile: +1 612 222 2222
+              </span>
+              <span
+                class="makeStyles-textEllipsis-22"
+              >
+                <a
+                  class="makeStyles-emailAnchor-16"
+                  href="mailto:test@test.com"
+                >
+                  test@test.com
+                </a>
+              </span>
+            </div>
+          </div>
+          <div
+            class="MuiGrid-root makeStyles-informationColumn-11 makeStyles-paddingLeft-13 MuiGrid-item MuiGrid-grid-xs-4"
+          >
+            <svg
+              class="makeStyles-informationColumnIcon-15 makeStyles-emergencyContactIcon-17"
+            >
+              emergency-contact.svg
+            </svg>
+            <div
+              class="makeStyles-informationColumnText-14"
+            >
+              <span
+                class="makeStyles-columnFont-18"
+              >
+                Jane
+              </span>
+              <span
+                class="makeStyles-columnFont-18"
+              >
+                Wife
+              </span>
+              <span
+                class="makeStyles-columnFont-18"
+              >
+                -
+              </span>
+            </div>
+          </div>
+          <div
+            class="MuiGrid-root makeStyles-tradeWrapper-20 MuiGrid-item MuiGrid-grid-xs-12"
+          >
+            <div
+              class="MuiChip-root makeStyles-cardSummaryChip-19"
+            >
+              <span
+                class="MuiChip-label"
+              >
+                Ceiling
+              </span>
+            </div>
+            <div
+              class="MuiChip-root makeStyles-cardSummaryChip-19"
+            >
+              <span
+                class="MuiChip-label"
+              >
+                Plumbing
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+`;

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>atoms/icons/check</title>
+    <g id="atoms/icons/check" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M12,2.5 C17.2467051,2.5 21.5,6.75329488 21.5,12 C21.5,17.2467051 17.2467051,21.5 12,21.5 C6.75329488,21.5 2.5,17.2467051 2.5,12 C2.5,6.75329488 6.75329488,2.5 12,2.5 Z M12,4 C7.581722,4 4,7.581722 4,12 C4,16.418278 7.581722,20 12,20 C16.418278,20 20,16.418278 20,12 C20,7.581722 16.418278,4 12,4 Z M15.3208554,8 L16.735069,9.41421356 L10.5894673,15.5598153 L7,11.970348 L8.41421356,10.5561344 L10.5891068,12.7311068 L15.3208554,8 Z" id="Combined-Shape" fill="#000000"></path>
+    </g>
+</svg>

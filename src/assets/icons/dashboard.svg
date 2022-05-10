@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g id="atoms/icons/dashboard" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect id="Rectangle" x="0" y="0" width="24" height="24"></rect>
+        <path d="M11.1,14.7 L11.1,21 L3,21 L3,14.7 L11.1,14.7 Z M21,11.1 L21,21 L12.9,21 L12.9,11.1 L21,11.1 Z M11.1,3 L11.1,13.1684211 L3,13.1684211 L3,3 L11.1,3 Z M21,3 L21,9.3 L12.9,9.3 L12.9,3 L21,3 Z" id="dashboard" fill="#FFF"></path>
+    </g>
+</svg>

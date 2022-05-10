@@ -1,0 +1,118 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`DashboardWidget should render with primary header 1`] = `
+<div>
+  <div
+    class="MuiPaper-root  makeStyles-widget-1 MuiPaper-elevation0 MuiPaper-rounded"
+  >
+    <div
+      class=""
+    >
+      <div
+        class=" makeStyles-widgetInlineStatusWrapper-17"
+      >
+        <div
+          class="makeStyles-widgetContentWrapper-8 makeStyles-widgetContentWrapperBottomMargin-9 undefined"
+        >
+          <span
+            class="makeStyles-widgetContent-13 makeStyles-widgetInlineMargin-15"
+          />
+          <p
+            class="MuiTypography-root  makeStyles-widgetTitle-3 makeStyles-widgetTitleInlinePosition-18 MuiTypography-body1"
+          >
+            test
+          </p>
+          <div
+            class="makeStyles-chipStatusLeftMargin-23"
+          />
+        </div>
+      </div>
+    </div>
+    <div>
+      test
+    </div>
+    <div>
+      test
+    </div>
+  </div>
+</div>
+`;
+
+exports[`DashboardWidget should render with primary header and secondary values 1`] = `
+<div>
+  <div
+    class="MuiPaper-root  makeStyles-widget-40 MuiPaper-elevation0 MuiPaper-rounded"
+  >
+    <div
+      class=""
+    >
+      <div
+        class=" makeStyles-widgetInlineStatusWrapper-56"
+      >
+        <div
+          class="makeStyles-widgetContentWrapper-47 makeStyles-widgetContentWrapperBottomMargin-48 undefined"
+        >
+          <div
+            class="MuiSkeleton-root MuiSkeleton-rect makeStyles-valueWrapper-76 MuiSkeleton-wave"
+            style="width: 68px; height: 40px;"
+          />
+          <div
+            class="MuiSkeleton-root MuiSkeleton-rect MuiSkeleton-wave"
+            style="width: 120px; height: 25px;"
+          />
+          <div
+            class="MuiSkeleton-root MuiSkeleton-rect makeStyles-pillMarginLeft-78 MuiSkeleton-wave"
+            style="width: 50px; height: 25px;"
+          />
+        </div>
+      </div>
+      <div
+        class="MuiSkeleton-root MuiSkeleton-rect MuiSkeleton-wave"
+        style="width: 200px; height: 25px;"
+      />
+    </div>
+    <div>
+      test
+    </div>
+    <div>
+      test
+    </div>
+  </div>
+</div>
+`;
+
+exports[`DashboardWidget should render with secondary header 1`] = `
+<div>
+  <div
+    class="MuiPaper-root  makeStyles-widget-79 MuiPaper-elevation0 MuiPaper-rounded"
+  >
+    <p
+      class="MuiTypography-root makeStyles-widgetTitle-81 makeStyles-widgetTitleBottomMargin-85 MuiTypography-body1"
+    >
+      test
+    </p>
+    <div
+      class="makeStyles-widgetContentWrapper-86"
+    >
+      <span
+        class="makeStyles-widgetContentResponsive-92 makeStyles-widgetContent-91"
+      />
+      <div
+        class="makeStyles-chipStatusLeftMargin-101"
+      />
+    </div>
+    <div>
+      test
+    </div>
+    <div>
+      test
+    </div>
+    <hr
+      class="MuiDivider-root makeStyles-widgetDivider-99"
+    />
+    <div>
+      test
+    </div>
+  </div>
+</div>
+`;

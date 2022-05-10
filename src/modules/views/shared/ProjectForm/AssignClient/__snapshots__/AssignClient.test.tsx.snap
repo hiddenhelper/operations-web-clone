@@ -1,0 +1,30 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AssignClient should render 1`] = `
+<div>
+  <div>
+    <button
+      data-testid="oncreate-btn"
+    >
+      create
+    </button>
+    assign-list
+  </div>
+  <div>
+    <button
+      data-testid="oncreate-btn"
+    >
+      create
+    </button>
+    assign-list
+  </div>
+  <div>
+    <button
+      data-testid="oncreate-btn"
+    >
+      create
+    </button>
+    assign-list
+  </div>
+</div>
+`;

@@ -1,0 +1,158 @@
+# Definitions of Jobs
+
+# Initial-Setup: Installs dependencies and forwards them.
+# - Executes Node Docker image.
+# - Installs dependencies.
+# - Saves cache.
+# - Persists workspace to be forwarded to following pipes.
+
+# Unit-Testing: Runs Unit testing suite.
+# - Executes Node Docker image.
+# - Attaches previous workspace (dependencies).
+# - Runs testing suite with yarn test.
+# - Persists workspace to be used by following jobs.
+
+# Build: Builds the project and forwards it to the Deploy pipe.
+# - Executes Node Docker Image.
+# - Attaches previous workspace (dependencies).
+# - Runs the provided build command.
+# - Persists workspace to be used by following jobs.
+# - Runs SonarCloud static code analysis.
+
+# Deploy:
+# - Deploys the build to the corresponding environment.
+
+version: 2.1
+
+orbs:
+  sonarcloud: sonarsource/sonarcloud@1.0.2
+
+executors:
+  node-executor:
+    docker:
+      - image: circleci/node:lts
+  aws-executor:
+    docker:
+      - image: cibuilds/aws:latest
+
+jobs:
+  Initial-setup:
+    executor: node-executor
+    steps:
+      - checkout
+      - restore_cache:
+          keys:
+            - v1-dependencies-{{ checksum "package.json" }}
+            # fallback to using the latest cache if no exact match is found
+            - v1-dependencies-
+      - run: yarn install
+      - save_cache:
+          paths:
+            - node_modules
+          key: v1-dependencies-{{ checksum "package.json" }}
+      - persist_to_workspace:
+          root: .
+          paths:
+            - .
+            - cache
+
+  Unit-Testing:
+    executor: node-executor
+    steps:
+      - attach_workspace:
+          at: .
+      - run: yarn test-ci
+      - store_artifacts:
+          path: test-results/junit
+      - store_artifacts:
+          path: coverage
+      - store_test_results:
+          path: test-results
+      - persist_to_workspace:
+          root: .
+          paths:
+            - coverage/lcov.info
+            - test-report.xml
+            - test-results/junit/results.xml
+
+  Build:
+    executor: node-executor
+    resource_class: large
+    steps:
+      - attach_workspace:
+          at: .
+      - deploy:
+          name: build based on environment
+          command: |
+            if [ "${CIRCLE_BRANCH}" = "qa" ]; then
+              sed -i 's/CIRCLECI_GOOGLE_API_KEY_MAPS/'"$CIRCLECI_GOOGLE_API_KEY_MAPS"'/g' ./src/config/.env.qa && \
+              sed -i 's/CIRCLECI_GOOGLE_API_KEY_PLACES/'"$CIRCLECI_GOOGLE_API_KEY_PLACES"'/g' ./src/config/.env.qa && \
+              yarn build:qa
+            elif [ "${CIRCLE_BRANCH}" = "staging" ]; then
+              sed -i 's/CIRCLECI_GOOGLE_API_KEY_MAPS/'"$CIRCLECI_GOOGLE_API_KEY_MAPS"'/g' ./src/config/.env.staging && \
+              sed -i 's/CIRCLECI_GOOGLE_API_KEY_PLACES/'"$CIRCLECI_GOOGLE_API_KEY_PLACES"'/g' ./src/config/.env.staging && \
+              yarn build:staging
+            else
+              sed -i 's/CIRCLECI_GOOGLE_API_KEY_MAPS/'"$CIRCLECI_GOOGLE_API_KEY_MAPS"'/g' ./src/config/.env.development && \
+              sed -i 's/CIRCLECI_GOOGLE_API_KEY_PLACES/'"$CIRCLECI_GOOGLE_API_KEY_PLACES"'/g' ./src/config/.env.development && \
+              yarn build:development
+            fi
+      - persist_to_workspace:
+          root: .
+          paths:
+            - .
+      - sonarcloud/scan
+
+  Deploy:
+    executor: aws-executor
+    environment:
+      BUILD_DIR: publish
+    steps:
+      - attach_workspace:
+          at: .
+      - run: mv build publish
+      - deploy:
+          name: deploy to AWS
+          command: |
+            if [ "${CIRCLE_BRANCH}" = "develop" ]; then
+              aws s3 sync $BUILD_DIR \
+              s3://dev.fcdevelopment.net/ --delete --exclude '*.well-known/apple-app-site-association'
+              aws s3 sync $BUILD_DIR \
+              s3://dev.fcdevelopment.net/ --delete --exclude '*' --include '.well-known/apple-app-site-association' --content-type 'application/json'
+            fi
+            if [ "${CIRCLE_BRANCH}" = "qa" ]; then
+              aws s3 sync $BUILD_DIR \
+              s3://qa.fcdevelopment.net/ --delete --exclude '*.well-known/apple-app-site-association'
+              aws s3 sync $BUILD_DIR \
+              s3://qa.fcdevelopment.net/ --delete --exclude '*' --include '.well-known/apple-app-site-association' --content-type 'application/json'
+            fi
+            if [ "${CIRCLE_BRANCH}" = "staging" ]; then
+              aws s3 sync $BUILD_DIR \
+              s3://staging.fcdevelopment.net/ --delete --exclude '*.well-known/apple-app-site-association'
+              aws s3 sync $BUILD_DIR \
+              s3://staging.fcdevelopment.net/ --delete --exclude '*' --include '.well-known/apple-app-site-association' --content-type 'application/json'
+            fi
+
+workflows:
+  version: 2
+
+  Build-Test-Deploy:
+    jobs:
+      - Initial-setup
+      - Unit-Testing:
+          requires:
+            - Initial-setup
+      - Build:
+          requires:
+            - Unit-Testing
+          context: SonarCloud
+      - Deploy:
+          requires:
+            - Build
+          filters:
+            branches:
+              only:
+                 - develop
+                 - qa
+                 - staging
+                 - master

@@ -1,0 +1,4122 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`InvoiceList should change filter option 1`] = `
+<div>
+  <div
+    style="width: 100%; background-color: rgb(245, 245, 245); padding: 2.5rem;"
+  >
+    <div
+      class=""
+    >
+      <div
+        class="MuiBox-root MuiBox-root-1509"
+        style="height: 50px; margin-bottom: 13px; width: 100%;"
+      >
+        <div
+          class="MuiBox-root MuiBox-root-1510"
+          style="display: flex; align-items: center; justify-content: space-between;"
+        >
+          <div>
+            <div
+              class="MuiBox-root MuiBox-root-1511"
+              style="display: flex; align-items: center; margin-top: 5px;"
+            >
+              <h2
+                class="MuiTypography-root MuiTypography-h1"
+                style="color: rgb(68, 68, 68); font-size: 2.25rem; font-weight: 600; letter-spacing: 0; margin-right: 0.5rem;"
+              >
+                Invoices
+              </h2>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="makeStyles-widgetsWrapper-1491"
+        id="summary-widgets"
+      >
+        <div
+          class="MuiPaper-root makeStyles-widget-1512 MuiPaper-elevation0 MuiPaper-rounded"
+        >
+          <span
+            class="makeStyles-totalFont-1513"
+          >
+            5
+          </span>
+          <div
+            class="makeStyles-contentContainer-1516"
+          >
+            <span
+              class="makeStyles-statusFont-1514"
+            >
+              Unpaid
+            </span>
+            <span
+              class="makeStyles-contentFont-1515"
+            >
+              <a
+                href="/"
+              >
+                Review
+              </a>
+            </span>
+          </div>
+        </div>
+        <div
+          class="MuiPaper-root makeStyles-widget-1512 MuiPaper-elevation0 MuiPaper-rounded"
+        >
+          <span
+            class="makeStyles-totalFont-1513"
+          >
+            1
+          </span>
+          <div
+            class="makeStyles-contentContainer-1516"
+          >
+            <span
+              class="makeStyles-statusFont-1514"
+            >
+              Paid
+            </span>
+            <span
+              class="makeStyles-contentFont-1515"
+            >
+              <a
+                href="/invoices?isPaid=true"
+              >
+                Review
+              </a>
+            </span>
+          </div>
+        </div>
+        <div
+          class="MuiPaper-root makeStyles-widget-1512 MuiPaper-elevation0 MuiPaper-rounded"
+        >
+          <span
+            class="makeStyles-totalFont-1513"
+          >
+            $ 123.00
+          </span>
+          <div
+            class="makeStyles-contentContainer-1516"
+          >
+            <span
+              class="makeStyles-statusFont-1514"
+            >
+              Revenue
+            </span>
+            <span
+              class="makeStyles-contentFont-1515"
+            />
+          </div>
+        </div>
+      </div>
+      <div
+        class="makeStyles-tableWrapper-1416"
+      >
+        <div
+          class="makeStyles-filterContainer-1424"
+        >
+          <div
+            class="makeStyles-statusFilter-1425"
+          >
+            <button
+              class="MuiButtonBase-root MuiButton-root MuiButton-text makeStyles-activeFilter-1426"
+              data-testid="filter-status-opt"
+              tabindex="0"
+              type="button"
+            >
+              <span
+                class="MuiButton-label"
+              >
+                Unpaid
+              </span>
+              <span
+                class="MuiTouchRipple-root"
+              />
+            </button>
+            <button
+              class="MuiButtonBase-root MuiButton-root MuiButton-text"
+              data-testid="filter-status-opt"
+              tabindex="0"
+              type="button"
+            >
+              <span
+                class="MuiButton-label"
+              >
+                Paid
+              </span>
+              <span
+                class="MuiTouchRipple-root"
+              />
+            </button>
+          </div>
+          <div
+            class="makeStyles-filterActionsContainer-1427"
+          >
+            <div
+              class="MuiBox-root MuiBox-root-1517 makeStyles-filterStatusContainer-1430"
+            >
+              <div
+                class="makeStyles-floatingFilterWrapper-1436 makeStyles-filterWrapper-1435  floatingFilterWrapper"
+              >
+                <span
+                  class="makeStyles-floatingFilterButton-1437"
+                  data-testid="controlled-button"
+                  tabindex="-1"
+                >
+                  <button
+                    aria-controls="false"
+                    aria-haspopup="true"
+                    class="MuiButtonBase-root MuiButton-root MuiButton-text makeStyles-buttonFilter-1445"
+                    data-testid="button-filter-open"
+                    tabindex="0"
+                    type="button"
+                  >
+                    <span
+                      class="MuiButton-label"
+                    >
+                      All Times
+                      <span
+                        class="MuiButton-endIcon MuiButton-iconSizeMedium"
+                      >
+                        <svg
+                          class="makeStyles-dropdownIcon-1439"
+                        >
+                          expand.svg
+                        </svg>
+                      </span>
+                    </span>
+                  </button>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+        Loading...
+        <div
+          class="MuiDrawer-root MuiDrawer-docked makeStyles-drawer-1545 makeStyles-close-1556 closed"
+          data-testid="invoice-drawer-detail"
+        >
+          <div
+            class="MuiPaper-root MuiDrawer-paper makeStyles-drawerPaper-1546 MuiDrawer-paperAnchorRight MuiDrawer-paperAnchorDockedRight MuiPaper-elevation0"
+            style="visibility: hidden; webkit-transform: translateX(1024px) translateX(0px); transform: translateX(1024px) translateX(0px);"
+          >
+            <div
+              class="makeStyles-drawerButtonWrapper-1548"
+            >
+              <div
+                class="makeStyles-drawerButton-1549"
+              >
+                <button
+                  class="MuiButtonBase-root MuiButton-root MuiButton-text"
+                  data-testid="drawer-close-btn"
+                  style="outline: none;"
+                  tabindex="0"
+                  type="button"
+                >
+                  <span
+                    class="MuiButton-label"
+                  >
+                    <svg>
+                      close.svg
+                    </svg>
+                  </span>
+                  <span
+                    class="MuiTouchRipple-root"
+                  />
+                </button>
+              </div>
+              <div
+                class="makeStyles-drawerHeader-1547"
+              >
+                <p
+                  class="MuiTypography-root makeStyles-drawerTitle-1550 MuiTypography-body1 MuiTypography-colorPrimary MuiTypography-alignLeft"
+                >
+                  Invoice Information
+                </p>
+              </div>
+            </div>
+            <div
+              class="makeStyles-listDetail-1495"
+            >
+              <div
+                class="makeStyles-company-1496"
+              >
+                <div
+                  class="makeStyles-drawerText-1552"
+                >
+                  <p
+                    class="MuiTypography-root makeStyles-listAccent-1497 makeStyles-entityTitle-1494 MuiTypography-body1"
+                  >
+                    Draft Invoice
+                  </p>
+                  <div
+                    class="makeStyles-drawerMainText-1553"
+                  />
+                </div>
+                <div
+                  class="makeStyles-drawerSection-1551"
+                >
+                  <div
+                    class="makeStyles-drawerColumnDirection-1560"
+                  >
+                    <div
+                      class="makeStyles-drawerRowDirection-1561"
+                    >
+                      <svg>
+                        monetization.svg
+                      </svg>
+                      <div
+                        class="makeStyles-drawerText-1552 makeStyles-drawerTextSeparation-1554"
+                      >
+                        <span
+                          class="makeStyles-listAccent-1497 makeStyles-listIconLabel-1508"
+                        >
+                          $ 
+                          0
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="makeStyles-drawerSection-1551 makeStyles-drawerProjectColumn-1559"
+                >
+                  <div
+                    class="makeStyles-projectWrapper-1557"
+                  >
+                    <svg>
+                      location.svg
+                    </svg>
+                    <div
+                      class="makeStyles-drawerText-1552 makeStyles-drawerTextSeparation-1554"
+                    >
+                      <span
+                        class="makeStyles-listAccent-1497"
+                      >
+                        -
+                      </span>
+                      <span>
+                        -
+                      </span>
+                      <span>
+                        -
+                      </span>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="makeStyles-drawerSection-1551 makeStyles-drawerProjectColumn-1559"
+                >
+                  <div
+                    class="makeStyles-projectWrapper-1557"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      class="MuiSvgIcon-root"
+                      focusable="false"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"
+                      />
+                    </svg>
+                    <div
+                      class="makeStyles-drawerText-1552 makeStyles-drawerTextSeparation-1554"
+                    >
+                      <span
+                        class="makeStyles-listAccent-1497"
+                      >
+                        - -
+                      </span>
+                      <span>
+                        -
+                      </span>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="makeStyles-drawerSection-1551 makeStyles-drawerProjectColumn-1559"
+                >
+                  <div
+                    class="makeStyles-projectWrapper-1557"
+                  >
+                    <svg>
+                      project.svg
+                    </svg>
+                    <div
+                      class="makeStyles-drawerText-1552 makeStyles-drawerTextSeparation-1554"
+                    >
+                      <span
+                        class="makeStyles-listAccent-1497"
+                      >
+                        -
+                      </span>
+                      <span>
+                        -
+                      </span>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="makeStyles-drawerSection-1551 makeStyles-drawerProjectColumn-1559"
+                >
+                  <div
+                    class="makeStyles-projectWrapper-1557"
+                  >
+                    <svg>
+                      calendar.svg
+                    </svg>
+                    <div
+                      class="makeStyles-drawerText-1552 makeStyles-drawerTextSeparation-1554"
+                    >
+                      <span>
+                        Creation Date: 
+                        -
+                      </span>
+                      <span>
+                        Payment Date: 
+                        -
+                      </span>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="makeStyles-drawerSection-1551 makeStyles-drawerProjectColumn-1559"
+                >
+                  <div
+                    class="makeStyles-projectWrapper-1557"
+                  >
+                    <svg>
+                      notes.svg
+                    </svg>
+                    <div
+                      class="makeStyles-drawerText-1552 makeStyles-drawerTextSeparation-1554"
+                    >
+                      <span>
+                        -
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`InvoiceList should fetch invoice statistics 1`] = `
+<div>
+  <div
+    style="width: 100%; background-color: rgb(245, 245, 245); padding: 2.5rem;"
+  >
+    <div
+      class=""
+    >
+      <div
+        class="MuiBox-root MuiBox-root-541"
+        style="height: 50px; margin-bottom: 13px; width: 100%;"
+      >
+        <div
+          class="MuiBox-root MuiBox-root-542"
+          style="display: flex; align-items: center; justify-content: space-between;"
+        >
+          <div>
+            <div
+              class="MuiBox-root MuiBox-root-543"
+              style="display: flex; align-items: center; margin-top: 5px;"
+            >
+              <h2
+                class="MuiTypography-root MuiTypography-h1"
+                style="color: rgb(68, 68, 68); font-size: 2.25rem; font-weight: 600; letter-spacing: 0; margin-right: 0.5rem;"
+              >
+                Invoices
+              </h2>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="makeStyles-widgetsWrapper-523"
+        id="summary-widgets"
+      >
+        <div
+          class="MuiPaper-root makeStyles-widget-544 MuiPaper-elevation0 MuiPaper-rounded"
+        >
+          <span
+            class="makeStyles-totalFont-545"
+          >
+            0
+          </span>
+          <div
+            class="makeStyles-contentContainer-548"
+          >
+            <span
+              class="makeStyles-statusFont-546"
+            >
+              Unpaid
+            </span>
+            <span
+              class="makeStyles-contentFont-547"
+            >
+              <a
+                href="/"
+              >
+                Review
+              </a>
+            </span>
+          </div>
+        </div>
+        <div
+          class="MuiPaper-root makeStyles-widget-544 MuiPaper-elevation0 MuiPaper-rounded"
+        >
+          <span
+            class="makeStyles-totalFont-545"
+          >
+            0
+          </span>
+          <div
+            class="makeStyles-contentContainer-548"
+          >
+            <span
+              class="makeStyles-statusFont-546"
+            >
+              Paid
+            </span>
+            <span
+              class="makeStyles-contentFont-547"
+            >
+              <a
+                href="/invoices?isPaid=true"
+              >
+                Review
+              </a>
+            </span>
+          </div>
+        </div>
+        <div
+          class="MuiPaper-root makeStyles-widget-544 MuiPaper-elevation0 MuiPaper-rounded"
+        >
+          <span
+            class="makeStyles-totalFont-545"
+          >
+            $ 0
+          </span>
+          <div
+            class="makeStyles-contentContainer-548"
+          >
+            <span
+              class="makeStyles-statusFont-546"
+            >
+              Revenue
+            </span>
+            <span
+              class="makeStyles-contentFont-547"
+            />
+          </div>
+        </div>
+      </div>
+      <div
+        class="makeStyles-tableWrapper-448"
+      >
+        <div
+          class="makeStyles-filterContainer-456"
+        >
+          <div
+            class="makeStyles-statusFilter-457"
+          >
+            <button
+              class="MuiButtonBase-root MuiButton-root MuiButton-text makeStyles-activeFilter-458"
+              data-testid="filter-status-opt"
+              tabindex="0"
+              type="button"
+            >
+              <span
+                class="MuiButton-label"
+              >
+                Unpaid
+              </span>
+              <span
+                class="MuiTouchRipple-root"
+              />
+            </button>
+            <button
+              class="MuiButtonBase-root MuiButton-root MuiButton-text"
+              data-testid="filter-status-opt"
+              tabindex="0"
+              type="button"
+            >
+              <span
+                class="MuiButton-label"
+              >
+                Paid
+              </span>
+              <span
+                class="MuiTouchRipple-root"
+              />
+            </button>
+          </div>
+          <div
+            class="makeStyles-filterActionsContainer-459"
+          >
+            <div
+              class="MuiBox-root MuiBox-root-549 makeStyles-filterStatusContainer-462"
+            >
+              <div
+                class="makeStyles-floatingFilterWrapper-468 makeStyles-filterWrapper-467  floatingFilterWrapper"
+              >
+                <span
+                  class="makeStyles-floatingFilterButton-469"
+                  data-testid="controlled-button"
+                  tabindex="-1"
+                >
+                  <button
+                    aria-controls="false"
+                    aria-haspopup="true"
+                    class="MuiButtonBase-root MuiButton-root MuiButton-text makeStyles-buttonFilter-477"
+                    data-testid="button-filter-open"
+                    tabindex="0"
+                    type="button"
+                  >
+                    <span
+                      class="MuiButton-label"
+                    >
+                      All Times
+                      <span
+                        class="MuiButton-endIcon MuiButton-iconSizeMedium"
+                      >
+                        <svg
+                          class="makeStyles-dropdownIcon-471"
+                        >
+                          expand.svg
+                        </svg>
+                      </span>
+                    </span>
+                  </button>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+        Loading...
+        <div
+          class="MuiDrawer-root MuiDrawer-docked makeStyles-drawer-577 makeStyles-close-588 closed"
+          data-testid="invoice-drawer-detail"
+        >
+          <div
+            class="MuiPaper-root MuiDrawer-paper makeStyles-drawerPaper-578 MuiDrawer-paperAnchorRight MuiDrawer-paperAnchorDockedRight MuiPaper-elevation0"
+            style="visibility: hidden; webkit-transform: translateX(1024px) translateX(0px); transform: translateX(1024px) translateX(0px);"
+          >
+            <div
+              class="makeStyles-drawerButtonWrapper-580"
+            >
+              <div
+                class="makeStyles-drawerButton-581"
+              >
+                <button
+                  class="MuiButtonBase-root MuiButton-root MuiButton-text"
+                  data-testid="drawer-close-btn"
+                  style="outline: none;"
+                  tabindex="0"
+                  type="button"
+                >
+                  <span
+                    class="MuiButton-label"
+                  >
+                    <svg>
+                      close.svg
+                    </svg>
+                  </span>
+                  <span
+                    class="MuiTouchRipple-root"
+                  />
+                </button>
+              </div>
+              <div
+                class="makeStyles-drawerHeader-579"
+              >
+                <p
+                  class="MuiTypography-root makeStyles-drawerTitle-582 MuiTypography-body1 MuiTypography-colorPrimary MuiTypography-alignLeft"
+                >
+                  Invoice Information
+                </p>
+              </div>
+            </div>
+            <div
+              class="makeStyles-listDetail-527"
+            >
+              <div
+                class="makeStyles-company-528"
+              >
+                <div
+                  class="makeStyles-drawerText-584"
+                >
+                  <p
+                    class="MuiTypography-root makeStyles-listAccent-529 makeStyles-entityTitle-526 MuiTypography-body1"
+                  >
+                    Draft Invoice
+                  </p>
+                  <div
+                    class="makeStyles-drawerMainText-585"
+                  />
+                </div>
+                <div
+                  class="makeStyles-drawerSection-583"
+                >
+                  <div
+                    class="makeStyles-drawerColumnDirection-592"
+                  >
+                    <div
+                      class="makeStyles-drawerRowDirection-593"
+                    >
+                      <svg>
+                        monetization.svg
+                      </svg>
+                      <div
+                        class="makeStyles-drawerText-584 makeStyles-drawerTextSeparation-586"
+                      >
+                        <span
+                          class="makeStyles-listAccent-529 makeStyles-listIconLabel-540"
+                        >
+                          $ 
+                          0
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="makeStyles-drawerSection-583 makeStyles-drawerProjectColumn-591"
+                >
+                  <div
+                    class="makeStyles-projectWrapper-589"
+                  >
+                    <svg>
+                      location.svg
+                    </svg>
+                    <div
+                      class="makeStyles-drawerText-584 makeStyles-drawerTextSeparation-586"
+                    >
+                      <span
+                        class="makeStyles-listAccent-529"
+                      >
+                        -
+                      </span>
+                      <span>
+                        -
+                      </span>
+                      <span>
+                        -
+                      </span>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="makeStyles-drawerSection-583 makeStyles-drawerProjectColumn-591"
+                >
+                  <div
+                    class="makeStyles-projectWrapper-589"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      class="MuiSvgIcon-root"
+                      focusable="false"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"
+                      />
+                    </svg>
+                    <div
+                      class="makeStyles-drawerText-584 makeStyles-drawerTextSeparation-586"
+                    >
+                      <span
+                        class="makeStyles-listAccent-529"
+                      >
+                        - -
+                      </span>
+                      <span>
+                        -
+                      </span>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="makeStyles-drawerSection-583 makeStyles-drawerProjectColumn-591"
+                >
+                  <div
+                    class="makeStyles-projectWrapper-589"
+                  >
+                    <svg>
+                      project.svg
+                    </svg>
+                    <div
+                      class="makeStyles-drawerText-584 makeStyles-drawerTextSeparation-586"
+                    >
+                      <span
+                        class="makeStyles-listAccent-529"
+                      >
+                        -
+                      </span>
+                      <span>
+                        -
+                      </span>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="makeStyles-drawerSection-583 makeStyles-drawerProjectColumn-591"
+                >
+                  <div
+                    class="makeStyles-projectWrapper-589"
+                  >
+                    <svg>
+                      calendar.svg
+                    </svg>
+                    <div
+                      class="makeStyles-drawerText-584 makeStyles-drawerTextSeparation-586"
+                    >
+                      <span>
+                        Creation Date: 
+                        -
+                      </span>
+                      <span>
+                        Payment Date: 
+                        -
+                      </span>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="makeStyles-drawerSection-583 makeStyles-drawerProjectColumn-591"
+                >
+                  <div
+                    class="makeStyles-projectWrapper-589"
+                  >
+                    <svg>
+                      notes.svg
+                    </svg>
+                    <div
+                      class="makeStyles-drawerText-584 makeStyles-drawerTextSeparation-586"
+                    >
+                      <span>
+                        -
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`InvoiceList should open edit draft invoice 1`] = `
+<div
+  aria-hidden="true"
+>
+  <div
+    style="width: 100%; background-color: rgb(245, 245, 245); padding: 2.5rem;"
+  >
+    <div
+      class=""
+    >
+      <div
+        class="MuiBox-root MuiBox-root-2696"
+        style="height: 50px; margin-bottom: 13px; width: 100%;"
+      >
+        <div
+          class="MuiBox-root MuiBox-root-2697"
+          style="display: flex; align-items: center; justify-content: space-between;"
+        >
+          <div>
+            <div
+              class="MuiBox-root MuiBox-root-2698"
+              style="display: flex; align-items: center; margin-top: 5px;"
+            >
+              <h2
+                class="MuiTypography-root MuiTypography-h1"
+                style="color: rgb(68, 68, 68); font-size: 2.25rem; font-weight: 600; letter-spacing: 0; margin-right: 0.5rem;"
+              >
+                Invoices
+              </h2>
+            </div>
+          </div>
+          <button
+            class="MuiButtonBase-root MuiButton-root MuiButton-contained makeStyles-createButton-2644 makeStyles-primaryButtonLarge-2646 MuiButton-containedPrimary MuiButton-containedSizeLarge MuiButton-sizeLarge MuiButton-fullWidth"
+            data-testid="create-invoice-btn"
+            tabindex="0"
+            type="button"
+          >
+            <span
+              class="MuiButton-label"
+            >
+              Create Invoice
+            </span>
+            <span
+              class="MuiTouchRipple-root"
+            />
+          </button>
+        </div>
+      </div>
+      <div
+        class="makeStyles-widgetsWrapper-2678"
+        id="summary-widgets"
+      >
+        <div
+          class="MuiPaper-root makeStyles-widget-2699 MuiPaper-elevation0 MuiPaper-rounded"
+        >
+          <span
+            class="makeStyles-totalFont-2700"
+          >
+            5
+          </span>
+          <div
+            class="makeStyles-contentContainer-2703"
+          >
+            <span
+              class="makeStyles-statusFont-2701"
+            >
+              Unpaid
+            </span>
+            <span
+              class="makeStyles-contentFont-2702"
+            >
+              <a
+                href="/"
+              >
+                Review
+              </a>
+            </span>
+          </div>
+        </div>
+        <div
+          class="MuiPaper-root makeStyles-widget-2699 MuiPaper-elevation0 MuiPaper-rounded"
+        >
+          <span
+            class="makeStyles-totalFont-2700"
+          >
+            1
+          </span>
+          <div
+            class="makeStyles-contentContainer-2703"
+          >
+            <span
+              class="makeStyles-statusFont-2701"
+            >
+              Paid
+            </span>
+            <span
+              class="makeStyles-contentFont-2702"
+            >
+              <a
+                href="/invoices?isPaid=true"
+              >
+                Review
+              </a>
+            </span>
+          </div>
+        </div>
+        <div
+          class="MuiPaper-root makeStyles-widget-2699 MuiPaper-elevation0 MuiPaper-rounded"
+        >
+          <span
+            class="makeStyles-totalFont-2700"
+          >
+            $ 123.00
+          </span>
+          <div
+            class="makeStyles-contentContainer-2703"
+          >
+            <span
+              class="makeStyles-statusFont-2701"
+            >
+              Revenue
+            </span>
+            <span
+              class="makeStyles-contentFont-2702"
+            />
+          </div>
+        </div>
+      </div>
+      <div
+        class="makeStyles-tableWrapper-2603"
+      >
+        <div
+          class="makeStyles-filterContainer-2611"
+        >
+          <div
+            class="makeStyles-statusFilter-2612"
+          >
+            <button
+              class="MuiButtonBase-root MuiButton-root MuiButton-text makeStyles-activeFilter-2613"
+              data-testid="filter-status-opt"
+              tabindex="0"
+              type="button"
+            >
+              <span
+                class="MuiButton-label"
+              >
+                Unpaid
+              </span>
+              <span
+                class="MuiTouchRipple-root"
+              />
+            </button>
+            <button
+              class="MuiButtonBase-root MuiButton-root MuiButton-text"
+              data-testid="filter-status-opt"
+              tabindex="0"
+              type="button"
+            >
+              <span
+                class="MuiButton-label"
+              >
+                Paid
+              </span>
+              <span
+                class="MuiTouchRipple-root"
+              />
+            </button>
+          </div>
+          <div
+            class="makeStyles-filterActionsContainer-2614"
+          >
+            <div
+              class="MuiBox-root MuiBox-root-2704 makeStyles-filterStatusContainer-2617"
+            >
+              <div
+                class="makeStyles-floatingFilterWrapper-2623 makeStyles-filterWrapper-2622  floatingFilterWrapper"
+              >
+                <span
+                  class="makeStyles-floatingFilterButton-2624"
+                  data-testid="controlled-button"
+                  tabindex="-1"
+                >
+                  <button
+                    aria-controls="false"
+                    aria-haspopup="true"
+                    class="MuiButtonBase-root MuiButton-root MuiButton-text makeStyles-buttonFilter-2632"
+                    data-testid="button-filter-open"
+                    tabindex="0"
+                    type="button"
+                  >
+                    <span
+                      class="MuiButton-label"
+                    >
+                      All Times
+                      <span
+                        class="MuiButton-endIcon MuiButton-iconSizeMedium"
+                      >
+                        <svg
+                          class="makeStyles-dropdownIcon-2626"
+                        >
+                          expand.svg
+                        </svg>
+                      </span>
+                    </span>
+                  </button>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <table
+          aria-label="invoice-list"
+          class="MuiTable-root"
+        >
+          <thead
+            class="MuiTableHead-root"
+          >
+            <tr
+              class="MuiTableRow-root MuiTableRow-head"
+            >
+              <th
+                class="MuiTableCell-root MuiTableCell-head"
+                scope="col"
+              >
+                Number
+              </th>
+              <th
+                class="MuiTableCell-root MuiTableCell-head"
+                scope="col"
+              >
+                Client
+              </th>
+              <th
+                class="MuiTableCell-root MuiTableCell-head"
+                scope="col"
+              >
+                Project
+              </th>
+              <th
+                class="MuiTableCell-root MuiTableCell-head"
+                scope="col"
+              >
+                Creation Date
+              </th>
+              <th
+                class="MuiTableCell-root MuiTableCell-head"
+                scope="col"
+              >
+                Amount
+              </th>
+              <th
+                class="MuiTableCell-root MuiTableCell-head"
+                scope="col"
+              >
+                Status
+              </th>
+            </tr>
+          </thead>
+          <tbody
+            class="MuiTableBody-root"
+          >
+            <tr
+              class="MuiTableRow-root WithStyles(ForwardRef(TableRow))-root-2768 makeStyles-clickableRow-2690"
+              data-testid="invoice-list-row"
+            >
+              <td
+                class="MuiTableCell-root MuiTableCell-body"
+              >
+                720909
+              </td>
+              <td
+                class="MuiTableCell-root MuiTableCell-body makeStyles-listNameFullWidth-2676"
+              >
+                <span>
+                  -
+                </span>
+              </td>
+              <td
+                class="MuiTableCell-root MuiTableCell-body makeStyles-listName-2675 makeStyles-listNameFullWidth-2676"
+              >
+                <a
+                  class="Link-root-2769"
+                  data-testid="invoice-list-row-project-button"
+                  href="/projects/detail/1"
+                  title="View Project details"
+                >
+                  Las Vegas Casino
+                </a>
+              </td>
+              <td
+                class="MuiTableCell-root MuiTableCell-body"
+              >
+                Dec 09, 2020
+              </td>
+              <td
+                class="MuiTableCell-root MuiTableCell-body makeStyles-boldTableCell-2744"
+              >
+                $ 
+                0
+              </td>
+              <td
+                class="MuiTableCell-root MuiTableCell-body"
+              >
+                <div
+                  class="makeStyles-invoiceRowLastCell-2745"
+                >
+                  <span
+                    class="makeStyles-invoiceRowStatusCell-2747"
+                  >
+                    <div
+                      class="MuiChip-root makeStyles-statusChip-2756 makeStyles-assigned-2760 makeStyles-invoiceStatusChip-2743 MuiChip-colorPrimary"
+                    >
+                      <span
+                        class="MuiChip-label"
+                      >
+                        Draft
+                      </span>
+                    </div>
+                  </span>
+                  <span
+                    class="makeStyles-invoiceRowIconsWrapper-2748"
+                  >
+                    <span
+                      class="makeStyles-invoiceRowButton-2751"
+                      data-testid="controlled-button"
+                      tabindex="-1"
+                    >
+                      <button
+                        aria-label="invoice-information"
+                        class="MuiButtonBase-root MuiIconButton-root"
+                        data-testid="open-invoice-information"
+                        tabindex="0"
+                        title="Edit Invoice"
+                        type="button"
+                      >
+                        <span
+                          class="MuiIconButton-label"
+                        >
+                          <svg
+                            class="makeStyles-invoiceIcon-2749"
+                          >
+                            invoice.svg
+                          </svg>
+                        </span>
+                      </button>
+                    </span>
+                    <span
+                      class="makeStyles-invoiceRowButton-2751"
+                      data-testid="controlled-button"
+                      tabindex="-1"
+                    >
+                      <div
+                        class="MuiBox-root MuiBox-root-2771 makeStyles-filterStatusContainer-2617 buttonMenuContainer"
+                      >
+                        <div
+                          class="makeStyles-filterWrapper-2622 buttonMenuWrapper"
+                        >
+                          <span
+                            class=""
+                            data-testid="controlled-button"
+                            tabindex="-1"
+                          >
+                            <button
+                              aria-controls="false"
+                              aria-haspopup="true"
+                              class="MuiButtonBase-root MuiButton-root MuiButton-contained makeStyles-invoiceActionsButton-2752 MuiButton-containedPrimary"
+                              data-testid="popover-button"
+                              tabindex="0"
+                              type="button"
+                            >
+                              <span
+                                class="MuiButton-label"
+                              >
+                                
+                                <span
+                                  class="MuiButton-endIcon MuiButton-iconSizeMedium"
+                                >
+                                  <svg
+                                    class="makeStyles-invoiceIcon-2749"
+                                  >
+                                    three-dots.svg
+                                  </svg>
+                                </span>
+                              </span>
+                            </button>
+                          </span>
+                          <span
+                            class=""
+                          >
+                            <div
+                              class="makeStyles-iconInactive-2772"
+                              data-testid="popover-wrapper"
+                            >
+                              
+                            </div>
+                          </span>
+                        </div>
+                      </div>
+                    </span>
+                  </span>
+                </div>
+              </td>
+            </tr>
+            <tr
+              class="MuiTableRow-root WithStyles(ForwardRef(TableRow))-root-2768 makeStyles-clickableRow-2690"
+              data-testid="invoice-list-row"
+            >
+              <td
+                class="MuiTableCell-root MuiTableCell-body"
+              >
+                720908
+              </td>
+              <td
+                class="MuiTableCell-root MuiTableCell-body makeStyles-listNameFullWidth-2676"
+              >
+                <a
+                  class="Link-root-2769"
+                  data-testid="invoice-list-row-client-button"
+                  href="/clients/detail/9164e4c4-6521-47bb-97fd-c75ac02b2cf5"
+                  title="View Client details"
+                >
+                  Test Company
+                </a>
+              </td>
+              <td
+                class="MuiTableCell-root MuiTableCell-body makeStyles-listName-2675 makeStyles-listNameFullWidth-2676"
+              >
+                <a
+                  class="Link-root-2769"
+                  data-testid="invoice-list-row-project-button"
+                  href="/projects/detail/9164e4c4-6521-47bb-97fd-c75ac02b2cf2"
+                  title="View Project details"
+                >
+                  Test Project
+                </a>
+              </td>
+              <td
+                class="MuiTableCell-root MuiTableCell-body"
+              >
+                -
+              </td>
+              <td
+                class="MuiTableCell-root MuiTableCell-body makeStyles-boldTableCell-2744"
+              >
+                $ 
+                0
+              </td>
+              <td
+                class="MuiTableCell-root MuiTableCell-body"
+              >
+                <div
+                  class="makeStyles-invoiceRowLastCell-2745"
+                >
+                  <span
+                    class="makeStyles-invoiceRowStatusCell-2747"
+                  >
+                    <div
+                      class="MuiChip-root makeStyles-statusChip-2756 makeStyles-pending-2763 makeStyles-invoiceStatusChip-2743 MuiChip-colorPrimary"
+                    >
+                      <span
+                        class="MuiChip-label"
+                      >
+                        Pending
+                      </span>
+                    </div>
+                  </span>
+                  <span
+                    class="makeStyles-invoiceRowIconsWrapper-2748"
+                  >
+                    <span
+                      class="makeStyles-invoiceRowButton-2751"
+                      data-testid="controlled-button"
+                      tabindex="-1"
+                    >
+                      <button
+                        aria-label="invoice-information"
+                        class="MuiButtonBase-root MuiIconButton-root"
+                        data-testid="open-invoice-information"
+                        tabindex="0"
+                        title="Invoice Information"
+                        type="button"
+                      >
+                        <span
+                          class="MuiIconButton-label"
+                        >
+                          <svg
+                            class="makeStyles-invoiceIcon-2749"
+                          >
+                            invoice.svg
+                          </svg>
+                        </span>
+                      </button>
+                    </span>
+                    <span
+                      class="makeStyles-invoiceRowButton-2751"
+                      data-testid="controlled-button"
+                      tabindex="-1"
+                    >
+                      <div
+                        class="MuiBox-root MuiBox-root-2776 makeStyles-filterStatusContainer-2617 buttonMenuContainer"
+                      >
+                        <div
+                          class="makeStyles-filterWrapper-2622 buttonMenuWrapper"
+                        >
+                          <span
+                            class=""
+                            data-testid="controlled-button"
+                            tabindex="-1"
+                          >
+                            <button
+                              aria-controls="false"
+                              aria-haspopup="true"
+                              class="MuiButtonBase-root MuiButton-root MuiButton-contained makeStyles-invoiceActionsButton-2752 MuiButton-containedPrimary"
+                              data-testid="popover-button"
+                              tabindex="0"
+                              type="button"
+                            >
+                              <span
+                                class="MuiButton-label"
+                              >
+                                
+                                <span
+                                  class="MuiButton-endIcon MuiButton-iconSizeMedium"
+                                >
+                                  <svg
+                                    class="makeStyles-invoiceIcon-2749"
+                                  >
+                                    three-dots.svg
+                                  </svg>
+                                </span>
+                              </span>
+                            </button>
+                          </span>
+                          <span
+                            class=""
+                          >
+                            <div
+                              class="makeStyles-iconInactive-2772"
+                              data-testid="popover-wrapper"
+                            >
+                              
+                            </div>
+                          </span>
+                        </div>
+                      </div>
+                    </span>
+                  </span>
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <nav
+          aria-label="pagination navigation"
+          class="MuiPagination-root  makeStyles-pagination-2777"
+          data-testid="pagination"
+        >
+          <ul
+            class="MuiPagination-ul"
+          >
+            <li>
+              <button
+                aria-label="Go to previous page"
+                class="MuiButtonBase-root MuiPaginationItem-root MuiPaginationItem-page Mui-disabled Mui-disabled"
+                disabled=""
+                tabindex="-1"
+                type="button"
+              >
+                <svg
+                  aria-hidden="true"
+                  class="MuiSvgIcon-root MuiPaginationItem-icon"
+                  focusable="false"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"
+                  />
+                </svg>
+              </button>
+            </li>
+            <li>
+              <button
+                aria-label="Go to next page"
+                class="MuiButtonBase-root MuiPaginationItem-root MuiPaginationItem-page Mui-disabled Mui-disabled"
+                disabled=""
+                tabindex="-1"
+                type="button"
+              >
+                <svg
+                  aria-hidden="true"
+                  class="MuiSvgIcon-root MuiPaginationItem-icon"
+                  focusable="false"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"
+                  />
+                </svg>
+              </button>
+            </li>
+          </ul>
+        </nav>
+        <div
+          class="MuiDrawer-root MuiDrawer-docked makeStyles-drawer-2778 makeStyles-close-2789 closed"
+          data-testid="invoice-drawer-detail"
+        >
+          <div
+            class="MuiPaper-root MuiDrawer-paper makeStyles-drawerPaper-2779 MuiDrawer-paperAnchorRight MuiDrawer-paperAnchorDockedRight MuiPaper-elevation0"
+            style="visibility: hidden; webkit-transform: translateX(1024px) translateX(0px); transform: translateX(1024px) translateX(0px);"
+          >
+            <div
+              class="makeStyles-drawerButtonWrapper-2781"
+            >
+              <div
+                class="makeStyles-drawerButton-2782"
+              >
+                <button
+                  class="MuiButtonBase-root MuiButton-root MuiButton-text"
+                  data-testid="drawer-close-btn"
+                  style="outline: none;"
+                  tabindex="0"
+                  type="button"
+                >
+                  <span
+                    class="MuiButton-label"
+                  >
+                    <svg>
+                      close.svg
+                    </svg>
+                  </span>
+                  <span
+                    class="MuiTouchRipple-root"
+                  />
+                </button>
+              </div>
+              <div
+                class="makeStyles-drawerHeader-2780"
+              >
+                <p
+                  class="MuiTypography-root makeStyles-drawerTitle-2783 MuiTypography-body1 MuiTypography-colorPrimary MuiTypography-alignLeft"
+                >
+                  Invoice Information
+                </p>
+              </div>
+            </div>
+            <div
+              class="makeStyles-listDetail-2682"
+            >
+              <div
+                class="makeStyles-company-2683"
+              >
+                <div
+                  class="makeStyles-drawerText-2785"
+                >
+                  <p
+                    class="MuiTypography-root makeStyles-listAccent-2684 makeStyles-entityTitle-2681 MuiTypography-body1"
+                  >
+                    720909
+                  </p>
+                  <div
+                    class="makeStyles-drawerMainText-2786"
+                  >
+                    <span>
+                      Manual Invoice
+                    </span>
+                  </div>
+                </div>
+                <div
+                  class="makeStyles-drawerSection-2784"
+                >
+                  <div
+                    class="makeStyles-drawerColumnDirection-2793"
+                  >
+                    <div
+                      class="makeStyles-drawerRowDirection-2794"
+                    >
+                      <svg>
+                        monetization.svg
+                      </svg>
+                      <div
+                        class="makeStyles-drawerText-2785 makeStyles-drawerTextSeparation-2787"
+                      >
+                        <span
+                          class="makeStyles-listAccent-2684 makeStyles-listIconLabel-2695"
+                        >
+                          $ 
+                          0
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="makeStyles-drawerSection-2784 makeStyles-drawerProjectColumn-2792"
+                >
+                  <div
+                    class="makeStyles-projectWrapper-2790"
+                  >
+                    <svg>
+                      location.svg
+                    </svg>
+                    <div
+                      class="makeStyles-drawerText-2785 makeStyles-drawerTextSeparation-2787"
+                    >
+                      <span
+                        class="makeStyles-listAccent-2684"
+                      >
+                        -
+                      </span>
+                      <span>
+                        -
+                      </span>
+                      <span>
+                        -
+                      </span>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="makeStyles-drawerSection-2784 makeStyles-drawerProjectColumn-2792"
+                >
+                  <div
+                    class="makeStyles-projectWrapper-2790"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      class="MuiSvgIcon-root"
+                      focusable="false"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"
+                      />
+                    </svg>
+                    <div
+                      class="makeStyles-drawerText-2785 makeStyles-drawerTextSeparation-2787"
+                    >
+                      <span
+                        class="makeStyles-listAccent-2684"
+                      >
+                        - -
+                      </span>
+                      <span>
+                        -
+                      </span>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="makeStyles-drawerSection-2784 makeStyles-drawerProjectColumn-2792"
+                >
+                  <div
+                    class="makeStyles-projectWrapper-2790"
+                  >
+                    <svg>
+                      project.svg
+                    </svg>
+                    <div
+                      class="makeStyles-drawerText-2785 makeStyles-drawerTextSeparation-2787"
+                    >
+                      <span
+                        class="makeStyles-listAccent-2684"
+                      >
+                        Las Vegas Casino
+                      </span>
+                      <span>
+                        Stadium/Entertainment
+                      </span>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="makeStyles-drawerSection-2784 makeStyles-drawerProjectColumn-2792"
+                >
+                  <div
+                    class="makeStyles-projectWrapper-2790"
+                  >
+                    <svg>
+                      calendar.svg
+                    </svg>
+                    <div
+                      class="makeStyles-drawerText-2785 makeStyles-drawerTextSeparation-2787"
+                    >
+                      <span>
+                        Creation Date: 
+                        Dec 09, 2020
+                      </span>
+                      <span>
+                        Payment Date: 
+                        -
+                      </span>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="makeStyles-drawerSection-2784 makeStyles-drawerProjectColumn-2792"
+                >
+                  <div
+                    class="makeStyles-projectWrapper-2790"
+                  >
+                    <svg>
+                      notes.svg
+                    </svg>
+                    <div
+                      class="makeStyles-drawerText-2785 makeStyles-drawerTextSeparation-2787"
+                    >
+                      <span>
+                        Test
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`InvoiceList should open invoice modal 1`] = `
+<div
+  aria-hidden="true"
+>
+  <div
+    style="width: 100%; background-color: rgb(245, 245, 245); padding: 2.5rem;"
+  >
+    <div
+      class=""
+    >
+      <div
+        class="MuiBox-root MuiBox-root-1286"
+        style="height: 50px; margin-bottom: 13px; width: 100%;"
+      >
+        <div
+          class="MuiBox-root MuiBox-root-1287"
+          style="display: flex; align-items: center; justify-content: space-between;"
+        >
+          <div>
+            <div
+              class="MuiBox-root MuiBox-root-1288"
+              style="display: flex; align-items: center; margin-top: 5px;"
+            >
+              <h2
+                class="MuiTypography-root MuiTypography-h1"
+                style="color: rgb(68, 68, 68); font-size: 2.25rem; font-weight: 600; letter-spacing: 0; margin-right: 0.5rem;"
+              >
+                Invoices
+              </h2>
+            </div>
+          </div>
+          <button
+            class="MuiButtonBase-root MuiButton-root MuiButton-contained makeStyles-createButton-1234 makeStyles-primaryButtonLarge-1236 MuiButton-containedPrimary MuiButton-containedSizeLarge MuiButton-sizeLarge MuiButton-fullWidth"
+            data-testid="create-invoice-btn"
+            tabindex="0"
+            type="button"
+          >
+            <span
+              class="MuiButton-label"
+            >
+              Create Invoice
+            </span>
+            <span
+              class="MuiTouchRipple-root"
+            />
+          </button>
+        </div>
+      </div>
+      <div
+        class="makeStyles-widgetsWrapper-1268"
+        id="summary-widgets"
+      >
+        <div
+          class="MuiPaper-root makeStyles-widget-1289 MuiPaper-elevation0 MuiPaper-rounded"
+        >
+          <span
+            class="makeStyles-totalFont-1290"
+          >
+            5
+          </span>
+          <div
+            class="makeStyles-contentContainer-1293"
+          >
+            <span
+              class="makeStyles-statusFont-1291"
+            >
+              Unpaid
+            </span>
+            <span
+              class="makeStyles-contentFont-1292"
+            >
+              <a
+                href="/"
+              >
+                Review
+              </a>
+            </span>
+          </div>
+        </div>
+        <div
+          class="MuiPaper-root makeStyles-widget-1289 MuiPaper-elevation0 MuiPaper-rounded"
+        >
+          <span
+            class="makeStyles-totalFont-1290"
+          >
+            1
+          </span>
+          <div
+            class="makeStyles-contentContainer-1293"
+          >
+            <span
+              class="makeStyles-statusFont-1291"
+            >
+              Paid
+            </span>
+            <span
+              class="makeStyles-contentFont-1292"
+            >
+              <a
+                href="/invoices?isPaid=true"
+              >
+                Review
+              </a>
+            </span>
+          </div>
+        </div>
+        <div
+          class="MuiPaper-root makeStyles-widget-1289 MuiPaper-elevation0 MuiPaper-rounded"
+        >
+          <span
+            class="makeStyles-totalFont-1290"
+          >
+            $ 123.00
+          </span>
+          <div
+            class="makeStyles-contentContainer-1293"
+          >
+            <span
+              class="makeStyles-statusFont-1291"
+            >
+              Revenue
+            </span>
+            <span
+              class="makeStyles-contentFont-1292"
+            />
+          </div>
+        </div>
+      </div>
+      <div
+        class="makeStyles-tableWrapper-1193"
+      >
+        <div
+          class="makeStyles-filterContainer-1201"
+        >
+          <div
+            class="makeStyles-statusFilter-1202"
+          >
+            <button
+              class="MuiButtonBase-root MuiButton-root MuiButton-text makeStyles-activeFilter-1203"
+              data-testid="filter-status-opt"
+              tabindex="0"
+              type="button"
+            >
+              <span
+                class="MuiButton-label"
+              >
+                Unpaid
+              </span>
+              <span
+                class="MuiTouchRipple-root"
+              />
+            </button>
+            <button
+              class="MuiButtonBase-root MuiButton-root MuiButton-text"
+              data-testid="filter-status-opt"
+              tabindex="0"
+              type="button"
+            >
+              <span
+                class="MuiButton-label"
+              >
+                Paid
+              </span>
+              <span
+                class="MuiTouchRipple-root"
+              />
+            </button>
+          </div>
+          <div
+            class="makeStyles-filterActionsContainer-1204"
+          >
+            <div
+              class="MuiBox-root MuiBox-root-1294 makeStyles-filterStatusContainer-1207"
+            >
+              <div
+                class="makeStyles-floatingFilterWrapper-1213 makeStyles-filterWrapper-1212  floatingFilterWrapper"
+              >
+                <span
+                  class="makeStyles-floatingFilterButton-1214"
+                  data-testid="controlled-button"
+                  tabindex="-1"
+                >
+                  <button
+                    aria-controls="false"
+                    aria-haspopup="true"
+                    class="MuiButtonBase-root MuiButton-root MuiButton-text makeStyles-buttonFilter-1222"
+                    data-testid="button-filter-open"
+                    tabindex="0"
+                    type="button"
+                  >
+                    <span
+                      class="MuiButton-label"
+                    >
+                      All Times
+                      <span
+                        class="MuiButton-endIcon MuiButton-iconSizeMedium"
+                      >
+                        <svg
+                          class="makeStyles-dropdownIcon-1216"
+                        >
+                          expand.svg
+                        </svg>
+                      </span>
+                    </span>
+                  </button>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+        Loading...
+        <div
+          class="MuiDrawer-root MuiDrawer-docked makeStyles-drawer-1322 makeStyles-close-1333 closed"
+          data-testid="invoice-drawer-detail"
+        >
+          <div
+            class="MuiPaper-root MuiDrawer-paper makeStyles-drawerPaper-1323 MuiDrawer-paperAnchorRight MuiDrawer-paperAnchorDockedRight MuiPaper-elevation0"
+            style="visibility: hidden; webkit-transform: translateX(1024px) translateX(0px); transform: translateX(1024px) translateX(0px);"
+          >
+            <div
+              class="makeStyles-drawerButtonWrapper-1325"
+            >
+              <div
+                class="makeStyles-drawerButton-1326"
+              >
+                <button
+                  class="MuiButtonBase-root MuiButton-root MuiButton-text"
+                  data-testid="drawer-close-btn"
+                  style="outline: none;"
+                  tabindex="0"
+                  type="button"
+                >
+                  <span
+                    class="MuiButton-label"
+                  >
+                    <svg>
+                      close.svg
+                    </svg>
+                  </span>
+                  <span
+                    class="MuiTouchRipple-root"
+                  />
+                </button>
+              </div>
+              <div
+                class="makeStyles-drawerHeader-1324"
+              >
+                <p
+                  class="MuiTypography-root makeStyles-drawerTitle-1327 MuiTypography-body1 MuiTypography-colorPrimary MuiTypography-alignLeft"
+                >
+                  Invoice Information
+                </p>
+              </div>
+            </div>
+            <div
+              class="makeStyles-listDetail-1272"
+            >
+              <div
+                class="makeStyles-company-1273"
+              >
+                <div
+                  class="makeStyles-drawerText-1329"
+                >
+                  <p
+                    class="MuiTypography-root makeStyles-listAccent-1274 makeStyles-entityTitle-1271 MuiTypography-body1"
+                  >
+                    Draft Invoice
+                  </p>
+                  <div
+                    class="makeStyles-drawerMainText-1330"
+                  />
+                </div>
+                <div
+                  class="makeStyles-drawerSection-1328"
+                >
+                  <div
+                    class="makeStyles-drawerColumnDirection-1337"
+                  >
+                    <div
+                      class="makeStyles-drawerRowDirection-1338"
+                    >
+                      <svg>
+                        monetization.svg
+                      </svg>
+                      <div
+                        class="makeStyles-drawerText-1329 makeStyles-drawerTextSeparation-1331"
+                      >
+                        <span
+                          class="makeStyles-listAccent-1274 makeStyles-listIconLabel-1285"
+                        >
+                          $ 
+                          0
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="makeStyles-drawerSection-1328 makeStyles-drawerProjectColumn-1336"
+                >
+                  <div
+                    class="makeStyles-projectWrapper-1334"
+                  >
+                    <svg>
+                      location.svg
+                    </svg>
+                    <div
+                      class="makeStyles-drawerText-1329 makeStyles-drawerTextSeparation-1331"
+                    >
+                      <span
+                        class="makeStyles-listAccent-1274"
+                      >
+                        -
+                      </span>
+                      <span>
+                        -
+                      </span>
+                      <span>
+                        -
+                      </span>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="makeStyles-drawerSection-1328 makeStyles-drawerProjectColumn-1336"
+                >
+                  <div
+                    class="makeStyles-projectWrapper-1334"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      class="MuiSvgIcon-root"
+                      focusable="false"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"
+                      />
+                    </svg>
+                    <div
+                      class="makeStyles-drawerText-1329 makeStyles-drawerTextSeparation-1331"
+                    >
+                      <span
+                        class="makeStyles-listAccent-1274"
+                      >
+                        - -
+                      </span>
+                      <span>
+                        -
+                      </span>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="makeStyles-drawerSection-1328 makeStyles-drawerProjectColumn-1336"
+                >
+                  <div
+                    class="makeStyles-projectWrapper-1334"
+                  >
+                    <svg>
+                      project.svg
+                    </svg>
+                    <div
+                      class="makeStyles-drawerText-1329 makeStyles-drawerTextSeparation-1331"
+                    >
+                      <span
+                        class="makeStyles-listAccent-1274"
+                      >
+                        -
+                      </span>
+                      <span>
+                        -
+                      </span>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="makeStyles-drawerSection-1328 makeStyles-drawerProjectColumn-1336"
+                >
+                  <div
+                    class="makeStyles-projectWrapper-1334"
+                  >
+                    <svg>
+                      calendar.svg
+                    </svg>
+                    <div
+                      class="makeStyles-drawerText-1329 makeStyles-drawerTextSeparation-1331"
+                    >
+                      <span>
+                        Creation Date: 
+                        -
+                      </span>
+                      <span>
+                        Payment Date: 
+                        -
+                      </span>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="makeStyles-drawerSection-1328 makeStyles-drawerProjectColumn-1336"
+                >
+                  <div
+                    class="makeStyles-projectWrapper-1334"
+                  >
+                    <svg>
+                      notes.svg
+                    </svg>
+                    <div
+                      class="makeStyles-drawerText-1329 makeStyles-drawerTextSeparation-1331"
+                    >
+                      <span>
+                        -
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`InvoiceList should render 1`] = `
+<div>
+  <div
+    style="width: 100%; background-color: rgb(245, 245, 245); padding: 2.5rem;"
+  >
+    <div
+      class=""
+    >
+      <div
+        class="MuiBox-root MuiBox-root-94"
+        style="height: 50px; margin-bottom: 13px; width: 100%;"
+      >
+        <div
+          class="MuiBox-root MuiBox-root-95"
+          style="display: flex; align-items: center; justify-content: space-between;"
+        >
+          <div>
+            <div
+              class="MuiBox-root MuiBox-root-96"
+              style="display: flex; align-items: center; margin-top: 5px;"
+            >
+              <h2
+                class="MuiTypography-root MuiTypography-h1"
+                style="color: rgb(68, 68, 68); font-size: 2.25rem; font-weight: 600; letter-spacing: 0; margin-right: 0.5rem;"
+              >
+                Invoices
+              </h2>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="makeStyles-widgetsWrapper-76"
+        id="summary-widgets"
+      >
+        <div
+          class="MuiPaper-root makeStyles-widget-97 MuiPaper-elevation0 MuiPaper-rounded"
+        >
+          <span
+            class="makeStyles-totalFont-98"
+          >
+            5
+          </span>
+          <div
+            class="makeStyles-contentContainer-101"
+          >
+            <span
+              class="makeStyles-statusFont-99"
+            >
+              Unpaid
+            </span>
+            <span
+              class="makeStyles-contentFont-100"
+            >
+              <a
+                href="/"
+              >
+                Review
+              </a>
+            </span>
+          </div>
+        </div>
+        <div
+          class="MuiPaper-root makeStyles-widget-97 MuiPaper-elevation0 MuiPaper-rounded"
+        >
+          <span
+            class="makeStyles-totalFont-98"
+          >
+            1
+          </span>
+          <div
+            class="makeStyles-contentContainer-101"
+          >
+            <span
+              class="makeStyles-statusFont-99"
+            >
+              Paid
+            </span>
+            <span
+              class="makeStyles-contentFont-100"
+            >
+              <a
+                href="/invoices?isPaid=true"
+              >
+                Review
+              </a>
+            </span>
+          </div>
+        </div>
+        <div
+          class="MuiPaper-root makeStyles-widget-97 MuiPaper-elevation0 MuiPaper-rounded"
+        >
+          <span
+            class="makeStyles-totalFont-98"
+          >
+            $ 123.00
+          </span>
+          <div
+            class="makeStyles-contentContainer-101"
+          >
+            <span
+              class="makeStyles-statusFont-99"
+            >
+              Revenue
+            </span>
+            <span
+              class="makeStyles-contentFont-100"
+            />
+          </div>
+        </div>
+      </div>
+      <div
+        class="makeStyles-tableWrapper-1"
+      >
+        <div
+          class="makeStyles-filterContainer-9"
+        >
+          <div
+            class="makeStyles-statusFilter-10"
+          >
+            <button
+              class="MuiButtonBase-root MuiButton-root MuiButton-text makeStyles-activeFilter-11"
+              data-testid="filter-status-opt"
+              tabindex="0"
+              type="button"
+            >
+              <span
+                class="MuiButton-label"
+              >
+                Unpaid
+              </span>
+              <span
+                class="MuiTouchRipple-root"
+              />
+            </button>
+            <button
+              class="MuiButtonBase-root MuiButton-root MuiButton-text"
+              data-testid="filter-status-opt"
+              tabindex="0"
+              type="button"
+            >
+              <span
+                class="MuiButton-label"
+              >
+                Paid
+              </span>
+              <span
+                class="MuiTouchRipple-root"
+              />
+            </button>
+          </div>
+          <div
+            class="makeStyles-filterActionsContainer-12"
+          >
+            <div
+              class="MuiBox-root MuiBox-root-102 makeStyles-filterStatusContainer-15"
+            >
+              <div
+                class="makeStyles-floatingFilterWrapper-21 makeStyles-filterWrapper-20  floatingFilterWrapper"
+              >
+                <span
+                  class="makeStyles-floatingFilterButton-22"
+                  data-testid="controlled-button"
+                  tabindex="-1"
+                >
+                  <button
+                    aria-controls="false"
+                    aria-haspopup="true"
+                    class="MuiButtonBase-root MuiButton-root MuiButton-text makeStyles-buttonFilter-30"
+                    data-testid="button-filter-open"
+                    tabindex="0"
+                    type="button"
+                  >
+                    <span
+                      class="MuiButton-label"
+                    >
+                      All Times
+                      <span
+                        class="MuiButton-endIcon MuiButton-iconSizeMedium"
+                      >
+                        <svg
+                          class="makeStyles-dropdownIcon-24"
+                        >
+                          expand.svg
+                        </svg>
+                      </span>
+                    </span>
+                  </button>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+        Loading...
+        <div
+          class="MuiDrawer-root MuiDrawer-docked makeStyles-drawer-130 makeStyles-close-141 closed"
+          data-testid="invoice-drawer-detail"
+        >
+          <div
+            class="MuiPaper-root MuiDrawer-paper makeStyles-drawerPaper-131 MuiDrawer-paperAnchorRight MuiDrawer-paperAnchorDockedRight MuiPaper-elevation0"
+            style="visibility: hidden; webkit-transform: translateX(1024px) translateX(0px); transform: translateX(1024px) translateX(0px);"
+          >
+            <div
+              class="makeStyles-drawerButtonWrapper-133"
+            >
+              <div
+                class="makeStyles-drawerButton-134"
+              >
+                <button
+                  class="MuiButtonBase-root MuiButton-root MuiButton-text"
+                  data-testid="drawer-close-btn"
+                  style="outline: none;"
+                  tabindex="0"
+                  type="button"
+                >
+                  <span
+                    class="MuiButton-label"
+                  >
+                    <svg>
+                      close.svg
+                    </svg>
+                  </span>
+                  <span
+                    class="MuiTouchRipple-root"
+                  />
+                </button>
+              </div>
+              <div
+                class="makeStyles-drawerHeader-132"
+              >
+                <p
+                  class="MuiTypography-root makeStyles-drawerTitle-135 MuiTypography-body1 MuiTypography-colorPrimary MuiTypography-alignLeft"
+                >
+                  Invoice Information
+                </p>
+              </div>
+            </div>
+            <div
+              class="makeStyles-listDetail-80"
+            >
+              <div
+                class="makeStyles-company-81"
+              >
+                <div
+                  class="makeStyles-drawerText-137"
+                >
+                  <p
+                    class="MuiTypography-root makeStyles-listAccent-82 makeStyles-entityTitle-79 MuiTypography-body1"
+                  >
+                    Draft Invoice
+                  </p>
+                  <div
+                    class="makeStyles-drawerMainText-138"
+                  />
+                </div>
+                <div
+                  class="makeStyles-drawerSection-136"
+                >
+                  <div
+                    class="makeStyles-drawerColumnDirection-145"
+                  >
+                    <div
+                      class="makeStyles-drawerRowDirection-146"
+                    >
+                      <svg>
+                        monetization.svg
+                      </svg>
+                      <div
+                        class="makeStyles-drawerText-137 makeStyles-drawerTextSeparation-139"
+                      >
+                        <span
+                          class="makeStyles-listAccent-82 makeStyles-listIconLabel-93"
+                        >
+                          $ 
+                          0
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="makeStyles-drawerSection-136 makeStyles-drawerProjectColumn-144"
+                >
+                  <div
+                    class="makeStyles-projectWrapper-142"
+                  >
+                    <svg>
+                      location.svg
+                    </svg>
+                    <div
+                      class="makeStyles-drawerText-137 makeStyles-drawerTextSeparation-139"
+                    >
+                      <span
+                        class="makeStyles-listAccent-82"
+                      >
+                        -
+                      </span>
+                      <span>
+                        -
+                      </span>
+                      <span>
+                        -
+                      </span>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="makeStyles-drawerSection-136 makeStyles-drawerProjectColumn-144"
+                >
+                  <div
+                    class="makeStyles-projectWrapper-142"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      class="MuiSvgIcon-root"
+                      focusable="false"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"
+                      />
+                    </svg>
+                    <div
+                      class="makeStyles-drawerText-137 makeStyles-drawerTextSeparation-139"
+                    >
+                      <span
+                        class="makeStyles-listAccent-82"
+                      >
+                        - -
+                      </span>
+                      <span>
+                        -
+                      </span>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="makeStyles-drawerSection-136 makeStyles-drawerProjectColumn-144"
+                >
+                  <div
+                    class="makeStyles-projectWrapper-142"
+                  >
+                    <svg>
+                      project.svg
+                    </svg>
+                    <div
+                      class="makeStyles-drawerText-137 makeStyles-drawerTextSeparation-139"
+                    >
+                      <span
+                        class="makeStyles-listAccent-82"
+                      >
+                        -
+                      </span>
+                      <span>
+                        -
+                      </span>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="makeStyles-drawerSection-136 makeStyles-drawerProjectColumn-144"
+                >
+                  <div
+                    class="makeStyles-projectWrapper-142"
+                  >
+                    <svg>
+                      calendar.svg
+                    </svg>
+                    <div
+                      class="makeStyles-drawerText-137 makeStyles-drawerTextSeparation-139"
+                    >
+                      <span>
+                        Creation Date: 
+                        -
+                      </span>
+                      <span>
+                        Payment Date: 
+                        -
+                      </span>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="makeStyles-drawerSection-136 makeStyles-drawerProjectColumn-144"
+                >
+                  <div
+                    class="makeStyles-projectWrapper-142"
+                  >
+                    <svg>
+                      notes.svg
+                    </svg>
+                    <div
+                      class="makeStyles-drawerText-137 makeStyles-drawerTextSeparation-139"
+                    >
+                      <span>
+                        -
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`InvoiceList should render no FcAdmin 1`] = `
+<div>
+  <div
+    style="width: 100%; background-color: rgb(245, 245, 245); padding: 2.5rem;"
+  >
+    <div
+      class=""
+    >
+      <div
+        class="MuiBox-root MuiBox-root-392"
+        style="height: 50px; margin-bottom: 13px; width: 100%;"
+      >
+        <div
+          class="MuiBox-root MuiBox-root-393"
+          style="display: flex; align-items: center; justify-content: space-between;"
+        >
+          <div>
+            <div
+              class="MuiBox-root MuiBox-root-394"
+              style="display: flex; align-items: center; margin-top: 5px;"
+            >
+              <h2
+                class="MuiTypography-root MuiTypography-h1"
+                style="color: rgb(68, 68, 68); font-size: 2.25rem; font-weight: 600; letter-spacing: 0; margin-right: 0.5rem;"
+              >
+                Invoices
+              </h2>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="makeStyles-widgetsWrapper-374"
+        id="summary-widgets"
+      >
+        <div
+          class="MuiPaper-root makeStyles-widget-395 MuiPaper-elevation0 MuiPaper-rounded"
+        >
+          <span
+            class="makeStyles-totalFont-396"
+          >
+            5
+          </span>
+          <div
+            class="makeStyles-contentContainer-399"
+          >
+            <span
+              class="makeStyles-statusFont-397"
+            >
+              Unpaid
+            </span>
+            <span
+              class="makeStyles-contentFont-398"
+            >
+              <a
+                href="/"
+              >
+                Review
+              </a>
+            </span>
+          </div>
+        </div>
+        <div
+          class="MuiPaper-root makeStyles-widget-395 MuiPaper-elevation0 MuiPaper-rounded"
+        >
+          <span
+            class="makeStyles-totalFont-396"
+          >
+            1
+          </span>
+          <div
+            class="makeStyles-contentContainer-399"
+          >
+            <span
+              class="makeStyles-statusFont-397"
+            >
+              Paid
+            </span>
+            <span
+              class="makeStyles-contentFont-398"
+            >
+              <a
+                href="/invoices?isPaid=true"
+              >
+                Review
+              </a>
+            </span>
+          </div>
+        </div>
+        <div
+          class="MuiPaper-root makeStyles-widget-395 MuiPaper-elevation0 MuiPaper-rounded"
+        >
+          <span
+            class="makeStyles-totalFont-396"
+          >
+            $ 123.00
+          </span>
+          <div
+            class="makeStyles-contentContainer-399"
+          >
+            <span
+              class="makeStyles-statusFont-397"
+            >
+              Invoices
+            </span>
+            <span
+              class="makeStyles-contentFont-398"
+            />
+          </div>
+        </div>
+      </div>
+      <div
+        class="makeStyles-tableWrapper-299"
+      >
+        <div
+          class="makeStyles-filterContainer-307"
+        >
+          <div
+            class="makeStyles-statusFilter-308"
+          >
+            <button
+              class="MuiButtonBase-root MuiButton-root MuiButton-text makeStyles-activeFilter-309"
+              data-testid="filter-status-opt"
+              tabindex="0"
+              type="button"
+            >
+              <span
+                class="MuiButton-label"
+              >
+                Unpaid
+              </span>
+              <span
+                class="MuiTouchRipple-root"
+              />
+            </button>
+            <button
+              class="MuiButtonBase-root MuiButton-root MuiButton-text"
+              data-testid="filter-status-opt"
+              tabindex="0"
+              type="button"
+            >
+              <span
+                class="MuiButton-label"
+              >
+                Paid
+              </span>
+              <span
+                class="MuiTouchRipple-root"
+              />
+            </button>
+          </div>
+          <div
+            class="makeStyles-filterActionsContainer-310"
+          >
+            <div
+              class="MuiBox-root MuiBox-root-400 makeStyles-filterStatusContainer-313"
+            >
+              <div
+                class="makeStyles-floatingFilterWrapper-319 makeStyles-filterWrapper-318  floatingFilterWrapper"
+              >
+                <span
+                  class="makeStyles-floatingFilterButton-320"
+                  data-testid="controlled-button"
+                  tabindex="-1"
+                >
+                  <button
+                    aria-controls="false"
+                    aria-haspopup="true"
+                    class="MuiButtonBase-root MuiButton-root MuiButton-text makeStyles-buttonFilter-328"
+                    data-testid="button-filter-open"
+                    tabindex="0"
+                    type="button"
+                  >
+                    <span
+                      class="MuiButton-label"
+                    >
+                      All Times
+                      <span
+                        class="MuiButton-endIcon MuiButton-iconSizeMedium"
+                      >
+                        <svg
+                          class="makeStyles-dropdownIcon-322"
+                        >
+                          expand.svg
+                        </svg>
+                      </span>
+                    </span>
+                  </button>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+        Loading...
+        <div
+          class="MuiDrawer-root MuiDrawer-docked makeStyles-drawer-428 makeStyles-close-439 closed"
+          data-testid="invoice-drawer-detail"
+        >
+          <div
+            class="MuiPaper-root MuiDrawer-paper makeStyles-drawerPaper-429 MuiDrawer-paperAnchorRight MuiDrawer-paperAnchorDockedRight MuiPaper-elevation0"
+            style="visibility: hidden; webkit-transform: translateX(1024px) translateX(0px); transform: translateX(1024px) translateX(0px);"
+          >
+            <div
+              class="makeStyles-drawerButtonWrapper-431"
+            >
+              <div
+                class="makeStyles-drawerButton-432"
+              >
+                <button
+                  class="MuiButtonBase-root MuiButton-root MuiButton-text"
+                  data-testid="drawer-close-btn"
+                  style="outline: none;"
+                  tabindex="0"
+                  type="button"
+                >
+                  <span
+                    class="MuiButton-label"
+                  >
+                    <svg>
+                      close.svg
+                    </svg>
+                  </span>
+                  <span
+                    class="MuiTouchRipple-root"
+                  />
+                </button>
+              </div>
+              <div
+                class="makeStyles-drawerHeader-430"
+              >
+                <p
+                  class="MuiTypography-root makeStyles-drawerTitle-433 MuiTypography-body1 MuiTypography-colorPrimary MuiTypography-alignLeft"
+                >
+                  Invoice Information
+                </p>
+              </div>
+            </div>
+            <div
+              class="makeStyles-listDetail-378"
+            >
+              <div
+                class="makeStyles-company-379"
+              >
+                <div
+                  class="makeStyles-drawerText-435"
+                >
+                  <p
+                    class="MuiTypography-root makeStyles-listAccent-380 makeStyles-entityTitle-377 MuiTypography-body1"
+                  >
+                    Draft Invoice
+                  </p>
+                  <div
+                    class="makeStyles-drawerMainText-436"
+                  />
+                </div>
+                <div
+                  class="makeStyles-drawerSection-434"
+                >
+                  <div
+                    class="makeStyles-drawerColumnDirection-443"
+                  >
+                    <div
+                      class="makeStyles-drawerRowDirection-444"
+                    >
+                      <svg>
+                        monetization.svg
+                      </svg>
+                      <div
+                        class="makeStyles-drawerText-435 makeStyles-drawerTextSeparation-437"
+                      >
+                        <span
+                          class="makeStyles-listAccent-380 makeStyles-listIconLabel-391"
+                        >
+                          $ 
+                          0
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="makeStyles-drawerSection-434 makeStyles-drawerProjectColumn-442"
+                >
+                  <div
+                    class="makeStyles-projectWrapper-440"
+                  >
+                    <svg>
+                      location.svg
+                    </svg>
+                    <div
+                      class="makeStyles-drawerText-435 makeStyles-drawerTextSeparation-437"
+                    >
+                      <span
+                        class="makeStyles-listAccent-380"
+                      >
+                        -
+                      </span>
+                      <span>
+                        -
+                      </span>
+                      <span>
+                        -
+                      </span>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="makeStyles-drawerSection-434 makeStyles-drawerProjectColumn-442"
+                >
+                  <div
+                    class="makeStyles-projectWrapper-440"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      class="MuiSvgIcon-root"
+                      focusable="false"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"
+                      />
+                    </svg>
+                    <div
+                      class="makeStyles-drawerText-435 makeStyles-drawerTextSeparation-437"
+                    >
+                      <span
+                        class="makeStyles-listAccent-380"
+                      >
+                        - -
+                      </span>
+                      <span>
+                        -
+                      </span>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="makeStyles-drawerSection-434 makeStyles-drawerProjectColumn-442"
+                >
+                  <div
+                    class="makeStyles-projectWrapper-440"
+                  >
+                    <svg>
+                      project.svg
+                    </svg>
+                    <div
+                      class="makeStyles-drawerText-435 makeStyles-drawerTextSeparation-437"
+                    >
+                      <span
+                        class="makeStyles-listAccent-380"
+                      >
+                        -
+                      </span>
+                      <span>
+                        -
+                      </span>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="makeStyles-drawerSection-434 makeStyles-drawerProjectColumn-442"
+                >
+                  <div
+                    class="makeStyles-projectWrapper-440"
+                  >
+                    <svg>
+                      calendar.svg
+                    </svg>
+                    <div
+                      class="makeStyles-drawerText-435 makeStyles-drawerTextSeparation-437"
+                    >
+                      <span>
+                        Creation Date: 
+                        -
+                      </span>
+                      <span>
+                        Payment Date: 
+                        -
+                      </span>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="makeStyles-drawerSection-434 makeStyles-drawerProjectColumn-442"
+                >
+                  <div
+                    class="makeStyles-projectWrapper-440"
+                  >
+                    <svg>
+                      notes.svg
+                    </svg>
+                    <div
+                      class="makeStyles-drawerText-435 makeStyles-drawerTextSeparation-437"
+                    >
+                      <span>
+                        -
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`InvoiceList should render without invoices 1`] = `
+<div>
+  <div
+    style="width: 100%; background-color: rgb(245, 245, 245); padding: 2.5rem;"
+  >
+    <div
+      class=""
+    >
+      <div
+        class="MuiBox-root MuiBox-root-243"
+        style="height: 50px; margin-bottom: 13px; width: 100%;"
+      >
+        <div
+          class="MuiBox-root MuiBox-root-244"
+          style="display: flex; align-items: center; justify-content: space-between;"
+        >
+          <div>
+            <div
+              class="MuiBox-root MuiBox-root-245"
+              style="display: flex; align-items: center; margin-top: 5px;"
+            >
+              <h2
+                class="MuiTypography-root MuiTypography-h1"
+                style="color: rgb(68, 68, 68); font-size: 2.25rem; font-weight: 600; letter-spacing: 0; margin-right: 0.5rem;"
+              >
+                Invoices
+              </h2>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="makeStyles-widgetsWrapper-225"
+        id="summary-widgets"
+      >
+        <div
+          class="MuiPaper-root makeStyles-widget-246 MuiPaper-elevation0 MuiPaper-rounded"
+        >
+          <span
+            class="makeStyles-totalFont-247"
+          >
+            5
+          </span>
+          <div
+            class="makeStyles-contentContainer-250"
+          >
+            <span
+              class="makeStyles-statusFont-248"
+            >
+              Unpaid
+            </span>
+            <span
+              class="makeStyles-contentFont-249"
+            >
+              <a
+                href="/"
+              >
+                Review
+              </a>
+            </span>
+          </div>
+        </div>
+        <div
+          class="MuiPaper-root makeStyles-widget-246 MuiPaper-elevation0 MuiPaper-rounded"
+        >
+          <span
+            class="makeStyles-totalFont-247"
+          >
+            1
+          </span>
+          <div
+            class="makeStyles-contentContainer-250"
+          >
+            <span
+              class="makeStyles-statusFont-248"
+            >
+              Paid
+            </span>
+            <span
+              class="makeStyles-contentFont-249"
+            >
+              <a
+                href="/invoices?isPaid=true"
+              >
+                Review
+              </a>
+            </span>
+          </div>
+        </div>
+        <div
+          class="MuiPaper-root makeStyles-widget-246 MuiPaper-elevation0 MuiPaper-rounded"
+        >
+          <span
+            class="makeStyles-totalFont-247"
+          >
+            $ 123.00
+          </span>
+          <div
+            class="makeStyles-contentContainer-250"
+          >
+            <span
+              class="makeStyles-statusFont-248"
+            >
+              Revenue
+            </span>
+            <span
+              class="makeStyles-contentFont-249"
+            />
+          </div>
+        </div>
+      </div>
+      <div
+        class="makeStyles-tableWrapper-150"
+      >
+        <div
+          class="makeStyles-filterContainer-158"
+        >
+          <div
+            class="makeStyles-statusFilter-159"
+          >
+            <button
+              class="MuiButtonBase-root MuiButton-root MuiButton-text makeStyles-activeFilter-160"
+              data-testid="filter-status-opt"
+              tabindex="0"
+              type="button"
+            >
+              <span
+                class="MuiButton-label"
+              >
+                Unpaid
+              </span>
+              <span
+                class="MuiTouchRipple-root"
+              />
+            </button>
+            <button
+              class="MuiButtonBase-root MuiButton-root MuiButton-text"
+              data-testid="filter-status-opt"
+              tabindex="0"
+              type="button"
+            >
+              <span
+                class="MuiButton-label"
+              >
+                Paid
+              </span>
+              <span
+                class="MuiTouchRipple-root"
+              />
+            </button>
+          </div>
+          <div
+            class="makeStyles-filterActionsContainer-161"
+          >
+            <div
+              class="MuiBox-root MuiBox-root-251 makeStyles-filterStatusContainer-164"
+            >
+              <div
+                class="makeStyles-floatingFilterWrapper-170 makeStyles-filterWrapper-169  floatingFilterWrapper"
+              >
+                <span
+                  class="makeStyles-floatingFilterButton-171"
+                  data-testid="controlled-button"
+                  tabindex="-1"
+                >
+                  <button
+                    aria-controls="false"
+                    aria-haspopup="true"
+                    class="MuiButtonBase-root MuiButton-root MuiButton-text makeStyles-buttonFilter-179"
+                    data-testid="button-filter-open"
+                    tabindex="0"
+                    type="button"
+                  >
+                    <span
+                      class="MuiButton-label"
+                    >
+                      All Times
+                      <span
+                        class="MuiButton-endIcon MuiButton-iconSizeMedium"
+                      >
+                        <svg
+                          class="makeStyles-dropdownIcon-173"
+                        >
+                          expand.svg
+                        </svg>
+                      </span>
+                    </span>
+                  </button>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+        Loading...
+        <div
+          class="MuiDrawer-root MuiDrawer-docked makeStyles-drawer-279 makeStyles-close-290 closed"
+          data-testid="invoice-drawer-detail"
+        >
+          <div
+            class="MuiPaper-root MuiDrawer-paper makeStyles-drawerPaper-280 MuiDrawer-paperAnchorRight MuiDrawer-paperAnchorDockedRight MuiPaper-elevation0"
+            style="visibility: hidden; webkit-transform: translateX(1024px) translateX(0px); transform: translateX(1024px) translateX(0px);"
+          >
+            <div
+              class="makeStyles-drawerButtonWrapper-282"
+            >
+              <div
+                class="makeStyles-drawerButton-283"
+              >
+                <button
+                  class="MuiButtonBase-root MuiButton-root MuiButton-text"
+                  data-testid="drawer-close-btn"
+                  style="outline: none;"
+                  tabindex="0"
+                  type="button"
+                >
+                  <span
+                    class="MuiButton-label"
+                  >
+                    <svg>
+                      close.svg
+                    </svg>
+                  </span>
+                  <span
+                    class="MuiTouchRipple-root"
+                  />
+                </button>
+              </div>
+              <div
+                class="makeStyles-drawerHeader-281"
+              >
+                <p
+                  class="MuiTypography-root makeStyles-drawerTitle-284 MuiTypography-body1 MuiTypography-colorPrimary MuiTypography-alignLeft"
+                >
+                  Invoice Information
+                </p>
+              </div>
+            </div>
+            <div
+              class="makeStyles-listDetail-229"
+            >
+              <div
+                class="makeStyles-company-230"
+              >
+                <div
+                  class="makeStyles-drawerText-286"
+                >
+                  <p
+                    class="MuiTypography-root makeStyles-listAccent-231 makeStyles-entityTitle-228 MuiTypography-body1"
+                  >
+                    Draft Invoice
+                  </p>
+                  <div
+                    class="makeStyles-drawerMainText-287"
+                  />
+                </div>
+                <div
+                  class="makeStyles-drawerSection-285"
+                >
+                  <div
+                    class="makeStyles-drawerColumnDirection-294"
+                  >
+                    <div
+                      class="makeStyles-drawerRowDirection-295"
+                    >
+                      <svg>
+                        monetization.svg
+                      </svg>
+                      <div
+                        class="makeStyles-drawerText-286 makeStyles-drawerTextSeparation-288"
+                      >
+                        <span
+                          class="makeStyles-listAccent-231 makeStyles-listIconLabel-242"
+                        >
+                          $ 
+                          0
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="makeStyles-drawerSection-285 makeStyles-drawerProjectColumn-293"
+                >
+                  <div
+                    class="makeStyles-projectWrapper-291"
+                  >
+                    <svg>
+                      location.svg
+                    </svg>
+                    <div
+                      class="makeStyles-drawerText-286 makeStyles-drawerTextSeparation-288"
+                    >
+                      <span
+                        class="makeStyles-listAccent-231"
+                      >
+                        -
+                      </span>
+                      <span>
+                        -
+                      </span>
+                      <span>
+                        -
+                      </span>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="makeStyles-drawerSection-285 makeStyles-drawerProjectColumn-293"
+                >
+                  <div
+                    class="makeStyles-projectWrapper-291"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      class="MuiSvgIcon-root"
+                      focusable="false"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"
+                      />
+                    </svg>
+                    <div
+                      class="makeStyles-drawerText-286 makeStyles-drawerTextSeparation-288"
+                    >
+                      <span
+                        class="makeStyles-listAccent-231"
+                      >
+                        - -
+                      </span>
+                      <span>
+                        -
+                      </span>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="makeStyles-drawerSection-285 makeStyles-drawerProjectColumn-293"
+                >
+                  <div
+                    class="makeStyles-projectWrapper-291"
+                  >
+                    <svg>
+                      project.svg
+                    </svg>
+                    <div
+                      class="makeStyles-drawerText-286 makeStyles-drawerTextSeparation-288"
+                    >
+                      <span
+                        class="makeStyles-listAccent-231"
+                      >
+                        -
+                      </span>
+                      <span>
+                        -
+                      </span>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="makeStyles-drawerSection-285 makeStyles-drawerProjectColumn-293"
+                >
+                  <div
+                    class="makeStyles-projectWrapper-291"
+                  >
+                    <svg>
+                      calendar.svg
+                    </svg>
+                    <div
+                      class="makeStyles-drawerText-286 makeStyles-drawerTextSeparation-288"
+                    >
+                      <span>
+                        Creation Date: 
+                        -
+                      </span>
+                      <span>
+                        Payment Date: 
+                        -
+                      </span>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="makeStyles-drawerSection-285 makeStyles-drawerProjectColumn-293"
+                >
+                  <div
+                    class="makeStyles-projectWrapper-291"
+                  >
+                    <svg>
+                      notes.svg
+                    </svg>
+                    <div
+                      class="makeStyles-drawerText-286 makeStyles-drawerTextSeparation-288"
+                    >
+                      <span>
+                        -
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`InvoiceList should show edit loading 1`] = `
+<div
+  aria-hidden="true"
+>
+  <div
+    style="width: 100%; background-color: rgb(245, 245, 245); padding: 2.5rem;"
+  >
+    <div
+      class="makeStyles-deviceListContent-2496"
+    >
+      <div
+        class="MuiBox-root MuiBox-root-2498"
+        style="height: 50px; margin-bottom: 13px; width: 100%;"
+      >
+        <div
+          class="MuiBox-root MuiBox-root-2499"
+          style="display: flex; align-items: center; justify-content: space-between;"
+        >
+          <div>
+            <div
+              class="MuiBox-root MuiBox-root-2500"
+              style="display: flex; align-items: center; margin-top: 5px;"
+            >
+              <h2
+                class="MuiTypography-root MuiTypography-h1"
+                style="color: rgb(68, 68, 68); font-size: 2.25rem; font-weight: 600; letter-spacing: 0; margin-right: 0.5rem;"
+              >
+                Invoices
+              </h2>
+            </div>
+          </div>
+          <button
+            class="MuiButtonBase-root MuiButton-root MuiButton-contained makeStyles-createButton-2446 makeStyles-primaryButtonLarge-2448 MuiButton-containedPrimary MuiButton-containedSizeLarge MuiButton-sizeLarge MuiButton-fullWidth"
+            data-testid="create-invoice-btn"
+            tabindex="0"
+            type="button"
+          >
+            <span
+              class="MuiButton-label"
+            >
+              Create Invoice
+            </span>
+            <span
+              class="MuiTouchRipple-root"
+            />
+          </button>
+        </div>
+      </div>
+      <div
+        class="makeStyles-widgetsWrapper-2480"
+        id="summary-widgets"
+      >
+        <div
+          class="MuiPaper-root makeStyles-widget-2501 MuiPaper-elevation0 MuiPaper-rounded"
+        >
+          <span
+            class="makeStyles-totalFont-2502"
+          >
+            5
+          </span>
+          <div
+            class="makeStyles-contentContainer-2505"
+          >
+            <span
+              class="makeStyles-statusFont-2503"
+            >
+              Unpaid
+            </span>
+            <span
+              class="makeStyles-contentFont-2504"
+            >
+              <a
+                href="/"
+              >
+                Review
+              </a>
+            </span>
+          </div>
+        </div>
+        <div
+          class="MuiPaper-root makeStyles-widget-2501 MuiPaper-elevation0 MuiPaper-rounded"
+        >
+          <span
+            class="makeStyles-totalFont-2502"
+          >
+            1
+          </span>
+          <div
+            class="makeStyles-contentContainer-2505"
+          >
+            <span
+              class="makeStyles-statusFont-2503"
+            >
+              Paid
+            </span>
+            <span
+              class="makeStyles-contentFont-2504"
+            >
+              <a
+                href="/invoices?isPaid=true"
+              >
+                Review
+              </a>
+            </span>
+          </div>
+        </div>
+        <div
+          class="MuiPaper-root makeStyles-widget-2501 MuiPaper-elevation0 MuiPaper-rounded"
+        >
+          <span
+            class="makeStyles-totalFont-2502"
+          >
+            $ 123.00
+          </span>
+          <div
+            class="makeStyles-contentContainer-2505"
+          >
+            <span
+              class="makeStyles-statusFont-2503"
+            >
+              Revenue
+            </span>
+            <span
+              class="makeStyles-contentFont-2504"
+            />
+          </div>
+        </div>
+      </div>
+      <div
+        class="makeStyles-tableWrapper-2405"
+      >
+        <div
+          class="makeStyles-filterContainer-2413"
+        >
+          <div
+            class="makeStyles-statusFilter-2414"
+          >
+            <button
+              class="MuiButtonBase-root MuiButton-root MuiButton-text makeStyles-activeFilter-2415"
+              data-testid="filter-status-opt"
+              tabindex="0"
+              type="button"
+            >
+              <span
+                class="MuiButton-label"
+              >
+                Unpaid
+              </span>
+              <span
+                class="MuiTouchRipple-root"
+              />
+            </button>
+            <button
+              class="MuiButtonBase-root MuiButton-root MuiButton-text"
+              data-testid="filter-status-opt"
+              tabindex="0"
+              type="button"
+            >
+              <span
+                class="MuiButton-label"
+              >
+                Paid
+              </span>
+              <span
+                class="MuiTouchRipple-root"
+              />
+            </button>
+          </div>
+          <div
+            class="makeStyles-filterActionsContainer-2416"
+          >
+            <div
+              class="MuiBox-root MuiBox-root-2506 makeStyles-filterStatusContainer-2419"
+            >
+              <div
+                class="makeStyles-floatingFilterWrapper-2425 makeStyles-filterWrapper-2424  floatingFilterWrapper"
+              >
+                <span
+                  class="makeStyles-floatingFilterButton-2426"
+                  data-testid="controlled-button"
+                  tabindex="-1"
+                >
+                  <button
+                    aria-controls="false"
+                    aria-haspopup="true"
+                    class="MuiButtonBase-root MuiButton-root MuiButton-text makeStyles-buttonFilter-2434"
+                    data-testid="button-filter-open"
+                    tabindex="0"
+                    type="button"
+                  >
+                    <span
+                      class="MuiButton-label"
+                    >
+                      All Times
+                      <span
+                        class="MuiButton-endIcon MuiButton-iconSizeMedium"
+                      >
+                        <svg
+                          class="makeStyles-dropdownIcon-2428"
+                        >
+                          expand.svg
+                        </svg>
+                      </span>
+                    </span>
+                  </button>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <table
+          aria-label="invoice-list"
+          class="MuiTable-root"
+        >
+          <thead
+            class="MuiTableHead-root"
+          >
+            <tr
+              class="MuiTableRow-root MuiTableRow-head"
+            >
+              <th
+                class="MuiTableCell-root MuiTableCell-head"
+                scope="col"
+              >
+                Number
+              </th>
+              <th
+                class="MuiTableCell-root MuiTableCell-head"
+                scope="col"
+              >
+                Client
+              </th>
+              <th
+                class="MuiTableCell-root MuiTableCell-head"
+                scope="col"
+              >
+                Project
+              </th>
+              <th
+                class="MuiTableCell-root MuiTableCell-head"
+                scope="col"
+              >
+                Creation Date
+              </th>
+              <th
+                class="MuiTableCell-root MuiTableCell-head"
+                scope="col"
+              >
+                Amount
+              </th>
+              <th
+                class="MuiTableCell-root MuiTableCell-head"
+                scope="col"
+              >
+                Status
+              </th>
+            </tr>
+          </thead>
+          <tbody
+            class="MuiTableBody-root"
+          >
+            <tr
+              class="MuiTableRow-root WithStyles(ForwardRef(TableRow))-root-2570 makeStyles-clickableRow-2492"
+              data-testid="invoice-list-row"
+            >
+              <td
+                class="MuiTableCell-root MuiTableCell-body"
+              >
+                720909
+              </td>
+              <td
+                class="MuiTableCell-root MuiTableCell-body makeStyles-listNameFullWidth-2478"
+              >
+                <span>
+                  -
+                </span>
+              </td>
+              <td
+                class="MuiTableCell-root MuiTableCell-body makeStyles-listName-2477 makeStyles-listNameFullWidth-2478"
+              >
+                <a
+                  class="Link-root-2571"
+                  data-testid="invoice-list-row-project-button"
+                  href="/projects/detail/1"
+                  title="View Project details"
+                >
+                  Las Vegas Casino
+                </a>
+              </td>
+              <td
+                class="MuiTableCell-root MuiTableCell-body"
+              >
+                Dec 09, 2020
+              </td>
+              <td
+                class="MuiTableCell-root MuiTableCell-body makeStyles-boldTableCell-2546"
+              >
+                $ 
+                0
+              </td>
+              <td
+                class="MuiTableCell-root MuiTableCell-body"
+              >
+                <div
+                  class="makeStyles-invoiceRowLastCell-2547"
+                >
+                  <span
+                    class="makeStyles-invoiceRowStatusCell-2549"
+                  >
+                    <div
+                      class="MuiChip-root makeStyles-statusChip-2558 makeStyles-assigned-2562 makeStyles-invoiceStatusChip-2545 MuiChip-colorPrimary"
+                    >
+                      <span
+                        class="MuiChip-label"
+                      >
+                        Draft
+                      </span>
+                    </div>
+                  </span>
+                  <span
+                    class="makeStyles-invoiceRowIconsWrapper-2550"
+                  >
+                    <span
+                      class="makeStyles-invoiceRowButton-2553"
+                      data-testid="controlled-button"
+                      tabindex="-1"
+                    >
+                      <button
+                        aria-label="invoice-information"
+                        class="MuiButtonBase-root MuiIconButton-root"
+                        data-testid="open-invoice-information"
+                        tabindex="0"
+                        title="Edit Invoice"
+                        type="button"
+                      >
+                        <span
+                          class="MuiIconButton-label"
+                        >
+                          <svg
+                            class="makeStyles-invoiceIcon-2551"
+                          >
+                            invoice.svg
+                          </svg>
+                        </span>
+                      </button>
+                    </span>
+                    <span
+                      class="makeStyles-invoiceRowButton-2553"
+                      data-testid="controlled-button"
+                      tabindex="-1"
+                    >
+                      <div
+                        class="MuiBox-root MuiBox-root-2573 makeStyles-filterStatusContainer-2419 buttonMenuContainer"
+                      >
+                        <div
+                          class="makeStyles-filterWrapper-2424 buttonMenuWrapper"
+                        >
+                          <span
+                            class=""
+                            data-testid="controlled-button"
+                            tabindex="-1"
+                          >
+                            <button
+                              aria-controls="false"
+                              aria-haspopup="true"
+                              class="MuiButtonBase-root MuiButton-root MuiButton-contained makeStyles-invoiceActionsButton-2554 MuiButton-containedPrimary"
+                              data-testid="popover-button"
+                              tabindex="0"
+                              type="button"
+                            >
+                              <span
+                                class="MuiButton-label"
+                              >
+                                
+                                <span
+                                  class="MuiButton-endIcon MuiButton-iconSizeMedium"
+                                >
+                                  <svg
+                                    class="makeStyles-invoiceIcon-2551"
+                                  >
+                                    three-dots.svg
+                                  </svg>
+                                </span>
+                              </span>
+                            </button>
+                          </span>
+                          <span
+                            class=""
+                          >
+                            <div
+                              class="makeStyles-iconInactive-2574"
+                              data-testid="popover-wrapper"
+                            >
+                              
+                            </div>
+                          </span>
+                        </div>
+                      </div>
+                    </span>
+                  </span>
+                </div>
+              </td>
+            </tr>
+            <tr
+              class="MuiTableRow-root WithStyles(ForwardRef(TableRow))-root-2570 makeStyles-clickableRow-2492"
+              data-testid="invoice-list-row"
+            >
+              <td
+                class="MuiTableCell-root MuiTableCell-body"
+              >
+                720908
+              </td>
+              <td
+                class="MuiTableCell-root MuiTableCell-body makeStyles-listNameFullWidth-2478"
+              >
+                <a
+                  class="Link-root-2571"
+                  data-testid="invoice-list-row-client-button"
+                  href="/clients/detail/9164e4c4-6521-47bb-97fd-c75ac02b2cf5"
+                  title="View Client details"
+                >
+                  Test Company
+                </a>
+              </td>
+              <td
+                class="MuiTableCell-root MuiTableCell-body makeStyles-listName-2477 makeStyles-listNameFullWidth-2478"
+              >
+                <a
+                  class="Link-root-2571"
+                  data-testid="invoice-list-row-project-button"
+                  href="/projects/detail/9164e4c4-6521-47bb-97fd-c75ac02b2cf2"
+                  title="View Project details"
+                >
+                  Test Project
+                </a>
+              </td>
+              <td
+                class="MuiTableCell-root MuiTableCell-body"
+              >
+                -
+              </td>
+              <td
+                class="MuiTableCell-root MuiTableCell-body makeStyles-boldTableCell-2546"
+              >
+                $ 
+                0
+              </td>
+              <td
+                class="MuiTableCell-root MuiTableCell-body"
+              >
+                <div
+                  class="makeStyles-invoiceRowLastCell-2547"
+                >
+                  <span
+                    class="makeStyles-invoiceRowStatusCell-2549"
+                  >
+                    <div
+                      class="MuiChip-root makeStyles-statusChip-2558 makeStyles-pending-2565 makeStyles-invoiceStatusChip-2545 MuiChip-colorPrimary"
+                    >
+                      <span
+                        class="MuiChip-label"
+                      >
+                        Pending
+                      </span>
+                    </div>
+                  </span>
+                  <span
+                    class="makeStyles-invoiceRowIconsWrapper-2550"
+                  >
+                    <span
+                      class="makeStyles-invoiceRowButton-2553"
+                      data-testid="controlled-button"
+                      tabindex="-1"
+                    >
+                      <button
+                        aria-label="invoice-information"
+                        class="MuiButtonBase-root MuiIconButton-root"
+                        data-testid="open-invoice-information"
+                        tabindex="0"
+                        title="Invoice Information"
+                        type="button"
+                      >
+                        <span
+                          class="MuiIconButton-label"
+                        >
+                          <svg
+                            class="makeStyles-invoiceIcon-2551"
+                          >
+                            invoice.svg
+                          </svg>
+                        </span>
+                      </button>
+                    </span>
+                    <span
+                      class="makeStyles-invoiceRowButton-2553"
+                      data-testid="controlled-button"
+                      tabindex="-1"
+                    >
+                      <div
+                        class="MuiBox-root MuiBox-root-2578 makeStyles-filterStatusContainer-2419 buttonMenuContainer"
+                      >
+                        <div
+                          class="makeStyles-filterWrapper-2424 buttonMenuWrapper"
+                        >
+                          <span
+                            class=""
+                            data-testid="controlled-button"
+                            tabindex="-1"
+                          >
+                            <button
+                              aria-controls="false"
+                              aria-haspopup="true"
+                              class="MuiButtonBase-root MuiButton-root MuiButton-contained makeStyles-invoiceActionsButton-2554 MuiButton-containedPrimary"
+                              data-testid="popover-button"
+                              tabindex="0"
+                              type="button"
+                            >
+                              <span
+                                class="MuiButton-label"
+                              >
+                                
+                                <span
+                                  class="MuiButton-endIcon MuiButton-iconSizeMedium"
+                                >
+                                  <svg
+                                    class="makeStyles-invoiceIcon-2551"
+                                  >
+                                    three-dots.svg
+                                  </svg>
+                                </span>
+                              </span>
+                            </button>
+                          </span>
+                          <span
+                            class=""
+                          >
+                            <div
+                              class="makeStyles-iconInactive-2574"
+                              data-testid="popover-wrapper"
+                            >
+                              
+                            </div>
+                          </span>
+                        </div>
+                      </div>
+                    </span>
+                  </span>
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <nav
+          aria-label="pagination navigation"
+          class="MuiPagination-root  makeStyles-pagination-2579"
+          data-testid="pagination"
+        >
+          <ul
+            class="MuiPagination-ul"
+          >
+            <li>
+              <button
+                aria-label="Go to previous page"
+                class="MuiButtonBase-root MuiPaginationItem-root MuiPaginationItem-page Mui-disabled Mui-disabled"
+                disabled=""
+                tabindex="-1"
+                type="button"
+              >
+                <svg
+                  aria-hidden="true"
+                  class="MuiSvgIcon-root MuiPaginationItem-icon"
+                  focusable="false"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"
+                  />
+                </svg>
+              </button>
+            </li>
+            <li>
+              <button
+                aria-label="Go to next page"
+                class="MuiButtonBase-root MuiPaginationItem-root MuiPaginationItem-page Mui-disabled Mui-disabled"
+                disabled=""
+                tabindex="-1"
+                type="button"
+              >
+                <svg
+                  aria-hidden="true"
+                  class="MuiSvgIcon-root MuiPaginationItem-icon"
+                  focusable="false"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"
+                  />
+                </svg>
+              </button>
+            </li>
+          </ul>
+        </nav>
+        <div
+          class="MuiDrawer-root MuiDrawer-docked makeStyles-drawer-2580 open"
+          data-testid="invoice-drawer-detail"
+        >
+          <div
+            class="MuiPaper-root MuiDrawer-paper makeStyles-drawerPaper-2581 MuiDrawer-paperAnchorRight MuiDrawer-paperAnchorDockedRight MuiPaper-elevation0"
+            style="webkit-transform: none; transform: none; webkit-transition: -webkit-transform 225ms cubic-bezier(0.0, 0, 0.2, 1) 0ms; transition: transform 225ms cubic-bezier(0.0, 0, 0.2, 1) 0ms;"
+          >
+            <div
+              class="makeStyles-drawerButtonWrapper-2583"
+            >
+              <div
+                class="makeStyles-drawerButton-2584"
+              >
+                <button
+                  class="MuiButtonBase-root MuiButton-root MuiButton-text"
+                  data-testid="drawer-close-btn"
+                  style="outline: none;"
+                  tabindex="0"
+                  type="button"
+                >
+                  <span
+                    class="MuiButton-label"
+                  >
+                    <svg>
+                      close.svg
+                    </svg>
+                  </span>
+                  <span
+                    class="MuiTouchRipple-root"
+                  />
+                </button>
+              </div>
+              <div
+                class="makeStyles-drawerHeader-2582"
+              >
+                <p
+                  class="MuiTypography-root makeStyles-drawerTitle-2585 MuiTypography-body1 MuiTypography-colorPrimary MuiTypography-alignLeft"
+                >
+                  Invoice Information
+                </p>
+              </div>
+            </div>
+            <div
+              class="makeStyles-listDetail-2484"
+            >
+              <div
+                class="makeStyles-company-2485"
+              >
+                <div
+                  class="makeStyles-drawerText-2587"
+                >
+                  <p
+                    class="MuiTypography-root makeStyles-listAccent-2486 makeStyles-entityTitle-2483 MuiTypography-body1"
+                  >
+                    720909
+                  </p>
+                  <div
+                    class="makeStyles-drawerMainText-2588"
+                  >
+                    <span>
+                      Manual Invoice
+                    </span>
+                  </div>
+                </div>
+                <div
+                  class="makeStyles-drawerSection-2586"
+                >
+                  <div
+                    class="makeStyles-drawerColumnDirection-2595"
+                  >
+                    <div
+                      class="makeStyles-drawerRowDirection-2596"
+                    >
+                      <svg>
+                        monetization.svg
+                      </svg>
+                      <div
+                        class="makeStyles-drawerText-2587 makeStyles-drawerTextSeparation-2589"
+                      >
+                        <span
+                          class="makeStyles-listAccent-2486 makeStyles-listIconLabel-2497"
+                        >
+                          $ 
+                          0
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="makeStyles-drawerSection-2586 makeStyles-drawerProjectColumn-2594"
+                >
+                  <div
+                    class="makeStyles-projectWrapper-2592"
+                  >
+                    <svg>
+                      location.svg
+                    </svg>
+                    <div
+                      class="makeStyles-drawerText-2587 makeStyles-drawerTextSeparation-2589"
+                    >
+                      <span
+                        class="makeStyles-listAccent-2486"
+                      >
+                        -
+                      </span>
+                      <span>
+                        -
+                      </span>
+                      <span>
+                        -
+                      </span>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="makeStyles-drawerSection-2586 makeStyles-drawerProjectColumn-2594"
+                >
+                  <div
+                    class="makeStyles-projectWrapper-2592"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      class="MuiSvgIcon-root"
+                      focusable="false"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"
+                      />
+                    </svg>
+                    <div
+                      class="makeStyles-drawerText-2587 makeStyles-drawerTextSeparation-2589"
+                    >
+                      <span
+                        class="makeStyles-listAccent-2486"
+                      >
+                        - -
+                      </span>
+                      <span>
+                        -
+                      </span>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="makeStyles-drawerSection-2586 makeStyles-drawerProjectColumn-2594"
+                >
+                  <div
+                    class="makeStyles-projectWrapper-2592"
+                  >
+                    <svg>
+                      project.svg
+                    </svg>
+                    <div
+                      class="makeStyles-drawerText-2587 makeStyles-drawerTextSeparation-2589"
+                    >
+                      <span
+                        class="makeStyles-listAccent-2486"
+                      >
+                        Las Vegas Casino
+                      </span>
+                      <span>
+                        Stadium/Entertainment
+                      </span>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="makeStyles-drawerSection-2586 makeStyles-drawerProjectColumn-2594"
+                >
+                  <div
+                    class="makeStyles-projectWrapper-2592"
+                  >
+                    <svg>
+                      calendar.svg
+                    </svg>
+                    <div
+                      class="makeStyles-drawerText-2587 makeStyles-drawerTextSeparation-2589"
+                    >
+                      <span>
+                        Creation Date: 
+                        Dec 09, 2020
+                      </span>
+                      <span>
+                        Payment Date: 
+                        -
+                      </span>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="makeStyles-drawerSection-2586 makeStyles-drawerProjectColumn-2594"
+                >
+                  <div
+                    class="makeStyles-projectWrapper-2592"
+                  >
+                    <svg>
+                      notes.svg
+                    </svg>
+                    <div
+                      class="makeStyles-drawerText-2587 makeStyles-drawerTextSeparation-2589"
+                    >
+                      <span>
+                        Test
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

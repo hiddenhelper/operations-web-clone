@@ -1,0 +1,1690 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ProfileTab should finish upload 1`] = `<div />`;
+
+exports[`ProfileTab should render 1`] = `
+<div>
+  <div
+    class="MuiBox-root MuiBox-root-4 makeStyles-box-1"
+  >
+    <div
+      class="makeStyles-formContainer-3 "
+    >
+      <div
+        class="makeStyles-formContainerWrapper-2"
+      >
+        <div
+          class="makeStyles-profileUploadWrapper-18"
+        >
+          <div
+            class="makeStyles-profileUploadAvatarPosition-19"
+          >
+            <div
+              class="MuiAvatar-root MuiAvatar-circle makeStyles-avatarSettings-31 makeStyles-avatarWrapper-25 MuiAvatar-colorDefault"
+            >
+              <svg
+                aria-hidden="true"
+                class="MuiSvgIcon-root makeStyles-missingAvatarSettings-35"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"
+                />
+              </svg>
+            </div>
+          </div>
+          <div
+            class="makeStyles-profileUploadInput-20"
+          >
+            <div
+              class="MuiFormControl-root makeStyles-formControl-45 "
+            >
+              <h1
+                class="MuiTypography-root MuiTypography-caption MuiTypography-colorSecondary MuiTypography-alignLeft"
+              >
+                Profile Image
+                 
+              </h1>
+              <div>
+                <div
+                  class="makeStyles-singleInputUploadItem-64"
+                >
+                  <label
+                    class="makeStyles-fileUploadWrapper-5 makeStyles-fileUploadWrapper-47"
+                  >
+                    <div
+                      data-testid="file-upload-wrapper"
+                    >
+                      <div
+                        class="MuiFormControl-root MuiTextField-root MuiFormControl-fullWidth"
+                      >
+                        <div
+                          class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-fullWidth MuiInputBase-formControl"
+                        >
+                          <input
+                            aria-invalid="false"
+                            autocomplete="off"
+                            class="MuiInputBase-input MuiOutlinedInput-input"
+                            data-testid="file-upload-input"
+                            name="fileUploader"
+                            placeholder="Upload Photo"
+                            type="file"
+                            value=""
+                          />
+                          <fieldset
+                            aria-hidden="true"
+                            class="PrivateNotchedOutline-root-72 MuiOutlinedInput-notchedOutline"
+                            style="padding-left: 8px;"
+                          >
+                            <legend
+                              class="PrivateNotchedOutline-legend-73"
+                              style="width: 0.01px;"
+                            >
+                              <span>
+                                ​
+                              </span>
+                            </legend>
+                          </fieldset>
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="makeStyles-fileUpload-48"
+                    >
+                      <span
+                        class="makeStyles-fileUploadText-49"
+                      >
+                        Upload Photo
+                      </span>
+                      <button
+                        aria-label="upload image"
+                        class="MuiButtonBase-root MuiIconButton-root makeStyles-iconUpload-65"
+                        tabindex="0"
+                        type="button"
+                      >
+                        <span
+                          class="MuiIconButton-label"
+                        >
+                          <svg
+                            aria-hidden="true"
+                            class="MuiSvgIcon-root"
+                            focusable="false"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              d="M19.35 10.04C18.67 6.59 15.64 4 12 4 9.11 4 6.6 5.64 5.35 8.04 2.34 8.36 0 10.91 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.65-4.96zM14 13v4h-4v-4H7l5-5 5 5h-3z"
+                            />
+                          </svg>
+                        </span>
+                      </button>
+                    </div>
+                  </label>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="makeStyles-profileFormPaddingTop-77"
+        >
+          <div
+            class="MuiGrid-root MuiGrid-container"
+          >
+            <div
+              class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-lg-12"
+            >
+              <div
+                class="makeStyles-errorInputWrapper-80"
+              >
+                <div
+                  class="MuiFormControl-root makeStyles-formControl-45 makeStyles-inputBottomPadding-76"
+                >
+                  <h1
+                    class="MuiTypography-root MuiTypography-caption MuiTypography-colorSecondary MuiTypography-alignLeft"
+                  >
+                    First Name
+                     
+                  </h1>
+                  <div>
+                    <div
+                      class="MuiFormControl-root MuiTextField-root MuiFormControl-fullWidth"
+                      data-testid="profile-first-name-wrapper"
+                    >
+                      <div
+                        class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-fullWidth MuiInputBase-formControl"
+                      >
+                        <input
+                          aria-invalid="false"
+                          autocomplete="off"
+                          class="MuiInputBase-input MuiOutlinedInput-input"
+                          data-testid="profile-first-name"
+                          name="firstName"
+                          placeholder="First Name"
+                          required=""
+                          type="text"
+                          value=""
+                        />
+                        <fieldset
+                          aria-hidden="true"
+                          class="PrivateNotchedOutline-root-72 MuiOutlinedInput-notchedOutline"
+                          style="padding-left: 8px;"
+                        >
+                          <legend
+                            class="PrivateNotchedOutline-legend-73"
+                            style="width: 0.01px;"
+                          >
+                            <span>
+                              ​
+                            </span>
+                          </legend>
+                        </fieldset>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="makeStyles-errorInputWrapper-80"
+              >
+                <div
+                  class="MuiFormControl-root makeStyles-formControl-45 makeStyles-inputBottomPadding-76"
+                >
+                  <h1
+                    class="MuiTypography-root MuiTypography-caption MuiTypography-colorSecondary MuiTypography-alignLeft"
+                  >
+                    Last Name
+                     
+                  </h1>
+                  <div>
+                    <div
+                      class="MuiFormControl-root MuiTextField-root MuiFormControl-fullWidth"
+                      data-testid="profile-last-name-wrapper"
+                    >
+                      <div
+                        class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-fullWidth MuiInputBase-formControl"
+                      >
+                        <input
+                          aria-invalid="false"
+                          autocomplete="off"
+                          class="MuiInputBase-input MuiOutlinedInput-input"
+                          data-testid="profile-last-name"
+                          name="lastName"
+                          placeholder="Last Name"
+                          type="text"
+                          value=""
+                        />
+                        <fieldset
+                          aria-hidden="true"
+                          class="PrivateNotchedOutline-root-72 MuiOutlinedInput-notchedOutline"
+                          style="padding-left: 8px;"
+                        >
+                          <legend
+                            class="PrivateNotchedOutline-legend-73"
+                            style="width: 0.01px;"
+                          >
+                            <span>
+                              ​
+                            </span>
+                          </legend>
+                        </fieldset>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="makeStyles-errorInputWrapper-80"
+              >
+                <div
+                  class="MuiFormControl-root makeStyles-formControl-45 makeStyles-inputBottomPadding-76"
+                >
+                  <h1
+                    class="MuiTypography-root MuiTypography-caption MuiTypography-colorSecondary MuiTypography-alignLeft"
+                  >
+                    Email
+                     
+                  </h1>
+                  <div>
+                    <div
+                      class="MuiFormControl-root MuiTextField-root MuiFormControl-fullWidth"
+                      data-testid="profile-email"
+                    >
+                      <div
+                        class="MuiInputBase-root MuiOutlinedInput-root Mui-disabled Mui-disabled MuiInputBase-fullWidth MuiInputBase-formControl"
+                      >
+                        <input
+                          aria-invalid="false"
+                          autocomplete="off"
+                          class="MuiInputBase-input MuiOutlinedInput-input Mui-disabled Mui-disabled"
+                          data-testid="email"
+                          disabled=""
+                          name="email"
+                          placeholder="Email"
+                          type="text"
+                          value=""
+                        />
+                        <fieldset
+                          aria-hidden="true"
+                          class="PrivateNotchedOutline-root-72 MuiOutlinedInput-notchedOutline"
+                          style="padding-left: 8px;"
+                        >
+                          <legend
+                            class="PrivateNotchedOutline-legend-73"
+                            style="width: 0.01px;"
+                          >
+                            <span>
+                              ​
+                            </span>
+                          </legend>
+                        </fieldset>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="makeStyles-formButtonWrapper-78"
+          >
+            <span
+              class=""
+              data-testid="controlled-button"
+              tabindex="-1"
+            >
+              <button
+                class="MuiButtonBase-root MuiButton-root MuiButton-text makeStyles-discardButton-102 MuiButton-textPrimary Mui-disabled Mui-disabled"
+                data-testid="discard-changes-btn"
+                disabled=""
+                tabindex="-1"
+                type="button"
+              >
+                <span
+                  class="MuiButton-label"
+                >
+                  Discard Changes
+                </span>
+              </button>
+            </span>
+            <span
+              class=""
+              data-testid="controlled-button"
+              tabindex="-1"
+            >
+              <button
+                class="MuiButtonBase-root MuiButton-root MuiButton-contained false makeStyles-nextButton-101 makeStyles-noPadding-98 MuiButton-containedPrimary MuiButton-containedSizeLarge MuiButton-sizeLarge Mui-disabled Mui-disabled"
+                data-testid="confirm-btn"
+                disabled=""
+                tabindex="-1"
+                type="button"
+              >
+                <span
+                  class="MuiButton-label"
+                >
+                  <span
+                    class="makeStyles-textWrapper-176"
+                  >
+                    Save Changes
+                  </span>
+                </span>
+              </button>
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`ProfileTab should render with in progress picture 1`] = `
+<div>
+  <div
+    class="MuiBox-root MuiBox-root-532 makeStyles-box-529"
+  >
+    <div
+      class="makeStyles-formContainer-531 "
+    >
+      <div
+        class="makeStyles-formContainerWrapper-530"
+      >
+        <div
+          class="makeStyles-profileUploadWrapper-546"
+        >
+          <div
+            class="makeStyles-profileUploadAvatarPosition-547"
+          >
+            <div
+              class="MuiAvatar-root MuiAvatar-circle makeStyles-avatarSettings-559 makeStyles-avatarWrapper-553 MuiAvatar-colorDefault"
+            >
+              <svg
+                aria-hidden="true"
+                class="MuiSvgIcon-root makeStyles-missingAvatarSettings-563"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"
+                />
+              </svg>
+            </div>
+          </div>
+          <div
+            class="makeStyles-profileUploadInput-548"
+          >
+            <div
+              class="MuiFormControl-root makeStyles-formControl-573 "
+            >
+              <h1
+                class="MuiTypography-root MuiTypography-caption MuiTypography-colorSecondary MuiTypography-alignLeft"
+              >
+                Profile Image
+                 
+              </h1>
+              <div>
+                <div
+                  class="makeStyles-singleInputUploadItem-592"
+                >
+                  <label
+                    class="makeStyles-fileUploadWrapper-533 makeStyles-fileUploadWrapper-575"
+                  >
+                    <div
+                      data-testid="file-upload-wrapper"
+                    >
+                      <div
+                        class="MuiFormControl-root MuiTextField-root MuiFormControl-fullWidth"
+                      >
+                        <div
+                          class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-fullWidth MuiInputBase-formControl"
+                        >
+                          <input
+                            aria-invalid="false"
+                            autocomplete="off"
+                            class="MuiInputBase-input MuiOutlinedInput-input"
+                            data-testid="file-upload-input"
+                            name="fileUploader"
+                            placeholder="Upload Photo"
+                            type="file"
+                            value=""
+                          />
+                          <fieldset
+                            aria-hidden="true"
+                            class="PrivateNotchedOutline-root-600 MuiOutlinedInput-notchedOutline"
+                            style="padding-left: 8px;"
+                          >
+                            <legend
+                              class="PrivateNotchedOutline-legend-601"
+                              style="width: 0.01px;"
+                            >
+                              <span>
+                                ​
+                              </span>
+                            </legend>
+                          </fieldset>
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="makeStyles-fileUpload-576"
+                    >
+                      <span
+                        class="makeStyles-fileUploadText-577"
+                      >
+                        Upload Photo
+                      </span>
+                      <button
+                        aria-label="upload image"
+                        class="MuiButtonBase-root MuiIconButton-root makeStyles-iconUpload-593"
+                        tabindex="0"
+                        type="button"
+                      >
+                        <span
+                          class="MuiIconButton-label"
+                        >
+                          <svg
+                            aria-hidden="true"
+                            class="MuiSvgIcon-root"
+                            focusable="false"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              d="M19.35 10.04C18.67 6.59 15.64 4 12 4 9.11 4 6.6 5.64 5.35 8.04 2.34 8.36 0 10.91 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.65-4.96zM14 13v4h-4v-4H7l5-5 5 5h-3z"
+                            />
+                          </svg>
+                        </span>
+                      </button>
+                    </div>
+                  </label>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="makeStyles-profileFormPaddingTop-605"
+        >
+          <div
+            class="MuiGrid-root MuiGrid-container"
+          >
+            <div
+              class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-lg-12"
+            >
+              <div
+                class="makeStyles-errorInputWrapper-608"
+              >
+                <div
+                  class="MuiFormControl-root makeStyles-formControl-573 makeStyles-inputBottomPadding-604"
+                >
+                  <h1
+                    class="MuiTypography-root MuiTypography-caption MuiTypography-colorSecondary MuiTypography-alignLeft"
+                  >
+                    First Name
+                     
+                  </h1>
+                  <div>
+                    <div
+                      class="MuiFormControl-root MuiTextField-root MuiFormControl-fullWidth"
+                      data-testid="profile-first-name-wrapper"
+                    >
+                      <div
+                        class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-fullWidth MuiInputBase-formControl"
+                      >
+                        <input
+                          aria-invalid="false"
+                          autocomplete="off"
+                          class="MuiInputBase-input MuiOutlinedInput-input"
+                          data-testid="profile-first-name"
+                          name="firstName"
+                          placeholder="First Name"
+                          required=""
+                          type="text"
+                          value=""
+                        />
+                        <fieldset
+                          aria-hidden="true"
+                          class="PrivateNotchedOutline-root-600 MuiOutlinedInput-notchedOutline"
+                          style="padding-left: 8px;"
+                        >
+                          <legend
+                            class="PrivateNotchedOutline-legend-601"
+                            style="width: 0.01px;"
+                          >
+                            <span>
+                              ​
+                            </span>
+                          </legend>
+                        </fieldset>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="makeStyles-errorInputWrapper-608"
+              >
+                <div
+                  class="MuiFormControl-root makeStyles-formControl-573 makeStyles-inputBottomPadding-604"
+                >
+                  <h1
+                    class="MuiTypography-root MuiTypography-caption MuiTypography-colorSecondary MuiTypography-alignLeft"
+                  >
+                    Last Name
+                     
+                  </h1>
+                  <div>
+                    <div
+                      class="MuiFormControl-root MuiTextField-root MuiFormControl-fullWidth"
+                      data-testid="profile-last-name-wrapper"
+                    >
+                      <div
+                        class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-fullWidth MuiInputBase-formControl"
+                      >
+                        <input
+                          aria-invalid="false"
+                          autocomplete="off"
+                          class="MuiInputBase-input MuiOutlinedInput-input"
+                          data-testid="profile-last-name"
+                          name="lastName"
+                          placeholder="Last Name"
+                          type="text"
+                          value=""
+                        />
+                        <fieldset
+                          aria-hidden="true"
+                          class="PrivateNotchedOutline-root-600 MuiOutlinedInput-notchedOutline"
+                          style="padding-left: 8px;"
+                        >
+                          <legend
+                            class="PrivateNotchedOutline-legend-601"
+                            style="width: 0.01px;"
+                          >
+                            <span>
+                              ​
+                            </span>
+                          </legend>
+                        </fieldset>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="makeStyles-errorInputWrapper-608"
+              >
+                <div
+                  class="MuiFormControl-root makeStyles-formControl-573 makeStyles-inputBottomPadding-604"
+                >
+                  <h1
+                    class="MuiTypography-root MuiTypography-caption MuiTypography-colorSecondary MuiTypography-alignLeft"
+                  >
+                    Email
+                     
+                  </h1>
+                  <div>
+                    <div
+                      class="MuiFormControl-root MuiTextField-root MuiFormControl-fullWidth"
+                      data-testid="profile-email"
+                    >
+                      <div
+                        class="MuiInputBase-root MuiOutlinedInput-root Mui-disabled Mui-disabled MuiInputBase-fullWidth MuiInputBase-formControl"
+                      >
+                        <input
+                          aria-invalid="false"
+                          autocomplete="off"
+                          class="MuiInputBase-input MuiOutlinedInput-input Mui-disabled Mui-disabled"
+                          data-testid="email"
+                          disabled=""
+                          name="email"
+                          placeholder="Email"
+                          type="text"
+                          value=""
+                        />
+                        <fieldset
+                          aria-hidden="true"
+                          class="PrivateNotchedOutline-root-600 MuiOutlinedInput-notchedOutline"
+                          style="padding-left: 8px;"
+                        >
+                          <legend
+                            class="PrivateNotchedOutline-legend-601"
+                            style="width: 0.01px;"
+                          >
+                            <span>
+                              ​
+                            </span>
+                          </legend>
+                        </fieldset>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="makeStyles-formButtonWrapper-606"
+          >
+            <span
+              class="makeStyles-noOutline-628"
+              data-testid="controlled-button"
+              tabindex="-1"
+            >
+              <button
+                class="MuiButtonBase-root MuiButton-root MuiButton-text makeStyles-discardButton-630 MuiButton-textPrimary"
+                data-testid="discard-changes-btn"
+                tabindex="0"
+                type="button"
+              >
+                <span
+                  class="MuiButton-label"
+                >
+                  Discard Changes
+                </span>
+                <span
+                  class="MuiTouchRipple-root"
+                />
+              </button>
+            </span>
+            <span
+              class="makeStyles-noOutline-628"
+              data-testid="controlled-button"
+              tabindex="-1"
+            >
+              <button
+                class="MuiButtonBase-root MuiButton-root MuiButton-contained false makeStyles-nextButton-629 makeStyles-noPadding-626 MuiButton-containedPrimary MuiButton-containedSizeLarge MuiButton-sizeLarge"
+                data-testid="confirm-btn"
+                tabindex="0"
+                type="button"
+              >
+                <span
+                  class="MuiButton-label"
+                >
+                  <span
+                    class="makeStyles-textWrapper-704"
+                  >
+                    Save Changes
+                  </span>
+                </span>
+                <span
+                  class="MuiTouchRipple-root"
+                />
+              </button>
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`ProfileTab should render with picture 1`] = `
+<div>
+  <div
+    class="MuiBox-root MuiBox-root-180 makeStyles-box-177"
+  >
+    <div
+      class="makeStyles-formContainer-179 "
+    >
+      <div
+        class="makeStyles-formContainerWrapper-178"
+      >
+        <div
+          class="makeStyles-profileUploadWrapper-194"
+        >
+          <div
+            class="makeStyles-profileUploadAvatarPosition-195"
+          >
+            <div
+              class="MuiAvatar-root MuiAvatar-circle makeStyles-avatarSettings-207 makeStyles-avatarWrapper-201 MuiAvatar-colorDefault"
+            >
+              <svg
+                aria-hidden="true"
+                class="MuiSvgIcon-root makeStyles-missingAvatarSettings-211"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"
+                />
+              </svg>
+            </div>
+          </div>
+          <div
+            class="makeStyles-profileUploadInput-196"
+          >
+            <div
+              class="MuiFormControl-root makeStyles-formControl-221 "
+            >
+              <h1
+                class="MuiTypography-root MuiTypography-caption MuiTypography-colorSecondary MuiTypography-alignLeft"
+              >
+                Profile Image
+                 
+              </h1>
+              <div>
+                <div
+                  class="makeStyles-singleInputUploadItem-240"
+                >
+                  <label
+                    class="makeStyles-fileUploadWrapper-181 makeStyles-fileUploadWrapper-223"
+                  >
+                    <div
+                      data-testid="file-upload-wrapper"
+                    >
+                      <div
+                        class="MuiFormControl-root MuiTextField-root MuiFormControl-fullWidth"
+                      >
+                        <div
+                          class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-fullWidth MuiInputBase-formControl"
+                        >
+                          <input
+                            aria-invalid="false"
+                            autocomplete="off"
+                            class="MuiInputBase-input MuiOutlinedInput-input"
+                            data-testid="file-upload-input"
+                            name="fileUploader"
+                            placeholder="Upload Photo"
+                            type="file"
+                            value=""
+                          />
+                          <fieldset
+                            aria-hidden="true"
+                            class="PrivateNotchedOutline-root-248 MuiOutlinedInput-notchedOutline"
+                            style="padding-left: 8px;"
+                          >
+                            <legend
+                              class="PrivateNotchedOutline-legend-249"
+                              style="width: 0.01px;"
+                            >
+                              <span>
+                                ​
+                              </span>
+                            </legend>
+                          </fieldset>
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="makeStyles-fileUpload-224"
+                    >
+                      <span
+                        class="makeStyles-fileUploadText-225"
+                      >
+                        Upload Photo
+                      </span>
+                      <button
+                        aria-label="upload image"
+                        class="MuiButtonBase-root MuiIconButton-root makeStyles-iconUpload-241"
+                        tabindex="0"
+                        type="button"
+                      >
+                        <span
+                          class="MuiIconButton-label"
+                        >
+                          <svg
+                            aria-hidden="true"
+                            class="MuiSvgIcon-root"
+                            focusable="false"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              d="M19.35 10.04C18.67 6.59 15.64 4 12 4 9.11 4 6.6 5.64 5.35 8.04 2.34 8.36 0 10.91 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.65-4.96zM14 13v4h-4v-4H7l5-5 5 5h-3z"
+                            />
+                          </svg>
+                        </span>
+                      </button>
+                    </div>
+                  </label>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="makeStyles-profileFormPaddingTop-253"
+        >
+          <div
+            class="MuiGrid-root MuiGrid-container"
+          >
+            <div
+              class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-lg-12"
+            >
+              <div
+                class="makeStyles-errorInputWrapper-256"
+              >
+                <div
+                  class="MuiFormControl-root makeStyles-formControl-221 makeStyles-inputBottomPadding-252"
+                >
+                  <h1
+                    class="MuiTypography-root MuiTypography-caption MuiTypography-colorSecondary MuiTypography-alignLeft"
+                  >
+                    First Name
+                     
+                  </h1>
+                  <div>
+                    <div
+                      class="MuiFormControl-root MuiTextField-root MuiFormControl-fullWidth"
+                      data-testid="profile-first-name-wrapper"
+                    >
+                      <div
+                        class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-fullWidth MuiInputBase-formControl"
+                      >
+                        <input
+                          aria-invalid="false"
+                          autocomplete="off"
+                          class="MuiInputBase-input MuiOutlinedInput-input"
+                          data-testid="profile-first-name"
+                          name="firstName"
+                          placeholder="First Name"
+                          required=""
+                          type="text"
+                          value=""
+                        />
+                        <fieldset
+                          aria-hidden="true"
+                          class="PrivateNotchedOutline-root-248 MuiOutlinedInput-notchedOutline"
+                          style="padding-left: 8px;"
+                        >
+                          <legend
+                            class="PrivateNotchedOutline-legend-249"
+                            style="width: 0.01px;"
+                          >
+                            <span>
+                              ​
+                            </span>
+                          </legend>
+                        </fieldset>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="makeStyles-errorInputWrapper-256"
+              >
+                <div
+                  class="MuiFormControl-root makeStyles-formControl-221 makeStyles-inputBottomPadding-252"
+                >
+                  <h1
+                    class="MuiTypography-root MuiTypography-caption MuiTypography-colorSecondary MuiTypography-alignLeft"
+                  >
+                    Last Name
+                     
+                  </h1>
+                  <div>
+                    <div
+                      class="MuiFormControl-root MuiTextField-root MuiFormControl-fullWidth"
+                      data-testid="profile-last-name-wrapper"
+                    >
+                      <div
+                        class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-fullWidth MuiInputBase-formControl"
+                      >
+                        <input
+                          aria-invalid="false"
+                          autocomplete="off"
+                          class="MuiInputBase-input MuiOutlinedInput-input"
+                          data-testid="profile-last-name"
+                          name="lastName"
+                          placeholder="Last Name"
+                          type="text"
+                          value=""
+                        />
+                        <fieldset
+                          aria-hidden="true"
+                          class="PrivateNotchedOutline-root-248 MuiOutlinedInput-notchedOutline"
+                          style="padding-left: 8px;"
+                        >
+                          <legend
+                            class="PrivateNotchedOutline-legend-249"
+                            style="width: 0.01px;"
+                          >
+                            <span>
+                              ​
+                            </span>
+                          </legend>
+                        </fieldset>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="makeStyles-errorInputWrapper-256"
+              >
+                <div
+                  class="MuiFormControl-root makeStyles-formControl-221 makeStyles-inputBottomPadding-252"
+                >
+                  <h1
+                    class="MuiTypography-root MuiTypography-caption MuiTypography-colorSecondary MuiTypography-alignLeft"
+                  >
+                    Email
+                     
+                  </h1>
+                  <div>
+                    <div
+                      class="MuiFormControl-root MuiTextField-root MuiFormControl-fullWidth"
+                      data-testid="profile-email"
+                    >
+                      <div
+                        class="MuiInputBase-root MuiOutlinedInput-root Mui-disabled Mui-disabled MuiInputBase-fullWidth MuiInputBase-formControl"
+                      >
+                        <input
+                          aria-invalid="false"
+                          autocomplete="off"
+                          class="MuiInputBase-input MuiOutlinedInput-input Mui-disabled Mui-disabled"
+                          data-testid="email"
+                          disabled=""
+                          name="email"
+                          placeholder="Email"
+                          type="text"
+                          value=""
+                        />
+                        <fieldset
+                          aria-hidden="true"
+                          class="PrivateNotchedOutline-root-248 MuiOutlinedInput-notchedOutline"
+                          style="padding-left: 8px;"
+                        >
+                          <legend
+                            class="PrivateNotchedOutline-legend-249"
+                            style="width: 0.01px;"
+                          >
+                            <span>
+                              ​
+                            </span>
+                          </legend>
+                        </fieldset>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="makeStyles-formButtonWrapper-254"
+          >
+            <span
+              class="makeStyles-noOutline-276"
+              data-testid="controlled-button"
+              tabindex="-1"
+            >
+              <button
+                class="MuiButtonBase-root MuiButton-root MuiButton-text makeStyles-discardButton-278 MuiButton-textPrimary"
+                data-testid="discard-changes-btn"
+                tabindex="0"
+                type="button"
+              >
+                <span
+                  class="MuiButton-label"
+                >
+                  Discard Changes
+                </span>
+                <span
+                  class="MuiTouchRipple-root"
+                />
+              </button>
+            </span>
+            <span
+              class="makeStyles-noOutline-276"
+              data-testid="controlled-button"
+              tabindex="-1"
+            >
+              <button
+                class="MuiButtonBase-root MuiButton-root MuiButton-contained false makeStyles-nextButton-277 makeStyles-noPadding-274 MuiButton-containedPrimary MuiButton-containedSizeLarge MuiButton-sizeLarge"
+                data-testid="confirm-btn"
+                tabindex="0"
+                type="button"
+              >
+                <span
+                  class="MuiButton-label"
+                >
+                  <span
+                    class="makeStyles-textWrapper-352"
+                  >
+                    Save Changes
+                  </span>
+                </span>
+                <span
+                  class="MuiTouchRipple-root"
+                />
+              </button>
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`ProfileTab should render with picture from data loaded 1`] = `
+<div>
+  <div
+    class="MuiBox-root MuiBox-root-356 makeStyles-box-353"
+  >
+    <div
+      class="makeStyles-formContainer-355 "
+    >
+      <div
+        class="makeStyles-formContainerWrapper-354"
+      >
+        <div
+          class="makeStyles-profileUploadWrapper-370"
+        >
+          <div
+            class="makeStyles-profileUploadAvatarPosition-371"
+          >
+            <div
+              class="MuiAvatar-root MuiAvatar-circle makeStyles-avatarSettings-383 makeStyles-avatarWrapper-377 MuiAvatar-colorDefault"
+            >
+              <img
+                alt="Profile"
+                srcset="url?1607904000000 1x, url?1607904000000 2x"
+                width="100%"
+              />
+            </div>
+          </div>
+          <div
+            class="makeStyles-profileUploadInput-372"
+          >
+            <div
+              class="MuiFormControl-root makeStyles-formControl-397 "
+            >
+              <h1
+                class="MuiTypography-root MuiTypography-caption MuiTypography-colorSecondary MuiTypography-alignLeft"
+              >
+                Profile Image
+                 
+              </h1>
+              <div>
+                <div
+                  class="makeStyles-singleInputUploadItem-416"
+                >
+                  <label
+                    class="makeStyles-fileUploadWrapper-357 makeStyles-fileUploadWrapper-399"
+                  >
+                    <div
+                      data-testid="file-upload-wrapper"
+                    >
+                      <div
+                        class="MuiFormControl-root MuiTextField-root MuiFormControl-fullWidth"
+                      >
+                        <div
+                          class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-fullWidth MuiInputBase-formControl"
+                        >
+                          <input
+                            aria-invalid="false"
+                            autocomplete="off"
+                            class="MuiInputBase-input MuiOutlinedInput-input"
+                            data-testid="file-upload-input"
+                            name="fileUploader"
+                            placeholder="Upload Photo"
+                            type="file"
+                            value=""
+                          />
+                          <fieldset
+                            aria-hidden="true"
+                            class="PrivateNotchedOutline-root-424 MuiOutlinedInput-notchedOutline"
+                            style="padding-left: 8px;"
+                          >
+                            <legend
+                              class="PrivateNotchedOutline-legend-425"
+                              style="width: 0.01px;"
+                            >
+                              <span>
+                                ​
+                              </span>
+                            </legend>
+                          </fieldset>
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="makeStyles-fileUpload-400"
+                    >
+                      <span
+                        class="makeStyles-fileUploadText-401"
+                      >
+                        Upload Photo
+                      </span>
+                      <button
+                        aria-label="upload image"
+                        class="MuiButtonBase-root MuiIconButton-root makeStyles-iconUpload-417"
+                        tabindex="0"
+                        type="button"
+                      >
+                        <span
+                          class="MuiIconButton-label"
+                        >
+                          <svg
+                            aria-hidden="true"
+                            class="MuiSvgIcon-root"
+                            focusable="false"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              d="M19.35 10.04C18.67 6.59 15.64 4 12 4 9.11 4 6.6 5.64 5.35 8.04 2.34 8.36 0 10.91 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.65-4.96zM14 13v4h-4v-4H7l5-5 5 5h-3z"
+                            />
+                          </svg>
+                        </span>
+                      </button>
+                    </div>
+                  </label>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="makeStyles-profileFormPaddingTop-429"
+        >
+          <div
+            class="MuiGrid-root MuiGrid-container"
+          >
+            <div
+              class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-lg-12"
+            >
+              <div
+                class="makeStyles-errorInputWrapper-432"
+              >
+                <div
+                  class="MuiFormControl-root makeStyles-formControl-397 makeStyles-inputBottomPadding-428"
+                >
+                  <h1
+                    class="MuiTypography-root MuiTypography-caption MuiTypography-colorSecondary MuiTypography-alignLeft"
+                  >
+                    First Name
+                     
+                  </h1>
+                  <div>
+                    <div
+                      class="MuiFormControl-root MuiTextField-root MuiFormControl-fullWidth"
+                      data-testid="profile-first-name-wrapper"
+                    >
+                      <div
+                        class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-fullWidth MuiInputBase-formControl"
+                      >
+                        <input
+                          aria-invalid="false"
+                          autocomplete="off"
+                          class="MuiInputBase-input MuiOutlinedInput-input"
+                          data-testid="profile-first-name"
+                          name="firstName"
+                          placeholder="First Name"
+                          required=""
+                          type="text"
+                          value="John"
+                        />
+                        <fieldset
+                          aria-hidden="true"
+                          class="PrivateNotchedOutline-root-424 MuiOutlinedInput-notchedOutline"
+                          style="padding-left: 8px;"
+                        >
+                          <legend
+                            class="PrivateNotchedOutline-legend-425"
+                            style="width: 0.01px;"
+                          >
+                            <span>
+                              ​
+                            </span>
+                          </legend>
+                        </fieldset>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="makeStyles-errorInputWrapper-432"
+              >
+                <div
+                  class="MuiFormControl-root makeStyles-formControl-397 makeStyles-inputBottomPadding-428"
+                >
+                  <h1
+                    class="MuiTypography-root MuiTypography-caption MuiTypography-colorSecondary MuiTypography-alignLeft"
+                  >
+                    Last Name
+                     
+                  </h1>
+                  <div>
+                    <div
+                      class="MuiFormControl-root MuiTextField-root MuiFormControl-fullWidth"
+                      data-testid="profile-last-name-wrapper"
+                    >
+                      <div
+                        class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-fullWidth MuiInputBase-formControl"
+                      >
+                        <input
+                          aria-invalid="false"
+                          autocomplete="off"
+                          class="MuiInputBase-input MuiOutlinedInput-input"
+                          data-testid="profile-last-name"
+                          name="lastName"
+                          placeholder="Last Name"
+                          type="text"
+                          value="Doe"
+                        />
+                        <fieldset
+                          aria-hidden="true"
+                          class="PrivateNotchedOutline-root-424 MuiOutlinedInput-notchedOutline"
+                          style="padding-left: 8px;"
+                        >
+                          <legend
+                            class="PrivateNotchedOutline-legend-425"
+                            style="width: 0.01px;"
+                          >
+                            <span>
+                              ​
+                            </span>
+                          </legend>
+                        </fieldset>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="makeStyles-errorInputWrapper-432"
+              >
+                <div
+                  class="MuiFormControl-root makeStyles-formControl-397 makeStyles-inputBottomPadding-428"
+                >
+                  <h1
+                    class="MuiTypography-root MuiTypography-caption MuiTypography-colorSecondary MuiTypography-alignLeft"
+                  >
+                    Email
+                     
+                  </h1>
+                  <div>
+                    <div
+                      class="MuiFormControl-root MuiTextField-root MuiFormControl-fullWidth"
+                      data-testid="profile-email"
+                    >
+                      <div
+                        class="MuiInputBase-root MuiOutlinedInput-root Mui-disabled Mui-disabled MuiInputBase-fullWidth MuiInputBase-formControl"
+                      >
+                        <input
+                          aria-invalid="false"
+                          autocomplete="off"
+                          class="MuiInputBase-input MuiOutlinedInput-input Mui-disabled Mui-disabled"
+                          data-testid="email"
+                          disabled=""
+                          name="email"
+                          placeholder="Email"
+                          type="text"
+                          value="user@test.com"
+                        />
+                        <fieldset
+                          aria-hidden="true"
+                          class="PrivateNotchedOutline-root-424 MuiOutlinedInput-notchedOutline"
+                          style="padding-left: 8px;"
+                        >
+                          <legend
+                            class="PrivateNotchedOutline-legend-425"
+                            style="width: 0.01px;"
+                          >
+                            <span>
+                              ​
+                            </span>
+                          </legend>
+                        </fieldset>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="makeStyles-formButtonWrapper-430"
+          >
+            <span
+              class=""
+              data-testid="controlled-button"
+              tabindex="-1"
+            >
+              <button
+                class="MuiButtonBase-root MuiButton-root MuiButton-text makeStyles-discardButton-454 MuiButton-textPrimary Mui-disabled Mui-disabled"
+                data-testid="discard-changes-btn"
+                disabled=""
+                tabindex="-1"
+                type="button"
+              >
+                <span
+                  class="MuiButton-label"
+                >
+                  Discard Changes
+                </span>
+              </button>
+            </span>
+            <span
+              class=""
+              data-testid="controlled-button"
+              tabindex="-1"
+            >
+              <button
+                class="MuiButtonBase-root MuiButton-root MuiButton-contained false makeStyles-nextButton-453 makeStyles-noPadding-450 MuiButton-containedPrimary MuiButton-containedSizeLarge MuiButton-sizeLarge Mui-disabled Mui-disabled"
+                data-testid="confirm-btn"
+                disabled=""
+                tabindex="-1"
+                type="button"
+              >
+                <span
+                  class="MuiButton-label"
+                >
+                  <span
+                    class="makeStyles-textWrapper-528"
+                  >
+                    Save Changes
+                  </span>
+                </span>
+              </button>
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`ProfileTab should render without pending files 1`] = `
+<div>
+  <div
+    class="MuiBox-root MuiBox-root-708 makeStyles-box-705"
+  >
+    <div
+      class="makeStyles-formContainer-707 "
+    >
+      <div
+        class="makeStyles-formContainerWrapper-706"
+      >
+        <div
+          class="makeStyles-profileUploadWrapper-722"
+        >
+          <div
+            class="makeStyles-profileUploadAvatarPosition-723"
+          >
+            <div
+              class="MuiAvatar-root MuiAvatar-circle makeStyles-avatarSettings-735 makeStyles-avatarWrapper-729 MuiAvatar-colorDefault"
+            >
+              <svg
+                aria-hidden="true"
+                class="MuiSvgIcon-root makeStyles-missingAvatarSettings-739"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"
+                />
+              </svg>
+            </div>
+          </div>
+          <div
+            class="makeStyles-profileUploadInput-724"
+          >
+            <div
+              class="MuiFormControl-root makeStyles-formControl-749 "
+            >
+              <h1
+                class="MuiTypography-root MuiTypography-caption MuiTypography-colorSecondary MuiTypography-alignLeft"
+              >
+                Profile Image
+                 
+              </h1>
+              <div>
+                <div
+                  class="makeStyles-singleInputUploadItem-768"
+                >
+                  <label
+                    class="makeStyles-fileUploadWrapper-709 makeStyles-fileUploadWrapper-751"
+                  >
+                    <div
+                      data-testid="file-upload-wrapper"
+                    >
+                      <div
+                        class="MuiFormControl-root MuiTextField-root MuiFormControl-fullWidth"
+                      >
+                        <div
+                          class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-fullWidth MuiInputBase-formControl"
+                        >
+                          <input
+                            aria-invalid="false"
+                            autocomplete="off"
+                            class="MuiInputBase-input MuiOutlinedInput-input"
+                            data-testid="file-upload-input"
+                            name="fileUploader"
+                            placeholder="Upload Photo"
+                            type="file"
+                            value=""
+                          />
+                          <fieldset
+                            aria-hidden="true"
+                            class="PrivateNotchedOutline-root-776 MuiOutlinedInput-notchedOutline"
+                            style="padding-left: 8px;"
+                          >
+                            <legend
+                              class="PrivateNotchedOutline-legend-777"
+                              style="width: 0.01px;"
+                            >
+                              <span>
+                                ​
+                              </span>
+                            </legend>
+                          </fieldset>
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="makeStyles-fileUpload-752"
+                    >
+                      <span
+                        class="makeStyles-fileUploadText-753"
+                      >
+                        Upload Photo
+                      </span>
+                      <button
+                        aria-label="upload image"
+                        class="MuiButtonBase-root MuiIconButton-root makeStyles-iconUpload-769"
+                        tabindex="0"
+                        type="button"
+                      >
+                        <span
+                          class="MuiIconButton-label"
+                        >
+                          <svg
+                            aria-hidden="true"
+                            class="MuiSvgIcon-root"
+                            focusable="false"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              d="M19.35 10.04C18.67 6.59 15.64 4 12 4 9.11 4 6.6 5.64 5.35 8.04 2.34 8.36 0 10.91 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.65-4.96zM14 13v4h-4v-4H7l5-5 5 5h-3z"
+                            />
+                          </svg>
+                        </span>
+                      </button>
+                    </div>
+                  </label>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="makeStyles-profileFormPaddingTop-781"
+        >
+          <div
+            class="MuiGrid-root MuiGrid-container"
+          >
+            <div
+              class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-lg-12"
+            >
+              <div
+                class="makeStyles-errorInputWrapper-784"
+              >
+                <div
+                  class="MuiFormControl-root makeStyles-formControl-749 makeStyles-inputBottomPadding-780"
+                >
+                  <h1
+                    class="MuiTypography-root MuiTypography-caption MuiTypography-colorSecondary MuiTypography-alignLeft"
+                  >
+                    First Name
+                     
+                  </h1>
+                  <div>
+                    <div
+                      class="MuiFormControl-root MuiTextField-root MuiFormControl-fullWidth"
+                      data-testid="profile-first-name-wrapper"
+                    >
+                      <div
+                        class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-fullWidth MuiInputBase-formControl"
+                      >
+                        <input
+                          aria-invalid="false"
+                          autocomplete="off"
+                          class="MuiInputBase-input MuiOutlinedInput-input"
+                          data-testid="profile-first-name"
+                          name="firstName"
+                          placeholder="First Name"
+                          required=""
+                          type="text"
+                          value=""
+                        />
+                        <fieldset
+                          aria-hidden="true"
+                          class="PrivateNotchedOutline-root-776 MuiOutlinedInput-notchedOutline"
+                          style="padding-left: 8px;"
+                        >
+                          <legend
+                            class="PrivateNotchedOutline-legend-777"
+                            style="width: 0.01px;"
+                          >
+                            <span>
+                              ​
+                            </span>
+                          </legend>
+                        </fieldset>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="makeStyles-errorInputWrapper-784"
+              >
+                <div
+                  class="MuiFormControl-root makeStyles-formControl-749 makeStyles-inputBottomPadding-780"
+                >
+                  <h1
+                    class="MuiTypography-root MuiTypography-caption MuiTypography-colorSecondary MuiTypography-alignLeft"
+                  >
+                    Last Name
+                     
+                  </h1>
+                  <div>
+                    <div
+                      class="MuiFormControl-root MuiTextField-root MuiFormControl-fullWidth"
+                      data-testid="profile-last-name-wrapper"
+                    >
+                      <div
+                        class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-fullWidth MuiInputBase-formControl"
+                      >
+                        <input
+                          aria-invalid="false"
+                          autocomplete="off"
+                          class="MuiInputBase-input MuiOutlinedInput-input"
+                          data-testid="profile-last-name"
+                          name="lastName"
+                          placeholder="Last Name"
+                          type="text"
+                          value=""
+                        />
+                        <fieldset
+                          aria-hidden="true"
+                          class="PrivateNotchedOutline-root-776 MuiOutlinedInput-notchedOutline"
+                          style="padding-left: 8px;"
+                        >
+                          <legend
+                            class="PrivateNotchedOutline-legend-777"
+                            style="width: 0.01px;"
+                          >
+                            <span>
+                              ​
+                            </span>
+                          </legend>
+                        </fieldset>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="makeStyles-errorInputWrapper-784"
+              >
+                <div
+                  class="MuiFormControl-root makeStyles-formControl-749 makeStyles-inputBottomPadding-780"
+                >
+                  <h1
+                    class="MuiTypography-root MuiTypography-caption MuiTypography-colorSecondary MuiTypography-alignLeft"
+                  >
+                    Email
+                     
+                  </h1>
+                  <div>
+                    <div
+                      class="MuiFormControl-root MuiTextField-root MuiFormControl-fullWidth"
+                      data-testid="profile-email"
+                    >
+                      <div
+                        class="MuiInputBase-root MuiOutlinedInput-root Mui-disabled Mui-disabled MuiInputBase-fullWidth MuiInputBase-formControl"
+                      >
+                        <input
+                          aria-invalid="false"
+                          autocomplete="off"
+                          class="MuiInputBase-input MuiOutlinedInput-input Mui-disabled Mui-disabled"
+                          data-testid="email"
+                          disabled=""
+                          name="email"
+                          placeholder="Email"
+                          type="text"
+                          value=""
+                        />
+                        <fieldset
+                          aria-hidden="true"
+                          class="PrivateNotchedOutline-root-776 MuiOutlinedInput-notchedOutline"
+                          style="padding-left: 8px;"
+                        >
+                          <legend
+                            class="PrivateNotchedOutline-legend-777"
+                            style="width: 0.01px;"
+                          >
+                            <span>
+                              ​
+                            </span>
+                          </legend>
+                        </fieldset>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="makeStyles-formButtonWrapper-782"
+          >
+            <span
+              class="makeStyles-noOutline-804"
+              data-testid="controlled-button"
+              tabindex="-1"
+            >
+              <button
+                class="MuiButtonBase-root MuiButton-root MuiButton-text makeStyles-discardButton-806 MuiButton-textPrimary"
+                data-testid="discard-changes-btn"
+                tabindex="0"
+                type="button"
+              >
+                <span
+                  class="MuiButton-label"
+                >
+                  Discard Changes
+                </span>
+                <span
+                  class="MuiTouchRipple-root"
+                />
+              </button>
+            </span>
+            <span
+              class="makeStyles-noOutline-804"
+              data-testid="controlled-button"
+              tabindex="-1"
+            >
+              <button
+                class="MuiButtonBase-root MuiButton-root MuiButton-contained false makeStyles-nextButton-805 makeStyles-noPadding-802 MuiButton-containedPrimary MuiButton-containedSizeLarge MuiButton-sizeLarge"
+                data-testid="confirm-btn"
+                tabindex="0"
+                type="button"
+              >
+                <span
+                  class="MuiButton-label"
+                >
+                  <span
+                    class="makeStyles-textWrapper-880"
+                  >
+                    Save Changes
+                  </span>
+                </span>
+                <span
+                  class="MuiTouchRipple-root"
+                />
+              </button>
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

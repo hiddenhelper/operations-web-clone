@@ -1,0 +1,184 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ButtonPrinter should render 1`] = `
+<div>
+  <button
+    class="MuiButtonBase-root MuiButton-root MuiButton-contained false  MuiButton-containedPrimary MuiButton-containedSizeLarge MuiButton-sizeLarge MuiButton-fullWidth"
+    data-testid="print-btn"
+    tabindex="0"
+    type="submit"
+  >
+    <span
+      class="MuiButton-label"
+    >
+      <span
+        class="makeStyles-textWrapper-3"
+      >
+        Print
+      </span>
+    </span>
+    <span
+      class="MuiTouchRipple-root"
+    />
+  </button>
+</div>
+`;
+
+exports[`ButtonPrinter should render disabled 1`] = `
+<div>
+  <button
+    class="MuiButtonBase-root MuiButton-root MuiButton-contained false  MuiButton-containedPrimary MuiButton-containedSizeLarge MuiButton-sizeLarge Mui-disabled MuiButton-fullWidth Mui-disabled"
+    data-testid="print-btn"
+    disabled=""
+    tabindex="-1"
+    type="submit"
+  >
+    <span
+      class="MuiButton-label"
+    >
+      <span
+        class="makeStyles-textWrapper-9"
+      >
+        Print
+      </span>
+    </span>
+  </button>
+</div>
+`;
+
+exports[`ButtonPrinter should render loading 1`] = `
+<div>
+  <button
+    class="MuiButtonBase-root MuiButton-root MuiButton-contained makeStyles-loading-4  MuiButton-containedPrimary MuiButton-containedSizeLarge MuiButton-sizeLarge Mui-disabled MuiButton-fullWidth Mui-disabled"
+    data-testid="print-btn"
+    disabled=""
+    tabindex="-1"
+    type="submit"
+  >
+    <span
+      class="MuiButton-label"
+    >
+      <span
+        class="makeStyles-spinnerWrapper-5"
+        data-testid="button-spinner"
+      >
+        <svg
+          class="indicator_4oezz7"
+          height="23.2"
+          width="23.2"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <g
+            stroke="rgba(0, 0, 0, 0.3843137254901961)"
+            stroke-linecap="round"
+            stroke-width="2.3"
+            transform="translate(11.6, 11.6)"
+          >
+            <line
+              style="opacity: 1;"
+              transform="rotate(0)"
+              x1="0"
+              x2="0"
+              y1="6.6"
+              y2="9.6"
+            />
+            <line
+              style="opacity: 0.8860544217687075;"
+              transform="rotate(-30)"
+              x1="0"
+              x2="0"
+              y1="6.6"
+              y2="9.6"
+            />
+            <line
+              style="opacity: 0.7721088435374149;"
+              transform="rotate(-60)"
+              x1="0"
+              x2="0"
+              y1="6.6"
+              y2="9.6"
+            />
+            <line
+              style="opacity: 0.6581632653061225;"
+              transform="rotate(-90)"
+              x1="0"
+              x2="0"
+              y1="6.6"
+              y2="9.6"
+            />
+            <line
+              style="opacity: 0.5442176870748299;"
+              transform="rotate(-120)"
+              x1="0"
+              x2="0"
+              y1="6.6"
+              y2="9.6"
+            />
+            <line
+              style="opacity: 0.4302721088435374;"
+              transform="rotate(-150)"
+              x1="0"
+              x2="0"
+              y1="6.6"
+              y2="9.6"
+            />
+            <line
+              style="opacity: 0.3163265306122449;"
+              transform="rotate(-180)"
+              x1="0"
+              x2="0"
+              y1="6.6"
+              y2="9.6"
+            />
+            <line
+              style="opacity: 0.3163265306122449;"
+              transform="rotate(-210)"
+              x1="0"
+              x2="0"
+              y1="6.6"
+              y2="9.6"
+            />
+            <line
+              style="opacity: 0.3163265306122449;"
+              transform="rotate(-240)"
+              x1="0"
+              x2="0"
+              y1="6.6"
+              y2="9.6"
+            />
+            <line
+              style="opacity: 0.3163265306122449;"
+              transform="rotate(-270)"
+              x1="0"
+              x2="0"
+              y1="6.6"
+              y2="9.6"
+            />
+            <line
+              style="opacity: 0.3163265306122449;"
+              transform="rotate(-300)"
+              x1="0"
+              x2="0"
+              y1="6.6"
+              y2="9.6"
+            />
+            <line
+              style="opacity: 0.3163265306122449;"
+              transform="rotate(-330)"
+              x1="0"
+              x2="0"
+              y1="6.6"
+              y2="9.6"
+            />
+          </g>
+        </svg>
+      </span>
+      <span
+        class="makeStyles-textWrapper-6"
+      >
+        Printing...
+      </span>
+    </span>
+  </button>
+</div>
+`;

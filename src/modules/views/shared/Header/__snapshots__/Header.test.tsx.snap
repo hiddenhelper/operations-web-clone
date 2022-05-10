@@ -1,0 +1,397 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Header should NOT navigate to Payment Settings 1`] = `
+<div
+  class="makeStyles-iconInactive-129"
+  data-testid="popover-wrapper"
+>
+  <span
+    class=""
+    data-testid="controlled-button"
+    tabindex="-1"
+  >
+    <button
+      aria-haspopup="true"
+      class="MuiButtonBase-root MuiIconButton-root MuiIconButton-colorPrimary"
+      data-testid="popover-button"
+      tabindex="0"
+      type="button"
+    >
+      <span
+        class="MuiIconButton-label"
+      >
+        <svg>
+          expand.svg
+        </svg>
+      </span>
+    </button>
+  </span>
+  
+</div>
+`;
+
+exports[`Header should navigate to Account Settings 1`] = `
+<div
+  class="makeStyles-iconInactive-85"
+  data-testid="popover-wrapper"
+>
+  <span
+    class=""
+    data-testid="controlled-button"
+    tabindex="-1"
+  >
+    <button
+      aria-haspopup="true"
+      class="MuiButtonBase-root MuiIconButton-root MuiIconButton-colorPrimary"
+      data-testid="popover-button"
+      tabindex="0"
+      type="button"
+    >
+      <span
+        class="MuiIconButton-label"
+      >
+        <svg>
+          expand.svg
+        </svg>
+      </span>
+    </button>
+  </span>
+  
+</div>
+`;
+
+exports[`Header should navigate to Payment Settings when Client Admin 1`] = `
+<div
+  class="makeStyles-iconInactive-173"
+  data-testid="popover-wrapper"
+>
+  <span
+    class=""
+    data-testid="controlled-button"
+    tabindex="-1"
+  >
+    <button
+      aria-haspopup="true"
+      class="MuiButtonBase-root MuiIconButton-root MuiIconButton-colorPrimary"
+      data-testid="popover-button"
+      tabindex="0"
+      type="button"
+    >
+      <span
+        class="MuiIconButton-label"
+      >
+        <svg>
+          expand.svg
+        </svg>
+      </span>
+    </button>
+  </span>
+  
+</div>
+`;
+
+exports[`Header should render 1`] = `
+<body>
+  <div>
+    <header
+      class="makeStyles-container-1 "
+      data-testid="header-wrapper"
+    >
+      <nav>
+        <button
+          aria-label="open drawer"
+          class="MuiButtonBase-root MuiIconButton-root makeStyles-menuButton-2 MuiIconButton-colorInherit MuiIconButton-edgeStart"
+          tabindex="0"
+          type="button"
+        >
+          <span
+            class="MuiIconButton-label"
+          >
+            <svg
+              aria-hidden="true"
+              class="MuiSvgIcon-root"
+              focusable="false"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"
+              />
+            </svg>
+          </span>
+          <span
+            class="MuiTouchRipple-root"
+          />
+        </button>
+        <div
+          aria-hidden="true"
+          class="MuiBackdrop-root makeStyles-backdrop-12"
+          style="opacity: 0; visibility: hidden;"
+        >
+           
+        </div>
+        <div
+          class="makeStyles-wrapper-13 makeStyles-wrapper-28"
+        >
+          <div
+            class="MuiFormControl-root MuiTextField-root makeStyles-input-30 makeStyles-input-34 MuiFormControl-fullWidth"
+          >
+            <div
+              class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-fullWidth MuiInputBase-formControl MuiInputBase-adornedStart MuiOutlinedInput-adornedStart"
+            >
+              <div
+                class="MuiInputAdornment-root MuiInputAdornment-positionStart"
+              >
+                <svg
+                  aria-hidden="true"
+                  class="MuiSvgIcon-root"
+                  focusable="false"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"
+                  />
+                </svg>
+              </div>
+              <input
+                aria-invalid="false"
+                autocomplete="off"
+                class="MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputAdornedStart MuiOutlinedInput-inputAdornedStart"
+                data-testid="main-search-input"
+                name="search"
+                placeholder="Find a project, client, worker..."
+                type="text"
+                value=""
+              />
+              <fieldset
+                aria-hidden="true"
+                class="PrivateNotchedOutline-root-35 MuiOutlinedInput-notchedOutline"
+                style="padding-left: 8px;"
+              >
+                <legend
+                  class="PrivateNotchedOutline-legend-36"
+                  style="width: 0.01px;"
+                >
+                  <span>
+                    ​
+                  </span>
+                </legend>
+              </fieldset>
+            </div>
+          </div>
+        </div>
+        <div
+          class="MuiBox-root MuiBox-root-39 makeStyles-avatarContainer-4"
+        >
+          <div
+            class="MuiBox-root MuiBox-root-40 makeStyles-emailAndRoleWrapper-6"
+          >
+            <p
+              class="MuiTypography-root makeStyles-avatarText-8 MuiTypography-body1"
+            >
+              user@test.com
+            </p>
+            <p
+              class="MuiTypography-root makeStyles-userRole-7 MuiTypography-body1"
+            >
+              FCA Admin
+            </p>
+          </div>
+          <div
+            class="MuiAvatar-root MuiAvatar-circle makeStyles-avatarElement-5"
+          >
+            <img
+              alt="John Doe"
+              class="MuiAvatar-img"
+              src="avatar.jpg"
+            />
+          </div>
+          <span
+            class="makeStyles-dropdownIcon-9"
+          >
+            <div
+              class="makeStyles-iconInactive-41"
+              data-testid="popover-wrapper"
+            >
+              <span
+                class=""
+                data-testid="controlled-button"
+                tabindex="-1"
+              >
+                <button
+                  aria-haspopup="true"
+                  class="MuiButtonBase-root MuiIconButton-root MuiIconButton-colorPrimary"
+                  data-testid="popover-button"
+                  tabindex="0"
+                  type="button"
+                >
+                  <span
+                    class="MuiIconButton-label"
+                  >
+                    <svg>
+                      expand.svg
+                    </svg>
+                  </span>
+                </button>
+              </span>
+              
+            </div>
+          </span>
+        </div>
+      </nav>
+    </header>
+  </div>
+</body>
+`;
+
+exports[`Header should render without scroll 1`] = `
+<body>
+  <div>
+    <header
+      class="makeStyles-container-177 makeStyles-scrollHided-179 makeStyles-scrollHided-187"
+      data-testid="header-wrapper"
+    >
+      <nav>
+        <button
+          aria-label="open drawer"
+          class="MuiButtonBase-root MuiIconButton-root makeStyles-menuButton-178 MuiIconButton-colorInherit MuiIconButton-edgeStart"
+          tabindex="0"
+          type="button"
+        >
+          <span
+            class="MuiIconButton-label"
+          >
+            <svg
+              aria-hidden="true"
+              class="MuiSvgIcon-root"
+              focusable="false"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"
+              />
+            </svg>
+          </span>
+          <span
+            class="MuiTouchRipple-root"
+          />
+        </button>
+        <div
+          aria-hidden="true"
+          class="MuiBackdrop-root makeStyles-backdrop-188"
+          style="opacity: 0; visibility: hidden;"
+        >
+           
+        </div>
+        <div
+          class="makeStyles-wrapper-189 makeStyles-wrapper-204"
+        >
+          <div
+            class="MuiFormControl-root MuiTextField-root makeStyles-input-206 makeStyles-input-210 MuiFormControl-fullWidth"
+          >
+            <div
+              class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-fullWidth MuiInputBase-formControl MuiInputBase-adornedStart MuiOutlinedInput-adornedStart"
+            >
+              <div
+                class="MuiInputAdornment-root MuiInputAdornment-positionStart"
+              >
+                <svg
+                  aria-hidden="true"
+                  class="MuiSvgIcon-root"
+                  focusable="false"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"
+                  />
+                </svg>
+              </div>
+              <input
+                aria-invalid="false"
+                autocomplete="off"
+                class="MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputAdornedStart MuiOutlinedInput-inputAdornedStart"
+                data-testid="main-search-input"
+                name="search"
+                placeholder="Find a project, client, worker..."
+                type="text"
+                value=""
+              />
+              <fieldset
+                aria-hidden="true"
+                class="PrivateNotchedOutline-root-211 MuiOutlinedInput-notchedOutline"
+                style="padding-left: 8px;"
+              >
+                <legend
+                  class="PrivateNotchedOutline-legend-212"
+                  style="width: 0.01px;"
+                >
+                  <span>
+                    ​
+                  </span>
+                </legend>
+              </fieldset>
+            </div>
+          </div>
+        </div>
+        <div
+          class="MuiBox-root MuiBox-root-215 makeStyles-avatarContainer-180"
+        >
+          <div
+            class="MuiBox-root MuiBox-root-216 makeStyles-emailAndRoleWrapper-182"
+          >
+            <p
+              class="MuiTypography-root makeStyles-avatarText-184 MuiTypography-body1"
+            >
+              user@test.com
+            </p>
+            <p
+              class="MuiTypography-root makeStyles-userRole-183 MuiTypography-body1"
+            >
+              FCA Admin
+            </p>
+          </div>
+          <div
+            class="MuiAvatar-root MuiAvatar-circle makeStyles-avatarElement-181"
+          >
+            <img
+              alt="John Doe"
+              class="MuiAvatar-img"
+              src="avatar.jpg"
+            />
+          </div>
+          <span
+            class="makeStyles-dropdownIcon-185"
+          >
+            <div
+              class="makeStyles-iconInactive-217"
+              data-testid="popover-wrapper"
+            >
+              <span
+                class=""
+                data-testid="controlled-button"
+                tabindex="-1"
+              >
+                <button
+                  aria-haspopup="true"
+                  class="MuiButtonBase-root MuiIconButton-root MuiIconButton-colorPrimary"
+                  data-testid="popover-button"
+                  tabindex="0"
+                  type="button"
+                >
+                  <span
+                    class="MuiIconButton-label"
+                  >
+                    <svg>
+                      expand.svg
+                    </svg>
+                  </span>
+                </button>
+              </span>
+              
+            </div>
+          </span>
+        </div>
+      </nav>
+    </header>
+  </div>
+</body>
+`;

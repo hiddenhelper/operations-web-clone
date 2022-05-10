@@ -1,0 +1,118 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PhoneNumberInput should add and remove focus class when the input is focused/blurred 1`] = `
+<div>
+  <div
+    class="makeStyles-phoneInput-4 undefined makeStyles-focus-5 react-tel-input"
+  >
+    <div
+      class="special-label"
+    >
+      Phone
+    </div>
+    <input
+      autocomplete="off"
+      class=" form-control"
+      data-testid="test-phone-input"
+      name="test-phone"
+      placeholder="+0 (000) 000-0000"
+      type="text"
+      value="+1 (234) 56"
+      variant="outlined"
+    />
+    <div
+      class=" flag-dropdown"
+    >
+      <div
+        aria-haspopup="listbox"
+        class="selected-flag"
+        role="button"
+        tabindex="-1"
+        title="United States: + 1"
+      >
+        <div
+          class="flag us"
+        />
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`PhoneNumberInput should add and remove focus class when the input is focused/blurred 2`] = `
+<div>
+  <div
+    class="makeStyles-phoneInput-4 undefined  react-tel-input"
+  >
+    <div
+      class="special-label"
+    >
+      Phone
+    </div>
+    <input
+      autocomplete="off"
+      class=" form-control"
+      data-testid="test-phone-input"
+      name="test-phone"
+      placeholder="+0 (000) 000-0000"
+      type="text"
+      value="+1 (234) 56"
+      variant="outlined"
+    />
+    <div
+      class=" flag-dropdown"
+    >
+      <div
+        aria-haspopup="listbox"
+        class="selected-flag"
+        role="button"
+        tabindex="-1"
+        title="United States: + 1"
+      >
+        <div
+          class="flag us"
+        />
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`PhoneNumberInput should render Phone Input Component 1`] = `
+<div>
+  <div
+    class="makeStyles-phoneInput-1 undefined  react-tel-input"
+  >
+    <div
+      class="special-label"
+    >
+      Phone
+    </div>
+    <input
+      autocomplete="off"
+      class=" form-control"
+      data-testid="test-phone-input"
+      name="test-phone"
+      placeholder="+0 (000) 000-0000"
+      type="text"
+      value="+1 (23)"
+      variant="outlined"
+    />
+    <div
+      class=" flag-dropdown"
+    >
+      <div
+        aria-haspopup="listbox"
+        class="selected-flag"
+        role="button"
+        tabindex="-1"
+        title="United States: + 1"
+      >
+        <div
+          class="flag us"
+        />
+      </div>
+    </div>
+  </div>
+</div>
+`;

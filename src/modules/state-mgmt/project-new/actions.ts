@@ -1,0 +1,67 @@
+import { ConsentFormModel, GeneralModel, ProjectNewModel } from '../../models';
+
+export enum ActionType {
+  ADD_PROJECT_BADGES_START = '[projectNew] add project badges start',
+  ADD_PROJECT_BADGES_SUCCESS = '[projectNew] add project badges success',
+  FETCH_BILLING_TIER_START = '[projectNew] fetch billing tier start',
+  FETCH_BILLING_TIER_SUCCESS = '[projectNew] fetch billing tier success',
+  FETCH_CONSENT_FORM_FIELDS_START = '[projectNew] fetch consent form fields start',
+  FETCH_CONSENT_FORM_FIELDS_SUCCESS = '[projectNew] fetch consent form fields success',
+  FETCH_DRAFT_PROJECT_START = '[projectNew] fetch draft project start',
+  FETCH_PROJECT_CATEGORY_START = '[projectNew] fetch category list start',
+  FETCH_PROJECT_CATEGORY_SUCCESS = '[projectNew] fetch category list success',
+  FETCH_PROJECT_FCANAE_START = '[projectNew] fetch fca-nae list success',
+  FETCH_PROJECT_FCANAE_SUCCESS = '[projectNew] fetch fca-nae list start',
+  FETCH_PROJECT_LIST_SUCCESS = '[projectNew] fetch project list success',
+  FETCH_PROJECT_REGION_START = '[projectNew] fetch region list success',
+  FETCH_PROJECT_REGION_SUCCESS = '[projectNew] fetch region list start',
+  FETCH_PROJECT_START = '[projectNew] fetch project start',
+  REVIEW_MODE = '[projectNew] review mode',
+  SAVE_PROJECT_START = '[projectNew] save project start',
+  SAVE_PROJECT_SUCCESS = '[projectNew] save project success',
+  UPDATE_DRAFT_PROJECT_START = '[projectNew] update draft project start',
+  UPDATE_DRAFT_PROJECT_SUCCESS = '[projectNew] update draft project success',
+  UPDATE_PROJECT_START = '[projectNew] update project start',
+  UPDATE_PROJECT_SUCCESS = '[projectNew] update project success',
+  UPLOAD_PROJECT_BADGES_START = '[projectNew] upload project badges start',
+}
+
+export const actions = {
+  setReviewMode: (reviewMode: boolean) => ({ type: ActionType.REVIEW_MODE, payload: { reviewMode } }),
+  fetchProjectStart: (id: string) => ({ type: ActionType.FETCH_PROJECT_START, payload: { id } }),
+  fetchDraftProjectStart: (id: string) => ({ type: ActionType.FETCH_DRAFT_PROJECT_START, payload: { id } }),
+  fetchCategoryListStart: () => ({ type: ActionType.FETCH_PROJECT_CATEGORY_START, payload: {} }),
+  fetchCategoryListSuccess: (list: GeneralModel.INamedEntity[]) => ({ type: ActionType.FETCH_PROJECT_CATEGORY_SUCCESS, payload: { list } }),
+  fetchRegionListStart: () => ({ type: ActionType.FETCH_PROJECT_REGION_START, payload: {} }),
+  fetchRegionListSuccess: (list: GeneralModel.INamedEntity[]) => ({ type: ActionType.FETCH_PROJECT_REGION_SUCCESS, payload: { list } }),
+  fetchNaeListStart: () => ({ type: ActionType.FETCH_PROJECT_FCANAE_START, payload: {} }),
+  fetchNaeListSuccess: (list: GeneralModel.INamedEntity[]) => ({ type: ActionType.FETCH_PROJECT_FCANAE_SUCCESS, payload: { list } }),
+  saveProjectStart: (project: Partial<ProjectNewModel.IProject>, stepKey: string) => ({
+    type: ActionType.SAVE_PROJECT_START,
+    payload: { project, stepKey },
+  }),
+  saveProjectSuccess: (project: ProjectNewModel.IProject) => ({ type: ActionType.SAVE_PROJECT_SUCCESS, payload: { project } }),
+  updateDraftProjectStart: (project: Partial<ProjectNewModel.IProject>) => ({ type: ActionType.UPDATE_DRAFT_PROJECT_START, payload: { project } }),
+  updateProjectStart: (project: Partial<ProjectNewModel.IProject>) => ({ type: ActionType.UPDATE_PROJECT_START, payload: { project } }),
+  updateProjectSuccess: (project: ProjectNewModel.IProject) => ({ type: ActionType.UPDATE_PROJECT_SUCCESS, payload: { project } }),
+  addProjectBadgesStart: (projectId: string, files: string[]) => ({
+    type: ActionType.ADD_PROJECT_BADGES_START,
+    payload: { projectId, files },
+  }),
+  addProjectBadgesSuccess: () => ({
+    type: ActionType.ADD_PROJECT_BADGES_SUCCESS,
+    payload: {},
+  }),
+  uploadProjectBadgesStart: (projectId: string, uploadIdList: string[], fileMap: object) => ({
+    type: ActionType.UPLOAD_PROJECT_BADGES_START,
+    payload: { projectId, uploadIdList, fileMap },
+  }),
+  fetchProjectListSuccess: (list: Partial<ProjectNewModel.IProject>[], count: number) => ({
+    type: ActionType.FETCH_PROJECT_LIST_SUCCESS,
+    payload: { list, count },
+  }),
+  fetchBillingTierListStart: () => ({ type: ActionType.FETCH_BILLING_TIER_START, payload: {} }),
+  fetchBillingTierListSuccess: (list: ProjectNewModel.IBillingTier[]) => ({ type: ActionType.FETCH_BILLING_TIER_SUCCESS, payload: { list } }),
+  fetchConsentFormFieldsStart: () => ({ type: ActionType.FETCH_CONSENT_FORM_FIELDS_START, payload: {} }),
+  fetchConsentFormFieldsSuccess: (list: ConsentFormModel.IConsentFormField[]) => ({ type: ActionType.FETCH_CONSENT_FORM_FIELDS_SUCCESS, payload: { list } }),
+};

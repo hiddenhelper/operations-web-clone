@@ -1,0 +1,532 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`WorkersByClient Component should render 1`] = `
+<div>
+  <div
+    class="MuiPaper-root  makeStyles-widget-57 MuiPaper-elevation0 MuiPaper-rounded"
+    style="height: 100%; min-height: 450px;"
+  >
+    <div
+      class="makeStyles-widgetTitleMarginBottom-40 makeStyles-withFilter-55"
+    >
+      <p
+        class="MuiTypography-root makeStyles-widgetTitle-59 makeStyles-widgetTitleInlinePosition-74 MuiTypography-body1"
+      >
+        Workers by Clients
+      </p>
+    </div>
+    <div
+      style="padding-top: 15px;"
+    >
+      <div
+        class="MuiGrid-root MuiGrid-container"
+        style="height: 24px; margin-bottom: 12px;"
+      >
+        <div
+          class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-12 MuiGrid-grid-lg-12 MuiGrid-grid-xl-12"
+        >
+          <div
+            class="MuiGrid-root MuiGrid-container"
+          >
+            <div
+              class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-6 MuiGrid-grid-sm-6 MuiGrid-grid-lg-6 MuiGrid-grid-xl-6"
+              style="display: flex; align-items: center;"
+            >
+              <p
+                class="MuiTypography-root MuiTypography-body1"
+                style="font-weight: bold;"
+              >
+                Client
+              </p>
+            </div>
+            <div
+              class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-6 MuiGrid-grid-sm-6 MuiGrid-grid-lg-6 MuiGrid-grid-xl-6"
+              style="display: flex; align-items: center; justify-content: flex-end;"
+            >
+              <p
+                class="MuiTypography-root MuiTypography-body1"
+                style="font-weight: bold;"
+              >
+                Quantity
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="MuiGrid-root MuiGrid-container"
+        style="height: 24px; margin-bottom: 6.5px;"
+      >
+        <div
+          class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-12 MuiGrid-grid-lg-12 MuiGrid-grid-xl-12"
+        >
+          <div
+            class="MuiGrid-root MuiGrid-container"
+          >
+            <div
+              class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-3 MuiGrid-grid-sm-3 MuiGrid-grid-lg-3 MuiGrid-grid-xl-3"
+            >
+              <div
+                class=""
+                style="align-items: center; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;"
+                title="Huston"
+              >
+                Huston
+              </div>
+            </div>
+            <div
+              class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-8 MuiGrid-grid-sm-8 MuiGrid-grid-lg-8 MuiGrid-grid-xl-8"
+              style="display: flex; align-items: center; padding-left: 5px;"
+            >
+              <div
+                style="width: 85%; background-color: rgb(233, 166, 31); height: 8px; border-radius: 4px;"
+              />
+            </div>
+            <div
+              class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-1 MuiGrid-grid-sm-1 MuiGrid-grid-lg-1 MuiGrid-grid-xl-1"
+              style="display: flex; align-items: center; justify-content: flex-end;"
+            >
+              938
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="MuiGrid-root MuiGrid-container"
+        style="height: 24px; margin-bottom: 6.5px;"
+      >
+        <div
+          class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-12 MuiGrid-grid-lg-12 MuiGrid-grid-xl-12"
+        >
+          <div
+            class="MuiGrid-root MuiGrid-container"
+          >
+            <div
+              class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-3 MuiGrid-grid-sm-3 MuiGrid-grid-lg-3 MuiGrid-grid-xl-3"
+            >
+              <div
+                class=""
+                style="align-items: center; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;"
+                title="Dallas"
+              >
+                Dallas
+              </div>
+            </div>
+            <div
+              class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-8 MuiGrid-grid-sm-8 MuiGrid-grid-lg-8 MuiGrid-grid-xl-8"
+              style="display: flex; align-items: center; padding-left: 5px;"
+            >
+              <div
+                style="width: 80%; background-color: rgb(233, 166, 31); height: 8px; border-radius: 4px;"
+              />
+            </div>
+            <div
+              class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-1 MuiGrid-grid-sm-1 MuiGrid-grid-lg-1 MuiGrid-grid-xl-1"
+              style="display: flex; align-items: center; justify-content: flex-end;"
+            >
+              839
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="MuiGrid-root MuiGrid-container"
+        style="height: 24px; margin-bottom: 6.5px;"
+      >
+        <div
+          class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-12 MuiGrid-grid-lg-12 MuiGrid-grid-xl-12"
+        >
+          <div
+            class="MuiGrid-root MuiGrid-container"
+          >
+            <div
+              class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-3 MuiGrid-grid-sm-3 MuiGrid-grid-lg-3 MuiGrid-grid-xl-3"
+            >
+              <div
+                class=""
+                style="align-items: center; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;"
+                title="Austin"
+              >
+                Austin
+              </div>
+            </div>
+            <div
+              class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-8 MuiGrid-grid-sm-8 MuiGrid-grid-lg-8 MuiGrid-grid-xl-8"
+              style="display: flex; align-items: center; padding-left: 5px;"
+            >
+              <div
+                style="width: 78%; background-color: rgb(233, 166, 31); height: 8px; border-radius: 4px;"
+              />
+            </div>
+            <div
+              class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-1 MuiGrid-grid-sm-1 MuiGrid-grid-lg-1 MuiGrid-grid-xl-1"
+              style="display: flex; align-items: center; justify-content: flex-end;"
+            >
+              783
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="MuiGrid-root MuiGrid-container"
+        style="height: 24px; margin-bottom: 6.5px;"
+      >
+        <div
+          class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-12 MuiGrid-grid-lg-12 MuiGrid-grid-xl-12"
+        >
+          <div
+            class="MuiGrid-root MuiGrid-container"
+          >
+            <div
+              class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-3 MuiGrid-grid-sm-3 MuiGrid-grid-lg-3 MuiGrid-grid-xl-3"
+            >
+              <div
+                class=""
+                style="align-items: center; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;"
+                title="San Antonio"
+              >
+                San Antonio
+              </div>
+            </div>
+            <div
+              class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-8 MuiGrid-grid-sm-8 MuiGrid-grid-lg-8 MuiGrid-grid-xl-8"
+              style="display: flex; align-items: center; padding-left: 5px;"
+            >
+              <div
+                style="width: 73%; background-color: rgb(233, 166, 31); height: 8px; border-radius: 4px;"
+              />
+            </div>
+            <div
+              class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-1 MuiGrid-grid-sm-1 MuiGrid-grid-lg-1 MuiGrid-grid-xl-1"
+              style="display: flex; align-items: center; justify-content: flex-end;"
+            >
+              762
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="MuiGrid-root MuiGrid-container"
+        style="height: 24px; margin-bottom: 6.5px;"
+      >
+        <div
+          class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-12 MuiGrid-grid-lg-12 MuiGrid-grid-xl-12"
+        >
+          <div
+            class="MuiGrid-root MuiGrid-container"
+          >
+            <div
+              class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-3 MuiGrid-grid-sm-3 MuiGrid-grid-lg-3 MuiGrid-grid-xl-3"
+            >
+              <div
+                class=""
+                style="align-items: center; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;"
+                title="El Paso"
+              >
+                El Paso
+              </div>
+            </div>
+            <div
+              class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-8 MuiGrid-grid-sm-8 MuiGrid-grid-lg-8 MuiGrid-grid-xl-8"
+              style="display: flex; align-items: center; padding-left: 5px;"
+            >
+              <div
+                style="width: 65%; background-color: rgb(233, 166, 31); height: 8px; border-radius: 4px;"
+              />
+            </div>
+            <div
+              class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-1 MuiGrid-grid-sm-1 MuiGrid-grid-lg-1 MuiGrid-grid-xl-1"
+              style="display: flex; align-items: center; justify-content: flex-end;"
+            >
+              684
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="MuiGrid-root MuiGrid-container"
+        style="height: 24px; margin-bottom: 6.5px;"
+      >
+        <div
+          class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-12 MuiGrid-grid-lg-12 MuiGrid-grid-xl-12"
+        >
+          <div
+            class="MuiGrid-root MuiGrid-container"
+          >
+            <div
+              class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-3 MuiGrid-grid-sm-3 MuiGrid-grid-lg-3 MuiGrid-grid-xl-3"
+            >
+              <div
+                class=""
+                style="align-items: center; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;"
+                title="Leage City"
+              >
+                Leage City
+              </div>
+            </div>
+            <div
+              class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-8 MuiGrid-grid-sm-8 MuiGrid-grid-lg-8 MuiGrid-grid-xl-8"
+              style="display: flex; align-items: center; padding-left: 5px;"
+            >
+              <div
+                style="width: 60%; background-color: rgb(233, 166, 31); height: 8px; border-radius: 4px;"
+              />
+            </div>
+            <div
+              class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-1 MuiGrid-grid-sm-1 MuiGrid-grid-lg-1 MuiGrid-grid-xl-1"
+              style="display: flex; align-items: center; justify-content: flex-end;"
+            >
+              631
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="MuiGrid-root MuiGrid-container"
+        style="height: 24px; margin-bottom: 6.5px;"
+      >
+        <div
+          class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-12 MuiGrid-grid-lg-12 MuiGrid-grid-xl-12"
+        >
+          <div
+            class="MuiGrid-root MuiGrid-container"
+          >
+            <div
+              class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-3 MuiGrid-grid-sm-3 MuiGrid-grid-lg-3 MuiGrid-grid-xl-3"
+            >
+              <div
+                class=""
+                style="align-items: center; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;"
+                title="For Worth"
+              >
+                For Worth
+              </div>
+            </div>
+            <div
+              class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-8 MuiGrid-grid-sm-8 MuiGrid-grid-lg-8 MuiGrid-grid-xl-8"
+              style="display: flex; align-items: center; padding-left: 5px;"
+            >
+              <div
+                style="width: 50%; background-color: rgb(233, 166, 31); height: 8px; border-radius: 4px;"
+              />
+            </div>
+            <div
+              class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-1 MuiGrid-grid-sm-1 MuiGrid-grid-lg-1 MuiGrid-grid-xl-1"
+              style="display: flex; align-items: center; justify-content: flex-end;"
+            >
+              603
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="MuiGrid-root MuiGrid-container"
+        style="height: 24px; margin-bottom: 6.5px;"
+      >
+        <div
+          class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-12 MuiGrid-grid-lg-12 MuiGrid-grid-xl-12"
+        >
+          <div
+            class="MuiGrid-root MuiGrid-container"
+          >
+            <div
+              class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-3 MuiGrid-grid-sm-3 MuiGrid-grid-lg-3 MuiGrid-grid-xl-3"
+            >
+              <div
+                class=""
+                style="align-items: center; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;"
+                title="Texas City"
+              >
+                Texas City
+              </div>
+            </div>
+            <div
+              class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-8 MuiGrid-grid-sm-8 MuiGrid-grid-lg-8 MuiGrid-grid-xl-8"
+              style="display: flex; align-items: center; padding-left: 5px;"
+            >
+              <div
+                style="width: 46%; background-color: rgb(233, 166, 31); height: 8px; border-radius: 4px;"
+              />
+            </div>
+            <div
+              class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-1 MuiGrid-grid-sm-1 MuiGrid-grid-lg-1 MuiGrid-grid-xl-1"
+              style="display: flex; align-items: center; justify-content: flex-end;"
+            >
+              589
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="MuiGrid-root MuiGrid-container"
+        style="height: 24px; margin-bottom: 6.5px;"
+      >
+        <div
+          class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-12 MuiGrid-grid-lg-12 MuiGrid-grid-xl-12"
+        >
+          <div
+            class="MuiGrid-root MuiGrid-container"
+          >
+            <div
+              class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-3 MuiGrid-grid-sm-3 MuiGrid-grid-lg-3 MuiGrid-grid-xl-3"
+            >
+              <div
+                class=""
+                style="align-items: center; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;"
+                title="Amarillo"
+              >
+                Amarillo
+              </div>
+            </div>
+            <div
+              class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-8 MuiGrid-grid-sm-8 MuiGrid-grid-lg-8 MuiGrid-grid-xl-8"
+              style="display: flex; align-items: center; padding-left: 5px;"
+            >
+              <div
+                style="width: 41%; background-color: rgb(233, 166, 31); height: 8px; border-radius: 4px;"
+              />
+            </div>
+            <div
+              class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-1 MuiGrid-grid-sm-1 MuiGrid-grid-lg-1 MuiGrid-grid-xl-1"
+              style="display: flex; align-items: center; justify-content: flex-end;"
+            >
+              524
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="MuiGrid-root MuiGrid-container"
+        style="height: 24px; margin-bottom: 6.5px;"
+      >
+        <div
+          class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-12 MuiGrid-grid-lg-12 MuiGrid-grid-xl-12"
+        >
+          <div
+            class="MuiGrid-root MuiGrid-container"
+          >
+            <div
+              class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-3 MuiGrid-grid-sm-3 MuiGrid-grid-lg-3 MuiGrid-grid-xl-3"
+            >
+              <div
+                class=""
+                style="align-items: center; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;"
+                title="Waco"
+              >
+                Waco
+              </div>
+            </div>
+            <div
+              class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-8 MuiGrid-grid-sm-8 MuiGrid-grid-lg-8 MuiGrid-grid-xl-8"
+              style="display: flex; align-items: center; padding-left: 5px;"
+            >
+              <div
+                style="width: 35%; background-color: rgb(233, 166, 31); height: 8px; border-radius: 4px;"
+              />
+            </div>
+            <div
+              class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-1 MuiGrid-grid-sm-1 MuiGrid-grid-lg-1 MuiGrid-grid-xl-1"
+              style="display: flex; align-items: center; justify-content: flex-end;"
+            >
+              389
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`WorkersByClient Component should render loading 1`] = `
+<div>
+  <div
+    class="MuiPaper-root  makeStyles-widget-242 MuiPaper-elevation0 MuiPaper-rounded"
+    style="height: 100%; min-height: 450px;"
+  >
+    <div
+      class="makeStyles-widgetTitleMarginBottom-225 makeStyles-withFilter-240"
+    >
+      <div
+        class="MuiSkeleton-root MuiSkeleton-rect MuiSkeleton-wave"
+        style="width: 100%; height: 30px;"
+      />
+    </div>
+    <div
+      style="padding-top: 15px;"
+    >
+      <div
+        class="MuiGrid-root MuiGrid-container"
+        style="height: 24px; margin-bottom: 12px;"
+      >
+        <div
+          class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-12 MuiGrid-grid-lg-12 MuiGrid-grid-xl-12"
+        >
+          <div
+            class="MuiGrid-root MuiGrid-container"
+          >
+            <div
+              class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-6 MuiGrid-grid-sm-6 MuiGrid-grid-lg-6 MuiGrid-grid-xl-6"
+              style="display: flex; align-items: center;"
+            >
+              <div
+                class="MuiSkeleton-root MuiSkeleton-rect MuiSkeleton-wave"
+                style="width: 30%; height: 15px;"
+              />
+            </div>
+            <div
+              class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-6 MuiGrid-grid-sm-6 MuiGrid-grid-lg-6 MuiGrid-grid-xl-6"
+              style="display: flex; align-items: center; justify-content: flex-end;"
+            >
+              <div
+                class="MuiSkeleton-root MuiSkeleton-rect MuiSkeleton-wave"
+                style="width: 30%; height: 15px;"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="MuiSkeleton-root MuiSkeleton-rect MuiSkeleton-wave"
+        style="width: 100%; height: auto;"
+      />
+      <div
+        class="MuiSkeleton-root MuiSkeleton-rect MuiSkeleton-wave"
+        style="width: 100%; height: auto;"
+      />
+      <div
+        class="MuiSkeleton-root MuiSkeleton-rect MuiSkeleton-wave"
+        style="width: 100%; height: auto;"
+      />
+      <div
+        class="MuiSkeleton-root MuiSkeleton-rect MuiSkeleton-wave"
+        style="width: 100%; height: auto;"
+      />
+      <div
+        class="MuiSkeleton-root MuiSkeleton-rect MuiSkeleton-wave"
+        style="width: 100%; height: auto;"
+      />
+      <div
+        class="MuiSkeleton-root MuiSkeleton-rect MuiSkeleton-wave"
+        style="width: 100%; height: auto;"
+      />
+      <div
+        class="MuiSkeleton-root MuiSkeleton-rect MuiSkeleton-wave"
+        style="width: 100%; height: auto;"
+      />
+      <div
+        class="MuiSkeleton-root MuiSkeleton-rect MuiSkeleton-wave"
+        style="width: 100%; height: auto;"
+      />
+      <div
+        class="MuiSkeleton-root MuiSkeleton-rect MuiSkeleton-wave"
+        style="width: 100%; height: auto;"
+      />
+      <div
+        class="MuiSkeleton-root MuiSkeleton-rect MuiSkeleton-wave"
+        style="width: 100%; height: auto;"
+      />
+    </div>
+  </div>
+</div>
+`;

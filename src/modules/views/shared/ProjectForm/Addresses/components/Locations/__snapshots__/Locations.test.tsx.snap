@@ -1,0 +1,1400 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Locations should add location 1`] = `
+<div>
+  <div
+    class="MuiPaper-root makeStyles-container-292  MuiPaper-outlined MuiPaper-rounded"
+  >
+    <div
+      class="MuiGrid-root MuiGrid-container MuiGrid-align-items-xs-center MuiGrid-justify-xs-space-between"
+    >
+      <div
+        class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-auto"
+      >
+        <h1
+          class="MuiTypography-root makeStyles-title-293 MuiTypography-h1"
+        >
+          Project Locations
+        </h1>
+      </div>
+      <div
+        class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-auto"
+      >
+        <span
+          class=" makeStyles-secondaryActions-294"
+        />
+      </div>
+    </div>
+    <hr
+      class="MuiDivider-root makeStyles-divider-295"
+    />
+    <div>
+      <div
+        class="MuiGrid-root MuiGrid-container"
+        data-testid="user-row-item"
+      >
+        <div
+          class="MuiGrid-root MuiGrid-item MuiGrid-grid-lg-11"
+        >
+          <div
+            class="MuiGrid-root MuiGrid-container"
+          >
+            <div
+              class="MuiGrid-root makeStyles-rowsWrapper-244 makeStyles-field-232 MuiGrid-container"
+            >
+              <div
+                class="makeStyles-errorInputWrapper-234"
+              >
+                <div
+                  class="MuiFormControl-root makeStyles-formControl-301 "
+                >
+                  <h1
+                    class="MuiTypography-root MuiTypography-caption MuiTypography-colorSecondary MuiTypography-alignLeft"
+                  >
+                    Location Name
+                     
+                  </h1>
+                  <div>
+                    <div
+                      class="MuiFormControl-root MuiTextField-root MuiFormControl-fullWidth"
+                    >
+                      <div
+                        class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-fullWidth Mui-focused Mui-focused MuiInputBase-formControl"
+                      >
+                        <input
+                          aria-invalid="false"
+                          autocomplete="off"
+                          class="MuiInputBase-input MuiOutlinedInput-input"
+                          data-testid="project-location-name"
+                          name="name"
+                          placeholder="Location Name"
+                          required=""
+                          type="text"
+                          value="location 1"
+                        />
+                        <fieldset
+                          aria-hidden="true"
+                          class="PrivateNotchedOutline-root-303 MuiOutlinedInput-notchedOutline"
+                          style="padding-left: 8px;"
+                        >
+                          <legend
+                            class="PrivateNotchedOutline-legend-304"
+                            style="width: 0.01px;"
+                          >
+                            <span>
+                              ​
+                            </span>
+                          </legend>
+                        </fieldset>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="MuiGrid-root MuiGrid-item MuiGrid-grid-lg-1"
+        >
+          <button
+            class="MuiButtonBase-root MuiIconButton-root makeStyles-deleteButton-216 false"
+            data-testid="delete-location-button"
+            style="left: 1em;"
+            tabindex="0"
+            type="button"
+          >
+            <span
+              class="MuiIconButton-label"
+            >
+              <svg>
+                delete.svg
+              </svg>
+            </span>
+            <span
+              class="MuiTouchRipple-root"
+            />
+          </button>
+        </div>
+      </div>
+      <hr
+        class="MuiDivider-root makeStyles-divider-233"
+      />
+    </div>
+    <span
+      class=""
+      data-testid="controlled-button"
+      tabindex="-1"
+    >
+      <button
+        class="MuiButtonBase-root MuiButton-root MuiButton-text makeStyles-addButtonRow-235 makeStyles-addUserButton-219 makeStyles-enableUserButton-267"
+        data-testid="add-location-button"
+        tabindex="0"
+        type="button"
+      >
+        <span
+          class="MuiButton-label"
+        >
+          <span
+            class="MuiButton-startIcon MuiButton-iconSizeMedium"
+          >
+            <svg>
+              add.svg
+            </svg>
+          </span>
+          Add Location
+        </span>
+      </button>
+    </span>
+  </div>
+</div>
+`;
+
+exports[`Locations should change a location 1`] = `
+Array [
+  <input
+    aria-invalid="false"
+    autocomplete="off"
+    class="MuiInputBase-input MuiOutlinedInput-input"
+    data-testid="project-location-name"
+    name="name"
+    placeholder="Location Name"
+    required=""
+    type="text"
+    value="location 1"
+  />,
+]
+`;
+
+exports[`Locations should delete location 1`] = `
+<div>
+  <div
+    class="MuiPaper-root makeStyles-container-496  MuiPaper-outlined MuiPaper-rounded"
+  >
+    <div
+      class="MuiGrid-root MuiGrid-container MuiGrid-align-items-xs-center MuiGrid-justify-xs-space-between"
+    >
+      <div
+        class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-auto"
+      >
+        <h1
+          class="MuiTypography-root makeStyles-title-497 MuiTypography-h1"
+        >
+          Project Locations
+        </h1>
+      </div>
+      <div
+        class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-auto"
+      >
+        <span
+          class=" makeStyles-secondaryActions-498"
+        />
+      </div>
+    </div>
+    <hr
+      class="MuiDivider-root makeStyles-divider-499"
+    />
+    <div>
+      <div
+        class="MuiGrid-root MuiGrid-container"
+        data-testid="user-row-item"
+      >
+        <div
+          class="MuiGrid-root MuiGrid-item MuiGrid-grid-lg-11"
+        >
+          <div
+            class="MuiGrid-root MuiGrid-container"
+          >
+            <div
+              class="MuiGrid-root makeStyles-rowsWrapper-448 makeStyles-field-436 MuiGrid-container"
+            >
+              <div
+                class="makeStyles-errorInputWrapper-438"
+              >
+                <div
+                  class="MuiFormControl-root makeStyles-formControl-505 "
+                >
+                  <h1
+                    class="MuiTypography-root MuiTypography-caption MuiTypography-colorSecondary MuiTypography-alignLeft"
+                  >
+                    Location Name
+                     
+                  </h1>
+                  <div>
+                    <div
+                      class="MuiFormControl-root MuiTextField-root MuiFormControl-fullWidth"
+                    >
+                      <div
+                        class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-fullWidth MuiInputBase-formControl"
+                      >
+                        <input
+                          aria-invalid="false"
+                          autocomplete="off"
+                          class="MuiInputBase-input MuiOutlinedInput-input"
+                          data-testid="project-location-name"
+                          name="name"
+                          placeholder="Location Name"
+                          required=""
+                          type="text"
+                          value="location 1"
+                        />
+                        <fieldset
+                          aria-hidden="true"
+                          class="PrivateNotchedOutline-root-507 MuiOutlinedInput-notchedOutline"
+                          style="padding-left: 8px;"
+                        >
+                          <legend
+                            class="PrivateNotchedOutline-legend-508"
+                            style="width: 0.01px;"
+                          >
+                            <span>
+                              ​
+                            </span>
+                          </legend>
+                        </fieldset>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="MuiGrid-root MuiGrid-item MuiGrid-grid-lg-1"
+        >
+          <button
+            class="MuiButtonBase-root MuiIconButton-root makeStyles-deleteButton-420 false"
+            data-testid="delete-location-button"
+            style="left: 1em;"
+            tabindex="0"
+            type="button"
+          >
+            <span
+              class="MuiIconButton-label"
+            >
+              <svg>
+                delete.svg
+              </svg>
+            </span>
+            <span
+              class="MuiTouchRipple-root"
+            />
+          </button>
+        </div>
+      </div>
+      <hr
+        class="MuiDivider-root makeStyles-divider-437"
+      />
+    </div>
+    <div>
+      <div
+        class="MuiGrid-root MuiGrid-container"
+        data-testid="user-row-item"
+      >
+        <div
+          class="MuiGrid-root MuiGrid-item MuiGrid-grid-lg-11"
+        >
+          <div
+            class="MuiGrid-root MuiGrid-container"
+          >
+            <div
+              class="MuiGrid-root makeStyles-rowsWrapper-448 makeStyles-field-436 MuiGrid-container"
+            >
+              <div
+                class="makeStyles-errorInputWrapper-438"
+              >
+                <div
+                  class="MuiFormControl-root makeStyles-formControl-505 "
+                >
+                  <h1
+                    class="MuiTypography-root MuiTypography-caption MuiTypography-colorSecondary MuiTypography-alignLeft"
+                  >
+                    Location Name
+                     
+                  </h1>
+                  <div>
+                    <div
+                      class="MuiFormControl-root MuiTextField-root MuiFormControl-fullWidth"
+                    >
+                      <div
+                        class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-fullWidth Mui-focused Mui-focused MuiInputBase-formControl"
+                      >
+                        <input
+                          aria-invalid="false"
+                          autocomplete="off"
+                          class="MuiInputBase-input MuiOutlinedInput-input"
+                          data-testid="project-location-name"
+                          name="name"
+                          placeholder="Location Name"
+                          required=""
+                          type="text"
+                          value="location 2"
+                        />
+                        <fieldset
+                          aria-hidden="true"
+                          class="PrivateNotchedOutline-root-507 MuiOutlinedInput-notchedOutline"
+                          style="padding-left: 8px;"
+                        >
+                          <legend
+                            class="PrivateNotchedOutline-legend-508"
+                            style="width: 0.01px;"
+                          >
+                            <span>
+                              ​
+                            </span>
+                          </legend>
+                        </fieldset>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="MuiGrid-root MuiGrid-item MuiGrid-grid-lg-1"
+        >
+          <button
+            class="MuiButtonBase-root MuiIconButton-root makeStyles-deleteButton-420 false"
+            data-testid="delete-location-button"
+            style="left: 1em;"
+            tabindex="0"
+            type="button"
+          >
+            <span
+              class="MuiIconButton-label"
+            >
+              <svg>
+                delete.svg
+              </svg>
+            </span>
+            <span
+              class="MuiTouchRipple-root"
+            />
+          </button>
+        </div>
+      </div>
+      <hr
+        class="MuiDivider-root makeStyles-divider-437"
+      />
+    </div>
+    <span
+      class=""
+      data-testid="controlled-button"
+      tabindex="-1"
+    >
+      <button
+        class="MuiButtonBase-root MuiButton-root MuiButton-text makeStyles-addButtonRow-439 makeStyles-addUserButton-423 makeStyles-enableUserButton-471"
+        data-testid="add-location-button"
+        tabindex="0"
+        type="button"
+      >
+        <span
+          class="MuiButton-label"
+        >
+          <span
+            class="MuiButton-startIcon MuiButton-iconSizeMedium"
+          >
+            <svg>
+              add.svg
+            </svg>
+          </span>
+          Add Location
+        </span>
+      </button>
+    </span>
+  </div>
+</div>
+`;
+
+exports[`Locations should delete location while delete string 1`] = `
+<div>
+  <div
+    class="MuiPaper-root makeStyles-container-598  MuiPaper-outlined MuiPaper-rounded"
+  >
+    <div
+      class="MuiGrid-root MuiGrid-container MuiGrid-align-items-xs-center MuiGrid-justify-xs-space-between"
+    >
+      <div
+        class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-auto"
+      >
+        <h1
+          class="MuiTypography-root makeStyles-title-599 MuiTypography-h1"
+        >
+          Project Locations
+        </h1>
+      </div>
+      <div
+        class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-auto"
+      >
+        <span
+          class=" makeStyles-secondaryActions-600"
+        />
+      </div>
+    </div>
+    <hr
+      class="MuiDivider-root makeStyles-divider-601"
+    />
+    <div>
+      <div
+        class="MuiGrid-root MuiGrid-container"
+        data-testid="user-row-item"
+      >
+        <div
+          class="MuiGrid-root MuiGrid-item MuiGrid-grid-lg-11"
+        >
+          <div
+            class="MuiGrid-root MuiGrid-container"
+          >
+            <div
+              class="MuiGrid-root makeStyles-rowsWrapper-550 makeStyles-field-538 MuiGrid-container"
+            >
+              <div
+                class="makeStyles-errorInputWrapper-540"
+              >
+                <div
+                  class="MuiFormControl-root makeStyles-formControl-607 "
+                >
+                  <h1
+                    class="MuiTypography-root MuiTypography-caption MuiTypography-colorSecondary MuiTypography-alignLeft"
+                  >
+                    Location Name
+                     
+                  </h1>
+                  <div>
+                    <div
+                      class="MuiFormControl-root MuiTextField-root MuiFormControl-fullWidth"
+                    >
+                      <div
+                        class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-fullWidth MuiInputBase-formControl"
+                      >
+                        <input
+                          aria-invalid="false"
+                          autocomplete="off"
+                          class="MuiInputBase-input MuiOutlinedInput-input"
+                          data-testid="project-location-name"
+                          name="name"
+                          placeholder="Location Name"
+                          required=""
+                          type="text"
+                          value="location 1"
+                        />
+                        <fieldset
+                          aria-hidden="true"
+                          class="PrivateNotchedOutline-root-609 MuiOutlinedInput-notchedOutline"
+                          style="padding-left: 8px;"
+                        >
+                          <legend
+                            class="PrivateNotchedOutline-legend-610"
+                            style="width: 0.01px;"
+                          >
+                            <span>
+                              ​
+                            </span>
+                          </legend>
+                        </fieldset>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="MuiGrid-root MuiGrid-item MuiGrid-grid-lg-1"
+        >
+          <button
+            class="MuiButtonBase-root MuiIconButton-root makeStyles-deleteButton-522 false"
+            data-testid="delete-location-button"
+            style="left: 1em;"
+            tabindex="0"
+            type="button"
+          >
+            <span
+              class="MuiIconButton-label"
+            >
+              <svg>
+                delete.svg
+              </svg>
+            </span>
+            <span
+              class="MuiTouchRipple-root"
+            />
+          </button>
+        </div>
+      </div>
+      <hr
+        class="MuiDivider-root makeStyles-divider-539"
+      />
+    </div>
+    <div>
+      <div
+        class="MuiGrid-root MuiGrid-container"
+        data-testid="user-row-item"
+      >
+        <div
+          class="MuiGrid-root MuiGrid-item MuiGrid-grid-lg-11"
+        >
+          <div
+            class="MuiGrid-root MuiGrid-container"
+          >
+            <div
+              class="MuiGrid-root makeStyles-rowsWrapper-550 makeStyles-field-538 MuiGrid-container"
+            >
+              <div
+                class="makeStyles-errorInputWrapper-540"
+              >
+                <div
+                  class="MuiFormControl-root makeStyles-formControl-607 "
+                >
+                  <h1
+                    class="MuiTypography-root MuiTypography-caption MuiTypography-colorSecondary MuiTypography-alignLeft"
+                  >
+                    Location Name
+                     
+                  </h1>
+                  <div>
+                    <div
+                      class="MuiFormControl-root MuiTextField-root MuiFormControl-fullWidth"
+                    >
+                      <div
+                        class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-fullWidth Mui-focused Mui-focused MuiInputBase-formControl"
+                      >
+                        <input
+                          aria-invalid="false"
+                          autocomplete="off"
+                          class="MuiInputBase-input MuiOutlinedInput-input"
+                          data-testid="project-location-name"
+                          name="name"
+                          placeholder="Location Name"
+                          required=""
+                          type="text"
+                          value="location 2"
+                        />
+                        <fieldset
+                          aria-hidden="true"
+                          class="PrivateNotchedOutline-root-609 MuiOutlinedInput-notchedOutline"
+                          style="padding-left: 8px;"
+                        >
+                          <legend
+                            class="PrivateNotchedOutline-legend-610"
+                            style="width: 0.01px;"
+                          >
+                            <span>
+                              ​
+                            </span>
+                          </legend>
+                        </fieldset>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="MuiGrid-root MuiGrid-item MuiGrid-grid-lg-1"
+        >
+          <button
+            class="MuiButtonBase-root MuiIconButton-root makeStyles-deleteButton-522 false"
+            data-testid="delete-location-button"
+            style="left: 1em;"
+            tabindex="0"
+            type="button"
+          >
+            <span
+              class="MuiIconButton-label"
+            >
+              <svg>
+                delete.svg
+              </svg>
+            </span>
+            <span
+              class="MuiTouchRipple-root"
+            />
+          </button>
+        </div>
+      </div>
+      <hr
+        class="MuiDivider-root makeStyles-divider-539"
+      />
+    </div>
+    <span
+      class=""
+      data-testid="controlled-button"
+      tabindex="-1"
+    >
+      <button
+        class="MuiButtonBase-root MuiButton-root MuiButton-text makeStyles-addButtonRow-541 makeStyles-addUserButton-525 makeStyles-enableUserButton-573"
+        data-testid="add-location-button"
+        tabindex="0"
+        type="button"
+      >
+        <span
+          class="MuiButton-label"
+        >
+          <span
+            class="MuiButton-startIcon MuiButton-iconSizeMedium"
+          >
+            <svg>
+              add.svg
+            </svg>
+          </span>
+          Add Location
+        </span>
+      </button>
+    </span>
+  </div>
+</div>
+`;
+
+exports[`Locations should getErrors 1`] = `
+<div>
+  <div
+    class="MuiPaper-root makeStyles-container-904  MuiPaper-outlined MuiPaper-rounded"
+  >
+    <div
+      class="MuiGrid-root MuiGrid-container MuiGrid-align-items-xs-center MuiGrid-justify-xs-space-between"
+    >
+      <div
+        class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-auto"
+      >
+        <h1
+          class="MuiTypography-root makeStyles-title-905 MuiTypography-h1"
+        >
+          Project Locations
+        </h1>
+      </div>
+      <div
+        class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-auto"
+      >
+        <span
+          class=" makeStyles-secondaryActions-906"
+        />
+      </div>
+    </div>
+    <hr
+      class="MuiDivider-root makeStyles-divider-907"
+    />
+    <div>
+      <div
+        class="MuiGrid-root MuiGrid-container"
+        data-testid="user-row-item"
+      >
+        <div
+          class="MuiGrid-root MuiGrid-item MuiGrid-grid-lg-11"
+        >
+          <div
+            class="MuiGrid-root MuiGrid-container"
+          >
+            <div
+              class="MuiGrid-root makeStyles-rowsWrapper-856 makeStyles-field-844 MuiGrid-container"
+            >
+              <div
+                class="makeStyles-errorInputWrapper-846"
+              >
+                <div
+                  class="MuiFormControl-root makeStyles-formControl-913 "
+                >
+                  <h1
+                    class="MuiTypography-root MuiTypography-caption MuiTypography-colorSecondary MuiTypography-alignLeft"
+                  >
+                    Location Name
+                     
+                  </h1>
+                  <div>
+                    <div
+                      class="MuiFormControl-root MuiTextField-root MuiFormControl-fullWidth"
+                    >
+                      <div
+                        class="MuiInputBase-root MuiOutlinedInput-root Mui-error Mui-error MuiInputBase-fullWidth MuiInputBase-formControl"
+                      >
+                        <input
+                          aria-invalid="true"
+                          autocomplete="off"
+                          class="MuiInputBase-input MuiOutlinedInput-input"
+                          data-testid="project-location-name"
+                          name="name"
+                          placeholder="Location Name"
+                          required=""
+                          type="text"
+                          value="location 1"
+                        />
+                        <fieldset
+                          aria-hidden="true"
+                          class="PrivateNotchedOutline-root-915 MuiOutlinedInput-notchedOutline"
+                          style="padding-left: 8px;"
+                        >
+                          <legend
+                            class="PrivateNotchedOutline-legend-916"
+                            style="width: 0.01px;"
+                          >
+                            <span>
+                              ​
+                            </span>
+                          </legend>
+                        </fieldset>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <h1
+                  class="MuiTypography-root  makeStyles-errorMessage-909 errorMessage MuiTypography-caption MuiTypography-colorSecondary MuiTypography-alignLeft"
+                >
+                  error on field name
+                </h1>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="MuiGrid-root MuiGrid-item MuiGrid-grid-lg-1"
+        >
+          <button
+            class="MuiButtonBase-root MuiIconButton-root makeStyles-deleteButton-828 false"
+            data-testid="delete-location-button"
+            style="left: 1em;"
+            tabindex="0"
+            type="button"
+          >
+            <span
+              class="MuiIconButton-label"
+            >
+              <svg>
+                delete.svg
+              </svg>
+            </span>
+            <span
+              class="MuiTouchRipple-root"
+            />
+          </button>
+        </div>
+      </div>
+      <hr
+        class="MuiDivider-root makeStyles-divider-845"
+      />
+    </div>
+    <div>
+      <div
+        class="MuiGrid-root MuiGrid-container"
+        data-testid="user-row-item"
+      >
+        <div
+          class="MuiGrid-root MuiGrid-item MuiGrid-grid-lg-11"
+        >
+          <div
+            class="MuiGrid-root MuiGrid-container"
+          >
+            <div
+              class="MuiGrid-root makeStyles-rowsWrapper-856 makeStyles-field-844 MuiGrid-container"
+            >
+              <div
+                class="makeStyles-errorInputWrapper-846"
+              >
+                <div
+                  class="MuiFormControl-root makeStyles-formControl-913 "
+                >
+                  <h1
+                    class="MuiTypography-root MuiTypography-caption MuiTypography-colorSecondary MuiTypography-alignLeft"
+                  >
+                    Location Name
+                     
+                  </h1>
+                  <div>
+                    <div
+                      class="MuiFormControl-root MuiTextField-root MuiFormControl-fullWidth"
+                    >
+                      <div
+                        class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-fullWidth Mui-focused Mui-focused MuiInputBase-formControl"
+                      >
+                        <input
+                          aria-invalid="false"
+                          autocomplete="off"
+                          class="MuiInputBase-input MuiOutlinedInput-input"
+                          data-testid="project-location-name"
+                          name="name"
+                          placeholder="Location Name"
+                          required=""
+                          type="text"
+                          value="location 2"
+                        />
+                        <fieldset
+                          aria-hidden="true"
+                          class="PrivateNotchedOutline-root-915 MuiOutlinedInput-notchedOutline"
+                          style="padding-left: 8px;"
+                        >
+                          <legend
+                            class="PrivateNotchedOutline-legend-916"
+                            style="width: 0.01px;"
+                          >
+                            <span>
+                              ​
+                            </span>
+                          </legend>
+                        </fieldset>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="MuiGrid-root MuiGrid-item MuiGrid-grid-lg-1"
+        >
+          <button
+            class="MuiButtonBase-root MuiIconButton-root makeStyles-deleteButton-828 false"
+            data-testid="delete-location-button"
+            style="left: 1em;"
+            tabindex="0"
+            type="button"
+          >
+            <span
+              class="MuiIconButton-label"
+            >
+              <svg>
+                delete.svg
+              </svg>
+            </span>
+            <span
+              class="MuiTouchRipple-root"
+            />
+          </button>
+        </div>
+      </div>
+      <hr
+        class="MuiDivider-root makeStyles-divider-845"
+      />
+    </div>
+    <span
+      class=""
+      data-testid="controlled-button"
+      tabindex="-1"
+    >
+      <button
+        class="MuiButtonBase-root MuiButton-root MuiButton-text makeStyles-addButtonRow-847 makeStyles-addUserButton-831 makeStyles-enableUserButton-879"
+        data-testid="add-location-button"
+        tabindex="0"
+        type="button"
+      >
+        <span
+          class="MuiButton-label"
+        >
+          <span
+            class="MuiButton-startIcon MuiButton-iconSizeMedium"
+          >
+            <svg>
+              add.svg
+            </svg>
+          </span>
+          Add Location
+        </span>
+      </button>
+    </span>
+  </div>
+</div>
+`;
+
+exports[`Locations should not add location if no name 1`] = `
+<div>
+  <div
+    class="MuiPaper-root makeStyles-container-394  MuiPaper-outlined MuiPaper-rounded"
+  >
+    <div
+      class="MuiGrid-root MuiGrid-container MuiGrid-align-items-xs-center MuiGrid-justify-xs-space-between"
+    >
+      <div
+        class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-auto"
+      >
+        <h1
+          class="MuiTypography-root makeStyles-title-395 MuiTypography-h1"
+        >
+          Project Locations
+        </h1>
+      </div>
+      <div
+        class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-auto"
+      >
+        <span
+          class=" makeStyles-secondaryActions-396"
+        />
+      </div>
+    </div>
+    <hr
+      class="MuiDivider-root makeStyles-divider-397"
+    />
+    <div>
+      <div
+        class="MuiGrid-root MuiGrid-container"
+        data-testid="user-row-item"
+      >
+        <div
+          class="MuiGrid-root MuiGrid-item MuiGrid-grid-lg-12"
+        >
+          <div
+            class="MuiGrid-root MuiGrid-container"
+          >
+            <div
+              class="MuiGrid-root makeStyles-rowsWrapper-346 makeStyles-field-334 MuiGrid-container"
+            >
+              <div
+                class="makeStyles-errorInputWrapper-336"
+              >
+                <div
+                  class="MuiFormControl-root makeStyles-formControl-403 "
+                >
+                  <h1
+                    class="MuiTypography-root MuiTypography-caption MuiTypography-colorSecondary MuiTypography-alignLeft"
+                  >
+                    Location Name
+                     
+                  </h1>
+                  <div>
+                    <div
+                      class="MuiFormControl-root MuiTextField-root MuiFormControl-fullWidth"
+                    >
+                      <div
+                        class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-fullWidth Mui-focused Mui-focused MuiInputBase-formControl"
+                      >
+                        <input
+                          aria-invalid="false"
+                          autocomplete="off"
+                          class="MuiInputBase-input MuiOutlinedInput-input"
+                          data-testid="project-location-name"
+                          name="name"
+                          placeholder="Location Name"
+                          required=""
+                          type="text"
+                          value=""
+                        />
+                        <fieldset
+                          aria-hidden="true"
+                          class="PrivateNotchedOutline-root-405 MuiOutlinedInput-notchedOutline"
+                          style="padding-left: 8px;"
+                        >
+                          <legend
+                            class="PrivateNotchedOutline-legend-406"
+                            style="width: 0.01px;"
+                          >
+                            <span>
+                              ​
+                            </span>
+                          </legend>
+                        </fieldset>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr
+        class="MuiDivider-root makeStyles-divider-335"
+      />
+    </div>
+    <span
+      class=""
+      data-testid="controlled-button"
+      tabindex="-1"
+    >
+      <button
+        class="MuiButtonBase-root MuiButton-root MuiButton-text makeStyles-addButtonRow-337 makeStyles-addUserButton-321 makeStyles-disableUserButton-370"
+        data-testid="add-location-button"
+        tabindex="0"
+        type="button"
+      >
+        <span
+          class="MuiButton-label"
+        >
+          <span
+            class="MuiButton-startIcon MuiButton-iconSizeMedium"
+          >
+            <svg>
+              add.svg
+            </svg>
+          </span>
+          Add Location
+        </span>
+      </button>
+    </span>
+  </div>
+</div>
+`;
+
+exports[`Locations should not delete location 1`] = `
+<div>
+  <div
+    class="MuiPaper-root makeStyles-container-700  MuiPaper-outlined MuiPaper-rounded"
+  >
+    <div
+      class="MuiGrid-root MuiGrid-container MuiGrid-align-items-xs-center MuiGrid-justify-xs-space-between"
+    >
+      <div
+        class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-auto"
+      >
+        <h1
+          class="MuiTypography-root makeStyles-title-701 MuiTypography-h1"
+        >
+          Project Locations
+        </h1>
+      </div>
+      <div
+        class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-auto"
+      >
+        <span
+          class=" makeStyles-secondaryActions-702"
+        />
+      </div>
+    </div>
+    <hr
+      class="MuiDivider-root makeStyles-divider-703"
+    />
+    <div>
+      <div
+        class="MuiGrid-root MuiGrid-container"
+        data-testid="user-row-item"
+      >
+        <div
+          class="MuiGrid-root MuiGrid-item MuiGrid-grid-lg-11"
+        >
+          <div
+            class="MuiGrid-root MuiGrid-container"
+          >
+            <div
+              class="MuiGrid-root makeStyles-rowsWrapper-652 makeStyles-field-640 MuiGrid-container"
+            >
+              <div
+                class="makeStyles-errorInputWrapper-642"
+              >
+                <div
+                  class="MuiFormControl-root makeStyles-formControl-709 "
+                >
+                  <h1
+                    class="MuiTypography-root MuiTypography-caption MuiTypography-colorSecondary MuiTypography-alignLeft"
+                  >
+                    Location Name
+                     
+                  </h1>
+                  <div>
+                    <div
+                      class="MuiFormControl-root MuiTextField-root MuiFormControl-fullWidth"
+                    >
+                      <div
+                        class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-fullWidth MuiInputBase-formControl"
+                      >
+                        <input
+                          aria-invalid="false"
+                          autocomplete="off"
+                          class="MuiInputBase-input MuiOutlinedInput-input"
+                          data-testid="project-location-name"
+                          name="name"
+                          placeholder="Location Name"
+                          required=""
+                          type="text"
+                          value="location 1"
+                        />
+                        <fieldset
+                          aria-hidden="true"
+                          class="PrivateNotchedOutline-root-711 MuiOutlinedInput-notchedOutline"
+                          style="padding-left: 8px;"
+                        >
+                          <legend
+                            class="PrivateNotchedOutline-legend-712"
+                            style="width: 0.01px;"
+                          >
+                            <span>
+                              ​
+                            </span>
+                          </legend>
+                        </fieldset>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="MuiGrid-root MuiGrid-item MuiGrid-grid-lg-1"
+        >
+          <button
+            class="MuiButtonBase-root MuiIconButton-root makeStyles-deleteButton-624 false"
+            data-testid="delete-location-button"
+            style="left: 1em;"
+            tabindex="0"
+            type="button"
+          >
+            <span
+              class="MuiIconButton-label"
+            >
+              <svg>
+                delete.svg
+              </svg>
+            </span>
+            <span
+              class="MuiTouchRipple-root"
+            />
+          </button>
+        </div>
+      </div>
+      <hr
+        class="MuiDivider-root makeStyles-divider-641"
+      />
+    </div>
+    <div>
+      <div
+        class="MuiGrid-root MuiGrid-container"
+        data-testid="user-row-item"
+      >
+        <div
+          class="MuiGrid-root MuiGrid-item MuiGrid-grid-lg-11"
+        >
+          <div
+            class="MuiGrid-root MuiGrid-container"
+          >
+            <div
+              class="MuiGrid-root makeStyles-rowsWrapper-652 makeStyles-field-640 MuiGrid-container"
+            >
+              <div
+                class="makeStyles-errorInputWrapper-642"
+              >
+                <div
+                  class="MuiFormControl-root makeStyles-formControl-709 "
+                >
+                  <h1
+                    class="MuiTypography-root MuiTypography-caption MuiTypography-colorSecondary MuiTypography-alignLeft"
+                  >
+                    Location Name
+                     
+                  </h1>
+                  <div>
+                    <div
+                      class="MuiFormControl-root MuiTextField-root MuiFormControl-fullWidth"
+                    >
+                      <div
+                        class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-fullWidth Mui-focused Mui-focused MuiInputBase-formControl"
+                      >
+                        <input
+                          aria-invalid="false"
+                          autocomplete="off"
+                          class="MuiInputBase-input MuiOutlinedInput-input"
+                          data-testid="project-location-name"
+                          name="name"
+                          placeholder="Location Name"
+                          required=""
+                          type="text"
+                          value="location 2"
+                        />
+                        <fieldset
+                          aria-hidden="true"
+                          class="PrivateNotchedOutline-root-711 MuiOutlinedInput-notchedOutline"
+                          style="padding-left: 8px;"
+                        >
+                          <legend
+                            class="PrivateNotchedOutline-legend-712"
+                            style="width: 0.01px;"
+                          >
+                            <span>
+                              ​
+                            </span>
+                          </legend>
+                        </fieldset>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="MuiGrid-root MuiGrid-item MuiGrid-grid-lg-1"
+        >
+          <button
+            class="MuiButtonBase-root MuiIconButton-root makeStyles-deleteButton-624 false"
+            data-testid="delete-location-button"
+            style="left: 1em;"
+            tabindex="0"
+            type="button"
+          >
+            <span
+              class="MuiIconButton-label"
+            >
+              <svg>
+                delete.svg
+              </svg>
+            </span>
+            <span
+              class="MuiTouchRipple-root"
+            />
+          </button>
+        </div>
+      </div>
+      <hr
+        class="MuiDivider-root makeStyles-divider-641"
+      />
+    </div>
+    <span
+      class=""
+      data-testid="controlled-button"
+      tabindex="-1"
+    >
+      <button
+        class="MuiButtonBase-root MuiButton-root MuiButton-text makeStyles-addButtonRow-643 makeStyles-addUserButton-627 makeStyles-enableUserButton-675"
+        data-testid="add-location-button"
+        tabindex="0"
+        type="button"
+      >
+        <span
+          class="MuiButton-label"
+        >
+          <span
+            class="MuiButton-startIcon MuiButton-iconSizeMedium"
+          >
+            <svg>
+              add.svg
+            </svg>
+          </span>
+          Add Location
+        </span>
+      </button>
+    </span>
+  </div>
+</div>
+`;
+
+exports[`Locations should render fallback locations 1`] = `
+<div>
+  <div
+    class="MuiPaper-root makeStyles-container-88  MuiPaper-outlined MuiPaper-rounded"
+  >
+    <div
+      class="MuiGrid-root MuiGrid-container MuiGrid-align-items-xs-center MuiGrid-justify-xs-space-between"
+    >
+      <div
+        class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-auto"
+      >
+        <h1
+          class="MuiTypography-root makeStyles-title-89 MuiTypography-h1"
+        >
+          Project Locations
+        </h1>
+      </div>
+      <div
+        class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-auto"
+      >
+        <span
+          class=" makeStyles-secondaryActions-90"
+        />
+      </div>
+    </div>
+    <hr
+      class="MuiDivider-root makeStyles-divider-91"
+    />
+    <div>
+      <div
+        class="MuiGrid-root MuiGrid-container"
+        data-testid="user-row-item"
+      >
+        <div
+          class="MuiGrid-root MuiGrid-item MuiGrid-grid-lg-12"
+        >
+          <div
+            class="MuiGrid-root MuiGrid-container"
+          >
+            <div
+              class="MuiGrid-root makeStyles-rowsWrapper-40 makeStyles-field-28 MuiGrid-container"
+            >
+              <div
+                class="makeStyles-errorInputWrapper-30"
+              >
+                <div
+                  class="MuiFormControl-root makeStyles-formControl-97 "
+                >
+                  <h1
+                    class="MuiTypography-root MuiTypography-caption MuiTypography-colorSecondary MuiTypography-alignLeft"
+                  >
+                    Location Name
+                     
+                  </h1>
+                  <div>
+                    <div
+                      class="MuiFormControl-root MuiTextField-root MuiFormControl-fullWidth"
+                    >
+                      <div
+                        class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-fullWidth Mui-focused Mui-focused MuiInputBase-formControl"
+                      >
+                        <input
+                          aria-invalid="false"
+                          autocomplete="off"
+                          class="MuiInputBase-input MuiOutlinedInput-input"
+                          data-testid="project-location-name"
+                          name="name"
+                          placeholder="Location Name"
+                          required=""
+                          type="text"
+                          value=""
+                        />
+                        <fieldset
+                          aria-hidden="true"
+                          class="PrivateNotchedOutline-root-99 MuiOutlinedInput-notchedOutline"
+                          style="padding-left: 8px;"
+                        >
+                          <legend
+                            class="PrivateNotchedOutline-legend-100"
+                            style="width: 0.01px;"
+                          >
+                            <span>
+                              ​
+                            </span>
+                          </legend>
+                        </fieldset>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr
+        class="MuiDivider-root makeStyles-divider-29"
+      />
+    </div>
+    <span
+      class=""
+      data-testid="controlled-button"
+      tabindex="-1"
+    >
+      <button
+        class="MuiButtonBase-root MuiButton-root MuiButton-text makeStyles-addButtonRow-31 makeStyles-addUserButton-15 makeStyles-disableUserButton-64"
+        data-testid="add-location-button"
+        tabindex="0"
+        type="button"
+      >
+        <span
+          class="MuiButton-label"
+        >
+          <span
+            class="MuiButton-startIcon MuiButton-iconSizeMedium"
+          >
+            <svg>
+              add.svg
+            </svg>
+          </span>
+          Add Location
+        </span>
+      </button>
+    </span>
+  </div>
+</div>
+`;

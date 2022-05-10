@@ -1,0 +1,365 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`NavigationTop hasChanges should render discard and save buttons 1`] = `
+<div>
+  <div
+    class="MuiGrid-root makeStyles-container-124 MuiGrid-container"
+    id="manager-navigation-top"
+  >
+    <div
+      class="MuiGrid-root makeStyles-panelContainer-144    MuiGrid-item"
+    >
+      <div
+        class="MuiGrid-root makeStyles-leftPanel-145 MuiGrid-container"
+      >
+        <div
+          class="MuiGrid-root makeStyles-step-148 MuiGrid-item MuiGrid-grid-xs-6"
+        >
+          <div
+            class="makeStyles-stepWrapper-149"
+          >
+            <a
+              class="makeStyles-stepLink-150"
+              href="/"
+            >
+              NavTitles
+            </a>
+            <span
+              class="makeStyles-stepLinkSeparator-151"
+            >
+              &gt;
+            </span>
+            Create New Client
+          </div>
+          <h1
+            class="MuiTypography-root makeStyles-title-152 MuiTypography-h5 MuiTypography-colorPrimary MuiTypography-alignLeft"
+          >
+            1. General Information
+          </h1>
+        </div>
+        <div
+          class="MuiGrid-root makeStyles-actionButtons-153 MuiGrid-item MuiGrid-grid-xs-6"
+        >
+          <div
+            class="makeStyles-actionButtonsWrapper-154"
+          >
+            <span
+              class=""
+              data-testid="controlled-button"
+              tabindex="-1"
+            >
+              <button
+                class="MuiButtonBase-root MuiButton-root MuiButton-text makeStyles-discardButton-155 MuiButton-textPrimary"
+                data-testid="discard-changes-btn"
+                tabindex="0"
+                type="button"
+              >
+                <span
+                  class="MuiButton-label"
+                >
+                  Discard Changes
+                </span>
+                <span
+                  class="MuiTouchRipple-root"
+                />
+              </button>
+            </span>
+            <span
+              class=""
+              data-testid="controlled-button"
+              tabindex="-1"
+            >
+              <button
+                class="MuiButtonBase-root MuiButton-root MuiButton-outlined false makeStyles-saveButton-156 MuiButton-outlinedPrimary"
+                data-testid="save-changes-btn"
+                tabindex="0"
+                type="button"
+              >
+                <span
+                  class="MuiButton-label"
+                >
+                  <span
+                    class="makeStyles-textWrapper-164"
+                  >
+                    Save Changes
+                  </span>
+                </span>
+                <span
+                  class="MuiTouchRipple-root"
+                />
+              </button>
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="MuiGrid-root makeStyles-rightSidebar-126   MuiGrid-item"
+    >
+      <div
+        class="makeStyles-rightSidebarStatus-127"
+      >
+        Status: 
+        <div
+          class="MuiChip-root makeStyles-statusChip-129 makeStyles-draft-131 MuiChip-colorPrimary"
+        >
+          <span
+            class="MuiChip-label"
+          >
+            Draft
+          </span>
+        </div>
+      </div>
+      <button
+        class="MuiButtonBase-root MuiButton-root MuiButton-contained false makeStyles-approveButton-128 MuiButton-containedPrimary MuiButton-containedSizeLarge MuiButton-sizeLarge Mui-disabled MuiButton-fullWidth Mui-disabled"
+        data-testid="approve-btn"
+        disabled=""
+        tabindex="-1"
+        type="button"
+      >
+        <span
+          class="MuiButton-label"
+        >
+          <span
+            class="makeStyles-textWrapper-164"
+          >
+            Send for Approval
+          </span>
+        </span>
+      </button>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`NavigationTop should render 1`] = `
+<div>
+  <div
+    class="MuiGrid-root makeStyles-container-1 MuiGrid-container"
+    id="manager-navigation-top"
+  >
+    <div
+      class="MuiGrid-root makeStyles-panelContainer-21    MuiGrid-item"
+    >
+      <div
+        class="MuiGrid-root makeStyles-leftPanel-22 MuiGrid-container"
+      >
+        <div
+          class="MuiGrid-root makeStyles-step-25 MuiGrid-item MuiGrid-grid-xs-6"
+        >
+          <div
+            class="makeStyles-stepWrapper-26"
+          >
+            <a
+              class="makeStyles-stepLink-27"
+              href="/"
+            >
+              NavTitles
+            </a>
+            <span
+              class="makeStyles-stepLinkSeparator-28"
+            >
+              &gt;
+            </span>
+            Create New Client
+          </div>
+          <h1
+            class="MuiTypography-root makeStyles-title-29 MuiTypography-h5 MuiTypography-colorPrimary MuiTypography-alignLeft"
+          >
+            1. General Information
+          </h1>
+        </div>
+        <div
+          class="MuiGrid-root makeStyles-actionButtons-30 MuiGrid-item MuiGrid-grid-xs-6"
+        >
+          <span
+            class="MuiTypography-root makeStyles-savedAt-35 MuiTypography-caption"
+            data-testid="action-message-wrapper"
+          >
+            <span
+              class="makeStyles-checkmark-36"
+            >
+              <svg>
+                checkmark.svg
+              </svg>
+            </span>
+            Changes have been saved
+          </span>
+          <span
+            class=""
+            data-testid="controlled-button"
+            tabindex="-1"
+          >
+            <button
+              class="MuiButtonBase-root MuiButton-root MuiButton-contained makeStyles-nextButton-37 MuiButton-containedPrimary MuiButton-containedSizeLarge MuiButton-sizeLarge MuiButton-fullWidth"
+              data-testid="next-changes-btn"
+              tabindex="0"
+              type="button"
+            >
+              <span
+                class="MuiButton-label"
+              >
+                Next
+              </span>
+              <span
+                class="MuiTouchRipple-root"
+              />
+            </button>
+          </span>
+        </div>
+      </div>
+    </div>
+    <div
+      class="MuiGrid-root makeStyles-rightSidebar-3   MuiGrid-item"
+    >
+      <div
+        class="makeStyles-rightSidebarStatus-4"
+      >
+        Status: 
+        <div
+          class="MuiChip-root makeStyles-statusChip-6 makeStyles-draft-8 MuiChip-colorPrimary"
+        >
+          <span
+            class="MuiChip-label"
+          >
+            Draft
+          </span>
+        </div>
+      </div>
+      <button
+        class="MuiButtonBase-root MuiButton-root MuiButton-contained false makeStyles-approveButton-5 MuiButton-containedPrimary MuiButton-containedSizeLarge MuiButton-sizeLarge Mui-disabled MuiButton-fullWidth Mui-disabled"
+        data-testid="approve-btn"
+        disabled=""
+        tabindex="-1"
+        type="button"
+      >
+        <span
+          class="MuiButton-label"
+        >
+          <span
+            class="makeStyles-textWrapper-41"
+          >
+            Send for Approval
+          </span>
+        </span>
+      </button>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`NavigationTop should render without scroll 1`] = `
+<div>
+  <div
+    class="MuiGrid-root makeStyles-container-42 MuiGrid-container"
+    id="manager-navigation-top"
+  >
+    <div
+      class="MuiGrid-root makeStyles-panelContainer-62    MuiGrid-item"
+    >
+      <div
+        class="MuiGrid-root makeStyles-leftPanel-63 MuiGrid-container"
+      >
+        <div
+          class="MuiGrid-root makeStyles-step-66 MuiGrid-item MuiGrid-grid-xs-6"
+        >
+          <div
+            class="makeStyles-stepWrapper-67"
+          >
+            <a
+              class="makeStyles-stepLink-68"
+              href="/"
+            >
+              NavTitles
+            </a>
+            <span
+              class="makeStyles-stepLinkSeparator-69"
+            >
+              &gt;
+            </span>
+            Create New Client
+          </div>
+          <h1
+            class="MuiTypography-root makeStyles-title-70 MuiTypography-h5 MuiTypography-colorPrimary MuiTypography-alignLeft"
+          >
+            1. General Information
+          </h1>
+        </div>
+        <div
+          class="MuiGrid-root makeStyles-actionButtons-71 MuiGrid-item MuiGrid-grid-xs-6"
+        >
+          <span
+            class="MuiTypography-root makeStyles-savedAt-76 MuiTypography-caption"
+            data-testid="action-message-wrapper"
+          >
+            <span
+              class="makeStyles-checkmark-77"
+            >
+              <svg>
+                checkmark.svg
+              </svg>
+            </span>
+            Changes have been saved
+          </span>
+          <span
+            class=""
+            data-testid="controlled-button"
+            tabindex="-1"
+          >
+            <button
+              class="MuiButtonBase-root MuiButton-root MuiButton-contained makeStyles-nextButton-78 MuiButton-containedPrimary MuiButton-containedSizeLarge MuiButton-sizeLarge MuiButton-fullWidth"
+              data-testid="next-changes-btn"
+              tabindex="0"
+              type="button"
+            >
+              <span
+                class="MuiButton-label"
+              >
+                Next
+              </span>
+              <span
+                class="MuiTouchRipple-root"
+              />
+            </button>
+          </span>
+        </div>
+      </div>
+    </div>
+    <div
+      class="MuiGrid-root makeStyles-rightSidebar-44   MuiGrid-item"
+    >
+      <div
+        class="makeStyles-rightSidebarStatus-45"
+      >
+        Status: 
+        <div
+          class="MuiChip-root makeStyles-statusChip-47 makeStyles-draft-49 MuiChip-colorPrimary"
+        >
+          <span
+            class="MuiChip-label"
+          >
+            Draft
+          </span>
+        </div>
+      </div>
+      <button
+        class="MuiButtonBase-root MuiButton-root MuiButton-contained false makeStyles-approveButton-46 MuiButton-containedPrimary MuiButton-containedSizeLarge MuiButton-sizeLarge Mui-disabled MuiButton-fullWidth Mui-disabled"
+        data-testid="approve-btn"
+        disabled=""
+        tabindex="-1"
+        type="button"
+      >
+        <span
+          class="MuiButton-label"
+        >
+          <span
+            class="makeStyles-textWrapper-82"
+          >
+            Send for Approval
+          </span>
+        </span>
+      </button>
+    </div>
+  </div>
+</div>
+`;

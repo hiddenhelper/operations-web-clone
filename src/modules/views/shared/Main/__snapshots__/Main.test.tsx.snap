@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Main Component should render 1`] = `
+<body>
+  <div>
+    <main
+      class="makeStyles-appContainer-1"
+    >
+      <div
+        class="makeStyles-headerSpacer-2"
+      />
+      <section
+        class="makeStyles-sectionContainer-3"
+      >
+        <div>
+          view
+        </div>
+      </section>
+    </main>
+  </div>
+</body>
+`;

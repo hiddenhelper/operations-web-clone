@@ -1,0 +1,41 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`useQueryParamState should render with initial state 1`] = `
+<div>
+  <div>
+    <input
+      data-testid="text-input"
+      value=""
+    />
+    <span />
+  </div>
+</div>
+`;
+
+exports[`useQueryParamState should render with state from url 1`] = `
+<div>
+  <div>
+    <input
+      data-testid="text-input"
+      value="value-from-query-param&"
+    />
+    <span>
+      value-from-query-param&
+    </span>
+  </div>
+</div>
+`;
+
+exports[`useQueryParamState should set state 1`] = `
+<div>
+  <div>
+    <input
+      data-testid="text-input"
+      value="value typed in &"
+    />
+    <span>
+      value typed in &
+    </span>
+  </div>
+</div>
+`;

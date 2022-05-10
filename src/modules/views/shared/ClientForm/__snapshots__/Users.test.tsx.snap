@@ -1,0 +1,2965 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Users Form should render default 1`] = `
+<div>
+  <div
+    class="MuiPaper-root makeStyles-container-204  MuiPaper-outlined MuiPaper-rounded"
+  >
+    <div
+      class="MuiGrid-root MuiGrid-container MuiGrid-align-items-xs-center MuiGrid-justify-xs-space-between"
+    >
+      <div
+        class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-auto"
+      >
+        <h1
+          class="MuiTypography-root makeStyles-title-205 MuiTypography-h1"
+        >
+          Add Users
+        </h1>
+      </div>
+      <div
+        class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-auto"
+      >
+        <span
+          class="makeStyles-userAction-160 makeStyles-secondaryActions-206"
+        >
+          <svg>
+            info.svg
+          </svg>
+          You need at least one Client Admin user role for the client to be approved
+        </span>
+      </div>
+    </div>
+    <hr
+      class="MuiDivider-root makeStyles-divider-207"
+    />
+    <div
+      class="MuiGrid-root makeStyles-formWrapper-176 makeStyles-rowsWrapper-129 MuiGrid-container"
+      data-testid="user-row-item"
+    >
+      <div
+        class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-true MuiGrid-grid-lg-true"
+      >
+        <div
+          class="MuiGrid-root MuiGrid-container"
+        >
+          <div
+            class="MuiGrid-root makeStyles-errorPosition-175 MuiGrid-item MuiGrid-grid-xs-4 MuiGrid-grid-lg-4"
+          >
+            <div
+              class="MuiFormControl-root makeStyles-formControl-213 makeStyles-userWrapper-121"
+            >
+              <h1
+                class="MuiTypography-root MuiTypography-caption MuiTypography-colorSecondary MuiTypography-alignLeft"
+              >
+                First Name
+                 
+              </h1>
+              <div>
+                <div
+                  class="MuiFormControl-root MuiTextField-root MuiFormControl-fullWidth"
+                >
+                  <div
+                    class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-fullWidth Mui-focused Mui-focused MuiInputBase-formControl"
+                  >
+                    <input
+                      aria-invalid="false"
+                      autocomplete="off"
+                      class="MuiInputBase-input MuiOutlinedInput-input"
+                      data-testid="user-first-name"
+                      name="firstName"
+                      placeholder="First Name"
+                      type="text"
+                      value=""
+                    />
+                    <fieldset
+                      aria-hidden="true"
+                      class="PrivateNotchedOutline-root-215 MuiOutlinedInput-notchedOutline"
+                      style="padding-left: 8px;"
+                    >
+                      <legend
+                        class="PrivateNotchedOutline-legend-216"
+                        style="width: 0.01px;"
+                      >
+                        <span>
+                          ​
+                        </span>
+                      </legend>
+                    </fieldset>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="MuiGrid-root makeStyles-errorPosition-175 MuiGrid-item MuiGrid-grid-xs-4 MuiGrid-grid-lg-4"
+          >
+            <div
+              class="MuiFormControl-root makeStyles-formControl-213 makeStyles-userWrapper-121"
+            >
+              <h1
+                class="MuiTypography-root MuiTypography-caption MuiTypography-colorSecondary MuiTypography-alignLeft"
+              >
+                Last Name
+                 
+              </h1>
+              <div>
+                <div
+                  class="MuiFormControl-root MuiTextField-root MuiFormControl-fullWidth"
+                >
+                  <div
+                    class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-fullWidth MuiInputBase-formControl"
+                  >
+                    <input
+                      aria-invalid="false"
+                      autocomplete="off"
+                      class="MuiInputBase-input MuiOutlinedInput-input"
+                      data-testid="user-last-name"
+                      name="lastName"
+                      placeholder="Last Name"
+                      type="text"
+                      value=""
+                    />
+                    <fieldset
+                      aria-hidden="true"
+                      class="PrivateNotchedOutline-root-215 MuiOutlinedInput-notchedOutline"
+                      style="padding-left: 8px;"
+                    >
+                      <legend
+                        class="PrivateNotchedOutline-legend-216"
+                        style="width: 0.01px;"
+                      >
+                        <span>
+                          ​
+                        </span>
+                      </legend>
+                    </fieldset>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="MuiGrid-root makeStyles-errorPosition-175 MuiGrid-item MuiGrid-grid-xs-4 MuiGrid-grid-lg-4"
+          >
+            <div
+              class="MuiFormControl-root makeStyles-formControl-213 makeStyles-userWrapper-121 "
+            >
+              <h1
+                class="MuiTypography-root MuiTypography-caption MuiTypography-colorSecondary MuiTypography-alignLeft"
+              >
+                Email Address
+                 
+              </h1>
+              <div>
+                <div
+                  class="MuiFormControl-root MuiTextField-root MuiFormControl-fullWidth"
+                >
+                  <div
+                    class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-fullWidth MuiInputBase-formControl"
+                  >
+                    <input
+                      aria-invalid="false"
+                      autocomplete="off"
+                      class="MuiInputBase-input MuiOutlinedInput-input"
+                      data-testid="user-email"
+                      name="email"
+                      placeholder="Email"
+                      type="text"
+                      value=""
+                    />
+                    <fieldset
+                      aria-hidden="true"
+                      class="PrivateNotchedOutline-root-215 MuiOutlinedInput-notchedOutline"
+                      style="padding-left: 8px;"
+                    >
+                      <legend
+                        class="PrivateNotchedOutline-legend-216"
+                        style="width: 0.01px;"
+                      >
+                        <span>
+                          ​
+                        </span>
+                      </legend>
+                    </fieldset>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="MuiGrid-root makeStyles-errorPosition-175 MuiGrid-item MuiGrid-grid-xs-4 MuiGrid-grid-lg-4"
+          >
+            <div
+              class="MuiFormControl-root makeStyles-formControl-213 makeStyles-userWrapper-121 makeStyles-userInputControl-127"
+            >
+              <h1
+                class="MuiTypography-root MuiTypography-caption MuiTypography-colorSecondary MuiTypography-alignLeft"
+              >
+                Title (Optional)
+                 
+              </h1>
+              <div>
+                <div
+                  class="MuiFormControl-root MuiTextField-root MuiFormControl-fullWidth"
+                >
+                  <div
+                    class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-fullWidth MuiInputBase-formControl"
+                  >
+                    <input
+                      aria-invalid="false"
+                      autocomplete="off"
+                      class="MuiInputBase-input MuiOutlinedInput-input"
+                      data-testid="user-title"
+                      name="title"
+                      placeholder="title"
+                      type="text"
+                      value=""
+                    />
+                    <fieldset
+                      aria-hidden="true"
+                      class="PrivateNotchedOutline-root-215 MuiOutlinedInput-notchedOutline"
+                      style="padding-left: 8px;"
+                    >
+                      <legend
+                        class="PrivateNotchedOutline-legend-216"
+                        style="width: 0.01px;"
+                      >
+                        <span>
+                          ​
+                        </span>
+                      </legend>
+                    </fieldset>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="MuiGrid-root makeStyles-errorPosition-175 MuiGrid-item MuiGrid-grid-xs-4 MuiGrid-grid-lg-4"
+          >
+            <div
+              class="MuiFormControl-root makeStyles-formControl-213 makeStyles-userWrapper-121 makeStyles-userInputControl-127 makeStyles-userInput-126"
+            >
+              <h1
+                class="MuiTypography-root MuiTypography-caption MuiTypography-colorSecondary MuiTypography-alignLeft"
+              >
+                Invite User to FCA as
+                 
+              </h1>
+              <div>
+                <div
+                  class="MuiFormControl-root makeStyles-formControl-221 "
+                >
+                  
+                  <div
+                    class="MuiInputBase-root MuiOutlinedInput-root   makeStyles-selectElement-222  MuiInputBase-fullWidth MuiInputBase-formControl"
+                    data-testid=""
+                  >
+                    <div
+                      aria-haspopup="listbox"
+                      aria-labelledby="demo-simple-select-outlined-label demo-simple-select-outlined"
+                      class="MuiSelect-root MuiSelect-select MuiSelect-selectMenu MuiSelect-outlined MuiInputBase-input MuiOutlinedInput-input"
+                      id="demo-simple-select-outlined"
+                      role="button"
+                      tabindex="0"
+                    >
+                      Do not invite
+                    </div>
+                    <input
+                      aria-hidden="true"
+                      class="MuiSelect-nativeInput"
+                      name="invitationType"
+                      tabindex="-1"
+                      value="0"
+                    />
+                    <svg
+                      aria-hidden="true"
+                      class="MuiSvgIcon-root MuiSelect-icon MuiSelect-iconOutlined"
+                      focusable="false"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M7 10l5 5 5-5z"
+                      />
+                    </svg>
+                    <fieldset
+                      aria-hidden="true"
+                      class="PrivateNotchedOutline-root-215 MuiOutlinedInput-notchedOutline"
+                      style="padding-left: 8px;"
+                    >
+                      <legend
+                        class="PrivateNotchedOutline-legend-216"
+                        style="width: 0.01px;"
+                      >
+                        <span>
+                          ​
+                        </span>
+                      </legend>
+                    </fieldset>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="MuiGrid-root makeStyles-errorPosition-175 MuiGrid-item MuiGrid-grid-xs-4 MuiGrid-grid-lg-4"
+          >
+            <div
+              class="makeStyles-invitationWrapper-128"
+            />
+          </div>
+          <div
+            class="MuiGrid-root makeStyles-errorPosition-175 MuiGrid-item MuiGrid-grid-xs-4 MuiGrid-grid-lg-4"
+          >
+            <div
+              class="MuiFormControl-root makeStyles-formControl-213 makeStyles-userWrapper-121 makeStyles-userInputControl-127"
+            >
+              <h1
+                class="MuiTypography-root MuiTypography-caption MuiTypography-colorSecondary MuiTypography-alignLeft"
+              >
+                Mobile Phone Number (Optional)
+                 
+              </h1>
+              <div>
+                <div
+                  class="makeStyles-phoneInput-226 undefined  react-tel-input"
+                >
+                  <div
+                    class="special-label"
+                  >
+                    Phone
+                  </div>
+                  <input
+                    autocomplete="off"
+                    class=" form-control"
+                    data-testid="mobile-user-phone"
+                    name="mobilePhoneNumber"
+                    placeholder="+0 (000) 000-0000"
+                    type="text"
+                    value=""
+                    variant="outlined"
+                  />
+                  <div
+                    class=" flag-dropdown"
+                  >
+                    <div
+                      aria-haspopup="listbox"
+                      class="selected-flag"
+                      role="button"
+                      tabindex="-1"
+                      title=""
+                    >
+                      <div
+                        class="flag 0"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="MuiGrid-root makeStyles-errorPosition-175 MuiGrid-item MuiGrid-grid-xs-4 MuiGrid-grid-lg-4"
+          >
+            <div
+              class="MuiGrid-root MuiGrid-container"
+            >
+              <div
+                class="MuiGrid-root makeStyles-optionalWrapper-130 MuiGrid-item MuiGrid-grid-xs-9 MuiGrid-grid-lg-9"
+              >
+                <div
+                  class="MuiFormControl-root makeStyles-formControl-213 makeStyles-userWrapper-121 makeStyles-userInputControl-127"
+                >
+                  <h1
+                    class="MuiTypography-root MuiTypography-caption MuiTypography-colorSecondary MuiTypography-alignLeft"
+                  >
+                    Office Phone Number (Optional)
+                     
+                  </h1>
+                  <div>
+                    <div
+                      class="makeStyles-phoneInput-226 undefined  react-tel-input"
+                    >
+                      <div
+                        class="special-label"
+                      >
+                        Phone
+                      </div>
+                      <input
+                        autocomplete="off"
+                        class=" form-control"
+                        data-testid="office-user-phone"
+                        id="officePhoneNumber-0"
+                        name="officePhoneNumber"
+                        placeholder="+0 (000) 000-0000"
+                        type="text"
+                        value=""
+                        variant="outlined"
+                      />
+                      <div
+                        class=" flag-dropdown"
+                      >
+                        <div
+                          aria-haspopup="listbox"
+                          class="selected-flag"
+                          role="button"
+                          tabindex="-1"
+                          title=""
+                        >
+                          <div
+                            class="flag 0"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="MuiGrid-root makeStyles-errorPosition-175 MuiGrid-item MuiGrid-grid-xs-3 MuiGrid-grid-lg-3"
+              >
+                <div
+                  class="MuiFormControl-root makeStyles-formControl-213 makeStyles-userWrapper-121 makeStyles-userInputControl-127"
+                >
+                  <h1
+                    class="MuiTypography-root MuiTypography-caption MuiTypography-colorSecondary MuiTypography-alignLeft"
+                  >
+                    Ext (Optional)
+                     
+                  </h1>
+                  <div>
+                    <div
+                      class="MuiFormControl-root MuiTextField-root MuiFormControl-fullWidth"
+                    >
+                      <div
+                        class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-fullWidth MuiInputBase-formControl"
+                      >
+                        <input
+                          aria-invalid="false"
+                          autocomplete="off"
+                          class="MuiInputBase-input MuiOutlinedInput-input"
+                          data-testid="office-user-phone"
+                          maxlength="6"
+                          name="officePhoneExtension"
+                          placeholder="Ext"
+                          type="text"
+                          value=""
+                        />
+                        <fieldset
+                          aria-hidden="true"
+                          class="PrivateNotchedOutline-root-215 MuiOutlinedInput-notchedOutline"
+                          style="padding-left: 8px;"
+                        >
+                          <legend
+                            class="PrivateNotchedOutline-legend-216"
+                            style="width: 0.01px;"
+                          >
+                            <span>
+                              ​
+                            </span>
+                          </legend>
+                        </fieldset>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="MuiGrid-root makeStyles-errorPosition-175 MuiGrid-item MuiGrid-grid-xs-4 MuiGrid-grid-lg-4"
+          >
+            <div
+              class=" makeStyles-controlledRadioContainer-230 controlledRadioContainer"
+              data-testid="controlled-radio"
+            >
+              <fieldset
+                class="MuiFormControl-root makeStyles-radioWrapper-133"
+              >
+                <legend
+                  class="MuiFormLabel-root makeStyles-controlledRadioLabel-229"
+                  id="radio-label-preferredContactMethod"
+                >
+                  Preferred Contact Method
+                </legend>
+                <div
+                  aria-labelledby="radio-label-preferredContactMethod"
+                  class="MuiFormGroup-root MuiFormGroup-row"
+                  data-testid="controlled-radio-group"
+                  role="radiogroup"
+                >
+                  <label
+                    class="MuiFormControlLabel-root"
+                  >
+                    <span
+                      aria-disabled="false"
+                      class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-237 MuiRadio-root makeStyles-root-231 PrivateSwitchBase-checked-238 Mui-checked"
+                    >
+                      <span
+                        class="MuiIconButton-label"
+                      >
+                        <input
+                          checked=""
+                          class="PrivateSwitchBase-input-240"
+                          data-testid="controlled-radio-button"
+                          name="preferredContactMethod"
+                          type="radio"
+                          value="0"
+                        />
+                        <span
+                          class="makeStyles-icon-232 makeStyles-checkedIcon-235 "
+                        />
+                      </span>
+                    </span>
+                    <span
+                      class="MuiTypography-root MuiFormControlLabel-label MuiTypography-body1"
+                    >
+                      Email
+                    </span>
+                  </label>
+                  <label
+                    class="MuiFormControlLabel-root"
+                  >
+                    <span
+                      aria-disabled="false"
+                      class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-237 MuiRadio-root makeStyles-root-231"
+                    >
+                      <span
+                        class="MuiIconButton-label"
+                      >
+                        <input
+                          class="PrivateSwitchBase-input-240"
+                          data-testid="controlled-radio-button"
+                          name="preferredContactMethod"
+                          type="radio"
+                          value="1"
+                        />
+                        <span
+                          class="makeStyles-icon-232 makeStyles-unactiveIcon-234"
+                        />
+                      </span>
+                    </span>
+                    <span
+                      class="MuiTypography-root MuiFormControlLabel-label MuiTypography-body1"
+                    >
+                      Phone
+                    </span>
+                  </label>
+                </div>
+              </fieldset>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="MuiGrid-root makeStyles-deleteGridLg-163 MuiGrid-item"
+      >
+        <button
+          class="MuiButtonBase-root MuiIconButton-root makeStyles-deleteButton-188 makeStyles-hideDeleteButton-189"
+          data-testid="delete-user-button"
+          tabindex="0"
+          type="button"
+        >
+          <span
+            class="MuiIconButton-label"
+          >
+            <svg>
+              delete.svg
+            </svg>
+          </span>
+          <span
+            class="MuiTouchRipple-root"
+          />
+        </button>
+      </div>
+    </div>
+    <span
+      class=""
+      data-testid="controlled-button"
+      tabindex="-1"
+    >
+      <button
+        class="MuiButtonBase-root MuiButton-root MuiButton-text makeStyles-addUserButton-191 makeStyles-disableUserButton-153"
+        data-testid="add-user-button"
+        tabindex="0"
+        type="button"
+      >
+        <span
+          class="MuiButton-label"
+        >
+          <span
+            class="MuiButton-startIcon MuiButton-iconSizeMedium"
+          >
+            <svg>
+              add.svg
+            </svg>
+          </span>
+          Add user
+        </span>
+      </button>
+    </span>
+  </div>
+</div>
+`;
+
+exports[`Users Form should render with Fallback User 1`] = `
+<div>
+  <div
+    class="MuiPaper-root makeStyles-container-684  MuiPaper-outlined MuiPaper-rounded"
+  >
+    <div
+      class="MuiGrid-root MuiGrid-container MuiGrid-align-items-xs-center MuiGrid-justify-xs-space-between"
+    >
+      <div
+        class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-auto"
+      >
+        <h1
+          class="MuiTypography-root makeStyles-title-685 MuiTypography-h1"
+        >
+          Add Users
+        </h1>
+      </div>
+      <div
+        class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-auto"
+      >
+        <span
+          class="makeStyles-userAction-640 makeStyles-secondaryActions-686"
+        >
+          <svg>
+            info.svg
+          </svg>
+          You need at least one Client Admin user role for the client to be approved
+        </span>
+      </div>
+    </div>
+    <hr
+      class="MuiDivider-root makeStyles-divider-687"
+    />
+    <div
+      class="MuiGrid-root makeStyles-formWrapper-656 makeStyles-rowsWrapper-609 MuiGrid-container"
+      data-testid="user-row-item"
+    >
+      <div
+        class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-true MuiGrid-grid-lg-true"
+      >
+        <div
+          class="MuiGrid-root MuiGrid-container"
+        >
+          <div
+            class="MuiGrid-root makeStyles-errorPosition-655 MuiGrid-item MuiGrid-grid-xs-4 MuiGrid-grid-lg-4"
+          >
+            <div
+              class="MuiFormControl-root makeStyles-formControl-693 makeStyles-userWrapper-601"
+            >
+              <h1
+                class="MuiTypography-root MuiTypography-caption MuiTypography-colorSecondary MuiTypography-alignLeft"
+              >
+                First Name
+                 
+              </h1>
+              <div>
+                <div
+                  class="MuiFormControl-root MuiTextField-root MuiFormControl-fullWidth"
+                >
+                  <div
+                    class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-fullWidth Mui-focused Mui-focused MuiInputBase-formControl"
+                  >
+                    <input
+                      aria-invalid="false"
+                      autocomplete="off"
+                      class="MuiInputBase-input MuiOutlinedInput-input"
+                      data-testid="user-first-name"
+                      name="firstName"
+                      placeholder="First Name"
+                      type="text"
+                      value=""
+                    />
+                    <fieldset
+                      aria-hidden="true"
+                      class="PrivateNotchedOutline-root-695 MuiOutlinedInput-notchedOutline"
+                      style="padding-left: 8px;"
+                    >
+                      <legend
+                        class="PrivateNotchedOutline-legend-696"
+                        style="width: 0.01px;"
+                      >
+                        <span>
+                          ​
+                        </span>
+                      </legend>
+                    </fieldset>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="MuiGrid-root makeStyles-errorPosition-655 MuiGrid-item MuiGrid-grid-xs-4 MuiGrid-grid-lg-4"
+          >
+            <div
+              class="MuiFormControl-root makeStyles-formControl-693 makeStyles-userWrapper-601"
+            >
+              <h1
+                class="MuiTypography-root MuiTypography-caption MuiTypography-colorSecondary MuiTypography-alignLeft"
+              >
+                Last Name
+                 
+              </h1>
+              <div>
+                <div
+                  class="MuiFormControl-root MuiTextField-root MuiFormControl-fullWidth"
+                >
+                  <div
+                    class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-fullWidth MuiInputBase-formControl"
+                  >
+                    <input
+                      aria-invalid="false"
+                      autocomplete="off"
+                      class="MuiInputBase-input MuiOutlinedInput-input"
+                      data-testid="user-last-name"
+                      name="lastName"
+                      placeholder="Last Name"
+                      type="text"
+                      value=""
+                    />
+                    <fieldset
+                      aria-hidden="true"
+                      class="PrivateNotchedOutline-root-695 MuiOutlinedInput-notchedOutline"
+                      style="padding-left: 8px;"
+                    >
+                      <legend
+                        class="PrivateNotchedOutline-legend-696"
+                        style="width: 0.01px;"
+                      >
+                        <span>
+                          ​
+                        </span>
+                      </legend>
+                    </fieldset>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="MuiGrid-root makeStyles-errorPosition-655 MuiGrid-item MuiGrid-grid-xs-4 MuiGrid-grid-lg-4"
+          >
+            <div
+              class="MuiFormControl-root makeStyles-formControl-693 makeStyles-userWrapper-601 "
+            >
+              <h1
+                class="MuiTypography-root MuiTypography-caption MuiTypography-colorSecondary MuiTypography-alignLeft"
+              >
+                Email Address
+                 
+              </h1>
+              <div>
+                <div
+                  class="MuiFormControl-root MuiTextField-root MuiFormControl-fullWidth"
+                >
+                  <div
+                    class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-fullWidth MuiInputBase-formControl"
+                  >
+                    <input
+                      aria-invalid="false"
+                      autocomplete="off"
+                      class="MuiInputBase-input MuiOutlinedInput-input"
+                      data-testid="user-email"
+                      name="email"
+                      placeholder="Email"
+                      type="text"
+                      value=""
+                    />
+                    <fieldset
+                      aria-hidden="true"
+                      class="PrivateNotchedOutline-root-695 MuiOutlinedInput-notchedOutline"
+                      style="padding-left: 8px;"
+                    >
+                      <legend
+                        class="PrivateNotchedOutline-legend-696"
+                        style="width: 0.01px;"
+                      >
+                        <span>
+                          ​
+                        </span>
+                      </legend>
+                    </fieldset>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="MuiGrid-root makeStyles-errorPosition-655 MuiGrid-item MuiGrid-grid-xs-4 MuiGrid-grid-lg-4"
+          >
+            <div
+              class="MuiFormControl-root makeStyles-formControl-693 makeStyles-userWrapper-601 makeStyles-userInputControl-607"
+            >
+              <h1
+                class="MuiTypography-root MuiTypography-caption MuiTypography-colorSecondary MuiTypography-alignLeft"
+              >
+                Title (Optional)
+                 
+              </h1>
+              <div>
+                <div
+                  class="MuiFormControl-root MuiTextField-root MuiFormControl-fullWidth"
+                >
+                  <div
+                    class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-fullWidth MuiInputBase-formControl"
+                  >
+                    <input
+                      aria-invalid="false"
+                      autocomplete="off"
+                      class="MuiInputBase-input MuiOutlinedInput-input"
+                      data-testid="user-title"
+                      name="title"
+                      placeholder="title"
+                      type="text"
+                      value=""
+                    />
+                    <fieldset
+                      aria-hidden="true"
+                      class="PrivateNotchedOutline-root-695 MuiOutlinedInput-notchedOutline"
+                      style="padding-left: 8px;"
+                    >
+                      <legend
+                        class="PrivateNotchedOutline-legend-696"
+                        style="width: 0.01px;"
+                      >
+                        <span>
+                          ​
+                        </span>
+                      </legend>
+                    </fieldset>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="MuiGrid-root makeStyles-errorPosition-655 MuiGrid-item MuiGrid-grid-xs-4 MuiGrid-grid-lg-4"
+          >
+            <div
+              class="MuiFormControl-root makeStyles-formControl-693 makeStyles-userWrapper-601 makeStyles-userInputControl-607 makeStyles-userInput-606"
+            >
+              <h1
+                class="MuiTypography-root MuiTypography-caption MuiTypography-colorSecondary MuiTypography-alignLeft"
+              >
+                Invite User to FCA as
+                 
+              </h1>
+              <div>
+                <div
+                  class="MuiFormControl-root makeStyles-formControl-701 "
+                >
+                  
+                  <div
+                    class="MuiInputBase-root MuiOutlinedInput-root   makeStyles-selectElement-702  MuiInputBase-fullWidth MuiInputBase-formControl"
+                    data-testid=""
+                  >
+                    <div
+                      aria-haspopup="listbox"
+                      aria-labelledby="demo-simple-select-outlined-label demo-simple-select-outlined"
+                      class="MuiSelect-root MuiSelect-select MuiSelect-selectMenu MuiSelect-outlined MuiInputBase-input MuiOutlinedInput-input"
+                      id="demo-simple-select-outlined"
+                      role="button"
+                      tabindex="0"
+                    >
+                      Do not invite
+                    </div>
+                    <input
+                      aria-hidden="true"
+                      class="MuiSelect-nativeInput"
+                      name="invitationType"
+                      tabindex="-1"
+                      value="0"
+                    />
+                    <svg
+                      aria-hidden="true"
+                      class="MuiSvgIcon-root MuiSelect-icon MuiSelect-iconOutlined"
+                      focusable="false"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M7 10l5 5 5-5z"
+                      />
+                    </svg>
+                    <fieldset
+                      aria-hidden="true"
+                      class="PrivateNotchedOutline-root-695 MuiOutlinedInput-notchedOutline"
+                      style="padding-left: 8px;"
+                    >
+                      <legend
+                        class="PrivateNotchedOutline-legend-696"
+                        style="width: 0.01px;"
+                      >
+                        <span>
+                          ​
+                        </span>
+                      </legend>
+                    </fieldset>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="MuiGrid-root makeStyles-errorPosition-655 MuiGrid-item MuiGrid-grid-xs-4 MuiGrid-grid-lg-4"
+          >
+            <div
+              class="makeStyles-invitationWrapper-608"
+            />
+          </div>
+          <div
+            class="MuiGrid-root makeStyles-errorPosition-655 MuiGrid-item MuiGrid-grid-xs-4 MuiGrid-grid-lg-4"
+          >
+            <div
+              class="MuiFormControl-root makeStyles-formControl-693 makeStyles-userWrapper-601 makeStyles-userInputControl-607"
+            >
+              <h1
+                class="MuiTypography-root MuiTypography-caption MuiTypography-colorSecondary MuiTypography-alignLeft"
+              >
+                Mobile Phone Number (Optional)
+                 
+              </h1>
+              <div>
+                <div
+                  class="makeStyles-phoneInput-706 undefined  react-tel-input"
+                >
+                  <div
+                    class="special-label"
+                  >
+                    Phone
+                  </div>
+                  <input
+                    autocomplete="off"
+                    class=" form-control"
+                    data-testid="mobile-user-phone"
+                    name="mobilePhoneNumber"
+                    placeholder="+0 (000) 000-0000"
+                    type="text"
+                    value=""
+                    variant="outlined"
+                  />
+                  <div
+                    class=" flag-dropdown"
+                  >
+                    <div
+                      aria-haspopup="listbox"
+                      class="selected-flag"
+                      role="button"
+                      tabindex="-1"
+                      title=""
+                    >
+                      <div
+                        class="flag 0"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="MuiGrid-root makeStyles-errorPosition-655 MuiGrid-item MuiGrid-grid-xs-4 MuiGrid-grid-lg-4"
+          >
+            <div
+              class="MuiGrid-root MuiGrid-container"
+            >
+              <div
+                class="MuiGrid-root makeStyles-optionalWrapper-610 MuiGrid-item MuiGrid-grid-xs-9 MuiGrid-grid-lg-9"
+              >
+                <div
+                  class="MuiFormControl-root makeStyles-formControl-693 makeStyles-userWrapper-601 makeStyles-userInputControl-607"
+                >
+                  <h1
+                    class="MuiTypography-root MuiTypography-caption MuiTypography-colorSecondary MuiTypography-alignLeft"
+                  >
+                    Office Phone Number (Optional)
+                     
+                  </h1>
+                  <div>
+                    <div
+                      class="makeStyles-phoneInput-706 undefined  react-tel-input"
+                    >
+                      <div
+                        class="special-label"
+                      >
+                        Phone
+                      </div>
+                      <input
+                        autocomplete="off"
+                        class=" form-control"
+                        data-testid="office-user-phone"
+                        id="officePhoneNumber-0"
+                        name="officePhoneNumber"
+                        placeholder="+0 (000) 000-0000"
+                        type="text"
+                        value=""
+                        variant="outlined"
+                      />
+                      <div
+                        class=" flag-dropdown"
+                      >
+                        <div
+                          aria-haspopup="listbox"
+                          class="selected-flag"
+                          role="button"
+                          tabindex="-1"
+                          title=""
+                        >
+                          <div
+                            class="flag 0"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="MuiGrid-root makeStyles-errorPosition-655 MuiGrid-item MuiGrid-grid-xs-3 MuiGrid-grid-lg-3"
+              >
+                <div
+                  class="MuiFormControl-root makeStyles-formControl-693 makeStyles-userWrapper-601 makeStyles-userInputControl-607"
+                >
+                  <h1
+                    class="MuiTypography-root MuiTypography-caption MuiTypography-colorSecondary MuiTypography-alignLeft"
+                  >
+                    Ext (Optional)
+                     
+                  </h1>
+                  <div>
+                    <div
+                      class="MuiFormControl-root MuiTextField-root MuiFormControl-fullWidth"
+                    >
+                      <div
+                        class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-fullWidth MuiInputBase-formControl"
+                      >
+                        <input
+                          aria-invalid="false"
+                          autocomplete="off"
+                          class="MuiInputBase-input MuiOutlinedInput-input"
+                          data-testid="office-user-phone"
+                          maxlength="6"
+                          name="officePhoneExtension"
+                          placeholder="Ext"
+                          type="text"
+                          value=""
+                        />
+                        <fieldset
+                          aria-hidden="true"
+                          class="PrivateNotchedOutline-root-695 MuiOutlinedInput-notchedOutline"
+                          style="padding-left: 8px;"
+                        >
+                          <legend
+                            class="PrivateNotchedOutline-legend-696"
+                            style="width: 0.01px;"
+                          >
+                            <span>
+                              ​
+                            </span>
+                          </legend>
+                        </fieldset>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="MuiGrid-root makeStyles-errorPosition-655 MuiGrid-item MuiGrid-grid-xs-4 MuiGrid-grid-lg-4"
+          >
+            <div
+              class=" makeStyles-controlledRadioContainer-710 controlledRadioContainer"
+              data-testid="controlled-radio"
+            >
+              <fieldset
+                class="MuiFormControl-root makeStyles-radioWrapper-613"
+              >
+                <legend
+                  class="MuiFormLabel-root makeStyles-controlledRadioLabel-709"
+                  id="radio-label-preferredContactMethod"
+                >
+                  Preferred Contact Method
+                </legend>
+                <div
+                  aria-labelledby="radio-label-preferredContactMethod"
+                  class="MuiFormGroup-root MuiFormGroup-row"
+                  data-testid="controlled-radio-group"
+                  role="radiogroup"
+                >
+                  <label
+                    class="MuiFormControlLabel-root"
+                  >
+                    <span
+                      aria-disabled="false"
+                      class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-717 MuiRadio-root makeStyles-root-711 PrivateSwitchBase-checked-718 Mui-checked"
+                    >
+                      <span
+                        class="MuiIconButton-label"
+                      >
+                        <input
+                          checked=""
+                          class="PrivateSwitchBase-input-720"
+                          data-testid="controlled-radio-button"
+                          name="preferredContactMethod"
+                          type="radio"
+                          value="0"
+                        />
+                        <span
+                          class="makeStyles-icon-712 makeStyles-checkedIcon-715 "
+                        />
+                      </span>
+                    </span>
+                    <span
+                      class="MuiTypography-root MuiFormControlLabel-label MuiTypography-body1"
+                    >
+                      Email
+                    </span>
+                  </label>
+                  <label
+                    class="MuiFormControlLabel-root"
+                  >
+                    <span
+                      aria-disabled="false"
+                      class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-717 MuiRadio-root makeStyles-root-711"
+                    >
+                      <span
+                        class="MuiIconButton-label"
+                      >
+                        <input
+                          class="PrivateSwitchBase-input-720"
+                          data-testid="controlled-radio-button"
+                          name="preferredContactMethod"
+                          type="radio"
+                          value="1"
+                        />
+                        <span
+                          class="makeStyles-icon-712 makeStyles-unactiveIcon-714"
+                        />
+                      </span>
+                    </span>
+                    <span
+                      class="MuiTypography-root MuiFormControlLabel-label MuiTypography-body1"
+                    >
+                      Phone
+                    </span>
+                  </label>
+                </div>
+              </fieldset>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="MuiGrid-root makeStyles-deleteGridLg-643 MuiGrid-item"
+      >
+        <button
+          class="MuiButtonBase-root MuiIconButton-root makeStyles-deleteButton-668 makeStyles-hideDeleteButton-669"
+          data-testid="delete-user-button"
+          tabindex="0"
+          type="button"
+        >
+          <span
+            class="MuiIconButton-label"
+          >
+            <svg>
+              delete.svg
+            </svg>
+          </span>
+          <span
+            class="MuiTouchRipple-root"
+          />
+        </button>
+      </div>
+    </div>
+    <span
+      class=""
+      data-testid="controlled-button"
+      tabindex="-1"
+    >
+      <button
+        class="MuiButtonBase-root MuiButton-root MuiButton-text makeStyles-addUserButton-671 makeStyles-disableUserButton-633"
+        data-testid="add-user-button"
+        tabindex="0"
+        type="button"
+      >
+        <span
+          class="MuiButton-label"
+        >
+          <span
+            class="MuiButton-startIcon MuiButton-iconSizeMedium"
+          >
+            <svg>
+              add.svg
+            </svg>
+          </span>
+          Add user
+        </span>
+      </button>
+    </span>
+  </div>
+</div>
+`;
+
+exports[`Users Form should return field errors 1`] = `
+<div>
+  <div
+    class="MuiPaper-root makeStyles-container-804  MuiPaper-outlined MuiPaper-rounded"
+  >
+    <div
+      class="MuiGrid-root MuiGrid-container MuiGrid-align-items-xs-center MuiGrid-justify-xs-space-between"
+    >
+      <div
+        class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-auto"
+      >
+        <h1
+          class="MuiTypography-root makeStyles-title-805 MuiTypography-h1"
+        >
+          Add Users
+        </h1>
+      </div>
+      <div
+        class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-auto"
+      >
+        <span
+          class="makeStyles-userAction-760 makeStyles-secondaryActions-806"
+        >
+          <svg>
+            info.svg
+          </svg>
+          You need at least one Client Admin user role for the client to be approved
+        </span>
+      </div>
+    </div>
+    <hr
+      class="MuiDivider-root makeStyles-divider-807"
+    />
+    <div
+      class="MuiGrid-root makeStyles-formWrapper-776 makeStyles-rowsWrapper-729 MuiGrid-container"
+      data-testid="user-row-item"
+    >
+      <div
+        class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-true MuiGrid-grid-lg-true"
+      >
+        <div
+          class="MuiGrid-root MuiGrid-container"
+        >
+          <div
+            class="MuiGrid-root makeStyles-errorPosition-775 MuiGrid-item MuiGrid-grid-xs-4 MuiGrid-grid-lg-4"
+          >
+            <div
+              class="MuiFormControl-root makeStyles-formControl-813 makeStyles-userWrapper-721"
+            >
+              <h1
+                class="MuiTypography-root MuiTypography-caption MuiTypography-colorSecondary MuiTypography-alignLeft"
+              >
+                First Name
+                 
+              </h1>
+              <div>
+                <div
+                  class="MuiFormControl-root MuiTextField-root MuiFormControl-fullWidth"
+                >
+                  <div
+                    class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-fullWidth Mui-focused Mui-focused MuiInputBase-formControl"
+                  >
+                    <input
+                      aria-invalid="false"
+                      autocomplete="off"
+                      class="MuiInputBase-input MuiOutlinedInput-input"
+                      data-testid="user-first-name"
+                      name="firstName"
+                      placeholder="First Name"
+                      type="text"
+                      value=""
+                    />
+                    <fieldset
+                      aria-hidden="true"
+                      class="PrivateNotchedOutline-root-815 MuiOutlinedInput-notchedOutline"
+                      style="padding-left: 8px;"
+                    >
+                      <legend
+                        class="PrivateNotchedOutline-legend-816"
+                        style="width: 0.01px;"
+                      >
+                        <span>
+                          ​
+                        </span>
+                      </legend>
+                    </fieldset>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="MuiGrid-root makeStyles-errorPosition-775 MuiGrid-item MuiGrid-grid-xs-4 MuiGrid-grid-lg-4"
+          >
+            <div
+              class="MuiFormControl-root makeStyles-formControl-813 makeStyles-userWrapper-721"
+            >
+              <h1
+                class="MuiTypography-root MuiTypography-caption MuiTypography-colorSecondary MuiTypography-alignLeft"
+              >
+                Last Name
+                 
+              </h1>
+              <div>
+                <div
+                  class="MuiFormControl-root MuiTextField-root MuiFormControl-fullWidth"
+                >
+                  <div
+                    class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-fullWidth MuiInputBase-formControl"
+                  >
+                    <input
+                      aria-invalid="false"
+                      autocomplete="off"
+                      class="MuiInputBase-input MuiOutlinedInput-input"
+                      data-testid="user-last-name"
+                      name="lastName"
+                      placeholder="Last Name"
+                      type="text"
+                      value=""
+                    />
+                    <fieldset
+                      aria-hidden="true"
+                      class="PrivateNotchedOutline-root-815 MuiOutlinedInput-notchedOutline"
+                      style="padding-left: 8px;"
+                    >
+                      <legend
+                        class="PrivateNotchedOutline-legend-816"
+                        style="width: 0.01px;"
+                      >
+                        <span>
+                          ​
+                        </span>
+                      </legend>
+                    </fieldset>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="MuiGrid-root makeStyles-errorPosition-775 MuiGrid-item MuiGrid-grid-xs-4 MuiGrid-grid-lg-4"
+          >
+            <div
+              class="MuiFormControl-root makeStyles-formControl-813 makeStyles-userWrapper-721 "
+            >
+              <h1
+                class="MuiTypography-root MuiTypography-caption MuiTypography-colorSecondary MuiTypography-alignLeft"
+              >
+                Email Address
+                 
+              </h1>
+              <div>
+                <div
+                  class="MuiFormControl-root MuiTextField-root MuiFormControl-fullWidth"
+                >
+                  <div
+                    class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-fullWidth MuiInputBase-formControl"
+                  >
+                    <input
+                      aria-invalid="false"
+                      autocomplete="off"
+                      class="MuiInputBase-input MuiOutlinedInput-input"
+                      data-testid="user-email"
+                      name="email"
+                      placeholder="Email"
+                      type="text"
+                      value=""
+                    />
+                    <fieldset
+                      aria-hidden="true"
+                      class="PrivateNotchedOutline-root-815 MuiOutlinedInput-notchedOutline"
+                      style="padding-left: 8px;"
+                    >
+                      <legend
+                        class="PrivateNotchedOutline-legend-816"
+                        style="width: 0.01px;"
+                      >
+                        <span>
+                          ​
+                        </span>
+                      </legend>
+                    </fieldset>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="MuiGrid-root makeStyles-errorPosition-775 MuiGrid-item MuiGrid-grid-xs-4 MuiGrid-grid-lg-4"
+          >
+            <div
+              class="MuiFormControl-root makeStyles-formControl-813 makeStyles-userWrapper-721 makeStyles-userInputControl-727"
+            >
+              <h1
+                class="MuiTypography-root MuiTypography-caption MuiTypography-colorSecondary MuiTypography-alignLeft"
+              >
+                Title (Optional)
+                 
+              </h1>
+              <div>
+                <div
+                  class="MuiFormControl-root MuiTextField-root MuiFormControl-fullWidth"
+                >
+                  <div
+                    class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-fullWidth MuiInputBase-formControl"
+                  >
+                    <input
+                      aria-invalid="false"
+                      autocomplete="off"
+                      class="MuiInputBase-input MuiOutlinedInput-input"
+                      data-testid="user-title"
+                      name="title"
+                      placeholder="title"
+                      type="text"
+                      value=""
+                    />
+                    <fieldset
+                      aria-hidden="true"
+                      class="PrivateNotchedOutline-root-815 MuiOutlinedInput-notchedOutline"
+                      style="padding-left: 8px;"
+                    >
+                      <legend
+                        class="PrivateNotchedOutline-legend-816"
+                        style="width: 0.01px;"
+                      >
+                        <span>
+                          ​
+                        </span>
+                      </legend>
+                    </fieldset>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="MuiGrid-root makeStyles-errorPosition-775 MuiGrid-item MuiGrid-grid-xs-4 MuiGrid-grid-lg-4"
+          >
+            <div
+              class="MuiFormControl-root makeStyles-formControl-813 makeStyles-userWrapper-721 makeStyles-userInputControl-727 makeStyles-userInput-726"
+            >
+              <h1
+                class="MuiTypography-root MuiTypography-caption MuiTypography-colorSecondary MuiTypography-alignLeft"
+              >
+                Invite User to FCA as
+                 
+              </h1>
+              <div>
+                <div
+                  class="MuiFormControl-root makeStyles-formControl-821 "
+                >
+                  
+                  <div
+                    class="MuiInputBase-root MuiOutlinedInput-root   makeStyles-selectElement-822  MuiInputBase-fullWidth MuiInputBase-formControl"
+                    data-testid=""
+                  >
+                    <div
+                      aria-haspopup="listbox"
+                      aria-labelledby="demo-simple-select-outlined-label demo-simple-select-outlined"
+                      class="MuiSelect-root MuiSelect-select MuiSelect-selectMenu MuiSelect-outlined MuiInputBase-input MuiOutlinedInput-input"
+                      id="demo-simple-select-outlined"
+                      role="button"
+                      tabindex="0"
+                    >
+                      Client Admin
+                    </div>
+                    <input
+                      aria-hidden="true"
+                      class="MuiSelect-nativeInput"
+                      name="invitationType"
+                      tabindex="-1"
+                      value="1"
+                    />
+                    <svg
+                      aria-hidden="true"
+                      class="MuiSvgIcon-root MuiSelect-icon MuiSelect-iconOutlined"
+                      focusable="false"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M7 10l5 5 5-5z"
+                      />
+                    </svg>
+                    <fieldset
+                      aria-hidden="true"
+                      class="PrivateNotchedOutline-root-815 MuiOutlinedInput-notchedOutline"
+                      style="padding-left: 8px;"
+                    >
+                      <legend
+                        class="PrivateNotchedOutline-legend-816"
+                        style="width: 0.01px;"
+                      >
+                        <span>
+                          ​
+                        </span>
+                      </legend>
+                    </fieldset>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="MuiGrid-root makeStyles-errorPosition-775 MuiGrid-item MuiGrid-grid-xs-4 MuiGrid-grid-lg-4"
+          >
+            <div
+              class="makeStyles-invitationWrapper-728"
+            >
+              <p
+                class="MuiTypography-root MuiTypography-body1"
+              >
+                Invitation email will be sent once the Client creation gets approved
+              </p>
+            </div>
+          </div>
+          <div
+            class="MuiGrid-root makeStyles-errorPosition-775 MuiGrid-item MuiGrid-grid-xs-4 MuiGrid-grid-lg-4"
+          >
+            <div
+              class="MuiFormControl-root makeStyles-formControl-813 makeStyles-userWrapper-721 makeStyles-userInputControl-727"
+            >
+              <h1
+                class="MuiTypography-root MuiTypography-caption MuiTypography-colorSecondary MuiTypography-alignLeft"
+              >
+                Mobile Phone Number (Optional)
+                 
+              </h1>
+              <div>
+                <div
+                  class="makeStyles-phoneInput-826 undefined  react-tel-input"
+                >
+                  <div
+                    class="special-label"
+                  >
+                    Phone
+                  </div>
+                  <input
+                    autocomplete="off"
+                    class=" form-control"
+                    data-testid="mobile-user-phone"
+                    name="mobilePhoneNumber"
+                    placeholder="+0 (000) 000-0000"
+                    type="text"
+                    value=""
+                    variant="outlined"
+                  />
+                  <div
+                    class=" flag-dropdown"
+                  >
+                    <div
+                      aria-haspopup="listbox"
+                      class="selected-flag"
+                      role="button"
+                      tabindex="-1"
+                      title=""
+                    >
+                      <div
+                        class="flag 0"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="MuiGrid-root makeStyles-errorPosition-775 MuiGrid-item MuiGrid-grid-xs-4 MuiGrid-grid-lg-4"
+          >
+            <div
+              class="MuiGrid-root MuiGrid-container"
+            >
+              <div
+                class="MuiGrid-root makeStyles-optionalWrapper-730 MuiGrid-item MuiGrid-grid-xs-9 MuiGrid-grid-lg-9"
+              >
+                <div
+                  class="MuiFormControl-root makeStyles-formControl-813 makeStyles-userWrapper-721 makeStyles-userInputControl-727"
+                >
+                  <h1
+                    class="MuiTypography-root MuiTypography-caption MuiTypography-colorSecondary MuiTypography-alignLeft"
+                  >
+                    Office Phone Number (Optional)
+                     
+                  </h1>
+                  <div>
+                    <div
+                      class="makeStyles-phoneInput-826 undefined  react-tel-input"
+                    >
+                      <div
+                        class="special-label"
+                      >
+                        Phone
+                      </div>
+                      <input
+                        autocomplete="off"
+                        class=" form-control"
+                        data-testid="office-user-phone"
+                        id="officePhoneNumber-0"
+                        name="officePhoneNumber"
+                        placeholder="+0 (000) 000-0000"
+                        type="text"
+                        value=""
+                        variant="outlined"
+                      />
+                      <div
+                        class=" flag-dropdown"
+                      >
+                        <div
+                          aria-haspopup="listbox"
+                          class="selected-flag"
+                          role="button"
+                          tabindex="-1"
+                          title=""
+                        >
+                          <div
+                            class="flag 0"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="MuiGrid-root makeStyles-errorPosition-775 MuiGrid-item MuiGrid-grid-xs-3 MuiGrid-grid-lg-3"
+              >
+                <div
+                  class="MuiFormControl-root makeStyles-formControl-813 makeStyles-userWrapper-721 makeStyles-userInputControl-727"
+                >
+                  <h1
+                    class="MuiTypography-root MuiTypography-caption MuiTypography-colorSecondary MuiTypography-alignLeft"
+                  >
+                    Ext (Optional)
+                     
+                  </h1>
+                  <div>
+                    <div
+                      class="MuiFormControl-root MuiTextField-root MuiFormControl-fullWidth"
+                    >
+                      <div
+                        class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-fullWidth MuiInputBase-formControl"
+                      >
+                        <input
+                          aria-invalid="false"
+                          autocomplete="off"
+                          class="MuiInputBase-input MuiOutlinedInput-input"
+                          data-testid="office-user-phone"
+                          maxlength="6"
+                          name="officePhoneExtension"
+                          placeholder="Ext"
+                          type="text"
+                          value=""
+                        />
+                        <fieldset
+                          aria-hidden="true"
+                          class="PrivateNotchedOutline-root-815 MuiOutlinedInput-notchedOutline"
+                          style="padding-left: 8px;"
+                        >
+                          <legend
+                            class="PrivateNotchedOutline-legend-816"
+                            style="width: 0.01px;"
+                          >
+                            <span>
+                              ​
+                            </span>
+                          </legend>
+                        </fieldset>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="MuiGrid-root makeStyles-errorPosition-775 MuiGrid-item MuiGrid-grid-xs-4 MuiGrid-grid-lg-4"
+          >
+            <div
+              class=" makeStyles-controlledRadioContainer-830 controlledRadioContainer"
+              data-testid="controlled-radio"
+            >
+              <fieldset
+                class="MuiFormControl-root makeStyles-radioWrapper-733"
+              >
+                <legend
+                  class="MuiFormLabel-root makeStyles-controlledRadioLabel-829"
+                  id="radio-label-preferredContactMethod"
+                >
+                  Preferred Contact Method
+                </legend>
+                <div
+                  aria-labelledby="radio-label-preferredContactMethod"
+                  class="MuiFormGroup-root MuiFormGroup-row"
+                  data-testid="controlled-radio-group"
+                  role="radiogroup"
+                >
+                  <label
+                    class="MuiFormControlLabel-root"
+                  >
+                    <span
+                      aria-disabled="false"
+                      class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-837 MuiRadio-root makeStyles-root-831 PrivateSwitchBase-checked-838 Mui-checked"
+                    >
+                      <span
+                        class="MuiIconButton-label"
+                      >
+                        <input
+                          checked=""
+                          class="PrivateSwitchBase-input-840"
+                          data-testid="controlled-radio-button"
+                          name="preferredContactMethod"
+                          type="radio"
+                          value="0"
+                        />
+                        <span
+                          class="makeStyles-icon-832 makeStyles-checkedIcon-835 "
+                        />
+                      </span>
+                    </span>
+                    <span
+                      class="MuiTypography-root MuiFormControlLabel-label MuiTypography-body1"
+                    >
+                      Email
+                    </span>
+                  </label>
+                  <label
+                    class="MuiFormControlLabel-root"
+                  >
+                    <span
+                      aria-disabled="false"
+                      class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-837 MuiRadio-root makeStyles-root-831"
+                    >
+                      <span
+                        class="MuiIconButton-label"
+                      >
+                        <input
+                          class="PrivateSwitchBase-input-840"
+                          data-testid="controlled-radio-button"
+                          name="preferredContactMethod"
+                          type="radio"
+                          value="1"
+                        />
+                        <span
+                          class="makeStyles-icon-832 makeStyles-unactiveIcon-834"
+                        />
+                      </span>
+                    </span>
+                    <span
+                      class="MuiTypography-root MuiFormControlLabel-label MuiTypography-body1"
+                    >
+                      Phone
+                    </span>
+                  </label>
+                </div>
+              </fieldset>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="MuiGrid-root makeStyles-deleteGridLg-763 MuiGrid-item"
+      >
+        <button
+          class="MuiButtonBase-root MuiIconButton-root makeStyles-deleteButton-788 makeStyles-hideDeleteButton-789"
+          data-testid="delete-user-button"
+          tabindex="0"
+          type="button"
+        >
+          <span
+            class="MuiIconButton-label"
+          >
+            <svg>
+              delete.svg
+            </svg>
+          </span>
+          <span
+            class="MuiTouchRipple-root"
+          />
+        </button>
+      </div>
+    </div>
+    <span
+      class=""
+      data-testid="controlled-button"
+      tabindex="-1"
+    >
+      <button
+        class="MuiButtonBase-root MuiButton-root MuiButton-text makeStyles-addUserButton-791 makeStyles-disableUserButton-753"
+        data-testid="add-user-button"
+        tabindex="0"
+        type="button"
+      >
+        <span
+          class="MuiButton-label"
+        >
+          <span
+            class="MuiButton-startIcon MuiButton-iconSizeMedium"
+          >
+            <svg>
+              add.svg
+            </svg>
+          </span>
+          Add user
+        </span>
+      </button>
+    </span>
+  </div>
+</div>
+`;
+
+exports[`Users Form should show errors coming from server 1`] = `
+<div>
+  <div
+    class="MuiPaper-root makeStyles-container-564  MuiPaper-outlined MuiPaper-rounded"
+  >
+    <div
+      class="MuiGrid-root MuiGrid-container MuiGrid-align-items-xs-center MuiGrid-justify-xs-space-between"
+    >
+      <div
+        class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-auto"
+      >
+        <h1
+          class="MuiTypography-root makeStyles-title-565 MuiTypography-h1"
+        >
+          Add Users
+        </h1>
+      </div>
+      <div
+        class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-auto"
+      >
+        <span
+          class="makeStyles-userAction-520 makeStyles-secondaryActions-566"
+        >
+          <svg>
+            info.svg
+          </svg>
+          You need at least one Client Admin user role for the client to be approved
+        </span>
+      </div>
+    </div>
+    <hr
+      class="MuiDivider-root makeStyles-divider-567"
+    />
+    <div
+      class="MuiGrid-root makeStyles-formWrapper-536 makeStyles-rowsWrapper-489 MuiGrid-container"
+      data-testid="user-row-item"
+    >
+      <div
+        class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-true MuiGrid-grid-lg-true"
+      >
+        <div
+          class="MuiGrid-root MuiGrid-container"
+        >
+          <div
+            class="MuiGrid-root makeStyles-errorPosition-535 MuiGrid-item MuiGrid-grid-xs-4 MuiGrid-grid-lg-4"
+          >
+            <div
+              class="MuiFormControl-root makeStyles-formControl-573 makeStyles-userWrapper-481"
+            >
+              <h1
+                class="MuiTypography-root MuiTypography-caption MuiTypography-colorSecondary MuiTypography-alignLeft"
+              >
+                First Name
+                 
+              </h1>
+              <div>
+                <div
+                  class="MuiFormControl-root MuiTextField-root MuiFormControl-fullWidth"
+                >
+                  <div
+                    class="MuiInputBase-root MuiOutlinedInput-root Mui-error Mui-error MuiInputBase-fullWidth MuiInputBase-formControl"
+                  >
+                    <input
+                      aria-invalid="true"
+                      autocomplete="off"
+                      class="MuiInputBase-input MuiOutlinedInput-input"
+                      data-testid="user-first-name"
+                      name="firstName"
+                      placeholder="First Name"
+                      type="text"
+                      value="Test"
+                    />
+                    <fieldset
+                      aria-hidden="true"
+                      class="PrivateNotchedOutline-root-575 MuiOutlinedInput-notchedOutline"
+                      style="padding-left: 8px;"
+                    >
+                      <legend
+                        class="PrivateNotchedOutline-legend-576"
+                        style="width: 0.01px;"
+                      >
+                        <span>
+                          ​
+                        </span>
+                      </legend>
+                    </fieldset>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <h1
+              class="MuiTypography-root  makeStyles-errorMessage-569 errorMessage MuiTypography-caption MuiTypography-colorSecondary MuiTypography-alignLeft"
+            >
+              Please type a User Name
+            </h1>
+          </div>
+          <div
+            class="MuiGrid-root makeStyles-errorPosition-535 MuiGrid-item MuiGrid-grid-xs-4 MuiGrid-grid-lg-4"
+          >
+            <div
+              class="MuiFormControl-root makeStyles-formControl-573 makeStyles-userWrapper-481"
+            >
+              <h1
+                class="MuiTypography-root MuiTypography-caption MuiTypography-colorSecondary MuiTypography-alignLeft"
+              >
+                Last Name
+                 
+              </h1>
+              <div>
+                <div
+                  class="MuiFormControl-root MuiTextField-root MuiFormControl-fullWidth"
+                >
+                  <div
+                    class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-fullWidth MuiInputBase-formControl"
+                  >
+                    <input
+                      aria-invalid="false"
+                      autocomplete="off"
+                      class="MuiInputBase-input MuiOutlinedInput-input"
+                      data-testid="user-last-name"
+                      name="lastName"
+                      placeholder="Last Name"
+                      type="text"
+                      value="One"
+                    />
+                    <fieldset
+                      aria-hidden="true"
+                      class="PrivateNotchedOutline-root-575 MuiOutlinedInput-notchedOutline"
+                      style="padding-left: 8px;"
+                    >
+                      <legend
+                        class="PrivateNotchedOutline-legend-576"
+                        style="width: 0.01px;"
+                      >
+                        <span>
+                          ​
+                        </span>
+                      </legend>
+                    </fieldset>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="MuiGrid-root makeStyles-errorPosition-535 MuiGrid-item MuiGrid-grid-xs-4 MuiGrid-grid-lg-4"
+          >
+            <div
+              class="MuiFormControl-root makeStyles-formControl-573 makeStyles-userWrapper-481 "
+            >
+              <h1
+                class="MuiTypography-root MuiTypography-caption MuiTypography-colorSecondary MuiTypography-alignLeft"
+              >
+                Email Address
+                 
+              </h1>
+              <div>
+                <div
+                  class="MuiFormControl-root MuiTextField-root MuiFormControl-fullWidth"
+                >
+                  <div
+                    class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-fullWidth MuiInputBase-formControl"
+                  >
+                    <input
+                      aria-invalid="false"
+                      autocomplete="off"
+                      class="MuiInputBase-input MuiOutlinedInput-input"
+                      data-testid="user-email"
+                      name="email"
+                      placeholder="Email"
+                      type="text"
+                      value="test@email.com"
+                    />
+                    <fieldset
+                      aria-hidden="true"
+                      class="PrivateNotchedOutline-root-575 MuiOutlinedInput-notchedOutline"
+                      style="padding-left: 8px;"
+                    >
+                      <legend
+                        class="PrivateNotchedOutline-legend-576"
+                        style="width: 0.01px;"
+                      >
+                        <span>
+                          ​
+                        </span>
+                      </legend>
+                    </fieldset>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="MuiGrid-root makeStyles-errorPosition-535 MuiGrid-item MuiGrid-grid-xs-4 MuiGrid-grid-lg-4"
+          >
+            <div
+              class="MuiFormControl-root makeStyles-formControl-573 makeStyles-userWrapper-481 makeStyles-userInputControl-487"
+            >
+              <h1
+                class="MuiTypography-root MuiTypography-caption MuiTypography-colorSecondary MuiTypography-alignLeft"
+              >
+                Title (Optional)
+                 
+              </h1>
+              <div>
+                <div
+                  class="MuiFormControl-root MuiTextField-root MuiFormControl-fullWidth"
+                >
+                  <div
+                    class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-fullWidth MuiInputBase-formControl"
+                  >
+                    <input
+                      aria-invalid="false"
+                      autocomplete="off"
+                      class="MuiInputBase-input MuiOutlinedInput-input"
+                      data-testid="user-title"
+                      name="title"
+                      placeholder="title"
+                      type="text"
+                      value="titleUser1"
+                    />
+                    <fieldset
+                      aria-hidden="true"
+                      class="PrivateNotchedOutline-root-575 MuiOutlinedInput-notchedOutline"
+                      style="padding-left: 8px;"
+                    >
+                      <legend
+                        class="PrivateNotchedOutline-legend-576"
+                        style="width: 0.01px;"
+                      >
+                        <span>
+                          ​
+                        </span>
+                      </legend>
+                    </fieldset>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="MuiGrid-root makeStyles-errorPosition-535 MuiGrid-item MuiGrid-grid-xs-4 MuiGrid-grid-lg-4"
+          >
+            <div
+              class="MuiFormControl-root makeStyles-formControl-573 makeStyles-userWrapper-481 makeStyles-userInputControl-487 makeStyles-userInput-486"
+            >
+              <h1
+                class="MuiTypography-root MuiTypography-caption MuiTypography-colorSecondary MuiTypography-alignLeft"
+              >
+                Invite User to FCA as
+                 
+              </h1>
+              <div>
+                <div
+                  class="MuiFormControl-root makeStyles-formControl-581 "
+                >
+                  
+                  <div
+                    class="MuiInputBase-root MuiOutlinedInput-root   makeStyles-selectElement-582  MuiInputBase-fullWidth MuiInputBase-formControl"
+                    data-testid=""
+                  >
+                    <div
+                      aria-haspopup="listbox"
+                      aria-labelledby="demo-simple-select-outlined-label demo-simple-select-outlined"
+                      class="MuiSelect-root MuiSelect-select MuiSelect-selectMenu MuiSelect-outlined MuiInputBase-input MuiOutlinedInput-input"
+                      id="demo-simple-select-outlined"
+                      role="button"
+                      tabindex="0"
+                    >
+                      Do not invite
+                    </div>
+                    <input
+                      aria-hidden="true"
+                      class="MuiSelect-nativeInput"
+                      name="invitationType"
+                      tabindex="-1"
+                      value="0"
+                    />
+                    <svg
+                      aria-hidden="true"
+                      class="MuiSvgIcon-root MuiSelect-icon MuiSelect-iconOutlined"
+                      focusable="false"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M7 10l5 5 5-5z"
+                      />
+                    </svg>
+                    <fieldset
+                      aria-hidden="true"
+                      class="PrivateNotchedOutline-root-575 MuiOutlinedInput-notchedOutline"
+                      style="padding-left: 8px;"
+                    >
+                      <legend
+                        class="PrivateNotchedOutline-legend-576"
+                        style="width: 0.01px;"
+                      >
+                        <span>
+                          ​
+                        </span>
+                      </legend>
+                    </fieldset>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="MuiGrid-root makeStyles-errorPosition-535 MuiGrid-item MuiGrid-grid-xs-4 MuiGrid-grid-lg-4"
+          >
+            <div
+              class="makeStyles-invitationWrapper-488"
+            />
+          </div>
+          <div
+            class="MuiGrid-root makeStyles-errorPosition-535 MuiGrid-item MuiGrid-grid-xs-4 MuiGrid-grid-lg-4"
+          >
+            <div
+              class="MuiFormControl-root makeStyles-formControl-573 makeStyles-userWrapper-481 makeStyles-userInputControl-487"
+            >
+              <h1
+                class="MuiTypography-root MuiTypography-caption MuiTypography-colorSecondary MuiTypography-alignLeft"
+              >
+                Mobile Phone Number (Optional)
+                 
+              </h1>
+              <div>
+                <div
+                  class="makeStyles-phoneInput-586 undefined  react-tel-input"
+                >
+                  <div
+                    class="special-label"
+                  >
+                    Phone
+                  </div>
+                  <input
+                    autocomplete="off"
+                    class=" form-control"
+                    data-testid="mobile-user-phone"
+                    name="mobilePhoneNumber"
+                    placeholder="+0 (000) 000-0000"
+                    type="text"
+                    value=""
+                    variant="outlined"
+                  />
+                  <div
+                    class=" flag-dropdown"
+                  >
+                    <div
+                      aria-haspopup="listbox"
+                      class="selected-flag"
+                      role="button"
+                      tabindex="-1"
+                      title=""
+                    >
+                      <div
+                        class="flag 0"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="MuiGrid-root makeStyles-errorPosition-535 MuiGrid-item MuiGrid-grid-xs-4 MuiGrid-grid-lg-4"
+          >
+            <div
+              class="MuiGrid-root MuiGrid-container"
+            >
+              <div
+                class="MuiGrid-root makeStyles-optionalWrapper-490 MuiGrid-item MuiGrid-grid-xs-9 MuiGrid-grid-lg-9"
+              >
+                <div
+                  class="MuiFormControl-root makeStyles-formControl-573 makeStyles-userWrapper-481 makeStyles-userInputControl-487"
+                >
+                  <h1
+                    class="MuiTypography-root MuiTypography-caption MuiTypography-colorSecondary MuiTypography-alignLeft"
+                  >
+                    Office Phone Number (Optional)
+                     
+                  </h1>
+                  <div>
+                    <div
+                      class="makeStyles-phoneInput-586 undefined  react-tel-input"
+                    >
+                      <div
+                        class="special-label"
+                      >
+                        Phone
+                      </div>
+                      <input
+                        autocomplete="off"
+                        class=" form-control"
+                        data-testid="office-user-phone"
+                        id="officePhoneNumber-0"
+                        name="officePhoneNumber"
+                        placeholder="+0 (000) 000-0000"
+                        type="text"
+                        value=""
+                        variant="outlined"
+                      />
+                      <div
+                        class=" flag-dropdown"
+                      >
+                        <div
+                          aria-haspopup="listbox"
+                          class="selected-flag"
+                          role="button"
+                          tabindex="-1"
+                          title=""
+                        >
+                          <div
+                            class="flag 0"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="MuiGrid-root makeStyles-errorPosition-535 MuiGrid-item MuiGrid-grid-xs-3 MuiGrid-grid-lg-3"
+              >
+                <div
+                  class="MuiFormControl-root makeStyles-formControl-573 makeStyles-userWrapper-481 makeStyles-userInputControl-487"
+                >
+                  <h1
+                    class="MuiTypography-root MuiTypography-caption MuiTypography-colorSecondary MuiTypography-alignLeft"
+                  >
+                    Ext (Optional)
+                     
+                  </h1>
+                  <div>
+                    <div
+                      class="MuiFormControl-root MuiTextField-root MuiFormControl-fullWidth"
+                    >
+                      <div
+                        class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-fullWidth MuiInputBase-formControl"
+                      >
+                        <input
+                          aria-invalid="false"
+                          autocomplete="off"
+                          class="MuiInputBase-input MuiOutlinedInput-input"
+                          data-testid="office-user-phone"
+                          maxlength="6"
+                          name="officePhoneExtension"
+                          placeholder="Ext"
+                          type="text"
+                          value=""
+                        />
+                        <fieldset
+                          aria-hidden="true"
+                          class="PrivateNotchedOutline-root-575 MuiOutlinedInput-notchedOutline"
+                          style="padding-left: 8px;"
+                        >
+                          <legend
+                            class="PrivateNotchedOutline-legend-576"
+                            style="width: 0.01px;"
+                          >
+                            <span>
+                              ​
+                            </span>
+                          </legend>
+                        </fieldset>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="MuiGrid-root makeStyles-errorPosition-535 MuiGrid-item MuiGrid-grid-xs-4 MuiGrid-grid-lg-4"
+          >
+            <div
+              class=" makeStyles-controlledRadioContainer-590 controlledRadioContainer"
+              data-testid="controlled-radio"
+            >
+              <fieldset
+                class="MuiFormControl-root makeStyles-radioWrapper-493"
+              >
+                <legend
+                  class="MuiFormLabel-root makeStyles-controlledRadioLabel-589"
+                  id="radio-label-preferredContactMethod"
+                >
+                  Preferred Contact Method
+                </legend>
+                <div
+                  aria-labelledby="radio-label-preferredContactMethod"
+                  class="MuiFormGroup-root MuiFormGroup-row"
+                  data-testid="controlled-radio-group"
+                  role="radiogroup"
+                >
+                  <label
+                    class="MuiFormControlLabel-root"
+                  >
+                    <span
+                      aria-disabled="false"
+                      class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-597 MuiRadio-root makeStyles-root-591 PrivateSwitchBase-checked-598 Mui-checked"
+                    >
+                      <span
+                        class="MuiIconButton-label"
+                      >
+                        <input
+                          checked=""
+                          class="PrivateSwitchBase-input-600"
+                          data-testid="controlled-radio-button"
+                          name="preferredContactMethod"
+                          type="radio"
+                          value="0"
+                        />
+                        <span
+                          class="makeStyles-icon-592 makeStyles-checkedIcon-595 "
+                        />
+                      </span>
+                    </span>
+                    <span
+                      class="MuiTypography-root MuiFormControlLabel-label MuiTypography-body1"
+                    >
+                      Email
+                    </span>
+                  </label>
+                  <label
+                    class="MuiFormControlLabel-root"
+                  >
+                    <span
+                      aria-disabled="false"
+                      class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-597 MuiRadio-root makeStyles-root-591"
+                    >
+                      <span
+                        class="MuiIconButton-label"
+                      >
+                        <input
+                          class="PrivateSwitchBase-input-600"
+                          data-testid="controlled-radio-button"
+                          name="preferredContactMethod"
+                          type="radio"
+                          value="1"
+                        />
+                        <span
+                          class="makeStyles-icon-592 makeStyles-unactiveIcon-594"
+                        />
+                      </span>
+                    </span>
+                    <span
+                      class="MuiTypography-root MuiFormControlLabel-label MuiTypography-body1"
+                    >
+                      Phone
+                    </span>
+                  </label>
+                </div>
+              </fieldset>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="MuiGrid-root makeStyles-deleteGridLg-523 MuiGrid-item"
+      >
+        <button
+          class="MuiButtonBase-root MuiIconButton-root makeStyles-deleteButton-548 makeStyles-showDeleteButton-550"
+          data-testid="delete-user-button"
+          tabindex="0"
+          type="button"
+        >
+          <span
+            class="MuiIconButton-label"
+          >
+            <svg>
+              delete.svg
+            </svg>
+          </span>
+          <span
+            class="MuiTouchRipple-root"
+          />
+        </button>
+      </div>
+    </div>
+    <div
+      class="MuiGrid-root makeStyles-formWrapper-536 makeStyles-rowsWrapper-489 MuiGrid-container"
+      data-testid="user-row-item"
+    >
+      <div
+        class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-true MuiGrid-grid-lg-true"
+      >
+        <div
+          class="MuiGrid-root MuiGrid-container"
+        >
+          <div
+            class="MuiGrid-root makeStyles-errorPosition-535 MuiGrid-item MuiGrid-grid-xs-4 MuiGrid-grid-lg-4"
+          >
+            <div
+              class="MuiFormControl-root makeStyles-formControl-573 makeStyles-userWrapper-481"
+            >
+              <h1
+                class="MuiTypography-root MuiTypography-caption MuiTypography-colorSecondary MuiTypography-alignLeft"
+              >
+                First Name
+                 
+              </h1>
+              <div>
+                <div
+                  class="MuiFormControl-root MuiTextField-root MuiFormControl-fullWidth"
+                >
+                  <div
+                    class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-fullWidth Mui-focused Mui-focused MuiInputBase-formControl"
+                  >
+                    <input
+                      aria-invalid="false"
+                      autocomplete="off"
+                      class="MuiInputBase-input MuiOutlinedInput-input"
+                      data-testid="user-first-name"
+                      name="firstName"
+                      placeholder="First Name"
+                      type="text"
+                      value="Test"
+                    />
+                    <fieldset
+                      aria-hidden="true"
+                      class="PrivateNotchedOutline-root-575 MuiOutlinedInput-notchedOutline"
+                      style="padding-left: 8px;"
+                    >
+                      <legend
+                        class="PrivateNotchedOutline-legend-576"
+                        style="width: 0.01px;"
+                      >
+                        <span>
+                          ​
+                        </span>
+                      </legend>
+                    </fieldset>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="MuiGrid-root makeStyles-errorPosition-535 MuiGrid-item MuiGrid-grid-xs-4 MuiGrid-grid-lg-4"
+          >
+            <div
+              class="MuiFormControl-root makeStyles-formControl-573 makeStyles-userWrapper-481"
+            >
+              <h1
+                class="MuiTypography-root MuiTypography-caption MuiTypography-colorSecondary MuiTypography-alignLeft"
+              >
+                Last Name
+                 
+              </h1>
+              <div>
+                <div
+                  class="MuiFormControl-root MuiTextField-root MuiFormControl-fullWidth"
+                >
+                  <div
+                    class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-fullWidth MuiInputBase-formControl"
+                  >
+                    <input
+                      aria-invalid="false"
+                      autocomplete="off"
+                      class="MuiInputBase-input MuiOutlinedInput-input"
+                      data-testid="user-last-name"
+                      name="lastName"
+                      placeholder="Last Name"
+                      type="text"
+                      value="Two"
+                    />
+                    <fieldset
+                      aria-hidden="true"
+                      class="PrivateNotchedOutline-root-575 MuiOutlinedInput-notchedOutline"
+                      style="padding-left: 8px;"
+                    >
+                      <legend
+                        class="PrivateNotchedOutline-legend-576"
+                        style="width: 0.01px;"
+                      >
+                        <span>
+                          ​
+                        </span>
+                      </legend>
+                    </fieldset>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="MuiGrid-root makeStyles-errorPosition-535 MuiGrid-item MuiGrid-grid-xs-4 MuiGrid-grid-lg-4"
+          >
+            <div
+              class="MuiFormControl-root makeStyles-formControl-573 makeStyles-userWrapper-481 "
+            >
+              <h1
+                class="MuiTypography-root MuiTypography-caption MuiTypography-colorSecondary MuiTypography-alignLeft"
+              >
+                Email Address
+                 
+              </h1>
+              <div>
+                <div
+                  class="MuiFormControl-root MuiTextField-root MuiFormControl-fullWidth"
+                >
+                  <div
+                    class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-fullWidth MuiInputBase-formControl"
+                  >
+                    <input
+                      aria-invalid="false"
+                      autocomplete="off"
+                      class="MuiInputBase-input MuiOutlinedInput-input"
+                      data-testid="user-email"
+                      name="email"
+                      placeholder="Email"
+                      type="text"
+                      value="test2@email.com"
+                    />
+                    <fieldset
+                      aria-hidden="true"
+                      class="PrivateNotchedOutline-root-575 MuiOutlinedInput-notchedOutline"
+                      style="padding-left: 8px;"
+                    >
+                      <legend
+                        class="PrivateNotchedOutline-legend-576"
+                        style="width: 0.01px;"
+                      >
+                        <span>
+                          ​
+                        </span>
+                      </legend>
+                    </fieldset>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="MuiGrid-root makeStyles-errorPosition-535 MuiGrid-item MuiGrid-grid-xs-4 MuiGrid-grid-lg-4"
+          >
+            <div
+              class="MuiFormControl-root makeStyles-formControl-573 makeStyles-userWrapper-481 makeStyles-userInputControl-487"
+            >
+              <h1
+                class="MuiTypography-root MuiTypography-caption MuiTypography-colorSecondary MuiTypography-alignLeft"
+              >
+                Title (Optional)
+                 
+              </h1>
+              <div>
+                <div
+                  class="MuiFormControl-root MuiTextField-root MuiFormControl-fullWidth"
+                >
+                  <div
+                    class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-fullWidth MuiInputBase-formControl"
+                  >
+                    <input
+                      aria-invalid="false"
+                      autocomplete="off"
+                      class="MuiInputBase-input MuiOutlinedInput-input"
+                      data-testid="user-title"
+                      name="title"
+                      placeholder="title"
+                      type="text"
+                      value="titleUser2"
+                    />
+                    <fieldset
+                      aria-hidden="true"
+                      class="PrivateNotchedOutline-root-575 MuiOutlinedInput-notchedOutline"
+                      style="padding-left: 8px;"
+                    >
+                      <legend
+                        class="PrivateNotchedOutline-legend-576"
+                        style="width: 0.01px;"
+                      >
+                        <span>
+                          ​
+                        </span>
+                      </legend>
+                    </fieldset>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="MuiGrid-root makeStyles-errorPosition-535 MuiGrid-item MuiGrid-grid-xs-4 MuiGrid-grid-lg-4"
+          >
+            <div
+              class="MuiFormControl-root makeStyles-formControl-573 makeStyles-userWrapper-481 makeStyles-userInputControl-487 makeStyles-userInput-486"
+            >
+              <h1
+                class="MuiTypography-root MuiTypography-caption MuiTypography-colorSecondary MuiTypography-alignLeft"
+              >
+                Invite User to FCA as
+                 
+              </h1>
+              <div>
+                <div
+                  class="MuiFormControl-root makeStyles-formControl-581 "
+                >
+                  
+                  <div
+                    class="MuiInputBase-root MuiOutlinedInput-root   makeStyles-selectElement-582  MuiInputBase-fullWidth MuiInputBase-formControl"
+                    data-testid=""
+                  >
+                    <div
+                      aria-haspopup="listbox"
+                      aria-labelledby="demo-simple-select-outlined-label demo-simple-select-outlined"
+                      class="MuiSelect-root MuiSelect-select MuiSelect-selectMenu MuiSelect-outlined MuiInputBase-input MuiOutlinedInput-input"
+                      id="demo-simple-select-outlined"
+                      role="button"
+                      tabindex="0"
+                    >
+                      Do not invite
+                    </div>
+                    <input
+                      aria-hidden="true"
+                      class="MuiSelect-nativeInput"
+                      name="invitationType"
+                      tabindex="-1"
+                      value="0"
+                    />
+                    <svg
+                      aria-hidden="true"
+                      class="MuiSvgIcon-root MuiSelect-icon MuiSelect-iconOutlined"
+                      focusable="false"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M7 10l5 5 5-5z"
+                      />
+                    </svg>
+                    <fieldset
+                      aria-hidden="true"
+                      class="PrivateNotchedOutline-root-575 MuiOutlinedInput-notchedOutline"
+                      style="padding-left: 8px;"
+                    >
+                      <legend
+                        class="PrivateNotchedOutline-legend-576"
+                        style="width: 0.01px;"
+                      >
+                        <span>
+                          ​
+                        </span>
+                      </legend>
+                    </fieldset>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="MuiGrid-root makeStyles-errorPosition-535 MuiGrid-item MuiGrid-grid-xs-4 MuiGrid-grid-lg-4"
+          >
+            <div
+              class="makeStyles-invitationWrapper-488"
+            />
+          </div>
+          <div
+            class="MuiGrid-root makeStyles-errorPosition-535 MuiGrid-item MuiGrid-grid-xs-4 MuiGrid-grid-lg-4"
+          >
+            <div
+              class="MuiFormControl-root makeStyles-formControl-573 makeStyles-userWrapper-481 makeStyles-userInputControl-487"
+            >
+              <h1
+                class="MuiTypography-root MuiTypography-caption MuiTypography-colorSecondary MuiTypography-alignLeft"
+              >
+                Mobile Phone Number (Optional)
+                 
+              </h1>
+              <div>
+                <div
+                  class="makeStyles-phoneInput-586 undefined  react-tel-input"
+                >
+                  <div
+                    class="special-label"
+                  >
+                    Phone
+                  </div>
+                  <input
+                    autocomplete="off"
+                    class=" form-control"
+                    data-testid="mobile-user-phone"
+                    name="mobilePhoneNumber"
+                    placeholder="+0 (000) 000-0000"
+                    type="text"
+                    value=""
+                    variant="outlined"
+                  />
+                  <div
+                    class=" flag-dropdown"
+                  >
+                    <div
+                      aria-haspopup="listbox"
+                      class="selected-flag"
+                      role="button"
+                      tabindex="-1"
+                      title=""
+                    >
+                      <div
+                        class="flag 0"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="MuiGrid-root makeStyles-errorPosition-535 MuiGrid-item MuiGrid-grid-xs-4 MuiGrid-grid-lg-4"
+          >
+            <div
+              class="MuiGrid-root MuiGrid-container"
+            >
+              <div
+                class="MuiGrid-root makeStyles-optionalWrapper-490 MuiGrid-item MuiGrid-grid-xs-9 MuiGrid-grid-lg-9"
+              >
+                <div
+                  class="MuiFormControl-root makeStyles-formControl-573 makeStyles-userWrapper-481 makeStyles-userInputControl-487"
+                >
+                  <h1
+                    class="MuiTypography-root MuiTypography-caption MuiTypography-colorSecondary MuiTypography-alignLeft"
+                  >
+                    Office Phone Number (Optional)
+                     
+                  </h1>
+                  <div>
+                    <div
+                      class="makeStyles-phoneInput-586 undefined  react-tel-input"
+                    >
+                      <div
+                        class="special-label"
+                      >
+                        Phone
+                      </div>
+                      <input
+                        autocomplete="off"
+                        class=" form-control"
+                        data-testid="office-user-phone"
+                        id="officePhoneNumber-1"
+                        name="officePhoneNumber"
+                        placeholder="+0 (000) 000-0000"
+                        type="text"
+                        value=""
+                        variant="outlined"
+                      />
+                      <div
+                        class=" flag-dropdown"
+                      >
+                        <div
+                          aria-haspopup="listbox"
+                          class="selected-flag"
+                          role="button"
+                          tabindex="-1"
+                          title=""
+                        >
+                          <div
+                            class="flag 0"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="MuiGrid-root makeStyles-errorPosition-535 MuiGrid-item MuiGrid-grid-xs-3 MuiGrid-grid-lg-3"
+              >
+                <div
+                  class="MuiFormControl-root makeStyles-formControl-573 makeStyles-userWrapper-481 makeStyles-userInputControl-487"
+                >
+                  <h1
+                    class="MuiTypography-root MuiTypography-caption MuiTypography-colorSecondary MuiTypography-alignLeft"
+                  >
+                    Ext (Optional)
+                     
+                  </h1>
+                  <div>
+                    <div
+                      class="MuiFormControl-root MuiTextField-root MuiFormControl-fullWidth"
+                    >
+                      <div
+                        class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-fullWidth MuiInputBase-formControl"
+                      >
+                        <input
+                          aria-invalid="false"
+                          autocomplete="off"
+                          class="MuiInputBase-input MuiOutlinedInput-input"
+                          data-testid="office-user-phone"
+                          maxlength="6"
+                          name="officePhoneExtension"
+                          placeholder="Ext"
+                          type="text"
+                          value=""
+                        />
+                        <fieldset
+                          aria-hidden="true"
+                          class="PrivateNotchedOutline-root-575 MuiOutlinedInput-notchedOutline"
+                          style="padding-left: 8px;"
+                        >
+                          <legend
+                            class="PrivateNotchedOutline-legend-576"
+                            style="width: 0.01px;"
+                          >
+                            <span>
+                              ​
+                            </span>
+                          </legend>
+                        </fieldset>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="MuiGrid-root makeStyles-errorPosition-535 MuiGrid-item MuiGrid-grid-xs-4 MuiGrid-grid-lg-4"
+          >
+            <div
+              class=" makeStyles-controlledRadioContainer-590 controlledRadioContainer"
+              data-testid="controlled-radio"
+            >
+              <fieldset
+                class="MuiFormControl-root makeStyles-radioWrapper-493"
+              >
+                <legend
+                  class="MuiFormLabel-root makeStyles-controlledRadioLabel-589"
+                  id="radio-label-preferredContactMethod"
+                >
+                  Preferred Contact Method
+                </legend>
+                <div
+                  aria-labelledby="radio-label-preferredContactMethod"
+                  class="MuiFormGroup-root MuiFormGroup-row"
+                  data-testid="controlled-radio-group"
+                  role="radiogroup"
+                >
+                  <label
+                    class="MuiFormControlLabel-root"
+                  >
+                    <span
+                      aria-disabled="false"
+                      class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-597 MuiRadio-root makeStyles-root-591 PrivateSwitchBase-checked-598 Mui-checked"
+                    >
+                      <span
+                        class="MuiIconButton-label"
+                      >
+                        <input
+                          checked=""
+                          class="PrivateSwitchBase-input-600"
+                          data-testid="controlled-radio-button"
+                          name="preferredContactMethod"
+                          type="radio"
+                          value="0"
+                        />
+                        <span
+                          class="makeStyles-icon-592 makeStyles-checkedIcon-595 "
+                        />
+                      </span>
+                    </span>
+                    <span
+                      class="MuiTypography-root MuiFormControlLabel-label MuiTypography-body1"
+                    >
+                      Email
+                    </span>
+                  </label>
+                  <label
+                    class="MuiFormControlLabel-root"
+                  >
+                    <span
+                      aria-disabled="false"
+                      class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-597 MuiRadio-root makeStyles-root-591"
+                    >
+                      <span
+                        class="MuiIconButton-label"
+                      >
+                        <input
+                          class="PrivateSwitchBase-input-600"
+                          data-testid="controlled-radio-button"
+                          name="preferredContactMethod"
+                          type="radio"
+                          value="1"
+                        />
+                        <span
+                          class="makeStyles-icon-592 makeStyles-unactiveIcon-594"
+                        />
+                      </span>
+                    </span>
+                    <span
+                      class="MuiTypography-root MuiFormControlLabel-label MuiTypography-body1"
+                    >
+                      Phone
+                    </span>
+                  </label>
+                </div>
+              </fieldset>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="MuiGrid-root makeStyles-deleteGridLg-523 MuiGrid-item"
+      >
+        <button
+          class="MuiButtonBase-root MuiIconButton-root makeStyles-deleteButton-548 makeStyles-showDeleteButton-550"
+          data-testid="delete-user-button"
+          tabindex="0"
+          type="button"
+        >
+          <span
+            class="MuiIconButton-label"
+          >
+            <svg>
+              delete.svg
+            </svg>
+          </span>
+          <span
+            class="MuiTouchRipple-root"
+          />
+        </button>
+      </div>
+    </div>
+    <span
+      class=""
+      data-testid="controlled-button"
+      tabindex="-1"
+    >
+      <button
+        class="MuiButtonBase-root MuiButton-root MuiButton-text makeStyles-addUserButton-551 makeStyles-enableUserButton-512"
+        data-testid="add-user-button"
+        tabindex="0"
+        type="button"
+      >
+        <span
+          class="MuiButton-label"
+        >
+          <span
+            class="MuiButton-startIcon MuiButton-iconSizeMedium"
+          >
+            <svg>
+              add.svg
+            </svg>
+          </span>
+          Add user
+        </span>
+      </button>
+    </span>
+  </div>
+</div>
+`;

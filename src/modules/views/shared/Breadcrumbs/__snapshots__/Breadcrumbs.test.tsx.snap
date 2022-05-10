@@ -1,0 +1,27 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Breadcrumbs Component should render with content 1`] = `
+<div>
+  <p
+    class="MuiTypography-root makeStyles-stepWrapper-1 MuiTypography-body1 MuiTypography-colorPrimary MuiTypography-alignLeft"
+  >
+    <span
+      class="makeStyles-step-2"
+    >
+      <a
+        href="/path-1"
+      >
+        label-1
+      </a>
+      <span>
+        &gt;
+      </span>
+    </span>
+    <span
+      class="makeStyles-step-2"
+    >
+      label-2
+    </span>
+  </p>
+</div>
+`;

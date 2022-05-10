@@ -1,0 +1,199 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`BadgeTemplate should render 1`] = `
+<div>
+  <div
+    class="MuiPaper-root  makeStyles-badgeGeneralRadius-43 makeStyles-container-1 makeStyles-leftContainerTemplate-2  MuiPaper-outlined MuiPaper-rounded"
+  >
+    <div
+      class=""
+    >
+      Component
+    </div>
+    <div
+      class="makeStyles-buttonWrapper-27"
+    >
+      <span
+        aria-disabled="false"
+        class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-51 MuiRadio-root MuiRadio-colorSecondary makeStyles-circleButton-28 makeStyles-circleButtonActive-29 PrivateSwitchBase-checked-52 Mui-checked MuiIconButton-colorSecondary"
+        data-testid="badge-front-view-btn"
+      >
+        <span
+          class="MuiIconButton-label"
+        >
+          <input
+            checked=""
+            class="PrivateSwitchBase-input-54"
+            data-testid="worker-badge-button"
+            type="radio"
+            value="checked"
+          />
+          <div
+            class="PrivateRadioButtonIcon-root-55 PrivateRadioButtonIcon-checked-57"
+          >
+            <svg
+              aria-hidden="true"
+              class="MuiSvgIcon-root"
+              focusable="false"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8z"
+              />
+            </svg>
+            <svg
+              aria-hidden="true"
+              class="MuiSvgIcon-root PrivateRadioButtonIcon-layer-56"
+              focusable="false"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M8.465 8.465C9.37 7.56 10.62 7 12 7C14.76 7 17 9.24 17 12C17 13.38 16.44 14.63 15.535 15.535C14.63 16.44 13.38 17 12 17C9.24 17 7 14.76 7 12C7 10.62 7.56 9.37 8.465 8.465Z"
+              />
+            </svg>
+          </div>
+        </span>
+      </span>
+      <span
+        aria-disabled="false"
+        class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-51 MuiRadio-root MuiRadio-colorSecondary makeStyles-circleButton-28 makeStyles-circleButtonInactive-30 MuiIconButton-colorSecondary"
+        data-testid="badge-back-view-btn"
+      >
+        <span
+          class="MuiIconButton-label"
+        >
+          <input
+            class="PrivateSwitchBase-input-54"
+            data-testid="worker-badge-button"
+            type="radio"
+            value="unchecked"
+          />
+          <div
+            class="PrivateRadioButtonIcon-root-55"
+          >
+            <svg
+              aria-hidden="true"
+              class="MuiSvgIcon-root"
+              focusable="false"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8z"
+              />
+            </svg>
+            <svg
+              aria-hidden="true"
+              class="MuiSvgIcon-root PrivateRadioButtonIcon-layer-56"
+              focusable="false"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M8.465 8.465C9.37 7.56 10.62 7 12 7C14.76 7 17 9.24 17 12C17 13.38 16.44 14.63 15.535 15.535C14.63 16.44 13.38 17 12 17C9.24 17 7 14.76 7 12C7 10.62 7.56 9.37 8.465 8.465Z"
+              />
+            </svg>
+          </div>
+        </span>
+      </span>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`BadgeTemplate should toggle view 1`] = `
+<div>
+  <div
+    class="MuiPaper-root  makeStyles-badgeGeneralRadius-100 makeStyles-container-58 makeStyles-leftContainerTemplate-59 makeStyles-secondaryContainerBackground-60 MuiPaper-outlined MuiPaper-rounded"
+  >
+    <div
+      class="makeStyles-hide-89"
+    >
+      Component
+    </div>
+    <div
+      class="makeStyles-buttonWrapper-84"
+    >
+      <span
+        aria-disabled="false"
+        class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-108 MuiRadio-root MuiRadio-colorSecondary makeStyles-circleButton-85 makeStyles-circleButtonInactive-87 MuiIconButton-colorSecondary"
+        data-testid="badge-front-view-btn"
+      >
+        <span
+          class="MuiIconButton-label"
+        >
+          <input
+            checked=""
+            class="PrivateSwitchBase-input-111"
+            data-testid="worker-badge-button"
+            type="radio"
+            value="unchecked"
+          />
+          <div
+            class="PrivateRadioButtonIcon-root-112"
+          >
+            <svg
+              aria-hidden="true"
+              class="MuiSvgIcon-root"
+              focusable="false"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8z"
+              />
+            </svg>
+            <svg
+              aria-hidden="true"
+              class="MuiSvgIcon-root PrivateRadioButtonIcon-layer-113"
+              focusable="false"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M8.465 8.465C9.37 7.56 10.62 7 12 7C14.76 7 17 9.24 17 12C17 13.38 16.44 14.63 15.535 15.535C14.63 16.44 13.38 17 12 17C9.24 17 7 14.76 7 12C7 10.62 7.56 9.37 8.465 8.465Z"
+              />
+            </svg>
+          </div>
+        </span>
+      </span>
+      <span
+        aria-disabled="false"
+        class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-108 MuiRadio-root MuiRadio-colorSecondary makeStyles-circleButton-85 makeStyles-circleButtonActive-86 PrivateSwitchBase-checked-109 Mui-checked MuiIconButton-colorSecondary"
+        data-testid="badge-back-view-btn"
+      >
+        <span
+          class="MuiIconButton-label"
+        >
+          <input
+            class="PrivateSwitchBase-input-111"
+            data-testid="worker-badge-button"
+            type="radio"
+            value="checked"
+          />
+          <div
+            class="PrivateRadioButtonIcon-root-112 PrivateRadioButtonIcon-checked-114"
+          >
+            <svg
+              aria-hidden="true"
+              class="MuiSvgIcon-root"
+              focusable="false"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8z"
+              />
+            </svg>
+            <svg
+              aria-hidden="true"
+              class="MuiSvgIcon-root PrivateRadioButtonIcon-layer-113"
+              focusable="false"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M8.465 8.465C9.37 7.56 10.62 7 12 7C14.76 7 17 9.24 17 12C17 13.38 16.44 14.63 15.535 15.535C14.63 16.44 13.38 17 12 17C9.24 17 7 14.76 7 12C7 10.62 7.56 9.37 8.465 8.465Z"
+              />
+            </svg>
+          </div>
+        </span>
+      </span>
+    </div>
+  </div>
+</div>
+`;

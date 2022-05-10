@@ -1,0 +1,186 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ProjectsTab should render empty 1`] = `
+<div>
+  <div
+    class="makeStyles-tableWrapper-12"
+    style="width: 100%; background-color: rgb(245, 245, 245); padding: 2.5rem;"
+  >
+    <div
+      class="MuiBox-root MuiBox-root-63"
+      style="height: 50px; margin-bottom: 13px; width: 100%;"
+    >
+      <div
+        class="MuiBox-root MuiBox-root-64"
+        style="display: flex; align-items: center; justify-content: space-between;"
+      >
+        <div>
+          <div
+            class="MuiBox-root MuiBox-root-65"
+            style="display: flex; align-items: center; margin-top: 5px;"
+          >
+            <h2
+              class="MuiTypography-root MuiTypography-h1"
+              style="color: rgb(68, 68, 68); font-size: 2.25rem; font-weight: 600; letter-spacing: 0; margin-right: 0.5rem;"
+            >
+              Procore Clients
+            </h2>
+          </div>
+        </div>
+      </div>
+    </div>
+    <table
+      aria-label="project-list"
+      class="MuiTable-root"
+    >
+      <thead
+        class="MuiTableHead-root"
+      >
+        <tr
+          class="MuiTableRow-root MuiTableRow-head"
+        >
+          <th
+            class="MuiTableCell-root MuiTableCell-head"
+            scope="col"
+          >
+            Client Name
+          </th>
+          <th
+            class="MuiTableCell-root MuiTableCell-head"
+            scope="col"
+          >
+            Integration Date
+          </th>
+          <th
+            class="MuiTableCell-root MuiTableCell-head"
+            scope="col"
+          >
+            Number of Projects
+          </th>
+          <th
+            class="MuiTableCell-root MuiTableCell-head makeStyles-alignLeftStatus-9 MuiTableCell-alignRight"
+            scope="col"
+          >
+            Status
+          </th>
+        </tr>
+      </thead>
+      <tbody
+        class="MuiTableBody-root"
+      >
+        <tr
+          class="MuiTableRow-root WithStyles(ForwardRef(TableRow))-root-66 makeStyles-tableContainer-8"
+          data-testid="project-client-list-row"
+        >
+          <td
+            class="MuiTableCell-root MuiTableCell-body"
+          >
+            <a
+              class="makeStyles-link-10"
+              href="/procore-clients/client-mapping/123"
+            >
+              foo
+            </a>
+          </td>
+          <td
+            class="MuiTableCell-root MuiTableCell-body makeStyles-colorCell-11"
+          >
+            Invalid date
+          </td>
+          <td
+            class="MuiTableCell-root MuiTableCell-body makeStyles-colorCell-11"
+          >
+            4
+          </td>
+          <td
+            class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignRight"
+          >
+            <div
+              class="MuiChip-root makeStyles-statusChip-51 makeStyles-active-57 makeStyles-chipSize-7 MuiChip-colorPrimary"
+            >
+              <span
+                class="MuiChip-label"
+              >
+                Mapped
+              </span>
+            </div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+`;
+
+exports[`empty list should render empty 1`] = `
+<div>
+  <div
+    class="makeStyles-tableWrapper-78"
+    style="width: 100%; background-color: rgb(245, 245, 245); padding: 2.5rem;"
+  >
+    <div
+      class="MuiBox-root MuiBox-root-129"
+      style="height: 50px; margin-bottom: 13px; width: 100%;"
+    >
+      <div
+        class="MuiBox-root MuiBox-root-130"
+        style="display: flex; align-items: center; justify-content: space-between;"
+      >
+        <div>
+          <div
+            class="MuiBox-root MuiBox-root-131"
+            style="display: flex; align-items: center; margin-top: 5px;"
+          >
+            <h2
+              class="MuiTypography-root MuiTypography-h1"
+              style="color: rgb(68, 68, 68); font-size: 2.25rem; font-weight: 600; letter-spacing: 0; margin-right: 0.5rem;"
+            >
+              Procore Companies
+            </h2>
+          </div>
+        </div>
+      </div>
+    </div>
+    <table
+      aria-label="project-list"
+      class="MuiTable-root"
+    >
+      <thead
+        class="MuiTableHead-root"
+      >
+        <tr
+          class="MuiTableRow-root MuiTableRow-head"
+        >
+          <th
+            class="MuiTableCell-root MuiTableCell-head"
+            scope="col"
+          >
+            Client Name
+          </th>
+          <th
+            class="MuiTableCell-root MuiTableCell-head"
+            scope="col"
+          >
+            Integration Date
+          </th>
+          <th
+            class="MuiTableCell-root MuiTableCell-head"
+            scope="col"
+          >
+            Number of Projects
+          </th>
+          <th
+            class="MuiTableCell-root MuiTableCell-head makeStyles-alignLeftStatus-75 MuiTableCell-alignRight"
+            scope="col"
+          >
+            Status
+          </th>
+        </tr>
+      </thead>
+      <tbody
+        class="MuiTableBody-root"
+      />
+    </table>
+  </div>
+</div>
+`;

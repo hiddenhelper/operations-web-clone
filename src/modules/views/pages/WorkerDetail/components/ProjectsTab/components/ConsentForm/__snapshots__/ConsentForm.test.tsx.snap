@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ConsentForm should render 1`] = `
+<div
+  aria-hidden="true"
+/>
+`;
+
+exports[`ConsentForm should render fallback 1`] = `
+<div
+  aria-hidden="true"
+/>
+`;
+
+exports[`ConsentForm should render loading 1`] = `
+<div
+  aria-hidden="true"
+/>
+`;
+
+exports[`ConsentForm should render secondary values 1`] = `
+<div
+  aria-hidden="true"
+/>
+`;

@@ -1,0 +1,69 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Project Banner should render 1`] = `
+<div>
+  <div
+    class="MuiPaper-root makeStyles-bannerWrapper-22 MuiPaper-elevation0 MuiPaper-rounded"
+    data-testid="project-list-banner-open-button"
+  >
+    <div>
+      <div
+        class="MuiAvatar-root MuiAvatar-circle makeStyles-avatarWrapper-1 makeStyles-bannerAvatarPosition-27 MuiAvatar-colorDefault"
+      >
+        <svg
+          aria-hidden="true"
+          class="MuiSvgIcon-root"
+          focusable="false"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"
+          />
+        </svg>
+      </div>
+    </div>
+    <div
+      class="makeStyles-bannerProjectWrapper-29"
+    >
+      <p
+        class="MuiTypography-root makeStyles-bannerTitle-23 makeStyles-bannerProjectTitle-25 MuiTypography-body1"
+      >
+        New Project:
+      </p>
+      <p
+        class="MuiTypography-root makeStyles-bannerTitle-23 makeStyles-bannerTitleAccent-24 MuiTypography-body1"
+      >
+        Project Name 3
+      </p>
+    </div>
+    <div
+      class="makeStyles-bannerInformationWrapper-31"
+    >
+      <div
+        class="MuiGrid-root makeStyles-bannerGrid-28 MuiGrid-container"
+      >
+        <div
+          class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-6"
+        >
+          <p
+            class="MuiTypography-root makeStyles-bannerInformation-26 MuiTypography-body1"
+          >
+            <span>
+              -
+            </span>
+          </p>
+        </div>
+        <div
+          class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-3"
+        >
+          <p
+            class="MuiTypography-root makeStyles-bannerInformation-26 MuiTypography-body1"
+          >
+            Jul 15, 2020 to Jul 15, 2020
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

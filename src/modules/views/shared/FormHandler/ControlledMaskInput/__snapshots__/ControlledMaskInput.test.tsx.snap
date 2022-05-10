@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Controlled Mask Input should render with mask 1`] = `
+<div>
+  <input
+    value=""
+  />
+</div>
+`;
+
+exports[`Controlled Mask Input should render without mask 1`] = `
+<div>
+  <input
+    value=""
+  />
+</div>
+`;
