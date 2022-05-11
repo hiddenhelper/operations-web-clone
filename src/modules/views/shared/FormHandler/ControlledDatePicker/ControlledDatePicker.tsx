@@ -1,4 +1,4 @@
-import React, { memo, useEffect, useCallback, useState } from 'react';
+import React, { memo, useEffect, useCallback, useState, useRef } from 'react';
 import { MuiPickersUtilsProvider } from '@material-ui/pickers';
 import MomentUtils from '@date-io/moment';
 
@@ -58,6 +58,7 @@ const ControlledDatePicker = ({
   ...rest
 }: IControlledDatePickerProps) => {
   const [state, setState] = useState({ startDate, endDate });
+  const ref = useRef(null);
   // const { setHideScroll } = useHideScroll();
   const onDateChange = useCallback(
     date => {
@@ -122,8 +123,10 @@ const ControlledDatePicker = ({
           showMonthDropdown={true}
           showYearDropdown={true}
           dropdownMode="select"
+          onCalendarClose={() => ref.current.blur()}
           customInput={
             <TextField
+              inputRef={ref}
               data-testid="keyboard-date-picker"
               value={value}
               onChange={onDateChange}
