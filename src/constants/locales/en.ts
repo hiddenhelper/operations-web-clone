@@ -32,6 +32,7 @@ export default {
       SEND_APPROVE_LOADING: 'Sending for Approval',
       APPROVE: 'Approve',
       APPROVE_LOADING: 'Approving',
+      BACK: 'Back',
     },
     MESSAGE: {
       DISCARD: 'Changes have been discarded',

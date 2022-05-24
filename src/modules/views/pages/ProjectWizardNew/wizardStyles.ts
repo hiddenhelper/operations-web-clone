@@ -187,7 +187,6 @@ export const useStyles = makeStyles(theme =>
     },
     savedAt: {
       fontSize: `${toREM(STYLE.FONT.SIZE.PARAGRAPH)}`,
-      marginRight: `${toREM(25)}`,
       lineHeight: `${toREM(27)}`,
       color: STYLE.COLOR.SECONDARY_DARKER,
       position: 'relative',
@@ -202,6 +201,22 @@ export const useStyles = makeStyles(theme =>
       },
     },
     nextButton: {
+      height: `${toREM(36)}`,
+      width: `${toREM(120)}`,
+      fontSize: `${toREM(STYLE.FONT.SIZE.PARAGRAPH)}`,
+      lineHeight: '17px',
+      textTransform: 'none',
+      boxShadow: 'none',
+      fontWeight: 600,
+      outline: 'none',
+      marginLeft: `${toREM(16)}`,
+
+      '& .MuiButton-label': {
+        position: 'relative',
+        top: '1px',
+      },
+    },
+    backButton: {
       height: `${toREM(36)}`,
       width: `${toREM(120)}`,
       fontSize: `${toREM(STYLE.FONT.SIZE.PARAGRAPH)}`,

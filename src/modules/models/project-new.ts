@@ -13,6 +13,8 @@ import {
   getReviewDraftRules,
   BadgeTemplateDraftRules,
   BadgeTemplateApprovalRules,
+  ConsentFormDraftRules,
+  ConsentFormApprovalRules,
 } from 'constants/form/projectNewRules';
 import { IAddress, ILocation, getFallbackAddress, addressFieldRules } from './address';
 import { IStepMap, INamedEntity } from './general';
@@ -22,6 +24,7 @@ import { Status } from './resource';
 import { PaymentModel } from './index';
 import { IConsentFormFieldConfig, IConsentFormLegal } from './consentForm';
 import { IBadgeTemplate, getFallbackBadgeTemplate, getFallbackVisitorBadgeTemplate } from './badge';
+import { IS3FileResponse } from './file';
 
 export enum ProjectFields {
   NAME = 'name',
@@ -218,6 +221,30 @@ export interface IProject {
   generalContractors?: INamedEntity[];
 }
 
+export enum ProjectBadgeLogos {
+  GENERAL_CONTRACTOR_BADGE_LOGO = 'generalContractorBadgeLogo',
+  SUBCONTRACTOR_BADGE_LOGO = 'subContractorBadgeLogo',
+  VISITOR_BADGE_LOGO = 'visitorBadgeLogo',
+}
+
+export interface IProjectBadgeFilesResource {
+  generalContractorBadgeTemplateLogo?: IS3FileResponse;
+  subcontractorBadgeTemplateLogo?: IS3FileResponse;
+  visitorBadgeTemplateLogo?: IS3FileResponse;
+}
+
+export const projectBadgeResponseMap = {
+  generalContractorBadgeTemplateLogo: ProjectBadgeLogos.GENERAL_CONTRACTOR_BADGE_LOGO,
+  subcontractorBadgeTemplateLogo: ProjectBadgeLogos.SUBCONTRACTOR_BADGE_LOGO,
+  visitorBadgeTemplateLogo: ProjectBadgeLogos.VISITOR_BADGE_LOGO,
+};
+
+export const projectBadgeKeys = [
+  ProjectBadgeLogos.GENERAL_CONTRACTOR_BADGE_LOGO,
+  ProjectBadgeLogos.SUBCONTRACTOR_BADGE_LOGO,
+  ProjectBadgeLogos.VISITOR_BADGE_LOGO,
+];
+
 export const ProjectStep = {
   GENERAL_INFORMATION: 'general-information',
   ASSIGN_CLIENTS: 'assign-client',
@@ -387,8 +414,8 @@ export const projectStepMap: IStepMap = {
         ],
       },
     ],
-    draftFormRules: BadgeTemplateDraftRules,
-    approvalFormRules: BadgeTemplateApprovalRules,
+    draftFormRules: ConsentFormDraftRules,
+    approvalFormRules: ConsentFormApprovalRules,
   },
   [ProjectStep.REVIEW]: {
     key: ProjectStep.REVIEW,

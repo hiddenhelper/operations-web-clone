@@ -1,4 +1,4 @@
-import { IAddress } from './address';
+import { IAddress, Borough } from './address';
 import { INamedEntity, Gender } from './general';
 import { IFilePreview } from './file';
 import { BadgeType } from './badge';
@@ -167,6 +167,20 @@ export interface IWorker {
   observationsCount?: number;
   electronicBadgeCode?: string;
   inviteMethod: InviteMethod;
+  line1: string;
+  line2: string;
+  city: string;
+  stateCode: string;
+  zipCode: string;
+  country?: INamedEntity;
+  countryId?: string;
+  county?: string;
+  attention1?: string;
+  attention2?: string;
+  stateName?: string;
+  borough?: Borough;
+  latitude: number;
+  longitude: number;
 }
 
 export interface IExistingWorker {
@@ -339,4 +353,18 @@ export const getFallbackWorker = (): IWorker => ({
   invitationStatus: WorkerStatus.ACTIVE,
   isAffiliatedToLaborUnion: null,
   inviteMethod: InviteMethod.MOBILE_PHONE,
+  line1: null,
+  line2: null,
+  city: null,
+  stateCode: null,
+  zipCode: null,
+  country: null,
+  countryId: null,
+  county: null,
+  attention1: null,
+  attention2: null,
+  stateName: null,
+  borough: null,
+  latitude: null,
+  longitude: null,
 });

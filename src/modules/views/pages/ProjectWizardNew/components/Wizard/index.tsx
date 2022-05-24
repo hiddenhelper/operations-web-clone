@@ -4,7 +4,7 @@ import { Prompt } from 'react-router-dom';
 import { ProjectNewModel } from 'modules/models';
 import { useForm } from 'utils/useForm';
 import { IUseNavigator } from 'utils/useNavigator';
-import { getNextObjectItem } from 'utils';
+import { getNextObjectItem, getPrevObjectItem } from 'utils';
 import Modal from 'modules/views/shared/Modal';
 import Alert from 'modules/views/shared/Modal/components/Alert';
 import { useStyles } from '../../wizardStyles';
@@ -158,14 +158,20 @@ const Wizard = <T,>({
     updateRulesForCurrentStep(model, updateRules, false);
   }, [model, discardChanges, resetErrors, setReviewMode, updateRulesForCurrentStep, updateRules]);
 
-  const onNextStep = useCallback(() => {
-    const nextItem = getNextObjectItem(stepMap, currentStepKey);
-    const currentReviewMode = nextItem.key === ProjectNewModel.ProjectStep.REVIEW;
-    setReviewMode(currentReviewMode);
-    updateRulesForCurrentStep(model, updateRules, currentReviewMode, nextItem);
-    resetErrors();
-    onPreNavigate(nextItem);
-  }, [onPreNavigate, updateRulesForCurrentStep, setReviewMode, updateRules, resetErrors, model, stepMap, currentStepKey]);
+  const onStepChange = useCallback(
+    (direction?: string) => {
+      let item = getNextObjectItem(stepMap, currentStepKey);
+      if (direction === 'back') {
+        item = getPrevObjectItem(stepMap, currentStepKey);
+      }
+      const currentReviewMode = item.key === ProjectNewModel.ProjectStep.REVIEW;
+      setReviewMode(currentReviewMode);
+      updateRulesForCurrentStep(model, updateRules, currentReviewMode, item);
+      resetErrors();
+      onPreNavigate(item);
+    },
+    [onPreNavigate, updateRulesForCurrentStep, setReviewMode, updateRules, resetErrors, model, stepMap, currentStepKey]
+  );
 
   const closeModal = useCallback(() => setShowModal(false), [setShowModal]);
 
@@ -221,7 +227,8 @@ const Wizard = <T,>({
               <>
                 {renderNavigator({
                   hasChanges,
-                  onNextStep,
+                  onNextStep: () => onStepChange(),
+                  onPrevStep: () => onStepChange('back'),
                   onDiscard: onDiscardHandler,
                   onSave: onSubmit,
                 })}

@@ -66,10 +66,11 @@ export function useForm<FormType>({ initValues: model, formRules, onSubmitCallba
 
   const update = useCallback(
     (s: FormType | ((p: FormType) => FormType)) => {
+      let key = 'address';
       setState(prevState => ({
         ...prevState,
-        model: typeof s === 'function' ? (s as Function)(prevState.model) : s,
-        snap: typeof s === 'function' ? (s as Function)(prevState.model) : s,
+        model: typeof s === 'function' ? (s as Function)(prevState.model) : s[key] ? { ...s, ...s[key] } : s,
+        snap: typeof s === 'function' ? (s as Function)(prevState.model) : s[key] ? { ...s, ...s[key] } : s,
       }));
     },
     [setState]
@@ -77,7 +78,11 @@ export function useForm<FormType>({ initValues: model, formRules, onSubmitCallba
 
   const onChange = useCallback(
     (s: FormType | ((p: FormType) => FormType)) => {
-      setState(prevState => ({ ...prevState, model: typeof s === 'function' ? (s as Function)(prevState.model) : s }));
+      let key = 'address';
+      setState(prevState => ({
+        ...prevState,
+        model: typeof s === 'function' ? (s as Function)(prevState.model) : s[key] ? { ...s, ...s[key] } : s,
+      }));
       /* istanbul ignore else */
       if (!hasChanges) setHasChanges(true);
     },

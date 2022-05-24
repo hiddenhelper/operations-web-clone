@@ -46,8 +46,8 @@ export const useStyles = makeStyles(theme =>
     fullWidth: { width: '100%' },
     adornmentStart: {
       '& .MuiInputAdornment-positionStart': {
-        marginRight: 0,
-        marginLeft: '2px',
+        marginRight: '8px',
+        marginLeft: '5px',
       },
       '& .MuiOutlinedInput-adornedStart': {
         paddingLeft: 0,

@@ -55,6 +55,7 @@ describe('ProjectList Component', () => {
         hasError: false,
         error: null,
       },
+      currentFilter: 'draft',
       fetchProjectList: jest.fn(),
       fetchProjectSummary: jest.fn(),
       fetchProjectStatistics: jest.fn(),
@@ -64,6 +65,7 @@ describe('ProjectList Component', () => {
       clearProjectMap: jest.fn(),
       deleteProject: jest.fn(),
       navigate: jest.fn(),
+      updateCurrentFilter: jest.fn(),
     };
   });
 

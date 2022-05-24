@@ -701,7 +701,8 @@ const validateConsentFormLegals = ({ value: consentFormLegals }: { value: IConse
     if (isEmpty(legal.body)) {
       acc[`consentFormLegals[${index}].body`] =
         legal.languageCode === 'en' ? 'Please enter English Consent Form Legal' : 'Please enter Spanish Consent Form Legal';
-    } else if (isEmpty(legal.name)) {
+    }
+    if (isEmpty(legal.name)) {
       acc[`consentFormLegals[${index}].name`] =
         legal.languageCode === 'en' ? 'Please enter English Consent Form Name' : 'Please enter Spanish Consent Form Name';
     }
@@ -710,7 +711,16 @@ const validateConsentFormLegals = ({ value: consentFormLegals }: { value: IConse
   return Object.keys(errorList).length > 0 ? errorList : false;
 };
 
-export const getConsentFormDraftRules = () => ({
+export const ConsentFormLabelRules = {
+  name: {
+    required: true,
+  },
+  body: {
+    required: true,
+  },
+};
+
+export const ConsentFormDraftRules = {
   ...fieldRules,
   consentFormFields: {
     required: false,
@@ -720,9 +730,9 @@ export const getConsentFormDraftRules = () => ({
     required: false,
     rules: [],
   },
-});
+};
 
-export const getConsentFormApprovalRules = () => ({
+export const ConsentFormApprovalRules = {
   ...fieldRules,
   consentFormFields: {
     required: false,
@@ -732,7 +742,7 @@ export const getConsentFormApprovalRules = () => ({
     required: true,
     rules: [validateConsentFormLegals],
   },
-});
+};
 
 export const getReviewDraftRules = () => ({
   ...GeneralInformationDraftRules,
@@ -740,6 +750,7 @@ export const getReviewDraftRules = () => ({
   ...getBillingModelDraftRules(),
   ...getAddressesDraftRules(),
   ...CertificationDraftRules,
+  ...ConsentFormDraftRules,
 });
 
 export const getReviewApprovalRules = ({ billingModelType, badgingMatchesJobSite, mailingMatchingType }) => ({
@@ -748,4 +759,5 @@ export const getReviewApprovalRules = ({ billingModelType, badgingMatchesJobSite
   ...getBillingModelApprovalRules({ billingModelType }),
   ...getAddressesRules({ badgingMatchesJobSite, mailingMatchingType }),
   ...CertificationApprovalRules,
+  ...ConsentFormApprovalRules,
 });

@@ -5,6 +5,7 @@ import { Dehaze } from '@material-ui/icons';
 import { IConsentFormField, IConsentFormFieldConfig, ConsentFormFieldDescriptions, ConsentFormFieldDataType } from 'modules/models/consentForm';
 import ControlledCheckbox from 'modules/views/shared/FormHandler/Checkbox';
 import Switch from 'modules/views/shared/Switch';
+import ReadMore from './ReadMore';
 import { useStyles } from './styles';
 
 export interface IWorkerConsentFormMappingProps {
@@ -20,7 +21,8 @@ const Mappings = ({ items: fields, name, value, onChange, error = false }: IWork
 
   const handleFieldChange = (field: IConsentFormField, changeType: 'visible' | 'mandatory', newValue: boolean, fieldConfig?: IConsentFormFieldConfig) => {
     if (fieldConfig) {
-      const updatedConfig = value.map(item => {
+      const clonedValues = JSON.parse(JSON.stringify(value));
+      const updatedConfig = clonedValues.map(item => {
         if (item.consentFormFieldId === field.id) {
           if (changeType === 'mandatory') {
             item.isMandatory = newValue;
@@ -73,9 +75,11 @@ const Mappings = ({ items: fields, name, value, onChange, error = false }: IWork
                 </Typography>
               </TableCell>
               <TableCell>
-                <Typography className={classes.fieldDescription}>
-                  {ConsentFormFieldDataType[field.dataType]} {ConsentFormFieldDescriptions[field.code]}
-                </Typography>
+                <ReadMore>
+                  <Typography className={classes.fieldDescription}>
+                    {ConsentFormFieldDataType[field.dataType]} {ConsentFormFieldDescriptions[field.code]}
+                  </Typography>
+                </ReadMore>
               </TableCell>
               <TableCell>
                 <Switch

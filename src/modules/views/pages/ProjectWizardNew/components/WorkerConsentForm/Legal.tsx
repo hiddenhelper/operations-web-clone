@@ -15,11 +15,12 @@ const allowedLanguages = Object.values(ConsentFormModel.ConsentFormLanguages);
 export interface ILegalProps {
   errors: any;
   formRules: IFormRules;
+  formLabels: IFormRules;
   onChange: (model: any) => void;
   model: ConsentFormModel.IConsentFormLegal[];
 }
 
-const ProjectList = ({ errors, formRules, onChange, model }: ILegalProps) => {
+const ProjectList = ({ errors, formRules, formLabels, onChange, model }: ILegalProps) => {
   const classes = useStyles();
   const tableGlobalClasses = tableGlobalStyles();
 
@@ -57,7 +58,7 @@ const ProjectList = ({ errors, formRules, onChange, model }: ILegalProps) => {
       </div>
       {currentLegal?.languageId && (
         <ControlledError show={!!langError} error={langError}>
-          <ControlledInput label="" styleClass={classes.legalInput}>
+          <ControlledInput label="Legal" styleClass={classes.legalInput} required={formLabels.body.required} showMark={formLabels.body.required}>
             <TextField
               autoComplete="off"
               error={!!langError}

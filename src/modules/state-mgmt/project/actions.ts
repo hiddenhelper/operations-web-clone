@@ -57,6 +57,7 @@ export enum ActionType {
   FETCH_BADGE_VISITOR_ENTITY_LIST_SUCCESS = '[project] fetch badge visitor entity list success',
   SEARCH_PROJECT_START = '[project] search project start',
   UPDATE_PROJECT_PAYMENT_METHOD_START = '[project] update project payment method start',
+  UPDATE_CURRENT_FILTER = '[project] update current filter',
 }
 
 export const actions = {
@@ -186,5 +187,9 @@ export const actions = {
   updateProjectPaymentMethodStart: (projectId: string, paymentMethodId: string) => ({
     type: ActionType.UPDATE_PROJECT_PAYMENT_METHOD_START,
     payload: { projectId, paymentMethodId },
+  }),
+  updateCurrentFilter: (filter: string) => ({
+    type: ActionType.UPDATE_CURRENT_FILTER,
+    payload: { filter },
   }),
 };

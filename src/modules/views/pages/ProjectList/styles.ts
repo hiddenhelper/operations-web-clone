@@ -129,5 +129,8 @@ export const useStyles = makeStyles(theme =>
     secondaryFilterPosition: {
       right: 8,
     },
+    reviewLink: {
+      cursor: 'pointer',
+    },
   })
 );

@@ -7,8 +7,12 @@ import { IAction, IEpicDependencies, IRootState } from '../rootState';
 import { actions, ActionType } from './actions';
 import { coreState } from '../core';
 import { generalState } from '../general';
+import { fileState } from '../file';
 import { GENERAL } from '../../../constants';
-import { handleError } from '../core/operators';
+import { handleToastError, handleError } from '../core/operators';
+import { isEmpty } from '../../../utils/generalUtils';
+import { getProjectBadgeResourceRequest } from '../../../utils/projectUtils';
+import { ProjectNewModel } from 'modules/models';
 
 export const fetchProjectStart: Epic<IAction, IAction, IRootState, IEpicDependencies> = (action$, state$, deps) =>
   action$.pipe(
@@ -152,6 +156,31 @@ export const addProjectBadgesStart: Epic<IAction, IAction, IRootState, IEpicDepe
     })
   );
 
+export const uploadProjectBadgeLogosStart: Epic<IAction, IAction, IRootState, IEpicDependencies> = (action$, state$, deps) =>
+  action$.pipe(
+    ofType(ActionType.UPLOAD_PROJECT_BADGES_START),
+    mergeMap(({ payload }) =>
+      concat(
+        of(generalState.actions.setLoading(GENERAL.LOADING_KEY.UPLOAD_PROJECT_BADGES, true, false, undefined, GENERAL.TRACE_KEY.SAVE_UPLOAD_PROJECT_BADGE)),
+        deps.apiService.getProjectBadgeResources(payload.projectId, getProjectBadgeResourceRequest(payload.uploadIdList, state$?.value?.file?.fileMap)).pipe(
+          mergeMap(response =>
+            Object.entries(response) // gcBadgeLogo, scBadgeLogo
+              .filter(([logoKey, logoValue]) => !isEmpty(logoValue))
+              .map(([fileKey, fileValue]) =>
+                fileState.actions.uploadFileStart(
+                  payload.fileMap[ProjectNewModel.projectBadgeResponseMap[fileKey]], // { gcBadgeLogo: File, scBadgeLogo: File }
+                  fileValue.url,
+                  fileValue.fileId,
+                  GENERAL.TRACE_KEY.SAVE_UPLOAD_PROJECT_BADGE
+                )
+              )
+          )
+        ),
+        of(generalState.actions.setLoading(GENERAL.LOADING_KEY.UPLOAD_PROJECT_BADGES, false))
+      ).pipe(handleToastError(GENERAL.LOADING_KEY.UPLOAD_PROJECT_BADGES))
+    )
+  );
+
 export const fetchBillingTierListStart: Epic<IAction, IAction, IRootState, IEpicDependencies> = (action$, state$, deps) =>
   action$.pipe(
     ofType(ActionType.FETCH_BILLING_TIER_START),
@@ -179,4 +208,5 @@ export const epics = [
   addProjectBadgesStart,
   fetchBillingTierListStart,
   fetchConsentFormFieldsStart,
+  uploadProjectBadgeLogosStart,
 ];

@@ -1,5 +1,5 @@
 import React, { memo, useState, useCallback, useEffect, useMemo, useRef } from 'react';
-import { Prompt, Link } from 'react-router-dom';
+import { Prompt } from 'react-router-dom';
 
 import Table from '@material-ui/core/Table';
 import TableBody from '@material-ui/core/TableBody';
@@ -29,6 +29,7 @@ import { useLocationFilter } from '../../../../utils/useLocationFilter';
 import { tableGlobalStyles } from '../../../../assets/styles/Tables/styles';
 import { useStyles as buttonStyles } from '../../shared/FormHandler/ControlledButton/styles';
 import { listGlobalStyles } from '../../../../assets/styles';
+import { useStyles } from './styles';
 import { useTimeZone } from '../../../../utils/useTimeZone';
 
 export interface IProjectListProps {
@@ -41,6 +42,7 @@ export interface IProjectListProps {
   projectStatistics: StatisticsModel.IProjectStatistics;
   invoiceStatistics: StatisticsModel.IInvoiceStatistics;
   statisticsLoading: GeneralModel.ILoadingStatus;
+  currentFilter: string;
   fetchProjectList: (query: GeneralModel.IQueryParams) => void;
   fetchProjectSummary: (id: string) => void;
   clearProjectMap: () => void;
@@ -50,6 +52,7 @@ export interface IProjectListProps {
   fetchInvoiceStatistics: () => void;
   clearProjectStatistics: () => void;
   clearInvoiceStatistics: () => void;
+  updateCurrentFilter: (filter: string) => void;
 }
 
 const ProjectList = ({
@@ -62,6 +65,7 @@ const ProjectList = ({
   projectStatistics,
   invoiceStatistics,
   statisticsLoading,
+  currentFilter,
   navigate,
   fetchProjectList,
   fetchProjectSummary,
@@ -71,14 +75,16 @@ const ProjectList = ({
   clearProjectStatistics,
   clearInvoiceStatistics,
   deleteProject,
+  updateCurrentFilter,
 }: IProjectListProps) => {
+  const classes = useStyles();
   const tableGlobalClasses = tableGlobalStyles();
   const buttonClasses = buttonStyles();
   const listClasses = listGlobalStyles();
   const projectListRef = useRef();
   const { timeZoneOffset } = useTimeZone();
   const [queryParams, setQueryParams] = useQueryParamState<any>({
-    filter: userRole === UserModel.Role.FCA_ADMIN ? ResourceModel.filterMap[ResourceModel.Status.DRAFT].key : 'my-projects',
+    filter: userRole === UserModel.Role.FCA_ADMIN ? currentFilter || ResourceModel.filterMap[ResourceModel.Status.DRAFT].key : 'my-projects',
     page: 1,
     limit: 15,
     period: GeneralModel.TimeFilterType.ALL_TIMES,
@@ -121,10 +127,11 @@ const ProjectList = ({
   const closeClient = useCallback(() => setOpenDrawer(false), [setOpenDrawer]);
   const setFilter = useCallback(
     filter => {
+      updateCurrentFilter(ResourceModel.filterMap[filter].key);
       setQueryParams({ filter: ResourceModel.filterMap[filter].key, page: 1 });
       setOpenDrawer(false);
     },
-    [setOpenDrawer, setQueryParams]
+    [setOpenDrawer, setQueryParams, updateCurrentFilter]
   );
 
   const handleDeleteProject = useCallback(
@@ -236,7 +243,11 @@ const ProjectList = ({
           <StatusWidget
             total={getConditionalDefaultValue(isFcAdmin, getDefaultValue(projectStatistics?.draft, 0), getDefaultValue(projectStatistics?.pending, 0))}
             status={ProjectModel.widgetMap[userRole].First.status}
-            content={<Link to="/projects/?filter=draft">{ProjectModel.widgetMap[userRole].First.content}</Link>}
+            content={
+              <p className={classes.reviewLink} onClick={() => setFilter(ResourceModel.Status.DRAFT)}>
+                {ProjectModel.widgetMap[userRole].First.content}
+              </p>
+            }
             loading={statisticsLoading?.isLoading}
           />
           <StatusWidget
@@ -246,7 +257,11 @@ const ProjectList = ({
               getDefaultValue(projectStatistics?.accepted, 0)
             )}
             status={ProjectModel.widgetMap[userRole].Second.status}
-            content={<Link to="/projects/?filter=pending-approval">{ProjectModel.widgetMap[userRole].Second.content}</Link>}
+            content={
+              <p className={classes.reviewLink} onClick={() => setFilter(ResourceModel.Status.PENDING_APPROVAL)}>
+                {ProjectModel.widgetMap[userRole].Second.content}
+              </p>
+            }
             loading={statisticsLoading?.isLoading}
           />
           <StatusWidget
@@ -254,7 +269,11 @@ const ProjectList = ({
               getConditionalDefaultValue(isFcAdmin, getDefaultValue(projectStatistics?.active, 0), getDefaultValue(projectStatistics?.billing, 0))
             )}
             status={ProjectModel.widgetMap[userRole].Third.status}
-            content={<Link to="/projects/?filter=active">{ProjectModel.widgetMap[userRole].Third.content}</Link>}
+            content={
+              <p className={classes.reviewLink} onClick={() => setFilter(ResourceModel.Status.ACTIVE)}>
+                {ProjectModel.widgetMap[userRole].Third.content}
+              </p>
+            }
             loading={statisticsLoading?.isLoading}
           />
         </div>
