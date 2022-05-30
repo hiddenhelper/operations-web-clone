@@ -118,7 +118,7 @@ export const fetchGroupSearchStart: Epic<IAction, IAction, IRootState, IEpicDepe
     mergeMap(({ payload }) =>
       concat(
         of(generalState.actions.setLoading(GENERAL.LOADING_KEY.FETCH_GROUP_SEARCH_LIST, true)),
-        deps.apiService.getGroupList(payload).pipe(map(res => actions.fetchGroupSearchSuccess(res))),
+        deps.apiService.getGroupList(payload.query).pipe(map(res => actions.fetchGroupSearchSuccess(res))),
         of(generalState.actions.setLoading(GENERAL.LOADING_KEY.FETCH_GROUP_SEARCH_LIST, false))
       ).pipe(
         catchError(error =>
@@ -251,6 +251,7 @@ export const epics = [
   resetPassword,
   fetchClientUserListStart,
   fetchProjectUserListStart,
+  fetchGroupSearchStart,
   fetchUserProjectStart,
   fetchRoleListStart,
   saveUserStart,

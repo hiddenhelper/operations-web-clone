@@ -41,6 +41,7 @@ export class ApiService {
   public static AuthService = AuthService;
   private http = ajax;
   private apiUrl: string = ENV.API.URL;
+  private securityApiUrl: string = ENV.API.SECURITY_URL;
   private maxRetries: number = ENV.API.MAX_RETRIES;
   private retryTimeout: number = ENV.API.RETRY_TIMEOUT;
 
@@ -583,7 +584,7 @@ export class ApiService {
   }
 
   public getGroupList(query: any): Observable<any> {
-    return this.protectedRequest(`groups/search?${parseQuery(sanitizePaginationQuery(query))}`, { method: 'POST' });
+    return this.securityRequest(`api/groups/search?${parseQuery(sanitizePaginationQuery(query))}`, { method: 'POST' });
   }
 
   public getUserRoles(): Observable<GeneralModel.INamedEntity[]> {
@@ -1123,6 +1124,33 @@ export class ApiService {
 
   public publicRequest<T = any>(path: string, options: IOptionRequest = { method: 'GET' }): Observable<T> {
     return this.createRequest(path, options);
+  }
+
+  public securityRequest<T = any>(path: string, options: IOptionRequest = { method: 'GET' }): Observable<T> {
+    return this.http({
+      ...options,
+      url: `${this.securityApiUrl}/${path}`,
+      headers: {
+        'Content-Type': 'application/json',
+        Accept: 'application/json',
+        ...options.headers,
+      },
+      body: options.body ? this.parseBody(options.body) : undefined,
+    }).pipe(
+      map(data => data.response as T),
+      retryWhen(
+        /* istanbul ignore next */ (error: Observable<AjaxResponse>) =>
+          error.pipe(
+            switchMap((e: AjaxResponse) => {
+              e = this.errorFormatter(e);
+              if (e.status >= 500 || e.status === 408) return of(e).pipe(delay(this.retryTimeout));
+              else return throwError(e);
+            }),
+            take(this.maxRetries),
+            mergeMap(e => throwError(e))
+          )
+      )
+    );
   }
 
   public mockedResponse<T = any>(mock) {
