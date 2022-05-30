@@ -25,6 +25,8 @@ export const reducer = (state: IState = initialState, { type, payload }: { type:
       };
     case ActionType.FETCH_ACCOUNT_DATA_SUCCESS:
       return { ...state, accountData: payload.data };
+    case ActionType.FETCH_GROUP_SEARCH_SUCCESS:
+      return { ...state, groupList: payload.data };
     case ActionType.CLEAR_ACCOUNT_DATA:
       return { ...state, accountData: null };
     case ActionType.CLEAR_USER_MAP:

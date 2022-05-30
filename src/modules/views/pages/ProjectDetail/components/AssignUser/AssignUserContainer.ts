@@ -22,6 +22,7 @@ export const mapStateToProps = (state: IRootState) => ({
   loading: state.general.loadingMap[GENERAL.LOADING_KEY.FETCH_USER_PROJECT_LIST],
   assignLoading: state.general.loadingMap[GENERAL.LOADING_KEY.ASSIGN_USER_PROJECT],
   saveUserLoading: state.general.loadingMap[GENERAL.LOADING_KEY.SAVE_USER],
+  GroupList: state.user.groupList,
 });
 
 export const mapDispatchToProps = (dispatch: Dispatch) => ({
@@ -30,6 +31,7 @@ export const mapDispatchToProps = (dispatch: Dispatch) => ({
   fetchClientList: (id: string) => dispatch(clientState.actions.fetchUserClientListStart(id, {} as any)),
   assignUser: (id: string, list: ProjectModel.IProjectAssignUser[]) => dispatch(projectState.actions.assignUserProjectStart(id, list)),
   fetchProjectClientList: (id: string, query: GeneralModel.IQueryParams) => dispatch(clientState.actions.fetchProjectClientListStart(id, query)),
+  fetchGroupSearch: (query: any) => dispatch(userState.actions.fetchGroupSearchStart(query)),
   saveUser: (companyId, user: UserModel.IUser) => dispatch(userState.actions.saveUserStart(companyId, user)),
   clearErrors: () => dispatch(generalState.actions.clear(GENERAL.LOADING_KEY.SAVE_USER)),
 });

@@ -34,6 +34,7 @@ export const GENERAL = {
     FETCH_PROJECT_BADGE_VISITOR: 'fetchProjectBadgeVisitor',
     FETCH_USER_PROJECT_LIST: 'fetchUserProjectList',
     FETCH_USER_ROLE_LIST: 'fetchUserRoleList',
+    FETCH_GROUP_SEARCH_LIST: 'fetchGroupSearchList',
     FETCH_SEARCH_CLIENT: 'fetchSearchClient',
     FETCH_SEARCH_PROJECT: 'fetchSearchProject',
     FETCH_CERTIFICATION_LIST: 'fetchCertificationList',

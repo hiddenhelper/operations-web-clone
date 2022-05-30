@@ -1,4 +1,4 @@
-import React, { memo, useCallback } from 'react';
+import React, { useEffect, memo, useCallback, useState } from 'react';
 
 import IconButton from '@material-ui/core/IconButton';
 import TextField from '@material-ui/core/TextField';
@@ -33,6 +33,9 @@ export interface IUsersProps {
   user: UserModel.IUser;
   updateRules?: (s: IFormRules | ((p: IFormRules) => IFormRules)) => void;
   formRules?: IFormRules;
+  userCompanyId?: string;
+  fetchGroupSearch?: (searchRequest: any) => void;
+  GroupList?: any;
 }
 
 const UserRow = ({
@@ -49,7 +52,11 @@ const UserRow = ({
   user,
   updateRules,
   formRules,
+  userCompanyId,
+  fetchGroupSearch,
+  GroupList,
 }: IUsersProps) => {
+  const [userInviteGroupList, setUserInviteGroupList] = useState(UserModel.userInviteList);
   const formClasses = formGlobalStyles();
   const buttonGlobalStyles = buttonStyles();
   const onChangeHandler = useCallback(event => onChange({ ...user, [event.target.name]: event.target.value }, index), [index, user, onChange]);
@@ -76,6 +83,33 @@ const UserRow = ({
     },
     [index, user, onChange, updateRules]
   );
+
+  useEffect(() => {
+    if (GroupList.lenth) {
+      setUserInviteGroupList([...UserModel.userInviteList, ...GroupList]);
+      return;
+    }
+
+    setUserInviteGroupList(UserModel.userInviteList);
+  }, [GroupList]);
+
+  useEffect(() => {
+    let searchRequest = {
+      paging: {
+        clientSidePagination: true,
+      },
+      expand: ['company', 'metadata', 'parentGroup'],
+      searchParameters: [
+        {
+          field: 'companyId',
+          operator: 'equals',
+          value: userCompanyId,
+        },
+      ],
+    };
+
+    fetchGroupSearch(searchRequest);
+  }, []);
 
   return (
     <Grid data-testid="user-row-item" container={true} className={`${formClasses.formWrapper} ${isListItem ? formClasses.rowsWrapper : ''}`}>
@@ -190,7 +224,7 @@ const UserRow = ({
                       label=""
                       name="invitationType"
                       value={user.invitationType || UserModel.InviteType.DO_NOT_INVITE}
-                      options={UserModel.userInviteList}
+                      options={userInviteGroupList}
                       error={!!getErrors('invitationType', index)}
                       onChange={onChangeNumber}
                     />

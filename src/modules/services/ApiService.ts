@@ -582,6 +582,10 @@ export class ApiService {
     return this.protectedRequest(`users?${parseQuery(sanitizePaginationQuery(query))}`, { method: 'GET' });
   }
 
+  public getGroupList(query: any): Observable<any> {
+    return this.protectedRequest(`groups/search?${parseQuery(sanitizePaginationQuery(query))}`, { method: 'POST' });
+  }
+
   public getUserRoles(): Observable<GeneralModel.INamedEntity[]> {
     return this.protectedRequest('projectRoles', { method: 'GET' });
   }

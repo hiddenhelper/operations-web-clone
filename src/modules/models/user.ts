@@ -95,26 +95,11 @@ export const getFallbackUser = (): IUser => ({
 
 export const userInviteMap = {
   [InviteType.DO_NOT_INVITE]: 'Do not invite',
-  [InviteType.CLIENT_ADMIN]: 'Client Admin',
-  [InviteType.REGULAR_USER]: 'Regular User',
-  [InviteType.ON_SITE_REPRESENTATIVE]: 'On Site Representative',
 };
 
 export const userInviteList = [
   {
     label: userInviteMap[InviteType.DO_NOT_INVITE],
     value: InviteType.DO_NOT_INVITE,
-  },
-  {
-    label: userInviteMap[InviteType.CLIENT_ADMIN],
-    value: InviteType.CLIENT_ADMIN,
-  },
-  {
-    label: userInviteMap[InviteType.REGULAR_USER],
-    value: InviteType.REGULAR_USER,
-  },
-  {
-    label: userInviteMap[InviteType.ON_SITE_REPRESENTATIVE],
-    value: InviteType.ON_SITE_REPRESENTATIVE,
   },
 ];
