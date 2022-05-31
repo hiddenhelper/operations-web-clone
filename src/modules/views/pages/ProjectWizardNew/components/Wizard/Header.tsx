@@ -27,9 +27,10 @@ export interface IHeaderProps {
   onDiscard: () => void;
   onSave: () => void;
   onNextStep?: () => void;
+  onPrevStep?: () => void;
 }
 
-const Header = ({ hasChanges, breadCrumb, entityName, step, isSaveLoading, loadSuccess, onSave, onDiscard, onNextStep }: IHeaderProps) => {
+const Header = ({ hasChanges, breadCrumb, entityName, step, isSaveLoading, loadSuccess, onSave, onDiscard, onNextStep, onPrevStep }: IHeaderProps) => {
   const classes = useStyles();
   const [state, setState] = useState<INavigationTopState>({ show: false, action: null });
 
@@ -44,6 +45,11 @@ const Header = ({ hasChanges, breadCrumb, entityName, step, isSaveLoading, loadS
     setState(prevState => ({ ...prevState, show: false }));
     onNextStep();
   }, [onNextStep]);
+
+  const onBackHandler = useCallback(() => {
+    setState(prevState => ({ ...prevState, show: false }));
+    onPrevStep();
+  }, [onPrevStep]);
 
   useEffect(() => {
     /* istanbul ignore else */
@@ -70,54 +76,61 @@ const Header = ({ hasChanges, breadCrumb, entityName, step, isSaveLoading, loadS
         </Typography>
       </Grid>
       <Grid item={true} xs={12} md={6} className={classes.actionButtons}>
-        {!step.hideControls && (
-          <>
-            {(hasChanges || isSaveLoading) && (
-              <Grid container={true} spacing={1} className={classes.actionButtons}>
-                <Grid item={true}>
-                  <ControlledButton>
-                    <Button
-                      data-testid="discard-changes-btn"
-                      color="primary"
-                      className={classes.discardButton}
-                      onClick={onDiscardHandler}
-                      disabled={isSaveLoading}
-                    >
-                      {LANG.EN.NAVIGATION_TOP.ACTIONS.DISCARD}
-                    </Button>
-                  </ControlledButton>
-                </Grid>
-                <Grid item={true}>
-                  <ControlledButton>
-                    <ButtonLoader
-                      data-testid="save-changes-btn"
-                      color="primary"
-                      className={classes.saveButton}
-                      variant={'outlined'}
-                      isLoading={isSaveLoading}
-                      text={LANG.EN.NAVIGATION_TOP.ACTIONS.SAVE}
-                      loadingText={LANG.EN.NAVIGATION_TOP.ACTIONS.SAVING}
-                      onClick={onSaveHandler}
-                      disabled={isSaveLoading}
-                    />
-                  </ControlledButton>
-                </Grid>
-              </Grid>
-            )}
-            {!hasChanges && state.show && !isSaveLoading && (
-              <Typography variant="caption" className={classes.savedAt}>
-                {state.action === ActionType.SAVE && (
-                  <>
-                    <span className={classes.checkmark}>
-                      <CheckmarkIcon />
-                    </span>
-                    {LANG.EN.NAVIGATION_TOP.MESSAGE.SAVE}
-                  </>
+        <Grid container={true} spacing={!hasChanges && state.show && !isSaveLoading ? 1 : 0} alignItems="flex-end" direction="column">
+          <Grid item={true}>
+            {!step.hideControls && (
+              <>
+                {(hasChanges || isSaveLoading) && (
+                  <Grid container={true} spacing={1} className={classes.actionButtons}>
+                    <Grid item={true}>
+                      <ControlledButton>
+                        <Button
+                          data-testid="discard-changes-btn"
+                          color="primary"
+                          className={classes.discardButton}
+                          onClick={onDiscardHandler}
+                          disabled={isSaveLoading}
+                        >
+                          {LANG.EN.NAVIGATION_TOP.ACTIONS.DISCARD}
+                        </Button>
+                      </ControlledButton>
+                    </Grid>
+                    <Grid item={true}>
+                      <ControlledButton>
+                        <ButtonLoader
+                          data-testid="save-changes-btn"
+                          color="primary"
+                          className={classes.saveButton}
+                          variant={'outlined'}
+                          isLoading={isSaveLoading}
+                          text={LANG.EN.NAVIGATION_TOP.ACTIONS.SAVE}
+                          loadingText={LANG.EN.NAVIGATION_TOP.ACTIONS.SAVING}
+                          onClick={onSaveHandler}
+                          disabled={isSaveLoading}
+                        />
+                      </ControlledButton>
+                    </Grid>
+                  </Grid>
                 )}
-                {state.action === ActionType.DISCARD && LANG.EN.NAVIGATION_TOP.MESSAGE.DISCARD}
-              </Typography>
+              </>
             )}
-            {!hasChanges && !isSaveLoading && (
+            {step.order !== 0 && !hasChanges && !isSaveLoading && (
+              <ControlledButton>
+                <Button
+                  data-testid="back-changes-btn"
+                  className={classes.backButton}
+                  color="primary"
+                  variant="contained"
+                  fullWidth={true}
+                  size="large"
+                  onClick={onBackHandler}
+                >
+                  {LANG.EN.NAVIGATION_TOP.ACTIONS.BACK}
+                </Button>
+              </ControlledButton>
+            )}
+
+            {!step.hideControls && !hasChanges && !isSaveLoading && (
               <ControlledButton>
                 <Button
                   data-testid="next-changes-btn"
@@ -132,8 +145,24 @@ const Header = ({ hasChanges, breadCrumb, entityName, step, isSaveLoading, loadS
                 </Button>
               </ControlledButton>
             )}
-          </>
-        )}
+          </Grid>
+
+          {!hasChanges && state.show && !isSaveLoading && (
+            <Grid item={true}>
+              <Typography variant="caption" className={classes.savedAt}>
+                {state.action === ActionType.SAVE && (
+                  <>
+                    <span className={classes.checkmark}>
+                      <CheckmarkIcon />
+                    </span>
+                    {LANG.EN.NAVIGATION_TOP.MESSAGE.SAVE}
+                  </>
+                )}
+                {state.action === ActionType.DISCARD && LANG.EN.NAVIGATION_TOP.MESSAGE.DISCARD}
+              </Typography>
+            </Grid>
+          )}
+        </Grid>
       </Grid>
     </Grid>
   );

@@ -1186,11 +1186,6 @@ exports[`WorkerWizard should clean otherPrimaryLanguage if primaryLanguage is di
                                     </div>
                                   </div>
                                 </div>
-                                <h1
-                                  class="MuiTypography-root makeStyles-errorPosition-3318 makeStyles-errorMessage-3216 errorMessage MuiTypography-caption MuiTypography-colorSecondary MuiTypography-alignLeft"
-                                >
-                                  Line 1 is required.
-                                </h1>
                               </div>
                             </div>
                             <div
@@ -1323,11 +1318,6 @@ exports[`WorkerWizard should clean otherPrimaryLanguage if primaryLanguage is di
                                         </fieldset>
                                       </div>
                                     </div>
-                                    <h1
-                                      class="MuiTypography-root  makeStyles-errorMessage-3216 errorMessage MuiTypography-caption MuiTypography-colorSecondary MuiTypography-alignLeft"
-                                    >
-                                      Country is required.
-                                    </h1>
                                   </div>
                                 </div>
                                 <div
@@ -1400,11 +1390,6 @@ exports[`WorkerWizard should clean otherPrimaryLanguage if primaryLanguage is di
                                         </fieldset>
                                       </div>
                                     </div>
-                                    <h1
-                                      class="MuiTypography-root  makeStyles-errorMessage-3216 errorMessage MuiTypography-caption MuiTypography-colorSecondary MuiTypography-alignLeft"
-                                    >
-                                      State Code is required.
-                                    </h1>
                                   </div>
                                 </div>
                               </div>
@@ -1472,11 +1457,6 @@ exports[`WorkerWizard should clean otherPrimaryLanguage if primaryLanguage is di
                                         </div>
                                       </div>
                                     </div>
-                                    <h1
-                                      class="MuiTypography-root  makeStyles-errorMessage-3216 errorMessage MuiTypography-caption MuiTypography-colorSecondary MuiTypography-alignLeft"
-                                    >
-                                      required.
-                                    </h1>
                                   </div>
                                 </div>
                                 <div
@@ -1535,11 +1515,6 @@ exports[`WorkerWizard should clean otherPrimaryLanguage if primaryLanguage is di
                                         </div>
                                       </div>
                                     </div>
-                                    <h1
-                                      class="MuiTypography-root  makeStyles-errorMessage-3216 errorMessage MuiTypography-caption MuiTypography-colorSecondary MuiTypography-alignLeft"
-                                    >
-                                      City is required.
-                                    </h1>
                                   </div>
                                 </div>
                               </div>

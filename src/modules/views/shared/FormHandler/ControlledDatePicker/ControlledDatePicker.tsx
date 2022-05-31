@@ -3,11 +3,12 @@ import { MuiPickersUtilsProvider } from '@material-ui/pickers';
 import MomentUtils from '@date-io/moment';
 
 import { CalendarIcon } from '../../../../../constants/';
-// import { useHideScroll } from '../../../../../utils/useHideScroll';
 import { noop } from '../../../../../utils/generalUtils';
 import DatePicker from 'react-datepicker';
-import 'react-datepicker/dist/react-datepicker.css';
+// import 'react-datepicker/dist/react-datepicker.css';
+import './datepicker.css';
 import { TextField, InputAdornment } from '@material-ui/core';
+// import { useStyles } from './styles';
 
 export interface IControlledDatePickerProps {
   name: string;
@@ -66,7 +67,7 @@ const ControlledDatePicker = ({
         persist: noop,
         target: {
           name: name,
-          value: date?.toUTCString(),
+          value: date?.toLocaleDateString(),
         },
       });
     },
@@ -76,12 +77,7 @@ const ControlledDatePicker = ({
   if (state.startDate) (extraProps as any).minDate = new Date(state.startDate);
   if (state.endDate) (extraProps as any).maxDate = new Date(state.endDate);
 
-  // const onOpen = useCallback(() => {
-  //   setHideScroll(true);
-  // }, [setHideScroll]);
-  // const onClose = useCallback(() => {
-  //   setHideScroll(false);
-  // }, [setHideScroll]);
+  // const classes = useStyles();
 
   useEffect(() => {
     setState({ startDate, endDate });
@@ -90,29 +86,6 @@ const ControlledDatePicker = ({
   return (
     <>
       <MuiPickersUtilsProvider utils={MomentUtils}>
-        {/* <KeyboardDatePicker
-          data-testid="keyboard-date-picker"
-          format="MM/DD/YYYY"
-          mask="___, ___ __, ____"
-          refuse={/[^a-z\d]+/gi}
-          value={value}
-          onChange={onDateChange}
-          animateYearScrolling={true}
-          inputVariant={variant}
-          variant="inline"
-          className={styleClass}
-          keyboardIcon={icon ? icon : <CalendarIcon />}
-          InputAdornmentProps={{ position: iconPosition ? iconPosition : 'start' }}
-          autoOk={autoAccept}
-          placeholder={placeholder}
-          error={error}
-          required={required}
-          fullWidth={fullWidth}
-          onOpen={onOpen}
-          onClose={onClose}
-          {...extraProps}
-          {...rest}
-        /> */}
         <DatePicker
           selected={value ? new Date(value) : null}
           onChange={onDateChange}
@@ -128,7 +101,7 @@ const ControlledDatePicker = ({
             <TextField
               inputRef={ref}
               data-testid="keyboard-date-picker"
-              value={value}
+              // value={value}
               onChange={onDateChange}
               className={styleClass}
               variant={variant}

@@ -67,14 +67,14 @@ const AddressForm = ({
   const isNYResident = useMemo(() => isNYState(addressModel.stateCode) && isNYCity(addressModel.city), [addressModel.stateCode, addressModel.city]);
   const nyBoroughList = useMemo(() => AddressModel.boroughOptionList.map(borough => borough.value), []);
 
-  const getErrors = useCallback(
-    (field, customError = 'is required') => {
-      if (errors && errors[modelProperty])
-        return errors[modelProperty][field] && errors[modelProperty][field] === 'is required' ? customError : errors[modelProperty][field];
-      if (errors && errors[`${modelProperty}.${field}`]) return errors[`${modelProperty}.${field}`];
-    },
-    [errors, modelProperty]
-  );
+  // const getErrors = useCallback(
+  //   (field, customError = 'is required') => {
+  //     if (errors && errors[modelProperty])
+  //       return errors[modelProperty][field] && errors[modelProperty][field] === 'is required' ? customError : errors[modelProperty][field];
+  //     if (errors && errors[`${modelProperty}.${field}`]) return errors[`${modelProperty}.${field}`];
+  //   },
+  //   [errors, modelProperty]
+  // );
 
   const handleStateChange = useCallback(
     /* istanbul ignore next */ e => {
@@ -216,7 +216,8 @@ const AddressForm = ({
               </Grid>
               <Grid item={true} xs={12}>
                 <div className={classes.errorInputWrapper}>
-                  <ControlledError show={!!getErrors('line2')} error={getErrors('line2', 'Line 2 is required.')}>
+                  {/* <ControlledError show={!!getErrors('line2')} error={getErrors('line2', 'Line 2 is required.')}> */}
+                  <ControlledError show={!!errors.line2} error={!!errors.line2 && errors.line2 === 'is required' ? 'Line 2 is required.' : errors.line2}>
                     <ControlledInput
                       // label={optional ? 'Address Line 2 (Optional)' : 'Address Line 2'}
                       label={'Address Line 2 (Optional)'}
@@ -470,7 +471,11 @@ const AddressForm = ({
                     {isNYResident && (
                       <Grid item={true} md={6} xl={6} lg={6}>
                         <div className={classes.errorInputWrapper}>
-                          <ControlledError show={!!getErrors('borough')} error={getErrors('borough', 'NYC Borough is required.')}>
+                          {/* <ControlledError show={!!getErrors('borough')} error={getErrors('borough', 'NYC Borough is required.')}> */}
+                          <ControlledError
+                            show={!!errors.borough}
+                            error={!!errors.borough && errors.borough === 'is required' ? 'NYC Borough is required.' : errors.county}
+                          >
                             <ControlledSelect
                               label={optional ? 'NYC Borough (Optional)' : 'NYC Borough'}
                               name="borough"

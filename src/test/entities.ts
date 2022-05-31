@@ -1563,6 +1563,7 @@ export const getWorker_1 = (): WorkerModel.IWorker => ({
   invitationStatus: WorkerModel.WorkerStatus.ACTIVE,
   isAffiliatedToLaborUnion: false,
   inviteMethod: WorkerModel.InviteMethod.MOBILE_PHONE,
+  ...getAddress_1(),
 });
 
 export const getWorker_2 = (): WorkerModel.IWorker => ({
@@ -1604,6 +1605,7 @@ export const getWorker_2 = (): WorkerModel.IWorker => ({
     id: getClient_1().id,
     name: getClient_1().name,
   },
+  ...getAddress_1(),
 });
 
 export const getWorkerStatistics_1 = (): StatisticsModel.IWorkerStatistics => ({
@@ -3333,6 +3335,7 @@ export const getSearchWoker = (): GeneralModel.IPagination<SearchModel.IWorker> 
       pictureUrl: getWorker_1().pictureUrl,
       lastUpdatedAt: null,
       company: getWorker_1().company,
+      ...getAddress_1(),
     },
     {
       id: getWorker_2().id,
@@ -3344,6 +3347,7 @@ export const getSearchWoker = (): GeneralModel.IPagination<SearchModel.IWorker> 
       pictureUrl: getWorker_2().pictureUrl,
       lastUpdatedAt: null,
       company: getWorker_2().company,
+      ...getAddress_2(),
     },
   ],
 });

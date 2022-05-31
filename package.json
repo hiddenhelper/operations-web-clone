@@ -69,6 +69,7 @@
     "@stripe/stripe-js": "^1.11.0",
     "@testing-library/react-hooks": "^3.2.1",
     "@types/material-ui": "^0.21.8",
+    "@types/react-datepicker": "^4.4.1",
     "autosuggest-highlight": "^3.1.1",
     "connected-react-router": "^6.8.0",
     "cross-env": "^6.0.3",

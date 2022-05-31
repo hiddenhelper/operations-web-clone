@@ -18,6 +18,7 @@ export interface IProjectWizardProps {
   projectMap: GeneralModel.IEntityMap<ProjectNewModel.IProject>;
   regionList: GeneralModel.INamedEntity[];
   trainingList: GeneralModel.INamedEntity[];
+  uploadBadgesLoading: GeneralModel.ILoadingStatus;
   fileMap: GeneralModel.IEntityMap<GeneralModel.IEntityMap<FileModel.IFile>>;
   consentFormFields: ConsentFormModel.IConsentFormField[];
   fetchCategoryList: () => void;
@@ -29,6 +30,8 @@ export interface IProjectWizardProps {
   fetchTrainingList: () => void;
   saveProject: (project: Partial<ProjectNewModel.IProject>, stepKey: string) => void;
   updateDraftProject: (project: Partial<ProjectNewModel.IProject>) => void;
+  addProjectBadges: (id: string, files: string[]) => void;
+  clearFileMap: () => void;
 }
 
 const ProjectWizard = ({
@@ -42,6 +45,7 @@ const ProjectWizard = ({
   trainingList,
   fileMap,
   consentFormFields,
+  uploadBadgesLoading,
   fetchCategoryList,
   fetchCertificationList,
   fetchNaeList,
@@ -51,6 +55,8 @@ const ProjectWizard = ({
   saveProject,
   fetchConsentFormFields,
   updateDraftProject,
+  addProjectBadges,
+  clearFileMap,
 }: IProjectWizardProps) => {
   const { id, step, entityId, currentEntity, currentStepKey, currentStep, setStep } = useNavigator<ProjectNewModel.IProject>({
     entityMap: projectMap,
@@ -59,7 +65,14 @@ const ProjectWizard = ({
     fallback: ProjectNewModel.getFallbackProject,
   });
 
-  const loadedSuccessful: boolean = useMemo(() => loading && !loading.isLoading && !loading.hasError, [loading]);
+  const loadedSuccessful: boolean = useMemo(
+    () =>
+      loading &&
+      !loading.isLoading &&
+      !loading.hasError &&
+      ((uploadBadgesLoading && !uploadBadgesLoading.isLoading && !uploadBadgesLoading.hasError) || !uploadBadgesLoading),
+    [loading, uploadBadgesLoading]
+  );
   const [inProgress, setInProgress] = useState<boolean>(false);
   const loadingError = useMemo(() => loading && loading.error && loading.error.errors, [loading]);
   const isValidForNavigation = useMemo(() => !loading || (loading && !loading.isLoading && !inProgress), [loading, inProgress]);
@@ -168,13 +181,49 @@ const ProjectWizard = ({
     if (!fcaNaeList.length) fetchNaeList();
   }, [fcaNaeList, fetchNaeList]);
 
+  const pendingFiles = useMemo(
+    () =>
+      Object.entries(fileMap).reduce((totalPendingFiles, [currentFileKey, currentFileValue]) => {
+        return [
+          ...totalPendingFiles,
+          currentFileValue &&
+            Object.values(currentFileValue)[0] &&
+            !Object.values(currentFileValue)[0].error &&
+            (Object.values(currentFileValue)[0].status === FileModel.FileStatus.INACTIVE ||
+              Object.values(currentFileValue)[0].status === FileModel.FileStatus.PROGRESS) &&
+            ProjectNewModel.projectBadgeKeys.includes(currentFileKey as any) &&
+            currentFileKey,
+        ].filter(Boolean);
+      }, []),
+    [fileMap]
+  );
+
+  const completedFiles = useMemo(
+    () =>
+      Object.entries(fileMap).reduce((totalPendingFiles, [currentFileKey, currentFileValue]) => {
+        return [
+          ...totalPendingFiles,
+          currentFileValue &&
+            Object.keys(currentFileValue).length &&
+            ProjectNewModel.projectBadgeKeys.includes(currentFileKey as any) &&
+            Object.values(currentFileValue)[0].status === FileModel.FileStatus.SUCCESS &&
+            currentFileKey,
+        ].filter(Boolean);
+      }, []),
+    [fileMap]
+  );
+
   const handleSave = useCallback(
     (projectData: ProjectNewModel.IProject) => {
       const project = sanitizeProject(projectData);
       if (!entityId) saveProject(project, currentStepKey);
       if (entityId) updateDraftProject(project);
+      if (pendingFiles.length) {
+        setInProgress(true);
+        addProjectBadges(entityId, pendingFiles);
+      }
     },
-    [saveProject, updateDraftProject, currentStepKey, entityId]
+    [saveProject, updateDraftProject, addProjectBadges, currentStepKey, entityId, pendingFiles]
   );
 
   const onLoadHandler = useCallback(
@@ -209,6 +258,10 @@ const ProjectWizard = ({
     }
   }, [loadingMap, loading, inProgress, setInProgress]);
 
+  useEffect(() => {
+    if (completedFiles.length) fetchProject(entityId);
+  }, [completedFiles, entityId, fetchProject]);
+
   return (
     <Wizard
       route="/projects/wizard-new"
@@ -218,7 +271,7 @@ const ProjectWizard = ({
       deps={onLoadDeps}
       onLoad={onLoadHandler}
       fallback={ProjectNewModel.getFallbackProject()}
-      renderNavigator={({ hasChanges, onNextStep, onDiscard, onSave }) => {
+      renderNavigator={({ hasChanges, onNextStep, onPrevStep, onDiscard, onSave }) => {
         return (
           <Header
             entityName={currentEntity.name}
@@ -232,6 +285,7 @@ const ProjectWizard = ({
             onDiscard={onDiscard}
             onSave={onSave}
             onNextStep={onNextStep}
+            onPrevStep={onPrevStep}
             loadSuccess={loadedSuccessful}
           />
         );

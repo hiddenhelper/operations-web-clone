@@ -18,7 +18,7 @@ export const useStyles = makeStyles(theme =>
         },
       },
       '& .MuiOutlinedInput-notchedOutline': {
-        zIndex: 2,
+        zIndex: 0,
       },
     },
     fileUpload: {

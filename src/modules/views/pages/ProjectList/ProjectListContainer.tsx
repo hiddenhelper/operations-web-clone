@@ -20,6 +20,7 @@ export const mapStateToProps = (state: IRootState) => ({
   loading: state.general.loadingMap[GENERAL.LOADING_KEY.FETCH_PROJECT_SUMMARY],
   deleteLoading: state.general.loadingMap[GENERAL.LOADING_KEY.DELETE_PROJECT],
   statisticsLoading: state.general.loadingMap[GENERAL.LOADING_KEY.FETCH_PROJECT_STATISTICS],
+  currentFilter: state.project.currentFilter,
 });
 
 export const mapDispatchToProps = (dispatch: Dispatch) => ({
@@ -32,6 +33,7 @@ export const mapDispatchToProps = (dispatch: Dispatch) => ({
   clearInvoiceStatistics: () => dispatch(statisticsState.actions.clearInvoiceStatistics()),
   deleteProject: (id: string, query: GeneralModel.IQueryParams) => dispatch(projectState.actions.deleteProjectStart(id, query)),
   navigate: (path: string) => dispatch(push(path)),
+  updateCurrentFilter: (filter: string) => dispatch(projectState.actions.updateCurrentFilter(filter)),
 });
 
 export default connect(mapStateToProps, mapDispatchToProps)(ProjectList);

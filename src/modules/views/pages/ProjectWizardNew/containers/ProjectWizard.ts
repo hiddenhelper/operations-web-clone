@@ -5,6 +5,7 @@ import ProjectWizard from '../components/ProjectWizard';
 import { GENERAL } from '../../../../../constants';
 import { certificationState } from 'modules/state-mgmt/certification';
 import { trainingState } from 'modules/state-mgmt/training';
+import { fileState } from 'modules/state-mgmt/file';
 
 const mapStateToProps = (state: IRootState) => ({
   projectMap: state.projectNew.projectMap,
@@ -26,9 +27,11 @@ const mapDispatchToProps = {
   fetchCategoryList: projectNewState.actions.fetchCategoryListStart,
   fetchRegionList: projectNewState.actions.fetchRegionListStart,
   fetchNaeList: projectNewState.actions.fetchNaeListStart,
-  fetchCertificationList: () => certificationState.actions.fetchCertificationListStart(),
-  fetchTrainingList: () => trainingState.actions.fetchTrainingListStart(),
-  fetchConsentFormFields: () => projectNewState.actions.fetchConsentFormFieldsStart(),
+  fetchCertificationList: certificationState.actions.fetchCertificationListStart,
+  fetchTrainingList: trainingState.actions.fetchTrainingListStart,
+  addProjectBadges: projectNewState.actions.addProjectBadgesStart,
+  clearFileMap: fileState.actions.clearMap,
+  fetchConsentFormFields: projectNewState.actions.fetchConsentFormFieldsStart,
 };
 
 export default connect(mapStateToProps, mapDispatchToProps)(ProjectWizard);

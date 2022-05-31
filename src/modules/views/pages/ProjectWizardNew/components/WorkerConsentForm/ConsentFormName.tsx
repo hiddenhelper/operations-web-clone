@@ -14,11 +14,12 @@ const allowedLanguages = Object.values(ConsentFormModel.ConsentFormLanguages);
 export interface IConsentFormNameProps {
   errors: any;
   formRules: IFormRules;
+  formLabels: IFormRules;
   onChange: (model: any) => void;
   model: ConsentFormModel.IConsentFormLegal[];
 }
 
-const ConsentFormName = ({ errors, formRules, onChange, model }: IConsentFormNameProps) => {
+const ConsentFormName = ({ errors, formRules, formLabels, onChange, model }: IConsentFormNameProps) => {
   const tableGlobalClasses = tableGlobalStyles();
 
   const [language, setLanguage] = useState(allowedLanguages[0]);
@@ -53,7 +54,7 @@ const ConsentFormName = ({ errors, formRules, onChange, model }: IConsentFormNam
       </div>
       {currentName?.languageId && (
         <ControlledError show={!!langError} error={langError}>
-          <ControlledInput label="Consent Form Name">
+          <ControlledInput label="Consent Form Name" required={formLabels.name.required} showMark={formLabels.name.required}>
             <TextField
               autoComplete="off"
               inputProps={{

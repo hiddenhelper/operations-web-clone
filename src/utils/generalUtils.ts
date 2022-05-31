@@ -59,6 +59,8 @@ export const isNull = value => value === null;
 
 export const isNumber = value => typeof value === 'number';
 
+export const isString = value => typeof value === 'string';
+
 export const isEmpty = value => {
   if (isObject(value)) {
     return Object.keys(value).length === 0;
@@ -71,6 +73,9 @@ export const isEmpty = value => {
   }
   if (isNumber(value)) {
     return Number.isNaN(value);
+  }
+  if (isString(value)) {
+    return value.trim() === '';
   }
 
   return value === '';
@@ -108,6 +113,13 @@ export const enableFocus = () => {
 
 export const enableFocusOnTab = event => {
   return event.keyCode === 9 ? enableFocus() : false;
+};
+
+export const getPrevObjectItem = (obj, currentKey) => {
+  const keys = Object.keys(obj);
+  const index = keys.indexOf(currentKey);
+  const prevKey = index - 1;
+  return prevKey < 0 ? obj[currentKey] : obj[keys[prevKey]];
 };
 
 export const getNextObjectItem = (obj, currentKey) => {

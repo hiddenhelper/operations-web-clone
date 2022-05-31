@@ -11,6 +11,7 @@ export interface IState {
   consentFormFields: ConsentFormModel.IConsentFormField[];
   badgeVisitorEntityList: string[];
   count: number;
+  currentFilter: string;
 }
 
 export const initialState: IState = {
@@ -24,4 +25,5 @@ export const initialState: IState = {
   consentFormFields: [],
   badgeVisitorEntityList: [],
   count: null,
+  currentFilter: '',
 };

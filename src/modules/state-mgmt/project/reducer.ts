@@ -108,6 +108,8 @@ export const reducer = (state: IState = initialState, { type, payload }: { type:
       return { ...state, consentFormFields: payload.list };
     case ActionType.FETCH_BADGE_VISITOR_ENTITY_LIST_SUCCESS:
       return { ...state, badgeVisitorEntityList: payload.list };
+    case ActionType.UPDATE_CURRENT_FILTER:
+      return { ...state, currentFilter: payload.filter };
     default:
       return state;
   }

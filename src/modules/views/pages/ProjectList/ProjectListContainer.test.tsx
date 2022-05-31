@@ -17,6 +17,7 @@ describe('ProjectListContainer', () => {
       loading: undefined,
       deleteLoading: undefined,
       statisticsLoading: undefined,
+      currentFilter: getInitialState().project.currentFilter,
     });
   });
 
@@ -33,6 +34,7 @@ describe('ProjectListContainer', () => {
       fetchInvoiceStatistics: expect.any(Function),
       clearProjectStatistics: expect.any(Function),
       clearInvoiceStatistics: expect.any(Function),
+      updateCurrentFilter: expect.any(Function),
     });
   });
 
@@ -94,5 +96,11 @@ describe('ProjectListContainer', () => {
     const props = mapDispatchToProps(dispatch);
     props.clearInvoiceStatistics();
     expect(dispatch).toBeCalledWith(statisticsState.actions.clearInvoiceStatistics());
+  });
+  it('should dispatch updateCurrentFilter action', () => {
+    const dispatch = jest.fn();
+    const props = mapDispatchToProps(dispatch);
+    props.updateCurrentFilter('draft');
+    expect(dispatch).toBeCalledWith(projectState.actions.updateCurrentFilter('draft'));
   });
 });

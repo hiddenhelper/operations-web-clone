@@ -10,6 +10,7 @@ import { ProjectModel, ConsentFormModel } from 'modules/models';
 import { IFormRules } from 'utils/useValidator';
 import { formGlobalStyles } from 'assets/styles';
 import { useStyles } from '../../styles';
+import { ConsentFormLabelRules } from 'constants/form/projectNewRules';
 
 type SetStateCb = (prevVal: ProjectModel.IProject) => ProjectModel.IProject;
 
@@ -25,10 +26,18 @@ const WorkerConsentForm = ({ consentFormFields, errors, formRules, model, onChan
   const formClasses = formGlobalStyles();
   const classes = useStyles();
 
+  const formLabels = ConsentFormLabelRules;
+
   return (
     <>
       <Card title="Consent Form Name">
-        <ConsentFormName errors={errors?.consentFormLegals || errors} formRules={formRules} model={model.consentFormLegals} onChange={onChange} />
+        <ConsentFormName
+          errors={errors?.consentFormLegals || errors}
+          formLabels={formLabels}
+          formRules={formRules}
+          model={model.consentFormLegals}
+          onChange={onChange}
+        />
       </Card>
 
       <Card title="Predefined Inputs">
@@ -38,7 +47,7 @@ const WorkerConsentForm = ({ consentFormFields, errors, formRules, model, onChan
       </Card>
 
       <Card title="Legal">
-        <Legal errors={errors?.consentFormLegals || errors} formRules={formRules} model={model.consentFormLegals} onChange={onChange} />
+        <Legal errors={errors?.consentFormLegals || errors} formRules={formRules} model={model.consentFormLegals} onChange={onChange} formLabels={formLabels} />
       </Card>
     </>
   );

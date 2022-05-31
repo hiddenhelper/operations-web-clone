@@ -246,7 +246,7 @@ describe('TrainingTab', () => {
       getWorker_1().id,
       {
         trainingId: getTraining_2().id,
-        completionDate: 'Tue, 11 Aug 2020 07:00:00 GMT',
+        completionDate: '8/11/2020',
         description: null,
         id: null,
         trainerName: 'John Doe',

@@ -8,6 +8,7 @@ import {
   disableFocus,
   enableFocusOnTab,
   getNextObjectItem,
+  getPrevObjectItem,
   getCompletedStepFields,
   generateTempId,
   isTempId,
@@ -205,6 +206,18 @@ describe('generalUtils', () => {
 
       enableFocusOnTab(eventMock.event);
       expect(enableFocusOnTab(eventMock.event)).toBe(false);
+    });
+  });
+
+  describe('getPrevObjectItem', () => {
+    it('should return prev item value', () => {
+      const obj = { a: 1, b: 2, c: 3 };
+      expect(getPrevObjectItem(obj, 'c')).toBe(2);
+    });
+
+    it('should return first item when prev of first is requested', () => {
+      const obj = { a: 1, b: 2, c: 3 };
+      expect(getPrevObjectItem(obj, 'a')).toBe(1);
     });
   });
 

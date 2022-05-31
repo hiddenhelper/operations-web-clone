@@ -19,16 +19,12 @@ const ProfileUpload = ({ profilePictureUrl, error }: IProfileUploadProps) => {
   const classes = useStyles();
   const avatarGlobalClasses = avatarGlobalStyles();
   /* istanbul ignore next line */
-  const noCachedUrl = profilePictureUrl && profilePictureUrl.includes('blob') ? profilePictureUrl : `${profilePictureUrl}?${Date.now()}`;
+  const noCachedUrl = profilePictureUrl && profilePictureUrl.includes('blob') ? profilePictureUrl : `${profilePictureUrl}`;
   return (
     <div className={classes.profileUploadWrapper}>
       <div className={classes.profileUploadAvatarPosition}>
         <Avatar className={`${avatarGlobalClasses.avatarSettings} ${avatarGlobalClasses.avatarWrapper}`} alt="Avatar Image">
-          {profilePictureUrl ? (
-            <img srcSet={`${noCachedUrl} 1x, ${noCachedUrl} 2x`} alt="Profile" width="100%" />
-          ) : (
-            <PersonIcon className={avatarGlobalClasses.missingAvatarSettings} />
-          )}
+          {profilePictureUrl ? <img src={noCachedUrl} alt="Profile" width="100%" /> : <PersonIcon className={avatarGlobalClasses.missingAvatarSettings} />}
         </Avatar>
       </div>
       <div className={classes.profileUploadInput}>

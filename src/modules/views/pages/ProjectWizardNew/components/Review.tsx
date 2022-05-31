@@ -11,7 +11,7 @@ import ReviewButton from 'modules/views/shared/ResourceManagement/ReviewButton';
 import RoleGuard from 'modules/views/shared/RoleGuard';
 import { AutocompleteService } from '../../../../services/AutocompleteService';
 
-import { GeneralModel, ResourceModel, UserModel, PaymentModel, ProjectNewModel, ProjectModel } from '../../../../models';
+import { GeneralModel, ResourceModel, UserModel, PaymentModel, ProjectNewModel, ProjectModel, ConsentFormModel } from '../../../../models';
 import { LANG } from '../../../../../constants';
 import { getDefaultValue, getConditionalDefaultValue, formatNumberWithCommas, getFormattedDate, getListWithCommas } from '../../../../../utils/generalUtils';
 import { getPlannedMonths, getTotalPrice } from '../../../../../utils/projectUtils';
@@ -88,6 +88,20 @@ const Review = ({
   );
   const trainingList = useMemo(() => model?.trainingGroups.map(group => ({ id: group.id, name: group.name })), [model]);
   const certificationList = useMemo(() => model?.certificationGroups.map(group => ({ id: group.id, name: group.name })), [model]);
+  const activeConsentFormFields = useMemo(
+    () => model.consentFormFields.filter(field => field.isVisible).map(item => ({ id: item.consentFormFieldId, name: item.consentFormFieldName })),
+    [model]
+  );
+  const consentFormLegals = useMemo(
+    () =>
+      model.consentFormLegals.map(item => ({
+        id: item.languageCode,
+        language: `${ConsentFormModel.ConsentFormLanguageNames?.[item.languageCode]} Version:`,
+        name: item.name,
+        body: item.body,
+      })),
+    [model]
+  );
 
   const getResponsible = useCallback(
     (type: string) => {
@@ -144,12 +158,50 @@ const Review = ({
     editAction(ProjectModel.ProjectStep.CERTIFICATIONS_TRAININGS);
   }, [editAction]);
 
+  const handleEditWorkerConsentForm = useCallback(() => {
+    editAction(ProjectModel.ProjectStep.WORKER_CONSENT_FORM);
+  }, [editAction]);
+
   const getCompanyList = useCallback(
     list =>
       list.map(company => (
         <Typography key={company.id} className={cardGlobalClasses.cardFont}>
           {company.name}. <span className={cardGlobalClasses.cardFontAccent}>{`${getConditionalDefaultValue(company.isTaxExempt, 'Tax Exempt', '')}`}</span>
         </Typography>
+      )),
+    [cardGlobalClasses]
+  );
+
+  const consentFormLegalsBody = useCallback(
+    list =>
+      list.map(item => (
+        <Grid key={item.id} container={true} spacing={1} className="cardBody-row">
+          <Grid item={true} xs={2} className={'cardBody-item'}>
+            <Typography className={`${cardGlobalClasses.cardFont}`}>{item.language}</Typography>
+          </Grid>
+          <Grid item={true} xs={10} className={'cardBody-item'}>
+            <Typography className={cardGlobalClasses.cardFont}>
+              <strong>{item.body}</strong>
+            </Typography>
+          </Grid>
+        </Grid>
+      )),
+    [cardGlobalClasses]
+  );
+
+  const consentFormLegalsName = useCallback(
+    list =>
+      list.map(item => (
+        <Grid key={item.id} container={true} spacing={1} className="cardBody-row">
+          <Grid item={true} xs={2} className={'cardBody-item'}>
+            <Typography className={`${cardGlobalClasses.cardFont}`}>{item.language}</Typography>
+          </Grid>
+          <Grid item={true} xs={10} className={'cardBody-item'}>
+            <Typography className={cardGlobalClasses.cardFont}>
+              <strong>{item.name}</strong>
+            </Typography>
+          </Grid>
+        </Grid>
       )),
     [cardGlobalClasses]
   );
@@ -698,6 +750,62 @@ const Review = ({
                 Trainings
               </Typography>
               <Typography className={`${cardGlobalClasses.cardFontNoEllipsis} ${cardGlobalClasses.cardFont}`}>{getListWithCommas(trainingList)}</Typography>
+            </Grid>
+          </Grid>
+        </div>
+      </Card>
+      <Card
+        title={ProjectModel.projectStepMap[ProjectModel.ProjectStep.WORKER_CONSENT_FORM].title}
+        hideSecondaryAction={hideEditAction}
+        actionStyleClass={getConditionalDefaultValue(edit, formGlobalClasses.secondaryActionsIcon, '')}
+        styleClass={classes.boxShadow}
+        secondaryAction={
+          edit ? (
+            <IconButton
+              className={buttonClasses.editButton}
+              disableRipple={true}
+              onClick={handleEditWorkerConsentForm}
+              data-testid="consent-form-edit-button"
+              disabled={model.status === ResourceModel.Status.ARCHIVED}
+            >
+              <CreateIcon />
+            </IconButton>
+          ) : (
+            <ReviewButton
+              stepKey={ProjectModel.ProjectStep.WORKER_CONSENT_FORM}
+              completedFields={completedFields[ProjectModel.ProjectStep.WORKER_CONSENT_FORM]}
+              onChangeStep={onChangeStep}
+            />
+          )
+        }
+      >
+        <div className={classes.reviewCardBody}>
+          <Grid container={true} spacing={0} className="cardBody-row">
+            <Grid item={true} xs={12} className="cardBody-item">
+              <Typography className={`${cardGlobalClasses.cardFont} ${cardGlobalClasses.cardHeavyAccent} ${cardGlobalClasses.cardTitle}`}>
+                Consent Form Name
+              </Typography>
+              {consentFormLegalsName(consentFormLegals)}
+            </Grid>
+          </Grid>
+
+          <Grid container={true} spacing={0} className={'cardBody-row'}>
+            <Grid item={true} xs={12} className={'cardBody-item'}>
+              <Typography
+                className={`${cardGlobalClasses.cardFont} ${cardGlobalClasses.cardFontAccent} ${cardGlobalClasses.cardTitle} ${cardGlobalClasses.cardHeavyAccent}`}
+              >
+                Predefined Inputs
+              </Typography>
+              <Typography className={`${cardGlobalClasses.cardFont} ${cardGlobalClasses.cardFontNoEllipsis}`}>
+                <span>{getListWithCommas(activeConsentFormFields)}</span>
+              </Typography>
+            </Grid>
+          </Grid>
+
+          <Grid container={true} spacing={0} className="cardBody-row">
+            <Grid item={true} xs={12} className="cardBody-item">
+              <Typography className={`${cardGlobalClasses.cardFont} ${cardGlobalClasses.cardHeavyAccent} ${cardGlobalClasses.cardTitle}`}>Legal</Typography>
+              {consentFormLegalsBody(consentFormLegals)}
             </Grid>
           </Grid>
         </div>

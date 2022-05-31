@@ -53,6 +53,7 @@ describe('workerUtils', () => {
         invitationStatus: WorkerModel.WorkerStatus.ACTIVE,
         isAffiliatedToLaborUnion: false,
         inviteMethod: WorkerModel.InviteMethod.MOBILE_PHONE,
+        ...getAddress_1(),
       })
     ).toEqual(getWorker_1());
   });

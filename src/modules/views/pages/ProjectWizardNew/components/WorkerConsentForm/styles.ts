@@ -45,5 +45,27 @@ export const useStyles = makeStyles(theme =>
         },
       },
     },
+    readMoreExpanded: {
+      height: '100%',
+    },
+    readMoreCollapsed: {
+      overflow: 'hidden',
+      height: '22.5px',
+    },
+    readMoreButton: {
+      margin: '2px 0 0',
+      color: 'grey',
+      cursor: 'pointer',
+      fontSize: '12px',
+      lineHeight: '100%',
+    },
+    '@media (min-width: 767px)': {
+      readMoreCollapsed: {
+        height: '100%',
+      },
+      readMoreButton: {
+        display: 'none',
+      },
+    },
   })
 );

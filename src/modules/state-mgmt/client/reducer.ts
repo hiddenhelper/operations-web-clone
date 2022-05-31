@@ -6,11 +6,7 @@ import { preloadClient } from '../../../utils/clientUtils';
 export const reducer = (state: IState = initialState, { type, payload }: { type: ActionType; payload?: any }): IState => {
   switch (type) {
     case ActionType.FETCH_CLIENT_LIST_SUCCESS:
-      return {
-        ...state,
-        clientMap: { ...state.clientMap, ...payload.list.reduce((total, item) => ({ ...total, [item.id]: preloadClient(item) }), {}) },
-        count: payload.count,
-      };
+      return { ...state, clientMap: payload.list.reduce((total, item) => ({ ...total, [item.id]: preloadClient(item) }), {}), count: payload.count };
     case ActionType.FETCH_SELF_COMPANY_SUCCESS:
       return { ...state, selfCompany: payload.company };
     case ActionType.FETCH_MWBE_SUCCESS:

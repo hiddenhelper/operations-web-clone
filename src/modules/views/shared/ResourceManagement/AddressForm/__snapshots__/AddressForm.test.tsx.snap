@@ -2052,11 +2052,6 @@ exports[`Address Form should render server errors 1`] = `
                     </div>
                   </div>
                 </div>
-                <h1
-                  class="MuiTypography-root  makeStyles-errorMessage-254 errorMessage MuiTypography-caption MuiTypography-colorSecondary MuiTypography-alignLeft"
-                >
-                  err
-                </h1>
               </div>
             </div>
             <div
