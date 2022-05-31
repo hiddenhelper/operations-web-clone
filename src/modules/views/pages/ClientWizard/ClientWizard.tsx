@@ -28,6 +28,8 @@ export interface IWizardProps {
   clearErrors: () => void;
   clearClientMap: () => void;
   countryList?: GeneralModel.INamedEntity[];
+  fetchGroupSearch: (searchRequest: any) => void;
+  groupList: any;
 }
 
 const ClientWizard = ({
@@ -47,6 +49,8 @@ const ClientWizard = ({
   clearErrors,
   clearClientMap,
   countryList,
+  fetchGroupSearch,
+  groupList,
 }: IWizardProps) => {
   const { id, step, entityId, currentEntity, currentStepKey, currentStep, setStep } = useNavigator<ClientModel.IClient>({
     entityMap: clientMap,
@@ -228,6 +232,9 @@ const ClientWizard = ({
       renderForm={({ model, formRules, errors, onChangeStep, onChange, updateRules }) => (
         <ClientForm
           countryList={countryList}
+          fetchGroupSearch={fetchGroupSearch}
+          companyId={id}
+          groupList={groupList}
           mwbeList={mwbeList}
           tradeList={tradeList}
           model={model}

@@ -5,6 +5,7 @@ import { GENERAL } from '../../../../constants';
 import { IRootState } from '../../../state-mgmt/rootState';
 import { clientState } from '../../../state-mgmt/client';
 import { generalState } from '../../../state-mgmt/general';
+import { userState } from '../../../state-mgmt/user';
 import { GeneralModel, ClientModel } from '../../../models';
 
 import ClientWizard from './ClientWizard';
@@ -17,6 +18,7 @@ export const mapStateToProps = (state: IRootState) => ({
   sendForApprovalLoading: state.general.loadingMap[GENERAL.LOADING_KEY.SEND_APPROVE_CLIENT],
   approveLoading: state.general.loadingMap[GENERAL.LOADING_KEY.APPROVE_CLIENT],
   countryList: state.general.countryList,
+  groupList: state.user.groupList,
 });
 
 export const mapDispatchToProps = (dispatch: Dispatch) => ({
@@ -29,6 +31,7 @@ export const mapDispatchToProps = (dispatch: Dispatch) => ({
   approveClient: (id: string) => dispatch(clientState.actions.approveClientStart(id)),
   clearErrors: () => dispatch(generalState.actions.clear(GENERAL.LOADING_KEY.SAVE_CLIENT)),
   clearClientMap: () => dispatch(clientState.actions.clearClientMap()),
+  fetchGroupSearch: (query: any) => dispatch(userState.actions.fetchGroupSearchStart(query)),
 });
 
 export default connect(mapStateToProps, mapDispatchToProps)(ClientWizard);

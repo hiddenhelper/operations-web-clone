@@ -21,6 +21,9 @@ export interface IClientFormProps {
   onChange: (event: any) => void;
   updateRules: (rules: IFormRules) => void;
   countryList?: GeneralModel.INamedEntity[];
+  fetchGroupSearch: (searchRequest: any) => void;
+  companyId: string;
+  groupList: any;
 }
 
 const ClientForm = ({
@@ -36,6 +39,9 @@ const ClientForm = ({
   onChangeStep,
   updateRules,
   countryList,
+  fetchGroupSearch,
+  companyId,
+  groupList,
 }: IClientFormProps) => {
   return (
     <>
@@ -51,7 +57,17 @@ const ClientForm = ({
         />
       )}
       {currentStep.key === ClientModel.ClientStep.ADDRESSES && <Addresses model={model} onChange={onChange} errors={errors} />}
-      {currentStep.key === ClientModel.ClientStep.USERS && <Users countryList={countryList} userList={model.users} onChange={onChange} errors={errors} />}
+      {currentStep.key === ClientModel.ClientStep.USERS && (
+        <Users
+          countryList={countryList}
+          userList={model.users}
+          onChange={onChange}
+          errors={errors}
+          groupList={groupList}
+          fetchGroupSearch={fetchGroupSearch}
+          companyId={companyId}
+        />
+      )}
       {currentStep.key === ClientModel.ClientStep.REVIEW && (
         <Review
           model={model}

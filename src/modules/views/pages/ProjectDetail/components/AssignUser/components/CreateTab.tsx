@@ -27,10 +27,21 @@ export interface ICreateTabProps {
   changeAssignTab: () => void;
   saveUser: (companyId: string, user: UserModel.IUser) => void;
   fetchGroupSearch: (searchRequest: any) => void;
-  GroupList: any;
+  projectId: string;
+  groupList: any;
 }
 
-const CreateTab = ({ userRole, userCompanyId, clientMap, saveUserLoading, changeAssignTab, saveUser, fetchGroupSearch, GroupList }: ICreateTabProps) => {
+const CreateTab = ({
+  userRole,
+  userCompanyId,
+  clientMap,
+  saveUserLoading,
+  changeAssignTab,
+  saveUser,
+  fetchGroupSearch,
+  projectId,
+  groupList,
+}: ICreateTabProps) => {
   const classes = useStyles();
   const assignModalClasses = AssignModalStyles();
   const buttonClasses = buttonStyles();
@@ -106,8 +117,8 @@ const CreateTab = ({ userRole, userCompanyId, clientMap, saveUserLoading, change
           getErrors={getErrors}
           onChange={onChange}
           fetchGroupSearch={fetchGroupSearch}
-          userCompanyId={'userCompanyId'}
-          GroupList={GroupList}
+          projectId={projectId}
+          groupList={groupList}
         />
       </div>
       <ButtonLoader

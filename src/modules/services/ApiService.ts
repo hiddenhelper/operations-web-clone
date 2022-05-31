@@ -584,7 +584,7 @@ export class ApiService {
   }
 
   public getGroupList(query: any): Observable<any> {
-    return this.securityRequest(`api/groups/search?${parseQuery(sanitizePaginationQuery(query))}`, { method: 'POST' });
+    return this.securityRequest('groups/search', { method: 'POST', body: query });
   }
 
   public getUserRoles(): Observable<GeneralModel.INamedEntity[]> {
@@ -1132,7 +1132,7 @@ export class ApiService {
       url: `${this.securityApiUrl}/${path}`,
       headers: {
         'Content-Type': 'application/json',
-        Accept: 'application/json',
+        'Access-Control-Allow-Credentials': 'true',
         ...options.headers,
       },
       body: options.body ? this.parseBody(options.body) : undefined,

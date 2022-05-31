@@ -22,7 +22,7 @@ export const mapStateToProps = (state: IRootState) => ({
   loading: state.general.loadingMap[GENERAL.LOADING_KEY.FETCH_USER_PROJECT_LIST],
   assignLoading: state.general.loadingMap[GENERAL.LOADING_KEY.ASSIGN_USER_PROJECT],
   saveUserLoading: state.general.loadingMap[GENERAL.LOADING_KEY.SAVE_USER],
-  GroupList: state.user.groupList,
+  groupList: state.user.groupList,
 });
 
 export const mapDispatchToProps = (dispatch: Dispatch) => ({

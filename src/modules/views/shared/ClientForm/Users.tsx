@@ -17,9 +17,12 @@ export interface IUsersProps {
   errors: any;
   onChange: (event: any) => void;
   countryList?: GeneralModel.INamedEntity[];
+  fetchGroupSearch: (searchRequest: any) => void;
+  companyId: string;
+  groupList: any;
 }
 
-const Users = ({ userList = [], errors, onChange, countryList }: IUsersProps) => {
+const Users = ({ userList = [], errors, onChange, countryList, groupList, fetchGroupSearch, companyId }: IUsersProps) => {
   const formClasses = formGlobalStyles();
   const buttonGlobalStyles = buttonStyles();
   const currentUserList = useMemo(() => getConditionalDefaultValue(userList.length === 0, [UserModel.getFallbackUser()], userList), [userList]);
@@ -79,6 +82,9 @@ const Users = ({ userList = [], errors, onChange, countryList }: IUsersProps) =>
           onDeleteUser={deleteUser}
           showDeleteButton={showDelete}
           countryList={countryList}
+          fetchGroupSearch={fetchGroupSearch}
+          companyId={companyId}
+          groupList={groupList}
         />
       ))}
       <ControlledButton>

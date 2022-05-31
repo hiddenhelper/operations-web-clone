@@ -33,9 +33,10 @@ export interface IUsersProps {
   user: UserModel.IUser;
   updateRules?: (s: IFormRules | ((p: IFormRules) => IFormRules)) => void;
   formRules?: IFormRules;
-  userCompanyId?: string;
+  projectId?: string;
+  companyId?: string;
   fetchGroupSearch?: (searchRequest: any) => void;
-  GroupList?: any;
+  groupList?: any;
 }
 
 const UserRow = ({
@@ -52,9 +53,10 @@ const UserRow = ({
   user,
   updateRules,
   formRules,
-  userCompanyId,
+  projectId,
+  companyId,
   fetchGroupSearch,
-  GroupList,
+  groupList,
 }: IUsersProps) => {
   const [userInviteGroupList, setUserInviteGroupList] = useState(UserModel.userInviteList);
   const formClasses = formGlobalStyles();
@@ -85,31 +87,53 @@ const UserRow = ({
   );
 
   useEffect(() => {
-    if (GroupList.lenth) {
-      setUserInviteGroupList([...UserModel.userInviteList, ...GroupList]);
+    if (groupList && groupList.length) {
+      setUserInviteGroupList([...UserModel.userInviteList, ...groupList]);
       return;
     }
 
     setUserInviteGroupList(UserModel.userInviteList);
-  }, [GroupList]);
+  }, [groupList]);
 
   useEffect(() => {
-    let searchRequest = {
-      paging: {
-        clientSidePagination: true,
-      },
-      expand: ['company', 'metadata', 'parentGroup'],
-      searchParameters: [
-        {
-          field: 'companyId',
-          operator: 'equals',
-          value: userCompanyId,
+    if (!projectId && !companyId) return;
+
+    let searchRequest;
+
+    if (projectId) {
+      searchRequest = {
+        paging: {
+          clientSidePagination: true,
         },
-      ],
-    };
+        expand: ['company', 'metadata', 'parentGroup'],
+        searchParameters: [
+          {
+            field: 'projectId',
+            operator: 'equals',
+            value: projectId,
+          },
+        ],
+      };
+    }
+
+    if (companyId) {
+      searchRequest = {
+        paging: {
+          clientSidePagination: true,
+        },
+        expand: ['company', 'metadata', 'parentGroup'],
+        searchParameters: [
+          {
+            field: 'companyId',
+            operator: 'equals',
+            value: companyId,
+          },
+        ],
+      };
+    }
 
     fetchGroupSearch(searchRequest);
-  }, []);
+  }, [projectId, companyId]);
 
   return (
     <Grid data-testid="user-row-item" container={true} className={`${formClasses.formWrapper} ${isListItem ? formClasses.rowsWrapper : ''}`}>
