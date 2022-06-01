@@ -17,12 +17,13 @@ import { RoleMap } from 'modules/models/user';
 export interface IHeaderProps {
   user: UserModel.IUser;
   userRole: UserModel.Role;
+  accountData: UserModel.IAccount;
   navigate: (path: string) => void;
   logout: () => void;
   handleDrawerToggle: () => void;
 }
 
-const Header = ({ user, userRole, navigate, logout, handleDrawerToggle }: IHeaderProps) => {
+const Header = ({ user, userRole, accountData, navigate, logout, handleDrawerToggle }: IHeaderProps) => {
   const { isScrollHided, scrollWidth } = useHideScroll();
   const classes = useStyles({ scrollWidth });
 
@@ -36,6 +37,14 @@ const Header = ({ user, userRole, navigate, logout, handleDrawerToggle }: IHeade
     [userRole, navigate, logout]
   );
 
+  const profilePicture = useMemo(() => {
+    if (accountData && accountData?.pictureUrl) {
+      return accountData?.pictureUrl;
+    }
+
+    return DefaultAvatarSrc;
+  }, [accountData]);
+
   return (
     <header key="Header" data-testid="header-wrapper" className={`${classes.container} ${isScrollHided ? classes.scrollHided : ''}`}>
       <nav>
@@ -48,7 +57,7 @@ const Header = ({ user, userRole, navigate, logout, handleDrawerToggle }: IHeade
             <Typography className={classes.avatarText}>{user.email}</Typography>
             <Typography className={classes.userRole}>{RoleMap[userRole]}</Typography>
           </Box>
-          <Avatar className={classes.avatarElement} alt="John Doe" src={DefaultAvatarSrc} />
+          <Avatar className={classes.avatarElement} alt="John Doe" src={profilePicture} />
           <span className={classes.dropdownIcon}>
             <MenuPopover divider={true} menuOptionList={menuList} placement={'bottom-end'} styleClass={classes.popoverWrapper} />
           </span>

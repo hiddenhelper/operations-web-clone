@@ -8,6 +8,7 @@ import Header from './Header';
 export const mapStateToProps = (state: IRootState) => ({
   user: state.auth.session,
   userRole: state.auth.role,
+  accountData: state.user.accountData,
 });
 
 export const mapDispatchToProps = dispatch => ({
