@@ -33,7 +33,6 @@ export interface IUsersProps {
   user: UserModel.IUser;
   updateRules?: (s: IFormRules | ((p: IFormRules) => IFormRules)) => void;
   formRules?: IFormRules;
-  projectId?: string;
   companyId?: string;
   fetchGroupSearch?: (searchRequest: any) => void;
   groupList?: any;
@@ -53,7 +52,6 @@ const UserRow = ({
   user,
   updateRules,
   formRules,
-  projectId,
   companyId,
   fetchGroupSearch,
   groupList,
@@ -62,7 +60,7 @@ const UserRow = ({
   const formClasses = formGlobalStyles();
   const buttonGlobalStyles = buttonStyles();
   const onChangeHandler = useCallback(event => onChange({ ...user, [event.target.name]: event.target.value }, index), [index, user, onChange]);
-  const onChangeNumber = useCallback(/* istanbul ignore next */ event => onChange({ ...user, [event.target.name]: parseInt(event.target.value, 10) }, index), [
+  const onChangeNumber = useCallback(/* istanbul ignore next */ event => onChange({ ...user, [event.target.name]: event.target.value }, index), [
     index,
     user,
     onChange,
@@ -88,7 +86,14 @@ const UserRow = ({
 
   useEffect(() => {
     if (groupList && groupList.length) {
-      setUserInviteGroupList([...UserModel.userInviteList, ...groupList]);
+      const dropdownList = groupList.map((group) => {
+        return {
+          ...group,
+          label: group.name,
+          value: group.id
+        }
+      })
+      setUserInviteGroupList([...UserModel.userInviteList, ...dropdownList]);
       return;
     }
 
@@ -96,44 +101,24 @@ const UserRow = ({
   }, [groupList]);
 
   useEffect(() => {
-    if (!projectId && !companyId) return;
+    if (!companyId) return;
 
-    let searchRequest;
-
-    if (projectId) {
-      searchRequest = {
-        paging: {
-          clientSidePagination: true,
+    let searchRequest = {
+      paging: {
+        clientSidePagination: true,
+      },
+      expand: ['company', 'metadata', 'parentGroup'],
+      searchParameters: [
+        {
+          field: 'companyId',
+          operator: 'equals',
+          value: companyId,
         },
-        expand: ['company', 'metadata', 'parentGroup'],
-        searchParameters: [
-          {
-            field: 'projectId',
-            operator: 'equals',
-            value: projectId,
-          },
-        ],
-      };
-    }
-
-    if (companyId) {
-      searchRequest = {
-        paging: {
-          clientSidePagination: true,
-        },
-        expand: ['company', 'metadata', 'parentGroup'],
-        searchParameters: [
-          {
-            field: 'companyId',
-            operator: 'equals',
-            value: companyId,
-          },
-        ],
-      };
-    }
+      ],
+    };
 
     fetchGroupSearch(searchRequest);
-  }, [projectId, companyId]);
+  }, [companyId]);
 
   return (
     <Grid data-testid="user-row-item" container={true} className={`${formClasses.formWrapper} ${isListItem ? formClasses.rowsWrapper : ''}`}>
@@ -257,7 +242,7 @@ const UserRow = ({
               </Grid>
               <Grid item={true} xs={4} lg={4} className={formClasses.errorPosition}>
                 <div className={formClasses.invitationWrapper}>
-                  {user.invitationType !== UserModel.InviteType.DO_NOT_INVITE && <Typography>{LANG.EN.INVITE_MESSAGE}</Typography>}
+                  {/* {user.invitationType !== UserModel.InviteType.DO_NOT_INVITE && <Typography>{LANG.EN.INVITE_MESSAGE}</Typography>} */}
                 </div>
               </Grid>
             </>

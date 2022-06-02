@@ -27,7 +27,6 @@ export interface ICreateTabProps {
   changeAssignTab: () => void;
   saveUser: (companyId: string, user: UserModel.IUser) => void;
   fetchGroupSearch: (searchRequest: any) => void;
-  projectId: string;
   groupList: any;
 }
 
@@ -39,7 +38,6 @@ const CreateTab = ({
   changeAssignTab,
   saveUser,
   fetchGroupSearch,
-  projectId,
   groupList,
 }: ICreateTabProps) => {
   const classes = useStyles();
@@ -117,7 +115,7 @@ const CreateTab = ({
           getErrors={getErrors}
           onChange={onChange}
           fetchGroupSearch={fetchGroupSearch}
-          projectId={projectId}
+          companyId={model.assignClient}
           groupList={groupList}
         />
       </div>

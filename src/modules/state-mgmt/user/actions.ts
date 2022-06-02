@@ -72,7 +72,7 @@ export const actions = {
   fetchProfileDataStart: () => ({ type: ActionType.FETCH_ACCOUNT_DATA_START, payload: {} }),
   fetchProfileDataSuccess: (data: UserModel.IAccount) => ({ type: ActionType.FETCH_ACCOUNT_DATA_SUCCESS, payload: { data } }),
   fetchGroupSearchStart: query => ({ type: ActionType.FETCH_GROUP_SEARCH_START, payload: { query } }),
-  fetchGroupSearchSuccess: list => ({ type: ActionType.FETCH_GROUP_SEARCH_SUCCESS, payload: { list } }),
+  fetchGroupSearchSuccess: data => ({ type: ActionType.FETCH_GROUP_SEARCH_SUCCESS, payload: { data } }),
   clearUserMap: () => ({ type: ActionType.CLEAR_USER_MAP, payload: {} }),
   clearAccountData: () => ({ type: ActionType.CLEAR_ACCOUNT_DATA, payload: {} }),
 };

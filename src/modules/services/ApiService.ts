@@ -1126,31 +1126,8 @@ export class ApiService {
     return this.createRequest(path, options);
   }
 
-  public securityRequest<T = any>(path: string, options: IOptionRequest = { method: 'GET' }): Observable<T> {
-    return this.http({
-      ...options,
-      url: `${this.securityApiUrl}/${path}`,
-      headers: {
-        'Content-Type': 'application/json',
-        'Access-Control-Allow-Credentials': 'true',
-        ...options.headers,
-      },
-      body: options.body ? this.parseBody(options.body) : undefined,
-    }).pipe(
-      map(data => data.response as T),
-      retryWhen(
-        /* istanbul ignore next */ (error: Observable<AjaxResponse>) =>
-          error.pipe(
-            switchMap((e: AjaxResponse) => {
-              e = this.errorFormatter(e);
-              if (e.status >= 500 || e.status === 408) return of(e).pipe(delay(this.retryTimeout));
-              else return throwError(e);
-            }),
-            take(this.maxRetries),
-            mergeMap(e => throwError(e))
-          )
-      )
-    );
+  public securityRequest<T = any>(path: string, options: IOptionRequest = { method: 'GET' }, mock?: IMock): Observable<T> {
+    return ApiService.AuthService.getSession().pipe(mergeMap(token => this.createRequest(path, options, token.getIdToken().getJwtToken(), mock, "security")));
   }
 
   public mockedResponse<T = any>(mock) {
@@ -1172,14 +1149,14 @@ export class ApiService {
     );
   }
 
-  public createRequest<T = any>(path: string, options: IOptionRequest, token?: string, mock?: IMock): Observable<T> {
+  public createRequest<T = any>(path: string, options: IOptionRequest, token?: string, mock?: IMock, type?: string): Observable<T> {
     if (token) options.headers = { ...options.headers, Authorization: `Bearer ${token}` };
 
     if (!!mock) return this.mockedResponse(mock);
 
     return this.http({
       ...options,
-      url: `${this.apiUrl}/${path}`,
+      url: `${type && type === "security" ? this.securityApiUrl : this.apiUrl}/${path}`,
       headers: {
         'Content-Type': 'application/json',
         Accept: 'application/json',

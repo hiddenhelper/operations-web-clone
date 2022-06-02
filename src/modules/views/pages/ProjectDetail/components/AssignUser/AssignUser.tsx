@@ -383,7 +383,6 @@ const AssignUser = ({
               changeAssignTab={onAssignList}
               fetchGroupSearch={fetchGroupSearch}
               groupList={groupList}
-              projectId={id}
             />
           )}
         </>
