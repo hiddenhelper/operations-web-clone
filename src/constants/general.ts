@@ -71,6 +71,7 @@ export const GENERAL = {
     FETCH_ACCESS_CONTROL_SYSTEM: 'fetchAccessControlSystem',
     DELETE_ACCESS_CONTROL_SYSTEM: 'deleteAccessControlSystem',
     SAVE_USER: 'saveUser',
+    UPDATE_USER: 'updateUser',
     SAVE_ACCESS_CONTROL_SYSTEM: 'saveAccessControlSystem',
     SAVE_WORKER: 'saveWorker',
     FETCH_WORKER: 'fetchWorker',

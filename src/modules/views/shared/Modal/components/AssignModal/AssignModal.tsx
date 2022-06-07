@@ -76,17 +76,19 @@ const AssignModal = ({
             <Button className={`${classes.closeButton} ${classes.boldButton}`} onClick={onClose} color="primary" data-testid="assign-btn-close">
               {closeLabel}
             </Button>
-            <ButtonLoader
-              className={`${classes.saveButton} ${classes.assignButtonWidth} ${classes.assignButtonRightSpace}`}
-              onClick={onSubmit}
-              color="primary"
-              variant="contained"
-              disabled={!isConfirmEnabled}
-              data-testid="assign-btn-confirm"
-              text={confirmLabel}
-              loadingText={confirmLoadingLabel}
-              isLoading={loading}
-            />
+            {confirmLabel && (
+              <ButtonLoader
+                className={`${classes.saveButton} ${classes.assignButtonWidth} ${classes.assignButtonRightSpace}`}
+                onClick={onSubmit}
+                color="primary"
+                variant="contained"
+                disabled={!isConfirmEnabled}
+                data-testid="assign-btn-confirm"
+                text={confirmLabel}
+                loadingText={confirmLoadingLabel}
+                isLoading={loading}
+              />
+            )}
           </DialogActions>
         </>
       )}

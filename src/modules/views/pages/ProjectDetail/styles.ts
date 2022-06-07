@@ -221,6 +221,9 @@ export const useStyles = makeStyles(theme =>
       display: 'flex',
       alignItems: 'center',
     },
+    userTitle: {
+      cursor: 'pointer',
+    },
     createUserHeader: {
       display: 'flex',
       justifyContent: 'space-between',

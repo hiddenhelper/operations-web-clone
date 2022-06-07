@@ -18,6 +18,7 @@ import ClientFilter from '../../../../shared/ClientFilter';
 import RoleGuard from '../../../../shared/RoleGuard';
 import UserRow from './components/UserRow';
 import CreateTab from './components/CreateTab';
+import EditTab from './components/EditTab';
 
 import { GeneralModel, UserModel, ClientModel, ProjectModel } from '../../../../../models';
 import { SearchIcon } from '../../../../../../constants';
@@ -34,10 +35,12 @@ export interface IAssignUserProps {
   currentUserRole: UserModel.Role;
   userCompanyId: string;
   isFcAdmin: boolean;
+  isEditUser: boolean;
   userMap: GeneralModel.IEntityMap<UserModel.IUser>;
   clientMap: GeneralModel.IEntityMap<ClientModel.IClient>;
   loading: GeneralModel.ILoadingStatus;
   saveUserLoading: GeneralModel.ILoadingStatus;
+  updateUserLoading: GeneralModel.ILoadingStatus;
   assignLoading: GeneralModel.ILoadingStatus;
   userRoleList: GeneralModel.INamedEntity[];
   clientProjectMap?: GeneralModel.IEntityMap<GeneralModel.IEntityMap<ClientModel.IClientProject>>;
@@ -68,8 +71,10 @@ const AssignUser = ({
   userRoleList,
   count,
   isFcAdmin,
+  isEditUser,
   loading,
   saveUserLoading,
+  updateUserLoading,
   assignLoading,
   saveUser,
   assignUser,
@@ -240,11 +245,19 @@ const AssignUser = ({
     fetchClientList(id);
   }, [fetchClientList, id]);
 
+  useEffect(() => {
+    if (isEditUser) {
+      setTab('edit');
+    } else {
+      setTab('assign');
+    }
+  }, [isEditUser]);
+
   return (
     <AssignModal
-      title="Assign User"
+      title={tab === 'edit' ? 'Edit User' : 'Assign User'}
       loading={assignLoading && assignLoading.isLoading}
-      confirmLabel="Assign"
+      confirmLabel={tab === 'edit' ? '' : 'Assign'}
       confirmLoadingLabel="Assigning..."
       modalRef={modalRef}
       isConfirmEnabled={assignEnabled}
@@ -381,6 +394,15 @@ const AssignUser = ({
               clientMap={clientMap}
               saveUser={saveUser}
               changeAssignTab={onAssignList}
+              fetchGroupSearch={fetchGroupSearch}
+              groupList={groupList}
+            />
+          )}
+          {tab === 'edit' && (
+            <EditTab
+              userRole={currentUserRole}
+              updateUserLoading={updateUserLoading}
+              changeAssignTab={onCloseModal}
               fetchGroupSearch={fetchGroupSearch}
               groupList={groupList}
             />

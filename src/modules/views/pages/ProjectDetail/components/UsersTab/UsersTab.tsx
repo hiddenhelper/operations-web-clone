@@ -1,4 +1,4 @@
-import React, { memo, useEffect, useMemo } from 'react';
+import React, { memo, useEffect, useState, useMemo } from 'react';
 import { Avatar, Badge, Button, Table, TableHead, TableRow, TableCell, TableBody, withStyles } from '@material-ui/core';
 import { Person } from '@material-ui/icons';
 
@@ -64,6 +64,8 @@ const UsersTab = ({
   const tableGlobalClasses = tableGlobalStyles();
   const buttonClasses = buttonStyles();
 
+  const [isEditUser, setIsEditUser] = useState<boolean>(false);
+
   const countUsers = useMemo(() => Math.ceil(userCount / queryParams.limit), [userCount, queryParams.limit]);
 
   const userList = useMemo(() => (projectId && Object.keys(userMap).length && userMap[projectId] ? Object.values(userMap[projectId]) : []), [
@@ -102,6 +104,18 @@ const UsersTab = ({
   if (userLoading && userLoading.isLoading) {
     return <>Loading...</>;
   }
+
+  const openEditTab = () => {
+    if (!isFcAdmin) return;
+
+    setIsEditUser(true);
+    openModal();
+  };
+
+  const onCloseModal = () => {
+    setIsEditUser(false);
+    closeModal();
+  };
 
   return (
     <>
@@ -172,7 +186,7 @@ const UsersTab = ({
                             <Person titleAccess={UserModel.userInviteMap[user.invitationType]} />
                           </Avatar>
                         </Badge>
-                        <span>
+                        <span onClick={openEditTab} className={classes.userTitle}>
                           {user.firstName} {user.lastName}
                         </span>
                       </div>
@@ -203,7 +217,7 @@ const UsersTab = ({
         </>
       )}
 
-      {isModalOpen && <AssignUser id={projectId} closeModal={closeModal} isFcAdmin={isFcAdmin} />}
+      {isModalOpen && <AssignUser id={projectId} closeModal={onCloseModal} isFcAdmin={isFcAdmin} isEditUser={isEditUser} />}
     </>
   );
 };
