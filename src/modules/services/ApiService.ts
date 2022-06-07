@@ -41,6 +41,7 @@ export class ApiService {
   public static AuthService = AuthService;
   private http = ajax;
   private apiUrl: string = ENV.API.URL;
+  private securityApiUrl: string = ENV.API.SECURITY_URL;
   private maxRetries: number = ENV.API.MAX_RETRIES;
   private retryTimeout: number = ENV.API.RETRY_TIMEOUT;
 
@@ -582,6 +583,10 @@ export class ApiService {
     return this.protectedRequest(`users?${parseQuery(sanitizePaginationQuery(query))}`, { method: 'GET' });
   }
 
+  public getGroupList(query: any): Observable<any> {
+    return this.securityRequest('groups/search', { method: 'POST', body: query });
+  }
+
   public getUserRoles(): Observable<GeneralModel.INamedEntity[]> {
     return this.protectedRequest('projectRoles', { method: 'GET' });
   }
@@ -1121,6 +1126,10 @@ export class ApiService {
     return this.createRequest(path, options);
   }
 
+  public securityRequest<T = any>(path: string, options: IOptionRequest = { method: 'GET' }, mock?: IMock): Observable<T> {
+    return ApiService.AuthService.getSession().pipe(mergeMap(token => this.createRequest(path, options, token.getIdToken().getJwtToken(), mock, 'security')));
+  }
+
   public mockedResponse<T = any>(mock) {
     return new Observable(observer => {
       if (mock.isError) return observer.error(mock);
@@ -1140,14 +1149,14 @@ export class ApiService {
     );
   }
 
-  public createRequest<T = any>(path: string, options: IOptionRequest, token?: string, mock?: IMock): Observable<T> {
+  public createRequest<T = any>(path: string, options: IOptionRequest, token?: string, mock?: IMock, type?: string): Observable<T> {
     if (token) options.headers = { ...options.headers, Authorization: `Bearer ${token}` };
 
     if (!!mock) return this.mockedResponse(mock);
 
     return this.http({
       ...options,
-      url: `${this.apiUrl}/${path}`,
+      url: `${type && type === 'security' ? this.securityApiUrl : this.apiUrl}/${path}`,
       headers: {
         'Content-Type': 'application/json',
         Accept: 'application/json',

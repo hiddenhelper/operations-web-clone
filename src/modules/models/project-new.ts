@@ -267,7 +267,7 @@ export const projectStepMap: IStepMap = {
       { name: ProjectFields.NAME, required: true },
       { name: ProjectFields.DESCRIPTION, required: false },
       { name: ProjectFields.CATEGORY_ID, required: true },
-      { name: ProjectFields.COMMERCIAL_CONSTRUCTION_VALUE, required: false },
+      { name: ProjectFields.COMMERCIAL_CONSTRUCTION_VALUE, required: true },
       { name: ProjectFields.FC_REGION, required: true },
       { name: ProjectFields.FC_NAE, required: true },
       { name: ProjectFields.START_DATE, required: true },

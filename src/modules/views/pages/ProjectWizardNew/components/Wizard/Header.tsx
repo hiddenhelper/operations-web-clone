@@ -1,5 +1,6 @@
 import React, { memo, useEffect, useCallback, useState } from 'react';
 import { Grid, Typography, Button } from '@material-ui/core';
+import MenuIcon from '@material-ui/icons/Menu';
 import { Link } from 'react-router-dom';
 import ControlledButton from 'modules/views/shared/FormHandler/ControlledButton';
 import { ButtonLoader } from 'modules/views/shared';
@@ -28,9 +29,22 @@ export interface IHeaderProps {
   onSave: () => void;
   onNextStep?: () => void;
   onPrevStep?: () => void;
+  openDrawer: () => void;
 }
 
-const Header = ({ hasChanges, breadCrumb, entityName, step, isSaveLoading, loadSuccess, onSave, onDiscard, onNextStep, onPrevStep }: IHeaderProps) => {
+const Header = ({
+  hasChanges,
+  breadCrumb,
+  entityName,
+  step,
+  isSaveLoading,
+  loadSuccess,
+  onSave,
+  onDiscard,
+  onNextStep,
+  onPrevStep,
+  openDrawer,
+}: IHeaderProps) => {
   const classes = useStyles();
   const [state, setState] = useState<INavigationTopState>({ show: false, action: null });
 
@@ -64,13 +78,17 @@ const Header = ({ hasChanges, breadCrumb, entityName, step, isSaveLoading, loadS
   return (
     <Grid container={true} className={`${classes.panelContainer}`}>
       <Grid item={true} xs={12} md={6} className={classes.step}>
-        <div className={classes.stepWrapper}>
-          <Link className={classes.stepLink} to={breadCrumb.route}>
-            {breadCrumb.title}
-          </Link>
-          <span className={classes.stepLinkSeparator}>{'>'}</span>
-          {entityName || step.subtitle}
+        <div className={classes.stepInner}>
+          <div className={classes.stepWrapper}>
+            <Link className={classes.stepLink} to={breadCrumb.route}>
+              {breadCrumb.title}
+            </Link>
+            <span className={classes.stepLinkSeparator}>{'>'}</span>
+            {entityName || step.subtitle}
+          </div>
+          <MenuIcon onClick={openDrawer} className={classes.drawerIcon} />
         </div>
+
         <Typography className={classes.title} color="primary" align="left" component="h1" variant="h5">
           {`${step.order + 1}. ${step?.title}`}
         </Typography>

@@ -247,7 +247,7 @@ export const GeneralInformationLabelRules: IFormRules = {
     required: true,
   },
   ccv: {
-    required: false,
+    required: true,
   },
   regionId: {
     required: true,
@@ -356,7 +356,7 @@ export const GeneralInformationApprovalRules: IFormRules = {
     rules: [],
   },
   ccv: {
-    required: false,
+    required: true,
     rules: [],
   },
   regionId: {

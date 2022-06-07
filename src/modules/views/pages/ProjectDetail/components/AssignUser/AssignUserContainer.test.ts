@@ -20,6 +20,7 @@ describe('AssignUserContainer', () => {
       loading: undefined,
       assignLoading: undefined,
       saveUserLoading: undefined,
+      groupList: [],
     });
   });
 
@@ -34,6 +35,7 @@ describe('AssignUserContainer', () => {
       saveUser: expect.any(Function),
       clearErrors: expect.any(Function),
       fetchProjectClientList: expect.any(Function),
+      fetchGroupSearch: expect.any(Function),
     });
   });
 

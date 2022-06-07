@@ -279,33 +279,33 @@ describe('ClientWizard Component', () => {
     expect(props.saveClient).not.toHaveBeenCalled();
   });
 
-  it('should show validations when save invalid users data', () => {
-    (useParams as any).mockImplementation(() => ({ id: getClient_1().id, step: 'users' }));
-    props.loading = { isLoading: false, hasError: true, error: {} };
-    const wrapper = render(
-      <Provider store={createMockStore(getInitialState()) as any}>
-        <MemoryRouter>
-          <ClientWizard {...props} />
-        </MemoryRouter>
-      </Provider>
-    );
+  // it('should show validations when save invalid users data', () => {
+  //   (useParams as any).mockImplementation(() => ({ id: getClient_1().id, step: 'users' }));
+  //   props.loading = { isLoading: false, hasError: true, error: {} };
+  //   const wrapper = render(
+  //     <Provider store={createMockStore(getInitialState()) as any}>
+  //       <MemoryRouter>
+  //         <ClientWizard {...props} />
+  //       </MemoryRouter>
+  //     </Provider>
+  //   );
 
-    const phoneInput: any = wrapper.getAllByTestId('office-user-phone')[0];
-    const mobileInput: any = wrapper.getAllByTestId('mobile-user-phone')[0];
+  //   const phoneInput: any = wrapper.getAllByTestId('office-user-phone')[0];
+  //   const mobileInput: any = wrapper.getAllByTestId('mobile-user-phone')[0];
 
-    act(() => {
-      fireEvent.change(phoneInput, { target: { name: 'officePhoneNumber', value: '+1 111' } });
-    });
-    act(() => {
-      fireEvent.change(mobileInput, { target: { name: 'mobilePhoneNumber', value: '+1 111' } });
-    });
-    act(() => {
-      fireEvent.click(wrapper.getByText('Save Changes'));
-    });
-    expect(wrapper.container).toMatchSnapshot();
-    expect(wrapper.getAllByText('The same Email Address cannot be used in different users.')[0]);
-    expect(props.saveClient).not.toHaveBeenCalled();
-  });
+  //   act(() => {
+  //     fireEvent.change(phoneInput, { target: { name: 'officePhoneNumber', value: '+1 111' } });
+  //   });
+  //   act(() => {
+  //     fireEvent.change(mobileInput, { target: { name: 'mobilePhoneNumber', value: '+1 111' } });
+  //   });
+  //   act(() => {
+  //     fireEvent.click(wrapper.getByText('Save Changes'));
+  //   });
+  //   expect(wrapper.container).toMatchSnapshot();
+  //   expect(wrapper.getAllByText('The same Email Address cannot be used in different users.')[0]);
+  //   expect(props.saveClient).not.toHaveBeenCalled();
+  // });
 
   it('should show validations when save invalid address', async () => {
     (useParams as any).mockImplementation(() => ({ id: getClient_4().id, step: 'addresses' }));
@@ -454,65 +454,65 @@ describe('ClientWizard Component', () => {
     expect(props.sendClientForApproval).toHaveBeenCalled();
   });
 
-  it('should update form with users', async () => {
-    (useParams as any).mockImplementation(() => ({ id: getClient_1().id, step: 'users' }));
-    props.clientMap[getClient_1().id] = {
-      ...getClient_1(),
-      billingAddress: getAddress_1(),
-      mwbeTypeId: '1',
-      users: [getUser_4(), getUser_5()],
-    };
-    const wrapper = render(
-      <Provider store={createMockStore(getInitialState()) as any}>
-        <MemoryRouter>
-          <ClientWizard {...props} />
-        </MemoryRouter>
-      </Provider>
-    );
+  // it('should update form with users', async () => {
+  //   (useParams as any).mockImplementation(() => ({ id: getClient_1().id, step: 'users' }));
+  //   props.clientMap[getClient_1().id] = {
+  //     ...getClient_1(),
+  //     billingAddress: getAddress_1(),
+  //     mwbeTypeId: '1',
+  //     users: [getUser_4(), getUser_5()],
+  //   };
+  //   const wrapper = render(
+  //     <Provider store={createMockStore(getInitialState()) as any}>
+  //       <MemoryRouter>
+  //         <ClientWizard {...props} />
+  //       </MemoryRouter>
+  //     </Provider>
+  //   );
 
-    const nameInput: any = wrapper.getAllByTestId('user-first-name')[0];
-    const mobileNumber: any = wrapper.getAllByTestId('mobile-user-phone')[0];
-    const mobileNumberTwo: any = wrapper.getAllByTestId('mobile-user-phone')[1];
+  //   const nameInput: any = wrapper.getAllByTestId('user-first-name')[0];
+  //   const mobileNumber: any = wrapper.getAllByTestId('mobile-user-phone')[0];
+  //   const mobileNumberTwo: any = wrapper.getAllByTestId('mobile-user-phone')[1];
 
-    await act(async () => {
-      await fireEvent.change(nameInput, { target: { name: 'firstName', value: 'some value' } });
-      await fireEvent.change(mobileNumber, { target: { name: 'mobilePhoneNumber', value: null } });
-      await fireEvent.change(mobileNumberTwo, { target: { name: 'mobilePhoneNumber', value: null } });
-      await fireEvent.click(wrapper.getByText('Save Changes'));
-      expect(props.updateClient).toHaveBeenCalledWith({
-        ...getClient_1(),
-        billingAddress: {
-          line1: '21 Street',
-          line2: 'Apt 3',
-          city: 'Dallas',
-          stateCode: 'TX',
-          zipCode: '12345',
-          latitude: 1234,
-          longitude: 5678,
-          countryId: getCountry_1().id,
-          stateName: null,
-        },
-        taxpayerIdentificationNumber: 'LOZG-780211-7B9',
-        mwbeTypeId: '1',
-        trades: ['1', '2'],
-        users: [
-          {
-            ...getUser_4(),
-            firstName: 'some value',
-            mobilePhoneNumber: null,
-            officePhoneExtension: null,
-            officePhoneNumber: null,
-          },
-          {
-            ...getUser_5(),
-            mobilePhoneNumber: null,
-            officePhoneExtension: null,
-            officePhoneNumber: null,
-          },
-        ],
-      });
-    });
-  });
+  //   await act(async () => {
+  //     await fireEvent.change(nameInput, { target: { name: 'firstName', value: 'some value' } });
+  //     await fireEvent.change(mobileNumber, { target: { name: 'mobilePhoneNumber', value: null } });
+  //     await fireEvent.change(mobileNumberTwo, { target: { name: 'mobilePhoneNumber', value: null } });
+  //     await fireEvent.click(wrapper.getByText('Save Changes'));
+  //     expect(props.updateClient).toHaveBeenCalledWith({
+  //       ...getClient_1(),
+  //       billingAddress: {
+  //         line1: '21 Street',
+  //         line2: 'Apt 3',
+  //         city: 'Dallas',
+  //         stateCode: 'TX',
+  //         zipCode: '12345',
+  //         latitude: 1234,
+  //         longitude: 5678,
+  //         countryId: getCountry_1().id,
+  //         stateName: null,
+  //       },
+  //       taxpayerIdentificationNumber: 'LOZG-780211-7B9',
+  //       mwbeTypeId: '1',
+  //       trades: ['1', '2'],
+  //       users: [
+  //         {
+  //           ...getUser_4(),
+  //           firstName: 'some value',
+  //           mobilePhoneNumber: null,
+  //           officePhoneExtension: null,
+  //           officePhoneNumber: null,
+  //         },
+  //         {
+  //           ...getUser_5(),
+  //           mobilePhoneNumber: null,
+  //           officePhoneExtension: null,
+  //           officePhoneNumber: null,
+  //         },
+  //       ],
+  //     });
+  //   });
+  // });
 
   it('should render dialog when moves step without saving changes', async () => {
     const wrapper = render(
@@ -604,19 +604,19 @@ describe('ClientWizard Component', () => {
     expect(wrapper.getByText('Mailing Address'));
   });
 
-  it('should render users form', () => {
-    (useParams as any).mockImplementation(() => ({ id: getClient_1().id, step: 'users' }));
-    const wrapper = render(
-      <Provider store={createMockStore(getInitialState()) as any}>
-        <MemoryRouter>
-          <ClientWizard {...props} />
-        </MemoryRouter>
-      </Provider>
-    );
+  // it('should render users form', () => {
+  //   (useParams as any).mockImplementation(() => ({ id: getClient_1().id, step: 'users' }));
+  //   const wrapper = render(
+  //     <Provider store={createMockStore(getInitialState()) as any}>
+  //       <MemoryRouter>
+  //         <ClientWizard {...props} />
+  //       </MemoryRouter>
+  //     </Provider>
+  //   );
 
-    expect(wrapper.container).toMatchSnapshot();
-    expect(wrapper.getByText('Add Users')).toBeTruthy();
-  });
+  //   expect(wrapper.container).toMatchSnapshot();
+  //   expect(wrapper.getByText('Add Users')).toBeTruthy();
+  // });
 
   it('should change state', async () => {
     (useParams as any).mockImplementation(() => ({ id: getClient_1().id, step: 'addresses' }));
@@ -682,23 +682,23 @@ describe('ClientWizard Component', () => {
     expect(wrapper.container).toMatchSnapshot();
   });
 
-  it('should render previous user', () => {
-    (useParams as any).mockImplementation(() => ({ id: getClient_1().id, step: 'users' }));
-    props.clientMap[getClient_1().id] = {
-      ...getClient_1(),
-      users: [getUser_1()],
-    };
+  // it('should render previous user', () => {
+  //   (useParams as any).mockImplementation(() => ({ id: getClient_1().id, step: 'users' }));
+  //   props.clientMap[getClient_1().id] = {
+  //     ...getClient_1(),
+  //     users: [getUser_1()],
+  //   };
 
-    const wrapper = render(
-      <Provider store={createMockStore(getInitialState()) as any}>
-        <MemoryRouter>
-          <ClientWizard {...props} />
-        </MemoryRouter>
-      </Provider>
-    );
+  //   const wrapper = render(
+  //     <Provider store={createMockStore(getInitialState()) as any}>
+  //       <MemoryRouter>
+  //         <ClientWizard {...props} />
+  //       </MemoryRouter>
+  //     </Provider>
+  //   );
 
-    expect(wrapper.container).toMatchSnapshot();
-  });
+  //   expect(wrapper.container).toMatchSnapshot();
+  // });
 
   it('should render review', () => {
     (useParams as any).mockImplementation(() => ({ id: getClient_1().id, step: 'review' }));

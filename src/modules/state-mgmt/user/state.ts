@@ -8,6 +8,7 @@ export interface IState {
   accountData: UserModel.IAccount;
   email: string;
   count: number;
+  groupList: string[];
 }
 
 export const initialState: IState = {
@@ -18,4 +19,5 @@ export const initialState: IState = {
   accountData: null,
   email: null,
   count: null,
+  groupList: [],
 };

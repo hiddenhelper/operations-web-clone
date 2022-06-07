@@ -1,7 +1,7 @@
 import React, { memo, useCallback, useEffect, useMemo, useState } from 'react';
 import Wizard from '../containers/Wizard';
 import { ROUTES, GENERAL } from '../../../../../constants';
-import { ProjectNewModel, GeneralModel, AddressModel, FileModel, ConsentFormModel } from 'modules/models';
+import { ProjectNewModel, GeneralModel, AddressModel, FileModel, ConsentFormModel, ResourceModel } from 'modules/models';
 import { sanitizeProject } from 'utils/projectUtils';
 import { useNavigator } from 'utils/useNavigator';
 import ProjectForm from './ProjectForm';
@@ -21,6 +21,8 @@ export interface IProjectWizardProps {
   uploadBadgesLoading: GeneralModel.ILoadingStatus;
   fileMap: GeneralModel.IEntityMap<GeneralModel.IEntityMap<FileModel.IFile>>;
   consentFormFields: ConsentFormModel.IConsentFormField[];
+  sendForApprovalLoading: GeneralModel.ILoadingStatus;
+  approveLoading: GeneralModel.ILoadingStatus;
   fetchCategoryList: () => void;
   fetchCertificationList: () => void;
   fetchNaeList: () => void;
@@ -32,6 +34,8 @@ export interface IProjectWizardProps {
   updateDraftProject: (project: Partial<ProjectNewModel.IProject>) => void;
   addProjectBadges: (id: string, files: string[]) => void;
   clearFileMap: () => void;
+  sendProjectForApproval: (id: string) => void;
+  approveProject: (id: string) => void;
 }
 
 const ProjectWizard = ({
@@ -46,6 +50,8 @@ const ProjectWizard = ({
   fileMap,
   consentFormFields,
   uploadBadgesLoading,
+  sendForApprovalLoading,
+  approveLoading,
   fetchCategoryList,
   fetchCertificationList,
   fetchNaeList,
@@ -57,6 +63,8 @@ const ProjectWizard = ({
   updateDraftProject,
   addProjectBadges,
   clearFileMap,
+  sendProjectForApproval,
+  approveProject,
 }: IProjectWizardProps) => {
   const { id, step, entityId, currentEntity, currentStepKey, currentStep, setStep } = useNavigator<ProjectNewModel.IProject>({
     entityMap: projectMap,
@@ -73,6 +81,10 @@ const ProjectWizard = ({
       ((uploadBadgesLoading && !uploadBadgesLoading.isLoading && !uploadBadgesLoading.hasError) || !uploadBadgesLoading),
     [loading, uploadBadgesLoading]
   );
+  const isNavigationTopLoading = useMemo(() => (sendForApprovalLoading && sendForApprovalLoading.isLoading) || (approveLoading && approveLoading.isLoading), [
+    approveLoading,
+    sendForApprovalLoading,
+  ]);
   const [inProgress, setInProgress] = useState<boolean>(false);
   const loadingError = useMemo(() => loading && loading.error && loading.error.errors, [loading]);
   const isValidForNavigation = useMemo(() => !loading || (loading && !loading.isLoading && !inProgress), [loading, inProgress]);
@@ -144,6 +156,10 @@ const ProjectWizard = ({
     };
     return getCompletedStepFields(updatedProjectStepMap, currentEntity);
   }, [currentEntity]);
+
+  const readyForApprove = useMemo(() => {
+    return !inProgress && !Object.keys(completedFields).some(stepFields => completedFields[stepFields].required > completedFields[stepFields].completed);
+  }, [completedFields, inProgress]);
 
   useEffect(() => {
     /* istanbul ignore else */
@@ -244,6 +260,14 @@ const ProjectWizard = ({
     [currentEntity]
   );
 
+  const onSendForApprovalHandler = useCallback(() => {
+    if (currentEntity.status === ResourceModel.Status.DRAFT) {
+      sendProjectForApproval(currentEntity.id);
+    } else {
+      approveProject(currentEntity.id);
+    }
+  }, [sendProjectForApproval, approveProject, currentEntity]);
+
   useEffect(() => {
     if (
       inProgress &&
@@ -266,12 +290,22 @@ const ProjectWizard = ({
     <Wizard
       route="/projects/wizard-new"
       isValidForNavigation={isValidForNavigation}
+      completedFieldMap={completedFields}
       navigationProps={{ id, step, entityId, currentEntity, currentStepKey, currentStep, setStep }}
       handleSave={handleSave}
       deps={onLoadDeps}
+      status={ResourceModel.statusMap[currentEntity.status]}
+      isConfirmEnabled={readyForApprove}
       onLoad={onLoadHandler}
       fallback={ProjectNewModel.getFallbackProject()}
-      renderNavigator={({ hasChanges, onNextStep, onPrevStep, onDiscard, onSave }) => {
+      isLoading={isNavigationTopLoading}
+      breadCrumb={{
+        route: ROUTES.PROJECT_LIST.path,
+        title: 'Project',
+        pluralTitle: 'Projects',
+      }}
+      onConfirm={onSendForApprovalHandler}
+      renderNavigator={({ hasChanges, onNextStep, onPrevStep, onDiscard, onSave, openDrawer }) => {
         return (
           <Header
             entityName={currentEntity.name}
@@ -287,10 +321,11 @@ const ProjectWizard = ({
             onNextStep={onNextStep}
             onPrevStep={onPrevStep}
             loadSuccess={loadedSuccessful}
+            openDrawer={openDrawer}
           />
         );
       }}
-      renderForm={({ model, formRules, errors, onChangeStep, onChange, update, setReviewMode, resetErrors, setHasChanges }) => {
+      renderForm={({ model, formRules, errors, onChangeStep, onChange, update, resetErrors, setHasChanges }) => {
         return (
           <ProjectForm
             model={model}
@@ -305,7 +340,6 @@ const ProjectWizard = ({
             certificationList={certificationList}
             fileMap={fileMap}
             consentFormFields={consentFormFields}
-            setReviewMode={setReviewMode}
             onChangeStep={onChangeStep}
             update={update}
             onChange={onChange}

@@ -64,9 +64,25 @@ export const useStyles = makeStyles(theme =>
     },
     modalWrapper: {
       '& .MuiPaper-root': {
+        marginLeft: '110px',
         maxWidth: '1220px',
-        width: '100%',
-        minWidth: '72.5%',
+        '@media (max-width:600px)': {
+          marginLeft: '32px !important',
+        },
+      },
+    },
+    assignSubModalContentWrapper: {
+      display: 'flex',
+      flexDirection: 'column',
+      alignItems: 'center',
+    },
+    modalInput: {
+      width: '300px',
+      '& .MuiPaper-root': {
+        marginLeft: '0px !important',
+      },
+      '@media (max-width:600px)': {
+        width: '200px',
       },
     },
     dialogPaper: {

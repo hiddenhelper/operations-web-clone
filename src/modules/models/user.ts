@@ -105,16 +105,16 @@ export const userInviteList = [
     label: userInviteMap[InviteType.DO_NOT_INVITE],
     value: InviteType.DO_NOT_INVITE,
   },
-  {
-    label: userInviteMap[InviteType.CLIENT_ADMIN],
-    value: InviteType.CLIENT_ADMIN,
-  },
-  {
-    label: userInviteMap[InviteType.REGULAR_USER],
-    value: InviteType.REGULAR_USER,
-  },
-  {
-    label: userInviteMap[InviteType.ON_SITE_REPRESENTATIVE],
-    value: InviteType.ON_SITE_REPRESENTATIVE,
-  },
+  // {
+  //   label: userInviteMap[InviteType.CLIENT_ADMIN],
+  //   value: InviteType.CLIENT_ADMIN,
+  // },
+  // {
+  //   label: userInviteMap[InviteType.REGULAR_USER],
+  //   value: InviteType.REGULAR_USER,
+  // },
+  // {
+  //   label: userInviteMap[InviteType.ON_SITE_REPRESENTATIVE],
+  //   value: InviteType.ON_SITE_REPRESENTATIVE,
+  // },
 ];

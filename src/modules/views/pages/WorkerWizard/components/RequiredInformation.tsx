@@ -70,7 +70,8 @@ const RequiredInformation = ({
   const mobileCondition = useMemo(() => model.inviteMethod === WorkerModel.InviteMethod.MOBILE_PHONE || bothCondition, [model.inviteMethod, bothCondition]);
   const [canEditEmail, setCanEditEmail] = useState(!isEdit);
   const [canEditMobile, setCanEditMobile] = useState(!isEdit);
-  const canEditInviteMethod = useMemo(() => model.invitationStatus === WorkerModel.WorkerStatus.MIGRATED || !isEdit, [model.invitationStatus, isEdit]);
+  // const canEditInviteMethod = useMemo(() => model.invitationStatus === WorkerModel.WorkerStatus.MIGRATED || !isEdit, [model.invitationStatus, isEdit]);
+  const canEditInviteMethod = true;
 
   useEffect(() => {
     setCanEditEmail(canEditInviteMethod || !emailCondition);

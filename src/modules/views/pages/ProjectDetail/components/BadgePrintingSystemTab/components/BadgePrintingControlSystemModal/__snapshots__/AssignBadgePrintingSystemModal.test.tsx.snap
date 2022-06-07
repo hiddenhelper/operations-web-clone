@@ -8,7 +8,7 @@ exports[`AssignBadgePrintingSystemModal should render 1`] = `
     aria-hidden="true"
   />
   <div
-    class="MuiDialog-root makeStyles-root-254 makeStyles-modalWrapper-156 "
+    class="MuiDialog-root makeStyles-root-258 makeStyles-modalWrapper-158 "
     data-testid="modal-dialog"
     role="presentation"
     style="position: fixed; z-index: 1000; right: 0px; bottom: 0px; top: 0px; left: 0px;"
@@ -31,28 +31,28 @@ exports[`AssignBadgePrintingSystemModal should render 1`] = `
       <div
         aria-describedby="scroll-dialog-description"
         aria-labelledby="scroll-dialog-title"
-        class="MuiPaper-root MuiDialog-paper makeStyles-dialogPaper-157 MuiDialog-paperScrollPaper MuiDialog-paperWidthSm MuiPaper-elevation24 MuiPaper-rounded"
+        class="MuiPaper-root MuiDialog-paper makeStyles-dialogPaper-161 MuiDialog-paperScrollPaper MuiDialog-paperWidthSm MuiPaper-elevation24 MuiPaper-rounded"
         role="dialog"
       >
         <div
-          class="MuiDialogTitle-root makeStyles-titleContainer-144"
+          class="MuiDialogTitle-root makeStyles-titleContainer-146"
           id="alert-dialog-title"
         >
           <h1
-            class="MuiTypography-root makeStyles-title-244 MuiTypography-h6 MuiTypography-colorSecondary MuiTypography-alignLeft"
+            class="MuiTypography-root makeStyles-title-248 MuiTypography-h6 MuiTypography-colorSecondary MuiTypography-alignLeft"
           >
             Assign BPS
           </h1>
         </div>
         <div
-          class="MuiDialogContent-root makeStyles-tableWrapper-205  makeStyles-tableBackground-208 makeStyles-assignTableSpacing-158 MuiDialogContent-dividers"
+          class="MuiDialogContent-root makeStyles-tableWrapper-209  makeStyles-tableBackground-212 makeStyles-assignTableSpacing-162 MuiDialogContent-dividers"
         >
           <div>
             <div
-              class="MuiBox-root MuiBox-root-279 makeStyles-filterStatusContainer-186 makeStyles-filterStatusSpaced-187 makeStyles-filterAssignSpacing-146"
+              class="MuiBox-root MuiBox-root-283 makeStyles-filterStatusContainer-190 makeStyles-filterStatusSpaced-191 makeStyles-filterAssignSpacing-148"
             >
               <div
-                class="MuiFormControl-root MuiTextField-root makeStyles-searchInput-176 makeStyles-searchSvg-177"
+                class="MuiFormControl-root MuiTextField-root makeStyles-searchInput-180 makeStyles-searchSvg-181"
                 data-testid="assign-search-wrapper"
               >
                 <div
@@ -73,11 +73,11 @@ exports[`AssignBadgePrintingSystemModal should render 1`] = `
                   />
                   <fieldset
                     aria-hidden="true"
-                    class="PrivateNotchedOutline-root-280 MuiOutlinedInput-notchedOutline"
+                    class="PrivateNotchedOutline-root-284 MuiOutlinedInput-notchedOutline"
                     style="padding-left: 8px;"
                   >
                     <legend
-                      class="PrivateNotchedOutline-legend-281"
+                      class="PrivateNotchedOutline-legend-285"
                       style="width: 0.01px;"
                     >
                       <span>
@@ -88,19 +88,19 @@ exports[`AssignBadgePrintingSystemModal should render 1`] = `
                 </div>
               </div>
               <div
-                class="makeStyles-assignFilters-149"
+                class="makeStyles-assignFilters-151"
               >
                 <div
-                  class="makeStyles-filterElement-150"
+                  class="makeStyles-filterElement-152"
                 >
                   <p
-                    class="MuiTypography-root makeStyles-filterTextColor-151 MuiTypography-body1"
+                    class="MuiTypography-root makeStyles-filterTextColor-153 MuiTypography-body1"
                   >
                     Show 
                     all
                   </p>
                   <span
-                    class="makeStyles-dropdownIcon-228 makeStyles-boldFilter-152"
+                    class="makeStyles-dropdownIcon-232 makeStyles-boldFilter-154"
                   >
                     <div>
                       <button
@@ -119,7 +119,7 @@ exports[`AssignBadgePrintingSystemModal should render 1`] = `
                   </span>
                 </div>
                 <div
-                  class="makeStyles-boldFilter-152 makeStyles-filterTextColor-151"
+                  class="makeStyles-boldFilter-154 makeStyles-filterTextColor-153"
                 >
                   16
                    BPS. 
@@ -130,7 +130,7 @@ exports[`AssignBadgePrintingSystemModal should render 1`] = `
             </div>
           </div>
           <div
-            class="makeStyles-assignSkeletonWrapper-162"
+            class="makeStyles-assignSkeletonWrapper-166"
           >
             <table
               aria-label="badgePrintingSystem-list"
@@ -178,25 +178,25 @@ exports[`AssignBadgePrintingSystemModal should render 1`] = `
                 class="MuiTableBody-root"
               >
                 <tr
-                  class="MuiTableRow-root WithStyles(ForwardRef(TableRow))-root-366"
+                  class="MuiTableRow-root WithStyles(ForwardRef(TableRow))-root-370"
                   data-testid="assign-list-row"
                 >
                   <td
                     class="MuiTableCell-root MuiTableCell-body"
                   >
                     <div
-                      class="makeStyles-tableColoredEllipsis-209 makeStyles-assignNameLeftSpace-304"
+                      class="makeStyles-tableColoredEllipsis-213 makeStyles-assignNameLeftSpace-308"
                     >
                       <span
                         aria-disabled="false"
-                        class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-369 MuiCheckbox-root MuiCheckbox-colorSecondary MuiIconButton-colorSecondary"
+                        class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-373 MuiCheckbox-root MuiCheckbox-colorSecondary MuiIconButton-colorSecondary"
                         data-testid="multiple-checkbox"
                       >
                         <span
                           class="MuiIconButton-label"
                         >
                           <input
-                            class="PrivateSwitchBase-input-372"
+                            class="PrivateSwitchBase-input-376"
                             data-indeterminate="false"
                             name="badgePrintingSystem"
                             type="checkbox"
@@ -204,7 +204,7 @@ exports[`AssignBadgePrintingSystemModal should render 1`] = `
                           />
                           <svg
                             aria-hidden="true"
-                            class="MuiSvgIcon-root makeStyles-iconRoot-367 "
+                            class="MuiSvgIcon-root makeStyles-iconRoot-371 "
                             focusable="false"
                             viewBox="0 0 24 24"
                           >
@@ -246,7 +246,7 @@ exports[`AssignBadgePrintingSystemModal should render 1`] = `
                         class="react-datepicker__input-container"
                       >
                         <div
-                          class="MuiFormControl-root MuiTextField-root makeStyles-datePicker-358 makeStyles-adornmentStart-361 makeStyles-leftInput-363 makeStyles-adornmentEnd-362 makeStyles-baseInput-364 makeStyles-datePickerInline-321"
+                          class="MuiFormControl-root MuiTextField-root makeStyles-datePicker-362 makeStyles-adornmentStart-365 makeStyles-leftInput-367 makeStyles-adornmentEnd-366 makeStyles-baseInput-368 makeStyles-datePickerInline-325"
                           data-testid="keyboard-date-picker"
                         >
                           <div
@@ -268,11 +268,11 @@ exports[`AssignBadgePrintingSystemModal should render 1`] = `
                             />
                             <fieldset
                               aria-hidden="true"
-                              class="PrivateNotchedOutline-root-280 MuiOutlinedInput-notchedOutline"
+                              class="PrivateNotchedOutline-root-284 MuiOutlinedInput-notchedOutline"
                               style="padding-left: 8px;"
                             >
                               <legend
-                                class="PrivateNotchedOutline-legend-281"
+                                class="PrivateNotchedOutline-legend-285"
                                 style="width: 0.01px;"
                               >
                                 <span>
@@ -287,25 +287,25 @@ exports[`AssignBadgePrintingSystemModal should render 1`] = `
                   </td>
                 </tr>
                 <tr
-                  class="MuiTableRow-root WithStyles(ForwardRef(TableRow))-root-366"
+                  class="MuiTableRow-root WithStyles(ForwardRef(TableRow))-root-370"
                   data-testid="assign-list-row"
                 >
                   <td
                     class="MuiTableCell-root MuiTableCell-body"
                   >
                     <div
-                      class="makeStyles-tableColoredEllipsis-209 makeStyles-assignNameLeftSpace-304"
+                      class="makeStyles-tableColoredEllipsis-213 makeStyles-assignNameLeftSpace-308"
                     >
                       <span
                         aria-disabled="false"
-                        class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-369 MuiCheckbox-root MuiCheckbox-colorSecondary MuiIconButton-colorSecondary"
+                        class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-373 MuiCheckbox-root MuiCheckbox-colorSecondary MuiIconButton-colorSecondary"
                         data-testid="multiple-checkbox"
                       >
                         <span
                           class="MuiIconButton-label"
                         >
                           <input
-                            class="PrivateSwitchBase-input-372"
+                            class="PrivateSwitchBase-input-376"
                             data-indeterminate="false"
                             name="badgePrintingSystem"
                             type="checkbox"
@@ -313,7 +313,7 @@ exports[`AssignBadgePrintingSystemModal should render 1`] = `
                           />
                           <svg
                             aria-hidden="true"
-                            class="MuiSvgIcon-root makeStyles-iconRoot-367 "
+                            class="MuiSvgIcon-root makeStyles-iconRoot-371 "
                             focusable="false"
                             viewBox="0 0 24 24"
                           >
@@ -355,7 +355,7 @@ exports[`AssignBadgePrintingSystemModal should render 1`] = `
                         class="react-datepicker__input-container"
                       >
                         <div
-                          class="MuiFormControl-root MuiTextField-root makeStyles-datePicker-358 makeStyles-adornmentStart-361 makeStyles-leftInput-363 makeStyles-adornmentEnd-362 makeStyles-baseInput-364 makeStyles-datePickerInline-321"
+                          class="MuiFormControl-root MuiTextField-root makeStyles-datePicker-362 makeStyles-adornmentStart-365 makeStyles-leftInput-367 makeStyles-adornmentEnd-366 makeStyles-baseInput-368 makeStyles-datePickerInline-325"
                           data-testid="keyboard-date-picker"
                         >
                           <div
@@ -377,11 +377,11 @@ exports[`AssignBadgePrintingSystemModal should render 1`] = `
                             />
                             <fieldset
                               aria-hidden="true"
-                              class="PrivateNotchedOutline-root-280 MuiOutlinedInput-notchedOutline"
+                              class="PrivateNotchedOutline-root-284 MuiOutlinedInput-notchedOutline"
                               style="padding-left: 8px;"
                             >
                               <legend
-                                class="PrivateNotchedOutline-legend-281"
+                                class="PrivateNotchedOutline-legend-285"
                                 style="width: 0.01px;"
                               >
                                 <span>
@@ -396,25 +396,25 @@ exports[`AssignBadgePrintingSystemModal should render 1`] = `
                   </td>
                 </tr>
                 <tr
-                  class="MuiTableRow-root WithStyles(ForwardRef(TableRow))-root-366"
+                  class="MuiTableRow-root WithStyles(ForwardRef(TableRow))-root-370"
                   data-testid="assign-list-row"
                 >
                   <td
                     class="MuiTableCell-root MuiTableCell-body"
                   >
                     <div
-                      class="makeStyles-tableColoredEllipsis-209 makeStyles-assignNameLeftSpace-304"
+                      class="makeStyles-tableColoredEllipsis-213 makeStyles-assignNameLeftSpace-308"
                     >
                       <span
                         aria-disabled="false"
-                        class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-369 MuiCheckbox-root MuiCheckbox-colorSecondary MuiIconButton-colorSecondary"
+                        class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-373 MuiCheckbox-root MuiCheckbox-colorSecondary MuiIconButton-colorSecondary"
                         data-testid="multiple-checkbox"
                       >
                         <span
                           class="MuiIconButton-label"
                         >
                           <input
-                            class="PrivateSwitchBase-input-372"
+                            class="PrivateSwitchBase-input-376"
                             data-indeterminate="false"
                             name="badgePrintingSystem"
                             type="checkbox"
@@ -422,7 +422,7 @@ exports[`AssignBadgePrintingSystemModal should render 1`] = `
                           />
                           <svg
                             aria-hidden="true"
-                            class="MuiSvgIcon-root makeStyles-iconRoot-367 "
+                            class="MuiSvgIcon-root makeStyles-iconRoot-371 "
                             focusable="false"
                             viewBox="0 0 24 24"
                           >
@@ -464,7 +464,7 @@ exports[`AssignBadgePrintingSystemModal should render 1`] = `
                         class="react-datepicker__input-container"
                       >
                         <div
-                          class="MuiFormControl-root MuiTextField-root makeStyles-datePicker-358 makeStyles-adornmentStart-361 makeStyles-leftInput-363 makeStyles-adornmentEnd-362 makeStyles-baseInput-364 makeStyles-datePickerInline-321"
+                          class="MuiFormControl-root MuiTextField-root makeStyles-datePicker-362 makeStyles-adornmentStart-365 makeStyles-leftInput-367 makeStyles-adornmentEnd-366 makeStyles-baseInput-368 makeStyles-datePickerInline-325"
                           data-testid="keyboard-date-picker"
                         >
                           <div
@@ -486,11 +486,11 @@ exports[`AssignBadgePrintingSystemModal should render 1`] = `
                             />
                             <fieldset
                               aria-hidden="true"
-                              class="PrivateNotchedOutline-root-280 MuiOutlinedInput-notchedOutline"
+                              class="PrivateNotchedOutline-root-284 MuiOutlinedInput-notchedOutline"
                               style="padding-left: 8px;"
                             >
                               <legend
-                                class="PrivateNotchedOutline-legend-281"
+                                class="PrivateNotchedOutline-legend-285"
                                 style="width: 0.01px;"
                               >
                                 <span>
@@ -508,7 +508,7 @@ exports[`AssignBadgePrintingSystemModal should render 1`] = `
             </table>
             <nav
               aria-label="pagination navigation"
-              class="MuiPagination-root makeStyles-assignPagination-165 makeStyles-pagination-373"
+              class="MuiPagination-root makeStyles-assignPagination-169 makeStyles-pagination-377"
               data-testid="pagination"
             >
               <ul
@@ -601,10 +601,10 @@ exports[`AssignBadgePrintingSystemModal should render 1`] = `
           </div>
         </div>
         <div
-          class="MuiDialogActions-root makeStyles-buttonsContainer-159 MuiDialogActions-spacing"
+          class="MuiDialogActions-root makeStyles-buttonsContainer-163 MuiDialogActions-spacing"
         >
           <button
-            class="MuiButtonBase-root MuiButton-root MuiButton-text makeStyles-closeButton-160 makeStyles-boldButton-161 MuiButton-textPrimary"
+            class="MuiButtonBase-root MuiButton-root MuiButton-text makeStyles-closeButton-164 makeStyles-boldButton-165 MuiButton-textPrimary"
             data-testid="assign-btn-close"
             tabindex="0"
             type="button"
@@ -619,7 +619,7 @@ exports[`AssignBadgePrintingSystemModal should render 1`] = `
             />
           </button>
           <button
-            class="MuiButtonBase-root MuiButton-root MuiButton-contained false makeStyles-saveButton-153 makeStyles-assignButtonWidth-154 makeStyles-assignButtonRightSpace-155 MuiButton-containedPrimary Mui-disabled Mui-disabled"
+            class="MuiButtonBase-root MuiButton-root MuiButton-contained false makeStyles-saveButton-155 makeStyles-assignButtonWidth-156 makeStyles-assignButtonRightSpace-157 MuiButton-containedPrimary Mui-disabled Mui-disabled"
             data-testid="assign-btn-confirm"
             disabled=""
             tabindex="-1"
@@ -629,7 +629,7 @@ exports[`AssignBadgePrintingSystemModal should render 1`] = `
               class="MuiButton-label"
             >
               <span
-                class="makeStyles-textWrapper-376"
+                class="makeStyles-textWrapper-380"
               >
                 Assign
               </span>

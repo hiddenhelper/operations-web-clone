@@ -2,7 +2,7 @@ import React, { memo, useCallback, useMemo, useState } from 'react';
 import { Divider } from '@material-ui/core';
 import FormControlLabel from '@material-ui/core/FormControlLabel';
 import Locations from './components/Locations';
-import AddressForm from 'modules/views/shared/ResourceManagement/AddressForm';
+import AddressForm from './components/AddressForm';
 import Card from 'modules/views/shared/ResourceManagement/Card';
 import Checkbox from 'modules/views/shared/FormHandler/Checkbox';
 import ControlledSelect from 'modules/views/shared/FormHandler/ControlledSelect';

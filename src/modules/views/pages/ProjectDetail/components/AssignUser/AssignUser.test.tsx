@@ -413,62 +413,62 @@ describe('AssignUser', () => {
       expect(queryByTestId('search-filter')).toBeTruthy();
     });
 
-    it('should create user', async () => {
-      const { getByTestId, getByText, debug } = render(
-        <Provider store={createMockStore(getInitialState()) as any}>
-          <MemoryRouter>
-            <AssignUser {...props} />
-          </MemoryRouter>
-        </Provider>
-      );
+    // it('should create user', async () => {
+    //   const { getByTestId, getByText, debug } = render(
+    //     <Provider store={createMockStore(getInitialState()) as any}>
+    //       <MemoryRouter>
+    //         <AssignUser {...props} />
+    //       </MemoryRouter>
+    //     </Provider>
+    //   );
 
-      await act(async () => {
-        await fireEvent.click(getByTestId('tab-create-new-btn'));
-      });
+    //   await act(async () => {
+    //     await fireEvent.click(getByTestId('tab-create-new-btn'));
+    //   });
 
-      act(() => {
-        fireEvent.change(getByTestId('user-first-name'), { target: { name: 'firstName', value: 'firstName' } });
-      });
-      act(() => {
-        fireEvent.change(getByTestId('user-last-name'), { target: { name: 'lastName', value: 'lastName' } });
-      });
-      act(() => {
-        fireEvent.change(getByTestId('user-email'), { target: { name: 'email', value: 'email@test.com' } });
-      });
-      act(() => {
-        fireEvent.change(getByTestId('user-title'), { target: { name: 'title', value: 'title' } });
-      });
-      act(() => {
-        fireEvent.change(getByTestId('mobile-user-phone'), { target: { name: 'mobilePhoneNumber', value: '+17323283234' } });
-      });
+    //   act(() => {
+    //     fireEvent.change(getByTestId('user-first-name'), { target: { name: 'firstName', value: 'firstName' } });
+    //   });
+    //   act(() => {
+    //     fireEvent.change(getByTestId('user-last-name'), { target: { name: 'lastName', value: 'lastName' } });
+    //   });
+    //   act(() => {
+    //     fireEvent.change(getByTestId('user-email'), { target: { name: 'email', value: 'email@test.com' } });
+    //   });
+    //   act(() => {
+    //     fireEvent.change(getByTestId('user-title'), { target: { name: 'title', value: 'title' } });
+    //   });
+    //   act(() => {
+    //     fireEvent.change(getByTestId('mobile-user-phone'), { target: { name: 'mobilePhoneNumber', value: '+17323283234' } });
+    //   });
 
-      act(() => {
-        fireEvent.mouseDown(getByText('Select Option'));
-      });
+    //   act(() => {
+    //     fireEvent.mouseDown(getByText('Select Option'));
+    //   });
 
-      act(() => {
-        fireEvent.click(getByText('Robert C. Martin'));
-      });
+    //   act(() => {
+    //     fireEvent.click(getByText('Robert C. Martin'));
+    //   });
 
-      await act(async () => {
-        await fireEvent.click(getByTestId('create-user-btn'));
-      });
+    //   await act(async () => {
+    //     await fireEvent.click(getByTestId('create-user-btn'));
+    //   });
 
-      expect(props.saveUser).toHaveBeenCalledWith(getClient_1().id, {
-        companyId: null,
-        email: 'email@test.com',
-        firstName: 'firstName',
-        id: undefined,
-        invitationType: 0,
-        lastName: 'lastName',
-        mobilePhoneNumber: '+17323283234',
-        officePhoneExtension: null,
-        officePhoneNumber: null,
-        preferredContactMethod: 0,
-        title: 'title',
-        assignClient: getClient_1().id,
-      });
-    });
+    //   expect(props.saveUser).toHaveBeenCalledWith(getClient_1().id, {
+    //     companyId: null,
+    //     email: 'email@test.com',
+    //     firstName: 'firstName',
+    //     id: undefined,
+    //     invitationType: 0,
+    //     lastName: 'lastName',
+    //     mobilePhoneNumber: '+17323283234',
+    //     officePhoneExtension: null,
+    //     officePhoneNumber: null,
+    //     preferredContactMethod: 0,
+    //     title: 'title',
+    //     assignClient: getClient_1().id,
+    //   });
+    // });
 
     it('should show validation', () => {
       const { getByTestId } = render(

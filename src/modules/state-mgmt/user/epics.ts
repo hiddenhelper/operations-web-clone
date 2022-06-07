@@ -112,6 +112,22 @@ export const fetchRoleListStart: Epic<IAction, IAction, IRootState, IEpicDepende
     )
   );
 
+export const fetchGroupSearchStart: Epic<IAction, IAction, IRootState, IEpicDependencies> = (action$, state$, deps) =>
+  action$.pipe(
+    ofType(ActionType.FETCH_GROUP_SEARCH_START),
+    mergeMap(({ payload }) =>
+      concat(
+        of(generalState.actions.setLoading(GENERAL.LOADING_KEY.FETCH_GROUP_SEARCH_LIST, true)),
+        deps.apiService.getGroupList(payload.query).pipe(map(res => actions.fetchGroupSearchSuccess(res))),
+        of(generalState.actions.setLoading(GENERAL.LOADING_KEY.FETCH_GROUP_SEARCH_LIST, false))
+      ).pipe(
+        catchError(error =>
+          of(coreState.actions.epicError(error), generalState.actions.setLoading(GENERAL.LOADING_KEY.FETCH_GROUP_SEARCH_LIST, false, true, error))
+        )
+      )
+    )
+  );
+
 export const saveUserStart: Epic<IAction, IAction, IRootState, IEpicDependencies> = (action$, state$, deps) =>
   action$.pipe(
     ofType(ActionType.SAVE_USER_START),
@@ -235,6 +251,7 @@ export const epics = [
   resetPassword,
   fetchClientUserListStart,
   fetchProjectUserListStart,
+  fetchGroupSearchStart,
   fetchUserProjectStart,
   fetchRoleListStart,
   saveUserStart,

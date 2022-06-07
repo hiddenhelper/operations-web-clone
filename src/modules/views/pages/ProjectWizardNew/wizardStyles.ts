@@ -41,10 +41,20 @@ export const useStyles = makeStyles(theme =>
       maxWidth: '100%',
     },
     processWrapper: {
-      maxWidth: `${toREM(321)}`,
-      width: '100%',
-      right: '0',
       backgroundColor: STYLE.COLOR.WHITE,
+      borderLeft: `1px solid ${STYLE.COLOR.LIGHT_GRAY3}`,
+      padding: 33,
+
+      [theme.breakpoints.down('sm')]: {
+        display: 'none',
+      },
+    },
+    sideNavigationWrapper: {
+      width: '75vw',
+      maxWidth: '400px',
+      backgroundColor: STYLE.COLOR.WHITE,
+      borderLeft: `1px solid ${STYLE.COLOR.LIGHT_GRAY3}`,
+      padding: 33,
     },
     selectLabelGeneral: {
       position: 'relative',
@@ -85,6 +95,16 @@ export const useStyles = makeStyles(theme =>
       lineHeight: '28px',
       color: STYLE.COLOR.LIGHT_GRAY2,
     },
+    stepInner: {
+      display: 'flex',
+      justifyContent: 'space-between',
+      alignItems: 'center',
+    },
+    drawerIcon: {
+      [theme.breakpoints.up('md')]: {
+        display: 'none',
+      },
+    },
     stepWrapper: {
       top: '4px',
       position: 'relative',
@@ -94,17 +114,7 @@ export const useStyles = makeStyles(theme =>
       color: STYLE.COLOR.ACCENT_SECONDARY,
       whiteSpace: 'nowrap',
       overflow: 'hidden',
-      width: '70vw',
       textOverflow: 'ellipsis',
-      maxWidth: '75vw',
-
-      [theme.breakpoints.down('lg')]: {
-        width: '60vw',
-      },
-
-      [theme.breakpoints.down('md')]: {
-        width: '40vw',
-      },
       '& a': {
         textDecoration: 'none',
       },
@@ -236,6 +246,32 @@ export const useStyles = makeStyles(theme =>
       borderLeft: `1px solid ${STYLE.COLOR.LIGHT_GRAY3}`,
       height: '100%',
       backgroundColor: STYLE.COLOR.WHITE,
+    },
+    rightSidebar: {
+      width: '100%',
+      fontSize: STYLE.FONT.SIZE.PARAGRAPH_BIG,
+      color: STYLE.COLOR.SECONDARY_DARKER,
+      display: 'flex',
+      alignItems: 'center',
+      justifyContent: 'center',
+      flexDirection: 'column',
+    },
+    rightSidebarStatus: {
+      fontWeight: 600,
+      position: 'relative',
+      bottom: '7px',
+    },
+    approveButton: {
+      height: `${toREM(50)}`,
+      fontSize: `${toREM(STYLE.FONT.SIZE.PARAGRAPH)}`,
+      borderRadius: '3px',
+      textTransform: 'none',
+      fontWeight: 600,
+
+      '& .MuiButton-label': {
+        position: 'relative',
+        top: '1px',
+      },
     },
   })
 );

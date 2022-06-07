@@ -49,6 +49,8 @@ export interface IAssignUserProps {
   assignUser: (id: string, list: ProjectModel.IProjectAssignUser[]) => void;
   saveUser: (companyId: string, user: UserModel.IUser) => void;
   fetchProjectClientList?: (id: string, query: GeneralModel.IQueryParams) => void;
+  fetchGroupSearch: (searchRequest: any) => void;
+  groupList: any;
 }
 
 interface ISelectedState {
@@ -77,6 +79,8 @@ const AssignUser = ({
   fetchClientList,
   clearErrors,
   fetchProjectClientList,
+  fetchGroupSearch,
+  groupList,
 }: IAssignUserProps) => {
   const classes = useStyles();
   const tableGlobalClasses = tableGlobalStyles();
@@ -377,6 +381,8 @@ const AssignUser = ({
               clientMap={clientMap}
               saveUser={saveUser}
               changeAssignTab={onAssignList}
+              fetchGroupSearch={fetchGroupSearch}
+              groupList={groupList}
             />
           )}
         </>

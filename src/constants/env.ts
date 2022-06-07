@@ -8,6 +8,7 @@ export const ENV = {
   IS_PROD: config.REACT_APP_ENV === 'stage' || config.REACT_APP_ENV === 'production',
   API: {
     URL: config.REACT_APP_API_URL,
+    SECURITY_URL: config.REACT_APP_SECURITY_API_URL,
     MAX_RETRIES: 3,
     RETRY_TIMEOUT: 1000,
   },

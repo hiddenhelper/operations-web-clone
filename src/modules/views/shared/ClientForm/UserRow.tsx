@@ -1,9 +1,9 @@
-import React, { memo, useCallback } from 'react';
+import React, { useEffect, memo, useCallback, useState } from 'react';
 
 import IconButton from '@material-ui/core/IconButton';
 import TextField from '@material-ui/core/TextField';
 import Grid from '@material-ui/core/Grid';
-import Typography from '@material-ui/core/Typography';
+// import Typography from '@material-ui/core/Typography';
 
 import { UserModel, GeneralModel } from '../../../models';
 import { LANG, DeleteIcon } from '../../../../constants';
@@ -33,6 +33,9 @@ export interface IUsersProps {
   user: UserModel.IUser;
   updateRules?: (s: IFormRules | ((p: IFormRules) => IFormRules)) => void;
   formRules?: IFormRules;
+  companyId?: string;
+  fetchGroupSearch?: (searchRequest: any) => void;
+  groupList?: any;
 }
 
 const UserRow = ({
@@ -49,11 +52,15 @@ const UserRow = ({
   user,
   updateRules,
   formRules,
+  companyId,
+  fetchGroupSearch,
+  groupList,
 }: IUsersProps) => {
+  const [userInviteGroupList, setUserInviteGroupList] = useState(UserModel.userInviteList);
   const formClasses = formGlobalStyles();
   const buttonGlobalStyles = buttonStyles();
   const onChangeHandler = useCallback(event => onChange({ ...user, [event.target.name]: event.target.value }, index), [index, user, onChange]);
-  const onChangeNumber = useCallback(/* istanbul ignore next */ event => onChange({ ...user, [event.target.name]: parseInt(event.target.value, 10) }, index), [
+  const onChangeNumber = useCallback(/* istanbul ignore next */ event => onChange({ ...user, [event.target.name]: event.target.value }, index), [
     index,
     user,
     onChange,
@@ -76,6 +83,42 @@ const UserRow = ({
     },
     [index, user, onChange, updateRules]
   );
+
+  useEffect(() => {
+    if (groupList && groupList.length) {
+      const dropdownList = groupList.map(group => {
+        return {
+          ...group,
+          label: group.name,
+          value: group.id,
+        };
+      });
+      setUserInviteGroupList([...UserModel.userInviteList, ...dropdownList]);
+      return;
+    }
+
+    setUserInviteGroupList(UserModel.userInviteList);
+  }, [groupList]);
+
+  useEffect(() => {
+    if (!companyId) return;
+
+    let searchRequest = {
+      paging: {
+        clientSidePagination: true,
+      },
+      expand: ['company', 'metadata', 'parentGroup'],
+      searchParameters: [
+        {
+          field: 'companyId',
+          operator: 'equals',
+          value: companyId,
+        },
+      ],
+    };
+
+    fetchGroupSearch(searchRequest);
+  }, [companyId]);
 
   return (
     <Grid data-testid="user-row-item" container={true} className={`${formClasses.formWrapper} ${isListItem ? formClasses.rowsWrapper : ''}`}>
@@ -190,7 +233,7 @@ const UserRow = ({
                       label=""
                       name="invitationType"
                       value={user.invitationType || UserModel.InviteType.DO_NOT_INVITE}
-                      options={UserModel.userInviteList}
+                      options={userInviteGroupList}
                       error={!!getErrors('invitationType', index)}
                       onChange={onChangeNumber}
                     />
@@ -199,7 +242,7 @@ const UserRow = ({
               </Grid>
               <Grid item={true} xs={4} lg={4} className={formClasses.errorPosition}>
                 <div className={formClasses.invitationWrapper}>
-                  {user.invitationType !== UserModel.InviteType.DO_NOT_INVITE && <Typography>{LANG.EN.INVITE_MESSAGE}</Typography>}
+                  {/* {user.invitationType !== UserModel.InviteType.DO_NOT_INVITE && <Typography>{LANG.EN.INVITE_MESSAGE}</Typography>} */}
                 </div>
               </Grid>
             </>

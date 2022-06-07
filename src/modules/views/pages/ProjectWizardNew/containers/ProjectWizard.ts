@@ -32,6 +32,8 @@ const mapDispatchToProps = {
   addProjectBadges: projectNewState.actions.addProjectBadgesStart,
   clearFileMap: fileState.actions.clearMap,
   fetchConsentFormFields: projectNewState.actions.fetchConsentFormFieldsStart,
+  approveProject: projectNewState.actions.approveProjectStart,
+  sendProjectForApproval: projectNewState.actions.sendApproveProjectStart,
 };
 
 export default connect(mapStateToProps, mapDispatchToProps)(ProjectWizard);

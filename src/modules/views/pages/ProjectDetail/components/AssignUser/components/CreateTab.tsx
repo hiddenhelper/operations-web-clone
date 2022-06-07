@@ -26,9 +26,11 @@ export interface ICreateTabProps {
   saveUserLoading: GeneralModel.ILoadingStatus;
   changeAssignTab: () => void;
   saveUser: (companyId: string, user: UserModel.IUser) => void;
+  fetchGroupSearch: (searchRequest: any) => void;
+  groupList: any;
 }
 
-const CreateTab = ({ userRole, userCompanyId, clientMap, saveUserLoading, changeAssignTab, saveUser }: ICreateTabProps) => {
+const CreateTab = ({ userRole, userCompanyId, clientMap, saveUserLoading, changeAssignTab, saveUser, fetchGroupSearch, groupList }: ICreateTabProps) => {
   const classes = useStyles();
   const assignModalClasses = AssignModalStyles();
   const buttonClasses = buttonStyles();
@@ -96,7 +98,17 @@ const CreateTab = ({ userRole, userCompanyId, clientMap, saveUserLoading, change
         </div>
       )}
       <div className={classes.createUserRowWrapper}>
-        <UserRow user={model} index={0} showDeleteButton={false} hideDeleteContainer={true} getErrors={getErrors} onChange={onChange} />
+        <UserRow
+          user={model}
+          index={0}
+          showDeleteButton={false}
+          hideDeleteContainer={true}
+          getErrors={getErrors}
+          onChange={onChange}
+          fetchGroupSearch={fetchGroupSearch}
+          companyId={model.assignClient}
+          groupList={groupList}
+        />
       </div>
       <ButtonLoader
         className={`${buttonClasses.saveButton} ${assignModalClasses.assignButtonWidth} ${classes.noMargin} ${classes.createUserButtonPosition}`}

@@ -31,7 +31,6 @@ export interface IReviewProps {
   regionList?: GeneralModel.INamedEntity[];
   fcaNaeList?: GeneralModel.INamedEntity[];
   edit?: boolean;
-  setReviewMode: (reviewMode: boolean) => void;
   onChangeStep?: (key: string) => void;
   editAction?: (step: string) => void;
   paymentMethods?: PaymentModel.IPaymentMethod[];
@@ -50,7 +49,6 @@ const Review = ({
   fcaNaeList = [],
   edit = false,
   showAssignClient = true,
-  setReviewMode,
   onChangeStep,
   editAction,
   projectMap,
@@ -205,10 +203,6 @@ const Review = ({
       )),
     [cardGlobalClasses]
   );
-
-  useEffect(() => {
-    setReviewMode(true);
-  }, [setReviewMode]);
 
   useEffect(() => {
     autocompleteService.init({}).then(() => {

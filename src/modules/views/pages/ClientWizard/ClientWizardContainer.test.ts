@@ -12,9 +12,10 @@ describe('ClientWizardContainer', () => {
       mwbeList: [],
       tradeList: [],
       loading: undefined,
-      sendClientForApprovalLoading: undefined,
+      sendForApprovalLoading: undefined,
       approveLoading: undefined,
       countryList: [],
+      groupList: [],
     });
   });
   it('should mapDispatchToProps', () => {
@@ -30,6 +31,7 @@ describe('ClientWizardContainer', () => {
       clearErrors: expect.any(Function),
       approveClient: expect.any(Function),
       clearClientMap: expect.any(Function),
+      fetchGroupSearch: expect.any(Function),
     });
   });
 

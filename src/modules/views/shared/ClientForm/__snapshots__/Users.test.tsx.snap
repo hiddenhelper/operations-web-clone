@@ -1470,7 +1470,9 @@ exports[`Users Form should return field errors 1`] = `
                       role="button"
                       tabindex="0"
                     >
-                      Client Admin
+                      <span>
+                        ​
+                      </span>
                     </div>
                     <input
                       aria-hidden="true"
@@ -1513,13 +1515,7 @@ exports[`Users Form should return field errors 1`] = `
           >
             <div
               class="makeStyles-invitationWrapper-728"
-            >
-              <p
-                class="MuiTypography-root MuiTypography-body1"
-              >
-                Invitation email will be sent once the Client creation gets approved
-              </p>
-            </div>
+            />
           </div>
           <div
             class="MuiGrid-root makeStyles-errorPosition-775 MuiGrid-item MuiGrid-grid-xs-4 MuiGrid-grid-lg-4"

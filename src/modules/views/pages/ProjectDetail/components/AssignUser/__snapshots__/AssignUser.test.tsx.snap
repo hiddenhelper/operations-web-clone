@@ -8,7 +8,7 @@ exports[`AssignUser assign tab should render 1`] = `
     aria-hidden="true"
   />
   <div
-    class="MuiDialog-root makeStyles-root-536 makeStyles-modalWrapper-432 "
+    class="MuiDialog-root makeStyles-root-542 makeStyles-modalWrapper-436 "
     data-testid="modal-dialog"
     role="presentation"
     style="position: fixed; z-index: 1000; right: 0px; bottom: 0px; top: 0px; left: 0px;"
@@ -31,28 +31,28 @@ exports[`AssignUser assign tab should render 1`] = `
       <div
         aria-describedby="scroll-dialog-description"
         aria-labelledby="scroll-dialog-title"
-        class="MuiPaper-root MuiDialog-paper makeStyles-dialogPaper-433 MuiDialog-paperScrollPaper MuiDialog-paperWidthSm MuiPaper-elevation24 MuiPaper-rounded"
+        class="MuiPaper-root MuiDialog-paper makeStyles-dialogPaper-439 MuiDialog-paperScrollPaper MuiDialog-paperWidthSm MuiPaper-elevation24 MuiPaper-rounded"
         role="dialog"
       >
         <div
-          class="MuiDialogTitle-root makeStyles-titleContainer-420"
+          class="MuiDialogTitle-root makeStyles-titleContainer-424"
           id="alert-dialog-title"
         >
           <h1
-            class="MuiTypography-root makeStyles-title-526 MuiTypography-h6 MuiTypography-colorSecondary MuiTypography-alignLeft"
+            class="MuiTypography-root makeStyles-title-532 MuiTypography-h6 MuiTypography-colorSecondary MuiTypography-alignLeft"
           >
             Assign User
           </h1>
         </div>
         <div
-          class="MuiDialogContent-root makeStyles-tableWrapper-452  makeStyles-tableBackground-455 makeStyles-assignTableSpacing-434 MuiDialogContent-dividers"
+          class="MuiDialogContent-root makeStyles-tableWrapper-458  makeStyles-tableBackground-461 makeStyles-assignTableSpacing-440 MuiDialogContent-dividers"
         >
           <div>
             <div
-              class="MuiBox-root MuiBox-root-561 makeStyles-filterStatusContainer-466 makeStyles-filterStatusSpaced-421 makeStyles-filterAssignSpacing-422"
+              class="MuiBox-root MuiBox-root-567 makeStyles-filterStatusContainer-472 makeStyles-filterStatusSpaced-425 makeStyles-filterAssignSpacing-426"
             >
               <div
-                class="MuiFormControl-root MuiTextField-root makeStyles-searchInput-491 makeStyles-searchSvg-492"
+                class="MuiFormControl-root MuiTextField-root makeStyles-searchInput-497 makeStyles-searchSvg-498"
                 data-testid="assign-search-wrapper"
               >
                 <div
@@ -73,11 +73,11 @@ exports[`AssignUser assign tab should render 1`] = `
                   />
                   <fieldset
                     aria-hidden="true"
-                    class="PrivateNotchedOutline-root-562 MuiOutlinedInput-notchedOutline"
+                    class="PrivateNotchedOutline-root-568 MuiOutlinedInput-notchedOutline"
                     style="padding-left: 8px;"
                   >
                     <legend
-                      class="PrivateNotchedOutline-legend-563"
+                      class="PrivateNotchedOutline-legend-569"
                       style="width: 0.01px;"
                     >
                       <span>
@@ -88,19 +88,19 @@ exports[`AssignUser assign tab should render 1`] = `
                 </div>
               </div>
               <div
-                class="makeStyles-assignFilters-425"
+                class="makeStyles-assignFilters-429"
               >
                 <div
-                  class="makeStyles-filterElement-426"
+                  class="makeStyles-filterElement-430"
                 >
                   <p
-                    class="MuiTypography-root makeStyles-filterTextColor-427 MuiTypography-body1"
+                    class="MuiTypography-root makeStyles-filterTextColor-431 MuiTypography-body1"
                   >
                     Show 
                     all
                   </p>
                   <span
-                    class="makeStyles-dropdownIcon-475 makeStyles-boldFilter-428"
+                    class="makeStyles-dropdownIcon-481 makeStyles-boldFilter-432"
                   >
                     <div>
                       <button
@@ -119,26 +119,26 @@ exports[`AssignUser assign tab should render 1`] = `
                   </span>
                 </div>
                 <hr
-                  class="MuiDivider-root makeStyles-dividerColor-476 MuiDivider-flexItem MuiDivider-vertical"
+                  class="MuiDivider-root makeStyles-dividerColor-482 MuiDivider-flexItem MuiDivider-vertical"
                 />
                 <div
-                  class="MuiBox-root MuiBox-root-566 makeStyles-filterStatusContainer-466 makeStyles-leftFilterStatusContainer-470 makeStyles-locationModalFilter-444"
+                  class="MuiBox-root MuiBox-root-572 makeStyles-filterStatusContainer-472 makeStyles-leftFilterStatusContainer-476 makeStyles-locationModalFilter-450"
                 >
                   <div
-                    class="MuiBox-root MuiBox-root-568 makeStyles-filterStatusContainer-466 makeStyles-autocompleteFilterPosition-567"
+                    class="MuiBox-root MuiBox-root-574 makeStyles-filterStatusContainer-472 makeStyles-autocompleteFilterPosition-573"
                   >
                     <div
-                      class="makeStyles-floatingFilterWrapper-472 makeStyles-filterWrapper-471 makeStyles-buttonContainer-570 floatingFilterWrapper"
+                      class="makeStyles-floatingFilterWrapper-478 makeStyles-filterWrapper-477 makeStyles-buttonContainer-576 floatingFilterWrapper"
                     >
                       <span
-                        class="makeStyles-floatingFilterButton-473"
+                        class="makeStyles-floatingFilterButton-479"
                         data-testid="controlled-button"
                         tabindex="-1"
                       >
                         <button
                           aria-controls="false"
                           aria-haspopup="true"
-                          class="MuiButtonBase-root MuiButton-root MuiButton-text makeStyles-buttonFilter-481"
+                          class="MuiButtonBase-root MuiButton-root MuiButton-text makeStyles-buttonFilter-487"
                           data-testid="button-filter-open"
                           tabindex="0"
                           type="button"
@@ -151,7 +151,7 @@ exports[`AssignUser assign tab should render 1`] = `
                               class="MuiButton-endIcon MuiButton-iconSizeMedium"
                             >
                               <svg
-                                class="makeStyles-dropdownIcon-475"
+                                class="makeStyles-dropdownIcon-481"
                               >
                                 expand.svg
                               </svg>
@@ -163,7 +163,7 @@ exports[`AssignUser assign tab should render 1`] = `
                   </div>
                 </div>
                 <div
-                  class="makeStyles-boldFilter-428 makeStyles-filterTextColor-427"
+                  class="makeStyles-boldFilter-432 makeStyles-filterTextColor-431"
                 >
                   16
                    Users. 
@@ -171,10 +171,10 @@ exports[`AssignUser assign tab should render 1`] = `
                    Selected
                 </div>
                 <div
-                  class="makeStyles-filterElement-426"
+                  class="makeStyles-filterElement-430"
                 >
                   <button
-                    class="MuiButtonBase-root MuiButton-root MuiButton-contained makeStyles-saveButton-499 makeStyles-assignButtonWidth-430 MuiButton-containedPrimary"
+                    class="MuiButtonBase-root MuiButton-root MuiButton-contained makeStyles-saveButton-505 makeStyles-assignButtonWidth-434 MuiButton-containedPrimary"
                     data-testid="tab-create-new-btn"
                     tabindex="0"
                     type="button"
@@ -193,7 +193,7 @@ exports[`AssignUser assign tab should render 1`] = `
             </div>
           </div>
           <div
-            class="makeStyles-assignSkeletonWrapper-438"
+            class="makeStyles-assignSkeletonWrapper-444"
           >
             <table
               aria-label="user-list"
@@ -210,25 +210,25 @@ exports[`AssignUser assign tab should render 1`] = `
                 class="MuiTableBody-root"
               >
                 <tr
-                  class="MuiTableRow-root WithStyles(ForwardRef(TableRow))-root-664"
+                  class="MuiTableRow-root WithStyles(ForwardRef(TableRow))-root-670"
                   data-testid="assign-list-row"
                 >
                   <td
-                    class="MuiTableCell-root MuiTableCell-body makeStyles-assignUserInitialCell-613"
+                    class="MuiTableCell-root MuiTableCell-body makeStyles-assignUserInitialCell-619"
                   >
                     <div
-                      class="makeStyles-tableEllipsis-458 makeStyles-assignNameLeftSpace-610"
+                      class="makeStyles-tableEllipsis-464 makeStyles-assignNameLeftSpace-616"
                     >
                       <span
                         aria-disabled="false"
-                        class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-667 MuiCheckbox-root MuiCheckbox-colorSecondary MuiIconButton-colorSecondary"
+                        class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-673 MuiCheckbox-root MuiCheckbox-colorSecondary MuiIconButton-colorSecondary"
                         data-testid="multiple-checkbox"
                       >
                         <span
                           class="MuiIconButton-label"
                         >
                           <input
-                            class="PrivateSwitchBase-input-670"
+                            class="PrivateSwitchBase-input-676"
                             data-indeterminate="false"
                             name="user"
                             type="checkbox"
@@ -236,7 +236,7 @@ exports[`AssignUser assign tab should render 1`] = `
                           />
                           <svg
                             aria-hidden="true"
-                            class="MuiSvgIcon-root makeStyles-iconRoot-665 "
+                            class="MuiSvgIcon-root makeStyles-iconRoot-671 "
                             focusable="false"
                             viewBox="0 0 24 24"
                           >
@@ -251,10 +251,10 @@ exports[`AssignUser assign tab should render 1`] = `
                       </span>
                        
                       <span
-                        class="MuiBadge-root makeStyles-avatarWithSmallBadge-576"
+                        class="MuiBadge-root makeStyles-avatarWithSmallBadge-582"
                       >
                         <div
-                          class="MuiAvatar-root MuiAvatar-circle makeStyles-avatarWrapper-574 makeStyles-avatarSecondaryMargin-575 MuiAvatar-colorDefault"
+                          class="MuiAvatar-root MuiAvatar-circle makeStyles-avatarWrapper-580 makeStyles-avatarSecondaryMargin-581 MuiAvatar-colorDefault"
                         >
                           <svg
                             class="MuiSvgIcon-root"
@@ -293,10 +293,10 @@ exports[`AssignUser assign tab should render 1`] = `
                     class="MuiTableCell-root MuiTableCell-body"
                   >
                     <div
-                      class="MuiFormControl-root makeStyles-formControl-673 makeStyles-minimalisticSelectWrapper-647 makeStyles-minimalisticSelect-493"
+                      class="MuiFormControl-root makeStyles-formControl-679 makeStyles-minimalisticSelectWrapper-653 makeStyles-minimalisticSelect-499"
                     >
                       <div
-                        class="MuiInputBase-root MuiInput-root MuiInput-underline   makeStyles-selectElement-674  MuiInputBase-fullWidth MuiInput-fullWidth MuiInputBase-formControl MuiInput-formControl"
+                        class="MuiInputBase-root MuiInput-root MuiInput-underline   makeStyles-selectElement-680  MuiInputBase-fullWidth MuiInput-fullWidth MuiInputBase-formControl MuiInput-formControl"
                         data-testid="user-role-select"
                       >
                         <div
@@ -331,25 +331,25 @@ exports[`AssignUser assign tab should render 1`] = `
                   </td>
                 </tr>
                 <tr
-                  class="MuiTableRow-root WithStyles(ForwardRef(TableRow))-root-664"
+                  class="MuiTableRow-root WithStyles(ForwardRef(TableRow))-root-670"
                   data-testid="assign-list-row"
                 >
                   <td
-                    class="MuiTableCell-root MuiTableCell-body makeStyles-assignUserInitialCell-613"
+                    class="MuiTableCell-root MuiTableCell-body makeStyles-assignUserInitialCell-619"
                   >
                     <div
-                      class="makeStyles-tableEllipsis-458 makeStyles-assignNameLeftSpace-610"
+                      class="makeStyles-tableEllipsis-464 makeStyles-assignNameLeftSpace-616"
                     >
                       <span
                         aria-disabled="false"
-                        class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-667 MuiCheckbox-root MuiCheckbox-colorSecondary MuiIconButton-colorSecondary"
+                        class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-673 MuiCheckbox-root MuiCheckbox-colorSecondary MuiIconButton-colorSecondary"
                         data-testid="multiple-checkbox"
                       >
                         <span
                           class="MuiIconButton-label"
                         >
                           <input
-                            class="PrivateSwitchBase-input-670"
+                            class="PrivateSwitchBase-input-676"
                             data-indeterminate="false"
                             name="user"
                             type="checkbox"
@@ -357,7 +357,7 @@ exports[`AssignUser assign tab should render 1`] = `
                           />
                           <svg
                             aria-hidden="true"
-                            class="MuiSvgIcon-root makeStyles-iconRoot-665 "
+                            class="MuiSvgIcon-root makeStyles-iconRoot-671 "
                             focusable="false"
                             viewBox="0 0 24 24"
                           >
@@ -372,10 +372,10 @@ exports[`AssignUser assign tab should render 1`] = `
                       </span>
                        
                       <span
-                        class="MuiBadge-root makeStyles-avatarWithSmallBadge-576"
+                        class="MuiBadge-root makeStyles-avatarWithSmallBadge-582"
                       >
                         <div
-                          class="MuiAvatar-root MuiAvatar-circle makeStyles-avatarWrapper-574 makeStyles-avatarSecondaryMargin-575 MuiAvatar-colorDefault"
+                          class="MuiAvatar-root MuiAvatar-circle makeStyles-avatarWrapper-580 makeStyles-avatarSecondaryMargin-581 MuiAvatar-colorDefault"
                         >
                           <svg
                             class="MuiSvgIcon-root"
@@ -414,10 +414,10 @@ exports[`AssignUser assign tab should render 1`] = `
                     class="MuiTableCell-root MuiTableCell-body"
                   >
                     <div
-                      class="MuiFormControl-root makeStyles-formControl-673 makeStyles-minimalisticSelectWrapper-647 makeStyles-minimalisticSelect-493"
+                      class="MuiFormControl-root makeStyles-formControl-679 makeStyles-minimalisticSelectWrapper-653 makeStyles-minimalisticSelect-499"
                     >
                       <div
-                        class="MuiInputBase-root MuiInput-root MuiInput-underline   makeStyles-selectElement-674  MuiInputBase-fullWidth MuiInput-fullWidth MuiInputBase-formControl MuiInput-formControl"
+                        class="MuiInputBase-root MuiInput-root MuiInput-underline   makeStyles-selectElement-680  MuiInputBase-fullWidth MuiInput-fullWidth MuiInputBase-formControl MuiInput-formControl"
                         data-testid="user-role-select"
                       >
                         <div
@@ -452,25 +452,25 @@ exports[`AssignUser assign tab should render 1`] = `
                   </td>
                 </tr>
                 <tr
-                  class="MuiTableRow-root WithStyles(ForwardRef(TableRow))-root-664"
+                  class="MuiTableRow-root WithStyles(ForwardRef(TableRow))-root-670"
                   data-testid="assign-list-row"
                 >
                   <td
-                    class="MuiTableCell-root MuiTableCell-body makeStyles-assignUserInitialCell-613"
+                    class="MuiTableCell-root MuiTableCell-body makeStyles-assignUserInitialCell-619"
                   >
                     <div
-                      class="makeStyles-tableEllipsis-458 makeStyles-assignNameLeftSpace-610"
+                      class="makeStyles-tableEllipsis-464 makeStyles-assignNameLeftSpace-616"
                     >
                       <span
                         aria-disabled="false"
-                        class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-667 MuiCheckbox-root MuiCheckbox-colorSecondary MuiIconButton-colorSecondary"
+                        class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-673 MuiCheckbox-root MuiCheckbox-colorSecondary MuiIconButton-colorSecondary"
                         data-testid="multiple-checkbox"
                       >
                         <span
                           class="MuiIconButton-label"
                         >
                           <input
-                            class="PrivateSwitchBase-input-670"
+                            class="PrivateSwitchBase-input-676"
                             data-indeterminate="false"
                             name="user"
                             type="checkbox"
@@ -478,7 +478,7 @@ exports[`AssignUser assign tab should render 1`] = `
                           />
                           <svg
                             aria-hidden="true"
-                            class="MuiSvgIcon-root makeStyles-iconRoot-665 "
+                            class="MuiSvgIcon-root makeStyles-iconRoot-671 "
                             focusable="false"
                             viewBox="0 0 24 24"
                           >
@@ -493,10 +493,10 @@ exports[`AssignUser assign tab should render 1`] = `
                       </span>
                        
                       <span
-                        class="MuiBadge-root makeStyles-avatarWithSmallBadge-576"
+                        class="MuiBadge-root makeStyles-avatarWithSmallBadge-582"
                       >
                         <div
-                          class="MuiAvatar-root MuiAvatar-circle makeStyles-avatarWrapper-574 makeStyles-avatarSecondaryMargin-575 MuiAvatar-colorDefault"
+                          class="MuiAvatar-root MuiAvatar-circle makeStyles-avatarWrapper-580 makeStyles-avatarSecondaryMargin-581 MuiAvatar-colorDefault"
                         >
                           <svg
                             class="MuiSvgIcon-root"
@@ -535,10 +535,10 @@ exports[`AssignUser assign tab should render 1`] = `
                     class="MuiTableCell-root MuiTableCell-body"
                   >
                     <div
-                      class="MuiFormControl-root makeStyles-formControl-673 makeStyles-minimalisticSelectWrapper-647 makeStyles-minimalisticSelect-493"
+                      class="MuiFormControl-root makeStyles-formControl-679 makeStyles-minimalisticSelectWrapper-653 makeStyles-minimalisticSelect-499"
                     >
                       <div
-                        class="MuiInputBase-root MuiInput-root MuiInput-underline   makeStyles-selectElement-674  MuiInputBase-fullWidth MuiInput-fullWidth MuiInputBase-formControl MuiInput-formControl"
+                        class="MuiInputBase-root MuiInput-root MuiInput-underline   makeStyles-selectElement-680  MuiInputBase-fullWidth MuiInput-fullWidth MuiInputBase-formControl MuiInput-formControl"
                         data-testid="user-role-select"
                       >
                         <div
@@ -576,7 +576,7 @@ exports[`AssignUser assign tab should render 1`] = `
             </table>
             <nav
               aria-label="pagination navigation"
-              class="MuiPagination-root  makeStyles-pagination-678"
+              class="MuiPagination-root  makeStyles-pagination-684"
               data-testid="pagination"
             >
               <ul
@@ -669,10 +669,10 @@ exports[`AssignUser assign tab should render 1`] = `
           </div>
         </div>
         <div
-          class="MuiDialogActions-root makeStyles-buttonsContainer-435 MuiDialogActions-spacing"
+          class="MuiDialogActions-root makeStyles-buttonsContainer-441 MuiDialogActions-spacing"
         >
           <button
-            class="MuiButtonBase-root MuiButton-root MuiButton-text makeStyles-closeButton-436 makeStyles-boldButton-437 MuiButton-textPrimary"
+            class="MuiButtonBase-root MuiButton-root MuiButton-text makeStyles-closeButton-442 makeStyles-boldButton-443 MuiButton-textPrimary"
             data-testid="assign-btn-close"
             tabindex="0"
             type="button"
@@ -687,7 +687,7 @@ exports[`AssignUser assign tab should render 1`] = `
             />
           </button>
           <button
-            class="MuiButtonBase-root MuiButton-root MuiButton-contained false makeStyles-saveButton-429 makeStyles-assignButtonWidth-430 makeStyles-assignButtonRightSpace-431 MuiButton-containedPrimary Mui-disabled Mui-disabled"
+            class="MuiButtonBase-root MuiButton-root MuiButton-contained false makeStyles-saveButton-433 makeStyles-assignButtonWidth-434 makeStyles-assignButtonRightSpace-435 MuiButton-containedPrimary Mui-disabled Mui-disabled"
             data-testid="assign-btn-confirm"
             disabled=""
             tabindex="-1"
@@ -697,7 +697,7 @@ exports[`AssignUser assign tab should render 1`] = `
               class="MuiButton-label"
             >
               <span
-                class="makeStyles-textWrapper-681"
+                class="makeStyles-textWrapper-687"
               >
                 Assign
               </span>

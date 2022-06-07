@@ -11,6 +11,7 @@ import CertificationsAndTrainings from './CertificationsAndTrainings';
 import BadgeConfiguration from './BadgeConfiguration';
 import WorkerConsentForm from './WorkerConsentForm';
 import { IFormRules } from 'utils/useValidator';
+import { useStyles } from '../wizardStyles';
 
 export interface IProjectFormProps {
   model: ProjectModel.IProject;
@@ -25,7 +26,6 @@ export interface IProjectFormProps {
   certificationList: GeneralModel.INamedEntity[];
   fileMap: GeneralModel.IEntityMap<GeneralModel.IEntityMap<FileModel.IFile>>;
   consentFormFields: ConsentFormModel.IConsentFormField[];
-  setReviewMode: (reviewMode: boolean) => void;
   onChangeStep: (key: string) => void;
   onChange: (model: ProjectModel.IProject) => void;
   update: (model: ProjectModel.IProject) => void;
@@ -46,15 +46,16 @@ const ProjectForm = ({
   certificationList,
   fileMap,
   consentFormFields,
-  setReviewMode,
   onChangeStep,
   update,
   onChange,
   resetErrors,
   setHasChanges,
 }: IProjectFormProps) => {
+  const classes = useStyles();
+
   return (
-    <>
+    <div className={classes.formContainer}>
       {currentStep.key === ProjectModel.ProjectStep.GENERAL_INFORMATION && <GeneralInformation model={model} errors={errors} onChange={onChange} />}
       {currentStep.key === ProjectModel.ProjectStep.ASSIGN_CLIENTS && (
         <Client currentStep={currentStep} errors={errors} relatedCompanies={model.relatedCompanies} onChange={onChange} update={update} />
@@ -88,10 +89,9 @@ const ProjectForm = ({
           fcaNaeList={fcaNaeList}
           completedFields={completedFields}
           onChangeStep={onChangeStep}
-          setReviewMode={setReviewMode}
         />
       )}
-    </>
+    </div>
   );
 };
 

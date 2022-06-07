@@ -453,7 +453,6 @@ exports[`WorkerWizard should clean otherPrimaryLanguage if primaryLanguage is di
                                 autocomplete="off"
                                 class=" form-control"
                                 data-testid="mobile-worker-phone"
-                                disabled=""
                                 name="mobilePhoneNumber"
                                 placeholder="+0 (000) 000-0000"
                                 required=""
@@ -571,12 +570,11 @@ exports[`WorkerWizard should clean otherPrimaryLanguage if primaryLanguage is di
                                   role="radiogroup"
                                 >
                                   <label
-                                    class="MuiFormControlLabel-root Mui-disabled"
+                                    class="MuiFormControlLabel-root"
                                   >
                                     <span
-                                      aria-disabled="true"
-                                      class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-3237 MuiRadio-root makeStyles-root-3231 PrivateSwitchBase-checked-3238 Mui-checked PrivateSwitchBase-disabled-3239 Mui-disabled Mui-disabled Mui-disabled"
-                                      tabindex="-1"
+                                      aria-disabled="false"
+                                      class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-3237 MuiRadio-root makeStyles-root-3231 PrivateSwitchBase-checked-3238 Mui-checked"
                                     >
                                       <span
                                         class="MuiIconButton-label"
@@ -585,29 +583,27 @@ exports[`WorkerWizard should clean otherPrimaryLanguage if primaryLanguage is di
                                           checked=""
                                           class="PrivateSwitchBase-input-3240"
                                           data-testid="controlled-radio-button"
-                                          disabled=""
                                           name="inviteMethod"
                                           type="radio"
                                           value="2"
                                         />
                                         <span
-                                          class="makeStyles-icon-3232 makeStyles-checkedIcon-3235 makeStyles-disabledIcon-3236"
+                                          class="makeStyles-icon-3232 makeStyles-checkedIcon-3235 "
                                         />
                                       </span>
                                     </span>
                                     <span
-                                      class="MuiTypography-root MuiFormControlLabel-label Mui-disabled MuiTypography-body1"
+                                      class="MuiTypography-root MuiFormControlLabel-label MuiTypography-body1"
                                     >
                                       Mobile phone
                                     </span>
                                   </label>
                                   <label
-                                    class="MuiFormControlLabel-root Mui-disabled"
+                                    class="MuiFormControlLabel-root"
                                   >
                                     <span
-                                      aria-disabled="true"
-                                      class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-3237 MuiRadio-root makeStyles-root-3231 PrivateSwitchBase-disabled-3239 Mui-disabled Mui-disabled Mui-disabled"
-                                      tabindex="-1"
+                                      aria-disabled="false"
+                                      class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-3237 MuiRadio-root makeStyles-root-3231"
                                     >
                                       <span
                                         class="MuiIconButton-label"
@@ -615,7 +611,6 @@ exports[`WorkerWizard should clean otherPrimaryLanguage if primaryLanguage is di
                                         <input
                                           class="PrivateSwitchBase-input-3240"
                                           data-testid="controlled-radio-button"
-                                          disabled=""
                                           name="inviteMethod"
                                           type="radio"
                                           value="1"
@@ -626,18 +621,17 @@ exports[`WorkerWizard should clean otherPrimaryLanguage if primaryLanguage is di
                                       </span>
                                     </span>
                                     <span
-                                      class="MuiTypography-root MuiFormControlLabel-label Mui-disabled MuiTypography-body1"
+                                      class="MuiTypography-root MuiFormControlLabel-label MuiTypography-body1"
                                     >
                                       Email
                                     </span>
                                   </label>
                                   <label
-                                    class="MuiFormControlLabel-root Mui-disabled"
+                                    class="MuiFormControlLabel-root"
                                   >
                                     <span
-                                      aria-disabled="true"
-                                      class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-3237 MuiRadio-root makeStyles-root-3231 PrivateSwitchBase-disabled-3239 Mui-disabled Mui-disabled Mui-disabled"
-                                      tabindex="-1"
+                                      aria-disabled="false"
+                                      class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-3237 MuiRadio-root makeStyles-root-3231"
                                     >
                                       <span
                                         class="MuiIconButton-label"
@@ -645,7 +639,6 @@ exports[`WorkerWizard should clean otherPrimaryLanguage if primaryLanguage is di
                                         <input
                                           class="PrivateSwitchBase-input-3240"
                                           data-testid="controlled-radio-button"
-                                          disabled=""
                                           name="inviteMethod"
                                           type="radio"
                                           value="3"
@@ -656,7 +649,7 @@ exports[`WorkerWizard should clean otherPrimaryLanguage if primaryLanguage is di
                                       </span>
                                     </span>
                                     <span
-                                      class="MuiTypography-root MuiFormControlLabel-label Mui-disabled MuiTypography-body1"
+                                      class="MuiTypography-root MuiFormControlLabel-label MuiTypography-body1"
                                     >
                                       Mobile Phone And Email
                                     </span>
@@ -3004,7 +2997,6 @@ exports[`WorkerWizard should close existing worker modal 1`] = `
                               autocomplete="off"
                               class=" form-control"
                               data-testid="mobile-worker-phone"
-                              disabled=""
                               name="mobilePhoneNumber"
                               placeholder="+0 (000) 000-0000"
                               required=""
@@ -3122,12 +3114,11 @@ exports[`WorkerWizard should close existing worker modal 1`] = `
                                 role="radiogroup"
                               >
                                 <label
-                                  class="MuiFormControlLabel-root Mui-disabled"
+                                  class="MuiFormControlLabel-root"
                                 >
                                   <span
-                                    aria-disabled="true"
-                                    class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-6006 MuiRadio-root makeStyles-root-6000 PrivateSwitchBase-checked-6007 Mui-checked PrivateSwitchBase-disabled-6008 Mui-disabled Mui-disabled Mui-disabled"
-                                    tabindex="-1"
+                                    aria-disabled="false"
+                                    class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-6006 MuiRadio-root makeStyles-root-6000 PrivateSwitchBase-checked-6007 Mui-checked"
                                   >
                                     <span
                                       class="MuiIconButton-label"
@@ -3136,29 +3127,27 @@ exports[`WorkerWizard should close existing worker modal 1`] = `
                                         checked=""
                                         class="PrivateSwitchBase-input-6009"
                                         data-testid="controlled-radio-button"
-                                        disabled=""
                                         name="inviteMethod"
                                         type="radio"
                                         value="2"
                                       />
                                       <span
-                                        class="makeStyles-icon-6001 makeStyles-checkedIcon-6004 makeStyles-disabledIcon-6005"
+                                        class="makeStyles-icon-6001 makeStyles-checkedIcon-6004 "
                                       />
                                     </span>
                                   </span>
                                   <span
-                                    class="MuiTypography-root MuiFormControlLabel-label Mui-disabled MuiTypography-body1"
+                                    class="MuiTypography-root MuiFormControlLabel-label MuiTypography-body1"
                                   >
                                     Mobile phone
                                   </span>
                                 </label>
                                 <label
-                                  class="MuiFormControlLabel-root Mui-disabled"
+                                  class="MuiFormControlLabel-root"
                                 >
                                   <span
-                                    aria-disabled="true"
-                                    class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-6006 MuiRadio-root makeStyles-root-6000 PrivateSwitchBase-disabled-6008 Mui-disabled Mui-disabled Mui-disabled"
-                                    tabindex="-1"
+                                    aria-disabled="false"
+                                    class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-6006 MuiRadio-root makeStyles-root-6000"
                                   >
                                     <span
                                       class="MuiIconButton-label"
@@ -3166,7 +3155,6 @@ exports[`WorkerWizard should close existing worker modal 1`] = `
                                       <input
                                         class="PrivateSwitchBase-input-6009"
                                         data-testid="controlled-radio-button"
-                                        disabled=""
                                         name="inviteMethod"
                                         type="radio"
                                         value="1"
@@ -3177,18 +3165,17 @@ exports[`WorkerWizard should close existing worker modal 1`] = `
                                     </span>
                                   </span>
                                   <span
-                                    class="MuiTypography-root MuiFormControlLabel-label Mui-disabled MuiTypography-body1"
+                                    class="MuiTypography-root MuiFormControlLabel-label MuiTypography-body1"
                                   >
                                     Email
                                   </span>
                                 </label>
                                 <label
-                                  class="MuiFormControlLabel-root Mui-disabled"
+                                  class="MuiFormControlLabel-root"
                                 >
                                   <span
-                                    aria-disabled="true"
-                                    class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-6006 MuiRadio-root makeStyles-root-6000 PrivateSwitchBase-disabled-6008 Mui-disabled Mui-disabled Mui-disabled"
-                                    tabindex="-1"
+                                    aria-disabled="false"
+                                    class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-6006 MuiRadio-root makeStyles-root-6000"
                                   >
                                     <span
                                       class="MuiIconButton-label"
@@ -3196,7 +3183,6 @@ exports[`WorkerWizard should close existing worker modal 1`] = `
                                       <input
                                         class="PrivateSwitchBase-input-6009"
                                         data-testid="controlled-radio-button"
-                                        disabled=""
                                         name="inviteMethod"
                                         type="radio"
                                         value="3"
@@ -3207,7 +3193,7 @@ exports[`WorkerWizard should close existing worker modal 1`] = `
                                     </span>
                                   </span>
                                   <span
-                                    class="MuiTypography-root MuiFormControlLabel-label Mui-disabled MuiTypography-body1"
+                                    class="MuiTypography-root MuiFormControlLabel-label MuiTypography-body1"
                                   >
                                     Mobile Phone And Email
                                   </span>
@@ -5504,7 +5490,6 @@ exports[`WorkerWizard should navigate to existing worker profile 1`] = `
                               autocomplete="off"
                               class=" form-control"
                               data-testid="mobile-worker-phone"
-                              disabled=""
                               name="mobilePhoneNumber"
                               placeholder="+0 (000) 000-0000"
                               required=""
@@ -5622,12 +5607,11 @@ exports[`WorkerWizard should navigate to existing worker profile 1`] = `
                                 role="radiogroup"
                               >
                                 <label
-                                  class="MuiFormControlLabel-root Mui-disabled"
+                                  class="MuiFormControlLabel-root"
                                 >
                                   <span
-                                    aria-disabled="true"
-                                    class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-5728 MuiRadio-root makeStyles-root-5722 PrivateSwitchBase-checked-5729 Mui-checked PrivateSwitchBase-disabled-5730 Mui-disabled Mui-disabled Mui-disabled"
-                                    tabindex="-1"
+                                    aria-disabled="false"
+                                    class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-5728 MuiRadio-root makeStyles-root-5722 PrivateSwitchBase-checked-5729 Mui-checked"
                                   >
                                     <span
                                       class="MuiIconButton-label"
@@ -5636,29 +5620,27 @@ exports[`WorkerWizard should navigate to existing worker profile 1`] = `
                                         checked=""
                                         class="PrivateSwitchBase-input-5731"
                                         data-testid="controlled-radio-button"
-                                        disabled=""
                                         name="inviteMethod"
                                         type="radio"
                                         value="2"
                                       />
                                       <span
-                                        class="makeStyles-icon-5723 makeStyles-checkedIcon-5726 makeStyles-disabledIcon-5727"
+                                        class="makeStyles-icon-5723 makeStyles-checkedIcon-5726 "
                                       />
                                     </span>
                                   </span>
                                   <span
-                                    class="MuiTypography-root MuiFormControlLabel-label Mui-disabled MuiTypography-body1"
+                                    class="MuiTypography-root MuiFormControlLabel-label MuiTypography-body1"
                                   >
                                     Mobile phone
                                   </span>
                                 </label>
                                 <label
-                                  class="MuiFormControlLabel-root Mui-disabled"
+                                  class="MuiFormControlLabel-root"
                                 >
                                   <span
-                                    aria-disabled="true"
-                                    class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-5728 MuiRadio-root makeStyles-root-5722 PrivateSwitchBase-disabled-5730 Mui-disabled Mui-disabled Mui-disabled"
-                                    tabindex="-1"
+                                    aria-disabled="false"
+                                    class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-5728 MuiRadio-root makeStyles-root-5722"
                                   >
                                     <span
                                       class="MuiIconButton-label"
@@ -5666,7 +5648,6 @@ exports[`WorkerWizard should navigate to existing worker profile 1`] = `
                                       <input
                                         class="PrivateSwitchBase-input-5731"
                                         data-testid="controlled-radio-button"
-                                        disabled=""
                                         name="inviteMethod"
                                         type="radio"
                                         value="1"
@@ -5677,18 +5658,17 @@ exports[`WorkerWizard should navigate to existing worker profile 1`] = `
                                     </span>
                                   </span>
                                   <span
-                                    class="MuiTypography-root MuiFormControlLabel-label Mui-disabled MuiTypography-body1"
+                                    class="MuiTypography-root MuiFormControlLabel-label MuiTypography-body1"
                                   >
                                     Email
                                   </span>
                                 </label>
                                 <label
-                                  class="MuiFormControlLabel-root Mui-disabled"
+                                  class="MuiFormControlLabel-root"
                                 >
                                   <span
-                                    aria-disabled="true"
-                                    class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-5728 MuiRadio-root makeStyles-root-5722 PrivateSwitchBase-disabled-5730 Mui-disabled Mui-disabled Mui-disabled"
-                                    tabindex="-1"
+                                    aria-disabled="false"
+                                    class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-5728 MuiRadio-root makeStyles-root-5722"
                                   >
                                     <span
                                       class="MuiIconButton-label"
@@ -5696,7 +5676,6 @@ exports[`WorkerWizard should navigate to existing worker profile 1`] = `
                                       <input
                                         class="PrivateSwitchBase-input-5731"
                                         data-testid="controlled-radio-button"
-                                        disabled=""
                                         name="inviteMethod"
                                         type="radio"
                                         value="3"
@@ -5707,7 +5686,7 @@ exports[`WorkerWizard should navigate to existing worker profile 1`] = `
                                     </span>
                                   </span>
                                   <span
-                                    class="MuiTypography-root MuiFormControlLabel-label Mui-disabled MuiTypography-body1"
+                                    class="MuiTypography-root MuiFormControlLabel-label MuiTypography-body1"
                                   >
                                     Mobile Phone And Email
                                   </span>
@@ -7981,7 +7960,6 @@ exports[`WorkerWizard should open existing worker modal 1`] = `
                               autocomplete="off"
                               class=" form-control"
                               data-testid="mobile-worker-phone"
-                              disabled=""
                               name="mobilePhoneNumber"
                               placeholder="+0 (000) 000-0000"
                               required=""
@@ -8099,12 +8077,11 @@ exports[`WorkerWizard should open existing worker modal 1`] = `
                                 role="radiogroup"
                               >
                                 <label
-                                  class="MuiFormControlLabel-root Mui-disabled"
+                                  class="MuiFormControlLabel-root"
                                 >
                                   <span
-                                    aria-disabled="true"
-                                    class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-5450 MuiRadio-root makeStyles-root-5444 PrivateSwitchBase-checked-5451 Mui-checked PrivateSwitchBase-disabled-5452 Mui-disabled Mui-disabled Mui-disabled"
-                                    tabindex="-1"
+                                    aria-disabled="false"
+                                    class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-5450 MuiRadio-root makeStyles-root-5444 PrivateSwitchBase-checked-5451 Mui-checked"
                                   >
                                     <span
                                       class="MuiIconButton-label"
@@ -8113,29 +8090,27 @@ exports[`WorkerWizard should open existing worker modal 1`] = `
                                         checked=""
                                         class="PrivateSwitchBase-input-5453"
                                         data-testid="controlled-radio-button"
-                                        disabled=""
                                         name="inviteMethod"
                                         type="radio"
                                         value="2"
                                       />
                                       <span
-                                        class="makeStyles-icon-5445 makeStyles-checkedIcon-5448 makeStyles-disabledIcon-5449"
+                                        class="makeStyles-icon-5445 makeStyles-checkedIcon-5448 "
                                       />
                                     </span>
                                   </span>
                                   <span
-                                    class="MuiTypography-root MuiFormControlLabel-label Mui-disabled MuiTypography-body1"
+                                    class="MuiTypography-root MuiFormControlLabel-label MuiTypography-body1"
                                   >
                                     Mobile phone
                                   </span>
                                 </label>
                                 <label
-                                  class="MuiFormControlLabel-root Mui-disabled"
+                                  class="MuiFormControlLabel-root"
                                 >
                                   <span
-                                    aria-disabled="true"
-                                    class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-5450 MuiRadio-root makeStyles-root-5444 PrivateSwitchBase-disabled-5452 Mui-disabled Mui-disabled Mui-disabled"
-                                    tabindex="-1"
+                                    aria-disabled="false"
+                                    class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-5450 MuiRadio-root makeStyles-root-5444"
                                   >
                                     <span
                                       class="MuiIconButton-label"
@@ -8143,7 +8118,6 @@ exports[`WorkerWizard should open existing worker modal 1`] = `
                                       <input
                                         class="PrivateSwitchBase-input-5453"
                                         data-testid="controlled-radio-button"
-                                        disabled=""
                                         name="inviteMethod"
                                         type="radio"
                                         value="1"
@@ -8154,18 +8128,17 @@ exports[`WorkerWizard should open existing worker modal 1`] = `
                                     </span>
                                   </span>
                                   <span
-                                    class="MuiTypography-root MuiFormControlLabel-label Mui-disabled MuiTypography-body1"
+                                    class="MuiTypography-root MuiFormControlLabel-label MuiTypography-body1"
                                   >
                                     Email
                                   </span>
                                 </label>
                                 <label
-                                  class="MuiFormControlLabel-root Mui-disabled"
+                                  class="MuiFormControlLabel-root"
                                 >
                                   <span
-                                    aria-disabled="true"
-                                    class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-5450 MuiRadio-root makeStyles-root-5444 PrivateSwitchBase-disabled-5452 Mui-disabled Mui-disabled Mui-disabled"
-                                    tabindex="-1"
+                                    aria-disabled="false"
+                                    class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-5450 MuiRadio-root makeStyles-root-5444"
                                   >
                                     <span
                                       class="MuiIconButton-label"
@@ -8173,7 +8146,6 @@ exports[`WorkerWizard should open existing worker modal 1`] = `
                                       <input
                                         class="PrivateSwitchBase-input-5453"
                                         data-testid="controlled-radio-button"
-                                        disabled=""
                                         name="inviteMethod"
                                         type="radio"
                                         value="3"
@@ -8184,7 +8156,7 @@ exports[`WorkerWizard should open existing worker modal 1`] = `
                                     </span>
                                   </span>
                                   <span
-                                    class="MuiTypography-root MuiFormControlLabel-label Mui-disabled MuiTypography-body1"
+                                    class="MuiTypography-root MuiFormControlLabel-label MuiTypography-body1"
                                   >
                                     Mobile Phone And Email
                                   </span>
@@ -10390,7 +10362,6 @@ exports[`WorkerWizard should open existing worker modal for client admin 1`] = `
                               autocomplete="off"
                               class=" form-control"
                               data-testid="mobile-worker-phone"
-                              disabled=""
                               name="mobilePhoneNumber"
                               placeholder="+0 (000) 000-0000"
                               required=""
@@ -10508,12 +10479,11 @@ exports[`WorkerWizard should open existing worker modal for client admin 1`] = `
                                 role="radiogroup"
                               >
                                 <label
-                                  class="MuiFormControlLabel-root Mui-disabled"
+                                  class="MuiFormControlLabel-root"
                                 >
                                   <span
-                                    aria-disabled="true"
-                                    class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-6279 MuiRadio-root makeStyles-root-6273 PrivateSwitchBase-checked-6280 Mui-checked PrivateSwitchBase-disabled-6281 Mui-disabled Mui-disabled Mui-disabled"
-                                    tabindex="-1"
+                                    aria-disabled="false"
+                                    class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-6279 MuiRadio-root makeStyles-root-6273 PrivateSwitchBase-checked-6280 Mui-checked"
                                   >
                                     <span
                                       class="MuiIconButton-label"
@@ -10522,29 +10492,27 @@ exports[`WorkerWizard should open existing worker modal for client admin 1`] = `
                                         checked=""
                                         class="PrivateSwitchBase-input-6282"
                                         data-testid="controlled-radio-button"
-                                        disabled=""
                                         name="inviteMethod"
                                         type="radio"
                                         value="2"
                                       />
                                       <span
-                                        class="makeStyles-icon-6274 makeStyles-checkedIcon-6277 makeStyles-disabledIcon-6278"
+                                        class="makeStyles-icon-6274 makeStyles-checkedIcon-6277 "
                                       />
                                     </span>
                                   </span>
                                   <span
-                                    class="MuiTypography-root MuiFormControlLabel-label Mui-disabled MuiTypography-body1"
+                                    class="MuiTypography-root MuiFormControlLabel-label MuiTypography-body1"
                                   >
                                     Mobile phone
                                   </span>
                                 </label>
                                 <label
-                                  class="MuiFormControlLabel-root Mui-disabled"
+                                  class="MuiFormControlLabel-root"
                                 >
                                   <span
-                                    aria-disabled="true"
-                                    class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-6279 MuiRadio-root makeStyles-root-6273 PrivateSwitchBase-disabled-6281 Mui-disabled Mui-disabled Mui-disabled"
-                                    tabindex="-1"
+                                    aria-disabled="false"
+                                    class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-6279 MuiRadio-root makeStyles-root-6273"
                                   >
                                     <span
                                       class="MuiIconButton-label"
@@ -10552,7 +10520,6 @@ exports[`WorkerWizard should open existing worker modal for client admin 1`] = `
                                       <input
                                         class="PrivateSwitchBase-input-6282"
                                         data-testid="controlled-radio-button"
-                                        disabled=""
                                         name="inviteMethod"
                                         type="radio"
                                         value="1"
@@ -10563,18 +10530,17 @@ exports[`WorkerWizard should open existing worker modal for client admin 1`] = `
                                     </span>
                                   </span>
                                   <span
-                                    class="MuiTypography-root MuiFormControlLabel-label Mui-disabled MuiTypography-body1"
+                                    class="MuiTypography-root MuiFormControlLabel-label MuiTypography-body1"
                                   >
                                     Email
                                   </span>
                                 </label>
                                 <label
-                                  class="MuiFormControlLabel-root Mui-disabled"
+                                  class="MuiFormControlLabel-root"
                                 >
                                   <span
-                                    aria-disabled="true"
-                                    class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-6279 MuiRadio-root makeStyles-root-6273 PrivateSwitchBase-disabled-6281 Mui-disabled Mui-disabled Mui-disabled"
-                                    tabindex="-1"
+                                    aria-disabled="false"
+                                    class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-6279 MuiRadio-root makeStyles-root-6273"
                                   >
                                     <span
                                       class="MuiIconButton-label"
@@ -10582,7 +10548,6 @@ exports[`WorkerWizard should open existing worker modal for client admin 1`] = `
                                       <input
                                         class="PrivateSwitchBase-input-6282"
                                         data-testid="controlled-radio-button"
-                                        disabled=""
                                         name="inviteMethod"
                                         type="radio"
                                         value="3"
@@ -10593,7 +10558,7 @@ exports[`WorkerWizard should open existing worker modal for client admin 1`] = `
                                     </span>
                                   </span>
                                   <span
-                                    class="MuiTypography-root MuiFormControlLabel-label Mui-disabled MuiTypography-body1"
+                                    class="MuiTypography-root MuiFormControlLabel-label MuiTypography-body1"
                                   >
                                     Mobile Phone And Email
                                   </span>
@@ -12799,7 +12764,6 @@ exports[`WorkerWizard should open existing worker modal for regular user 1`] = `
                               autocomplete="off"
                               class=" form-control"
                               data-testid="mobile-worker-phone"
-                              disabled=""
                               name="mobilePhoneNumber"
                               placeholder="+0 (000) 000-0000"
                               required=""
@@ -12917,12 +12881,11 @@ exports[`WorkerWizard should open existing worker modal for regular user 1`] = `
                                 role="radiogroup"
                               >
                                 <label
-                                  class="MuiFormControlLabel-root Mui-disabled"
+                                  class="MuiFormControlLabel-root"
                                 >
                                   <span
-                                    aria-disabled="true"
-                                    class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-6523 MuiRadio-root makeStyles-root-6517 PrivateSwitchBase-checked-6524 Mui-checked PrivateSwitchBase-disabled-6525 Mui-disabled Mui-disabled Mui-disabled"
-                                    tabindex="-1"
+                                    aria-disabled="false"
+                                    class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-6523 MuiRadio-root makeStyles-root-6517 PrivateSwitchBase-checked-6524 Mui-checked"
                                   >
                                     <span
                                       class="MuiIconButton-label"
@@ -12931,29 +12894,27 @@ exports[`WorkerWizard should open existing worker modal for regular user 1`] = `
                                         checked=""
                                         class="PrivateSwitchBase-input-6526"
                                         data-testid="controlled-radio-button"
-                                        disabled=""
                                         name="inviteMethod"
                                         type="radio"
                                         value="2"
                                       />
                                       <span
-                                        class="makeStyles-icon-6518 makeStyles-checkedIcon-6521 makeStyles-disabledIcon-6522"
+                                        class="makeStyles-icon-6518 makeStyles-checkedIcon-6521 "
                                       />
                                     </span>
                                   </span>
                                   <span
-                                    class="MuiTypography-root MuiFormControlLabel-label Mui-disabled MuiTypography-body1"
+                                    class="MuiTypography-root MuiFormControlLabel-label MuiTypography-body1"
                                   >
                                     Mobile phone
                                   </span>
                                 </label>
                                 <label
-                                  class="MuiFormControlLabel-root Mui-disabled"
+                                  class="MuiFormControlLabel-root"
                                 >
                                   <span
-                                    aria-disabled="true"
-                                    class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-6523 MuiRadio-root makeStyles-root-6517 PrivateSwitchBase-disabled-6525 Mui-disabled Mui-disabled Mui-disabled"
-                                    tabindex="-1"
+                                    aria-disabled="false"
+                                    class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-6523 MuiRadio-root makeStyles-root-6517"
                                   >
                                     <span
                                       class="MuiIconButton-label"
@@ -12961,7 +12922,6 @@ exports[`WorkerWizard should open existing worker modal for regular user 1`] = `
                                       <input
                                         class="PrivateSwitchBase-input-6526"
                                         data-testid="controlled-radio-button"
-                                        disabled=""
                                         name="inviteMethod"
                                         type="radio"
                                         value="1"
@@ -12972,18 +12932,17 @@ exports[`WorkerWizard should open existing worker modal for regular user 1`] = `
                                     </span>
                                   </span>
                                   <span
-                                    class="MuiTypography-root MuiFormControlLabel-label Mui-disabled MuiTypography-body1"
+                                    class="MuiTypography-root MuiFormControlLabel-label MuiTypography-body1"
                                   >
                                     Email
                                   </span>
                                 </label>
                                 <label
-                                  class="MuiFormControlLabel-root Mui-disabled"
+                                  class="MuiFormControlLabel-root"
                                 >
                                   <span
-                                    aria-disabled="true"
-                                    class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-6523 MuiRadio-root makeStyles-root-6517 PrivateSwitchBase-disabled-6525 Mui-disabled Mui-disabled Mui-disabled"
-                                    tabindex="-1"
+                                    aria-disabled="false"
+                                    class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-6523 MuiRadio-root makeStyles-root-6517"
                                   >
                                     <span
                                       class="MuiIconButton-label"
@@ -12991,7 +12950,6 @@ exports[`WorkerWizard should open existing worker modal for regular user 1`] = `
                                       <input
                                         class="PrivateSwitchBase-input-6526"
                                         data-testid="controlled-radio-button"
-                                        disabled=""
                                         name="inviteMethod"
                                         type="radio"
                                         value="3"
@@ -13002,7 +12960,7 @@ exports[`WorkerWizard should open existing worker modal for regular user 1`] = `
                                     </span>
                                   </span>
                                   <span
-                                    class="MuiTypography-root MuiFormControlLabel-label Mui-disabled MuiTypography-body1"
+                                    class="MuiTypography-root MuiFormControlLabel-label MuiTypography-body1"
                                   >
                                     Mobile Phone And Email
                                   </span>
@@ -15274,7 +15232,6 @@ exports[`WorkerWizard should render 1`] = `
                               autocomplete="off"
                               class=" form-control"
                               data-testid="mobile-worker-phone"
-                              disabled=""
                               name="mobilePhoneNumber"
                               placeholder="+0 (000) 000-0000"
                               required=""
@@ -15392,12 +15349,11 @@ exports[`WorkerWizard should render 1`] = `
                                 role="radiogroup"
                               >
                                 <label
-                                  class="MuiFormControlLabel-root Mui-disabled"
+                                  class="MuiFormControlLabel-root"
                                 >
                                   <span
-                                    aria-disabled="true"
-                                    class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-134 MuiRadio-root makeStyles-root-128 PrivateSwitchBase-checked-135 Mui-checked PrivateSwitchBase-disabled-136 Mui-disabled Mui-disabled Mui-disabled"
-                                    tabindex="-1"
+                                    aria-disabled="false"
+                                    class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-134 MuiRadio-root makeStyles-root-128 PrivateSwitchBase-checked-135 Mui-checked"
                                   >
                                     <span
                                       class="MuiIconButton-label"
@@ -15406,29 +15362,27 @@ exports[`WorkerWizard should render 1`] = `
                                         checked=""
                                         class="PrivateSwitchBase-input-137"
                                         data-testid="controlled-radio-button"
-                                        disabled=""
                                         name="inviteMethod"
                                         type="radio"
                                         value="2"
                                       />
                                       <span
-                                        class="makeStyles-icon-129 makeStyles-checkedIcon-132 makeStyles-disabledIcon-133"
+                                        class="makeStyles-icon-129 makeStyles-checkedIcon-132 "
                                       />
                                     </span>
                                   </span>
                                   <span
-                                    class="MuiTypography-root MuiFormControlLabel-label Mui-disabled MuiTypography-body1"
+                                    class="MuiTypography-root MuiFormControlLabel-label MuiTypography-body1"
                                   >
                                     Mobile phone
                                   </span>
                                 </label>
                                 <label
-                                  class="MuiFormControlLabel-root Mui-disabled"
+                                  class="MuiFormControlLabel-root"
                                 >
                                   <span
-                                    aria-disabled="true"
-                                    class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-134 MuiRadio-root makeStyles-root-128 PrivateSwitchBase-disabled-136 Mui-disabled Mui-disabled Mui-disabled"
-                                    tabindex="-1"
+                                    aria-disabled="false"
+                                    class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-134 MuiRadio-root makeStyles-root-128"
                                   >
                                     <span
                                       class="MuiIconButton-label"
@@ -15436,7 +15390,6 @@ exports[`WorkerWizard should render 1`] = `
                                       <input
                                         class="PrivateSwitchBase-input-137"
                                         data-testid="controlled-radio-button"
-                                        disabled=""
                                         name="inviteMethod"
                                         type="radio"
                                         value="1"
@@ -15447,18 +15400,17 @@ exports[`WorkerWizard should render 1`] = `
                                     </span>
                                   </span>
                                   <span
-                                    class="MuiTypography-root MuiFormControlLabel-label Mui-disabled MuiTypography-body1"
+                                    class="MuiTypography-root MuiFormControlLabel-label MuiTypography-body1"
                                   >
                                     Email
                                   </span>
                                 </label>
                                 <label
-                                  class="MuiFormControlLabel-root Mui-disabled"
+                                  class="MuiFormControlLabel-root"
                                 >
                                   <span
-                                    aria-disabled="true"
-                                    class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-134 MuiRadio-root makeStyles-root-128 PrivateSwitchBase-disabled-136 Mui-disabled Mui-disabled Mui-disabled"
-                                    tabindex="-1"
+                                    aria-disabled="false"
+                                    class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-134 MuiRadio-root makeStyles-root-128"
                                   >
                                     <span
                                       class="MuiIconButton-label"
@@ -15466,7 +15418,6 @@ exports[`WorkerWizard should render 1`] = `
                                       <input
                                         class="PrivateSwitchBase-input-137"
                                         data-testid="controlled-radio-button"
-                                        disabled=""
                                         name="inviteMethod"
                                         type="radio"
                                         value="3"
@@ -15477,7 +15428,7 @@ exports[`WorkerWizard should render 1`] = `
                                     </span>
                                   </span>
                                   <span
-                                    class="MuiTypography-root MuiFormControlLabel-label Mui-disabled MuiTypography-body1"
+                                    class="MuiTypography-root MuiFormControlLabel-label MuiTypography-body1"
                                   >
                                     Mobile Phone And Email
                                   </span>
@@ -17749,7 +17700,6 @@ exports[`WorkerWizard should render client worker 1`] = `
                               autocomplete="off"
                               class=" form-control"
                               data-testid="mobile-worker-phone"
-                              disabled=""
                               name="mobilePhoneNumber"
                               placeholder="+0 (000) 000-0000"
                               required=""
@@ -17867,12 +17817,11 @@ exports[`WorkerWizard should render client worker 1`] = `
                                 role="radiogroup"
                               >
                                 <label
-                                  class="MuiFormControlLabel-root Mui-disabled"
+                                  class="MuiFormControlLabel-root"
                                 >
                                   <span
-                                    aria-disabled="true"
-                                    class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-356 MuiRadio-root makeStyles-root-350 PrivateSwitchBase-checked-357 Mui-checked PrivateSwitchBase-disabled-358 Mui-disabled Mui-disabled Mui-disabled"
-                                    tabindex="-1"
+                                    aria-disabled="false"
+                                    class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-356 MuiRadio-root makeStyles-root-350 PrivateSwitchBase-checked-357 Mui-checked"
                                   >
                                     <span
                                       class="MuiIconButton-label"
@@ -17881,29 +17830,27 @@ exports[`WorkerWizard should render client worker 1`] = `
                                         checked=""
                                         class="PrivateSwitchBase-input-359"
                                         data-testid="controlled-radio-button"
-                                        disabled=""
                                         name="inviteMethod"
                                         type="radio"
                                         value="2"
                                       />
                                       <span
-                                        class="makeStyles-icon-351 makeStyles-checkedIcon-354 makeStyles-disabledIcon-355"
+                                        class="makeStyles-icon-351 makeStyles-checkedIcon-354 "
                                       />
                                     </span>
                                   </span>
                                   <span
-                                    class="MuiTypography-root MuiFormControlLabel-label Mui-disabled MuiTypography-body1"
+                                    class="MuiTypography-root MuiFormControlLabel-label MuiTypography-body1"
                                   >
                                     Mobile phone
                                   </span>
                                 </label>
                                 <label
-                                  class="MuiFormControlLabel-root Mui-disabled"
+                                  class="MuiFormControlLabel-root"
                                 >
                                   <span
-                                    aria-disabled="true"
-                                    class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-356 MuiRadio-root makeStyles-root-350 PrivateSwitchBase-disabled-358 Mui-disabled Mui-disabled Mui-disabled"
-                                    tabindex="-1"
+                                    aria-disabled="false"
+                                    class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-356 MuiRadio-root makeStyles-root-350"
                                   >
                                     <span
                                       class="MuiIconButton-label"
@@ -17911,7 +17858,6 @@ exports[`WorkerWizard should render client worker 1`] = `
                                       <input
                                         class="PrivateSwitchBase-input-359"
                                         data-testid="controlled-radio-button"
-                                        disabled=""
                                         name="inviteMethod"
                                         type="radio"
                                         value="1"
@@ -17922,18 +17868,17 @@ exports[`WorkerWizard should render client worker 1`] = `
                                     </span>
                                   </span>
                                   <span
-                                    class="MuiTypography-root MuiFormControlLabel-label Mui-disabled MuiTypography-body1"
+                                    class="MuiTypography-root MuiFormControlLabel-label MuiTypography-body1"
                                   >
                                     Email
                                   </span>
                                 </label>
                                 <label
-                                  class="MuiFormControlLabel-root Mui-disabled"
+                                  class="MuiFormControlLabel-root"
                                 >
                                   <span
-                                    aria-disabled="true"
-                                    class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-356 MuiRadio-root makeStyles-root-350 PrivateSwitchBase-disabled-358 Mui-disabled Mui-disabled Mui-disabled"
-                                    tabindex="-1"
+                                    aria-disabled="false"
+                                    class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-356 MuiRadio-root makeStyles-root-350"
                                   >
                                     <span
                                       class="MuiIconButton-label"
@@ -17941,7 +17886,6 @@ exports[`WorkerWizard should render client worker 1`] = `
                                       <input
                                         class="PrivateSwitchBase-input-359"
                                         data-testid="controlled-radio-button"
-                                        disabled=""
                                         name="inviteMethod"
                                         type="radio"
                                         value="3"
@@ -17952,7 +17896,7 @@ exports[`WorkerWizard should render client worker 1`] = `
                                     </span>
                                   </span>
                                   <span
-                                    class="MuiTypography-root MuiFormControlLabel-label Mui-disabled MuiTypography-body1"
+                                    class="MuiTypography-root MuiFormControlLabel-label MuiTypography-body1"
                                   >
                                     Mobile Phone And Email
                                   </span>
@@ -20224,7 +20168,6 @@ exports[`WorkerWizard should render fallback 1`] = `
                               autocomplete="off"
                               class=" form-control"
                               data-testid="mobile-worker-phone"
-                              disabled=""
                               name="mobilePhoneNumber"
                               placeholder="+0 (000) 000-0000"
                               required=""
@@ -20342,12 +20285,11 @@ exports[`WorkerWizard should render fallback 1`] = `
                                 role="radiogroup"
                               >
                                 <label
-                                  class="MuiFormControlLabel-root Mui-disabled"
+                                  class="MuiFormControlLabel-root"
                                 >
                                   <span
-                                    aria-disabled="true"
-                                    class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-578 MuiRadio-root makeStyles-root-572 PrivateSwitchBase-checked-579 Mui-checked PrivateSwitchBase-disabled-580 Mui-disabled Mui-disabled Mui-disabled"
-                                    tabindex="-1"
+                                    aria-disabled="false"
+                                    class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-578 MuiRadio-root makeStyles-root-572 PrivateSwitchBase-checked-579 Mui-checked"
                                   >
                                     <span
                                       class="MuiIconButton-label"
@@ -20356,29 +20298,27 @@ exports[`WorkerWizard should render fallback 1`] = `
                                         checked=""
                                         class="PrivateSwitchBase-input-581"
                                         data-testid="controlled-radio-button"
-                                        disabled=""
                                         name="inviteMethod"
                                         type="radio"
                                         value="2"
                                       />
                                       <span
-                                        class="makeStyles-icon-573 makeStyles-checkedIcon-576 makeStyles-disabledIcon-577"
+                                        class="makeStyles-icon-573 makeStyles-checkedIcon-576 "
                                       />
                                     </span>
                                   </span>
                                   <span
-                                    class="MuiTypography-root MuiFormControlLabel-label Mui-disabled MuiTypography-body1"
+                                    class="MuiTypography-root MuiFormControlLabel-label MuiTypography-body1"
                                   >
                                     Mobile phone
                                   </span>
                                 </label>
                                 <label
-                                  class="MuiFormControlLabel-root Mui-disabled"
+                                  class="MuiFormControlLabel-root"
                                 >
                                   <span
-                                    aria-disabled="true"
-                                    class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-578 MuiRadio-root makeStyles-root-572 PrivateSwitchBase-disabled-580 Mui-disabled Mui-disabled Mui-disabled"
-                                    tabindex="-1"
+                                    aria-disabled="false"
+                                    class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-578 MuiRadio-root makeStyles-root-572"
                                   >
                                     <span
                                       class="MuiIconButton-label"
@@ -20386,7 +20326,6 @@ exports[`WorkerWizard should render fallback 1`] = `
                                       <input
                                         class="PrivateSwitchBase-input-581"
                                         data-testid="controlled-radio-button"
-                                        disabled=""
                                         name="inviteMethod"
                                         type="radio"
                                         value="1"
@@ -20397,18 +20336,17 @@ exports[`WorkerWizard should render fallback 1`] = `
                                     </span>
                                   </span>
                                   <span
-                                    class="MuiTypography-root MuiFormControlLabel-label Mui-disabled MuiTypography-body1"
+                                    class="MuiTypography-root MuiFormControlLabel-label MuiTypography-body1"
                                   >
                                     Email
                                   </span>
                                 </label>
                                 <label
-                                  class="MuiFormControlLabel-root Mui-disabled"
+                                  class="MuiFormControlLabel-root"
                                 >
                                   <span
-                                    aria-disabled="true"
-                                    class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-578 MuiRadio-root makeStyles-root-572 PrivateSwitchBase-disabled-580 Mui-disabled Mui-disabled Mui-disabled"
-                                    tabindex="-1"
+                                    aria-disabled="false"
+                                    class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-578 MuiRadio-root makeStyles-root-572"
                                   >
                                     <span
                                       class="MuiIconButton-label"
@@ -20416,7 +20354,6 @@ exports[`WorkerWizard should render fallback 1`] = `
                                       <input
                                         class="PrivateSwitchBase-input-581"
                                         data-testid="controlled-radio-button"
-                                        disabled=""
                                         name="inviteMethod"
                                         type="radio"
                                         value="3"
@@ -20427,7 +20364,7 @@ exports[`WorkerWizard should render fallback 1`] = `
                                     </span>
                                   </span>
                                   <span
-                                    class="MuiTypography-root MuiFormControlLabel-label Mui-disabled MuiTypography-body1"
+                                    class="MuiTypography-root MuiFormControlLabel-label MuiTypography-body1"
                                   >
                                     Mobile Phone And Email
                                   </span>
@@ -22704,7 +22641,6 @@ exports[`WorkerWizard should render loading server errors 1`] = `
                               autocomplete="off"
                               class=" form-control"
                               data-testid="mobile-worker-phone"
-                              disabled=""
                               name="mobilePhoneNumber"
                               placeholder="+0 (000) 000-0000"
                               required=""
@@ -22822,12 +22758,11 @@ exports[`WorkerWizard should render loading server errors 1`] = `
                                 role="radiogroup"
                               >
                                 <label
-                                  class="MuiFormControlLabel-root Mui-disabled"
+                                  class="MuiFormControlLabel-root"
                                 >
                                   <span
-                                    aria-disabled="true"
-                                    class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-2132 MuiRadio-root makeStyles-root-2126 PrivateSwitchBase-checked-2133 Mui-checked PrivateSwitchBase-disabled-2134 Mui-disabled Mui-disabled Mui-disabled"
-                                    tabindex="-1"
+                                    aria-disabled="false"
+                                    class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-2132 MuiRadio-root makeStyles-root-2126 PrivateSwitchBase-checked-2133 Mui-checked"
                                   >
                                     <span
                                       class="MuiIconButton-label"
@@ -22836,29 +22771,27 @@ exports[`WorkerWizard should render loading server errors 1`] = `
                                         checked=""
                                         class="PrivateSwitchBase-input-2135"
                                         data-testid="controlled-radio-button"
-                                        disabled=""
                                         name="inviteMethod"
                                         type="radio"
                                         value="2"
                                       />
                                       <span
-                                        class="makeStyles-icon-2127 makeStyles-checkedIcon-2130 makeStyles-disabledIcon-2131"
+                                        class="makeStyles-icon-2127 makeStyles-checkedIcon-2130 "
                                       />
                                     </span>
                                   </span>
                                   <span
-                                    class="MuiTypography-root MuiFormControlLabel-label Mui-disabled MuiTypography-body1"
+                                    class="MuiTypography-root MuiFormControlLabel-label MuiTypography-body1"
                                   >
                                     Mobile phone
                                   </span>
                                 </label>
                                 <label
-                                  class="MuiFormControlLabel-root Mui-disabled"
+                                  class="MuiFormControlLabel-root"
                                 >
                                   <span
-                                    aria-disabled="true"
-                                    class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-2132 MuiRadio-root makeStyles-root-2126 PrivateSwitchBase-disabled-2134 Mui-disabled Mui-disabled Mui-disabled"
-                                    tabindex="-1"
+                                    aria-disabled="false"
+                                    class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-2132 MuiRadio-root makeStyles-root-2126"
                                   >
                                     <span
                                       class="MuiIconButton-label"
@@ -22866,7 +22799,6 @@ exports[`WorkerWizard should render loading server errors 1`] = `
                                       <input
                                         class="PrivateSwitchBase-input-2135"
                                         data-testid="controlled-radio-button"
-                                        disabled=""
                                         name="inviteMethod"
                                         type="radio"
                                         value="1"
@@ -22877,18 +22809,17 @@ exports[`WorkerWizard should render loading server errors 1`] = `
                                     </span>
                                   </span>
                                   <span
-                                    class="MuiTypography-root MuiFormControlLabel-label Mui-disabled MuiTypography-body1"
+                                    class="MuiTypography-root MuiFormControlLabel-label MuiTypography-body1"
                                   >
                                     Email
                                   </span>
                                 </label>
                                 <label
-                                  class="MuiFormControlLabel-root Mui-disabled"
+                                  class="MuiFormControlLabel-root"
                                 >
                                   <span
-                                    aria-disabled="true"
-                                    class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-2132 MuiRadio-root makeStyles-root-2126 PrivateSwitchBase-disabled-2134 Mui-disabled Mui-disabled Mui-disabled"
-                                    tabindex="-1"
+                                    aria-disabled="false"
+                                    class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-2132 MuiRadio-root makeStyles-root-2126"
                                   >
                                     <span
                                       class="MuiIconButton-label"
@@ -22896,7 +22827,6 @@ exports[`WorkerWizard should render loading server errors 1`] = `
                                       <input
                                         class="PrivateSwitchBase-input-2135"
                                         data-testid="controlled-radio-button"
-                                        disabled=""
                                         name="inviteMethod"
                                         type="radio"
                                         value="3"
@@ -22907,7 +22837,7 @@ exports[`WorkerWizard should render loading server errors 1`] = `
                                     </span>
                                   </span>
                                   <span
-                                    class="MuiTypography-root MuiFormControlLabel-label Mui-disabled MuiTypography-body1"
+                                    class="MuiTypography-root MuiFormControlLabel-label MuiTypography-body1"
                                   >
                                     Mobile Phone And Email
                                   </span>
@@ -25184,7 +25114,6 @@ exports[`WorkerWizard should render server errors on save 1`] = `
                               autocomplete="off"
                               class=" form-control"
                               data-testid="mobile-worker-phone"
-                              disabled=""
                               name="mobilePhoneNumber"
                               placeholder="+0 (000) 000-0000"
                               required=""
@@ -25302,12 +25231,11 @@ exports[`WorkerWizard should render server errors on save 1`] = `
                                 role="radiogroup"
                               >
                                 <label
-                                  class="MuiFormControlLabel-root Mui-disabled"
+                                  class="MuiFormControlLabel-root"
                                 >
                                   <span
-                                    aria-disabled="true"
-                                    class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-2354 MuiRadio-root makeStyles-root-2348 PrivateSwitchBase-checked-2355 Mui-checked PrivateSwitchBase-disabled-2356 Mui-disabled Mui-disabled Mui-disabled"
-                                    tabindex="-1"
+                                    aria-disabled="false"
+                                    class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-2354 MuiRadio-root makeStyles-root-2348 PrivateSwitchBase-checked-2355 Mui-checked"
                                   >
                                     <span
                                       class="MuiIconButton-label"
@@ -25316,29 +25244,27 @@ exports[`WorkerWizard should render server errors on save 1`] = `
                                         checked=""
                                         class="PrivateSwitchBase-input-2357"
                                         data-testid="controlled-radio-button"
-                                        disabled=""
                                         name="inviteMethod"
                                         type="radio"
                                         value="2"
                                       />
                                       <span
-                                        class="makeStyles-icon-2349 makeStyles-checkedIcon-2352 makeStyles-disabledIcon-2353"
+                                        class="makeStyles-icon-2349 makeStyles-checkedIcon-2352 "
                                       />
                                     </span>
                                   </span>
                                   <span
-                                    class="MuiTypography-root MuiFormControlLabel-label Mui-disabled MuiTypography-body1"
+                                    class="MuiTypography-root MuiFormControlLabel-label MuiTypography-body1"
                                   >
                                     Mobile phone
                                   </span>
                                 </label>
                                 <label
-                                  class="MuiFormControlLabel-root Mui-disabled"
+                                  class="MuiFormControlLabel-root"
                                 >
                                   <span
-                                    aria-disabled="true"
-                                    class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-2354 MuiRadio-root makeStyles-root-2348 PrivateSwitchBase-disabled-2356 Mui-disabled Mui-disabled Mui-disabled"
-                                    tabindex="-1"
+                                    aria-disabled="false"
+                                    class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-2354 MuiRadio-root makeStyles-root-2348"
                                   >
                                     <span
                                       class="MuiIconButton-label"
@@ -25346,7 +25272,6 @@ exports[`WorkerWizard should render server errors on save 1`] = `
                                       <input
                                         class="PrivateSwitchBase-input-2357"
                                         data-testid="controlled-radio-button"
-                                        disabled=""
                                         name="inviteMethod"
                                         type="radio"
                                         value="1"
@@ -25357,18 +25282,17 @@ exports[`WorkerWizard should render server errors on save 1`] = `
                                     </span>
                                   </span>
                                   <span
-                                    class="MuiTypography-root MuiFormControlLabel-label Mui-disabled MuiTypography-body1"
+                                    class="MuiTypography-root MuiFormControlLabel-label MuiTypography-body1"
                                   >
                                     Email
                                   </span>
                                 </label>
                                 <label
-                                  class="MuiFormControlLabel-root Mui-disabled"
+                                  class="MuiFormControlLabel-root"
                                 >
                                   <span
-                                    aria-disabled="true"
-                                    class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-2354 MuiRadio-root makeStyles-root-2348 PrivateSwitchBase-disabled-2356 Mui-disabled Mui-disabled Mui-disabled"
-                                    tabindex="-1"
+                                    aria-disabled="false"
+                                    class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-2354 MuiRadio-root makeStyles-root-2348"
                                   >
                                     <span
                                       class="MuiIconButton-label"
@@ -25376,7 +25300,6 @@ exports[`WorkerWizard should render server errors on save 1`] = `
                                       <input
                                         class="PrivateSwitchBase-input-2357"
                                         data-testid="controlled-radio-button"
-                                        disabled=""
                                         name="inviteMethod"
                                         type="radio"
                                         value="3"
@@ -25387,7 +25310,7 @@ exports[`WorkerWizard should render server errors on save 1`] = `
                                     </span>
                                   </span>
                                   <span
-                                    class="MuiTypography-root MuiFormControlLabel-label Mui-disabled MuiTypography-body1"
+                                    class="MuiTypography-root MuiFormControlLabel-label MuiTypography-body1"
                                   >
                                     Mobile Phone And Email
                                   </span>

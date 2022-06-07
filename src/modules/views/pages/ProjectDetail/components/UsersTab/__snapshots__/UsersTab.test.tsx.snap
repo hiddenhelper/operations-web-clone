@@ -5,23 +5,23 @@ exports[`UsersTab should render 1`] = `
   aria-hidden="true"
 >
   <div
-    class="makeStyles-filterActionsContainer-358 makeStyles-filterActionsContainerPadding-360"
+    class="makeStyles-filterActionsContainer-360 makeStyles-filterActionsContainerPadding-362"
   >
     <div
-      class="MuiBox-root MuiBox-root-414 makeStyles-filterStatusContainer-361 makeStyles-autocompleteFilterPosition-413"
+      class="MuiBox-root MuiBox-root-416 makeStyles-filterStatusContainer-363 makeStyles-autocompleteFilterPosition-415"
     >
       <div
-        class="makeStyles-floatingFilterWrapper-367 makeStyles-filterWrapper-366 makeStyles-buttonContainer-416 floatingFilterWrapper"
+        class="makeStyles-floatingFilterWrapper-369 makeStyles-filterWrapper-368 makeStyles-buttonContainer-418 floatingFilterWrapper"
       >
         <span
-          class="makeStyles-floatingFilterButton-368"
+          class="makeStyles-floatingFilterButton-370"
           data-testid="controlled-button"
           tabindex="-1"
         >
           <button
             aria-controls="false"
             aria-haspopup="true"
-            class="MuiButtonBase-root MuiButton-root MuiButton-text makeStyles-buttonFilter-376"
+            class="MuiButtonBase-root MuiButton-root MuiButton-text makeStyles-buttonFilter-378"
             data-testid="button-filter-open"
             tabindex="0"
             type="button"
@@ -34,7 +34,7 @@ exports[`UsersTab should render 1`] = `
                 class="MuiButton-endIcon MuiButton-iconSizeMedium"
               >
                 <svg
-                  class="makeStyles-dropdownIcon-370"
+                  class="makeStyles-dropdownIcon-372"
                 >
                   expand.svg
                 </svg>
@@ -45,7 +45,7 @@ exports[`UsersTab should render 1`] = `
       </div>
     </div>
     <button
-      class="MuiButtonBase-root MuiButton-root MuiButton-contained makeStyles-createButton-388 makeStyles-primaryButtonLarge-390 MuiButton-containedPrimary MuiButton-containedSizeLarge MuiButton-sizeLarge MuiButton-fullWidth"
+      class="MuiButtonBase-root MuiButton-root MuiButton-contained makeStyles-createButton-390 makeStyles-primaryButtonLarge-392 MuiButton-containedPrimary MuiButton-containedSizeLarge MuiButton-sizeLarge MuiButton-fullWidth"
       data-testid="user-modal-open-btn"
       tabindex="0"
       type="submit"
@@ -61,7 +61,7 @@ exports[`UsersTab should render 1`] = `
     </button>
   </div>
   <div
-    class="makeStyles-userTableWrapper-275"
+    class="makeStyles-userTableWrapper-277"
   >
     <table
       aria-label="user-list"
@@ -85,20 +85,20 @@ exports[`UsersTab should render 1`] = `
         class="MuiTableBody-root"
       >
         <tr
-          class="MuiTableRow-root WithStyles(ForwardRef(TableRow))-root-420"
+          class="MuiTableRow-root WithStyles(ForwardRef(TableRow))-root-422"
           data-testid="client-list-row"
         >
           <td
             class="MuiTableCell-root MuiTableCell-body"
           >
             <div
-              class="makeStyles-userCenter-281"
+              class="makeStyles-userCenter-283"
             >
               <span
-                class="MuiBadge-root makeStyles-avatarPosition-291 makeStyles-avatarWithSmallBadge-333"
+                class="MuiBadge-root makeStyles-avatarPosition-293 makeStyles-avatarWithSmallBadge-335"
               >
                 <div
-                  class="MuiAvatar-root MuiAvatar-circle makeStyles-avatarWrapper-331 makeStyles-avatarMedium-334 MuiAvatar-colorDefault"
+                  class="MuiAvatar-root MuiAvatar-circle makeStyles-avatarWrapper-333 makeStyles-avatarMedium-336 MuiAvatar-colorDefault"
                 >
                   <svg
                     class="MuiSvgIcon-root"
@@ -135,20 +135,20 @@ exports[`UsersTab should render 1`] = `
           </td>
         </tr>
         <tr
-          class="MuiTableRow-root WithStyles(ForwardRef(TableRow))-root-420"
+          class="MuiTableRow-root WithStyles(ForwardRef(TableRow))-root-422"
           data-testid="client-list-row"
         >
           <td
             class="MuiTableCell-root MuiTableCell-body"
           >
             <div
-              class="makeStyles-userCenter-281"
+              class="makeStyles-userCenter-283"
             >
               <span
-                class="MuiBadge-root makeStyles-avatarPosition-291 makeStyles-avatarWithSmallBadge-333"
+                class="MuiBadge-root makeStyles-avatarPosition-293 makeStyles-avatarWithSmallBadge-335"
               >
                 <div
-                  class="MuiAvatar-root MuiAvatar-circle makeStyles-avatarWrapper-331 makeStyles-avatarMedium-334 MuiAvatar-colorDefault"
+                  class="MuiAvatar-root MuiAvatar-circle makeStyles-avatarWrapper-333 makeStyles-avatarMedium-336 MuiAvatar-colorDefault"
                 >
                   <svg
                     class="MuiSvgIcon-root"
@@ -189,7 +189,7 @@ exports[`UsersTab should render 1`] = `
   </div>
   <nav
     aria-label="pagination navigation"
-    class="MuiPagination-root  makeStyles-pagination-421"
+    class="MuiPagination-root  makeStyles-pagination-423"
     data-testid="pagination"
   >
     <ul
@@ -274,23 +274,23 @@ exports[`UsersTab should render empty 1`] = `
   aria-hidden="true"
 >
   <div
-    class="makeStyles-filterActionsContainer-613 makeStyles-filterActionsContainerPadding-615"
+    class="makeStyles-filterActionsContainer-617 makeStyles-filterActionsContainerPadding-619"
   >
     <div
-      class="MuiBox-root MuiBox-root-669 makeStyles-filterStatusContainer-616 makeStyles-autocompleteFilterPosition-668"
+      class="MuiBox-root MuiBox-root-673 makeStyles-filterStatusContainer-620 makeStyles-autocompleteFilterPosition-672"
     >
       <div
-        class="makeStyles-floatingFilterWrapper-622 makeStyles-filterWrapper-621 makeStyles-buttonContainer-671 floatingFilterWrapper"
+        class="makeStyles-floatingFilterWrapper-626 makeStyles-filterWrapper-625 makeStyles-buttonContainer-675 floatingFilterWrapper"
       >
         <span
-          class="makeStyles-floatingFilterButton-623"
+          class="makeStyles-floatingFilterButton-627"
           data-testid="controlled-button"
           tabindex="-1"
         >
           <button
             aria-controls="false"
             aria-haspopup="true"
-            class="MuiButtonBase-root MuiButton-root MuiButton-text makeStyles-buttonFilter-631"
+            class="MuiButtonBase-root MuiButton-root MuiButton-text makeStyles-buttonFilter-635"
             data-testid="button-filter-open"
             tabindex="0"
             type="button"
@@ -303,7 +303,7 @@ exports[`UsersTab should render empty 1`] = `
                 class="MuiButton-endIcon MuiButton-iconSizeMedium"
               >
                 <svg
-                  class="makeStyles-dropdownIcon-625"
+                  class="makeStyles-dropdownIcon-629"
                 >
                   expand.svg
                 </svg>
@@ -314,7 +314,7 @@ exports[`UsersTab should render empty 1`] = `
       </div>
     </div>
     <button
-      class="MuiButtonBase-root MuiButton-root MuiButton-contained makeStyles-createButton-643 makeStyles-primaryButtonLarge-645 MuiButton-containedPrimary MuiButton-containedSizeLarge MuiButton-sizeLarge MuiButton-fullWidth"
+      class="MuiButtonBase-root MuiButton-root MuiButton-contained makeStyles-createButton-647 makeStyles-primaryButtonLarge-649 MuiButton-containedPrimary MuiButton-containedSizeLarge MuiButton-sizeLarge MuiButton-fullWidth"
       data-testid="user-modal-open-btn"
       tabindex="0"
       type="submit"
@@ -330,11 +330,11 @@ exports[`UsersTab should render empty 1`] = `
     </button>
   </div>
   <div
-    class=" makeStyles-container-675"
+    class=" makeStyles-container-679"
   >
     <div>
       <div
-        class="MuiAvatar-root MuiAvatar-circle makeStyles-missingAvatarWrapper-594 makeStyles-missingAvatarBig-595 MuiAvatar-colorDefault"
+        class="MuiAvatar-root MuiAvatar-circle makeStyles-missingAvatarWrapper-598 makeStyles-missingAvatarBig-599 MuiAvatar-colorDefault"
       >
         <svg>
           workers.svg
@@ -342,7 +342,7 @@ exports[`UsersTab should render empty 1`] = `
       </div>
     </div>
     <p
-      class="MuiTypography-root makeStyles-missingListText-676 MuiTypography-body1"
+      class="MuiTypography-root makeStyles-missingListText-680 MuiTypography-body1"
     >
       There are no Users assigned
     </p>

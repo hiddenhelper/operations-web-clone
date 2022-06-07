@@ -1,7 +1,6 @@
 import React, { memo, useCallback, useMemo, useEffect, useState, useRef } from 'react';
 
 import Table from '@material-ui/core/Table';
-import Grid from '@material-ui/core/Grid';
 import TableBody from '@material-ui/core/TableBody';
 import TableCell from '@material-ui/core/TableCell';
 import TableHead from '@material-ui/core/TableHead';
@@ -298,37 +297,29 @@ const AssignSubContractorModal = ({
       render={() => (
         <>
           {tabStep === TabStep.SPONSOR && (
-            <>
-              <Grid container={true}>
-                <Grid item={true} xl={12} lg={12}>
-                  <Grid container={true}>
-                    <Grid item={true} xl={12} lg={12}>
-                      <Typography className={classes.assignSponsorTitle}>Select a Client to be the Sponsor for the upcoming Subcontractor/s.</Typography>
-                    </Grid>
-                    <Grid item={true} xl={4} lg={4} className={formClasses.modalForm}>
-                      <AssignEntity
-                        index={0}
-                        tempId={'project-client-id'}
-                        optionLabel="name"
-                        result={getDefaultValue(uiRelationMap['project-client-id']?.searchResult, [])}
-                        isLoading={false}
-                        showCreateNew={false}
-                        disableClearable={false}
-                        assignValue={sponsor}
-                        placeholder="Select Client"
-                        inputLabel="Sponsor Client"
-                        existRelation={uiRelationMap && uiRelationMap['project-client-id']}
-                        onSelect={onSelect}
-                        search={onSearchCompany}
-                        renderOption={clientRenderOption}
-                        onReset={onReset}
-                        showError={false}
-                      />
-                    </Grid>
-                  </Grid>
-                </Grid>
-              </Grid>
-            </>
+            <div className={classes.assignSubModalContentWrapper}>
+              <Typography className={classes.assignSponsorTitle}>Select a Client to be the Sponsor for the upcoming Subcontractor(s):</Typography>
+              <div className={`${formClasses.modalForm} ${classes.modalInput}`}>
+                <AssignEntity
+                  index={0}
+                  tempId={'project-client-id'}
+                  optionLabel="name"
+                  result={getDefaultValue(uiRelationMap['project-client-id']?.searchResult, [])}
+                  isLoading={false}
+                  showCreateNew={false}
+                  disableClearable={false}
+                  assignValue={sponsor}
+                  placeholder="Select Client"
+                  inputLabel="Sponsor Client"
+                  existRelation={uiRelationMap && uiRelationMap['project-client-id']}
+                  onSelect={onSelect}
+                  search={onSearchCompany}
+                  renderOption={clientRenderOption}
+                  onReset={onReset}
+                  showError={false}
+                />
+              </div>
+            </div>
           )}
           {tabStep === TabStep.ASSIGN && (
             <>

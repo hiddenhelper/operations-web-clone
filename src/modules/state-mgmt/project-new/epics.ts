@@ -12,7 +12,7 @@ import { GENERAL } from '../../../constants';
 import { handleToastError, handleError } from '../core/operators';
 import { isEmpty } from '../../../utils/generalUtils';
 import { getProjectBadgeResourceRequest } from '../../../utils/projectUtils';
-import { ProjectNewModel } from 'modules/models';
+import { GeneralModel, ProjectNewModel } from 'modules/models';
 
 export const fetchProjectStart: Epic<IAction, IAction, IRootState, IEpicDependencies> = (action$, state$, deps) =>
   action$.pipe(
@@ -192,6 +192,73 @@ export const fetchBillingTierListStart: Epic<IAction, IAction, IRootState, IEpic
       ).pipe(
         catchError(error =>
           of(coreState.actions.epicError(error), generalState.actions.setLoading(GENERAL.LOADING_KEY.FETCH_BILLING_TIER_LIST, false, true, error))
+        )
+      )
+    )
+  );
+
+export const sendApproveProjectStart: Epic<IAction, IAction, IRootState, IEpicDependencies> = (action$, state$, deps) =>
+  action$.pipe(
+    ofType(ActionType.SEND_FOR_APPROVE_PROJECT_START),
+    mergeMap(({ payload }) =>
+      concat(
+        of(generalState.actions.setLoading(GENERAL.LOADING_KEY.SEND_APPROVE_PROJECT, true)),
+        deps.apiService
+          .sendApproveProject(payload.id)
+          .pipe(
+            mergeMap(() =>
+              of(
+                push('/projects?filter="pending-approval"'),
+                generalState.actions.addToastStart(
+                  `Project created successfully! ${state$.value.project.projectMap[payload.id].name} is pending approval now`,
+                  GeneralModel.ToastType.SUCCESS
+                )
+              )
+            )
+          ),
+        of(generalState.actions.setLoading(GENERAL.LOADING_KEY.SEND_APPROVE_PROJECT, false))
+      ).pipe(
+        catchError(error =>
+          of(
+            coreState.actions.epicError(error),
+            generalState.actions.setLoading(GENERAL.LOADING_KEY.SEND_APPROVE_PROJECT, false, true, error),
+            generalState.actions.addToastStart(
+              error.response?.errors?.relatedCompanies ? error.response.errors.relatedCompanies[0] : error.title,
+              GeneralModel.ToastType.ERROR
+            )
+          )
+        )
+      )
+    )
+  );
+
+export const approveProjectStart: Epic<IAction, IAction, IRootState, IEpicDependencies> = (action$, state$, deps) =>
+  action$.pipe(
+    ofType(ActionType.APPROVE_PROJECT_START),
+    mergeMap(({ payload }) =>
+      concat(
+        of(generalState.actions.setLoading(GENERAL.LOADING_KEY.APPROVE_PROJECT, true)),
+        deps.apiService
+          .approveProject(payload.id)
+          .pipe(
+            mergeMap(() =>
+              of(
+                push('/projects?filter="active"'),
+                generalState.actions.addToastStart(
+                  `Project approved successfully! ${state$.value.project.projectMap[payload.id].name} is active now`,
+                  GeneralModel.ToastType.SUCCESS
+                )
+              )
+            )
+          ),
+        of(generalState.actions.setLoading(GENERAL.LOADING_KEY.APPROVE_PROJECT, false))
+      ).pipe(
+        catchError(error =>
+          of(
+            coreState.actions.epicError(error),
+            generalState.actions.setLoading(GENERAL.LOADING_KEY.APPROVE_PROJECT, false, true, error),
+            generalState.actions.addToastStart(error.title, GeneralModel.ToastType.ERROR)
+          )
         )
       )
     )

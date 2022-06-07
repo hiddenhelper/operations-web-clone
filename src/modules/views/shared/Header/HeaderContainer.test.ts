@@ -9,6 +9,7 @@ describe('HeaderContainer', () => {
     expect(mapStateToProps(getInitialState())).toEqual({
       user: getInitialState().auth.session,
       userRole: getInitialState().auth.role,
+      accountData: getInitialState().user.accountData,
     });
   });
 
