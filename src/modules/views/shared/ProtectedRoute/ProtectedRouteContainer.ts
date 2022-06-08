@@ -4,6 +4,7 @@ import { IRootState } from '../../../state-mgmt/rootState';
 import { authState } from '../../../state-mgmt/auth';
 import ProtectedRoute from './ProtectedRoute';
 import { clientState } from 'modules/state-mgmt/client';
+import { userState } from 'modules/state-mgmt/user';
 
 export const mapStateToProps = (state: IRootState) => ({
   authenticated: state.auth.authenticated,
@@ -16,6 +17,7 @@ export const mapStateToProps = (state: IRootState) => ({
 export const mapDispatchToProps = dispatch => ({
   recoverSession: () => dispatch(authState.actions.recoverSessionStart()),
   fetchClient: (id: string) => dispatch(clientState.actions.fetchClientStart(id)),
+  getAccountData: () => dispatch(userState.actions.fetchProfileDataStart()),
 });
 
 export default connect(mapStateToProps, mapDispatchToProps)(ProtectedRoute);

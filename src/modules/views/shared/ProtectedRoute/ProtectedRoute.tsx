@@ -21,6 +21,7 @@ export interface IProtectedRouteProps {
   render: any;
   fetchClient: (id: string) => void;
   recoverSession: () => void;
+  getAccountData: () => void;
 }
 
 const ProtectedRoute = ({
@@ -35,6 +36,7 @@ const ProtectedRoute = ({
   companyId,
   fetchClient,
   recoverSession,
+  getAccountData,
 }: IProtectedRouteProps) => {
   const hasValidRole: boolean = [...roleList, UserModel.Role.FCA_ADMIN].includes(currentUserRole);
   const LoginComponent = React.lazy(() => import('../Login'));
@@ -45,6 +47,11 @@ const ProtectedRoute = ({
   useEffect(() => {
     if (!clientMap[companyId] && companyId) fetchClient(companyId);
   }, [fetchClient, clientMap, companyId]);
+
+  useEffect(() => {
+    if (!authenticated) return;
+    getAccountData();
+  }, [authenticated]);
 
   useEffect(() => {
     /* istanbul ignore else */
