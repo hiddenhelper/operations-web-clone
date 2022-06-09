@@ -51,7 +51,7 @@ export interface IUser {
   [UserFields.OFFICE_PHONE_NUMBER]: string;
   [UserFields.OFFICE_PHONE_EXTERNAL]: string;
   [UserFields.PREFERRED_CONTACT_METHOD]: number;
-  [UserFields.INVITATION_TYPE]: number;
+  [UserFields.INVITATION_TYPE]: InviteType;
   groupIds?: string[];
   companyId: string;
   company?: {
