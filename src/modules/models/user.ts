@@ -51,7 +51,7 @@ export interface IUser {
   [UserFields.OFFICE_PHONE_NUMBER]: string;
   [UserFields.OFFICE_PHONE_EXTERNAL]: string;
   [UserFields.PREFERRED_CONTACT_METHOD]: number;
-  [UserFields.INVITATION_TYPE]?: number;
+  [UserFields.INVITATION_TYPE]: number;
   groupIds?: string[];
   companyId: string;
   company?: {
@@ -90,6 +90,7 @@ export const getFallbackUser = (): IUser => ({
   officePhoneExtension: null,
   email: null,
   preferredContactMethod: PreferredContactMethod.EMAIL,
+  invitationType: InviteType.DO_NOT_INVITE,
   groupIds: [],
   companyId: null,
 });
