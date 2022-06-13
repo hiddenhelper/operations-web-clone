@@ -126,8 +126,9 @@ export const useStyles = makeStyles(theme =>
     },
     activityWrapper: {
       display: 'flex',
-      justifyContent: 'space-between',
+      justifyContent: 'center',
       alignItems: 'flex-end',
+      marginBottom: '-13px',
     },
     statusChipPosition: {
       marginLeft: '0 !important',
@@ -329,6 +330,11 @@ export const useStyles = makeStyles(theme =>
     },
     legend: {
       fontSize: '13px',
+      textAlign: 'center',
+      maxWidth: '400px',
+      margin: 'auto',
+      marginBottom: '15px',
+      marginTop: '-25px',
       color: STYLE.COLOR.LIGHT_GRAY5,
       '& svg': {
         width: '20px',

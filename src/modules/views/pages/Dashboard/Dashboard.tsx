@@ -82,18 +82,12 @@ const Dashboard = ({
 
   return (
     <Container>
-      <PageTitle
-        title="Hi!"
-        subtitle="Welcome Back"
-        right={
-          <RoleGuard roleList={[UserModel.Role.CLIENT_ADMIN, UserModel.Role.REGULAR_USER]}>
-            <div className={classes.legend}>
-              <InfoIcon /> Information displayed on the Dashboard represents your company’s activity and activity of companies that have been invited by you.
-            </div>
-          </RoleGuard>
-        }
-        styles={{ marginBottom: 27 }}
-      />
+      <RoleGuard roleList={[UserModel.Role.CLIENT_ADMIN, UserModel.Role.REGULAR_USER]}>
+        <div className={classes.legend}>
+          <InfoIcon /> Information displayed on the Dashboard represents your company’s activity and activity of companies that have been invited by you.
+        </div>
+      </RoleGuard>
+      <PageTitle title="Hi!" subtitle="Welcome Back" right={<></>} styles={{ minWidth: '300px' }} />
       <div className={`${classes.widgetsContainer} ${classes.widgetsContainerPaddingBottom}`}>
         <div className={classes.activityWrapper}>
           <Typography className={`${classes.dashboardSubtitle} ${classes.dashboardAccent}`}>Today’s activity</Typography>

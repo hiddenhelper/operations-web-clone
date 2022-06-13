@@ -221,7 +221,7 @@ export class ApiService {
   }
 
   public getProjectBadgeResources(projectId: string, fileNames: object): Observable<ProjectModel.IProjectBadgeFilesResource> {
-    return this.protectedRequest(`draftProjects/${projectId}/uploadBadgeTemplateLogos`, { method: 'POST', body: fileNames });
+    return this.protectedRequest(`draftProjects/${projectId}/uploadBadgeTemplates`, { method: 'POST', body: fileNames });
   }
 
   public getVisitorBadgeList({ id, query }: { id: string; query: GeneralModel.IQueryParams }): Observable<GeneralModel.IPagination<BadgeModel.IBadgeVisitor>> {

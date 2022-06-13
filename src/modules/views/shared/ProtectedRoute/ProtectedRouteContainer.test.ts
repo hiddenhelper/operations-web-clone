@@ -21,6 +21,7 @@ describe('ProtectedRouteContainer', () => {
     expect(props).toEqual({
       recoverSession: expect.any(Function),
       fetchClient: expect.any(Function),
+      getAccountData: expect.any(Function),
     });
   });
 

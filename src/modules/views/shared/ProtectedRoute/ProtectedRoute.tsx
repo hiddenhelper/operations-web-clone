@@ -51,7 +51,7 @@ const ProtectedRoute = ({
   useEffect(() => {
     if (!authenticated) return;
     getAccountData();
-  }, [authenticated]);
+  }, [authenticated, getAccountData]);
 
   useEffect(() => {
     /* istanbul ignore else */

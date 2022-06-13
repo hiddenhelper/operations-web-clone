@@ -30,6 +30,7 @@ describe('ProtectedRoute Component', () => {
       clientMap: {},
       companyId: '9164e4c4-6521-47bb-97fd-c75ac02b2cf5',
       fetchClient: jest.fn(),
+      getAccountData: jest.fn(),
     };
     Component = render(
       <MemoryRouter>

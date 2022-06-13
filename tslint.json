@@ -36,8 +36,7 @@
     "label-position": true,
     "jsx-curly-spacing": false,
     "max-line-length": [
-      true,
-      160
+      false
     ],
     "member-ordering": [
       true,

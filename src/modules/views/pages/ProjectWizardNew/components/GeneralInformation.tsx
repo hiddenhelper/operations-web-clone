@@ -227,6 +227,29 @@ const GeneralInformation = ({
                   </ControlledInput>
                 </ControlledError>
               </Grid>
+              <Grid item={true} xs={12}>
+                <ControlledError show={!!errors.setupNotes} error={errors.setupNotes} styleClass={classes.descriptionErrorPosition}>
+                  <ControlledInput label="Setup Notes" styleClass={`${classes.descriptionInput} ${classes.topInput}`}>
+                    <TextField
+                      variant="outlined"
+                      multiline={true}
+                      rows={2}
+                      data-testid="project-setupNotes-wrapper"
+                      placeholder="Enter setup notes of the project you are going to create."
+                      type="text"
+                      autoComplete="off"
+                      fullWidth={true}
+                      name="setupNotes"
+                      value={model.setupNotes || ''}
+                      onChange={onChangeHandler}
+                      error={!!errors.setupNotes}
+                      inputProps={{
+                        'data-testid': 'project-setupNotes',
+                      }}
+                    />
+                  </ControlledInput>
+                </ControlledError>
+              </Grid>
             </Grid>
           </Card>
           <Card title="Duration">

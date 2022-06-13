@@ -123,7 +123,7 @@ const UserRow = ({
     };
 
     fetchGroupSearch(searchRequest);
-  }, [companyId]);
+  }, [companyId, fetchGroupSearch]);
 
   return (
     <Grid data-testid="user-row-item" container={true} className={`${formClasses.formWrapper} ${isListItem ? formClasses.rowsWrapper : ''}`}>
@@ -237,7 +237,8 @@ const UserRow = ({
                     <ControlledSelect
                       label=""
                       name="invitationType"
-                      value={user.groupIds[0] || UserModel.InviteType.DO_NOT_INVITE}
+                      // value={user.invitationType || UserModel.InviteType.DO_NOT_INVITE}
+                      value={user?.groupIds[0] || UserModel.InviteType.DO_NOT_INVITE}
                       options={userInviteGroupList}
                       error={!!getErrors('invitationType', index)}
                       onChange={onChangeNumber}

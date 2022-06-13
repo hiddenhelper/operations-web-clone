@@ -1470,16 +1470,14 @@ exports[`Users Form should return field errors 1`] = `
                       role="button"
                       tabindex="0"
                     >
-                      <span>
-                        ​
-                      </span>
+                      Do not invite
                     </div>
                     <input
                       aria-hidden="true"
                       class="MuiSelect-nativeInput"
                       name="invitationType"
                       tabindex="-1"
-                      value="1"
+                      value="0"
                     />
                     <svg
                       aria-hidden="true"

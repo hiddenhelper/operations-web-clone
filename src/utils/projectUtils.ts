@@ -1,6 +1,6 @@
 import moment from 'moment';
 
-import { ProjectModel, BadgeModel, AddressModel } from '../modules/models';
+import { ProjectModel, BadgeModel, AddressModel, ProjectNewModel } from '../modules/models';
 import { isTempId, isEmpty, parseFloatNumber, roundNumber, sanitizeNumber } from './generalUtils';
 import { sanitizeAddress } from './addressUtils';
 import { sanitizeCertificationGroups } from './certificationGroupsUtils';
@@ -108,15 +108,30 @@ export const isBilledPerCompany = (project: ProjectModel.IProject) =>
 export const getPlannedMonths = (startDate: string, endDate: string) => (endDate && startDate ? moment(endDate).diff(moment(startDate), 'months') : 0);
 
 export const getProjectBadgeResourceRequest = (pendingBadges, fileMap) => ({
-  generalContractorFileName: pendingBadges.includes(ProjectModel.ProjectBadgeLogos.GENERAL_CONTRACTOR_BADGE_LOGO)
-    ? (Object.values(fileMap.generalContractorBadgeLogo)[0] as any)?.file?.name
-    : null,
-  subContractorFileName: pendingBadges.includes(ProjectModel.ProjectBadgeLogos.SUBCONTRACTOR_BADGE_LOGO)
-    ? (Object.values(fileMap.subContractorBadgeLogo)[0] as any)?.file?.name
-    : null,
-  visitorFileName: pendingBadges.includes(ProjectModel.ProjectBadgeLogos.VISITOR_BADGE_LOGO)
-    ? (Object.values(fileMap.visitorBadgeLogo)[0] as any)?.file?.name
-    : null,
+  generalContractorTemplate:
+    pendingBadges.includes(ProjectModel.ProjectBadgeLogos.GENERAL_CONTRACTOR_BADGE_LOGO) ||
+    pendingBadges.includes(ProjectNewModel.ProjectBadgeTemplates.GENERAL_CONTRACTOR_BADGE_TEMPLATE_FILE)
+      ? {
+          logoFileName: fileMap.generalContractorBadgeLogo ? (Object.values(fileMap.generalContractorBadgeLogo)[0] as any)?.file?.name : '',
+          templateFileName: fileMap.generalContractorBadgeTemplate ? (Object.values(fileMap.generalContractorBadgeTemplate)[0] as any)?.file?.name : '',
+        }
+      : null,
+  subContractorTemplate:
+    pendingBadges.includes(ProjectModel.ProjectBadgeLogos.SUBCONTRACTOR_BADGE_LOGO) ||
+    pendingBadges.includes(ProjectNewModel.ProjectBadgeTemplates.SUBCONTRACTOR_BADGE_TEMPLATE_FILE)
+      ? {
+          logoFileName: fileMap.subContractorBadgeLogo ? (Object.values(fileMap.subContractorBadgeLogo)[0] as any)?.file?.name : '',
+          templateFileName: fileMap.subcontractorBadgeTemplate ? (Object.values(fileMap.subcontractorBadgeTemplate)[0] as any)?.file?.name : '',
+        }
+      : null,
+  visitorTemplateTemplate:
+    pendingBadges.includes(ProjectModel.ProjectBadgeLogos.VISITOR_BADGE_LOGO) ||
+    pendingBadges.includes(ProjectNewModel.ProjectBadgeTemplates.VISITOR_BADGE_TEMPLATE_FILE)
+      ? {
+          logoFileName: fileMap.visitorBadgeLogo ? (Object.values(fileMap.visitorBadgeLogo)[0] as any)?.file?.name : '',
+          templateFileName: fileMap.visitorBadgeTemplate ? (Object.values(fileMap.visitorBadgeTemplate)[0] as any)?.file?.name : '',
+        }
+      : null,
 });
 
 export const validateBadgeTagId = ({ value }) => value.length !== 12 && 'Please enter a valid Tag Id.';

@@ -3,7 +3,7 @@ import { ConsentFormModel, GeneralModel, ProjectNewModel } from '../../models';
 export enum ActionType {
   ADD_PROJECT_BADGES_START = '[projectNew] add project badges start',
   ADD_PROJECT_BADGES_SUCCESS = '[projectNew] add project badges success',
-  APPROVE_PROJECT_START = '[project] approve project start',
+  APPROVE_PROJECT_START = '[projectNew] approve project start',
   FETCH_BILLING_TIER_START = '[projectNew] fetch billing tier start',
   FETCH_BILLING_TIER_SUCCESS = '[projectNew] fetch billing tier success',
   FETCH_CONSENT_FORM_FIELDS_START = '[projectNew] fetch consent form fields start',
@@ -20,7 +20,7 @@ export enum ActionType {
   REVIEW_MODE = '[projectNew] review mode',
   SAVE_PROJECT_START = '[projectNew] save project start',
   SAVE_PROJECT_SUCCESS = '[projectNew] save project success',
-  SEND_FOR_APPROVE_PROJECT_START = '[project] send for approve project start',
+  SEND_FOR_APPROVE_PROJECT_START = '[projectNew] send for approve project start',
   UPDATE_DRAFT_PROJECT_START = '[projectNew] update draft project start',
   UPDATE_DRAFT_PROJECT_SUCCESS = '[projectNew] update draft project success',
   UPDATE_PROJECT_START = '[projectNew] update project start',
@@ -67,5 +67,8 @@ export const actions = {
   fetchBillingTierListStart: () => ({ type: ActionType.FETCH_BILLING_TIER_START, payload: {} }),
   fetchBillingTierListSuccess: (list: ProjectNewModel.IBillingTier[]) => ({ type: ActionType.FETCH_BILLING_TIER_SUCCESS, payload: { list } }),
   fetchConsentFormFieldsStart: () => ({ type: ActionType.FETCH_CONSENT_FORM_FIELDS_START, payload: {} }),
-  fetchConsentFormFieldsSuccess: (list: ConsentFormModel.IConsentFormField[]) => ({ type: ActionType.FETCH_CONSENT_FORM_FIELDS_SUCCESS, payload: { list } }),
+  fetchConsentFormFieldsSuccess: (list: ConsentFormModel.IConsentFormField[]) => ({
+    type: ActionType.FETCH_CONSENT_FORM_FIELDS_SUCCESS,
+    payload: { list },
+  }),
 };
