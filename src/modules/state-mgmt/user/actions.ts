@@ -28,6 +28,10 @@ export enum ActionType {
   CLEAR_ACCOUNT_DATA = '[user] clear account data',
   FETCH_GROUP_SEARCH_START = '[user] fetch group search start',
   FETCH_GROUP_SEARCH_SUCCESS = '[user] fetch group search success',
+  FETCH_USER_PROFILE_START = '[user] fetch user profile start',
+  FETCH_USER_PROFILE_SUCCESS = '[user] fetch user profile success',
+  UPDATE_USER_PROFILE_START = '[user] update user profile start',
+  UPDATE_USER_PROFILE_SUCCESS = '[user] update user profile success',
 }
 
 export const actions = {
@@ -75,4 +79,8 @@ export const actions = {
   fetchGroupSearchSuccess: data => ({ type: ActionType.FETCH_GROUP_SEARCH_SUCCESS, payload: { data } }),
   clearUserMap: () => ({ type: ActionType.CLEAR_USER_MAP, payload: {} }),
   clearAccountData: () => ({ type: ActionType.CLEAR_ACCOUNT_DATA, payload: {} }),
+  fetchUserProfileStart: (companyId: string, companyUserId: string) => ({ type: ActionType.FETCH_USER_PROFILE_START, payload: { companyId, companyUserId } }),
+  fetchUserProfileSuccess: (data: UserModel.IAccount) => ({ type: ActionType.FETCH_USER_PROFILE_SUCCESS, payload: { data } }),
+  updateUserProfileStart: (companyId: string, companyUserId: string, user: UserModel.IAccount) => ({ type: ActionType.UPDATE_USER_PROFILE_START, payload: { companyId, companyUserId, user } }),
+  updateUserProfileSuccess: (data: UserModel.IAccount) => ({ type: ActionType.UPDATE_USER_PROFILE_SUCCESS, payload: { data } }),
 };

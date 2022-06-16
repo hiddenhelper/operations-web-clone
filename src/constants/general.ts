@@ -174,6 +174,7 @@ export const GENERAL = {
     FETCH_BADGE_HISTORY: 'fetchBadgeHistory',
     UPDATE_PROFILE: 'updateProfile',
     FETCH_ACCOUNT: 'fetchAccount',
+    FETCH_USER_PROFILE: 'fetchUserProfile',
     UPLOAD_PROFILE_PHOTO: 'uploadProfilePhoto',
     UPDATE_PROFILE_PHOTO: 'updateProfilePhoto',
     FETCH_CLIENT_DETAIL_STATISTICS: 'fetchClientDetailStatistics',

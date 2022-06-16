@@ -31,6 +31,7 @@ import { useStyles } from '../../../../shared/Modal/components/AssignModal/style
 
 export interface IAssignUserProps {
   id: string;
+  companyId: string;
   count: number;
   currentUserRole: UserModel.Role;
   userCompanyId: string;
@@ -40,6 +41,7 @@ export interface IAssignUserProps {
   clientMap: GeneralModel.IEntityMap<ClientModel.IClient>;
   loading: GeneralModel.ILoadingStatus;
   saveUserLoading: GeneralModel.ILoadingStatus;
+  fetchUserloading: GeneralModel.ILoadingStatus;
   updateUserLoading: GeneralModel.ILoadingStatus;
   assignLoading: GeneralModel.ILoadingStatus;
   userRoleList: GeneralModel.INamedEntity[];
@@ -53,7 +55,9 @@ export interface IAssignUserProps {
   saveUser: (companyId: string, user: UserModel.IUser) => void;
   fetchProjectClientList?: (id: string, query: GeneralModel.IQueryParams) => void;
   fetchGroupSearch: (searchRequest: any) => void;
+  updateUserProfile?: (companyId: string, companyUserId: string, user: UserModel.IAccount) => void;
   groupList: any;
+  companyUserProfile: UserModel.IUser | {};
 }
 
 interface ISelectedState {
@@ -63,6 +67,7 @@ interface ISelectedState {
 
 const AssignUser = ({
   id,
+  companyId,
   userMap,
   clientMap,
   clientProjectMap,
@@ -74,6 +79,7 @@ const AssignUser = ({
   isEditUser,
   loading,
   saveUserLoading,
+  fetchUserloading,
   updateUserLoading,
   assignLoading,
   saveUser,
@@ -85,7 +91,9 @@ const AssignUser = ({
   clearErrors,
   fetchProjectClientList,
   fetchGroupSearch,
+  updateUserProfile,
   groupList,
+  companyUserProfile,
 }: IAssignUserProps) => {
   const classes = useStyles();
   const tableGlobalClasses = tableGlobalStyles();
@@ -400,11 +408,14 @@ const AssignUser = ({
           )}
           {tab === 'edit' && (
             <EditTab
-              userRole={currentUserRole}
+              companyId={companyId}
+              fetchUserloading={fetchUserloading}
               updateUserLoading={updateUserLoading}
               changeAssignTab={onCloseModal}
+              updateUserProfile={updateUserProfile}
               fetchGroupSearch={fetchGroupSearch}
               groupList={groupList}
+              companyUserProfile={companyUserProfile}
             />
           )}
         </>

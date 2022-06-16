@@ -245,6 +245,34 @@ export const uploadProfilePhotoStart: Epic<IAction, IAction, IRootState, IEpicDe
     )
   );
 
+export const fetchUserProfileStart: Epic<IAction, IAction, IRootState, IEpicDependencies> = (action$, state$, deps) =>
+action$.pipe(
+  ofType(ActionType.FETCH_USER_PROFILE_START),
+  mergeMap(({ payload }) =>
+    concat(
+      of(generalState.actions.setLoading(GENERAL.LOADING_KEY.FETCH_USER_PROFILE, true)),
+      deps.apiService
+        .getCompanyUser(payload.companyId, payload.companyUserId)
+        .pipe(map(res => actions.fetchUserProfileSuccess(res))),
+      of(generalState.actions.setLoading(GENERAL.LOADING_KEY.FETCH_USER_PROFILE, false))
+    ).pipe(handleError(GENERAL.LOADING_KEY.FETCH_USER_PROFILE))
+  )
+);
+
+export const updateUserProfileStart: Epic<IAction, IAction, IRootState, IEpicDependencies> = (action$, state$, deps) =>
+action$.pipe(
+  ofType(ActionType.UPDATE_USER_PROFILE_START),
+  mergeMap(({ payload }) =>
+    concat(
+      of(generalState.actions.setLoading(GENERAL.LOADING_KEY.UPDATE_USER, true)),
+      deps.apiService
+        .updateCompanyUser(payload.companyId, payload.companyUserId, payload.user)
+        .pipe(map(res => actions.updateUserProfileSuccess(res))),
+      of(generalState.actions.setLoading(GENERAL.LOADING_KEY.UPDATE_USER, false))
+    ).pipe(handleError(GENERAL.LOADING_KEY.UPDATE_USER))
+  )
+);
+
 export const epics = [
   userSignUp,
   validateToken,
@@ -261,4 +289,6 @@ export const epics = [
   fetchAccountStart,
   updateProfilePhotoStart,
   uploadProfilePhotoStart,
+  fetchUserProfileStart,
+  updateUserProfileStart,
 ];

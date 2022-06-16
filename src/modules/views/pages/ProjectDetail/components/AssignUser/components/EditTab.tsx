@@ -1,4 +1,4 @@
-import React, { memo, useMemo, useCallback, useEffect } from 'react';
+import React, { memo, useCallback, useEffect } from 'react';
 
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
@@ -6,7 +6,7 @@ import Typography from '@material-ui/core/Typography';
 import UserRow from '../../../../../shared/ClientForm/UserRow';
 import ButtonLoader from '../../../../../shared/ButtonLoader';
 
-import { UserModel, ClientModel, GeneralModel } from '../../../../../../models';
+import { UserModel, GeneralModel } from '../../../../../../models';
 import { userActiveRules } from '../../../../../../../constants/form/clientRules';
 import { CloseIcon } from '../../../../../../../constants';
 import { useForm } from '../../../../../../../utils/useForm';
@@ -15,26 +15,56 @@ import { useStyles as buttonStyles } from '../../../../../shared/FormHandler/Con
 import { useStyles } from '../../../styles';
 
 export interface IEditTabProps {
-  userRole: UserModel.Role;
+  fetchUserloading: GeneralModel.ILoadingStatus;
   updateUserLoading: GeneralModel.ILoadingStatus;
   changeAssignTab: () => void;
   fetchGroupSearch: (searchRequest: any) => void;
+  updateUserProfile?: (companyId: string, companyUserId: string, user: UserModel.IAccount) => void;
   groupList: any;
+  companyId: string;
+  companyUserProfile: UserModel.IUser | {};
 }
 
-const EditTab = ({ userRole, updateUserLoading, changeAssignTab, fetchGroupSearch, groupList }: IEditTabProps) => {
+const EditTab = ({
+  fetchUserloading,
+  updateUserLoading,
+  changeAssignTab,
+  fetchGroupSearch,
+  updateUserProfile,
+  groupList,
+  companyUserProfile,
+  companyId,
+}: IEditTabProps) => {
   const classes = useStyles();
   const assignModalClasses = AssignModalStyles();
   const buttonClasses = buttonStyles();
-  const isFcAdmin = useMemo(() => userRole === UserModel.Role.FCA_ADMIN, [userRole]);
 
-  const onUpdate = useCallback(user => console.log(user), []);
+  const onUpdate = useCallback(
+    user => {
+      const { email, firstName, lastName, mobilePhoneNumber, officePhoneNumber, officePhoneExtension, resendInvitation, preferredContactMethod } = user;
+
+      const userPayload = {
+        email,
+        firstName,
+        lastName,
+        mobilePhoneNumber,
+        officePhoneNumber,
+        officePhoneExtension,
+        resendInvitation,
+        preferredContactMethod,
+      };
+      updateUserProfile(companyId, user.id, userPayload);
+    },
+    [updateUserProfile, companyId]
+  );
 
   const { model, errors, onChange, onSubmit, updateRules } = useForm<any>({
-    initValues: { ...UserModel.getFallbackUser(), assignClient: '' } as any,
-    formRules: userActiveRules({ assignClientRequired: isFcAdmin }),
+    initValues: { ...UserModel.getFallbackUser() } as any,
+    formRules: userActiveRules({ assignClientRequired: false }),
     onSubmitCallback: onUpdate,
   });
+
+  const updateFormModel = useCallback(user => onChange({ ...model, ...user, resendInvitation: true }), [model, onChange]);
 
   useEffect(() => {
     if (Number(model.preferredContactMethod) === UserModel.PreferredContactMethod.PHONE) {
@@ -44,40 +74,56 @@ const EditTab = ({ userRole, updateUserLoading, changeAssignTab, fetchGroupSearc
     }
   }, [model.preferredContactMethod, updateRules]);
 
+  useEffect(() => {
+    if (companyUserProfile) {
+      updateFormModel(companyUserProfile);
+    }
+  }, [companyUserProfile]);
+
   const finalErrors = { ...errors, ...(updateUserLoading ? updateUserLoading.error?.response?.errors : {}) };
   const getErrors = useCallback((field: string) => finalErrors && finalErrors[field], [finalErrors]);
   return (
-    <div className={classes.createUserWrapper}>
-      <div className={classes.createUserHeader}>
-        <Typography className={classes.createUserTitle}>Edit User</Typography>
-        <Button disableRipple={true} className={classes.createUserCloseButton} data-testid="tab-assign-list-btn" onClick={changeAssignTab}>
-          <CloseIcon />
-        </Button>
-      </div>
-      <div className={classes.createUserRowWrapper}>
-        <UserRow
-          user={model}
-          index={0}
-          showDeleteButton={false}
-          hideDeleteContainer={true}
-          getErrors={getErrors}
-          onChange={onChange}
-          fetchGroupSearch={fetchGroupSearch}
-          companyId={model.assignClient}
-          groupList={groupList}
-        />
-      </div>
-      <ButtonLoader
-        className={`${buttonClasses.saveButton} ${assignModalClasses.assignButtonWidth} ${classes.noMargin} ${classes.createUserButtonPosition}`}
-        color="primary"
-        variant="contained"
-        data-testid="create-user-btn"
-        onClick={onSubmit}
-        text="Update User"
-        loadingText="Updating..."
-        isLoading={updateUserLoading && updateUserLoading.isLoading}
-      />
-    </div>
+    <>
+      {!fetchUserloading ||
+        (fetchUserloading && fetchUserloading.isLoading && (
+          <div className={classes.loadingEditUserWrapper}>
+            <Typography>Loading...</Typography>
+          </div>
+        ))}
+      {fetchUserloading && !fetchUserloading.isLoading && Object.keys(companyUserProfile).length > 0 && (
+        <div className={classes.createUserWrapper}>
+          <div className={classes.createUserHeader}>
+            <Typography className={classes.createUserTitle}>Edit User</Typography>
+            <Button disableRipple={true} className={classes.createUserCloseButton} data-testid="tab-assign-list-btn" onClick={changeAssignTab}>
+              <CloseIcon />
+            </Button>
+          </div>
+          <div className={classes.createUserRowWrapper}>
+            <UserRow
+              user={model}
+              index={0}
+              showDeleteButton={false}
+              hideDeleteContainer={true}
+              getErrors={getErrors}
+              onChange={onChange}
+              fetchGroupSearch={fetchGroupSearch}
+              groupList={groupList}
+              companyId={companyId}
+            />
+          </div>
+          <ButtonLoader
+            className={`${buttonClasses.saveButton} ${assignModalClasses.assignButtonWidth} ${classes.noMargin} ${classes.createUserButtonPosition}`}
+            color="primary"
+            variant="contained"
+            data-testid="create-user-btn"
+            onClick={onSubmit}
+            text="Update User"
+            loadingText="Updating..."
+            isLoading={updateUserLoading && updateUserLoading.isLoading}
+          />
+        </div>
+      )}
+    </>
   );
 };
 

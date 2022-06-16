@@ -23,7 +23,9 @@ export const mapStateToProps = (state: IRootState) => ({
   assignLoading: state.general.loadingMap[GENERAL.LOADING_KEY.ASSIGN_USER_PROJECT],
   saveUserLoading: state.general.loadingMap[GENERAL.LOADING_KEY.SAVE_USER],
   updateUserLoading: state.general.loadingMap[GENERAL.LOADING_KEY.UPDATE_USER],
+  fetchUserloading: state.general.loadingMap[GENERAL.LOADING_KEY.FETCH_USER_PROFILE],
   groupList: state.user.groupList,
+  companyUserProfile: state.user.companyUserProfile,
 });
 
 export const mapDispatchToProps = (dispatch: Dispatch) => ({
@@ -35,6 +37,7 @@ export const mapDispatchToProps = (dispatch: Dispatch) => ({
   fetchGroupSearch: (query: any) => dispatch(userState.actions.fetchGroupSearchStart(query)),
   saveUser: (companyId, user: UserModel.IUser) => dispatch(userState.actions.saveUserStart(companyId, user)),
   clearErrors: () => dispatch(generalState.actions.clear(GENERAL.LOADING_KEY.SAVE_USER)),
+  updateUserProfile: (companyId: string, companyUserId: string, user: UserModel.IAccount) => dispatch(userState.actions.updateUserProfileStart(companyId, companyUserId, user)),
 });
 
 export default connect(mapStateToProps, mapDispatchToProps)(AssignUser);

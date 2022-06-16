@@ -38,6 +38,7 @@ export interface IUsersTabProps {
   fetchUserList: (id: string, query: GeneralModel.IQueryParams) => void;
   fetchProjectClientList?: (id: string, query: GeneralModel.IQueryParams) => void;
   setQueryParams: (params) => void;
+  fetchUserProfile: (companyId: string, companyUserId: string) => void;
 }
 
 const UsersTab = ({
@@ -58,6 +59,7 @@ const UsersTab = ({
   clearUserMap,
   setQueryParams,
   fetchProjectClientList,
+  fetchUserProfile,
 }: IUsersTabProps) => {
   const classes = useStyles();
   const avatarGlobalClasses = avatarGlobalStyles();
@@ -65,6 +67,8 @@ const UsersTab = ({
   const buttonClasses = buttonStyles();
 
   const [isEditUser, setIsEditUser] = useState<boolean>(false);
+
+  const [userCompanyId, setUserCompanyId] = useState<string>('');
 
   const countUsers = useMemo(() => Math.ceil(userCount / queryParams.limit), [userCount, queryParams.limit]);
 
@@ -105,9 +109,11 @@ const UsersTab = ({
     return <>Loading...</>;
   }
 
-  const openEditTab = () => {
-    if (!isFcAdmin) return;
+  const editCompanyUser = (companyId: string, companyUserId: string) => {
+    if (!isFcAdmin || !companyId || !companyUserId) return;
 
+    fetchUserProfile(companyId, companyUserId);
+    setUserCompanyId(companyId);
     setIsEditUser(true);
     openModal();
   };
@@ -186,7 +192,7 @@ const UsersTab = ({
                             <Person titleAccess={UserModel.userInviteMap[user.invitationType]} />
                           </Avatar>
                         </Badge>
-                        <span onClick={openEditTab} className={classes.userTitle}>
+                        <span onClick={() => editCompanyUser(user.company.id, user.id)} className={classes.userTitle}>
                           {user.firstName} {user.lastName}
                         </span>
                       </div>
@@ -217,7 +223,7 @@ const UsersTab = ({
         </>
       )}
 
-      {isModalOpen && <AssignUser id={projectId} closeModal={onCloseModal} isFcAdmin={isFcAdmin} isEditUser={isEditUser} />}
+      {isModalOpen && <AssignUser id={projectId} closeModal={onCloseModal} isFcAdmin={isFcAdmin} isEditUser={isEditUser} companyId={userCompanyId} />}
     </>
   );
 };
