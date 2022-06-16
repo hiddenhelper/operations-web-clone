@@ -60,11 +60,16 @@ const UserRow = ({
   const formClasses = formGlobalStyles();
   const buttonGlobalStyles = buttonStyles();
   const onChangeHandler = useCallback(event => onChange({ ...user, [event.target.name]: event.target.value }, index), [index, user, onChange]);
-  const onChangeNumber = useCallback(/* istanbul ignore next */ event => onChange({ ...user, [event.target.name]: event.target.value }, index), [
-    index,
-    user,
-    onChange,
-  ]);
+  const onChangeNumber = useCallback(
+    /* istanbul ignore next */ event => {
+      if (event.target.value === UserModel.InviteType.DO_NOT_INVITE) {
+        onChange({ ...user, groupIds: [] }, index);
+      } else {
+        onChange({ ...user, groupIds: [event.target.value] }, index);
+      }
+    },
+    [index, user, onChange]
+  );
   const onChangeContactMethodHandler = useCallback(
     event => {
       event.persist();
@@ -118,7 +123,7 @@ const UserRow = ({
     };
 
     fetchGroupSearch(searchRequest);
-  }, [companyId]);
+  }, [companyId, fetchGroupSearch]);
 
   return (
     <Grid data-testid="user-row-item" container={true} className={`${formClasses.formWrapper} ${isListItem ? formClasses.rowsWrapper : ''}`}>
@@ -232,7 +237,8 @@ const UserRow = ({
                     <ControlledSelect
                       label=""
                       name="invitationType"
-                      value={user.invitationType || UserModel.InviteType.DO_NOT_INVITE}
+                      // value={user.invitationType || UserModel.InviteType.DO_NOT_INVITE}
+                      value={user?.groupIds[0] || UserModel.InviteType.DO_NOT_INVITE}
                       options={userInviteGroupList}
                       error={!!getErrors('invitationType', index)}
                       onChange={onChangeNumber}

@@ -49,6 +49,7 @@ export interface IBadgeTemplate {
   fontColor: string;
   font: string;
   logoUrl?: string;
+  templateFileUrl?: string;
 }
 
 export interface IBadge {
@@ -213,6 +214,7 @@ export const getFallbackBadgeTemplate = (): IBadgeTemplate => ({
   fontColor: '444444',
   font: 'Arial',
   logoUrl: null,
+  templateFileUrl: null,
 });
 
 export const getFallbackVisitorBadgeTemplate = (): IBadgeTemplate => ({
@@ -222,6 +224,7 @@ export const getFallbackVisitorBadgeTemplate = (): IBadgeTemplate => ({
   fontColor: '444444',
   font: 'Arial',
   logoUrl: null,
+  templateFileUrl: null,
 });
 
 export const getFallbackBadge = (isVisitor = false): IBadge => ({

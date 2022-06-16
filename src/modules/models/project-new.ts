@@ -122,6 +122,11 @@ export enum WorkerProjectStatus {
   FINISHED = 2,
 }
 
+export enum BadgeType {
+  TEMPLATE = 0,
+  CUSTOM = 1,
+}
+
 interface IAcsIdByLocation {
   location?: ILocation;
   accessControlSystems: string[];
@@ -227,6 +232,12 @@ export enum ProjectBadgeLogos {
   VISITOR_BADGE_LOGO = 'visitorBadgeLogo',
 }
 
+export enum ProjectBadgeTemplates {
+  GENERAL_CONTRACTOR_BADGE_TEMPLATE_FILE = 'generalContractorBadgeTemplate',
+  SUBCONTRACTOR_BADGE_TEMPLATE_FILE = 'subcontractorBadgeTemplate',
+  VISITOR_BADGE_TEMPLATE_FILE = 'visitorBadgeTemplate',
+}
+
 export interface IProjectBadgeFilesResource {
   generalContractorBadgeTemplateLogo?: IS3FileResponse;
   subcontractorBadgeTemplateLogo?: IS3FileResponse;
@@ -243,6 +254,9 @@ export const projectBadgeKeys = [
   ProjectBadgeLogos.GENERAL_CONTRACTOR_BADGE_LOGO,
   ProjectBadgeLogos.SUBCONTRACTOR_BADGE_LOGO,
   ProjectBadgeLogos.VISITOR_BADGE_LOGO,
+  ProjectBadgeTemplates.GENERAL_CONTRACTOR_BADGE_TEMPLATE_FILE,
+  ProjectBadgeTemplates.SUBCONTRACTOR_BADGE_TEMPLATE_FILE,
+  ProjectBadgeTemplates.VISITOR_BADGE_TEMPLATE_FILE,
 ];
 
 export const ProjectStep = {
@@ -267,7 +281,7 @@ export const projectStepMap: IStepMap = {
       { name: ProjectFields.NAME, required: true },
       { name: ProjectFields.DESCRIPTION, required: false },
       { name: ProjectFields.CATEGORY_ID, required: true },
-      { name: ProjectFields.COMMERCIAL_CONSTRUCTION_VALUE, required: true },
+      { name: ProjectFields.COMMERCIAL_CONSTRUCTION_VALUE, required: false },
       { name: ProjectFields.FC_REGION, required: true },
       { name: ProjectFields.FC_NAE, required: true },
       { name: ProjectFields.START_DATE, required: true },

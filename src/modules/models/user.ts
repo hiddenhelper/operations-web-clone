@@ -59,6 +59,7 @@ export interface IUser {
   };
   invitationStatus?: InvitationStatus;
   roleName?: string;
+  groupIds?: string[];
 }
 
 export interface IUserProject extends IUser {}
@@ -91,6 +92,7 @@ export const getFallbackUser = (): IUser => ({
   preferredContactMethod: PreferredContactMethod.EMAIL,
   invitationType: InviteType.DO_NOT_INVITE,
   companyId: null,
+  groupIds: [],
 });
 
 export const userInviteMap = {

@@ -194,6 +194,7 @@ describe('ClientInvite Component', () => {
           officePhoneNumber: null,
           preferredContactMethod: 0,
           title: null,
+          groupIds: [],
         },
       ],
     });

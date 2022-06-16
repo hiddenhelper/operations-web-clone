@@ -105,6 +105,7 @@ const ControlledDatePicker = ({
               onChange={onDateChange}
               className={styleClass}
               variant={variant}
+              error={error}
               InputProps={{
                 startAdornment: (
                   <InputAdornment position="start">

@@ -45,6 +45,7 @@ describe('sanitizeClient', () => {
           officePhoneNumber: null,
           preferredContactMethod: 0,
           title: null,
+          groupIds: [],
         },
         {
           companyId: '5164e4c4-6521-47bb-97fd-b75ac02b2cf1',
@@ -61,6 +62,7 @@ describe('sanitizeClient', () => {
           officePhoneNumber: '+5678947895',
           preferredContactMethod: 0,
           title: null,
+          groupIds: [],
         },
       ],
       hasUniversalBadge: true,
@@ -101,6 +103,7 @@ describe('sanitizeClient', () => {
           officePhoneNumber: null,
           preferredContactMethod: 0,
           title: null,
+          groupIds: [],
         },
       ],
       hasUniversalBadge: false,

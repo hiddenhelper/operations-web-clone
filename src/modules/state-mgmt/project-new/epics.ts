@@ -12,7 +12,7 @@ import { GENERAL } from '../../../constants';
 import { handleToastError, handleError } from '../core/operators';
 import { isEmpty } from '../../../utils/generalUtils';
 import { getProjectBadgeResourceRequest } from '../../../utils/projectUtils';
-import { GeneralModel, ProjectNewModel } from 'modules/models';
+import { GeneralModel } from 'modules/models';
 
 export const fetchProjectStart: Epic<IAction, IAction, IRootState, IEpicDependencies> = (action$, state$, deps) =>
   action$.pipe(
@@ -168,7 +168,7 @@ export const uploadProjectBadgeLogosStart: Epic<IAction, IAction, IRootState, IE
               .filter(([logoKey, logoValue]) => !isEmpty(logoValue))
               .map(([fileKey, fileValue]) =>
                 fileState.actions.uploadFileStart(
-                  payload.fileMap[ProjectNewModel.projectBadgeResponseMap[fileKey]], // { gcBadgeLogo: File, scBadgeLogo: File }
+                  payload.fileMap[fileKey], // { gcBadgeLogo: File, scBadgeLogo: File }
                   fileValue.url,
                   fileValue.fileId,
                   GENERAL.TRACE_KEY.SAVE_UPLOAD_PROJECT_BADGE
@@ -210,7 +210,7 @@ export const sendApproveProjectStart: Epic<IAction, IAction, IRootState, IEpicDe
               of(
                 push('/projects?filter="pending-approval"'),
                 generalState.actions.addToastStart(
-                  `Project created successfully! ${state$.value.project.projectMap[payload.id].name} is pending approval now`,
+                  `Project created successfully! ${state$.value.projectNew.projectMap[payload.id].name} is pending approval now`,
                   GeneralModel.ToastType.SUCCESS
                 )
               )
@@ -245,7 +245,7 @@ export const approveProjectStart: Epic<IAction, IAction, IRootState, IEpicDepend
               of(
                 push('/projects?filter="active"'),
                 generalState.actions.addToastStart(
-                  `Project approved successfully! ${state$.value.project.projectMap[payload.id].name} is active now`,
+                  `Project approved successfully! ${state$.value.projectNew.projectMap[payload.id].name} is active now`,
                   GeneralModel.ToastType.SUCCESS
                 )
               )
@@ -276,4 +276,6 @@ export const epics = [
   fetchBillingTierListStart,
   fetchConsentFormFieldsStart,
   uploadProjectBadgeLogosStart,
+  sendApproveProjectStart,
+  approveProjectStart,
 ];

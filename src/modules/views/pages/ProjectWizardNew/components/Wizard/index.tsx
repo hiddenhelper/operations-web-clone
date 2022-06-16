@@ -156,24 +156,26 @@ const Wizard = <T,>({
   const onChangeStep = useCallback(
     (newStepIndex, shouldValidate?) => {
       setIsDrawerOpen(false);
-      onPreNavigate(stepMap[newStepIndex]);
+      resetErrors();
+
+      const currentReviewMode = newStepIndex === ProjectNewModel.ProjectStep.REVIEW;
       if (!shouldValidate) {
-        const currentReviewMode = newStepIndex === ProjectNewModel.ProjectStep.REVIEW;
         setReviewMode(currentReviewMode);
       }
 
       const updateRulesCallback = rules => {
+        updateRules(rules);
         if (shouldValidate) {
           Object.keys(rules).forEach(key => {
             onValidate(key);
           });
         }
-        updateRules(rules);
       };
 
-      updateRulesForCurrentStep(model, updateRulesCallback, true, stepMap[newStepIndex]);
+      updateRulesForCurrentStep(model, updateRulesCallback, shouldValidate || currentReviewMode, stepMap[newStepIndex]);
+      onPreNavigate(stepMap[newStepIndex]);
     },
-    [stepMap, model, updateRulesForCurrentStep, onPreNavigate, onValidate, updateRules, setReviewMode]
+    [stepMap, model, resetErrors, updateRulesForCurrentStep, onPreNavigate, onValidate, updateRules, setReviewMode]
   );
 
   useEffect(() => {
