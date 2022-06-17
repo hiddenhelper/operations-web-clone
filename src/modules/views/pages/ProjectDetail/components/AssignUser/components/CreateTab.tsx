@@ -106,7 +106,7 @@ const CreateTab = ({ userRole, userCompanyId, clientMap, saveUserLoading, change
           getErrors={getErrors}
           onChange={onChange}
           fetchGroupSearch={fetchGroupSearch}
-          companyId={model.assignClient}
+          companyId={isFcAdmin ? model.assignClient : userCompanyId}
           groupList={groupList}
         />
       </div>
