@@ -73,7 +73,7 @@ const UserRow = ({
   const onChangeContactMethodHandler = useCallback(
     event => {
       event.persist();
-      onChange({ ...user, [event.target.name]: event.target.value }, index);
+      onChange({ ...user, [event.target.name]: parseInt(event.target.value, 10) }, index);
       if (updateRules) {
         updateRules(
           /* istanbul ignore next */ prev => ({
