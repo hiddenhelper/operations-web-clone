@@ -15,6 +15,12 @@ import { ButtonLoader } from 'modules/views/shared';
 import { useStyles as statusChipStyles } from 'modules/views/shared/StatusChip/styles';
 import { LANG } from 'constants/locales';
 
+const initialBadgesType = {
+  generalContractorBadgeType: ProjectNewModel.BadgeType.TEMPLATE,
+  subcontractorBadgeType: ProjectNewModel.BadgeType.TEMPLATE,
+  visitorBadgeType: ProjectNewModel.BadgeType.TEMPLATE,
+};
+
 export interface IWizardProps<T> {
   breadCrumb: { route: string; title: string; pluralTitle: string };
   navigationProps: IUseNavigator<T>;
@@ -34,6 +40,7 @@ export interface IWizardProps<T> {
   navigate: (path: string) => void;
   handleSave: (projectData: ProjectNewModel.IProject) => void;
   onConfirm: () => void;
+  clearFileMap: () => void;
 }
 // tslint:disable-next-line:whitespace
 const Wizard = <T,>({
@@ -55,6 +62,7 @@ const Wizard = <T,>({
   handleSave,
   navigate,
   onConfirm,
+  clearFileMap,
 }: IWizardProps<T>) => {
   const classes = useStyles();
   const modalClasses = modalStyles();
@@ -80,7 +88,16 @@ const Wizard = <T,>({
   const [showModal, setShowModal] = useState<boolean>(false);
   const [isDrawerOpen, setIsDrawerOpen] = useState<boolean>(false);
   const [validatingFields, setValidatingFields] = useState([]);
+  const [badgesType, setBadgesType] = React.useState(initialBadgesType);
+  const [prevBadgesType, setPrevBadgesType] = React.useState(initialBadgesType);
   const step = useMemo(() => stepMap[currentStepKey], [stepMap, currentStepKey]);
+
+  const updateBadgesStates = useCallback((updatedBadges, setAsPrev?) => {
+    setBadgesType(() => {
+      if (setAsPrev) setPrevBadgesType(updatedBadges);
+      return updatedBadges;
+    });
+  }, []);
 
   const updateRulesForCurrentStep = useCallback(
     (currentModel, updateRulesCallback, currentReviewMode, updatedStep?) => {
@@ -206,7 +223,9 @@ const Wizard = <T,>({
     resetErrors();
     setReviewMode(false);
     updateRulesForCurrentStep(model, updateRules, false);
-  }, [model, discardChanges, resetErrors, setReviewMode, updateRulesForCurrentStep, updateRules]);
+    clearFileMap();
+    setBadgesType(prevBadgesType);
+  }, [model, prevBadgesType, discardChanges, resetErrors, setReviewMode, updateRulesForCurrentStep, updateRules, clearFileMap]);
 
   const onStepChange = useCallback(
     (direction?: string) => {
@@ -331,6 +350,7 @@ const Wizard = <T,>({
               model,
               errors: { ...errors },
               currentStep,
+              badgesType,
               setReviewMode,
               onChangeStep: newStepIndex => onChangeStep(newStepIndex, true),
               onChange: onChangeCallback,
@@ -338,6 +358,7 @@ const Wizard = <T,>({
               updateRules,
               update,
               setHasChanges,
+              setBadgesType: updateBadgesStates,
             })}
           </>
         </Grid>

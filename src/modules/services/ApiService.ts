@@ -310,6 +310,14 @@ export class ApiService {
     return this.protectedRequest(`companies/${id}`, { method: 'GET' });
   }
 
+  public getCompanyUser(companyId: string, companyUserId: string): Observable<UserModel.IUser> {
+    return this.protectedRequest(`companies/${companyId}/users/${companyUserId}`, { method: 'GET' });
+  }
+
+  public updateCompanyUser(companyId: string, companyUserId: string, user: UserModel.IUser): Observable<UserModel.IUser> {
+    return this.protectedRequest(`companies/${companyId}/users/${companyUserId}`, { method: 'PUT', body: user });
+  }
+
   public getClientList(query: GeneralModel.IQueryParams): Observable<GeneralModel.IPagination<ClientModel.IClient>> {
     return this.protectedRequest(`companies?${parseQuery(sanitizePaginationQuery(query))}`, {
       method: 'GET',

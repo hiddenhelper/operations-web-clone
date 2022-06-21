@@ -21,6 +21,9 @@ describe('AssignUserContainer', () => {
       assignLoading: undefined,
       saveUserLoading: undefined,
       groupList: [],
+      fetchUserLoading: undefined,
+      updateUserLoading: undefined,
+      companyUserProfile: getInitialState().user.companyUserProfile,
     });
   });
 
@@ -36,6 +39,7 @@ describe('AssignUserContainer', () => {
       clearErrors: expect.any(Function),
       fetchProjectClientList: expect.any(Function),
       fetchGroupSearch: expect.any(Function),
+      updateUserProfile: expect.any(Function),
     });
   });
 

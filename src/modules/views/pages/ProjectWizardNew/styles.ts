@@ -526,5 +526,12 @@ export const useStyles = makeStyles(theme =>
         },
       },
     },
+    templateLink: {
+      display: 'flex',
+      alignItems: 'center',
+      padding: 14,
+      backgroundColor: STYLE.COLOR.LIGHT_GRAY3,
+      height: 52,
+    },
   })
 );

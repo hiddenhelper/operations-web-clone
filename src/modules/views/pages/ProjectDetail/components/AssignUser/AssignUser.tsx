@@ -18,6 +18,7 @@ import ClientFilter from '../../../../shared/ClientFilter';
 import RoleGuard from '../../../../shared/RoleGuard';
 import UserRow from './components/UserRow';
 import CreateTab from './components/CreateTab';
+import EditTab from './components/EditTab';
 
 import { GeneralModel, UserModel, ClientModel, ProjectModel } from '../../../../../models';
 import { SearchIcon } from '../../../../../../constants';
@@ -30,14 +31,18 @@ import { useStyles } from '../../../../shared/Modal/components/AssignModal/style
 
 export interface IAssignUserProps {
   id: string;
+  companyId: string;
   count: number;
   currentUserRole: UserModel.Role;
   userCompanyId: string;
   isFcAdmin: boolean;
+  isEditUser: boolean;
   userMap: GeneralModel.IEntityMap<UserModel.IUser>;
   clientMap: GeneralModel.IEntityMap<ClientModel.IClient>;
   loading: GeneralModel.ILoadingStatus;
   saveUserLoading: GeneralModel.ILoadingStatus;
+  fetchUserloading: GeneralModel.ILoadingStatus;
+  updateUserLoading: GeneralModel.ILoadingStatus;
   assignLoading: GeneralModel.ILoadingStatus;
   userRoleList: GeneralModel.INamedEntity[];
   clientProjectMap?: GeneralModel.IEntityMap<GeneralModel.IEntityMap<ClientModel.IClientProject>>;
@@ -50,7 +55,9 @@ export interface IAssignUserProps {
   saveUser: (companyId: string, user: UserModel.IUser) => void;
   fetchProjectClientList?: (id: string, query: GeneralModel.IQueryParams) => void;
   fetchGroupSearch: (searchRequest: any) => void;
+  updateUserProfile?: (companyId: string, companyUserId: string, user: UserModel.IAccount) => void;
   groupList: any;
+  companyUserProfile: UserModel.IUser | {};
 }
 
 interface ISelectedState {
@@ -60,6 +67,7 @@ interface ISelectedState {
 
 const AssignUser = ({
   id,
+  companyId,
   userMap,
   clientMap,
   clientProjectMap,
@@ -68,8 +76,11 @@ const AssignUser = ({
   userRoleList,
   count,
   isFcAdmin,
+  isEditUser,
   loading,
   saveUserLoading,
+  fetchUserloading,
+  updateUserLoading,
   assignLoading,
   saveUser,
   assignUser,
@@ -80,7 +91,9 @@ const AssignUser = ({
   clearErrors,
   fetchProjectClientList,
   fetchGroupSearch,
+  updateUserProfile,
   groupList,
+  companyUserProfile,
 }: IAssignUserProps) => {
   const classes = useStyles();
   const tableGlobalClasses = tableGlobalStyles();
@@ -240,11 +253,19 @@ const AssignUser = ({
     fetchClientList(id);
   }, [fetchClientList, id]);
 
+  useEffect(() => {
+    if (isEditUser) {
+      setTab('edit');
+    } else {
+      setTab('assign');
+    }
+  }, [isEditUser]);
+
   return (
     <AssignModal
-      title="Assign User"
+      title={tab === 'edit' ? 'Edit User' : 'Assign User'}
       loading={assignLoading && assignLoading.isLoading}
-      confirmLabel="Assign"
+      confirmLabel={tab === 'edit' ? '' : 'Assign'}
       confirmLoadingLabel="Assigning..."
       modalRef={modalRef}
       isConfirmEnabled={assignEnabled}
@@ -383,6 +404,18 @@ const AssignUser = ({
               changeAssignTab={onAssignList}
               fetchGroupSearch={fetchGroupSearch}
               groupList={groupList}
+            />
+          )}
+          {tab === 'edit' && (
+            <EditTab
+              companyId={companyId}
+              fetchUserloading={fetchUserloading}
+              updateUserLoading={updateUserLoading}
+              changeAssignTab={onCloseModal}
+              updateUserProfile={updateUserProfile}
+              fetchGroupSearch={fetchGroupSearch}
+              groupList={groupList}
+              companyUserProfile={companyUserProfile}
             />
           )}
         </>

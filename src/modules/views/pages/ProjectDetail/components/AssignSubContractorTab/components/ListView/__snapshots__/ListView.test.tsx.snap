@@ -48,7 +48,7 @@ exports[`ListView should render 1`] = `
       class="MuiTableBody-root"
     >
       <tr
-        class="MuiTableRow-root WithStyles(ForwardRef(TableRow))-root-112 makeStyles-pointer-16"
+        class="MuiTableRow-root WithStyles(ForwardRef(TableRow))-root-114 makeStyles-pointer-16"
         data-testid="client-list-row"
       >
         <td
@@ -77,7 +77,7 @@ exports[`ListView should render 1`] = `
           class="MuiTableCell-root MuiTableCell-body"
         >
           <div
-            class="MuiChip-root makeStyles-statusChip-75 makeStyles-pending-82  MuiChip-colorPrimary"
+            class="MuiChip-root makeStyles-statusChip-77 makeStyles-pending-84  MuiChip-colorPrimary"
           >
             <span
               class="MuiChip-label"
@@ -88,7 +88,7 @@ exports[`ListView should render 1`] = `
         </td>
       </tr>
       <tr
-        class="MuiTableRow-root WithStyles(ForwardRef(TableRow))-root-112 makeStyles-pointer-16"
+        class="MuiTableRow-root WithStyles(ForwardRef(TableRow))-root-114 makeStyles-pointer-16"
         data-testid="client-list-row"
       >
         <td
@@ -116,7 +116,7 @@ exports[`ListView should render 1`] = `
           class="MuiTableCell-root MuiTableCell-body"
         >
           <div
-            class="MuiChip-root makeStyles-statusChip-75 makeStyles-active-81  MuiChip-colorPrimary"
+            class="MuiChip-root makeStyles-statusChip-77 makeStyles-active-83  MuiChip-colorPrimary"
           >
             <span
               class="MuiChip-label"
@@ -130,7 +130,7 @@ exports[`ListView should render 1`] = `
   </table>
   <nav
     aria-label="pagination navigation"
-    class="MuiPagination-root  makeStyles-pagination-113"
+    class="MuiPagination-root  makeStyles-pagination-115"
     data-testid="pagination"
   >
     <ul
@@ -208,18 +208,18 @@ exports[`ListView should render 1`] = `
     </ul>
   </nav>
   <div
-    class="MuiDrawer-root MuiDrawer-docked makeStyles-drawer-114 makeStyles-close-125 closed"
+    class="MuiDrawer-root MuiDrawer-docked makeStyles-drawer-116 makeStyles-close-127 closed"
     data-testid="client-drawer-detail"
   >
     <div
-      class="MuiPaper-root MuiDrawer-paper makeStyles-drawerPaper-115 MuiDrawer-paperAnchorRight MuiDrawer-paperAnchorDockedRight MuiPaper-elevation0"
+      class="MuiPaper-root MuiDrawer-paper makeStyles-drawerPaper-117 MuiDrawer-paperAnchorRight MuiDrawer-paperAnchorDockedRight MuiPaper-elevation0"
       style="visibility: hidden; webkit-transform: translateX(1024px) translateX(0px); transform: translateX(1024px) translateX(0px);"
     >
       <div
-        class="makeStyles-drawerButtonWrapper-117"
+        class="makeStyles-drawerButtonWrapper-119"
       >
         <div
-          class="makeStyles-drawerButton-118"
+          class="makeStyles-drawerButton-120"
         >
           <button
             class="MuiButtonBase-root MuiButton-root MuiButton-text"
@@ -241,29 +241,29 @@ exports[`ListView should render 1`] = `
           </button>
         </div>
         <div
-          class="makeStyles-drawerHeader-116"
+          class="makeStyles-drawerHeader-118"
         >
           <p
-            class="MuiTypography-root makeStyles-drawerTitle-119 MuiTypography-body1 MuiTypography-colorPrimary MuiTypography-alignLeft"
+            class="MuiTypography-root makeStyles-drawerTitle-121 MuiTypography-body1 MuiTypography-colorPrimary MuiTypography-alignLeft"
           >
             Client Information
           </p>
         </div>
       </div>
       <div
-        class="makeStyles-listDetail-144"
+        class="makeStyles-listDetail-146"
       >
         <div
-          class="makeStyles-company-145"
+          class="makeStyles-company-147"
         >
           <div
-            class="makeStyles-drawerText-121"
+            class="makeStyles-drawerText-123"
           >
             <p
-              class="MuiTypography-root makeStyles-listAccent-146 makeStyles-entityTitle-143 MuiTypography-body1"
+              class="MuiTypography-root makeStyles-listAccent-148 makeStyles-entityTitle-145 MuiTypography-body1"
             />
             <div
-              class="makeStyles-drawerMainText-122"
+              class="makeStyles-drawerMainText-124"
             >
               <span>
                 -
@@ -275,16 +275,16 @@ exports[`ListView should render 1`] = `
             </div>
           </div>
           <div
-            class="makeStyles-drawerSection-120"
+            class="makeStyles-drawerSection-122"
           >
             <svg>
               location.svg
             </svg>
             <div
-              class="makeStyles-drawerText-121 makeStyles-drawerTextSeparation-123"
+              class="makeStyles-drawerText-123 makeStyles-drawerTextSeparation-125"
             >
               <p
-                class="MuiTypography-root makeStyles-cardFont-183  MuiTypography-body1"
+                class="MuiTypography-root makeStyles-cardFont-185  MuiTypography-body1"
               >
                 
                 <span
@@ -294,7 +294,7 @@ exports[`ListView should render 1`] = `
                 </span>
               </p>
               <p
-                class="MuiTypography-root makeStyles-cardFont-183  MuiTypography-body1"
+                class="MuiTypography-root makeStyles-cardFont-185  MuiTypography-body1"
               >
                 
                 
@@ -304,7 +304,7 @@ exports[`ListView should render 1`] = `
             </div>
           </div>
           <div
-            class="makeStyles-drawerSection-120"
+            class="makeStyles-drawerSection-122"
           >
             <svg
               aria-hidden="true"
@@ -317,10 +317,10 @@ exports[`ListView should render 1`] = `
               />
             </svg>
             <div
-              class="makeStyles-drawerText-121 makeStyles-drawerTextSeparation-123"
+              class="makeStyles-drawerText-123 makeStyles-drawerTextSeparation-125"
             >
               <p
-                class="MuiTypography-root makeStyles-cardFont-183  MuiTypography-body1"
+                class="MuiTypography-root makeStyles-cardFont-185  MuiTypography-body1"
               >
                 
                 <span
@@ -330,7 +330,7 @@ exports[`ListView should render 1`] = `
                 </span>
               </p>
               <p
-                class="MuiTypography-root makeStyles-cardFont-183  MuiTypography-body1"
+                class="MuiTypography-root makeStyles-cardFont-185  MuiTypography-body1"
               >
                 
                 
@@ -340,7 +340,7 @@ exports[`ListView should render 1`] = `
             </div>
           </div>
           <div
-            class="makeStyles-drawerSection-120"
+            class="makeStyles-drawerSection-122"
           >
             <svg
               aria-hidden="true"
@@ -353,10 +353,10 @@ exports[`ListView should render 1`] = `
               />
             </svg>
             <div
-              class="makeStyles-drawerText-121 makeStyles-drawerTextSeparation-123"
+              class="makeStyles-drawerText-123 makeStyles-drawerTextSeparation-125"
             >
               <span
-                class="makeStyles-listAccent-146"
+                class="makeStyles-listAccent-148"
               >
                 -
               </span>
@@ -370,10 +370,10 @@ exports[`ListView should render 1`] = `
           </div>
         </div>
         <hr
-          class="MuiDivider-root makeStyles-drawerDivider-124"
+          class="MuiDivider-root makeStyles-drawerDivider-126"
         />
         <div
-          class="makeStyles-ctaWrapper-147"
+          class="makeStyles-ctaWrapper-149"
         >
           <span
             class=""
@@ -381,7 +381,7 @@ exports[`ListView should render 1`] = `
             tabindex="-1"
           >
             <button
-              class="MuiButtonBase-root MuiButton-root MuiButton-outlined makeStyles-drawerCTA-163 makeStyles-borderPrimaryButton-155"
+              class="MuiButtonBase-root MuiButton-root MuiButton-outlined makeStyles-drawerCTA-165 makeStyles-borderPrimaryButton-157"
               data-testid="drawerEditTaxButton"
               tabindex="0"
               type="button"
@@ -448,7 +448,7 @@ exports[`ListView should render client info 1`] = `
       class="MuiTableBody-root"
     >
       <tr
-        class="MuiTableRow-root WithStyles(ForwardRef(TableRow))-root-824 makeStyles-pointer-728"
+        class="MuiTableRow-root WithStyles(ForwardRef(TableRow))-root-834 makeStyles-pointer-736"
         data-testid="client-list-row"
       >
         <td
@@ -477,7 +477,7 @@ exports[`ListView should render client info 1`] = `
           class="MuiTableCell-root MuiTableCell-body"
         >
           <div
-            class="MuiChip-root makeStyles-statusChip-787 makeStyles-pending-794  MuiChip-colorPrimary"
+            class="MuiChip-root makeStyles-statusChip-797 makeStyles-pending-804  MuiChip-colorPrimary"
           >
             <span
               class="MuiChip-label"
@@ -488,7 +488,7 @@ exports[`ListView should render client info 1`] = `
         </td>
       </tr>
       <tr
-        class="MuiTableRow-root WithStyles(ForwardRef(TableRow))-root-824 makeStyles-pointer-728"
+        class="MuiTableRow-root WithStyles(ForwardRef(TableRow))-root-834 makeStyles-pointer-736"
         data-testid="client-list-row"
       >
         <td
@@ -516,7 +516,7 @@ exports[`ListView should render client info 1`] = `
           class="MuiTableCell-root MuiTableCell-body"
         >
           <div
-            class="MuiChip-root makeStyles-statusChip-787 makeStyles-active-793  MuiChip-colorPrimary"
+            class="MuiChip-root makeStyles-statusChip-797 makeStyles-active-803  MuiChip-colorPrimary"
           >
             <span
               class="MuiChip-label"
@@ -530,7 +530,7 @@ exports[`ListView should render client info 1`] = `
   </table>
   <nav
     aria-label="pagination navigation"
-    class="MuiPagination-root  makeStyles-pagination-825"
+    class="MuiPagination-root  makeStyles-pagination-835"
     data-testid="pagination"
   >
     <ul
@@ -608,18 +608,18 @@ exports[`ListView should render client info 1`] = `
     </ul>
   </nav>
   <div
-    class="MuiDrawer-root MuiDrawer-docked makeStyles-drawer-826 makeStyles-close-837 closed"
+    class="MuiDrawer-root MuiDrawer-docked makeStyles-drawer-836 makeStyles-close-847 closed"
     data-testid="client-drawer-detail"
   >
     <div
-      class="MuiPaper-root MuiDrawer-paper makeStyles-drawerPaper-827 MuiDrawer-paperAnchorRight MuiDrawer-paperAnchorDockedRight MuiPaper-elevation0"
+      class="MuiPaper-root MuiDrawer-paper makeStyles-drawerPaper-837 MuiDrawer-paperAnchorRight MuiDrawer-paperAnchorDockedRight MuiPaper-elevation0"
       style="visibility: hidden; webkit-transform: translateX(1024px) translateX(0px); transform: translateX(1024px) translateX(0px);"
     >
       <div
-        class="makeStyles-drawerButtonWrapper-829"
+        class="makeStyles-drawerButtonWrapper-839"
       >
         <div
-          class="makeStyles-drawerButton-830"
+          class="makeStyles-drawerButton-840"
         >
           <button
             class="MuiButtonBase-root MuiButton-root MuiButton-text"
@@ -641,29 +641,29 @@ exports[`ListView should render client info 1`] = `
           </button>
         </div>
         <div
-          class="makeStyles-drawerHeader-828"
+          class="makeStyles-drawerHeader-838"
         >
           <p
-            class="MuiTypography-root makeStyles-drawerTitle-831 MuiTypography-body1 MuiTypography-colorPrimary MuiTypography-alignLeft"
+            class="MuiTypography-root makeStyles-drawerTitle-841 MuiTypography-body1 MuiTypography-colorPrimary MuiTypography-alignLeft"
           >
             Client Information
           </p>
         </div>
       </div>
       <div
-        class="makeStyles-listDetail-856"
+        class="makeStyles-listDetail-866"
       >
         <div
-          class="makeStyles-company-857"
+          class="makeStyles-company-867"
         >
           <div
-            class="makeStyles-drawerText-833"
+            class="makeStyles-drawerText-843"
           >
             <p
-              class="MuiTypography-root makeStyles-listAccent-858 makeStyles-entityTitle-855 MuiTypography-body1"
+              class="MuiTypography-root makeStyles-listAccent-868 makeStyles-entityTitle-865 MuiTypography-body1"
             />
             <div
-              class="makeStyles-drawerMainText-834"
+              class="makeStyles-drawerMainText-844"
             >
               <span>
                 -
@@ -675,16 +675,16 @@ exports[`ListView should render client info 1`] = `
             </div>
           </div>
           <div
-            class="makeStyles-drawerSection-832"
+            class="makeStyles-drawerSection-842"
           >
             <svg>
               location.svg
             </svg>
             <div
-              class="makeStyles-drawerText-833 makeStyles-drawerTextSeparation-835"
+              class="makeStyles-drawerText-843 makeStyles-drawerTextSeparation-845"
             >
               <p
-                class="MuiTypography-root makeStyles-cardFont-895  MuiTypography-body1"
+                class="MuiTypography-root makeStyles-cardFont-905  MuiTypography-body1"
               >
                 
                 <span
@@ -694,7 +694,7 @@ exports[`ListView should render client info 1`] = `
                 </span>
               </p>
               <p
-                class="MuiTypography-root makeStyles-cardFont-895  MuiTypography-body1"
+                class="MuiTypography-root makeStyles-cardFont-905  MuiTypography-body1"
               >
                 
                 
@@ -704,7 +704,7 @@ exports[`ListView should render client info 1`] = `
             </div>
           </div>
           <div
-            class="makeStyles-drawerSection-832"
+            class="makeStyles-drawerSection-842"
           >
             <svg
               aria-hidden="true"
@@ -717,10 +717,10 @@ exports[`ListView should render client info 1`] = `
               />
             </svg>
             <div
-              class="makeStyles-drawerText-833 makeStyles-drawerTextSeparation-835"
+              class="makeStyles-drawerText-843 makeStyles-drawerTextSeparation-845"
             >
               <p
-                class="MuiTypography-root makeStyles-cardFont-895  MuiTypography-body1"
+                class="MuiTypography-root makeStyles-cardFont-905  MuiTypography-body1"
               >
                 
                 <span
@@ -730,7 +730,7 @@ exports[`ListView should render client info 1`] = `
                 </span>
               </p>
               <p
-                class="MuiTypography-root makeStyles-cardFont-895  MuiTypography-body1"
+                class="MuiTypography-root makeStyles-cardFont-905  MuiTypography-body1"
               >
                 
                 
@@ -740,7 +740,7 @@ exports[`ListView should render client info 1`] = `
             </div>
           </div>
           <div
-            class="makeStyles-drawerSection-832"
+            class="makeStyles-drawerSection-842"
           >
             <svg
               aria-hidden="true"
@@ -753,10 +753,10 @@ exports[`ListView should render client info 1`] = `
               />
             </svg>
             <div
-              class="makeStyles-drawerText-833 makeStyles-drawerTextSeparation-835"
+              class="makeStyles-drawerText-843 makeStyles-drawerTextSeparation-845"
             >
               <span
-                class="makeStyles-listAccent-858"
+                class="makeStyles-listAccent-868"
               >
                 -
               </span>
@@ -770,10 +770,10 @@ exports[`ListView should render client info 1`] = `
           </div>
         </div>
         <hr
-          class="MuiDivider-root makeStyles-drawerDivider-836"
+          class="MuiDivider-root makeStyles-drawerDivider-846"
         />
         <div
-          class="makeStyles-ctaWrapper-859"
+          class="makeStyles-ctaWrapper-869"
         >
           <span
             class=""
@@ -781,7 +781,7 @@ exports[`ListView should render client info 1`] = `
             tabindex="-1"
           >
             <button
-              class="MuiButtonBase-root MuiButton-root MuiButton-outlined makeStyles-drawerCTA-875 makeStyles-borderPrimaryButton-867"
+              class="MuiButtonBase-root MuiButton-root MuiButton-outlined makeStyles-drawerCTA-885 makeStyles-borderPrimaryButton-877"
               data-testid="drawerEditTaxButton"
               tabindex="0"
               type="button"

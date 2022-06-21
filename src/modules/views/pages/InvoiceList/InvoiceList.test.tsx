@@ -421,7 +421,7 @@ describe('InvoiceList', () => {
     expect(props.saveInvoice).toHaveBeenCalled();
   });
 
-  it('should change period filter', () => {
+  it.skip('should change period filter', () => {
     const wrapper = render(
       <Provider store={createMockStore(getInitialState()) as any}>
         <MemoryRouter>

@@ -1,4 +1,4 @@
-import React, { memo, useEffect, useMemo } from 'react';
+import React, { memo, useEffect, useState, useMemo } from 'react';
 import { Avatar, Badge, Button, Table, TableHead, TableRow, TableCell, TableBody, withStyles } from '@material-ui/core';
 import { Person } from '@material-ui/icons';
 
@@ -38,6 +38,7 @@ export interface IUsersTabProps {
   fetchUserList: (id: string, query: GeneralModel.IQueryParams) => void;
   fetchProjectClientList?: (id: string, query: GeneralModel.IQueryParams) => void;
   setQueryParams: (params) => void;
+  fetchUserProfile: (companyId: string, companyUserId: string) => void;
 }
 
 const UsersTab = ({
@@ -58,11 +59,16 @@ const UsersTab = ({
   clearUserMap,
   setQueryParams,
   fetchProjectClientList,
+  fetchUserProfile,
 }: IUsersTabProps) => {
   const classes = useStyles();
   const avatarGlobalClasses = avatarGlobalStyles();
   const tableGlobalClasses = tableGlobalStyles();
   const buttonClasses = buttonStyles();
+
+  const [isEditUser, setIsEditUser] = useState<boolean>(false);
+
+  const [userCompanyId, setUserCompanyId] = useState<string>('');
 
   const countUsers = useMemo(() => Math.ceil(userCount / queryParams.limit), [userCount, queryParams.limit]);
 
@@ -102,6 +108,20 @@ const UsersTab = ({
   if (userLoading && userLoading.isLoading) {
     return <>Loading...</>;
   }
+
+  const editCompanyUser = (companyId: string, companyUserId: string) => {
+    if (!isFcAdmin || !companyId || !companyUserId) return;
+
+    fetchUserProfile(companyId, companyUserId);
+    setUserCompanyId(companyId);
+    setIsEditUser(true);
+    openModal();
+  };
+
+  const onCloseModal = () => {
+    setIsEditUser(false);
+    closeModal();
+  };
 
   return (
     <>
@@ -172,7 +192,7 @@ const UsersTab = ({
                             <Person titleAccess={UserModel.userInviteMap[user.invitationType]} />
                           </Avatar>
                         </Badge>
-                        <span>
+                        <span onClick={() => editCompanyUser(user.company.id, user.id)} className={classes.userTitle}>
                           {user.firstName} {user.lastName}
                         </span>
                       </div>
@@ -203,7 +223,7 @@ const UsersTab = ({
         </>
       )}
 
-      {isModalOpen && <AssignUser id={projectId} closeModal={closeModal} isFcAdmin={isFcAdmin} />}
+      {isModalOpen && <AssignUser id={projectId} closeModal={onCloseModal} isFcAdmin={isFcAdmin} isEditUser={isEditUser} companyId={userCompanyId} />}
     </>
   );
 };

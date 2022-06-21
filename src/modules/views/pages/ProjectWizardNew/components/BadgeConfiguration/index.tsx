@@ -14,14 +14,47 @@ import ControlledRadio from 'modules/views/shared/FormHandler/ControlledRadio';
 import { ControlledInput } from 'modules/views/shared';
 import { Typography } from '@material-ui/core';
 import FileUpload from 'modules/views/shared/FormHandler/FileUpload';
+import { BadgeType } from 'modules/models/badge';
+
+interface IRadioButtons {
+  name: string;
+  value: ProjectNewModel.BadgeType;
+  classes: any;
+  onBadgeTypeChange: (e: React.MouseEvent, name: string) => void;
+}
+
+const RadioButtons: React.FC<IRadioButtons> = ({ name, value, classes, onBadgeTypeChange }) => (
+  <ControlledRadio
+    containerStyleClass={classes.billingRadioContainer}
+    row={true}
+    radioItems={[
+      {
+        value: ProjectNewModel.BadgeType.TEMPLATE,
+        label: 'Use Template',
+      },
+      {
+        value: ProjectNewModel.BadgeType.CUSTOM,
+        label: 'Use Custom File',
+      },
+    ]}
+    formControlProps={{
+      name: name,
+      label: '',
+      value: value,
+      onChange: e => onBadgeTypeChange(e, name),
+    }}
+  />
+);
 
 interface IUpload {
   uploadId: string;
   fileMap: GeneralModel.IEntityMap<GeneralModel.IEntityMap<FileModel.IFile>>;
   setHasChanged: (hasChanged: boolean) => void;
+  uploadedFileUrl: string;
+  linkStyle: string;
 }
 
-const Upload: React.FC<IUpload> = ({ uploadId, fileMap, setHasChanged }) => {
+const Upload: React.FC<IUpload> = ({ uploadId, fileMap, setHasChanged, uploadedFileUrl, linkStyle }) => {
   const uncompletedFiles = useMemo(
     () =>
       fileMap[uploadId] &&
@@ -30,6 +63,16 @@ const Upload: React.FC<IUpload> = ({ uploadId, fileMap, setHasChanged }) => {
       ),
     [fileMap, uploadId]
   );
+
+  const fileName = useMemo(
+    () =>
+      uploadedFileUrl
+        ?.split('/')
+        .pop()
+        .split('?')[0],
+    [uploadedFileUrl]
+  );
+  const isFileUploading = useMemo(() => Object.keys(fileMap[uploadId] || {}).length, [fileMap, uploadId]);
 
   useEffect(() => {
     if (uncompletedFiles) setHasChanged(true);
@@ -49,8 +92,14 @@ const Upload: React.FC<IUpload> = ({ uploadId, fileMap, setHasChanged }) => {
             multiple: false,
             'data-testid': 'badge-media',
           }}
+          style={{ minHeight: 70 }}
         />
       </ControlledInput>
+      {uploadedFileUrl && !isFileUploading && (
+        <a className={linkStyle} href={uploadedFileUrl}>
+          <b>{fileName}</b>
+        </a>
+      )}
     </div>
   );
 };
@@ -59,18 +108,15 @@ export interface IBadgeConfigurationProps {
   model: ProjectModel.IProject;
   errors: any;
   fileMap: GeneralModel.IEntityMap<GeneralModel.IEntityMap<FileModel.IFile>>;
+  badgesType: any;
   onChange: (data: any) => void;
   setHasChanged: (hasChanged: boolean) => void;
+  setBadgesType: (badgesType: any, setAsPrev?: boolean) => void;
 }
 
-const BadgeConfiguration = ({ model, errors, fileMap, onChange, setHasChanged }: IBadgeConfigurationProps) => {
+const BadgeConfiguration = ({ model, errors, fileMap, badgesType, onChange, setHasChanged, setBadgesType }: IBadgeConfigurationProps) => {
   const classes = useStyles();
 
-  const [badgesType, setBadgesType] = React.useState({
-    generalContractorBadgeType: ProjectNewModel.BadgeType.TEMPLATE,
-    subcontractorBadgeType: ProjectNewModel.BadgeType.TEMPLATE,
-    visitorBadgeType: ProjectNewModel.BadgeType.TEMPLATE,
-  });
   const { generalContractorBadgeType, subcontractorBadgeType, visitorBadgeType } = badgesType;
 
   useEffect(() => {
@@ -79,8 +125,13 @@ const BadgeConfiguration = ({ model, errors, fileMap, onChange, setHasChanged }:
       subcontractorBadgeType: model.subcontractorBadgeTemplate.templateFileUrl ? ProjectNewModel.BadgeType.CUSTOM : ProjectNewModel.BadgeType.TEMPLATE,
       visitorBadgeType: model.visitorBadgeTemplate.templateFileUrl ? ProjectNewModel.BadgeType.CUSTOM : ProjectNewModel.BadgeType.TEMPLATE,
     };
-    setBadgesType(initialBadgesType);
-  }, [model.generalContractorBadgeTemplate.templateFileUrl, model.subcontractorBadgeTemplate.templateFileUrl, model.visitorBadgeTemplate.templateFileUrl]);
+    setBadgesType(initialBadgesType, true);
+  }, [
+    model.generalContractorBadgeTemplate.templateFileUrl,
+    model.subcontractorBadgeTemplate.templateFileUrl,
+    model.visitorBadgeTemplate.templateFileUrl,
+    setBadgesType,
+  ]);
 
   const onSameBadgeChange = useCallback(
     event => {
@@ -99,6 +150,7 @@ const BadgeConfiguration = ({ model, errors, fileMap, onChange, setHasChanged }:
   );
 
   const onBadgeTypeChange = (event, type) => {
+    event.persist();
     const value = parseInt(event.target.value, 10);
     const updatedBadgesType = {
       ...badgesType,
@@ -110,28 +162,15 @@ const BadgeConfiguration = ({ model, errors, fileMap, onChange, setHasChanged }:
   return (
     <>
       <Card title="General Contractor Badge">
-        <ControlledRadio
-          containerStyleClass={classes.billingRadioContainer}
-          row={true}
-          radioItems={[
-            {
-              value: ProjectNewModel.BadgeType.TEMPLATE,
-              label: 'Use Template',
-            },
-            {
-              value: ProjectNewModel.BadgeType.CUSTOM,
-              label: 'Use Custom File',
-            },
-          ]}
-          formControlProps={{
-            name: 'generalContractorBadgeType',
-            label: '',
-            value: generalContractorBadgeType,
-            onChange: e => onBadgeTypeChange(e, 'generalContractorBadgeType'),
-          }}
-        />
+        <RadioButtons name="generalContractorBadgeType" value={generalContractorBadgeType} classes={classes} onBadgeTypeChange={onBadgeTypeChange} />
         {generalContractorBadgeType === ProjectNewModel.BadgeType.CUSTOM ? (
-          <Upload uploadId="generalContractorBadgeTemplate" fileMap={fileMap} setHasChanged={setHasChanged} />
+          <Upload
+            uploadId="generalContractorBadgeTemplate"
+            fileMap={fileMap}
+            setHasChanged={setHasChanged}
+            uploadedFileUrl={model.generalContractorBadgeTemplate.templateFileUrl}
+            linkStyle={classes.templateLink}
+          />
         ) : (
           <BadgeEditor
             showLogo={true}
@@ -163,28 +202,15 @@ const BadgeConfiguration = ({ model, errors, fileMap, onChange, setHasChanged }:
         <Divider />
         {!model.subcontractorBadgeTemplateMatchesGeneralContractor && (
           <>
-            <ControlledRadio
-              containerStyleClass={classes.billingRadioContainer}
-              row={true}
-              radioItems={[
-                {
-                  value: ProjectNewModel.BadgeType.TEMPLATE,
-                  label: 'Use Template',
-                },
-                {
-                  value: ProjectNewModel.BadgeType.CUSTOM,
-                  label: 'Use Custom File',
-                },
-              ]}
-              formControlProps={{
-                name: 'subcontractorBadgeType',
-                label: '',
-                value: subcontractorBadgeType,
-                onChange: e => onBadgeTypeChange(e, 'subcontractorBadgeType'),
-              }}
-            />
+            <RadioButtons name="subcontractorBadgeType" value={subcontractorBadgeType} classes={classes} onBadgeTypeChange={onBadgeTypeChange} />
             {subcontractorBadgeType === ProjectNewModel.BadgeType.CUSTOM ? (
-              <Upload uploadId="subcontractorBadgeTemplate" fileMap={fileMap} setHasChanged={setHasChanged} />
+              <Upload
+                uploadId="subcontractorBadgeTemplate"
+                fileMap={fileMap}
+                setHasChanged={setHasChanged}
+                uploadedFileUrl={model.subcontractorBadgeTemplate.templateFileUrl}
+                linkStyle={classes.templateLink}
+              />
             ) : (
               <BadgeEditor
                 showLogo={true}
@@ -202,28 +228,15 @@ const BadgeConfiguration = ({ model, errors, fileMap, onChange, setHasChanged }:
         )}
       </Card>
       <Card title="Visitor Badge">
-        <ControlledRadio
-          containerStyleClass={classes.billingRadioContainer}
-          row={true}
-          radioItems={[
-            {
-              value: ProjectNewModel.BadgeType.TEMPLATE,
-              label: 'Use Template',
-            },
-            {
-              value: ProjectNewModel.BadgeType.CUSTOM,
-              label: 'Use Custom File',
-            },
-          ]}
-          formControlProps={{
-            name: 'visitorBadgeType',
-            label: '',
-            value: visitorBadgeType,
-            onChange: e => onBadgeTypeChange(e, 'visitorBadgeType'),
-          }}
-        />
+        <RadioButtons name="visitorBadgeType" value={visitorBadgeType} classes={classes} onBadgeTypeChange={onBadgeTypeChange} />
         {visitorBadgeType === ProjectNewModel.BadgeType.CUSTOM ? (
-          <Upload uploadId="visitorBadgeTemplate" fileMap={fileMap} setHasChanged={setHasChanged} />
+          <Upload
+            uploadId="visitorBadgeTemplate"
+            fileMap={fileMap}
+            setHasChanged={setHasChanged}
+            uploadedFileUrl={model.visitorBadgeTemplate.templateFileUrl}
+            linkStyle={classes.templateLink}
+          />
         ) : (
           <BadgeEditor
             visitorMode={true}

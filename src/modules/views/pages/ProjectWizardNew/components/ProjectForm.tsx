@@ -26,11 +26,13 @@ export interface IProjectFormProps {
   certificationList: GeneralModel.INamedEntity[];
   fileMap: GeneralModel.IEntityMap<GeneralModel.IEntityMap<FileModel.IFile>>;
   consentFormFields: ConsentFormModel.IConsentFormField[];
+  badgesType: any;
   onChangeStep: (key: string) => void;
   onChange: (model: ProjectModel.IProject) => void;
   update: (model: ProjectModel.IProject) => void;
   resetErrors: () => void;
   setHasChanges: (hasChanged: boolean) => void;
+  setBadgesType: (badgesType: any, setAsPrev?: boolean) => void;
 }
 
 const ProjectForm = ({
@@ -46,11 +48,13 @@ const ProjectForm = ({
   certificationList,
   fileMap,
   consentFormFields,
+  badgesType,
   onChangeStep,
   update,
   onChange,
   resetErrors,
   setHasChanges,
+  setBadgesType,
 }: IProjectFormProps) => {
   const classes = useStyles();
 
@@ -76,7 +80,15 @@ const ProjectForm = ({
         />
       )}
       {currentStep.key === ProjectModel.ProjectStep.BADGE_TEMPLATES && (
-        <BadgeConfiguration model={model} errors={errors} fileMap={fileMap} onChange={onChange} setHasChanged={setHasChanges} />
+        <BadgeConfiguration
+          model={model}
+          errors={errors}
+          fileMap={fileMap}
+          badgesType={badgesType}
+          onChange={onChange}
+          setHasChanged={setHasChanges}
+          setBadgesType={setBadgesType}
+        />
       )}
       {currentStep.key === ProjectModel.ProjectStep.WORKER_CONSENT_FORM && (
         <WorkerConsentForm consentFormFields={consentFormFields} errors={errors} formRules={formRules} model={model} onChange={onChange} />

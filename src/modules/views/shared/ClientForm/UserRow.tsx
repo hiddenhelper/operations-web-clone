@@ -36,6 +36,7 @@ export interface IUsersProps {
   companyId?: string;
   fetchGroupSearch?: (searchRequest: any) => void;
   groupList?: any;
+  isFcAdmin?: boolean;
 }
 
 const UserRow = ({
@@ -55,6 +56,7 @@ const UserRow = ({
   companyId,
   fetchGroupSearch,
   groupList,
+  isFcAdmin,
 }: IUsersProps) => {
   const [userInviteGroupList, setUserInviteGroupList] = useState(UserModel.userInviteList);
   const formClasses = formGlobalStyles();
@@ -98,12 +100,13 @@ const UserRow = ({
           value: group.id,
         };
       });
-      setUserInviteGroupList([...UserModel.userInviteList, ...dropdownList]);
+      const filteredList = isFcAdmin === false ? dropdownList.filter(group => !group.label.includes('OSR')) : dropdownList;
+      setUserInviteGroupList([...UserModel.userInviteList, ...filteredList]);
       return;
     }
 
     setUserInviteGroupList(UserModel.userInviteList);
-  }, [groupList]);
+  }, [groupList, isFcAdmin]);
 
   useEffect(() => {
     if (!companyId) return;
@@ -238,7 +241,7 @@ const UserRow = ({
                       label=""
                       name="invitationType"
                       // value={user.invitationType || UserModel.InviteType.DO_NOT_INVITE}
-                      value={user?.groupIds[0] || UserModel.InviteType.DO_NOT_INVITE}
+                      value={(user?.groupIds && user?.groupIds[0]) || UserModel.InviteType.DO_NOT_INVITE}
                       options={userInviteGroupList}
                       error={!!getErrors('invitationType', index)}
                       onChange={onChangeNumber}

@@ -221,6 +221,9 @@ export const useStyles = makeStyles(theme =>
       display: 'flex',
       alignItems: 'center',
     },
+    userTitle: {
+      cursor: 'pointer',
+    },
     createUserHeader: {
       display: 'flex',
       justifyContent: 'space-between',
@@ -240,6 +243,12 @@ export const useStyles = makeStyles(theme =>
       fontSize: `${toREM(STYLE.FONT.SIZE.PARAGRAPH_BIG)}`,
       color: STYLE.COLOR.SECONDARY_DARKER,
       fontWeight: 'bold',
+    },
+    loadingEditUserWrapper: {
+      padding: `0px ${toREM(22)}`,
+      minHeight: `${toREM(540)}`,
+      display: 'grid',
+      placeContent: 'center',
     },
     createUserWrapper: {
       padding: `0px ${toREM(22)}`,

@@ -26,6 +26,9 @@ export const statusWidgetStyles = makeStyles(theme =>
     widgetTitle: {
       color: STYLE.COLOR.SECONDARY_LIGHTER,
       fontSize: `${toREM(STYLE.FONT.SIZE.HEADING)}`,
+      '@media (max-width:415px)': {
+        fontSize: '1rem',
+      },
     },
     widgetSubtitle: {
       color: STYLE.COLOR.LIGHT_GRAY8,

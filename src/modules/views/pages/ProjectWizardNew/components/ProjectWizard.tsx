@@ -283,8 +283,11 @@ const ProjectWizard = ({
   }, [loadingMap, loading, inProgress, setInProgress]);
 
   useEffect(() => {
-    if (completedFiles.length) fetchProject(entityId);
-  }, [completedFiles, entityId, fetchProject]);
+    if (completedFiles.length) {
+      fetchProject(entityId);
+      setTimeout(() => clearFileMap(), 1000);
+    }
+  }, [completedFiles, entityId, fetchProject, clearFileMap]);
 
   return (
     <Wizard
@@ -305,6 +308,7 @@ const ProjectWizard = ({
         pluralTitle: 'Projects',
       }}
       onConfirm={onSendForApprovalHandler}
+      clearFileMap={clearFileMap}
       renderNavigator={({ hasChanges, onNextStep, onPrevStep, onDiscard, onSave, openDrawer }) => {
         return (
           <Header
@@ -325,7 +329,7 @@ const ProjectWizard = ({
           />
         );
       }}
-      renderForm={({ model, formRules, errors, onChangeStep, onChange, update, resetErrors, setHasChanges }) => {
+      renderForm={({ model, formRules, errors, onChangeStep, onChange, update, resetErrors, setHasChanges, badgesType, setBadgesType }) => {
         return (
           <ProjectForm
             model={model}
@@ -345,6 +349,8 @@ const ProjectWizard = ({
             onChange={onChange}
             resetErrors={resetErrors}
             setHasChanges={setHasChanges}
+            badgesType={badgesType}
+            setBadgesType={setBadgesType}
           />
         );
       }}

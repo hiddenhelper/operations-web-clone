@@ -4,23 +4,23 @@ exports[`WorkersTab should render 1`] = `
 <div>
   <div>
     <div
-      class="makeStyles-filterActionsContainer-715 makeStyles-filterActionsContainerPadding-717"
+      class="makeStyles-filterActionsContainer-719 makeStyles-filterActionsContainerPadding-721"
     >
       <div
-        class="MuiBox-root MuiBox-root-744 makeStyles-filterStatusContainer-718 makeStyles-autocompleteFilterPosition-743"
+        class="MuiBox-root MuiBox-root-748 makeStyles-filterStatusContainer-722 makeStyles-autocompleteFilterPosition-747"
       >
         <div
-          class="makeStyles-floatingFilterWrapper-724 makeStyles-filterWrapper-723 makeStyles-buttonContainer-746 floatingFilterWrapper"
+          class="makeStyles-floatingFilterWrapper-728 makeStyles-filterWrapper-727 makeStyles-buttonContainer-750 floatingFilterWrapper"
         >
           <span
-            class="makeStyles-floatingFilterButton-725"
+            class="makeStyles-floatingFilterButton-729"
             data-testid="controlled-button"
             tabindex="-1"
           >
             <button
               aria-controls="false"
               aria-haspopup="true"
-              class="MuiButtonBase-root MuiButton-root MuiButton-text makeStyles-buttonFilter-733"
+              class="MuiButtonBase-root MuiButton-root MuiButton-text makeStyles-buttonFilter-737"
               data-testid="button-filter-open"
               tabindex="0"
               type="button"
@@ -33,7 +33,7 @@ exports[`WorkersTab should render 1`] = `
                   class="MuiButton-endIcon MuiButton-iconSizeMedium"
                 >
                   <svg
-                    class="makeStyles-dropdownIcon-727"
+                    class="makeStyles-dropdownIcon-731"
                   >
                     expand.svg
                   </svg>
@@ -44,7 +44,7 @@ exports[`WorkersTab should render 1`] = `
         </div>
       </div>
       <button
-        class="MuiButtonBase-root MuiButton-root MuiButton-contained makeStyles-createButton-679 makeStyles-primaryButtonLarge-681 MuiButton-containedPrimary MuiButton-containedSizeLarge MuiButton-sizeLarge MuiButton-fullWidth"
+        class="MuiButtonBase-root MuiButton-root MuiButton-contained makeStyles-createButton-683 makeStyles-primaryButtonLarge-685 MuiButton-containedPrimary MuiButton-containedSizeLarge MuiButton-sizeLarge MuiButton-fullWidth"
         data-testid="open-worker-modal-btn"
         tabindex="0"
         type="button"
@@ -93,20 +93,20 @@ exports[`WorkersTab should render 1`] = `
         class="MuiTableBody-root"
       >
         <tr
-          class="MuiTableRow-root WithStyles(ForwardRef(TableRow))-root-852 makeStyles-pointer-765"
+          class="MuiTableRow-root WithStyles(ForwardRef(TableRow))-root-858 makeStyles-pointer-769"
           data-testid="worker-list-row"
         >
           <td
             class="MuiTableCell-root MuiTableCell-body"
           >
             <div
-              class="makeStyles-userCenter-774"
+              class="makeStyles-userCenter-778"
             >
               <span
-                class="MuiBadge-root makeStyles-avatarPosition-784 makeStyles-avatarWithSmallBadge-838"
+                class="MuiBadge-root makeStyles-avatarPosition-790 makeStyles-avatarWithSmallBadge-844"
               >
                 <div
-                  class="MuiAvatar-root MuiAvatar-circle makeStyles-avatarWrapper-836 makeStyles-avatarMedium-839 MuiAvatar-colorDefault"
+                  class="MuiAvatar-root MuiAvatar-circle makeStyles-avatarWrapper-842 makeStyles-avatarMedium-845 MuiAvatar-colorDefault"
                 >
                   <svg
                     class="MuiSvgIcon-root"
@@ -131,7 +131,7 @@ exports[`WorkersTab should render 1`] = `
                 </span>
               </span>
               <a
-                class="Link-root-853"
+                class="Link-root-859"
                 data-testid="worker-row-btn"
                 href="/workers/detail/2"
                 title="View Worker details"
@@ -154,7 +154,7 @@ exports[`WorkersTab should render 1`] = `
             class="MuiTableCell-root MuiTableCell-body"
           >
             <div
-              class="MuiChip-root makeStyles-statusChip-824 makeStyles-pending-831  MuiChip-colorPrimary"
+              class="MuiChip-root makeStyles-statusChip-830 makeStyles-pending-837  MuiChip-colorPrimary"
             >
               <span
                 class="MuiChip-label"
@@ -165,20 +165,20 @@ exports[`WorkersTab should render 1`] = `
           </td>
         </tr>
         <tr
-          class="MuiTableRow-root WithStyles(ForwardRef(TableRow))-root-852 makeStyles-pointer-765"
+          class="MuiTableRow-root WithStyles(ForwardRef(TableRow))-root-858 makeStyles-pointer-769"
           data-testid="worker-list-row"
         >
           <td
             class="MuiTableCell-root MuiTableCell-body"
           >
             <div
-              class="makeStyles-userCenter-774"
+              class="makeStyles-userCenter-778"
             >
               <span
-                class="MuiBadge-root makeStyles-avatarPosition-784 makeStyles-avatarWithSmallBadge-838"
+                class="MuiBadge-root makeStyles-avatarPosition-790 makeStyles-avatarWithSmallBadge-844"
               >
                 <div
-                  class="MuiAvatar-root MuiAvatar-circle makeStyles-avatarWrapper-836 makeStyles-avatarMedium-839 MuiAvatar-colorDefault"
+                  class="MuiAvatar-root MuiAvatar-circle makeStyles-avatarWrapper-842 makeStyles-avatarMedium-845 MuiAvatar-colorDefault"
                 >
                   <svg
                     class="MuiSvgIcon-root"
@@ -203,7 +203,7 @@ exports[`WorkersTab should render 1`] = `
                 </span>
               </span>
               <a
-                class="Link-root-853"
+                class="Link-root-859"
                 data-testid="worker-row-btn"
                 href="/workers/detail/11029ead-e3eb-48d5-a658-cd818a70719f"
                 title="View Worker details"
@@ -226,7 +226,7 @@ exports[`WorkersTab should render 1`] = `
             class="MuiTableCell-root MuiTableCell-body"
           >
             <div
-              class="MuiChip-root makeStyles-statusChip-824 makeStyles-pending-831  MuiChip-colorPrimary"
+              class="MuiChip-root makeStyles-statusChip-830 makeStyles-pending-837  MuiChip-colorPrimary"
             >
               <span
                 class="MuiChip-label"
@@ -240,7 +240,7 @@ exports[`WorkersTab should render 1`] = `
     </table>
     <nav
       aria-label="pagination navigation"
-      class="MuiPagination-root  makeStyles-pagination-854"
+      class="MuiPagination-root  makeStyles-pagination-860"
       data-testid="pagination"
     >
       <ul
@@ -303,18 +303,18 @@ exports[`WorkersTab should render 1`] = `
       </ul>
     </nav>
     <div
-      class="MuiDrawer-root MuiDrawer-docked makeStyles-drawer-855 makeStyles-close-866 closed"
+      class="MuiDrawer-root MuiDrawer-docked makeStyles-drawer-861 makeStyles-close-872 closed"
       data-testid="worker-drawer-detail"
     >
       <div
-        class="MuiPaper-root MuiDrawer-paper makeStyles-drawerPaper-856 MuiDrawer-paperAnchorRight MuiDrawer-paperAnchorDockedRight MuiPaper-elevation0"
+        class="MuiPaper-root MuiDrawer-paper makeStyles-drawerPaper-862 MuiDrawer-paperAnchorRight MuiDrawer-paperAnchorDockedRight MuiPaper-elevation0"
         style="visibility: hidden; webkit-transform: translateX(1024px) translateX(0px); transform: translateX(1024px) translateX(0px);"
       >
         <div
-          class="makeStyles-drawerButtonWrapper-858"
+          class="makeStyles-drawerButtonWrapper-864"
         >
           <div
-            class="makeStyles-drawerButton-859"
+            class="makeStyles-drawerButton-865"
           >
             <button
               class="MuiButtonBase-root MuiButton-root MuiButton-text"
@@ -336,31 +336,31 @@ exports[`WorkersTab should render 1`] = `
             </button>
           </div>
           <div
-            class="makeStyles-drawerHeader-857"
+            class="makeStyles-drawerHeader-863"
           >
             <p
-              class="MuiTypography-root makeStyles-drawerTitle-860 MuiTypography-body1 MuiTypography-colorPrimary MuiTypography-alignLeft"
+              class="MuiTypography-root makeStyles-drawerTitle-866 MuiTypography-body1 MuiTypography-colorPrimary MuiTypography-alignLeft"
             >
               Worker Information
             </p>
           </div>
         </div>
         <div
-          class="makeStyles-listDetail-885"
+          class="makeStyles-listDetail-891"
         >
           <div
-            class="makeStyles-company-886"
+            class="makeStyles-company-892"
           >
             <div
-              class="makeStyles-drawerText-862"
+              class="makeStyles-drawerText-868"
             >
               <p
-                class="MuiTypography-root makeStyles-listAccent-887 makeStyles-entityTitle-884 MuiTypography-body1"
+                class="MuiTypography-root makeStyles-listAccent-893 makeStyles-entityTitle-890 MuiTypography-body1"
               >
                  
               </p>
               <div
-                class="makeStyles-drawerMainText-863"
+                class="makeStyles-drawerMainText-869"
               >
                 <span>
                   -
@@ -368,13 +368,13 @@ exports[`WorkersTab should render 1`] = `
               </div>
             </div>
             <div
-              class="makeStyles-drawerSection-861"
+              class="makeStyles-drawerSection-867"
             >
               <div
-                class="makeStyles-drawerColumnDirection-870"
+                class="makeStyles-drawerColumnDirection-876"
               >
                 <div
-                  class="makeStyles-drawerRowDirection-871"
+                  class="makeStyles-drawerRowDirection-877"
                 >
                   <svg
                     aria-hidden="true"
@@ -387,10 +387,10 @@ exports[`WorkersTab should render 1`] = `
                     />
                   </svg>
                   <div
-                    class="makeStyles-drawerText-862 makeStyles-drawerTextSeparation-864"
+                    class="makeStyles-drawerText-868 makeStyles-drawerTextSeparation-870"
                   >
                     <p
-                      class="MuiTypography-root makeStyles-cardFont-897  MuiTypography-body1"
+                      class="MuiTypography-root makeStyles-cardFont-903  MuiTypography-body1"
                     >
                       
                       <span
@@ -400,7 +400,7 @@ exports[`WorkersTab should render 1`] = `
                       </span>
                     </p>
                     <p
-                      class="MuiTypography-root makeStyles-cardFont-897  MuiTypography-body1"
+                      class="MuiTypography-root makeStyles-cardFont-903  MuiTypography-body1"
                     >
                       
                       
@@ -408,7 +408,7 @@ exports[`WorkersTab should render 1`] = `
                       
                     </p>
                     <p
-                      class="MuiTypography-root makeStyles-cardFont-897  MuiTypography-body1"
+                      class="MuiTypography-root makeStyles-cardFont-903  MuiTypography-body1"
                     >
                       -
                     </p>
@@ -417,13 +417,13 @@ exports[`WorkersTab should render 1`] = `
               </div>
             </div>
             <div
-              class="makeStyles-drawerSection-861"
+              class="makeStyles-drawerSection-867"
             >
               <div
-                class="makeStyles-drawerColumnDirection-870"
+                class="makeStyles-drawerColumnDirection-876"
               >
                 <div
-                  class="makeStyles-drawerRowDirection-871"
+                  class="makeStyles-drawerRowDirection-877"
                 >
                   <svg
                     aria-hidden="true"
@@ -436,19 +436,19 @@ exports[`WorkersTab should render 1`] = `
                     />
                   </svg>
                   <div
-                    class="makeStyles-drawerText-862 makeStyles-drawerTextSeparation-864"
+                    class="makeStyles-drawerText-868 makeStyles-drawerTextSeparation-870"
                   />
                 </div>
               </div>
             </div>
             <div
-              class="makeStyles-drawerSection-861"
+              class="makeStyles-drawerSection-867"
             >
               <div
-                class="makeStyles-drawerColumnDirection-870"
+                class="makeStyles-drawerColumnDirection-876"
               >
                 <div
-                  class="makeStyles-drawerRowDirection-871"
+                  class="makeStyles-drawerRowDirection-877"
                 >
                   <svg
                     class="MuiSvgIcon-root"
@@ -456,17 +456,17 @@ exports[`WorkersTab should render 1`] = `
                     emergency-contact.svg
                   </svg>
                   <div
-                    class="makeStyles-drawerText-862 makeStyles-drawerTextSeparation-864"
+                    class="makeStyles-drawerText-868 makeStyles-drawerTextSeparation-870"
                   />
                 </div>
               </div>
             </div>
           </div>
           <hr
-            class="MuiDivider-root makeStyles-drawerDivider-865"
+            class="MuiDivider-root makeStyles-drawerDivider-871"
           />
           <div
-            class="makeStyles-ctaWrapper-888"
+            class="makeStyles-ctaWrapper-894"
           >
             <span
               class=""
@@ -475,7 +475,7 @@ exports[`WorkersTab should render 1`] = `
             >
               <a
                 aria-disabled="false"
-                class="MuiButtonBase-root MuiButton-root MuiButton-outlined makeStyles-drawerCTA-686 makeStyles-borderPrimaryButton-678 makeStyles-primaryButtonPadding-680"
+                class="MuiButtonBase-root MuiButton-root MuiButton-outlined makeStyles-drawerCTA-690 makeStyles-borderPrimaryButton-682 makeStyles-primaryButtonPadding-684"
                 data-testid="drawerButton"
                 href="/workers/detail/null"
                 tabindex="0"
@@ -775,23 +775,23 @@ exports[`WorkersTab should render with company 1`] = `
 <div>
   <div>
     <div
-      class="makeStyles-filterActionsContainer-947 makeStyles-filterActionsContainerPadding-949"
+      class="makeStyles-filterActionsContainer-953 makeStyles-filterActionsContainerPadding-955"
     >
       <div
-        class="MuiBox-root MuiBox-root-976 makeStyles-filterStatusContainer-950 makeStyles-autocompleteFilterPosition-975"
+        class="MuiBox-root MuiBox-root-982 makeStyles-filterStatusContainer-956 makeStyles-autocompleteFilterPosition-981"
       >
         <div
-          class="makeStyles-floatingFilterWrapper-956 makeStyles-filterWrapper-955 makeStyles-buttonContainer-978 floatingFilterWrapper"
+          class="makeStyles-floatingFilterWrapper-962 makeStyles-filterWrapper-961 makeStyles-buttonContainer-984 floatingFilterWrapper"
         >
           <span
-            class="makeStyles-floatingFilterButton-957"
+            class="makeStyles-floatingFilterButton-963"
             data-testid="controlled-button"
             tabindex="-1"
           >
             <button
               aria-controls="false"
               aria-haspopup="true"
-              class="MuiButtonBase-root MuiButton-root MuiButton-text makeStyles-buttonFilter-965"
+              class="MuiButtonBase-root MuiButton-root MuiButton-text makeStyles-buttonFilter-971"
               data-testid="button-filter-open"
               tabindex="0"
               type="button"
@@ -804,7 +804,7 @@ exports[`WorkersTab should render with company 1`] = `
                   class="MuiButton-endIcon MuiButton-iconSizeMedium"
                 >
                   <svg
-                    class="makeStyles-dropdownIcon-959"
+                    class="makeStyles-dropdownIcon-965"
                   >
                     expand.svg
                   </svg>
@@ -815,7 +815,7 @@ exports[`WorkersTab should render with company 1`] = `
         </div>
       </div>
       <button
-        class="MuiButtonBase-root MuiButton-root MuiButton-contained makeStyles-createButton-911 makeStyles-primaryButtonLarge-913 MuiButton-containedPrimary MuiButton-containedSizeLarge MuiButton-sizeLarge MuiButton-fullWidth"
+        class="MuiButtonBase-root MuiButton-root MuiButton-contained makeStyles-createButton-917 makeStyles-primaryButtonLarge-919 MuiButton-containedPrimary MuiButton-containedSizeLarge MuiButton-sizeLarge MuiButton-fullWidth"
         data-testid="open-worker-modal-btn"
         tabindex="0"
         type="button"
@@ -864,20 +864,20 @@ exports[`WorkersTab should render with company 1`] = `
         class="MuiTableBody-root"
       >
         <tr
-          class="MuiTableRow-root WithStyles(ForwardRef(TableRow))-root-1084 makeStyles-pointer-997"
+          class="MuiTableRow-root WithStyles(ForwardRef(TableRow))-root-1092 makeStyles-pointer-1003"
           data-testid="worker-list-row"
         >
           <td
             class="MuiTableCell-root MuiTableCell-body"
           >
             <div
-              class="makeStyles-userCenter-1006"
+              class="makeStyles-userCenter-1012"
             >
               <span
-                class="MuiBadge-root makeStyles-avatarPosition-1016 makeStyles-avatarWithSmallBadge-1070"
+                class="MuiBadge-root makeStyles-avatarPosition-1024 makeStyles-avatarWithSmallBadge-1078"
               >
                 <div
-                  class="MuiAvatar-root MuiAvatar-circle makeStyles-avatarWrapper-1068 makeStyles-avatarMedium-1071 MuiAvatar-colorDefault"
+                  class="MuiAvatar-root MuiAvatar-circle makeStyles-avatarWrapper-1076 makeStyles-avatarMedium-1079 MuiAvatar-colorDefault"
                 >
                   <svg
                     class="MuiSvgIcon-root"
@@ -902,7 +902,7 @@ exports[`WorkersTab should render with company 1`] = `
                 </span>
               </span>
               <a
-                class="Link-root-1085"
+                class="Link-root-1093"
                 data-testid="worker-row-btn"
                 href="/workers/detail/11029ead-e34c-48d5-a658-c1241d70719f"
                 title="View Worker details"
@@ -925,7 +925,7 @@ exports[`WorkersTab should render with company 1`] = `
             class="MuiTableCell-root MuiTableCell-body"
           >
             <div
-              class="MuiChip-root makeStyles-statusChip-1056 makeStyles-pending-1063  MuiChip-colorPrimary"
+              class="MuiChip-root makeStyles-statusChip-1064 makeStyles-pending-1071  MuiChip-colorPrimary"
             >
               <span
                 class="MuiChip-label"
@@ -939,7 +939,7 @@ exports[`WorkersTab should render with company 1`] = `
     </table>
     <nav
       aria-label="pagination navigation"
-      class="MuiPagination-root  makeStyles-pagination-1086"
+      class="MuiPagination-root  makeStyles-pagination-1094"
       data-testid="pagination"
     >
       <ul
@@ -1002,18 +1002,18 @@ exports[`WorkersTab should render with company 1`] = `
       </ul>
     </nav>
     <div
-      class="MuiDrawer-root MuiDrawer-docked makeStyles-drawer-1087 makeStyles-close-1098 closed"
+      class="MuiDrawer-root MuiDrawer-docked makeStyles-drawer-1095 makeStyles-close-1106 closed"
       data-testid="worker-drawer-detail"
     >
       <div
-        class="MuiPaper-root MuiDrawer-paper makeStyles-drawerPaper-1088 MuiDrawer-paperAnchorRight MuiDrawer-paperAnchorDockedRight MuiPaper-elevation0"
+        class="MuiPaper-root MuiDrawer-paper makeStyles-drawerPaper-1096 MuiDrawer-paperAnchorRight MuiDrawer-paperAnchorDockedRight MuiPaper-elevation0"
         style="visibility: hidden; webkit-transform: translateX(1024px) translateX(0px); transform: translateX(1024px) translateX(0px);"
       >
         <div
-          class="makeStyles-drawerButtonWrapper-1090"
+          class="makeStyles-drawerButtonWrapper-1098"
         >
           <div
-            class="makeStyles-drawerButton-1091"
+            class="makeStyles-drawerButton-1099"
           >
             <button
               class="MuiButtonBase-root MuiButton-root MuiButton-text"
@@ -1035,31 +1035,31 @@ exports[`WorkersTab should render with company 1`] = `
             </button>
           </div>
           <div
-            class="makeStyles-drawerHeader-1089"
+            class="makeStyles-drawerHeader-1097"
           >
             <p
-              class="MuiTypography-root makeStyles-drawerTitle-1092 MuiTypography-body1 MuiTypography-colorPrimary MuiTypography-alignLeft"
+              class="MuiTypography-root makeStyles-drawerTitle-1100 MuiTypography-body1 MuiTypography-colorPrimary MuiTypography-alignLeft"
             >
               Worker Information
             </p>
           </div>
         </div>
         <div
-          class="makeStyles-listDetail-1117"
+          class="makeStyles-listDetail-1125"
         >
           <div
-            class="makeStyles-company-1118"
+            class="makeStyles-company-1126"
           >
             <div
-              class="makeStyles-drawerText-1094"
+              class="makeStyles-drawerText-1102"
             >
               <p
-                class="MuiTypography-root makeStyles-listAccent-1119 makeStyles-entityTitle-1116 MuiTypography-body1"
+                class="MuiTypography-root makeStyles-listAccent-1127 makeStyles-entityTitle-1124 MuiTypography-body1"
               >
                  
               </p>
               <div
-                class="makeStyles-drawerMainText-1095"
+                class="makeStyles-drawerMainText-1103"
               >
                 <span>
                   -
@@ -1067,13 +1067,13 @@ exports[`WorkersTab should render with company 1`] = `
               </div>
             </div>
             <div
-              class="makeStyles-drawerSection-1093"
+              class="makeStyles-drawerSection-1101"
             >
               <div
-                class="makeStyles-drawerColumnDirection-1102"
+                class="makeStyles-drawerColumnDirection-1110"
               >
                 <div
-                  class="makeStyles-drawerRowDirection-1103"
+                  class="makeStyles-drawerRowDirection-1111"
                 >
                   <svg
                     aria-hidden="true"
@@ -1086,10 +1086,10 @@ exports[`WorkersTab should render with company 1`] = `
                     />
                   </svg>
                   <div
-                    class="makeStyles-drawerText-1094 makeStyles-drawerTextSeparation-1096"
+                    class="makeStyles-drawerText-1102 makeStyles-drawerTextSeparation-1104"
                   >
                     <p
-                      class="MuiTypography-root makeStyles-cardFont-1129  MuiTypography-body1"
+                      class="MuiTypography-root makeStyles-cardFont-1137  MuiTypography-body1"
                     >
                       
                       <span
@@ -1099,7 +1099,7 @@ exports[`WorkersTab should render with company 1`] = `
                       </span>
                     </p>
                     <p
-                      class="MuiTypography-root makeStyles-cardFont-1129  MuiTypography-body1"
+                      class="MuiTypography-root makeStyles-cardFont-1137  MuiTypography-body1"
                     >
                       
                       
@@ -1107,7 +1107,7 @@ exports[`WorkersTab should render with company 1`] = `
                       
                     </p>
                     <p
-                      class="MuiTypography-root makeStyles-cardFont-1129  MuiTypography-body1"
+                      class="MuiTypography-root makeStyles-cardFont-1137  MuiTypography-body1"
                     >
                       -
                     </p>
@@ -1116,13 +1116,13 @@ exports[`WorkersTab should render with company 1`] = `
               </div>
             </div>
             <div
-              class="makeStyles-drawerSection-1093"
+              class="makeStyles-drawerSection-1101"
             >
               <div
-                class="makeStyles-drawerColumnDirection-1102"
+                class="makeStyles-drawerColumnDirection-1110"
               >
                 <div
-                  class="makeStyles-drawerRowDirection-1103"
+                  class="makeStyles-drawerRowDirection-1111"
                 >
                   <svg
                     aria-hidden="true"
@@ -1135,19 +1135,19 @@ exports[`WorkersTab should render with company 1`] = `
                     />
                   </svg>
                   <div
-                    class="makeStyles-drawerText-1094 makeStyles-drawerTextSeparation-1096"
+                    class="makeStyles-drawerText-1102 makeStyles-drawerTextSeparation-1104"
                   />
                 </div>
               </div>
             </div>
             <div
-              class="makeStyles-drawerSection-1093"
+              class="makeStyles-drawerSection-1101"
             >
               <div
-                class="makeStyles-drawerColumnDirection-1102"
+                class="makeStyles-drawerColumnDirection-1110"
               >
                 <div
-                  class="makeStyles-drawerRowDirection-1103"
+                  class="makeStyles-drawerRowDirection-1111"
                 >
                   <svg
                     class="MuiSvgIcon-root"
@@ -1155,17 +1155,17 @@ exports[`WorkersTab should render with company 1`] = `
                     emergency-contact.svg
                   </svg>
                   <div
-                    class="makeStyles-drawerText-1094 makeStyles-drawerTextSeparation-1096"
+                    class="makeStyles-drawerText-1102 makeStyles-drawerTextSeparation-1104"
                   />
                 </div>
               </div>
             </div>
           </div>
           <hr
-            class="MuiDivider-root makeStyles-drawerDivider-1097"
+            class="MuiDivider-root makeStyles-drawerDivider-1105"
           />
           <div
-            class="makeStyles-ctaWrapper-1120"
+            class="makeStyles-ctaWrapper-1128"
           >
             <span
               class=""
@@ -1174,7 +1174,7 @@ exports[`WorkersTab should render with company 1`] = `
             >
               <a
                 aria-disabled="false"
-                class="MuiButtonBase-root MuiButton-root MuiButton-outlined makeStyles-drawerCTA-918 makeStyles-borderPrimaryButton-910 makeStyles-primaryButtonPadding-912"
+                class="MuiButtonBase-root MuiButton-root MuiButton-outlined makeStyles-drawerCTA-924 makeStyles-borderPrimaryButton-916 makeStyles-primaryButtonPadding-918"
                 data-testid="drawerButton"
                 href="/workers/detail/null"
                 tabindex="0"

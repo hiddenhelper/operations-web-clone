@@ -55,9 +55,12 @@ export const tableGlobalStyles = makeStyles(theme =>
     },
     widgetFilterContainer: {
       display: 'flex',
-      justifyContent: 'space-between',
+      justifyContent: 'center',
       alignItems: 'flex-end',
-      marginBottom: `${toREM(17)}`,
+      marginBottom: `${toREM(40)}`,
+      '@media (max-width:415px)': {
+        marginBottom: `${toREM(52)}`,
+      },
     },
     filterContainer: {
       display: 'flex',

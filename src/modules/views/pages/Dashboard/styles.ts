@@ -43,6 +43,11 @@ export const useStyles = makeStyles(theme =>
       color: STYLE.COLOR.SECONDARY_DARKER,
       fontSize: `${toREM(25)}`,
       letterSpacing: 0,
+      textAlign: 'center',
+      marginRight: '10px',
+      '@media (max-width:415px)': {
+        fontSize: `${toREM(16)}`,
+      },
     },
     widgetsContainer: {
       width: '100%',
@@ -163,7 +168,7 @@ export const useStyles = makeStyles(theme =>
     },
     widgetTitleWithFilter: {
       display: 'flex',
-      justifyContent: 'space-between',
+      justifyContent: 'center',
       [theme.breakpoints.between(500, 885)]: {
         flexDirection: 'column',
       },

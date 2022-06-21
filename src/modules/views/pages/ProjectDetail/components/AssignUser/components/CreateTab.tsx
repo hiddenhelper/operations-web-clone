@@ -108,6 +108,7 @@ const CreateTab = ({ userRole, userCompanyId, clientMap, saveUserLoading, change
           fetchGroupSearch={fetchGroupSearch}
           companyId={isFcAdmin ? model.assignClient : userCompanyId}
           groupList={groupList}
+          isFcAdmin={isFcAdmin}
         />
       </div>
       <ButtonLoader

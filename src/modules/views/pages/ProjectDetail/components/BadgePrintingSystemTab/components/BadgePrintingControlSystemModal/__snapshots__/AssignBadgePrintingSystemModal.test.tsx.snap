@@ -178,7 +178,7 @@ exports[`AssignBadgePrintingSystemModal should render 1`] = `
                 class="MuiTableBody-root"
               >
                 <tr
-                  class="MuiTableRow-root WithStyles(ForwardRef(TableRow))-root-370"
+                  class="MuiTableRow-root WithStyles(ForwardRef(TableRow))-root-372"
                   data-testid="assign-list-row"
                 >
                   <td
@@ -189,14 +189,14 @@ exports[`AssignBadgePrintingSystemModal should render 1`] = `
                     >
                       <span
                         aria-disabled="false"
-                        class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-373 MuiCheckbox-root MuiCheckbox-colorSecondary MuiIconButton-colorSecondary"
+                        class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-375 MuiCheckbox-root MuiCheckbox-colorSecondary MuiIconButton-colorSecondary"
                         data-testid="multiple-checkbox"
                       >
                         <span
                           class="MuiIconButton-label"
                         >
                           <input
-                            class="PrivateSwitchBase-input-376"
+                            class="PrivateSwitchBase-input-378"
                             data-indeterminate="false"
                             name="badgePrintingSystem"
                             type="checkbox"
@@ -204,7 +204,7 @@ exports[`AssignBadgePrintingSystemModal should render 1`] = `
                           />
                           <svg
                             aria-hidden="true"
-                            class="MuiSvgIcon-root makeStyles-iconRoot-371 "
+                            class="MuiSvgIcon-root makeStyles-iconRoot-373 "
                             focusable="false"
                             viewBox="0 0 24 24"
                           >
@@ -246,7 +246,7 @@ exports[`AssignBadgePrintingSystemModal should render 1`] = `
                         class="react-datepicker__input-container"
                       >
                         <div
-                          class="MuiFormControl-root MuiTextField-root makeStyles-datePicker-362 makeStyles-adornmentStart-365 makeStyles-leftInput-367 makeStyles-adornmentEnd-366 makeStyles-baseInput-368 makeStyles-datePickerInline-325"
+                          class="MuiFormControl-root MuiTextField-root makeStyles-datePicker-364 makeStyles-adornmentStart-367 makeStyles-leftInput-369 makeStyles-adornmentEnd-368 makeStyles-baseInput-370 makeStyles-datePickerInline-327"
                           data-testid="keyboard-date-picker"
                         >
                           <div
@@ -287,7 +287,7 @@ exports[`AssignBadgePrintingSystemModal should render 1`] = `
                   </td>
                 </tr>
                 <tr
-                  class="MuiTableRow-root WithStyles(ForwardRef(TableRow))-root-370"
+                  class="MuiTableRow-root WithStyles(ForwardRef(TableRow))-root-372"
                   data-testid="assign-list-row"
                 >
                   <td
@@ -298,14 +298,14 @@ exports[`AssignBadgePrintingSystemModal should render 1`] = `
                     >
                       <span
                         aria-disabled="false"
-                        class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-373 MuiCheckbox-root MuiCheckbox-colorSecondary MuiIconButton-colorSecondary"
+                        class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-375 MuiCheckbox-root MuiCheckbox-colorSecondary MuiIconButton-colorSecondary"
                         data-testid="multiple-checkbox"
                       >
                         <span
                           class="MuiIconButton-label"
                         >
                           <input
-                            class="PrivateSwitchBase-input-376"
+                            class="PrivateSwitchBase-input-378"
                             data-indeterminate="false"
                             name="badgePrintingSystem"
                             type="checkbox"
@@ -313,7 +313,7 @@ exports[`AssignBadgePrintingSystemModal should render 1`] = `
                           />
                           <svg
                             aria-hidden="true"
-                            class="MuiSvgIcon-root makeStyles-iconRoot-371 "
+                            class="MuiSvgIcon-root makeStyles-iconRoot-373 "
                             focusable="false"
                             viewBox="0 0 24 24"
                           >
@@ -355,7 +355,7 @@ exports[`AssignBadgePrintingSystemModal should render 1`] = `
                         class="react-datepicker__input-container"
                       >
                         <div
-                          class="MuiFormControl-root MuiTextField-root makeStyles-datePicker-362 makeStyles-adornmentStart-365 makeStyles-leftInput-367 makeStyles-adornmentEnd-366 makeStyles-baseInput-368 makeStyles-datePickerInline-325"
+                          class="MuiFormControl-root MuiTextField-root makeStyles-datePicker-364 makeStyles-adornmentStart-367 makeStyles-leftInput-369 makeStyles-adornmentEnd-368 makeStyles-baseInput-370 makeStyles-datePickerInline-327"
                           data-testid="keyboard-date-picker"
                         >
                           <div
@@ -396,7 +396,7 @@ exports[`AssignBadgePrintingSystemModal should render 1`] = `
                   </td>
                 </tr>
                 <tr
-                  class="MuiTableRow-root WithStyles(ForwardRef(TableRow))-root-370"
+                  class="MuiTableRow-root WithStyles(ForwardRef(TableRow))-root-372"
                   data-testid="assign-list-row"
                 >
                   <td
@@ -407,14 +407,14 @@ exports[`AssignBadgePrintingSystemModal should render 1`] = `
                     >
                       <span
                         aria-disabled="false"
-                        class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-373 MuiCheckbox-root MuiCheckbox-colorSecondary MuiIconButton-colorSecondary"
+                        class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-375 MuiCheckbox-root MuiCheckbox-colorSecondary MuiIconButton-colorSecondary"
                         data-testid="multiple-checkbox"
                       >
                         <span
                           class="MuiIconButton-label"
                         >
                           <input
-                            class="PrivateSwitchBase-input-376"
+                            class="PrivateSwitchBase-input-378"
                             data-indeterminate="false"
                             name="badgePrintingSystem"
                             type="checkbox"
@@ -422,7 +422,7 @@ exports[`AssignBadgePrintingSystemModal should render 1`] = `
                           />
                           <svg
                             aria-hidden="true"
-                            class="MuiSvgIcon-root makeStyles-iconRoot-371 "
+                            class="MuiSvgIcon-root makeStyles-iconRoot-373 "
                             focusable="false"
                             viewBox="0 0 24 24"
                           >
@@ -464,7 +464,7 @@ exports[`AssignBadgePrintingSystemModal should render 1`] = `
                         class="react-datepicker__input-container"
                       >
                         <div
-                          class="MuiFormControl-root MuiTextField-root makeStyles-datePicker-362 makeStyles-adornmentStart-365 makeStyles-leftInput-367 makeStyles-adornmentEnd-366 makeStyles-baseInput-368 makeStyles-datePickerInline-325"
+                          class="MuiFormControl-root MuiTextField-root makeStyles-datePicker-364 makeStyles-adornmentStart-367 makeStyles-leftInput-369 makeStyles-adornmentEnd-368 makeStyles-baseInput-370 makeStyles-datePickerInline-327"
                           data-testid="keyboard-date-picker"
                         >
                           <div
@@ -508,7 +508,7 @@ exports[`AssignBadgePrintingSystemModal should render 1`] = `
             </table>
             <nav
               aria-label="pagination navigation"
-              class="MuiPagination-root makeStyles-assignPagination-169 makeStyles-pagination-377"
+              class="MuiPagination-root makeStyles-assignPagination-169 makeStyles-pagination-379"
               data-testid="pagination"
             >
               <ul
@@ -629,7 +629,7 @@ exports[`AssignBadgePrintingSystemModal should render 1`] = `
               class="MuiButton-label"
             >
               <span
-                class="makeStyles-textWrapper-380"
+                class="makeStyles-textWrapper-382"
               >
                 Assign
               </span>

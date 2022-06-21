@@ -28,6 +28,7 @@ export interface IFileUploadProps {
   clearFileMap: (uploadId: string) => void;
   defaultFiles?: IFile[];
   defaultFilesToRemove: string[];
+  style?: any;
 }
 
 const FileUpload = ({
@@ -48,6 +49,7 @@ const FileUpload = ({
   wrapperStyleClass,
   defaultFiles = [],
   defaultFilesToRemove = [],
+  style,
 }: IFileUploadProps) => {
   const classes = useStyles();
   const fileList = useMemo(() => (fileMap[uploadId] ? Object.values(fileMap[uploadId]) : []), [uploadId, fileMap]);
@@ -110,7 +112,7 @@ const FileUpload = ({
     };
   }, [uploadId, clearFileMap, clearDefaultFileToRemoveList]);
   return (
-    <div className={getConditionalDefaultValue(singleInput, classes.singleInputUploadItem, classes.fileUploadItem)}>
+    <div style={style || {}} className={getConditionalDefaultValue(singleInput, classes.singleInputUploadItem, classes.fileUploadItem)}>
       <label className={`${getDefaultValue(wrapperStyleClass, '')} ${classes.fileUploadWrapper}`}>
         <div data-testid="file-upload-wrapper">
           <TextField

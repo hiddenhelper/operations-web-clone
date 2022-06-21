@@ -739,7 +739,7 @@ exports[`NewAssignedWorkers Component should render 1`] = `
       >
         <div
           class="MuiGrid-root MuiGrid-container"
-          style="height: 100%; width: 92%; margin-left: 7%; display: flex;"
+          style="height: 70%; width: 80%; margin-left: 7%; display: flex;"
         >
           <div
             class="MuiGrid-root makeStyles-pieChartClass-40 MuiGrid-item MuiGrid-grid-lg-12 MuiGrid-grid-xl-12"
@@ -817,7 +817,7 @@ exports[`NewAssignedWorkers Component should render 1`] = `
           </div>
           <div
             class="MuiGrid-root MuiGrid-item MuiGrid-grid-lg-12 MuiGrid-grid-xl-12"
-            style="width: 90%;"
+            style="float: right; margin-top: 8%;"
           >
             <div
               class="MuiGrid-root MuiGrid-container"

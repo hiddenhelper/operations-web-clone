@@ -4,10 +4,10 @@ exports[`BadgePrintingSystemTab should render 1`] = `
 <div>
   <div>
     <div
-      class="makeStyles-filterActionsContainer-543 makeStyles-filterActionsContainerPadding-545 makeStyles-buttonWithoutFilter-601"
+      class="makeStyles-filterActionsContainer-547 makeStyles-filterActionsContainerPadding-549 makeStyles-buttonWithoutFilter-605"
     >
       <button
-        class="MuiButtonBase-root MuiButton-root MuiButton-contained makeStyles-createButton-573 makeStyles-primaryButtonExtraLarge-577 MuiButton-containedPrimary MuiButton-containedSizeLarge MuiButton-sizeLarge MuiButton-fullWidth"
+        class="MuiButtonBase-root MuiButton-root MuiButton-contained makeStyles-createButton-577 makeStyles-primaryButtonExtraLarge-581 MuiButton-containedPrimary MuiButton-containedSizeLarge MuiButton-sizeLarge MuiButton-fullWidth"
         data-testid="open-bps-modal-btn"
         tabindex="0"
         type="button"
@@ -68,14 +68,14 @@ exports[`BadgePrintingSystemTab should render 1`] = `
         class="MuiTableBody-root"
       >
         <tr
-          class="MuiTableRow-root WithStyles(ForwardRef(TableRow))-root-695 makeStyles-clickableRow-693"
+          class="MuiTableRow-root WithStyles(ForwardRef(TableRow))-root-701 makeStyles-clickableRow-699"
           data-testid="bps-list-row"
         >
           <td
             class="MuiTableCell-root MuiTableCell-body"
           >
             <a
-              class="Link-root-696"
+              class="Link-root-702"
               href="/inventory/badge-printing-system/wizard/77afbfce-1bca-31c3-b512-3a1ed78742bb"
               title="Edit BPS"
             >
@@ -107,7 +107,7 @@ exports[`BadgePrintingSystemTab should render 1`] = `
     </table>
     <nav
       aria-label="pagination navigation"
-      class="MuiPagination-root  makeStyles-pagination-697"
+      class="MuiPagination-root  makeStyles-pagination-703"
       data-testid="pagination"
     >
       <ul
@@ -170,18 +170,18 @@ exports[`BadgePrintingSystemTab should render 1`] = `
       </ul>
     </nav>
     <div
-      class="MuiDrawer-root MuiDrawer-docked makeStyles-drawer-706 makeStyles-close-717 closed"
+      class="MuiDrawer-root MuiDrawer-docked makeStyles-drawer-712 makeStyles-close-723 closed"
       data-testid="drawer"
     >
       <div
-        class="MuiPaper-root MuiDrawer-paper makeStyles-drawerPaper-707 MuiDrawer-paperAnchorRight MuiDrawer-paperAnchorDockedRight MuiPaper-elevation0"
+        class="MuiPaper-root MuiDrawer-paper makeStyles-drawerPaper-713 MuiDrawer-paperAnchorRight MuiDrawer-paperAnchorDockedRight MuiPaper-elevation0"
         style="visibility: hidden; webkit-transform: translateX(1024px) translateX(0px); transform: translateX(1024px) translateX(0px);"
       >
         <div
-          class="makeStyles-drawerButtonWrapper-709"
+          class="makeStyles-drawerButtonWrapper-715"
         >
           <div
-            class="makeStyles-drawerButton-710"
+            class="makeStyles-drawerButton-716"
           >
             <button
               class="MuiButtonBase-root MuiButton-root MuiButton-text"
@@ -203,32 +203,32 @@ exports[`BadgePrintingSystemTab should render 1`] = `
             </button>
           </div>
           <div
-            class="makeStyles-drawerHeader-708"
+            class="makeStyles-drawerHeader-714"
           >
             <p
-              class="MuiTypography-root makeStyles-drawerTitle-711 MuiTypography-body1 MuiTypography-colorPrimary MuiTypography-alignLeft"
+              class="MuiTypography-root makeStyles-drawerTitle-717 MuiTypography-body1 MuiTypography-colorPrimary MuiTypography-alignLeft"
             >
               Device Information
             </p>
           </div>
         </div>
         <div
-          class="makeStyles-summaryDeviceDetail-723"
+          class="makeStyles-summaryDeviceDetail-729"
         >
           <div
-            class="makeStyles-company-727"
+            class="makeStyles-company-733"
           >
             <div
-              class="makeStyles-drawerOverflowWrapper-742"
+              class="makeStyles-drawerOverflowWrapper-748"
             >
               <div
-                class="makeStyles-drawerText-734"
+                class="makeStyles-drawerText-740"
               >
                 <p
-                  class="MuiTypography-root makeStyles-deviceAccent-728 makeStyles-entityTitle-737 MuiTypography-body1"
+                  class="MuiTypography-root makeStyles-deviceAccent-734 makeStyles-entityTitle-743 MuiTypography-body1"
                 />
                 <div
-                  class="makeStyles-drawerMainText-735"
+                  class="makeStyles-drawerMainText-741"
                 >
                   <span>
                     No project assigned
@@ -237,15 +237,15 @@ exports[`BadgePrintingSystemTab should render 1`] = `
                 </div>
               </div>
               <div
-                class="makeStyles-drawerSection-730"
+                class="makeStyles-drawerSection-736"
               >
                 <svg
-                  class="makeStyles-drawerNotesIcon-731"
+                  class="makeStyles-drawerNotesIcon-737"
                 >
                   notes.svg
                 </svg>
                 <div
-                  class="makeStyles-drawerText-734 makeStyles-drawerTextSeparation-736"
+                  class="makeStyles-drawerText-740 makeStyles-drawerTextSeparation-742"
                 >
                   <span>
                     -
@@ -253,18 +253,18 @@ exports[`BadgePrintingSystemTab should render 1`] = `
                 </div>
               </div>
               <div
-                class="makeStyles-drawerSection-730"
+                class="makeStyles-drawerSection-736"
               >
                 <div
-                  class="makeStyles-drawerText-734"
+                  class="makeStyles-drawerText-740"
                 >
                   <p
-                    class="MuiTypography-root makeStyles-deviceAccent-728 makeStyles-entityTitle-737 MuiTypography-body1"
+                    class="MuiTypography-root makeStyles-deviceAccent-734 makeStyles-entityTitle-743 MuiTypography-body1"
                   >
                     Laptop
                   </p>
                   <div
-                    class="makeStyles-drawerMainText-735"
+                    class="makeStyles-drawerMainText-741"
                   >
                     <span>
                       -
@@ -279,21 +279,21 @@ exports[`BadgePrintingSystemTab should render 1`] = `
                 </div>
               </div>
               <div
-                class="makeStyles-drawerSection-730"
+                class="makeStyles-drawerSection-736"
               >
                 <div
-                  class="makeStyles-drawerColumnDirection-741"
+                  class="makeStyles-drawerColumnDirection-747"
                 >
                   <div
-                    class="makeStyles-drawerRowDirection-740"
+                    class="makeStyles-drawerRowDirection-746"
                   >
                     <svg
-                      class="makeStyles-drawerMonetizationIcon-733 makeStyles-bpsIconSize-743"
+                      class="makeStyles-drawerMonetizationIcon-739 makeStyles-bpsIconSize-749"
                     >
                       monetization.svg
                     </svg>
                     <div
-                      class="makeStyles-drawerText-734 makeStyles-drawerTextSeparation-736"
+                      class="makeStyles-drawerText-740 makeStyles-drawerTextSeparation-742"
                     >
                       <span>
                         $
@@ -311,18 +311,18 @@ exports[`BadgePrintingSystemTab should render 1`] = `
                 </div>
               </div>
               <div
-                class="makeStyles-drawerSection-730"
+                class="makeStyles-drawerSection-736"
               >
                 <div
-                  class="makeStyles-drawerRowDirection-740"
+                  class="makeStyles-drawerRowDirection-746"
                 >
                   <svg
-                    class="makeStyles-bpsIconSize-743"
+                    class="makeStyles-bpsIconSize-749"
                   >
                     device-status.svg
                   </svg>
                   <div
-                    class="makeStyles-drawerText-734 makeStyles-drawerTextSeparation-736"
+                    class="makeStyles-drawerText-740 makeStyles-drawerTextSeparation-742"
                   >
                     <span>
                       Order/Purchase Date:
@@ -343,15 +343,15 @@ exports[`BadgePrintingSystemTab should render 1`] = `
                 </div>
               </div>
               <div
-                class="makeStyles-drawerSection-730"
+                class="makeStyles-drawerSection-736"
               >
                 <svg
-                  class="makeStyles-drawerSecondaryNotesIcon-732"
+                  class="makeStyles-drawerSecondaryNotesIcon-738"
                 >
                   notes.svg
                 </svg>
                 <div
-                  class="makeStyles-drawerText-734 makeStyles-drawerTextSeparation-736"
+                  class="makeStyles-drawerText-740 makeStyles-drawerTextSeparation-742"
                 >
                   <span>
                     -
@@ -359,18 +359,18 @@ exports[`BadgePrintingSystemTab should render 1`] = `
                 </div>
               </div>
               <div
-                class="makeStyles-drawerSection-730"
+                class="makeStyles-drawerSection-736"
               >
                 <div
-                  class="makeStyles-drawerText-734"
+                  class="makeStyles-drawerText-740"
                 >
                   <p
-                    class="MuiTypography-root makeStyles-deviceAccent-728 makeStyles-entityTitle-737 MuiTypography-body1"
+                    class="MuiTypography-root makeStyles-deviceAccent-734 makeStyles-entityTitle-743 MuiTypography-body1"
                   >
                     Printer
                   </p>
                   <div
-                    class="makeStyles-drawerMainText-735"
+                    class="makeStyles-drawerMainText-741"
                   >
                     <span>
                       -
@@ -385,21 +385,21 @@ exports[`BadgePrintingSystemTab should render 1`] = `
                 </div>
               </div>
               <div
-                class="makeStyles-drawerSection-730"
+                class="makeStyles-drawerSection-736"
               >
                 <div
-                  class="makeStyles-drawerColumnDirection-741"
+                  class="makeStyles-drawerColumnDirection-747"
                 >
                   <div
-                    class="makeStyles-drawerRowDirection-740"
+                    class="makeStyles-drawerRowDirection-746"
                   >
                     <svg
-                      class="makeStyles-drawerMonetizationIcon-733"
+                      class="makeStyles-drawerMonetizationIcon-739"
                     >
                       monetization.svg
                     </svg>
                     <div
-                      class="makeStyles-drawerText-734 makeStyles-drawerTextSeparation-736"
+                      class="makeStyles-drawerText-740 makeStyles-drawerTextSeparation-742"
                     >
                       <span>
                         $
@@ -417,18 +417,18 @@ exports[`BadgePrintingSystemTab should render 1`] = `
                 </div>
               </div>
               <div
-                class="makeStyles-drawerSection-730"
+                class="makeStyles-drawerSection-736"
               >
                 <div
-                  class="makeStyles-drawerRowDirection-740"
+                  class="makeStyles-drawerRowDirection-746"
                 >
                   <svg
-                    class="makeStyles-bpsIconSize-743"
+                    class="makeStyles-bpsIconSize-749"
                   >
                     device-status.svg
                   </svg>
                   <div
-                    class="makeStyles-drawerText-734 makeStyles-drawerTextSeparation-736"
+                    class="makeStyles-drawerText-740 makeStyles-drawerTextSeparation-742"
                   >
                     <span>
                       Order/Purchase Date:
@@ -454,15 +454,15 @@ exports[`BadgePrintingSystemTab should render 1`] = `
                 </div>
               </div>
               <div
-                class="makeStyles-drawerSection-730"
+                class="makeStyles-drawerSection-736"
               >
                 <svg
-                  class="makeStyles-drawerSecondaryNotesIcon-732"
+                  class="makeStyles-drawerSecondaryNotesIcon-738"
                 >
                   notes.svg
                 </svg>
                 <div
-                  class="makeStyles-drawerText-734 makeStyles-drawerTextSeparation-736"
+                  class="makeStyles-drawerText-740 makeStyles-drawerTextSeparation-742"
                 >
                   <span>
                     -
@@ -470,18 +470,18 @@ exports[`BadgePrintingSystemTab should render 1`] = `
                 </div>
               </div>
               <div
-                class="makeStyles-drawerSection-730"
+                class="makeStyles-drawerSection-736"
               >
                 <div
-                  class="makeStyles-drawerText-734"
+                  class="makeStyles-drawerText-740"
                 >
                   <p
-                    class="MuiTypography-root makeStyles-deviceAccent-728 makeStyles-entityTitle-737 MuiTypography-body1"
+                    class="MuiTypography-root makeStyles-deviceAccent-734 makeStyles-entityTitle-743 MuiTypography-body1"
                   >
                     Scanner
                   </p>
                   <div
-                    class="makeStyles-drawerMainText-735"
+                    class="makeStyles-drawerMainText-741"
                   >
                     <span>
                       -
@@ -493,21 +493,21 @@ exports[`BadgePrintingSystemTab should render 1`] = `
                 </div>
               </div>
               <div
-                class="makeStyles-drawerSection-730"
+                class="makeStyles-drawerSection-736"
               >
                 <div
-                  class="makeStyles-drawerColumnDirection-741"
+                  class="makeStyles-drawerColumnDirection-747"
                 >
                   <div
-                    class="makeStyles-drawerRowDirection-740"
+                    class="makeStyles-drawerRowDirection-746"
                   >
                     <svg
-                      class="makeStyles-drawerMonetizationIcon-733"
+                      class="makeStyles-drawerMonetizationIcon-739"
                     >
                       monetization.svg
                     </svg>
                     <div
-                      class="makeStyles-drawerText-734 makeStyles-drawerTextSeparation-736"
+                      class="makeStyles-drawerText-740 makeStyles-drawerTextSeparation-742"
                     >
                       <span>
                         $
@@ -525,18 +525,18 @@ exports[`BadgePrintingSystemTab should render 1`] = `
                 </div>
               </div>
               <div
-                class="makeStyles-drawerSection-730"
+                class="makeStyles-drawerSection-736"
               >
                 <div
-                  class="makeStyles-drawerRowDirection-740"
+                  class="makeStyles-drawerRowDirection-746"
                 >
                   <svg
-                    class="makeStyles-bpsIconSize-743"
+                    class="makeStyles-bpsIconSize-749"
                   >
                     device-status.svg
                   </svg>
                   <div
-                    class="makeStyles-drawerText-734 makeStyles-drawerTextSeparation-736"
+                    class="makeStyles-drawerText-740 makeStyles-drawerTextSeparation-742"
                   >
                     <span>
                       Order/Purchase Date:
@@ -557,15 +557,15 @@ exports[`BadgePrintingSystemTab should render 1`] = `
                 </div>
               </div>
               <div
-                class="makeStyles-drawerSection-730"
+                class="makeStyles-drawerSection-736"
               >
                 <svg
-                  class="makeStyles-drawerSecondaryNotesIcon-732"
+                  class="makeStyles-drawerSecondaryNotesIcon-738"
                 >
                   notes.svg
                 </svg>
                 <div
-                  class="makeStyles-drawerText-734 makeStyles-drawerTextSeparation-736"
+                  class="makeStyles-drawerText-740 makeStyles-drawerTextSeparation-742"
                 >
                   <span>
                     -
@@ -576,10 +576,10 @@ exports[`BadgePrintingSystemTab should render 1`] = `
           </div>
         </div>
         <hr
-          class="MuiDivider-root makeStyles-drawerDivider-611"
+          class="MuiDivider-root makeStyles-drawerDivider-615"
         />
         <div
-          class="makeStyles-ctaWrapper-688"
+          class="makeStyles-ctaWrapper-694"
         >
           <span
             class=""
@@ -587,7 +587,7 @@ exports[`BadgePrintingSystemTab should render 1`] = `
             tabindex="-1"
           >
             <button
-              class="MuiButtonBase-root MuiButton-root MuiButton-outlined makeStyles-drawerCTA-580 makeStyles-borderPrimaryButton-572"
+              class="MuiButtonBase-root MuiButton-root MuiButton-outlined makeStyles-drawerCTA-584 makeStyles-borderPrimaryButton-576"
               data-testid="bps-edition-modal-open-btn"
               tabindex="0"
               type="button"
@@ -605,7 +605,7 @@ exports[`BadgePrintingSystemTab should render 1`] = `
             tabindex="-1"
           >
             <button
-              class="MuiButtonBase-root MuiButton-root MuiButton-outlined makeStyles-drawerCTA-580 makeStyles-warningButton-581"
+              class="MuiButtonBase-root MuiButton-root MuiButton-outlined makeStyles-drawerCTA-584 makeStyles-warningButton-585"
               data-testid="unassign-btn"
               tabindex="0"
               type="button"
@@ -647,11 +647,11 @@ exports[`BadgePrintingSystemTab should render empty 1`] = `
       </button>
     </div>
     <div
-      class=" makeStyles-container-166"
+      class=" makeStyles-container-168"
     >
       <div>
         <div
-          class="MuiAvatar-root MuiAvatar-circle makeStyles-missingAvatarWrapper-177 makeStyles-missingAvatarBig-178 MuiAvatar-colorDefault"
+          class="MuiAvatar-root MuiAvatar-circle makeStyles-missingAvatarWrapper-179 makeStyles-missingAvatarBig-180 MuiAvatar-colorDefault"
         >
           <svg>
             inventory.svg
@@ -659,24 +659,24 @@ exports[`BadgePrintingSystemTab should render empty 1`] = `
         </div>
       </div>
       <p
-        class="MuiTypography-root makeStyles-missingListText-167 MuiTypography-body1"
+        class="MuiTypography-root makeStyles-missingListText-169 MuiTypography-body1"
       >
         There are no BPS assigned
       </p>
     </div>
     <div
-      class="MuiDrawer-root MuiDrawer-docked makeStyles-drawer-216 makeStyles-close-227 closed"
+      class="MuiDrawer-root MuiDrawer-docked makeStyles-drawer-218 makeStyles-close-229 closed"
       data-testid="drawer"
     >
       <div
-        class="MuiPaper-root MuiDrawer-paper makeStyles-drawerPaper-217 MuiDrawer-paperAnchorRight MuiDrawer-paperAnchorDockedRight MuiPaper-elevation0"
+        class="MuiPaper-root MuiDrawer-paper makeStyles-drawerPaper-219 MuiDrawer-paperAnchorRight MuiDrawer-paperAnchorDockedRight MuiPaper-elevation0"
         style="visibility: hidden; webkit-transform: translateX(1024px) translateX(0px); transform: translateX(1024px) translateX(0px);"
       >
         <div
-          class="makeStyles-drawerButtonWrapper-219"
+          class="makeStyles-drawerButtonWrapper-221"
         >
           <div
-            class="makeStyles-drawerButton-220"
+            class="makeStyles-drawerButton-222"
           >
             <button
               class="MuiButtonBase-root MuiButton-root MuiButton-text"
@@ -698,32 +698,32 @@ exports[`BadgePrintingSystemTab should render empty 1`] = `
             </button>
           </div>
           <div
-            class="makeStyles-drawerHeader-218"
+            class="makeStyles-drawerHeader-220"
           >
             <p
-              class="MuiTypography-root makeStyles-drawerTitle-221 MuiTypography-body1 MuiTypography-colorPrimary MuiTypography-alignLeft"
+              class="MuiTypography-root makeStyles-drawerTitle-223 MuiTypography-body1 MuiTypography-colorPrimary MuiTypography-alignLeft"
             >
               Device Information
             </p>
           </div>
         </div>
         <div
-          class="makeStyles-summaryDeviceDetail-233"
+          class="makeStyles-summaryDeviceDetail-235"
         >
           <div
-            class="makeStyles-company-237"
+            class="makeStyles-company-239"
           >
             <div
-              class="makeStyles-drawerOverflowWrapper-252"
+              class="makeStyles-drawerOverflowWrapper-254"
             >
               <div
-                class="makeStyles-drawerText-244"
+                class="makeStyles-drawerText-246"
               >
                 <p
-                  class="MuiTypography-root makeStyles-deviceAccent-238 makeStyles-entityTitle-247 MuiTypography-body1"
+                  class="MuiTypography-root makeStyles-deviceAccent-240 makeStyles-entityTitle-249 MuiTypography-body1"
                 />
                 <div
-                  class="makeStyles-drawerMainText-245"
+                  class="makeStyles-drawerMainText-247"
                 >
                   <span>
                     No project assigned
@@ -732,15 +732,15 @@ exports[`BadgePrintingSystemTab should render empty 1`] = `
                 </div>
               </div>
               <div
-                class="makeStyles-drawerSection-240"
+                class="makeStyles-drawerSection-242"
               >
                 <svg
-                  class="makeStyles-drawerNotesIcon-241"
+                  class="makeStyles-drawerNotesIcon-243"
                 >
                   notes.svg
                 </svg>
                 <div
-                  class="makeStyles-drawerText-244 makeStyles-drawerTextSeparation-246"
+                  class="makeStyles-drawerText-246 makeStyles-drawerTextSeparation-248"
                 >
                   <span>
                     -
@@ -748,18 +748,18 @@ exports[`BadgePrintingSystemTab should render empty 1`] = `
                 </div>
               </div>
               <div
-                class="makeStyles-drawerSection-240"
+                class="makeStyles-drawerSection-242"
               >
                 <div
-                  class="makeStyles-drawerText-244"
+                  class="makeStyles-drawerText-246"
                 >
                   <p
-                    class="MuiTypography-root makeStyles-deviceAccent-238 makeStyles-entityTitle-247 MuiTypography-body1"
+                    class="MuiTypography-root makeStyles-deviceAccent-240 makeStyles-entityTitle-249 MuiTypography-body1"
                   >
                     Laptop
                   </p>
                   <div
-                    class="makeStyles-drawerMainText-245"
+                    class="makeStyles-drawerMainText-247"
                   >
                     <span>
                       -
@@ -774,21 +774,21 @@ exports[`BadgePrintingSystemTab should render empty 1`] = `
                 </div>
               </div>
               <div
-                class="makeStyles-drawerSection-240"
+                class="makeStyles-drawerSection-242"
               >
                 <div
-                  class="makeStyles-drawerColumnDirection-251"
+                  class="makeStyles-drawerColumnDirection-253"
                 >
                   <div
-                    class="makeStyles-drawerRowDirection-250"
+                    class="makeStyles-drawerRowDirection-252"
                   >
                     <svg
-                      class="makeStyles-drawerMonetizationIcon-243 makeStyles-bpsIconSize-253"
+                      class="makeStyles-drawerMonetizationIcon-245 makeStyles-bpsIconSize-255"
                     >
                       monetization.svg
                     </svg>
                     <div
-                      class="makeStyles-drawerText-244 makeStyles-drawerTextSeparation-246"
+                      class="makeStyles-drawerText-246 makeStyles-drawerTextSeparation-248"
                     >
                       <span>
                         $
@@ -806,18 +806,18 @@ exports[`BadgePrintingSystemTab should render empty 1`] = `
                 </div>
               </div>
               <div
-                class="makeStyles-drawerSection-240"
+                class="makeStyles-drawerSection-242"
               >
                 <div
-                  class="makeStyles-drawerRowDirection-250"
+                  class="makeStyles-drawerRowDirection-252"
                 >
                   <svg
-                    class="makeStyles-bpsIconSize-253"
+                    class="makeStyles-bpsIconSize-255"
                   >
                     device-status.svg
                   </svg>
                   <div
-                    class="makeStyles-drawerText-244 makeStyles-drawerTextSeparation-246"
+                    class="makeStyles-drawerText-246 makeStyles-drawerTextSeparation-248"
                   >
                     <span>
                       Order/Purchase Date:
@@ -838,15 +838,15 @@ exports[`BadgePrintingSystemTab should render empty 1`] = `
                 </div>
               </div>
               <div
-                class="makeStyles-drawerSection-240"
+                class="makeStyles-drawerSection-242"
               >
                 <svg
-                  class="makeStyles-drawerSecondaryNotesIcon-242"
+                  class="makeStyles-drawerSecondaryNotesIcon-244"
                 >
                   notes.svg
                 </svg>
                 <div
-                  class="makeStyles-drawerText-244 makeStyles-drawerTextSeparation-246"
+                  class="makeStyles-drawerText-246 makeStyles-drawerTextSeparation-248"
                 >
                   <span>
                     -
@@ -854,18 +854,18 @@ exports[`BadgePrintingSystemTab should render empty 1`] = `
                 </div>
               </div>
               <div
-                class="makeStyles-drawerSection-240"
+                class="makeStyles-drawerSection-242"
               >
                 <div
-                  class="makeStyles-drawerText-244"
+                  class="makeStyles-drawerText-246"
                 >
                   <p
-                    class="MuiTypography-root makeStyles-deviceAccent-238 makeStyles-entityTitle-247 MuiTypography-body1"
+                    class="MuiTypography-root makeStyles-deviceAccent-240 makeStyles-entityTitle-249 MuiTypography-body1"
                   >
                     Printer
                   </p>
                   <div
-                    class="makeStyles-drawerMainText-245"
+                    class="makeStyles-drawerMainText-247"
                   >
                     <span>
                       -
@@ -880,21 +880,21 @@ exports[`BadgePrintingSystemTab should render empty 1`] = `
                 </div>
               </div>
               <div
-                class="makeStyles-drawerSection-240"
+                class="makeStyles-drawerSection-242"
               >
                 <div
-                  class="makeStyles-drawerColumnDirection-251"
+                  class="makeStyles-drawerColumnDirection-253"
                 >
                   <div
-                    class="makeStyles-drawerRowDirection-250"
+                    class="makeStyles-drawerRowDirection-252"
                   >
                     <svg
-                      class="makeStyles-drawerMonetizationIcon-243"
+                      class="makeStyles-drawerMonetizationIcon-245"
                     >
                       monetization.svg
                     </svg>
                     <div
-                      class="makeStyles-drawerText-244 makeStyles-drawerTextSeparation-246"
+                      class="makeStyles-drawerText-246 makeStyles-drawerTextSeparation-248"
                     >
                       <span>
                         $
@@ -912,18 +912,18 @@ exports[`BadgePrintingSystemTab should render empty 1`] = `
                 </div>
               </div>
               <div
-                class="makeStyles-drawerSection-240"
+                class="makeStyles-drawerSection-242"
               >
                 <div
-                  class="makeStyles-drawerRowDirection-250"
+                  class="makeStyles-drawerRowDirection-252"
                 >
                   <svg
-                    class="makeStyles-bpsIconSize-253"
+                    class="makeStyles-bpsIconSize-255"
                   >
                     device-status.svg
                   </svg>
                   <div
-                    class="makeStyles-drawerText-244 makeStyles-drawerTextSeparation-246"
+                    class="makeStyles-drawerText-246 makeStyles-drawerTextSeparation-248"
                   >
                     <span>
                       Order/Purchase Date:
@@ -949,15 +949,15 @@ exports[`BadgePrintingSystemTab should render empty 1`] = `
                 </div>
               </div>
               <div
-                class="makeStyles-drawerSection-240"
+                class="makeStyles-drawerSection-242"
               >
                 <svg
-                  class="makeStyles-drawerSecondaryNotesIcon-242"
+                  class="makeStyles-drawerSecondaryNotesIcon-244"
                 >
                   notes.svg
                 </svg>
                 <div
-                  class="makeStyles-drawerText-244 makeStyles-drawerTextSeparation-246"
+                  class="makeStyles-drawerText-246 makeStyles-drawerTextSeparation-248"
                 >
                   <span>
                     -
@@ -965,18 +965,18 @@ exports[`BadgePrintingSystemTab should render empty 1`] = `
                 </div>
               </div>
               <div
-                class="makeStyles-drawerSection-240"
+                class="makeStyles-drawerSection-242"
               >
                 <div
-                  class="makeStyles-drawerText-244"
+                  class="makeStyles-drawerText-246"
                 >
                   <p
-                    class="MuiTypography-root makeStyles-deviceAccent-238 makeStyles-entityTitle-247 MuiTypography-body1"
+                    class="MuiTypography-root makeStyles-deviceAccent-240 makeStyles-entityTitle-249 MuiTypography-body1"
                   >
                     Scanner
                   </p>
                   <div
-                    class="makeStyles-drawerMainText-245"
+                    class="makeStyles-drawerMainText-247"
                   >
                     <span>
                       -
@@ -988,21 +988,21 @@ exports[`BadgePrintingSystemTab should render empty 1`] = `
                 </div>
               </div>
               <div
-                class="makeStyles-drawerSection-240"
+                class="makeStyles-drawerSection-242"
               >
                 <div
-                  class="makeStyles-drawerColumnDirection-251"
+                  class="makeStyles-drawerColumnDirection-253"
                 >
                   <div
-                    class="makeStyles-drawerRowDirection-250"
+                    class="makeStyles-drawerRowDirection-252"
                   >
                     <svg
-                      class="makeStyles-drawerMonetizationIcon-243"
+                      class="makeStyles-drawerMonetizationIcon-245"
                     >
                       monetization.svg
                     </svg>
                     <div
-                      class="makeStyles-drawerText-244 makeStyles-drawerTextSeparation-246"
+                      class="makeStyles-drawerText-246 makeStyles-drawerTextSeparation-248"
                     >
                       <span>
                         $
@@ -1020,18 +1020,18 @@ exports[`BadgePrintingSystemTab should render empty 1`] = `
                 </div>
               </div>
               <div
-                class="makeStyles-drawerSection-240"
+                class="makeStyles-drawerSection-242"
               >
                 <div
-                  class="makeStyles-drawerRowDirection-250"
+                  class="makeStyles-drawerRowDirection-252"
                 >
                   <svg
-                    class="makeStyles-bpsIconSize-253"
+                    class="makeStyles-bpsIconSize-255"
                   >
                     device-status.svg
                   </svg>
                   <div
-                    class="makeStyles-drawerText-244 makeStyles-drawerTextSeparation-246"
+                    class="makeStyles-drawerText-246 makeStyles-drawerTextSeparation-248"
                   >
                     <span>
                       Order/Purchase Date:
@@ -1052,15 +1052,15 @@ exports[`BadgePrintingSystemTab should render empty 1`] = `
                 </div>
               </div>
               <div
-                class="makeStyles-drawerSection-240"
+                class="makeStyles-drawerSection-242"
               >
                 <svg
-                  class="makeStyles-drawerSecondaryNotesIcon-242"
+                  class="makeStyles-drawerSecondaryNotesIcon-244"
                 >
                   notes.svg
                 </svg>
                 <div
-                  class="makeStyles-drawerText-244 makeStyles-drawerTextSeparation-246"
+                  class="makeStyles-drawerText-246 makeStyles-drawerTextSeparation-248"
                 >
                   <span>
                     -
@@ -1074,7 +1074,7 @@ exports[`BadgePrintingSystemTab should render empty 1`] = `
           class="MuiDivider-root makeStyles-drawerDivider-105"
         />
         <div
-          class="makeStyles-ctaWrapper-209"
+          class="makeStyles-ctaWrapper-211"
         >
           <span
             class=""
@@ -1129,10 +1129,10 @@ exports[`BadgePrintingSystemTab should render without date 1`] = `
 <div>
   <div>
     <div
-      class="makeStyles-filterActionsContainer-945 makeStyles-filterActionsContainerPadding-947 makeStyles-buttonWithoutFilter-1003"
+      class="makeStyles-filterActionsContainer-953 makeStyles-filterActionsContainerPadding-955 makeStyles-buttonWithoutFilter-1011"
     >
       <button
-        class="MuiButtonBase-root MuiButton-root MuiButton-contained makeStyles-createButton-975 makeStyles-primaryButtonExtraLarge-979 MuiButton-containedPrimary MuiButton-containedSizeLarge MuiButton-sizeLarge MuiButton-fullWidth"
+        class="MuiButtonBase-root MuiButton-root MuiButton-contained makeStyles-createButton-983 makeStyles-primaryButtonExtraLarge-987 MuiButton-containedPrimary MuiButton-containedSizeLarge MuiButton-sizeLarge MuiButton-fullWidth"
         data-testid="open-bps-modal-btn"
         tabindex="0"
         type="button"
@@ -1193,14 +1193,14 @@ exports[`BadgePrintingSystemTab should render without date 1`] = `
         class="MuiTableBody-root"
       >
         <tr
-          class="MuiTableRow-root WithStyles(ForwardRef(TableRow))-root-1097 makeStyles-clickableRow-1095"
+          class="MuiTableRow-root WithStyles(ForwardRef(TableRow))-root-1107 makeStyles-clickableRow-1105"
           data-testid="bps-list-row"
         >
           <td
             class="MuiTableCell-root MuiTableCell-body"
           >
             <a
-              class="Link-root-1098"
+              class="Link-root-1108"
               href="/inventory/badge-printing-system/wizard/77afbfce-1bca-31c3-b512-3a1ed78742bb"
               title="Edit BPS"
             >
@@ -1232,7 +1232,7 @@ exports[`BadgePrintingSystemTab should render without date 1`] = `
     </table>
     <nav
       aria-label="pagination navigation"
-      class="MuiPagination-root  makeStyles-pagination-1099"
+      class="MuiPagination-root  makeStyles-pagination-1109"
       data-testid="pagination"
     >
       <ul
@@ -1295,18 +1295,18 @@ exports[`BadgePrintingSystemTab should render without date 1`] = `
       </ul>
     </nav>
     <div
-      class="MuiDrawer-root MuiDrawer-docked makeStyles-drawer-1108 makeStyles-close-1119 closed"
+      class="MuiDrawer-root MuiDrawer-docked makeStyles-drawer-1118 makeStyles-close-1129 closed"
       data-testid="drawer"
     >
       <div
-        class="MuiPaper-root MuiDrawer-paper makeStyles-drawerPaper-1109 MuiDrawer-paperAnchorRight MuiDrawer-paperAnchorDockedRight MuiPaper-elevation0"
+        class="MuiPaper-root MuiDrawer-paper makeStyles-drawerPaper-1119 MuiDrawer-paperAnchorRight MuiDrawer-paperAnchorDockedRight MuiPaper-elevation0"
         style="visibility: hidden; webkit-transform: translateX(1024px) translateX(0px); transform: translateX(1024px) translateX(0px);"
       >
         <div
-          class="makeStyles-drawerButtonWrapper-1111"
+          class="makeStyles-drawerButtonWrapper-1121"
         >
           <div
-            class="makeStyles-drawerButton-1112"
+            class="makeStyles-drawerButton-1122"
           >
             <button
               class="MuiButtonBase-root MuiButton-root MuiButton-text"
@@ -1328,32 +1328,32 @@ exports[`BadgePrintingSystemTab should render without date 1`] = `
             </button>
           </div>
           <div
-            class="makeStyles-drawerHeader-1110"
+            class="makeStyles-drawerHeader-1120"
           >
             <p
-              class="MuiTypography-root makeStyles-drawerTitle-1113 MuiTypography-body1 MuiTypography-colorPrimary MuiTypography-alignLeft"
+              class="MuiTypography-root makeStyles-drawerTitle-1123 MuiTypography-body1 MuiTypography-colorPrimary MuiTypography-alignLeft"
             >
               Device Information
             </p>
           </div>
         </div>
         <div
-          class="makeStyles-summaryDeviceDetail-1125"
+          class="makeStyles-summaryDeviceDetail-1135"
         >
           <div
-            class="makeStyles-company-1129"
+            class="makeStyles-company-1139"
           >
             <div
-              class="makeStyles-drawerOverflowWrapper-1144"
+              class="makeStyles-drawerOverflowWrapper-1154"
             >
               <div
-                class="makeStyles-drawerText-1136"
+                class="makeStyles-drawerText-1146"
               >
                 <p
-                  class="MuiTypography-root makeStyles-deviceAccent-1130 makeStyles-entityTitle-1139 MuiTypography-body1"
+                  class="MuiTypography-root makeStyles-deviceAccent-1140 makeStyles-entityTitle-1149 MuiTypography-body1"
                 />
                 <div
-                  class="makeStyles-drawerMainText-1137"
+                  class="makeStyles-drawerMainText-1147"
                 >
                   <span>
                     No project assigned
@@ -1362,15 +1362,15 @@ exports[`BadgePrintingSystemTab should render without date 1`] = `
                 </div>
               </div>
               <div
-                class="makeStyles-drawerSection-1132"
+                class="makeStyles-drawerSection-1142"
               >
                 <svg
-                  class="makeStyles-drawerNotesIcon-1133"
+                  class="makeStyles-drawerNotesIcon-1143"
                 >
                   notes.svg
                 </svg>
                 <div
-                  class="makeStyles-drawerText-1136 makeStyles-drawerTextSeparation-1138"
+                  class="makeStyles-drawerText-1146 makeStyles-drawerTextSeparation-1148"
                 >
                   <span>
                     -
@@ -1378,18 +1378,18 @@ exports[`BadgePrintingSystemTab should render without date 1`] = `
                 </div>
               </div>
               <div
-                class="makeStyles-drawerSection-1132"
+                class="makeStyles-drawerSection-1142"
               >
                 <div
-                  class="makeStyles-drawerText-1136"
+                  class="makeStyles-drawerText-1146"
                 >
                   <p
-                    class="MuiTypography-root makeStyles-deviceAccent-1130 makeStyles-entityTitle-1139 MuiTypography-body1"
+                    class="MuiTypography-root makeStyles-deviceAccent-1140 makeStyles-entityTitle-1149 MuiTypography-body1"
                   >
                     Laptop
                   </p>
                   <div
-                    class="makeStyles-drawerMainText-1137"
+                    class="makeStyles-drawerMainText-1147"
                   >
                     <span>
                       -
@@ -1404,21 +1404,21 @@ exports[`BadgePrintingSystemTab should render without date 1`] = `
                 </div>
               </div>
               <div
-                class="makeStyles-drawerSection-1132"
+                class="makeStyles-drawerSection-1142"
               >
                 <div
-                  class="makeStyles-drawerColumnDirection-1143"
+                  class="makeStyles-drawerColumnDirection-1153"
                 >
                   <div
-                    class="makeStyles-drawerRowDirection-1142"
+                    class="makeStyles-drawerRowDirection-1152"
                   >
                     <svg
-                      class="makeStyles-drawerMonetizationIcon-1135 makeStyles-bpsIconSize-1145"
+                      class="makeStyles-drawerMonetizationIcon-1145 makeStyles-bpsIconSize-1155"
                     >
                       monetization.svg
                     </svg>
                     <div
-                      class="makeStyles-drawerText-1136 makeStyles-drawerTextSeparation-1138"
+                      class="makeStyles-drawerText-1146 makeStyles-drawerTextSeparation-1148"
                     >
                       <span>
                         $
@@ -1436,18 +1436,18 @@ exports[`BadgePrintingSystemTab should render without date 1`] = `
                 </div>
               </div>
               <div
-                class="makeStyles-drawerSection-1132"
+                class="makeStyles-drawerSection-1142"
               >
                 <div
-                  class="makeStyles-drawerRowDirection-1142"
+                  class="makeStyles-drawerRowDirection-1152"
                 >
                   <svg
-                    class="makeStyles-bpsIconSize-1145"
+                    class="makeStyles-bpsIconSize-1155"
                   >
                     device-status.svg
                   </svg>
                   <div
-                    class="makeStyles-drawerText-1136 makeStyles-drawerTextSeparation-1138"
+                    class="makeStyles-drawerText-1146 makeStyles-drawerTextSeparation-1148"
                   >
                     <span>
                       Order/Purchase Date:
@@ -1468,15 +1468,15 @@ exports[`BadgePrintingSystemTab should render without date 1`] = `
                 </div>
               </div>
               <div
-                class="makeStyles-drawerSection-1132"
+                class="makeStyles-drawerSection-1142"
               >
                 <svg
-                  class="makeStyles-drawerSecondaryNotesIcon-1134"
+                  class="makeStyles-drawerSecondaryNotesIcon-1144"
                 >
                   notes.svg
                 </svg>
                 <div
-                  class="makeStyles-drawerText-1136 makeStyles-drawerTextSeparation-1138"
+                  class="makeStyles-drawerText-1146 makeStyles-drawerTextSeparation-1148"
                 >
                   <span>
                     -
@@ -1484,18 +1484,18 @@ exports[`BadgePrintingSystemTab should render without date 1`] = `
                 </div>
               </div>
               <div
-                class="makeStyles-drawerSection-1132"
+                class="makeStyles-drawerSection-1142"
               >
                 <div
-                  class="makeStyles-drawerText-1136"
+                  class="makeStyles-drawerText-1146"
                 >
                   <p
-                    class="MuiTypography-root makeStyles-deviceAccent-1130 makeStyles-entityTitle-1139 MuiTypography-body1"
+                    class="MuiTypography-root makeStyles-deviceAccent-1140 makeStyles-entityTitle-1149 MuiTypography-body1"
                   >
                     Printer
                   </p>
                   <div
-                    class="makeStyles-drawerMainText-1137"
+                    class="makeStyles-drawerMainText-1147"
                   >
                     <span>
                       -
@@ -1510,21 +1510,21 @@ exports[`BadgePrintingSystemTab should render without date 1`] = `
                 </div>
               </div>
               <div
-                class="makeStyles-drawerSection-1132"
+                class="makeStyles-drawerSection-1142"
               >
                 <div
-                  class="makeStyles-drawerColumnDirection-1143"
+                  class="makeStyles-drawerColumnDirection-1153"
                 >
                   <div
-                    class="makeStyles-drawerRowDirection-1142"
+                    class="makeStyles-drawerRowDirection-1152"
                   >
                     <svg
-                      class="makeStyles-drawerMonetizationIcon-1135"
+                      class="makeStyles-drawerMonetizationIcon-1145"
                     >
                       monetization.svg
                     </svg>
                     <div
-                      class="makeStyles-drawerText-1136 makeStyles-drawerTextSeparation-1138"
+                      class="makeStyles-drawerText-1146 makeStyles-drawerTextSeparation-1148"
                     >
                       <span>
                         $
@@ -1542,18 +1542,18 @@ exports[`BadgePrintingSystemTab should render without date 1`] = `
                 </div>
               </div>
               <div
-                class="makeStyles-drawerSection-1132"
+                class="makeStyles-drawerSection-1142"
               >
                 <div
-                  class="makeStyles-drawerRowDirection-1142"
+                  class="makeStyles-drawerRowDirection-1152"
                 >
                   <svg
-                    class="makeStyles-bpsIconSize-1145"
+                    class="makeStyles-bpsIconSize-1155"
                   >
                     device-status.svg
                   </svg>
                   <div
-                    class="makeStyles-drawerText-1136 makeStyles-drawerTextSeparation-1138"
+                    class="makeStyles-drawerText-1146 makeStyles-drawerTextSeparation-1148"
                   >
                     <span>
                       Order/Purchase Date:
@@ -1579,15 +1579,15 @@ exports[`BadgePrintingSystemTab should render without date 1`] = `
                 </div>
               </div>
               <div
-                class="makeStyles-drawerSection-1132"
+                class="makeStyles-drawerSection-1142"
               >
                 <svg
-                  class="makeStyles-drawerSecondaryNotesIcon-1134"
+                  class="makeStyles-drawerSecondaryNotesIcon-1144"
                 >
                   notes.svg
                 </svg>
                 <div
-                  class="makeStyles-drawerText-1136 makeStyles-drawerTextSeparation-1138"
+                  class="makeStyles-drawerText-1146 makeStyles-drawerTextSeparation-1148"
                 >
                   <span>
                     -
@@ -1595,18 +1595,18 @@ exports[`BadgePrintingSystemTab should render without date 1`] = `
                 </div>
               </div>
               <div
-                class="makeStyles-drawerSection-1132"
+                class="makeStyles-drawerSection-1142"
               >
                 <div
-                  class="makeStyles-drawerText-1136"
+                  class="makeStyles-drawerText-1146"
                 >
                   <p
-                    class="MuiTypography-root makeStyles-deviceAccent-1130 makeStyles-entityTitle-1139 MuiTypography-body1"
+                    class="MuiTypography-root makeStyles-deviceAccent-1140 makeStyles-entityTitle-1149 MuiTypography-body1"
                   >
                     Scanner
                   </p>
                   <div
-                    class="makeStyles-drawerMainText-1137"
+                    class="makeStyles-drawerMainText-1147"
                   >
                     <span>
                       -
@@ -1618,21 +1618,21 @@ exports[`BadgePrintingSystemTab should render without date 1`] = `
                 </div>
               </div>
               <div
-                class="makeStyles-drawerSection-1132"
+                class="makeStyles-drawerSection-1142"
               >
                 <div
-                  class="makeStyles-drawerColumnDirection-1143"
+                  class="makeStyles-drawerColumnDirection-1153"
                 >
                   <div
-                    class="makeStyles-drawerRowDirection-1142"
+                    class="makeStyles-drawerRowDirection-1152"
                   >
                     <svg
-                      class="makeStyles-drawerMonetizationIcon-1135"
+                      class="makeStyles-drawerMonetizationIcon-1145"
                     >
                       monetization.svg
                     </svg>
                     <div
-                      class="makeStyles-drawerText-1136 makeStyles-drawerTextSeparation-1138"
+                      class="makeStyles-drawerText-1146 makeStyles-drawerTextSeparation-1148"
                     >
                       <span>
                         $
@@ -1650,18 +1650,18 @@ exports[`BadgePrintingSystemTab should render without date 1`] = `
                 </div>
               </div>
               <div
-                class="makeStyles-drawerSection-1132"
+                class="makeStyles-drawerSection-1142"
               >
                 <div
-                  class="makeStyles-drawerRowDirection-1142"
+                  class="makeStyles-drawerRowDirection-1152"
                 >
                   <svg
-                    class="makeStyles-bpsIconSize-1145"
+                    class="makeStyles-bpsIconSize-1155"
                   >
                     device-status.svg
                   </svg>
                   <div
-                    class="makeStyles-drawerText-1136 makeStyles-drawerTextSeparation-1138"
+                    class="makeStyles-drawerText-1146 makeStyles-drawerTextSeparation-1148"
                   >
                     <span>
                       Order/Purchase Date:
@@ -1682,15 +1682,15 @@ exports[`BadgePrintingSystemTab should render without date 1`] = `
                 </div>
               </div>
               <div
-                class="makeStyles-drawerSection-1132"
+                class="makeStyles-drawerSection-1142"
               >
                 <svg
-                  class="makeStyles-drawerSecondaryNotesIcon-1134"
+                  class="makeStyles-drawerSecondaryNotesIcon-1144"
                 >
                   notes.svg
                 </svg>
                 <div
-                  class="makeStyles-drawerText-1136 makeStyles-drawerTextSeparation-1138"
+                  class="makeStyles-drawerText-1146 makeStyles-drawerTextSeparation-1148"
                 >
                   <span>
                     -
@@ -1701,10 +1701,10 @@ exports[`BadgePrintingSystemTab should render without date 1`] = `
           </div>
         </div>
         <hr
-          class="MuiDivider-root makeStyles-drawerDivider-1013"
+          class="MuiDivider-root makeStyles-drawerDivider-1021"
         />
         <div
-          class="makeStyles-ctaWrapper-1090"
+          class="makeStyles-ctaWrapper-1100"
         >
           <span
             class=""
@@ -1712,7 +1712,7 @@ exports[`BadgePrintingSystemTab should render without date 1`] = `
             tabindex="-1"
           >
             <button
-              class="MuiButtonBase-root MuiButton-root MuiButton-outlined makeStyles-drawerCTA-982 makeStyles-borderPrimaryButton-974"
+              class="MuiButtonBase-root MuiButton-root MuiButton-outlined makeStyles-drawerCTA-990 makeStyles-borderPrimaryButton-982"
               data-testid="bps-edition-modal-open-btn"
               tabindex="0"
               type="button"
@@ -1730,7 +1730,7 @@ exports[`BadgePrintingSystemTab should render without date 1`] = `
             tabindex="-1"
           >
             <button
-              class="MuiButtonBase-root MuiButton-root MuiButton-outlined makeStyles-drawerCTA-982 makeStyles-warningButton-983"
+              class="MuiButtonBase-root MuiButton-root MuiButton-outlined makeStyles-drawerCTA-990 makeStyles-warningButton-991"
               data-testid="unassign-btn"
               tabindex="0"
               type="button"

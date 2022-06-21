@@ -4,23 +4,23 @@ exports[`AccessControlSystemTab should list handhelds at the end 1`] = `
 <div>
   <div>
     <div
-      class="makeStyles-filterActionsContainer-948 makeStyles-filterActionsContainerPadding-950"
+      class="makeStyles-filterActionsContainer-956 makeStyles-filterActionsContainerPadding-958"
     >
       <div
-        class="MuiBox-root MuiBox-root-1102 makeStyles-filterStatusContainer-951 makeStyles-autocompleteFilterStatus-968 makeStyles-acsFilterWrapper-1030"
+        class="MuiBox-root MuiBox-root-1112 makeStyles-filterStatusContainer-959 makeStyles-autocompleteFilterStatus-976 makeStyles-acsFilterWrapper-1038"
       >
         <div
-          class="makeStyles-floatingFilterWrapper-957 makeStyles-filterWrapper-956  floatingFilterWrapper"
+          class="makeStyles-floatingFilterWrapper-965 makeStyles-filterWrapper-964  floatingFilterWrapper"
         >
           <span
-            class="makeStyles-floatingFilterButton-958"
+            class="makeStyles-floatingFilterButton-966"
             data-testid="controlled-button"
             tabindex="-1"
           >
             <button
               aria-controls="false"
               aria-haspopup="true"
-              class="MuiButtonBase-root MuiButton-root MuiButton-text makeStyles-buttonFilter-966"
+              class="MuiButtonBase-root MuiButton-root MuiButton-text makeStyles-buttonFilter-974"
               data-testid="button-filter-open"
               tabindex="0"
               type="button"
@@ -33,7 +33,7 @@ exports[`AccessControlSystemTab should list handhelds at the end 1`] = `
                   class="MuiButton-endIcon MuiButton-iconSizeMedium"
                 >
                   <svg
-                    class="makeStyles-dropdownIcon-960"
+                    class="makeStyles-dropdownIcon-968"
                   >
                     expand.svg
                   </svg>
@@ -44,7 +44,7 @@ exports[`AccessControlSystemTab should list handhelds at the end 1`] = `
         </div>
       </div>
       <button
-        class="MuiButtonBase-root MuiButton-root MuiButton-contained makeStyles-createButton-978 makeStyles-primaryButtonExtraLarge-982 MuiButton-containedPrimary MuiButton-containedSizeLarge MuiButton-sizeLarge MuiButton-fullWidth"
+        class="MuiButtonBase-root MuiButton-root MuiButton-contained makeStyles-createButton-986 makeStyles-primaryButtonExtraLarge-990 MuiButton-containedPrimary MuiButton-containedSizeLarge MuiButton-sizeLarge MuiButton-fullWidth"
         data-testid="open-acs-modal-btn"
         tabindex="0"
         type="button"
@@ -60,7 +60,7 @@ exports[`AccessControlSystemTab should list handhelds at the end 1`] = `
       </button>
     </div>
     <div
-      class="MuiGrid-root makeStyles-acsListItemWrapper-1099 makeStyles-acsListHeader-1096 MuiGrid-container"
+      class="MuiGrid-root makeStyles-acsListItemWrapper-1109 makeStyles-acsListHeader-1106 MuiGrid-container"
     >
       <div
         class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-true"
@@ -109,21 +109,21 @@ exports[`AccessControlSystemTab should list handhelds at the end 1`] = `
       </div>
     </div>
     <hr
-      class="MuiDivider-root makeStyles-acsListHeaderDivide-1097"
+      class="MuiDivider-root makeStyles-acsListHeaderDivide-1107"
     />
     <div
-      class="MuiPaper-root MuiAccordion-root WithStyles(ForwardRef(Accordion))-root-1103 MuiAccordion-rounded MuiPaper-elevation1 MuiPaper-rounded"
+      class="MuiPaper-root MuiAccordion-root WithStyles(ForwardRef(Accordion))-root-1113 MuiAccordion-rounded MuiPaper-elevation1 MuiPaper-rounded"
     >
       <div
         aria-controls="location-locationId-acs-list"
         aria-disabled="false"
         aria-expanded="false"
-        class="MuiButtonBase-root MuiAccordionSummary-root WithStyles(ForwardRef(AccordionSummary))-root-1105"
+        class="MuiButtonBase-root MuiAccordionSummary-root WithStyles(ForwardRef(AccordionSummary))-root-1115"
         role="button"
         tabindex="0"
       >
         <div
-          class="MuiAccordionSummary-content WithStyles(ForwardRef(AccordionSummary))-content-1106"
+          class="MuiAccordionSummary-content WithStyles(ForwardRef(AccordionSummary))-content-1116"
         >
           <p
             class="MuiTypography-root MuiTypography-body1"
@@ -134,7 +134,7 @@ exports[`AccessControlSystemTab should list handhelds at the end 1`] = `
         <div
           aria-disabled="false"
           aria-hidden="true"
-          class="MuiButtonBase-root MuiIconButton-root MuiAccordionSummary-expandIcon WithStyles(ForwardRef(AccordionSummary))-expandIcon-1108 MuiIconButton-edgeEnd"
+          class="MuiButtonBase-root MuiIconButton-root MuiAccordionSummary-expandIcon WithStyles(ForwardRef(AccordionSummary))-expandIcon-1118 MuiIconButton-edgeEnd"
         >
           <span
             class="MuiIconButton-label"
@@ -170,7 +170,7 @@ exports[`AccessControlSystemTab should list handhelds at the end 1`] = `
               role="region"
             >
               <div
-                class="MuiAccordionDetails-root WithStyles(ForwardRef(AccordionDetails))-root-1109"
+                class="MuiAccordionDetails-root WithStyles(ForwardRef(AccordionDetails))-root-1119"
               >
                 <div
                   class="MuiGrid-root MuiGrid-container MuiGrid-align-items-xs-center"
@@ -230,18 +230,18 @@ exports[`AccessControlSystemTab should list handhelds at the end 1`] = `
       </div>
     </div>
     <div
-      class="MuiPaper-root MuiAccordion-root WithStyles(ForwardRef(Accordion))-root-1103 MuiAccordion-rounded MuiPaper-elevation1 MuiPaper-rounded"
+      class="MuiPaper-root MuiAccordion-root WithStyles(ForwardRef(Accordion))-root-1113 MuiAccordion-rounded MuiPaper-elevation1 MuiPaper-rounded"
     >
       <div
         aria-controls="location-testLoc-acs-list"
         aria-disabled="false"
         aria-expanded="false"
-        class="MuiButtonBase-root MuiAccordionSummary-root WithStyles(ForwardRef(AccordionSummary))-root-1105"
+        class="MuiButtonBase-root MuiAccordionSummary-root WithStyles(ForwardRef(AccordionSummary))-root-1115"
         role="button"
         tabindex="0"
       >
         <div
-          class="MuiAccordionSummary-content WithStyles(ForwardRef(AccordionSummary))-content-1106"
+          class="MuiAccordionSummary-content WithStyles(ForwardRef(AccordionSummary))-content-1116"
         >
           <p
             class="MuiTypography-root MuiTypography-body1"
@@ -252,7 +252,7 @@ exports[`AccessControlSystemTab should list handhelds at the end 1`] = `
         <div
           aria-disabled="false"
           aria-hidden="true"
-          class="MuiButtonBase-root MuiIconButton-root MuiAccordionSummary-expandIcon WithStyles(ForwardRef(AccordionSummary))-expandIcon-1108 MuiIconButton-edgeEnd"
+          class="MuiButtonBase-root MuiIconButton-root MuiAccordionSummary-expandIcon WithStyles(ForwardRef(AccordionSummary))-expandIcon-1118 MuiIconButton-edgeEnd"
         >
           <span
             class="MuiIconButton-label"
@@ -288,7 +288,7 @@ exports[`AccessControlSystemTab should list handhelds at the end 1`] = `
               role="region"
             >
               <div
-                class="MuiAccordionDetails-root WithStyles(ForwardRef(AccordionDetails))-root-1109"
+                class="MuiAccordionDetails-root WithStyles(ForwardRef(AccordionDetails))-root-1119"
               >
                 <div
                   class="MuiGrid-root MuiGrid-container MuiGrid-align-items-xs-center"
@@ -348,14 +348,14 @@ exports[`AccessControlSystemTab should list handhelds at the end 1`] = `
       </div>
     </div>
     <hr
-      class="MuiDivider-root makeStyles-acsListDivider-1098"
+      class="MuiDivider-root makeStyles-acsListDivider-1108"
     />
     <div
-      class="MuiBox-root MuiBox-root-1110 makeStyles-acsListItemWrapper-1099"
+      class="MuiBox-root MuiBox-root-1120 makeStyles-acsListItemWrapper-1109"
       data-testid="no-location-item-wrapper"
     >
       <div
-        class="MuiBox-root MuiBox-root-1111 makeStyles-acsListItem-1100"
+        class="MuiBox-root MuiBox-root-1121 makeStyles-acsListItem-1110"
       >
         <div
           class="MuiGrid-root MuiGrid-container MuiGrid-align-items-xs-center"
@@ -409,18 +409,18 @@ exports[`AccessControlSystemTab should list handhelds at the end 1`] = `
       </div>
     </div>
     <div
-      class="MuiDrawer-root MuiDrawer-docked makeStyles-drawer-1135 makeStyles-close-1146 closed"
+      class="MuiDrawer-root MuiDrawer-docked makeStyles-drawer-1145 makeStyles-close-1156 closed"
       data-testid="drawer"
     >
       <div
-        class="MuiPaper-root MuiDrawer-paper makeStyles-drawerPaper-1136 MuiDrawer-paperAnchorRight MuiDrawer-paperAnchorDockedRight MuiPaper-elevation0"
+        class="MuiPaper-root MuiDrawer-paper makeStyles-drawerPaper-1146 MuiDrawer-paperAnchorRight MuiDrawer-paperAnchorDockedRight MuiPaper-elevation0"
         style="visibility: hidden; webkit-transform: translateX(1024px) translateX(0px); transform: translateX(1024px) translateX(0px);"
       >
         <div
-          class="makeStyles-drawerButtonWrapper-1138"
+          class="makeStyles-drawerButtonWrapper-1148"
         >
           <div
-            class="makeStyles-drawerButton-1139"
+            class="makeStyles-drawerButton-1149"
           >
             <button
               class="MuiButtonBase-root MuiButton-root MuiButton-text"
@@ -442,34 +442,34 @@ exports[`AccessControlSystemTab should list handhelds at the end 1`] = `
             </button>
           </div>
           <div
-            class="makeStyles-drawerHeader-1137"
+            class="makeStyles-drawerHeader-1147"
           >
             <p
-              class="MuiTypography-root makeStyles-drawerTitle-1140 MuiTypography-body1 MuiTypography-colorPrimary MuiTypography-alignLeft"
+              class="MuiTypography-root makeStyles-drawerTitle-1150 MuiTypography-body1 MuiTypography-colorPrimary MuiTypography-alignLeft"
             >
               Device Information
             </p>
           </div>
         </div>
         <div
-          class="makeStyles-summaryDeviceDetail-1152"
+          class="makeStyles-summaryDeviceDetail-1162"
         >
           <div
-            class="makeStyles-company-1153"
+            class="makeStyles-company-1163"
           >
             <div
-              class="makeStyles-drawerOverflowWrapper-1163"
+              class="makeStyles-drawerOverflowWrapper-1173"
             >
               <div
-                class="makeStyles-summaryText-1156"
+                class="makeStyles-summaryText-1166"
               >
                 <p
-                  class="MuiTypography-root makeStyles-deviceAccent-1154 makeStyles-entityTitle-1159 MuiTypography-body1"
+                  class="MuiTypography-root makeStyles-deviceAccent-1164 makeStyles-entityTitle-1169 MuiTypography-body1"
                 >
                   -
                 </p>
                 <div
-                  class="makeStyles-summaryMainText-1157"
+                  class="makeStyles-summaryMainText-1167"
                 >
                   <span>
                     Open Portal
@@ -481,16 +481,16 @@ exports[`AccessControlSystemTab should list handhelds at the end 1`] = `
                 </div>
               </div>
               <div
-                class="makeStyles-summarySection-1155"
+                class="makeStyles-summarySection-1165"
               >
                 <div
-                  class="makeStyles-summaryRowDirection-1162"
+                  class="makeStyles-summaryRowDirection-1172"
                 >
                   <svg>
                     device-status.svg
                   </svg>
                   <div
-                    class="makeStyles-summaryText-1156 makeStyles-summaryTextSeparation-1158"
+                    class="makeStyles-summaryText-1166 makeStyles-summaryTextSeparation-1168"
                   >
                     <span />
                     <span>
@@ -508,13 +508,13 @@ exports[`AccessControlSystemTab should list handhelds at the end 1`] = `
                 </div>
               </div>
               <div
-                class="makeStyles-summarySection-1155"
+                class="makeStyles-summarySection-1165"
               >
                 <svg>
                   notes.svg
                 </svg>
                 <div
-                  class="makeStyles-summaryText-1156 makeStyles-summaryTextSeparation-1158"
+                  class="makeStyles-summaryText-1166 makeStyles-summaryTextSeparation-1168"
                 >
                   <span>
                     -
@@ -522,19 +522,19 @@ exports[`AccessControlSystemTab should list handhelds at the end 1`] = `
                 </div>
               </div>
               <div
-                class="makeStyles-summarySection-1155"
+                class="makeStyles-summarySection-1165"
               >
                 <div
-                  class="makeStyles-summaryText-1156"
+                  class="makeStyles-summaryText-1166"
                 >
                   <p
-                    class="MuiTypography-root makeStyles-deviceAccent-1154 makeStyles-entityTitle-1159 MuiTypography-body1"
+                    class="MuiTypography-root makeStyles-deviceAccent-1164 makeStyles-entityTitle-1169 MuiTypography-body1"
                   >
                     Reader 
                     1
                   </p>
                   <div
-                    class="makeStyles-summaryMainText-1157"
+                    class="makeStyles-summaryMainText-1167"
                   >
                     <span>
                       -
@@ -558,13 +558,13 @@ exports[`AccessControlSystemTab should list handhelds at the end 1`] = `
                 </div>
               </div>
               <div
-                class="makeStyles-summarySection-1155"
+                class="makeStyles-summarySection-1165"
               >
                 <svg>
                   info.svg
                 </svg>
                 <div
-                  class="makeStyles-summaryText-1156 makeStyles-summaryTextSeparation-1158"
+                  class="makeStyles-summaryText-1166 makeStyles-summaryTextSeparation-1168"
                 >
                   <span>
                     SSH Port Connection: 
@@ -585,16 +585,16 @@ exports[`AccessControlSystemTab should list handhelds at the end 1`] = `
                 </div>
               </div>
               <div
-                class="makeStyles-summarySection-1155 makeStyles-drawerdevices-1160"
+                class="makeStyles-summarySection-1165 makeStyles-drawerdevices-1170"
               >
                 <div
-                  class="makeStyles-deviceWrapper-1161"
+                  class="makeStyles-deviceWrapper-1171"
                 >
                   <svg>
                     device-status.svg
                   </svg>
                   <div
-                    class="makeStyles-summaryText-1156 makeStyles-summaryTextSeparation-1158"
+                    class="makeStyles-summaryText-1166 makeStyles-summaryTextSeparation-1168"
                   >
                     <span>
                       -
@@ -603,13 +603,13 @@ exports[`AccessControlSystemTab should list handhelds at the end 1`] = `
                 </div>
               </div>
               <div
-                class="makeStyles-summarySection-1155"
+                class="makeStyles-summarySection-1165"
               >
                 <svg>
                   notes.svg
                 </svg>
                 <div
-                  class="makeStyles-summaryText-1156 makeStyles-summaryTextSeparation-1158"
+                  class="makeStyles-summaryText-1166 makeStyles-summaryTextSeparation-1168"
                 >
                   <span>
                     -
@@ -620,10 +620,10 @@ exports[`AccessControlSystemTab should list handhelds at the end 1`] = `
           </div>
         </div>
         <hr
-          class="MuiDivider-root makeStyles-drawerDivider-1041"
+          class="MuiDivider-root makeStyles-drawerDivider-1049"
         />
         <div
-          class="makeStyles-ctaWrapper-1128"
+          class="makeStyles-ctaWrapper-1138"
           style="padding: 0px;"
         >
           <span
@@ -632,7 +632,7 @@ exports[`AccessControlSystemTab should list handhelds at the end 1`] = `
             tabindex="-1"
           >
             <button
-              class="MuiButtonBase-root MuiButton-root MuiButton-outlined makeStyles-drawerCTA-985 makeStyles-borderPrimaryButton-977"
+              class="MuiButtonBase-root MuiButton-root MuiButton-outlined makeStyles-drawerCTA-993 makeStyles-borderPrimaryButton-985"
               data-testid="acs-edition-modal-open-btn"
               style="max-width: 100%; width: 125px; padding: 6px 0px;"
               tabindex="0"
@@ -651,7 +651,7 @@ exports[`AccessControlSystemTab should list handhelds at the end 1`] = `
             tabindex="-1"
           >
             <button
-              class="MuiButtonBase-root MuiButton-root MuiButton-outlined makeStyles-drawerCTA-985 makeStyles-warningButton-986"
+              class="MuiButtonBase-root MuiButton-root MuiButton-outlined makeStyles-drawerCTA-993 makeStyles-warningButton-994"
               data-testid="unassign-btn"
               tabindex="0"
               type="button"
@@ -674,23 +674,23 @@ exports[`AccessControlSystemTab should render 1`] = `
 <div>
   <div>
     <div
-      class="makeStyles-filterActionsContainer-723 makeStyles-filterActionsContainerPadding-725"
+      class="makeStyles-filterActionsContainer-729 makeStyles-filterActionsContainerPadding-731"
     >
       <div
-        class="MuiBox-root MuiBox-root-877 makeStyles-filterStatusContainer-726 makeStyles-autocompleteFilterStatus-743 makeStyles-acsFilterWrapper-805"
+        class="MuiBox-root MuiBox-root-885 makeStyles-filterStatusContainer-732 makeStyles-autocompleteFilterStatus-749 makeStyles-acsFilterWrapper-811"
       >
         <div
-          class="makeStyles-floatingFilterWrapper-732 makeStyles-filterWrapper-731  floatingFilterWrapper"
+          class="makeStyles-floatingFilterWrapper-738 makeStyles-filterWrapper-737  floatingFilterWrapper"
         >
           <span
-            class="makeStyles-floatingFilterButton-733"
+            class="makeStyles-floatingFilterButton-739"
             data-testid="controlled-button"
             tabindex="-1"
           >
             <button
               aria-controls="false"
               aria-haspopup="true"
-              class="MuiButtonBase-root MuiButton-root MuiButton-text makeStyles-buttonFilter-741"
+              class="MuiButtonBase-root MuiButton-root MuiButton-text makeStyles-buttonFilter-747"
               data-testid="button-filter-open"
               tabindex="0"
               type="button"
@@ -703,7 +703,7 @@ exports[`AccessControlSystemTab should render 1`] = `
                   class="MuiButton-endIcon MuiButton-iconSizeMedium"
                 >
                   <svg
-                    class="makeStyles-dropdownIcon-735"
+                    class="makeStyles-dropdownIcon-741"
                   >
                     expand.svg
                   </svg>
@@ -714,7 +714,7 @@ exports[`AccessControlSystemTab should render 1`] = `
         </div>
       </div>
       <button
-        class="MuiButtonBase-root MuiButton-root MuiButton-contained makeStyles-createButton-753 makeStyles-primaryButtonExtraLarge-757 MuiButton-containedPrimary MuiButton-containedSizeLarge MuiButton-sizeLarge MuiButton-fullWidth"
+        class="MuiButtonBase-root MuiButton-root MuiButton-contained makeStyles-createButton-759 makeStyles-primaryButtonExtraLarge-763 MuiButton-containedPrimary MuiButton-containedSizeLarge MuiButton-sizeLarge MuiButton-fullWidth"
         data-testid="open-acs-modal-btn"
         tabindex="0"
         type="button"
@@ -730,7 +730,7 @@ exports[`AccessControlSystemTab should render 1`] = `
       </button>
     </div>
     <div
-      class="MuiGrid-root makeStyles-acsListItemWrapper-874 makeStyles-acsListHeader-871 MuiGrid-container"
+      class="MuiGrid-root makeStyles-acsListItemWrapper-882 makeStyles-acsListHeader-879 MuiGrid-container"
     >
       <div
         class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-true"
@@ -779,21 +779,21 @@ exports[`AccessControlSystemTab should render 1`] = `
       </div>
     </div>
     <hr
-      class="MuiDivider-root makeStyles-acsListHeaderDivide-872"
+      class="MuiDivider-root makeStyles-acsListHeaderDivide-880"
     />
     <div
-      class="MuiPaper-root MuiAccordion-root WithStyles(ForwardRef(Accordion))-root-878 MuiAccordion-rounded MuiPaper-elevation1 MuiPaper-rounded"
+      class="MuiPaper-root MuiAccordion-root WithStyles(ForwardRef(Accordion))-root-886 MuiAccordion-rounded MuiPaper-elevation1 MuiPaper-rounded"
     >
       <div
         aria-controls="location-locationId-acs-list"
         aria-disabled="false"
         aria-expanded="false"
-        class="MuiButtonBase-root MuiAccordionSummary-root WithStyles(ForwardRef(AccordionSummary))-root-880"
+        class="MuiButtonBase-root MuiAccordionSummary-root WithStyles(ForwardRef(AccordionSummary))-root-888"
         role="button"
         tabindex="0"
       >
         <div
-          class="MuiAccordionSummary-content WithStyles(ForwardRef(AccordionSummary))-content-881"
+          class="MuiAccordionSummary-content WithStyles(ForwardRef(AccordionSummary))-content-889"
         >
           <p
             class="MuiTypography-root MuiTypography-body1"
@@ -804,7 +804,7 @@ exports[`AccessControlSystemTab should render 1`] = `
         <div
           aria-disabled="false"
           aria-hidden="true"
-          class="MuiButtonBase-root MuiIconButton-root MuiAccordionSummary-expandIcon WithStyles(ForwardRef(AccordionSummary))-expandIcon-883 MuiIconButton-edgeEnd"
+          class="MuiButtonBase-root MuiIconButton-root MuiAccordionSummary-expandIcon WithStyles(ForwardRef(AccordionSummary))-expandIcon-891 MuiIconButton-edgeEnd"
         >
           <span
             class="MuiIconButton-label"
@@ -840,7 +840,7 @@ exports[`AccessControlSystemTab should render 1`] = `
               role="region"
             >
               <div
-                class="MuiAccordionDetails-root WithStyles(ForwardRef(AccordionDetails))-root-884"
+                class="MuiAccordionDetails-root WithStyles(ForwardRef(AccordionDetails))-root-892"
               >
                 <div
                   class="MuiGrid-root MuiGrid-container MuiGrid-align-items-xs-center"
@@ -900,18 +900,18 @@ exports[`AccessControlSystemTab should render 1`] = `
       </div>
     </div>
     <div
-      class="MuiDrawer-root MuiDrawer-docked makeStyles-drawer-908 makeStyles-close-919 closed"
+      class="MuiDrawer-root MuiDrawer-docked makeStyles-drawer-916 makeStyles-close-927 closed"
       data-testid="drawer"
     >
       <div
-        class="MuiPaper-root MuiDrawer-paper makeStyles-drawerPaper-909 MuiDrawer-paperAnchorRight MuiDrawer-paperAnchorDockedRight MuiPaper-elevation0"
+        class="MuiPaper-root MuiDrawer-paper makeStyles-drawerPaper-917 MuiDrawer-paperAnchorRight MuiDrawer-paperAnchorDockedRight MuiPaper-elevation0"
         style="visibility: hidden; webkit-transform: translateX(1024px) translateX(0px); transform: translateX(1024px) translateX(0px);"
       >
         <div
-          class="makeStyles-drawerButtonWrapper-911"
+          class="makeStyles-drawerButtonWrapper-919"
         >
           <div
-            class="makeStyles-drawerButton-912"
+            class="makeStyles-drawerButton-920"
           >
             <button
               class="MuiButtonBase-root MuiButton-root MuiButton-text"
@@ -933,34 +933,34 @@ exports[`AccessControlSystemTab should render 1`] = `
             </button>
           </div>
           <div
-            class="makeStyles-drawerHeader-910"
+            class="makeStyles-drawerHeader-918"
           >
             <p
-              class="MuiTypography-root makeStyles-drawerTitle-913 MuiTypography-body1 MuiTypography-colorPrimary MuiTypography-alignLeft"
+              class="MuiTypography-root makeStyles-drawerTitle-921 MuiTypography-body1 MuiTypography-colorPrimary MuiTypography-alignLeft"
             >
               Device Information
             </p>
           </div>
         </div>
         <div
-          class="makeStyles-summaryDeviceDetail-925"
+          class="makeStyles-summaryDeviceDetail-933"
         >
           <div
-            class="makeStyles-company-926"
+            class="makeStyles-company-934"
           >
             <div
-              class="makeStyles-drawerOverflowWrapper-936"
+              class="makeStyles-drawerOverflowWrapper-944"
             >
               <div
-                class="makeStyles-summaryText-929"
+                class="makeStyles-summaryText-937"
               >
                 <p
-                  class="MuiTypography-root makeStyles-deviceAccent-927 makeStyles-entityTitle-932 MuiTypography-body1"
+                  class="MuiTypography-root makeStyles-deviceAccent-935 makeStyles-entityTitle-940 MuiTypography-body1"
                 >
                   -
                 </p>
                 <div
-                  class="makeStyles-summaryMainText-930"
+                  class="makeStyles-summaryMainText-938"
                 >
                   <span>
                     Open Portal
@@ -972,16 +972,16 @@ exports[`AccessControlSystemTab should render 1`] = `
                 </div>
               </div>
               <div
-                class="makeStyles-summarySection-928"
+                class="makeStyles-summarySection-936"
               >
                 <div
-                  class="makeStyles-summaryRowDirection-935"
+                  class="makeStyles-summaryRowDirection-943"
                 >
                   <svg>
                     device-status.svg
                   </svg>
                   <div
-                    class="makeStyles-summaryText-929 makeStyles-summaryTextSeparation-931"
+                    class="makeStyles-summaryText-937 makeStyles-summaryTextSeparation-939"
                   >
                     <span />
                     <span>
@@ -999,13 +999,13 @@ exports[`AccessControlSystemTab should render 1`] = `
                 </div>
               </div>
               <div
-                class="makeStyles-summarySection-928"
+                class="makeStyles-summarySection-936"
               >
                 <svg>
                   notes.svg
                 </svg>
                 <div
-                  class="makeStyles-summaryText-929 makeStyles-summaryTextSeparation-931"
+                  class="makeStyles-summaryText-937 makeStyles-summaryTextSeparation-939"
                 >
                   <span>
                     -
@@ -1013,19 +1013,19 @@ exports[`AccessControlSystemTab should render 1`] = `
                 </div>
               </div>
               <div
-                class="makeStyles-summarySection-928"
+                class="makeStyles-summarySection-936"
               >
                 <div
-                  class="makeStyles-summaryText-929"
+                  class="makeStyles-summaryText-937"
                 >
                   <p
-                    class="MuiTypography-root makeStyles-deviceAccent-927 makeStyles-entityTitle-932 MuiTypography-body1"
+                    class="MuiTypography-root makeStyles-deviceAccent-935 makeStyles-entityTitle-940 MuiTypography-body1"
                   >
                     Reader 
                     1
                   </p>
                   <div
-                    class="makeStyles-summaryMainText-930"
+                    class="makeStyles-summaryMainText-938"
                   >
                     <span>
                       -
@@ -1049,13 +1049,13 @@ exports[`AccessControlSystemTab should render 1`] = `
                 </div>
               </div>
               <div
-                class="makeStyles-summarySection-928"
+                class="makeStyles-summarySection-936"
               >
                 <svg>
                   info.svg
                 </svg>
                 <div
-                  class="makeStyles-summaryText-929 makeStyles-summaryTextSeparation-931"
+                  class="makeStyles-summaryText-937 makeStyles-summaryTextSeparation-939"
                 >
                   <span>
                     SSH Port Connection: 
@@ -1076,16 +1076,16 @@ exports[`AccessControlSystemTab should render 1`] = `
                 </div>
               </div>
               <div
-                class="makeStyles-summarySection-928 makeStyles-drawerdevices-933"
+                class="makeStyles-summarySection-936 makeStyles-drawerdevices-941"
               >
                 <div
-                  class="makeStyles-deviceWrapper-934"
+                  class="makeStyles-deviceWrapper-942"
                 >
                   <svg>
                     device-status.svg
                   </svg>
                   <div
-                    class="makeStyles-summaryText-929 makeStyles-summaryTextSeparation-931"
+                    class="makeStyles-summaryText-937 makeStyles-summaryTextSeparation-939"
                   >
                     <span>
                       -
@@ -1094,13 +1094,13 @@ exports[`AccessControlSystemTab should render 1`] = `
                 </div>
               </div>
               <div
-                class="makeStyles-summarySection-928"
+                class="makeStyles-summarySection-936"
               >
                 <svg>
                   notes.svg
                 </svg>
                 <div
-                  class="makeStyles-summaryText-929 makeStyles-summaryTextSeparation-931"
+                  class="makeStyles-summaryText-937 makeStyles-summaryTextSeparation-939"
                 >
                   <span>
                     -
@@ -1111,10 +1111,10 @@ exports[`AccessControlSystemTab should render 1`] = `
           </div>
         </div>
         <hr
-          class="MuiDivider-root makeStyles-drawerDivider-816"
+          class="MuiDivider-root makeStyles-drawerDivider-822"
         />
         <div
-          class="makeStyles-ctaWrapper-901"
+          class="makeStyles-ctaWrapper-909"
           style="padding: 0px;"
         >
           <span
@@ -1123,7 +1123,7 @@ exports[`AccessControlSystemTab should render 1`] = `
             tabindex="-1"
           >
             <button
-              class="MuiButtonBase-root MuiButton-root MuiButton-outlined makeStyles-drawerCTA-760 makeStyles-borderPrimaryButton-752"
+              class="MuiButtonBase-root MuiButton-root MuiButton-outlined makeStyles-drawerCTA-766 makeStyles-borderPrimaryButton-758"
               data-testid="acs-edition-modal-open-btn"
               style="max-width: 100%; width: 125px; padding: 6px 0px;"
               tabindex="0"
@@ -1142,7 +1142,7 @@ exports[`AccessControlSystemTab should render 1`] = `
             tabindex="-1"
           >
             <button
-              class="MuiButtonBase-root MuiButton-root MuiButton-outlined makeStyles-drawerCTA-760 makeStyles-warningButton-761"
+              class="MuiButtonBase-root MuiButton-root MuiButton-outlined makeStyles-drawerCTA-766 makeStyles-warningButton-767"
               data-testid="unassign-btn"
               tabindex="0"
               type="button"
@@ -1165,23 +1165,23 @@ exports[`AccessControlSystemTab should render empty 1`] = `
 <div>
   <div>
     <div
-      class="makeStyles-filterActionsContainer-486 makeStyles-filterActionsContainerPadding-488"
+      class="makeStyles-filterActionsContainer-490 makeStyles-filterActionsContainerPadding-492"
     >
       <div
-        class="MuiBox-root MuiBox-root-640 makeStyles-filterStatusContainer-489 makeStyles-autocompleteFilterStatus-506 makeStyles-acsFilterWrapper-568"
+        class="MuiBox-root MuiBox-root-646 makeStyles-filterStatusContainer-493 makeStyles-autocompleteFilterStatus-510 makeStyles-acsFilterWrapper-572"
       >
         <div
-          class="makeStyles-floatingFilterWrapper-495 makeStyles-filterWrapper-494  floatingFilterWrapper"
+          class="makeStyles-floatingFilterWrapper-499 makeStyles-filterWrapper-498  floatingFilterWrapper"
         >
           <span
-            class="makeStyles-floatingFilterButton-496"
+            class="makeStyles-floatingFilterButton-500"
             data-testid="controlled-button"
             tabindex="-1"
           >
             <button
               aria-controls="false"
               aria-haspopup="true"
-              class="MuiButtonBase-root MuiButton-root MuiButton-text makeStyles-buttonFilter-504"
+              class="MuiButtonBase-root MuiButton-root MuiButton-text makeStyles-buttonFilter-508"
               data-testid="button-filter-open"
               tabindex="0"
               type="button"
@@ -1194,7 +1194,7 @@ exports[`AccessControlSystemTab should render empty 1`] = `
                   class="MuiButton-endIcon MuiButton-iconSizeMedium"
                 >
                   <svg
-                    class="makeStyles-dropdownIcon-498"
+                    class="makeStyles-dropdownIcon-502"
                   >
                     expand.svg
                   </svg>
@@ -1205,7 +1205,7 @@ exports[`AccessControlSystemTab should render empty 1`] = `
         </div>
       </div>
       <button
-        class="MuiButtonBase-root MuiButton-root MuiButton-contained makeStyles-createButton-516 makeStyles-primaryButtonExtraLarge-520 MuiButton-containedPrimary MuiButton-containedSizeLarge MuiButton-sizeLarge MuiButton-fullWidth"
+        class="MuiButtonBase-root MuiButton-root MuiButton-contained makeStyles-createButton-520 makeStyles-primaryButtonExtraLarge-524 MuiButton-containedPrimary MuiButton-containedSizeLarge MuiButton-sizeLarge MuiButton-fullWidth"
         data-testid="open-acs-modal-btn"
         tabindex="0"
         type="button"
@@ -1221,11 +1221,11 @@ exports[`AccessControlSystemTab should render empty 1`] = `
       </button>
     </div>
     <div
-      class=" makeStyles-container-641"
+      class=" makeStyles-container-647"
     >
       <div>
         <div
-          class="MuiAvatar-root MuiAvatar-circle makeStyles-missingAvatarWrapper-652 makeStyles-missingAvatarBig-653 MuiAvatar-colorDefault"
+          class="MuiAvatar-root MuiAvatar-circle makeStyles-missingAvatarWrapper-658 makeStyles-missingAvatarBig-659 MuiAvatar-colorDefault"
         >
           <svg>
             inventory.svg
@@ -1233,24 +1233,24 @@ exports[`AccessControlSystemTab should render empty 1`] = `
         </div>
       </div>
       <p
-        class="MuiTypography-root makeStyles-missingListText-642 MuiTypography-body1"
+        class="MuiTypography-root makeStyles-missingListText-648 MuiTypography-body1"
       >
         There are no ACS assigned
       </p>
     </div>
     <div
-      class="MuiDrawer-root MuiDrawer-docked makeStyles-drawer-683 makeStyles-close-694 closed"
+      class="MuiDrawer-root MuiDrawer-docked makeStyles-drawer-689 makeStyles-close-700 closed"
       data-testid="drawer"
     >
       <div
-        class="MuiPaper-root MuiDrawer-paper makeStyles-drawerPaper-684 MuiDrawer-paperAnchorRight MuiDrawer-paperAnchorDockedRight MuiPaper-elevation0"
+        class="MuiPaper-root MuiDrawer-paper makeStyles-drawerPaper-690 MuiDrawer-paperAnchorRight MuiDrawer-paperAnchorDockedRight MuiPaper-elevation0"
         style="visibility: hidden; webkit-transform: translateX(1024px) translateX(0px); transform: translateX(1024px) translateX(0px);"
       >
         <div
-          class="makeStyles-drawerButtonWrapper-686"
+          class="makeStyles-drawerButtonWrapper-692"
         >
           <div
-            class="makeStyles-drawerButton-687"
+            class="makeStyles-drawerButton-693"
           >
             <button
               class="MuiButtonBase-root MuiButton-root MuiButton-text"
@@ -1272,34 +1272,34 @@ exports[`AccessControlSystemTab should render empty 1`] = `
             </button>
           </div>
           <div
-            class="makeStyles-drawerHeader-685"
+            class="makeStyles-drawerHeader-691"
           >
             <p
-              class="MuiTypography-root makeStyles-drawerTitle-688 MuiTypography-body1 MuiTypography-colorPrimary MuiTypography-alignLeft"
+              class="MuiTypography-root makeStyles-drawerTitle-694 MuiTypography-body1 MuiTypography-colorPrimary MuiTypography-alignLeft"
             >
               Device Information
             </p>
           </div>
         </div>
         <div
-          class="makeStyles-summaryDeviceDetail-700"
+          class="makeStyles-summaryDeviceDetail-706"
         >
           <div
-            class="makeStyles-company-701"
+            class="makeStyles-company-707"
           >
             <div
-              class="makeStyles-drawerOverflowWrapper-711"
+              class="makeStyles-drawerOverflowWrapper-717"
             >
               <div
-                class="makeStyles-summaryText-704"
+                class="makeStyles-summaryText-710"
               >
                 <p
-                  class="MuiTypography-root makeStyles-deviceAccent-702 makeStyles-entityTitle-707 MuiTypography-body1"
+                  class="MuiTypography-root makeStyles-deviceAccent-708 makeStyles-entityTitle-713 MuiTypography-body1"
                 >
                   -
                 </p>
                 <div
-                  class="makeStyles-summaryMainText-705"
+                  class="makeStyles-summaryMainText-711"
                 >
                   <span>
                     Open Portal
@@ -1311,16 +1311,16 @@ exports[`AccessControlSystemTab should render empty 1`] = `
                 </div>
               </div>
               <div
-                class="makeStyles-summarySection-703"
+                class="makeStyles-summarySection-709"
               >
                 <div
-                  class="makeStyles-summaryRowDirection-710"
+                  class="makeStyles-summaryRowDirection-716"
                 >
                   <svg>
                     device-status.svg
                   </svg>
                   <div
-                    class="makeStyles-summaryText-704 makeStyles-summaryTextSeparation-706"
+                    class="makeStyles-summaryText-710 makeStyles-summaryTextSeparation-712"
                   >
                     <span />
                     <span>
@@ -1338,13 +1338,13 @@ exports[`AccessControlSystemTab should render empty 1`] = `
                 </div>
               </div>
               <div
-                class="makeStyles-summarySection-703"
+                class="makeStyles-summarySection-709"
               >
                 <svg>
                   notes.svg
                 </svg>
                 <div
-                  class="makeStyles-summaryText-704 makeStyles-summaryTextSeparation-706"
+                  class="makeStyles-summaryText-710 makeStyles-summaryTextSeparation-712"
                 >
                   <span>
                     -
@@ -1352,19 +1352,19 @@ exports[`AccessControlSystemTab should render empty 1`] = `
                 </div>
               </div>
               <div
-                class="makeStyles-summarySection-703"
+                class="makeStyles-summarySection-709"
               >
                 <div
-                  class="makeStyles-summaryText-704"
+                  class="makeStyles-summaryText-710"
                 >
                   <p
-                    class="MuiTypography-root makeStyles-deviceAccent-702 makeStyles-entityTitle-707 MuiTypography-body1"
+                    class="MuiTypography-root makeStyles-deviceAccent-708 makeStyles-entityTitle-713 MuiTypography-body1"
                   >
                     Reader 
                     1
                   </p>
                   <div
-                    class="makeStyles-summaryMainText-705"
+                    class="makeStyles-summaryMainText-711"
                   >
                     <span>
                       -
@@ -1388,13 +1388,13 @@ exports[`AccessControlSystemTab should render empty 1`] = `
                 </div>
               </div>
               <div
-                class="makeStyles-summarySection-703"
+                class="makeStyles-summarySection-709"
               >
                 <svg>
                   info.svg
                 </svg>
                 <div
-                  class="makeStyles-summaryText-704 makeStyles-summaryTextSeparation-706"
+                  class="makeStyles-summaryText-710 makeStyles-summaryTextSeparation-712"
                 >
                   <span>
                     SSH Port Connection: 
@@ -1415,16 +1415,16 @@ exports[`AccessControlSystemTab should render empty 1`] = `
                 </div>
               </div>
               <div
-                class="makeStyles-summarySection-703 makeStyles-drawerdevices-708"
+                class="makeStyles-summarySection-709 makeStyles-drawerdevices-714"
               >
                 <div
-                  class="makeStyles-deviceWrapper-709"
+                  class="makeStyles-deviceWrapper-715"
                 >
                   <svg>
                     device-status.svg
                   </svg>
                   <div
-                    class="makeStyles-summaryText-704 makeStyles-summaryTextSeparation-706"
+                    class="makeStyles-summaryText-710 makeStyles-summaryTextSeparation-712"
                   >
                     <span>
                       -
@@ -1433,13 +1433,13 @@ exports[`AccessControlSystemTab should render empty 1`] = `
                 </div>
               </div>
               <div
-                class="makeStyles-summarySection-703"
+                class="makeStyles-summarySection-709"
               >
                 <svg>
                   notes.svg
                 </svg>
                 <div
-                  class="makeStyles-summaryText-704 makeStyles-summaryTextSeparation-706"
+                  class="makeStyles-summaryText-710 makeStyles-summaryTextSeparation-712"
                 >
                   <span>
                     -
@@ -1450,10 +1450,10 @@ exports[`AccessControlSystemTab should render empty 1`] = `
           </div>
         </div>
         <hr
-          class="MuiDivider-root makeStyles-drawerDivider-579"
+          class="MuiDivider-root makeStyles-drawerDivider-583"
         />
         <div
-          class="makeStyles-ctaWrapper-676"
+          class="makeStyles-ctaWrapper-682"
           style="padding: 0px;"
         >
           <span
@@ -1462,7 +1462,7 @@ exports[`AccessControlSystemTab should render empty 1`] = `
             tabindex="-1"
           >
             <button
-              class="MuiButtonBase-root MuiButton-root MuiButton-outlined makeStyles-drawerCTA-523 makeStyles-borderPrimaryButton-515"
+              class="MuiButtonBase-root MuiButton-root MuiButton-outlined makeStyles-drawerCTA-527 makeStyles-borderPrimaryButton-519"
               data-testid="acs-edition-modal-open-btn"
               style="max-width: 100%; width: 125px; padding: 6px 0px;"
               tabindex="0"
@@ -1481,7 +1481,7 @@ exports[`AccessControlSystemTab should render empty 1`] = `
             tabindex="-1"
           >
             <button
-              class="MuiButtonBase-root MuiButton-root MuiButton-outlined makeStyles-drawerCTA-523 makeStyles-warningButton-524"
+              class="MuiButtonBase-root MuiButton-root MuiButton-outlined makeStyles-drawerCTA-527 makeStyles-warningButton-528"
               data-testid="unassign-btn"
               tabindex="0"
               type="button"
@@ -1510,23 +1510,23 @@ exports[`AccessControlSystemTab should render with empty location items 1`] = `
 <div>
   <div>
     <div
-      class="makeStyles-filterActionsContainer-1175 makeStyles-filterActionsContainerPadding-1177"
+      class="makeStyles-filterActionsContainer-1185 makeStyles-filterActionsContainerPadding-1187"
     >
       <div
-        class="MuiBox-root MuiBox-root-1329 makeStyles-filterStatusContainer-1178 makeStyles-autocompleteFilterStatus-1195 makeStyles-acsFilterWrapper-1257"
+        class="MuiBox-root MuiBox-root-1341 makeStyles-filterStatusContainer-1188 makeStyles-autocompleteFilterStatus-1205 makeStyles-acsFilterWrapper-1267"
       >
         <div
-          class="makeStyles-floatingFilterWrapper-1184 makeStyles-filterWrapper-1183  floatingFilterWrapper"
+          class="makeStyles-floatingFilterWrapper-1194 makeStyles-filterWrapper-1193  floatingFilterWrapper"
         >
           <span
-            class="makeStyles-floatingFilterButton-1185"
+            class="makeStyles-floatingFilterButton-1195"
             data-testid="controlled-button"
             tabindex="-1"
           >
             <button
               aria-controls="false"
               aria-haspopup="true"
-              class="MuiButtonBase-root MuiButton-root MuiButton-text makeStyles-buttonFilter-1193"
+              class="MuiButtonBase-root MuiButton-root MuiButton-text makeStyles-buttonFilter-1203"
               data-testid="button-filter-open"
               tabindex="0"
               type="button"
@@ -1539,7 +1539,7 @@ exports[`AccessControlSystemTab should render with empty location items 1`] = `
                   class="MuiButton-endIcon MuiButton-iconSizeMedium"
                 >
                   <svg
-                    class="makeStyles-dropdownIcon-1187"
+                    class="makeStyles-dropdownIcon-1197"
                   >
                     expand.svg
                   </svg>
@@ -1550,7 +1550,7 @@ exports[`AccessControlSystemTab should render with empty location items 1`] = `
         </div>
       </div>
       <button
-        class="MuiButtonBase-root MuiButton-root MuiButton-contained makeStyles-createButton-1205 makeStyles-primaryButtonExtraLarge-1209 MuiButton-containedPrimary MuiButton-containedSizeLarge MuiButton-sizeLarge MuiButton-fullWidth"
+        class="MuiButtonBase-root MuiButton-root MuiButton-contained makeStyles-createButton-1215 makeStyles-primaryButtonExtraLarge-1219 MuiButton-containedPrimary MuiButton-containedSizeLarge MuiButton-sizeLarge MuiButton-fullWidth"
         data-testid="open-acs-modal-btn"
         tabindex="0"
         type="button"
@@ -1566,7 +1566,7 @@ exports[`AccessControlSystemTab should render with empty location items 1`] = `
       </button>
     </div>
     <div
-      class="MuiGrid-root makeStyles-acsListItemWrapper-1326 makeStyles-acsListHeader-1323 MuiGrid-container"
+      class="MuiGrid-root makeStyles-acsListItemWrapper-1338 makeStyles-acsListHeader-1335 MuiGrid-container"
     >
       <div
         class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-true"
@@ -1615,14 +1615,14 @@ exports[`AccessControlSystemTab should render with empty location items 1`] = `
       </div>
     </div>
     <hr
-      class="MuiDivider-root makeStyles-acsListHeaderDivide-1324"
+      class="MuiDivider-root makeStyles-acsListHeaderDivide-1336"
     />
     <div
-      class="MuiBox-root MuiBox-root-1330 makeStyles-acsListItemWrapper-1326"
+      class="MuiBox-root MuiBox-root-1342 makeStyles-acsListItemWrapper-1338"
       data-testid="no-location-item-wrapper"
     >
       <div
-        class="MuiBox-root MuiBox-root-1331 makeStyles-acsListItem-1327"
+        class="MuiBox-root MuiBox-root-1343 makeStyles-acsListItem-1339"
       >
         <div
           class="MuiGrid-root MuiGrid-container MuiGrid-align-items-xs-center"
@@ -1676,18 +1676,18 @@ exports[`AccessControlSystemTab should render with empty location items 1`] = `
       </div>
     </div>
     <div
-      class="MuiDrawer-root MuiDrawer-docked makeStyles-drawer-1355 makeStyles-close-1366 closed"
+      class="MuiDrawer-root MuiDrawer-docked makeStyles-drawer-1367 makeStyles-close-1378 closed"
       data-testid="drawer"
     >
       <div
-        class="MuiPaper-root MuiDrawer-paper makeStyles-drawerPaper-1356 MuiDrawer-paperAnchorRight MuiDrawer-paperAnchorDockedRight MuiPaper-elevation0"
+        class="MuiPaper-root MuiDrawer-paper makeStyles-drawerPaper-1368 MuiDrawer-paperAnchorRight MuiDrawer-paperAnchorDockedRight MuiPaper-elevation0"
         style="visibility: hidden; webkit-transform: translateX(1024px) translateX(0px); transform: translateX(1024px) translateX(0px);"
       >
         <div
-          class="makeStyles-drawerButtonWrapper-1358"
+          class="makeStyles-drawerButtonWrapper-1370"
         >
           <div
-            class="makeStyles-drawerButton-1359"
+            class="makeStyles-drawerButton-1371"
           >
             <button
               class="MuiButtonBase-root MuiButton-root MuiButton-text"
@@ -1709,34 +1709,34 @@ exports[`AccessControlSystemTab should render with empty location items 1`] = `
             </button>
           </div>
           <div
-            class="makeStyles-drawerHeader-1357"
+            class="makeStyles-drawerHeader-1369"
           >
             <p
-              class="MuiTypography-root makeStyles-drawerTitle-1360 MuiTypography-body1 MuiTypography-colorPrimary MuiTypography-alignLeft"
+              class="MuiTypography-root makeStyles-drawerTitle-1372 MuiTypography-body1 MuiTypography-colorPrimary MuiTypography-alignLeft"
             >
               Device Information
             </p>
           </div>
         </div>
         <div
-          class="makeStyles-summaryDeviceDetail-1372"
+          class="makeStyles-summaryDeviceDetail-1384"
         >
           <div
-            class="makeStyles-company-1373"
+            class="makeStyles-company-1385"
           >
             <div
-              class="makeStyles-drawerOverflowWrapper-1383"
+              class="makeStyles-drawerOverflowWrapper-1395"
             >
               <div
-                class="makeStyles-summaryText-1376"
+                class="makeStyles-summaryText-1388"
               >
                 <p
-                  class="MuiTypography-root makeStyles-deviceAccent-1374 makeStyles-entityTitle-1379 MuiTypography-body1"
+                  class="MuiTypography-root makeStyles-deviceAccent-1386 makeStyles-entityTitle-1391 MuiTypography-body1"
                 >
                   -
                 </p>
                 <div
-                  class="makeStyles-summaryMainText-1377"
+                  class="makeStyles-summaryMainText-1389"
                 >
                   <span>
                     Open Portal
@@ -1748,16 +1748,16 @@ exports[`AccessControlSystemTab should render with empty location items 1`] = `
                 </div>
               </div>
               <div
-                class="makeStyles-summarySection-1375"
+                class="makeStyles-summarySection-1387"
               >
                 <div
-                  class="makeStyles-summaryRowDirection-1382"
+                  class="makeStyles-summaryRowDirection-1394"
                 >
                   <svg>
                     device-status.svg
                   </svg>
                   <div
-                    class="makeStyles-summaryText-1376 makeStyles-summaryTextSeparation-1378"
+                    class="makeStyles-summaryText-1388 makeStyles-summaryTextSeparation-1390"
                   >
                     <span />
                     <span>
@@ -1775,13 +1775,13 @@ exports[`AccessControlSystemTab should render with empty location items 1`] = `
                 </div>
               </div>
               <div
-                class="makeStyles-summarySection-1375"
+                class="makeStyles-summarySection-1387"
               >
                 <svg>
                   notes.svg
                 </svg>
                 <div
-                  class="makeStyles-summaryText-1376 makeStyles-summaryTextSeparation-1378"
+                  class="makeStyles-summaryText-1388 makeStyles-summaryTextSeparation-1390"
                 >
                   <span>
                     -
@@ -1789,19 +1789,19 @@ exports[`AccessControlSystemTab should render with empty location items 1`] = `
                 </div>
               </div>
               <div
-                class="makeStyles-summarySection-1375"
+                class="makeStyles-summarySection-1387"
               >
                 <div
-                  class="makeStyles-summaryText-1376"
+                  class="makeStyles-summaryText-1388"
                 >
                   <p
-                    class="MuiTypography-root makeStyles-deviceAccent-1374 makeStyles-entityTitle-1379 MuiTypography-body1"
+                    class="MuiTypography-root makeStyles-deviceAccent-1386 makeStyles-entityTitle-1391 MuiTypography-body1"
                   >
                     Reader 
                     1
                   </p>
                   <div
-                    class="makeStyles-summaryMainText-1377"
+                    class="makeStyles-summaryMainText-1389"
                   >
                     <span>
                       -
@@ -1825,13 +1825,13 @@ exports[`AccessControlSystemTab should render with empty location items 1`] = `
                 </div>
               </div>
               <div
-                class="makeStyles-summarySection-1375"
+                class="makeStyles-summarySection-1387"
               >
                 <svg>
                   info.svg
                 </svg>
                 <div
-                  class="makeStyles-summaryText-1376 makeStyles-summaryTextSeparation-1378"
+                  class="makeStyles-summaryText-1388 makeStyles-summaryTextSeparation-1390"
                 >
                   <span>
                     SSH Port Connection: 
@@ -1852,16 +1852,16 @@ exports[`AccessControlSystemTab should render with empty location items 1`] = `
                 </div>
               </div>
               <div
-                class="makeStyles-summarySection-1375 makeStyles-drawerdevices-1380"
+                class="makeStyles-summarySection-1387 makeStyles-drawerdevices-1392"
               >
                 <div
-                  class="makeStyles-deviceWrapper-1381"
+                  class="makeStyles-deviceWrapper-1393"
                 >
                   <svg>
                     device-status.svg
                   </svg>
                   <div
-                    class="makeStyles-summaryText-1376 makeStyles-summaryTextSeparation-1378"
+                    class="makeStyles-summaryText-1388 makeStyles-summaryTextSeparation-1390"
                   >
                     <span>
                       -
@@ -1870,13 +1870,13 @@ exports[`AccessControlSystemTab should render with empty location items 1`] = `
                 </div>
               </div>
               <div
-                class="makeStyles-summarySection-1375"
+                class="makeStyles-summarySection-1387"
               >
                 <svg>
                   notes.svg
                 </svg>
                 <div
-                  class="makeStyles-summaryText-1376 makeStyles-summaryTextSeparation-1378"
+                  class="makeStyles-summaryText-1388 makeStyles-summaryTextSeparation-1390"
                 >
                   <span>
                     -
@@ -1887,10 +1887,10 @@ exports[`AccessControlSystemTab should render with empty location items 1`] = `
           </div>
         </div>
         <hr
-          class="MuiDivider-root makeStyles-drawerDivider-1268"
+          class="MuiDivider-root makeStyles-drawerDivider-1278"
         />
         <div
-          class="makeStyles-ctaWrapper-1348"
+          class="makeStyles-ctaWrapper-1360"
           style="padding: 0px;"
         >
           <span
@@ -1899,7 +1899,7 @@ exports[`AccessControlSystemTab should render with empty location items 1`] = `
             tabindex="-1"
           >
             <button
-              class="MuiButtonBase-root MuiButton-root MuiButton-outlined makeStyles-drawerCTA-1212 makeStyles-borderPrimaryButton-1204"
+              class="MuiButtonBase-root MuiButton-root MuiButton-outlined makeStyles-drawerCTA-1222 makeStyles-borderPrimaryButton-1214"
               data-testid="acs-edition-modal-open-btn"
               style="max-width: 100%; width: 125px; padding: 6px 0px;"
               tabindex="0"
@@ -1918,7 +1918,7 @@ exports[`AccessControlSystemTab should render with empty location items 1`] = `
             tabindex="-1"
           >
             <button
-              class="MuiButtonBase-root MuiButton-root MuiButton-outlined makeStyles-drawerCTA-1212 makeStyles-warningButton-1213"
+              class="MuiButtonBase-root MuiButton-root MuiButton-outlined makeStyles-drawerCTA-1222 makeStyles-warningButton-1223"
               data-testid="unassign-btn"
               tabindex="0"
               type="button"

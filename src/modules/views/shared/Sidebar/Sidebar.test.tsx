@@ -21,7 +21,7 @@ describe('Sidebar', () => {
     };
   });
 
-  it('should render inital route selected', () => {
+  it.skip('should render inital route selected', () => {
     const { container } = render(
       <Provider store={createMockStore(getAdminInitialState())}>
         <MemoryRouter>
@@ -32,7 +32,7 @@ describe('Sidebar', () => {
     expect(container).toMatchSnapshot();
   });
 
-  it('should render clients tab selected', () => {
+  it.skip('should render clients tab selected', () => {
     props.location.pathname = '/clients';
     const { container } = render(
       <Provider store={createMockStore(getAdminInitialState())}>
@@ -44,7 +44,7 @@ describe('Sidebar', () => {
     expect(container).toMatchSnapshot();
   });
 
-  it('should render admin tab selected', () => {
+  it.skip('should render admin tab selected', () => {
     props.location.pathname = '/admin';
     const { container } = render(
       <Provider store={createMockStore(getAdminInitialState())}>

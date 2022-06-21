@@ -48,8 +48,8 @@ const NewAssigendWorkers = ({ queryParams, linePieStatisticsMap, loading, fetchW
       showDivider={false}
       styles={{
         pieLineWidgetContainer: { height: '100%', minHeight: '380px' },
-        pieChartContainer: { height: '100%', width: '92%', marginLeft: '7%', display: 'flex' },
-        pieChartList: { width: '90%' },
+        pieChartContainer: { height: '70%', width: '80%', marginLeft: '7%', display: 'flex' },
+        pieChartList: { float: 'right', marginTop: '8%' },
         pieContainer: {
           display: 'flex',
           justifyContent: 'space-between',

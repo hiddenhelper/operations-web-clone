@@ -2,6 +2,7 @@ import { GeneralModel, UserModel } from '../../models';
 
 export interface IState {
   userMap: GeneralModel.IEntityMap<UserModel.IUser>;
+  companyUserProfile: GeneralModel.IEntityMap<UserModel.IUser>;
   userProjectMap: GeneralModel.IEntityMap<GeneralModel.IEntityMap<UserModel.IUserProject>>;
   userClientMap: GeneralModel.IEntityMap<GeneralModel.IEntityMap<UserModel.IUserProject>>;
   roleList: GeneralModel.INamedEntity[];
@@ -13,6 +14,7 @@ export interface IState {
 
 export const initialState: IState = {
   userMap: {},
+  companyUserProfile: {},
   userProjectMap: {},
   userClientMap: {},
   roleList: [],

@@ -165,7 +165,7 @@ export const uploadProjectBadgeLogosStart: Epic<IAction, IAction, IRootState, IE
         deps.apiService.getProjectBadgeResources(payload.projectId, getProjectBadgeResourceRequest(payload.uploadIdList, state$?.value?.file?.fileMap)).pipe(
           mergeMap(response =>
             Object.entries(response) // gcBadgeLogo, scBadgeLogo
-              .filter(([logoKey, logoValue]) => !isEmpty(logoValue))
+              .filter(([logoKey, logoValue]) => !isEmpty(logoValue) && payload?.fileMap[logoKey])
               .map(([fileKey, fileValue]) =>
                 fileState.actions.uploadFileStart(
                   payload.fileMap[fileKey], // { gcBadgeLogo: File, scBadgeLogo: File }

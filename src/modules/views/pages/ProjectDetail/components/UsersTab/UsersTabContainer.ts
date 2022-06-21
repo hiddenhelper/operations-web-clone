@@ -21,6 +21,7 @@ export const mapDispatchToProps = (dispatch: Dispatch) => ({
   fetchUserList: (id: string, query: GeneralModel.IQueryParams) => dispatch(userState.actions.fetchProjectUserListStart(id, query)),
   fetchProjectClientList: (id: string, query: GeneralModel.IQueryParams) => dispatch(clientState.actions.fetchProjectClientListStart(id, query)),
   clearUserMap: () => dispatch(userState.actions.clearUserMap()),
+  fetchUserProfile: (companyId: string, companyUserId: string) => dispatch(userState.actions.fetchUserProfileStart(companyId, companyUserId)),
 });
 
 export default connect(mapStateToProps, mapDispatchToProps)(UsersTab);

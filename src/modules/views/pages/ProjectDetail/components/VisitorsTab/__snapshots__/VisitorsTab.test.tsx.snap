@@ -4,23 +4,23 @@ exports[`VisitorsTab should avoid assign when Synchronizing 1`] = `
 <div>
   <div>
     <div
-      class="makeStyles-filterActionsContainer-2610 makeStyles-filterActionsContainerPadding-2612"
+      class="makeStyles-filterActionsContainer-2630 makeStyles-filterActionsContainerPadding-2632"
     >
       <div
-        class="MuiBox-root MuiBox-root-2764 makeStyles-filterStatusContainer-2613 makeStyles-autocompleteFilterStatus-2630"
+        class="MuiBox-root MuiBox-root-2786 makeStyles-filterStatusContainer-2633 makeStyles-autocompleteFilterStatus-2650"
       >
         <div
-          class="makeStyles-floatingFilterWrapper-2619 makeStyles-filterWrapper-2618  floatingFilterWrapper"
+          class="makeStyles-floatingFilterWrapper-2639 makeStyles-filterWrapper-2638  floatingFilterWrapper"
         >
           <span
-            class="makeStyles-floatingFilterButton-2620"
+            class="makeStyles-floatingFilterButton-2640"
             data-testid="controlled-button"
             tabindex="-1"
           >
             <button
               aria-controls="false"
               aria-haspopup="true"
-              class="MuiButtonBase-root MuiButton-root MuiButton-text makeStyles-buttonFilter-2628"
+              class="MuiButtonBase-root MuiButton-root MuiButton-text makeStyles-buttonFilter-2648"
               data-testid="button-filter-open"
               tabindex="0"
               type="button"
@@ -33,7 +33,7 @@ exports[`VisitorsTab should avoid assign when Synchronizing 1`] = `
                   class="MuiButton-endIcon MuiButton-iconSizeMedium"
                 >
                   <svg
-                    class="makeStyles-dropdownIcon-2622"
+                    class="makeStyles-dropdownIcon-2642"
                   >
                     expand.svg
                   </svg>
@@ -44,7 +44,7 @@ exports[`VisitorsTab should avoid assign when Synchronizing 1`] = `
         </div>
       </div>
       <button
-        class="MuiButtonBase-root MuiButton-root MuiButton-contained makeStyles-createButton-2640 makeStyles-primaryButtonLarge-2642 MuiButton-containedPrimary MuiButton-containedSizeLarge MuiButton-sizeLarge MuiButton-fullWidth"
+        class="MuiButtonBase-root MuiButton-root MuiButton-contained makeStyles-createButton-2660 makeStyles-primaryButtonLarge-2662 MuiButton-containedPrimary MuiButton-containedSizeLarge MuiButton-sizeLarge MuiButton-fullWidth"
         data-testid="open-create-badge-modal-btn"
         tabindex="0"
         type="button"
@@ -67,7 +67,7 @@ exports[`VisitorsTab should avoid assign when Synchronizing 1`] = `
         class="MuiTableHead-root"
       >
         <tr
-          class="MuiTableRow-root makeStyles-fontHeadAccent-2629 MuiTableRow-head"
+          class="MuiTableRow-root makeStyles-fontHeadAccent-2649 MuiTableRow-head"
         >
           <th
             class="MuiTableCell-root MuiTableCell-head"
@@ -105,7 +105,7 @@ exports[`VisitorsTab should avoid assign when Synchronizing 1`] = `
         class="MuiTableBody-root"
       >
         <tr
-          class="MuiTableRow-root WithStyles(ForwardRef(TableRow))-root-2777 makeStyles-visitorRow-2746"
+          class="MuiTableRow-root WithStyles(ForwardRef(TableRow))-root-2799 makeStyles-visitorRow-2768"
           data-testid="visitor-list-row"
           style="cursor: pointer;"
         >
@@ -134,13 +134,13 @@ exports[`VisitorsTab should avoid assign when Synchronizing 1`] = `
             class="MuiTableCell-root MuiTableCell-body"
           >
             <div
-              class="makeStyles-visitorRowLastCell-2737"
+              class="makeStyles-visitorRowLastCell-2759"
             >
               <span
-                class="makeStyles-visitorRowStatusChip-2738"
+                class="makeStyles-visitorRowStatusChip-2760"
               >
                 <div
-                  class="MuiChip-root makeStyles-statusChip-2765 makeStyles-assigned-2769 MuiChip-colorPrimary"
+                  class="MuiChip-root makeStyles-statusChip-2787 makeStyles-assigned-2791 MuiChip-colorPrimary"
                 >
                   <span
                     class="MuiChip-label"
@@ -150,7 +150,7 @@ exports[`VisitorsTab should avoid assign when Synchronizing 1`] = `
                 </div>
               </span>
               <div
-                class="makeStyles-visitorRowIconsWrapper-2730"
+                class="makeStyles-visitorRowIconsWrapper-2752"
               >
                 <span
                   class=""
@@ -169,7 +169,7 @@ exports[`VisitorsTab should avoid assign when Synchronizing 1`] = `
                       class="MuiIconButton-label"
                     >
                       <svg
-                        class="makeStyles-projectRowIcon-2731"
+                        class="makeStyles-projectRowIcon-2753"
                       >
                         badge-revoked.svg
                       </svg>
@@ -181,7 +181,7 @@ exports[`VisitorsTab should avoid assign when Synchronizing 1`] = `
           </td>
         </tr>
         <tr
-          class="MuiTableRow-root WithStyles(ForwardRef(TableRow))-root-2777 makeStyles-visitorRow-2746"
+          class="MuiTableRow-root WithStyles(ForwardRef(TableRow))-root-2799 makeStyles-visitorRow-2768"
           data-testid="visitor-list-row"
           style="cursor: pointer;"
         >
@@ -210,13 +210,13 @@ exports[`VisitorsTab should avoid assign when Synchronizing 1`] = `
             class="MuiTableCell-root MuiTableCell-body"
           >
             <div
-              class="makeStyles-visitorRowLastCell-2737"
+              class="makeStyles-visitorRowLastCell-2759"
             >
               <span
-                class="makeStyles-visitorRowStatusChip-2738"
+                class="makeStyles-visitorRowStatusChip-2760"
               >
                 <div
-                  class="MuiChip-root makeStyles-statusChip-2765 makeStyles-active-2771 MuiChip-colorPrimary"
+                  class="MuiChip-root makeStyles-statusChip-2787 makeStyles-active-2793 MuiChip-colorPrimary"
                 >
                   <span
                     class="MuiChip-label"
@@ -226,7 +226,7 @@ exports[`VisitorsTab should avoid assign when Synchronizing 1`] = `
                 </div>
               </span>
               <div
-                class="makeStyles-visitorRowIconsWrapper-2730"
+                class="makeStyles-visitorRowIconsWrapper-2752"
               >
                 <span
                   class=""
@@ -245,7 +245,7 @@ exports[`VisitorsTab should avoid assign when Synchronizing 1`] = `
                       class="MuiIconButton-label"
                     >
                       <svg
-                        class="makeStyles-projectRowIcon-2731"
+                        class="makeStyles-projectRowIcon-2753"
                       >
                         badge-active.svg
                       </svg>
@@ -257,7 +257,7 @@ exports[`VisitorsTab should avoid assign when Synchronizing 1`] = `
           </td>
         </tr>
         <tr
-          class="MuiTableRow-root WithStyles(ForwardRef(TableRow))-root-2777 makeStyles-visitorRow-2746"
+          class="MuiTableRow-root WithStyles(ForwardRef(TableRow))-root-2799 makeStyles-visitorRow-2768"
           data-testid="visitor-list-row"
           style="cursor: pointer;"
         >
@@ -286,13 +286,13 @@ exports[`VisitorsTab should avoid assign when Synchronizing 1`] = `
             class="MuiTableCell-root MuiTableCell-body"
           >
             <div
-              class="makeStyles-visitorRowLastCell-2737"
+              class="makeStyles-visitorRowLastCell-2759"
             >
               <span
-                class="makeStyles-visitorRowStatusChip-2738"
+                class="makeStyles-visitorRowStatusChip-2760"
               >
                 <div
-                  class="MuiChip-root makeStyles-statusChip-2765 makeStyles-assigned-2769 MuiChip-colorPrimary"
+                  class="MuiChip-root makeStyles-statusChip-2787 makeStyles-assigned-2791 MuiChip-colorPrimary"
                 >
                   <span
                     class="MuiChip-label"
@@ -302,7 +302,7 @@ exports[`VisitorsTab should avoid assign when Synchronizing 1`] = `
                 </div>
               </span>
               <div
-                class="makeStyles-visitorRowIconsWrapper-2730"
+                class="makeStyles-visitorRowIconsWrapper-2752"
               >
                 <span
                   class=""
@@ -321,7 +321,7 @@ exports[`VisitorsTab should avoid assign when Synchronizing 1`] = `
                       class="MuiIconButton-label"
                     >
                       <svg
-                        class="makeStyles-projectRowIcon-2731"
+                        class="makeStyles-projectRowIcon-2753"
                       >
                         badge-revoked.svg
                       </svg>
@@ -333,7 +333,7 @@ exports[`VisitorsTab should avoid assign when Synchronizing 1`] = `
           </td>
         </tr>
         <tr
-          class="MuiTableRow-root WithStyles(ForwardRef(TableRow))-root-2777 makeStyles-visitorRow-2746"
+          class="MuiTableRow-root WithStyles(ForwardRef(TableRow))-root-2799 makeStyles-visitorRow-2768"
           data-testid="visitor-list-row"
           style="cursor: pointer;"
         >
@@ -358,13 +358,13 @@ exports[`VisitorsTab should avoid assign when Synchronizing 1`] = `
             class="MuiTableCell-root MuiTableCell-body"
           >
             <div
-              class="makeStyles-visitorRowLastCell-2737"
+              class="makeStyles-visitorRowLastCell-2759"
             >
               <span
-                class="makeStyles-visitorRowStatusChip-2738"
+                class="makeStyles-visitorRowStatusChip-2760"
               >
                 <div
-                  class="MuiChip-root makeStyles-statusChip-2765 makeStyles-active-2771 MuiChip-colorPrimary"
+                  class="MuiChip-root makeStyles-statusChip-2787 makeStyles-active-2793 MuiChip-colorPrimary"
                 >
                   <span
                     class="MuiChip-label"
@@ -374,7 +374,7 @@ exports[`VisitorsTab should avoid assign when Synchronizing 1`] = `
                 </div>
               </span>
               <div
-                class="makeStyles-visitorRowIconsWrapper-2730"
+                class="makeStyles-visitorRowIconsWrapper-2752"
               >
                 <span
                   class=""
@@ -393,7 +393,7 @@ exports[`VisitorsTab should avoid assign when Synchronizing 1`] = `
                       class="MuiIconButton-label"
                     >
                       <svg
-                        class="makeStyles-badgeVipIcon-2732"
+                        class="makeStyles-badgeVipIcon-2754"
                       >
                         vip_active.svg
                       </svg>
@@ -408,7 +408,7 @@ exports[`VisitorsTab should avoid assign when Synchronizing 1`] = `
     </table>
     <nav
       aria-label="pagination navigation"
-      class="MuiPagination-root  makeStyles-pagination-2779"
+      class="MuiPagination-root  makeStyles-pagination-2801"
       data-testid="pagination"
     >
       <ul
@@ -460,17 +460,17 @@ exports[`VisitorsTab should avoid assign when Synchronizing 1`] = `
     </nav>
   </div>
   <div
-    class="MuiDrawer-root MuiDrawer-docked makeStyles-drawer-2782 open"
+    class="MuiDrawer-root MuiDrawer-docked makeStyles-drawer-2804 open"
     data-testid="badge-drawer-detail"
   >
     <div
-      class="MuiPaper-root MuiDrawer-paper makeStyles-drawerPaper-2783 MuiDrawer-paperAnchorRight MuiDrawer-paperAnchorDockedRight MuiPaper-elevation0"
+      class="MuiPaper-root MuiDrawer-paper makeStyles-drawerPaper-2805 MuiDrawer-paperAnchorRight MuiDrawer-paperAnchorDockedRight MuiPaper-elevation0"
     >
       <div
-        class="makeStyles-drawerButtonWrapper-2785"
+        class="makeStyles-drawerButtonWrapper-2807"
       >
         <div
-          class="makeStyles-drawerButton-2786"
+          class="makeStyles-drawerButton-2808"
         >
           <button
             class="MuiButtonBase-root MuiButton-root MuiButton-text"
@@ -492,31 +492,31 @@ exports[`VisitorsTab should avoid assign when Synchronizing 1`] = `
           </button>
         </div>
         <div
-          class="makeStyles-drawerHeader-2784"
+          class="makeStyles-drawerHeader-2806"
         >
           <p
-            class="MuiTypography-root makeStyles-drawerTitle-2787 MuiTypography-body1 MuiTypography-colorPrimary MuiTypography-alignLeft"
+            class="MuiTypography-root makeStyles-drawerTitle-2809 MuiTypography-body1 MuiTypography-colorPrimary MuiTypography-alignLeft"
           >
             Badge Information
           </p>
         </div>
       </div>
       <div
-        class="makeStyles-listDetail-2812"
+        class="makeStyles-listDetail-2834"
       >
         <div
-          class="makeStyles-company-2813"
+          class="makeStyles-company-2835"
         >
           <div
-            class="makeStyles-drawerText-2789"
+            class="makeStyles-drawerText-2811"
           >
             <p
-              class="MuiTypography-root makeStyles-listAccent-2814 makeStyles-entityTitle-2811 MuiTypography-body1"
+              class="MuiTypography-root makeStyles-listAccent-2836 makeStyles-entityTitle-2833 MuiTypography-body1"
             >
               Badge ID
             </p>
             <div
-              class="makeStyles-drawerMainText-2790"
+              class="makeStyles-drawerMainText-2812"
             >
               <span>
                 #
@@ -525,20 +525,20 @@ exports[`VisitorsTab should avoid assign when Synchronizing 1`] = `
             </div>
           </div>
           <div
-            class="makeStyles-drawerSection-2788"
+            class="makeStyles-drawerSection-2810"
           >
             <span
-              class="makeStyles-badgeVip-2781"
+              class="makeStyles-badgeVip-2803"
             >
               <svg>
                 badge_vip.svg
               </svg>
             </span>
             <div
-              class="makeStyles-drawerText-2789 makeStyles-drawerTextSeparation-2791"
+              class="makeStyles-drawerText-2811 makeStyles-drawerTextSeparation-2813"
             >
               <span
-                class="makeStyles-listAccent-2814"
+                class="makeStyles-listAccent-2836"
               >
                 Badge Code
               </span>
@@ -549,10 +549,10 @@ exports[`VisitorsTab should avoid assign when Synchronizing 1`] = `
           </div>
         </div>
         <hr
-          class="MuiDivider-root makeStyles-drawerDivider-2792"
+          class="MuiDivider-root makeStyles-drawerDivider-2814"
         />
         <div
-          class="makeStyles-ctaWrapper-2815"
+          class="makeStyles-ctaWrapper-2837"
         >
           <span
             class=""
@@ -560,7 +560,7 @@ exports[`VisitorsTab should avoid assign when Synchronizing 1`] = `
             tabindex="-1"
           >
             <button
-              class="MuiButtonBase-root MuiButton-root MuiButton-outlined makeStyles-drawerCTA-2647   Mui-disabled Mui-disabled"
+              class="MuiButtonBase-root MuiButton-root MuiButton-outlined makeStyles-drawerCTA-2667   Mui-disabled Mui-disabled"
               data-testid="assign-badgevisitor-btn"
               disabled=""
               tabindex="-1"
@@ -575,7 +575,7 @@ exports[`VisitorsTab should avoid assign when Synchronizing 1`] = `
           </span>
         </div>
         <div
-          class="makeStyles-isSynchronizingLegendContainer-2822"
+          class="makeStyles-isSynchronizingLegendContainer-2844"
         >
           <div>
             <svg>
@@ -583,7 +583,7 @@ exports[`VisitorsTab should avoid assign when Synchronizing 1`] = `
             </svg>
           </div>
           <div
-            class="makeStyles-isSynchronizingLegend-2823"
+            class="makeStyles-isSynchronizingLegend-2845"
           >
             Actions are disabled at the moment, badge is being synchronized. Please wait a few minutes and refresh.
           </div>
@@ -598,23 +598,23 @@ exports[`VisitorsTab should hide create badges when not FcAdmin 1`] = `
 <div>
   <div>
     <div
-      class="makeStyles-filterActionsContainer-850 makeStyles-filterActionsContainerPadding-852"
+      class="makeStyles-filterActionsContainer-858 makeStyles-filterActionsContainerPadding-860"
     >
       <div
-        class="MuiBox-root MuiBox-root-1004 makeStyles-filterStatusContainer-853 makeStyles-autocompleteFilterStatus-870"
+        class="MuiBox-root MuiBox-root-1014 makeStyles-filterStatusContainer-861 makeStyles-autocompleteFilterStatus-878"
       >
         <div
-          class="makeStyles-floatingFilterWrapper-859 makeStyles-filterWrapper-858  floatingFilterWrapper"
+          class="makeStyles-floatingFilterWrapper-867 makeStyles-filterWrapper-866  floatingFilterWrapper"
         >
           <span
-            class="makeStyles-floatingFilterButton-860"
+            class="makeStyles-floatingFilterButton-868"
             data-testid="controlled-button"
             tabindex="-1"
           >
             <button
               aria-controls="false"
               aria-haspopup="true"
-              class="MuiButtonBase-root MuiButton-root MuiButton-text makeStyles-buttonFilter-868"
+              class="MuiButtonBase-root MuiButton-root MuiButton-text makeStyles-buttonFilter-876"
               data-testid="button-filter-open"
               tabindex="0"
               type="button"
@@ -627,7 +627,7 @@ exports[`VisitorsTab should hide create badges when not FcAdmin 1`] = `
                   class="MuiButton-endIcon MuiButton-iconSizeMedium"
                 >
                   <svg
-                    class="makeStyles-dropdownIcon-862"
+                    class="makeStyles-dropdownIcon-870"
                   >
                     expand.svg
                   </svg>
@@ -646,7 +646,7 @@ exports[`VisitorsTab should hide create badges when not FcAdmin 1`] = `
         class="MuiTableHead-root"
       >
         <tr
-          class="MuiTableRow-root makeStyles-fontHeadAccent-869 MuiTableRow-head"
+          class="MuiTableRow-root makeStyles-fontHeadAccent-877 MuiTableRow-head"
         >
           <th
             class="MuiTableCell-root MuiTableCell-head"
@@ -684,7 +684,7 @@ exports[`VisitorsTab should hide create badges when not FcAdmin 1`] = `
         class="MuiTableBody-root"
       >
         <tr
-          class="MuiTableRow-root WithStyles(ForwardRef(TableRow))-root-1017 makeStyles-visitorRow-986"
+          class="MuiTableRow-root WithStyles(ForwardRef(TableRow))-root-1027 makeStyles-visitorRow-996"
           data-testid="visitor-list-row"
           style="cursor: pointer;"
         >
@@ -713,13 +713,13 @@ exports[`VisitorsTab should hide create badges when not FcAdmin 1`] = `
             class="MuiTableCell-root MuiTableCell-body"
           >
             <div
-              class="makeStyles-visitorRowLastCell-977"
+              class="makeStyles-visitorRowLastCell-987"
             >
               <span
-                class="makeStyles-visitorRowStatusChip-978"
+                class="makeStyles-visitorRowStatusChip-988"
               >
                 <div
-                  class="MuiChip-root makeStyles-statusChip-1005 makeStyles-assigned-1009 MuiChip-colorPrimary"
+                  class="MuiChip-root makeStyles-statusChip-1015 makeStyles-assigned-1019 MuiChip-colorPrimary"
                 >
                   <span
                     class="MuiChip-label"
@@ -729,7 +729,7 @@ exports[`VisitorsTab should hide create badges when not FcAdmin 1`] = `
                 </div>
               </span>
               <div
-                class="makeStyles-visitorRowIconsWrapper-970"
+                class="makeStyles-visitorRowIconsWrapper-980"
               >
                 <span
                   class=""
@@ -748,7 +748,7 @@ exports[`VisitorsTab should hide create badges when not FcAdmin 1`] = `
                       class="MuiIconButton-label"
                     >
                       <svg
-                        class="makeStyles-projectRowIcon-971"
+                        class="makeStyles-projectRowIcon-981"
                       >
                         badge-revoked.svg
                       </svg>
@@ -760,7 +760,7 @@ exports[`VisitorsTab should hide create badges when not FcAdmin 1`] = `
           </td>
         </tr>
         <tr
-          class="MuiTableRow-root WithStyles(ForwardRef(TableRow))-root-1017 makeStyles-visitorRow-986"
+          class="MuiTableRow-root WithStyles(ForwardRef(TableRow))-root-1027 makeStyles-visitorRow-996"
           data-testid="visitor-list-row"
           style="cursor: pointer;"
         >
@@ -789,13 +789,13 @@ exports[`VisitorsTab should hide create badges when not FcAdmin 1`] = `
             class="MuiTableCell-root MuiTableCell-body"
           >
             <div
-              class="makeStyles-visitorRowLastCell-977"
+              class="makeStyles-visitorRowLastCell-987"
             >
               <span
-                class="makeStyles-visitorRowStatusChip-978"
+                class="makeStyles-visitorRowStatusChip-988"
               >
                 <div
-                  class="MuiChip-root makeStyles-statusChip-1005 makeStyles-active-1011 MuiChip-colorPrimary"
+                  class="MuiChip-root makeStyles-statusChip-1015 makeStyles-active-1021 MuiChip-colorPrimary"
                 >
                   <span
                     class="MuiChip-label"
@@ -805,7 +805,7 @@ exports[`VisitorsTab should hide create badges when not FcAdmin 1`] = `
                 </div>
               </span>
               <div
-                class="makeStyles-visitorRowIconsWrapper-970"
+                class="makeStyles-visitorRowIconsWrapper-980"
               >
                 <span
                   class=""
@@ -824,7 +824,7 @@ exports[`VisitorsTab should hide create badges when not FcAdmin 1`] = `
                       class="MuiIconButton-label"
                     >
                       <svg
-                        class="makeStyles-projectRowIcon-971"
+                        class="makeStyles-projectRowIcon-981"
                       >
                         badge-active.svg
                       </svg>
@@ -836,7 +836,7 @@ exports[`VisitorsTab should hide create badges when not FcAdmin 1`] = `
           </td>
         </tr>
         <tr
-          class="MuiTableRow-root WithStyles(ForwardRef(TableRow))-root-1017 makeStyles-visitorRow-986"
+          class="MuiTableRow-root WithStyles(ForwardRef(TableRow))-root-1027 makeStyles-visitorRow-996"
           data-testid="visitor-list-row"
           style="cursor: pointer;"
         >
@@ -865,13 +865,13 @@ exports[`VisitorsTab should hide create badges when not FcAdmin 1`] = `
             class="MuiTableCell-root MuiTableCell-body"
           >
             <div
-              class="makeStyles-visitorRowLastCell-977"
+              class="makeStyles-visitorRowLastCell-987"
             >
               <span
-                class="makeStyles-visitorRowStatusChip-978"
+                class="makeStyles-visitorRowStatusChip-988"
               >
                 <div
-                  class="MuiChip-root makeStyles-statusChip-1005 makeStyles-assigned-1009 MuiChip-colorPrimary"
+                  class="MuiChip-root makeStyles-statusChip-1015 makeStyles-assigned-1019 MuiChip-colorPrimary"
                 >
                   <span
                     class="MuiChip-label"
@@ -881,7 +881,7 @@ exports[`VisitorsTab should hide create badges when not FcAdmin 1`] = `
                 </div>
               </span>
               <div
-                class="makeStyles-visitorRowIconsWrapper-970"
+                class="makeStyles-visitorRowIconsWrapper-980"
               >
                 <span
                   class=""
@@ -900,7 +900,7 @@ exports[`VisitorsTab should hide create badges when not FcAdmin 1`] = `
                       class="MuiIconButton-label"
                     >
                       <svg
-                        class="makeStyles-projectRowIcon-971"
+                        class="makeStyles-projectRowIcon-981"
                       >
                         badge-revoked.svg
                       </svg>
@@ -912,7 +912,7 @@ exports[`VisitorsTab should hide create badges when not FcAdmin 1`] = `
           </td>
         </tr>
         <tr
-          class="MuiTableRow-root WithStyles(ForwardRef(TableRow))-root-1017 makeStyles-visitorRow-986"
+          class="MuiTableRow-root WithStyles(ForwardRef(TableRow))-root-1027 makeStyles-visitorRow-996"
           data-testid="visitor-list-row"
           style="cursor: pointer;"
         >
@@ -937,13 +937,13 @@ exports[`VisitorsTab should hide create badges when not FcAdmin 1`] = `
             class="MuiTableCell-root MuiTableCell-body"
           >
             <div
-              class="makeStyles-visitorRowLastCell-977"
+              class="makeStyles-visitorRowLastCell-987"
             >
               <span
-                class="makeStyles-visitorRowStatusChip-978"
+                class="makeStyles-visitorRowStatusChip-988"
               >
                 <div
-                  class="MuiChip-root makeStyles-statusChip-1005 makeStyles-active-1011 MuiChip-colorPrimary"
+                  class="MuiChip-root makeStyles-statusChip-1015 makeStyles-active-1021 MuiChip-colorPrimary"
                 >
                   <span
                     class="MuiChip-label"
@@ -953,7 +953,7 @@ exports[`VisitorsTab should hide create badges when not FcAdmin 1`] = `
                 </div>
               </span>
               <div
-                class="makeStyles-visitorRowIconsWrapper-970"
+                class="makeStyles-visitorRowIconsWrapper-980"
               >
                 <span
                   class=""
@@ -972,7 +972,7 @@ exports[`VisitorsTab should hide create badges when not FcAdmin 1`] = `
                       class="MuiIconButton-label"
                     >
                       <svg
-                        class="makeStyles-badgeVipIcon-972"
+                        class="makeStyles-badgeVipIcon-982"
                       >
                         vip_active.svg
                       </svg>
@@ -987,7 +987,7 @@ exports[`VisitorsTab should hide create badges when not FcAdmin 1`] = `
     </table>
     <nav
       aria-label="pagination navigation"
-      class="MuiPagination-root  makeStyles-pagination-1019"
+      class="MuiPagination-root  makeStyles-pagination-1029"
       data-testid="pagination"
     >
       <ul
@@ -1039,18 +1039,18 @@ exports[`VisitorsTab should hide create badges when not FcAdmin 1`] = `
     </nav>
   </div>
   <div
-    class="MuiDrawer-root MuiDrawer-docked makeStyles-drawer-1022 makeStyles-close-1033 closed"
+    class="MuiDrawer-root MuiDrawer-docked makeStyles-drawer-1032 makeStyles-close-1043 closed"
     data-testid="badge-drawer-detail"
   >
     <div
-      class="MuiPaper-root MuiDrawer-paper makeStyles-drawerPaper-1023 MuiDrawer-paperAnchorRight MuiDrawer-paperAnchorDockedRight MuiPaper-elevation0"
+      class="MuiPaper-root MuiDrawer-paper makeStyles-drawerPaper-1033 MuiDrawer-paperAnchorRight MuiDrawer-paperAnchorDockedRight MuiPaper-elevation0"
       style="visibility: hidden; webkit-transform: translateX(1024px) translateX(0px); transform: translateX(1024px) translateX(0px);"
     >
       <div
-        class="makeStyles-drawerButtonWrapper-1025"
+        class="makeStyles-drawerButtonWrapper-1035"
       >
         <div
-          class="makeStyles-drawerButton-1026"
+          class="makeStyles-drawerButton-1036"
         >
           <button
             class="MuiButtonBase-root MuiButton-root MuiButton-text"
@@ -1072,31 +1072,31 @@ exports[`VisitorsTab should hide create badges when not FcAdmin 1`] = `
           </button>
         </div>
         <div
-          class="makeStyles-drawerHeader-1024"
+          class="makeStyles-drawerHeader-1034"
         >
           <p
-            class="MuiTypography-root makeStyles-drawerTitle-1027 MuiTypography-body1 MuiTypography-colorPrimary MuiTypography-alignLeft"
+            class="MuiTypography-root makeStyles-drawerTitle-1037 MuiTypography-body1 MuiTypography-colorPrimary MuiTypography-alignLeft"
           >
             Badge Information
           </p>
         </div>
       </div>
       <div
-        class="makeStyles-listDetail-1052"
+        class="makeStyles-listDetail-1062"
       >
         <div
-          class="makeStyles-company-1053"
+          class="makeStyles-company-1063"
         >
           <div
-            class="makeStyles-drawerText-1029"
+            class="makeStyles-drawerText-1039"
           >
             <p
-              class="MuiTypography-root makeStyles-listAccent-1054 makeStyles-entityTitle-1051 MuiTypography-body1"
+              class="MuiTypography-root makeStyles-listAccent-1064 makeStyles-entityTitle-1061 MuiTypography-body1"
             >
               Badge ID
             </p>
             <div
-              class="makeStyles-drawerMainText-1030"
+              class="makeStyles-drawerMainText-1040"
             >
               <span>
                 #
@@ -1104,16 +1104,16 @@ exports[`VisitorsTab should hide create badges when not FcAdmin 1`] = `
             </div>
           </div>
           <div
-            class="makeStyles-drawerSection-1028"
+            class="makeStyles-drawerSection-1038"
           >
             <svg>
               e-badge.svg
             </svg>
             <div
-              class="makeStyles-drawerText-1029 makeStyles-drawerTextSeparation-1031"
+              class="makeStyles-drawerText-1039 makeStyles-drawerTextSeparation-1041"
             >
               <span
-                class="makeStyles-listAccent-1054"
+                class="makeStyles-listAccent-1064"
               >
                 Badge Code
               </span>
@@ -1124,10 +1124,10 @@ exports[`VisitorsTab should hide create badges when not FcAdmin 1`] = `
           </div>
         </div>
         <hr
-          class="MuiDivider-root makeStyles-drawerDivider-1032"
+          class="MuiDivider-root makeStyles-drawerDivider-1042"
         />
         <div
-          class="makeStyles-ctaWrapper-1055"
+          class="makeStyles-ctaWrapper-1065"
         >
           <span
             class=""
@@ -1135,7 +1135,7 @@ exports[`VisitorsTab should hide create badges when not FcAdmin 1`] = `
             tabindex="-1"
           >
             <button
-              class="MuiButtonBase-root MuiButton-root MuiButton-outlined makeStyles-drawerCTA-887 makeStyles-borderPrimaryButton-879 makeStyles-primaryButtonPadding-881"
+              class="MuiButtonBase-root MuiButton-root MuiButton-outlined makeStyles-drawerCTA-895 makeStyles-borderPrimaryButton-887 makeStyles-primaryButtonPadding-889"
               data-testid="assign-badgevisitor-btn"
               tabindex="0"
               type="button"
@@ -1160,23 +1160,23 @@ exports[`VisitorsTab should open assign visitor badge modal 1`] = `
 >
   <div>
     <div
-      class="makeStyles-filterActionsContainer-1729 makeStyles-filterActionsContainerPadding-1731"
+      class="makeStyles-filterActionsContainer-1743 makeStyles-filterActionsContainerPadding-1745"
     >
       <div
-        class="MuiBox-root MuiBox-root-1883 makeStyles-filterStatusContainer-1732 makeStyles-autocompleteFilterStatus-1749"
+        class="MuiBox-root MuiBox-root-1899 makeStyles-filterStatusContainer-1746 makeStyles-autocompleteFilterStatus-1763"
       >
         <div
-          class="makeStyles-floatingFilterWrapper-1738 makeStyles-filterWrapper-1737  floatingFilterWrapper"
+          class="makeStyles-floatingFilterWrapper-1752 makeStyles-filterWrapper-1751  floatingFilterWrapper"
         >
           <span
-            class="makeStyles-floatingFilterButton-1739"
+            class="makeStyles-floatingFilterButton-1753"
             data-testid="controlled-button"
             tabindex="-1"
           >
             <button
               aria-controls="false"
               aria-haspopup="true"
-              class="MuiButtonBase-root MuiButton-root MuiButton-text makeStyles-buttonFilter-1747"
+              class="MuiButtonBase-root MuiButton-root MuiButton-text makeStyles-buttonFilter-1761"
               data-testid="button-filter-open"
               tabindex="0"
               type="button"
@@ -1189,7 +1189,7 @@ exports[`VisitorsTab should open assign visitor badge modal 1`] = `
                   class="MuiButton-endIcon MuiButton-iconSizeMedium"
                 >
                   <svg
-                    class="makeStyles-dropdownIcon-1741"
+                    class="makeStyles-dropdownIcon-1755"
                   >
                     expand.svg
                   </svg>
@@ -1200,7 +1200,7 @@ exports[`VisitorsTab should open assign visitor badge modal 1`] = `
         </div>
       </div>
       <button
-        class="MuiButtonBase-root MuiButton-root MuiButton-contained makeStyles-createButton-1759 makeStyles-primaryButtonLarge-1761 MuiButton-containedPrimary MuiButton-containedSizeLarge MuiButton-sizeLarge MuiButton-fullWidth"
+        class="MuiButtonBase-root MuiButton-root MuiButton-contained makeStyles-createButton-1773 makeStyles-primaryButtonLarge-1775 MuiButton-containedPrimary MuiButton-containedSizeLarge MuiButton-sizeLarge MuiButton-fullWidth"
         data-testid="open-create-badge-modal-btn"
         tabindex="0"
         type="button"
@@ -1223,7 +1223,7 @@ exports[`VisitorsTab should open assign visitor badge modal 1`] = `
         class="MuiTableHead-root"
       >
         <tr
-          class="MuiTableRow-root makeStyles-fontHeadAccent-1748 MuiTableRow-head"
+          class="MuiTableRow-root makeStyles-fontHeadAccent-1762 MuiTableRow-head"
         >
           <th
             class="MuiTableCell-root MuiTableCell-head"
@@ -1261,7 +1261,7 @@ exports[`VisitorsTab should open assign visitor badge modal 1`] = `
         class="MuiTableBody-root"
       >
         <tr
-          class="MuiTableRow-root WithStyles(ForwardRef(TableRow))-root-1896 makeStyles-visitorRow-1865"
+          class="MuiTableRow-root WithStyles(ForwardRef(TableRow))-root-1912 makeStyles-visitorRow-1881"
           data-testid="visitor-list-row"
           style="cursor: pointer;"
         >
@@ -1290,13 +1290,13 @@ exports[`VisitorsTab should open assign visitor badge modal 1`] = `
             class="MuiTableCell-root MuiTableCell-body"
           >
             <div
-              class="makeStyles-visitorRowLastCell-1856"
+              class="makeStyles-visitorRowLastCell-1872"
             >
               <span
-                class="makeStyles-visitorRowStatusChip-1857"
+                class="makeStyles-visitorRowStatusChip-1873"
               >
                 <div
-                  class="MuiChip-root makeStyles-statusChip-1884 makeStyles-active-1890 MuiChip-colorPrimary"
+                  class="MuiChip-root makeStyles-statusChip-1900 makeStyles-active-1906 MuiChip-colorPrimary"
                 >
                   <span
                     class="MuiChip-label"
@@ -1306,7 +1306,7 @@ exports[`VisitorsTab should open assign visitor badge modal 1`] = `
                 </div>
               </span>
               <div
-                class="makeStyles-visitorRowIconsWrapper-1849"
+                class="makeStyles-visitorRowIconsWrapper-1865"
               >
                 <span
                   class=""
@@ -1325,7 +1325,7 @@ exports[`VisitorsTab should open assign visitor badge modal 1`] = `
                       class="MuiIconButton-label"
                     >
                       <svg
-                        class="makeStyles-badgeVipIcon-1851"
+                        class="makeStyles-badgeVipIcon-1867"
                       >
                         vip_active.svg
                       </svg>
@@ -1340,7 +1340,7 @@ exports[`VisitorsTab should open assign visitor badge modal 1`] = `
     </table>
     <nav
       aria-label="pagination navigation"
-      class="MuiPagination-root  makeStyles-pagination-1898"
+      class="MuiPagination-root  makeStyles-pagination-1914"
       data-testid="pagination"
     >
       <ul
@@ -1392,17 +1392,17 @@ exports[`VisitorsTab should open assign visitor badge modal 1`] = `
     </nav>
   </div>
   <div
-    class="MuiDrawer-root MuiDrawer-docked makeStyles-drawer-1901 open"
+    class="MuiDrawer-root MuiDrawer-docked makeStyles-drawer-1917 open"
     data-testid="badge-drawer-detail"
   >
     <div
-      class="MuiPaper-root MuiDrawer-paper makeStyles-drawerPaper-1902 MuiDrawer-paperAnchorRight MuiDrawer-paperAnchorDockedRight MuiPaper-elevation0"
+      class="MuiPaper-root MuiDrawer-paper makeStyles-drawerPaper-1918 MuiDrawer-paperAnchorRight MuiDrawer-paperAnchorDockedRight MuiPaper-elevation0"
     >
       <div
-        class="makeStyles-drawerButtonWrapper-1904"
+        class="makeStyles-drawerButtonWrapper-1920"
       >
         <div
-          class="makeStyles-drawerButton-1905"
+          class="makeStyles-drawerButton-1921"
         >
           <button
             class="MuiButtonBase-root MuiButton-root MuiButton-text"
@@ -1424,31 +1424,31 @@ exports[`VisitorsTab should open assign visitor badge modal 1`] = `
           </button>
         </div>
         <div
-          class="makeStyles-drawerHeader-1903"
+          class="makeStyles-drawerHeader-1919"
         >
           <p
-            class="MuiTypography-root makeStyles-drawerTitle-1906 MuiTypography-body1 MuiTypography-colorPrimary MuiTypography-alignLeft"
+            class="MuiTypography-root makeStyles-drawerTitle-1922 MuiTypography-body1 MuiTypography-colorPrimary MuiTypography-alignLeft"
           >
             Badge Information
           </p>
         </div>
       </div>
       <div
-        class="makeStyles-listDetail-1931"
+        class="makeStyles-listDetail-1947"
       >
         <div
-          class="makeStyles-company-1932"
+          class="makeStyles-company-1948"
         >
           <div
-            class="makeStyles-drawerText-1908"
+            class="makeStyles-drawerText-1924"
           >
             <p
-              class="MuiTypography-root makeStyles-listAccent-1933 makeStyles-entityTitle-1930 MuiTypography-body1"
+              class="MuiTypography-root makeStyles-listAccent-1949 makeStyles-entityTitle-1946 MuiTypography-body1"
             >
               Badge ID
             </p>
             <div
-              class="makeStyles-drawerMainText-1909"
+              class="makeStyles-drawerMainText-1925"
             >
               <span>
                 #
@@ -1457,20 +1457,20 @@ exports[`VisitorsTab should open assign visitor badge modal 1`] = `
             </div>
           </div>
           <div
-            class="makeStyles-drawerSection-1907"
+            class="makeStyles-drawerSection-1923"
           >
             <span
-              class="makeStyles-badgeVip-1900"
+              class="makeStyles-badgeVip-1916"
             >
               <svg>
                 badge_vip.svg
               </svg>
             </span>
             <div
-              class="makeStyles-drawerText-1908 makeStyles-drawerTextSeparation-1910"
+              class="makeStyles-drawerText-1924 makeStyles-drawerTextSeparation-1926"
             >
               <span
-                class="makeStyles-listAccent-1933"
+                class="makeStyles-listAccent-1949"
               >
                 Badge Code
               </span>
@@ -1481,10 +1481,10 @@ exports[`VisitorsTab should open assign visitor badge modal 1`] = `
           </div>
         </div>
         <hr
-          class="MuiDivider-root makeStyles-drawerDivider-1911"
+          class="MuiDivider-root makeStyles-drawerDivider-1927"
         />
         <div
-          class="makeStyles-ctaWrapper-1934"
+          class="makeStyles-ctaWrapper-1950"
         >
           <span
             class=""
@@ -1492,7 +1492,7 @@ exports[`VisitorsTab should open assign visitor badge modal 1`] = `
             tabindex="-1"
           >
             <button
-              class="MuiButtonBase-root MuiButton-root MuiButton-outlined makeStyles-drawerCTA-1766 makeStyles-borderPrimaryButton-1758 makeStyles-primaryButtonPadding-1760"
+              class="MuiButtonBase-root MuiButton-root MuiButton-outlined makeStyles-drawerCTA-1780 makeStyles-borderPrimaryButton-1772 makeStyles-primaryButtonPadding-1774"
               data-testid="assign-badgevisitor-btn"
               tabindex="0"
               type="button"
@@ -1515,23 +1515,23 @@ exports[`VisitorsTab should render 1`] = `
 <div>
   <div>
     <div
-      class="makeStyles-filterActionsContainer-404 makeStyles-filterActionsContainerPadding-406"
+      class="makeStyles-filterActionsContainer-408 makeStyles-filterActionsContainerPadding-410"
     >
       <div
-        class="MuiBox-root MuiBox-root-558 makeStyles-filterStatusContainer-407 makeStyles-autocompleteFilterStatus-424"
+        class="MuiBox-root MuiBox-root-564 makeStyles-filterStatusContainer-411 makeStyles-autocompleteFilterStatus-428"
       >
         <div
-          class="makeStyles-floatingFilterWrapper-413 makeStyles-filterWrapper-412  floatingFilterWrapper"
+          class="makeStyles-floatingFilterWrapper-417 makeStyles-filterWrapper-416  floatingFilterWrapper"
         >
           <span
-            class="makeStyles-floatingFilterButton-414"
+            class="makeStyles-floatingFilterButton-418"
             data-testid="controlled-button"
             tabindex="-1"
           >
             <button
               aria-controls="false"
               aria-haspopup="true"
-              class="MuiButtonBase-root MuiButton-root MuiButton-text makeStyles-buttonFilter-422"
+              class="MuiButtonBase-root MuiButton-root MuiButton-text makeStyles-buttonFilter-426"
               data-testid="button-filter-open"
               tabindex="0"
               type="button"
@@ -1544,7 +1544,7 @@ exports[`VisitorsTab should render 1`] = `
                   class="MuiButton-endIcon MuiButton-iconSizeMedium"
                 >
                   <svg
-                    class="makeStyles-dropdownIcon-416"
+                    class="makeStyles-dropdownIcon-420"
                   >
                     expand.svg
                   </svg>
@@ -1555,7 +1555,7 @@ exports[`VisitorsTab should render 1`] = `
         </div>
       </div>
       <button
-        class="MuiButtonBase-root MuiButton-root MuiButton-contained makeStyles-createButton-434 makeStyles-primaryButtonLarge-436 MuiButton-containedPrimary MuiButton-containedSizeLarge MuiButton-sizeLarge MuiButton-fullWidth"
+        class="MuiButtonBase-root MuiButton-root MuiButton-contained makeStyles-createButton-438 makeStyles-primaryButtonLarge-440 MuiButton-containedPrimary MuiButton-containedSizeLarge MuiButton-sizeLarge MuiButton-fullWidth"
         data-testid="open-create-badge-modal-btn"
         tabindex="0"
         type="button"
@@ -1578,7 +1578,7 @@ exports[`VisitorsTab should render 1`] = `
         class="MuiTableHead-root"
       >
         <tr
-          class="MuiTableRow-root makeStyles-fontHeadAccent-423 MuiTableRow-head"
+          class="MuiTableRow-root makeStyles-fontHeadAccent-427 MuiTableRow-head"
         >
           <th
             class="MuiTableCell-root MuiTableCell-head"
@@ -1616,7 +1616,7 @@ exports[`VisitorsTab should render 1`] = `
         class="MuiTableBody-root"
       >
         <tr
-          class="MuiTableRow-root WithStyles(ForwardRef(TableRow))-root-571 makeStyles-visitorRow-540"
+          class="MuiTableRow-root WithStyles(ForwardRef(TableRow))-root-577 makeStyles-visitorRow-546"
           data-testid="visitor-list-row"
           style="cursor: pointer;"
         >
@@ -1645,13 +1645,13 @@ exports[`VisitorsTab should render 1`] = `
             class="MuiTableCell-root MuiTableCell-body"
           >
             <div
-              class="makeStyles-visitorRowLastCell-531"
+              class="makeStyles-visitorRowLastCell-537"
             >
               <span
-                class="makeStyles-visitorRowStatusChip-532"
+                class="makeStyles-visitorRowStatusChip-538"
               >
                 <div
-                  class="MuiChip-root makeStyles-statusChip-559 makeStyles-assigned-563 MuiChip-colorPrimary"
+                  class="MuiChip-root makeStyles-statusChip-565 makeStyles-assigned-569 MuiChip-colorPrimary"
                 >
                   <span
                     class="MuiChip-label"
@@ -1661,7 +1661,7 @@ exports[`VisitorsTab should render 1`] = `
                 </div>
               </span>
               <div
-                class="makeStyles-visitorRowIconsWrapper-524"
+                class="makeStyles-visitorRowIconsWrapper-530"
               >
                 <span
                   class=""
@@ -1680,7 +1680,7 @@ exports[`VisitorsTab should render 1`] = `
                       class="MuiIconButton-label"
                     >
                       <svg
-                        class="makeStyles-projectRowIcon-525"
+                        class="makeStyles-projectRowIcon-531"
                       >
                         badge-revoked.svg
                       </svg>
@@ -1692,7 +1692,7 @@ exports[`VisitorsTab should render 1`] = `
           </td>
         </tr>
         <tr
-          class="MuiTableRow-root WithStyles(ForwardRef(TableRow))-root-571 makeStyles-visitorRow-540"
+          class="MuiTableRow-root WithStyles(ForwardRef(TableRow))-root-577 makeStyles-visitorRow-546"
           data-testid="visitor-list-row"
           style="cursor: pointer;"
         >
@@ -1721,13 +1721,13 @@ exports[`VisitorsTab should render 1`] = `
             class="MuiTableCell-root MuiTableCell-body"
           >
             <div
-              class="makeStyles-visitorRowLastCell-531"
+              class="makeStyles-visitorRowLastCell-537"
             >
               <span
-                class="makeStyles-visitorRowStatusChip-532"
+                class="makeStyles-visitorRowStatusChip-538"
               >
                 <div
-                  class="MuiChip-root makeStyles-statusChip-559 makeStyles-active-565 MuiChip-colorPrimary"
+                  class="MuiChip-root makeStyles-statusChip-565 makeStyles-active-571 MuiChip-colorPrimary"
                 >
                   <span
                     class="MuiChip-label"
@@ -1737,7 +1737,7 @@ exports[`VisitorsTab should render 1`] = `
                 </div>
               </span>
               <div
-                class="makeStyles-visitorRowIconsWrapper-524"
+                class="makeStyles-visitorRowIconsWrapper-530"
               >
                 <span
                   class=""
@@ -1756,7 +1756,7 @@ exports[`VisitorsTab should render 1`] = `
                       class="MuiIconButton-label"
                     >
                       <svg
-                        class="makeStyles-projectRowIcon-525"
+                        class="makeStyles-projectRowIcon-531"
                       >
                         badge-active.svg
                       </svg>
@@ -1768,7 +1768,7 @@ exports[`VisitorsTab should render 1`] = `
           </td>
         </tr>
         <tr
-          class="MuiTableRow-root WithStyles(ForwardRef(TableRow))-root-571 makeStyles-visitorRow-540"
+          class="MuiTableRow-root WithStyles(ForwardRef(TableRow))-root-577 makeStyles-visitorRow-546"
           data-testid="visitor-list-row"
           style="cursor: pointer;"
         >
@@ -1797,13 +1797,13 @@ exports[`VisitorsTab should render 1`] = `
             class="MuiTableCell-root MuiTableCell-body"
           >
             <div
-              class="makeStyles-visitorRowLastCell-531"
+              class="makeStyles-visitorRowLastCell-537"
             >
               <span
-                class="makeStyles-visitorRowStatusChip-532"
+                class="makeStyles-visitorRowStatusChip-538"
               >
                 <div
-                  class="MuiChip-root makeStyles-statusChip-559 makeStyles-assigned-563 MuiChip-colorPrimary"
+                  class="MuiChip-root makeStyles-statusChip-565 makeStyles-assigned-569 MuiChip-colorPrimary"
                 >
                   <span
                     class="MuiChip-label"
@@ -1813,7 +1813,7 @@ exports[`VisitorsTab should render 1`] = `
                 </div>
               </span>
               <div
-                class="makeStyles-visitorRowIconsWrapper-524"
+                class="makeStyles-visitorRowIconsWrapper-530"
               >
                 <span
                   class=""
@@ -1832,7 +1832,7 @@ exports[`VisitorsTab should render 1`] = `
                       class="MuiIconButton-label"
                     >
                       <svg
-                        class="makeStyles-projectRowIcon-525"
+                        class="makeStyles-projectRowIcon-531"
                       >
                         badge-revoked.svg
                       </svg>
@@ -1844,7 +1844,7 @@ exports[`VisitorsTab should render 1`] = `
           </td>
         </tr>
         <tr
-          class="MuiTableRow-root WithStyles(ForwardRef(TableRow))-root-571 makeStyles-visitorRow-540"
+          class="MuiTableRow-root WithStyles(ForwardRef(TableRow))-root-577 makeStyles-visitorRow-546"
           data-testid="visitor-list-row"
           style="cursor: pointer;"
         >
@@ -1869,13 +1869,13 @@ exports[`VisitorsTab should render 1`] = `
             class="MuiTableCell-root MuiTableCell-body"
           >
             <div
-              class="makeStyles-visitorRowLastCell-531"
+              class="makeStyles-visitorRowLastCell-537"
             >
               <span
-                class="makeStyles-visitorRowStatusChip-532"
+                class="makeStyles-visitorRowStatusChip-538"
               >
                 <div
-                  class="MuiChip-root makeStyles-statusChip-559 makeStyles-active-565 MuiChip-colorPrimary"
+                  class="MuiChip-root makeStyles-statusChip-565 makeStyles-active-571 MuiChip-colorPrimary"
                 >
                   <span
                     class="MuiChip-label"
@@ -1885,7 +1885,7 @@ exports[`VisitorsTab should render 1`] = `
                 </div>
               </span>
               <div
-                class="makeStyles-visitorRowIconsWrapper-524"
+                class="makeStyles-visitorRowIconsWrapper-530"
               >
                 <span
                   class=""
@@ -1904,7 +1904,7 @@ exports[`VisitorsTab should render 1`] = `
                       class="MuiIconButton-label"
                     >
                       <svg
-                        class="makeStyles-badgeVipIcon-526"
+                        class="makeStyles-badgeVipIcon-532"
                       >
                         vip_active.svg
                       </svg>
@@ -1919,7 +1919,7 @@ exports[`VisitorsTab should render 1`] = `
     </table>
     <nav
       aria-label="pagination navigation"
-      class="MuiPagination-root  makeStyles-pagination-573"
+      class="MuiPagination-root  makeStyles-pagination-579"
       data-testid="pagination"
     >
       <ul
@@ -1971,18 +1971,18 @@ exports[`VisitorsTab should render 1`] = `
     </nav>
   </div>
   <div
-    class="MuiDrawer-root MuiDrawer-docked makeStyles-drawer-576 makeStyles-close-587 closed"
+    class="MuiDrawer-root MuiDrawer-docked makeStyles-drawer-582 makeStyles-close-593 closed"
     data-testid="badge-drawer-detail"
   >
     <div
-      class="MuiPaper-root MuiDrawer-paper makeStyles-drawerPaper-577 MuiDrawer-paperAnchorRight MuiDrawer-paperAnchorDockedRight MuiPaper-elevation0"
+      class="MuiPaper-root MuiDrawer-paper makeStyles-drawerPaper-583 MuiDrawer-paperAnchorRight MuiDrawer-paperAnchorDockedRight MuiPaper-elevation0"
       style="visibility: hidden; webkit-transform: translateX(1024px) translateX(0px); transform: translateX(1024px) translateX(0px);"
     >
       <div
-        class="makeStyles-drawerButtonWrapper-579"
+        class="makeStyles-drawerButtonWrapper-585"
       >
         <div
-          class="makeStyles-drawerButton-580"
+          class="makeStyles-drawerButton-586"
         >
           <button
             class="MuiButtonBase-root MuiButton-root MuiButton-text"
@@ -2004,31 +2004,31 @@ exports[`VisitorsTab should render 1`] = `
           </button>
         </div>
         <div
-          class="makeStyles-drawerHeader-578"
+          class="makeStyles-drawerHeader-584"
         >
           <p
-            class="MuiTypography-root makeStyles-drawerTitle-581 MuiTypography-body1 MuiTypography-colorPrimary MuiTypography-alignLeft"
+            class="MuiTypography-root makeStyles-drawerTitle-587 MuiTypography-body1 MuiTypography-colorPrimary MuiTypography-alignLeft"
           >
             Badge Information
           </p>
         </div>
       </div>
       <div
-        class="makeStyles-listDetail-606"
+        class="makeStyles-listDetail-612"
       >
         <div
-          class="makeStyles-company-607"
+          class="makeStyles-company-613"
         >
           <div
-            class="makeStyles-drawerText-583"
+            class="makeStyles-drawerText-589"
           >
             <p
-              class="MuiTypography-root makeStyles-listAccent-608 makeStyles-entityTitle-605 MuiTypography-body1"
+              class="MuiTypography-root makeStyles-listAccent-614 makeStyles-entityTitle-611 MuiTypography-body1"
             >
               Badge ID
             </p>
             <div
-              class="makeStyles-drawerMainText-584"
+              class="makeStyles-drawerMainText-590"
             >
               <span>
                 #
@@ -2036,16 +2036,16 @@ exports[`VisitorsTab should render 1`] = `
             </div>
           </div>
           <div
-            class="makeStyles-drawerSection-582"
+            class="makeStyles-drawerSection-588"
           >
             <svg>
               e-badge.svg
             </svg>
             <div
-              class="makeStyles-drawerText-583 makeStyles-drawerTextSeparation-585"
+              class="makeStyles-drawerText-589 makeStyles-drawerTextSeparation-591"
             >
               <span
-                class="makeStyles-listAccent-608"
+                class="makeStyles-listAccent-614"
               >
                 Badge Code
               </span>
@@ -2056,10 +2056,10 @@ exports[`VisitorsTab should render 1`] = `
           </div>
         </div>
         <hr
-          class="MuiDivider-root makeStyles-drawerDivider-586"
+          class="MuiDivider-root makeStyles-drawerDivider-592"
         />
         <div
-          class="makeStyles-ctaWrapper-609"
+          class="makeStyles-ctaWrapper-615"
         >
           <span
             class=""
@@ -2067,7 +2067,7 @@ exports[`VisitorsTab should render 1`] = `
             tabindex="-1"
           >
             <button
-              class="MuiButtonBase-root MuiButton-root MuiButton-outlined makeStyles-drawerCTA-441 makeStyles-borderPrimaryButton-433 makeStyles-primaryButtonPadding-435"
+              class="MuiButtonBase-root MuiButton-root MuiButton-outlined makeStyles-drawerCTA-445 makeStyles-borderPrimaryButton-437 makeStyles-primaryButtonPadding-439"
               data-testid="assign-badgevisitor-btn"
               tabindex="0"
               type="button"
@@ -2093,7 +2093,7 @@ exports[`VisitorsTab should render empty 1`] = `
       class="makeStyles-filterActionsContainer-12 makeStyles-filterActionsContainerPadding-14"
     >
       <div
-        class="MuiBox-root MuiBox-root-166 makeStyles-filterStatusContainer-15 makeStyles-autocompleteFilterStatus-32"
+        class="MuiBox-root MuiBox-root-168 makeStyles-filterStatusContainer-15 makeStyles-autocompleteFilterStatus-32"
       >
         <div
           class="makeStyles-floatingFilterWrapper-21 makeStyles-filterWrapper-20  floatingFilterWrapper"
@@ -2146,11 +2146,11 @@ exports[`VisitorsTab should render empty 1`] = `
       </button>
     </div>
     <div
-      class="makeStyles-emptyTabBadgeIcon-147 makeStyles-container-167"
+      class="makeStyles-emptyTabBadgeIcon-149 makeStyles-container-169"
     >
       <div>
         <div
-          class="MuiAvatar-root MuiAvatar-circle makeStyles-missingAvatarWrapper-178 makeStyles-missingAvatarBig-179 MuiAvatar-colorDefault"
+          class="MuiAvatar-root MuiAvatar-circle makeStyles-missingAvatarWrapper-180 makeStyles-missingAvatarBig-181 MuiAvatar-colorDefault"
         >
           <svg>
             e-badge.svg
@@ -2158,25 +2158,25 @@ exports[`VisitorsTab should render empty 1`] = `
         </div>
       </div>
       <p
-        class="MuiTypography-root makeStyles-missingListText-168 MuiTypography-body1"
+        class="MuiTypography-root makeStyles-missingListText-170 MuiTypography-body1"
       >
         There are no Visitor Badges
       </p>
     </div>
   </div>
   <div
-    class="MuiDrawer-root MuiDrawer-docked makeStyles-drawer-188 makeStyles-close-199 closed"
+    class="MuiDrawer-root MuiDrawer-docked makeStyles-drawer-190 makeStyles-close-201 closed"
     data-testid="badge-drawer-detail"
   >
     <div
-      class="MuiPaper-root MuiDrawer-paper makeStyles-drawerPaper-189 MuiDrawer-paperAnchorRight MuiDrawer-paperAnchorDockedRight MuiPaper-elevation0"
+      class="MuiPaper-root MuiDrawer-paper makeStyles-drawerPaper-191 MuiDrawer-paperAnchorRight MuiDrawer-paperAnchorDockedRight MuiPaper-elevation0"
       style="visibility: hidden; webkit-transform: translateX(1024px) translateX(0px); transform: translateX(1024px) translateX(0px);"
     >
       <div
-        class="makeStyles-drawerButtonWrapper-191"
+        class="makeStyles-drawerButtonWrapper-193"
       >
         <div
-          class="makeStyles-drawerButton-192"
+          class="makeStyles-drawerButton-194"
         >
           <button
             class="MuiButtonBase-root MuiButton-root MuiButton-text"
@@ -2198,31 +2198,31 @@ exports[`VisitorsTab should render empty 1`] = `
           </button>
         </div>
         <div
-          class="makeStyles-drawerHeader-190"
+          class="makeStyles-drawerHeader-192"
         >
           <p
-            class="MuiTypography-root makeStyles-drawerTitle-193 MuiTypography-body1 MuiTypography-colorPrimary MuiTypography-alignLeft"
+            class="MuiTypography-root makeStyles-drawerTitle-195 MuiTypography-body1 MuiTypography-colorPrimary MuiTypography-alignLeft"
           >
             Badge Information
           </p>
         </div>
       </div>
       <div
-        class="makeStyles-listDetail-218"
+        class="makeStyles-listDetail-220"
       >
         <div
-          class="makeStyles-company-219"
+          class="makeStyles-company-221"
         >
           <div
-            class="makeStyles-drawerText-195"
+            class="makeStyles-drawerText-197"
           >
             <p
-              class="MuiTypography-root makeStyles-listAccent-220 makeStyles-entityTitle-217 MuiTypography-body1"
+              class="MuiTypography-root makeStyles-listAccent-222 makeStyles-entityTitle-219 MuiTypography-body1"
             >
               Badge ID
             </p>
             <div
-              class="makeStyles-drawerMainText-196"
+              class="makeStyles-drawerMainText-198"
             >
               <span>
                 #
@@ -2230,16 +2230,16 @@ exports[`VisitorsTab should render empty 1`] = `
             </div>
           </div>
           <div
-            class="makeStyles-drawerSection-194"
+            class="makeStyles-drawerSection-196"
           >
             <svg>
               e-badge.svg
             </svg>
             <div
-              class="makeStyles-drawerText-195 makeStyles-drawerTextSeparation-197"
+              class="makeStyles-drawerText-197 makeStyles-drawerTextSeparation-199"
             >
               <span
-                class="makeStyles-listAccent-220"
+                class="makeStyles-listAccent-222"
               >
                 Badge Code
               </span>
@@ -2250,10 +2250,10 @@ exports[`VisitorsTab should render empty 1`] = `
           </div>
         </div>
         <hr
-          class="MuiDivider-root makeStyles-drawerDivider-198"
+          class="MuiDivider-root makeStyles-drawerDivider-200"
         />
         <div
-          class="makeStyles-ctaWrapper-221"
+          class="makeStyles-ctaWrapper-223"
         >
           <span
             class=""

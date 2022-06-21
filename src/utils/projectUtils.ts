@@ -116,7 +116,7 @@ export const getProjectBadgeResourceRequest = (pendingBadges, fileMap) => ({
           templateFileName: fileMap.generalContractorBadgeTemplate ? (Object.values(fileMap.generalContractorBadgeTemplate)[0] as any)?.file?.name : '',
         }
       : null,
-  subContractorTemplate:
+  subcontractorTemplate:
     pendingBadges.includes(ProjectModel.ProjectBadgeLogos.SUBCONTRACTOR_BADGE_LOGO) ||
     pendingBadges.includes(ProjectNewModel.ProjectBadgeTemplates.SUBCONTRACTOR_BADGE_TEMPLATE_FILE)
       ? {
@@ -124,7 +124,7 @@ export const getProjectBadgeResourceRequest = (pendingBadges, fileMap) => ({
           templateFileName: fileMap.subcontractorBadgeTemplate ? (Object.values(fileMap.subcontractorBadgeTemplate)[0] as any)?.file?.name : '',
         }
       : null,
-  visitorTemplateTemplate:
+  visitorTemplate:
     pendingBadges.includes(ProjectModel.ProjectBadgeLogos.VISITOR_BADGE_LOGO) ||
     pendingBadges.includes(ProjectNewModel.ProjectBadgeTemplates.VISITOR_BADGE_TEMPLATE_FILE)
       ? {

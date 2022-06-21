@@ -12,16 +12,16 @@ exports[`ProjectList Component should delete last project in page 1`] = `
       class=""
     >
       <div
-        class="MuiBox-root MuiBox-root-2693"
+        class="MuiBox-root MuiBox-root-2173"
         style="height: 50px; margin-bottom: 13px; width: 100%;"
       >
         <div
-          class="MuiBox-root MuiBox-root-2694"
+          class="MuiBox-root MuiBox-root-2174"
           style="display: flex; align-items: center; justify-content: space-between;"
         >
           <div>
             <div
-              class="MuiBox-root MuiBox-root-2695"
+              class="MuiBox-root MuiBox-root-2175"
               style="display: flex; align-items: center; margin-top: 5px;"
             >
               <h2
@@ -33,7 +33,7 @@ exports[`ProjectList Component should delete last project in page 1`] = `
             </div>
           </div>
           <button
-            class="MuiButtonBase-root MuiButton-root MuiButton-contained makeStyles-createButton-2645 makeStyles-primaryButtonLarge-2647 MuiButton-containedPrimary MuiButton-containedSizeLarge MuiButton-sizeLarge MuiButton-fullWidth"
+            class="MuiButtonBase-root MuiButton-root MuiButton-contained makeStyles-createButton-2125 makeStyles-primaryButtonLarge-2127 MuiButton-containedPrimary MuiButton-containedSizeLarge MuiButton-sizeLarge MuiButton-fullWidth"
             data-testid="create-project-btn"
             tabindex="0"
             type="submit"
@@ -48,7 +48,7 @@ exports[`ProjectList Component should delete last project in page 1`] = `
             />
           </button>
           <button
-            class="MuiButtonBase-root MuiButton-root MuiButton-contained makeStyles-createButton-2645 makeStyles-primaryButtonLarge-2647 MuiButton-containedPrimary MuiButton-containedSizeLarge MuiButton-sizeLarge MuiButton-fullWidth"
+            class="MuiButtonBase-root MuiButton-root MuiButton-contained makeStyles-createButton-2125 makeStyles-primaryButtonLarge-2127 MuiButton-containedPrimary MuiButton-containedSizeLarge MuiButton-sizeLarge MuiButton-fullWidth"
             tabindex="0"
             type="submit"
           >
@@ -64,30 +64,30 @@ exports[`ProjectList Component should delete last project in page 1`] = `
         </div>
       </div>
       <div
-        class="makeStyles-widgetsWrapper-2679"
+        class="makeStyles-widgetsWrapper-2159"
         id="summary-widgets"
       >
         <div
-          class="MuiPaper-root makeStyles-widget-2696 MuiPaper-elevation0 MuiPaper-rounded"
+          class="MuiPaper-root makeStyles-widget-2176 MuiPaper-elevation0 MuiPaper-rounded"
         >
           <span
-            class="makeStyles-totalFont-2697"
+            class="makeStyles-totalFont-2177"
           >
             99
           </span>
           <div
-            class="makeStyles-contentContainer-2700"
+            class="makeStyles-contentContainer-2180"
           >
             <span
-              class="makeStyles-statusFont-2698"
+              class="makeStyles-statusFont-2178"
             >
               Draft
             </span>
             <span
-              class="makeStyles-contentFont-2699"
+              class="makeStyles-contentFont-2179"
             >
               <p
-                class="makeStyles-reviewLink-2602"
+                class="makeStyles-reviewLink-2082"
               >
                 Review
               </p>
@@ -95,26 +95,26 @@ exports[`ProjectList Component should delete last project in page 1`] = `
           </div>
         </div>
         <div
-          class="MuiPaper-root makeStyles-widget-2696 MuiPaper-elevation0 MuiPaper-rounded"
+          class="MuiPaper-root makeStyles-widget-2176 MuiPaper-elevation0 MuiPaper-rounded"
         >
           <span
-            class="makeStyles-totalFont-2697"
+            class="makeStyles-totalFont-2177"
           >
             99
           </span>
           <div
-            class="makeStyles-contentContainer-2700"
+            class="makeStyles-contentContainer-2180"
           >
             <span
-              class="makeStyles-statusFont-2698"
+              class="makeStyles-statusFont-2178"
             >
               Pending Approval
             </span>
             <span
-              class="makeStyles-contentFont-2699"
+              class="makeStyles-contentFont-2179"
             >
               <p
-                class="makeStyles-reviewLink-2602"
+                class="makeStyles-reviewLink-2082"
               >
                 Review
               </p>
@@ -122,26 +122,26 @@ exports[`ProjectList Component should delete last project in page 1`] = `
           </div>
         </div>
         <div
-          class="MuiPaper-root makeStyles-widget-2696 MuiPaper-elevation0 MuiPaper-rounded"
+          class="MuiPaper-root makeStyles-widget-2176 MuiPaper-elevation0 MuiPaper-rounded"
         >
           <span
-            class="makeStyles-totalFont-2697"
+            class="makeStyles-totalFont-2177"
           >
             99
           </span>
           <div
-            class="makeStyles-contentContainer-2700"
+            class="makeStyles-contentContainer-2180"
           >
             <span
-              class="makeStyles-statusFont-2698"
+              class="makeStyles-statusFont-2178"
             >
               Active
             </span>
             <span
-              class="makeStyles-contentFont-2699"
+              class="makeStyles-contentFont-2179"
             >
               <p
-                class="makeStyles-reviewLink-2602"
+                class="makeStyles-reviewLink-2082"
               >
                 Review
               </p>
@@ -150,16 +150,16 @@ exports[`ProjectList Component should delete last project in page 1`] = `
         </div>
       </div>
       <div
-        class="makeStyles-tableWrapper-2604"
+        class="makeStyles-tableWrapper-2084"
       >
         <div
-          class="makeStyles-filterContainer-2612"
+          class="makeStyles-filterContainer-2092"
         >
           <div
-            class="makeStyles-statusFilter-2613"
+            class="makeStyles-statusFilter-2093"
           >
             <button
-              class="MuiButtonBase-root MuiButton-root MuiButton-text makeStyles-activeFilter-2614"
+              class="MuiButtonBase-root MuiButton-root MuiButton-text makeStyles-activeFilter-2094"
               data-testid="filter-status-opt"
               tabindex="0"
               type="button"
@@ -220,23 +220,23 @@ exports[`ProjectList Component should delete last project in page 1`] = `
             </button>
           </div>
           <div
-            class="makeStyles-filterActionsContainer-2615"
+            class="makeStyles-filterActionsContainer-2095"
           >
             <div
-              class="MuiBox-root MuiBox-root-2701 makeStyles-filterStatusContainer-2618"
+              class="MuiBox-root MuiBox-root-2181 makeStyles-filterStatusContainer-2098"
             >
               <div
-                class="makeStyles-floatingFilterWrapper-2624 makeStyles-filterWrapper-2623 makeStyles-buttonContainer-2703 floatingFilterWrapper"
+                class="makeStyles-floatingFilterWrapper-2104 makeStyles-filterWrapper-2103 makeStyles-buttonContainer-2183 floatingFilterWrapper"
               >
                 <span
-                  class="makeStyles-floatingFilterButton-2625"
+                  class="makeStyles-floatingFilterButton-2105"
                   data-testid="controlled-button"
                   tabindex="-1"
                 >
                   <button
                     aria-controls="false"
                     aria-haspopup="true"
-                    class="MuiButtonBase-root MuiButton-root MuiButton-text makeStyles-buttonFilter-2633"
+                    class="MuiButtonBase-root MuiButton-root MuiButton-text makeStyles-buttonFilter-2113"
                     data-testid="button-filter-open"
                     tabindex="0"
                     type="button"
@@ -249,7 +249,7 @@ exports[`ProjectList Component should delete last project in page 1`] = `
                         class="MuiButton-endIcon MuiButton-iconSizeMedium"
                       >
                         <svg
-                          class="makeStyles-dropdownIcon-2627"
+                          class="makeStyles-dropdownIcon-2107"
                         >
                           expand.svg
                         </svg>
@@ -260,23 +260,23 @@ exports[`ProjectList Component should delete last project in page 1`] = `
               </div>
             </div>
             <hr
-              class="MuiDivider-root makeStyles-dividerColor-2628 MuiDivider-flexItem MuiDivider-vertical"
+              class="MuiDivider-root makeStyles-dividerColor-2108 MuiDivider-flexItem MuiDivider-vertical"
             />
             <div
-              class="MuiBox-root MuiBox-root-2707 makeStyles-filterStatusContainer-2618"
+              class="MuiBox-root MuiBox-root-2187 makeStyles-filterStatusContainer-2098"
             >
               <div
-                class="makeStyles-floatingFilterWrapper-2624 makeStyles-filterWrapper-2623  floatingFilterWrapper"
+                class="makeStyles-floatingFilterWrapper-2104 makeStyles-filterWrapper-2103  floatingFilterWrapper"
               >
                 <span
-                  class="makeStyles-floatingFilterButton-2625"
+                  class="makeStyles-floatingFilterButton-2105"
                   data-testid="controlled-button"
                   tabindex="-1"
                 >
                   <button
                     aria-controls="false"
                     aria-haspopup="true"
-                    class="MuiButtonBase-root MuiButton-root MuiButton-text makeStyles-buttonFilter-2633"
+                    class="MuiButtonBase-root MuiButton-root MuiButton-text makeStyles-buttonFilter-2113"
                     data-testid="button-filter-open"
                     tabindex="0"
                     type="button"
@@ -289,7 +289,7 @@ exports[`ProjectList Component should delete last project in page 1`] = `
                         class="MuiButton-endIcon MuiButton-iconSizeMedium"
                       >
                         <svg
-                          class="makeStyles-dropdownIcon-2627"
+                          class="makeStyles-dropdownIcon-2107"
                         >
                           expand.svg
                         </svg>
@@ -347,14 +347,14 @@ exports[`ProjectList Component should delete last project in page 1`] = `
             class="MuiTableBody-root"
           >
             <tr
-              class="MuiTableRow-root WithStyles(ForwardRef(TableRow))-root-2709 makeStyles-clickableRow-2691"
+              class="MuiTableRow-root WithStyles(ForwardRef(TableRow))-root-2189 makeStyles-clickableRow-2171"
               data-testid="project-list-row"
             >
               <td
-                class="MuiTableCell-root MuiTableCell-body makeStyles-listName-2676"
+                class="MuiTableCell-root MuiTableCell-body makeStyles-listName-2156"
               >
                 <div
-                  class="makeStyles-projectRow-2587"
+                  class="makeStyles-projectRow-2067"
                 >
                   <div
                     class="MuiAvatar-root MuiAvatar-circle MuiAvatar-colorDefault"
@@ -371,7 +371,7 @@ exports[`ProjectList Component should delete last project in page 1`] = `
                     </svg>
                   </div>
                   <a
-                    class="Link-root-2710"
+                    class="Link-root-2190"
                     data-testid="project-list-row-item-link"
                     href="/projects/wizard/9164e4c4-6521-47bb-97fd-c75ac02b2cf2"
                     title="Edit"
@@ -381,10 +381,10 @@ exports[`ProjectList Component should delete last project in page 1`] = `
                 </div>
               </td>
               <td
-                class="MuiTableCell-root MuiTableCell-body makeStyles-listName-2676"
+                class="MuiTableCell-root MuiTableCell-body makeStyles-listName-2156"
               >
                 <div
-                  class="makeStyles-projectRow-2587"
+                  class="makeStyles-projectRow-2067"
                 >
                   <div
                     class="MuiAvatar-root MuiAvatar-circle MuiAvatar-colorDefault"
@@ -401,7 +401,7 @@ exports[`ProjectList Component should delete last project in page 1`] = `
                     </svg>
                   </div>
                   <a
-                    class="Link-root-2710"
+                    class="Link-root-2190"
                     href="/projects/wizard-new/9164e4c4-6521-47bb-97fd-c75ac02b2cf2"
                     title="Edit"
                   >
@@ -410,10 +410,10 @@ exports[`ProjectList Component should delete last project in page 1`] = `
                 </div>
               </td>
               <td
-                class="MuiTableCell-root MuiTableCell-body makeStyles-listName-2676"
+                class="MuiTableCell-root MuiTableCell-body makeStyles-listName-2156"
               >
                 <div
-                  class="makeStyles-projectRow-2587"
+                  class="makeStyles-projectRow-2067"
                 >
                   <div
                     class="MuiAvatar-root MuiAvatar-circle MuiAvatar-colorDefault"
@@ -430,7 +430,7 @@ exports[`ProjectList Component should delete last project in page 1`] = `
                     </svg>
                   </div>
                   <a
-                    class="Link-root-2710"
+                    class="Link-root-2190"
                     href="/projects/wizard/9164e4c4-6521-47bb-97fd-c75ac02b2cf2"
                     title="Edit"
                   >
@@ -439,24 +439,24 @@ exports[`ProjectList Component should delete last project in page 1`] = `
                 </div>
               </td>
               <td
-                class="MuiTableCell-root MuiTableCell-body makeStyles-listGeneralText-2678"
+                class="MuiTableCell-root MuiTableCell-body makeStyles-listGeneralText-2158"
               >
                 -
               </td>
               <td
-                class="MuiTableCell-root MuiTableCell-body makeStyles-listGeneralText-2678"
+                class="MuiTableCell-root MuiTableCell-body makeStyles-listGeneralText-2158"
               >
                 Jul 15, 2020 to Jul 15, 2020
               </td>
               <td
-                class="MuiTableCell-root MuiTableCell-body makeStyles-listGeneralText-2678"
+                class="MuiTableCell-root MuiTableCell-body makeStyles-listGeneralText-2158"
               />
             </tr>
           </tbody>
         </table>
         <nav
           aria-label="pagination navigation"
-          class="MuiPagination-root  makeStyles-pagination-2711"
+          class="MuiPagination-root  makeStyles-pagination-2191"
           data-testid="pagination"
         >
           <ul
@@ -536,18 +536,18 @@ exports[`ProjectList Component should delete last project in page 1`] = `
       </div>
     </div>
     <div
-      class="MuiDrawer-root MuiDrawer-docked makeStyles-drawer-2737 makeStyles-close-2748 closed"
+      class="MuiDrawer-root MuiDrawer-docked makeStyles-drawer-2217 makeStyles-close-2228 closed"
       data-testid="project-drawer-detail"
     >
       <div
-        class="MuiPaper-root MuiDrawer-paper makeStyles-drawerPaper-2738 MuiDrawer-paperAnchorRight MuiDrawer-paperAnchorDockedRight MuiPaper-elevation0"
+        class="MuiPaper-root MuiDrawer-paper makeStyles-drawerPaper-2218 MuiDrawer-paperAnchorRight MuiDrawer-paperAnchorDockedRight MuiPaper-elevation0"
         style="webkit-transform: translateX(1024px) translateX(NaNpx); transform: translateX(1024px) translateX(NaNpx); webkit-transition: -webkit-transform 195ms cubic-bezier(0.4, 0, 0.6, 1) 0ms; transition: transform 195ms cubic-bezier(0.4, 0, 0.6, 1) 0ms;"
       >
         <div
-          class="makeStyles-drawerButtonWrapper-2740"
+          class="makeStyles-drawerButtonWrapper-2220"
         >
           <div
-            class="makeStyles-drawerButton-2741"
+            class="makeStyles-drawerButton-2221"
           >
             <button
               class="MuiButtonBase-root MuiButton-root MuiButton-text"
@@ -569,31 +569,31 @@ exports[`ProjectList Component should delete last project in page 1`] = `
             </button>
           </div>
           <div
-            class="makeStyles-drawerHeader-2739"
+            class="makeStyles-drawerHeader-2219"
           >
             <p
-              class="MuiTypography-root makeStyles-drawerTitle-2742 MuiTypography-body1 MuiTypography-colorPrimary MuiTypography-alignLeft"
+              class="MuiTypography-root makeStyles-drawerTitle-2222 MuiTypography-body1 MuiTypography-colorPrimary MuiTypography-alignLeft"
             >
               Project Information
             </p>
           </div>
         </div>
         <div
-          class="makeStyles-listDetail-2683"
+          class="makeStyles-listDetail-2163"
         >
           <div
-            class="makeStyles-company-2684"
+            class="makeStyles-company-2164"
           >
             <div
-              class="makeStyles-drawerText-2744"
+              class="makeStyles-drawerText-2224"
             >
               <p
-                class="MuiTypography-root makeStyles-listAccent-2685 makeStyles-entityTitle-2682 MuiTypography-body1"
+                class="MuiTypography-root makeStyles-listAccent-2165 makeStyles-entityTitle-2162 MuiTypography-body1"
               >
                 Project Name
               </p>
               <div
-                class="makeStyles-drawerMainText-2745"
+                class="makeStyles-drawerMainText-2225"
               >
                 <span>
                   category-1
@@ -607,17 +607,17 @@ exports[`ProjectList Component should delete last project in page 1`] = `
               </div>
             </div>
             <div
-              class="makeStyles-drawerSection-2743 makeStyles-drawerProjectColumn-2751"
+              class="makeStyles-drawerSection-2223 makeStyles-drawerProjectColumn-2231"
             >
               <div
-                class="makeStyles-projectWrapper-2749"
+                class="makeStyles-projectWrapper-2229"
                 data-testid=""
               >
                 <svg>
                   location.svg
                 </svg>
                 <div
-                  class="makeStyles-drawerText-2744 makeStyles-drawerTextSeparation-2746"
+                  class="makeStyles-drawerText-2224 makeStyles-drawerTextSeparation-2226"
                 >
                   <span>
                     -
@@ -626,17 +626,17 @@ exports[`ProjectList Component should delete last project in page 1`] = `
               </div>
             </div>
             <div
-              class="makeStyles-drawerSection-2743 makeStyles-drawerProjectColumn-2751"
+              class="makeStyles-drawerSection-2223 makeStyles-drawerProjectColumn-2231"
             >
               <div
-                class="makeStyles-projectWrapper-2749"
+                class="makeStyles-projectWrapper-2229"
                 data-testid=""
               >
                 <svg>
                   location.svg
                 </svg>
                 <div
-                  class="makeStyles-drawerText-2744 makeStyles-drawerTextSeparation-2746"
+                  class="makeStyles-drawerText-2224 makeStyles-drawerTextSeparation-2226"
                 >
                   <span>
                     -
@@ -645,17 +645,17 @@ exports[`ProjectList Component should delete last project in page 1`] = `
               </div>
             </div>
             <div
-              class="makeStyles-drawerSection-2743 makeStyles-drawerProjectColumn-2751"
+              class="makeStyles-drawerSection-2223 makeStyles-drawerProjectColumn-2231"
             >
               <div
-                class="makeStyles-projectWrapper-2749"
+                class="makeStyles-projectWrapper-2229"
                 data-testid=""
               >
                 <svg>
                   location.svg
                 </svg>
                 <div
-                  class="makeStyles-drawerText-2744 makeStyles-drawerTextSeparation-2746"
+                  class="makeStyles-drawerText-2224 makeStyles-drawerTextSeparation-2226"
                 >
                   <span>
                     -
@@ -664,22 +664,22 @@ exports[`ProjectList Component should delete last project in page 1`] = `
               </div>
             </div>
             <div
-              class="makeStyles-drawerSection-2743"
+              class="makeStyles-drawerSection-2223"
             >
               <div
-                class="makeStyles-drawerColumnDirection-2752"
+                class="makeStyles-drawerColumnDirection-2232"
               >
                 <div
-                  class="makeStyles-drawerRowDirection-2753"
+                  class="makeStyles-drawerRowDirection-2233"
                 >
                   <svg>
                     monetization.svg
                   </svg>
                   <div
-                    class="makeStyles-drawerText-2744 makeStyles-drawerTextSeparation-2746"
+                    class="makeStyles-drawerText-2224 makeStyles-drawerTextSeparation-2226"
                   >
                     <span
-                      class="makeStyles-listAccent-2685"
+                      class="makeStyles-listAccent-2165"
                     >
                       Badge Model
                     </span>
@@ -703,10 +703,10 @@ exports[`ProjectList Component should delete last project in page 1`] = `
             </div>
           </div>
           <hr
-            class="MuiDivider-root makeStyles-drawerDivider-2747"
+            class="MuiDivider-root makeStyles-drawerDivider-2227"
           />
           <div
-            class="makeStyles-ctaWrapper-2686"
+            class="makeStyles-ctaWrapper-2166"
           >
             <span
               class=""
@@ -715,7 +715,7 @@ exports[`ProjectList Component should delete last project in page 1`] = `
             >
               <a
                 aria-disabled="false"
-                class="MuiButtonBase-root MuiButton-root MuiButton-outlined makeStyles-drawerCTA-2652 makeStyles-borderPrimaryButton-2644 makeStyles-primaryButtonPadding-2646"
+                class="MuiButtonBase-root MuiButton-root MuiButton-outlined makeStyles-drawerCTA-2132 makeStyles-borderPrimaryButton-2124 makeStyles-primaryButtonPadding-2126"
                 data-testid="drawerProjectButton"
                 href="/projects/wizard/9164e4c4-6521-47bb-97fd-c75ac02b2cf2"
                 tabindex="0"
@@ -733,7 +733,7 @@ exports[`ProjectList Component should delete last project in page 1`] = `
               tabindex="-1"
             >
               <button
-                class="MuiButtonBase-root MuiButton-root MuiButton-outlined makeStyles-drawerCTA-2652 makeStyles-warningButton-2653"
+                class="MuiButtonBase-root MuiButton-root MuiButton-outlined makeStyles-drawerCTA-2132 makeStyles-warningButton-2133"
                 data-testid="deleteProjectButton"
                 tabindex="0"
                 type="button"
@@ -765,16 +765,16 @@ exports[`ProjectList Component should delete project 1`] = `
       class=""
     >
       <div
-        class="MuiBox-root MuiBox-root-2521"
+        class="MuiBox-root MuiBox-root-2001"
         style="height: 50px; margin-bottom: 13px; width: 100%;"
       >
         <div
-          class="MuiBox-root MuiBox-root-2522"
+          class="MuiBox-root MuiBox-root-2002"
           style="display: flex; align-items: center; justify-content: space-between;"
         >
           <div>
             <div
-              class="MuiBox-root MuiBox-root-2523"
+              class="MuiBox-root MuiBox-root-2003"
               style="display: flex; align-items: center; margin-top: 5px;"
             >
               <h2
@@ -786,7 +786,7 @@ exports[`ProjectList Component should delete project 1`] = `
             </div>
           </div>
           <button
-            class="MuiButtonBase-root MuiButton-root MuiButton-contained makeStyles-createButton-2473 makeStyles-primaryButtonLarge-2475 MuiButton-containedPrimary MuiButton-containedSizeLarge MuiButton-sizeLarge MuiButton-fullWidth"
+            class="MuiButtonBase-root MuiButton-root MuiButton-contained makeStyles-createButton-1953 makeStyles-primaryButtonLarge-1955 MuiButton-containedPrimary MuiButton-containedSizeLarge MuiButton-sizeLarge MuiButton-fullWidth"
             data-testid="create-project-btn"
             tabindex="0"
             type="submit"
@@ -801,7 +801,7 @@ exports[`ProjectList Component should delete project 1`] = `
             />
           </button>
           <button
-            class="MuiButtonBase-root MuiButton-root MuiButton-contained makeStyles-createButton-2473 makeStyles-primaryButtonLarge-2475 MuiButton-containedPrimary MuiButton-containedSizeLarge MuiButton-sizeLarge MuiButton-fullWidth"
+            class="MuiButtonBase-root MuiButton-root MuiButton-contained makeStyles-createButton-1953 makeStyles-primaryButtonLarge-1955 MuiButton-containedPrimary MuiButton-containedSizeLarge MuiButton-sizeLarge MuiButton-fullWidth"
             tabindex="0"
             type="submit"
           >
@@ -817,30 +817,30 @@ exports[`ProjectList Component should delete project 1`] = `
         </div>
       </div>
       <div
-        class="makeStyles-widgetsWrapper-2507"
+        class="makeStyles-widgetsWrapper-1987"
         id="summary-widgets"
       >
         <div
-          class="MuiPaper-root makeStyles-widget-2524 MuiPaper-elevation0 MuiPaper-rounded"
+          class="MuiPaper-root makeStyles-widget-2004 MuiPaper-elevation0 MuiPaper-rounded"
         >
           <span
-            class="makeStyles-totalFont-2525"
+            class="makeStyles-totalFont-2005"
           >
             99
           </span>
           <div
-            class="makeStyles-contentContainer-2528"
+            class="makeStyles-contentContainer-2008"
           >
             <span
-              class="makeStyles-statusFont-2526"
+              class="makeStyles-statusFont-2006"
             >
               Draft
             </span>
             <span
-              class="makeStyles-contentFont-2527"
+              class="makeStyles-contentFont-2007"
             >
               <p
-                class="makeStyles-reviewLink-2430"
+                class="makeStyles-reviewLink-1910"
               >
                 Review
               </p>
@@ -848,26 +848,26 @@ exports[`ProjectList Component should delete project 1`] = `
           </div>
         </div>
         <div
-          class="MuiPaper-root makeStyles-widget-2524 MuiPaper-elevation0 MuiPaper-rounded"
+          class="MuiPaper-root makeStyles-widget-2004 MuiPaper-elevation0 MuiPaper-rounded"
         >
           <span
-            class="makeStyles-totalFont-2525"
+            class="makeStyles-totalFont-2005"
           >
             99
           </span>
           <div
-            class="makeStyles-contentContainer-2528"
+            class="makeStyles-contentContainer-2008"
           >
             <span
-              class="makeStyles-statusFont-2526"
+              class="makeStyles-statusFont-2006"
             >
               Pending Approval
             </span>
             <span
-              class="makeStyles-contentFont-2527"
+              class="makeStyles-contentFont-2007"
             >
               <p
-                class="makeStyles-reviewLink-2430"
+                class="makeStyles-reviewLink-1910"
               >
                 Review
               </p>
@@ -875,26 +875,26 @@ exports[`ProjectList Component should delete project 1`] = `
           </div>
         </div>
         <div
-          class="MuiPaper-root makeStyles-widget-2524 MuiPaper-elevation0 MuiPaper-rounded"
+          class="MuiPaper-root makeStyles-widget-2004 MuiPaper-elevation0 MuiPaper-rounded"
         >
           <span
-            class="makeStyles-totalFont-2525"
+            class="makeStyles-totalFont-2005"
           >
             99
           </span>
           <div
-            class="makeStyles-contentContainer-2528"
+            class="makeStyles-contentContainer-2008"
           >
             <span
-              class="makeStyles-statusFont-2526"
+              class="makeStyles-statusFont-2006"
             >
               Active
             </span>
             <span
-              class="makeStyles-contentFont-2527"
+              class="makeStyles-contentFont-2007"
             >
               <p
-                class="makeStyles-reviewLink-2430"
+                class="makeStyles-reviewLink-1910"
               >
                 Review
               </p>
@@ -903,16 +903,16 @@ exports[`ProjectList Component should delete project 1`] = `
         </div>
       </div>
       <div
-        class="makeStyles-tableWrapper-2432"
+        class="makeStyles-tableWrapper-1912"
       >
         <div
-          class="makeStyles-filterContainer-2440"
+          class="makeStyles-filterContainer-1920"
         >
           <div
-            class="makeStyles-statusFilter-2441"
+            class="makeStyles-statusFilter-1921"
           >
             <button
-              class="MuiButtonBase-root MuiButton-root MuiButton-text makeStyles-activeFilter-2442"
+              class="MuiButtonBase-root MuiButton-root MuiButton-text makeStyles-activeFilter-1922"
               data-testid="filter-status-opt"
               tabindex="0"
               type="button"
@@ -973,23 +973,23 @@ exports[`ProjectList Component should delete project 1`] = `
             </button>
           </div>
           <div
-            class="makeStyles-filterActionsContainer-2443"
+            class="makeStyles-filterActionsContainer-1923"
           >
             <div
-              class="MuiBox-root MuiBox-root-2529 makeStyles-filterStatusContainer-2446"
+              class="MuiBox-root MuiBox-root-2009 makeStyles-filterStatusContainer-1926"
             >
               <div
-                class="makeStyles-floatingFilterWrapper-2452 makeStyles-filterWrapper-2451 makeStyles-buttonContainer-2531 floatingFilterWrapper"
+                class="makeStyles-floatingFilterWrapper-1932 makeStyles-filterWrapper-1931 makeStyles-buttonContainer-2011 floatingFilterWrapper"
               >
                 <span
-                  class="makeStyles-floatingFilterButton-2453"
+                  class="makeStyles-floatingFilterButton-1933"
                   data-testid="controlled-button"
                   tabindex="-1"
                 >
                   <button
                     aria-controls="false"
                     aria-haspopup="true"
-                    class="MuiButtonBase-root MuiButton-root MuiButton-text makeStyles-buttonFilter-2461"
+                    class="MuiButtonBase-root MuiButton-root MuiButton-text makeStyles-buttonFilter-1941"
                     data-testid="button-filter-open"
                     tabindex="0"
                     type="button"
@@ -1002,7 +1002,7 @@ exports[`ProjectList Component should delete project 1`] = `
                         class="MuiButton-endIcon MuiButton-iconSizeMedium"
                       >
                         <svg
-                          class="makeStyles-dropdownIcon-2455"
+                          class="makeStyles-dropdownIcon-1935"
                         >
                           expand.svg
                         </svg>
@@ -1013,23 +1013,23 @@ exports[`ProjectList Component should delete project 1`] = `
               </div>
             </div>
             <hr
-              class="MuiDivider-root makeStyles-dividerColor-2456 MuiDivider-flexItem MuiDivider-vertical"
+              class="MuiDivider-root makeStyles-dividerColor-1936 MuiDivider-flexItem MuiDivider-vertical"
             />
             <div
-              class="MuiBox-root MuiBox-root-2535 makeStyles-filterStatusContainer-2446"
+              class="MuiBox-root MuiBox-root-2015 makeStyles-filterStatusContainer-1926"
             >
               <div
-                class="makeStyles-floatingFilterWrapper-2452 makeStyles-filterWrapper-2451  floatingFilterWrapper"
+                class="makeStyles-floatingFilterWrapper-1932 makeStyles-filterWrapper-1931  floatingFilterWrapper"
               >
                 <span
-                  class="makeStyles-floatingFilterButton-2453"
+                  class="makeStyles-floatingFilterButton-1933"
                   data-testid="controlled-button"
                   tabindex="-1"
                 >
                   <button
                     aria-controls="false"
                     aria-haspopup="true"
-                    class="MuiButtonBase-root MuiButton-root MuiButton-text makeStyles-buttonFilter-2461"
+                    class="MuiButtonBase-root MuiButton-root MuiButton-text makeStyles-buttonFilter-1941"
                     data-testid="button-filter-open"
                     tabindex="0"
                     type="button"
@@ -1042,7 +1042,7 @@ exports[`ProjectList Component should delete project 1`] = `
                         class="MuiButton-endIcon MuiButton-iconSizeMedium"
                       >
                         <svg
-                          class="makeStyles-dropdownIcon-2455"
+                          class="makeStyles-dropdownIcon-1935"
                         >
                           expand.svg
                         </svg>
@@ -1100,14 +1100,14 @@ exports[`ProjectList Component should delete project 1`] = `
             class="MuiTableBody-root"
           >
             <tr
-              class="MuiTableRow-root WithStyles(ForwardRef(TableRow))-root-2537 makeStyles-clickableRow-2519"
+              class="MuiTableRow-root WithStyles(ForwardRef(TableRow))-root-2017 makeStyles-clickableRow-1999"
               data-testid="project-list-row"
             >
               <td
-                class="MuiTableCell-root MuiTableCell-body makeStyles-listName-2504"
+                class="MuiTableCell-root MuiTableCell-body makeStyles-listName-1984"
               >
                 <div
-                  class="makeStyles-projectRow-2415"
+                  class="makeStyles-projectRow-1895"
                 >
                   <div
                     class="MuiAvatar-root MuiAvatar-circle MuiAvatar-colorDefault"
@@ -1124,7 +1124,7 @@ exports[`ProjectList Component should delete project 1`] = `
                     </svg>
                   </div>
                   <a
-                    class="Link-root-2538"
+                    class="Link-root-2018"
                     data-testid="project-list-row-item-link"
                     href="/projects/wizard/9164e4c4-6521-47bb-97fd-c75ac02b2cf2"
                     title="Edit"
@@ -1134,10 +1134,10 @@ exports[`ProjectList Component should delete project 1`] = `
                 </div>
               </td>
               <td
-                class="MuiTableCell-root MuiTableCell-body makeStyles-listName-2504"
+                class="MuiTableCell-root MuiTableCell-body makeStyles-listName-1984"
               >
                 <div
-                  class="makeStyles-projectRow-2415"
+                  class="makeStyles-projectRow-1895"
                 >
                   <div
                     class="MuiAvatar-root MuiAvatar-circle MuiAvatar-colorDefault"
@@ -1154,7 +1154,7 @@ exports[`ProjectList Component should delete project 1`] = `
                     </svg>
                   </div>
                   <a
-                    class="Link-root-2538"
+                    class="Link-root-2018"
                     href="/projects/wizard-new/9164e4c4-6521-47bb-97fd-c75ac02b2cf2"
                     title="Edit"
                   >
@@ -1163,10 +1163,10 @@ exports[`ProjectList Component should delete project 1`] = `
                 </div>
               </td>
               <td
-                class="MuiTableCell-root MuiTableCell-body makeStyles-listName-2504"
+                class="MuiTableCell-root MuiTableCell-body makeStyles-listName-1984"
               >
                 <div
-                  class="makeStyles-projectRow-2415"
+                  class="makeStyles-projectRow-1895"
                 >
                   <div
                     class="MuiAvatar-root MuiAvatar-circle MuiAvatar-colorDefault"
@@ -1183,7 +1183,7 @@ exports[`ProjectList Component should delete project 1`] = `
                     </svg>
                   </div>
                   <a
-                    class="Link-root-2538"
+                    class="Link-root-2018"
                     href="/projects/wizard/9164e4c4-6521-47bb-97fd-c75ac02b2cf2"
                     title="Edit"
                   >
@@ -1192,28 +1192,28 @@ exports[`ProjectList Component should delete project 1`] = `
                 </div>
               </td>
               <td
-                class="MuiTableCell-root MuiTableCell-body makeStyles-listGeneralText-2506"
+                class="MuiTableCell-root MuiTableCell-body makeStyles-listGeneralText-1986"
               >
                 -
               </td>
               <td
-                class="MuiTableCell-root MuiTableCell-body makeStyles-listGeneralText-2506"
+                class="MuiTableCell-root MuiTableCell-body makeStyles-listGeneralText-1986"
               >
                 Jul 15, 2020 to Jul 15, 2020
               </td>
               <td
-                class="MuiTableCell-root MuiTableCell-body makeStyles-listGeneralText-2506"
+                class="MuiTableCell-root MuiTableCell-body makeStyles-listGeneralText-1986"
               />
             </tr>
             <tr
-              class="MuiTableRow-root WithStyles(ForwardRef(TableRow))-root-2537 makeStyles-clickableRow-2519"
+              class="MuiTableRow-root WithStyles(ForwardRef(TableRow))-root-2017 makeStyles-clickableRow-1999"
               data-testid="project-list-row"
             >
               <td
-                class="MuiTableCell-root MuiTableCell-body makeStyles-listName-2504"
+                class="MuiTableCell-root MuiTableCell-body makeStyles-listName-1984"
               >
                 <div
-                  class="makeStyles-projectRow-2415"
+                  class="makeStyles-projectRow-1895"
                 >
                   <div
                     class="MuiAvatar-root MuiAvatar-circle MuiAvatar-colorDefault"
@@ -1230,7 +1230,7 @@ exports[`ProjectList Component should delete project 1`] = `
                     </svg>
                   </div>
                   <a
-                    class="Link-root-2538"
+                    class="Link-root-2018"
                     data-testid="project-list-row-item-link"
                     href="/projects/wizard/8aa1c4c4-6521-47bb-27fd-af5ac02b2cd8/review"
                     title="Review"
@@ -1240,10 +1240,10 @@ exports[`ProjectList Component should delete project 1`] = `
                 </div>
               </td>
               <td
-                class="MuiTableCell-root MuiTableCell-body makeStyles-listName-2504"
+                class="MuiTableCell-root MuiTableCell-body makeStyles-listName-1984"
               >
                 <div
-                  class="makeStyles-projectRow-2415"
+                  class="makeStyles-projectRow-1895"
                 >
                   <div
                     class="MuiAvatar-root MuiAvatar-circle MuiAvatar-colorDefault"
@@ -1260,7 +1260,7 @@ exports[`ProjectList Component should delete project 1`] = `
                     </svg>
                   </div>
                   <a
-                    class="Link-root-2538"
+                    class="Link-root-2018"
                     href="/projects/wizard-new/8aa1c4c4-6521-47bb-27fd-af5ac02b2cd8"
                     title="Review"
                   >
@@ -1269,10 +1269,10 @@ exports[`ProjectList Component should delete project 1`] = `
                 </div>
               </td>
               <td
-                class="MuiTableCell-root MuiTableCell-body makeStyles-listName-2504"
+                class="MuiTableCell-root MuiTableCell-body makeStyles-listName-1984"
               >
                 <div
-                  class="makeStyles-projectRow-2415"
+                  class="makeStyles-projectRow-1895"
                 >
                   <div
                     class="MuiAvatar-root MuiAvatar-circle MuiAvatar-colorDefault"
@@ -1289,7 +1289,7 @@ exports[`ProjectList Component should delete project 1`] = `
                     </svg>
                   </div>
                   <a
-                    class="Link-root-2538"
+                    class="Link-root-2018"
                     href="/projects/wizard/8aa1c4c4-6521-47bb-27fd-af5ac02b2cd8/review"
                     title="Review"
                   >
@@ -1298,28 +1298,28 @@ exports[`ProjectList Component should delete project 1`] = `
                 </div>
               </td>
               <td
-                class="MuiTableCell-root MuiTableCell-body makeStyles-listGeneralText-2506"
+                class="MuiTableCell-root MuiTableCell-body makeStyles-listGeneralText-1986"
               >
                 -
               </td>
               <td
-                class="MuiTableCell-root MuiTableCell-body makeStyles-listGeneralText-2506"
+                class="MuiTableCell-root MuiTableCell-body makeStyles-listGeneralText-1986"
               >
                 Jul 15, 2020 to Jul 15, 2020
               </td>
               <td
-                class="MuiTableCell-root MuiTableCell-body makeStyles-listGeneralText-2506"
+                class="MuiTableCell-root MuiTableCell-body makeStyles-listGeneralText-1986"
               />
             </tr>
             <tr
-              class="MuiTableRow-root WithStyles(ForwardRef(TableRow))-root-2537 makeStyles-clickableRow-2519"
+              class="MuiTableRow-root WithStyles(ForwardRef(TableRow))-root-2017 makeStyles-clickableRow-1999"
               data-testid="project-list-row"
             >
               <td
-                class="MuiTableCell-root MuiTableCell-body makeStyles-listName-2504"
+                class="MuiTableCell-root MuiTableCell-body makeStyles-listName-1984"
               >
                 <div
-                  class="makeStyles-projectRow-2415"
+                  class="makeStyles-projectRow-1895"
                 >
                   <div
                     class="MuiAvatar-root MuiAvatar-circle MuiAvatar-colorDefault"
@@ -1336,7 +1336,7 @@ exports[`ProjectList Component should delete project 1`] = `
                     </svg>
                   </div>
                   <a
-                    class="Link-root-2538"
+                    class="Link-root-2018"
                     data-testid="project-list-row-item-link"
                     href="/projects/wizard/cbb1c4c4-2221-f7bb-27fd-ff5ac02b2cda/review"
                     title="Review"
@@ -1346,10 +1346,10 @@ exports[`ProjectList Component should delete project 1`] = `
                 </div>
               </td>
               <td
-                class="MuiTableCell-root MuiTableCell-body makeStyles-listName-2504"
+                class="MuiTableCell-root MuiTableCell-body makeStyles-listName-1984"
               >
                 <div
-                  class="makeStyles-projectRow-2415"
+                  class="makeStyles-projectRow-1895"
                 >
                   <div
                     class="MuiAvatar-root MuiAvatar-circle MuiAvatar-colorDefault"
@@ -1366,7 +1366,7 @@ exports[`ProjectList Component should delete project 1`] = `
                     </svg>
                   </div>
                   <a
-                    class="Link-root-2538"
+                    class="Link-root-2018"
                     href="/projects/wizard-new/cbb1c4c4-2221-f7bb-27fd-ff5ac02b2cda"
                     title="Review"
                   >
@@ -1375,10 +1375,10 @@ exports[`ProjectList Component should delete project 1`] = `
                 </div>
               </td>
               <td
-                class="MuiTableCell-root MuiTableCell-body makeStyles-listName-2504"
+                class="MuiTableCell-root MuiTableCell-body makeStyles-listName-1984"
               >
                 <div
-                  class="makeStyles-projectRow-2415"
+                  class="makeStyles-projectRow-1895"
                 >
                   <div
                     class="MuiAvatar-root MuiAvatar-circle MuiAvatar-colorDefault"
@@ -1395,7 +1395,7 @@ exports[`ProjectList Component should delete project 1`] = `
                     </svg>
                   </div>
                   <a
-                    class="Link-root-2538"
+                    class="Link-root-2018"
                     href="/projects/wizard/cbb1c4c4-2221-f7bb-27fd-ff5ac02b2cda/review"
                     title="Review"
                   >
@@ -1404,28 +1404,28 @@ exports[`ProjectList Component should delete project 1`] = `
                 </div>
               </td>
               <td
-                class="MuiTableCell-root MuiTableCell-body makeStyles-listGeneralText-2506"
+                class="MuiTableCell-root MuiTableCell-body makeStyles-listGeneralText-1986"
               >
                 -
               </td>
               <td
-                class="MuiTableCell-root MuiTableCell-body makeStyles-listGeneralText-2506"
+                class="MuiTableCell-root MuiTableCell-body makeStyles-listGeneralText-1986"
               >
                 Jul 15, 2020 to Jul 15, 2020
               </td>
               <td
-                class="MuiTableCell-root MuiTableCell-body makeStyles-listGeneralText-2506"
+                class="MuiTableCell-root MuiTableCell-body makeStyles-listGeneralText-1986"
               />
             </tr>
             <tr
-              class="MuiTableRow-root WithStyles(ForwardRef(TableRow))-root-2537 makeStyles-clickableRow-2519"
+              class="MuiTableRow-root WithStyles(ForwardRef(TableRow))-root-2017 makeStyles-clickableRow-1999"
               data-testid="project-list-row"
             >
               <td
-                class="MuiTableCell-root MuiTableCell-body makeStyles-listName-2504"
+                class="MuiTableCell-root MuiTableCell-body makeStyles-listName-1984"
               >
                 <div
-                  class="makeStyles-projectRow-2415"
+                  class="makeStyles-projectRow-1895"
                 >
                   <div
                     class="MuiAvatar-root MuiAvatar-circle MuiAvatar-colorDefault"
@@ -1442,7 +1442,7 @@ exports[`ProjectList Component should delete project 1`] = `
                     </svg>
                   </div>
                   <a
-                    class="Link-root-2538"
+                    class="Link-root-2018"
                     data-testid="project-list-row-item-link"
                     href="/projects/wizard/820ccbf5-03aa-4797-9001-d79643c3d35d"
                     title="Edit"
@@ -1452,10 +1452,10 @@ exports[`ProjectList Component should delete project 1`] = `
                 </div>
               </td>
               <td
-                class="MuiTableCell-root MuiTableCell-body makeStyles-listName-2504"
+                class="MuiTableCell-root MuiTableCell-body makeStyles-listName-1984"
               >
                 <div
-                  class="makeStyles-projectRow-2415"
+                  class="makeStyles-projectRow-1895"
                 >
                   <div
                     class="MuiAvatar-root MuiAvatar-circle MuiAvatar-colorDefault"
@@ -1472,7 +1472,7 @@ exports[`ProjectList Component should delete project 1`] = `
                     </svg>
                   </div>
                   <a
-                    class="Link-root-2538"
+                    class="Link-root-2018"
                     href="/projects/wizard-new/820ccbf5-03aa-4797-9001-d79643c3d35d"
                     title="Edit"
                   >
@@ -1481,10 +1481,10 @@ exports[`ProjectList Component should delete project 1`] = `
                 </div>
               </td>
               <td
-                class="MuiTableCell-root MuiTableCell-body makeStyles-listName-2504"
+                class="MuiTableCell-root MuiTableCell-body makeStyles-listName-1984"
               >
                 <div
-                  class="makeStyles-projectRow-2415"
+                  class="makeStyles-projectRow-1895"
                 >
                   <div
                     class="MuiAvatar-root MuiAvatar-circle MuiAvatar-colorDefault"
@@ -1501,7 +1501,7 @@ exports[`ProjectList Component should delete project 1`] = `
                     </svg>
                   </div>
                   <a
-                    class="Link-root-2538"
+                    class="Link-root-2018"
                     href="/projects/wizard/820ccbf5-03aa-4797-9001-d79643c3d35d"
                     title="Edit"
                   >
@@ -1510,7 +1510,7 @@ exports[`ProjectList Component should delete project 1`] = `
                 </div>
               </td>
               <td
-                class="MuiTableCell-root MuiTableCell-body makeStyles-listGeneralText-2506"
+                class="MuiTableCell-root MuiTableCell-body makeStyles-listGeneralText-1986"
               >
                 <span>
                   line 1
@@ -1520,19 +1520,19 @@ exports[`ProjectList Component should delete project 1`] = `
                 </span>
               </td>
               <td
-                class="MuiTableCell-root MuiTableCell-body makeStyles-listGeneralText-2506"
+                class="MuiTableCell-root MuiTableCell-body makeStyles-listGeneralText-1986"
               >
                 Jul 15, 2020 to Jul 15, 2020
               </td>
               <td
-                class="MuiTableCell-root MuiTableCell-body makeStyles-listGeneralText-2506"
+                class="MuiTableCell-root MuiTableCell-body makeStyles-listGeneralText-1986"
               />
             </tr>
           </tbody>
         </table>
         <nav
           aria-label="pagination navigation"
-          class="MuiPagination-root  makeStyles-pagination-2542"
+          class="MuiPagination-root  makeStyles-pagination-2022"
           data-testid="pagination"
         >
           <ul
@@ -1612,18 +1612,18 @@ exports[`ProjectList Component should delete project 1`] = `
       </div>
     </div>
     <div
-      class="MuiDrawer-root MuiDrawer-docked makeStyles-drawer-2568 makeStyles-close-2579 closed"
+      class="MuiDrawer-root MuiDrawer-docked makeStyles-drawer-2048 makeStyles-close-2059 closed"
       data-testid="project-drawer-detail"
     >
       <div
-        class="MuiPaper-root MuiDrawer-paper makeStyles-drawerPaper-2569 MuiDrawer-paperAnchorRight MuiDrawer-paperAnchorDockedRight MuiPaper-elevation0"
+        class="MuiPaper-root MuiDrawer-paper makeStyles-drawerPaper-2049 MuiDrawer-paperAnchorRight MuiDrawer-paperAnchorDockedRight MuiPaper-elevation0"
         style="webkit-transform: translateX(1024px) translateX(NaNpx); transform: translateX(1024px) translateX(NaNpx); webkit-transition: -webkit-transform 195ms cubic-bezier(0.4, 0, 0.6, 1) 0ms; transition: transform 195ms cubic-bezier(0.4, 0, 0.6, 1) 0ms;"
       >
         <div
-          class="makeStyles-drawerButtonWrapper-2571"
+          class="makeStyles-drawerButtonWrapper-2051"
         >
           <div
-            class="makeStyles-drawerButton-2572"
+            class="makeStyles-drawerButton-2052"
           >
             <button
               class="MuiButtonBase-root MuiButton-root MuiButton-text"
@@ -1645,31 +1645,31 @@ exports[`ProjectList Component should delete project 1`] = `
             </button>
           </div>
           <div
-            class="makeStyles-drawerHeader-2570"
+            class="makeStyles-drawerHeader-2050"
           >
             <p
-              class="MuiTypography-root makeStyles-drawerTitle-2573 MuiTypography-body1 MuiTypography-colorPrimary MuiTypography-alignLeft"
+              class="MuiTypography-root makeStyles-drawerTitle-2053 MuiTypography-body1 MuiTypography-colorPrimary MuiTypography-alignLeft"
             >
               Project Information
             </p>
           </div>
         </div>
         <div
-          class="makeStyles-listDetail-2511"
+          class="makeStyles-listDetail-1991"
         >
           <div
-            class="makeStyles-company-2512"
+            class="makeStyles-company-1992"
           >
             <div
-              class="makeStyles-drawerText-2575"
+              class="makeStyles-drawerText-2055"
             >
               <p
-                class="MuiTypography-root makeStyles-listAccent-2513 makeStyles-entityTitle-2510 MuiTypography-body1"
+                class="MuiTypography-root makeStyles-listAccent-1993 makeStyles-entityTitle-1990 MuiTypography-body1"
               >
                 Project Name
               </p>
               <div
-                class="makeStyles-drawerMainText-2576"
+                class="makeStyles-drawerMainText-2056"
               >
                 <span>
                   category-1
@@ -1683,17 +1683,17 @@ exports[`ProjectList Component should delete project 1`] = `
               </div>
             </div>
             <div
-              class="makeStyles-drawerSection-2574 makeStyles-drawerProjectColumn-2582"
+              class="makeStyles-drawerSection-2054 makeStyles-drawerProjectColumn-2062"
             >
               <div
-                class="makeStyles-projectWrapper-2580"
+                class="makeStyles-projectWrapper-2060"
                 data-testid=""
               >
                 <svg>
                   location.svg
                 </svg>
                 <div
-                  class="makeStyles-drawerText-2575 makeStyles-drawerTextSeparation-2577"
+                  class="makeStyles-drawerText-2055 makeStyles-drawerTextSeparation-2057"
                 >
                   <span>
                     -
@@ -1702,17 +1702,17 @@ exports[`ProjectList Component should delete project 1`] = `
               </div>
             </div>
             <div
-              class="makeStyles-drawerSection-2574 makeStyles-drawerProjectColumn-2582"
+              class="makeStyles-drawerSection-2054 makeStyles-drawerProjectColumn-2062"
             >
               <div
-                class="makeStyles-projectWrapper-2580"
+                class="makeStyles-projectWrapper-2060"
                 data-testid=""
               >
                 <svg>
                   location.svg
                 </svg>
                 <div
-                  class="makeStyles-drawerText-2575 makeStyles-drawerTextSeparation-2577"
+                  class="makeStyles-drawerText-2055 makeStyles-drawerTextSeparation-2057"
                 >
                   <span>
                     -
@@ -1721,17 +1721,17 @@ exports[`ProjectList Component should delete project 1`] = `
               </div>
             </div>
             <div
-              class="makeStyles-drawerSection-2574 makeStyles-drawerProjectColumn-2582"
+              class="makeStyles-drawerSection-2054 makeStyles-drawerProjectColumn-2062"
             >
               <div
-                class="makeStyles-projectWrapper-2580"
+                class="makeStyles-projectWrapper-2060"
                 data-testid=""
               >
                 <svg>
                   location.svg
                 </svg>
                 <div
-                  class="makeStyles-drawerText-2575 makeStyles-drawerTextSeparation-2577"
+                  class="makeStyles-drawerText-2055 makeStyles-drawerTextSeparation-2057"
                 >
                   <span>
                     -
@@ -1740,22 +1740,22 @@ exports[`ProjectList Component should delete project 1`] = `
               </div>
             </div>
             <div
-              class="makeStyles-drawerSection-2574"
+              class="makeStyles-drawerSection-2054"
             >
               <div
-                class="makeStyles-drawerColumnDirection-2583"
+                class="makeStyles-drawerColumnDirection-2063"
               >
                 <div
-                  class="makeStyles-drawerRowDirection-2584"
+                  class="makeStyles-drawerRowDirection-2064"
                 >
                   <svg>
                     monetization.svg
                   </svg>
                   <div
-                    class="makeStyles-drawerText-2575 makeStyles-drawerTextSeparation-2577"
+                    class="makeStyles-drawerText-2055 makeStyles-drawerTextSeparation-2057"
                   >
                     <span
-                      class="makeStyles-listAccent-2513"
+                      class="makeStyles-listAccent-1993"
                     >
                       Badge Model
                     </span>
@@ -1779,10 +1779,10 @@ exports[`ProjectList Component should delete project 1`] = `
             </div>
           </div>
           <hr
-            class="MuiDivider-root makeStyles-drawerDivider-2578"
+            class="MuiDivider-root makeStyles-drawerDivider-2058"
           />
           <div
-            class="makeStyles-ctaWrapper-2514"
+            class="makeStyles-ctaWrapper-1994"
           >
             <span
               class=""
@@ -1791,7 +1791,7 @@ exports[`ProjectList Component should delete project 1`] = `
             >
               <a
                 aria-disabled="false"
-                class="MuiButtonBase-root MuiButton-root MuiButton-outlined makeStyles-drawerCTA-2480 makeStyles-borderPrimaryButton-2472 makeStyles-primaryButtonPadding-2474"
+                class="MuiButtonBase-root MuiButton-root MuiButton-outlined makeStyles-drawerCTA-1960 makeStyles-borderPrimaryButton-1952 makeStyles-primaryButtonPadding-1954"
                 data-testid="drawerProjectButton"
                 href="/projects/wizard/9164e4c4-6521-47bb-97fd-c75ac02b2cf2"
                 tabindex="0"
@@ -1809,7 +1809,7 @@ exports[`ProjectList Component should delete project 1`] = `
               tabindex="-1"
             >
               <button
-                class="MuiButtonBase-root MuiButton-root MuiButton-outlined makeStyles-drawerCTA-2480 makeStyles-warningButton-2481"
+                class="MuiButtonBase-root MuiButton-root MuiButton-outlined makeStyles-drawerCTA-1960 makeStyles-warningButton-1961"
                 data-testid="deleteProjectButton"
                 tabindex="0"
                 type="button"
@@ -1839,16 +1839,16 @@ exports[`ProjectList Component should hide elements based on role 1`] = `
       class=""
     >
       <div
-        class="MuiBox-root MuiBox-root-3027"
+        class="MuiBox-root MuiBox-root-2507"
         style="height: 50px; margin-bottom: 13px; width: 100%;"
       >
         <div
-          class="MuiBox-root MuiBox-root-3028"
+          class="MuiBox-root MuiBox-root-2508"
           style="display: flex; align-items: center; justify-content: space-between;"
         >
           <div>
             <div
-              class="MuiBox-root MuiBox-root-3029"
+              class="MuiBox-root MuiBox-root-2509"
               style="display: flex; align-items: center; margin-top: 5px;"
             >
               <h2
@@ -1860,7 +1860,7 @@ exports[`ProjectList Component should hide elements based on role 1`] = `
             </div>
           </div>
           <button
-            class="MuiButtonBase-root MuiButton-root MuiButton-contained makeStyles-createButton-2979 makeStyles-primaryButtonLarge-2981 MuiButton-containedPrimary MuiButton-containedSizeLarge MuiButton-sizeLarge MuiButton-fullWidth"
+            class="MuiButtonBase-root MuiButton-root MuiButton-contained makeStyles-createButton-2459 makeStyles-primaryButtonLarge-2461 MuiButton-containedPrimary MuiButton-containedSizeLarge MuiButton-sizeLarge MuiButton-fullWidth"
             data-testid="create-project-btn"
             tabindex="0"
             type="submit"
@@ -1875,7 +1875,7 @@ exports[`ProjectList Component should hide elements based on role 1`] = `
             />
           </button>
           <button
-            class="MuiButtonBase-root MuiButton-root MuiButton-contained makeStyles-createButton-2979 makeStyles-primaryButtonLarge-2981 MuiButton-containedPrimary MuiButton-containedSizeLarge MuiButton-sizeLarge MuiButton-fullWidth"
+            class="MuiButtonBase-root MuiButton-root MuiButton-contained makeStyles-createButton-2459 makeStyles-primaryButtonLarge-2461 MuiButton-containedPrimary MuiButton-containedSizeLarge MuiButton-sizeLarge MuiButton-fullWidth"
             tabindex="0"
             type="submit"
           >
@@ -1891,96 +1891,96 @@ exports[`ProjectList Component should hide elements based on role 1`] = `
         </div>
       </div>
       <div
-        class="makeStyles-widgetsWrapper-3013"
+        class="makeStyles-widgetsWrapper-2493"
         id="summary-widgets"
       >
         <div
-          class="MuiPaper-root makeStyles-widget-3030 MuiPaper-elevation0 MuiPaper-rounded"
+          class="MuiPaper-root makeStyles-widget-2510 MuiPaper-elevation0 MuiPaper-rounded"
         >
           <span
-            class="makeStyles-totalFont-3031"
+            class="makeStyles-totalFont-2511"
           >
             0
           </span>
           <div
-            class="makeStyles-contentContainer-3034"
+            class="makeStyles-contentContainer-2514"
           >
             <span
-              class="makeStyles-statusFont-3032"
+              class="makeStyles-statusFont-2512"
             >
               Pending Invitation
             </span>
             <span
-              class="makeStyles-contentFont-3033"
+              class="makeStyles-contentFont-2513"
             >
               <p
-                class="makeStyles-reviewLink-2936"
+                class="makeStyles-reviewLink-2416"
               />
             </span>
           </div>
         </div>
         <div
-          class="MuiPaper-root makeStyles-widget-3030 MuiPaper-elevation0 MuiPaper-rounded"
+          class="MuiPaper-root makeStyles-widget-2510 MuiPaper-elevation0 MuiPaper-rounded"
         >
           <span
-            class="makeStyles-totalFont-3031"
+            class="makeStyles-totalFont-2511"
           >
             0
           </span>
           <div
-            class="makeStyles-contentContainer-3034"
+            class="makeStyles-contentContainer-2514"
           >
             <span
-              class="makeStyles-statusFont-3032"
+              class="makeStyles-statusFont-2512"
             >
               Active
             </span>
             <span
-              class="makeStyles-contentFont-3033"
+              class="makeStyles-contentFont-2513"
             >
               <p
-                class="makeStyles-reviewLink-2936"
+                class="makeStyles-reviewLink-2416"
               />
             </span>
           </div>
         </div>
         <div
-          class="MuiPaper-root makeStyles-widget-3030 MuiPaper-elevation0 MuiPaper-rounded"
+          class="MuiPaper-root makeStyles-widget-2510 MuiPaper-elevation0 MuiPaper-rounded"
         >
           <span
-            class="makeStyles-totalFont-3031"
+            class="makeStyles-totalFont-2511"
           >
             $ 0
           </span>
           <div
-            class="makeStyles-contentContainer-3034"
+            class="makeStyles-contentContainer-2514"
           >
             <span
-              class="makeStyles-statusFont-3032"
+              class="makeStyles-statusFont-2512"
             >
               Invoices
             </span>
             <span
-              class="makeStyles-contentFont-3033"
+              class="makeStyles-contentFont-2513"
             >
               <p
-                class="makeStyles-reviewLink-2936"
+                class="makeStyles-reviewLink-2416"
               />
             </span>
           </div>
         </div>
       </div>
       <div
-        class="makeStyles-tableWrapper-2938"
+        class="makeStyles-tableWrapper-2418"
       >
         <div
-          class="makeStyles-filterContainer-2946"
+          class="makeStyles-filterContainer-2426"
         >
           <div
-            class="makeStyles-statusFilter-2947"
+            class="makeStyles-statusFilter-2427"
           >
             <button
-              class="MuiButtonBase-root MuiButton-root MuiButton-text makeStyles-activeFilter-2948"
+              class="MuiButtonBase-root MuiButton-root MuiButton-text makeStyles-activeFilter-2428"
               data-testid="filter-status-opt"
               tabindex="0"
               type="button"
@@ -1996,23 +1996,23 @@ exports[`ProjectList Component should hide elements based on role 1`] = `
             </button>
           </div>
           <div
-            class="makeStyles-filterActionsContainer-2949"
+            class="makeStyles-filterActionsContainer-2429"
           >
             <div
-              class="MuiBox-root MuiBox-root-3035 makeStyles-filterStatusContainer-2952"
+              class="MuiBox-root MuiBox-root-2515 makeStyles-filterStatusContainer-2432"
             >
               <div
-                class="makeStyles-floatingFilterWrapper-2958 makeStyles-filterWrapper-2957 makeStyles-buttonContainer-3037 floatingFilterWrapper"
+                class="makeStyles-floatingFilterWrapper-2438 makeStyles-filterWrapper-2437 makeStyles-buttonContainer-2517 floatingFilterWrapper"
               >
                 <span
-                  class="makeStyles-floatingFilterButton-2959"
+                  class="makeStyles-floatingFilterButton-2439"
                   data-testid="controlled-button"
                   tabindex="-1"
                 >
                   <button
                     aria-controls="false"
                     aria-haspopup="true"
-                    class="MuiButtonBase-root MuiButton-root MuiButton-text makeStyles-buttonFilter-2967"
+                    class="MuiButtonBase-root MuiButton-root MuiButton-text makeStyles-buttonFilter-2447"
                     data-testid="button-filter-open"
                     tabindex="0"
                     type="button"
@@ -2025,7 +2025,7 @@ exports[`ProjectList Component should hide elements based on role 1`] = `
                         class="MuiButton-endIcon MuiButton-iconSizeMedium"
                       >
                         <svg
-                          class="makeStyles-dropdownIcon-2961"
+                          class="makeStyles-dropdownIcon-2441"
                         >
                           expand.svg
                         </svg>
@@ -2036,23 +2036,23 @@ exports[`ProjectList Component should hide elements based on role 1`] = `
               </div>
             </div>
             <hr
-              class="MuiDivider-root makeStyles-dividerColor-2962 MuiDivider-flexItem MuiDivider-vertical"
+              class="MuiDivider-root makeStyles-dividerColor-2442 MuiDivider-flexItem MuiDivider-vertical"
             />
             <div
-              class="MuiBox-root MuiBox-root-3041 makeStyles-filterStatusContainer-2952"
+              class="MuiBox-root MuiBox-root-2521 makeStyles-filterStatusContainer-2432"
             >
               <div
-                class="makeStyles-floatingFilterWrapper-2958 makeStyles-filterWrapper-2957  floatingFilterWrapper"
+                class="makeStyles-floatingFilterWrapper-2438 makeStyles-filterWrapper-2437  floatingFilterWrapper"
               >
                 <span
-                  class="makeStyles-floatingFilterButton-2959"
+                  class="makeStyles-floatingFilterButton-2439"
                   data-testid="controlled-button"
                   tabindex="-1"
                 >
                   <button
                     aria-controls="false"
                     aria-haspopup="true"
-                    class="MuiButtonBase-root MuiButton-root MuiButton-text makeStyles-buttonFilter-2967"
+                    class="MuiButtonBase-root MuiButton-root MuiButton-text makeStyles-buttonFilter-2447"
                     data-testid="button-filter-open"
                     tabindex="0"
                     type="button"
@@ -2065,7 +2065,7 @@ exports[`ProjectList Component should hide elements based on role 1`] = `
                         class="MuiButton-endIcon MuiButton-iconSizeMedium"
                       >
                         <svg
-                          class="makeStyles-dropdownIcon-2961"
+                          class="makeStyles-dropdownIcon-2441"
                         >
                           expand.svg
                         </svg>
@@ -2123,14 +2123,14 @@ exports[`ProjectList Component should hide elements based on role 1`] = `
             class="MuiTableBody-root"
           >
             <tr
-              class="MuiTableRow-root WithStyles(ForwardRef(TableRow))-root-3043 makeStyles-clickableRow-3025"
+              class="MuiTableRow-root WithStyles(ForwardRef(TableRow))-root-2523 makeStyles-clickableRow-2505"
               data-testid="project-list-row"
             >
               <td
-                class="MuiTableCell-root MuiTableCell-body makeStyles-listName-3010"
+                class="MuiTableCell-root MuiTableCell-body makeStyles-listName-2490"
               >
                 <div
-                  class="makeStyles-projectRow-2921"
+                  class="makeStyles-projectRow-2401"
                 >
                   <div
                     class="MuiAvatar-root MuiAvatar-circle MuiAvatar-colorDefault"
@@ -2147,7 +2147,7 @@ exports[`ProjectList Component should hide elements based on role 1`] = `
                     </svg>
                   </div>
                   <a
-                    class="Link-root-3044"
+                    class="Link-root-2524"
                     data-testid="project-list-row-item-link"
                     href="/projects/wizard/9164e4c4-6521-47bb-97fd-c75ac02b2cf2"
                     title="Edit"
@@ -2157,10 +2157,10 @@ exports[`ProjectList Component should hide elements based on role 1`] = `
                 </div>
               </td>
               <td
-                class="MuiTableCell-root MuiTableCell-body makeStyles-listName-3010"
+                class="MuiTableCell-root MuiTableCell-body makeStyles-listName-2490"
               >
                 <div
-                  class="makeStyles-projectRow-2921"
+                  class="makeStyles-projectRow-2401"
                 >
                   <div
                     class="MuiAvatar-root MuiAvatar-circle MuiAvatar-colorDefault"
@@ -2177,7 +2177,7 @@ exports[`ProjectList Component should hide elements based on role 1`] = `
                     </svg>
                   </div>
                   <a
-                    class="Link-root-3044"
+                    class="Link-root-2524"
                     href="/projects/wizard-new/9164e4c4-6521-47bb-97fd-c75ac02b2cf2"
                     title="Edit"
                   >
@@ -2186,10 +2186,10 @@ exports[`ProjectList Component should hide elements based on role 1`] = `
                 </div>
               </td>
               <td
-                class="MuiTableCell-root MuiTableCell-body makeStyles-listName-3010"
+                class="MuiTableCell-root MuiTableCell-body makeStyles-listName-2490"
               >
                 <div
-                  class="makeStyles-projectRow-2921"
+                  class="makeStyles-projectRow-2401"
                 >
                   <div
                     class="MuiAvatar-root MuiAvatar-circle MuiAvatar-colorDefault"
@@ -2206,7 +2206,7 @@ exports[`ProjectList Component should hide elements based on role 1`] = `
                     </svg>
                   </div>
                   <a
-                    class="Link-root-3044"
+                    class="Link-root-2524"
                     href="/projects/wizard/9164e4c4-6521-47bb-97fd-c75ac02b2cf2"
                     title="Edit"
                   >
@@ -2215,28 +2215,28 @@ exports[`ProjectList Component should hide elements based on role 1`] = `
                 </div>
               </td>
               <td
-                class="MuiTableCell-root MuiTableCell-body makeStyles-listGeneralText-3012"
+                class="MuiTableCell-root MuiTableCell-body makeStyles-listGeneralText-2492"
               >
                 -
               </td>
               <td
-                class="MuiTableCell-root MuiTableCell-body makeStyles-listGeneralText-3012"
+                class="MuiTableCell-root MuiTableCell-body makeStyles-listGeneralText-2492"
               >
                 Jul 15, 2020 to Jul 15, 2020
               </td>
               <td
-                class="MuiTableCell-root MuiTableCell-body makeStyles-listGeneralText-3012"
+                class="MuiTableCell-root MuiTableCell-body makeStyles-listGeneralText-2492"
               />
             </tr>
             <tr
-              class="MuiTableRow-root WithStyles(ForwardRef(TableRow))-root-3043 makeStyles-clickableRow-3025"
+              class="MuiTableRow-root WithStyles(ForwardRef(TableRow))-root-2523 makeStyles-clickableRow-2505"
               data-testid="project-list-row"
             >
               <td
-                class="MuiTableCell-root MuiTableCell-body makeStyles-listName-3010"
+                class="MuiTableCell-root MuiTableCell-body makeStyles-listName-2490"
               >
                 <div
-                  class="makeStyles-projectRow-2921"
+                  class="makeStyles-projectRow-2401"
                 >
                   <div
                     class="MuiAvatar-root MuiAvatar-circle MuiAvatar-colorDefault"
@@ -2253,7 +2253,7 @@ exports[`ProjectList Component should hide elements based on role 1`] = `
                     </svg>
                   </div>
                   <a
-                    class="Link-root-3044"
+                    class="Link-root-2524"
                     data-testid="project-list-row-item-link"
                     href="/projects/wizard/8aa1c4c4-6521-47bb-27fd-af5ac02b2cd8/review"
                     title="Review"
@@ -2263,10 +2263,10 @@ exports[`ProjectList Component should hide elements based on role 1`] = `
                 </div>
               </td>
               <td
-                class="MuiTableCell-root MuiTableCell-body makeStyles-listName-3010"
+                class="MuiTableCell-root MuiTableCell-body makeStyles-listName-2490"
               >
                 <div
-                  class="makeStyles-projectRow-2921"
+                  class="makeStyles-projectRow-2401"
                 >
                   <div
                     class="MuiAvatar-root MuiAvatar-circle MuiAvatar-colorDefault"
@@ -2283,7 +2283,7 @@ exports[`ProjectList Component should hide elements based on role 1`] = `
                     </svg>
                   </div>
                   <a
-                    class="Link-root-3044"
+                    class="Link-root-2524"
                     href="/projects/wizard-new/8aa1c4c4-6521-47bb-27fd-af5ac02b2cd8"
                     title="Review"
                   >
@@ -2292,10 +2292,10 @@ exports[`ProjectList Component should hide elements based on role 1`] = `
                 </div>
               </td>
               <td
-                class="MuiTableCell-root MuiTableCell-body makeStyles-listName-3010"
+                class="MuiTableCell-root MuiTableCell-body makeStyles-listName-2490"
               >
                 <div
-                  class="makeStyles-projectRow-2921"
+                  class="makeStyles-projectRow-2401"
                 >
                   <div
                     class="MuiAvatar-root MuiAvatar-circle MuiAvatar-colorDefault"
@@ -2312,7 +2312,7 @@ exports[`ProjectList Component should hide elements based on role 1`] = `
                     </svg>
                   </div>
                   <a
-                    class="Link-root-3044"
+                    class="Link-root-2524"
                     href="/projects/wizard/8aa1c4c4-6521-47bb-27fd-af5ac02b2cd8/review"
                     title="Review"
                   >
@@ -2321,28 +2321,28 @@ exports[`ProjectList Component should hide elements based on role 1`] = `
                 </div>
               </td>
               <td
-                class="MuiTableCell-root MuiTableCell-body makeStyles-listGeneralText-3012"
+                class="MuiTableCell-root MuiTableCell-body makeStyles-listGeneralText-2492"
               >
                 -
               </td>
               <td
-                class="MuiTableCell-root MuiTableCell-body makeStyles-listGeneralText-3012"
+                class="MuiTableCell-root MuiTableCell-body makeStyles-listGeneralText-2492"
               >
                 Jul 15, 2020 to Jul 15, 2020
               </td>
               <td
-                class="MuiTableCell-root MuiTableCell-body makeStyles-listGeneralText-3012"
+                class="MuiTableCell-root MuiTableCell-body makeStyles-listGeneralText-2492"
               />
             </tr>
             <tr
-              class="MuiTableRow-root WithStyles(ForwardRef(TableRow))-root-3043 makeStyles-clickableRow-3025"
+              class="MuiTableRow-root WithStyles(ForwardRef(TableRow))-root-2523 makeStyles-clickableRow-2505"
               data-testid="project-list-row"
             >
               <td
-                class="MuiTableCell-root MuiTableCell-body makeStyles-listName-3010"
+                class="MuiTableCell-root MuiTableCell-body makeStyles-listName-2490"
               >
                 <div
-                  class="makeStyles-projectRow-2921"
+                  class="makeStyles-projectRow-2401"
                 >
                   <div
                     class="MuiAvatar-root MuiAvatar-circle MuiAvatar-colorDefault"
@@ -2359,7 +2359,7 @@ exports[`ProjectList Component should hide elements based on role 1`] = `
                     </svg>
                   </div>
                   <a
-                    class="Link-root-3044"
+                    class="Link-root-2524"
                     data-testid="project-list-row-item-link"
                     href="/projects/wizard/cbb1c4c4-2221-f7bb-27fd-ff5ac02b2cda/review"
                     title="Review"
@@ -2369,10 +2369,10 @@ exports[`ProjectList Component should hide elements based on role 1`] = `
                 </div>
               </td>
               <td
-                class="MuiTableCell-root MuiTableCell-body makeStyles-listName-3010"
+                class="MuiTableCell-root MuiTableCell-body makeStyles-listName-2490"
               >
                 <div
-                  class="makeStyles-projectRow-2921"
+                  class="makeStyles-projectRow-2401"
                 >
                   <div
                     class="MuiAvatar-root MuiAvatar-circle MuiAvatar-colorDefault"
@@ -2389,7 +2389,7 @@ exports[`ProjectList Component should hide elements based on role 1`] = `
                     </svg>
                   </div>
                   <a
-                    class="Link-root-3044"
+                    class="Link-root-2524"
                     href="/projects/wizard-new/cbb1c4c4-2221-f7bb-27fd-ff5ac02b2cda"
                     title="Review"
                   >
@@ -2398,10 +2398,10 @@ exports[`ProjectList Component should hide elements based on role 1`] = `
                 </div>
               </td>
               <td
-                class="MuiTableCell-root MuiTableCell-body makeStyles-listName-3010"
+                class="MuiTableCell-root MuiTableCell-body makeStyles-listName-2490"
               >
                 <div
-                  class="makeStyles-projectRow-2921"
+                  class="makeStyles-projectRow-2401"
                 >
                   <div
                     class="MuiAvatar-root MuiAvatar-circle MuiAvatar-colorDefault"
@@ -2418,7 +2418,7 @@ exports[`ProjectList Component should hide elements based on role 1`] = `
                     </svg>
                   </div>
                   <a
-                    class="Link-root-3044"
+                    class="Link-root-2524"
                     href="/projects/wizard/cbb1c4c4-2221-f7bb-27fd-ff5ac02b2cda/review"
                     title="Review"
                   >
@@ -2427,28 +2427,28 @@ exports[`ProjectList Component should hide elements based on role 1`] = `
                 </div>
               </td>
               <td
-                class="MuiTableCell-root MuiTableCell-body makeStyles-listGeneralText-3012"
+                class="MuiTableCell-root MuiTableCell-body makeStyles-listGeneralText-2492"
               >
                 -
               </td>
               <td
-                class="MuiTableCell-root MuiTableCell-body makeStyles-listGeneralText-3012"
+                class="MuiTableCell-root MuiTableCell-body makeStyles-listGeneralText-2492"
               >
                 Jul 15, 2020 to Jul 15, 2020
               </td>
               <td
-                class="MuiTableCell-root MuiTableCell-body makeStyles-listGeneralText-3012"
+                class="MuiTableCell-root MuiTableCell-body makeStyles-listGeneralText-2492"
               />
             </tr>
             <tr
-              class="MuiTableRow-root WithStyles(ForwardRef(TableRow))-root-3043 makeStyles-clickableRow-3025"
+              class="MuiTableRow-root WithStyles(ForwardRef(TableRow))-root-2523 makeStyles-clickableRow-2505"
               data-testid="project-list-row"
             >
               <td
-                class="MuiTableCell-root MuiTableCell-body makeStyles-listName-3010"
+                class="MuiTableCell-root MuiTableCell-body makeStyles-listName-2490"
               >
                 <div
-                  class="makeStyles-projectRow-2921"
+                  class="makeStyles-projectRow-2401"
                 >
                   <div
                     class="MuiAvatar-root MuiAvatar-circle MuiAvatar-colorDefault"
@@ -2465,7 +2465,7 @@ exports[`ProjectList Component should hide elements based on role 1`] = `
                     </svg>
                   </div>
                   <a
-                    class="Link-root-3044"
+                    class="Link-root-2524"
                     data-testid="project-list-row-item-link"
                     href="/projects/wizard/820ccbf5-03aa-4797-9001-d79643c3d35d"
                     title="Edit"
@@ -2475,10 +2475,10 @@ exports[`ProjectList Component should hide elements based on role 1`] = `
                 </div>
               </td>
               <td
-                class="MuiTableCell-root MuiTableCell-body makeStyles-listName-3010"
+                class="MuiTableCell-root MuiTableCell-body makeStyles-listName-2490"
               >
                 <div
-                  class="makeStyles-projectRow-2921"
+                  class="makeStyles-projectRow-2401"
                 >
                   <div
                     class="MuiAvatar-root MuiAvatar-circle MuiAvatar-colorDefault"
@@ -2495,7 +2495,7 @@ exports[`ProjectList Component should hide elements based on role 1`] = `
                     </svg>
                   </div>
                   <a
-                    class="Link-root-3044"
+                    class="Link-root-2524"
                     href="/projects/wizard-new/820ccbf5-03aa-4797-9001-d79643c3d35d"
                     title="Edit"
                   >
@@ -2504,10 +2504,10 @@ exports[`ProjectList Component should hide elements based on role 1`] = `
                 </div>
               </td>
               <td
-                class="MuiTableCell-root MuiTableCell-body makeStyles-listName-3010"
+                class="MuiTableCell-root MuiTableCell-body makeStyles-listName-2490"
               >
                 <div
-                  class="makeStyles-projectRow-2921"
+                  class="makeStyles-projectRow-2401"
                 >
                   <div
                     class="MuiAvatar-root MuiAvatar-circle MuiAvatar-colorDefault"
@@ -2524,7 +2524,7 @@ exports[`ProjectList Component should hide elements based on role 1`] = `
                     </svg>
                   </div>
                   <a
-                    class="Link-root-3044"
+                    class="Link-root-2524"
                     href="/projects/wizard/820ccbf5-03aa-4797-9001-d79643c3d35d"
                     title="Edit"
                   >
@@ -2533,7 +2533,7 @@ exports[`ProjectList Component should hide elements based on role 1`] = `
                 </div>
               </td>
               <td
-                class="MuiTableCell-root MuiTableCell-body makeStyles-listGeneralText-3012"
+                class="MuiTableCell-root MuiTableCell-body makeStyles-listGeneralText-2492"
               >
                 <span>
                   line 1
@@ -2543,19 +2543,19 @@ exports[`ProjectList Component should hide elements based on role 1`] = `
                 </span>
               </td>
               <td
-                class="MuiTableCell-root MuiTableCell-body makeStyles-listGeneralText-3012"
+                class="MuiTableCell-root MuiTableCell-body makeStyles-listGeneralText-2492"
               >
                 Jul 15, 2020 to Jul 15, 2020
               </td>
               <td
-                class="MuiTableCell-root MuiTableCell-body makeStyles-listGeneralText-3012"
+                class="MuiTableCell-root MuiTableCell-body makeStyles-listGeneralText-2492"
               />
             </tr>
           </tbody>
         </table>
         <nav
           aria-label="pagination navigation"
-          class="MuiPagination-root  makeStyles-pagination-3048"
+          class="MuiPagination-root  makeStyles-pagination-2528"
           data-testid="pagination"
         >
           <ul
@@ -2635,18 +2635,18 @@ exports[`ProjectList Component should hide elements based on role 1`] = `
       </div>
     </div>
     <div
-      class="MuiDrawer-root MuiDrawer-docked makeStyles-drawer-3074 makeStyles-close-3085 closed"
+      class="MuiDrawer-root MuiDrawer-docked makeStyles-drawer-2554 makeStyles-close-2565 closed"
       data-testid="project-drawer-detail"
     >
       <div
-        class="MuiPaper-root MuiDrawer-paper makeStyles-drawerPaper-3075 MuiDrawer-paperAnchorRight MuiDrawer-paperAnchorDockedRight MuiPaper-elevation0"
+        class="MuiPaper-root MuiDrawer-paper makeStyles-drawerPaper-2555 MuiDrawer-paperAnchorRight MuiDrawer-paperAnchorDockedRight MuiPaper-elevation0"
         style="visibility: hidden; webkit-transform: translateX(1024px) translateX(0px); transform: translateX(1024px) translateX(0px);"
       >
         <div
-          class="makeStyles-drawerButtonWrapper-3077"
+          class="makeStyles-drawerButtonWrapper-2557"
         >
           <div
-            class="makeStyles-drawerButton-3078"
+            class="makeStyles-drawerButton-2558"
           >
             <button
               class="MuiButtonBase-root MuiButton-root MuiButton-text"
@@ -2668,31 +2668,31 @@ exports[`ProjectList Component should hide elements based on role 1`] = `
             </button>
           </div>
           <div
-            class="makeStyles-drawerHeader-3076"
+            class="makeStyles-drawerHeader-2556"
           >
             <p
-              class="MuiTypography-root makeStyles-drawerTitle-3079 MuiTypography-body1 MuiTypography-colorPrimary MuiTypography-alignLeft"
+              class="MuiTypography-root makeStyles-drawerTitle-2559 MuiTypography-body1 MuiTypography-colorPrimary MuiTypography-alignLeft"
             >
               Project Information
             </p>
           </div>
         </div>
         <div
-          class="makeStyles-listDetail-3017"
+          class="makeStyles-listDetail-2497"
         >
           <div
-            class="makeStyles-company-3018"
+            class="makeStyles-company-2498"
           >
             <div
-              class="makeStyles-drawerText-3081"
+              class="makeStyles-drawerText-2561"
             >
               <p
-                class="MuiTypography-root makeStyles-listAccent-3019 makeStyles-entityTitle-3016 MuiTypography-body1"
+                class="MuiTypography-root makeStyles-listAccent-2499 makeStyles-entityTitle-2496 MuiTypography-body1"
               >
                 -
               </p>
               <div
-                class="makeStyles-drawerMainText-3082"
+                class="makeStyles-drawerMainText-2562"
               >
                 <span>
                   -
@@ -2706,17 +2706,17 @@ exports[`ProjectList Component should hide elements based on role 1`] = `
               </div>
             </div>
             <div
-              class="makeStyles-drawerSection-3080 makeStyles-drawerProjectColumn-3088"
+              class="makeStyles-drawerSection-2560 makeStyles-drawerProjectColumn-2568"
             >
               <div
-                class="makeStyles-projectWrapper-3086"
+                class="makeStyles-projectWrapper-2566"
                 data-testid=""
               >
                 <svg>
                   location.svg
                 </svg>
                 <div
-                  class="makeStyles-drawerText-3081 makeStyles-drawerTextSeparation-3083"
+                  class="makeStyles-drawerText-2561 makeStyles-drawerTextSeparation-2563"
                 >
                   <span>
                     -
@@ -2725,17 +2725,17 @@ exports[`ProjectList Component should hide elements based on role 1`] = `
               </div>
             </div>
             <div
-              class="makeStyles-drawerSection-3080 makeStyles-drawerProjectColumn-3088"
+              class="makeStyles-drawerSection-2560 makeStyles-drawerProjectColumn-2568"
             >
               <div
-                class="makeStyles-projectWrapper-3086"
+                class="makeStyles-projectWrapper-2566"
                 data-testid=""
               >
                 <svg>
                   location.svg
                 </svg>
                 <div
-                  class="makeStyles-drawerText-3081 makeStyles-drawerTextSeparation-3083"
+                  class="makeStyles-drawerText-2561 makeStyles-drawerTextSeparation-2563"
                 >
                   <span>
                     -
@@ -2744,17 +2744,17 @@ exports[`ProjectList Component should hide elements based on role 1`] = `
               </div>
             </div>
             <div
-              class="makeStyles-drawerSection-3080 makeStyles-drawerProjectColumn-3088"
+              class="makeStyles-drawerSection-2560 makeStyles-drawerProjectColumn-2568"
             >
               <div
-                class="makeStyles-projectWrapper-3086"
+                class="makeStyles-projectWrapper-2566"
                 data-testid=""
               >
                 <svg>
                   location.svg
                 </svg>
                 <div
-                  class="makeStyles-drawerText-3081 makeStyles-drawerTextSeparation-3083"
+                  class="makeStyles-drawerText-2561 makeStyles-drawerTextSeparation-2563"
                 >
                   <span>
                     -
@@ -2763,22 +2763,22 @@ exports[`ProjectList Component should hide elements based on role 1`] = `
               </div>
             </div>
             <div
-              class="makeStyles-drawerSection-3080"
+              class="makeStyles-drawerSection-2560"
             >
               <div
-                class="makeStyles-drawerColumnDirection-3089"
+                class="makeStyles-drawerColumnDirection-2569"
               >
                 <div
-                  class="makeStyles-drawerRowDirection-3090"
+                  class="makeStyles-drawerRowDirection-2570"
                 >
                   <svg>
                     monetization.svg
                   </svg>
                   <div
-                    class="makeStyles-drawerText-3081 makeStyles-drawerTextSeparation-3083"
+                    class="makeStyles-drawerText-2561 makeStyles-drawerTextSeparation-2563"
                   >
                     <span
-                      class="makeStyles-listAccent-3019"
+                      class="makeStyles-listAccent-2499"
                     >
                       Badge Model
                     </span>
@@ -2802,10 +2802,10 @@ exports[`ProjectList Component should hide elements based on role 1`] = `
             </div>
           </div>
           <hr
-            class="MuiDivider-root makeStyles-drawerDivider-3084"
+            class="MuiDivider-root makeStyles-drawerDivider-2564"
           />
           <div
-            class="makeStyles-ctaWrapper-3020"
+            class="makeStyles-ctaWrapper-2500"
           >
             <span
               class=""
@@ -2814,7 +2814,7 @@ exports[`ProjectList Component should hide elements based on role 1`] = `
             >
               <a
                 aria-disabled="false"
-                class="MuiButtonBase-root MuiButton-root MuiButton-outlined makeStyles-drawerCTA-2986 makeStyles-borderPrimaryButton-2978 makeStyles-primaryButtonPadding-2980"
+                class="MuiButtonBase-root MuiButton-root MuiButton-outlined makeStyles-drawerCTA-2466 makeStyles-borderPrimaryButton-2458 makeStyles-primaryButtonPadding-2460"
                 data-testid="drawerProjectButton"
                 href="/projects/wizard/undefined"
                 tabindex="0"
@@ -9162,16 +9162,16 @@ exports[`ProjectList Component should show loading list 1`] = `
       class=""
     >
       <div
-        class="MuiBox-root MuiBox-root-2862"
+        class="MuiBox-root MuiBox-root-2342"
         style="height: 50px; margin-bottom: 13px; width: 100%;"
       >
         <div
-          class="MuiBox-root MuiBox-root-2863"
+          class="MuiBox-root MuiBox-root-2343"
           style="display: flex; align-items: center; justify-content: space-between;"
         >
           <div>
             <div
-              class="MuiBox-root MuiBox-root-2864"
+              class="MuiBox-root MuiBox-root-2344"
               style="display: flex; align-items: center; margin-top: 5px;"
             >
               <h2
@@ -9183,7 +9183,7 @@ exports[`ProjectList Component should show loading list 1`] = `
             </div>
           </div>
           <button
-            class="MuiButtonBase-root MuiButton-root MuiButton-contained makeStyles-createButton-2814 makeStyles-primaryButtonLarge-2816 MuiButton-containedPrimary MuiButton-containedSizeLarge MuiButton-sizeLarge MuiButton-fullWidth"
+            class="MuiButtonBase-root MuiButton-root MuiButton-contained makeStyles-createButton-2294 makeStyles-primaryButtonLarge-2296 MuiButton-containedPrimary MuiButton-containedSizeLarge MuiButton-sizeLarge MuiButton-fullWidth"
             data-testid="create-project-btn"
             tabindex="0"
             type="submit"
@@ -9198,7 +9198,7 @@ exports[`ProjectList Component should show loading list 1`] = `
             />
           </button>
           <button
-            class="MuiButtonBase-root MuiButton-root MuiButton-contained makeStyles-createButton-2814 makeStyles-primaryButtonLarge-2816 MuiButton-containedPrimary MuiButton-containedSizeLarge MuiButton-sizeLarge MuiButton-fullWidth"
+            class="MuiButtonBase-root MuiButton-root MuiButton-contained makeStyles-createButton-2294 makeStyles-primaryButtonLarge-2296 MuiButton-containedPrimary MuiButton-containedSizeLarge MuiButton-sizeLarge MuiButton-fullWidth"
             tabindex="0"
             type="submit"
           >
@@ -9214,30 +9214,30 @@ exports[`ProjectList Component should show loading list 1`] = `
         </div>
       </div>
       <div
-        class="makeStyles-widgetsWrapper-2848"
+        class="makeStyles-widgetsWrapper-2328"
         id="summary-widgets"
       >
         <div
-          class="MuiPaper-root makeStyles-widget-2865 MuiPaper-elevation0 MuiPaper-rounded"
+          class="MuiPaper-root makeStyles-widget-2345 MuiPaper-elevation0 MuiPaper-rounded"
         >
           <span
-            class="makeStyles-totalFont-2866"
+            class="makeStyles-totalFont-2346"
           >
             99
           </span>
           <div
-            class="makeStyles-contentContainer-2869"
+            class="makeStyles-contentContainer-2349"
           >
             <span
-              class="makeStyles-statusFont-2867"
+              class="makeStyles-statusFont-2347"
             >
               Draft
             </span>
             <span
-              class="makeStyles-contentFont-2868"
+              class="makeStyles-contentFont-2348"
             >
               <p
-                class="makeStyles-reviewLink-2771"
+                class="makeStyles-reviewLink-2251"
               >
                 Review
               </p>
@@ -9245,26 +9245,26 @@ exports[`ProjectList Component should show loading list 1`] = `
           </div>
         </div>
         <div
-          class="MuiPaper-root makeStyles-widget-2865 MuiPaper-elevation0 MuiPaper-rounded"
+          class="MuiPaper-root makeStyles-widget-2345 MuiPaper-elevation0 MuiPaper-rounded"
         >
           <span
-            class="makeStyles-totalFont-2866"
+            class="makeStyles-totalFont-2346"
           >
             99
           </span>
           <div
-            class="makeStyles-contentContainer-2869"
+            class="makeStyles-contentContainer-2349"
           >
             <span
-              class="makeStyles-statusFont-2867"
+              class="makeStyles-statusFont-2347"
             >
               Pending Approval
             </span>
             <span
-              class="makeStyles-contentFont-2868"
+              class="makeStyles-contentFont-2348"
             >
               <p
-                class="makeStyles-reviewLink-2771"
+                class="makeStyles-reviewLink-2251"
               >
                 Review
               </p>
@@ -9272,26 +9272,26 @@ exports[`ProjectList Component should show loading list 1`] = `
           </div>
         </div>
         <div
-          class="MuiPaper-root makeStyles-widget-2865 MuiPaper-elevation0 MuiPaper-rounded"
+          class="MuiPaper-root makeStyles-widget-2345 MuiPaper-elevation0 MuiPaper-rounded"
         >
           <span
-            class="makeStyles-totalFont-2866"
+            class="makeStyles-totalFont-2346"
           >
             99
           </span>
           <div
-            class="makeStyles-contentContainer-2869"
+            class="makeStyles-contentContainer-2349"
           >
             <span
-              class="makeStyles-statusFont-2867"
+              class="makeStyles-statusFont-2347"
             >
               Active
             </span>
             <span
-              class="makeStyles-contentFont-2868"
+              class="makeStyles-contentFont-2348"
             >
               <p
-                class="makeStyles-reviewLink-2771"
+                class="makeStyles-reviewLink-2251"
               >
                 Review
               </p>
@@ -9300,16 +9300,16 @@ exports[`ProjectList Component should show loading list 1`] = `
         </div>
       </div>
       <div
-        class="makeStyles-tableWrapper-2773"
+        class="makeStyles-tableWrapper-2253"
       >
         <div
-          class="makeStyles-filterContainer-2781"
+          class="makeStyles-filterContainer-2261"
         >
           <div
-            class="makeStyles-statusFilter-2782"
+            class="makeStyles-statusFilter-2262"
           >
             <button
-              class="MuiButtonBase-root MuiButton-root MuiButton-text makeStyles-activeFilter-2783"
+              class="MuiButtonBase-root MuiButton-root MuiButton-text makeStyles-activeFilter-2263"
               data-testid="filter-status-opt"
               tabindex="0"
               type="button"
@@ -9370,23 +9370,23 @@ exports[`ProjectList Component should show loading list 1`] = `
             </button>
           </div>
           <div
-            class="makeStyles-filterActionsContainer-2784"
+            class="makeStyles-filterActionsContainer-2264"
           >
             <div
-              class="MuiBox-root MuiBox-root-2870 makeStyles-filterStatusContainer-2787"
+              class="MuiBox-root MuiBox-root-2350 makeStyles-filterStatusContainer-2267"
             >
               <div
-                class="makeStyles-floatingFilterWrapper-2793 makeStyles-filterWrapper-2792 makeStyles-buttonContainer-2872 floatingFilterWrapper"
+                class="makeStyles-floatingFilterWrapper-2273 makeStyles-filterWrapper-2272 makeStyles-buttonContainer-2352 floatingFilterWrapper"
               >
                 <span
-                  class="makeStyles-floatingFilterButton-2794"
+                  class="makeStyles-floatingFilterButton-2274"
                   data-testid="controlled-button"
                   tabindex="-1"
                 >
                   <button
                     aria-controls="false"
                     aria-haspopup="true"
-                    class="MuiButtonBase-root MuiButton-root MuiButton-text makeStyles-buttonFilter-2802"
+                    class="MuiButtonBase-root MuiButton-root MuiButton-text makeStyles-buttonFilter-2282"
                     data-testid="button-filter-open"
                     tabindex="0"
                     type="button"
@@ -9399,7 +9399,7 @@ exports[`ProjectList Component should show loading list 1`] = `
                         class="MuiButton-endIcon MuiButton-iconSizeMedium"
                       >
                         <svg
-                          class="makeStyles-dropdownIcon-2796"
+                          class="makeStyles-dropdownIcon-2276"
                         >
                           expand.svg
                         </svg>
@@ -9410,23 +9410,23 @@ exports[`ProjectList Component should show loading list 1`] = `
               </div>
             </div>
             <hr
-              class="MuiDivider-root makeStyles-dividerColor-2797 MuiDivider-flexItem MuiDivider-vertical"
+              class="MuiDivider-root makeStyles-dividerColor-2277 MuiDivider-flexItem MuiDivider-vertical"
             />
             <div
-              class="MuiBox-root MuiBox-root-2876 makeStyles-filterStatusContainer-2787"
+              class="MuiBox-root MuiBox-root-2356 makeStyles-filterStatusContainer-2267"
             >
               <div
-                class="makeStyles-floatingFilterWrapper-2793 makeStyles-filterWrapper-2792  floatingFilterWrapper"
+                class="makeStyles-floatingFilterWrapper-2273 makeStyles-filterWrapper-2272  floatingFilterWrapper"
               >
                 <span
-                  class="makeStyles-floatingFilterButton-2794"
+                  class="makeStyles-floatingFilterButton-2274"
                   data-testid="controlled-button"
                   tabindex="-1"
                 >
                   <button
                     aria-controls="false"
                     aria-haspopup="true"
-                    class="MuiButtonBase-root MuiButton-root MuiButton-text makeStyles-buttonFilter-2802"
+                    class="MuiButtonBase-root MuiButton-root MuiButton-text makeStyles-buttonFilter-2282"
                     data-testid="button-filter-open"
                     tabindex="0"
                     type="button"
@@ -9439,7 +9439,7 @@ exports[`ProjectList Component should show loading list 1`] = `
                         class="MuiButton-endIcon MuiButton-iconSizeMedium"
                       >
                         <svg
-                          class="makeStyles-dropdownIcon-2796"
+                          class="makeStyles-dropdownIcon-2276"
                         >
                           expand.svg
                         </svg>
@@ -9455,18 +9455,18 @@ exports[`ProjectList Component should show loading list 1`] = `
       </div>
     </div>
     <div
-      class="MuiDrawer-root MuiDrawer-docked makeStyles-drawer-2902 makeStyles-close-2913 closed"
+      class="MuiDrawer-root MuiDrawer-docked makeStyles-drawer-2382 makeStyles-close-2393 closed"
       data-testid="project-drawer-detail"
     >
       <div
-        class="MuiPaper-root MuiDrawer-paper makeStyles-drawerPaper-2903 MuiDrawer-paperAnchorRight MuiDrawer-paperAnchorDockedRight MuiPaper-elevation0"
+        class="MuiPaper-root MuiDrawer-paper makeStyles-drawerPaper-2383 MuiDrawer-paperAnchorRight MuiDrawer-paperAnchorDockedRight MuiPaper-elevation0"
         style="visibility: hidden; webkit-transform: translateX(1024px) translateX(0px); transform: translateX(1024px) translateX(0px);"
       >
         <div
-          class="makeStyles-drawerButtonWrapper-2905"
+          class="makeStyles-drawerButtonWrapper-2385"
         >
           <div
-            class="makeStyles-drawerButton-2906"
+            class="makeStyles-drawerButton-2386"
           >
             <button
               class="MuiButtonBase-root MuiButton-root MuiButton-text"
@@ -9488,31 +9488,31 @@ exports[`ProjectList Component should show loading list 1`] = `
             </button>
           </div>
           <div
-            class="makeStyles-drawerHeader-2904"
+            class="makeStyles-drawerHeader-2384"
           >
             <p
-              class="MuiTypography-root makeStyles-drawerTitle-2907 MuiTypography-body1 MuiTypography-colorPrimary MuiTypography-alignLeft"
+              class="MuiTypography-root makeStyles-drawerTitle-2387 MuiTypography-body1 MuiTypography-colorPrimary MuiTypography-alignLeft"
             >
               Project Information
             </p>
           </div>
         </div>
         <div
-          class="makeStyles-listDetail-2852"
+          class="makeStyles-listDetail-2332"
         >
           <div
-            class="makeStyles-company-2853"
+            class="makeStyles-company-2333"
           >
             <div
-              class="makeStyles-drawerText-2909"
+              class="makeStyles-drawerText-2389"
             >
               <p
-                class="MuiTypography-root makeStyles-listAccent-2854 makeStyles-entityTitle-2851 MuiTypography-body1"
+                class="MuiTypography-root makeStyles-listAccent-2334 makeStyles-entityTitle-2331 MuiTypography-body1"
               >
                 -
               </p>
               <div
-                class="makeStyles-drawerMainText-2910"
+                class="makeStyles-drawerMainText-2390"
               >
                 <span>
                   -
@@ -9526,17 +9526,17 @@ exports[`ProjectList Component should show loading list 1`] = `
               </div>
             </div>
             <div
-              class="makeStyles-drawerSection-2908 makeStyles-drawerProjectColumn-2916"
+              class="makeStyles-drawerSection-2388 makeStyles-drawerProjectColumn-2396"
             >
               <div
-                class="makeStyles-projectWrapper-2914"
+                class="makeStyles-projectWrapper-2394"
                 data-testid=""
               >
                 <svg>
                   location.svg
                 </svg>
                 <div
-                  class="makeStyles-drawerText-2909 makeStyles-drawerTextSeparation-2911"
+                  class="makeStyles-drawerText-2389 makeStyles-drawerTextSeparation-2391"
                 >
                   <span>
                     -
@@ -9545,17 +9545,17 @@ exports[`ProjectList Component should show loading list 1`] = `
               </div>
             </div>
             <div
-              class="makeStyles-drawerSection-2908 makeStyles-drawerProjectColumn-2916"
+              class="makeStyles-drawerSection-2388 makeStyles-drawerProjectColumn-2396"
             >
               <div
-                class="makeStyles-projectWrapper-2914"
+                class="makeStyles-projectWrapper-2394"
                 data-testid=""
               >
                 <svg>
                   location.svg
                 </svg>
                 <div
-                  class="makeStyles-drawerText-2909 makeStyles-drawerTextSeparation-2911"
+                  class="makeStyles-drawerText-2389 makeStyles-drawerTextSeparation-2391"
                 >
                   <span>
                     -
@@ -9564,17 +9564,17 @@ exports[`ProjectList Component should show loading list 1`] = `
               </div>
             </div>
             <div
-              class="makeStyles-drawerSection-2908 makeStyles-drawerProjectColumn-2916"
+              class="makeStyles-drawerSection-2388 makeStyles-drawerProjectColumn-2396"
             >
               <div
-                class="makeStyles-projectWrapper-2914"
+                class="makeStyles-projectWrapper-2394"
                 data-testid=""
               >
                 <svg>
                   location.svg
                 </svg>
                 <div
-                  class="makeStyles-drawerText-2909 makeStyles-drawerTextSeparation-2911"
+                  class="makeStyles-drawerText-2389 makeStyles-drawerTextSeparation-2391"
                 >
                   <span>
                     -
@@ -9583,22 +9583,22 @@ exports[`ProjectList Component should show loading list 1`] = `
               </div>
             </div>
             <div
-              class="makeStyles-drawerSection-2908"
+              class="makeStyles-drawerSection-2388"
             >
               <div
-                class="makeStyles-drawerColumnDirection-2917"
+                class="makeStyles-drawerColumnDirection-2397"
               >
                 <div
-                  class="makeStyles-drawerRowDirection-2918"
+                  class="makeStyles-drawerRowDirection-2398"
                 >
                   <svg>
                     monetization.svg
                   </svg>
                   <div
-                    class="makeStyles-drawerText-2909 makeStyles-drawerTextSeparation-2911"
+                    class="makeStyles-drawerText-2389 makeStyles-drawerTextSeparation-2391"
                   >
                     <span
-                      class="makeStyles-listAccent-2854"
+                      class="makeStyles-listAccent-2334"
                     >
                       Badge Model
                     </span>
@@ -9622,10 +9622,10 @@ exports[`ProjectList Component should show loading list 1`] = `
             </div>
           </div>
           <hr
-            class="MuiDivider-root makeStyles-drawerDivider-2912"
+            class="MuiDivider-root makeStyles-drawerDivider-2392"
           />
           <div
-            class="makeStyles-ctaWrapper-2855"
+            class="makeStyles-ctaWrapper-2335"
           >
             <span
               class=""
@@ -9634,7 +9634,7 @@ exports[`ProjectList Component should show loading list 1`] = `
             >
               <a
                 aria-disabled="false"
-                class="MuiButtonBase-root MuiButton-root MuiButton-outlined makeStyles-drawerCTA-2821 makeStyles-borderPrimaryButton-2813 makeStyles-primaryButtonPadding-2815"
+                class="MuiButtonBase-root MuiButton-root MuiButton-outlined makeStyles-drawerCTA-2301 makeStyles-borderPrimaryButton-2293 makeStyles-primaryButtonPadding-2295"
                 data-testid="drawerProjectButton"
                 href="/projects/wizard/undefined"
                 tabindex="0"
@@ -9652,7 +9652,7 @@ exports[`ProjectList Component should show loading list 1`] = `
               tabindex="-1"
             >
               <button
-                class="MuiButtonBase-root MuiButton-root MuiButton-outlined makeStyles-drawerCTA-2821 makeStyles-warningButton-2822"
+                class="MuiButtonBase-root MuiButton-root MuiButton-outlined makeStyles-drawerCTA-2301 makeStyles-warningButton-2302"
                 data-testid="deleteProjectButton"
                 tabindex="0"
                 type="button"
@@ -9682,16 +9682,16 @@ exports[`ProjectList Component should show loading widgets 1`] = `
       class=""
     >
       <div
-        class="MuiBox-root MuiBox-root-3553"
+        class="MuiBox-root MuiBox-root-3033"
         style="height: 50px; margin-bottom: 13px; width: 100%;"
       >
         <div
-          class="MuiBox-root MuiBox-root-3554"
+          class="MuiBox-root MuiBox-root-3034"
           style="display: flex; align-items: center; justify-content: space-between;"
         >
           <div>
             <div
-              class="MuiBox-root MuiBox-root-3555"
+              class="MuiBox-root MuiBox-root-3035"
               style="display: flex; align-items: center; margin-top: 5px;"
             >
               <h2
@@ -9703,7 +9703,7 @@ exports[`ProjectList Component should show loading widgets 1`] = `
             </div>
           </div>
           <button
-            class="MuiButtonBase-root MuiButton-root MuiButton-contained makeStyles-createButton-3505 makeStyles-primaryButtonLarge-3507 MuiButton-containedPrimary MuiButton-containedSizeLarge MuiButton-sizeLarge MuiButton-fullWidth"
+            class="MuiButtonBase-root MuiButton-root MuiButton-contained makeStyles-createButton-2985 makeStyles-primaryButtonLarge-2987 MuiButton-containedPrimary MuiButton-containedSizeLarge MuiButton-sizeLarge MuiButton-fullWidth"
             data-testid="create-project-btn"
             tabindex="0"
             type="submit"
@@ -9718,7 +9718,7 @@ exports[`ProjectList Component should show loading widgets 1`] = `
             />
           </button>
           <button
-            class="MuiButtonBase-root MuiButton-root MuiButton-contained makeStyles-createButton-3505 makeStyles-primaryButtonLarge-3507 MuiButton-containedPrimary MuiButton-containedSizeLarge MuiButton-sizeLarge MuiButton-fullWidth"
+            class="MuiButtonBase-root MuiButton-root MuiButton-contained makeStyles-createButton-2985 makeStyles-primaryButtonLarge-2987 MuiButton-containedPrimary MuiButton-containedSizeLarge MuiButton-sizeLarge MuiButton-fullWidth"
             tabindex="0"
             type="submit"
           >
@@ -9734,36 +9734,36 @@ exports[`ProjectList Component should show loading widgets 1`] = `
         </div>
       </div>
       <div
-        class="makeStyles-widgetsWrapper-3539"
+        class="makeStyles-widgetsWrapper-3019"
         id="summary-widgets"
       >
         <div
-          class="MuiPaper-root makeStyles-widget-3556 MuiPaper-elevation0 MuiPaper-rounded"
+          class="MuiPaper-root makeStyles-widget-3036 MuiPaper-elevation0 MuiPaper-rounded"
         >
           Loading...
         </div>
         <div
-          class="MuiPaper-root makeStyles-widget-3556 MuiPaper-elevation0 MuiPaper-rounded"
+          class="MuiPaper-root makeStyles-widget-3036 MuiPaper-elevation0 MuiPaper-rounded"
         >
           Loading...
         </div>
         <div
-          class="MuiPaper-root makeStyles-widget-3556 MuiPaper-elevation0 MuiPaper-rounded"
+          class="MuiPaper-root makeStyles-widget-3036 MuiPaper-elevation0 MuiPaper-rounded"
         >
           Loading...
         </div>
       </div>
       <div
-        class="makeStyles-tableWrapper-3464"
+        class="makeStyles-tableWrapper-2944"
       >
         <div
-          class="makeStyles-filterContainer-3472"
+          class="makeStyles-filterContainer-2952"
         >
           <div
-            class="makeStyles-statusFilter-3473"
+            class="makeStyles-statusFilter-2953"
           >
             <button
-              class="MuiButtonBase-root MuiButton-root MuiButton-text makeStyles-activeFilter-3474"
+              class="MuiButtonBase-root MuiButton-root MuiButton-text makeStyles-activeFilter-2954"
               data-testid="filter-status-opt"
               tabindex="0"
               type="button"
@@ -9824,23 +9824,23 @@ exports[`ProjectList Component should show loading widgets 1`] = `
             </button>
           </div>
           <div
-            class="makeStyles-filterActionsContainer-3475"
+            class="makeStyles-filterActionsContainer-2955"
           >
             <div
-              class="MuiBox-root MuiBox-root-3561 makeStyles-filterStatusContainer-3478"
+              class="MuiBox-root MuiBox-root-3041 makeStyles-filterStatusContainer-2958"
             >
               <div
-                class="makeStyles-floatingFilterWrapper-3484 makeStyles-filterWrapper-3483 makeStyles-buttonContainer-3563 floatingFilterWrapper"
+                class="makeStyles-floatingFilterWrapper-2964 makeStyles-filterWrapper-2963 makeStyles-buttonContainer-3043 floatingFilterWrapper"
               >
                 <span
-                  class="makeStyles-floatingFilterButton-3485"
+                  class="makeStyles-floatingFilterButton-2965"
                   data-testid="controlled-button"
                   tabindex="-1"
                 >
                   <button
                     aria-controls="false"
                     aria-haspopup="true"
-                    class="MuiButtonBase-root MuiButton-root MuiButton-text makeStyles-buttonFilter-3493"
+                    class="MuiButtonBase-root MuiButton-root MuiButton-text makeStyles-buttonFilter-2973"
                     data-testid="button-filter-open"
                     tabindex="0"
                     type="button"
@@ -9853,7 +9853,7 @@ exports[`ProjectList Component should show loading widgets 1`] = `
                         class="MuiButton-endIcon MuiButton-iconSizeMedium"
                       >
                         <svg
-                          class="makeStyles-dropdownIcon-3487"
+                          class="makeStyles-dropdownIcon-2967"
                         >
                           expand.svg
                         </svg>
@@ -9864,23 +9864,23 @@ exports[`ProjectList Component should show loading widgets 1`] = `
               </div>
             </div>
             <hr
-              class="MuiDivider-root makeStyles-dividerColor-3488 MuiDivider-flexItem MuiDivider-vertical"
+              class="MuiDivider-root makeStyles-dividerColor-2968 MuiDivider-flexItem MuiDivider-vertical"
             />
             <div
-              class="MuiBox-root MuiBox-root-3567 makeStyles-filterStatusContainer-3478"
+              class="MuiBox-root MuiBox-root-3047 makeStyles-filterStatusContainer-2958"
             >
               <div
-                class="makeStyles-floatingFilterWrapper-3484 makeStyles-filterWrapper-3483  floatingFilterWrapper"
+                class="makeStyles-floatingFilterWrapper-2964 makeStyles-filterWrapper-2963  floatingFilterWrapper"
               >
                 <span
-                  class="makeStyles-floatingFilterButton-3485"
+                  class="makeStyles-floatingFilterButton-2965"
                   data-testid="controlled-button"
                   tabindex="-1"
                 >
                   <button
                     aria-controls="false"
                     aria-haspopup="true"
-                    class="MuiButtonBase-root MuiButton-root MuiButton-text makeStyles-buttonFilter-3493"
+                    class="MuiButtonBase-root MuiButton-root MuiButton-text makeStyles-buttonFilter-2973"
                     data-testid="button-filter-open"
                     tabindex="0"
                     type="button"
@@ -9893,7 +9893,7 @@ exports[`ProjectList Component should show loading widgets 1`] = `
                         class="MuiButton-endIcon MuiButton-iconSizeMedium"
                       >
                         <svg
-                          class="makeStyles-dropdownIcon-3487"
+                          class="makeStyles-dropdownIcon-2967"
                         >
                           expand.svg
                         </svg>
@@ -9951,14 +9951,14 @@ exports[`ProjectList Component should show loading widgets 1`] = `
             class="MuiTableBody-root"
           >
             <tr
-              class="MuiTableRow-root WithStyles(ForwardRef(TableRow))-root-3569 makeStyles-clickableRow-3551"
+              class="MuiTableRow-root WithStyles(ForwardRef(TableRow))-root-3049 makeStyles-clickableRow-3031"
               data-testid="project-list-row"
             >
               <td
-                class="MuiTableCell-root MuiTableCell-body makeStyles-listName-3536"
+                class="MuiTableCell-root MuiTableCell-body makeStyles-listName-3016"
               >
                 <div
-                  class="makeStyles-projectRow-3447"
+                  class="makeStyles-projectRow-2927"
                 >
                   <div
                     class="MuiAvatar-root MuiAvatar-circle MuiAvatar-colorDefault"
@@ -9975,7 +9975,7 @@ exports[`ProjectList Component should show loading widgets 1`] = `
                     </svg>
                   </div>
                   <a
-                    class="Link-root-3570"
+                    class="Link-root-3050"
                     data-testid="project-list-row-item-link"
                     href="/projects/wizard/9164e4c4-6521-47bb-97fd-c75ac02b2cf2"
                     title="Edit"
@@ -9985,10 +9985,10 @@ exports[`ProjectList Component should show loading widgets 1`] = `
                 </div>
               </td>
               <td
-                class="MuiTableCell-root MuiTableCell-body makeStyles-listName-3536"
+                class="MuiTableCell-root MuiTableCell-body makeStyles-listName-3016"
               >
                 <div
-                  class="makeStyles-projectRow-3447"
+                  class="makeStyles-projectRow-2927"
                 >
                   <div
                     class="MuiAvatar-root MuiAvatar-circle MuiAvatar-colorDefault"
@@ -10005,7 +10005,7 @@ exports[`ProjectList Component should show loading widgets 1`] = `
                     </svg>
                   </div>
                   <a
-                    class="Link-root-3570"
+                    class="Link-root-3050"
                     href="/projects/wizard-new/9164e4c4-6521-47bb-97fd-c75ac02b2cf2"
                     title="Edit"
                   >
@@ -10014,10 +10014,10 @@ exports[`ProjectList Component should show loading widgets 1`] = `
                 </div>
               </td>
               <td
-                class="MuiTableCell-root MuiTableCell-body makeStyles-listName-3536"
+                class="MuiTableCell-root MuiTableCell-body makeStyles-listName-3016"
               >
                 <div
-                  class="makeStyles-projectRow-3447"
+                  class="makeStyles-projectRow-2927"
                 >
                   <div
                     class="MuiAvatar-root MuiAvatar-circle MuiAvatar-colorDefault"
@@ -10034,7 +10034,7 @@ exports[`ProjectList Component should show loading widgets 1`] = `
                     </svg>
                   </div>
                   <a
-                    class="Link-root-3570"
+                    class="Link-root-3050"
                     href="/projects/wizard/9164e4c4-6521-47bb-97fd-c75ac02b2cf2"
                     title="Edit"
                   >
@@ -10043,28 +10043,28 @@ exports[`ProjectList Component should show loading widgets 1`] = `
                 </div>
               </td>
               <td
-                class="MuiTableCell-root MuiTableCell-body makeStyles-listGeneralText-3538"
+                class="MuiTableCell-root MuiTableCell-body makeStyles-listGeneralText-3018"
               >
                 -
               </td>
               <td
-                class="MuiTableCell-root MuiTableCell-body makeStyles-listGeneralText-3538"
+                class="MuiTableCell-root MuiTableCell-body makeStyles-listGeneralText-3018"
               >
                 Jul 15, 2020 to Jul 15, 2020
               </td>
               <td
-                class="MuiTableCell-root MuiTableCell-body makeStyles-listGeneralText-3538"
+                class="MuiTableCell-root MuiTableCell-body makeStyles-listGeneralText-3018"
               />
             </tr>
             <tr
-              class="MuiTableRow-root WithStyles(ForwardRef(TableRow))-root-3569 makeStyles-clickableRow-3551"
+              class="MuiTableRow-root WithStyles(ForwardRef(TableRow))-root-3049 makeStyles-clickableRow-3031"
               data-testid="project-list-row"
             >
               <td
-                class="MuiTableCell-root MuiTableCell-body makeStyles-listName-3536"
+                class="MuiTableCell-root MuiTableCell-body makeStyles-listName-3016"
               >
                 <div
-                  class="makeStyles-projectRow-3447"
+                  class="makeStyles-projectRow-2927"
                 >
                   <div
                     class="MuiAvatar-root MuiAvatar-circle MuiAvatar-colorDefault"
@@ -10081,7 +10081,7 @@ exports[`ProjectList Component should show loading widgets 1`] = `
                     </svg>
                   </div>
                   <a
-                    class="Link-root-3570"
+                    class="Link-root-3050"
                     data-testid="project-list-row-item-link"
                     href="/projects/wizard/8aa1c4c4-6521-47bb-27fd-af5ac02b2cd8/review"
                     title="Review"
@@ -10091,10 +10091,10 @@ exports[`ProjectList Component should show loading widgets 1`] = `
                 </div>
               </td>
               <td
-                class="MuiTableCell-root MuiTableCell-body makeStyles-listName-3536"
+                class="MuiTableCell-root MuiTableCell-body makeStyles-listName-3016"
               >
                 <div
-                  class="makeStyles-projectRow-3447"
+                  class="makeStyles-projectRow-2927"
                 >
                   <div
                     class="MuiAvatar-root MuiAvatar-circle MuiAvatar-colorDefault"
@@ -10111,7 +10111,7 @@ exports[`ProjectList Component should show loading widgets 1`] = `
                     </svg>
                   </div>
                   <a
-                    class="Link-root-3570"
+                    class="Link-root-3050"
                     href="/projects/wizard-new/8aa1c4c4-6521-47bb-27fd-af5ac02b2cd8"
                     title="Review"
                   >
@@ -10120,10 +10120,10 @@ exports[`ProjectList Component should show loading widgets 1`] = `
                 </div>
               </td>
               <td
-                class="MuiTableCell-root MuiTableCell-body makeStyles-listName-3536"
+                class="MuiTableCell-root MuiTableCell-body makeStyles-listName-3016"
               >
                 <div
-                  class="makeStyles-projectRow-3447"
+                  class="makeStyles-projectRow-2927"
                 >
                   <div
                     class="MuiAvatar-root MuiAvatar-circle MuiAvatar-colorDefault"
@@ -10140,7 +10140,7 @@ exports[`ProjectList Component should show loading widgets 1`] = `
                     </svg>
                   </div>
                   <a
-                    class="Link-root-3570"
+                    class="Link-root-3050"
                     href="/projects/wizard/8aa1c4c4-6521-47bb-27fd-af5ac02b2cd8/review"
                     title="Review"
                   >
@@ -10149,28 +10149,28 @@ exports[`ProjectList Component should show loading widgets 1`] = `
                 </div>
               </td>
               <td
-                class="MuiTableCell-root MuiTableCell-body makeStyles-listGeneralText-3538"
+                class="MuiTableCell-root MuiTableCell-body makeStyles-listGeneralText-3018"
               >
                 -
               </td>
               <td
-                class="MuiTableCell-root MuiTableCell-body makeStyles-listGeneralText-3538"
+                class="MuiTableCell-root MuiTableCell-body makeStyles-listGeneralText-3018"
               >
                 Jul 15, 2020 to Jul 15, 2020
               </td>
               <td
-                class="MuiTableCell-root MuiTableCell-body makeStyles-listGeneralText-3538"
+                class="MuiTableCell-root MuiTableCell-body makeStyles-listGeneralText-3018"
               />
             </tr>
             <tr
-              class="MuiTableRow-root WithStyles(ForwardRef(TableRow))-root-3569 makeStyles-clickableRow-3551"
+              class="MuiTableRow-root WithStyles(ForwardRef(TableRow))-root-3049 makeStyles-clickableRow-3031"
               data-testid="project-list-row"
             >
               <td
-                class="MuiTableCell-root MuiTableCell-body makeStyles-listName-3536"
+                class="MuiTableCell-root MuiTableCell-body makeStyles-listName-3016"
               >
                 <div
-                  class="makeStyles-projectRow-3447"
+                  class="makeStyles-projectRow-2927"
                 >
                   <div
                     class="MuiAvatar-root MuiAvatar-circle MuiAvatar-colorDefault"
@@ -10187,7 +10187,7 @@ exports[`ProjectList Component should show loading widgets 1`] = `
                     </svg>
                   </div>
                   <a
-                    class="Link-root-3570"
+                    class="Link-root-3050"
                     data-testid="project-list-row-item-link"
                     href="/projects/wizard/cbb1c4c4-2221-f7bb-27fd-ff5ac02b2cda/review"
                     title="Review"
@@ -10197,10 +10197,10 @@ exports[`ProjectList Component should show loading widgets 1`] = `
                 </div>
               </td>
               <td
-                class="MuiTableCell-root MuiTableCell-body makeStyles-listName-3536"
+                class="MuiTableCell-root MuiTableCell-body makeStyles-listName-3016"
               >
                 <div
-                  class="makeStyles-projectRow-3447"
+                  class="makeStyles-projectRow-2927"
                 >
                   <div
                     class="MuiAvatar-root MuiAvatar-circle MuiAvatar-colorDefault"
@@ -10217,7 +10217,7 @@ exports[`ProjectList Component should show loading widgets 1`] = `
                     </svg>
                   </div>
                   <a
-                    class="Link-root-3570"
+                    class="Link-root-3050"
                     href="/projects/wizard-new/cbb1c4c4-2221-f7bb-27fd-ff5ac02b2cda"
                     title="Review"
                   >
@@ -10226,10 +10226,10 @@ exports[`ProjectList Component should show loading widgets 1`] = `
                 </div>
               </td>
               <td
-                class="MuiTableCell-root MuiTableCell-body makeStyles-listName-3536"
+                class="MuiTableCell-root MuiTableCell-body makeStyles-listName-3016"
               >
                 <div
-                  class="makeStyles-projectRow-3447"
+                  class="makeStyles-projectRow-2927"
                 >
                   <div
                     class="MuiAvatar-root MuiAvatar-circle MuiAvatar-colorDefault"
@@ -10246,7 +10246,7 @@ exports[`ProjectList Component should show loading widgets 1`] = `
                     </svg>
                   </div>
                   <a
-                    class="Link-root-3570"
+                    class="Link-root-3050"
                     href="/projects/wizard/cbb1c4c4-2221-f7bb-27fd-ff5ac02b2cda/review"
                     title="Review"
                   >
@@ -10255,28 +10255,28 @@ exports[`ProjectList Component should show loading widgets 1`] = `
                 </div>
               </td>
               <td
-                class="MuiTableCell-root MuiTableCell-body makeStyles-listGeneralText-3538"
+                class="MuiTableCell-root MuiTableCell-body makeStyles-listGeneralText-3018"
               >
                 -
               </td>
               <td
-                class="MuiTableCell-root MuiTableCell-body makeStyles-listGeneralText-3538"
+                class="MuiTableCell-root MuiTableCell-body makeStyles-listGeneralText-3018"
               >
                 Jul 15, 2020 to Jul 15, 2020
               </td>
               <td
-                class="MuiTableCell-root MuiTableCell-body makeStyles-listGeneralText-3538"
+                class="MuiTableCell-root MuiTableCell-body makeStyles-listGeneralText-3018"
               />
             </tr>
             <tr
-              class="MuiTableRow-root WithStyles(ForwardRef(TableRow))-root-3569 makeStyles-clickableRow-3551"
+              class="MuiTableRow-root WithStyles(ForwardRef(TableRow))-root-3049 makeStyles-clickableRow-3031"
               data-testid="project-list-row"
             >
               <td
-                class="MuiTableCell-root MuiTableCell-body makeStyles-listName-3536"
+                class="MuiTableCell-root MuiTableCell-body makeStyles-listName-3016"
               >
                 <div
-                  class="makeStyles-projectRow-3447"
+                  class="makeStyles-projectRow-2927"
                 >
                   <div
                     class="MuiAvatar-root MuiAvatar-circle MuiAvatar-colorDefault"
@@ -10293,7 +10293,7 @@ exports[`ProjectList Component should show loading widgets 1`] = `
                     </svg>
                   </div>
                   <a
-                    class="Link-root-3570"
+                    class="Link-root-3050"
                     data-testid="project-list-row-item-link"
                     href="/projects/wizard/820ccbf5-03aa-4797-9001-d79643c3d35d"
                     title="Edit"
@@ -10303,10 +10303,10 @@ exports[`ProjectList Component should show loading widgets 1`] = `
                 </div>
               </td>
               <td
-                class="MuiTableCell-root MuiTableCell-body makeStyles-listName-3536"
+                class="MuiTableCell-root MuiTableCell-body makeStyles-listName-3016"
               >
                 <div
-                  class="makeStyles-projectRow-3447"
+                  class="makeStyles-projectRow-2927"
                 >
                   <div
                     class="MuiAvatar-root MuiAvatar-circle MuiAvatar-colorDefault"
@@ -10323,7 +10323,7 @@ exports[`ProjectList Component should show loading widgets 1`] = `
                     </svg>
                   </div>
                   <a
-                    class="Link-root-3570"
+                    class="Link-root-3050"
                     href="/projects/wizard-new/820ccbf5-03aa-4797-9001-d79643c3d35d"
                     title="Edit"
                   >
@@ -10332,10 +10332,10 @@ exports[`ProjectList Component should show loading widgets 1`] = `
                 </div>
               </td>
               <td
-                class="MuiTableCell-root MuiTableCell-body makeStyles-listName-3536"
+                class="MuiTableCell-root MuiTableCell-body makeStyles-listName-3016"
               >
                 <div
-                  class="makeStyles-projectRow-3447"
+                  class="makeStyles-projectRow-2927"
                 >
                   <div
                     class="MuiAvatar-root MuiAvatar-circle MuiAvatar-colorDefault"
@@ -10352,7 +10352,7 @@ exports[`ProjectList Component should show loading widgets 1`] = `
                     </svg>
                   </div>
                   <a
-                    class="Link-root-3570"
+                    class="Link-root-3050"
                     href="/projects/wizard/820ccbf5-03aa-4797-9001-d79643c3d35d"
                     title="Edit"
                   >
@@ -10361,7 +10361,7 @@ exports[`ProjectList Component should show loading widgets 1`] = `
                 </div>
               </td>
               <td
-                class="MuiTableCell-root MuiTableCell-body makeStyles-listGeneralText-3538"
+                class="MuiTableCell-root MuiTableCell-body makeStyles-listGeneralText-3018"
               >
                 <span>
                   line 1
@@ -10371,19 +10371,19 @@ exports[`ProjectList Component should show loading widgets 1`] = `
                 </span>
               </td>
               <td
-                class="MuiTableCell-root MuiTableCell-body makeStyles-listGeneralText-3538"
+                class="MuiTableCell-root MuiTableCell-body makeStyles-listGeneralText-3018"
               >
                 Jul 15, 2020 to Jul 15, 2020
               </td>
               <td
-                class="MuiTableCell-root MuiTableCell-body makeStyles-listGeneralText-3538"
+                class="MuiTableCell-root MuiTableCell-body makeStyles-listGeneralText-3018"
               />
             </tr>
           </tbody>
         </table>
         <nav
           aria-label="pagination navigation"
-          class="MuiPagination-root  makeStyles-pagination-3574"
+          class="MuiPagination-root  makeStyles-pagination-3054"
           data-testid="pagination"
         >
           <ul
@@ -10463,18 +10463,18 @@ exports[`ProjectList Component should show loading widgets 1`] = `
       </div>
     </div>
     <div
-      class="MuiDrawer-root MuiDrawer-docked makeStyles-drawer-3600 makeStyles-close-3611 closed"
+      class="MuiDrawer-root MuiDrawer-docked makeStyles-drawer-3080 makeStyles-close-3091 closed"
       data-testid="project-drawer-detail"
     >
       <div
-        class="MuiPaper-root MuiDrawer-paper makeStyles-drawerPaper-3601 MuiDrawer-paperAnchorRight MuiDrawer-paperAnchorDockedRight MuiPaper-elevation0"
+        class="MuiPaper-root MuiDrawer-paper makeStyles-drawerPaper-3081 MuiDrawer-paperAnchorRight MuiDrawer-paperAnchorDockedRight MuiPaper-elevation0"
         style="visibility: hidden; webkit-transform: translateX(1024px) translateX(0px); transform: translateX(1024px) translateX(0px);"
       >
         <div
-          class="makeStyles-drawerButtonWrapper-3603"
+          class="makeStyles-drawerButtonWrapper-3083"
         >
           <div
-            class="makeStyles-drawerButton-3604"
+            class="makeStyles-drawerButton-3084"
           >
             <button
               class="MuiButtonBase-root MuiButton-root MuiButton-text"
@@ -10496,31 +10496,31 @@ exports[`ProjectList Component should show loading widgets 1`] = `
             </button>
           </div>
           <div
-            class="makeStyles-drawerHeader-3602"
+            class="makeStyles-drawerHeader-3082"
           >
             <p
-              class="MuiTypography-root makeStyles-drawerTitle-3605 MuiTypography-body1 MuiTypography-colorPrimary MuiTypography-alignLeft"
+              class="MuiTypography-root makeStyles-drawerTitle-3085 MuiTypography-body1 MuiTypography-colorPrimary MuiTypography-alignLeft"
             >
               Project Information
             </p>
           </div>
         </div>
         <div
-          class="makeStyles-listDetail-3543"
+          class="makeStyles-listDetail-3023"
         >
           <div
-            class="makeStyles-company-3544"
+            class="makeStyles-company-3024"
           >
             <div
-              class="makeStyles-drawerText-3607"
+              class="makeStyles-drawerText-3087"
             >
               <p
-                class="MuiTypography-root makeStyles-listAccent-3545 makeStyles-entityTitle-3542 MuiTypography-body1"
+                class="MuiTypography-root makeStyles-listAccent-3025 makeStyles-entityTitle-3022 MuiTypography-body1"
               >
                 -
               </p>
               <div
-                class="makeStyles-drawerMainText-3608"
+                class="makeStyles-drawerMainText-3088"
               >
                 <span>
                   -
@@ -10534,17 +10534,17 @@ exports[`ProjectList Component should show loading widgets 1`] = `
               </div>
             </div>
             <div
-              class="makeStyles-drawerSection-3606 makeStyles-drawerProjectColumn-3614"
+              class="makeStyles-drawerSection-3086 makeStyles-drawerProjectColumn-3094"
             >
               <div
-                class="makeStyles-projectWrapper-3612"
+                class="makeStyles-projectWrapper-3092"
                 data-testid=""
               >
                 <svg>
                   location.svg
                 </svg>
                 <div
-                  class="makeStyles-drawerText-3607 makeStyles-drawerTextSeparation-3609"
+                  class="makeStyles-drawerText-3087 makeStyles-drawerTextSeparation-3089"
                 >
                   <span>
                     -
@@ -10553,17 +10553,17 @@ exports[`ProjectList Component should show loading widgets 1`] = `
               </div>
             </div>
             <div
-              class="makeStyles-drawerSection-3606 makeStyles-drawerProjectColumn-3614"
+              class="makeStyles-drawerSection-3086 makeStyles-drawerProjectColumn-3094"
             >
               <div
-                class="makeStyles-projectWrapper-3612"
+                class="makeStyles-projectWrapper-3092"
                 data-testid=""
               >
                 <svg>
                   location.svg
                 </svg>
                 <div
-                  class="makeStyles-drawerText-3607 makeStyles-drawerTextSeparation-3609"
+                  class="makeStyles-drawerText-3087 makeStyles-drawerTextSeparation-3089"
                 >
                   <span>
                     -
@@ -10572,17 +10572,17 @@ exports[`ProjectList Component should show loading widgets 1`] = `
               </div>
             </div>
             <div
-              class="makeStyles-drawerSection-3606 makeStyles-drawerProjectColumn-3614"
+              class="makeStyles-drawerSection-3086 makeStyles-drawerProjectColumn-3094"
             >
               <div
-                class="makeStyles-projectWrapper-3612"
+                class="makeStyles-projectWrapper-3092"
                 data-testid=""
               >
                 <svg>
                   location.svg
                 </svg>
                 <div
-                  class="makeStyles-drawerText-3607 makeStyles-drawerTextSeparation-3609"
+                  class="makeStyles-drawerText-3087 makeStyles-drawerTextSeparation-3089"
                 >
                   <span>
                     -
@@ -10591,22 +10591,22 @@ exports[`ProjectList Component should show loading widgets 1`] = `
               </div>
             </div>
             <div
-              class="makeStyles-drawerSection-3606"
+              class="makeStyles-drawerSection-3086"
             >
               <div
-                class="makeStyles-drawerColumnDirection-3615"
+                class="makeStyles-drawerColumnDirection-3095"
               >
                 <div
-                  class="makeStyles-drawerRowDirection-3616"
+                  class="makeStyles-drawerRowDirection-3096"
                 >
                   <svg>
                     monetization.svg
                   </svg>
                   <div
-                    class="makeStyles-drawerText-3607 makeStyles-drawerTextSeparation-3609"
+                    class="makeStyles-drawerText-3087 makeStyles-drawerTextSeparation-3089"
                   >
                     <span
-                      class="makeStyles-listAccent-3545"
+                      class="makeStyles-listAccent-3025"
                     >
                       Badge Model
                     </span>
@@ -10630,10 +10630,10 @@ exports[`ProjectList Component should show loading widgets 1`] = `
             </div>
           </div>
           <hr
-            class="MuiDivider-root makeStyles-drawerDivider-3610"
+            class="MuiDivider-root makeStyles-drawerDivider-3090"
           />
           <div
-            class="makeStyles-ctaWrapper-3546"
+            class="makeStyles-ctaWrapper-3026"
           >
             <span
               class=""
@@ -10642,7 +10642,7 @@ exports[`ProjectList Component should show loading widgets 1`] = `
             >
               <a
                 aria-disabled="false"
-                class="MuiButtonBase-root MuiButton-root MuiButton-outlined makeStyles-drawerCTA-3512 makeStyles-borderPrimaryButton-3504 makeStyles-primaryButtonPadding-3506"
+                class="MuiButtonBase-root MuiButton-root MuiButton-outlined makeStyles-drawerCTA-2992 makeStyles-borderPrimaryButton-2984 makeStyles-primaryButtonPadding-2986"
                 data-testid="drawerProjectButton"
                 href="/projects/wizard/undefined"
                 tabindex="0"
@@ -10660,7 +10660,7 @@ exports[`ProjectList Component should show loading widgets 1`] = `
               tabindex="-1"
             >
               <button
-                class="MuiButtonBase-root MuiButton-root MuiButton-outlined makeStyles-drawerCTA-3512 makeStyles-warningButton-3513"
+                class="MuiButtonBase-root MuiButton-root MuiButton-outlined makeStyles-drawerCTA-2992 makeStyles-warningButton-2993"
                 data-testid="deleteProjectButton"
                 tabindex="0"
                 type="button"

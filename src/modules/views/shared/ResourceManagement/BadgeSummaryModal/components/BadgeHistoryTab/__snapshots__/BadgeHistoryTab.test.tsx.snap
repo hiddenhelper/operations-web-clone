@@ -10,174 +10,17 @@ exports[`BadgeHistoryTab should loading 1`] = `
 </div>
 `;
 
-exports[`BadgeHistoryTab should render 1`] = `
-<div>
-  <div
-    style="padding: 15px;"
-  >
-    <table
-      aria-label="project-list"
-      class="MuiTable-root"
-    >
-      <thead
-        class="MuiTableHead-root"
-      >
-        <tr
-          class="MuiTableRow-root MuiTableRow-head"
-        >
-          <th
-            class="MuiTableCell-root MuiTableCell-head"
-            scope="col"
-          >
-            Date
-          </th>
-          <th
-            class="MuiTableCell-root MuiTableCell-head"
-            scope="col"
-          >
-            User
-          </th>
-          <th
-            class="MuiTableCell-root MuiTableCell-head"
-            scope="col"
-          >
-            Badge Action
-          </th>
-          <th
-            class="MuiTableCell-root MuiTableCell-head"
-            scope="col"
-          >
-            Tag ID
-          </th>
-          <th
-            class="MuiTableCell-root MuiTableCell-head"
-            scope="col"
-          >
-            Description
-          </th>
-        </tr>
-      </thead>
-      <tbody
-        class="MuiTableBody-root"
-      >
-        <tr
-          class="MuiTableRow-root WithStyles(ForwardRef(TableRow))-root-85"
-          data-testid="project-list-row"
-        >
-          <td
-            class="MuiTableCell-root MuiTableCell-body"
-          >
-            Feb 01, 2021 02:54 am
-          </td>
-          <td
-            class="MuiTableCell-root MuiTableCell-body"
-          >
-            string
-             
-            string
-          </td>
-          <td
-            class="MuiTableCell-root MuiTableCell-body"
-          >
-            <div
-              class="makeStyles-ellipsedColumn-63"
-              title="Badge added on ACS device-name (Reader host-name)"
-            >
-              Badge added on ACS device-name (Reader host-name)
-            </div>
-          </td>
-          <td
-            class="MuiTableCell-root MuiTableCell-body"
-          >
-            1273812391
-          </td>
-          <td
-            class="MuiTableCell-root MuiTableCell-body"
-          >
-            description
-          </td>
-        </tr>
-      </tbody>
-    </table>
-    <nav
-      aria-label="pagination navigation"
-      class="MuiPagination-root  makeStyles-pagination-86"
-      data-testid="pagination"
-    >
-      <ul
-        class="MuiPagination-ul"
-      >
-        <li>
-          <button
-            aria-label="Go to previous page"
-            class="MuiButtonBase-root MuiPaginationItem-root MuiPaginationItem-page Mui-disabled Mui-disabled"
-            disabled=""
-            tabindex="-1"
-            type="button"
-          >
-            <svg
-              aria-hidden="true"
-              class="MuiSvgIcon-root MuiPaginationItem-icon"
-              focusable="false"
-              viewBox="0 0 24 24"
-            >
-              <path
-                d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"
-              />
-            </svg>
-          </button>
-        </li>
-        <li>
-          <button
-            aria-current="true"
-            aria-label="page 1"
-            class="MuiButtonBase-root MuiPaginationItem-root MuiPaginationItem-page Mui-selected"
-            tabindex="0"
-            type="button"
-          >
-            1
-            <span
-              class="MuiTouchRipple-root"
-            />
-          </button>
-        </li>
-        <li>
-          <button
-            aria-label="Go to next page"
-            class="MuiButtonBase-root MuiPaginationItem-root MuiPaginationItem-page Mui-disabled Mui-disabled"
-            disabled=""
-            tabindex="-1"
-            type="button"
-          >
-            <svg
-              aria-hidden="true"
-              class="MuiSvgIcon-root MuiPaginationItem-icon"
-              focusable="false"
-              viewBox="0 0 24 24"
-            >
-              <path
-                d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"
-              />
-            </svg>
-          </button>
-        </li>
-      </ul>
-    </nav>
-  </div>
-</div>
-`;
-
 exports[`BadgeHistoryTab should render empty 1`] = `
 <div>
   <div
     style="padding: 15px;"
   >
     <div
-      class="makeStyles-emptyBadgeHistory-197 makeStyles-container-215"
+      class="makeStyles-emptyBadgeHistory-153 makeStyles-container-171"
     >
       <div>
         <div
-          class="MuiAvatar-root MuiAvatar-circle makeStyles-missingAvatarWrapper-226 makeStyles-missingAvatarBig-227 MuiAvatar-colorDefault"
+          class="MuiAvatar-root MuiAvatar-circle makeStyles-missingAvatarWrapper-182 makeStyles-missingAvatarBig-183 MuiAvatar-colorDefault"
         >
           <svg>
             e-badge.svg
@@ -185,7 +28,7 @@ exports[`BadgeHistoryTab should render empty 1`] = `
         </div>
       </div>
       <p
-        class="MuiTypography-root makeStyles-missingListText-216 MuiTypography-body1"
+        class="MuiTypography-root makeStyles-missingListText-172 MuiTypography-body1"
       >
         There is no Badge History
       </p>

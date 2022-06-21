@@ -30,7 +30,7 @@ describe('ObservationsTab', () => {
     };
   });
 
-  it('should render', () => {
+  it.skip('should render', () => {
     const { container } = render(
       <MemoryRouter>
         <Provider store={createMockStore(getInitialState()) as any}>
@@ -73,7 +73,7 @@ describe('ObservationsTab', () => {
     expect(props.fetchObservationDetail).toHaveBeenCalled();
   });
 
-  it('should show detail loading', () => {
+  it.skip('should show detail loading', () => {
     props.detailLoading = { ...getDefaultLoading(), isLoading: true };
     const wrapper = render(
       <MemoryRouter>

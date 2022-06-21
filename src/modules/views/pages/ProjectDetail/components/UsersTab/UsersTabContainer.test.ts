@@ -21,6 +21,7 @@ describe('UsersTabContainer', () => {
       clearUserMap: expect.any(Function),
       fetchUserList: expect.any(Function),
       fetchProjectClientList: expect.any(Function),
+      fetchUserProfile: expect.any(Function),
     });
   });
 

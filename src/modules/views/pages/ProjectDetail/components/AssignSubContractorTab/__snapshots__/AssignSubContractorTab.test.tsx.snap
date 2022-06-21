@@ -5,26 +5,26 @@ exports[`AssignSubContractorTab should change view type 1`] = `
   aria-hidden="true"
 >
   <div
-    class="makeStyles-filterActionsContainer-1196 makeStyles-filterActionsContainerPadding-1198"
+    class="makeStyles-filterActionsContainer-1204 makeStyles-filterActionsContainerPadding-1206"
   >
     <div
-      class="makeStyles-filterActionsContainerLeft-1197"
+      class="makeStyles-filterActionsContainerLeft-1205"
     >
       <div
-        class="MuiBox-root MuiBox-root-1224 makeStyles-filterStatusContainer-1199 makeStyles-autocompleteFilterStatus-1216 makeStyles-leftFilter-1186"
+        class="MuiBox-root MuiBox-root-1232 makeStyles-filterStatusContainer-1207 makeStyles-autocompleteFilterStatus-1224 makeStyles-leftFilter-1194"
       >
         <div
-          class="makeStyles-floatingFilterWrapper-1205 makeStyles-filterWrapper-1204  floatingFilterWrapper"
+          class="makeStyles-floatingFilterWrapper-1213 makeStyles-filterWrapper-1212  floatingFilterWrapper"
         >
           <span
-            class="makeStyles-floatingFilterButton-1206"
+            class="makeStyles-floatingFilterButton-1214"
             data-testid="controlled-button"
             tabindex="-1"
           >
             <button
               aria-controls="false"
               aria-haspopup="true"
-              class="MuiButtonBase-root MuiButton-root MuiButton-text makeStyles-buttonFilter-1214"
+              class="MuiButtonBase-root MuiButton-root MuiButton-text makeStyles-buttonFilter-1222"
               data-testid="button-filter-open"
               tabindex="0"
               type="button"
@@ -37,7 +37,7 @@ exports[`AssignSubContractorTab should change view type 1`] = `
                   class="MuiButton-endIcon MuiButton-iconSizeMedium"
                 >
                   <svg
-                    class="makeStyles-dropdownIcon-1208"
+                    class="makeStyles-dropdownIcon-1216"
                   >
                     expand.svg
                   </svg>
@@ -48,23 +48,23 @@ exports[`AssignSubContractorTab should change view type 1`] = `
         </div>
       </div>
       <hr
-        class="MuiDivider-root makeStyles-dividerColor-1209 MuiDivider-flexItem MuiDivider-vertical"
+        class="MuiDivider-root makeStyles-dividerColor-1217 MuiDivider-flexItem MuiDivider-vertical"
       />
       <div
-        class="MuiBox-root MuiBox-root-1225 makeStyles-filterStatusContainer-1199 makeStyles-leftFilterStatusContainer-1203 makeStyles-autocompleteFilterPosition-1088"
+        class="MuiBox-root MuiBox-root-1233 makeStyles-filterStatusContainer-1207 makeStyles-leftFilterStatusContainer-1211 makeStyles-autocompleteFilterPosition-1094"
       >
         <div
-          class="makeStyles-floatingFilterWrapper-1205 makeStyles-filterWrapper-1204 makeStyles-buttonContainer-1227 floatingFilterWrapper"
+          class="makeStyles-floatingFilterWrapper-1213 makeStyles-filterWrapper-1212 makeStyles-buttonContainer-1235 floatingFilterWrapper"
         >
           <span
-            class="makeStyles-floatingFilterButton-1206"
+            class="makeStyles-floatingFilterButton-1214"
             data-testid="controlled-button"
             tabindex="-1"
           >
             <button
               aria-controls="false"
               aria-haspopup="true"
-              class="MuiButtonBase-root MuiButton-root MuiButton-text makeStyles-buttonFilter-1214"
+              class="MuiButtonBase-root MuiButton-root MuiButton-text makeStyles-buttonFilter-1222"
               data-testid="button-filter-open"
               tabindex="0"
               type="button"
@@ -77,7 +77,7 @@ exports[`AssignSubContractorTab should change view type 1`] = `
                   class="MuiButton-endIcon MuiButton-iconSizeMedium"
                 >
                   <svg
-                    class="makeStyles-dropdownIcon-1208"
+                    class="makeStyles-dropdownIcon-1216"
                   >
                     expand.svg
                   </svg>
@@ -89,20 +89,20 @@ exports[`AssignSubContractorTab should change view type 1`] = `
       </div>
     </div>
     <div
-      class="makeStyles-rightActionButtonsContainer-1217"
+      class="makeStyles-rightActionButtonsContainer-1225"
     >
       <div
-        class="makeStyles-iconActionButtonsContainer-1218"
+        class="makeStyles-iconActionButtonsContainer-1226"
       >
         <svg
-          class="makeStyles-iconButtonActive-1219"
+          class="makeStyles-iconButtonActive-1227"
           data-testid="list-view-btn"
           role="button"
         >
           list.svg
         </svg>
         <svg
-          class="makeStyles-iconButtonInactive-1220"
+          class="makeStyles-iconButtonInactive-1228"
           data-testid="hierarchy-view-btn"
           role="button"
         >
@@ -110,7 +110,7 @@ exports[`AssignSubContractorTab should change view type 1`] = `
         </svg>
       </div>
       <button
-        class="MuiButtonBase-root MuiButton-root MuiButton-contained makeStyles-createButton-1160 makeStyles-primaryButtonExtraLarge-1164 MuiButton-containedPrimary MuiButton-containedSizeLarge MuiButton-sizeLarge MuiButton-fullWidth"
+        class="MuiButtonBase-root MuiButton-root MuiButton-contained makeStyles-createButton-1168 makeStyles-primaryButtonExtraLarge-1172 MuiButton-containedPrimary MuiButton-containedSizeLarge MuiButton-sizeLarge MuiButton-fullWidth"
         data-testid="opensubcontractor-modal-btn"
         tabindex="0"
         type="button"
@@ -174,7 +174,7 @@ exports[`AssignSubContractorTab should change view type 1`] = `
   </table>
   <nav
     aria-label="pagination navigation"
-    class="MuiPagination-root  makeStyles-pagination-1465"
+    class="MuiPagination-root  makeStyles-pagination-1473"
     data-testid="pagination"
   >
     <ul
@@ -223,18 +223,18 @@ exports[`AssignSubContractorTab should change view type 1`] = `
     </ul>
   </nav>
   <div
-    class="MuiDrawer-root MuiDrawer-docked makeStyles-drawer-1466 makeStyles-close-1477 closed"
+    class="MuiDrawer-root MuiDrawer-docked makeStyles-drawer-1474 makeStyles-close-1485 closed"
     data-testid="client-drawer-detail"
   >
     <div
-      class="MuiPaper-root MuiDrawer-paper makeStyles-drawerPaper-1467 MuiDrawer-paperAnchorRight MuiDrawer-paperAnchorDockedRight MuiPaper-elevation0"
+      class="MuiPaper-root MuiDrawer-paper makeStyles-drawerPaper-1475 MuiDrawer-paperAnchorRight MuiDrawer-paperAnchorDockedRight MuiPaper-elevation0"
       style="visibility: hidden; webkit-transform: translateX(1024px) translateX(0px); transform: translateX(1024px) translateX(0px);"
     >
       <div
-        class="makeStyles-drawerButtonWrapper-1469"
+        class="makeStyles-drawerButtonWrapper-1477"
       >
         <div
-          class="makeStyles-drawerButton-1470"
+          class="makeStyles-drawerButton-1478"
         >
           <button
             class="MuiButtonBase-root MuiButton-root MuiButton-text"
@@ -256,29 +256,29 @@ exports[`AssignSubContractorTab should change view type 1`] = `
           </button>
         </div>
         <div
-          class="makeStyles-drawerHeader-1468"
+          class="makeStyles-drawerHeader-1476"
         >
           <p
-            class="MuiTypography-root makeStyles-drawerTitle-1471 MuiTypography-body1 MuiTypography-colorPrimary MuiTypography-alignLeft"
+            class="MuiTypography-root makeStyles-drawerTitle-1479 MuiTypography-body1 MuiTypography-colorPrimary MuiTypography-alignLeft"
           >
             Client Information
           </p>
         </div>
       </div>
       <div
-        class="makeStyles-listDetail-1496"
+        class="makeStyles-listDetail-1504"
       >
         <div
-          class="makeStyles-company-1497"
+          class="makeStyles-company-1505"
         >
           <div
-            class="makeStyles-drawerText-1473"
+            class="makeStyles-drawerText-1481"
           >
             <p
-              class="MuiTypography-root makeStyles-listAccent-1498 makeStyles-entityTitle-1495 MuiTypography-body1"
+              class="MuiTypography-root makeStyles-listAccent-1506 makeStyles-entityTitle-1503 MuiTypography-body1"
             />
             <div
-              class="makeStyles-drawerMainText-1474"
+              class="makeStyles-drawerMainText-1482"
             >
               <span>
                 -
@@ -290,16 +290,16 @@ exports[`AssignSubContractorTab should change view type 1`] = `
             </div>
           </div>
           <div
-            class="makeStyles-drawerSection-1472"
+            class="makeStyles-drawerSection-1480"
           >
             <svg>
               location.svg
             </svg>
             <div
-              class="makeStyles-drawerText-1473 makeStyles-drawerTextSeparation-1475"
+              class="makeStyles-drawerText-1481 makeStyles-drawerTextSeparation-1483"
             >
               <p
-                class="MuiTypography-root makeStyles-cardFont-1508  MuiTypography-body1"
+                class="MuiTypography-root makeStyles-cardFont-1516  MuiTypography-body1"
               >
                 
                 <span
@@ -309,7 +309,7 @@ exports[`AssignSubContractorTab should change view type 1`] = `
                 </span>
               </p>
               <p
-                class="MuiTypography-root makeStyles-cardFont-1508  MuiTypography-body1"
+                class="MuiTypography-root makeStyles-cardFont-1516  MuiTypography-body1"
               >
                 
                 
@@ -319,7 +319,7 @@ exports[`AssignSubContractorTab should change view type 1`] = `
             </div>
           </div>
           <div
-            class="makeStyles-drawerSection-1472"
+            class="makeStyles-drawerSection-1480"
           >
             <svg
               aria-hidden="true"
@@ -332,10 +332,10 @@ exports[`AssignSubContractorTab should change view type 1`] = `
               />
             </svg>
             <div
-              class="makeStyles-drawerText-1473 makeStyles-drawerTextSeparation-1475"
+              class="makeStyles-drawerText-1481 makeStyles-drawerTextSeparation-1483"
             >
               <p
-                class="MuiTypography-root makeStyles-cardFont-1508  MuiTypography-body1"
+                class="MuiTypography-root makeStyles-cardFont-1516  MuiTypography-body1"
               >
                 
                 <span
@@ -345,7 +345,7 @@ exports[`AssignSubContractorTab should change view type 1`] = `
                 </span>
               </p>
               <p
-                class="MuiTypography-root makeStyles-cardFont-1508  MuiTypography-body1"
+                class="MuiTypography-root makeStyles-cardFont-1516  MuiTypography-body1"
               >
                 
                 
@@ -355,7 +355,7 @@ exports[`AssignSubContractorTab should change view type 1`] = `
             </div>
           </div>
           <div
-            class="makeStyles-drawerSection-1472"
+            class="makeStyles-drawerSection-1480"
           >
             <svg
               aria-hidden="true"
@@ -368,10 +368,10 @@ exports[`AssignSubContractorTab should change view type 1`] = `
               />
             </svg>
             <div
-              class="makeStyles-drawerText-1473 makeStyles-drawerTextSeparation-1475"
+              class="makeStyles-drawerText-1481 makeStyles-drawerTextSeparation-1483"
             >
               <span
-                class="makeStyles-listAccent-1498"
+                class="makeStyles-listAccent-1506"
               >
                 -
               </span>
@@ -385,7 +385,7 @@ exports[`AssignSubContractorTab should change view type 1`] = `
           </div>
         </div>
         <div
-          class="makeStyles-ctaWrapper-1499"
+          class="makeStyles-ctaWrapper-1507"
         />
       </div>
     </div>
@@ -398,26 +398,26 @@ exports[`AssignSubContractorTab should open modal 1`] = `
   aria-hidden="true"
 >
   <div
-    class="makeStyles-filterActionsContainer-474 makeStyles-filterActionsContainerPadding-476"
+    class="makeStyles-filterActionsContainer-478 makeStyles-filterActionsContainerPadding-480"
   >
     <div
-      class="makeStyles-filterActionsContainerLeft-475"
+      class="makeStyles-filterActionsContainerLeft-479"
     >
       <div
-        class="MuiBox-root MuiBox-root-502 makeStyles-filterStatusContainer-477 makeStyles-autocompleteFilterStatus-494 makeStyles-leftFilter-464"
+        class="MuiBox-root MuiBox-root-506 makeStyles-filterStatusContainer-481 makeStyles-autocompleteFilterStatus-498 makeStyles-leftFilter-468"
       >
         <div
-          class="makeStyles-floatingFilterWrapper-483 makeStyles-filterWrapper-482  floatingFilterWrapper"
+          class="makeStyles-floatingFilterWrapper-487 makeStyles-filterWrapper-486  floatingFilterWrapper"
         >
           <span
-            class="makeStyles-floatingFilterButton-484"
+            class="makeStyles-floatingFilterButton-488"
             data-testid="controlled-button"
             tabindex="-1"
           >
             <button
               aria-controls="false"
               aria-haspopup="true"
-              class="MuiButtonBase-root MuiButton-root MuiButton-text makeStyles-buttonFilter-492"
+              class="MuiButtonBase-root MuiButton-root MuiButton-text makeStyles-buttonFilter-496"
               data-testid="button-filter-open"
               tabindex="0"
               type="button"
@@ -430,7 +430,7 @@ exports[`AssignSubContractorTab should open modal 1`] = `
                   class="MuiButton-endIcon MuiButton-iconSizeMedium"
                 >
                   <svg
-                    class="makeStyles-dropdownIcon-486"
+                    class="makeStyles-dropdownIcon-490"
                   >
                     expand.svg
                   </svg>
@@ -441,23 +441,23 @@ exports[`AssignSubContractorTab should open modal 1`] = `
         </div>
       </div>
       <hr
-        class="MuiDivider-root makeStyles-dividerColor-487 MuiDivider-flexItem MuiDivider-vertical"
+        class="MuiDivider-root makeStyles-dividerColor-491 MuiDivider-flexItem MuiDivider-vertical"
       />
       <div
-        class="MuiBox-root MuiBox-root-503 makeStyles-filterStatusContainer-477 makeStyles-leftFilterStatusContainer-481 makeStyles-autocompleteFilterPosition-366"
+        class="MuiBox-root MuiBox-root-507 makeStyles-filterStatusContainer-481 makeStyles-leftFilterStatusContainer-485 makeStyles-autocompleteFilterPosition-368"
       >
         <div
-          class="makeStyles-floatingFilterWrapper-483 makeStyles-filterWrapper-482 makeStyles-buttonContainer-505 floatingFilterWrapper"
+          class="makeStyles-floatingFilterWrapper-487 makeStyles-filterWrapper-486 makeStyles-buttonContainer-509 floatingFilterWrapper"
         >
           <span
-            class="makeStyles-floatingFilterButton-484"
+            class="makeStyles-floatingFilterButton-488"
             data-testid="controlled-button"
             tabindex="-1"
           >
             <button
               aria-controls="false"
               aria-haspopup="true"
-              class="MuiButtonBase-root MuiButton-root MuiButton-text makeStyles-buttonFilter-492"
+              class="MuiButtonBase-root MuiButton-root MuiButton-text makeStyles-buttonFilter-496"
               data-testid="button-filter-open"
               tabindex="0"
               type="button"
@@ -470,7 +470,7 @@ exports[`AssignSubContractorTab should open modal 1`] = `
                   class="MuiButton-endIcon MuiButton-iconSizeMedium"
                 >
                   <svg
-                    class="makeStyles-dropdownIcon-486"
+                    class="makeStyles-dropdownIcon-490"
                   >
                     expand.svg
                   </svg>
@@ -482,20 +482,20 @@ exports[`AssignSubContractorTab should open modal 1`] = `
       </div>
     </div>
     <div
-      class="makeStyles-rightActionButtonsContainer-495"
+      class="makeStyles-rightActionButtonsContainer-499"
     >
       <div
-        class="makeStyles-iconActionButtonsContainer-496"
+        class="makeStyles-iconActionButtonsContainer-500"
       >
         <svg
-          class="makeStyles-iconButtonActive-497"
+          class="makeStyles-iconButtonActive-501"
           data-testid="list-view-btn"
           role="button"
         >
           list.svg
         </svg>
         <svg
-          class="makeStyles-iconButtonInactive-498"
+          class="makeStyles-iconButtonInactive-502"
           data-testid="hierarchy-view-btn"
           role="button"
         >
@@ -503,7 +503,7 @@ exports[`AssignSubContractorTab should open modal 1`] = `
         </svg>
       </div>
       <button
-        class="MuiButtonBase-root MuiButton-root MuiButton-contained makeStyles-createButton-438 makeStyles-primaryButtonExtraLarge-442 MuiButton-containedPrimary MuiButton-containedSizeLarge MuiButton-sizeLarge MuiButton-fullWidth"
+        class="MuiButtonBase-root MuiButton-root MuiButton-contained makeStyles-createButton-442 makeStyles-primaryButtonExtraLarge-446 MuiButton-containedPrimary MuiButton-containedSizeLarge MuiButton-sizeLarge MuiButton-fullWidth"
         data-testid="opensubcontractor-modal-btn"
         tabindex="0"
         type="button"
@@ -567,7 +567,7 @@ exports[`AssignSubContractorTab should open modal 1`] = `
   </table>
   <nav
     aria-label="pagination navigation"
-    class="MuiPagination-root  makeStyles-pagination-546"
+    class="MuiPagination-root  makeStyles-pagination-550"
     data-testid="pagination"
   >
     <ul
@@ -616,18 +616,18 @@ exports[`AssignSubContractorTab should open modal 1`] = `
     </ul>
   </nav>
   <div
-    class="MuiDrawer-root MuiDrawer-docked makeStyles-drawer-547 makeStyles-close-558 closed"
+    class="MuiDrawer-root MuiDrawer-docked makeStyles-drawer-551 makeStyles-close-562 closed"
     data-testid="client-drawer-detail"
   >
     <div
-      class="MuiPaper-root MuiDrawer-paper makeStyles-drawerPaper-548 MuiDrawer-paperAnchorRight MuiDrawer-paperAnchorDockedRight MuiPaper-elevation0"
+      class="MuiPaper-root MuiDrawer-paper makeStyles-drawerPaper-552 MuiDrawer-paperAnchorRight MuiDrawer-paperAnchorDockedRight MuiPaper-elevation0"
       style="visibility: hidden; webkit-transform: translateX(1024px) translateX(0px); transform: translateX(1024px) translateX(0px);"
     >
       <div
-        class="makeStyles-drawerButtonWrapper-550"
+        class="makeStyles-drawerButtonWrapper-554"
       >
         <div
-          class="makeStyles-drawerButton-551"
+          class="makeStyles-drawerButton-555"
         >
           <button
             class="MuiButtonBase-root MuiButton-root MuiButton-text"
@@ -649,29 +649,29 @@ exports[`AssignSubContractorTab should open modal 1`] = `
           </button>
         </div>
         <div
-          class="makeStyles-drawerHeader-549"
+          class="makeStyles-drawerHeader-553"
         >
           <p
-            class="MuiTypography-root makeStyles-drawerTitle-552 MuiTypography-body1 MuiTypography-colorPrimary MuiTypography-alignLeft"
+            class="MuiTypography-root makeStyles-drawerTitle-556 MuiTypography-body1 MuiTypography-colorPrimary MuiTypography-alignLeft"
           >
             Client Information
           </p>
         </div>
       </div>
       <div
-        class="makeStyles-listDetail-577"
+        class="makeStyles-listDetail-581"
       >
         <div
-          class="makeStyles-company-578"
+          class="makeStyles-company-582"
         >
           <div
-            class="makeStyles-drawerText-554"
+            class="makeStyles-drawerText-558"
           >
             <p
-              class="MuiTypography-root makeStyles-listAccent-579 makeStyles-entityTitle-576 MuiTypography-body1"
+              class="MuiTypography-root makeStyles-listAccent-583 makeStyles-entityTitle-580 MuiTypography-body1"
             />
             <div
-              class="makeStyles-drawerMainText-555"
+              class="makeStyles-drawerMainText-559"
             >
               <span>
                 -
@@ -683,16 +683,16 @@ exports[`AssignSubContractorTab should open modal 1`] = `
             </div>
           </div>
           <div
-            class="makeStyles-drawerSection-553"
+            class="makeStyles-drawerSection-557"
           >
             <svg>
               location.svg
             </svg>
             <div
-              class="makeStyles-drawerText-554 makeStyles-drawerTextSeparation-556"
+              class="makeStyles-drawerText-558 makeStyles-drawerTextSeparation-560"
             >
               <p
-                class="MuiTypography-root makeStyles-cardFont-589  MuiTypography-body1"
+                class="MuiTypography-root makeStyles-cardFont-593  MuiTypography-body1"
               >
                 
                 <span
@@ -702,7 +702,7 @@ exports[`AssignSubContractorTab should open modal 1`] = `
                 </span>
               </p>
               <p
-                class="MuiTypography-root makeStyles-cardFont-589  MuiTypography-body1"
+                class="MuiTypography-root makeStyles-cardFont-593  MuiTypography-body1"
               >
                 
                 
@@ -712,7 +712,7 @@ exports[`AssignSubContractorTab should open modal 1`] = `
             </div>
           </div>
           <div
-            class="makeStyles-drawerSection-553"
+            class="makeStyles-drawerSection-557"
           >
             <svg
               aria-hidden="true"
@@ -725,10 +725,10 @@ exports[`AssignSubContractorTab should open modal 1`] = `
               />
             </svg>
             <div
-              class="makeStyles-drawerText-554 makeStyles-drawerTextSeparation-556"
+              class="makeStyles-drawerText-558 makeStyles-drawerTextSeparation-560"
             >
               <p
-                class="MuiTypography-root makeStyles-cardFont-589  MuiTypography-body1"
+                class="MuiTypography-root makeStyles-cardFont-593  MuiTypography-body1"
               >
                 
                 <span
@@ -738,7 +738,7 @@ exports[`AssignSubContractorTab should open modal 1`] = `
                 </span>
               </p>
               <p
-                class="MuiTypography-root makeStyles-cardFont-589  MuiTypography-body1"
+                class="MuiTypography-root makeStyles-cardFont-593  MuiTypography-body1"
               >
                 
                 
@@ -748,7 +748,7 @@ exports[`AssignSubContractorTab should open modal 1`] = `
             </div>
           </div>
           <div
-            class="makeStyles-drawerSection-553"
+            class="makeStyles-drawerSection-557"
           >
             <svg
               aria-hidden="true"
@@ -761,10 +761,10 @@ exports[`AssignSubContractorTab should open modal 1`] = `
               />
             </svg>
             <div
-              class="makeStyles-drawerText-554 makeStyles-drawerTextSeparation-556"
+              class="makeStyles-drawerText-558 makeStyles-drawerTextSeparation-560"
             >
               <span
-                class="makeStyles-listAccent-579"
+                class="makeStyles-listAccent-583"
               >
                 -
               </span>
@@ -778,7 +778,7 @@ exports[`AssignSubContractorTab should open modal 1`] = `
           </div>
         </div>
         <div
-          class="makeStyles-ctaWrapper-580"
+          class="makeStyles-ctaWrapper-584"
         />
       </div>
     </div>
@@ -791,26 +791,26 @@ exports[`AssignSubContractorTab should render 1`] = `
   aria-hidden="true"
 >
   <div
-    class="makeStyles-filterActionsContainer-113 makeStyles-filterActionsContainerPadding-115"
+    class="makeStyles-filterActionsContainer-115 makeStyles-filterActionsContainerPadding-117"
   >
     <div
-      class="makeStyles-filterActionsContainerLeft-114"
+      class="makeStyles-filterActionsContainerLeft-116"
     >
       <div
-        class="MuiBox-root MuiBox-root-141 makeStyles-filterStatusContainer-116 makeStyles-autocompleteFilterStatus-133 makeStyles-leftFilter-103"
+        class="MuiBox-root MuiBox-root-143 makeStyles-filterStatusContainer-118 makeStyles-autocompleteFilterStatus-135 makeStyles-leftFilter-105"
       >
         <div
-          class="makeStyles-floatingFilterWrapper-122 makeStyles-filterWrapper-121  floatingFilterWrapper"
+          class="makeStyles-floatingFilterWrapper-124 makeStyles-filterWrapper-123  floatingFilterWrapper"
         >
           <span
-            class="makeStyles-floatingFilterButton-123"
+            class="makeStyles-floatingFilterButton-125"
             data-testid="controlled-button"
             tabindex="-1"
           >
             <button
               aria-controls="false"
               aria-haspopup="true"
-              class="MuiButtonBase-root MuiButton-root MuiButton-text makeStyles-buttonFilter-131"
+              class="MuiButtonBase-root MuiButton-root MuiButton-text makeStyles-buttonFilter-133"
               data-testid="button-filter-open"
               tabindex="0"
               type="button"
@@ -823,7 +823,7 @@ exports[`AssignSubContractorTab should render 1`] = `
                   class="MuiButton-endIcon MuiButton-iconSizeMedium"
                 >
                   <svg
-                    class="makeStyles-dropdownIcon-125"
+                    class="makeStyles-dropdownIcon-127"
                   >
                     expand.svg
                   </svg>
@@ -834,23 +834,23 @@ exports[`AssignSubContractorTab should render 1`] = `
         </div>
       </div>
       <hr
-        class="MuiDivider-root makeStyles-dividerColor-126 MuiDivider-flexItem MuiDivider-vertical"
+        class="MuiDivider-root makeStyles-dividerColor-128 MuiDivider-flexItem MuiDivider-vertical"
       />
       <div
-        class="MuiBox-root MuiBox-root-142 makeStyles-filterStatusContainer-116 makeStyles-leftFilterStatusContainer-120 makeStyles-autocompleteFilterPosition-5"
+        class="MuiBox-root MuiBox-root-144 makeStyles-filterStatusContainer-118 makeStyles-leftFilterStatusContainer-122 makeStyles-autocompleteFilterPosition-5"
       >
         <div
-          class="makeStyles-floatingFilterWrapper-122 makeStyles-filterWrapper-121 makeStyles-buttonContainer-144 floatingFilterWrapper"
+          class="makeStyles-floatingFilterWrapper-124 makeStyles-filterWrapper-123 makeStyles-buttonContainer-146 floatingFilterWrapper"
         >
           <span
-            class="makeStyles-floatingFilterButton-123"
+            class="makeStyles-floatingFilterButton-125"
             data-testid="controlled-button"
             tabindex="-1"
           >
             <button
               aria-controls="false"
               aria-haspopup="true"
-              class="MuiButtonBase-root MuiButton-root MuiButton-text makeStyles-buttonFilter-131"
+              class="MuiButtonBase-root MuiButton-root MuiButton-text makeStyles-buttonFilter-133"
               data-testid="button-filter-open"
               tabindex="0"
               type="button"
@@ -863,7 +863,7 @@ exports[`AssignSubContractorTab should render 1`] = `
                   class="MuiButton-endIcon MuiButton-iconSizeMedium"
                 >
                   <svg
-                    class="makeStyles-dropdownIcon-125"
+                    class="makeStyles-dropdownIcon-127"
                   >
                     expand.svg
                   </svg>
@@ -875,20 +875,20 @@ exports[`AssignSubContractorTab should render 1`] = `
       </div>
     </div>
     <div
-      class="makeStyles-rightActionButtonsContainer-134"
+      class="makeStyles-rightActionButtonsContainer-136"
     >
       <div
-        class="makeStyles-iconActionButtonsContainer-135"
+        class="makeStyles-iconActionButtonsContainer-137"
       >
         <svg
-          class="makeStyles-iconButtonActive-136"
+          class="makeStyles-iconButtonActive-138"
           data-testid="list-view-btn"
           role="button"
         >
           list.svg
         </svg>
         <svg
-          class="makeStyles-iconButtonInactive-137"
+          class="makeStyles-iconButtonInactive-139"
           data-testid="hierarchy-view-btn"
           role="button"
         >
@@ -896,7 +896,7 @@ exports[`AssignSubContractorTab should render 1`] = `
         </svg>
       </div>
       <button
-        class="MuiButtonBase-root MuiButton-root MuiButton-contained makeStyles-createButton-77 makeStyles-primaryButtonExtraLarge-81 MuiButton-containedPrimary MuiButton-containedSizeLarge MuiButton-sizeLarge MuiButton-fullWidth"
+        class="MuiButtonBase-root MuiButton-root MuiButton-contained makeStyles-createButton-79 makeStyles-primaryButtonExtraLarge-83 MuiButton-containedPrimary MuiButton-containedSizeLarge MuiButton-sizeLarge MuiButton-fullWidth"
         data-testid="opensubcontractor-modal-btn"
         tabindex="0"
         type="button"
@@ -960,7 +960,7 @@ exports[`AssignSubContractorTab should render 1`] = `
   </table>
   <nav
     aria-label="pagination navigation"
-    class="MuiPagination-root  makeStyles-pagination-185"
+    class="MuiPagination-root  makeStyles-pagination-187"
     data-testid="pagination"
   >
     <ul
@@ -1009,18 +1009,18 @@ exports[`AssignSubContractorTab should render 1`] = `
     </ul>
   </nav>
   <div
-    class="MuiDrawer-root MuiDrawer-docked makeStyles-drawer-186 makeStyles-close-197 closed"
+    class="MuiDrawer-root MuiDrawer-docked makeStyles-drawer-188 makeStyles-close-199 closed"
     data-testid="client-drawer-detail"
   >
     <div
-      class="MuiPaper-root MuiDrawer-paper makeStyles-drawerPaper-187 MuiDrawer-paperAnchorRight MuiDrawer-paperAnchorDockedRight MuiPaper-elevation0"
+      class="MuiPaper-root MuiDrawer-paper makeStyles-drawerPaper-189 MuiDrawer-paperAnchorRight MuiDrawer-paperAnchorDockedRight MuiPaper-elevation0"
       style="visibility: hidden; webkit-transform: translateX(1024px) translateX(0px); transform: translateX(1024px) translateX(0px);"
     >
       <div
-        class="makeStyles-drawerButtonWrapper-189"
+        class="makeStyles-drawerButtonWrapper-191"
       >
         <div
-          class="makeStyles-drawerButton-190"
+          class="makeStyles-drawerButton-192"
         >
           <button
             class="MuiButtonBase-root MuiButton-root MuiButton-text"
@@ -1042,29 +1042,29 @@ exports[`AssignSubContractorTab should render 1`] = `
           </button>
         </div>
         <div
-          class="makeStyles-drawerHeader-188"
+          class="makeStyles-drawerHeader-190"
         >
           <p
-            class="MuiTypography-root makeStyles-drawerTitle-191 MuiTypography-body1 MuiTypography-colorPrimary MuiTypography-alignLeft"
+            class="MuiTypography-root makeStyles-drawerTitle-193 MuiTypography-body1 MuiTypography-colorPrimary MuiTypography-alignLeft"
           >
             Client Information
           </p>
         </div>
       </div>
       <div
-        class="makeStyles-listDetail-216"
+        class="makeStyles-listDetail-218"
       >
         <div
-          class="makeStyles-company-217"
+          class="makeStyles-company-219"
         >
           <div
-            class="makeStyles-drawerText-193"
+            class="makeStyles-drawerText-195"
           >
             <p
-              class="MuiTypography-root makeStyles-listAccent-218 makeStyles-entityTitle-215 MuiTypography-body1"
+              class="MuiTypography-root makeStyles-listAccent-220 makeStyles-entityTitle-217 MuiTypography-body1"
             />
             <div
-              class="makeStyles-drawerMainText-194"
+              class="makeStyles-drawerMainText-196"
             >
               <span>
                 -
@@ -1076,16 +1076,16 @@ exports[`AssignSubContractorTab should render 1`] = `
             </div>
           </div>
           <div
-            class="makeStyles-drawerSection-192"
+            class="makeStyles-drawerSection-194"
           >
             <svg>
               location.svg
             </svg>
             <div
-              class="makeStyles-drawerText-193 makeStyles-drawerTextSeparation-195"
+              class="makeStyles-drawerText-195 makeStyles-drawerTextSeparation-197"
             >
               <p
-                class="MuiTypography-root makeStyles-cardFont-228  MuiTypography-body1"
+                class="MuiTypography-root makeStyles-cardFont-230  MuiTypography-body1"
               >
                 
                 <span
@@ -1095,7 +1095,7 @@ exports[`AssignSubContractorTab should render 1`] = `
                 </span>
               </p>
               <p
-                class="MuiTypography-root makeStyles-cardFont-228  MuiTypography-body1"
+                class="MuiTypography-root makeStyles-cardFont-230  MuiTypography-body1"
               >
                 
                 
@@ -1105,7 +1105,7 @@ exports[`AssignSubContractorTab should render 1`] = `
             </div>
           </div>
           <div
-            class="makeStyles-drawerSection-192"
+            class="makeStyles-drawerSection-194"
           >
             <svg
               aria-hidden="true"
@@ -1118,10 +1118,10 @@ exports[`AssignSubContractorTab should render 1`] = `
               />
             </svg>
             <div
-              class="makeStyles-drawerText-193 makeStyles-drawerTextSeparation-195"
+              class="makeStyles-drawerText-195 makeStyles-drawerTextSeparation-197"
             >
               <p
-                class="MuiTypography-root makeStyles-cardFont-228  MuiTypography-body1"
+                class="MuiTypography-root makeStyles-cardFont-230  MuiTypography-body1"
               >
                 
                 <span
@@ -1131,7 +1131,7 @@ exports[`AssignSubContractorTab should render 1`] = `
                 </span>
               </p>
               <p
-                class="MuiTypography-root makeStyles-cardFont-228  MuiTypography-body1"
+                class="MuiTypography-root makeStyles-cardFont-230  MuiTypography-body1"
               >
                 
                 
@@ -1141,7 +1141,7 @@ exports[`AssignSubContractorTab should render 1`] = `
             </div>
           </div>
           <div
-            class="makeStyles-drawerSection-192"
+            class="makeStyles-drawerSection-194"
           >
             <svg
               aria-hidden="true"
@@ -1154,10 +1154,10 @@ exports[`AssignSubContractorTab should render 1`] = `
               />
             </svg>
             <div
-              class="makeStyles-drawerText-193 makeStyles-drawerTextSeparation-195"
+              class="makeStyles-drawerText-195 makeStyles-drawerTextSeparation-197"
             >
               <span
-                class="makeStyles-listAccent-218"
+                class="makeStyles-listAccent-220"
               >
                 -
               </span>
@@ -1171,7 +1171,7 @@ exports[`AssignSubContractorTab should render 1`] = `
           </div>
         </div>
         <div
-          class="makeStyles-ctaWrapper-219"
+          class="makeStyles-ctaWrapper-221"
         />
       </div>
     </div>

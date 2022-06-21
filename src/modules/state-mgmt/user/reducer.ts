@@ -31,6 +31,10 @@ export const reducer = (state: IState = initialState, { type, payload }: { type:
       return { ...state, accountData: null };
     case ActionType.CLEAR_USER_MAP:
       return { ...state, userMap: {}, userProjectMap: {}, count: null };
+    case ActionType.FETCH_USER_PROFILE_SUCCESS:
+      return { ...state, companyUserProfile: payload.data };
+    case ActionType.UPDATE_USER_PROFILE_SUCCESS:
+      return { ...state, companyUserProfile: payload.data };
 
     default:
       return state;
