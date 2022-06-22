@@ -16,7 +16,6 @@ export interface IClientFormProps {
   errors: any;
   tradeList: GeneralModel.INamedEntity[];
   mwbeList: GeneralModel.INamedEntity[];
-  invalidUserList: boolean;
   onChangeStep: (key: string) => void;
   onChange: (event: any) => void;
   updateRules: (rules: IFormRules) => void;
@@ -34,7 +33,6 @@ const ClientForm = ({
   completedFields,
   mwbeList,
   tradeList,
-  invalidUserList,
   onChange,
   onChangeStep,
   updateRules,
@@ -69,14 +67,7 @@ const ClientForm = ({
         />
       )}
       {currentStep.key === ClientModel.ClientStep.REVIEW && (
-        <Review
-          model={model}
-          userList={model.users}
-          mwbeList={mwbeList}
-          completedFields={completedFields}
-          onChangeStep={onChangeStep}
-          invalidUserList={invalidUserList}
-        />
+        <Review model={model} userList={model.users} mwbeList={mwbeList} completedFields={completedFields} onChangeStep={onChangeStep} />
       )}
     </>
   );
