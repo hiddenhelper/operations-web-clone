@@ -29,7 +29,6 @@ export interface IReviewProps {
   userList?: UserModel.IUser[];
   mwbeList?: GeneralModel.INamedEntity[];
   completedFields?: GeneralModel.IStepCompletedMap;
-  invalidUserList?: boolean;
   edit?: boolean;
   editAction?: (step: ClientModel.ClientStep) => void;
   onChangeStep?: (key: string) => void;
@@ -37,7 +36,7 @@ export interface IReviewProps {
 
 const StyledTableRow = withStyles(tableRowStyles)(TableRow);
 
-const Review = ({ model, completedFields, userList = [], mwbeList = [], edit = false, invalidUserList = false, editAction, onChangeStep }: IReviewProps) => {
+const Review = ({ model, completedFields, userList = [], mwbeList = [], edit = false, editAction, onChangeStep }: IReviewProps) => {
   const buttonClasses = buttonStyles();
   const cardGlobalClasses = cardGlobalStyles();
   const formClasses = formGlobalStyles();
@@ -47,10 +46,6 @@ const Review = ({ model, completedFields, userList = [], mwbeList = [], edit = f
   const currentMwbe = useMemo(() => mwbeList && mwbeList.find(mwbe => mwbe.id === model.mwbeTypeId), [mwbeList, model]);
   const isBillingMapAvailable = useMemo(() => model.billingAddress && model.billingAddress.latitude && model.billingAddress.longitude, [model.billingAddress]);
   const isMailingMapAvailable = useMemo(() => model.mailingAddress && model.mailingAddress.latitude && model.mailingAddress.longitude, [model.mailingAddress]);
-  const alternativeUserLabel = useMemo(() => (invalidUserList && !model.isDeveloper ? LANG.EN.USERS.REVIEW_ADMIN_REQUIRED : ''), [
-    invalidUserList,
-    model.isDeveloper,
-  ]);
   const trades = useMemo(() => [...model.trades, model.otherTrade && ({ name: model.otherTrade } as any)].filter(Boolean), [model]);
   const handleEditGeneralInformation = useCallback(() => {
     editAction(ClientModel.ClientStep.GENERAL_INFORMATION as any);
@@ -217,14 +212,10 @@ const Review = ({ model, completedFields, userList = [], mwbeList = [], edit = f
               completedFields={
                 completedFields && {
                   ...completedFields[ClientModel.ClientStep.USERS],
-                  required:
-                    invalidUserList && !model.isDeveloper
-                      ? completedFields[ClientModel.ClientStep.USERS].required + 1
-                      : completedFields[ClientModel.ClientStep.USERS].required,
+                  required: completedFields[ClientModel.ClientStep.USERS].required,
                 }
               }
               onChangeStep={onChangeStep}
-              alternativeLabel={alternativeUserLabel}
             />
           }
         >

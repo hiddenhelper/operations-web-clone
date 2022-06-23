@@ -157,16 +157,12 @@ const ClientWizard = ({
     return getCompletedStepFields(updatedStepMap, updatedClient);
   }, [currentEntity]);
 
-  const invalidUserList = useMemo(() => {
-    return currentEntity.users && !currentEntity.users.some(user => user.invitationType === UserModel.InviteType.CLIENT_ADMIN);
-  }, [currentEntity]);
-
   const readyForApprove = useMemo(() => {
     return (
-      !(Object.keys(completedFields).some(stepFields => completedFields[stepFields].required > completedFields[stepFields].completed) || invalidUserList) ||
+      !Object.keys(completedFields).some(stepFields => completedFields[stepFields].required > completedFields[stepFields].completed) ||
       currentEntity.isDeveloper
     );
-  }, [completedFields, currentEntity, invalidUserList]);
+  }, [completedFields, currentEntity]);
 
   useEffect(() => {
     /* istanbul ignore else */
@@ -242,7 +238,6 @@ const ClientWizard = ({
           onChangeStep={onChangeStep}
           onChange={onChange}
           updateRules={updateRules}
-          invalidUserList={invalidUserList}
           fetchGroupSearch={fetchGroupSearch}
           companyId={id}
           groupList={groupList}
