@@ -30,6 +30,7 @@ export interface IWizardProps {
   countryList?: GeneralModel.INamedEntity[];
   fetchGroupSearch: (searchRequest: any) => void;
   groupList: any;
+  currentUserRole: UserModel.Role;
 }
 
 const ClientWizard = ({
@@ -51,6 +52,7 @@ const ClientWizard = ({
   countryList,
   fetchGroupSearch,
   groupList,
+  currentUserRole,
 }: IWizardProps) => {
   const { id, step, entityId, currentEntity, currentStepKey, currentStep, setStep } = useNavigator<ClientModel.IClient>({
     entityMap: clientMap,
@@ -241,6 +243,7 @@ const ClientWizard = ({
           fetchGroupSearch={fetchGroupSearch}
           companyId={id}
           groupList={groupList}
+          currentUserRole={currentUserRole}
         />
       )}
     />

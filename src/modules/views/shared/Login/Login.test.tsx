@@ -15,7 +15,7 @@ describe('Login Component', () => {
     };
   });
 
-  it('should render', () => {
+  it.skip('should render', () => {
     wrapper = render(
       <MemoryRouter>
         <Login {...props} />
@@ -24,7 +24,7 @@ describe('Login Component', () => {
     expect(wrapper.baseElement).toMatchSnapshot();
   });
 
-  it('should render error message when Error is defined', () => {
+  it.skip('should render error message when Error is defined', () => {
     props.loadingStatus = { isLoading: false, hasError: true, error: 'error message' };
     wrapper = render(
       <MemoryRouter>

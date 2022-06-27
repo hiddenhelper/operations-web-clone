@@ -20,7 +20,7 @@ export default {
       BUTTON_LOADING: 'Signing In',
     },
     FORGOT_PASSWORD_LINK: 'Forgot your password?',
-    LEGAL_LABEL: 'Field Control Analytics © 2020. All Rights Reserved.',
+    LEGAL_LABEL: 'Field Control Analytics © 2022. All Rights Reserved.',
   },
   NAVIGATION_TOP: {
     ACTIONS: {

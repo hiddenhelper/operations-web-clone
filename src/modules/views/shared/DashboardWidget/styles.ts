@@ -106,6 +106,9 @@ export const statusWidgetStyles = makeStyles(theme =>
     widgetDivider: {
       backgroundColor: '#DCDCDC',
       marginBottom: 12,
+      '@media (max-width:415px)': {
+        marginTop: '22px',
+      },
     },
     widgetCta: {
       color: STYLE.COLOR.ACCENT_PRIMARY,
@@ -205,7 +208,7 @@ export const statusWidgetStyles = makeStyles(theme =>
       justifyContent: 'center',
       alignItems: 'center',
       minHeight: '335px',
-      marginBottom: '12px',
+      marginBottom: '52px',
       height: '335px',
     },
     pieWidgetItemDefault: {

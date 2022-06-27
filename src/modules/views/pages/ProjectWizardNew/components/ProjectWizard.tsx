@@ -32,7 +32,7 @@ export interface IProjectWizardProps {
   fetchTrainingList: () => void;
   saveProject: (project: Partial<ProjectNewModel.IProject>, stepKey: string) => void;
   updateDraftProject: (project: Partial<ProjectNewModel.IProject>) => void;
-  addProjectBadges: (id: string, files: string[]) => void;
+  addProjectBadges: (id: string, files: string[], restOfFiles: { [key: string]: string }) => void;
   clearFileMap: () => void;
   sendProjectForApproval: (id: string) => void;
   approveProject: (id: string) => void;
@@ -236,7 +236,15 @@ const ProjectWizard = ({
       if (entityId) updateDraftProject(project);
       if (pendingFiles.length) {
         setInProgress(true);
-        addProjectBadges(entityId, pendingFiles);
+        const restOfFiles = {
+          generalContractorBadgeLogo: projectData.generalContractorBadgeTemplate.logoFileName,
+          generalContractorBadgeTemplate: projectData.generalContractorBadgeTemplate.templateFileName,
+          subcontractorBadgeLogo: projectData.subcontractorBadgeTemplate.logoFileName,
+          subcontractorBadgeTemplate: projectData.subcontractorBadgeTemplate.templateFileName,
+          visitorBadgeLogo: projectData.visitorBadgeTemplate.logoFileName,
+          visitorBadgeTemplate: projectData.visitorBadgeTemplate.templateFileName,
+        };
+        addProjectBadges(entityId, pendingFiles, restOfFiles);
       }
     },
     [saveProject, updateDraftProject, addProjectBadges, currentStepKey, entityId, pendingFiles]

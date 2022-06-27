@@ -37,6 +37,9 @@ export const useStyles = makeStyles(theme =>
     formLoginWrapper: {
       width: '100%',
       maxWidth: `${toREM(440)}`,
+      '@media (max-width:719px)': {
+        display: 'none',
+      },
     },
     formLoginImg: {
       height: '100%',
@@ -50,7 +53,6 @@ export const useStyles = makeStyles(theme =>
       justifyContent: 'center',
       padding: '0 3.6em',
       position: 'relative',
-
       '& .MuiInputBase-root': {
         '& .MuiOutlinedInput-inputAdornedStart': {
           paddingLeft: '0 !important',
@@ -123,11 +125,20 @@ export const useStyles = makeStyles(theme =>
     legalLabelWrapper: {
       position: 'relative',
       top: '40px',
+      '@media (max-width:736px)': {
+        top: '30px',
+      },
+      '@media (max-width:413px)': {
+        top: '20px',
+      },
     },
     legalLabel: {
       color: STYLE.COLOR.SECONDARY_DARKER,
       fontWeight: 500,
       fontSize: `${toREM(STYLE.FONT.SIZE.PARAGRAPH_BIG)}`,
+      textAlign: 'center',
+      paddingRight: '5px',
+      paddingLeft: '5px',
     },
     loginLabels: {
       '&:not(:first-child)': {

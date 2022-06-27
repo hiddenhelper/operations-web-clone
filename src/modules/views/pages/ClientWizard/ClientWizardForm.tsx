@@ -1,6 +1,6 @@
 import React, { memo } from 'react';
 
-import { GeneralModel, ClientModel } from '../../../models';
+import { GeneralModel, ClientModel, UserModel } from '../../../models';
 import { IFormRules } from '../../../../utils/useValidator';
 
 import GeneralInformation from '../../shared/ClientForm/GeneralInformation';
@@ -23,6 +23,7 @@ export interface IClientFormProps {
   fetchGroupSearch: (searchRequest: any) => void;
   companyId: string;
   groupList: any;
+  currentUserRole: UserModel.Role;
 }
 
 const ClientForm = ({
@@ -40,6 +41,7 @@ const ClientForm = ({
   fetchGroupSearch,
   companyId,
   groupList,
+  currentUserRole,
 }: IClientFormProps) => {
   return (
     <>
@@ -64,6 +66,7 @@ const ClientForm = ({
           groupList={groupList}
           fetchGroupSearch={fetchGroupSearch}
           companyId={companyId}
+          userRole={currentUserRole}
         />
       )}
       {currentStep.key === ClientModel.ClientStep.REVIEW && (

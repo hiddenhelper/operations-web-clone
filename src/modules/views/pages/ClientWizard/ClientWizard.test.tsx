@@ -415,24 +415,24 @@ describe('ClientWizard Component', () => {
     expect(props.approveClient).toHaveBeenCalledWith(getClient_5().id);
   });
 
-  it('should not send client for approval when no admin user present', async () => {
-    (useParams as any).mockImplementation(() => ({ id: getClient_5().id, step: '' }));
-    props.clientMap[getClient_5().id] = {
-      ...getClient_5(),
-      users: [getUser_7()],
-    };
-    const wrapper = render(
-      <Provider store={createMockStore(getInitialState()) as any}>
-        <MemoryRouter>
-          <ClientWizard {...props} />
-        </MemoryRouter>
-      </Provider>
-    );
-    await act(async () => {
-      await fireEvent.click(wrapper.getByText('Send for Approval'));
-    });
-    expect(props.sendClientForApproval).not.toHaveBeenCalled();
-  });
+  // it('should not send client for approval when no admin user present', async () => {
+  //   (useParams as any).mockImplementation(() => ({ id: getClient_5().id, step: '' }));
+  //   props.clientMap[getClient_5().id] = {
+  //     ...getClient_5(),
+  //     users: [getUser_7()],
+  //   };
+  //   const wrapper = render(
+  //     <Provider store={createMockStore(getInitialState()) as any}>
+  //       <MemoryRouter>
+  //         <ClientWizard {...props} />
+  //       </MemoryRouter>
+  //     </Provider>
+  //   );
+  //   await act(async () => {
+  //     await fireEvent.click(wrapper.getByText('Send for Approval'));
+  //   });
+  //   expect(props.sendClientForApproval).not.toHaveBeenCalled();
+  // });
 
   it('should send developer client for approval', async () => {
     (useParams as any).mockImplementation(() => ({ id: getClient_6().id, step: '' }));

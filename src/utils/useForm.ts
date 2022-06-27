@@ -28,7 +28,7 @@ export function useForm<FormType>({ initValues: model, formRules, onSubmitCallba
 
   const onValidate = useCallback(
     name => {
-      const error = validateField(state.model, name, state.formRules[name]);
+      const error = validateField(state.model, name, state.formRules);
       setState(prevState => ({ ...prevState, errors: { ...prevState.errors, [name]: error[name] ? error[name] : undefined } }));
       return error[name] ? error[name] : false;
     },
@@ -36,7 +36,7 @@ export function useForm<FormType>({ initValues: model, formRules, onSubmitCallba
   );
 
   const discardChanges = useCallback(
-    (s?: FormType | ((p: FormType) => FormType), callback?: () => void) => {
+    (s?: FormType | ((p: FormType) => FormType)) => {
       let updatedModel = {} as FormType;
       setState(prevState => {
         updatedModel = typeof s === 'function' ? (s as Function)(prevState.model) : prevState.snap;

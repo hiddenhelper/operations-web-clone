@@ -12,16 +12,16 @@ exports[`ProjectList Component should delete last project in page 1`] = `
       class=""
     >
       <div
-        class="MuiBox-root MuiBox-root-2173"
+        class="MuiBox-root MuiBox-root-1141"
         style="height: 50px; margin-bottom: 13px; width: 100%;"
       >
         <div
-          class="MuiBox-root MuiBox-root-2174"
+          class="MuiBox-root MuiBox-root-1142"
           style="display: flex; align-items: center; justify-content: space-between;"
         >
           <div>
             <div
-              class="MuiBox-root MuiBox-root-2175"
+              class="MuiBox-root MuiBox-root-1143"
               style="display: flex; align-items: center; margin-top: 5px;"
             >
               <h2
@@ -33,7 +33,7 @@ exports[`ProjectList Component should delete last project in page 1`] = `
             </div>
           </div>
           <button
-            class="MuiButtonBase-root MuiButton-root MuiButton-contained makeStyles-createButton-2125 makeStyles-primaryButtonLarge-2127 MuiButton-containedPrimary MuiButton-containedSizeLarge MuiButton-sizeLarge MuiButton-fullWidth"
+            class="MuiButtonBase-root MuiButton-root MuiButton-contained makeStyles-createButton-1093 makeStyles-primaryButtonLarge-1095 MuiButton-containedPrimary MuiButton-containedSizeLarge MuiButton-sizeLarge MuiButton-fullWidth"
             data-testid="create-project-btn"
             tabindex="0"
             type="submit"
@@ -48,7 +48,7 @@ exports[`ProjectList Component should delete last project in page 1`] = `
             />
           </button>
           <button
-            class="MuiButtonBase-root MuiButton-root MuiButton-contained makeStyles-createButton-2125 makeStyles-primaryButtonLarge-2127 MuiButton-containedPrimary MuiButton-containedSizeLarge MuiButton-sizeLarge MuiButton-fullWidth"
+            class="MuiButtonBase-root MuiButton-root MuiButton-contained makeStyles-createButton-1093 makeStyles-primaryButtonLarge-1095 MuiButton-containedPrimary MuiButton-containedSizeLarge MuiButton-sizeLarge MuiButton-fullWidth"
             tabindex="0"
             type="submit"
           >
@@ -64,30 +64,30 @@ exports[`ProjectList Component should delete last project in page 1`] = `
         </div>
       </div>
       <div
-        class="makeStyles-widgetsWrapper-2159"
+        class="makeStyles-widgetsWrapper-1127"
         id="summary-widgets"
       >
         <div
-          class="MuiPaper-root makeStyles-widget-2176 MuiPaper-elevation0 MuiPaper-rounded"
+          class="MuiPaper-root makeStyles-widget-1144 MuiPaper-elevation0 MuiPaper-rounded"
         >
           <span
-            class="makeStyles-totalFont-2177"
+            class="makeStyles-totalFont-1145"
           >
             99
           </span>
           <div
-            class="makeStyles-contentContainer-2180"
+            class="makeStyles-contentContainer-1148"
           >
             <span
-              class="makeStyles-statusFont-2178"
+              class="makeStyles-statusFont-1146"
             >
               Draft
             </span>
             <span
-              class="makeStyles-contentFont-2179"
+              class="makeStyles-contentFont-1147"
             >
               <p
-                class="makeStyles-reviewLink-2082"
+                class="makeStyles-reviewLink-1050"
               >
                 Review
               </p>
@@ -95,26 +95,26 @@ exports[`ProjectList Component should delete last project in page 1`] = `
           </div>
         </div>
         <div
-          class="MuiPaper-root makeStyles-widget-2176 MuiPaper-elevation0 MuiPaper-rounded"
+          class="MuiPaper-root makeStyles-widget-1144 MuiPaper-elevation0 MuiPaper-rounded"
         >
           <span
-            class="makeStyles-totalFont-2177"
+            class="makeStyles-totalFont-1145"
           >
             99
           </span>
           <div
-            class="makeStyles-contentContainer-2180"
+            class="makeStyles-contentContainer-1148"
           >
             <span
-              class="makeStyles-statusFont-2178"
+              class="makeStyles-statusFont-1146"
             >
               Pending Approval
             </span>
             <span
-              class="makeStyles-contentFont-2179"
+              class="makeStyles-contentFont-1147"
             >
               <p
-                class="makeStyles-reviewLink-2082"
+                class="makeStyles-reviewLink-1050"
               >
                 Review
               </p>
@@ -122,26 +122,26 @@ exports[`ProjectList Component should delete last project in page 1`] = `
           </div>
         </div>
         <div
-          class="MuiPaper-root makeStyles-widget-2176 MuiPaper-elevation0 MuiPaper-rounded"
+          class="MuiPaper-root makeStyles-widget-1144 MuiPaper-elevation0 MuiPaper-rounded"
         >
           <span
-            class="makeStyles-totalFont-2177"
+            class="makeStyles-totalFont-1145"
           >
             99
           </span>
           <div
-            class="makeStyles-contentContainer-2180"
+            class="makeStyles-contentContainer-1148"
           >
             <span
-              class="makeStyles-statusFont-2178"
+              class="makeStyles-statusFont-1146"
             >
               Active
             </span>
             <span
-              class="makeStyles-contentFont-2179"
+              class="makeStyles-contentFont-1147"
             >
               <p
-                class="makeStyles-reviewLink-2082"
+                class="makeStyles-reviewLink-1050"
               >
                 Review
               </p>
@@ -150,16 +150,16 @@ exports[`ProjectList Component should delete last project in page 1`] = `
         </div>
       </div>
       <div
-        class="makeStyles-tableWrapper-2084"
+        class="makeStyles-tableWrapper-1052"
       >
         <div
-          class="makeStyles-filterContainer-2092"
+          class="makeStyles-filterContainer-1060"
         >
           <div
-            class="makeStyles-statusFilter-2093"
+            class="makeStyles-statusFilter-1061"
           >
             <button
-              class="MuiButtonBase-root MuiButton-root MuiButton-text makeStyles-activeFilter-2094"
+              class="MuiButtonBase-root MuiButton-root MuiButton-text makeStyles-activeFilter-1062"
               data-testid="filter-status-opt"
               tabindex="0"
               type="button"
@@ -220,23 +220,23 @@ exports[`ProjectList Component should delete last project in page 1`] = `
             </button>
           </div>
           <div
-            class="makeStyles-filterActionsContainer-2095"
+            class="makeStyles-filterActionsContainer-1063"
           >
             <div
-              class="MuiBox-root MuiBox-root-2181 makeStyles-filterStatusContainer-2098"
+              class="MuiBox-root MuiBox-root-1149 makeStyles-filterStatusContainer-1066"
             >
               <div
-                class="makeStyles-floatingFilterWrapper-2104 makeStyles-filterWrapper-2103 makeStyles-buttonContainer-2183 floatingFilterWrapper"
+                class="makeStyles-floatingFilterWrapper-1072 makeStyles-filterWrapper-1071 makeStyles-buttonContainer-1151 floatingFilterWrapper"
               >
                 <span
-                  class="makeStyles-floatingFilterButton-2105"
+                  class="makeStyles-floatingFilterButton-1073"
                   data-testid="controlled-button"
                   tabindex="-1"
                 >
                   <button
                     aria-controls="false"
                     aria-haspopup="true"
-                    class="MuiButtonBase-root MuiButton-root MuiButton-text makeStyles-buttonFilter-2113"
+                    class="MuiButtonBase-root MuiButton-root MuiButton-text makeStyles-buttonFilter-1081"
                     data-testid="button-filter-open"
                     tabindex="0"
                     type="button"
@@ -249,7 +249,7 @@ exports[`ProjectList Component should delete last project in page 1`] = `
                         class="MuiButton-endIcon MuiButton-iconSizeMedium"
                       >
                         <svg
-                          class="makeStyles-dropdownIcon-2107"
+                          class="makeStyles-dropdownIcon-1075"
                         >
                           expand.svg
                         </svg>
@@ -260,23 +260,23 @@ exports[`ProjectList Component should delete last project in page 1`] = `
               </div>
             </div>
             <hr
-              class="MuiDivider-root makeStyles-dividerColor-2108 MuiDivider-flexItem MuiDivider-vertical"
+              class="MuiDivider-root makeStyles-dividerColor-1076 MuiDivider-flexItem MuiDivider-vertical"
             />
             <div
-              class="MuiBox-root MuiBox-root-2187 makeStyles-filterStatusContainer-2098"
+              class="MuiBox-root MuiBox-root-1155 makeStyles-filterStatusContainer-1066"
             >
               <div
-                class="makeStyles-floatingFilterWrapper-2104 makeStyles-filterWrapper-2103  floatingFilterWrapper"
+                class="makeStyles-floatingFilterWrapper-1072 makeStyles-filterWrapper-1071  floatingFilterWrapper"
               >
                 <span
-                  class="makeStyles-floatingFilterButton-2105"
+                  class="makeStyles-floatingFilterButton-1073"
                   data-testid="controlled-button"
                   tabindex="-1"
                 >
                   <button
                     aria-controls="false"
                     aria-haspopup="true"
-                    class="MuiButtonBase-root MuiButton-root MuiButton-text makeStyles-buttonFilter-2113"
+                    class="MuiButtonBase-root MuiButton-root MuiButton-text makeStyles-buttonFilter-1081"
                     data-testid="button-filter-open"
                     tabindex="0"
                     type="button"
@@ -289,7 +289,7 @@ exports[`ProjectList Component should delete last project in page 1`] = `
                         class="MuiButton-endIcon MuiButton-iconSizeMedium"
                       >
                         <svg
-                          class="makeStyles-dropdownIcon-2107"
+                          class="makeStyles-dropdownIcon-1075"
                         >
                           expand.svg
                         </svg>
@@ -347,14 +347,14 @@ exports[`ProjectList Component should delete last project in page 1`] = `
             class="MuiTableBody-root"
           >
             <tr
-              class="MuiTableRow-root WithStyles(ForwardRef(TableRow))-root-2189 makeStyles-clickableRow-2171"
+              class="MuiTableRow-root WithStyles(ForwardRef(TableRow))-root-1157 makeStyles-clickableRow-1139"
               data-testid="project-list-row"
             >
               <td
-                class="MuiTableCell-root MuiTableCell-body makeStyles-listName-2156"
+                class="MuiTableCell-root MuiTableCell-body makeStyles-listName-1124"
               >
                 <div
-                  class="makeStyles-projectRow-2067"
+                  class="makeStyles-projectRow-1035"
                 >
                   <div
                     class="MuiAvatar-root MuiAvatar-circle MuiAvatar-colorDefault"
@@ -371,37 +371,8 @@ exports[`ProjectList Component should delete last project in page 1`] = `
                     </svg>
                   </div>
                   <a
-                    class="Link-root-2190"
+                    class="Link-root-1158"
                     data-testid="project-list-row-item-link"
-                    href="/projects/wizard/9164e4c4-6521-47bb-97fd-c75ac02b2cf2"
-                    title="Edit"
-                  >
-                    Project Name
-                  </a>
-                </div>
-              </td>
-              <td
-                class="MuiTableCell-root MuiTableCell-body makeStyles-listName-2156"
-              >
-                <div
-                  class="makeStyles-projectRow-2067"
-                >
-                  <div
-                    class="MuiAvatar-root MuiAvatar-circle MuiAvatar-colorDefault"
-                  >
-                    <svg
-                      aria-hidden="true"
-                      class="MuiSvgIcon-root"
-                      focusable="false"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"
-                      />
-                    </svg>
-                  </div>
-                  <a
-                    class="Link-root-2190"
                     href="/projects/wizard-new/9164e4c4-6521-47bb-97fd-c75ac02b2cf2"
                     title="Edit"
                   >
@@ -410,10 +381,10 @@ exports[`ProjectList Component should delete last project in page 1`] = `
                 </div>
               </td>
               <td
-                class="MuiTableCell-root MuiTableCell-body makeStyles-listName-2156"
+                class="MuiTableCell-root MuiTableCell-body makeStyles-listName-1124"
               >
                 <div
-                  class="makeStyles-projectRow-2067"
+                  class="makeStyles-projectRow-1035"
                 >
                   <div
                     class="MuiAvatar-root MuiAvatar-circle MuiAvatar-colorDefault"
@@ -430,8 +401,8 @@ exports[`ProjectList Component should delete last project in page 1`] = `
                     </svg>
                   </div>
                   <a
-                    class="Link-root-2190"
-                    href="/projects/wizard/9164e4c4-6521-47bb-97fd-c75ac02b2cf2"
+                    class="Link-root-1158"
+                    href="/projects/wizard-new/9164e4c4-6521-47bb-97fd-c75ac02b2cf2"
                     title="Edit"
                   >
                     Project Name
@@ -439,24 +410,53 @@ exports[`ProjectList Component should delete last project in page 1`] = `
                 </div>
               </td>
               <td
-                class="MuiTableCell-root MuiTableCell-body makeStyles-listGeneralText-2158"
+                class="MuiTableCell-root MuiTableCell-body makeStyles-listName-1124"
+              >
+                <div
+                  class="makeStyles-projectRow-1035"
+                >
+                  <div
+                    class="MuiAvatar-root MuiAvatar-circle MuiAvatar-colorDefault"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      class="MuiSvgIcon-root"
+                      focusable="false"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"
+                      />
+                    </svg>
+                  </div>
+                  <a
+                    class="Link-root-1158"
+                    href="/projects/wizard-new/9164e4c4-6521-47bb-97fd-c75ac02b2cf2"
+                    title="Edit"
+                  >
+                    Project Name
+                  </a>
+                </div>
+              </td>
+              <td
+                class="MuiTableCell-root MuiTableCell-body makeStyles-listGeneralText-1126"
               >
                 -
               </td>
               <td
-                class="MuiTableCell-root MuiTableCell-body makeStyles-listGeneralText-2158"
+                class="MuiTableCell-root MuiTableCell-body makeStyles-listGeneralText-1126"
               >
                 Jul 15, 2020 to Jul 15, 2020
               </td>
               <td
-                class="MuiTableCell-root MuiTableCell-body makeStyles-listGeneralText-2158"
+                class="MuiTableCell-root MuiTableCell-body makeStyles-listGeneralText-1126"
               />
             </tr>
           </tbody>
         </table>
         <nav
           aria-label="pagination navigation"
-          class="MuiPagination-root  makeStyles-pagination-2191"
+          class="MuiPagination-root  makeStyles-pagination-1159"
           data-testid="pagination"
         >
           <ul
@@ -536,18 +536,18 @@ exports[`ProjectList Component should delete last project in page 1`] = `
       </div>
     </div>
     <div
-      class="MuiDrawer-root MuiDrawer-docked makeStyles-drawer-2217 makeStyles-close-2228 closed"
+      class="MuiDrawer-root MuiDrawer-docked makeStyles-drawer-1185 makeStyles-close-1196 closed"
       data-testid="project-drawer-detail"
     >
       <div
-        class="MuiPaper-root MuiDrawer-paper makeStyles-drawerPaper-2218 MuiDrawer-paperAnchorRight MuiDrawer-paperAnchorDockedRight MuiPaper-elevation0"
+        class="MuiPaper-root MuiDrawer-paper makeStyles-drawerPaper-1186 MuiDrawer-paperAnchorRight MuiDrawer-paperAnchorDockedRight MuiPaper-elevation0"
         style="webkit-transform: translateX(1024px) translateX(NaNpx); transform: translateX(1024px) translateX(NaNpx); webkit-transition: -webkit-transform 195ms cubic-bezier(0.4, 0, 0.6, 1) 0ms; transition: transform 195ms cubic-bezier(0.4, 0, 0.6, 1) 0ms;"
       >
         <div
-          class="makeStyles-drawerButtonWrapper-2220"
+          class="makeStyles-drawerButtonWrapper-1188"
         >
           <div
-            class="makeStyles-drawerButton-2221"
+            class="makeStyles-drawerButton-1189"
           >
             <button
               class="MuiButtonBase-root MuiButton-root MuiButton-text"
@@ -569,31 +569,31 @@ exports[`ProjectList Component should delete last project in page 1`] = `
             </button>
           </div>
           <div
-            class="makeStyles-drawerHeader-2219"
+            class="makeStyles-drawerHeader-1187"
           >
             <p
-              class="MuiTypography-root makeStyles-drawerTitle-2222 MuiTypography-body1 MuiTypography-colorPrimary MuiTypography-alignLeft"
+              class="MuiTypography-root makeStyles-drawerTitle-1190 MuiTypography-body1 MuiTypography-colorPrimary MuiTypography-alignLeft"
             >
               Project Information
             </p>
           </div>
         </div>
         <div
-          class="makeStyles-listDetail-2163"
+          class="makeStyles-listDetail-1131"
         >
           <div
-            class="makeStyles-company-2164"
+            class="makeStyles-company-1132"
           >
             <div
-              class="makeStyles-drawerText-2224"
+              class="makeStyles-drawerText-1192"
             >
               <p
-                class="MuiTypography-root makeStyles-listAccent-2165 makeStyles-entityTitle-2162 MuiTypography-body1"
+                class="MuiTypography-root makeStyles-listAccent-1133 makeStyles-entityTitle-1130 MuiTypography-body1"
               >
                 Project Name
               </p>
               <div
-                class="makeStyles-drawerMainText-2225"
+                class="makeStyles-drawerMainText-1193"
               >
                 <span>
                   category-1
@@ -607,17 +607,17 @@ exports[`ProjectList Component should delete last project in page 1`] = `
               </div>
             </div>
             <div
-              class="makeStyles-drawerSection-2223 makeStyles-drawerProjectColumn-2231"
+              class="makeStyles-drawerSection-1191 makeStyles-drawerProjectColumn-1199"
             >
               <div
-                class="makeStyles-projectWrapper-2229"
+                class="makeStyles-projectWrapper-1197"
                 data-testid=""
               >
                 <svg>
                   location.svg
                 </svg>
                 <div
-                  class="makeStyles-drawerText-2224 makeStyles-drawerTextSeparation-2226"
+                  class="makeStyles-drawerText-1192 makeStyles-drawerTextSeparation-1194"
                 >
                   <span>
                     -
@@ -626,17 +626,17 @@ exports[`ProjectList Component should delete last project in page 1`] = `
               </div>
             </div>
             <div
-              class="makeStyles-drawerSection-2223 makeStyles-drawerProjectColumn-2231"
+              class="makeStyles-drawerSection-1191 makeStyles-drawerProjectColumn-1199"
             >
               <div
-                class="makeStyles-projectWrapper-2229"
+                class="makeStyles-projectWrapper-1197"
                 data-testid=""
               >
                 <svg>
                   location.svg
                 </svg>
                 <div
-                  class="makeStyles-drawerText-2224 makeStyles-drawerTextSeparation-2226"
+                  class="makeStyles-drawerText-1192 makeStyles-drawerTextSeparation-1194"
                 >
                   <span>
                     -
@@ -645,17 +645,17 @@ exports[`ProjectList Component should delete last project in page 1`] = `
               </div>
             </div>
             <div
-              class="makeStyles-drawerSection-2223 makeStyles-drawerProjectColumn-2231"
+              class="makeStyles-drawerSection-1191 makeStyles-drawerProjectColumn-1199"
             >
               <div
-                class="makeStyles-projectWrapper-2229"
+                class="makeStyles-projectWrapper-1197"
                 data-testid=""
               >
                 <svg>
                   location.svg
                 </svg>
                 <div
-                  class="makeStyles-drawerText-2224 makeStyles-drawerTextSeparation-2226"
+                  class="makeStyles-drawerText-1192 makeStyles-drawerTextSeparation-1194"
                 >
                   <span>
                     -
@@ -664,22 +664,22 @@ exports[`ProjectList Component should delete last project in page 1`] = `
               </div>
             </div>
             <div
-              class="makeStyles-drawerSection-2223"
+              class="makeStyles-drawerSection-1191"
             >
               <div
-                class="makeStyles-drawerColumnDirection-2232"
+                class="makeStyles-drawerColumnDirection-1200"
               >
                 <div
-                  class="makeStyles-drawerRowDirection-2233"
+                  class="makeStyles-drawerRowDirection-1201"
                 >
                   <svg>
                     monetization.svg
                   </svg>
                   <div
-                    class="makeStyles-drawerText-2224 makeStyles-drawerTextSeparation-2226"
+                    class="makeStyles-drawerText-1192 makeStyles-drawerTextSeparation-1194"
                   >
                     <span
-                      class="makeStyles-listAccent-2165"
+                      class="makeStyles-listAccent-1133"
                     >
                       Badge Model
                     </span>
@@ -703,10 +703,10 @@ exports[`ProjectList Component should delete last project in page 1`] = `
             </div>
           </div>
           <hr
-            class="MuiDivider-root makeStyles-drawerDivider-2227"
+            class="MuiDivider-root makeStyles-drawerDivider-1195"
           />
           <div
-            class="makeStyles-ctaWrapper-2166"
+            class="makeStyles-ctaWrapper-1134"
           >
             <span
               class=""
@@ -715,7 +715,7 @@ exports[`ProjectList Component should delete last project in page 1`] = `
             >
               <a
                 aria-disabled="false"
-                class="MuiButtonBase-root MuiButton-root MuiButton-outlined makeStyles-drawerCTA-2132 makeStyles-borderPrimaryButton-2124 makeStyles-primaryButtonPadding-2126"
+                class="MuiButtonBase-root MuiButton-root MuiButton-outlined makeStyles-drawerCTA-1100 makeStyles-borderPrimaryButton-1092 makeStyles-primaryButtonPadding-1094"
                 data-testid="drawerProjectButton"
                 href="/projects/wizard/9164e4c4-6521-47bb-97fd-c75ac02b2cf2"
                 tabindex="0"
@@ -733,7 +733,7 @@ exports[`ProjectList Component should delete last project in page 1`] = `
               tabindex="-1"
             >
               <button
-                class="MuiButtonBase-root MuiButton-root MuiButton-outlined makeStyles-drawerCTA-2132 makeStyles-warningButton-2133"
+                class="MuiButtonBase-root MuiButton-root MuiButton-outlined makeStyles-drawerCTA-1100 makeStyles-warningButton-1101"
                 data-testid="deleteProjectButton"
                 tabindex="0"
                 type="button"
@@ -1126,7 +1126,7 @@ exports[`ProjectList Component should delete project 1`] = `
                   <a
                     class="Link-root-2018"
                     data-testid="project-list-row-item-link"
-                    href="/projects/wizard/9164e4c4-6521-47bb-97fd-c75ac02b2cf2"
+                    href="/projects/wizard-new/9164e4c4-6521-47bb-97fd-c75ac02b2cf2"
                     title="Edit"
                   >
                     Project Name
@@ -1184,7 +1184,7 @@ exports[`ProjectList Component should delete project 1`] = `
                   </div>
                   <a
                     class="Link-root-2018"
-                    href="/projects/wizard/9164e4c4-6521-47bb-97fd-c75ac02b2cf2"
+                    href="/projects/wizard-new/9164e4c4-6521-47bb-97fd-c75ac02b2cf2"
                     title="Edit"
                   >
                     Project Name
@@ -1261,7 +1261,7 @@ exports[`ProjectList Component should delete project 1`] = `
                   </div>
                   <a
                     class="Link-root-2018"
-                    href="/projects/wizard-new/8aa1c4c4-6521-47bb-27fd-af5ac02b2cd8"
+                    href="/projects/wizard/8aa1c4c4-6521-47bb-27fd-af5ac02b2cd8/review"
                     title="Review"
                   >
                     Project Name 2
@@ -1367,7 +1367,7 @@ exports[`ProjectList Component should delete project 1`] = `
                   </div>
                   <a
                     class="Link-root-2018"
-                    href="/projects/wizard-new/cbb1c4c4-2221-f7bb-27fd-ff5ac02b2cda"
+                    href="/projects/wizard/cbb1c4c4-2221-f7bb-27fd-ff5ac02b2cda/review"
                     title="Review"
                   >
                     Project Name 4
@@ -1444,7 +1444,7 @@ exports[`ProjectList Component should delete project 1`] = `
                   <a
                     class="Link-root-2018"
                     data-testid="project-list-row-item-link"
-                    href="/projects/wizard/820ccbf5-03aa-4797-9001-d79643c3d35d"
+                    href="/projects/wizard-new/820ccbf5-03aa-4797-9001-d79643c3d35d"
                     title="Edit"
                   >
                     Project Name 3
@@ -1502,7 +1502,7 @@ exports[`ProjectList Component should delete project 1`] = `
                   </div>
                   <a
                     class="Link-root-2018"
-                    href="/projects/wizard/820ccbf5-03aa-4797-9001-d79643c3d35d"
+                    href="/projects/wizard-new/820ccbf5-03aa-4797-9001-d79643c3d35d"
                     title="Edit"
                   >
                     Project Name 3
@@ -2149,7 +2149,7 @@ exports[`ProjectList Component should hide elements based on role 1`] = `
                   <a
                     class="Link-root-2524"
                     data-testid="project-list-row-item-link"
-                    href="/projects/wizard/9164e4c4-6521-47bb-97fd-c75ac02b2cf2"
+                    href="/projects/wizard-new/9164e4c4-6521-47bb-97fd-c75ac02b2cf2"
                     title="Edit"
                   >
                     Project Name
@@ -2207,7 +2207,7 @@ exports[`ProjectList Component should hide elements based on role 1`] = `
                   </div>
                   <a
                     class="Link-root-2524"
-                    href="/projects/wizard/9164e4c4-6521-47bb-97fd-c75ac02b2cf2"
+                    href="/projects/wizard-new/9164e4c4-6521-47bb-97fd-c75ac02b2cf2"
                     title="Edit"
                   >
                     Project Name
@@ -2284,7 +2284,7 @@ exports[`ProjectList Component should hide elements based on role 1`] = `
                   </div>
                   <a
                     class="Link-root-2524"
-                    href="/projects/wizard-new/8aa1c4c4-6521-47bb-27fd-af5ac02b2cd8"
+                    href="/projects/wizard/8aa1c4c4-6521-47bb-27fd-af5ac02b2cd8/review"
                     title="Review"
                   >
                     Project Name 2
@@ -2390,7 +2390,7 @@ exports[`ProjectList Component should hide elements based on role 1`] = `
                   </div>
                   <a
                     class="Link-root-2524"
-                    href="/projects/wizard-new/cbb1c4c4-2221-f7bb-27fd-ff5ac02b2cda"
+                    href="/projects/wizard/cbb1c4c4-2221-f7bb-27fd-ff5ac02b2cda/review"
                     title="Review"
                   >
                     Project Name 4
@@ -2467,7 +2467,7 @@ exports[`ProjectList Component should hide elements based on role 1`] = `
                   <a
                     class="Link-root-2524"
                     data-testid="project-list-row-item-link"
-                    href="/projects/wizard/820ccbf5-03aa-4797-9001-d79643c3d35d"
+                    href="/projects/wizard-new/820ccbf5-03aa-4797-9001-d79643c3d35d"
                     title="Edit"
                   >
                     Project Name 3
@@ -2525,7 +2525,7 @@ exports[`ProjectList Component should hide elements based on role 1`] = `
                   </div>
                   <a
                     class="Link-root-2524"
-                    href="/projects/wizard/820ccbf5-03aa-4797-9001-d79643c3d35d"
+                    href="/projects/wizard-new/820ccbf5-03aa-4797-9001-d79643c3d35d"
                     title="Edit"
                   >
                     Project Name 3
@@ -3205,7 +3205,7 @@ exports[`ProjectList Component should not show related companies if null 1`] = `
                   <a
                     class="Link-root-1330"
                     data-testid="project-list-row-item-link"
-                    href="/projects/wizard/9164e4c4-6521-47bb-97fd-c75ac02b2cf2"
+                    href="/projects/wizard-new/9164e4c4-6521-47bb-97fd-c75ac02b2cf2"
                     title="Edit"
                   >
                     Project Name
@@ -3263,7 +3263,7 @@ exports[`ProjectList Component should not show related companies if null 1`] = `
                   </div>
                   <a
                     class="Link-root-1330"
-                    href="/projects/wizard/9164e4c4-6521-47bb-97fd-c75ac02b2cf2"
+                    href="/projects/wizard-new/9164e4c4-6521-47bb-97fd-c75ac02b2cf2"
                     title="Edit"
                   >
                     Project Name
@@ -3340,7 +3340,7 @@ exports[`ProjectList Component should not show related companies if null 1`] = `
                   </div>
                   <a
                     class="Link-root-1330"
-                    href="/projects/wizard-new/8aa1c4c4-6521-47bb-27fd-af5ac02b2cd8"
+                    href="/projects/wizard/8aa1c4c4-6521-47bb-27fd-af5ac02b2cd8/review"
                     title="Review"
                   >
                     Project Name 2
@@ -3446,7 +3446,7 @@ exports[`ProjectList Component should not show related companies if null 1`] = `
                   </div>
                   <a
                     class="Link-root-1330"
-                    href="/projects/wizard-new/cbb1c4c4-2221-f7bb-27fd-ff5ac02b2cda"
+                    href="/projects/wizard/cbb1c4c4-2221-f7bb-27fd-ff5ac02b2cda/review"
                     title="Review"
                   >
                     Project Name 4
@@ -3523,7 +3523,7 @@ exports[`ProjectList Component should not show related companies if null 1`] = `
                   <a
                     class="Link-root-1330"
                     data-testid="project-list-row-item-link"
-                    href="/projects/wizard/820ccbf5-03aa-4797-9001-d79643c3d35d"
+                    href="/projects/wizard-new/820ccbf5-03aa-4797-9001-d79643c3d35d"
                     title="Edit"
                   >
                     Project Name 3
@@ -3581,7 +3581,7 @@ exports[`ProjectList Component should not show related companies if null 1`] = `
                   </div>
                   <a
                     class="Link-root-1330"
-                    href="/projects/wizard/820ccbf5-03aa-4797-9001-d79643c3d35d"
+                    href="/projects/wizard-new/820ccbf5-03aa-4797-9001-d79643c3d35d"
                     title="Edit"
                   >
                     Project Name 3
@@ -4279,7 +4279,7 @@ exports[`ProjectList Component should render 1`] = `
                   <a
                     class="Link-root-126"
                     data-testid="project-list-row-item-link"
-                    href="/projects/wizard/9164e4c4-6521-47bb-97fd-c75ac02b2cf2"
+                    href="/projects/wizard-new/9164e4c4-6521-47bb-97fd-c75ac02b2cf2"
                     title="Edit"
                   >
                     Project Name
@@ -4337,7 +4337,7 @@ exports[`ProjectList Component should render 1`] = `
                   </div>
                   <a
                     class="Link-root-126"
-                    href="/projects/wizard/9164e4c4-6521-47bb-97fd-c75ac02b2cf2"
+                    href="/projects/wizard-new/9164e4c4-6521-47bb-97fd-c75ac02b2cf2"
                     title="Edit"
                   >
                     Project Name
@@ -4414,7 +4414,7 @@ exports[`ProjectList Component should render 1`] = `
                   </div>
                   <a
                     class="Link-root-126"
-                    href="/projects/wizard-new/8aa1c4c4-6521-47bb-27fd-af5ac02b2cd8"
+                    href="/projects/wizard/8aa1c4c4-6521-47bb-27fd-af5ac02b2cd8/review"
                     title="Review"
                   >
                     Project Name 2
@@ -4520,7 +4520,7 @@ exports[`ProjectList Component should render 1`] = `
                   </div>
                   <a
                     class="Link-root-126"
-                    href="/projects/wizard-new/cbb1c4c4-2221-f7bb-27fd-ff5ac02b2cda"
+                    href="/projects/wizard/cbb1c4c4-2221-f7bb-27fd-ff5ac02b2cda/review"
                     title="Review"
                   >
                     Project Name 4
@@ -4597,7 +4597,7 @@ exports[`ProjectList Component should render 1`] = `
                   <a
                     class="Link-root-126"
                     data-testid="project-list-row-item-link"
-                    href="/projects/wizard/820ccbf5-03aa-4797-9001-d79643c3d35d"
+                    href="/projects/wizard-new/820ccbf5-03aa-4797-9001-d79643c3d35d"
                     title="Edit"
                   >
                     Project Name 3
@@ -4655,7 +4655,7 @@ exports[`ProjectList Component should render 1`] = `
                   </div>
                   <a
                     class="Link-root-126"
-                    href="/projects/wizard/820ccbf5-03aa-4797-9001-d79643c3d35d"
+                    href="/projects/wizard-new/820ccbf5-03aa-4797-9001-d79643c3d35d"
                     title="Edit"
                   >
                     Project Name 3
@@ -5353,7 +5353,7 @@ exports[`ProjectList Component should render drawer 1`] = `
                   <a
                     class="Link-root-986"
                     data-testid="project-list-row-item-link"
-                    href="/projects/wizard/9164e4c4-6521-47bb-97fd-c75ac02b2cf2"
+                    href="/projects/wizard-new/9164e4c4-6521-47bb-97fd-c75ac02b2cf2"
                     title="Edit"
                   >
                     Project Name
@@ -5411,7 +5411,7 @@ exports[`ProjectList Component should render drawer 1`] = `
                   </div>
                   <a
                     class="Link-root-986"
-                    href="/projects/wizard/9164e4c4-6521-47bb-97fd-c75ac02b2cf2"
+                    href="/projects/wizard-new/9164e4c4-6521-47bb-97fd-c75ac02b2cf2"
                     title="Edit"
                   >
                     Project Name
@@ -5488,7 +5488,7 @@ exports[`ProjectList Component should render drawer 1`] = `
                   </div>
                   <a
                     class="Link-root-986"
-                    href="/projects/wizard-new/8aa1c4c4-6521-47bb-27fd-af5ac02b2cd8"
+                    href="/projects/wizard/8aa1c4c4-6521-47bb-27fd-af5ac02b2cd8/review"
                     title="Review"
                   >
                     Project Name 2
@@ -5594,7 +5594,7 @@ exports[`ProjectList Component should render drawer 1`] = `
                   </div>
                   <a
                     class="Link-root-986"
-                    href="/projects/wizard-new/cbb1c4c4-2221-f7bb-27fd-ff5ac02b2cda"
+                    href="/projects/wizard/cbb1c4c4-2221-f7bb-27fd-ff5ac02b2cda/review"
                     title="Review"
                   >
                     Project Name 4
@@ -5671,7 +5671,7 @@ exports[`ProjectList Component should render drawer 1`] = `
                   <a
                     class="Link-root-986"
                     data-testid="project-list-row-item-link"
-                    href="/projects/wizard/820ccbf5-03aa-4797-9001-d79643c3d35d"
+                    href="/projects/wizard-new/820ccbf5-03aa-4797-9001-d79643c3d35d"
                     title="Edit"
                   >
                     Project Name 3
@@ -5729,7 +5729,7 @@ exports[`ProjectList Component should render drawer 1`] = `
                   </div>
                   <a
                     class="Link-root-986"
-                    href="/projects/wizard/820ccbf5-03aa-4797-9001-d79643c3d35d"
+                    href="/projects/wizard-new/820ccbf5-03aa-4797-9001-d79643c3d35d"
                     title="Edit"
                   >
                     Project Name 3
@@ -6427,7 +6427,7 @@ exports[`ProjectList Component should render drawer 2`] = `
                   <a
                     class="Link-root-986"
                     data-testid="project-list-row-item-link"
-                    href="/projects/wizard/9164e4c4-6521-47bb-97fd-c75ac02b2cf2"
+                    href="/projects/wizard-new/9164e4c4-6521-47bb-97fd-c75ac02b2cf2"
                     title="Edit"
                   >
                     Project Name
@@ -6485,7 +6485,7 @@ exports[`ProjectList Component should render drawer 2`] = `
                   </div>
                   <a
                     class="Link-root-986"
-                    href="/projects/wizard/9164e4c4-6521-47bb-97fd-c75ac02b2cf2"
+                    href="/projects/wizard-new/9164e4c4-6521-47bb-97fd-c75ac02b2cf2"
                     title="Edit"
                   >
                     Project Name
@@ -6562,7 +6562,7 @@ exports[`ProjectList Component should render drawer 2`] = `
                   </div>
                   <a
                     class="Link-root-986"
-                    href="/projects/wizard-new/8aa1c4c4-6521-47bb-27fd-af5ac02b2cd8"
+                    href="/projects/wizard/8aa1c4c4-6521-47bb-27fd-af5ac02b2cd8/review"
                     title="Review"
                   >
                     Project Name 2
@@ -6668,7 +6668,7 @@ exports[`ProjectList Component should render drawer 2`] = `
                   </div>
                   <a
                     class="Link-root-986"
-                    href="/projects/wizard-new/cbb1c4c4-2221-f7bb-27fd-ff5ac02b2cda"
+                    href="/projects/wizard/cbb1c4c4-2221-f7bb-27fd-ff5ac02b2cda/review"
                     title="Review"
                   >
                     Project Name 4
@@ -6745,7 +6745,7 @@ exports[`ProjectList Component should render drawer 2`] = `
                   <a
                     class="Link-root-986"
                     data-testid="project-list-row-item-link"
-                    href="/projects/wizard/820ccbf5-03aa-4797-9001-d79643c3d35d"
+                    href="/projects/wizard-new/820ccbf5-03aa-4797-9001-d79643c3d35d"
                     title="Edit"
                   >
                     Project Name 3
@@ -6803,7 +6803,7 @@ exports[`ProjectList Component should render drawer 2`] = `
                   </div>
                   <a
                     class="Link-root-986"
-                    href="/projects/wizard/820ccbf5-03aa-4797-9001-d79643c3d35d"
+                    href="/projects/wizard-new/820ccbf5-03aa-4797-9001-d79643c3d35d"
                     title="Edit"
                   >
                     Project Name 3
@@ -7521,7 +7521,7 @@ exports[`ProjectList Component should render loading 1`] = `
                   <a
                     class="Link-root-642"
                     data-testid="project-list-row-item-link"
-                    href="/projects/wizard/9164e4c4-6521-47bb-97fd-c75ac02b2cf2"
+                    href="/projects/wizard-new/9164e4c4-6521-47bb-97fd-c75ac02b2cf2"
                     title="Edit"
                   >
                     Project Name
@@ -7579,7 +7579,7 @@ exports[`ProjectList Component should render loading 1`] = `
                   </div>
                   <a
                     class="Link-root-642"
-                    href="/projects/wizard/9164e4c4-6521-47bb-97fd-c75ac02b2cf2"
+                    href="/projects/wizard-new/9164e4c4-6521-47bb-97fd-c75ac02b2cf2"
                     title="Edit"
                   >
                     Project Name
@@ -7656,7 +7656,7 @@ exports[`ProjectList Component should render loading 1`] = `
                   </div>
                   <a
                     class="Link-root-642"
-                    href="/projects/wizard-new/8aa1c4c4-6521-47bb-27fd-af5ac02b2cd8"
+                    href="/projects/wizard/8aa1c4c4-6521-47bb-27fd-af5ac02b2cd8/review"
                     title="Review"
                   >
                     Project Name 2
@@ -7762,7 +7762,7 @@ exports[`ProjectList Component should render loading 1`] = `
                   </div>
                   <a
                     class="Link-root-642"
-                    href="/projects/wizard-new/cbb1c4c4-2221-f7bb-27fd-ff5ac02b2cda"
+                    href="/projects/wizard/cbb1c4c4-2221-f7bb-27fd-ff5ac02b2cda/review"
                     title="Review"
                   >
                     Project Name 4
@@ -7839,7 +7839,7 @@ exports[`ProjectList Component should render loading 1`] = `
                   <a
                     class="Link-root-642"
                     data-testid="project-list-row-item-link"
-                    href="/projects/wizard/820ccbf5-03aa-4797-9001-d79643c3d35d"
+                    href="/projects/wizard-new/820ccbf5-03aa-4797-9001-d79643c3d35d"
                     title="Edit"
                   >
                     Project Name 3
@@ -7897,7 +7897,7 @@ exports[`ProjectList Component should render loading 1`] = `
                   </div>
                   <a
                     class="Link-root-642"
-                    href="/projects/wizard/820ccbf5-03aa-4797-9001-d79643c3d35d"
+                    href="/projects/wizard-new/820ccbf5-03aa-4797-9001-d79643c3d35d"
                     title="Edit"
                   >
                     Project Name 3
@@ -8429,7 +8429,7 @@ exports[`ProjectList Component should show alternative values in project drawer 
                   <a
                     class="Link-root-1158"
                     data-testid="project-list-row-item-link"
-                    href="/projects/wizard/9164e4c4-6521-47bb-97fd-c75ac02b2cf2"
+                    href="/projects/wizard-new/9164e4c4-6521-47bb-97fd-c75ac02b2cf2"
                     title="Edit"
                   >
                     Project Name
@@ -8487,7 +8487,7 @@ exports[`ProjectList Component should show alternative values in project drawer 
                   </div>
                   <a
                     class="Link-root-1158"
-                    href="/projects/wizard/9164e4c4-6521-47bb-97fd-c75ac02b2cf2"
+                    href="/projects/wizard-new/9164e4c4-6521-47bb-97fd-c75ac02b2cf2"
                     title="Edit"
                   >
                     Project Name
@@ -8564,7 +8564,7 @@ exports[`ProjectList Component should show alternative values in project drawer 
                   </div>
                   <a
                     class="Link-root-1158"
-                    href="/projects/wizard-new/8aa1c4c4-6521-47bb-27fd-af5ac02b2cd8"
+                    href="/projects/wizard/8aa1c4c4-6521-47bb-27fd-af5ac02b2cd8/review"
                     title="Review"
                   >
                     Project Name 2
@@ -8670,7 +8670,7 @@ exports[`ProjectList Component should show alternative values in project drawer 
                   </div>
                   <a
                     class="Link-root-1158"
-                    href="/projects/wizard-new/cbb1c4c4-2221-f7bb-27fd-ff5ac02b2cda"
+                    href="/projects/wizard/cbb1c4c4-2221-f7bb-27fd-ff5ac02b2cda/review"
                     title="Review"
                   >
                     Project Name 4
@@ -8747,7 +8747,7 @@ exports[`ProjectList Component should show alternative values in project drawer 
                   <a
                     class="Link-root-1158"
                     data-testid="project-list-row-item-link"
-                    href="/projects/wizard/820ccbf5-03aa-4797-9001-d79643c3d35d"
+                    href="/projects/wizard-new/820ccbf5-03aa-4797-9001-d79643c3d35d"
                     title="Edit"
                   >
                     Project Name 3
@@ -8805,7 +8805,7 @@ exports[`ProjectList Component should show alternative values in project drawer 
                   </div>
                   <a
                     class="Link-root-1158"
-                    href="/projects/wizard/820ccbf5-03aa-4797-9001-d79643c3d35d"
+                    href="/projects/wizard-new/820ccbf5-03aa-4797-9001-d79643c3d35d"
                     title="Edit"
                   >
                     Project Name 3
@@ -9162,16 +9162,16 @@ exports[`ProjectList Component should show loading list 1`] = `
       class=""
     >
       <div
-        class="MuiBox-root MuiBox-root-2342"
+        class="MuiBox-root MuiBox-root-1310"
         style="height: 50px; margin-bottom: 13px; width: 100%;"
       >
         <div
-          class="MuiBox-root MuiBox-root-2343"
+          class="MuiBox-root MuiBox-root-1311"
           style="display: flex; align-items: center; justify-content: space-between;"
         >
           <div>
             <div
-              class="MuiBox-root MuiBox-root-2344"
+              class="MuiBox-root MuiBox-root-1312"
               style="display: flex; align-items: center; margin-top: 5px;"
             >
               <h2
@@ -9183,7 +9183,7 @@ exports[`ProjectList Component should show loading list 1`] = `
             </div>
           </div>
           <button
-            class="MuiButtonBase-root MuiButton-root MuiButton-contained makeStyles-createButton-2294 makeStyles-primaryButtonLarge-2296 MuiButton-containedPrimary MuiButton-containedSizeLarge MuiButton-sizeLarge MuiButton-fullWidth"
+            class="MuiButtonBase-root MuiButton-root MuiButton-contained makeStyles-createButton-1262 makeStyles-primaryButtonLarge-1264 MuiButton-containedPrimary MuiButton-containedSizeLarge MuiButton-sizeLarge MuiButton-fullWidth"
             data-testid="create-project-btn"
             tabindex="0"
             type="submit"
@@ -9198,7 +9198,7 @@ exports[`ProjectList Component should show loading list 1`] = `
             />
           </button>
           <button
-            class="MuiButtonBase-root MuiButton-root MuiButton-contained makeStyles-createButton-2294 makeStyles-primaryButtonLarge-2296 MuiButton-containedPrimary MuiButton-containedSizeLarge MuiButton-sizeLarge MuiButton-fullWidth"
+            class="MuiButtonBase-root MuiButton-root MuiButton-contained makeStyles-createButton-1262 makeStyles-primaryButtonLarge-1264 MuiButton-containedPrimary MuiButton-containedSizeLarge MuiButton-sizeLarge MuiButton-fullWidth"
             tabindex="0"
             type="submit"
           >
@@ -9214,30 +9214,30 @@ exports[`ProjectList Component should show loading list 1`] = `
         </div>
       </div>
       <div
-        class="makeStyles-widgetsWrapper-2328"
+        class="makeStyles-widgetsWrapper-1296"
         id="summary-widgets"
       >
         <div
-          class="MuiPaper-root makeStyles-widget-2345 MuiPaper-elevation0 MuiPaper-rounded"
+          class="MuiPaper-root makeStyles-widget-1313 MuiPaper-elevation0 MuiPaper-rounded"
         >
           <span
-            class="makeStyles-totalFont-2346"
+            class="makeStyles-totalFont-1314"
           >
             99
           </span>
           <div
-            class="makeStyles-contentContainer-2349"
+            class="makeStyles-contentContainer-1317"
           >
             <span
-              class="makeStyles-statusFont-2347"
+              class="makeStyles-statusFont-1315"
             >
               Draft
             </span>
             <span
-              class="makeStyles-contentFont-2348"
+              class="makeStyles-contentFont-1316"
             >
               <p
-                class="makeStyles-reviewLink-2251"
+                class="makeStyles-reviewLink-1219"
               >
                 Review
               </p>
@@ -9245,26 +9245,26 @@ exports[`ProjectList Component should show loading list 1`] = `
           </div>
         </div>
         <div
-          class="MuiPaper-root makeStyles-widget-2345 MuiPaper-elevation0 MuiPaper-rounded"
+          class="MuiPaper-root makeStyles-widget-1313 MuiPaper-elevation0 MuiPaper-rounded"
         >
           <span
-            class="makeStyles-totalFont-2346"
+            class="makeStyles-totalFont-1314"
           >
             99
           </span>
           <div
-            class="makeStyles-contentContainer-2349"
+            class="makeStyles-contentContainer-1317"
           >
             <span
-              class="makeStyles-statusFont-2347"
+              class="makeStyles-statusFont-1315"
             >
               Pending Approval
             </span>
             <span
-              class="makeStyles-contentFont-2348"
+              class="makeStyles-contentFont-1316"
             >
               <p
-                class="makeStyles-reviewLink-2251"
+                class="makeStyles-reviewLink-1219"
               >
                 Review
               </p>
@@ -9272,26 +9272,26 @@ exports[`ProjectList Component should show loading list 1`] = `
           </div>
         </div>
         <div
-          class="MuiPaper-root makeStyles-widget-2345 MuiPaper-elevation0 MuiPaper-rounded"
+          class="MuiPaper-root makeStyles-widget-1313 MuiPaper-elevation0 MuiPaper-rounded"
         >
           <span
-            class="makeStyles-totalFont-2346"
+            class="makeStyles-totalFont-1314"
           >
             99
           </span>
           <div
-            class="makeStyles-contentContainer-2349"
+            class="makeStyles-contentContainer-1317"
           >
             <span
-              class="makeStyles-statusFont-2347"
+              class="makeStyles-statusFont-1315"
             >
               Active
             </span>
             <span
-              class="makeStyles-contentFont-2348"
+              class="makeStyles-contentFont-1316"
             >
               <p
-                class="makeStyles-reviewLink-2251"
+                class="makeStyles-reviewLink-1219"
               >
                 Review
               </p>
@@ -9300,16 +9300,16 @@ exports[`ProjectList Component should show loading list 1`] = `
         </div>
       </div>
       <div
-        class="makeStyles-tableWrapper-2253"
+        class="makeStyles-tableWrapper-1221"
       >
         <div
-          class="makeStyles-filterContainer-2261"
+          class="makeStyles-filterContainer-1229"
         >
           <div
-            class="makeStyles-statusFilter-2262"
+            class="makeStyles-statusFilter-1230"
           >
             <button
-              class="MuiButtonBase-root MuiButton-root MuiButton-text makeStyles-activeFilter-2263"
+              class="MuiButtonBase-root MuiButton-root MuiButton-text makeStyles-activeFilter-1231"
               data-testid="filter-status-opt"
               tabindex="0"
               type="button"
@@ -9370,23 +9370,23 @@ exports[`ProjectList Component should show loading list 1`] = `
             </button>
           </div>
           <div
-            class="makeStyles-filterActionsContainer-2264"
+            class="makeStyles-filterActionsContainer-1232"
           >
             <div
-              class="MuiBox-root MuiBox-root-2350 makeStyles-filterStatusContainer-2267"
+              class="MuiBox-root MuiBox-root-1318 makeStyles-filterStatusContainer-1235"
             >
               <div
-                class="makeStyles-floatingFilterWrapper-2273 makeStyles-filterWrapper-2272 makeStyles-buttonContainer-2352 floatingFilterWrapper"
+                class="makeStyles-floatingFilterWrapper-1241 makeStyles-filterWrapper-1240 makeStyles-buttonContainer-1320 floatingFilterWrapper"
               >
                 <span
-                  class="makeStyles-floatingFilterButton-2274"
+                  class="makeStyles-floatingFilterButton-1242"
                   data-testid="controlled-button"
                   tabindex="-1"
                 >
                   <button
                     aria-controls="false"
                     aria-haspopup="true"
-                    class="MuiButtonBase-root MuiButton-root MuiButton-text makeStyles-buttonFilter-2282"
+                    class="MuiButtonBase-root MuiButton-root MuiButton-text makeStyles-buttonFilter-1250"
                     data-testid="button-filter-open"
                     tabindex="0"
                     type="button"
@@ -9399,7 +9399,7 @@ exports[`ProjectList Component should show loading list 1`] = `
                         class="MuiButton-endIcon MuiButton-iconSizeMedium"
                       >
                         <svg
-                          class="makeStyles-dropdownIcon-2276"
+                          class="makeStyles-dropdownIcon-1244"
                         >
                           expand.svg
                         </svg>
@@ -9410,23 +9410,23 @@ exports[`ProjectList Component should show loading list 1`] = `
               </div>
             </div>
             <hr
-              class="MuiDivider-root makeStyles-dividerColor-2277 MuiDivider-flexItem MuiDivider-vertical"
+              class="MuiDivider-root makeStyles-dividerColor-1245 MuiDivider-flexItem MuiDivider-vertical"
             />
             <div
-              class="MuiBox-root MuiBox-root-2356 makeStyles-filterStatusContainer-2267"
+              class="MuiBox-root MuiBox-root-1324 makeStyles-filterStatusContainer-1235"
             >
               <div
-                class="makeStyles-floatingFilterWrapper-2273 makeStyles-filterWrapper-2272  floatingFilterWrapper"
+                class="makeStyles-floatingFilterWrapper-1241 makeStyles-filterWrapper-1240  floatingFilterWrapper"
               >
                 <span
-                  class="makeStyles-floatingFilterButton-2274"
+                  class="makeStyles-floatingFilterButton-1242"
                   data-testid="controlled-button"
                   tabindex="-1"
                 >
                   <button
                     aria-controls="false"
                     aria-haspopup="true"
-                    class="MuiButtonBase-root MuiButton-root MuiButton-text makeStyles-buttonFilter-2282"
+                    class="MuiButtonBase-root MuiButton-root MuiButton-text makeStyles-buttonFilter-1250"
                     data-testid="button-filter-open"
                     tabindex="0"
                     type="button"
@@ -9439,7 +9439,7 @@ exports[`ProjectList Component should show loading list 1`] = `
                         class="MuiButton-endIcon MuiButton-iconSizeMedium"
                       >
                         <svg
-                          class="makeStyles-dropdownIcon-2276"
+                          class="makeStyles-dropdownIcon-1244"
                         >
                           expand.svg
                         </svg>
@@ -9455,18 +9455,18 @@ exports[`ProjectList Component should show loading list 1`] = `
       </div>
     </div>
     <div
-      class="MuiDrawer-root MuiDrawer-docked makeStyles-drawer-2382 makeStyles-close-2393 closed"
+      class="MuiDrawer-root MuiDrawer-docked makeStyles-drawer-1350 makeStyles-close-1361 closed"
       data-testid="project-drawer-detail"
     >
       <div
-        class="MuiPaper-root MuiDrawer-paper makeStyles-drawerPaper-2383 MuiDrawer-paperAnchorRight MuiDrawer-paperAnchorDockedRight MuiPaper-elevation0"
+        class="MuiPaper-root MuiDrawer-paper makeStyles-drawerPaper-1351 MuiDrawer-paperAnchorRight MuiDrawer-paperAnchorDockedRight MuiPaper-elevation0"
         style="visibility: hidden; webkit-transform: translateX(1024px) translateX(0px); transform: translateX(1024px) translateX(0px);"
       >
         <div
-          class="makeStyles-drawerButtonWrapper-2385"
+          class="makeStyles-drawerButtonWrapper-1353"
         >
           <div
-            class="makeStyles-drawerButton-2386"
+            class="makeStyles-drawerButton-1354"
           >
             <button
               class="MuiButtonBase-root MuiButton-root MuiButton-text"
@@ -9488,31 +9488,31 @@ exports[`ProjectList Component should show loading list 1`] = `
             </button>
           </div>
           <div
-            class="makeStyles-drawerHeader-2384"
+            class="makeStyles-drawerHeader-1352"
           >
             <p
-              class="MuiTypography-root makeStyles-drawerTitle-2387 MuiTypography-body1 MuiTypography-colorPrimary MuiTypography-alignLeft"
+              class="MuiTypography-root makeStyles-drawerTitle-1355 MuiTypography-body1 MuiTypography-colorPrimary MuiTypography-alignLeft"
             >
               Project Information
             </p>
           </div>
         </div>
         <div
-          class="makeStyles-listDetail-2332"
+          class="makeStyles-listDetail-1300"
         >
           <div
-            class="makeStyles-company-2333"
+            class="makeStyles-company-1301"
           >
             <div
-              class="makeStyles-drawerText-2389"
+              class="makeStyles-drawerText-1357"
             >
               <p
-                class="MuiTypography-root makeStyles-listAccent-2334 makeStyles-entityTitle-2331 MuiTypography-body1"
+                class="MuiTypography-root makeStyles-listAccent-1302 makeStyles-entityTitle-1299 MuiTypography-body1"
               >
                 -
               </p>
               <div
-                class="makeStyles-drawerMainText-2390"
+                class="makeStyles-drawerMainText-1358"
               >
                 <span>
                   -
@@ -9526,17 +9526,17 @@ exports[`ProjectList Component should show loading list 1`] = `
               </div>
             </div>
             <div
-              class="makeStyles-drawerSection-2388 makeStyles-drawerProjectColumn-2396"
+              class="makeStyles-drawerSection-1356 makeStyles-drawerProjectColumn-1364"
             >
               <div
-                class="makeStyles-projectWrapper-2394"
+                class="makeStyles-projectWrapper-1362"
                 data-testid=""
               >
                 <svg>
                   location.svg
                 </svg>
                 <div
-                  class="makeStyles-drawerText-2389 makeStyles-drawerTextSeparation-2391"
+                  class="makeStyles-drawerText-1357 makeStyles-drawerTextSeparation-1359"
                 >
                   <span>
                     -
@@ -9545,17 +9545,17 @@ exports[`ProjectList Component should show loading list 1`] = `
               </div>
             </div>
             <div
-              class="makeStyles-drawerSection-2388 makeStyles-drawerProjectColumn-2396"
+              class="makeStyles-drawerSection-1356 makeStyles-drawerProjectColumn-1364"
             >
               <div
-                class="makeStyles-projectWrapper-2394"
+                class="makeStyles-projectWrapper-1362"
                 data-testid=""
               >
                 <svg>
                   location.svg
                 </svg>
                 <div
-                  class="makeStyles-drawerText-2389 makeStyles-drawerTextSeparation-2391"
+                  class="makeStyles-drawerText-1357 makeStyles-drawerTextSeparation-1359"
                 >
                   <span>
                     -
@@ -9564,17 +9564,17 @@ exports[`ProjectList Component should show loading list 1`] = `
               </div>
             </div>
             <div
-              class="makeStyles-drawerSection-2388 makeStyles-drawerProjectColumn-2396"
+              class="makeStyles-drawerSection-1356 makeStyles-drawerProjectColumn-1364"
             >
               <div
-                class="makeStyles-projectWrapper-2394"
+                class="makeStyles-projectWrapper-1362"
                 data-testid=""
               >
                 <svg>
                   location.svg
                 </svg>
                 <div
-                  class="makeStyles-drawerText-2389 makeStyles-drawerTextSeparation-2391"
+                  class="makeStyles-drawerText-1357 makeStyles-drawerTextSeparation-1359"
                 >
                   <span>
                     -
@@ -9583,22 +9583,22 @@ exports[`ProjectList Component should show loading list 1`] = `
               </div>
             </div>
             <div
-              class="makeStyles-drawerSection-2388"
+              class="makeStyles-drawerSection-1356"
             >
               <div
-                class="makeStyles-drawerColumnDirection-2397"
+                class="makeStyles-drawerColumnDirection-1365"
               >
                 <div
-                  class="makeStyles-drawerRowDirection-2398"
+                  class="makeStyles-drawerRowDirection-1366"
                 >
                   <svg>
                     monetization.svg
                   </svg>
                   <div
-                    class="makeStyles-drawerText-2389 makeStyles-drawerTextSeparation-2391"
+                    class="makeStyles-drawerText-1357 makeStyles-drawerTextSeparation-1359"
                   >
                     <span
-                      class="makeStyles-listAccent-2334"
+                      class="makeStyles-listAccent-1302"
                     >
                       Badge Model
                     </span>
@@ -9622,10 +9622,10 @@ exports[`ProjectList Component should show loading list 1`] = `
             </div>
           </div>
           <hr
-            class="MuiDivider-root makeStyles-drawerDivider-2392"
+            class="MuiDivider-root makeStyles-drawerDivider-1360"
           />
           <div
-            class="makeStyles-ctaWrapper-2335"
+            class="makeStyles-ctaWrapper-1303"
           >
             <span
               class=""
@@ -9634,7 +9634,7 @@ exports[`ProjectList Component should show loading list 1`] = `
             >
               <a
                 aria-disabled="false"
-                class="MuiButtonBase-root MuiButton-root MuiButton-outlined makeStyles-drawerCTA-2301 makeStyles-borderPrimaryButton-2293 makeStyles-primaryButtonPadding-2295"
+                class="MuiButtonBase-root MuiButton-root MuiButton-outlined makeStyles-drawerCTA-1269 makeStyles-borderPrimaryButton-1261 makeStyles-primaryButtonPadding-1263"
                 data-testid="drawerProjectButton"
                 href="/projects/wizard/undefined"
                 tabindex="0"
@@ -9652,7 +9652,7 @@ exports[`ProjectList Component should show loading list 1`] = `
               tabindex="-1"
             >
               <button
-                class="MuiButtonBase-root MuiButton-root MuiButton-outlined makeStyles-drawerCTA-2301 makeStyles-warningButton-2302"
+                class="MuiButtonBase-root MuiButton-root MuiButton-outlined makeStyles-drawerCTA-1269 makeStyles-warningButton-1270"
                 data-testid="deleteProjectButton"
                 tabindex="0"
                 type="button"
@@ -9977,7 +9977,7 @@ exports[`ProjectList Component should show loading widgets 1`] = `
                   <a
                     class="Link-root-3050"
                     data-testid="project-list-row-item-link"
-                    href="/projects/wizard/9164e4c4-6521-47bb-97fd-c75ac02b2cf2"
+                    href="/projects/wizard-new/9164e4c4-6521-47bb-97fd-c75ac02b2cf2"
                     title="Edit"
                   >
                     Project Name
@@ -10035,7 +10035,7 @@ exports[`ProjectList Component should show loading widgets 1`] = `
                   </div>
                   <a
                     class="Link-root-3050"
-                    href="/projects/wizard/9164e4c4-6521-47bb-97fd-c75ac02b2cf2"
+                    href="/projects/wizard-new/9164e4c4-6521-47bb-97fd-c75ac02b2cf2"
                     title="Edit"
                   >
                     Project Name
@@ -10112,7 +10112,7 @@ exports[`ProjectList Component should show loading widgets 1`] = `
                   </div>
                   <a
                     class="Link-root-3050"
-                    href="/projects/wizard-new/8aa1c4c4-6521-47bb-27fd-af5ac02b2cd8"
+                    href="/projects/wizard/8aa1c4c4-6521-47bb-27fd-af5ac02b2cd8/review"
                     title="Review"
                   >
                     Project Name 2
@@ -10218,7 +10218,7 @@ exports[`ProjectList Component should show loading widgets 1`] = `
                   </div>
                   <a
                     class="Link-root-3050"
-                    href="/projects/wizard-new/cbb1c4c4-2221-f7bb-27fd-ff5ac02b2cda"
+                    href="/projects/wizard/cbb1c4c4-2221-f7bb-27fd-ff5ac02b2cda/review"
                     title="Review"
                   >
                     Project Name 4
@@ -10295,7 +10295,7 @@ exports[`ProjectList Component should show loading widgets 1`] = `
                   <a
                     class="Link-root-3050"
                     data-testid="project-list-row-item-link"
-                    href="/projects/wizard/820ccbf5-03aa-4797-9001-d79643c3d35d"
+                    href="/projects/wizard-new/820ccbf5-03aa-4797-9001-d79643c3d35d"
                     title="Edit"
                   >
                     Project Name 3
@@ -10353,7 +10353,7 @@ exports[`ProjectList Component should show loading widgets 1`] = `
                   </div>
                   <a
                     class="Link-root-3050"
-                    href="/projects/wizard/820ccbf5-03aa-4797-9001-d79643c3d35d"
+                    href="/projects/wizard-new/820ccbf5-03aa-4797-9001-d79643c3d35d"
                     title="Edit"
                   >
                     Project Name 3

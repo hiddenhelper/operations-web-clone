@@ -24,7 +24,11 @@ const ProjectRow = ({ onOpen, project, projectNew }: IProjectRowProps) => {
   const onClick = useCallback(() => {
     onOpen(project.id);
   }, [project, onOpen]);
-  const { buttonText, linkTo } = useMemo(() => getDrawerButton(project.status, project.id, ResourceModel.Type.PROJECT), [project.status, project.id]);
+  const { buttonText, linkTo } = useMemo(() => getDrawerButton(project.status, project.id, ResourceModel.Type.PROJECT, projectNew ? 'new' : ''), [
+    project.status,
+    project.id,
+    projectNew,
+  ]);
   return (
     <StyledTableRow data-testid="project-list-row" key={project.id} onClick={onClick} className={listClasses.clickableRow}>
       <TableCell className={listClasses.listName}>
@@ -41,7 +45,7 @@ const ProjectRow = ({ onOpen, project, projectNew }: IProjectRowProps) => {
             <Avatar>
               <Room />
             </Avatar>
-            <TableCellLink href={`/projects/wizard-new/${project.id}`} text={project.name} title={buttonText} />
+            <TableCellLink href={linkTo} text={project.name} title={buttonText} />
           </div>
         </TableCell>
       )}

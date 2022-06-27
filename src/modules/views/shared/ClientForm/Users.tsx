@@ -20,9 +20,11 @@ export interface IUsersProps {
   fetchGroupSearch: (searchRequest: any) => void;
   companyId: string;
   groupList: any;
+  userRole: UserModel.Role;
 }
 
-const Users = ({ userList = [], errors, onChange, countryList, groupList, fetchGroupSearch, companyId }: IUsersProps) => {
+const Users = ({ userRole, userList = [], errors, onChange, countryList, groupList, fetchGroupSearch, companyId }: IUsersProps) => {
+  const isFcAdmin = useMemo(() => userRole === UserModel.Role.FCA_ADMIN, [userRole]);
   const formClasses = formGlobalStyles();
   const buttonGlobalStyles = buttonStyles();
   const currentUserList = useMemo(() => getConditionalDefaultValue(userList.length === 0, [UserModel.getFallbackUser()], userList), [userList]);
@@ -85,6 +87,7 @@ const Users = ({ userList = [], errors, onChange, countryList, groupList, fetchG
           fetchGroupSearch={fetchGroupSearch}
           companyId={companyId}
           groupList={groupList}
+          isFcAdmin={isFcAdmin}
         />
       ))}
       <ControlledButton>

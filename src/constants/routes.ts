@@ -12,6 +12,7 @@ export const ROUTES = {
   PROJECT_WIZARD: { path: '/projects/wizard/:id/:step?', roleList: [] },
   PROJECT_NEW_WIZARD: { path: '/projects/wizard-new/:id/:step?', roleList: [] },
   PROJECT_DETAIL: { path: '/projects/detail/:id/:step?', roleList: [UserModel.Role.CLIENT_ADMIN, UserModel.Role.REGULAR_USER] },
+  PROJECT_DETAIL_NEW: { path: '/projects/detail-new/:id/:step?', roleList: [UserModel.Role.CLIENT_ADMIN, UserModel.Role.REGULAR_USER] },
   PROJECT_LIST: { path: '/projects', roleList: [UserModel.Role.CLIENT_ADMIN, UserModel.Role.REGULAR_USER] },
   PROJECT_INVITATION: { path: '/projects/invitation/:id/:step?', roleList: [UserModel.Role.CLIENT_ADMIN] },
   PROCORE_MAPPING: { path: '/procore-clients/client-mapping/:id/:step?', roleList: [UserModel.Role.CLIENT_ADMIN] },

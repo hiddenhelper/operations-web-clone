@@ -3,13 +3,14 @@ import { toREM } from '../../../../../../utils/generalUtils';
 
 export const useStyles = makeStyles({
   root: {
-    width: 400,
-    height: 400,
+    maxWidth: 400,
+    maxHeight: 650,
     position: 'relative',
     marginTop: toREM(40),
     boxShadow: '0px 2px 6px 0px rgb(0 0 0 / 3%)',
     border: '1px solid #E5E5E5',
     borderRadius: '5px',
+    margin: 'auto',
   },
   body: {
     fontSize: 15,
@@ -22,13 +23,15 @@ export const useStyles = makeStyles({
     margin: '15px 0px',
   },
   containerButtons: {
-    position: 'absolute',
     bottom: 0,
-    marginBottom: '30px',
     display: 'flex',
+    flexWrap: 'wrap',
+    justifyContent: 'center',
+    margin: 'auto',
   },
   marginButtons: {
     margin: '0 15px',
+    marginBottom: '13px',
   },
   logo: {
     width: 120,

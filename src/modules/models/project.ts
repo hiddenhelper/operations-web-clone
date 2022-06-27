@@ -187,6 +187,7 @@ export interface IProject {
   [ProjectFields.PERMIT_NUMBER]?: string;
   [ProjectFields.LICENCE_NUMBER]?: string;
   status: Status;
+  setupNotes?: string;
   companyProjectStatus?: CompanyProjectStatus;
   [ProjectFields.RELATED_COMPANIES]?: IProjectCompany[];
   category?: INamedEntity;
@@ -656,4 +657,5 @@ export const getFallbackProject = (): IProject => ({
   subcontractorBadgeTemplateMatchesGeneralContractor: false,
   consentFormFields: [],
   consentFormLegals: [],
+  setupNotes: '',
 });

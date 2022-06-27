@@ -20,6 +20,9 @@ export const useStyles = makeStyles(theme =>
     },
     widgetDividerTopMargin: {
       marginTop: 12,
+      '@media (max-width:415px)': {
+        marginTop: '22px',
+      },
     },
     marginNull: {
       margin: '0px !important',

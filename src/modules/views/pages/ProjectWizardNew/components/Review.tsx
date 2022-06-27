@@ -13,13 +13,21 @@ import { AutocompleteService } from '../../../../services/AutocompleteService';
 
 import { GeneralModel, ResourceModel, UserModel, PaymentModel, ProjectNewModel, ProjectModel, ConsentFormModel } from '../../../../models';
 import { LANG } from '../../../../../constants';
-import { getDefaultValue, getConditionalDefaultValue, formatNumberWithCommas, getFormattedDate, getListWithCommas } from '../../../../../utils/generalUtils';
+import {
+  getDefaultValue,
+  getConditionalDefaultValue,
+  formatNumberWithCommas,
+  getFormattedDate,
+  getListWithCommas,
+  noop,
+} from '../../../../../utils/generalUtils';
 import { getPlannedMonths, getTotalPrice } from '../../../../../utils/projectUtils';
 import { cardGlobalStyles, formGlobalStyles } from '../../../../../assets/styles';
 import { useStyles as buttonStyles } from '../../../shared/FormHandler/ControlledButton/styles';
 import { useStyles } from '../styles';
 import Address from 'modules/views/shared/Address';
 import { useParams } from 'react-router-dom';
+import CreditCardItem from 'modules/views/shared/PaymentMethods/components/CreditCardItem';
 
 export interface IReviewProps {
   model: ProjectNewModel.IProject;
@@ -32,7 +40,8 @@ export interface IReviewProps {
   fcaNaeList?: GeneralModel.INamedEntity[];
   edit?: boolean;
   onChangeStep?: (key: string) => void;
-  editAction?: (step: string) => void;
+  editAction?: (step: ProjectModel.ProjectStep) => void;
+  editPayment?: () => void;
   paymentMethods?: PaymentModel.IPaymentMethod[];
   selectedPaymentMethod?: string;
   projectMap: any;
@@ -51,15 +60,23 @@ const Review = ({
   showAssignClient = true,
   onChangeStep,
   editAction,
+  editPayment,
+  paymentMethods,
+  selectedPaymentMethod,
   projectMap,
   isReviewStep = false,
 }: IReviewProps) => {
   const { id: clientId } = useParams<{ id: string }>();
 
+  const initialCard = projectMap?.[clientId]?.paymentMethod;
   const classes = useStyles();
   const buttonClasses = buttonStyles();
   const cardGlobalClasses = cardGlobalStyles();
   const formGlobalClasses = formGlobalStyles();
+  const paymentSelected = useMemo(() => paymentMethods?.filter(item => item.paymentMethodId === selectedPaymentMethod), [
+    paymentMethods,
+    selectedPaymentMethod,
+  ]);
 
   const generalContractorsIds = useMemo(() => model?.generalContractors?.map(company => company.id), [model]);
 
@@ -159,6 +176,10 @@ const Review = ({
   const handleEditWorkerConsentForm = useCallback(() => {
     editAction(ProjectModel.ProjectStep.WORKER_CONSENT_FORM);
   }, [editAction]);
+
+  const handleEditPayment = useCallback(() => {
+    editPayment();
+  }, [editPayment]);
 
   const getCompanyList = useCallback(
     list =>
@@ -296,6 +317,12 @@ const Review = ({
                 </Grid>
                 <Grid item={true} xs={6} className={'cardBody-item'}>
                   <span className={`${cardGlobalClasses.cardFontAccent} ${classes.spanEllipsis}`}>{getDefaultValue(fcaNae?.name)}</span>
+                </Grid>
+                <Grid item={true} xs={6} className={'cardBody-item'}>
+                  <Typography className={cardGlobalClasses.cardFont}>Setup Notes:</Typography>
+                </Grid>
+                <Grid item={true} xs={6} className={'cardBody-item'}>
+                  <span className={`${cardGlobalClasses.cardFontAccent} ${classes.spanEllipsis}`}>{getDefaultValue(model.setupNotes)}</span>
                 </Grid>
               </Grid>
             </Grid>
@@ -804,6 +831,31 @@ const Review = ({
           </Grid>
         </div>
       </Card>
+      {isClientAdmin && (
+        <Card
+          title="Credit Card"
+          hideSecondaryAction={!edit}
+          actionStyleClass={getConditionalDefaultValue(edit, formGlobalClasses.secondaryActionsIcon, '')}
+          styleClass={classes.boxShadow}
+          secondaryAction={
+            edit && (
+              <IconButton
+                className={buttonClasses.editButton}
+                disableRipple={true}
+                onClick={handleEditPayment}
+                data-testid="payment-edit-button"
+                disabled={model.status === ResourceModel.Status.ARCHIVED}
+              >
+                <CreateIcon />
+              </IconButton>
+            )
+          }
+        >
+          <div className={classes.cardContainer}>
+            <CreditCardItem isSelected={true} paymentMethod={paymentSelected?.[0] === undefined ? initialCard : paymentSelected[0]} setSelected={noop} />
+          </div>
+        </Card>
+      )}
     </>
   );
 };

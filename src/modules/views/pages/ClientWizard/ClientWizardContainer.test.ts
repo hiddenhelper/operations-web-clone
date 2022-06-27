@@ -16,6 +16,7 @@ describe('ClientWizardContainer', () => {
       approveLoading: undefined,
       countryList: [],
       groupList: [],
+      currentUserRole: null,
     });
   });
   it('should mapDispatchToProps', () => {

@@ -52,9 +52,10 @@ interface IUpload {
   setHasChanged: (hasChanged: boolean) => void;
   uploadedFileUrl: string;
   linkStyle: string;
+  filename: string;
 }
 
-const Upload: React.FC<IUpload> = ({ uploadId, fileMap, setHasChanged, uploadedFileUrl, linkStyle }) => {
+const Upload: React.FC<IUpload> = ({ uploadId, fileMap, setHasChanged, uploadedFileUrl, linkStyle, filename }) => {
   const uncompletedFiles = useMemo(
     () =>
       fileMap[uploadId] &&
@@ -64,14 +65,6 @@ const Upload: React.FC<IUpload> = ({ uploadId, fileMap, setHasChanged, uploadedF
     [fileMap, uploadId]
   );
 
-  const fileName = useMemo(
-    () =>
-      uploadedFileUrl
-        ?.split('/')
-        .pop()
-        .split('?')[0],
-    [uploadedFileUrl]
-  );
   const isFileUploading = useMemo(() => Object.keys(fileMap[uploadId] || {}).length, [fileMap, uploadId]);
 
   useEffect(() => {
@@ -97,7 +90,7 @@ const Upload: React.FC<IUpload> = ({ uploadId, fileMap, setHasChanged, uploadedF
       </ControlledInput>
       {uploadedFileUrl && !isFileUploading && (
         <a className={linkStyle} href={uploadedFileUrl}>
-          <b>{fileName}</b>
+          <b>{filename}</b>
         </a>
       )}
     </div>
@@ -170,6 +163,7 @@ const BadgeConfiguration = ({ model, errors, fileMap, badgesType, onChange, setH
             setHasChanged={setHasChanged}
             uploadedFileUrl={model.generalContractorBadgeTemplate.templateFileUrl}
             linkStyle={classes.templateLink}
+            filename={model.generalContractorBadgeTemplate.templateFileName}
           />
         ) : (
           <BadgeEditor
@@ -210,6 +204,7 @@ const BadgeConfiguration = ({ model, errors, fileMap, badgesType, onChange, setH
                 setHasChanged={setHasChanged}
                 uploadedFileUrl={model.subcontractorBadgeTemplate.templateFileUrl}
                 linkStyle={classes.templateLink}
+                filename={model.subcontractorBadgeTemplate.templateFileName}
               />
             ) : (
               <BadgeEditor
@@ -217,8 +212,8 @@ const BadgeConfiguration = ({ model, errors, fileMap, badgesType, onChange, setH
                 badgeKey="subcontractorBadgeTemplate"
                 badge={model.subcontractorBadgeTemplate}
                 errors={errors}
-                uploadId="subContractorBadgeLogo"
-                file={fileMap.subContractorBadgeLogo}
+                uploadId="subcontractorBadgeLogo"
+                file={fileMap.subcontractorBadgeLogo}
                 fileMap={fileMap}
                 onChange={onChange}
                 setHasChanged={setHasChanged}
@@ -236,6 +231,7 @@ const BadgeConfiguration = ({ model, errors, fileMap, badgesType, onChange, setH
             setHasChanged={setHasChanged}
             uploadedFileUrl={model.visitorBadgeTemplate.templateFileUrl}
             linkStyle={classes.templateLink}
+            filename={model.visitorBadgeTemplate.templateFileName}
           />
         ) : (
           <BadgeEditor

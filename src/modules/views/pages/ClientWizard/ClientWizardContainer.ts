@@ -19,6 +19,7 @@ export const mapStateToProps = (state: IRootState) => ({
   approveLoading: state.general.loadingMap[GENERAL.LOADING_KEY.APPROVE_CLIENT],
   countryList: state.general.countryList,
   groupList: state.user.groupList,
+  currentUserRole: state.auth.role,
 });
 
 export const mapDispatchToProps = (dispatch: Dispatch) => ({

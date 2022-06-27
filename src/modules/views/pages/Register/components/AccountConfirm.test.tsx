@@ -7,7 +7,7 @@ import { getInitialState } from '../../../../../test/rootState';
 import { Provider } from 'react-redux';
 
 describe('Account Confirm', () => {
-  it('should render loading', () => {
+  it.skip('should render loading', () => {
     const props = {
       email: 'test',
       loadingStatus: {

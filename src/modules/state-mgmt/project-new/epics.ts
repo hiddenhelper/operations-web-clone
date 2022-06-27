@@ -149,7 +149,7 @@ export const addProjectBadgesStart: Epic<IAction, IAction, IRootState, IEpicDepe
       );
       return [
         generalState.actions.setLoading(GENERAL.LOADING_KEY.SAVE_PROJECT_BADGES, true, false, undefined, GENERAL.TRACE_KEY.SAVE_UPLOAD_PROJECT_BADGE),
-        actions.uploadProjectBadgesStart(payload.projectId, payload.files, files),
+        actions.uploadProjectBadgesStart(payload.projectId, payload.files, files, payload.restOfFiles),
         actions.addProjectBadgesSuccess(),
         generalState.actions.setLoading(GENERAL.LOADING_KEY.SAVE_PROJECT_BADGES, false),
       ];
@@ -162,20 +162,22 @@ export const uploadProjectBadgeLogosStart: Epic<IAction, IAction, IRootState, IE
     mergeMap(({ payload }) =>
       concat(
         of(generalState.actions.setLoading(GENERAL.LOADING_KEY.UPLOAD_PROJECT_BADGES, true, false, undefined, GENERAL.TRACE_KEY.SAVE_UPLOAD_PROJECT_BADGE)),
-        deps.apiService.getProjectBadgeResources(payload.projectId, getProjectBadgeResourceRequest(payload.uploadIdList, state$?.value?.file?.fileMap)).pipe(
-          mergeMap(response =>
-            Object.entries(response) // gcBadgeLogo, scBadgeLogo
-              .filter(([logoKey, logoValue]) => !isEmpty(logoValue) && payload?.fileMap[logoKey])
-              .map(([fileKey, fileValue]) =>
-                fileState.actions.uploadFileStart(
-                  payload.fileMap[fileKey], // { gcBadgeLogo: File, scBadgeLogo: File }
-                  fileValue.url,
-                  fileValue.fileId,
-                  GENERAL.TRACE_KEY.SAVE_UPLOAD_PROJECT_BADGE
+        deps.apiService
+          .getProjectBadgeResources(payload.projectId, getProjectBadgeResourceRequest(payload.uploadIdList, state$?.value?.file?.fileMap, payload.restOfFiles))
+          .pipe(
+            mergeMap(response =>
+              Object.entries(response) // gcBadgeLogo, scBadgeLogo
+                .filter(([logoKey, logoValue]) => !isEmpty(logoValue) && payload?.fileMap[logoKey])
+                .map(([fileKey, fileValue]) =>
+                  fileState.actions.uploadFileStart(
+                    payload.fileMap[fileKey], // { gcBadgeLogo: File, scBadgeLogo: File }
+                    fileValue.url,
+                    fileValue.fileId,
+                    GENERAL.TRACE_KEY.SAVE_UPLOAD_PROJECT_BADGE
+                  )
                 )
-              )
-          )
-        ),
+            )
+          ),
         of(generalState.actions.setLoading(GENERAL.LOADING_KEY.UPLOAD_PROJECT_BADGES, false))
       ).pipe(handleToastError(GENERAL.LOADING_KEY.UPLOAD_PROJECT_BADGES))
     )
@@ -264,6 +266,84 @@ export const approveProjectStart: Epic<IAction, IAction, IRootState, IEpicDepend
     )
   );
 
+export const archiveProjectStart: Epic<IAction, IAction, IRootState, IEpicDependencies> = (action$, state$, deps) =>
+  action$.pipe(
+    ofType(ActionType.ARCHIVE_PROJECT_START),
+    mergeMap(({ payload }) =>
+      concat(
+        of(generalState.actions.setLoading(GENERAL.LOADING_KEY.ARCHIVE_PROJECT, true)),
+        deps.apiService.archiveProject(payload.id).pipe(map(() => actions.archiveProjectSuccess(payload.id))),
+        of(push(`/projects/detail-new/${payload.id}/information`)),
+        of(generalState.actions.addToastStart(`${state$.value.project.projectMap[payload.id].name} archived successfully!`, GeneralModel.ToastType.SUCCESS)),
+        of(generalState.actions.setLoading(GENERAL.LOADING_KEY.ARCHIVE_PROJECT, false))
+      ).pipe(
+        catchError(error =>
+          of(
+            coreState.actions.epicError(error),
+            generalState.actions.setLoading(GENERAL.LOADING_KEY.ARCHIVE_PROJECT, false, true, error),
+            generalState.actions.addToastStart(error.title, GeneralModel.ToastType.ERROR)
+          )
+        )
+      )
+    )
+  );
+
+export const unarchiveProjectStart: Epic<IAction, IAction, IRootState, IEpicDependencies> = (action$, state$, deps) =>
+  action$.pipe(
+    ofType(ActionType.UNARCHIVE_PROJECT_START),
+    mergeMap(({ payload }) =>
+      concat(
+        of(generalState.actions.setLoading(GENERAL.LOADING_KEY.UNARCHIVE_PROJECT, true)),
+        deps.apiService.unarchiveProject(payload.id).pipe(map(() => actions.unarchiveProjectSuccess(payload.id))),
+        of(push(`/projects/detail-new/${payload.id}/information`)),
+        of(generalState.actions.addToastStart(`${state$.value.project.projectMap[payload.id].name} unarchived successfully!`, GeneralModel.ToastType.SUCCESS)),
+        of(generalState.actions.setLoading(GENERAL.LOADING_KEY.UNARCHIVE_PROJECT, false))
+      ).pipe(
+        catchError(error =>
+          of(
+            coreState.actions.epicError(error),
+            generalState.actions.setLoading(GENERAL.LOADING_KEY.UNARCHIVE_PROJECT, false, true, error),
+            generalState.actions.addToastStart(
+              error.response?.errors?.relatedCompanies ? error.response.errors.relatedCompanies[0] : error.title,
+              GeneralModel.ToastType.ERROR
+            )
+          )
+        )
+      )
+    )
+  );
+
+export const updateProjectPaymentMethodStart: Epic<IAction, IAction, IRootState, IEpicDependencies> = (action$, state$, deps) =>
+  action$.pipe(
+    ofType(ActionType.UPDATE_PROJECT_PAYMENT_METHOD_START),
+    mergeMap(({ payload }) =>
+      concat(
+        of(generalState.actions.setLoading(GENERAL.LOADING_KEY.UPDATE_PROJECT_PAYMENT_METHOD, true)),
+        deps.apiService
+          .updateProjectPaymentMethod(payload.projectId, payload.paymentMethodId)
+          .pipe(map(res => generalState.actions.addToastStart(`Payment Method updated successfully!`, GeneralModel.ToastType.SUCCESS))),
+        of(generalState.actions.setLoading(GENERAL.LOADING_KEY.UPDATE_PROJECT_PAYMENT_METHOD, false))
+      ).pipe(handleToastError(GENERAL.LOADING_KEY.UPDATE_PROJECT_PAYMENT_METHOD))
+    )
+  );
+
+export const updateProjectStart: Epic<IAction, IAction, IRootState, IEpicDependencies> = (action$, state$, deps) =>
+  action$.pipe(
+    ofType(ActionType.UPDATE_PROJECT_START),
+    mergeMap(({ payload }) =>
+      concat(
+        of(generalState.actions.setLoading(GENERAL.LOADING_KEY.SAVE_PROJECT, true)),
+        deps.apiService.updateProject(payload.project).pipe(map(res => actions.updateProjectSuccess(res))),
+        of(generalState.actions.setLoading(GENERAL.LOADING_KEY.SAVE_PROJECT, false)),
+        of(generalState.actions.addToastStart('Changes saved successfully!', GeneralModel.ToastType.SUCCESS))
+      ).pipe(
+        catchError(error =>
+          of(coreState.actions.epicError(error), generalState.actions.setLoading(GENERAL.LOADING_KEY.SAVE_PROJECT, false, true, error.response))
+        )
+      )
+    )
+  );
+
 export const epics = [
   fetchProjectStart,
   fetchDraftProjectStart,
@@ -278,4 +358,8 @@ export const epics = [
   uploadProjectBadgeLogosStart,
   sendApproveProjectStart,
   approveProjectStart,
+  archiveProjectStart,
+  unarchiveProjectStart,
+  updateProjectPaymentMethodStart,
+  updateProjectStart,
 ];

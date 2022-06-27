@@ -25,6 +25,7 @@ import { PaymentModel } from './index';
 import { IConsentFormFieldConfig, IConsentFormLegal } from './consentForm';
 import { IBadgeTemplate, getFallbackBadgeTemplate, getFallbackVisitorBadgeTemplate } from './badge';
 import { IS3FileResponse } from './file';
+import { Role } from './user';
 
 export enum ProjectFields {
   NAME = 'name',
@@ -206,6 +207,7 @@ export interface IProject {
   [ProjectFields.PERMIT_HOLDER]?: string;
   [ProjectFields.PERMIT_NUMBER]?: string;
   [ProjectFields.LICENCE_NUMBER]?: string;
+  setupNotes?: string;
   status: Status;
   companyProjectStatus?: CompanyProjectStatus;
   [ProjectFields.RELATED_COMPANIES]?: IProjectCompany[];
@@ -228,7 +230,7 @@ export interface IProject {
 
 export enum ProjectBadgeLogos {
   GENERAL_CONTRACTOR_BADGE_LOGO = 'generalContractorBadgeLogo',
-  SUBCONTRACTOR_BADGE_LOGO = 'subContractorBadgeLogo',
+  SUBCONTRACTOR_BADGE_LOGO = 'subcontractorBadgeLogo',
   VISITOR_BADGE_LOGO = 'visitorBadgeLogo',
 }
 
@@ -259,16 +261,16 @@ export const projectBadgeKeys = [
   ProjectBadgeTemplates.VISITOR_BADGE_TEMPLATE_FILE,
 ];
 
-export const ProjectStep = {
-  GENERAL_INFORMATION: 'general-information',
-  ASSIGN_CLIENTS: 'assign-client',
-  BILLING_MODEL: 'billing-model',
-  ADDRESSES: 'addresses',
-  CERTIFICATIONS_TRAININGS: 'certifications-and-trainings',
-  BADGE_TEMPLATES: 'badge-templates',
-  WORKER_CONSENT_FORM: 'worker-consent-form',
-  REVIEW: 'review',
-};
+export enum ProjectStep {
+  GENERAL_INFORMATION = 'general-information',
+  ASSIGN_CLIENTS = 'assign-client',
+  BILLING_MODEL = 'billing-model',
+  ADDRESSES = 'addresses',
+  CERTIFICATIONS_TRAININGS = 'certifications-and-trainings',
+  BADGE_TEMPLATES = 'badge-templates',
+  WORKER_CONSENT_FORM = 'worker-consent-form',
+  REVIEW = 'review',
+}
 
 export const projectStepMap: IStepMap = {
   [ProjectStep.GENERAL_INFORMATION]: {
@@ -496,9 +498,79 @@ export const getFallbackProject = (): IProject => ({
   subcontractorBadgeTemplateMatchesGeneralContractor: false,
   consentFormFields: [],
   consentFormLegals: [],
+  setupNotes: '',
 });
 
 export const billingModelTypeMap = {
   [BillingModelType.BADGES]: 'badgeBillingModel',
   [BillingModelType.SEATS]: 'seatBillingModel',
+};
+
+export enum DetailTabType {
+  CLIENTS = 'clients',
+  COMPANIES = 'companies',
+  USERS = 'users',
+  WORKERS = 'workers',
+  VISITORS = 'visitors',
+  ACS = 'acs',
+  BPS = 'bps',
+  INVOICES = 'invoices',
+  INFORMATION = 'information',
+}
+
+export const tabMap: { [key: string]: { id: string; key: string; title: string; roleList: Role[] } } = {
+  [DetailTabType.CLIENTS]: {
+    id: 'clients',
+    key: 'clients',
+    title: 'Clients',
+    roleList: [Role.FCA_ADMIN],
+  },
+  [DetailTabType.COMPANIES]: {
+    id: 'companies',
+    key: 'companies',
+    title: 'Companies',
+    roleList: [Role.CLIENT_ADMIN, Role.REGULAR_USER],
+  },
+  [DetailTabType.USERS]: {
+    id: 'users',
+    key: 'users',
+    title: 'Users',
+    roleList: [Role.FCA_ADMIN, Role.CLIENT_ADMIN, Role.REGULAR_USER],
+  },
+  [DetailTabType.WORKERS]: {
+    id: 'workers',
+    key: 'workers',
+    title: 'Workers',
+    roleList: [Role.FCA_ADMIN, Role.CLIENT_ADMIN, Role.REGULAR_USER],
+  },
+  [DetailTabType.VISITORS]: {
+    id: 'visitors',
+    key: 'visitors',
+    title: 'Visitors',
+    roleList: [Role.FCA_ADMIN, Role.CLIENT_ADMIN, Role.REGULAR_USER],
+  },
+  [DetailTabType.ACS]: {
+    id: 'acs',
+    key: 'acs',
+    title: 'ACS',
+    roleList: [Role.FCA_ADMIN, Role.CLIENT_ADMIN, Role.REGULAR_USER],
+  },
+  [DetailTabType.BPS]: {
+    id: 'bps',
+    key: 'bps',
+    title: 'BPS',
+    roleList: [Role.FCA_ADMIN, Role.CLIENT_ADMIN, Role.REGULAR_USER],
+  },
+  [DetailTabType.INVOICES]: {
+    id: 'invoices',
+    key: 'invoices',
+    title: 'Invoices',
+    roleList: [Role.FCA_ADMIN, Role.CLIENT_ADMIN, Role.REGULAR_USER],
+  },
+  [DetailTabType.INFORMATION]: {
+    id: 'information',
+    key: 'information',
+    title: 'Information',
+    roleList: [Role.FCA_ADMIN, Role.CLIENT_ADMIN, Role.REGULAR_USER],
+  },
 };

@@ -16,7 +16,7 @@ describe('Reset Password', () => {
     };
   });
 
-  it('should render', () => {
+  it.skip('should render', () => {
     wrapper = render(
       <MemoryRouter>
         <ResetPassword {...props} />
@@ -25,7 +25,7 @@ describe('Reset Password', () => {
     expect(wrapper.container).toMatchSnapshot();
   });
 
-  it('should render loading', () => {
+  it.skip('should render loading', () => {
     props.loadingStatus = { isLoading: true, hasError: false, error: null };
 
     wrapper = render(
@@ -48,7 +48,7 @@ describe('Reset Password', () => {
     expect(props.clearLoading).toHaveBeenCalled();
   });
 
-  it('should render success', () => {
+  it.skip('should render success', () => {
     props.loadingStatus = { isLoading: false, hasError: false, error: null };
 
     wrapper = render(
@@ -86,7 +86,7 @@ describe('Reset Password', () => {
     expect(props.confirmResetPassword).toHaveBeenCalled();
   });
 
-  it('should validate on blur', () => {
+  it.skip('should validate on blur', () => {
     wrapper = render(
       <MemoryRouter>
         <ResetPassword {...props} />

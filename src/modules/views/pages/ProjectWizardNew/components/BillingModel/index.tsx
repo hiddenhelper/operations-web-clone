@@ -75,7 +75,7 @@ const BillingModel = ({ model, billingTierList, errors, resetErrors, onChange, i
                 <Typography className={`${classes.billingModelTitle} ${classes.billingModelTitleMarginBottom}`}>Worker Badge</Typography>
                 <BadgesModel
                   badgeBillingModel={badgeBillingModel}
-                  relatedCompanies={model.relatedCompanies.filter(item => item.id)}
+                  relatedCompanies={(model.relatedCompanies || []).filter(item => item.id)}
                   disableFields={billingModelType !== ProjectNewModel.BillingModelType.BADGES}
                   disableBilledCompany={isActiveProject}
                   onChange={onChange}

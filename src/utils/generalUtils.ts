@@ -203,25 +203,26 @@ export const formatBadgeCode = (code: string) => (code?.length === 6 ? formatFre
 export const getDrawerButton = (
   status: ResourceModel.Status,
   id: string,
-  type: ResourceModel.Type.CLIENT | ResourceModel.Type.PROJECT
+  type: ResourceModel.Type.CLIENT | ResourceModel.Type.PROJECT,
+  version?: string
 ): { buttonText: string; linkTo: string } => {
   const to = type === ResourceModel.Type.CLIENT ? 'clients' : 'projects';
   const drawerButton = {
     [ResourceModel.Status.DRAFT]: {
       buttonText: 'Edit',
-      linkTo: `/${to}/wizard/${id}`,
+      linkTo: version === 'new' ? `/${to}/wizard-new/${id}` : `/${to}/wizard/${id}`,
     },
     [ResourceModel.Status.ACTIVE]: {
       buttonText: `${type} Detail`,
-      linkTo: `/${to}/detail/${id}`,
+      linkTo: version === 'new' ? `/${to}/detail-new/${id}` : `/${to}/detail/${id}`,
     },
     [ResourceModel.Status.PENDING_APPROVAL]: {
       buttonText: 'Review',
-      linkTo: `/${to}/wizard/${id}/review`,
+      linkTo: version === 'new' ? `/${to}/wizard-new/${id}/review` : `/${to}/wizard/${id}/review`,
     },
     [ResourceModel.Status.ARCHIVED]: {
       buttonText: `${type} Detail`,
-      linkTo: `/${to}/detail/${id}`,
+      linkTo: version === 'new' ? `/${to}/detail-new/${id}` : `/${to}/detail/${id}`,
     },
   };
   return drawerButton[status] || drawerButton[ResourceModel.Status.ACTIVE];

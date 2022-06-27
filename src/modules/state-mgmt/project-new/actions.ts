@@ -26,6 +26,12 @@ export enum ActionType {
   UPDATE_PROJECT_START = '[projectNew] update project start',
   UPDATE_PROJECT_SUCCESS = '[projectNew] update project success',
   UPLOAD_PROJECT_BADGES_START = '[projectNew] upload project badges start',
+  ARCHIVE_PROJECT_START = '[project] archive project start',
+  ARCHIVE_PROJECT_SUCCESS = '[project] archive project success',
+  UNARCHIVE_PROJECT_START = '[project] unarchive project start',
+  UNARCHIVE_PROJECT_SUCCESS = '[project] unarchive project success',
+  CLEAR_PROJECT_MAP = '[project] clear map',
+  UPDATE_PROJECT_PAYMENT_METHOD_START = '[project] update project payment method start',
 }
 
 export const actions = {
@@ -48,17 +54,17 @@ export const actions = {
   updateDraftProjectStart: (project: Partial<ProjectNewModel.IProject>) => ({ type: ActionType.UPDATE_DRAFT_PROJECT_START, payload: { project } }),
   updateProjectStart: (project: Partial<ProjectNewModel.IProject>) => ({ type: ActionType.UPDATE_PROJECT_START, payload: { project } }),
   updateProjectSuccess: (project: ProjectNewModel.IProject) => ({ type: ActionType.UPDATE_PROJECT_SUCCESS, payload: { project } }),
-  addProjectBadgesStart: (projectId: string, files: string[]) => ({
+  addProjectBadgesStart: (projectId: string, files: string[], restOfFiles: { [key: string]: string }) => ({
     type: ActionType.ADD_PROJECT_BADGES_START,
-    payload: { projectId, files },
+    payload: { projectId, files, restOfFiles },
   }),
   addProjectBadgesSuccess: () => ({
     type: ActionType.ADD_PROJECT_BADGES_SUCCESS,
     payload: {},
   }),
-  uploadProjectBadgesStart: (projectId: string, uploadIdList: string[], fileMap: object) => ({
+  uploadProjectBadgesStart: (projectId: string, uploadIdList: string[], fileMap: object, restOfFiles: { [key: string]: string }) => ({
     type: ActionType.UPLOAD_PROJECT_BADGES_START,
-    payload: { projectId, uploadIdList, fileMap },
+    payload: { projectId, uploadIdList, fileMap, restOfFiles },
   }),
   fetchProjectListSuccess: (list: Partial<ProjectNewModel.IProject>[], count: number) => ({
     type: ActionType.FETCH_PROJECT_LIST_SUCCESS,
@@ -70,5 +76,14 @@ export const actions = {
   fetchConsentFormFieldsSuccess: (list: ConsentFormModel.IConsentFormField[]) => ({
     type: ActionType.FETCH_CONSENT_FORM_FIELDS_SUCCESS,
     payload: { list },
+  }),
+  archiveProjectStart: (id: string) => ({ type: ActionType.ARCHIVE_PROJECT_START, payload: { id } }),
+  archiveProjectSuccess: (id: string) => ({ type: ActionType.ARCHIVE_PROJECT_SUCCESS, payload: { id } }),
+  unarchiveProjectStart: (id: string) => ({ type: ActionType.UNARCHIVE_PROJECT_START, payload: { id } }),
+  unarchiveProjectSuccess: (id: string) => ({ type: ActionType.UNARCHIVE_PROJECT_SUCCESS, payload: { id } }),
+  clearProjectMap: () => ({ type: ActionType.CLEAR_PROJECT_MAP, payload: {} }),
+  updateProjectPaymentMethodStart: (projectId: string, paymentMethodId: string) => ({
+    type: ActionType.UPDATE_PROJECT_PAYMENT_METHOD_START,
+    payload: { projectId, paymentMethodId },
   }),
 };

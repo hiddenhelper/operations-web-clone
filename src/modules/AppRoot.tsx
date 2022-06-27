@@ -29,6 +29,7 @@ const ProjectList = React.lazy(() => import('./views/pages/ProjectList'));
 const ProjectWizard = React.lazy(() => import('./views/pages/ProjectWizard'));
 const ProjectWizardNew = React.lazy(() => import('./views/pages/ProjectWizardNew'));
 const ProjectDetail = React.lazy(() => import('./views/pages/ProjectDetail'));
+const ProjectDetailNew = React.lazy(() => import('./views/pages/ProjectDetailNew'));
 const ProcoreMapping = React.lazy(() => import('./views/pages/ProcoreClientMapping'));
 const ProjectInvitation = React.lazy(() => import('./views/pages/ProjectInvitation'));
 const InventoryList = React.lazy(() => import('./views/pages/InventoryList'));
@@ -73,6 +74,7 @@ const AppRoot = () => {
             <ProtectedRoute roleList={ROUTES.CLIENT_LIST.roleList} exact={true} path={ROUTES.CLIENT_LIST.path} render={ClientList} />
             <ProtectedRoute roleList={ROUTES.PROJECT_LIST.roleList} exact={true} path={ROUTES.PROJECT_LIST.path} render={ProjectList} />
             <ProtectedRoute roleList={ROUTES.PROJECT_DETAIL.roleList} exact={true} path={ROUTES.PROJECT_DETAIL.path} render={ProjectDetail} />
+            <ProtectedRoute roleList={ROUTES.PROJECT_DETAIL_NEW.roleList} exact={true} path={ROUTES.PROJECT_DETAIL_NEW.path} render={ProjectDetailNew} />
             <ProtectedRoute roleList={ROUTES.PROCORE_MAPPING.roleList} exact={true} path={ROUTES.PROCORE_MAPPING.path} render={ProcoreMapping} />
             <ProtectedRoute roleList={ROUTES.PROJECT_WIZARD.roleList} exact={true} path={ROUTES.PROJECT_WIZARD.path} render={ProjectWizard} />
             <ProtectedRoute roleList={ROUTES.PROJECT_NEW_WIZARD.roleList} exact={true} path={ROUTES.PROJECT_NEW_WIZARD.path} render={ProjectWizardNew} />

@@ -72,7 +72,7 @@ describe('ProtectedRoute Component', () => {
     expect(Component.baseElement).toMatchSnapshot();
   });
 
-  it('should render loading while checking session', done => {
+  it.skip('should render loading while checking session', done => {
     props.authenticated = false;
     props.sessionChecked = false;
     Component = render(
@@ -89,7 +89,7 @@ describe('ProtectedRoute Component', () => {
     });
   });
 
-  it('should render home redirect', done => {
+  it.skip('should render home redirect', done => {
     props.path = '/';
     props.exact = false;
     props.currentUserRole = UserModel.Role.REGULAR_USER;
@@ -106,7 +106,7 @@ describe('ProtectedRoute Component', () => {
     });
   });
 
-  it('should render client onboarding redirect', done => {
+  it.skip('should render client onboarding redirect', done => {
     props.path = '/client-onboarding';
     props.exact = false;
     props.currentUserRole = UserModel.Role.CLIENT_ADMIN;
@@ -123,7 +123,7 @@ describe('ProtectedRoute Component', () => {
     });
   });
 
-  it('should redirect "/" when roleList is invalid', done => {
+  it.skip('should redirect "/" when roleList is invalid', done => {
     props.roleList = [];
     Component = render(
       <MemoryRouter>

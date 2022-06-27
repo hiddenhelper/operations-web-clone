@@ -14,13 +14,22 @@ export const useStyles = makeStyles(theme =>
     },
     formContainer: {
       position: 'relative',
-      width: `${toREM(598)}`,
+      minWidth: '398px',
+      maxWidth: '398px',
       minHeight: `${toREM(450)}`,
       backgroundColor: STYLE.COLOR.WHITE,
       padding: '0 38px',
       borderRadius: '6px',
       border: `1px solid ${STYLE.COLOR.LIGHT_GRAY3}`,
       boxShadow: '0 2px 6px 0 rgba(0,0,0,0.03)',
+      '@media (max-width:415px)': {
+        minWidth: '325px',
+        maxWidth: '325px',
+      },
+      '@media (max-width:321px)': {
+        minWidth: '300px',
+        maxWidth: '300px',
+      },
     },
   })
 );

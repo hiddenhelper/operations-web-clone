@@ -34,6 +34,7 @@ export const useStyles = makeStyles(theme =>
       fontWeight: 300,
     },
     dashboardTitle: {
+      display: 'none',
       color: STYLE.COLOR.SECONDARY_DARKER,
       fontSize: `${toREM(30)}`,
       letterSpacing: 0,
@@ -80,13 +81,14 @@ export const useStyles = makeStyles(theme =>
     widgetTrailingResponsive: {
       '& .MuiGrid-item': {
         [theme.breakpoints.down('sm')]: {
-          '&:first-child, &:last-child': {
-            padding: 0,
-            marginBottom: 20,
-          },
-          '&:last-child': {
-            marginBottom: 0,
-          },
+          // '&:first-child, &:last-child': {
+          //   padding: 0,
+          //   marginBottom: 20,
+          // },
+          // '&:last-child': {
+          //   marginBottom: 0,
+          // },
+          marginBottom: '20px',
         },
       },
     },

@@ -109,14 +109,20 @@ const UserRow = ({
   }, [groupList, isFcAdmin]);
 
   useEffect(() => {
+    console.log('isFcAdmin', isFcAdmin);
     if (!companyId) return;
 
     let searchRequest = {
       paging: {
         clientSidePagination: true,
       },
-      expand: ['company', 'metadata', 'parentGroup'],
+      expand: ['company', 'metadata', 'parentGroup', 'labels'],
       searchParameters: [
+        {
+          field: 'labels.name',
+          operator: 'equals',
+          value: !isFcAdmin ? 'Admin:User' : 'Admin:User:OSR',
+        },
         {
           field: 'companyId',
           operator: 'equals',
@@ -126,7 +132,7 @@ const UserRow = ({
     };
 
     fetchGroupSearch(searchRequest);
-  }, [companyId, fetchGroupSearch]);
+  }, [companyId, fetchGroupSearch, isFcAdmin]);
 
   return (
     <Grid data-testid="user-row-item" container={true} className={`${formClasses.formWrapper} ${isListItem ? formClasses.rowsWrapper : ''}`}>
