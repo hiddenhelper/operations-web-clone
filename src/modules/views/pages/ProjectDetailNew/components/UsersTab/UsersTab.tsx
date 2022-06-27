@@ -119,6 +119,7 @@ const UsersTab = ({
   };
 
   const onCloseModal = () => {
+    fetchUserList(projectId, queryParams);
     setIsEditUser(false);
     closeModal();
   };
