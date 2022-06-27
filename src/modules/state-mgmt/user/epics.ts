@@ -263,9 +263,19 @@ export const updateUserProfileStart: Epic<IAction, IAction, IRootState, IEpicDep
     mergeMap(({ payload }) =>
       concat(
         of(generalState.actions.setLoading(GENERAL.LOADING_KEY.UPDATE_USER, true)),
-        deps.apiService.updateCompanyUser(payload.companyId, payload.companyUserId, payload.user).pipe(map(res => actions.updateUserProfileSuccess(res))),
+        deps.apiService
+          .updateCompanyUser(payload.companyId, payload.companyUserId, payload.user)
+          .pipe(mergeMap(res => [actions.updateUserProfileSuccess(res), generalState.actions.addToastStart(`User updated successfully!`, ToastType.SUCCESS)])),
         of(generalState.actions.setLoading(GENERAL.LOADING_KEY.UPDATE_USER, false))
-      ).pipe(handleError(GENERAL.LOADING_KEY.UPDATE_USER))
+      ).pipe(
+        catchError(error =>
+          [
+            coreState.actions.epicError(error),
+            generalState.actions.setLoading(GENERAL.LOADING_KEY.UPDATE_USER, false, true, error),
+            error.response && !error.response.errors && generalState.actions.addToastStart(error.title, ToastType.ERROR),
+          ].filter(Boolean)
+        )
+      )
     )
   );
 
