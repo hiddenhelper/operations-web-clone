@@ -12,12 +12,14 @@ export const mapStateToProps = (state: IRootState) => ({
   currentUserRole: state.auth.role,
   clientMap: state.client.clientMap,
   companyId: state.auth.companyId,
+  companyUserId: state.auth.companyUserId,
 });
 
 export const mapDispatchToProps = dispatch => ({
   recoverSession: () => dispatch(authState.actions.recoverSessionStart()),
   fetchClient: (id: string) => dispatch(clientState.actions.fetchClientStart(id)),
   getAccountData: () => dispatch(userState.actions.fetchProfileDataStart()),
+  fetchAdminPermission: (id: string) => dispatch(clientState.actions.fetchAdminPermissionStart(id)),
 });
 
 export default connect(mapStateToProps, mapDispatchToProps)(ProtectedRoute);

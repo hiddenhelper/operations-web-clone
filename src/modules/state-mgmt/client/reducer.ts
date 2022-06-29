@@ -58,6 +58,11 @@ export const reducer = (state: IState = initialState, { type, payload }: { type:
           },
         },
       };
+    case ActionType.FETCH_ADMIN_PERMISSION_SUCCESS:
+      return {
+        ...state,
+        isGeneralAdmin: payload.isGeneralAdmin,
+      };
     default:
       return state;
   }

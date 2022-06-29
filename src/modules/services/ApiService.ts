@@ -595,6 +595,10 @@ export class ApiService {
     return this.securityRequest('groups/search', { method: 'POST', body: query });
   }
 
+  public getAdminPermission(companyUserId: string): Observable<any> {
+    return this.securityRequest(`users/${companyUserId}/haspermission?permissionName=Admin.General`, { method: 'GET' });
+  }
+
   public getUserRoles(): Observable<GeneralModel.INamedEntity[]> {
     return this.protectedRequest('projectRoles', { method: 'GET' });
   }

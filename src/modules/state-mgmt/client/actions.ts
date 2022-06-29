@@ -41,6 +41,8 @@ export enum ActionType {
   FETCH_PROJECT_CLIENT_SUMMARY_SUCCESS = '[client] fetch project client summary success',
   UPDATE_PROJECT_CLIENT_TAX_CONDITION_START = '[client] update project client tax condition start',
   UPDATE_PROJECT_CLIENT_TAX_CONDITION_SUCCESS = '[client] update project client tax condition success',
+  FETCH_ADMIN_PERMISSION_START = '[client] fetch admin permission start',
+  FETCH_ADMIN_PERMISSION_SUCCESS = '[client] fetch admin permission success',
 }
 
 export const actions = {
@@ -111,4 +113,6 @@ export const actions = {
     type: ActionType.UPDATE_PROJECT_CLIENT_TAX_CONDITION_SUCCESS,
     payload: { projectId, clientId, condition },
   }),
+  fetchAdminPermissionStart: (id: string) => ({ type: ActionType.FETCH_ADMIN_PERMISSION_START, payload: { id } }),
+  fetchAdminPermissionSuccess: (isGeneralAdmin: boolean) => ({ type: ActionType.FETCH_ADMIN_PERMISSION_SUCCESS, payload: { isGeneralAdmin } }),
 };

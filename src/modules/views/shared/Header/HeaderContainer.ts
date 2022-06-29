@@ -9,6 +9,9 @@ export const mapStateToProps = (state: IRootState) => ({
   user: state.auth.session,
   userRole: state.auth.role,
   accountData: state.user.accountData,
+  companyId: state.auth.companyId,
+  clientMap: state.client.clientMap,
+  isGeneralAdmin: state.client.isGeneralAdmin,
 });
 
 export const mapDispatchToProps = dispatch => ({
