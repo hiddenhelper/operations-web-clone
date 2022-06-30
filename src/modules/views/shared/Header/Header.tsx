@@ -62,7 +62,9 @@ const Header = ({ user, userRole, accountData, clientMap, companyId, isGeneralAd
         <Box className={classes.avatarContainer}>
           <Box className={classes.emailAndRoleWrapper}>
             <Typography className={classes.avatarText}>{user.email}</Typography>
-            <Typography className={classes.userRole}>{isGeneralAdmin ? `${companyName} - ${RoleMap[userRole]}` : RoleMap[userRole]}</Typography>
+            <Typography className={classes.userRole}>
+              {userRole === 'FCA_ADMIN' ? RoleMap[userRole] : isGeneralAdmin ? `${companyName} - ${RoleMap[userRole]}` : companyName}
+            </Typography>
           </Box>
           <Avatar className={classes.avatarElement} alt="John Doe" src={profilePicture} />
           <span className={classes.dropdownIcon}>
