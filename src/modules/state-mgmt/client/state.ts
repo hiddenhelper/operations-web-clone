@@ -8,6 +8,7 @@ export interface IState {
   tradeList: GeneralModel.INamedEntity[];
   selfCompany: ClientModel.IClient;
   count: number;
+  isGeneralAdmin: boolean;
 }
 
 export const initialState: IState = {
@@ -18,4 +19,5 @@ export const initialState: IState = {
   tradeList: [],
   selfCompany: null,
   count: null,
+  isGeneralAdmin: false,
 };

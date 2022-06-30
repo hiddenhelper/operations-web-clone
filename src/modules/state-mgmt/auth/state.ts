@@ -6,6 +6,7 @@ export interface IState {
   session: UserModel.IUser;
   role: UserModel.Role;
   companyId: string;
+  companyUserId: string;
 }
 
 export const initialState: IState = {
@@ -14,4 +15,5 @@ export const initialState: IState = {
   session: null,
   role: null,
   companyId: null,
+  companyUserId: null,
 };

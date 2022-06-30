@@ -8,7 +8,7 @@ import Search from 'modules/views/shared/Search';
 
 import DefaultAvatarSrc from 'assets/images/avatar.jpg';
 
-import { UserModel } from 'modules/models';
+import { ClientModel, GeneralModel, UserModel } from 'modules/models';
 import { ROUTES } from 'constants/index';
 import { useHideScroll } from 'utils/useHideScroll';
 import { useStyles } from './styles';
@@ -18,12 +18,15 @@ export interface IHeaderProps {
   user: UserModel.IUser;
   userRole: UserModel.Role;
   accountData: UserModel.IAccount;
+  clientMap: GeneralModel.IEntityMap<ClientModel.IClient>;
+  companyId: string;
+  isGeneralAdmin: boolean;
   navigate: (path: string) => void;
   logout: () => void;
   handleDrawerToggle: () => void;
 }
 
-const Header = ({ user, userRole, accountData, navigate, logout, handleDrawerToggle }: IHeaderProps) => {
+const Header = ({ user, userRole, accountData, clientMap, companyId, isGeneralAdmin, navigate, logout, handleDrawerToggle }: IHeaderProps) => {
   const { isScrollHided, scrollWidth } = useHideScroll();
   const classes = useStyles({ scrollWidth });
 
@@ -45,6 +48,10 @@ const Header = ({ user, userRole, accountData, navigate, logout, handleDrawerTog
     return DefaultAvatarSrc;
   }, [accountData]);
 
+  const companyName = useMemo(() => {
+    return clientMap[companyId] && clientMap[companyId].name ? clientMap[companyId].name : '';
+  }, [clientMap, companyId]);
+
   return (
     <header key="Header" data-testid="header-wrapper" className={`${classes.container} ${isScrollHided ? classes.scrollHided : ''}`}>
       <nav>
@@ -55,7 +62,7 @@ const Header = ({ user, userRole, accountData, navigate, logout, handleDrawerTog
         <Box className={classes.avatarContainer}>
           <Box className={classes.emailAndRoleWrapper}>
             <Typography className={classes.avatarText}>{user.email}</Typography>
-            <Typography className={classes.userRole}>{RoleMap[userRole]}</Typography>
+            <Typography className={classes.userRole}>{isGeneralAdmin ? `${companyName} - ${RoleMap[userRole]}` : RoleMap[userRole]}</Typography>
           </Box>
           <Avatar className={classes.avatarElement} alt="John Doe" src={profilePicture} />
           <span className={classes.dropdownIcon}>

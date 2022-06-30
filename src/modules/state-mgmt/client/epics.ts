@@ -356,6 +356,18 @@ export const updateProjectClientTaxConditionStart: Epic<IAction, IAction, IRootS
     )
   );
 
+export const fetchAdminPermissionStart: Epic<IAction, IAction, IRootState, IEpicDependencies> = (action$, state$, deps) =>
+  action$.pipe(
+    ofType(ActionType.FETCH_ADMIN_PERMISSION_START),
+    mergeMap(({ payload }) =>
+      concat(
+        of(generalState.actions.setLoading(GENERAL.LOADING_KEY.FETCH_ADMIN_PERMISSION, true)),
+        deps.apiService.getAdminPermission(payload.id).pipe(map(res => actions.fetchAdminPermissionSuccess(res))),
+        of(generalState.actions.setLoading(GENERAL.LOADING_KEY.FETCH_ADMIN_PERMISSION, false))
+      ).pipe(handleError(GENERAL.LOADING_KEY.FETCH_ADMIN_PERMISSION))
+    )
+  );
+
 export const epics = [
   fetchClientStart,
   fetchSelfCompanyStart,
@@ -380,4 +392,5 @@ export const epics = [
   unarchiveClientStart,
   fetchProjectClientSummaryStart,
   updateProjectClientTaxConditionStart,
+  fetchAdminPermissionStart,
 ];

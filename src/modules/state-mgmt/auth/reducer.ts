@@ -10,6 +10,7 @@ export const reducer = (state: IState = initialState, { type, payload }: { type:
         session: payload.session,
         role: payload.session['custom:role'],
         companyId: payload.session['custom:companyid'],
+        companyUserId: payload.session['custom:companyuserid'],
       };
     case ActionType.SIGN_OUT_SUCCESS:
       return { ...state, authenticated: false };

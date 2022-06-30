@@ -205,6 +205,7 @@ export const GENERAL = {
     FETCH_LANGUAGE_TURNER_PROTOCOLS: 'fetchLanguageTurnerProtocols',
     FETCH_SEARCH: 'fetchSearch',
     FETCH_SEARCH_MORE: 'fetchSearchMore',
+    FETCH_ADMIN_PERMISSION: 'fetchAdminPermission',
   },
   TRACE_KEY: {
     SAVE_UPLOAD_WORKER_CERTIFICATION: 'saveUploadWorkerCertification',

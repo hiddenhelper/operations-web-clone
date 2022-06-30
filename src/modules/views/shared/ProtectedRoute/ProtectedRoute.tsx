@@ -18,8 +18,10 @@ export interface IProtectedRouteProps {
   exact?: boolean;
   sessionChecked: boolean;
   companyId?: string;
+  companyUserId?: string;
   render: any;
   fetchClient: (id: string) => void;
+  fetchAdminPermission: (id: string) => void;
   recoverSession: () => void;
   getAccountData: () => void;
 }
@@ -34,7 +36,9 @@ const ProtectedRoute = ({
   sessionChecked,
   clientMap,
   companyId,
+  companyUserId,
   fetchClient,
+  fetchAdminPermission,
   recoverSession,
   getAccountData,
 }: IProtectedRouteProps) => {
@@ -47,6 +51,10 @@ const ProtectedRoute = ({
   useEffect(() => {
     if (!clientMap[companyId] && companyId) fetchClient(companyId);
   }, [fetchClient, clientMap, companyId]);
+
+  useEffect(() => {
+    if (companyUserId) fetchAdminPermission(companyUserId);
+  }, [companyUserId, fetchAdminPermission]);
 
   useEffect(() => {
     if (!authenticated) return;
