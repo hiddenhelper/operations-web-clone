@@ -1,4 +1,4 @@
-import React, { memo, useCallback, useEffect, useMemo, useState } from 'react';
+import React, { memo, useCallback, useEffect, useMemo } from 'react';
 
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
@@ -38,23 +38,21 @@ const EditTab = ({
   companyUserProfile,
   companyId,
 }: IEditTabProps) => {
-  console.log(companyUserProfile);
   const classes = useStyles();
   const assignModalClasses = AssignModalStyles();
   const buttonClasses = buttonStyles();
-  const [isModelUpdated, setIsModelUpdated] = useState(false);
   const isFcAdmin = useMemo(() => userRole === UserModel.Role.FCA_ADMIN, [userRole]);
 
   const onUpdate = useCallback(
     user => {
-      const { email, firstName, lastName, oldGroupIds, newGroupIds, mobilePhoneNumber, officePhoneNumber, officePhoneExtension, preferredContactMethod } = sanitizeUser(user);
+      const { email, firstName, lastName, oldGroupIds, groupIds, mobilePhoneNumber, officePhoneNumber, officePhoneExtension, preferredContactMethod } = sanitizeUser(user);
 
       const userPayload = {
         email,
         firstName,
         lastName,
         oldGroupIds,
-        newGroupIds,
+        newGroupIds: groupIds,
         mobilePhoneNumber,
         officePhoneNumber,
         officePhoneExtension,
@@ -62,7 +60,6 @@ const EditTab = ({
         resendInvitation: true,
       };
       updateUserProfile(companyId, user.id, userPayload);
-      setIsModelUpdated(true);
     },
     [updateUserProfile, companyId]
   );
@@ -84,11 +81,11 @@ const EditTab = ({
   }, [model.preferredContactMethod, updateRules]);
 
   useEffect(() => {
-    if (Object.keys(companyUserProfile).length > 0 && !isModelUpdated) {
+    if (Object.keys(companyUserProfile).length > 0) {
       updateFormModel(companyUserProfile);
     }
     // eslint-disable-next-line
-  }, [companyUserProfile, isModelUpdated]);
+  }, [companyUserProfile]);
 
   const finalErrors = { ...errors, ...(updateUserLoading ? updateUserLoading.error?.response?.errors : {}) };
   const getErrors = useCallback((field: string) => finalErrors && finalErrors[field], [finalErrors]);

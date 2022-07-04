@@ -65,9 +65,9 @@ const UserRow = ({
   const onChangeNumber = useCallback(
     /* istanbul ignore next */ event => {
       if (event.target.value === UserModel.InviteType.DO_NOT_INVITE) {
-        onChange({ ...user, oldGroupIds: [], newGroupIds: [] }, index);
+        onChange({ ...user, groupIds: [] }, index);
       } else {
-        onChange({ ...user, newGroupIds: [event.target.value] }, index);
+        onChange({ ...user, groupIds: [event.target.value] }, index);
       }
     },
     [index, user, onChange]
@@ -247,7 +247,7 @@ const UserRow = ({
                       label=""
                       name="invitationType"
                       // value={user.invitationType || UserModel.InviteType.DO_NOT_INVITE}
-                      value={user?.newGroupIds?.length > 0 ? user?.newGroupIds[0] : user?.oldGroupIds?.length > 0 ? user?.oldGroupIds[0] : UserModel.InviteType.DO_NOT_INVITE}
+                      value={(user?.groupIds?.length > 0 && user?.groupIds[0]) || UserModel.InviteType.DO_NOT_INVITE}
                       options={userInviteGroupList}
                       error={!!getErrors('invitationType', index)}
                       onChange={onChangeNumber}
