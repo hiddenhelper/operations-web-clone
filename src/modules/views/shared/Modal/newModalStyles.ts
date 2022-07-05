@@ -6,6 +6,11 @@ export const useStyles = makeStyles(theme =>
   createStyles({
     root: {
       width: '100vw',
+      '& .MuiDialog-container': {
+        '@media (min-width:569px)': {
+          marginLeft: '80px',
+        },
+      },
       '& .MuiDialogContent-root': {
         background: '#F5F5F5',
         borderTop: '1px solid #E5E5E5',
@@ -26,6 +31,9 @@ export const useStyles = makeStyles(theme =>
         lineHeight: toREM(21),
         fontWeight: 600,
         height: toREM(21),
+        '@media (max-width:281px )': {
+          fontSize: '1.0rem',
+        },
       },
       '& .MuiDialog-paper': {
         width: toREM(1040),

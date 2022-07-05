@@ -9,6 +9,8 @@ export const useStyles = makeStyles(theme =>
       color: STYLE.COLOR.SECONDARY_DARKER,
       fontWeight: 600,
       lineHeight: `${toREM(28)}`,
+      textAlign: 'center',
+      marginBottom: '-15px',
     },
     cardInformation: {
       fontSize: `${toREM(STYLE.FONT.SIZE.PARAGRAPH)}`,

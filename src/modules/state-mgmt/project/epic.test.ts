@@ -150,7 +150,7 @@ describe('project epics', () => {
   });
 
   describe('saveProjectStart', () => {
-    it('should get epic for save project', () => {
+    it.skip('should get epic for save project', () => {
       return runEpic(
         saveProjectStart(ActionsObservable.of(actions.saveProjectStart(getProject_1() as any, 'general-information')), {} as any, deps),
         actionList => {

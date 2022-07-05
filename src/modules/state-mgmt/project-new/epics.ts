@@ -9,10 +9,11 @@ import { coreState } from '../core';
 import { generalState } from '../general';
 import { fileState } from '../file';
 import { GENERAL } from '../../../constants';
+import { actions as accessControlSystemActions } from '../access-control-system/actions';
 import { handleToastError, handleError } from '../core/operators';
 import { isEmpty } from '../../../utils/generalUtils';
 import { getProjectBadgeResourceRequest } from '../../../utils/projectUtils';
-import { GeneralModel } from 'modules/models';
+import { GeneralModel, AccessControlSystemModel } from 'modules/models';
 
 export const fetchProjectStart: Epic<IAction, IAction, IRootState, IEpicDependencies> = (action$, state$, deps) =>
   action$.pipe(
@@ -98,7 +99,7 @@ export const saveProjectStart: Epic<IAction, IAction, IRootState, IEpicDependenc
         of(generalState.actions.setLoading(GENERAL.LOADING_KEY.SAVE_PROJECT, true)),
         deps.apiService
           .saveProject(payload.project)
-          .pipe(mergeMap(res => of(actions.saveProjectSuccess(res), push(`/projects/wizard-new/${res.id}/${payload.stepKey}`, { success: true })))),
+          .pipe(mergeMap(res => of(actions.saveProjectSuccess(res), push(`/projects/wizard/${res.id}/${payload.stepKey}`, { success: true })))),
         of(generalState.actions.setLoading(GENERAL.LOADING_KEY.SAVE_PROJECT, false))
       ).pipe(
         catchError(error =>
@@ -273,7 +274,7 @@ export const archiveProjectStart: Epic<IAction, IAction, IRootState, IEpicDepend
       concat(
         of(generalState.actions.setLoading(GENERAL.LOADING_KEY.ARCHIVE_PROJECT, true)),
         deps.apiService.archiveProject(payload.id).pipe(map(() => actions.archiveProjectSuccess(payload.id))),
-        of(push(`/projects/detail-new/${payload.id}/information`)),
+        of(push(`/projects/detail/${payload.id}/information`)),
         of(generalState.actions.addToastStart(`${state$.value.project.projectMap[payload.id].name} archived successfully!`, GeneralModel.ToastType.SUCCESS)),
         of(generalState.actions.setLoading(GENERAL.LOADING_KEY.ARCHIVE_PROJECT, false))
       ).pipe(
@@ -295,7 +296,7 @@ export const unarchiveProjectStart: Epic<IAction, IAction, IRootState, IEpicDepe
       concat(
         of(generalState.actions.setLoading(GENERAL.LOADING_KEY.UNARCHIVE_PROJECT, true)),
         deps.apiService.unarchiveProject(payload.id).pipe(map(() => actions.unarchiveProjectSuccess(payload.id))),
-        of(push(`/projects/detail-new/${payload.id}/information`)),
+        of(push(`/projects/detail/${payload.id}/information`)),
         of(generalState.actions.addToastStart(`${state$.value.project.projectMap[payload.id].name} unarchived successfully!`, GeneralModel.ToastType.SUCCESS)),
         of(generalState.actions.setLoading(GENERAL.LOADING_KEY.UNARCHIVE_PROJECT, false))
       ).pipe(
@@ -344,6 +345,86 @@ export const updateProjectStart: Epic<IAction, IAction, IRootState, IEpicDepende
     )
   );
 
+export const assignAccessControlSystemProjectStart: Epic<IAction, IAction, IRootState, IEpicDependencies> = (action$, state$, deps) =>
+  action$.pipe(
+    ofType(ActionType.ASSIGN_ACCESS_CONTROL_SYSTEM_PROJECT_START),
+    mergeMap(({ payload }) =>
+      concat(
+        of(generalState.actions.setLoading(GENERAL.LOADING_KEY.ASSIGN_ACCESS_CONTROL_SYSTEM_PROJECT, true)),
+        deps.apiService
+          .assignAcsProject(payload.projectId, payload.acs)
+          .pipe(map(res => generalState.actions.addToastStart(`ACS assigned successfully!`, GeneralModel.ToastType.SUCCESS))),
+        of(generalState.actions.setLoading(GENERAL.LOADING_KEY.ASSIGN_ACCESS_CONTROL_SYSTEM_PROJECT, false))
+      ).pipe(handleToastError(GENERAL.LOADING_KEY.ASSIGN_ACCESS_CONTROL_SYSTEM_PROJECT))
+    )
+  );
+
+export const assignBadgePrintingSystemProjectStart: Epic<IAction, IAction, IRootState, IEpicDependencies> = (action$, state$, deps) =>
+  action$.pipe(
+    ofType(ActionType.ASSIGN_BADGE_PRINTING_SYSTEM_PROJECT_START),
+    mergeMap(({ payload }) =>
+      concat(
+        of(generalState.actions.setLoading(GENERAL.LOADING_KEY.ASSIGN_BADGE_PRINTING_SYSTEM_PROJECT, true)),
+        deps.apiService
+          .assignBadgePrintingSystemProject(payload.projectId, payload.list)
+          .pipe(
+            mergeMap(res => [
+              actions.assignBadgePrintingProjectSuccess(payload.list),
+              generalState.actions.addToastStart(`BPS assigned successfully!`, GeneralModel.ToastType.SUCCESS),
+            ])
+          ),
+        of(generalState.actions.setLoading(GENERAL.LOADING_KEY.ASSIGN_BADGE_PRINTING_SYSTEM_PROJECT, false))
+      ).pipe(handleToastError(GENERAL.LOADING_KEY.ASSIGN_BADGE_PRINTING_SYSTEM_PROJECT))
+    )
+  );
+
+export const unassignAccessControlSystemProjectStart: Epic<IAction, IAction, IRootState, IEpicDependencies> = (action$, state$, deps) =>
+  action$.pipe(
+    ofType(ActionType.UNASSIGN_ACCESS_CONTROL_SYSTEM_PROJECT_START),
+    mergeMap(({ payload }) =>
+      concat(
+        of(generalState.actions.setLoading(GENERAL.LOADING_KEY.UNASSIGN_ACCESS_CONTROL_SYSTEM_PROJECT, true)),
+        deps.apiService
+          .unAssignAccessControlSystemProject(payload.projectId, payload.acsId)
+          .pipe(
+            mergeMap(res => [
+              actions.unAssignAccessControlSystemSuccess(payload.projectId, payload.acsId),
+              accessControlSystemActions.unassignAccessControlSystemProjectSuccess(payload.acsId),
+              generalState.actions.addToastStart(
+                `${
+                  AccessControlSystemModel.accessControlSystemTypeMap[state$.value.accessControlSystem.accessControlSystemMap[payload.acsId].type]
+                } unassigned successfully!`,
+                GeneralModel.ToastType.SUCCESS
+              ),
+            ])
+          ),
+        of(generalState.actions.setLoading(GENERAL.LOADING_KEY.UNASSIGN_ACCESS_CONTROL_SYSTEM_PROJECT, false))
+      ).pipe(handleToastError(GENERAL.LOADING_KEY.UNASSIGN_ACCESS_CONTROL_SYSTEM_PROJECT))
+    )
+  );
+
+export const unassignBadgePrintingSystemProjectStart: Epic<IAction, IAction, IRootState, IEpicDependencies> = (action$, state$, deps) =>
+  action$.pipe(
+    ofType(ActionType.UNASSIGN_BADGE_PRINTING_SYSTEM_PROJECT_START),
+    mergeMap(({ payload }) =>
+      concat(
+        of(generalState.actions.setLoading(GENERAL.LOADING_KEY.UNASSIGN_BADGE_PRINTING_SYSTEM_PROJECT, true)),
+        deps.apiService
+          .unAssignBadgePrintingSystemProject(payload.projectId, payload.id)
+          .pipe(
+            mergeMap(res => [
+              actions.unAssignBadgePrintingSystemSuccess(payload.projectId, payload.id),
+              generalState.actions.addToastStart(
+                `${state$.value.badgePrinterSystem.badgePrinterSystemMap[payload.id].name} unassigned successfully!`,
+                GeneralModel.ToastType.SUCCESS
+              ),
+            ])
+          ),
+        of(generalState.actions.setLoading(GENERAL.LOADING_KEY.UNASSIGN_BADGE_PRINTING_SYSTEM_PROJECT, false))
+      ).pipe(handleToastError(GENERAL.LOADING_KEY.UNASSIGN_BADGE_PRINTING_SYSTEM_PROJECT))
+    )
+  );
+
 export const epics = [
   fetchProjectStart,
   fetchDraftProjectStart,
@@ -362,4 +443,8 @@ export const epics = [
   unarchiveProjectStart,
   updateProjectPaymentMethodStart,
   updateProjectStart,
+  assignAccessControlSystemProjectStart,
+  assignBadgePrintingSystemProjectStart,
+  unassignAccessControlSystemProjectStart,
+  unassignBadgePrintingSystemProjectStart,
 ];

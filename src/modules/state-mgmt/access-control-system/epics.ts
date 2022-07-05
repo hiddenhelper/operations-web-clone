@@ -9,6 +9,7 @@ import { actions, ActionType } from './actions';
 import { GENERAL } from '../../../constants';
 import { coreState } from '../core';
 import { projectState } from '../project';
+import { projectNewState } from '../project-new';
 import { ToastType } from '../../models/general';
 import { AccessControlSystemModel } from '../../models';
 import { handleToastError } from '../core/operators';
@@ -155,6 +156,7 @@ export const fetchProjectAccessControlSystemListStart: Epic<IAction, IAction, IR
             mergeMap(res => [
               actions.fetchProjectAccessControlSystemListSuccess(res),
               projectState.actions.associateAccessControlSystemProject(payload.id, res),
+              projectNewState.actions.associateAccessControlSystemProject(payload.id, res),
             ])
           ),
         of(generalState.actions.setLoading(GENERAL.LOADING_KEY.FETCH_PROJECT_ACCESS_CONTROL_SYSTEM_LIST, false))

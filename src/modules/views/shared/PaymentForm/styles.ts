@@ -8,21 +8,26 @@ export const useStyles = makeStyles(theme =>
       width: 580,
       height: 280,
       border: `dashed 1px ${STYLE.COLOR.SEPTENARY}`,
-      borderRadius: 5,
+      borderRadius: 12,
       display: 'flex',
+      marginRight: '9px',
+      marginLeft: '9px',
     },
     cardItem: {
-      width: 580,
       height: 280,
       borderRadius: 12,
-      padding: 20,
+      padding: 47,
       border: `solid 1px ${STYLE.COLOR.LIGHT_GRAY3}`,
       backgroundColor: STYLE.COLOR.QUINARY_LIGHTER,
       display: 'flex',
-      marginBottom: 37,
       flexDirection: 'column',
       justifyContent: 'space-between',
       position: 'relative',
+      marginBottom: 37,
+      '@media(max-width: 415px)': {
+        marginLeft: '7px',
+        marginRight: '7px',
+      },
     },
     cardItemClickable: {
       cursor: 'pointer',
@@ -35,20 +40,30 @@ export const useStyles = makeStyles(theme =>
       width: '100%',
     },
     newCardFormContainer: {
-      display: 'flex',
-      justifyContent: 'center',
-      marginTop: 20,
+      width: '95%',
+      margin: 'auto',
+      '& .MuiGrid-container': {
+        display: 'block !important',
+        margin: 'auto',
+      },
+      '@media (min-width:1280px)': {
+        '& .MuiGrid-grid-lg-9': {
+          maxWidth: '100% !important',
+          flexBasis: '100% !important',
+        },
+      },
     },
     cardFormTitle: {
       fontSize: `${toREM(STYLE.FONT.SIZE.HEADING_1)}`,
       color: STYLE.COLOR.SECONDARY_DARKER,
       fontWeight: 600,
       lineHeight: `${toREM(28)}`,
-      marginLeft: 40,
       marginBottom: 20,
+      textAlign: 'center',
     },
     cardFormSubtitle: {
-      marginLeft: 40,
+      width: '85%',
+      margin: 'auto',
       marginBottom: 40,
     },
     cardItemSelected: {
@@ -128,7 +143,7 @@ export const useStyles = makeStyles(theme =>
       justifyContent: 'space-between',
     },
     formCardItem: {
-      width: '100%',
+      width: '95%',
       border: `dashed 1px ${STYLE.COLOR.SEPTENARY}`,
       borderRadius: 5,
       display: 'flex',
@@ -166,8 +181,8 @@ export const useStyles = makeStyles(theme =>
       },
     },
     closeButton: {
-      position: 'absolute',
-      right: 0,
+      float: 'right',
+      marginBottom: '10px',
     },
   })
 );

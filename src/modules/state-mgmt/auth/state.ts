@@ -15,5 +15,5 @@ export const initialState: IState = {
   session: null,
   role: null,
   companyId: null,
-  companyUserId: null,
+  companyUserId: undefined,
 };

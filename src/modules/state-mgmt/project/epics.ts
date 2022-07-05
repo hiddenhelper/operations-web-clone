@@ -169,7 +169,7 @@ export const saveProjectStart: Epic<IAction, IAction, IRootState, IEpicDependenc
         of(generalState.actions.setLoading(GENERAL.LOADING_KEY.SAVE_PROJECT, true)),
         deps.apiService
           .saveProject(payload.project)
-          .pipe(mergeMap(res => of(actions.saveProjectSuccess(res), push(`/projects/wizard/${res.id}/${payload.stepKey}`, { success: true })))),
+          .pipe(mergeMap(res => of(actions.saveProjectSuccess(res), push(`/projects/wizard-old/${res.id}/${payload.stepKey}`, { success: true })))),
         of(generalState.actions.setLoading(GENERAL.LOADING_KEY.SAVE_PROJECT, false))
       ).pipe(
         catchError(error =>

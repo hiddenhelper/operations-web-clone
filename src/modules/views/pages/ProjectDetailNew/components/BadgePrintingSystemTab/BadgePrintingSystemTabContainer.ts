@@ -3,7 +3,7 @@ import { Dispatch } from 'redux';
 
 import { GENERAL } from '../../../../../../constants';
 import { IRootState } from '../../../../../state-mgmt/rootState';
-import { projectState } from '../../../../../state-mgmt/project';
+import { projectNewState } from '../../../../../state-mgmt/project-new';
 import { badgePrinterSystemState } from '../../../../../state-mgmt/badge-printer-system';
 
 import { BadgePrintingSystemModel, GeneralModel } from '../../../../../models';
@@ -24,10 +24,10 @@ export const mapStateToProps = (state: IRootState) => ({
 
 export const mapDispatchToProps = (dispatch: Dispatch) => ({
   assignBadgePrintingSystem: (projectId: string, list: BadgePrintingSystemModel.IBadgePrintingSystemUpdateDate[]) =>
-    dispatch(projectState.actions.assignBadgePrintingProjectStart(projectId, list)),
+    dispatch(projectNewState.actions.assignBadgePrintingProjectStart(projectId, list)),
   fetchBadgePrintingSystemList: (query: GeneralModel.IQueryParams) => dispatch(badgePrinterSystemState.actions.fetchBadgePrintingSystemProjectListStart(query)),
   fetchBadgePrintingSystemSummary: (id: string) => dispatch(badgePrinterSystemState.actions.fetchBadgePrintingSystemSummaryStart(id)),
-  unAssignBadgePrintingSystem: (projectId: string, id: string) => dispatch(projectState.actions.unAssignBadgePrintingSystemStart(projectId, id)),
+  unAssignBadgePrintingSystem: (projectId: string, id: string) => dispatch(projectNewState.actions.unAssignBadgePrintingSystemStart(projectId, id)),
   updateBadgePrintingSystemDate: (projectId: string, id: string, date: string) =>
     dispatch(badgePrinterSystemState.actions.updateBadgePrintingSystemDateStart(projectId, id, date)),
   fetchProjectBadgePrintingSystemList: (id: string, pageNumber: number, pageSize: number) =>

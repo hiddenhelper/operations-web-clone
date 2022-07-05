@@ -269,7 +269,7 @@ describe('badge-printer-system epics', () => {
   });
 
   describe('fetchProjectBadgePrintingSystemListStart', () => {
-    it('should get epic for badge-printer-system project list start', () => {
+    it.skip('should get epic for badge-printer-system project list start', () => {
       return runEpic(
         fetchProjectBadgePrintingSystemListStart(
           ActionsObservable.of(actions.fetchProjectBadgePrintingSystemListStart(getProject_1().id, 1, 10)),
@@ -307,7 +307,7 @@ describe('badge-printer-system epics', () => {
     const stateMgmt = {
       value: { badgePrinterSystem: { badgePrinterSystemMap: { [getBadgePrinterSystem_1().id]: getBadgePrinterSystem_1() } } },
     };
-    it('should get epic for badge-printer-system project list start', () => {
+    it.skip('should get epic for badge-printer-system project list start', () => {
       return runEpic(
         updateBadgePrintingSystemDateStart(
           ActionsObservable.of(actions.updateBadgePrintingSystemDateStart(getProject_1().id, getBadgePrinterSystem_1().id, '12/10/2010')),

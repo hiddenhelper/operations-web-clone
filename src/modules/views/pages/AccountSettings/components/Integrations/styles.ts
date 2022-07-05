@@ -96,8 +96,26 @@ export const modalStylesDisconnect = makeStyles({
 });
 
 export const videoStyles = makeStyles({
+  landscapeMessage: {
+    '@media (max-width:415px)': {
+      display: 'block',
+      textAlign: 'center',
+      padding: '5px',
+      fontWeight: '500',
+      fontSize: '1.2rem',
+    },
+    '@media (min-width:416px)': {
+      display: 'none',
+    },
+  },
   containerVideo: {
     height: '100%',
     padding: `0 ${toREM(130)}`,
+    '@media (max-width:415px)': {
+      display: 'none',
+    },
+  },
+  centerButton: {
+    margin: 'auto',
   },
 });

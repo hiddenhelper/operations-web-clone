@@ -12,6 +12,7 @@ describe('ProtectedRouteContainer', () => {
       sessionChecked: false,
       clientMap: getInitialState().client.clientMap,
       companyId: getInitialState().auth.companyId,
+      companyUserId: undefined,
     });
   });
 
@@ -22,6 +23,7 @@ describe('ProtectedRouteContainer', () => {
       recoverSession: expect.any(Function),
       fetchClient: expect.any(Function),
       getAccountData: expect.any(Function),
+      fetchAdminPermission: expect.any(Function),
     });
   });
 

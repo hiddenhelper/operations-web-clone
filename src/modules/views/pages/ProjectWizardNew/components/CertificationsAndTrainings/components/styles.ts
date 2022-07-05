@@ -111,6 +111,9 @@ export const useStyles = makeStyles(theme =>
         paddingRight: 30,
       },
     },
+    groupNameErrorMessage: {
+      position: 'relative',
+    },
     transparentAutocomplete: {
       '&.MuiAutocomplete-root': {
         backgroundColor: 'transparent !important',

@@ -20,7 +20,7 @@ export const useStyles = makeStyles(theme =>
       borderTopLeftRadius: (props: any) => (props.isActive ? 5 : undefined),
       borderTopRightRadius: (props: any) => (props.isActive ? 5 : undefined),
       zIndex: 1010,
-      '@media (max-width:811px)': {
+      '@media (max-width:1020px)': {
         display: 'none',
       },
     },

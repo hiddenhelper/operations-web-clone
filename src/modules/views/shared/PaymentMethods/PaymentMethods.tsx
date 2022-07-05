@@ -256,15 +256,11 @@ const PaymentMethods = ({
       {!fetchPaymentLoading?.isLoading ? (
         <Grid container={true} className={classes.adminCards}>
           {paymentMethods.map(paymentMethod => (
-            <Grid key={paymentMethod.paymentMethodId} item={true} xl={12} lg={12}>
+            <div key={paymentMethod.paymentMethodId}>
               <CreditCardItem admin={admin} paymentMethod={paymentMethod} deleteCard={onDeletePaymentMethod} />
-            </Grid>
+            </div>
           ))}
-          {!compact && (
-            <Grid item={true} xl={12} lg={12}>
-              <NewCreditCardItem />
-            </Grid>
-          )}
+          {!compact && <NewCreditCardItem />}
         </Grid>
       ) : (
         'Loading...'
@@ -283,7 +279,7 @@ const PaymentMethods = ({
       {!fetchPaymentLoading?.isLoading ? (
         <Grid container={true} className={isProjectDetail ? `${classes.modalCards}` : `${classes.selectedCards}`}>
           {paymentMethods.map(paymentMethod => (
-            <Grid key={paymentMethod.paymentMethodId} className={isProjectDetail && `${classes.cardItemModal}`} item={true} xl={12} lg={12}>
+            <Grid key={paymentMethod.paymentMethodId} className={isProjectDetail && `${classes.cardItemModal}`} item={true}>
               <CreditCardItem
                 compact={compact}
                 paymentMethod={paymentMethod}
@@ -292,11 +288,7 @@ const PaymentMethods = ({
               />
             </Grid>
           ))}
-          {!compact && (
-            <Grid item={true} xl={12} lg={12}>
-              <NewCreditCardItem />
-            </Grid>
-          )}
+          {!compact && <NewCreditCardItem />}
         </Grid>
       ) : (
         'Loading...'

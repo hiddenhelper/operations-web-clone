@@ -65,6 +65,9 @@ export const useStyles = makeStyles(theme =>
       letterSpacing: '-0.11px',
       lineHeight: '26px',
       fontWeight: 600,
+      '@media(max-width:415px)': {
+        display: 'none',
+      },
     },
     dropdownIcon: {
       marginLeft: '10px',

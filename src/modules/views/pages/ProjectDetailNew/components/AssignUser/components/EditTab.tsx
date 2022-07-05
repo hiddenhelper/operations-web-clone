@@ -45,13 +45,23 @@ const EditTab = ({
 
   const onUpdate = useCallback(
     user => {
-      const { email, firstName, lastName, oldGroupIds, groupIds, mobilePhoneNumber, officePhoneNumber, officePhoneExtension, preferredContactMethod } = sanitizeUser(user);
+      const {
+        email,
+        firstName,
+        lastName,
+        oldGroupIds,
+        groupIds,
+        mobilePhoneNumber,
+        officePhoneNumber,
+        officePhoneExtension,
+        preferredContactMethod,
+      } = sanitizeUser(user);
 
       const userPayload = {
         email,
         firstName,
         lastName,
-        oldGroupIds,
+        oldGroupIds: oldGroupIds || [],
         newGroupIds: groupIds,
         mobilePhoneNumber,
         officePhoneNumber,

@@ -46,6 +46,7 @@ describe('sanitizeClient', () => {
           preferredContactMethod: 0,
           title: null,
           groupIds: [],
+          oldGroupIds: [],
         },
         {
           companyId: '5164e4c4-6521-47bb-97fd-b75ac02b2cf1',
@@ -63,6 +64,7 @@ describe('sanitizeClient', () => {
           preferredContactMethod: 0,
           title: null,
           groupIds: [],
+          oldGroupIds: [],
         },
       ],
       hasUniversalBadge: true,
@@ -104,6 +106,7 @@ describe('sanitizeClient', () => {
           preferredContactMethod: 0,
           title: null,
           groupIds: [],
+          oldGroupIds: [],
         },
       ],
       hasUniversalBadge: false,

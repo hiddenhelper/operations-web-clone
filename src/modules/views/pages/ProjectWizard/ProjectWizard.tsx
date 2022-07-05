@@ -329,7 +329,7 @@ const ProjectWizard = ({
 
   return (
     <Wizard
-      route="/projects/wizard"
+      route="/projects/wizard-old"
       stepMap={ProjectModel.projectStepMap}
       formRuleMap={FormRules.project.fieldRules}
       completedFieldMap={completedFields}

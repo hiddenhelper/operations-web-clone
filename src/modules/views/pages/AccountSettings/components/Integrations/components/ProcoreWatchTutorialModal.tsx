@@ -17,6 +17,7 @@ const ProcoreWatchTutorialModal = ({ show, handleWatchTutorial }: IWatchTutorial
   return (
     <NewModal show={show} title={'Integrate with Procore'}>
       <DialogContent>
+        <div className={`${classes.landscapeMessage}`}>Watch the Tutorial Video in Landscape mode</div>
         <div className={`${classes.containerVideo}`}>
           <ReactPlayer url={`${process.env.REACT_APP_PROCORE_VIDEO_URL}`} controls={true} width="100%" height="100%" />
         </div>
@@ -26,7 +27,7 @@ const ProcoreWatchTutorialModal = ({ show, handleWatchTutorial }: IWatchTutorial
           variant="contained"
           color="primary"
           data-testid="close-watch-tutorial"
-          className={`${buttonsClasses.regular}`}
+          className={`${buttonsClasses.regular} ${classes.centerButton}`}
           onClick={() => {
             handleWatchTutorial(false);
           }}

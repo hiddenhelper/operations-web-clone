@@ -32,7 +32,7 @@ const GroupHeader = ({ getErrors, handleDelete, handleNameChange, handleValidati
   return (
     <Box className={classes.groupHeader}>
       <Box>
-        <ControlledError show={!!getErrors('name')} error={getErrors('name')}>
+        <ControlledError show={!!getErrors('name')} error={getErrors('name')} styleClass={classes.groupNameErrorMessage}>
           <TextField
             autoComplete="off"
             className={classes.titleInput}

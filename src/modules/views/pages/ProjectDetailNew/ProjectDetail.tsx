@@ -175,7 +175,7 @@ const ProjectDetail = ({
       badgingMatchesJobSite: model.badgingSiteAddressMatchesJobSiteAddress,
       mailingMatchingType: model.mailingAddressMatchingType,
     }),
-    [ProjectNewModel.ProjectStep.CERTIFICATIONS_TRAININGS]: FormRules.projectNew.fieldRules,
+    [ProjectNewModel.ProjectStep.CERTIFICATIONS_TRAININGS]: FormRules.projectNew.CertificationApprovalRules,
     [ProjectNewModel.ProjectStep.WORKER_CONSENT_FORM]: FormRules.projectNew.ConsentFormApprovalRules,
   });
 
@@ -378,13 +378,13 @@ const ProjectDetail = ({
           <StatusWidget
             total={getDefaultValue(projectStatistics?.companiesCount, 0)}
             status={getConditionalDefaultValue(isFcAdmin, 'Clients', 'Companies')}
-            content={<Link to={`/projects/detail-new/${projectId}/clients`}>Review</Link>}
+            content={<Link to={`/projects/detail/${projectId}/clients`}>Review</Link>}
             loading={statisticsLoading?.isLoading}
           />
           <StatusWidget
             total={getDefaultValue(projectStatistics?.activeWorkersCount, 0)}
             status="Active Workers"
-            content={<Link to={`/projects/detail-new/${projectId}/workers`}>Review</Link>}
+            content={<Link to={`/projects/detail/${projectId}/workers`}>Review</Link>}
             loading={statisticsLoading?.isLoading}
           />
           <StatusWidget
@@ -397,7 +397,7 @@ const ProjectDetail = ({
         <div className={classes.filterContainer}>
           <div className={classes.statusFilter}>
             {tabList.map(optFilter => (
-              <Link tabIndex={-1} key={optFilter.id} to={`/projects/detail-new/${projectId}/${optFilter.key}`} data-testid="filter-status-opt">
+              <Link tabIndex={-1} key={optFilter.id} to={`/projects/detail/${projectId}/${optFilter.key}`} data-testid="filter-status-opt">
                 <Button className={getConditionalDefaultValue(optFilter.key === currentTab, classes.activeFilter, '')}>{optFilter.title}</Button>
               </Link>
             ))}

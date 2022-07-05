@@ -17,12 +17,16 @@ export const useStylesModalCards = makeStyles(theme =>
     },
     selectedCards: {
       margin: '47px 0px',
+      justifyContent: 'center',
     },
     adminCards: {
       margin: '0px 0px',
+      justifyContent: 'center',
     },
     note: {
-      marginTop: 42,
+      // marginTop: 42,
+      width: '80%',
+      margin: 'auto',
     },
     replaceModal: {
       width: 480,

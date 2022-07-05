@@ -93,13 +93,15 @@ const UserRow = ({
 
   useEffect(() => {
     if (groupList && groupList.length) {
-      const dropdownList = groupList.map(group => {
-        return {
-          ...group,
-          label: group.name,
-          value: group.id,
-        };
-      });
+      const dropdownList = groupList
+        .map(group => {
+          return {
+            ...group,
+            label: group.name,
+            value: group.id,
+          };
+        })
+        .filter(group => !group.label.toLowerCase().includes('worker'));
       const filteredList = isFcAdmin === false ? dropdownList.filter(group => !group.label.includes('OSR')) : dropdownList;
       setUserInviteGroupList([...UserModel.userInviteList, ...filteredList]);
       return;
@@ -109,7 +111,6 @@ const UserRow = ({
   }, [groupList, isFcAdmin]);
 
   useEffect(() => {
-    console.log('isFcAdmin', isFcAdmin);
     if (!companyId) return;
 
     let searchRequest = {

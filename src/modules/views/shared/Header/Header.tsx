@@ -49,7 +49,10 @@ const Header = ({ user, userRole, accountData, clientMap, companyId, isGeneralAd
   }, [accountData]);
 
   const companyName = useMemo(() => {
-    return clientMap[companyId] && clientMap[companyId].name ? clientMap[companyId].name : '';
+    if (companyId) {
+      return clientMap[companyId] && clientMap[companyId].name ? clientMap[companyId].name : '';
+    }
+    return null;
   }, [clientMap, companyId]);
 
   return (
@@ -63,7 +66,7 @@ const Header = ({ user, userRole, accountData, clientMap, companyId, isGeneralAd
           <Box className={classes.emailAndRoleWrapper}>
             <Typography className={classes.avatarText}>{user.email}</Typography>
             <Typography className={classes.userRole}>
-              {userRole === 'FCA_ADMIN' ? RoleMap[userRole] : isGeneralAdmin ? `${companyName} - ${RoleMap[userRole]}` : companyName}
+              {userRole === 'FCA_ADMIN' ? RoleMap[userRole] : isGeneralAdmin ? `${companyName} - Admin` : companyName}
             </Typography>
           </Box>
           <Avatar className={classes.avatarElement} alt="John Doe" src={profilePicture} />

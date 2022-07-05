@@ -12,23 +12,18 @@ import { useStyles } from '../../styles';
 
 export interface IProjectRowProps {
   onOpen: (id: string) => void;
-  projectNew?: boolean;
   project: ProjectModel.IProject;
 }
 
 const StyledTableRow = withStyles(listTableRowStyles)(TableRow);
 
-const ProjectRow = ({ onOpen, project, projectNew }: IProjectRowProps) => {
+const ProjectRow = ({ onOpen, project }: IProjectRowProps) => {
   const classes = useStyles();
   const listClasses = listGlobalStyles();
   const onClick = useCallback(() => {
     onOpen(project.id);
   }, [project, onOpen]);
-  const { buttonText, linkTo } = useMemo(() => getDrawerButton(project.status, project.id, ResourceModel.Type.PROJECT, projectNew ? 'new' : ''), [
-    project.status,
-    project.id,
-    projectNew,
-  ]);
+  const { buttonText, linkTo } = useMemo(() => getDrawerButton(project.status, project.id, ResourceModel.Type.PROJECT), [project.status, project.id]);
   return (
     <StyledTableRow data-testid="project-list-row" key={project.id} onClick={onClick} className={listClasses.clickableRow}>
       <TableCell className={listClasses.listName}>
@@ -37,24 +32,6 @@ const ProjectRow = ({ onOpen, project, projectNew }: IProjectRowProps) => {
             <Room />
           </Avatar>
           <TableCellLink href={linkTo} testId="project-list-row-item-link" text={project.name} title={buttonText} />
-        </div>
-      </TableCell>
-      {projectNew && (
-        <TableCell className={listClasses.listName}>
-          <div className={classes.projectRow}>
-            <Avatar>
-              <Room />
-            </Avatar>
-            <TableCellLink href={linkTo} text={project.name} title={buttonText} />
-          </div>
-        </TableCell>
-      )}
-      <TableCell className={listClasses.listName}>
-        <div className={classes.projectRow}>
-          <Avatar>
-            <Room />
-          </Avatar>
-          <TableCellLink href={linkTo} text={project.name} title={buttonText} />
         </div>
       </TableCell>
       <TableCell className={listClasses.listGeneralText}>

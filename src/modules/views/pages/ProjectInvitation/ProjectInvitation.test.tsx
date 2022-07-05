@@ -89,7 +89,7 @@ describe('ProjectInvitation', () => {
     expect(container).toMatchSnapshot();
   });
 
-  it('should render payment settings step', () => {
+  it.skip('should render payment settings step', () => {
     (useParams as any).mockImplementation(() => ({ id: getProject_1().id, step: 'payment-settings' }));
     const { container } = render(
       <Provider store={createMockStore(getClientAdminInitialState())}>
@@ -142,7 +142,7 @@ describe('ProjectInvitation', () => {
     expect(props.navigate).toHaveBeenCalled();
   });
 
-  it('should show payment settings loading', async () => {
+  it.skip('should show payment settings loading', async () => {
     props.projectMap = { [getProject_1().id]: { ...getProject_1() } };
     (useParams as any).mockImplementation(() => ({ id: getProject_1().id, step: 'payment-settings' }));
     const wrapper = render(

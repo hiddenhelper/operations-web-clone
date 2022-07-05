@@ -10,6 +10,9 @@ describe('HeaderContainer', () => {
       user: getInitialState().auth.session,
       userRole: getInitialState().auth.role,
       accountData: getInitialState().user.accountData,
+      clientMap: {},
+      companyId: null,
+      isGeneralAdmin: false,
     });
   });
 

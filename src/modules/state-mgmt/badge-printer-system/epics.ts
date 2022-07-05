@@ -6,6 +6,7 @@ import { push } from 'connected-react-router';
 import { GENERAL } from '../../../constants';
 import { IAction, IEpicDependencies, IRootState } from '../rootState';
 import { projectState } from '../project';
+import { projectNewState } from '../project-new';
 import { generalState } from '../general';
 import { coreState } from '../core';
 import { actions, ActionType } from './actions';
@@ -174,6 +175,7 @@ export const fetchProjectBadgePrintingSystemListStart: Epic<IAction, IAction, IR
           .pipe(
             mergeMap(res => [
               actions.fetchBadgePrinterSystemListSuccess(res.items, res.totalResults),
+              projectNewState.actions.associateBadgePrintingSystemProject(payload.id, res.items),
               projectState.actions.associateBadgePrintingSystemProject(payload.id, res.items),
             ])
           ),

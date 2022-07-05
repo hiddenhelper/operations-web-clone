@@ -299,7 +299,7 @@ const ProjectWizard = ({
 
   return (
     <Wizard
-      route="/projects/wizard-new"
+      route="/projects/wizard"
       isValidForNavigation={isValidForNavigation}
       completedFieldMap={completedFields}
       navigationProps={{ id, step, entityId, currentEntity, currentStepKey, currentStep, setStep }}

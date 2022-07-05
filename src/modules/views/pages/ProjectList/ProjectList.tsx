@@ -153,10 +153,6 @@ const ProjectList = ({
     navigate('/projects/wizard/new');
   }, [navigate]);
 
-  const handleCreateProjectNewClick = useCallback(() => {
-    navigate('/projects/wizard-new/new');
-  }, [navigate]);
-
   const handleBannerClick = useCallback(
     (id: string) => {
       navigate(`/projects/invitation/${id}`);
@@ -223,17 +219,6 @@ const ProjectList = ({
                   data-testid="create-project-btn"
                 >
                   Create Project
-                </Button>
-                <Button
-                  className={`${buttonClasses.createButton} ${buttonClasses.primaryButtonLarge}`}
-                  color="primary"
-                  variant="contained"
-                  fullWidth={true}
-                  size="large"
-                  type="submit"
-                  onClick={handleCreateProjectNewClick}
-                >
-                  Create Project New
                 </Button>
               </>
             </RoleGuard>
@@ -312,7 +297,6 @@ const ProjectList = ({
                     <TableHead>
                       <TableRow>
                         <TableCell>Project Name</TableCell>
-                        <TableCell>Project Name New</TableCell>
                         <TableCell>Address</TableCell>
                         <TableCell>Estimated Date</TableCell>
                         <TableCell>{getConditionalDefaultValue(isFcAdmin, 'Clients', 'Companies')}</TableCell>
@@ -320,7 +304,7 @@ const ProjectList = ({
                     </TableHead>
                     <TableBody>
                       {projectList.map(project => (
-                        <ProjectRow key={project.id} project={project} onOpen={openProject} projectNew={true} />
+                        <ProjectRow key={project.id} project={project} onOpen={openProject} />
                       ))}
                     </TableBody>
                   </Table>

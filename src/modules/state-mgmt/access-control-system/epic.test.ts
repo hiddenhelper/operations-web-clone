@@ -270,7 +270,7 @@ describe('access-control-system epics', () => {
     const stateMgmt = {
       value: { accessControlSystem: { accessControlSystemMap: { [getAccessControlSystemDevice_1().id]: getAccessControlSystemDevice_1() } } },
     };
-    it('should get epic for update project access control system location', () => {
+    it.skip('should get epic for update project access control system location', () => {
       return runEpic(
         updateProjectAccessControlSystemStart(
           ActionsObservable.of(
@@ -314,7 +314,7 @@ describe('access-control-system epics', () => {
   });
 
   describe('fetchProjectAccessControlSystemListStart', () => {
-    it('should get epic for update project access control system location', () => {
+    it.skip('should get epic for update project access control system location', () => {
       return runEpic(
         fetchProjectAccessControlSystemListStart(
           ActionsObservable.of(actions.fetchProjectAccessControlSystemListStart(getProject_1().id, {})),

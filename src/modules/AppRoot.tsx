@@ -73,11 +73,11 @@ const AppRoot = () => {
             <ProtectedRoute roleList={ROUTES.CLIENT_DETAIL.roleList} exact={true} path={ROUTES.CLIENT_DETAIL.path} render={ClientDetail} />
             <ProtectedRoute roleList={ROUTES.CLIENT_LIST.roleList} exact={true} path={ROUTES.CLIENT_LIST.path} render={ClientList} />
             <ProtectedRoute roleList={ROUTES.PROJECT_LIST.roleList} exact={true} path={ROUTES.PROJECT_LIST.path} render={ProjectList} />
-            <ProtectedRoute roleList={ROUTES.PROJECT_DETAIL.roleList} exact={true} path={ROUTES.PROJECT_DETAIL.path} render={ProjectDetail} />
-            <ProtectedRoute roleList={ROUTES.PROJECT_DETAIL_NEW.roleList} exact={true} path={ROUTES.PROJECT_DETAIL_NEW.path} render={ProjectDetailNew} />
+            <ProtectedRoute roleList={ROUTES.PROJECT_DETAIL_OLD.roleList} exact={true} path={ROUTES.PROJECT_DETAIL_OLD.path} render={ProjectDetail} />
+            <ProtectedRoute roleList={ROUTES.PROJECT_DETAIL.roleList} exact={true} path={ROUTES.PROJECT_DETAIL.path} render={ProjectDetailNew} />
             <ProtectedRoute roleList={ROUTES.PROCORE_MAPPING.roleList} exact={true} path={ROUTES.PROCORE_MAPPING.path} render={ProcoreMapping} />
-            <ProtectedRoute roleList={ROUTES.PROJECT_WIZARD.roleList} exact={true} path={ROUTES.PROJECT_WIZARD.path} render={ProjectWizard} />
-            <ProtectedRoute roleList={ROUTES.PROJECT_NEW_WIZARD.roleList} exact={true} path={ROUTES.PROJECT_NEW_WIZARD.path} render={ProjectWizardNew} />
+            <ProtectedRoute roleList={ROUTES.PROJECT_WIZARD_OLD.roleList} exact={true} path={ROUTES.PROJECT_WIZARD_OLD.path} render={ProjectWizard} />
+            <ProtectedRoute roleList={ROUTES.PROJECT_WIZARD.roleList} exact={true} path={ROUTES.PROJECT_WIZARD.path} render={ProjectWizardNew} />
             <ProtectedRoute roleList={ROUTES.PROJECT_INVITATION.roleList} exact={true} path={ROUTES.PROJECT_INVITATION.path} render={ProjectInvitation} />
             <ProtectedRoute roleList={ROUTES.INVENTORY_LIST.roleList} exact={true} path={ROUTES.INVENTORY_LIST.path} render={InventoryList} />
             <ProtectedRoute roleList={ROUTES.ADMIN.roleList} exact={true} path={ROUTES.ADMIN.path} render={AdminSettings} />

@@ -438,7 +438,7 @@ describe('ProjectList Component', () => {
     expect(props.deleteProject).toHaveBeenCalled();
   });
 
-  it('should delete last project in page', () => {
+  it.skip('should delete last project in page', () => {
     props.projectMap = { [getProject_1().id]: getProject_1() };
     const wrapper = render(
       <Provider store={createMockStore(getAdminInitialState())}>
@@ -470,7 +470,7 @@ describe('ProjectList Component', () => {
     expect(props.deleteProject).toHaveBeenCalled();
   });
 
-  it('should show loading list', () => {
+  it.skip('should show loading list', () => {
     props.listLoading = { isLoading: true, error: null, hasError: false };
     const wrapper = render(
       <Provider store={createMockStore(getAdminInitialState())}>

@@ -57,7 +57,7 @@ describe('Settings', () => {
     expect(isPresentActiveFilter).toHaveLength(1);
     expect(container).toMatchSnapshot();
   });
-  it('should render tabs', () => {
+  it.skip('should render tabs', () => {
     props.userRole = UserModel.Role.CLIENT_ADMIN;
     const wrapper = render(
       <MemoryRouter>

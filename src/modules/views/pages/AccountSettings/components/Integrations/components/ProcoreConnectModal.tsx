@@ -24,6 +24,21 @@ const customStyles = makeStyles(theme =>
     dialogContent: {
       '&.MuiDialogContent-root': {
         padding: `${toREM(32)} ${toREM(40)}`,
+        '@media (max-width:415px )': {
+          padding: '0px',
+        },
+      },
+    },
+    dialogActions: {
+      '&.MuiDialogActions-root': {
+        '@media (max-width:415px )': {
+          height: '7.0rem',
+        },
+      },
+    },
+    buttonSpacer: {
+      '@media (max-width:415px )': {
+        marginBottom: '7px',
       },
     },
     cardContent: {
@@ -34,6 +49,9 @@ const customStyles = makeStyles(theme =>
       boxShadow: '0px 2px 6px 0px rgb(0 0 0 / 3%)',
       border: '1px solid #E5E5E5',
       borderRadius: '5px',
+      '@media (max-width:415px )': {
+        height: '400px',
+      },
     },
     subTitle: {
       borderBottom: '1px solid #CCC',
@@ -144,10 +162,16 @@ const ProcoreConnectModal = ({ show, errors, model, formRules, onChange, onSubmi
           </Grid>
         </Card>
       </DialogContent>
-      <DialogActions>
-        <Grid container={true} justify="space-between">
+      <DialogActions className={customModalStyles.dialogActions}>
+        <Grid container={true} justify="space-evenly">
           <Grid item={true}>
-            <Button variant="contained" data-testid="close-procore" color="primary" className={`${buttonStyles.regular}`} onClick={handlerCloseConnectModal}>
+            <Button
+              variant="contained"
+              data-testid="close-procore"
+              color="primary"
+              className={`${buttonStyles.regular} ${customModalStyles.buttonSpacer}`}
+              onClick={handlerCloseConnectModal}
+            >
               Close
             </Button>
           </Grid>

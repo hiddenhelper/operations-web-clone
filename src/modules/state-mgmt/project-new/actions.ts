@@ -1,4 +1,4 @@
-import { ConsentFormModel, GeneralModel, ProjectNewModel } from '../../models';
+import { ConsentFormModel, GeneralModel, ProjectNewModel, AccessControlSystemModel, BadgePrintingSystemModel } from '../../models';
 
 export enum ActionType {
   ADD_PROJECT_BADGES_START = '[projectNew] add project badges start',
@@ -26,12 +26,21 @@ export enum ActionType {
   UPDATE_PROJECT_START = '[projectNew] update project start',
   UPDATE_PROJECT_SUCCESS = '[projectNew] update project success',
   UPLOAD_PROJECT_BADGES_START = '[projectNew] upload project badges start',
-  ARCHIVE_PROJECT_START = '[project] archive project start',
-  ARCHIVE_PROJECT_SUCCESS = '[project] archive project success',
-  UNARCHIVE_PROJECT_START = '[project] unarchive project start',
-  UNARCHIVE_PROJECT_SUCCESS = '[project] unarchive project success',
-  CLEAR_PROJECT_MAP = '[project] clear map',
-  UPDATE_PROJECT_PAYMENT_METHOD_START = '[project] update project payment method start',
+  ARCHIVE_PROJECT_START = '[projectNew] archive project start',
+  ARCHIVE_PROJECT_SUCCESS = '[projectNew] archive project success',
+  UNARCHIVE_PROJECT_START = '[projectNew] unarchive project start',
+  UNARCHIVE_PROJECT_SUCCESS = '[projectNew] unarchive project success',
+  CLEAR_PROJECT_MAP = '[projectNew] clear map',
+  UPDATE_PROJECT_PAYMENT_METHOD_START = '[projectNew] update project payment method start',
+  ASSOCIATE_ACCESS_CONTROL_SYSTEM_PROJECT = '[projectNew] associate access control system project',
+  ASSOCIATE_BADGE_PRINTING_SYSTEM_PROJECT = '[projectNew] associate badge printing system project',
+  UNASSIGN_ACCESS_CONTROL_SYSTEM_PROJECT_START = '[projectNew] unassign access control system project start',
+  UNASSIGN_ACCESS_CONTROL_SYSTEM_PROJECT_SUCCESS = '[projectNew] unassign access control system project success',
+  UNASSIGN_BADGE_PRINTING_SYSTEM_PROJECT_START = '[projectNew] unassign badge printing system project start',
+  UNASSIGN_BADGE_PRINTING_SYSTEM_PROJECT_SUCCESS = '[projectNew] unassign badge printing system project success',
+  ASSIGN_BADGE_PRINTING_SYSTEM_PROJECT_START = '[projectNew] assign badge printing system project start',
+  ASSIGN_BADGE_PRINTING_SYSTEM_PROJECT_SUCCESS = '[projectNew] assign badge printing system project success',
+  ASSIGN_ACCESS_CONTROL_SYSTEM_PROJECT_START = '[projectNew] assign access control system project start',
 }
 
 export const actions = {
@@ -85,5 +94,41 @@ export const actions = {
   updateProjectPaymentMethodStart: (projectId: string, paymentMethodId: string) => ({
     type: ActionType.UPDATE_PROJECT_PAYMENT_METHOD_START,
     payload: { projectId, paymentMethodId },
+  }),
+  associateAccessControlSystemProject: (id: string, list: Partial<AccessControlSystemModel.IProjectAccessControlSystemByLocation>[]) => ({
+    type: ActionType.ASSOCIATE_ACCESS_CONTROL_SYSTEM_PROJECT,
+    payload: { id, list },
+  }),
+  associateBadgePrintingSystemProject: (id: string, list: Partial<BadgePrintingSystemModel.IBadgePrintingSystem>[]) => ({
+    type: ActionType.ASSOCIATE_BADGE_PRINTING_SYSTEM_PROJECT,
+    payload: { id, list },
+  }),
+  assignBadgePrintingProjectSuccess: (list: { id: string; date: string }[]) => ({
+    type: ActionType.ASSIGN_BADGE_PRINTING_SYSTEM_PROJECT_SUCCESS,
+    payload: { list },
+  }),
+  unAssignAccessControlSystemStart: (projectId: string, acsId: string) => ({
+    type: ActionType.UNASSIGN_ACCESS_CONTROL_SYSTEM_PROJECT_START,
+    payload: { projectId, acsId },
+  }),
+  assignAcsProjectStart: (projectId: string, acs: AccessControlSystemModel.IProjectAccessControlSystem) => ({
+    type: ActionType.ASSIGN_ACCESS_CONTROL_SYSTEM_PROJECT_START,
+    payload: { projectId, acs },
+  }),
+  unAssignAccessControlSystemSuccess: (projectId: string, acsId: string) => ({
+    type: ActionType.UNASSIGN_ACCESS_CONTROL_SYSTEM_PROJECT_SUCCESS,
+    payload: { projectId, acsId },
+  }),
+  unAssignBadgePrintingSystemStart: (projectId: string, id: string) => ({
+    type: ActionType.UNASSIGN_BADGE_PRINTING_SYSTEM_PROJECT_START,
+    payload: { projectId, id },
+  }),
+  unAssignBadgePrintingSystemSuccess: (projectId: string, bpsId: string) => ({
+    type: ActionType.UNASSIGN_BADGE_PRINTING_SYSTEM_PROJECT_SUCCESS,
+    payload: { projectId, bpsId },
+  }),
+  assignBadgePrintingProjectStart: (projectId: string, list: BadgePrintingSystemModel.IBadgePrintingSystemUpdateDate[]) => ({
+    type: ActionType.ASSIGN_BADGE_PRINTING_SYSTEM_PROJECT_START,
+    payload: { projectId, list },
   }),
 };

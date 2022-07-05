@@ -6,7 +6,7 @@ import AccessControlSystemTab from './AccessControlSystemTab';
 import { AccessControlSystemModel, GeneralModel } from '../../../../../models';
 import { GENERAL } from '../../../../../../constants';
 import { IRootState } from '../../../../../state-mgmt/rootState';
-import { projectState } from '../../../../../state-mgmt/project';
+import { projectNewState } from '../../../../../state-mgmt/project-new';
 import { accessControlSystemState } from '../../../../../state-mgmt/access-control-system';
 import { generalState } from '../../../../../state-mgmt/general';
 
@@ -29,7 +29,7 @@ export const mapStateToProps = (state: IRootState) => ({
 
 export const mapDispatchToProps = (dispatch: Dispatch) => ({
   assignAccessControlSystem: (projectId: string, acs: AccessControlSystemModel.IProjectAccessControlSystem) =>
-    dispatch(projectState.actions.assignAcsProjectStart(projectId, acs)),
+    dispatch(projectNewState.actions.assignAcsProjectStart(projectId, acs)),
   fetchProjectAccessControlSystem: (projectId: string, acsId: string) =>
     dispatch(accessControlSystemState.actions.fetchProjectAccessControlSystemStart(projectId, acsId)),
   fetchAccessControlSystemList: (query: GeneralModel.IQueryParams) =>
@@ -37,7 +37,7 @@ export const mapDispatchToProps = (dispatch: Dispatch) => ({
   fetchProjectAccessControlSystemList: (id: string, query: GeneralModel.IQueryParams) =>
     dispatch(accessControlSystemState.actions.fetchProjectAccessControlSystemListStart(id, query)),
   fetchAccessControlSystemSummary: (acsId: string) => dispatch(accessControlSystemState.actions.fetchAccessControlSystemSummaryStart(acsId)),
-  unAssignAccessControlSystem: (projectId: string, acsId: string) => dispatch(projectState.actions.unAssignAccessControlSystemStart(projectId, acsId)),
+  unAssignAccessControlSystem: (projectId: string, acsId: string) => dispatch(projectNewState.actions.unAssignAccessControlSystemStart(projectId, acsId)),
   updateAccessControlSystem: (projectId: string, acsId: string, acs: AccessControlSystemModel.IProjectAccessControlSystem) =>
     dispatch(accessControlSystemState.actions.updateProjectAccessControlSystemStart(projectId, acsId, acs)),
   clearLoading: (key: string) => dispatch(generalState.actions.clear(key)),
