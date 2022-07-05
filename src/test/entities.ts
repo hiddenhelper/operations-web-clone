@@ -892,6 +892,7 @@ export const getUser_1 = (): UserModel.IUser => ({
     name: 'Constructions INC.',
   },
   groupIds: [],
+  oldGroupIds: [],
 });
 
 export const getUser_2 = (): UserModel.IUser => ({
@@ -910,6 +911,7 @@ export const getUser_2 = (): UserModel.IUser => ({
     name: 'Constructions INC.',
   },
   groupIds: [],
+  oldGroupIds: [],
 });
 
 export const getUser_3 = (): UserModel.IUser => ({
@@ -928,6 +930,7 @@ export const getUser_3 = (): UserModel.IUser => ({
     name: 'Constructions INC.',
   },
   groupIds: [],
+  oldGroupIds: [],
 });
 
 export const getUser_4 = (): UserModel.IUser => ({
@@ -947,6 +950,7 @@ export const getUser_4 = (): UserModel.IUser => ({
     name: 'Constructions INC.',
   },
   groupIds: [],
+  oldGroupIds: [],
 });
 
 export const getUser_5 = (): UserModel.IUser => ({
@@ -965,6 +969,7 @@ export const getUser_5 = (): UserModel.IUser => ({
     name: 'Constructions INC.',
   },
   groupIds: [],
+  oldGroupIds: [],
 });
 
 export const getUser_6 = (): UserModel.IUser => ({
@@ -983,6 +988,7 @@ export const getUser_6 = (): UserModel.IUser => ({
     name: 'Constructions INC.',
   },
   groupIds: [],
+  oldGroupIds: [],
 });
 
 export const getUser_7 = (): UserModel.IUser => ({
@@ -1001,6 +1007,7 @@ export const getUser_7 = (): UserModel.IUser => ({
     name: 'Constructions INC.',
   },
   groupIds: [],
+  oldGroupIds: [],
 });
 
 export const getUserPagination_1 = (): GeneralModel.IPagination<Partial<UserModel.IUser>> => ({

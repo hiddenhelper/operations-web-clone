@@ -38,7 +38,6 @@ const EditTab = ({
   companyUserProfile,
   companyId,
 }: IEditTabProps) => {
-  console.log(companyUserProfile);
   const classes = useStyles();
   const assignModalClasses = AssignModalStyles();
   const buttonClasses = buttonStyles();
@@ -46,12 +45,14 @@ const EditTab = ({
 
   const onUpdate = useCallback(
     user => {
-      const { email, firstName, lastName, mobilePhoneNumber, officePhoneNumber, officePhoneExtension, preferredContactMethod } = sanitizeUser(user);
+      const { email, firstName, lastName, oldGroupIds, groupIds, mobilePhoneNumber, officePhoneNumber, officePhoneExtension, preferredContactMethod } = sanitizeUser(user);
 
       const userPayload = {
         email,
         firstName,
         lastName,
+        oldGroupIds,
+        newGroupIds: groupIds,
         mobilePhoneNumber,
         officePhoneNumber,
         officePhoneExtension,
@@ -69,7 +70,7 @@ const EditTab = ({
     onSubmitCallback: onUpdate,
   });
 
-  const updateFormModel = useCallback(user => onChange({ ...model, ...user, resendInvitation: true }), [model, onChange]);
+  const updateFormModel = useCallback(user => onChange({ ...model, ...user, oldGroupIds: user.groupIds, resendInvitation: true }), [model, onChange]);
 
   useEffect(() => {
     if (Number(model.preferredContactMethod) === UserModel.PreferredContactMethod.PHONE) {
@@ -80,7 +81,7 @@ const EditTab = ({
   }, [model.preferredContactMethod, updateRules]);
 
   useEffect(() => {
-    if (companyUserProfile) {
+    if (Object.keys(companyUserProfile).length > 0) {
       updateFormModel(companyUserProfile);
     }
     // eslint-disable-next-line
