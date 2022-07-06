@@ -145,6 +145,12 @@ const ClientWizard = ({
                   if (field.name === UserModel.UserFields.MOBILE_PHONE_NUMBER) {
                     const user0PreferredContactMethod = Number(currentEntity.users?.[0]?.preferredContactMethod);
                     field.required = user0PreferredContactMethod === UserModel.PreferredContactMethod.PHONE;
+                  } else if (field.name === UserModel.UserFields.GROUP_IDS) {
+                    const idObject = groupList?.find((list) => {
+                      return list.code === 'Admin';
+                    });
+                    const isAdmin = currentEntity.users?.[0]?.groupIds?.some(id => id === idObject?.id);
+                    field.required = !isAdmin;
                   }
                   return field;
                 }),
@@ -157,7 +163,7 @@ const ClientWizard = ({
       trades: [...currentEntity.trades, currentEntity.otherTrade].filter(Boolean),
     };
     return getCompletedStepFields(updatedStepMap, updatedClient);
-  }, [currentEntity]);
+  }, [currentEntity, groupList]);
 
   const readyForApprove = useMemo(() => {
     return (
