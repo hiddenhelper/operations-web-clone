@@ -117,7 +117,7 @@ export const clientStepMap: IStepMap = {
           { name: UserFields.MOBILE_PHONE_NUMBER, required: true },
           { name: UserFields.OFFICE_PHONE_NUMBER, required: false },
           { name: UserFields.PREFERRED_CONTACT_METHOD, required: true },
-          { name: UserFields.INVITATION_TYPE, required: true },
+          { name: UserFields.GROUP_IDS, required: true },
         ],
       },
     ],

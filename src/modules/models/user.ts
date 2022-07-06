@@ -39,6 +39,7 @@ export enum UserFields {
   OFFICE_PHONE_EXTERNAL = 'officePhoneExtension',
   PREFERRED_CONTACT_METHOD = 'preferredContactMethod',
   INVITATION_TYPE = 'invitationType',
+  GROUP_IDS = 'groupIds',
 }
 
 export interface IUser {
@@ -59,7 +60,7 @@ export interface IUser {
   };
   invitationStatus?: InvitationStatus;
   roleName?: string;
-  groupIds?: string[];
+  [UserFields.GROUP_IDS]?: string[];
   oldGroupIds?: string[];
 }
 
