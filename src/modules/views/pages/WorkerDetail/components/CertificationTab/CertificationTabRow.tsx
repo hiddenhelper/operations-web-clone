@@ -3,10 +3,11 @@ import { TableCell, TableRow, withStyles } from '@material-ui/core';
 
 import TableCellLink from 'modules/views/shared/TableCellLink';
 
-import { CertificationModel, GeneralModel } from 'modules/models';
+import { CertificationModel, GeneralModel, UserModel } from 'modules/models';
 import { tableGlobalStyles, tableRowStyles } from 'assets/styles/Tables/styles';
 import { getDefaultValue, getFormattedDate } from 'utils';
 import ThreeDotsPopover from '../Shared/ThreeDotsPopover';
+import PermissionGuard from 'modules/views/shared/PermissionGuard';
 
 const StyledTableRow = withStyles(tableRowStyles)(TableRow);
 
@@ -35,7 +36,9 @@ const CertificationTabRow = ({ certification, openDetail, onEdit, onDelete }: IC
         )}
       </TableCell>
       <TableCell data-testid="update-delete-cell">
-        <ThreeDotsPopover entity={certification} onEdit={onEdit} onDelete={onDelete} />
+        <PermissionGuard permissionsExpression={UserModel.WorkerCertificationsPermission.MANAGE}>
+          <ThreeDotsPopover entity={certification} onEdit={onEdit} onDelete={onDelete} />
+        </PermissionGuard>
       </TableCell>
     </StyledTableRow>
   );

@@ -681,7 +681,7 @@ exports[`InvoiceTable should open invoice information 1`] = `
       class="MuiTableBody-root"
     >
       <tr
-        class="MuiTableRow-root WithStyles(ForwardRef(TableRow))-root-1945 makeStyles-clickableRow-1931"
+        class="MuiTableRow-root WithStyles(ForwardRef(TableRow))-root-1600 makeStyles-clickableRow-1586"
         data-testid="invoice-list-row"
       >
         <td
@@ -690,17 +690,17 @@ exports[`InvoiceTable should open invoice information 1`] = `
           720909
         </td>
         <td
-          class="MuiTableCell-root MuiTableCell-body makeStyles-listNameFullWidth-1917"
+          class="MuiTableCell-root MuiTableCell-body makeStyles-listNameFullWidth-1572"
         >
           <span>
             -
           </span>
         </td>
         <td
-          class="MuiTableCell-root MuiTableCell-body makeStyles-listName-1916 makeStyles-listNameFullWidth-1917"
+          class="MuiTableCell-root MuiTableCell-body makeStyles-listName-1571 makeStyles-listNameFullWidth-1572"
         >
           <a
-            class="Link-root-1946"
+            class="Link-root-1601"
             data-testid="invoice-list-row-project-button"
             href="/projects/detail/1"
             title="View Project details"
@@ -714,7 +714,7 @@ exports[`InvoiceTable should open invoice information 1`] = `
           Dec 09, 2020
         </td>
         <td
-          class="MuiTableCell-root MuiTableCell-body makeStyles-boldTableCell-1898"
+          class="MuiTableCell-root MuiTableCell-body makeStyles-boldTableCell-1553"
         >
           $ 
           0
@@ -723,13 +723,13 @@ exports[`InvoiceTable should open invoice information 1`] = `
           class="MuiTableCell-root MuiTableCell-body"
         >
           <div
-            class="makeStyles-invoiceRowLastCell-1899"
+            class="makeStyles-invoiceRowLastCell-1554"
           >
             <span
-              class="makeStyles-invoiceRowStatusCell-1901"
+              class="makeStyles-invoiceRowStatusCell-1556"
             >
               <div
-                class="MuiChip-root makeStyles-statusChip-1933 makeStyles-pending-1940 makeStyles-invoiceStatusChip-1897 MuiChip-colorPrimary"
+                class="MuiChip-root makeStyles-statusChip-1588 makeStyles-pending-1595 makeStyles-invoiceStatusChip-1552 MuiChip-colorPrimary"
               >
                 <span
                   class="MuiChip-label"
@@ -739,10 +739,10 @@ exports[`InvoiceTable should open invoice information 1`] = `
               </div>
             </span>
             <span
-              class="makeStyles-invoiceRowIconsWrapper-1902"
+              class="makeStyles-invoiceRowIconsWrapper-1557"
             >
               <span
-                class="makeStyles-invoiceRowButton-1905"
+                class="makeStyles-invoiceRowButton-1560"
                 data-testid="controlled-button"
                 tabindex="-1"
               >
@@ -758,7 +758,7 @@ exports[`InvoiceTable should open invoice information 1`] = `
                     class="MuiIconButton-label"
                   >
                     <svg
-                      class="makeStyles-invoiceIcon-1903"
+                      class="makeStyles-invoiceIcon-1558"
                     >
                       invoice.svg
                     </svg>
@@ -770,7 +770,7 @@ exports[`InvoiceTable should open invoice information 1`] = `
         </td>
       </tr>
       <tr
-        class="MuiTableRow-root WithStyles(ForwardRef(TableRow))-root-1945 makeStyles-clickableRow-1931"
+        class="MuiTableRow-root WithStyles(ForwardRef(TableRow))-root-1600 makeStyles-clickableRow-1586"
         data-testid="invoice-list-row"
       >
         <td
@@ -779,10 +779,10 @@ exports[`InvoiceTable should open invoice information 1`] = `
           720908
         </td>
         <td
-          class="MuiTableCell-root MuiTableCell-body makeStyles-listNameFullWidth-1917"
+          class="MuiTableCell-root MuiTableCell-body makeStyles-listNameFullWidth-1572"
         >
           <a
-            class="Link-root-1946"
+            class="Link-root-1601"
             data-testid="invoice-list-row-client-button"
             href="/clients/detail/9164e4c4-6521-47bb-97fd-c75ac02b2cf5"
             title="View Client details"
@@ -791,10 +791,10 @@ exports[`InvoiceTable should open invoice information 1`] = `
           </a>
         </td>
         <td
-          class="MuiTableCell-root MuiTableCell-body makeStyles-listName-1916 makeStyles-listNameFullWidth-1917"
+          class="MuiTableCell-root MuiTableCell-body makeStyles-listName-1571 makeStyles-listNameFullWidth-1572"
         >
           <a
-            class="Link-root-1946"
+            class="Link-root-1601"
             data-testid="invoice-list-row-project-button"
             href="/projects/detail/9164e4c4-6521-47bb-97fd-c75ac02b2cf2"
             title="View Project details"
@@ -808,7 +808,7 @@ exports[`InvoiceTable should open invoice information 1`] = `
           -
         </td>
         <td
-          class="MuiTableCell-root MuiTableCell-body makeStyles-boldTableCell-1898"
+          class="MuiTableCell-root MuiTableCell-body makeStyles-boldTableCell-1553"
         >
           $ 
           0
@@ -817,13 +817,13 @@ exports[`InvoiceTable should open invoice information 1`] = `
           class="MuiTableCell-root MuiTableCell-body"
         >
           <div
-            class="makeStyles-invoiceRowLastCell-1899"
+            class="makeStyles-invoiceRowLastCell-1554"
           >
             <span
-              class="makeStyles-invoiceRowStatusCell-1901"
+              class="makeStyles-invoiceRowStatusCell-1556"
             >
               <div
-                class="MuiChip-root makeStyles-statusChip-1933 makeStyles-pending-1940 makeStyles-invoiceStatusChip-1897 MuiChip-colorPrimary"
+                class="MuiChip-root makeStyles-statusChip-1588 makeStyles-pending-1595 makeStyles-invoiceStatusChip-1552 MuiChip-colorPrimary"
               >
                 <span
                   class="MuiChip-label"
@@ -833,10 +833,10 @@ exports[`InvoiceTable should open invoice information 1`] = `
               </div>
             </span>
             <span
-              class="makeStyles-invoiceRowIconsWrapper-1902"
+              class="makeStyles-invoiceRowIconsWrapper-1557"
             >
               <span
-                class="makeStyles-invoiceRowButton-1905"
+                class="makeStyles-invoiceRowButton-1560"
                 data-testid="controlled-button"
                 tabindex="-1"
               >
@@ -852,7 +852,7 @@ exports[`InvoiceTable should open invoice information 1`] = `
                     class="MuiIconButton-label"
                   >
                     <svg
-                      class="makeStyles-invoiceIcon-1903"
+                      class="makeStyles-invoiceIcon-1558"
                     >
                       invoice.svg
                     </svg>
@@ -867,7 +867,7 @@ exports[`InvoiceTable should open invoice information 1`] = `
   </table>
   <nav
     aria-label="pagination navigation"
-    class="MuiPagination-root  makeStyles-pagination-1948"
+    class="MuiPagination-root  makeStyles-pagination-1603"
     data-testid="pagination"
   >
     <ul
@@ -930,18 +930,18 @@ exports[`InvoiceTable should open invoice information 1`] = `
     </ul>
   </nav>
   <div
-    class="MuiDrawer-root MuiDrawer-docked makeStyles-drawer-1953 makeStyles-close-1964 closed"
+    class="MuiDrawer-root MuiDrawer-docked makeStyles-drawer-1608 makeStyles-close-1619 closed"
     data-testid="invoice-drawer-detail"
   >
     <div
-      class="MuiPaper-root MuiDrawer-paper makeStyles-drawerPaper-1954 MuiDrawer-paperAnchorRight MuiDrawer-paperAnchorDockedRight MuiPaper-elevation0"
+      class="MuiPaper-root MuiDrawer-paper makeStyles-drawerPaper-1609 MuiDrawer-paperAnchorRight MuiDrawer-paperAnchorDockedRight MuiPaper-elevation0"
       style="visibility: hidden; webkit-transform: translateX(1024px) translateX(0px); transform: translateX(1024px) translateX(0px);"
     >
       <div
-        class="makeStyles-drawerButtonWrapper-1956"
+        class="makeStyles-drawerButtonWrapper-1611"
       >
         <div
-          class="makeStyles-drawerButton-1957"
+          class="makeStyles-drawerButton-1612"
         >
           <button
             class="MuiButtonBase-root MuiButton-root MuiButton-text"
@@ -963,31 +963,31 @@ exports[`InvoiceTable should open invoice information 1`] = `
           </button>
         </div>
         <div
-          class="makeStyles-drawerHeader-1955"
+          class="makeStyles-drawerHeader-1610"
         >
           <p
-            class="MuiTypography-root makeStyles-drawerTitle-1958 MuiTypography-body1 MuiTypography-colorPrimary MuiTypography-alignLeft"
+            class="MuiTypography-root makeStyles-drawerTitle-1613 MuiTypography-body1 MuiTypography-colorPrimary MuiTypography-alignLeft"
           >
             Invoice Information
           </p>
         </div>
       </div>
       <div
-        class="makeStyles-listDetail-1923"
+        class="makeStyles-listDetail-1578"
       >
         <div
-          class="makeStyles-company-1924"
+          class="makeStyles-company-1579"
         >
           <div
-            class="makeStyles-drawerText-1960"
+            class="makeStyles-drawerText-1615"
           >
             <p
-              class="MuiTypography-root makeStyles-listAccent-1925 makeStyles-entityTitle-1922 MuiTypography-body1"
+              class="MuiTypography-root makeStyles-listAccent-1580 makeStyles-entityTitle-1577 MuiTypography-body1"
             >
               720909
             </p>
             <div
-              class="makeStyles-drawerMainText-1961"
+              class="makeStyles-drawerMainText-1616"
             >
               <span>
                 Manual Invoice
@@ -995,22 +995,22 @@ exports[`InvoiceTable should open invoice information 1`] = `
             </div>
           </div>
           <div
-            class="makeStyles-drawerSection-1959"
+            class="makeStyles-drawerSection-1614"
           >
             <div
-              class="makeStyles-drawerColumnDirection-1968"
+              class="makeStyles-drawerColumnDirection-1623"
             >
               <div
-                class="makeStyles-drawerRowDirection-1969"
+                class="makeStyles-drawerRowDirection-1624"
               >
                 <svg>
                   monetization.svg
                 </svg>
                 <div
-                  class="makeStyles-drawerText-1960 makeStyles-drawerTextSeparation-1962"
+                  class="makeStyles-drawerText-1615 makeStyles-drawerTextSeparation-1617"
                 >
                   <span
-                    class="makeStyles-listAccent-1925 makeStyles-listIconLabel-1952"
+                    class="makeStyles-listAccent-1580 makeStyles-listIconLabel-1607"
                   >
                     $ 
                     0
@@ -1020,19 +1020,19 @@ exports[`InvoiceTable should open invoice information 1`] = `
             </div>
           </div>
           <div
-            class="makeStyles-drawerSection-1959 makeStyles-drawerProjectColumn-1967"
+            class="makeStyles-drawerSection-1614 makeStyles-drawerProjectColumn-1622"
           >
             <div
-              class="makeStyles-projectWrapper-1965"
+              class="makeStyles-projectWrapper-1620"
             >
               <svg>
                 location.svg
               </svg>
               <div
-                class="makeStyles-drawerText-1960 makeStyles-drawerTextSeparation-1962"
+                class="makeStyles-drawerText-1615 makeStyles-drawerTextSeparation-1617"
               >
                 <span
-                  class="makeStyles-listAccent-1925"
+                  class="makeStyles-listAccent-1580"
                 >
                   -
                 </span>
@@ -1046,10 +1046,10 @@ exports[`InvoiceTable should open invoice information 1`] = `
             </div>
           </div>
           <div
-            class="makeStyles-drawerSection-1959 makeStyles-drawerProjectColumn-1967"
+            class="makeStyles-drawerSection-1614 makeStyles-drawerProjectColumn-1622"
           >
             <div
-              class="makeStyles-projectWrapper-1965"
+              class="makeStyles-projectWrapper-1620"
             >
               <svg
                 aria-hidden="true"
@@ -1062,10 +1062,10 @@ exports[`InvoiceTable should open invoice information 1`] = `
                 />
               </svg>
               <div
-                class="makeStyles-drawerText-1960 makeStyles-drawerTextSeparation-1962"
+                class="makeStyles-drawerText-1615 makeStyles-drawerTextSeparation-1617"
               >
                 <span
-                  class="makeStyles-listAccent-1925"
+                  class="makeStyles-listAccent-1580"
                 >
                   - -
                 </span>
@@ -1076,19 +1076,19 @@ exports[`InvoiceTable should open invoice information 1`] = `
             </div>
           </div>
           <div
-            class="makeStyles-drawerSection-1959 makeStyles-drawerProjectColumn-1967"
+            class="makeStyles-drawerSection-1614 makeStyles-drawerProjectColumn-1622"
           >
             <div
-              class="makeStyles-projectWrapper-1965"
+              class="makeStyles-projectWrapper-1620"
             >
               <svg>
                 project.svg
               </svg>
               <div
-                class="makeStyles-drawerText-1960 makeStyles-drawerTextSeparation-1962"
+                class="makeStyles-drawerText-1615 makeStyles-drawerTextSeparation-1617"
               >
                 <span
-                  class="makeStyles-listAccent-1925"
+                  class="makeStyles-listAccent-1580"
                 >
                   Las Vegas Casino
                 </span>
@@ -1099,16 +1099,16 @@ exports[`InvoiceTable should open invoice information 1`] = `
             </div>
           </div>
           <div
-            class="makeStyles-drawerSection-1959 makeStyles-drawerProjectColumn-1967"
+            class="makeStyles-drawerSection-1614 makeStyles-drawerProjectColumn-1622"
           >
             <div
-              class="makeStyles-projectWrapper-1965"
+              class="makeStyles-projectWrapper-1620"
             >
               <svg>
                 calendar.svg
               </svg>
               <div
-                class="makeStyles-drawerText-1960 makeStyles-drawerTextSeparation-1962"
+                class="makeStyles-drawerText-1615 makeStyles-drawerTextSeparation-1617"
               >
                 <span>
                   Creation Date: 
@@ -1122,16 +1122,16 @@ exports[`InvoiceTable should open invoice information 1`] = `
             </div>
           </div>
           <div
-            class="makeStyles-drawerSection-1959 makeStyles-drawerProjectColumn-1967"
+            class="makeStyles-drawerSection-1614 makeStyles-drawerProjectColumn-1622"
           >
             <div
-              class="makeStyles-projectWrapper-1965"
+              class="makeStyles-projectWrapper-1620"
             >
               <svg>
                 notes.svg
               </svg>
               <div
-                class="makeStyles-drawerText-1960 makeStyles-drawerTextSeparation-1962"
+                class="makeStyles-drawerText-1615 makeStyles-drawerTextSeparation-1617"
               >
                 <span>
                   Test

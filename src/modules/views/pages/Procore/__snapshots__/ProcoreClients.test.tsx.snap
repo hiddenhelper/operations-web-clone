@@ -115,20 +115,20 @@ exports[`ProjectsTab should render empty 1`] = `
 exports[`empty list should render empty 1`] = `
 <div>
   <div
-    class="makeStyles-tableWrapper-78"
+    class="makeStyles-tableWrapper-12"
     style="width: 100%; background-color: rgb(245, 245, 245); padding: 2.5rem;"
   >
     <div
-      class="MuiBox-root MuiBox-root-129"
+      class="MuiBox-root MuiBox-root-63"
       style="height: 50px; margin-bottom: 13px; width: 100%;"
     >
       <div
-        class="MuiBox-root MuiBox-root-130"
+        class="MuiBox-root MuiBox-root-64"
         style="display: flex; align-items: center; justify-content: space-between;"
       >
         <div>
           <div
-            class="MuiBox-root MuiBox-root-131"
+            class="MuiBox-root MuiBox-root-65"
             style="display: flex; align-items: center; margin-top: 5px;"
           >
             <h2
@@ -170,7 +170,7 @@ exports[`empty list should render empty 1`] = `
             Number of Projects
           </th>
           <th
-            class="MuiTableCell-root MuiTableCell-head makeStyles-alignLeftStatus-75 MuiTableCell-alignRight"
+            class="MuiTableCell-root MuiTableCell-head makeStyles-alignLeftStatus-9 MuiTableCell-alignRight"
             scope="col"
           >
             Status

@@ -15,6 +15,7 @@ export const mapStateToProps = (state: IRootState) => ({
   updateLoading: state.general.loadingMap[GENERAL.LOADING_KEY.UPDATE_BADGE],
   assignLoading: state.general.loadingMap[GENERAL.LOADING_KEY.UPDATE_PROJECT_BADGE_VISITOR],
   updateBadgeDataLoading: state.general.loadingMap[GENERAL.LOADING_KEY.UPDATE_BADGE_DATA],
+  currentUserPermissions: state.auth.session?.permissions,
 });
 
 export const mapDispatchToProps = (dispatch: Dispatch) => ({

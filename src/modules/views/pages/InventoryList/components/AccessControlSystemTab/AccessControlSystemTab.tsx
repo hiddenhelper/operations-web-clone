@@ -14,11 +14,12 @@ import AccessControlSystemRow from './AccessControlSystemRow';
 import AccessControlSystemDrawer from './AccessControlSystemDrawer';
 import SelectFilter from '../../../../shared/SelectFilter';
 
-import { GeneralModel, AccessControlSystemModel, DeviceModel } from '../../../../../models';
+import { GeneralModel, AccessControlSystemModel, DeviceModel, UserModel } from '../../../../../models';
 import { getDefaultValue, isEmpty } from '../../../../../../utils/generalUtils';
 import { useStyles as buttonStyles } from '../../../../shared/FormHandler/ControlledButton/styles';
 import { tableGlobalStyles } from '../../../../../../assets/styles';
 import { useHistory } from 'react-router';
+import PermissionGuard from 'modules/views/shared/PermissionGuard';
 
 export interface IAccessControlSystemTabProps {
   queryParams: GeneralModel.IQueryParams;
@@ -149,17 +150,19 @@ const AccessControlSystemTab = ({
               <SelectFilter value={statusFilterValue} optionList={statusOptionList} onChange={onDeviceStatusChange} />
             </Box>
           </div>
-          <Button
-            className={`${buttonClasses.createButton} ${buttonClasses.primaryButtonExtraLarge} ${buttonClasses.noPadding}`}
-            color="primary"
-            variant="contained"
-            fullWidth={true}
-            size="large"
-            data-testid="create-acs-btn"
-            onClick={handleCreateACSDeviceClick}
-          >
-            Create New ACS
-          </Button>
+          <PermissionGuard permissionsExpression={UserModel.AccessControlSystemsPermission.MANAGE}>
+            <Button
+              className={`${buttonClasses.createButton} ${buttonClasses.primaryButtonExtraLarge} ${buttonClasses.noPadding}`}
+              color="primary"
+              variant="contained"
+              fullWidth={true}
+              size="large"
+              data-testid="create-acs-btn"
+              onClick={handleCreateACSDeviceClick}
+            >
+              Create New ACS
+            </Button>
+          </PermissionGuard>
         </div>
         {loading && !loading.isLoading ? (
           <>

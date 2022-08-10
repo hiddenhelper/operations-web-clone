@@ -8,7 +8,8 @@ import { procoreState } from '../../../state-mgmt/procore';
 export const mapStateToProps = (state: IRootState) => ({
   clients: state.procore.clients,
   loading: state.general.loadingMap[GENERAL.LOADING_KEY.FETCH_PROCORE_CLIENTS],
-  userRole: state.auth.role,
+  isFcaUser: state.auth.isFcaUser,
+  isAdmin: state.auth.isAdmin,
 });
 
 export const mapDispatchToProps = (dispatch: Dispatch) => ({

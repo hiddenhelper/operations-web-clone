@@ -26,11 +26,12 @@ version: 2.1
 
 orbs:
   sonarcloud: sonarsource/sonarcloud@1.0.2
+  aws-cli: circleci/aws-cli@2.0.6
 
 executors:
   node-executor:
     docker:
-      - image: circleci/node:lts
+      - image: cimg/node:16.15.1
   aws-executor:
     docker:
       - image: cibuilds/aws:latest
@@ -58,6 +59,7 @@ jobs:
 
   Unit-Testing:
     executor: node-executor
+    resource_class: large
     steps:
       - attach_workspace:
           at: .
@@ -84,18 +86,28 @@ jobs:
       - deploy:
           name: build based on environment
           command: |
-            if [ "${CIRCLE_BRANCH}" = "qa" ]; then
+            if [ "${CIRCLE_BRANCH}" = "develop" ]; then
+              sed -i 's/CIRCLECI_GOOGLE_API_KEY_MAPS/'"$CIRCLECI_GOOGLE_API_KEY_MAPS"'/g' ./src/config/.env.dev && \
+              sed -i 's/CIRCLECI_GOOGLE_API_KEY_PLACES/'"$CIRCLECI_GOOGLE_API_KEY_PLACES"'/g' ./src/config/.env.dev && \
+              yarn build:dev
+            elif [ "${CIRCLE_BRANCH}" = "develop-old" ]; then
+              sed -i 's/CIRCLECI_GOOGLE_API_KEY_MAPS/'"$CIRCLECI_GOOGLE_API_KEY_MAPS"'/g' ./src/config/.env.dev-old && \
+              sed -i 's/CIRCLECI_GOOGLE_API_KEY_PLACES/'"$CIRCLECI_GOOGLE_API_KEY_PLACES"'/g' ./src/config/.env.dev-old && \
+              yarn build:dev-old
+            elif [ "${CIRCLE_BRANCH}" = "qa" ]; then
               sed -i 's/CIRCLECI_GOOGLE_API_KEY_MAPS/'"$CIRCLECI_GOOGLE_API_KEY_MAPS"'/g' ./src/config/.env.qa && \
               sed -i 's/CIRCLECI_GOOGLE_API_KEY_PLACES/'"$CIRCLECI_GOOGLE_API_KEY_PLACES"'/g' ./src/config/.env.qa && \
               yarn build:qa
-            elif [ "${CIRCLE_BRANCH}" = "staging" ]; then
-              sed -i 's/CIRCLECI_GOOGLE_API_KEY_MAPS/'"$CIRCLECI_GOOGLE_API_KEY_MAPS"'/g' ./src/config/.env.staging && \
-              sed -i 's/CIRCLECI_GOOGLE_API_KEY_PLACES/'"$CIRCLECI_GOOGLE_API_KEY_PLACES"'/g' ./src/config/.env.staging && \
-              yarn build:staging
+            elif [ "${CIRCLE_BRANCH}" = "stg" ]; then
+              sed -i 's/CIRCLECI_GOOGLE_API_KEY_MAPS/'"$CIRCLECI_GOOGLE_API_KEY_MAPS"'/g' ./src/config/.env.stg && \
+              sed -i 's/CIRCLECI_GOOGLE_API_KEY_PLACES/'"$CIRCLECI_GOOGLE_API_KEY_PLACES"'/g' ./src/config/.env.stg && \
+              yarn build:stg
+            elif [ "${CIRCLE_BRANCH}" = "master" ]; then
+              sed -i 's/CIRCLECI_GOOGLE_API_KEY_MAPS/'"$CIRCLECI_GOOGLE_API_KEY_MAPS"'/g' ./src/config/.env.prd && \
+              sed -i 's/CIRCLECI_GOOGLE_API_KEY_PLACES/'"$CIRCLECI_GOOGLE_API_KEY_PLACES"'/g' ./src/config/.env.prd && \
+              yarn build:prd
             else
-              sed -i 's/CIRCLECI_GOOGLE_API_KEY_MAPS/'"$CIRCLECI_GOOGLE_API_KEY_MAPS"'/g' ./src/config/.env.development && \
-              sed -i 's/CIRCLECI_GOOGLE_API_KEY_PLACES/'"$CIRCLECI_GOOGLE_API_KEY_PLACES"'/g' ./src/config/.env.development && \
-              yarn build:development
+              echo 'Invalid branch'
             fi
       - persist_to_workspace:
           root: .
@@ -110,27 +122,104 @@ jobs:
     steps:
       - attach_workspace:
           at: .
+      - aws-cli/setup:
+          profile-name: $AWS_PROFILE
+      - run: 
+          name: Configure aws cli
+          command: |
+              if [ "${CIRCLE_BRANCH}" = "develop" ];then
+                  echo 'export AWS_ENV="dev"' >> $BASH_ENV
+                  source $BASH_ENV                  
+                  
+                  export AWS_ACCESS_KEY_ID=${DEV_AWS_ACCESS_KEY_ID}
+                  export AWS_SECRET_ACCESS_KEY=${DEV_AWS_SECRET_ACCESS_KEY}
+                  
+                  echo "dev environment deploy"
+              elif [ "${CIRCLE_BRANCH}" = "develop-old" ];then
+                  echo 'export AWS_ENV="dev"' >> $BASH_ENV
+                  source $BASH_ENV                  
+                  
+                  export AWS_ACCESS_KEY_ID=${MGMT_AWS_ACCESS_KEY_ID}
+                  export AWS_SECRET_ACCESS_KEY=${MGMT_AWS_SECRET_ACCESS_KEY}
+                  
+                  echo "dev environment deploy"
+              elif [ "${CIRCLE_BRANCH}" = "qa" ]; then
+                  echo 'export AWS_ENV="qa"' >> $BASH_ENV
+                  source $BASH_ENV
+
+                  export AWS_ACCESS_KEY_ID=$QA_AWS_ACCESS_KEY_ID
+                  export AWS_SECRET_ACCESS_KEY=$QA_AWS_SECRET_ACCESS_KEY
+
+                  echo "qa environment deploy"
+              elif [ "${CIRCLE_BRANCH}" = "stg" ]; then
+                  echo 'export AWS_ENV="stg"' >> $BASH_ENV
+                  source $BASH_ENV
+
+                  export AWS_ACCESS_KEY_ID=$STG_AWS_ACCESS_KEY_ID
+                  export AWS_SECRET_ACCESS_KEY=$STG_AWS_SECRET_ACCESS_KEY
+
+                  echo "stg environment deploy"
+              elif [ "${CIRCLE_BRANCH}" = "master" ]; then
+                  echo 'export AWS_ENV="prd"' >> $BASH_ENV
+                  source $BASH_ENV
+
+                  export AWS_ACCESS_KEY_ID=$PRD_AWS_ACCESS_KEY_ID
+                  export AWS_SECRET_ACCESS_KEY=$PRD_AWS_SECRET_ACCESS_KEY
+
+                  echo "prd environment deploy"
+              else
+                echo "not matching dev, qa, stg or prd, skipping deploy"
+                export AMIDEPLOYABLE=false
+              fi
+              aws configure set aws_access_key_id $AWS_ACCESS_KEY_ID --profile $AWS_PROFILE
+              aws configure set aws_secret_access_key $AWS_SECRET_ACCESS_KEY --profile $AWS_PROFILE
+              aws configure set default.region us-west-2
+              aws configure set region us-west-2 --profile $AWS_PROFILE
+              aws sts get-caller-identity
+
       - run: mv build publish
       - deploy:
           name: deploy to AWS
           command: |
             if [ "${CIRCLE_BRANCH}" = "develop" ]; then
-              aws s3 sync $BUILD_DIR \
+              aws s3 sync $BUILD_DIR --profile $AWS_PROFILE \
+              s3://freedom.dev.fcdevelopment.net/ --delete --exclude '*.well-known/apple-app-site-association'
+              aws s3 sync $BUILD_DIR --profile $AWS_PROFILE \
+              s3://freedom.dev.fcdevelopment.net/ --delete --exclude '*' --include '.well-known/apple-app-site-association' --content-type 'application/json'
+            fi
+            if [ "${CIRCLE_BRANCH}" = "develop-old" ]; then
+              aws s3 sync $BUILD_DIR --profile $AWS_PROFILE \
               s3://dev.fcdevelopment.net/ --delete --exclude '*.well-known/apple-app-site-association'
-              aws s3 sync $BUILD_DIR \
+              aws s3 sync $BUILD_DIR --profile $AWS_PROFILE \
               s3://dev.fcdevelopment.net/ --delete --exclude '*' --include '.well-known/apple-app-site-association' --content-type 'application/json'
             fi
             if [ "${CIRCLE_BRANCH}" = "qa" ]; then
-              aws s3 sync $BUILD_DIR \
-              s3://qa.fcdevelopment.net/ --delete --exclude '*.well-known/apple-app-site-association'
-              aws s3 sync $BUILD_DIR \
-              s3://qa.fcdevelopment.net/ --delete --exclude '*' --include '.well-known/apple-app-site-association' --content-type 'application/json'
+              aws s3 sync $BUILD_DIR --profile $AWS_PROFILE \
+              s3://freedom.qa.fcdevelopment.net/ --delete --exclude '*.well-known/apple-app-site-association'
+              aws s3 sync $BUILD_DIR --profile $AWS_PROFILE \
+              s3://freedom.qa.fcdevelopment.net/ --delete --exclude '*' --include '.well-known/apple-app-site-association' --content-type 'application/json'
             fi
-            if [ "${CIRCLE_BRANCH}" = "staging" ]; then
-              aws s3 sync $BUILD_DIR \
-              s3://staging.fcdevelopment.net/ --delete --exclude '*.well-known/apple-app-site-association'
-              aws s3 sync $BUILD_DIR \
-              s3://staging.fcdevelopment.net/ --delete --exclude '*' --include '.well-known/apple-app-site-association' --content-type 'application/json'
+            if [ "${CIRCLE_BRANCH}" = "stg" ]; then
+              aws s3 sync $BUILD_DIR --profile $AWS_PROFILE \
+              s3://freedom.stg.fcdevelopment.net/ --delete --exclude '*.well-known/apple-app-site-association'
+              aws s3 sync $BUILD_DIR --profile $AWS_PROFILE \
+              s3://freedom.stg.fcdevelopment.net/ --delete --exclude '*' --include '.well-known/apple-app-site-association' --content-type 'application/json'
+            fi
+            if [ "${CIRCLE_BRANCH}" = "master" ]; then
+              aws s3 sync $BUILD_DIR --profile $AWS_PROFILE \
+              s3://freedom.fieldcontrolanalytics.com/ --delete --exclude '*.well-known/apple-app-site-association'
+              aws s3 sync $BUILD_DIR --profile $AWS_PROFILE \
+              s3://freedom.fieldcontrolanalytics.com/ --delete --exclude '*' --include '.well-known/apple-app-site-association' --content-type 'application/json'
+            fi
+      
+      - run:
+          name: AWS Cloudfront cache invalidation
+          command: |
+            if [ "${CIRCLE_BRANCH}" = "develop-old" ]; then
+              aws cloudfront create-invalidation --profile $AWS_PROFILE --distribution-id EZAXW6T18518S  --paths "/*"
+            else
+              AWS_CLOUDFRONT_DISTRIBUTION_ID=`aws cloudformation describe-stacks --profile $AWS_PROFILE --stack-name freedom-web-infrastructure --query "Stacks[0].Outputs[?OutputKey=='FreedomWebCloudfrontDistributionId'].OutputValue" --output text`
+              aws cloudfront create-invalidation --profile $AWS_PROFILE --distribution-id $AWS_CLOUDFRONT_DISTRIBUTION_ID  --paths "/*"
             fi
 
 workflows:
@@ -147,12 +236,14 @@ workflows:
             - Unit-Testing
           context: SonarCloud
       - Deploy:
+          context: AWS
           requires:
             - Build
           filters:
             branches:
               only:
                  - develop
+                 - develop-old
                  - qa
-                 - staging
+                 - stg
                  - master

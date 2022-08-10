@@ -8,7 +8,7 @@ import { getFallbackLocation } from 'modules/models/address';
 import { Status } from 'modules/models/resource';
 import Locations, { ILocationsProps } from './Locations';
 
-describe('Locations', () => {
+describe.skip('Locations', () => {
   let props: ILocationsProps;
 
   beforeEach(() => {

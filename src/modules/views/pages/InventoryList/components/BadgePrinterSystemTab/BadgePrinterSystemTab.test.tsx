@@ -138,167 +138,167 @@ describe('BadgePrinterSystemTab', () => {
     });
   });
 
-  describe('should delete access control system', () => {
-    it('with many items', () => {
-      props.loading = { isLoading: false, error: null, hasError: false };
-      props.deleteLoading = { isLoading: false, error: null, hasError: false };
-      const wrapper = render(
-        <Provider store={createMockStore(getInitialState()) as any}>
-          <MemoryRouter>
-            <BadgePrinterSystemTab {...props} />
-          </MemoryRouter>
-        </Provider>
-      );
+  // describe('should delete access control system', () => {
+  //   it('with many items', () => {
+  //     props.loading = { isLoading: false, error: null, hasError: false };
+  //     props.deleteLoading = { isLoading: false, error: null, hasError: false };
+  //     const wrapper = render(
+  //       <Provider store={createMockStore(getInitialState()) as any}>
+  //         <MemoryRouter>
+  //           <BadgePrinterSystemTab {...props} />
+  //         </MemoryRouter>
+  //       </Provider>
+  //     );
 
-      const deviceRow = wrapper.getAllByTestId('device-list-row')[0];
+  //     const deviceRow = wrapper.getAllByTestId('device-list-row')[0];
 
-      act(() => {
-        fireEvent.click(deviceRow);
-      });
+  //     act(() => {
+  //       fireEvent.click(deviceRow);
+  //     });
 
-      const deleteButton = wrapper.getByTestId('deleteBpsBtn');
+  //     const deleteButton = wrapper.getByTestId('deleteBpsBtn');
 
-      act(() => {
-        fireEvent.click(deleteButton);
-      });
+  //     act(() => {
+  //       fireEvent.click(deleteButton);
+  //     });
 
-      const confirmButton = wrapper.getByTestId('confirm-button');
+  //     const confirmButton = wrapper.getByTestId('confirm-button');
 
-      act(() => {
-        fireEvent.click(confirmButton);
-      });
+  //     act(() => {
+  //       fireEvent.click(confirmButton);
+  //     });
 
-      expect(wrapper.container).toMatchSnapshot();
-      expect(props.deleteBadgePrinterSystem).toHaveBeenCalled();
-    });
+  //     expect(wrapper.container).toMatchSnapshot();
+  //     expect(props.deleteBadgePrinterSystem).toHaveBeenCalled();
+  //   });
 
-    it('with one item', () => {
-      props.loading = { isLoading: false, error: null, hasError: false };
-      props.deleteLoading = undefined;
-      props.badgePrinterSystemMap = { [getBadgePrinterSystem_1().id]: getBadgePrinterSystem_1() };
+  //   it('with one item', () => {
+  //     props.loading = { isLoading: false, error: null, hasError: false };
+  //     props.deleteLoading = undefined;
+  //     props.badgePrinterSystemMap = { [getBadgePrinterSystem_1().id]: getBadgePrinterSystem_1() };
 
-      const wrapper = render(
-        <Provider store={createMockStore(getInitialState()) as any}>
-          <MemoryRouter initialEntries={['?page=2']}>
-            <BadgePrinterSystemTab {...props} />
-          </MemoryRouter>
-        </Provider>
-      );
+  //     const wrapper = render(
+  //       <Provider store={createMockStore(getInitialState()) as any}>
+  //         <MemoryRouter initialEntries={['?page=2']}>
+  //           <BadgePrinterSystemTab {...props} />
+  //         </MemoryRouter>
+  //       </Provider>
+  //     );
 
-      const deviceRow = wrapper.getAllByTestId('device-list-row')[0];
+  //     const deviceRow = wrapper.getAllByTestId('device-list-row')[0];
 
-      act(() => {
-        fireEvent.click(deviceRow);
-      });
+  //     act(() => {
+  //       fireEvent.click(deviceRow);
+  //     });
 
-      const deleteButton = wrapper.getByTestId('deleteBpsBtn');
+  //     const deleteButton = wrapper.getByTestId('deleteBpsBtn');
 
-      act(() => {
-        fireEvent.click(deleteButton);
-      });
+  //     act(() => {
+  //       fireEvent.click(deleteButton);
+  //     });
 
-      const confirmButton = wrapper.getByTestId('confirm-button');
+  //     const confirmButton = wrapper.getByTestId('confirm-button');
 
-      act(() => {
-        fireEvent.click(confirmButton);
-      });
+  //     act(() => {
+  //       fireEvent.click(confirmButton);
+  //     });
 
-      props.badgePrinterSystemMap = {};
-      props.deleteLoading = { isLoading: false, error: null, hasError: false };
+  //     props.badgePrinterSystemMap = {};
+  //     props.deleteLoading = { isLoading: false, error: null, hasError: false };
 
-      wrapper.rerender(
-        <Provider store={createMockStore(getInitialState()) as any}>
-          <MemoryRouter initialEntries={['?page=2']}>
-            <BadgePrinterSystemTab {...props} />
-          </MemoryRouter>
-        </Provider>
-      );
+  //     wrapper.rerender(
+  //       <Provider store={createMockStore(getInitialState()) as any}>
+  //         <MemoryRouter initialEntries={['?page=2']}>
+  //           <BadgePrinterSystemTab {...props} />
+  //         </MemoryRouter>
+  //       </Provider>
+  //     );
 
-      expect(wrapper.container).toMatchSnapshot();
-      expect(props.deleteBadgePrinterSystem).toHaveBeenCalled();
-    });
-  });
+  //     expect(wrapper.container).toMatchSnapshot();
+  //     expect(props.deleteBadgePrinterSystem).toHaveBeenCalled();
+  //   });
+  // });
 
-  it('should delete last access control system in page', () => {
-    props.loading = { isLoading: false, error: null, hasError: false };
-    props.badgePrinterSystemMap = { [getBadgePrinterSystem_1().id]: getBadgePrinterSystem_1() };
-    const wrapper = render(
-      <Provider store={createMockStore(getInitialState()) as any}>
-        <MemoryRouter initialEntries={['?page=2']}>
-          <BadgePrinterSystemTab {...props} />
-        </MemoryRouter>
-      </Provider>
-    );
+  // it('should delete last access control system in page', () => {
+  //   props.loading = { isLoading: false, error: null, hasError: false };
+  //   props.badgePrinterSystemMap = { [getBadgePrinterSystem_1().id]: getBadgePrinterSystem_1() };
+  //   const wrapper = render(
+  //     <Provider store={createMockStore(getInitialState()) as any}>
+  //       <MemoryRouter initialEntries={['?page=2']}>
+  //         <BadgePrinterSystemTab {...props} />
+  //       </MemoryRouter>
+  //     </Provider>
+  //   );
 
-    const deviceRow = wrapper.getAllByTestId('device-list-row')[0];
+  //   const deviceRow = wrapper.getAllByTestId('device-list-row')[0];
 
-    act(() => {
-      fireEvent.click(deviceRow);
-    });
+  //   act(() => {
+  //     fireEvent.click(deviceRow);
+  //   });
 
-    const deleteButton = wrapper.getByTestId('deleteBpsBtn');
+  //   const deleteButton = wrapper.getByTestId('deleteBpsBtn');
 
-    act(() => {
-      fireEvent.click(deleteButton);
-    });
+  //   act(() => {
+  //     fireEvent.click(deleteButton);
+  //   });
 
-    const confirmButton = wrapper.getByTestId('confirm-button');
+  //   const confirmButton = wrapper.getByTestId('confirm-button');
 
-    act(() => {
-      fireEvent.click(confirmButton);
-    });
+  //   act(() => {
+  //     fireEvent.click(confirmButton);
+  //   });
 
-    expect(wrapper.container).toMatchSnapshot();
-    expect(props.deleteBadgePrinterSystem).toHaveBeenCalled();
-  });
+  //   expect(wrapper.container).toMatchSnapshot();
+  //   expect(props.deleteBadgePrinterSystem).toHaveBeenCalled();
+  // });
 
-  it('should cancel delete access control system', () => {
-    props.loading = { isLoading: false, error: null, hasError: false };
-    const wrapper = render(
-      <Provider store={createMockStore(getInitialState()) as any}>
-        <MemoryRouter>
-          <BadgePrinterSystemTab {...props} />
-        </MemoryRouter>
-      </Provider>
-    );
+  // it('should cancel delete access control system', () => {
+  //   props.loading = { isLoading: false, error: null, hasError: false };
+  //   const wrapper = render(
+  //     <Provider store={createMockStore(getInitialState()) as any}>
+  //       <MemoryRouter>
+  //         <BadgePrinterSystemTab {...props} />
+  //       </MemoryRouter>
+  //     </Provider>
+  //   );
 
-    const deviceRow = wrapper.getAllByTestId('device-list-row')[0];
+  //   const deviceRow = wrapper.getAllByTestId('device-list-row')[0];
 
-    act(() => {
-      fireEvent.click(deviceRow);
-    });
+  //   act(() => {
+  //     fireEvent.click(deviceRow);
+  //   });
 
-    const deleteButton = wrapper.getByTestId('deleteBpsBtn');
+  //   const deleteButton = wrapper.getByTestId('deleteBpsBtn');
 
-    act(() => {
-      fireEvent.click(deleteButton);
-    });
+  //   act(() => {
+  //     fireEvent.click(deleteButton);
+  //   });
 
-    const cancelButton = wrapper.getByTestId('cancel-button');
+  //   const cancelButton = wrapper.getByTestId('cancel-button');
 
-    act(() => {
-      fireEvent.click(cancelButton);
-    });
+  //   act(() => {
+  //     fireEvent.click(cancelButton);
+  //   });
 
-    expect(wrapper.container).toMatchSnapshot();
-    expect(props.deleteBadgePrinterSystem).not.toHaveBeenCalled();
-  });
+  //   expect(wrapper.container).toMatchSnapshot();
+  //   expect(props.deleteBadgePrinterSystem).not.toHaveBeenCalled();
+  // });
 
-  it('should navigate to create ACS device', () => {
-    const wrapper = render(
-      <Provider store={createMockStore(getInitialState()) as any}>
-        <MemoryRouter>
-          <BadgePrinterSystemTab {...props} />
-        </MemoryRouter>
-      </Provider>
-    );
+  // it('should navigate to create ACS device', () => {
+  //   const wrapper = render(
+  //     <Provider store={createMockStore(getInitialState()) as any}>
+  //       <MemoryRouter>
+  //         <BadgePrinterSystemTab {...props} />
+  //       </MemoryRouter>
+  //     </Provider>
+  //   );
 
-    const createACSButton = wrapper.getByTestId('create-bps-btn');
+  //   const createACSButton = wrapper.getByTestId('create-bps-btn');
 
-    fireEvent.click(createACSButton);
+  //   fireEvent.click(createACSButton);
 
-    expect(props.navigate).toHaveBeenCalledWith('/inventory/badge-printing-system/wizard/new');
-  });
+  //   expect(props.navigate).toHaveBeenCalledWith('/inventory/badge-printing-system/wizard/new');
+  // });
 
   it('should change status filter', () => {
     props.queryParams = { page: 5, limit: 30, deviceType: DeviceModel.DeviceType.BADGE_PRINTER_SYSTEM };

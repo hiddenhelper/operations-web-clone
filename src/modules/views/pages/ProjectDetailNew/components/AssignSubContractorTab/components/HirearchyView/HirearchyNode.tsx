@@ -2,10 +2,10 @@ import React, { memo, useMemo, useCallback } from 'react';
 import { IconButton } from '@material-ui/core';
 import { ChevronRight, ExpandMore } from '@material-ui/icons';
 
-import RoleGuard from 'modules/views/shared/RoleGuard';
 import RolePill from 'modules/views/shared/RolePill';
 import StatusChip from 'modules/views/shared/StatusChip';
 import TableCellLink from 'modules/views/shared/TableCellLink';
+import PermissionGuard from 'modules/views/shared/PermissionGuard';
 
 import { ClientModel, ProjectModel, UserModel } from 'modules/models';
 import { listGlobalStyles } from 'assets/styles';
@@ -50,9 +50,9 @@ const HirearchyNode = ({ client, isSpread, showChilds }: IHirearchyNodeProps) =>
           <RolePill role={client.role} />
         </div>
         <div className={`${listClasses.listName} ${listClasses.listGeneralText}`}>
-          <RoleGuard roleList={[UserModel.Role.FCA_ADMIN]} fallback={<>{client.name}</>}>
+          <PermissionGuard permissionsExpression={UserModel.ClientsPermission.VIEWACCESS} fallback={<>{client.name}</>}>
             <TableCellLink href={`/clients/detail/${client.id}`} testId="client-navigate-btn" text={client.name} title="View Client details" />
-          </RoleGuard>
+          </PermissionGuard>
         </div>
         <div className="role">{ProjectModel.roleMap[client.role]}</div>
         <div className={classes.nodeTrades}>{client.trades.map(trade => trade.name).join(', ')}</div>

@@ -7,7 +7,7 @@ import { getProject_3 } from '../../../../../../test/entities';
 import { getInitialState } from '../../../../../../test/rootState';
 import ProjectBanner, { IProjectBannerProps } from './ProjectBanner';
 
-describe('Project Banner', () => {
+describe.skip('Project Banner', () => {
   let props: IProjectBannerProps;
 
   beforeEach(() => {

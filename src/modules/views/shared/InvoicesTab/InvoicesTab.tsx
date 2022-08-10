@@ -175,7 +175,6 @@ const InvoicesTab = ({
         count={count}
         entityMap={invoiceMap}
         tableAriaLabel="invoice-list"
-        showButton={isFcAdmin}
         clearLoading={clearLoading}
         isDisabledButton={isCreateInvoiceDisabled}
         renderCustomTable={() => (
@@ -196,7 +195,7 @@ const InvoicesTab = ({
         )}
         renderFilters={() => (
           <>
-            <div className={tableGlobalClasses.filterActionsContainerLeft}>
+            <div className={`${tableGlobalClasses.filterActionsContainerLeft} ${classes.buttonSpacer}`}>
               <Box className={`${tableGlobalClasses.filterStatusContainer} ${tableGlobalClasses.autocompleteFilterStatus}`}>
                 <AutocompleteFilter
                   value={entityQueryParam}

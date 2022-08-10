@@ -5,10 +5,11 @@ import moment from 'moment';
 
 import TableCellLink from 'modules/views/shared/TableCellLink';
 
-import { ProjectModel, ResourceModel } from 'modules/models';
+import { ProjectModel, ResourceModel, UserModel } from 'modules/models';
 import { listGlobalStyles, listTableRowStyles } from 'assets/styles';
 import { getConditionalDefaultValue, getDrawerButton } from 'utils/generalUtils';
 import { useStyles } from '../../styles';
+import PermissionGuard from 'modules/views/shared/PermissionGuard';
 
 export interface IProjectRowProps {
   onOpen: (id: string) => void;
@@ -31,7 +32,18 @@ const ProjectRow = ({ onOpen, project }: IProjectRowProps) => {
           <Avatar>
             <Room />
           </Avatar>
-          <TableCellLink href={linkTo} testId="project-list-row-item-link" text={project.name} title={buttonText} />
+          <PermissionGuard
+            permissionsExpression={
+              project.status === ResourceModel.Status.ACTIVE ? UserModel.ProjectsPermission.VIEWACCESS : UserModel.DraftProjectsPermission.MANAGE
+            }
+            fallback={
+              <TableCell className={listClasses.listGeneralText}>
+                <span>{project.name}</span>
+              </TableCell>
+            }
+          >
+            <TableCellLink href={linkTo} testId="project-list-row-item-link" text={project.name} title={buttonText} />
+          </PermissionGuard>
         </div>
       </TableCell>
       <TableCell className={listClasses.listGeneralText}>

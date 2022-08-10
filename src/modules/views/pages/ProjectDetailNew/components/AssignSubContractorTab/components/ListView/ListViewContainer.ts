@@ -17,6 +17,9 @@ export const mapStateToProps = (state: IRootState) => ({
   assignClientLoading: state.general.loadingMap[GENERAL.LOADING_KEY.ASSIGN_CLIENT_PROJECT],
   projectClientSummaryLoading: state.general.loadingMap[GENERAL.LOADING_KEY.FETCH_PROJECT_CLIENT_SUMMARY],
   taxConditionLoading: state.general.loadingMap[GENERAL.LOADING_KEY.UPDATE_PROJECT_CLIENT_TAX_CONDITION],
+  currentUserPermissions: state.auth.session?.permissions,
+  isFcaUser: state.auth.isFcaUser,
+  isAdmin: state.auth.isAdmin,
 });
 
 export const mapDispatchToProps = (dispatch: Dispatch) => ({

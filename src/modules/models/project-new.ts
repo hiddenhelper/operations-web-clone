@@ -21,7 +21,7 @@ import { IStepMap, INamedEntity } from './general';
 import { ICertificationGroup } from './certification';
 import { ITrainingGroup } from './training';
 import { Status } from './resource';
-import { PaymentModel } from './index';
+import { PaymentModel, UserModel } from './index';
 import { IConsentFormFieldConfig, IConsentFormLegal } from './consentForm';
 import { IBadgeTemplate, getFallbackBadgeTemplate, getFallbackVisitorBadgeTemplate } from './badge';
 import { IS3FileResponse } from './file';
@@ -518,59 +518,61 @@ export enum DetailTabType {
   INFORMATION = 'information',
 }
 
-export const tabMap: { [key: string]: { id: string; key: string; title: string; roleList: Role[] } } = {
+export const tabMap: {
+  [key: string]: { id: string; key: string; title: string; roleList?: Role[]; permissionsExpression?: string };
+} = {
   [DetailTabType.CLIENTS]: {
     id: 'clients',
     key: 'clients',
     title: 'Clients',
-    roleList: [Role.FCA_ADMIN],
+    permissionsExpression: UserModel.ProjectsPermission.VIEWACCESS,
   },
   [DetailTabType.COMPANIES]: {
     id: 'companies',
     key: 'companies',
     title: 'Companies',
-    roleList: [Role.CLIENT_ADMIN, Role.REGULAR_USER],
+    permissionsExpression: UserModel.ProjectsPermission.VIEWACCESS,
   },
   [DetailTabType.USERS]: {
     id: 'users',
     key: 'users',
     title: 'Users',
-    roleList: [Role.FCA_ADMIN, Role.CLIENT_ADMIN, Role.REGULAR_USER],
+    permissionsExpression: `${UserModel.UsersPermission.VIEWACCESS} AND ${UserModel.ProjectsPermission.VIEWACCESS}`,
   },
   [DetailTabType.WORKERS]: {
     id: 'workers',
     key: 'workers',
     title: 'Workers',
-    roleList: [Role.FCA_ADMIN, Role.CLIENT_ADMIN, Role.REGULAR_USER],
+    permissionsExpression: `${UserModel.WorkersPermission.VIEWACCESS} AND ${UserModel.ProjectsPermission.VIEWACCESS}`,
   },
   [DetailTabType.VISITORS]: {
     id: 'visitors',
     key: 'visitors',
     title: 'Visitors',
-    roleList: [Role.FCA_ADMIN, Role.CLIENT_ADMIN, Role.REGULAR_USER],
+    permissionsExpression: `${UserModel.ProjectsPermission.VIEWACCESS} AND ${UserModel.BadgesPermission.VIEWACCESS}`,
   },
   [DetailTabType.ACS]: {
     id: 'acs',
     key: 'acs',
     title: 'ACS',
-    roleList: [Role.FCA_ADMIN, Role.CLIENT_ADMIN, Role.REGULAR_USER],
+    permissionsExpression: UserModel.AccessControlSystemsPermission.VIEWACCESS,
   },
   [DetailTabType.BPS]: {
     id: 'bps',
     key: 'bps',
     title: 'BPS',
-    roleList: [Role.FCA_ADMIN, Role.CLIENT_ADMIN, Role.REGULAR_USER],
+    permissionsExpression: UserModel.BadgePrintingSystemsPermission.VIEWACCESS,
   },
   [DetailTabType.INVOICES]: {
     id: 'invoices',
     key: 'invoices',
     title: 'Invoices',
-    roleList: [Role.FCA_ADMIN, Role.CLIENT_ADMIN, Role.REGULAR_USER],
+    permissionsExpression: `${UserModel.InvoicesPermission.VIEWACCESS} AND ${UserModel.ProjectsPermission.VIEWACCESS}`,
   },
   [DetailTabType.INFORMATION]: {
     id: 'information',
     key: 'information',
     title: 'Information',
-    roleList: [Role.FCA_ADMIN, Role.CLIENT_ADMIN, Role.REGULAR_USER],
+    permissionsExpression: UserModel.ProjectsPermission.VIEWACCESS,
   },
 };

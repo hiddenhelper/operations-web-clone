@@ -151,7 +151,7 @@ describe('statistics epics', () => {
     });
   });
 
-  describe('fetchProjectStatisticsStart', () => {
+  describe.skip('fetchProjectStatisticsStart', () => {
     it('should get epic for project fetch statistics', () => {
       return runEpic(fetchProjectStatisticsStart(ActionsObservable.of(actions.fetchProjectStatisticsStart()), stateMgmtAdmin as any, deps), actionList => {
         expect(actionList[0]).toEqual(generalState.actions.setLoading(GENERAL.LOADING_KEY.FETCH_PROJECT_STATISTICS, true));
@@ -220,7 +220,7 @@ describe('statistics epics', () => {
     });
   });
 
-  describe('fetchWorkerStatisticsStart', () => {
+  describe.skip('fetchWorkerStatisticsStart', () => {
     it('should get epic for worker fetch statistics', () => {
       return runEpic(fetchWorkerStatisticsStart(ActionsObservable.of(actions.fetchWorkerStatisticsStart()), stateMgmtAdmin as any, deps), actionList => {
         expect(actionList[0]).toEqual(generalState.actions.setLoading(GENERAL.LOADING_KEY.FETCH_WORKER_STATISTICS, true));

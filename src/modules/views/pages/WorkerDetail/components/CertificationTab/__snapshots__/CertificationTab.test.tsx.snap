@@ -3,29 +3,29 @@
 exports[`CertificationTab should render 1`] = `
 <div>
   <div
-    class="makeStyles-tableWrapper-227"
+    class="makeStyles-tableWrapper-219"
   >
     <div
-      class="makeStyles-filterActionsContainer-238 makeStyles-filterActionsContainerPadding-240"
+      class="makeStyles-filterActionsContainer-230 makeStyles-filterActionsContainerPadding-232"
     >
       <div
-        class="MuiBox-root MuiBox-root-318 makeStyles-filterStatusContainer-241"
+        class="MuiBox-root MuiBox-root-310 makeStyles-filterStatusContainer-233"
       >
         <div
-          class="MuiBox-root MuiBox-root-319 makeStyles-filterStatusContainer-241 makeStyles-autocompleteFilterStatus-258"
+          class="MuiBox-root MuiBox-root-311 makeStyles-filterStatusContainer-233 makeStyles-autocompleteFilterStatus-250"
         >
           <div
-            class="makeStyles-floatingFilterWrapper-247 makeStyles-filterWrapper-246 makeStyles-buttonContainer-321 floatingFilterWrapper"
+            class="makeStyles-floatingFilterWrapper-239 makeStyles-filterWrapper-238 makeStyles-buttonContainer-313 floatingFilterWrapper"
           >
             <span
-              class="makeStyles-floatingFilterButton-248"
+              class="makeStyles-floatingFilterButton-240"
               data-testid="controlled-button"
               tabindex="-1"
             >
               <button
                 aria-controls="false"
                 aria-haspopup="true"
-                class="MuiButtonBase-root MuiButton-root MuiButton-text makeStyles-buttonFilter-256"
+                class="MuiButtonBase-root MuiButton-root MuiButton-text makeStyles-buttonFilter-248"
                 data-testid="button-filter-open"
                 tabindex="0"
                 type="button"
@@ -38,7 +38,7 @@ exports[`CertificationTab should render 1`] = `
                     class="MuiButton-endIcon MuiButton-iconSizeMedium"
                   >
                     <svg
-                      class="makeStyles-dropdownIcon-250"
+                      class="makeStyles-dropdownIcon-242"
                     >
                       expand.svg
                     </svg>
@@ -49,21 +49,6 @@ exports[`CertificationTab should render 1`] = `
           </div>
         </div>
       </div>
-      <button
-        class="MuiButtonBase-root MuiButton-root MuiButton-contained makeStyles-createButton-293 makeStyles-primaryButtonLarge-295 MuiButton-containedPrimary MuiButton-containedSizeLarge MuiButton-sizeLarge MuiButton-fullWidth"
-        data-testid="open-certification-modal-btn"
-        tabindex="0"
-        type="button"
-      >
-        <span
-          class="MuiButton-label"
-        >
-          Add Certification
-        </span>
-        <span
-          class="MuiTouchRipple-root"
-        />
-      </button>
     </div>
     <table
       aria-label="device-list"
@@ -111,7 +96,7 @@ exports[`CertificationTab should render 1`] = `
         class="MuiTableBody-root"
       >
         <tr
-          class="MuiTableRow-root WithStyles(ForwardRef(TableRow))-root-325"
+          class="MuiTableRow-root WithStyles(ForwardRef(TableRow))-root-317"
           data-testid="certification-list-row"
           style="cursor: pointer;"
         >
@@ -139,11 +124,11 @@ exports[`CertificationTab should render 1`] = `
              
           </td>
           <td
-            class="MuiTableCell-root MuiTableCell-body makeStyles-noTopCell-265 makeStyles-threeDotsWrapper-254"
+            class="MuiTableCell-root MuiTableCell-body makeStyles-noTopCell-257 makeStyles-threeDotsWrapper-246"
             data-testid="row-project"
           >
             <a
-              class="Link-root-326"
+              class="Link-root-318"
               href="/projects/detail/9164e4c4-6521-47bb-97fd-c75ac02b2cf2"
               title="View Project detail"
             >
@@ -153,67 +138,13 @@ exports[`CertificationTab should render 1`] = `
           <td
             class="MuiTableCell-root MuiTableCell-body"
             data-testid="update-delete-cell"
-          >
-            <span
-              class="makeStyles-invoiceRowButton-328"
-              data-testid="controlled-button"
-              tabindex="-1"
-            >
-              <div
-                class="MuiBox-root MuiBox-root-330 makeStyles-filterStatusContainer-241 buttonMenuContainer"
-              >
-                <div
-                  class="makeStyles-filterWrapper-246 buttonMenuWrapper"
-                >
-                  <span
-                    class=""
-                    data-testid="controlled-button"
-                    tabindex="-1"
-                  >
-                    <button
-                      aria-controls="false"
-                      aria-haspopup="true"
-                      class="MuiButtonBase-root MuiButton-root MuiButton-contained makeStyles-invoiceActionsButton-329 MuiButton-containedPrimary"
-                      data-testid="popover-button"
-                      tabindex="0"
-                      type="button"
-                    >
-                      <span
-                        class="MuiButton-label"
-                      >
-                        
-                        <span
-                          class="MuiButton-endIcon MuiButton-iconSizeMedium"
-                        >
-                          <svg
-                            class="makeStyles-invoiceIconDisabled-327"
-                          >
-                            three-dots.svg
-                          </svg>
-                        </span>
-                      </span>
-                    </button>
-                  </span>
-                  <span
-                    class=""
-                  >
-                    <div
-                      class="makeStyles-iconInactive-331"
-                      data-testid="popover-wrapper"
-                    >
-                      
-                    </div>
-                  </span>
-                </div>
-              </div>
-            </span>
-          </td>
+          />
         </tr>
       </tbody>
     </table>
     <nav
       aria-label="pagination navigation"
-      class="MuiPagination-root  makeStyles-pagination-335"
+      class="MuiPagination-root  makeStyles-pagination-319"
       data-testid="pagination"
     >
       <ul
@@ -284,29 +215,29 @@ exports[`CertificationTab should render detail loading 1`] = `
   aria-hidden="true"
 >
   <div
-    class="makeStyles-tableWrapper-545"
+    class="makeStyles-tableWrapper-519"
   >
     <div
-      class="makeStyles-filterActionsContainer-556 makeStyles-filterActionsContainerPadding-558"
+      class="makeStyles-filterActionsContainer-530 makeStyles-filterActionsContainerPadding-532"
     >
       <div
-        class="MuiBox-root MuiBox-root-636 makeStyles-filterStatusContainer-559"
+        class="MuiBox-root MuiBox-root-610 makeStyles-filterStatusContainer-533"
       >
         <div
-          class="MuiBox-root MuiBox-root-637 makeStyles-filterStatusContainer-559 makeStyles-autocompleteFilterStatus-576"
+          class="MuiBox-root MuiBox-root-611 makeStyles-filterStatusContainer-533 makeStyles-autocompleteFilterStatus-550"
         >
           <div
-            class="makeStyles-floatingFilterWrapper-565 makeStyles-filterWrapper-564 makeStyles-buttonContainer-639 floatingFilterWrapper"
+            class="makeStyles-floatingFilterWrapper-539 makeStyles-filterWrapper-538 makeStyles-buttonContainer-613 floatingFilterWrapper"
           >
             <span
-              class="makeStyles-floatingFilterButton-566"
+              class="makeStyles-floatingFilterButton-540"
               data-testid="controlled-button"
               tabindex="-1"
             >
               <button
                 aria-controls="false"
                 aria-haspopup="true"
-                class="MuiButtonBase-root MuiButton-root MuiButton-text makeStyles-buttonFilter-574"
+                class="MuiButtonBase-root MuiButton-root MuiButton-text makeStyles-buttonFilter-548"
                 data-testid="button-filter-open"
                 tabindex="0"
                 type="button"
@@ -319,7 +250,7 @@ exports[`CertificationTab should render detail loading 1`] = `
                     class="MuiButton-endIcon MuiButton-iconSizeMedium"
                   >
                     <svg
-                      class="makeStyles-dropdownIcon-568"
+                      class="makeStyles-dropdownIcon-542"
                     >
                       expand.svg
                     </svg>
@@ -330,21 +261,6 @@ exports[`CertificationTab should render detail loading 1`] = `
           </div>
         </div>
       </div>
-      <button
-        class="MuiButtonBase-root MuiButton-root MuiButton-contained makeStyles-createButton-611 makeStyles-primaryButtonLarge-613 MuiButton-containedPrimary MuiButton-containedSizeLarge MuiButton-sizeLarge MuiButton-fullWidth"
-        data-testid="open-certification-modal-btn"
-        tabindex="0"
-        type="button"
-      >
-        <span
-          class="MuiButton-label"
-        >
-          Add Certification
-        </span>
-        <span
-          class="MuiTouchRipple-root"
-        />
-      </button>
     </div>
     <table
       aria-label="device-list"
@@ -392,7 +308,7 @@ exports[`CertificationTab should render detail loading 1`] = `
         class="MuiTableBody-root"
       >
         <tr
-          class="MuiTableRow-root WithStyles(ForwardRef(TableRow))-root-643"
+          class="MuiTableRow-root WithStyles(ForwardRef(TableRow))-root-617"
           data-testid="certification-list-row"
           style="cursor: pointer;"
         >
@@ -420,11 +336,11 @@ exports[`CertificationTab should render detail loading 1`] = `
              
           </td>
           <td
-            class="MuiTableCell-root MuiTableCell-body makeStyles-noTopCell-583 makeStyles-threeDotsWrapper-572"
+            class="MuiTableCell-root MuiTableCell-body makeStyles-noTopCell-557 makeStyles-threeDotsWrapper-546"
             data-testid="row-project"
           >
             <a
-              class="Link-root-644"
+              class="Link-root-618"
               href="/projects/detail/9164e4c4-6521-47bb-97fd-c75ac02b2cf2"
               title="View Project detail"
             >
@@ -434,67 +350,13 @@ exports[`CertificationTab should render detail loading 1`] = `
           <td
             class="MuiTableCell-root MuiTableCell-body"
             data-testid="update-delete-cell"
-          >
-            <span
-              class="makeStyles-invoiceRowButton-646"
-              data-testid="controlled-button"
-              tabindex="-1"
-            >
-              <div
-                class="MuiBox-root MuiBox-root-648 makeStyles-filterStatusContainer-559 buttonMenuContainer"
-              >
-                <div
-                  class="makeStyles-filterWrapper-564 buttonMenuWrapper"
-                >
-                  <span
-                    class=""
-                    data-testid="controlled-button"
-                    tabindex="-1"
-                  >
-                    <button
-                      aria-controls="false"
-                      aria-haspopup="true"
-                      class="MuiButtonBase-root MuiButton-root MuiButton-contained makeStyles-invoiceActionsButton-647 MuiButton-containedPrimary"
-                      data-testid="popover-button"
-                      tabindex="0"
-                      type="button"
-                    >
-                      <span
-                        class="MuiButton-label"
-                      >
-                        
-                        <span
-                          class="MuiButton-endIcon MuiButton-iconSizeMedium"
-                        >
-                          <svg
-                            class="makeStyles-invoiceIconDisabled-645"
-                          >
-                            three-dots.svg
-                          </svg>
-                        </span>
-                      </span>
-                    </button>
-                  </span>
-                  <span
-                    class=""
-                  >
-                    <div
-                      class="makeStyles-iconInactive-649"
-                      data-testid="popover-wrapper"
-                    >
-                      
-                    </div>
-                  </span>
-                </div>
-              </div>
-            </span>
-          </td>
+          />
         </tr>
       </tbody>
     </table>
     <nav
       aria-label="pagination navigation"
-      class="MuiPagination-root  makeStyles-pagination-653"
+      class="MuiPagination-root  makeStyles-pagination-619"
       data-testid="pagination"
     >
       <ul
@@ -563,29 +425,29 @@ exports[`CertificationTab should render detail loading 1`] = `
 exports[`CertificationTab should render loading 1`] = `
 <div>
   <div
-    class="makeStyles-tableWrapper-447"
+    class="makeStyles-tableWrapper-421"
   >
     <div
-      class="makeStyles-filterActionsContainer-458 makeStyles-filterActionsContainerPadding-460"
+      class="makeStyles-filterActionsContainer-432 makeStyles-filterActionsContainerPadding-434"
     >
       <div
-        class="MuiBox-root MuiBox-root-538 makeStyles-filterStatusContainer-461"
+        class="MuiBox-root MuiBox-root-512 makeStyles-filterStatusContainer-435"
       >
         <div
-          class="MuiBox-root MuiBox-root-539 makeStyles-filterStatusContainer-461 makeStyles-autocompleteFilterStatus-478"
+          class="MuiBox-root MuiBox-root-513 makeStyles-filterStatusContainer-435 makeStyles-autocompleteFilterStatus-452"
         >
           <div
-            class="makeStyles-floatingFilterWrapper-467 makeStyles-filterWrapper-466 makeStyles-buttonContainer-541 floatingFilterWrapper"
+            class="makeStyles-floatingFilterWrapper-441 makeStyles-filterWrapper-440 makeStyles-buttonContainer-515 floatingFilterWrapper"
           >
             <span
-              class="makeStyles-floatingFilterButton-468"
+              class="makeStyles-floatingFilterButton-442"
               data-testid="controlled-button"
               tabindex="-1"
             >
               <button
                 aria-controls="false"
                 aria-haspopup="true"
-                class="MuiButtonBase-root MuiButton-root MuiButton-text makeStyles-buttonFilter-476"
+                class="MuiButtonBase-root MuiButton-root MuiButton-text makeStyles-buttonFilter-450"
                 data-testid="button-filter-open"
                 tabindex="0"
                 type="button"
@@ -598,7 +460,7 @@ exports[`CertificationTab should render loading 1`] = `
                     class="MuiButton-endIcon MuiButton-iconSizeMedium"
                   >
                     <svg
-                      class="makeStyles-dropdownIcon-470"
+                      class="makeStyles-dropdownIcon-444"
                     >
                       expand.svg
                     </svg>
@@ -609,21 +471,6 @@ exports[`CertificationTab should render loading 1`] = `
           </div>
         </div>
       </div>
-      <button
-        class="MuiButtonBase-root MuiButton-root MuiButton-contained makeStyles-createButton-513 makeStyles-primaryButtonLarge-515 MuiButton-containedPrimary MuiButton-containedSizeLarge MuiButton-sizeLarge MuiButton-fullWidth"
-        data-testid="open-certification-modal-btn"
-        tabindex="0"
-        type="button"
-      >
-        <span
-          class="MuiButton-label"
-        >
-          Add Certification
-        </span>
-        <span
-          class="MuiTouchRipple-root"
-        />
-      </button>
     </div>
     Loading...
   </div>
@@ -633,29 +480,29 @@ exports[`CertificationTab should render loading 1`] = `
 exports[`CertificationTab should render with secondary values 1`] = `
 <div>
   <div
-    class="makeStyles-tableWrapper-336"
+    class="makeStyles-tableWrapper-320"
   >
     <div
-      class="makeStyles-filterActionsContainer-347 makeStyles-filterActionsContainerPadding-349"
+      class="makeStyles-filterActionsContainer-331 makeStyles-filterActionsContainerPadding-333"
     >
       <div
-        class="MuiBox-root MuiBox-root-427 makeStyles-filterStatusContainer-350"
+        class="MuiBox-root MuiBox-root-411 makeStyles-filterStatusContainer-334"
       >
         <div
-          class="MuiBox-root MuiBox-root-428 makeStyles-filterStatusContainer-350 makeStyles-autocompleteFilterStatus-367"
+          class="MuiBox-root MuiBox-root-412 makeStyles-filterStatusContainer-334 makeStyles-autocompleteFilterStatus-351"
         >
           <div
-            class="makeStyles-floatingFilterWrapper-356 makeStyles-filterWrapper-355 makeStyles-buttonContainer-430 floatingFilterWrapper"
+            class="makeStyles-floatingFilterWrapper-340 makeStyles-filterWrapper-339 makeStyles-buttonContainer-414 floatingFilterWrapper"
           >
             <span
-              class="makeStyles-floatingFilterButton-357"
+              class="makeStyles-floatingFilterButton-341"
               data-testid="controlled-button"
               tabindex="-1"
             >
               <button
                 aria-controls="false"
                 aria-haspopup="true"
-                class="MuiButtonBase-root MuiButton-root MuiButton-text makeStyles-buttonFilter-365"
+                class="MuiButtonBase-root MuiButton-root MuiButton-text makeStyles-buttonFilter-349"
                 data-testid="button-filter-open"
                 tabindex="0"
                 type="button"
@@ -668,7 +515,7 @@ exports[`CertificationTab should render with secondary values 1`] = `
                     class="MuiButton-endIcon MuiButton-iconSizeMedium"
                   >
                     <svg
-                      class="makeStyles-dropdownIcon-359"
+                      class="makeStyles-dropdownIcon-343"
                     >
                       expand.svg
                     </svg>
@@ -679,21 +526,6 @@ exports[`CertificationTab should render with secondary values 1`] = `
           </div>
         </div>
       </div>
-      <button
-        class="MuiButtonBase-root MuiButton-root MuiButton-contained makeStyles-createButton-402 makeStyles-primaryButtonLarge-404 MuiButton-containedPrimary MuiButton-containedSizeLarge MuiButton-sizeLarge MuiButton-fullWidth"
-        data-testid="open-certification-modal-btn"
-        tabindex="0"
-        type="button"
-      >
-        <span
-          class="MuiButton-label"
-        >
-          Add Certification
-        </span>
-        <span
-          class="MuiTouchRipple-root"
-        />
-      </button>
     </div>
     <table
       aria-label="device-list"
@@ -741,7 +573,7 @@ exports[`CertificationTab should render with secondary values 1`] = `
         class="MuiTableBody-root"
       >
         <tr
-          class="MuiTableRow-root WithStyles(ForwardRef(TableRow))-root-434"
+          class="MuiTableRow-root WithStyles(ForwardRef(TableRow))-root-418"
           data-testid="certification-list-row"
           style="cursor: pointer;"
         >
@@ -769,11 +601,11 @@ exports[`CertificationTab should render with secondary values 1`] = `
              
           </td>
           <td
-            class="MuiTableCell-root MuiTableCell-body makeStyles-noTopCell-374 makeStyles-threeDotsWrapper-363"
+            class="MuiTableCell-root MuiTableCell-body makeStyles-noTopCell-358 makeStyles-threeDotsWrapper-347"
             data-testid="row-project"
           >
             <a
-              class="Link-root-435"
+              class="Link-root-419"
               href="/projects/detail/9164e4c4-6521-47bb-97fd-c75ac02b2cf2"
               title="View Project detail"
             >
@@ -783,64 +615,10 @@ exports[`CertificationTab should render with secondary values 1`] = `
           <td
             class="MuiTableCell-root MuiTableCell-body"
             data-testid="update-delete-cell"
-          >
-            <span
-              class="makeStyles-invoiceRowButton-437"
-              data-testid="controlled-button"
-              tabindex="-1"
-            >
-              <div
-                class="MuiBox-root MuiBox-root-439 makeStyles-filterStatusContainer-350 buttonMenuContainer"
-              >
-                <div
-                  class="makeStyles-filterWrapper-355 buttonMenuWrapper"
-                >
-                  <span
-                    class=""
-                    data-testid="controlled-button"
-                    tabindex="-1"
-                  >
-                    <button
-                      aria-controls="false"
-                      aria-haspopup="true"
-                      class="MuiButtonBase-root MuiButton-root MuiButton-contained makeStyles-invoiceActionsButton-438 MuiButton-containedPrimary"
-                      data-testid="popover-button"
-                      tabindex="0"
-                      type="button"
-                    >
-                      <span
-                        class="MuiButton-label"
-                      >
-                        
-                        <span
-                          class="MuiButton-endIcon MuiButton-iconSizeMedium"
-                        >
-                          <svg
-                            class="makeStyles-invoiceIconDisabled-436"
-                          >
-                            three-dots.svg
-                          </svg>
-                        </span>
-                      </span>
-                    </button>
-                  </span>
-                  <span
-                    class=""
-                  >
-                    <div
-                      class="makeStyles-iconInactive-440"
-                      data-testid="popover-wrapper"
-                    >
-                      
-                    </div>
-                  </span>
-                </div>
-              </div>
-            </span>
-          </td>
+          />
         </tr>
         <tr
-          class="MuiTableRow-root WithStyles(ForwardRef(TableRow))-root-434"
+          class="MuiTableRow-root WithStyles(ForwardRef(TableRow))-root-418"
           data-testid="certification-list-row"
           style="cursor: pointer;"
         >
@@ -868,11 +646,11 @@ exports[`CertificationTab should render with secondary values 1`] = `
              
           </td>
           <td
-            class="MuiTableCell-root MuiTableCell-body makeStyles-noTopCell-374 makeStyles-threeDotsWrapper-363"
+            class="MuiTableCell-root MuiTableCell-body makeStyles-noTopCell-358 makeStyles-threeDotsWrapper-347"
             data-testid="row-project"
           >
             <a
-              class="Link-root-435"
+              class="Link-root-419"
               href="/projects/detail/8aa1c4c4-6521-47bb-27fd-af5ac02b2cd8"
               title="View Project detail"
             >
@@ -882,64 +660,10 @@ exports[`CertificationTab should render with secondary values 1`] = `
           <td
             class="MuiTableCell-root MuiTableCell-body"
             data-testid="update-delete-cell"
-          >
-            <span
-              class="makeStyles-invoiceRowButton-437"
-              data-testid="controlled-button"
-              tabindex="-1"
-            >
-              <div
-                class="MuiBox-root MuiBox-root-444 makeStyles-filterStatusContainer-350 buttonMenuContainer"
-              >
-                <div
-                  class="makeStyles-filterWrapper-355 buttonMenuWrapper"
-                >
-                  <span
-                    class=""
-                    data-testid="controlled-button"
-                    tabindex="-1"
-                  >
-                    <button
-                      aria-controls="false"
-                      aria-haspopup="true"
-                      class="MuiButtonBase-root MuiButton-root MuiButton-contained makeStyles-invoiceActionsButton-438 MuiButton-containedPrimary"
-                      data-testid="popover-button"
-                      tabindex="0"
-                      type="button"
-                    >
-                      <span
-                        class="MuiButton-label"
-                      >
-                        
-                        <span
-                          class="MuiButton-endIcon MuiButton-iconSizeMedium"
-                        >
-                          <svg
-                            class="makeStyles-invoiceIconDisabled-436"
-                          >
-                            three-dots.svg
-                          </svg>
-                        </span>
-                      </span>
-                    </button>
-                  </span>
-                  <span
-                    class=""
-                  >
-                    <div
-                      class="makeStyles-iconInactive-440"
-                      data-testid="popover-wrapper"
-                    >
-                      
-                    </div>
-                  </span>
-                </div>
-              </div>
-            </span>
-          </td>
+          />
         </tr>
         <tr
-          class="MuiTableRow-root WithStyles(ForwardRef(TableRow))-root-434"
+          class="MuiTableRow-root WithStyles(ForwardRef(TableRow))-root-418"
           data-testid="certification-list-row"
           style="cursor: pointer;"
         >
@@ -967,11 +691,11 @@ exports[`CertificationTab should render with secondary values 1`] = `
              
           </td>
           <td
-            class="MuiTableCell-root MuiTableCell-body makeStyles-noTopCell-374 makeStyles-threeDotsWrapper-363"
+            class="MuiTableCell-root MuiTableCell-body makeStyles-noTopCell-358 makeStyles-threeDotsWrapper-347"
             data-testid="row-project"
           >
             <a
-              class="Link-root-435"
+              class="Link-root-419"
               href="/projects/detail/8aa1c4c4-6521-47bb-27fd-af5ac02b2cd8"
               title="View Project detail"
             >
@@ -981,67 +705,13 @@ exports[`CertificationTab should render with secondary values 1`] = `
           <td
             class="MuiTableCell-root MuiTableCell-body"
             data-testid="update-delete-cell"
-          >
-            <span
-              class="makeStyles-invoiceRowButton-437"
-              data-testid="controlled-button"
-              tabindex="-1"
-            >
-              <div
-                class="MuiBox-root MuiBox-root-445 makeStyles-filterStatusContainer-350 buttonMenuContainer"
-              >
-                <div
-                  class="makeStyles-filterWrapper-355 buttonMenuWrapper"
-                >
-                  <span
-                    class=""
-                    data-testid="controlled-button"
-                    tabindex="-1"
-                  >
-                    <button
-                      aria-controls="false"
-                      aria-haspopup="true"
-                      class="MuiButtonBase-root MuiButton-root MuiButton-contained makeStyles-invoiceActionsButton-438 MuiButton-containedPrimary"
-                      data-testid="popover-button"
-                      tabindex="0"
-                      type="button"
-                    >
-                      <span
-                        class="MuiButton-label"
-                      >
-                        
-                        <span
-                          class="MuiButton-endIcon MuiButton-iconSizeMedium"
-                        >
-                          <svg
-                            class="makeStyles-invoiceIconDisabled-436"
-                          >
-                            three-dots.svg
-                          </svg>
-                        </span>
-                      </span>
-                    </button>
-                  </span>
-                  <span
-                    class=""
-                  >
-                    <div
-                      class="makeStyles-iconInactive-440"
-                      data-testid="popover-wrapper"
-                    >
-                      
-                    </div>
-                  </span>
-                </div>
-              </div>
-            </span>
-          </td>
+          />
         </tr>
       </tbody>
     </table>
     <nav
       aria-label="pagination navigation"
-      class="MuiPagination-root  makeStyles-pagination-446"
+      class="MuiPagination-root  makeStyles-pagination-420"
       data-testid="pagination"
     >
       <ul

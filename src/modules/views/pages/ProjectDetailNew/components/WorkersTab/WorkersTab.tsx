@@ -4,16 +4,16 @@ import { Button, Table, TableRow, TableCell, TableHead, TableBody } from '@mater
 import ClientFilter from 'modules/views/shared/ClientFilter';
 import EmptyList from 'modules/views/shared/EmptyList';
 import Pagination from 'modules/views/shared/Pagination/Pagination';
-import RoleGuard from 'modules/views/shared/RoleGuard/RoleGuardContainer';
 import WorkerDrawer from 'modules/views/shared/WorkerDrawer';
 
 import WorkerRow from './WorkerRow';
 import WorkerModal from './WorkerModal';
 
-import { ClientModel, GeneralModel, ProjectModel, UserModel, WorkerModel } from 'modules/models';
+import { ClientModel, GeneralModel, ProjectModel, WorkerModel, UserModel } from 'modules/models';
 import { WorkersIcon } from 'constants/index';
 import { tableGlobalStyles } from 'assets/styles';
 import { useStyles as useButtonStyles } from '../../../../shared/FormHandler/ControlledButton/styles';
+import PermissionGuard from 'modules/views/shared/PermissionGuard';
 
 export interface IWorkersTabProps {
   projectId: string;
@@ -138,18 +138,20 @@ const WorkersTab = ({
             setQueryParams={setQueryParams}
             fetchClientList={fetchProjectClientList}
           />
-          <Button
-            className={`${buttonStyles.createButton} ${buttonStyles.primaryButtonLarge}`}
-            color="primary"
-            variant="contained"
-            fullWidth={true}
-            size="large"
-            data-testid="open-worker-modal-btn"
-            onClick={openModal}
-            disabled={ctaDisabled}
-          >
-            Assign Worker
-          </Button>
+          <PermissionGuard permissionsExpression={UserModel.WorkersPermission.MANAGE}>
+            <Button
+              className={`${buttonStyles.createButton} ${buttonStyles.primaryButtonLarge}`}
+              color="primary"
+              variant="contained"
+              fullWidth={true}
+              size="large"
+              data-testid="open-worker-modal-btn"
+              onClick={openModal}
+              disabled={ctaDisabled}
+            >
+              Assign Worker
+            </Button>
+          </PermissionGuard>
         </div>
         {workersList.length === 0 ? (
           <EmptyList icon={<WorkersIcon />} text="There are no Workers assigned" />
@@ -159,26 +161,38 @@ const WorkersTab = ({
               <TableHead>
                 <TableRow>
                   <TableCell>Name</TableCell>
-                  <RoleGuard roleList={[UserModel.Role.FCA_ADMIN]}>
-                    <TableCell>Client</TableCell>
-                  </RoleGuard>
-                  <RoleGuard roleList={[UserModel.Role.CLIENT_ADMIN, UserModel.Role.REGULAR_USER]}>
-                    <TableCell>Company</TableCell>
-                  </RoleGuard>
+                  {isFcAdmin && <TableCell>Client</TableCell>}
+                  {!isFcAdmin && <TableCell>Company</TableCell>}
                   <TableCell>Trades</TableCell>
                   <TableCell>Status in Project</TableCell>
                 </TableRow>
               </TableHead>
               <TableBody>
-                {workersList.map(worker => (
-                  <WorkerRow key={worker.id} onClick={handleOpenSummary} worker={worker} />
+                {workersList.map((worker, index) => (
+                  <PermissionGuard
+                    key={index}
+                    permissionsExpression={UserModel.WorkersPermission.VIEWACCESS}
+                    fallback={
+                      <WorkerRow
+                        key={worker.id}
+                        onClick={() => {
+                          console.log('Worker Drawer disabled');
+                        }}
+                        worker={worker}
+                      />
+                    }
+                  >
+                    <WorkerRow key={worker.id} onClick={handleOpenSummary} worker={worker} />
+                  </PermissionGuard>
                 ))}
               </TableBody>
             </Table>
             <Pagination page={queryParams.page} count={countWorkers} onChange={onPageChange} />
           </>
         )}
+
         <WorkerDrawer isLoading={summaryLoading && summaryLoading.isLoading} isOpen={drawer.open} onClose={handleCloseSummary} worker={selectedWorker} />
+
         {isModalOpen && (
           <WorkerModal
             projectId={currentProject.id}

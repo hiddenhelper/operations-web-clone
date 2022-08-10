@@ -92,11 +92,11 @@ const InvoiceInformation = ({ invoiceId, invoiceMap, loading, onClose, downloadI
                 <div className={modalClasses.headerData}>
                   <Logo styleClass={modalClasses.logoWrapper} />
                 </div>
-                <div className={modalClasses.headerMainContent}>
-                  <div className={modalClasses.titleWrapper}>
-                    <Typography className={modalClasses.title}>{getDefaultValue(invoice?.company?.name)}</Typography>
-                    <Typography className={modalClasses.title}>{getDefaultValue(invoice?.project.name)}</Typography>
-                    <Typography className={modalClasses.subTitle}>
+                <div className={classes.invoiceWrapper}>
+                  <div className={`${classes.titleCenter}`}>
+                    <Typography className={`${modalClasses.title} ${modalClasses.smallDevice}`}>{getDefaultValue(invoice?.company?.name)}</Typography>
+                    <Typography className={`${modalClasses.title} ${modalClasses.smallDevice}`}>{getDefaultValue(invoice?.project.name)}</Typography>
+                    <Typography className={`${modalClasses.subTitle} ${modalClasses.smallDevice}`}>
                       {getFormattedDate(invoice?.invoiceDate, GeneralModel.DateFormat.MONTH_YEAR)}.{isManual && ' Manual Invoice.'}
                     </Typography>
                   </div>
@@ -107,14 +107,14 @@ const InvoiceInformation = ({ invoiceId, invoiceMap, loading, onClose, downloadI
                       </IconButton>
                     </div>
                   )}
-                </div>
-                <div className={modalClasses.buttonsWrapper}>
-                  <Button disableRipple={true} className={modalClasses.closeButton} data-testid="close-invoice-info" onClick={onClose}>
-                    <CloseIcon />
-                  </Button>
+                  <div>
+                    <Button disableRipple={true} className={modalClasses.closeButton} data-testid="close-invoice-info" onClick={onClose}>
+                      <CloseIcon />
+                    </Button>
+                  </div>
                 </div>
               </div>
-              <DialogContent className={`${modalClasses.cardDividerMargin} ${modalClasses.dialogContentWrapper}`}>
+              <DialogContent className={`${modalClasses.cardDividerMargin} ${classes.dialogContent}`}>
                 <Card
                   title={`Invoice #${invoice?.invoiceNumber}`}
                   actionStyleClass={classes.invoiceStatusWrapper}
@@ -125,6 +125,8 @@ const InvoiceInformation = ({ invoiceId, invoiceMap, loading, onClose, downloadI
                         styleClasses={`${invoiceStatusMap[invoice?.status]?.class} ${classes.invoiceStatusChip}`}
                         label={invoiceStatusMap[invoice?.status]?.label}
                       />
+                      <br />
+                      <span className={`${classes.infoWrapper} ${classes.textColor}`}>Project: {getDefaultValue(invoice?.project.name)}</span>
                     </>
                   }
                 >

@@ -10,6 +10,8 @@ import ButtonLoader from 'modules/views/shared/ButtonLoader';
 
 import { useStyles } from './styles';
 import { useStyles as buttonStyles } from 'modules/views/shared/FormHandler/ControlledButton/styles';
+import PermissionGuard from 'modules/views/shared/PermissionGuard';
+import { UserModel } from 'modules/models';
 
 export interface IFormDialogProps {
   children: React.ReactNode;
@@ -72,17 +74,19 @@ const FormDialog = ({
             Discard Changes
           </Button>
         )}
-        <ButtonLoader
-          className={`${buttonClasses.saveButton} saveButton`}
-          onClick={handleSubmit}
-          color="primary"
-          variant="contained"
-          disabled={showHasChanges && !hasChanges}
-          data-testid="form-dialog-save"
-          text={confirmLabel}
-          loadingText={confirmLoadingLabel}
-          isLoading={isLoading}
-        />
+        <PermissionGuard permissionsExpression={UserModel.ProjectsPermission.MANAGE}>
+          <ButtonLoader
+            className={`${buttonClasses.saveButton} saveButton`}
+            onClick={handleSubmit}
+            color="primary"
+            variant="contained"
+            disabled={showHasChanges && !hasChanges}
+            data-testid="form-dialog-save"
+            text={confirmLabel}
+            loadingText={confirmLoadingLabel}
+            isLoading={isLoading}
+          />
+        </PermissionGuard>
       </DialogActions>
     </Dialog>
   );

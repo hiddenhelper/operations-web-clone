@@ -2,19 +2,21 @@ import React, { memo } from 'react';
 
 import DashboardRevenue from '../DashboardRevenue';
 
-import { GeneralModel, StatisticsModel, UserModel } from '../../../../models';
+import { GeneralModel, StatisticsModel } from '../../../../models';
 import { getConditionalDefaultValue } from '../../../../../utils/generalUtils';
 
 export interface IProjectsRevenueProps {
-  userRole: UserModel.Role;
   queryParams: GeneralModel.IQueryParams;
   grossRevenueWidgetStatistics: StatisticsModel.ILineWidgetStatistics;
   grossRevenueWidgetLoading: GeneralModel.ILoadingStatus;
   fetchGrossRevenueWidget: (query: GeneralModel.IQueryParams) => void;
+  isFcaUser: boolean;
+  isAdmin: boolean;
 }
 
 const ProjectsRevenue = ({
-  userRole,
+  isFcaUser,
+  isAdmin,
   queryParams,
   grossRevenueWidgetStatistics,
   grossRevenueWidgetLoading,
@@ -22,7 +24,7 @@ const ProjectsRevenue = ({
 }: IProjectsRevenueProps) => {
   return (
     <DashboardRevenue
-      title={getConditionalDefaultValue(userRole === UserModel.Role.FCA_ADMIN, 'Projects Revenue', 'Projects Invoices')}
+      title={getConditionalDefaultValue(isFcaUser && isAdmin, 'Projects Revenue', 'Projects Invoices')}
       total={getConditionalDefaultValue(grossRevenueWidgetStatistics?.totalRevenue, `$${Math.trunc(grossRevenueWidgetStatistics?.totalRevenue)}`, null)}
       data={grossRevenueWidgetStatistics}
       loading={grossRevenueWidgetLoading}

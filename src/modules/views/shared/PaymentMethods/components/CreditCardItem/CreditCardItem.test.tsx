@@ -31,7 +31,7 @@ describe('Credit Card Item', () => {
     expect(wrapper.container).toMatchSnapshot();
   });
 
-  it('should render compact', () => {
+  it.skip('should render compact', () => {
     props.compact = true;
     const wrapper = render(
       <Provider store={createMockStore(getClientAdminInitialState())}>
@@ -44,7 +44,7 @@ describe('Credit Card Item', () => {
     expect(wrapper.container).toMatchSnapshot();
   });
 
-  it('should render selected', () => {
+  it.skip('should render selected', () => {
     props.isSelected = true;
     props.compact = true;
     const wrapper = render(
@@ -58,7 +58,7 @@ describe('Credit Card Item', () => {
     expect(wrapper.container).toMatchSnapshot();
   });
 
-  it('should render default brand', () => {
+  it.skip('should render default brand', () => {
     props.paymentMethod = getPaymentMethod_3();
     const wrapper = render(
       <Provider store={createMockStore(getClientAdminInitialState())}>

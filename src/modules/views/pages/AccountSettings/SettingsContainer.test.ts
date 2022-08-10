@@ -11,11 +11,14 @@ describe('SettingsContainer', () => {
   it('should mapStateToProps', () => {
     expect(mapStateToProps(getInitialState())).toEqual({
       userRole: getInitialState().auth.role,
+      isAdmin: getInitialState().auth.isAdmin,
+      isFcaUser: getInitialState().auth.isFcaUser,
       user: getInitialState().auth.session,
       accountData: getInitialState().user.accountData,
       fileMap: getInitialState().file.fileMap,
       loadingMap: getInitialState().general.loadingMap,
       saveLoading: undefined,
+      saveProcoreLoading: undefined,
       changePasswordLoading: undefined,
       status: { isConnected: false },
       countryList: [],

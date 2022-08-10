@@ -10,13 +10,14 @@ import AssignSubContractorModal from './components/AssignSubContractorModal';
 import ListView from './components/ListView';
 import HirearchyView from './components/HirearchyView';
 
-import { GeneralModel, ProjectModel, ResourceModel } from '../../../../../models';
+import { GeneralModel, ProjectModel, ResourceModel, UserModel } from '../../../../../models';
 import { HierarchyIcon, ListIcon } from '../../../../../../constants';
 import { getConditionalDefaultValue, getDefaultValue } from '../../../../../../utils/generalUtils';
 import { useLocationFilter } from '../../../../../../utils/useLocationFilter';
 import { useStyles as buttonStyles } from '../../../../shared/FormHandler/ControlledButton/styles';
 import { tableGlobalStyles } from '../../../../../../assets/styles';
 import { useStyles } from '../../styles';
+import PermissionGuard from 'modules/views/shared/PermissionGuard';
 
 export interface IAssignSubContractorTabProps {
   currentProject: ProjectModel.IProject;
@@ -85,7 +86,7 @@ const AssignSubContractorTab = ({
   }, [clearClientMap]);
   return (
     <>
-      <div className={`${tableGlobalClasses.filterActionsContainer} ${tableGlobalClasses.filterActionsContainerPadding}`}>
+      <div className={`${tableGlobalClasses.filterActionsContainer} ${tableGlobalClasses.filterActionsContainerPadding} ${classes.assignSubWrapper}`}>
         <div className={tableGlobalClasses.filterActionsContainerLeft}>
           <Box className={`${tableGlobalClasses.filterStatusContainer} ${tableGlobalClasses.autocompleteFilterStatus} ${tableGlobalClasses.leftFilter}`}>
             <SelectFilter
@@ -114,18 +115,20 @@ const AssignSubContractorTab = ({
               data-testid="hierarchy-view-btn"
             />
           </div>
-          <Button
-            className={`${buttonClasses.createButton} ${buttonClasses.primaryButtonExtraLarge}`}
-            color="primary"
-            variant="contained"
-            fullWidth={true}
-            size="large"
-            data-testid="opensubcontractor-modal-btn"
-            onClick={openModal}
-            disabled={ctaDisabled}
-          >
-            Assign Subcontractor
-          </Button>
+          <PermissionGuard permissionsExpression={UserModel.ProjectsPermission.MANAGE}>
+            <Button
+              className={`${buttonClasses.createButton} ${buttonClasses.primaryButtonExtraLarge}`}
+              color="primary"
+              variant="contained"
+              fullWidth={true}
+              size="large"
+              data-testid="opensubcontractor-modal-btn"
+              onClick={openModal}
+              disabled={ctaDisabled}
+            >
+              Assign Subcontractor
+            </Button>
+          </PermissionGuard>
         </div>
       </div>
       {isListView && (

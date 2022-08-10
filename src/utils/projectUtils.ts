@@ -110,12 +110,12 @@ export const getPlannedMonths = (startDate: string, endDate: string) => (endDate
 export const getProjectBadgeResourceRequest = (pendingBadges, fileMap, restOfFiles?: { [key: string]: string }) => {
   const initialObject = {
     generalContractorTemplate: null,
-    subcontractorTemplate: null,
+    subContractorTemplate: null,
     visitorTemplate: null,
   };
 
   if (
-    pendingBadges.includes(ProjectModel.ProjectBadgeLogos.GENERAL_CONTRACTOR_BADGE_LOGO) ||
+    pendingBadges.includes(ProjectNewModel.ProjectBadgeLogos.GENERAL_CONTRACTOR_BADGE_LOGO) ||
     pendingBadges.includes(ProjectNewModel.ProjectBadgeTemplates.GENERAL_CONTRACTOR_BADGE_TEMPLATE_FILE)
   ) {
     initialObject.generalContractorTemplate = {
@@ -133,25 +133,25 @@ export const getProjectBadgeResourceRequest = (pendingBadges, fileMap, restOfFil
   }
 
   if (
-    pendingBadges.includes(ProjectModel.ProjectBadgeLogos.SUBCONTRACTOR_BADGE_LOGO) ||
+    pendingBadges.includes(ProjectNewModel.ProjectBadgeLogos.SUBCONTRACTOR_BADGE_LOGO) ||
     pendingBadges.includes(ProjectNewModel.ProjectBadgeTemplates.SUBCONTRACTOR_BADGE_TEMPLATE_FILE)
   ) {
-    initialObject.subcontractorTemplate = {
+    initialObject.subContractorTemplate = {
       logoFileName: fileMap.subcontractorBadgeLogo ? (Object.values(fileMap.subcontractorBadgeLogo)[0] as any)?.file?.name : '',
       templateFileName: fileMap.subcontractorBadgeTemplate ? (Object.values(fileMap.subcontractorBadgeTemplate)[0] as any)?.file?.name : '',
     };
   } else if (restOfFiles.subcontractorBadgeLogo) {
-    initialObject.subcontractorTemplate = {
+    initialObject.subContractorTemplate = {
       logoFileName: restOfFiles.subcontractorBadgeLogo,
     };
   } else if (restOfFiles.subcontractorBadgeTemplate) {
-    initialObject.subcontractorTemplate = {
+    initialObject.subContractorTemplate = {
       templateFileName: restOfFiles.subcontractorBadgeTemplate,
     };
   }
 
   if (
-    pendingBadges.includes(ProjectModel.ProjectBadgeLogos.VISITOR_BADGE_LOGO) ||
+    pendingBadges.includes(ProjectNewModel.ProjectBadgeLogos.VISITOR_BADGE_LOGO) ||
     pendingBadges.includes(ProjectNewModel.ProjectBadgeTemplates.VISITOR_BADGE_TEMPLATE_FILE)
   ) {
     initialObject.visitorTemplate = {

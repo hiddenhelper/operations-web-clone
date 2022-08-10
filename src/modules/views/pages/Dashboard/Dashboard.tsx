@@ -5,7 +5,6 @@ import Typography from '@material-ui/core/Typography';
 import DashboardStatusWidget from 'modules/views/shared/StatisticWidget';
 import PageTitle from 'modules/views/shared/PageTitle';
 import Container from 'modules/views/shared/Container';
-import RoleGuard from 'modules/views/shared/RoleGuard';
 import FcaDashboard from './components/FcaDashboard';
 import ClientDashboard from './components/ClientDashboard';
 
@@ -18,33 +17,38 @@ import { statusWidgetStyles } from '../../shared/DashboardWidget/styles';
 import { listGlobalStyles } from '../../../../assets/styles';
 import { useStyles } from './styles';
 import { useTimeZone } from '../../../../utils/useTimeZone';
+import { hasValidPermissions } from 'modules/models/user';
 
 export interface IDashboardProps {
-  userRole: UserModel.Role;
   newBadges: StatisticsModel.ITodayWidgetStatistics;
   grossRevenue: StatisticsModel.ITodayWidgetStatistics;
   workersActivity: StatisticsModel.ITodayWidgetStatistics;
   newBadgesLoading: GeneralModel.ILoadingStatus;
   grossRevenueLoading: GeneralModel.ILoadingStatus;
   workersActivityLoading: GeneralModel.ILoadingStatus;
+  currentUserPermissions: UserModel.IPermission[];
   fetchNewBadges: () => void;
   fetchWorkersActivity: () => void;
   fetchGrossRevenue: () => void;
   clearStatistics: () => void;
+  isFcaUser: boolean;
+  isAdmin: boolean;
 }
 
 const Dashboard = ({
-  userRole,
   newBadges,
   grossRevenue,
   workersActivity,
   newBadgesLoading,
   grossRevenueLoading,
   workersActivityLoading,
+  currentUserPermissions,
   fetchNewBadges,
   fetchGrossRevenue,
   fetchWorkersActivity,
   clearStatistics,
+  isFcaUser,
+  isAdmin,
 }: IDashboardProps) => {
   useResize(); // listen window.resize
   const listClasses = listGlobalStyles();
@@ -69,10 +73,10 @@ const Dashboard = ({
   );
 
   useEffect(() => {
-    fetchNewBadges();
+    if (hasValidPermissions(UserModel.BadgesPermission.VIEWACCESS, currentUserPermissions)) fetchNewBadges();
     fetchGrossRevenue();
     fetchWorkersActivity();
-  }, [fetchNewBadges, fetchGrossRevenue, fetchWorkersActivity]);
+  }, [currentUserPermissions, fetchNewBadges, fetchGrossRevenue, fetchWorkersActivity]);
 
   useEffect(() => {
     return function unMount() {
@@ -82,11 +86,12 @@ const Dashboard = ({
 
   return (
     <Container>
-      <RoleGuard roleList={[UserModel.Role.CLIENT_ADMIN, UserModel.Role.REGULAR_USER]}>
+      {!isFcaUser && (
         <div className={classes.legend}>
           <InfoIcon /> Information displayed on the Dashboard represents your company’s activity and activity of companies that have been invited by you.
         </div>
-      </RoleGuard>
+      )}
+
       <PageTitle title="Hi!" subtitle="Welcome Back" right={<></>} styles={{ minWidth: '300px' }} />
       <div className={`${classes.widgetsContainer} ${classes.widgetsContainerPaddingBottom}`}>
         <div className={classes.activityWrapper}>
@@ -107,7 +112,7 @@ const Dashboard = ({
           />
           <DashboardStatusWidget
             loading={getDefaultValue(grossRevenueLoading?.isLoading, true)}
-            title={getConditionalDefaultValue(userRole === UserModel.Role.FCA_ADMIN, 'Revenue', 'Project Invoices')}
+            title={getConditionalDefaultValue(isFcaUser && isAdmin, 'Revenue', 'Project Invoices')}
             content={`$ ${formatNumberWithCommas(getDefaultValue(Math.trunc(grossRevenue?.total), 0))}`}
             renderActivity={
               <span className={statusWidgetClasses.widgetStatus}>
@@ -129,12 +134,9 @@ const Dashboard = ({
           />
         </div>
       </div>
-      <RoleGuard roleList={[UserModel.Role.FCA_ADMIN]}>
-        <FcaDashboard queryParams={queryParams} setQueryParams={setQueryParams} onPeriodChange={onFilterPeriodChange} />
-      </RoleGuard>
-      <RoleGuard roleList={[UserModel.Role.CLIENT_ADMIN, UserModel.Role.REGULAR_USER]}>
-        <ClientDashboard queryParams={queryParams} setQueryParams={setQueryParams} onPeriodChange={onFilterPeriodChange} />
-      </RoleGuard>
+      {isFcaUser && <FcaDashboard queryParams={queryParams} setQueryParams={setQueryParams} onPeriodChange={onFilterPeriodChange} />}
+
+      {!isFcaUser && <ClientDashboard queryParams={queryParams} setQueryParams={setQueryParams} onPeriodChange={onFilterPeriodChange} />}
     </Container>
   );
 };

@@ -6,8 +6,8 @@ import { paymentState } from '../../../../state-mgmt/payment';
 export const mapStateToProps = (state: IRootState) => ({
   paymentMethods: state.payment.paymentMethod,
   projectMap: state.projectNew.projectMap,
-  userCompanyId: state.auth.companyId,
-  userRole: state.auth.role,
+  userCompanyId: state.auth.currentCompanyId,
+  isFcaUser: state.auth.isFcaUser,
 });
 
 export const mapDispatchToProps = dispatch => ({

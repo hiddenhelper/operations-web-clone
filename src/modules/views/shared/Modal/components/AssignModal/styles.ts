@@ -26,10 +26,18 @@ export const useStyles = makeStyles(theme =>
       alignItems: 'center',
       fontSize: `${toREM(15)}`,
     },
+    assignFiltersCentered: {
+      justifyContent: 'center',
+    },
     filterElement: {
       display: 'flex',
       alignItems: 'center',
       marginRight: `${toREM(15)}`,
+    },
+    filterElementCentered: {
+      justifyContent: 'center',
+      marginTop: '10px',
+      marginBottom: '15px',
     },
     filterTextColor: {
       color: STYLE.COLOR.SECONDARY_DARKER,
@@ -196,6 +204,43 @@ export const useStyles = makeStyles(theme =>
       '&.email': {
         position: 'relative',
       },
+    },
+    userSearchInput: {
+      minWidth: `${toREM(245)}`,
+      fontSize: `${toREM(16)}`,
+      '& .MuiInputBase-root': {
+        backgroundColor: STYLE.COLOR.WHITE,
+        height: `${toREM(40)}`,
+        maxWidth: `${toREM(280)}`,
+        borderRadius: `${toREM(20)}`,
+        fontSize: `${toREM(16)}`,
+        '& ::placeholder': {
+          fontSize: `${toREM(16)}`,
+          fontWeight: 400,
+          textTransform: 'inherit',
+          lineHeight: `${toREM(26)}`,
+        },
+
+        '& .MuiOutlinedInput-input': {
+          paddingLeft: '6px',
+        },
+      },
+      '& .MuiOutlinedInput-root.Mui-focused': {
+        '& .MuiOutlinedInput-notchedOutline': {
+          borderColor: `${STYLE.COLOR.FOCUSED_PRIMARY}`,
+          borderWidth: '1.5px',
+        },
+      },
+    },
+    usersSelected: {
+      display: 'flex',
+      justifyContent: 'center',
+      marginTop: '15px',
+      marginBottom: '5px',
+    },
+    inputWrapper: {
+      display: 'flex',
+      justifyContent: 'center',
     },
   })
 );

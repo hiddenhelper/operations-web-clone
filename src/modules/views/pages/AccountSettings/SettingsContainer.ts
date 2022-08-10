@@ -22,6 +22,8 @@ export const mapStateToProps = (state: IRootState) => ({
   status: state.procore.status,
   countryList: state.general.countryList,
   saveProcoreLoading: state.general.loadingMap[GENERAL.LOADING_KEY.SAVE_PROCORE],
+  isFcaUser: state.auth.isFcaUser,
+  isAdmin: state.auth.isAdmin,
 });
 
 export const mapDispatchToProps = (dispatch: Dispatch) => ({

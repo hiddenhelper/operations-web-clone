@@ -15,7 +15,7 @@ import StepEditor from '../../../../../../shared/ResourceManagement/StepEditor';
 import ConsentFormCell from './components/ConsentFormCell';
 import ProjectInformationForm from './components/ProjectInformationForm';
 
-import { GeneralModel, ConsentFormModel, WorkerModel } from '../../../../../../../models';
+import { GeneralModel, ConsentFormModel, WorkerModel, UserModel } from '../../../../../../../models';
 import { CloseIcon, DownloadIcon } from '../../../../../../../../constants';
 import {
   getConditionalDefaultValue,
@@ -33,6 +33,7 @@ import { ruleMap } from '../../../../../../../../utils/useValidator';
 import { isValidNumber } from 'libphonenumber-js';
 import { useStyles as buttonStyles } from '../../../../../../shared/FormHandler/ControlledButton/styles';
 import { fullScreenModalGlobalStyles } from '../../../../../../../../assets/styles';
+import PermissionGuard from 'modules/views/shared/PermissionGuard';
 
 export interface IConsentFormProps {
   workerId: string;
@@ -426,9 +427,16 @@ const ConsentForm = ({
                       title="Project Information"
                       secondaryAction={
                         isEditable && (
-                          <IconButton className={buttonClasses.editButton} disableRipple={true} onClick={openEditor} data-testid="project-information-edit-btn">
-                            <CreateIcon />
-                          </IconButton>
+                          <PermissionGuard permissionsExpression={UserModel.WorkersPermission.MANAGE}>
+                            <IconButton
+                              className={buttonClasses.editButton}
+                              disableRipple={true}
+                              onClick={openEditor}
+                              data-testid="project-information-edit-btn"
+                            >
+                              <CreateIcon />
+                            </IconButton>
+                          </PermissionGuard>
                         )
                       }
                     >

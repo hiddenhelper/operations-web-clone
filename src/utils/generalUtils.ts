@@ -130,7 +130,7 @@ export const getNextObjectItem = (obj, currentKey) => {
 };
 
 export const getCompletedStepFields = (stepMap: GeneralModel.IStepMap, currentEntity): GeneralModel.IStepCompletedMap => {
-  return Object.entries(stepMap).reduce(
+  const result = Object.entries(stepMap).reduce(
     (accumulator, [key, item]) => ({
       ...accumulator,
       [item.key]: {
@@ -140,6 +140,7 @@ export const getCompletedStepFields = (stepMap: GeneralModel.IStepMap, currentEn
           if (f.requiredFunc) return f.requiredFunc({ field: f, accumulator: acc, value: currentEntity[f.name] });
           if (f.fields && Array.isArray(currentEntity[f.name])) {
             const multipleBy = currentEntity[f.name].length > 1 ? currentEntity[f.name].length : 1;
+            if (f.name === 'users') return acc + (f.fields.filter(ff => ff.required).length + 1) * multipleBy; // +1 is used for contact method(email or phone number should be required)
             return acc + f.fields.filter(ff => ff.required).length * multipleBy;
           } else if (f.fields) {
             return acc + f.fields.filter(ff => ff.required).length;
@@ -150,7 +151,14 @@ export const getCompletedStepFields = (stepMap: GeneralModel.IStepMap, currentEn
           if (f.completedFunc) return f.completedFunc({ field: f, accumulator: acc, value: currentEntity[f.name] });
           if (f.fields && Array.isArray(currentEntity[f.name])) {
             currentEntity[f.name].forEach(currentItem => {
-              acc = f.fields.map(field => field.required && (field.computePositive || !isEmpty(currentItem[field.name]))).filter(Boolean).length + acc;
+              if (
+                f.name === 'users' &&
+                ((currentItem?.preferredContactMethod === UserModel.PreferredContactMethod.EMAIL && currentItem.email) ||
+                  (currentItem?.preferredContactMethod === UserModel.PreferredContactMethod.PHONE && currentItem.mobilePhoneNumber))
+              ) {
+                acc += 1;
+              }
+              acc += f.fields.map(field => field.required && (field.computePositive || !isEmpty(currentItem[field.name]))).filter(Boolean).length;
             });
             return acc;
           }
@@ -167,6 +175,7 @@ export const getCompletedStepFields = (stepMap: GeneralModel.IStepMap, currentEn
     }),
     {}
   );
+  return result;
 };
 
 export const isTempId = (_id: string): boolean => /^temp-/.test(_id);

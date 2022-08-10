@@ -2,6 +2,7 @@ import { IAddress, Borough } from './address';
 import { INamedEntity, Gender } from './general';
 import { IFilePreview } from './file';
 import { BadgeType } from './badge';
+import { UserModel } from '.';
 
 export enum WorkerStatusFilter {
   NOT_SET = 0,
@@ -199,36 +200,42 @@ export interface IWorkerProject extends IWorker {
   workerProjectStatus: WorkerProjectInvitationStatus;
 }
 
-export const tabList: { id: string; key: string; title: string }[] = [
+export const tabList: { id: string; key: string; title: string; permissionsExpression?: string }[] = [
   {
     id: 'projects',
     key: 'projects',
     title: 'Projects',
+    permissionsExpression: UserModel.WorkersPermission.VIEWACCESS,
   },
   {
     id: 'activity',
     key: 'activity',
     title: 'Activity',
+    permissionsExpression: UserModel.WorkersPermission.VIEWACCESS,
   },
   {
     id: 'certifications',
     key: 'certifications',
     title: 'Certifications',
+    permissionsExpression: `${UserModel.WorkerCertificationsPermission.VIEWACCESS} AND ${UserModel.ProjectsPermission.VIEWACCESS}`,
   },
   {
     id: 'trainings',
     key: 'trainings',
     title: 'Trainings',
+    permissionsExpression: `${UserModel.WorkerTrainingsPermission.VIEWACCESS} AND ${UserModel.ProjectsPermission.VIEWACCESS}`,
   },
   {
     id: 'observations',
     key: 'observations',
     title: 'Observations',
+    permissionsExpression: `${UserModel.WorkerObservationsPermission.VIEWACCESS} AND ${UserModel.ProjectsPermission.VIEWACCESS}`,
   },
   {
     id: 'information',
     key: 'information',
     title: 'Information',
+    permissionsExpression: UserModel.WorkersPermission.VIEWACCESS,
   },
 ];
 

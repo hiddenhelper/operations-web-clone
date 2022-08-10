@@ -13,11 +13,12 @@ import BadgePrinterSystemRow from './BadgePrinterSystemRow';
 import BadgePrinterSystemDrawer from './BadgePrinterSystemDrawer';
 import SelectFilter from '../../../../shared/SelectFilter';
 
-import { GeneralModel, BadgePrintingSystemModel, DeviceModel } from '../../../../../models';
+import { GeneralModel, BadgePrintingSystemModel, DeviceModel, UserModel } from '../../../../../models';
 import { isEmpty } from '../../../../../../utils/generalUtils';
 import { useStyles as buttonStyles } from '../../../../shared/FormHandler/ControlledButton/styles';
 import { tableGlobalStyles } from '../../../../../../assets/styles';
 import { useHistory } from 'react-router';
+import PermissionGuard from 'modules/views/shared/PermissionGuard';
 
 export interface IBadgePrintingSystemTabProps {
   queryParams: GeneralModel.IQueryParams;
@@ -131,17 +132,19 @@ const BadgePrinterSystemTab = ({
         <Box className={`${tableGlobalClasses.filterStatusContainer} ${tableGlobalClasses.leftFilterStatusContainer}`}>
           <SelectFilter value={statusFilterValue} optionList={statusOptionList} onChange={onDeviceStatusChange} />
         </Box>
-        <Button
-          className={`${buttonClasses.createButton} ${buttonClasses.primaryButtonExtraLarge}`}
-          color="primary"
-          variant="contained"
-          fullWidth={true}
-          size="large"
-          data-testid="create-bps-btn"
-          onClick={onCreateClick}
-        >
-          Create New BPS
-        </Button>
+        <PermissionGuard permissionsExpression={UserModel.BadgePrintingSystemsPermission.MANAGE}>
+          <Button
+            className={`${buttonClasses.createButton} ${buttonClasses.primaryButtonExtraLarge}`}
+            color="primary"
+            variant="contained"
+            fullWidth={true}
+            size="large"
+            data-testid="create-bps-btn"
+            onClick={onCreateClick}
+          >
+            Create New BPS
+          </Button>
+        </PermissionGuard>
       </div>
       {loading && !loading.isLoading ? (
         <>

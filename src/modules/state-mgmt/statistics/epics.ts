@@ -2,7 +2,7 @@ import { Epic, ofType } from 'redux-observable';
 import { map, mergeMap } from 'rxjs/operators';
 import { concat, of } from 'rxjs';
 
-import { GeneralModel, UserModel } from '../../models';
+import { GeneralModel } from '../../models';
 import { GENERAL } from '../../../constants';
 import { handleError } from '../core/operators';
 import { IAction, IEpicDependencies, IRootState } from '../rootState';
@@ -48,15 +48,16 @@ export const fetchGrossRevenueStart: Epic<IAction, IAction, IRootState, IEpicDep
 export const fetchProjectStatisticsStart: Epic<IAction, IAction, IRootState, IEpicDependencies> = (action$, state$, deps) =>
   action$.pipe(
     ofType(ActionType.FETCH_PROJECT_STATISTICS_START),
-    mergeMap(() =>
-      concat(
+    mergeMap(() => {
+      const isFCAAdmin = state$.value.auth.isFcaUser && state$.value.auth.isAdmin;
+      return concat(
         of(generalState.actions.setLoading(GENERAL.LOADING_KEY.FETCH_PROJECT_STATISTICS, true)),
-        (state$.value.auth.role === UserModel.Role.FCA_ADMIN ? deps.apiService.getProjectStatistics() : deps.apiService.getCompanyProjectStatistics()).pipe(
+        (isFCAAdmin ? deps.apiService.getProjectStatistics() : deps.apiService.getCompanyProjectStatistics()).pipe(
           map(res => actions.fetchProjectStatisticsSuccess(res))
         ),
         of(generalState.actions.setLoading(GENERAL.LOADING_KEY.FETCH_PROJECT_STATISTICS, false))
-      ).pipe(handleError(GENERAL.LOADING_KEY.FETCH_PROJECT_STATISTICS))
-    )
+      ).pipe(handleError(GENERAL.LOADING_KEY.FETCH_PROJECT_STATISTICS));
+    })
   );
 
 export const fetchClientStatisticsStart: Epic<IAction, IAction, IRootState, IEpicDependencies> = (action$, state$, deps) =>
@@ -98,15 +99,16 @@ export const fetchInvoiceStatisticsStart: Epic<IAction, IAction, IRootState, IEp
 export const fetchWorkerStatisticsStart: Epic<IAction, IAction, IRootState, IEpicDependencies> = (action$, state$, deps) =>
   action$.pipe(
     ofType(ActionType.FETCH_WORKER_STATISTICS_START),
-    mergeMap(() =>
-      concat(
+    mergeMap(() => {
+      const isFCAAdmin = state$.value.auth.isFcaUser && state$.value.auth.isAdmin;
+      return concat(
         of(generalState.actions.setLoading(GENERAL.LOADING_KEY.FETCH_WORKER_STATISTICS, true)),
-        (state$.value.auth.role === UserModel.Role.FCA_ADMIN ? deps.apiService.getWorkerStatistics() : deps.apiService.getSelfWorkerStatistics()).pipe(
+        (isFCAAdmin ? deps.apiService.getWorkerStatistics() : deps.apiService.getSelfWorkerStatistics()).pipe(
           map(res => actions.fetchWorkerStatisticsSuccess(res))
         ),
         of(generalState.actions.setLoading(GENERAL.LOADING_KEY.FETCH_WORKER_STATISTICS, false))
-      ).pipe(handleError(GENERAL.LOADING_KEY.FETCH_WORKER_STATISTICS))
-    )
+      ).pipe(handleError(GENERAL.LOADING_KEY.FETCH_WORKER_STATISTICS));
+    })
   );
 
 export const fetchProjectWidgetStatisticsStart: Epic<IAction, IAction, IRootState, IEpicDependencies> = (action$, state$, deps) =>

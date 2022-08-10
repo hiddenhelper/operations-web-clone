@@ -22,11 +22,12 @@ import { isEmpty, isUUID } from '../../../../utils/generalUtils';
 import { listGlobalStyles, tableGlobalStyles } from '../../../../assets/styles';
 import { useStyles } from './styles';
 import { useTimeZone } from '../../../../utils/useTimeZone';
+import { hasValidPermissions } from 'modules/models/user';
 
 export interface IWorkerDetailProps {
   workerMap: GeneralModel.IEntityMap<WorkerModel.IWorker>;
   workerLoading: GeneralModel.ILoadingStatus;
-  userRole: UserModel.Role;
+  currentUserPermissions: UserModel.IPermission[];
   fetchWorker: (id: string) => void;
   clearWorkerMap: () => void;
   clearLoadingMap: () => void;
@@ -38,7 +39,7 @@ export interface IWorkerDetailProps {
 const WorkerDetail = ({
   workerMap,
   workerLoading,
-  userRole,
+  currentUserPermissions,
   fetchWorker,
   clearWorkerMap,
   clearLoadingMap,
@@ -54,7 +55,6 @@ const WorkerDetail = ({
   const { timeZoneOffset } = useTimeZone();
   const currentTab = useMemo(() => (step ? step : 'projects'), [step]);
   const currentWorker = useMemo(() => (workerMap[workerId] ? workerMap[workerId] : WorkerModel.getFallbackWorker()), [workerMap, workerId]);
-  const isFCAdmin = useMemo(() => userRole === UserModel.Role.FCA_ADMIN, [userRole]);
   const isWorkerLoaded = useMemo(() => !!(currentWorker.id !== null && workerLoading && !workerLoading.isLoading && !workerLoading.hasError), [
     currentWorker,
     workerLoading,
@@ -112,6 +112,14 @@ const WorkerDetail = ({
     navigate(`/workers/wizard/${currentWorker.id}`);
   }, [currentWorker, navigate]);
 
+  const tabList = useMemo(
+    () =>
+      Object.values(WorkerModel.tabList).filter(item => {
+        return hasValidPermissions(item.permissionsExpression, currentUserPermissions);
+      }),
+    [currentUserPermissions]
+  );
+
   return (
     <Container id="worker-detail">
       {currentWorker.invitationStatus === WorkerModel.WorkerStatus.MIGRATED && (
@@ -153,7 +161,7 @@ const WorkerDetail = ({
       </div>
       <div className={tableGlobalClasses.filterContainer}>
         <div className={tableGlobalClasses.statusFilter}>
-          {WorkerModel.tabList.map(optFilter => (
+          {tabList.map(optFilter => (
             <Link tabIndex={-1} key={optFilter.id} to={`/workers/detail/${workerId}/${optFilter.key}`} data-testid="filter-status-opt">
               <Button className={optFilter.key === currentTab ? tableGlobalClasses.activeFilter : ''}>{optFilter.title}</Button>
             </Link>
@@ -189,9 +197,7 @@ const WorkerDetail = ({
             onFilterProjectChange={onFilterProjectChange}
           />
         )}
-        {isWorkerLoaded && currentTab === WorkerModel.WorkerDetailsTabs.INFORMATION && (
-          <Review model={currentWorker} edit={true} isFCAdmin={isFCAdmin} onPageChange={navigate} />
-        )}
+        {isWorkerLoaded && currentTab === WorkerModel.WorkerDetailsTabs.INFORMATION && <Review model={currentWorker} edit={true} onPageChange={navigate} />}
       </div>
     </Container>
   );

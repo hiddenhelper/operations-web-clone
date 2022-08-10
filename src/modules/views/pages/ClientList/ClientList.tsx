@@ -17,6 +17,8 @@ import { getConditionalDefaultValue, getDefaultValue, sortByOrder } from 'utils/
 import { useQueryParamState } from 'utils/useQueryParamState';
 import { listGlobalStyles, tableGlobalStyles } from 'assets/styles';
 import { useStyles as buttonStyles } from 'modules/views/shared/FormHandler/ControlledButton/styles';
+import { useStyles } from './styles';
+import PermissionGuard from 'modules/views/shared/PermissionGuard';
 
 export interface IClientListProps {
   userRole: UserModel.Role;
@@ -66,6 +68,7 @@ const ClientList = ({
   const listClasses = listGlobalStyles();
   const tableGlobalClasses = tableGlobalStyles();
   const buttonClasses = buttonStyles();
+  const classes = useStyles();
 
   const clientListRef = useRef();
   const [queryParams, setQueryParams] = useQueryParamState<IQueryParams>({
@@ -193,31 +196,35 @@ const ClientList = ({
         <PageTitle
           title="Clients"
           right={
-            <div style={{ display: 'flex', justifyContent: 'flex-end' }}>
-              <Button
-                className={`${buttonClasses.createButton} ${buttonClasses.primaryButtonLarge} ${buttonClasses.borderPrimaryButton}`}
-                color="primary"
-                variant="outlined"
-                fullWidth={true}
-                size="large"
-                type="submit"
-                onClick={handleCreateClientClick}
-                data-testid="create-client-btn"
-              >
-                Create Client
-              </Button>
-              <Button
-                className={`${buttonClasses.saveButton} ${buttonClasses.primaryButtonLarge}`}
-                color="primary"
-                variant="contained"
-                fullWidth={true}
-                size="large"
-                type="submit"
-                onClick={handleInviteClientClick}
-                data-testid="invite-client-btn"
-              >
-                Invite Client
-              </Button>
+            <div className={classes.buttonsWrapper}>
+              <PermissionGuard permissionsExpression={UserModel.DraftClientsPermission.MANAGE}>
+                <Button
+                  className={`${buttonClasses.createButton} ${buttonClasses.primaryButtonLarge} ${buttonClasses.borderPrimaryButton}`}
+                  color="primary"
+                  variant="outlined"
+                  fullWidth={true}
+                  size="large"
+                  type="submit"
+                  onClick={handleCreateClientClick}
+                  data-testid="create-client-btn"
+                >
+                  Create Client
+                </Button>
+              </PermissionGuard>
+              <PermissionGuard permissionsExpression={UserModel.DraftClientsPermission.INVITE}>
+                <Button
+                  className={`${buttonClasses.saveButton} ${buttonClasses.primaryButtonLarge}`}
+                  color="primary"
+                  variant="contained"
+                  fullWidth={true}
+                  size="large"
+                  type="submit"
+                  onClick={handleInviteClientClick}
+                  data-testid="invite-client-btn"
+                >
+                  Invite Client
+                </Button>
+              </PermissionGuard>
             </div>
           }
         />
@@ -251,20 +258,24 @@ const ClientList = ({
           </div>
           {listLoading && !listLoading.isLoading ? (
             <>
-              <Table aria-label="company-list">
-                <TableHead>
-                  <TableRow>
-                    <TableCell>Name</TableCell>
-                    <TableCell>Trades</TableCell>
-                  </TableRow>
-                </TableHead>
-                <TableBody>
-                  {clientList.map(company => (
-                    <ClientRow key={company.id} company={company} onOpen={openClient} />
-                  ))}
-                </TableBody>
-              </Table>
-              <Pagination page={queryParams.page} count={pageCount} onChange={onPageChange} />
+              <PermissionGuard permissionsExpression={UserModel.DraftClientsPermission.VIEWACCESS}>
+                <Table aria-label="company-list">
+                  <TableHead>
+                    <TableRow>
+                      <TableCell>Name</TableCell>
+                      <TableCell>Trades</TableCell>
+                    </TableRow>
+                  </TableHead>
+                  <TableBody>
+                    {clientList.map(company => (
+                      <ClientRow key={company.id} company={company} onOpen={openClient} />
+                    ))}
+                  </TableBody>
+                </Table>
+              </PermissionGuard>
+              <PermissionGuard permissionsExpression={UserModel.DraftClientsPermission.VIEWACCESS}>
+                <Pagination page={queryParams.page} count={pageCount} onChange={onPageChange} />
+              </PermissionGuard>
             </>
           ) : (
             'Loading...'

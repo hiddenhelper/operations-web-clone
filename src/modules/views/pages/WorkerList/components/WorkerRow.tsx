@@ -2,7 +2,7 @@ import React, { memo, useCallback, useMemo } from 'react';
 import { Box, TableRow, TableCell, Avatar, Badge, withStyles } from '@material-ui/core';
 
 import AvatarImage from 'modules/views/shared/AvatarImage';
-import RoleGuard from 'modules/views/shared/RoleGuard';
+import PermissionGuard from 'modules/views/shared/PermissionGuard';
 import TableCellLink from 'modules/views/shared/TableCellLink';
 import WorkerInviteStatusIcon from 'modules/views/shared/WorkerInviteStatusIcon';
 
@@ -57,9 +57,9 @@ const WorkerRow = ({ worker, onOpen }: IWorkerRowProps) => {
       <TableCell>{worker.address?.city && worker.address?.stateCode ? <span>{`${worker.address.city}, ${worker.address.stateName}`}</span> : '-'}</TableCell>
       <TableCell>
         {worker.company?.id ? (
-          <RoleGuard roleList={[UserModel.Role.FCA_ADMIN]} fallback={<>{worker.company.name}</>}>
+          <PermissionGuard permissionsExpression={UserModel.ClientsPermission.VIEWACCESS} fallback={<>{worker.company.name}</>}>
             <TableCellLink href={`/clients/detail/${worker.company.id}`} text={worker.company.name} title="View Client details" />
-          </RoleGuard>
+          </PermissionGuard>
         ) : (
           '-'
         )}

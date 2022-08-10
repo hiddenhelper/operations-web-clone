@@ -75,5 +75,20 @@ export const useStyles = makeStyles(theme =>
       marginTop: 30,
       marginBottom: 10,
     },
+    invoiceWrapper: {
+      width: '100%',
+      display: 'flex',
+      alignItems: 'center',
+      justifyContent: 'space-between',
+    },
+    titleCenter: {
+      alignItems: 'center',
+    },
+    dialogContent: {
+      backgroundColor: '#F5F5F5',
+      margin: 'auto',
+      width: '90%',
+      marginLeft: '7%',
+    },
   })
 );

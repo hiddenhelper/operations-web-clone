@@ -13,12 +13,11 @@ import Divider from '@material-ui/core/Divider';
 import MenuPopover from 'modules/views/shared/MenuPopover';
 import Pagination from 'modules/views/shared/Pagination/Pagination';
 import AssignModal from 'modules/views/shared/Modal/components/AssignModal';
-import RoleGuard from 'modules/views/shared/RoleGuard/RoleGuardContainer';
 import ClientFilter from 'modules/views/shared/ClientFilter/ClientFilter';
 
 import WorkerModalRow from './WorkerModalRow';
 import MigratedWorker from './MigratedWorker';
-import { ClientModel, GeneralModel, UserModel, WorkerModel } from '../../../../../models';
+import { ClientModel, GeneralModel, WorkerModel } from '../../../../../models';
 import { SearchIcon } from '../../../../../../constants';
 import { deleteObjectItem, EMAIL_REGEXP, isEmpty, isObject } from '../../../../../../utils/generalUtils';
 import { useDebounce } from '../../../../../../utils/useDebounce';
@@ -354,27 +353,33 @@ const WorkerModal = ({
                   <Table aria-label="worker-list">
                     <TableHead>
                       <TableRow>
-                        <RoleGuard roleList={[UserModel.Role.FCA_ADMIN]}>
+                        {isFcAdmin && (
                           <>
                             <TableCell>Worker</TableCell>
                             <TableCell>Client</TableCell>
                             <TableCell>Trades</TableCell>
                             <TableCell>Projects Assigned</TableCell>
                           </>
-                        </RoleGuard>
-                        <RoleGuard roleList={[UserModel.Role.CLIENT_ADMIN, UserModel.Role.REGULAR_USER]}>
+                        )}
+                        {!isFcAdmin && (
                           <>
                             <TableCell>Worker</TableCell>
                             <TableCell>Trades</TableCell>
                             <TableCell>Projects Assigned</TableCell>
                             <TableCell>Company</TableCell>
                           </>
-                        </RoleGuard>
+                        )}
                       </TableRow>
                     </TableHead>
                     <TableBody>
                       {workerList.map(worker => (
-                        <WorkerModalRow key={worker.id} worker={worker} isSelected={!!selectedWorkerMap.original[worker.id]} onSelect={onSelectWorker} />
+                        <WorkerModalRow
+                          key={worker.id}
+                          worker={worker}
+                          isSelected={!!selectedWorkerMap.original[worker.id]}
+                          onSelect={onSelectWorker}
+                          isFcAdmin={isFcAdmin}
+                        />
                       ))}
                     </TableBody>
                   </Table>

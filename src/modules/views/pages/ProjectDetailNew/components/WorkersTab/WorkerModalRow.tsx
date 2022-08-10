@@ -3,11 +3,10 @@ import { Avatar, Badge, TableCell, TableRow, withStyles } from '@material-ui/cor
 
 import AvatarImage from 'modules/views/shared/AvatarImage';
 import Checkbox from 'modules/views/shared/FormHandler/Checkbox';
-import RoleGuard from 'modules/views/shared/RoleGuard';
 import TableCellLink from 'modules/views/shared/TableCellLink';
 import WorkerInviteStatusIcon from 'modules/views/shared/WorkerInviteStatusIcon';
 
-import { UserModel, WorkerModel } from 'modules/models';
+import { WorkerModel } from 'modules/models';
 import { getConditionalDefaultValue, getDefaultValue } from 'utils';
 import { getTradesString } from 'utils/tradeUtils';
 import { tableGlobalStyles, tableRowStyles } from 'assets/styles/Tables/styles';
@@ -20,9 +19,10 @@ export interface IWorkerModalRowProps {
   isSelected: boolean;
   worker: WorkerModel.IWorker;
   onSelect: (id: string) => void;
+  isFcAdmin: boolean;
 }
 
-const WorkerModalRow = ({ worker, isSelected, onSelect }: IWorkerModalRowProps) => {
+const WorkerModalRow = ({ worker, isSelected, onSelect, isFcAdmin }: IWorkerModalRowProps) => {
   const globalClasses = tableGlobalStyles();
   const avatarGlobalClasses = avatarGlobalStyles();
   const classes = useStyles();
@@ -49,16 +49,15 @@ const WorkerModalRow = ({ worker, isSelected, onSelect }: IWorkerModalRowProps) 
           <TableCellLink href={`/workers/detail/${worker.id}`} text={`${worker.firstName} ${worker.lastName}`} title="View Worker details" />
         </div>
       </TableCell>
-      <RoleGuard roleList={[UserModel.Role.FCA_ADMIN]}>
+      {isFcAdmin && (
         <TableCell>
           {worker?.company?.id ? <TableCellLink href={`/clients/detail/${worker.company.id}`} text={worker.company.name} title="View Client details" /> : '-'}
         </TableCell>
-      </RoleGuard>
+      )}
+
       <TableCell>{getTradesString(worker?.trades, worker?.otherTrade)}</TableCell>
       <TableCell>{`${getDefaultValue(worker.projectsCount, 0)} Project${getConditionalDefaultValue(worker.projectsCount === 1, '', 's')}`}</TableCell>
-      <RoleGuard roleList={[UserModel.Role.CLIENT_ADMIN, UserModel.Role.REGULAR_USER]}>
-        <TableCell>{getDefaultValue(worker?.company?.name)}</TableCell>
-      </RoleGuard>
+      {!isFcAdmin && <TableCell>{getDefaultValue(worker?.company?.name)}</TableCell>}
     </StyledTableRow>
   );
 };

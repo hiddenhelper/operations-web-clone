@@ -28,6 +28,10 @@ export const handleToastError = (
         ? errorKeyList.map(errorKey => Object.keys(error?.response?.errors).find(key => errorKey === key)).filter(Boolean)
         : [];
       let toastError = error.response.title;
+      let toastErrorDetail = error.response.errors;
+      if (toastErrorDetail && toastErrorDetail[''] && Array.isArray(toastErrorDetail[''])) {
+        toastError += ' ' + toastErrorDetail[''].join(' ');
+      }
       if (!!matchedErrorList.length) {
         toastError = error.response.errors[matchedErrorList[0]][0];
         if (errorKeyMap && errorKeyMap[matchedErrorList[0]]) {

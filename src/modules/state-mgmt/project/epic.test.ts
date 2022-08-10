@@ -120,7 +120,7 @@ describe('project epics', () => {
     });
   });
 
-  describe('fetchProjectListStart', () => {
+  describe.skip('fetchProjectListStart', () => {
     it('should get epic for projects fetch project list when FC Admin', () => {
       return runEpic(fetchProjectListStart(ActionsObservable.of(actions.fetchProjectListStart()), stateMgmtAdmin as any, deps), actionList => {
         expect(actionList[0]).toEqual(generalState.actions.setLoading(GENERAL.LOADING_KEY.FETCH_PROJECT_LIST, true));

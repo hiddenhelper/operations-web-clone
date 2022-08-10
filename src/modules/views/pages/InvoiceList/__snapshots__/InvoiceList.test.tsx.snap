@@ -831,16 +831,16 @@ exports[`InvoiceList should open edit draft invoice 1`] = `
       class=""
     >
       <div
-        class="MuiBox-root MuiBox-root-2547"
+        class="MuiBox-root MuiBox-root-2482"
         style="height: 50px; margin-bottom: 13px; width: 100%;"
       >
         <div
-          class="MuiBox-root MuiBox-root-2548"
+          class="MuiBox-root MuiBox-root-2483"
           style="display: flex; align-items: center; justify-content: space-between;"
         >
           <div>
             <div
-              class="MuiBox-root MuiBox-root-2549"
+              class="MuiBox-root MuiBox-root-2484"
               style="display: flex; align-items: center; margin-top: 5px;"
             >
               <h2
@@ -852,7 +852,7 @@ exports[`InvoiceList should open edit draft invoice 1`] = `
             </div>
           </div>
           <button
-            class="MuiButtonBase-root MuiButton-root MuiButton-contained makeStyles-createButton-2495 makeStyles-primaryButtonLarge-2497 MuiButton-containedPrimary MuiButton-containedSizeLarge MuiButton-sizeLarge MuiButton-fullWidth"
+            class="MuiButtonBase-root MuiButton-root MuiButton-contained makeStyles-createButton-2430 makeStyles-primaryButtonLarge-2432 MuiButton-containedPrimary MuiButton-containedSizeLarge MuiButton-sizeLarge MuiButton-fullWidth"
             data-testid="create-invoice-btn"
             tabindex="0"
             type="button"
@@ -869,27 +869,27 @@ exports[`InvoiceList should open edit draft invoice 1`] = `
         </div>
       </div>
       <div
-        class="makeStyles-widgetsWrapper-2529"
+        class="makeStyles-widgetsWrapper-2464"
         id="summary-widgets"
       >
         <div
-          class="MuiPaper-root makeStyles-widget-2550 MuiPaper-elevation0 MuiPaper-rounded"
+          class="MuiPaper-root makeStyles-widget-2485 MuiPaper-elevation0 MuiPaper-rounded"
         >
           <span
-            class="makeStyles-totalFont-2551"
+            class="makeStyles-totalFont-2486"
           >
             5
           </span>
           <div
-            class="makeStyles-contentContainer-2554"
+            class="makeStyles-contentContainer-2489"
           >
             <span
-              class="makeStyles-statusFont-2552"
+              class="makeStyles-statusFont-2487"
             >
               Unpaid
             </span>
             <span
-              class="makeStyles-contentFont-2553"
+              class="makeStyles-contentFont-2488"
             >
               <a
                 href="/"
@@ -900,23 +900,23 @@ exports[`InvoiceList should open edit draft invoice 1`] = `
           </div>
         </div>
         <div
-          class="MuiPaper-root makeStyles-widget-2550 MuiPaper-elevation0 MuiPaper-rounded"
+          class="MuiPaper-root makeStyles-widget-2485 MuiPaper-elevation0 MuiPaper-rounded"
         >
           <span
-            class="makeStyles-totalFont-2551"
+            class="makeStyles-totalFont-2486"
           >
             1
           </span>
           <div
-            class="makeStyles-contentContainer-2554"
+            class="makeStyles-contentContainer-2489"
           >
             <span
-              class="makeStyles-statusFont-2552"
+              class="makeStyles-statusFont-2487"
             >
               Paid
             </span>
             <span
-              class="makeStyles-contentFont-2553"
+              class="makeStyles-contentFont-2488"
             >
               <a
                 href="/invoices?isPaid=true"
@@ -927,38 +927,38 @@ exports[`InvoiceList should open edit draft invoice 1`] = `
           </div>
         </div>
         <div
-          class="MuiPaper-root makeStyles-widget-2550 MuiPaper-elevation0 MuiPaper-rounded"
+          class="MuiPaper-root makeStyles-widget-2485 MuiPaper-elevation0 MuiPaper-rounded"
         >
           <span
-            class="makeStyles-totalFont-2551"
+            class="makeStyles-totalFont-2486"
           >
             $ 123.00
           </span>
           <div
-            class="makeStyles-contentContainer-2554"
+            class="makeStyles-contentContainer-2489"
           >
             <span
-              class="makeStyles-statusFont-2552"
+              class="makeStyles-statusFont-2487"
             >
               Revenue
             </span>
             <span
-              class="makeStyles-contentFont-2553"
+              class="makeStyles-contentFont-2488"
             />
           </div>
         </div>
       </div>
       <div
-        class="makeStyles-tableWrapper-2454"
+        class="makeStyles-tableWrapper-2389"
       >
         <div
-          class="makeStyles-filterContainer-2462"
+          class="makeStyles-filterContainer-2397"
         >
           <div
-            class="makeStyles-statusFilter-2463"
+            class="makeStyles-statusFilter-2398"
           >
             <button
-              class="MuiButtonBase-root MuiButton-root MuiButton-text makeStyles-activeFilter-2464"
+              class="MuiButtonBase-root MuiButton-root MuiButton-text makeStyles-activeFilter-2399"
               data-testid="filter-status-opt"
               tabindex="0"
               type="button"
@@ -989,23 +989,23 @@ exports[`InvoiceList should open edit draft invoice 1`] = `
             </button>
           </div>
           <div
-            class="makeStyles-filterActionsContainer-2465"
+            class="makeStyles-filterActionsContainer-2400"
           >
             <div
-              class="MuiBox-root MuiBox-root-2555 makeStyles-filterStatusContainer-2468"
+              class="MuiBox-root MuiBox-root-2490 makeStyles-filterStatusContainer-2403"
             >
               <div
-                class="makeStyles-floatingFilterWrapper-2474 makeStyles-filterWrapper-2473  floatingFilterWrapper"
+                class="makeStyles-floatingFilterWrapper-2409 makeStyles-filterWrapper-2408  floatingFilterWrapper"
               >
                 <span
-                  class="makeStyles-floatingFilterButton-2475"
+                  class="makeStyles-floatingFilterButton-2410"
                   data-testid="controlled-button"
                   tabindex="-1"
                 >
                   <button
                     aria-controls="false"
                     aria-haspopup="true"
-                    class="MuiButtonBase-root MuiButton-root MuiButton-text makeStyles-buttonFilter-2483"
+                    class="MuiButtonBase-root MuiButton-root MuiButton-text makeStyles-buttonFilter-2418"
                     data-testid="button-filter-open"
                     tabindex="0"
                     type="button"
@@ -1018,7 +1018,7 @@ exports[`InvoiceList should open edit draft invoice 1`] = `
                         class="MuiButton-endIcon MuiButton-iconSizeMedium"
                       >
                         <svg
-                          class="makeStyles-dropdownIcon-2477"
+                          class="makeStyles-dropdownIcon-2412"
                         >
                           expand.svg
                         </svg>
@@ -1082,7 +1082,7 @@ exports[`InvoiceList should open edit draft invoice 1`] = `
             class="MuiTableBody-root"
           >
             <tr
-              class="MuiTableRow-root WithStyles(ForwardRef(TableRow))-root-2619 makeStyles-clickableRow-2541"
+              class="MuiTableRow-root WithStyles(ForwardRef(TableRow))-root-2554 makeStyles-clickableRow-2476"
               data-testid="invoice-list-row"
             >
               <td
@@ -1091,17 +1091,17 @@ exports[`InvoiceList should open edit draft invoice 1`] = `
                 720909
               </td>
               <td
-                class="MuiTableCell-root MuiTableCell-body makeStyles-listNameFullWidth-2527"
+                class="MuiTableCell-root MuiTableCell-body makeStyles-listNameFullWidth-2462"
               >
                 <span>
                   -
                 </span>
               </td>
               <td
-                class="MuiTableCell-root MuiTableCell-body makeStyles-listName-2526 makeStyles-listNameFullWidth-2527"
+                class="MuiTableCell-root MuiTableCell-body makeStyles-listName-2461 makeStyles-listNameFullWidth-2462"
               >
                 <a
-                  class="Link-root-2620"
+                  class="Link-root-2555"
                   data-testid="invoice-list-row-project-button"
                   href="/projects/detail/1"
                   title="View Project details"
@@ -1115,7 +1115,7 @@ exports[`InvoiceList should open edit draft invoice 1`] = `
                 Dec 09, 2020
               </td>
               <td
-                class="MuiTableCell-root MuiTableCell-body makeStyles-boldTableCell-2595"
+                class="MuiTableCell-root MuiTableCell-body makeStyles-boldTableCell-2530"
               >
                 $ 
                 0
@@ -1124,13 +1124,13 @@ exports[`InvoiceList should open edit draft invoice 1`] = `
                 class="MuiTableCell-root MuiTableCell-body"
               >
                 <div
-                  class="makeStyles-invoiceRowLastCell-2596"
+                  class="makeStyles-invoiceRowLastCell-2531"
                 >
                   <span
-                    class="makeStyles-invoiceRowStatusCell-2598"
+                    class="makeStyles-invoiceRowStatusCell-2533"
                   >
                     <div
-                      class="MuiChip-root makeStyles-statusChip-2607 makeStyles-assigned-2611 makeStyles-invoiceStatusChip-2594 MuiChip-colorPrimary"
+                      class="MuiChip-root makeStyles-statusChip-2542 makeStyles-assigned-2546 makeStyles-invoiceStatusChip-2529 MuiChip-colorPrimary"
                     >
                       <span
                         class="MuiChip-label"
@@ -1140,10 +1140,10 @@ exports[`InvoiceList should open edit draft invoice 1`] = `
                     </div>
                   </span>
                   <span
-                    class="makeStyles-invoiceRowIconsWrapper-2599"
+                    class="makeStyles-invoiceRowIconsWrapper-2534"
                   >
                     <span
-                      class="makeStyles-invoiceRowButton-2602"
+                      class="makeStyles-invoiceRowButton-2537"
                       data-testid="controlled-button"
                       tabindex="-1"
                     >
@@ -1159,72 +1159,19 @@ exports[`InvoiceList should open edit draft invoice 1`] = `
                           class="MuiIconButton-label"
                         >
                           <svg
-                            class="makeStyles-invoiceIcon-2600"
+                            class="makeStyles-invoiceIcon-2535"
                           >
                             invoice.svg
                           </svg>
                         </span>
                       </button>
                     </span>
-                    <span
-                      class="makeStyles-invoiceRowButton-2602"
-                      data-testid="controlled-button"
-                      tabindex="-1"
-                    >
-                      <div
-                        class="MuiBox-root MuiBox-root-2622 makeStyles-filterStatusContainer-2468 buttonMenuContainer"
-                      >
-                        <div
-                          class="makeStyles-filterWrapper-2473 buttonMenuWrapper"
-                        >
-                          <span
-                            class=""
-                            data-testid="controlled-button"
-                            tabindex="-1"
-                          >
-                            <button
-                              aria-controls="false"
-                              aria-haspopup="true"
-                              class="MuiButtonBase-root MuiButton-root MuiButton-contained makeStyles-invoiceActionsButton-2603 MuiButton-containedPrimary"
-                              data-testid="popover-button"
-                              tabindex="0"
-                              type="button"
-                            >
-                              <span
-                                class="MuiButton-label"
-                              >
-                                
-                                <span
-                                  class="MuiButton-endIcon MuiButton-iconSizeMedium"
-                                >
-                                  <svg
-                                    class="makeStyles-invoiceIcon-2600"
-                                  >
-                                    three-dots.svg
-                                  </svg>
-                                </span>
-                              </span>
-                            </button>
-                          </span>
-                          <span
-                            class=""
-                          >
-                            <div
-                              class="makeStyles-iconInactive-2623"
-                              data-testid="popover-wrapper"
-                            >
-                              
-                            </div>
-                          </span>
-                        </div>
-                      </div>
-                    </span>
                   </span>
                 </div>
               </td>
             </tr>
             <tr
-              class="MuiTableRow-root WithStyles(ForwardRef(TableRow))-root-2619 makeStyles-clickableRow-2541"
+              class="MuiTableRow-root WithStyles(ForwardRef(TableRow))-root-2554 makeStyles-clickableRow-2476"
               data-testid="invoice-list-row"
             >
               <td
@@ -1233,10 +1180,10 @@ exports[`InvoiceList should open edit draft invoice 1`] = `
                 720908
               </td>
               <td
-                class="MuiTableCell-root MuiTableCell-body makeStyles-listNameFullWidth-2527"
+                class="MuiTableCell-root MuiTableCell-body makeStyles-listNameFullWidth-2462"
               >
                 <a
-                  class="Link-root-2620"
+                  class="Link-root-2555"
                   data-testid="invoice-list-row-client-button"
                   href="/clients/detail/9164e4c4-6521-47bb-97fd-c75ac02b2cf5"
                   title="View Client details"
@@ -1245,10 +1192,10 @@ exports[`InvoiceList should open edit draft invoice 1`] = `
                 </a>
               </td>
               <td
-                class="MuiTableCell-root MuiTableCell-body makeStyles-listName-2526 makeStyles-listNameFullWidth-2527"
+                class="MuiTableCell-root MuiTableCell-body makeStyles-listName-2461 makeStyles-listNameFullWidth-2462"
               >
                 <a
-                  class="Link-root-2620"
+                  class="Link-root-2555"
                   data-testid="invoice-list-row-project-button"
                   href="/projects/detail/9164e4c4-6521-47bb-97fd-c75ac02b2cf2"
                   title="View Project details"
@@ -1262,7 +1209,7 @@ exports[`InvoiceList should open edit draft invoice 1`] = `
                 -
               </td>
               <td
-                class="MuiTableCell-root MuiTableCell-body makeStyles-boldTableCell-2595"
+                class="MuiTableCell-root MuiTableCell-body makeStyles-boldTableCell-2530"
               >
                 $ 
                 0
@@ -1271,13 +1218,13 @@ exports[`InvoiceList should open edit draft invoice 1`] = `
                 class="MuiTableCell-root MuiTableCell-body"
               >
                 <div
-                  class="makeStyles-invoiceRowLastCell-2596"
+                  class="makeStyles-invoiceRowLastCell-2531"
                 >
                   <span
-                    class="makeStyles-invoiceRowStatusCell-2598"
+                    class="makeStyles-invoiceRowStatusCell-2533"
                   >
                     <div
-                      class="MuiChip-root makeStyles-statusChip-2607 makeStyles-pending-2614 makeStyles-invoiceStatusChip-2594 MuiChip-colorPrimary"
+                      class="MuiChip-root makeStyles-statusChip-2542 makeStyles-pending-2549 makeStyles-invoiceStatusChip-2529 MuiChip-colorPrimary"
                     >
                       <span
                         class="MuiChip-label"
@@ -1287,10 +1234,10 @@ exports[`InvoiceList should open edit draft invoice 1`] = `
                     </div>
                   </span>
                   <span
-                    class="makeStyles-invoiceRowIconsWrapper-2599"
+                    class="makeStyles-invoiceRowIconsWrapper-2534"
                   >
                     <span
-                      class="makeStyles-invoiceRowButton-2602"
+                      class="makeStyles-invoiceRowButton-2537"
                       data-testid="controlled-button"
                       tabindex="-1"
                     >
@@ -1306,65 +1253,12 @@ exports[`InvoiceList should open edit draft invoice 1`] = `
                           class="MuiIconButton-label"
                         >
                           <svg
-                            class="makeStyles-invoiceIcon-2600"
+                            class="makeStyles-invoiceIcon-2535"
                           >
                             invoice.svg
                           </svg>
                         </span>
                       </button>
-                    </span>
-                    <span
-                      class="makeStyles-invoiceRowButton-2602"
-                      data-testid="controlled-button"
-                      tabindex="-1"
-                    >
-                      <div
-                        class="MuiBox-root MuiBox-root-2627 makeStyles-filterStatusContainer-2468 buttonMenuContainer"
-                      >
-                        <div
-                          class="makeStyles-filterWrapper-2473 buttonMenuWrapper"
-                        >
-                          <span
-                            class=""
-                            data-testid="controlled-button"
-                            tabindex="-1"
-                          >
-                            <button
-                              aria-controls="false"
-                              aria-haspopup="true"
-                              class="MuiButtonBase-root MuiButton-root MuiButton-contained makeStyles-invoiceActionsButton-2603 MuiButton-containedPrimary"
-                              data-testid="popover-button"
-                              tabindex="0"
-                              type="button"
-                            >
-                              <span
-                                class="MuiButton-label"
-                              >
-                                
-                                <span
-                                  class="MuiButton-endIcon MuiButton-iconSizeMedium"
-                                >
-                                  <svg
-                                    class="makeStyles-invoiceIcon-2600"
-                                  >
-                                    three-dots.svg
-                                  </svg>
-                                </span>
-                              </span>
-                            </button>
-                          </span>
-                          <span
-                            class=""
-                          >
-                            <div
-                              class="makeStyles-iconInactive-2623"
-                              data-testid="popover-wrapper"
-                            >
-                              
-                            </div>
-                          </span>
-                        </div>
-                      </div>
                     </span>
                   </span>
                 </div>
@@ -1374,7 +1268,7 @@ exports[`InvoiceList should open edit draft invoice 1`] = `
         </table>
         <nav
           aria-label="pagination navigation"
-          class="MuiPagination-root  makeStyles-pagination-2628"
+          class="MuiPagination-root  makeStyles-pagination-2557"
           data-testid="pagination"
         >
           <ul
@@ -1423,18 +1317,18 @@ exports[`InvoiceList should open edit draft invoice 1`] = `
           </ul>
         </nav>
         <div
-          class="MuiDrawer-root MuiDrawer-docked makeStyles-drawer-2629 makeStyles-close-2640 closed"
+          class="MuiDrawer-root MuiDrawer-docked makeStyles-drawer-2558 makeStyles-close-2569 closed"
           data-testid="invoice-drawer-detail"
         >
           <div
-            class="MuiPaper-root MuiDrawer-paper makeStyles-drawerPaper-2630 MuiDrawer-paperAnchorRight MuiDrawer-paperAnchorDockedRight MuiPaper-elevation0"
+            class="MuiPaper-root MuiDrawer-paper makeStyles-drawerPaper-2559 MuiDrawer-paperAnchorRight MuiDrawer-paperAnchorDockedRight MuiPaper-elevation0"
             style="visibility: hidden; webkit-transform: translateX(1024px) translateX(0px); transform: translateX(1024px) translateX(0px);"
           >
             <div
-              class="makeStyles-drawerButtonWrapper-2632"
+              class="makeStyles-drawerButtonWrapper-2561"
             >
               <div
-                class="makeStyles-drawerButton-2633"
+                class="makeStyles-drawerButton-2562"
               >
                 <button
                   class="MuiButtonBase-root MuiButton-root MuiButton-text"
@@ -1456,31 +1350,31 @@ exports[`InvoiceList should open edit draft invoice 1`] = `
                 </button>
               </div>
               <div
-                class="makeStyles-drawerHeader-2631"
+                class="makeStyles-drawerHeader-2560"
               >
                 <p
-                  class="MuiTypography-root makeStyles-drawerTitle-2634 MuiTypography-body1 MuiTypography-colorPrimary MuiTypography-alignLeft"
+                  class="MuiTypography-root makeStyles-drawerTitle-2563 MuiTypography-body1 MuiTypography-colorPrimary MuiTypography-alignLeft"
                 >
                   Invoice Information
                 </p>
               </div>
             </div>
             <div
-              class="makeStyles-listDetail-2533"
+              class="makeStyles-listDetail-2468"
             >
               <div
-                class="makeStyles-company-2534"
+                class="makeStyles-company-2469"
               >
                 <div
-                  class="makeStyles-drawerText-2636"
+                  class="makeStyles-drawerText-2565"
                 >
                   <p
-                    class="MuiTypography-root makeStyles-listAccent-2535 makeStyles-entityTitle-2532 MuiTypography-body1"
+                    class="MuiTypography-root makeStyles-listAccent-2470 makeStyles-entityTitle-2467 MuiTypography-body1"
                   >
                     720909
                   </p>
                   <div
-                    class="makeStyles-drawerMainText-2637"
+                    class="makeStyles-drawerMainText-2566"
                   >
                     <span>
                       Manual Invoice
@@ -1488,22 +1382,22 @@ exports[`InvoiceList should open edit draft invoice 1`] = `
                   </div>
                 </div>
                 <div
-                  class="makeStyles-drawerSection-2635"
+                  class="makeStyles-drawerSection-2564"
                 >
                   <div
-                    class="makeStyles-drawerColumnDirection-2644"
+                    class="makeStyles-drawerColumnDirection-2573"
                   >
                     <div
-                      class="makeStyles-drawerRowDirection-2645"
+                      class="makeStyles-drawerRowDirection-2574"
                     >
                       <svg>
                         monetization.svg
                       </svg>
                       <div
-                        class="makeStyles-drawerText-2636 makeStyles-drawerTextSeparation-2638"
+                        class="makeStyles-drawerText-2565 makeStyles-drawerTextSeparation-2567"
                       >
                         <span
-                          class="makeStyles-listAccent-2535 makeStyles-listIconLabel-2546"
+                          class="makeStyles-listAccent-2470 makeStyles-listIconLabel-2481"
                         >
                           $ 
                           0
@@ -1513,19 +1407,19 @@ exports[`InvoiceList should open edit draft invoice 1`] = `
                   </div>
                 </div>
                 <div
-                  class="makeStyles-drawerSection-2635 makeStyles-drawerProjectColumn-2643"
+                  class="makeStyles-drawerSection-2564 makeStyles-drawerProjectColumn-2572"
                 >
                   <div
-                    class="makeStyles-projectWrapper-2641"
+                    class="makeStyles-projectWrapper-2570"
                   >
                     <svg>
                       location.svg
                     </svg>
                     <div
-                      class="makeStyles-drawerText-2636 makeStyles-drawerTextSeparation-2638"
+                      class="makeStyles-drawerText-2565 makeStyles-drawerTextSeparation-2567"
                     >
                       <span
-                        class="makeStyles-listAccent-2535"
+                        class="makeStyles-listAccent-2470"
                       >
                         -
                       </span>
@@ -1539,10 +1433,10 @@ exports[`InvoiceList should open edit draft invoice 1`] = `
                   </div>
                 </div>
                 <div
-                  class="makeStyles-drawerSection-2635 makeStyles-drawerProjectColumn-2643"
+                  class="makeStyles-drawerSection-2564 makeStyles-drawerProjectColumn-2572"
                 >
                   <div
-                    class="makeStyles-projectWrapper-2641"
+                    class="makeStyles-projectWrapper-2570"
                   >
                     <svg
                       aria-hidden="true"
@@ -1555,10 +1449,10 @@ exports[`InvoiceList should open edit draft invoice 1`] = `
                       />
                     </svg>
                     <div
-                      class="makeStyles-drawerText-2636 makeStyles-drawerTextSeparation-2638"
+                      class="makeStyles-drawerText-2565 makeStyles-drawerTextSeparation-2567"
                     >
                       <span
-                        class="makeStyles-listAccent-2535"
+                        class="makeStyles-listAccent-2470"
                       >
                         - -
                       </span>
@@ -1569,19 +1463,19 @@ exports[`InvoiceList should open edit draft invoice 1`] = `
                   </div>
                 </div>
                 <div
-                  class="makeStyles-drawerSection-2635 makeStyles-drawerProjectColumn-2643"
+                  class="makeStyles-drawerSection-2564 makeStyles-drawerProjectColumn-2572"
                 >
                   <div
-                    class="makeStyles-projectWrapper-2641"
+                    class="makeStyles-projectWrapper-2570"
                   >
                     <svg>
                       project.svg
                     </svg>
                     <div
-                      class="makeStyles-drawerText-2636 makeStyles-drawerTextSeparation-2638"
+                      class="makeStyles-drawerText-2565 makeStyles-drawerTextSeparation-2567"
                     >
                       <span
-                        class="makeStyles-listAccent-2535"
+                        class="makeStyles-listAccent-2470"
                       >
                         Las Vegas Casino
                       </span>
@@ -1592,16 +1486,16 @@ exports[`InvoiceList should open edit draft invoice 1`] = `
                   </div>
                 </div>
                 <div
-                  class="makeStyles-drawerSection-2635 makeStyles-drawerProjectColumn-2643"
+                  class="makeStyles-drawerSection-2564 makeStyles-drawerProjectColumn-2572"
                 >
                   <div
-                    class="makeStyles-projectWrapper-2641"
+                    class="makeStyles-projectWrapper-2570"
                   >
                     <svg>
                       calendar.svg
                     </svg>
                     <div
-                      class="makeStyles-drawerText-2636 makeStyles-drawerTextSeparation-2638"
+                      class="makeStyles-drawerText-2565 makeStyles-drawerTextSeparation-2567"
                     >
                       <span>
                         Creation Date: 
@@ -1615,16 +1509,16 @@ exports[`InvoiceList should open edit draft invoice 1`] = `
                   </div>
                 </div>
                 <div
-                  class="makeStyles-drawerSection-2635 makeStyles-drawerProjectColumn-2643"
+                  class="makeStyles-drawerSection-2564 makeStyles-drawerProjectColumn-2572"
                 >
                   <div
-                    class="makeStyles-projectWrapper-2641"
+                    class="makeStyles-projectWrapper-2570"
                   >
                     <svg>
                       notes.svg
                     </svg>
                     <div
-                      class="makeStyles-drawerText-2636 makeStyles-drawerTextSeparation-2638"
+                      class="makeStyles-drawerText-2565 makeStyles-drawerTextSeparation-2567"
                     >
                       <span>
                         Test

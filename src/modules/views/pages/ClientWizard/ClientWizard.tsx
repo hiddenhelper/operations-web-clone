@@ -4,7 +4,7 @@ import Wizard from '../../shared/Wizard';
 import NavigationTop from '../../shared/ResourceManagement/NavigationTop';
 import ClientForm from './ClientWizardForm';
 
-import { ClientModel, GeneralModel, AddressModel, UserModel, ResourceModel } from '../../../models';
+import { ClientModel, GeneralModel, AddressModel, ResourceModel } from '../../../models';
 import { ROUTES, FormRules } from '../../../../constants';
 import { useNavigator } from '../../../../utils/useNavigator';
 import { sanitizeClient } from '../../../../utils/clientUtils';
@@ -17,6 +17,8 @@ export interface IWizardProps {
   loading: GeneralModel.ILoadingStatus;
   sendForApprovalLoading: GeneralModel.ILoadingStatus;
   approveLoading: GeneralModel.ILoadingStatus;
+  isFcaUser: boolean;
+  isAdmin: boolean;
   navigate: (path: string) => void;
   fetchClient: (id: string) => void;
   saveClient: (client: ClientModel.IClient, step: GeneralModel.IStep) => void;
@@ -30,7 +32,6 @@ export interface IWizardProps {
   countryList?: GeneralModel.INamedEntity[];
   fetchGroupSearch: (searchRequest: any) => void;
   groupList: any;
-  currentUserRole: UserModel.Role;
 }
 
 const ClientWizard = ({
@@ -40,6 +41,8 @@ const ClientWizard = ({
   loading,
   sendForApprovalLoading,
   approveLoading,
+  isFcaUser,
+  isAdmin,
   fetchClient,
   fetchMwbe,
   fetchTradeList,
@@ -52,7 +55,6 @@ const ClientWizard = ({
   countryList,
   fetchGroupSearch,
   groupList,
-  currentUserRole,
 }: IWizardProps) => {
   const { id, step, entityId, currentEntity, currentStepKey, currentStep, setStep } = useNavigator<ClientModel.IClient>({
     entityMap: clientMap,
@@ -138,24 +140,21 @@ const ClientWizard = ({
           },
           [ClientModel.ClientStep.USERS]: {
             ...ClientModel.clientStepMap[ClientModel.ClientStep.USERS],
-            fields: [
-              {
-                ...ClientModel.clientStepMap[ClientModel.ClientStep.USERS].fields[0],
-                fields: ClientModel.clientStepMap[ClientModel.ClientStep.USERS].fields[0].fields.map(field => {
-                  if (field.name === UserModel.UserFields.MOBILE_PHONE_NUMBER) {
-                    const user0PreferredContactMethod = Number(currentEntity.users?.[0]?.preferredContactMethod);
-                    field.required = user0PreferredContactMethod === UserModel.PreferredContactMethod.PHONE;
-                  } else if (field.name === UserModel.UserFields.GROUP_IDS) {
-                    const idObject = groupList?.find((list) => {
-                      return list.code === 'Admin';
-                    });
-                    const isAdmin = currentEntity.users?.[0]?.groupIds?.some(id => id === idObject?.id);
-                    field.required = !isAdmin;
-                  }
-                  return field;
-                }),
-              },
-            ],
+            // fields: [
+            //   {
+            //     ...ClientModel.clientStepMap[ClientModel.ClientStep.USERS].fields[0],
+            //     fields: ClientModel.clientStepMap[ClientModel.ClientStep.USERS].fields[0].fields.map(field => {
+            //       if (field.name === UserModel.UserFields.MOBILE_PHONE_NUMBER) {
+            //         const user0PreferredContactMethod = Number(currentEntity.users?.[0]?.preferredContactMethod);
+            //         field.required = user0PreferredContactMethod === UserModel.PreferredContactMethod.PHONE;
+            //       } else if (field.name === UserModel.UserFields.EMAIL) {
+            //         const user0PreferredContactMethod = Number(currentEntity.users?.[0]?.preferredContactMethod);
+            //         field.required = user0PreferredContactMethod === UserModel.PreferredContactMethod.EMAIL;
+            //       }
+            //       return field;
+            //     }),
+            //   },
+            // ],
           },
         };
     const updatedClient = {
@@ -163,7 +162,7 @@ const ClientWizard = ({
       trades: [...currentEntity.trades, currentEntity.otherTrade].filter(Boolean),
     };
     return getCompletedStepFields(updatedStepMap, updatedClient);
-  }, [currentEntity, groupList]);
+  }, [currentEntity]);
 
   const readyForApprove = useMemo(() => {
     return (
@@ -249,7 +248,8 @@ const ClientWizard = ({
           fetchGroupSearch={fetchGroupSearch}
           companyId={id}
           groupList={groupList}
-          currentUserRole={currentUserRole}
+          isFcaUser={isFcaUser}
+          isAdmin={isAdmin}
         />
       )}
     />

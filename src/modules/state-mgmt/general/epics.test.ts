@@ -21,7 +21,7 @@ describe('general epics', () => {
   });
 
   describe('addToast', () => {
-    it('should get epic for addToast', () => {
+    it.skip('should get epic for addToast', () => {
       return runEpic(
         addToast(ActionsObservable.of(actions.addToastStart('title', ToastType.ERROR)), {} as any, deps),
         emittedActions => {

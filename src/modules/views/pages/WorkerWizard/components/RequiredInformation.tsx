@@ -3,7 +3,7 @@ import React, { memo, useCallback, useEffect, useMemo, useState } from 'react';
 import { Grid } from '@material-ui/core';
 import TextField from '@material-ui/core/TextField';
 
-import RoleGuard from '../../../shared/RoleGuard/RoleGuardContainer';
+import PermissionGuard from 'modules/views/shared/PermissionGuard';
 import Card from '../../../shared/ResourceManagement/Card';
 import AssignEntity from '../../../shared/AssignEntity';
 import AssignEntityOption from '../../../shared/AssignEntityOption';
@@ -21,7 +21,7 @@ import { inputGlobalStyles } from '../../../../../assets/styles';
 import { useStyles } from '../styles';
 
 export interface IRequiredInformationProps {
-  userRole: UserModel.Role;
+  isFcaUser: boolean;
   model: WorkerModel.IWorker;
   company: ClientModel.IClient;
   errors: any;
@@ -39,7 +39,7 @@ export interface IRequiredInformationProps {
 }
 
 const RequiredInformation = ({
-  userRole,
+  isFcaUser,
   model,
   company,
   errors,
@@ -60,7 +60,6 @@ const RequiredInformation = ({
   const classes = useStyles();
   const workerTempId = 'worker-company';
   const isLoading = useMemo(() => loading && loading.isLoading, [loading]);
-  const isFCAdmin = useMemo(() => userRole === UserModel.Role.FCA_ADMIN, [userRole]);
   const hasProjects = useMemo(() => model.projectsCount > 0, [model.projectsCount]);
   const bothCondition = useMemo(() => model.inviteMethod === WorkerModel.InviteMethod.BOTH, [model.inviteMethod]);
   const emailCondition = useMemo(() => model.inviteMethod === WorkerModel.InviteMethod.EMAIL || bothCondition || isEmpty(model.inviteMethod), [
@@ -166,14 +165,14 @@ const RequiredInformation = ({
   const inviteMethodValue = useMemo(() => (isEmpty(model.inviteMethod) ? 2 : Number(model.inviteMethod)), [model.inviteMethod]);
 
   useEffect(() => {
-    if (!isFCAdmin && !company) fetchCompany();
-  }, [isFCAdmin, company, fetchCompany]);
+    if (!isFcaUser && !company) fetchCompany();
+  }, [isFcaUser, company, fetchCompany]);
 
   const today = new Date();
   return (
     <Card title="Required Information">
       <Grid container={true} className={classes.workerFormContainer}>
-        <RoleGuard roleList={[UserModel.Role.FCA_ADMIN]}>
+        <PermissionGuard permissionsExpression={UserModel.ClientsPermission.VIEWACCESS}>
           <Grid item={true} xl={12} lg={12} md={12} sm={12} xs={12}>
             <div className={inputGlobalClasses.inputPaddingBottom}>
               <div className={classes.errorInputWrapper}>
@@ -202,7 +201,7 @@ const RequiredInformation = ({
               </div>
             </div>
           </Grid>
-        </RoleGuard>
+        </PermissionGuard>
 
         <Grid item={true} xl={6} lg={6}>
           <div className={classes.errorInputWrapper}>

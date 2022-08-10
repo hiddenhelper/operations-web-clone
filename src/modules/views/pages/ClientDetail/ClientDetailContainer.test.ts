@@ -8,13 +8,15 @@ import { statisticsState } from '../../../state-mgmt/statistics';
 describe('ClientDetailContainer', () => {
   it('should mapStateToProps, ', () => {
     expect(mapStateToProps(getInitialState())).toEqual({
-      userRole: null,
       clientMap: getInitialState().client.clientMap,
       mwbeList: getInitialState().client.mwbeList,
       tradeList: getInitialState().client.tradeList,
       clientStatistics: getInitialState().statistics.clientDetailStatistics,
+      updateClientLoading: undefined,
       clientLoading: undefined,
       statisticsLoading: undefined,
+      isFcaUser: getInitialState().auth.isFcaUser,
+      isAdmin: getInitialState().auth.isAdmin,
     });
   });
 

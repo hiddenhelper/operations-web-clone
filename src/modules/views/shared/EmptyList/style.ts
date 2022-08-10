@@ -17,6 +17,7 @@ export const useStyles = makeStyles(theme =>
       fontWeight: 'bold',
       position: 'relative',
       top: `${toREM(24)}`,
+      textAlign: 'center',
     },
     missingAvatarWrapper: {
       backgroundColor: STYLE.COLOR.LIGHT_GRAY7,

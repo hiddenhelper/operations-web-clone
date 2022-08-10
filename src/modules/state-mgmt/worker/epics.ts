@@ -7,19 +7,17 @@ import { GENERAL, LANG } from '../../../constants';
 import { push } from 'connected-react-router';
 import { handleError, handleToastError } from '../core/operators';
 import { actions, ActionType } from './actions';
-import { GeneralModel, UserModel } from '../../models';
+import { GeneralModel } from '../../models';
 import { getWorkerAssignQuery } from '../../../utils/workerUtils';
 
 export const saveWorkerStart: Epic<IAction, IAction, IRootState, IEpicDependencies> = (action$, state$, deps) =>
   action$.pipe(
     ofType(ActionType.SAVE_WORKER_START),
-    mergeMap(({ payload }) =>
-      concat(
+    mergeMap(({ payload }) => {
+      const isFCAAdmin = state$.value.auth.isFcaUser && state$.value.auth.isAdmin;
+      return concat(
         of(generalState.actions.setLoading(GENERAL.LOADING_KEY.SAVE_WORKER, true)),
-        (state$.value.auth.role === UserModel.Role.FCA_ADMIN
-          ? deps.apiService.saveWorker(payload.worker)
-          : deps.apiService.saveSelfWorker(payload.worker)
-        ).pipe(
+        (isFCAAdmin ? deps.apiService.saveWorker(payload.worker) : deps.apiService.saveSelfWorker(payload.worker)).pipe(
           mergeMap(res =>
             of(
               actions.fetchWorkerListSuccess([res], 1),
@@ -36,8 +34,8 @@ export const saveWorkerStart: Epic<IAction, IAction, IRootState, IEpicDependenci
               generalState.actions.addToastStart(error.response.title, GeneralModel.ToastType.ERROR),
           ].filter(Boolean)
         )
-      )
-    )
+      );
+    })
   );
 
 export const updateWorkerStart: Epic<IAction, IAction, IRootState, IEpicDependencies> = (action$, state$, deps) =>
@@ -77,16 +75,16 @@ export const fetchWorkerStart: Epic<IAction, IAction, IRootState, IEpicDependenc
 export const fetchWorkerListStart: Epic<IAction, IAction, IRootState, IEpicDependencies> = (action$, state$, deps) =>
   action$.pipe(
     ofType(ActionType.FETCH_WORKER_LIST_START),
-    mergeMap(({ payload }) =>
-      concat(
+    mergeMap(({ payload }) => {
+      const isFCAAdmin = state$.value.auth.isFcaUser && state$.value.auth.isAdmin;
+      return concat(
         of(generalState.actions.setLoading(GENERAL.LOADING_KEY.FETCH_WORKER_LIST, true)),
-        (state$.value.auth.role === UserModel.Role.FCA_ADMIN
-          ? deps.apiService.getWorkerList(payload.query)
-          : deps.apiService.getSelfWorkerList(payload.query)
-        ).pipe(map(res => actions.fetchWorkerListSuccess(res.items, res.totalResults))),
+        (isFCAAdmin ? deps.apiService.getWorkerList(payload.query) : deps.apiService.getSelfWorkerList(payload.query)).pipe(
+          map(res => actions.fetchWorkerListSuccess(res.items, res.totalResults))
+        ),
         of(generalState.actions.setLoading(GENERAL.LOADING_KEY.FETCH_WORKER_LIST, false))
-      ).pipe(handleError(GENERAL.LOADING_KEY.FETCH_WORKER_LIST))
-    )
+      ).pipe(handleError(GENERAL.LOADING_KEY.FETCH_WORKER_LIST));
+    })
   );
 
 export const fetchProjectWorkerListStart: Epic<IAction, IAction, IRootState, IEpicDependencies> = (action$, state$, deps) =>

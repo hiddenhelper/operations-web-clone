@@ -8,11 +8,12 @@ describe('HeaderContainer', () => {
   it('should mapStateToProps, ', () => {
     expect(mapStateToProps(getInitialState())).toEqual({
       user: getInitialState().auth.session,
-      userRole: getInitialState().auth.role,
       accountData: getInitialState().user.accountData,
-      clientMap: {},
-      companyId: null,
-      isGeneralAdmin: false,
+      companyId: undefined,
+      isFcaUser: getInitialState().auth.isFcaUser,
+      isAdmin: getInitialState().auth.isAdmin,
+      currentUserPermissions: undefined,
+      selfCompany: null,
     });
   });
 
@@ -22,6 +23,7 @@ describe('HeaderContainer', () => {
     expect(props).toEqual({
       logout: expect.any(Function),
       navigate: expect.any(Function),
+      fetchSelfClient: expect.any(Function),
     });
   });
 

@@ -1,3 +1,4 @@
+import { UserModel } from '.';
 import { Role } from './user';
 import { WorkerStatus } from './worker';
 
@@ -88,22 +89,37 @@ export const settingsFilterTypeMap = {
   [SettingsFilterType.INTEGRATIONS]: 'Integrations',
 };
 
-export const filterMap: { [k: number]: { id: number; key: string; title: string; roleList: Role[] } } = {
+export const filterMap: { [k: number]: { id: number; key: string; title: string; permissionsExpression?: string } } = {
   [FilterType.SELF_PROJECT]: {
     id: FilterType.SELF_PROJECT,
     key: 'my-projects',
     title: filterTypeMap[FilterType.SELF_PROJECT],
-    roleList: [Role.CLIENT_ADMIN, Role.REGULAR_USER],
+    permissionsExpression: UserModel.ProjectsPermission.VIEWACCESS,
   },
-  [Status.DRAFT]: { id: Status.DRAFT, key: 'draft', title: statusMap[Status.DRAFT], roleList: [Role.FCA_ADMIN] },
+  [Status.DRAFT]: {
+    id: Status.DRAFT,
+    key: 'draft',
+    title: statusMap[Status.DRAFT],
+    permissionsExpression: UserModel.DraftProjectsPermission.VIEWACCESS,
+  },
   [Status.PENDING_APPROVAL]: {
     id: Status.PENDING_APPROVAL,
     key: 'pending-approval',
     title: statusMap[Status.PENDING_APPROVAL],
-    roleList: [Role.FCA_ADMIN],
+    permissionsExpression: UserModel.DraftProjectsPermission.VIEWACCESS,
   },
-  [Status.ACTIVE]: { id: Status.ACTIVE, key: 'active', title: statusMap[Status.ACTIVE], roleList: [Role.FCA_ADMIN] },
-  [Status.ARCHIVED]: { id: Status.ARCHIVED, key: 'archived', title: statusMap[Status.ARCHIVED], roleList: [Role.FCA_ADMIN] },
+  [Status.ACTIVE]: {
+    id: Status.ACTIVE,
+    key: 'active',
+    title: statusMap[Status.ACTIVE],
+    permissionsExpression: UserModel.ProjectsPermission.VIEWACCESS,
+  },
+  [Status.ARCHIVED]: {
+    id: Status.ARCHIVED,
+    key: 'archived',
+    title: statusMap[Status.ARCHIVED],
+    permissionsExpression: UserModel.ProjectsPermission.VIEWACCESS,
+  },
 };
 
 export const keyFilterMap = {

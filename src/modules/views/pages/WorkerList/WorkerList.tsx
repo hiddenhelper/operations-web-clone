@@ -8,7 +8,7 @@ import Container from 'modules/views/shared/Container';
 import StatusWidget from 'modules/views/shared/StatusWidget/StatusWidget';
 import Pagination from 'modules/views/shared/Pagination/Pagination';
 import ButtonTab from 'modules/views/shared/ButtonTab';
-import RoleGuard from 'modules/views/shared/RoleGuard';
+import PermissionGuard from 'modules/views/shared/PermissionGuard';
 import WorkerDrawer from 'modules/views/shared/WorkerDrawer';
 
 import WorkerRow from './components/WorkerRow';
@@ -21,7 +21,6 @@ import { useStyles as buttonStyles } from 'modules/views/shared/FormHandler/Cont
 import { tableGlobalStyles, listGlobalStyles } from 'assets/styles';
 
 export interface IWorkerListProps {
-  userRole: UserModel.Role;
   workerMap: GeneralModel.IEntityMap<WorkerModel.IWorker>;
   workersCount: number;
   uiRelationMap: GeneralModel.IRelationUiMap;
@@ -154,17 +153,19 @@ const WorkerList = ({
         <PageTitle
           title="Workers"
           right={
-            <Button
-              className={`${buttonClasses.createButton} ${buttonClasses.primaryButtonLarge}`}
-              color="primary"
-              variant="contained"
-              fullWidth={true}
-              size="large"
-              data-testid="invite-worker-btn"
-              onClick={handleInviteWorkerClick}
-            >
-              Create Worker
-            </Button>
+            <PermissionGuard permissionsExpression={UserModel.WorkersPermission.MANAGE}>
+              <Button
+                className={`${buttonClasses.createButton} ${buttonClasses.primaryButtonLarge}`}
+                color="primary"
+                variant="contained"
+                fullWidth={true}
+                size="large"
+                data-testid="invite-worker-btn"
+                onClick={handleInviteWorkerClick}
+              >
+                Create Worker
+              </Button>
+            </PermissionGuard>
           }
         />
         <div className={listClasses.widgetsWrapper} id="summary-widgets">
@@ -198,7 +199,12 @@ const WorkerList = ({
               <Box className={`${tableGlobalClasses.filterStatusContainer}`}>
                 <AutocompleteFilter value={locationCode} optionList={locationOptionList} onChange={onFilterLocationChange} label={locationLabel} />
               </Box>
-              <RoleGuard roleList={[UserModel.Role.FCA_ADMIN]}>
+              <PermissionGuard
+                permissionsExpression={`
+                  ${UserModel.ClientsPermission.VIEWACCESS} AND
+                  ${UserModel.WorkersPermission.VIEWACCESS}
+                  `}
+              >
                 <>
                   <Divider className={tableGlobalClasses.dividerColor} orientation="vertical" flexItem={true} />
                   <Box className={`${tableGlobalClasses.filterStatusContainer} ${tableGlobalClasses.filterContainerMaxWidth}`}>
@@ -212,7 +218,7 @@ const WorkerList = ({
                     />
                   </Box>
                 </>
-              </RoleGuard>
+              </PermissionGuard>
             </div>
           </div>
           {listLoading && !listLoading.isLoading ? (

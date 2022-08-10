@@ -22,5 +22,8 @@ export const useStyles = makeStyles(theme =>
     filterWrapper: {
       display: 'flex',
     },
+    buttonSpacer: {
+      paddingBottom: '15px',
+    },
   })
 );

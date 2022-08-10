@@ -25,11 +25,23 @@ export interface IGeneralInformationProps {
   regionList: GeneralModel.INamedEntity[];
   fcaNaeList: GeneralModel.INamedEntity[];
   timeZoneList: GeneralModel.INamedEntity[];
-  userRole: UserModel.Role;
+  isFcaUser: boolean;
+  isAdmin: boolean;
   onChange: (event: any) => void;
 }
 
-const GeneralInformation = ({ formRules, model, errors, categoryList, regionList, fcaNaeList, timeZoneList, userRole, onChange }: IGeneralInformationProps) => {
+const GeneralInformation = ({
+  formRules,
+  model,
+  errors,
+  categoryList,
+  regionList,
+  fcaNaeList,
+  timeZoneList,
+  isFcaUser,
+  isAdmin,
+  onChange,
+}: IGeneralInformationProps) => {
   const classes = useStyles();
   const datePickerClasses = datePickerStyles();
   const inputGlobalClasses = inputGlobalStyles();
@@ -63,7 +75,7 @@ const GeneralInformation = ({ formRules, model, errors, categoryList, regionList
   );
   return (
     <>
-      {userRole === UserModel.Role.FCA_ADMIN && (
+      {isFcaUser && isAdmin && (
         <>
           <Card title="Project Name">
             <ControlledError show={!!errors.name} error={!!errors.name && errors.name === 'is required' ? 'Please enter Project Name.' : errors.name}>

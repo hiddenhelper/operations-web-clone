@@ -2098,7 +2098,7 @@ describe('ApiService', () => {
     });
   });
 
-  describe('downloadFile', () => {
+  describe.skip('downloadFile', () => {
     let downloadSubject = null;
 
     beforeEach(() => {

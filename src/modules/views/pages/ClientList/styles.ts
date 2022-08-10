@@ -17,5 +17,9 @@ export const useStyles = makeStyles(theme =>
         minHeight: props => ((props as any).clientListHeight > 900 ? '100%' : `${toREM(900)}`),
       },
     },
+    buttonsWrapper: {
+      display: 'flex',
+      justifyContent: 'flex-end',
+    },
   })
 );

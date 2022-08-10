@@ -12,9 +12,7 @@ import Divider from '@material-ui/core/Divider';
 
 import AutocompleteFilter from '../../shared/AutocompleteFilter';
 import Container from '../../shared/Container';
-import StatusWidget from '../../shared/StatusWidget';
 import Pagination from '../../shared/Pagination';
-import RoleGuard from '../../shared/RoleGuard';
 import SelectFilter from '../../shared/SelectFilter';
 import ButtonTab from '../../shared/ButtonTab';
 import PageTitle from '../../shared/PageTitle';
@@ -29,11 +27,13 @@ import { useLocationFilter } from '../../../../utils/useLocationFilter';
 import { tableGlobalStyles } from '../../../../assets/styles/Tables/styles';
 import { useStyles as buttonStyles } from '../../shared/FormHandler/ControlledButton/styles';
 import { listGlobalStyles } from '../../../../assets/styles';
-import { useStyles } from './styles';
 import { useTimeZone } from '../../../../utils/useTimeZone';
+import { hasValidPermissions } from 'modules/models/user';
+import PermissionGuard from 'modules/views/shared/PermissionGuard';
 
 export interface IProjectListProps {
   userRole: UserModel.Role;
+  isFcaUser: boolean;
   projectMap: GeneralModel.IEntityMap<ProjectModel.IProject>;
   projectCount: number;
   listLoading: GeneralModel.ILoadingStatus;
@@ -43,6 +43,7 @@ export interface IProjectListProps {
   invoiceStatistics: StatisticsModel.IInvoiceStatistics;
   statisticsLoading: GeneralModel.ILoadingStatus;
   currentFilter: string;
+  currentUserPermissions: UserModel.IPermission[];
   fetchProjectList: (query: GeneralModel.IQueryParams) => void;
   fetchProjectSummary: (id: string) => void;
   clearProjectMap: () => void;
@@ -57,6 +58,7 @@ export interface IProjectListProps {
 
 const ProjectList = ({
   userRole,
+  isFcaUser,
   projectCount,
   projectMap,
   listLoading,
@@ -66,6 +68,7 @@ const ProjectList = ({
   invoiceStatistics,
   statisticsLoading,
   currentFilter,
+  currentUserPermissions,
   navigate,
   fetchProjectList,
   fetchProjectSummary,
@@ -77,14 +80,13 @@ const ProjectList = ({
   deleteProject,
   updateCurrentFilter,
 }: IProjectListProps) => {
-  const classes = useStyles();
   const tableGlobalClasses = tableGlobalStyles();
   const buttonClasses = buttonStyles();
   const listClasses = listGlobalStyles();
   const projectListRef = useRef();
   const { timeZoneOffset } = useTimeZone();
   const [queryParams, setQueryParams] = useQueryParamState<any>({
-    filter: userRole === UserModel.Role.FCA_ADMIN ? currentFilter || ResourceModel.filterMap[ResourceModel.Status.DRAFT].key : 'my-projects',
+    filter: isFcaUser ? currentFilter || ResourceModel.filterMap[ResourceModel.Status.DRAFT].key : 'my-projects',
     page: 1,
     limit: 15,
     period: GeneralModel.TimeFilterType.ALL_TIMES,
@@ -102,11 +104,26 @@ const ProjectList = ({
     () => Object.values(projectMap).filter(project => project.companyProjectStatus === ProjectModel.CompanyProjectStatus.PENDING),
     [projectMap]
   );
-  const filterList = useMemo(() => Object.values(ResourceModel.filterMap).filter(item => item.roleList.includes(userRole)), [userRole]);
+  const filterList = useMemo(
+    () =>
+      Object.values(ResourceModel.filterMap).filter(item => {
+        if (!isFcaUser) {
+          if (item.key === 'my-projects') {
+            return hasValidPermissions(item.permissionsExpression, currentUserPermissions);
+          }
+          return false;
+        } else {
+          if (item.key === 'my-projects') {
+            return false;
+          }
+          return hasValidPermissions(item.permissionsExpression, currentUserPermissions);
+        }
+      }),
+    [isFcaUser, currentUserPermissions]
+  );
   const pageCount = useMemo(() => Math.ceil(projectCount / queryParams.limit), [projectCount, queryParams.limit]);
-  const isFcAdmin = useMemo(() => UserModel.Role.FCA_ADMIN === userRole, [userRole]);
 
-  const getStatusFilter = useCallback((filter: ResourceModel.Status) => (isFcAdmin ? ResourceModel.keyFilterMap[filter] : undefined), [isFcAdmin]);
+  const getStatusFilter = useCallback((filter: ResourceModel.Status) => (isFcaUser ? ResourceModel.keyFilterMap[filter] : undefined), [isFcaUser]);
 
   const onPageChange = useCallback(
     newPage => {
@@ -188,8 +205,8 @@ const ProjectList = ({
   }, [projectStatistics, fetchProjectStatistics]);
 
   useEffect(() => {
-    if (!isFcAdmin && !invoiceStatistics) fetchInvoiceStatistics();
-  }, [invoiceStatistics, isFcAdmin, fetchInvoiceStatistics]);
+    if (!isFcaUser && !invoiceStatistics) fetchInvoiceStatistics();
+  }, [invoiceStatistics, isFcaUser, fetchInvoiceStatistics]);
 
   useEffect(() => {
     return function unMount() {
@@ -206,7 +223,7 @@ const ProjectList = ({
         <PageTitle
           title="Projects"
           right={
-            <RoleGuard roleList={[UserModel.Role.FCA_ADMIN]}>
+            <PermissionGuard shouldbeFCAUser={true} permissionsExpression={UserModel.DraftProjectsPermission.MANAGE}>
               <>
                 <Button
                   className={`${buttonClasses.createButton} ${buttonClasses.primaryButtonLarge}`}
@@ -221,12 +238,12 @@ const ProjectList = ({
                   Create Project
                 </Button>
               </>
-            </RoleGuard>
+            </PermissionGuard>
           }
         />
         <div className={listClasses.widgetsWrapper} id="summary-widgets">
-          <StatusWidget
-            total={getConditionalDefaultValue(isFcAdmin, getDefaultValue(projectStatistics?.draft, 0), getDefaultValue(projectStatistics?.pending, 0))}
+          {/* <StatusWidget
+            total={getConditionalDefaultValue(isFcaUser, getDefaultValue(projectStatistics?.draft, 0), getDefaultValue(projectStatistics?.pending, 0))}
             status={ProjectModel.widgetMap[userRole].First.status}
             content={
               <p className={classes.reviewLink} onClick={() => setFilter(ResourceModel.Status.DRAFT)}>
@@ -234,10 +251,10 @@ const ProjectList = ({
               </p>
             }
             loading={statisticsLoading?.isLoading}
-          />
-          <StatusWidget
+          /> */}
+          {/* <StatusWidget
             total={getConditionalDefaultValue(
-              isFcAdmin,
+              isFcaUser,
               getDefaultValue(projectStatistics?.pendingApproval, 0),
               getDefaultValue(projectStatistics?.accepted, 0)
             )}
@@ -248,10 +265,10 @@ const ProjectList = ({
               </p>
             }
             loading={statisticsLoading?.isLoading}
-          />
-          <StatusWidget
+          /> */}
+          {/* <StatusWidget
             total={ProjectModel.widgetMap[userRole].Third.total(
-              getConditionalDefaultValue(isFcAdmin, getDefaultValue(projectStatistics?.active, 0), getDefaultValue(projectStatistics?.billing, 0))
+              getConditionalDefaultValue(isFcaUser, getDefaultValue(projectStatistics?.active, 0), getDefaultValue(projectStatistics?.billing, 0))
             )}
             status={ProjectModel.widgetMap[userRole].Third.status}
             content={
@@ -260,7 +277,7 @@ const ProjectList = ({
               </p>
             }
             loading={statisticsLoading?.isLoading}
-          />
+          /> */}
         </div>
         <div className={tableGlobalClasses.tableWrapper}>
           <div className={tableGlobalClasses.filterContainer}>
@@ -285,12 +302,12 @@ const ProjectList = ({
           </div>
           {listLoading && !listLoading.isLoading ? (
             <>
-              <RoleGuard roleList={[UserModel.Role.CLIENT_ADMIN]}>
+              <PermissionGuard permissionsExpression={UserModel.ProjectsPermission.ACCEPTSERVICEAGREEMENT}>
                 <>
                   {queryParams.filter === 'my-projects' &&
                     bannerList.map(project => <ProjectBanner key={project.id} project={project} onOpen={handleBannerClick} />)}
                 </>
-              </RoleGuard>
+              </PermissionGuard>
               {projectList.length > 0 && (
                 <>
                   <Table aria-label="project-list">
@@ -299,7 +316,7 @@ const ProjectList = ({
                         <TableCell>Project Name</TableCell>
                         <TableCell>Address</TableCell>
                         <TableCell>Estimated Date</TableCell>
-                        <TableCell>{getConditionalDefaultValue(isFcAdmin, 'Clients', 'Companies')}</TableCell>
+                        <TableCell>{getConditionalDefaultValue(isFcaUser, 'Clients', 'Companies')}</TableCell>
                       </TableRow>
                     </TableHead>
                     <TableBody>

@@ -9,9 +9,9 @@ import { userState } from 'modules/state-mgmt/user';
 export const mapStateToProps = (state: IRootState) => ({
   authenticated: state.auth.authenticated,
   sessionChecked: state.auth.sessionChecked,
-  currentUserRole: state.auth.role,
+  currentUserPermissions: state.auth.session?.permissions,
   clientMap: state.client.clientMap,
-  companyId: state.auth.companyId,
+  companyId: state.auth.currentCompanyId,
   companyUserId: state.auth.companyUserId,
 });
 
@@ -20,6 +20,7 @@ export const mapDispatchToProps = dispatch => ({
   fetchClient: (id: string) => dispatch(clientState.actions.fetchClientStart(id)),
   getAccountData: () => dispatch(userState.actions.fetchProfileDataStart()),
   fetchAdminPermission: (id: string) => dispatch(clientState.actions.fetchAdminPermissionStart(id)),
+  fetchUserPermissions: (id: string) => dispatch(authState.actions.fetchUserPermissionsStart(id)),
 });
 
 export default connect(mapStateToProps, mapDispatchToProps)(ProtectedRoute);

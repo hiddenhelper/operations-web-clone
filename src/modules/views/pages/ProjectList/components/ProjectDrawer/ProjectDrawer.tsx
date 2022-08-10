@@ -4,12 +4,12 @@ import Divider from '@material-ui/core/Divider';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
 
-import RoleGuard from '../../../../shared/RoleGuard/RoleGuard';
 import Drawer from '../../../../shared/ResourceManagement/Drawer';
 import ControlledButton from '../../../../shared/FormHandler/ControlledButton';
 import Modal from '../../../../shared/Modal';
 import DeleteModal from '../../../../shared/Modal/components/Delete';
 import ProjectClient from './components/ProjectClient';
+import PermissionGuard from 'modules/views/shared/PermissionGuard';
 
 import { GeneralModel, ProjectModel, ResourceModel, UserModel } from '../../../../../models';
 import { MonetizationIcon } from '../../../../../../constants';
@@ -188,35 +188,43 @@ const ProjectDrawer = ({ isOpen, isLoading, deleteLoading, userRole, project, pr
             </div>
             <Divider className={drawerClasses.drawerDivider} />
             <div className={listClasses.ctaWrapper}>
-              <ControlledButton>
-                <Button
-                  disableRipple={true}
-                  className={`${buttonClasses.drawerCTA} ${buttonClasses.borderPrimaryButton} ${buttonClasses.primaryButtonPadding}`}
-                  variant="outlined"
-                  href={linkTo}
-                  data-testid="drawerProjectButton"
-                >
-                  {buttonText}
-                </Button>
-              </ControlledButton>
+              <PermissionGuard
+                permissionsExpression={
+                  project.status === ResourceModel.Status.ACTIVE ? UserModel.ProjectsPermission.VIEWACCESS : UserModel.DraftProjectsPermission.MANAGE
+                }
+              >
+                <>
+                  <ControlledButton>
+                    <Button
+                      disableRipple={true}
+                      className={`${buttonClasses.drawerCTA} ${buttonClasses.borderPrimaryButton} ${buttonClasses.primaryButtonPadding}`}
+                      variant="outlined"
+                      href={linkTo}
+                      data-testid="drawerProjectButton"
+                    >
+                      {buttonText}
+                    </Button>
+                  </ControlledButton>
 
-              {onDelete && userRole && (
-                <RoleGuard currentUserRole={userRole} roleList={[UserModel.Role.FCA_ADMIN]}>
-                  {project.status !== ResourceModel.Status.ACTIVE && project.status !== ResourceModel.Status.ARCHIVED && (
-                    <ControlledButton>
-                      <Button
-                        disableRipple={true}
-                        className={`${buttonClasses.drawerCTA} ${buttonClasses.warningButton}`}
-                        variant="outlined"
-                        onClick={onDeleteOpen}
-                        data-testid="deleteProjectButton"
-                      >
-                        Delete
-                      </Button>
-                    </ControlledButton>
+                  {onDelete && userRole && (
+                    <>
+                      {project.status !== ResourceModel.Status.ACTIVE && project.status !== ResourceModel.Status.ARCHIVED && (
+                        <ControlledButton>
+                          <Button
+                            disableRipple={true}
+                            className={`${buttonClasses.drawerCTA} ${buttonClasses.warningButton}`}
+                            variant="outlined"
+                            onClick={onDeleteOpen}
+                            data-testid="deleteProjectButton"
+                          >
+                            Delete
+                          </Button>
+                        </ControlledButton>
+                      )}
+                    </>
                   )}
-                </RoleGuard>
-              )}
+                </>
+              </PermissionGuard>
             </div>
           </div>
         )}

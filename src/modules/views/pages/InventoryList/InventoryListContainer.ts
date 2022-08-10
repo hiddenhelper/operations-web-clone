@@ -10,6 +10,7 @@ export const mapStateToProps = (state: IRootState) => ({
   userRole: state.auth.role,
   inventoryStatistics: state.statistics.inventoryStatistics,
   statisticsLoading: state.general.loadingMap[GENERAL.LOADING_KEY.FETCH_INVENTORY_STATISTICS],
+  currentUserPermissions: state.auth.session?.permissions,
 });
 
 export const mapDispatchToProps = (dispatch: Dispatch) => ({

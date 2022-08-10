@@ -12,6 +12,7 @@ export const mapStateToProps = (state: IRootState) => ({
   historyList: state.badge.historyList,
   count: state.badge.count,
   loading: state.general.loadingMap[GENERAL.LOADING_KEY.FETCH_BADGE_HISTORY],
+  currentUserPermissions: state.auth.session?.permissions,
 });
 
 export const mapDispatchToProps = (dispatch: Dispatch) => ({

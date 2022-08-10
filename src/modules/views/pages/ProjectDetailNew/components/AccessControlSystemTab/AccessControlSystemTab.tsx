@@ -7,7 +7,7 @@ import Modal from 'modules/views/shared/Modal';
 import Confirm from 'modules/views/shared/Modal/components/Confirm';
 import AssignAccessControlSystemModal from './components/AssignAccessControlSystemModal';
 import AccessControlSystemTabDrawer from './components/AccessControlSystemTabDrawer';
-import RoleGuard from 'modules/views/shared/RoleGuard';
+import PermissionGuard from 'modules/views/shared/PermissionGuard';
 import SelectFilter from 'modules/views/shared/SelectFilter/SelectFilter';
 
 import { GeneralModel, AccessControlSystemModel, ProjectModel, UserModel } from 'modules/models';
@@ -19,10 +19,12 @@ import { tableGlobalStyles } from 'assets/styles';
 
 import AccessControlSystemExpansibleList from './components/AccessControlSystemExpansibleList';
 import { useStyles } from '../../styles';
+import { hasValidPermissions } from 'modules/models/user';
 
 export interface IAccessControlSystemTab {
   queryParams: GeneralModel.IQueryParams;
   currentProject: ProjectModel.IProject;
+  currentUserPermissions: UserModel.IPermission[];
   accessControlSystemMap: GeneralModel.IEntityMap<AccessControlSystemModel.IAccessControlSystem>;
   modalMap: GeneralModel.IEntityMap<AccessControlSystemModel.IAccessControlSystem>;
   accessControlSystemCount: number;
@@ -69,6 +71,7 @@ const AccessControlSystemTab = ({
   ctaDisabled,
   drawer,
   assignLoading,
+  currentUserPermissions,
   accessControlSystemSummaryLoading,
   loadAccessControlSystemModalLoading,
   unassignAccessControlSystemLoading,
@@ -116,10 +119,12 @@ const AccessControlSystemTab = ({
 
   const onOpenDrawer = useCallback(
     (acsId: string) => {
-      fetchAccessControlSystemSummary(acsId);
-      setDrawer({ open: true, id: acsId });
+      if (hasValidPermissions(UserModel.AccessControlSystemsPermission.VIEWACCESS, currentUserPermissions)) {
+        fetchAccessControlSystemSummary(acsId);
+        setDrawer({ open: true, id: acsId });
+      }
     },
-    [setDrawer, fetchAccessControlSystemSummary]
+    [setDrawer, fetchAccessControlSystemSummary, currentUserPermissions]
   );
   const onCloseDrawer = useCallback(/* istanbul ignore next */ () => setDrawer({ open: false, id: null }), [setDrawer]);
 
@@ -219,7 +224,7 @@ const AccessControlSystemTab = ({
   }
 
   const renderAcsItem = (acs: AccessControlSystemModel.IAccessControlSystem) => (
-    <Grid container={true} alignItems="center" style={{ cursor: 'pointer', height: '100%' }} data-testid="acs-item" onClick={() => onOpenDrawer(acs.id)}>
+    <Grid className={classes.gridContainer} container={true} alignItems="center" data-testid="acs-item" onClick={() => onOpenDrawer(acs.id)}>
       <Grid item={true} xs={true}>
         <Typography>{acs.deviceName}</Typography>
       </Grid>
@@ -241,17 +246,21 @@ const AccessControlSystemTab = ({
   return (
     <>
       <div>
-        <div className={`${tableGlobalClasses.filterActionsContainer} ${tableGlobalClasses.filterActionsContainerPadding}`}>
+        <div className={`${tableGlobalClasses.filterActionsContainer} ${tableGlobalClasses.filterActionsContainerPadding} ${classes.assignACSWrapper}`}>
           <Box className={`${tableGlobalClasses.filterStatusContainer} ${tableGlobalClasses.autocompleteFilterStatus} ${classes.acsFilterWrapper}`}>
-            <SelectFilter
-              value={getDefaultValue(AccessControlSystemModel.accessControlSystemTypeMap[queryParams.type], 'All ACS')}
-              optionList={acsTypeFilterOptionList}
-              onChange={onFilterAcsTypeChange}
-            />
+            <div className={classes.buttonSpacer}>
+              <SelectFilter
+                value={getDefaultValue(AccessControlSystemModel.accessControlSystemTypeMap[queryParams.type], 'All ACS')}
+                optionList={acsTypeFilterOptionList}
+                onChange={onFilterAcsTypeChange}
+              />
+            </div>
           </Box>
-          <RoleGuard roleList={[UserModel.Role.FCA_ADMIN]}>
+          <PermissionGuard
+            permissionsExpression={`${UserModel.AccessControlSystemsPermission.MANAGE} AND ${UserModel.AccessControlSystemsPermission.VIEWACCESS}`}
+          >
             <Button
-              className={`${buttonClasses.createButton} ${buttonClasses.primaryButtonExtraLarge}`}
+              className={`${buttonClasses.createButton} ${buttonClasses.primaryButtonExtraLarge} ${classes.buttonLeftSpacer}`}
               color="primary"
               variant="contained"
               fullWidth={true}
@@ -262,7 +271,7 @@ const AccessControlSystemTab = ({
             >
               Assign ACS
             </Button>
-          </RoleGuard>
+          </PermissionGuard>
         </div>
         {accessControlSystemProjectLoading && !accessControlSystemProjectLoading.isLoading && accessControlSystemList.length === 0 ? (
           <EmptyList icon={<InventoryIcon />} text="There are no ACS assigned" />

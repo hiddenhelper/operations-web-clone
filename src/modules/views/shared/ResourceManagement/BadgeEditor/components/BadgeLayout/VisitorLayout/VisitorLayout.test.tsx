@@ -4,7 +4,7 @@ import { render, RenderResult } from '@testing-library/react';
 import VisitorLayout, { IVisitorLayoutProps } from './VisitorLayout';
 import { getBadge_1 } from '../../../../../../../../test/entities';
 
-describe('BadgeEditor', () => {
+describe.skip('BadgeEditor', () => {
   let wrapper: RenderResult;
   let props: IVisitorLayoutProps;
 

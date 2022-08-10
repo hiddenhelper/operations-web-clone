@@ -2,11 +2,11 @@ import React, { memo, useMemo } from 'react';
 import { Avatar, Badge, TableCell, TableRow, withStyles } from '@material-ui/core';
 
 import AvatarImage from 'modules/views/shared/AvatarImage';
-import RoleGuard from 'modules/views/shared/RoleGuard';
 import StatusChip from 'modules/views/shared/StatusChip';
 import WorkerInviteStatusIcon from 'modules/views/shared/WorkerInviteStatusIcon';
+import PermissionGuard from 'modules/views/shared/PermissionGuard';
 
-import { UserModel, WorkerModel } from 'modules/models';
+import { WorkerModel, UserModel } from 'modules/models';
 import { getTradesString } from 'utils/tradeUtils';
 import { avatarGlobalStyles } from 'assets/styles';
 import { useStyles as statusChipStyles } from '../../../../shared/StatusChip/styles';
@@ -49,19 +49,21 @@ const WorkerRow = ({ onClick, worker }: IWorkerRowProps) => {
               <AvatarImage url={worker?.pictureUrl} title={WorkerModel.workerInviteMap[worker.invitationStatus]} />
             </Avatar>
           </Badge>
-          <TableCellLink
-            href={`/workers/detail/${worker.id}`}
-            testId="worker-row-btn"
-            text={`${worker.firstName} ${worker.lastName}`}
-            title="View Worker details"
-          />
+          <PermissionGuard permissionsExpression={UserModel.WorkersPermission.VIEWACCESS} fallback={<>{worker.firstName + ' ' + worker.lastName}</>}>
+            <TableCellLink
+              href={`/workers/detail/${worker.id}`}
+              testId="worker-row-btn"
+              text={`${worker.firstName} ${worker.lastName}`}
+              title="View Worker details"
+            />
+          </PermissionGuard>
         </div>
       </TableCell>
       <TableCell>
         {worker?.company?.id ? (
-          <RoleGuard roleList={[UserModel.Role.FCA_ADMIN]} fallback={<>{worker.company.name}</>}>
+          <PermissionGuard permissionsExpression={UserModel.ClientsPermission.VIEWACCESS} fallback={<>{worker.company.name}</>}>
             <TableCellLink href={`/clients/detail/${worker.company.id}`} testId="worker-row-btn" text={worker.company.name} title="View Client details" />
-          </RoleGuard>
+          </PermissionGuard>
         ) : (
           '-'
         )}

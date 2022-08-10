@@ -68,20 +68,33 @@ exports[`ProtectedRoute Component should render home redirect 1`] = `
 exports[`ProtectedRoute Component should render loader 1`] = `
 <body>
   <div>
-    <main
-      class="makeStyles-appContainer-10"
+    <div
+      class="makeStyles-container-4"
     >
       <div
-        class="makeStyles-headerSpacer-11"
-      />
-      <section
-        class="makeStyles-sectionContainer-12"
-      />
-    </main>
+        class="MuiCircularProgress-root MuiCircularProgress-colorPrimary MuiCircularProgress-indeterminate"
+        role="progressbar"
+        style="width: 40px; height: 40px;"
+      >
+        <svg
+          class="MuiCircularProgress-svg"
+          viewBox="22 22 44 44"
+        >
+          <circle
+            class="MuiCircularProgress-circle MuiCircularProgress-circleIndeterminate"
+            cx="44"
+            cy="44"
+            fill="none"
+            r="20.2"
+            stroke-width="3.6"
+          />
+        </svg>
+      </div>
+    </div>
   </div>
   <div>
     <div
-      class="makeStyles-container-13"
+      class="makeStyles-container-4"
     >
       <div
         class="MuiCircularProgress-root MuiCircularProgress-colorPrimary MuiCircularProgress-indeterminate"
@@ -110,16 +123,29 @@ exports[`ProtectedRoute Component should render loader 1`] = `
 exports[`ProtectedRoute Component should render loading 1`] = `
 <body>
   <div>
-    <main
-      class="makeStyles-appContainer-4"
+    <div
+      class="makeStyles-container-2"
     >
       <div
-        class="makeStyles-headerSpacer-5"
-      />
-      <section
-        class="makeStyles-sectionContainer-6"
-      />
-    </main>
+        class="MuiCircularProgress-root MuiCircularProgress-colorPrimary MuiCircularProgress-indeterminate"
+        role="progressbar"
+        style="width: 40px; height: 40px;"
+      >
+        <svg
+          class="MuiCircularProgress-svg"
+          viewBox="22 22 44 44"
+        >
+          <circle
+            class="MuiCircularProgress-circle MuiCircularProgress-circleIndeterminate"
+            cx="44"
+            cy="44"
+            fill="none"
+            r="20.2"
+            stroke-width="3.6"
+          />
+        </svg>
+      </div>
+    </div>
   </div>
 </body>
 `;
@@ -384,15 +410,28 @@ exports[`ProtectedRoute Component should render loading while checking session 1
 
 exports[`ProtectedRoute Component should render route 1`] = `
 <div>
-  <main
-    class="makeStyles-appContainer-7"
+  <div
+    class="makeStyles-container-3"
   >
     <div
-      class="makeStyles-headerSpacer-8"
-    />
-    <section
-      class="makeStyles-sectionContainer-9"
-    />
-  </main>
+      class="MuiCircularProgress-root MuiCircularProgress-colorPrimary MuiCircularProgress-indeterminate"
+      role="progressbar"
+      style="width: 40px; height: 40px;"
+    >
+      <svg
+        class="MuiCircularProgress-svg"
+        viewBox="22 22 44 44"
+      >
+        <circle
+          class="MuiCircularProgress-circle MuiCircularProgress-circleIndeterminate"
+          cx="44"
+          cy="44"
+          fill="none"
+          r="20.2"
+          stroke-width="3.6"
+        />
+      </svg>
+    </div>
+  </div>
 </div>
 `;

@@ -4,7 +4,7 @@ import { IconButton, TableCell, TableRow, withStyles } from '@material-ui/core';
 import ButtonMenu from 'modules/views/shared/ButtonMenu';
 import ControlledButton from 'modules/views/shared/FormHandler/ControlledButton';
 import ControlledTooltip from 'modules/views/shared/ResourceManagement/ControlledTooltip';
-import RoleGuard from 'modules/views/shared/RoleGuard';
+import PermissionGuard from '../PermissionGuard';
 import StatusChip from 'modules/views/shared/StatusChip';
 import TableCellLink from 'modules/views/shared/TableCellLink';
 
@@ -119,12 +119,14 @@ const InvoiceRow = ({
       {!!clientColumnVisible && (
         <TableCell className={listClasses.listNameFullWidth}>
           {isFcAdmin && invoice.company?.id ? (
-            <TableCellLink
-              href={`/clients/detail/${invoice.company.id}`}
-              testId="invoice-list-row-client-button"
-              text={getDefaultValue(invoice.company.name)}
-              title="View Client details"
-            />
+            <PermissionGuard permissionsExpression={UserModel.ClientsPermission.VIEWACCESS} fallback={<>{getDefaultValue(invoice.project.name)}</>}>
+              <TableCellLink
+                href={`/clients/detail/${invoice.company.id}`}
+                testId="invoice-list-row-client-button"
+                text={getDefaultValue(invoice.company.name)}
+                title="View Client details"
+              />
+            </PermissionGuard>
           ) : (
             <span>{getDefaultValue(invoice.company?.name)}</span>
           )}
@@ -158,21 +160,23 @@ const InvoiceRow = ({
             </span>
           )}
           <span className={classes.invoiceRowIconsWrapper}>
-            <ControlledButton styleClass={classes.invoiceRowButton}>
-              <ControlledTooltip title={getConditionalDefaultValue(isDraft, 'Edit Invoice', 'Invoice Information')} placement="left">
-                <IconButton
-                  data-testid="open-invoice-information"
-                  onClick={handleInvoiceInformationClick}
-                  disableRipple={true}
-                  aria-label="invoice-information"
-                  color="default"
-                >
-                  <InvoiceIcon className={classes.invoiceIcon} />
-                </IconButton>
-              </ControlledTooltip>
-            </ControlledButton>
+            <PermissionGuard permissionsExpression={UserModel.InvoicesPermission.VIEWACCESS}>
+              <ControlledButton styleClass={classes.invoiceRowButton}>
+                <ControlledTooltip title={getConditionalDefaultValue(isDraft, 'Edit Invoice', 'Invoice Information')} placement="left">
+                  <IconButton
+                    data-testid="open-invoice-information"
+                    onClick={handleInvoiceInformationClick}
+                    disableRipple={true}
+                    aria-label="invoice-information"
+                    color="default"
+                  >
+                    <InvoiceIcon className={classes.invoiceIcon} />
+                  </IconButton>
+                </ControlledTooltip>
+              </ControlledButton>
+            </PermissionGuard>
             {showContextActions && (
-              <RoleGuard roleList={[UserModel.Role.FCA_ADMIN]}>
+              <PermissionGuard permissionsExpression={UserModel.InvoicesPermission.MANAGE}>
                 <ControlledButton styleClass={classes.invoiceRowButton}>
                   <ButtonMenu
                     buttonProps={{
@@ -189,7 +193,7 @@ const InvoiceRow = ({
                     disabled={contextActionsDisabled}
                   />
                 </ControlledButton>
-              </RoleGuard>
+              </PermissionGuard>
             )}
           </span>
         </div>

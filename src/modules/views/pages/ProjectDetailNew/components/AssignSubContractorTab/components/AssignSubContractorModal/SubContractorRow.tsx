@@ -3,8 +3,8 @@ import { TableCell, TableRow, withStyles } from '@material-ui/core';
 
 import Checkbox from 'modules/views/shared/FormHandler/Checkbox';
 import ControlledSelect from 'modules/views/shared/FormHandler/ControlledSelect/ControlledSelect';
-import RoleGuard from 'modules/views/shared/RoleGuard';
 import TableCellLink from 'modules/views/shared/TableCellLink';
+import PermissionGuard from 'modules/views/shared/PermissionGuard';
 
 import { ClientModel, UserModel } from 'modules/models';
 import { getTradesString } from 'utils/tradeUtils';
@@ -47,9 +47,9 @@ const SubContractor = ({ subContractor, isSelected, isTaxExempt, showTaxConditio
       <TableCell>
         <div className={`${globalClasses.tableEllipsis} ${classes.assignNameLeftSpace}`}>
           <Checkbox name="subContractor" onChange={onSelectHandler} value={subContractor.id} isChecked={isSelected} />{' '}
-          <RoleGuard roleList={[UserModel.Role.FCA_ADMIN]} fallback={<>{subContractor.name}</>}>
+          <PermissionGuard permissionsExpression={UserModel.ClientsPermission.VIEWACCESS} fallback={<>{subContractor.name}</>}>
             <TableCellLink href={`/clients/detail/${subContractor.id}`} text={subContractor.name} title="View Subcontractor details" />
-          </RoleGuard>
+          </PermissionGuard>
         </div>
       </TableCell>
       <TableCell>

@@ -36,10 +36,12 @@ export interface IInvoiceTableProps {
   payLoading: GeneralModel.ILoadingStatus;
   voidLoading: GeneralModel.ILoadingStatus;
   confirmInvoiceLoading: GeneralModel.ILoadingStatus;
-  userRole: UserModel.Role;
   clientColumnVisible?: boolean;
   projectColumnVisible?: boolean;
   paymentColumnVisible?: boolean;
+  currentUserPermissions?: UserModel.IPermission[];
+  isFcaUser: boolean;
+  isAdmin: boolean;
   setInvoiceId: (id) => void;
   setDrawer: (isOpen: boolean) => void;
   setQueryParams: (params: GeneralModel.IQueryParams) => void;
@@ -70,10 +72,12 @@ const InvoiceTable = ({
   payLoading,
   voidLoading,
   confirmInvoiceLoading,
-  userRole,
   clientColumnVisible = true,
   projectColumnVisible = true,
   paymentColumnVisible = false,
+  currentUserPermissions,
+  isFcaUser,
+  isAdmin,
   setInvoiceId,
   setInvoiceModal,
   setDrawer,
@@ -199,11 +203,15 @@ const InvoiceTable = ({
 
   const openInvoice = useCallback(
     (id: string) => {
-      fetchInvoiceSummary(id);
-      setInvoiceId(id);
-      setDrawer(true);
+      const currentUserPermissionNames = currentUserPermissions.map(({ name }) => name);
+      const hasRequiredPermissions = currentUserPermissionNames.includes(UserModel.InvoicesPermission.VIEWACCESS);
+      if (hasRequiredPermissions) {
+        fetchInvoiceSummary(id);
+        setInvoiceId(id);
+        setDrawer(true);
+      }
     },
-    [fetchInvoiceSummary, setDrawer, setInvoiceId]
+    [currentUserPermissions, fetchInvoiceSummary, setDrawer, setInvoiceId]
   );
 
   const closeInvoice = useCallback(() => setDrawer(false), [setDrawer]);
@@ -242,7 +250,7 @@ const InvoiceTable = ({
   useEffect(() => {
     if (invoiceToConfirm.invoice) setConfirmActionModal({ isOpen: true, content: modalContentMap[invoiceToConfirm.action] });
   }, [invoiceToConfirm, modalContentMap]);
-  const isFcAdmin = useMemo(() => userRole === UserModel.Role.FCA_ADMIN, [userRole]);
+  const isFcAdmin: boolean = useMemo(() => isFcaUser && isAdmin, [isFcaUser, isAdmin]);
 
   useEffect(() => {
     setQueryParams({ ...queryParams });

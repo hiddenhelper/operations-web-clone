@@ -3,7 +3,7 @@ import { IconButton, TableCell, TableRow, withStyles } from '@material-ui/core';
 
 import ControlledButton from 'modules/views/shared/FormHandler/ControlledButton';
 import ControlledTooltip from 'modules/views/shared/ResourceManagement/ControlledTooltip';
-import RoleGuard from 'modules/views/shared/RoleGuard';
+import PermissionGuard from 'modules/views/shared/PermissionGuard';
 import StatusChip from 'modules/views/shared/StatusChip';
 import TableCellLink from 'modules/views/shared/TableCellLink';
 
@@ -72,9 +72,9 @@ const VisitorRow = ({ visitor, openBadge, openDrawer }: IBadgeVisitorRowProps) =
         {!visitor.entityName && !visitor.company && '-'}
         {getDefaultValue(visitor.entityName, null)}
         {visitor.company?.id && (
-          <RoleGuard roleList={[UserModel.Role.FCA_ADMIN]} fallback={<>{visitor.company.name}</>}>
+          <PermissionGuard permissionsExpression={UserModel.ClientsPermission.VIEWACCESS} fallback={<>{visitor.company.name}</>}>
             <TableCellLink href={`/clients/detail/${visitor.company.id}`} text={visitor.company.name} title="View Client details" />
-          </RoleGuard>
+          </PermissionGuard>
         )}
       </TableCell>
       <TableCell>
@@ -85,15 +85,17 @@ const VisitorRow = ({ visitor, openBadge, openDrawer }: IBadgeVisitorRowProps) =
               label={projectInvitationStatusChipMap[visitor?.availability]?.label}
             />
           </span>
-          <div className={classes.visitorRowIconsWrapper}>
-            <ControlledButton>
-              <ControlledTooltip title={BadgeModel.badgeStatusMap[visitor.status]} placement={'left-start'}>
-                <IconButton data-testid="open-visitor-badge-modal" onClick={onOpenBadge} disableRipple={true} aria-label="badge-modal" color="default">
-                  {visitorStatusIconMap[visitor.status]}
-                </IconButton>
-              </ControlledTooltip>
-            </ControlledButton>
-          </div>
+          <PermissionGuard permissionsExpression={UserModel.VisitorsPermission.VIEWACCESS}>
+            <div className={classes.visitorRowIconsWrapper}>
+              <ControlledButton>
+                <ControlledTooltip title={BadgeModel.badgeStatusMap[visitor.status]} placement={'left-start'}>
+                  <IconButton data-testid="open-visitor-badge-modal" onClick={onOpenBadge} disableRipple={true} aria-label="badge-modal" color="default">
+                    {visitorStatusIconMap[visitor.status]}
+                  </IconButton>
+                </ControlledTooltip>
+              </ControlledButton>
+            </div>
+          </PermissionGuard>
         </div>
       </TableCell>
     </StyledTableRow>

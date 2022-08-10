@@ -17,9 +17,3 @@ exports[`ConsentForm should render loading 1`] = `
   aria-hidden="true"
 />
 `;
-
-exports[`ConsentForm should render secondary values 1`] = `
-<div
-  aria-hidden="true"
-/>
-`;

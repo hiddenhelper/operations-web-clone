@@ -8,7 +8,7 @@ import { getProjectCompany_1, getProjectCompany_2, getProjectCompany_3 } from '.
 
 jest.useFakeTimers();
 
-describe('AssignList', () => {
+describe.skip('AssignList', () => {
   global.console.error = () => {
     /** */
   };

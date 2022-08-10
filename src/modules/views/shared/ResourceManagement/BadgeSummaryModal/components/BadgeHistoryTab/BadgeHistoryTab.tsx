@@ -11,11 +11,12 @@ import withStyles from '@material-ui/core/styles/withStyles';
 import Pagination from '../../../../Pagination';
 import EmptyList from '../../../../EmptyList';
 
-import { BadgeModel, GeneralModel } from '../../../../../../models';
+import { BadgeModel, GeneralModel, UserModel } from '../../../../../../models';
 import { getFormattedDate } from '../../../../../../../utils/generalUtils';
 import { listGlobalStyles, listTableRowStyles } from '../../../../../../../assets/styles';
 import { EBadgeIcon } from '../../../../../../../constants';
 import { useStyles } from '../../styles';
+import { hasValidPermissions } from 'modules/models/user';
 
 const StyledTableRow = withStyles(listTableRowStyles)(TableRow);
 
@@ -24,11 +25,12 @@ export interface IBadgeHistoryTabProps {
   historyList: BadgeModel.IBadgeHistory[];
   count: number;
   loading: GeneralModel.ILoadingStatus;
+  currentUserPermissions: UserModel.IPermission[];
   fetchBadgeHistory: (id: string, query: GeneralModel.IQueryParams) => void;
   clearBadgeHistory: () => void;
 }
 
-const BadgeHistoryTab = ({ badgeId, historyList, count, loading, fetchBadgeHistory, clearBadgeHistory }: IBadgeHistoryTabProps) => {
+const BadgeHistoryTab = ({ badgeId, historyList, count, loading, currentUserPermissions, fetchBadgeHistory, clearBadgeHistory }: IBadgeHistoryTabProps) => {
   const listGlobalClasses = listGlobalStyles();
   const classes = useStyles();
   const [queryParams, setQueryParams] = useState<{ page: number; limit: number }>({
@@ -45,8 +47,8 @@ const BadgeHistoryTab = ({ badgeId, historyList, count, loading, fetchBadgeHisto
   );
 
   useEffect(() => {
-    fetchBadgeHistory(badgeId, queryParams);
-  }, [badgeId, queryParams, fetchBadgeHistory]);
+    if (hasValidPermissions(UserModel.BadgesPermission.VIEWACCESS, currentUserPermissions)) fetchBadgeHistory(badgeId, queryParams);
+  }, [badgeId, queryParams, currentUserPermissions, fetchBadgeHistory]);
 
   useEffect(() => {
     return function unMount() {

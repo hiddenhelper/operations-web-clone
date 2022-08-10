@@ -30,6 +30,7 @@ const BadgePrinterSystemDrawer = ({ isOpen, isLoading, deleteLoading, deviceList
         device={device}
         deviceListElement={deviceListElement}
         deleteLoading={deleteLoading}
+        type="BPS"
         onDelete={onDelete}
         renderSummary={() => <BadgePrintingSystemSummary device={device} deviceListElement={deviceListElement} />}
       />

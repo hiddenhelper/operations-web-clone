@@ -5,7 +5,7 @@ import { Person } from '@material-ui/icons';
 import ClientFilter from 'modules/views/shared/ClientFilter';
 import EmptyList from 'modules/views/shared/EmptyList';
 import Pagination from 'modules/views/shared/Pagination';
-import RoleGuard from 'modules/views/shared/RoleGuard';
+import PermissionGuard from 'modules/views/shared/PermissionGuard';
 import TableCellLink from 'modules/views/shared/TableCellLink';
 
 import AssignUser from '../AssignUser';
@@ -31,6 +31,7 @@ export interface IUsersTabProps {
   isFcAdmin: boolean;
   userLoading: GeneralModel.ILoadingStatus;
   assignUserLoading: GeneralModel.ILoadingStatus;
+  isFcaUser: boolean;
   openModal: () => void;
   closeModal: () => void;
   onPageChange: (page: number) => void;
@@ -52,6 +53,7 @@ const UsersTab = ({
   isFcAdmin,
   assignUserLoading,
   userLoading,
+  isFcaUser,
   fetchUserList,
   openModal,
   closeModal,
@@ -110,7 +112,7 @@ const UsersTab = ({
   }
 
   const editCompanyUser = (companyId: string, companyUserId: string) => {
-    if (!isFcAdmin || !companyId || !companyUserId) return;
+    if (!companyId || !companyUserId) return;
 
     fetchUserProfile(companyId, companyUserId);
     setUserCompanyId(companyId);
@@ -135,19 +137,21 @@ const UsersTab = ({
           setQueryParams={setQueryParams}
           fetchClientList={fetchProjectClientList}
         />
-        <Button
-          className={`${buttonClasses.createButton} ${buttonClasses.primaryButtonLarge}`}
-          color="primary"
-          variant="contained"
-          fullWidth={true}
-          size="large"
-          type="submit"
-          data-testid="user-modal-open-btn"
-          onClick={openModal}
-          disabled={ctaDisabled}
-        >
-          Assign User
-        </Button>
+        <PermissionGuard permissionsExpression={`${UserModel.UsersPermission.MANAGE} AND ${UserModel.ProjectsPermission.VIEWACCESS}`}>
+          <Button
+            className={`${buttonClasses.createButton} ${buttonClasses.primaryButtonLarge}`}
+            color="primary"
+            variant="contained"
+            fullWidth={true}
+            size="large"
+            type="submit"
+            data-testid="user-modal-open-btn"
+            onClick={openModal}
+            disabled={ctaDisabled}
+          >
+            Assign User
+          </Button>
+        </PermissionGuard>
       </div>
       {userList.length === 0 ? (
         <EmptyList data-testid="empty-user-list" icon={<WorkersIcon />} text="There are no Users assigned" />
@@ -158,21 +162,10 @@ const UsersTab = ({
               <TableHead>
                 <TableRow>
                   <TableCell>Name</TableCell>
-                  <RoleGuard roleList={[UserModel.Role.FCA_ADMIN]}>
-                    <>
-                      <TableCell>Type</TableCell>
-                      <TableCell>Title</TableCell>
-                      <TableCell>Client</TableCell>
-                      <TableCell>Project Role</TableCell>
-                    </>
-                  </RoleGuard>
-                  <RoleGuard roleList={[UserModel.Role.CLIENT_ADMIN, UserModel.Role.REGULAR_USER]}>
-                    <>
-                      <TableCell>Title</TableCell>
-                      <TableCell>Project Role</TableCell>
-                      <TableCell>Company</TableCell>
-                    </>
-                  </RoleGuard>
+                  <TableCell>Title</TableCell>
+                  {isFcaUser && <TableCell>Client</TableCell>}
+                  <TableCell>Project Role</TableCell>
+                  {!isFcaUser && <TableCell>Company</TableCell>}
                 </TableRow>
               </TableHead>
               <TableBody>
@@ -193,28 +186,37 @@ const UsersTab = ({
                             <Person titleAccess={UserModel.userInviteMap[user.invitationType]} />
                           </Avatar>
                         </Badge>
-                        <span onClick={() => editCompanyUser(user.company.id, user.id)} className={classes.userTitle}>
-                          {user.firstName} {user.lastName}
-                        </span>
+                        <PermissionGuard
+                          permissionsExpression={`${UserModel.UsersPermission.VIEWACCESS} AND ${UserModel.UsersPermission.MANAGE}`}
+                          fallback={
+                            <span className={classes.userTitle}>
+                              {user.firstName} {user.lastName}
+                            </span>
+                          }
+                        >
+                          <span
+                            onClick={() => (user.invitationStatus === UserModel.InvitationStatus.PENDING ? editCompanyUser(user.company.id, user.id) : {})}
+                            className={classes.userTitle}
+                          >
+                            {user.firstName} {user.lastName}
+                          </span>
+                        </PermissionGuard>
                       </div>
                     </TableCell>
-                    <RoleGuard roleList={[UserModel.Role.FCA_ADMIN]}>
-                      <TableCell>{UserModel.userInviteMap[user.invitationType]}</TableCell>
-                    </RoleGuard>
-                    <TableCell>{user.title}</TableCell>
-                    <RoleGuard roleList={[UserModel.Role.FCA_ADMIN]}>
+                    <TableCell>{user.title || '-'}</TableCell>
+                    {isFcaUser && (
                       <TableCell>
                         {user.company?.id ? (
-                          <TableCellLink href={`/clients/detail/${user.company.id}`} text={user.company.name} title="View Client details" />
+                          <PermissionGuard permissionsExpression={UserModel.ClientsPermission.VIEWACCESS} fallback={<>{user.company.name}</>}>
+                            <TableCellLink href={`/clients/detail/${user.company.id}`} text={user.company.name} title="View Client details" />
+                          </PermissionGuard>
                         ) : (
                           '-'
                         )}
                       </TableCell>
-                    </RoleGuard>
+                    )}
                     <TableCell>{getConditionalDefaultValue(user.roleName, `${user.roleName}`, 'Not defined')}</TableCell>
-                    <RoleGuard roleList={[UserModel.Role.CLIENT_ADMIN, UserModel.Role.REGULAR_USER]}>
-                      <TableCell>{user.company?.name}</TableCell>
-                    </RoleGuard>
+                    {!isFcaUser && <TableCell>{user.company?.name}</TableCell>}
                   </StyledTableRow>
                 ))}
               </TableBody>

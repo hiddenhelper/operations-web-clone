@@ -173,45 +173,7 @@ exports[`Project Drawer should render 1`] = `
         />
         <div
           class="makeStyles-ctaWrapper-86"
-        >
-          <span
-            class=""
-            data-testid="controlled-button"
-            tabindex="-1"
-          >
-            <a
-              aria-disabled="false"
-              class="MuiButtonBase-root MuiButton-root MuiButton-outlined makeStyles-drawerCTA-35 makeStyles-borderPrimaryButton-27 makeStyles-primaryButtonPadding-29"
-              data-testid="drawerProjectButton"
-              href="/projects/wizard/9164e4c4-6521-47bb-97fd-c75ac02b2cf2"
-              tabindex="0"
-            >
-              <span
-                class="MuiButton-label"
-              >
-                Edit
-              </span>
-            </a>
-          </span>
-          <span
-            class=""
-            data-testid="controlled-button"
-            tabindex="-1"
-          >
-            <button
-              class="MuiButtonBase-root MuiButton-root MuiButton-outlined makeStyles-drawerCTA-35 makeStyles-warningButton-36"
-              data-testid="deleteProjectButton"
-              tabindex="0"
-              type="button"
-            >
-              <span
-                class="MuiButton-label"
-              >
-                Delete
-              </span>
-            </button>
-          </span>
-        </div>
+        />
       </div>
     </div>
   </div>
@@ -221,17 +183,17 @@ exports[`Project Drawer should render 1`] = `
 exports[`Project Drawer should show loading 1`] = `
 <div>
   <div
-    class="MuiDrawer-root MuiDrawer-docked makeStyles-drawer-145 open"
+    class="MuiDrawer-root MuiDrawer-docked makeStyles-drawer-53 open"
     data-testid="project-drawer-detail"
   >
     <div
-      class="MuiPaper-root MuiDrawer-paper makeStyles-drawerPaper-146 MuiDrawer-paperAnchorRight MuiDrawer-paperAnchorDockedRight MuiPaper-elevation0"
+      class="MuiPaper-root MuiDrawer-paper makeStyles-drawerPaper-54 MuiDrawer-paperAnchorRight MuiDrawer-paperAnchorDockedRight MuiPaper-elevation0"
     >
       <div
-        class="makeStyles-drawerButtonWrapper-148"
+        class="makeStyles-drawerButtonWrapper-56"
       >
         <div
-          class="makeStyles-drawerButton-149"
+          class="makeStyles-drawerButton-57"
         >
           <button
             class="MuiButtonBase-root MuiButton-root MuiButton-text"
@@ -253,10 +215,10 @@ exports[`Project Drawer should show loading 1`] = `
           </button>
         </div>
         <div
-          class="makeStyles-drawerHeader-147"
+          class="makeStyles-drawerHeader-55"
         >
           <p
-            class="MuiTypography-root makeStyles-drawerTitle-150 MuiTypography-body1 MuiTypography-colorPrimary MuiTypography-alignLeft"
+            class="MuiTypography-root makeStyles-drawerTitle-58 MuiTypography-body1 MuiTypography-colorPrimary MuiTypography-alignLeft"
           >
             Project Information
           </p>

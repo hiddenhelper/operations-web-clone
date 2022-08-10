@@ -283,6 +283,243 @@ exports[`ProfileTab should render 1`] = `
                   </div>
                 </div>
               </div>
+              <div
+                class="makeStyles-errorInputWrapper-80"
+              >
+                <div
+                  class="MuiFormControl-root makeStyles-formControl-45 makeStyles-inputBottomPadding-76"
+                >
+                  <h1
+                    class="MuiTypography-root MuiTypography-caption MuiTypography-colorSecondary MuiTypography-alignLeft"
+                  >
+                    Mobile Phone Number
+                     
+                  </h1>
+                  <div>
+                    <div
+                      class="makeStyles-phoneInput-174 undefined  react-tel-input"
+                    >
+                      <div
+                        class="special-label"
+                      >
+                        Phone
+                      </div>
+                      <input
+                        autocomplete="off"
+                        class=" form-control"
+                        data-testid="mobile-user-phone"
+                        name="mobilePhoneNumber"
+                        placeholder="+0 (000) 000-0000"
+                        type="text"
+                        value=""
+                        variant="outlined"
+                      />
+                      <div
+                        class=" flag-dropdown"
+                      >
+                        <div
+                          aria-haspopup="listbox"
+                          class="selected-flag"
+                          role="button"
+                          tabindex="-1"
+                          title=""
+                        >
+                          <div
+                            class="flag 0"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="MuiGrid-root MuiGrid-container"
+              >
+                <div
+                  class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-9 MuiGrid-grid-lg-9"
+                >
+                  <div
+                    class="MuiFormControl-root makeStyles-formControl-45 makeStyles-inputBottomPadding-76 makeStyles-middleInput-114"
+                  >
+                    <h1
+                      class="MuiTypography-root MuiTypography-caption MuiTypography-colorSecondary MuiTypography-alignLeft"
+                    >
+                      Office Phone Number (Optional)
+                       
+                    </h1>
+                    <div>
+                      <div
+                        class="makeStyles-phoneInput-174 undefined  react-tel-input"
+                      >
+                        <div
+                          class="special-label"
+                        >
+                          Phone
+                        </div>
+                        <input
+                          autocomplete="off"
+                          class=" form-control"
+                          data-testid="office-user-phone"
+                          id="officePhoneNumber"
+                          name="officePhoneNumber"
+                          placeholder="+0 (000) 000-0000"
+                          type="text"
+                          value=""
+                          variant="outlined"
+                        />
+                        <div
+                          class=" flag-dropdown"
+                        >
+                          <div
+                            aria-haspopup="listbox"
+                            class="selected-flag"
+                            role="button"
+                            tabindex="-1"
+                            title=""
+                          >
+                            <div
+                              class="flag 0"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-3 MuiGrid-grid-lg-3"
+                >
+                  <div
+                    class="MuiFormControl-root makeStyles-formControl-45 makeStyles-inputBottomPadding-76"
+                  >
+                    <h1
+                      class="MuiTypography-root MuiTypography-caption MuiTypography-colorSecondary MuiTypography-alignLeft"
+                    >
+                      Ext
+                       
+                    </h1>
+                    <div>
+                      <div
+                        class="MuiFormControl-root MuiTextField-root MuiFormControl-fullWidth"
+                      >
+                        <div
+                          class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-fullWidth MuiInputBase-formControl"
+                        >
+                          <input
+                            aria-invalid="false"
+                            autocomplete="off"
+                            class="MuiInputBase-input MuiOutlinedInput-input"
+                            data-testid="office-user-phone"
+                            maxlength="6"
+                            name="officePhoneExtension"
+                            placeholder="Ext"
+                            type="text"
+                            value=""
+                          />
+                          <fieldset
+                            aria-hidden="true"
+                            class="PrivateNotchedOutline-root-72 MuiOutlinedInput-notchedOutline"
+                            style="padding-left: 8px;"
+                          >
+                            <legend
+                              class="PrivateNotchedOutline-legend-73"
+                              style="width: 0.01px;"
+                            >
+                              <span>
+                                ​
+                              </span>
+                            </legend>
+                          </fieldset>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="makeStyles-errorInputWrapper-80"
+              >
+                <div
+                  class=" makeStyles-controlledRadioContainer-178 controlledRadioContainer"
+                  data-testid="controlled-radio"
+                >
+                  <fieldset
+                    class="MuiFormControl-root makeStyles-radioWrapper-130"
+                  >
+                    <legend
+                      class="MuiFormLabel-root makeStyles-controlledRadioLabel-177"
+                      id="radio-label-preferredContactMethod"
+                    >
+                      Preferred Contact Method
+                    </legend>
+                    <div
+                      aria-labelledby="radio-label-preferredContactMethod"
+                      class="MuiFormGroup-root MuiFormGroup-row"
+                      data-testid="controlled-radio-group"
+                      role="radiogroup"
+                    >
+                      <label
+                        class="MuiFormControlLabel-root"
+                      >
+                        <span
+                          aria-disabled="false"
+                          class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-185 MuiRadio-root makeStyles-root-179 PrivateSwitchBase-checked-186 Mui-checked"
+                        >
+                          <span
+                            class="MuiIconButton-label"
+                          >
+                            <input
+                              checked=""
+                              class="PrivateSwitchBase-input-188"
+                              data-testid="controlled-radio-button"
+                              name="preferredContactMethod"
+                              type="radio"
+                              value="0"
+                            />
+                            <span
+                              class="makeStyles-icon-180 makeStyles-checkedIcon-183 "
+                            />
+                          </span>
+                        </span>
+                        <span
+                          class="MuiTypography-root MuiFormControlLabel-label MuiTypography-body1"
+                        >
+                          Email
+                        </span>
+                      </label>
+                      <label
+                        class="MuiFormControlLabel-root"
+                      >
+                        <span
+                          aria-disabled="false"
+                          class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-185 MuiRadio-root makeStyles-root-179"
+                        >
+                          <span
+                            class="MuiIconButton-label"
+                          >
+                            <input
+                              class="PrivateSwitchBase-input-188"
+                              data-testid="controlled-radio-button"
+                              name="preferredContactMethod"
+                              type="radio"
+                              value="1"
+                            />
+                            <span
+                              class="makeStyles-icon-180 makeStyles-unactiveIcon-182"
+                            />
+                          </span>
+                        </span>
+                        <span
+                          class="MuiTypography-root MuiFormControlLabel-label MuiTypography-body1"
+                        >
+                          Phone
+                        </span>
+                      </label>
+                    </div>
+                  </fieldset>
+                </div>
+              </div>
             </div>
           </div>
           <div
@@ -323,7 +560,7 @@ exports[`ProfileTab should render 1`] = `
                   class="MuiButton-label"
                 >
                   <span
-                    class="makeStyles-textWrapper-176"
+                    class="makeStyles-textWrapper-191"
                   >
                     Save Changes
                   </span>
@@ -341,26 +578,26 @@ exports[`ProfileTab should render 1`] = `
 exports[`ProfileTab should render with in progress picture 1`] = `
 <div>
   <div
-    class="MuiBox-root MuiBox-root-532 makeStyles-box-529"
+    class="MuiBox-root MuiBox-root-577 makeStyles-box-574"
   >
     <div
-      class="makeStyles-formContainer-531 "
+      class="makeStyles-formContainer-576 "
     >
       <div
-        class="makeStyles-formContainerWrapper-530"
+        class="makeStyles-formContainerWrapper-575"
       >
         <div
-          class="makeStyles-profileUploadWrapper-546"
+          class="makeStyles-profileUploadWrapper-591"
         >
           <div
-            class="makeStyles-profileUploadAvatarPosition-547"
+            class="makeStyles-profileUploadAvatarPosition-592"
           >
             <div
-              class="MuiAvatar-root MuiAvatar-circle makeStyles-avatarSettings-559 makeStyles-avatarWrapper-553 MuiAvatar-colorDefault"
+              class="MuiAvatar-root MuiAvatar-circle makeStyles-avatarSettings-604 makeStyles-avatarWrapper-598 MuiAvatar-colorDefault"
             >
               <svg
                 aria-hidden="true"
-                class="MuiSvgIcon-root makeStyles-missingAvatarSettings-563"
+                class="MuiSvgIcon-root makeStyles-missingAvatarSettings-608"
                 focusable="false"
                 viewBox="0 0 24 24"
               >
@@ -371,10 +608,10 @@ exports[`ProfileTab should render with in progress picture 1`] = `
             </div>
           </div>
           <div
-            class="makeStyles-profileUploadInput-548"
+            class="makeStyles-profileUploadInput-593"
           >
             <div
-              class="MuiFormControl-root makeStyles-formControl-573 "
+              class="MuiFormControl-root makeStyles-formControl-618 "
             >
               <h1
                 class="MuiTypography-root MuiTypography-caption MuiTypography-colorSecondary MuiTypography-alignLeft"
@@ -384,10 +621,10 @@ exports[`ProfileTab should render with in progress picture 1`] = `
               </h1>
               <div>
                 <div
-                  class="makeStyles-singleInputUploadItem-592"
+                  class="makeStyles-singleInputUploadItem-637"
                 >
                   <label
-                    class="makeStyles-fileUploadWrapper-533 makeStyles-fileUploadWrapper-575"
+                    class="makeStyles-fileUploadWrapper-578 makeStyles-fileUploadWrapper-620"
                   >
                     <div
                       data-testid="file-upload-wrapper"
@@ -410,11 +647,11 @@ exports[`ProfileTab should render with in progress picture 1`] = `
                           />
                           <fieldset
                             aria-hidden="true"
-                            class="PrivateNotchedOutline-root-600 MuiOutlinedInput-notchedOutline"
+                            class="PrivateNotchedOutline-root-645 MuiOutlinedInput-notchedOutline"
                             style="padding-left: 8px;"
                           >
                             <legend
-                              class="PrivateNotchedOutline-legend-601"
+                              class="PrivateNotchedOutline-legend-646"
                               style="width: 0.01px;"
                             >
                               <span>
@@ -426,16 +663,16 @@ exports[`ProfileTab should render with in progress picture 1`] = `
                       </div>
                     </div>
                     <div
-                      class="makeStyles-fileUpload-576"
+                      class="makeStyles-fileUpload-621"
                     >
                       <span
-                        class="makeStyles-fileUploadText-577"
+                        class="makeStyles-fileUploadText-622"
                       >
                         Upload Photo
                       </span>
                       <button
                         aria-label="upload image"
-                        class="MuiButtonBase-root MuiIconButton-root makeStyles-iconUpload-593"
+                        class="MuiButtonBase-root MuiIconButton-root makeStyles-iconUpload-638"
                         tabindex="0"
                         type="button"
                       >
@@ -462,7 +699,7 @@ exports[`ProfileTab should render with in progress picture 1`] = `
           </div>
         </div>
         <div
-          class="makeStyles-profileFormPaddingTop-605"
+          class="makeStyles-profileFormPaddingTop-650"
         >
           <div
             class="MuiGrid-root MuiGrid-container"
@@ -471,10 +708,10 @@ exports[`ProfileTab should render with in progress picture 1`] = `
               class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-lg-12"
             >
               <div
-                class="makeStyles-errorInputWrapper-608"
+                class="makeStyles-errorInputWrapper-653"
               >
                 <div
-                  class="MuiFormControl-root makeStyles-formControl-573 makeStyles-inputBottomPadding-604"
+                  class="MuiFormControl-root makeStyles-formControl-618 makeStyles-inputBottomPadding-649"
                 >
                   <h1
                     class="MuiTypography-root MuiTypography-caption MuiTypography-colorSecondary MuiTypography-alignLeft"
@@ -503,11 +740,11 @@ exports[`ProfileTab should render with in progress picture 1`] = `
                         />
                         <fieldset
                           aria-hidden="true"
-                          class="PrivateNotchedOutline-root-600 MuiOutlinedInput-notchedOutline"
+                          class="PrivateNotchedOutline-root-645 MuiOutlinedInput-notchedOutline"
                           style="padding-left: 8px;"
                         >
                           <legend
-                            class="PrivateNotchedOutline-legend-601"
+                            class="PrivateNotchedOutline-legend-646"
                             style="width: 0.01px;"
                           >
                             <span>
@@ -521,10 +758,10 @@ exports[`ProfileTab should render with in progress picture 1`] = `
                 </div>
               </div>
               <div
-                class="makeStyles-errorInputWrapper-608"
+                class="makeStyles-errorInputWrapper-653"
               >
                 <div
-                  class="MuiFormControl-root makeStyles-formControl-573 makeStyles-inputBottomPadding-604"
+                  class="MuiFormControl-root makeStyles-formControl-618 makeStyles-inputBottomPadding-649"
                 >
                   <h1
                     class="MuiTypography-root MuiTypography-caption MuiTypography-colorSecondary MuiTypography-alignLeft"
@@ -552,11 +789,11 @@ exports[`ProfileTab should render with in progress picture 1`] = `
                         />
                         <fieldset
                           aria-hidden="true"
-                          class="PrivateNotchedOutline-root-600 MuiOutlinedInput-notchedOutline"
+                          class="PrivateNotchedOutline-root-645 MuiOutlinedInput-notchedOutline"
                           style="padding-left: 8px;"
                         >
                           <legend
-                            class="PrivateNotchedOutline-legend-601"
+                            class="PrivateNotchedOutline-legend-646"
                             style="width: 0.01px;"
                           >
                             <span>
@@ -570,10 +807,10 @@ exports[`ProfileTab should render with in progress picture 1`] = `
                 </div>
               </div>
               <div
-                class="makeStyles-errorInputWrapper-608"
+                class="makeStyles-errorInputWrapper-653"
               >
                 <div
-                  class="MuiFormControl-root makeStyles-formControl-573 makeStyles-inputBottomPadding-604"
+                  class="MuiFormControl-root makeStyles-formControl-618 makeStyles-inputBottomPadding-649"
                 >
                   <h1
                     class="MuiTypography-root MuiTypography-caption MuiTypography-colorSecondary MuiTypography-alignLeft"
@@ -602,11 +839,11 @@ exports[`ProfileTab should render with in progress picture 1`] = `
                         />
                         <fieldset
                           aria-hidden="true"
-                          class="PrivateNotchedOutline-root-600 MuiOutlinedInput-notchedOutline"
+                          class="PrivateNotchedOutline-root-645 MuiOutlinedInput-notchedOutline"
                           style="padding-left: 8px;"
                         >
                           <legend
-                            class="PrivateNotchedOutline-legend-601"
+                            class="PrivateNotchedOutline-legend-646"
                             style="width: 0.01px;"
                           >
                             <span>
@@ -619,18 +856,255 @@ exports[`ProfileTab should render with in progress picture 1`] = `
                   </div>
                 </div>
               </div>
+              <div
+                class="makeStyles-errorInputWrapper-653"
+              >
+                <div
+                  class="MuiFormControl-root makeStyles-formControl-618 makeStyles-inputBottomPadding-649"
+                >
+                  <h1
+                    class="MuiTypography-root MuiTypography-caption MuiTypography-colorSecondary MuiTypography-alignLeft"
+                  >
+                    Mobile Phone Number
+                     
+                  </h1>
+                  <div>
+                    <div
+                      class="makeStyles-phoneInput-747 undefined  react-tel-input"
+                    >
+                      <div
+                        class="special-label"
+                      >
+                        Phone
+                      </div>
+                      <input
+                        autocomplete="off"
+                        class=" form-control"
+                        data-testid="mobile-user-phone"
+                        name="mobilePhoneNumber"
+                        placeholder="+0 (000) 000-0000"
+                        type="text"
+                        value=""
+                        variant="outlined"
+                      />
+                      <div
+                        class=" flag-dropdown"
+                      >
+                        <div
+                          aria-haspopup="listbox"
+                          class="selected-flag"
+                          role="button"
+                          tabindex="-1"
+                          title=""
+                        >
+                          <div
+                            class="flag 0"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="MuiGrid-root MuiGrid-container"
+              >
+                <div
+                  class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-9 MuiGrid-grid-lg-9"
+                >
+                  <div
+                    class="MuiFormControl-root makeStyles-formControl-618 makeStyles-inputBottomPadding-649 makeStyles-middleInput-687"
+                  >
+                    <h1
+                      class="MuiTypography-root MuiTypography-caption MuiTypography-colorSecondary MuiTypography-alignLeft"
+                    >
+                      Office Phone Number (Optional)
+                       
+                    </h1>
+                    <div>
+                      <div
+                        class="makeStyles-phoneInput-747 undefined  react-tel-input"
+                      >
+                        <div
+                          class="special-label"
+                        >
+                          Phone
+                        </div>
+                        <input
+                          autocomplete="off"
+                          class=" form-control"
+                          data-testid="office-user-phone"
+                          id="officePhoneNumber"
+                          name="officePhoneNumber"
+                          placeholder="+0 (000) 000-0000"
+                          type="text"
+                          value=""
+                          variant="outlined"
+                        />
+                        <div
+                          class=" flag-dropdown"
+                        >
+                          <div
+                            aria-haspopup="listbox"
+                            class="selected-flag"
+                            role="button"
+                            tabindex="-1"
+                            title=""
+                          >
+                            <div
+                              class="flag 0"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-3 MuiGrid-grid-lg-3"
+                >
+                  <div
+                    class="MuiFormControl-root makeStyles-formControl-618 makeStyles-inputBottomPadding-649"
+                  >
+                    <h1
+                      class="MuiTypography-root MuiTypography-caption MuiTypography-colorSecondary MuiTypography-alignLeft"
+                    >
+                      Ext
+                       
+                    </h1>
+                    <div>
+                      <div
+                        class="MuiFormControl-root MuiTextField-root MuiFormControl-fullWidth"
+                      >
+                        <div
+                          class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-fullWidth MuiInputBase-formControl"
+                        >
+                          <input
+                            aria-invalid="false"
+                            autocomplete="off"
+                            class="MuiInputBase-input MuiOutlinedInput-input"
+                            data-testid="office-user-phone"
+                            maxlength="6"
+                            name="officePhoneExtension"
+                            placeholder="Ext"
+                            type="text"
+                            value=""
+                          />
+                          <fieldset
+                            aria-hidden="true"
+                            class="PrivateNotchedOutline-root-645 MuiOutlinedInput-notchedOutline"
+                            style="padding-left: 8px;"
+                          >
+                            <legend
+                              class="PrivateNotchedOutline-legend-646"
+                              style="width: 0.01px;"
+                            >
+                              <span>
+                                ​
+                              </span>
+                            </legend>
+                          </fieldset>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="makeStyles-errorInputWrapper-653"
+              >
+                <div
+                  class=" makeStyles-controlledRadioContainer-751 controlledRadioContainer"
+                  data-testid="controlled-radio"
+                >
+                  <fieldset
+                    class="MuiFormControl-root makeStyles-radioWrapper-703"
+                  >
+                    <legend
+                      class="MuiFormLabel-root makeStyles-controlledRadioLabel-750"
+                      id="radio-label-preferredContactMethod"
+                    >
+                      Preferred Contact Method
+                    </legend>
+                    <div
+                      aria-labelledby="radio-label-preferredContactMethod"
+                      class="MuiFormGroup-root MuiFormGroup-row"
+                      data-testid="controlled-radio-group"
+                      role="radiogroup"
+                    >
+                      <label
+                        class="MuiFormControlLabel-root"
+                      >
+                        <span
+                          aria-disabled="false"
+                          class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-758 MuiRadio-root makeStyles-root-752 PrivateSwitchBase-checked-759 Mui-checked"
+                        >
+                          <span
+                            class="MuiIconButton-label"
+                          >
+                            <input
+                              checked=""
+                              class="PrivateSwitchBase-input-761"
+                              data-testid="controlled-radio-button"
+                              name="preferredContactMethod"
+                              type="radio"
+                              value="0"
+                            />
+                            <span
+                              class="makeStyles-icon-753 makeStyles-checkedIcon-756 "
+                            />
+                          </span>
+                        </span>
+                        <span
+                          class="MuiTypography-root MuiFormControlLabel-label MuiTypography-body1"
+                        >
+                          Email
+                        </span>
+                      </label>
+                      <label
+                        class="MuiFormControlLabel-root"
+                      >
+                        <span
+                          aria-disabled="false"
+                          class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-758 MuiRadio-root makeStyles-root-752"
+                        >
+                          <span
+                            class="MuiIconButton-label"
+                          >
+                            <input
+                              class="PrivateSwitchBase-input-761"
+                              data-testid="controlled-radio-button"
+                              name="preferredContactMethod"
+                              type="radio"
+                              value="1"
+                            />
+                            <span
+                              class="makeStyles-icon-753 makeStyles-unactiveIcon-755"
+                            />
+                          </span>
+                        </span>
+                        <span
+                          class="MuiTypography-root MuiFormControlLabel-label MuiTypography-body1"
+                        >
+                          Phone
+                        </span>
+                      </label>
+                    </div>
+                  </fieldset>
+                </div>
+              </div>
             </div>
           </div>
           <div
-            class="makeStyles-formButtonWrapper-606"
+            class="makeStyles-formButtonWrapper-651"
           >
             <span
-              class="makeStyles-noOutline-628"
+              class="makeStyles-noOutline-673"
               data-testid="controlled-button"
               tabindex="-1"
             >
               <button
-                class="MuiButtonBase-root MuiButton-root MuiButton-text makeStyles-discardButton-630 MuiButton-textPrimary"
+                class="MuiButtonBase-root MuiButton-root MuiButton-text makeStyles-discardButton-675 MuiButton-textPrimary"
                 data-testid="discard-changes-btn"
                 tabindex="0"
                 type="button"
@@ -646,12 +1120,12 @@ exports[`ProfileTab should render with in progress picture 1`] = `
               </button>
             </span>
             <span
-              class="makeStyles-noOutline-628"
+              class="makeStyles-noOutline-673"
               data-testid="controlled-button"
               tabindex="-1"
             >
               <button
-                class="MuiButtonBase-root MuiButton-root MuiButton-contained false makeStyles-nextButton-629 makeStyles-noPadding-626 MuiButton-containedPrimary MuiButton-containedSizeLarge MuiButton-sizeLarge"
+                class="MuiButtonBase-root MuiButton-root MuiButton-contained false makeStyles-nextButton-674 makeStyles-noPadding-671 MuiButton-containedPrimary MuiButton-containedSizeLarge MuiButton-sizeLarge"
                 data-testid="confirm-btn"
                 tabindex="0"
                 type="button"
@@ -660,7 +1134,7 @@ exports[`ProfileTab should render with in progress picture 1`] = `
                   class="MuiButton-label"
                 >
                   <span
-                    class="makeStyles-textWrapper-704"
+                    class="makeStyles-textWrapper-764"
                   >
                     Save Changes
                   </span>
@@ -681,26 +1155,26 @@ exports[`ProfileTab should render with in progress picture 1`] = `
 exports[`ProfileTab should render with picture 1`] = `
 <div>
   <div
-    class="MuiBox-root MuiBox-root-180 makeStyles-box-177"
+    class="MuiBox-root MuiBox-root-195 makeStyles-box-192"
   >
     <div
-      class="makeStyles-formContainer-179 "
+      class="makeStyles-formContainer-194 "
     >
       <div
-        class="makeStyles-formContainerWrapper-178"
+        class="makeStyles-formContainerWrapper-193"
       >
         <div
-          class="makeStyles-profileUploadWrapper-194"
+          class="makeStyles-profileUploadWrapper-209"
         >
           <div
-            class="makeStyles-profileUploadAvatarPosition-195"
+            class="makeStyles-profileUploadAvatarPosition-210"
           >
             <div
-              class="MuiAvatar-root MuiAvatar-circle makeStyles-avatarSettings-207 makeStyles-avatarWrapper-201 MuiAvatar-colorDefault"
+              class="MuiAvatar-root MuiAvatar-circle makeStyles-avatarSettings-222 makeStyles-avatarWrapper-216 MuiAvatar-colorDefault"
             >
               <svg
                 aria-hidden="true"
-                class="MuiSvgIcon-root makeStyles-missingAvatarSettings-211"
+                class="MuiSvgIcon-root makeStyles-missingAvatarSettings-226"
                 focusable="false"
                 viewBox="0 0 24 24"
               >
@@ -711,10 +1185,10 @@ exports[`ProfileTab should render with picture 1`] = `
             </div>
           </div>
           <div
-            class="makeStyles-profileUploadInput-196"
+            class="makeStyles-profileUploadInput-211"
           >
             <div
-              class="MuiFormControl-root makeStyles-formControl-221 "
+              class="MuiFormControl-root makeStyles-formControl-236 "
             >
               <h1
                 class="MuiTypography-root MuiTypography-caption MuiTypography-colorSecondary MuiTypography-alignLeft"
@@ -724,10 +1198,10 @@ exports[`ProfileTab should render with picture 1`] = `
               </h1>
               <div>
                 <div
-                  class="makeStyles-singleInputUploadItem-240"
+                  class="makeStyles-singleInputUploadItem-255"
                 >
                   <label
-                    class="makeStyles-fileUploadWrapper-181 makeStyles-fileUploadWrapper-223"
+                    class="makeStyles-fileUploadWrapper-196 makeStyles-fileUploadWrapper-238"
                   >
                     <div
                       data-testid="file-upload-wrapper"
@@ -750,11 +1224,11 @@ exports[`ProfileTab should render with picture 1`] = `
                           />
                           <fieldset
                             aria-hidden="true"
-                            class="PrivateNotchedOutline-root-248 MuiOutlinedInput-notchedOutline"
+                            class="PrivateNotchedOutline-root-263 MuiOutlinedInput-notchedOutline"
                             style="padding-left: 8px;"
                           >
                             <legend
-                              class="PrivateNotchedOutline-legend-249"
+                              class="PrivateNotchedOutline-legend-264"
                               style="width: 0.01px;"
                             >
                               <span>
@@ -766,16 +1240,16 @@ exports[`ProfileTab should render with picture 1`] = `
                       </div>
                     </div>
                     <div
-                      class="makeStyles-fileUpload-224"
+                      class="makeStyles-fileUpload-239"
                     >
                       <span
-                        class="makeStyles-fileUploadText-225"
+                        class="makeStyles-fileUploadText-240"
                       >
                         Upload Photo
                       </span>
                       <button
                         aria-label="upload image"
-                        class="MuiButtonBase-root MuiIconButton-root makeStyles-iconUpload-241"
+                        class="MuiButtonBase-root MuiIconButton-root makeStyles-iconUpload-256"
                         tabindex="0"
                         type="button"
                       >
@@ -802,7 +1276,7 @@ exports[`ProfileTab should render with picture 1`] = `
           </div>
         </div>
         <div
-          class="makeStyles-profileFormPaddingTop-253"
+          class="makeStyles-profileFormPaddingTop-268"
         >
           <div
             class="MuiGrid-root MuiGrid-container"
@@ -811,10 +1285,10 @@ exports[`ProfileTab should render with picture 1`] = `
               class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-lg-12"
             >
               <div
-                class="makeStyles-errorInputWrapper-256"
+                class="makeStyles-errorInputWrapper-271"
               >
                 <div
-                  class="MuiFormControl-root makeStyles-formControl-221 makeStyles-inputBottomPadding-252"
+                  class="MuiFormControl-root makeStyles-formControl-236 makeStyles-inputBottomPadding-267"
                 >
                   <h1
                     class="MuiTypography-root MuiTypography-caption MuiTypography-colorSecondary MuiTypography-alignLeft"
@@ -843,11 +1317,11 @@ exports[`ProfileTab should render with picture 1`] = `
                         />
                         <fieldset
                           aria-hidden="true"
-                          class="PrivateNotchedOutline-root-248 MuiOutlinedInput-notchedOutline"
+                          class="PrivateNotchedOutline-root-263 MuiOutlinedInput-notchedOutline"
                           style="padding-left: 8px;"
                         >
                           <legend
-                            class="PrivateNotchedOutline-legend-249"
+                            class="PrivateNotchedOutline-legend-264"
                             style="width: 0.01px;"
                           >
                             <span>
@@ -861,10 +1335,10 @@ exports[`ProfileTab should render with picture 1`] = `
                 </div>
               </div>
               <div
-                class="makeStyles-errorInputWrapper-256"
+                class="makeStyles-errorInputWrapper-271"
               >
                 <div
-                  class="MuiFormControl-root makeStyles-formControl-221 makeStyles-inputBottomPadding-252"
+                  class="MuiFormControl-root makeStyles-formControl-236 makeStyles-inputBottomPadding-267"
                 >
                   <h1
                     class="MuiTypography-root MuiTypography-caption MuiTypography-colorSecondary MuiTypography-alignLeft"
@@ -892,11 +1366,11 @@ exports[`ProfileTab should render with picture 1`] = `
                         />
                         <fieldset
                           aria-hidden="true"
-                          class="PrivateNotchedOutline-root-248 MuiOutlinedInput-notchedOutline"
+                          class="PrivateNotchedOutline-root-263 MuiOutlinedInput-notchedOutline"
                           style="padding-left: 8px;"
                         >
                           <legend
-                            class="PrivateNotchedOutline-legend-249"
+                            class="PrivateNotchedOutline-legend-264"
                             style="width: 0.01px;"
                           >
                             <span>
@@ -910,10 +1384,10 @@ exports[`ProfileTab should render with picture 1`] = `
                 </div>
               </div>
               <div
-                class="makeStyles-errorInputWrapper-256"
+                class="makeStyles-errorInputWrapper-271"
               >
                 <div
-                  class="MuiFormControl-root makeStyles-formControl-221 makeStyles-inputBottomPadding-252"
+                  class="MuiFormControl-root makeStyles-formControl-236 makeStyles-inputBottomPadding-267"
                 >
                   <h1
                     class="MuiTypography-root MuiTypography-caption MuiTypography-colorSecondary MuiTypography-alignLeft"
@@ -942,11 +1416,11 @@ exports[`ProfileTab should render with picture 1`] = `
                         />
                         <fieldset
                           aria-hidden="true"
-                          class="PrivateNotchedOutline-root-248 MuiOutlinedInput-notchedOutline"
+                          class="PrivateNotchedOutline-root-263 MuiOutlinedInput-notchedOutline"
                           style="padding-left: 8px;"
                         >
                           <legend
-                            class="PrivateNotchedOutline-legend-249"
+                            class="PrivateNotchedOutline-legend-264"
                             style="width: 0.01px;"
                           >
                             <span>
@@ -959,18 +1433,255 @@ exports[`ProfileTab should render with picture 1`] = `
                   </div>
                 </div>
               </div>
+              <div
+                class="makeStyles-errorInputWrapper-271"
+              >
+                <div
+                  class="MuiFormControl-root makeStyles-formControl-236 makeStyles-inputBottomPadding-267"
+                >
+                  <h1
+                    class="MuiTypography-root MuiTypography-caption MuiTypography-colorSecondary MuiTypography-alignLeft"
+                  >
+                    Mobile Phone Number
+                     
+                  </h1>
+                  <div>
+                    <div
+                      class="makeStyles-phoneInput-365 undefined  react-tel-input"
+                    >
+                      <div
+                        class="special-label"
+                      >
+                        Phone
+                      </div>
+                      <input
+                        autocomplete="off"
+                        class=" form-control"
+                        data-testid="mobile-user-phone"
+                        name="mobilePhoneNumber"
+                        placeholder="+0 (000) 000-0000"
+                        type="text"
+                        value=""
+                        variant="outlined"
+                      />
+                      <div
+                        class=" flag-dropdown"
+                      >
+                        <div
+                          aria-haspopup="listbox"
+                          class="selected-flag"
+                          role="button"
+                          tabindex="-1"
+                          title=""
+                        >
+                          <div
+                            class="flag 0"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="MuiGrid-root MuiGrid-container"
+              >
+                <div
+                  class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-9 MuiGrid-grid-lg-9"
+                >
+                  <div
+                    class="MuiFormControl-root makeStyles-formControl-236 makeStyles-inputBottomPadding-267 makeStyles-middleInput-305"
+                  >
+                    <h1
+                      class="MuiTypography-root MuiTypography-caption MuiTypography-colorSecondary MuiTypography-alignLeft"
+                    >
+                      Office Phone Number (Optional)
+                       
+                    </h1>
+                    <div>
+                      <div
+                        class="makeStyles-phoneInput-365 undefined  react-tel-input"
+                      >
+                        <div
+                          class="special-label"
+                        >
+                          Phone
+                        </div>
+                        <input
+                          autocomplete="off"
+                          class=" form-control"
+                          data-testid="office-user-phone"
+                          id="officePhoneNumber"
+                          name="officePhoneNumber"
+                          placeholder="+0 (000) 000-0000"
+                          type="text"
+                          value=""
+                          variant="outlined"
+                        />
+                        <div
+                          class=" flag-dropdown"
+                        >
+                          <div
+                            aria-haspopup="listbox"
+                            class="selected-flag"
+                            role="button"
+                            tabindex="-1"
+                            title=""
+                          >
+                            <div
+                              class="flag 0"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-3 MuiGrid-grid-lg-3"
+                >
+                  <div
+                    class="MuiFormControl-root makeStyles-formControl-236 makeStyles-inputBottomPadding-267"
+                  >
+                    <h1
+                      class="MuiTypography-root MuiTypography-caption MuiTypography-colorSecondary MuiTypography-alignLeft"
+                    >
+                      Ext
+                       
+                    </h1>
+                    <div>
+                      <div
+                        class="MuiFormControl-root MuiTextField-root MuiFormControl-fullWidth"
+                      >
+                        <div
+                          class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-fullWidth MuiInputBase-formControl"
+                        >
+                          <input
+                            aria-invalid="false"
+                            autocomplete="off"
+                            class="MuiInputBase-input MuiOutlinedInput-input"
+                            data-testid="office-user-phone"
+                            maxlength="6"
+                            name="officePhoneExtension"
+                            placeholder="Ext"
+                            type="text"
+                            value=""
+                          />
+                          <fieldset
+                            aria-hidden="true"
+                            class="PrivateNotchedOutline-root-263 MuiOutlinedInput-notchedOutline"
+                            style="padding-left: 8px;"
+                          >
+                            <legend
+                              class="PrivateNotchedOutline-legend-264"
+                              style="width: 0.01px;"
+                            >
+                              <span>
+                                ​
+                              </span>
+                            </legend>
+                          </fieldset>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="makeStyles-errorInputWrapper-271"
+              >
+                <div
+                  class=" makeStyles-controlledRadioContainer-369 controlledRadioContainer"
+                  data-testid="controlled-radio"
+                >
+                  <fieldset
+                    class="MuiFormControl-root makeStyles-radioWrapper-321"
+                  >
+                    <legend
+                      class="MuiFormLabel-root makeStyles-controlledRadioLabel-368"
+                      id="radio-label-preferredContactMethod"
+                    >
+                      Preferred Contact Method
+                    </legend>
+                    <div
+                      aria-labelledby="radio-label-preferredContactMethod"
+                      class="MuiFormGroup-root MuiFormGroup-row"
+                      data-testid="controlled-radio-group"
+                      role="radiogroup"
+                    >
+                      <label
+                        class="MuiFormControlLabel-root"
+                      >
+                        <span
+                          aria-disabled="false"
+                          class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-376 MuiRadio-root makeStyles-root-370 PrivateSwitchBase-checked-377 Mui-checked"
+                        >
+                          <span
+                            class="MuiIconButton-label"
+                          >
+                            <input
+                              checked=""
+                              class="PrivateSwitchBase-input-379"
+                              data-testid="controlled-radio-button"
+                              name="preferredContactMethod"
+                              type="radio"
+                              value="0"
+                            />
+                            <span
+                              class="makeStyles-icon-371 makeStyles-checkedIcon-374 "
+                            />
+                          </span>
+                        </span>
+                        <span
+                          class="MuiTypography-root MuiFormControlLabel-label MuiTypography-body1"
+                        >
+                          Email
+                        </span>
+                      </label>
+                      <label
+                        class="MuiFormControlLabel-root"
+                      >
+                        <span
+                          aria-disabled="false"
+                          class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-376 MuiRadio-root makeStyles-root-370"
+                        >
+                          <span
+                            class="MuiIconButton-label"
+                          >
+                            <input
+                              class="PrivateSwitchBase-input-379"
+                              data-testid="controlled-radio-button"
+                              name="preferredContactMethod"
+                              type="radio"
+                              value="1"
+                            />
+                            <span
+                              class="makeStyles-icon-371 makeStyles-unactiveIcon-373"
+                            />
+                          </span>
+                        </span>
+                        <span
+                          class="MuiTypography-root MuiFormControlLabel-label MuiTypography-body1"
+                        >
+                          Phone
+                        </span>
+                      </label>
+                    </div>
+                  </fieldset>
+                </div>
+              </div>
             </div>
           </div>
           <div
-            class="makeStyles-formButtonWrapper-254"
+            class="makeStyles-formButtonWrapper-269"
           >
             <span
-              class="makeStyles-noOutline-276"
+              class="makeStyles-noOutline-291"
               data-testid="controlled-button"
               tabindex="-1"
             >
               <button
-                class="MuiButtonBase-root MuiButton-root MuiButton-text makeStyles-discardButton-278 MuiButton-textPrimary"
+                class="MuiButtonBase-root MuiButton-root MuiButton-text makeStyles-discardButton-293 MuiButton-textPrimary"
                 data-testid="discard-changes-btn"
                 tabindex="0"
                 type="button"
@@ -986,12 +1697,12 @@ exports[`ProfileTab should render with picture 1`] = `
               </button>
             </span>
             <span
-              class="makeStyles-noOutline-276"
+              class="makeStyles-noOutline-291"
               data-testid="controlled-button"
               tabindex="-1"
             >
               <button
-                class="MuiButtonBase-root MuiButton-root MuiButton-contained false makeStyles-nextButton-277 makeStyles-noPadding-274 MuiButton-containedPrimary MuiButton-containedSizeLarge MuiButton-sizeLarge"
+                class="MuiButtonBase-root MuiButton-root MuiButton-contained false makeStyles-nextButton-292 makeStyles-noPadding-289 MuiButton-containedPrimary MuiButton-containedSizeLarge MuiButton-sizeLarge"
                 data-testid="confirm-btn"
                 tabindex="0"
                 type="button"
@@ -1000,7 +1711,7 @@ exports[`ProfileTab should render with picture 1`] = `
                   class="MuiButton-label"
                 >
                   <span
-                    class="makeStyles-textWrapper-352"
+                    class="makeStyles-textWrapper-382"
                   >
                     Save Changes
                   </span>
@@ -1021,22 +1732,22 @@ exports[`ProfileTab should render with picture 1`] = `
 exports[`ProfileTab should render with picture from data loaded 1`] = `
 <div>
   <div
-    class="MuiBox-root MuiBox-root-356 makeStyles-box-353"
+    class="MuiBox-root MuiBox-root-386 makeStyles-box-383"
   >
     <div
-      class="makeStyles-formContainer-355 "
+      class="makeStyles-formContainer-385 "
     >
       <div
-        class="makeStyles-formContainerWrapper-354"
+        class="makeStyles-formContainerWrapper-384"
       >
         <div
-          class="makeStyles-profileUploadWrapper-370"
+          class="makeStyles-profileUploadWrapper-400"
         >
           <div
-            class="makeStyles-profileUploadAvatarPosition-371"
+            class="makeStyles-profileUploadAvatarPosition-401"
           >
             <div
-              class="MuiAvatar-root MuiAvatar-circle makeStyles-avatarSettings-383 makeStyles-avatarWrapper-377 MuiAvatar-colorDefault"
+              class="MuiAvatar-root MuiAvatar-circle makeStyles-avatarSettings-413 makeStyles-avatarWrapper-407 MuiAvatar-colorDefault"
             >
               <img
                 alt="Profile"
@@ -1046,10 +1757,10 @@ exports[`ProfileTab should render with picture from data loaded 1`] = `
             </div>
           </div>
           <div
-            class="makeStyles-profileUploadInput-372"
+            class="makeStyles-profileUploadInput-402"
           >
             <div
-              class="MuiFormControl-root makeStyles-formControl-397 "
+              class="MuiFormControl-root makeStyles-formControl-427 "
             >
               <h1
                 class="MuiTypography-root MuiTypography-caption MuiTypography-colorSecondary MuiTypography-alignLeft"
@@ -1059,10 +1770,10 @@ exports[`ProfileTab should render with picture from data loaded 1`] = `
               </h1>
               <div>
                 <div
-                  class="makeStyles-singleInputUploadItem-416"
+                  class="makeStyles-singleInputUploadItem-446"
                 >
                   <label
-                    class="makeStyles-fileUploadWrapper-357 makeStyles-fileUploadWrapper-399"
+                    class="makeStyles-fileUploadWrapper-387 makeStyles-fileUploadWrapper-429"
                   >
                     <div
                       data-testid="file-upload-wrapper"
@@ -1085,11 +1796,11 @@ exports[`ProfileTab should render with picture from data loaded 1`] = `
                           />
                           <fieldset
                             aria-hidden="true"
-                            class="PrivateNotchedOutline-root-424 MuiOutlinedInput-notchedOutline"
+                            class="PrivateNotchedOutline-root-454 MuiOutlinedInput-notchedOutline"
                             style="padding-left: 8px;"
                           >
                             <legend
-                              class="PrivateNotchedOutline-legend-425"
+                              class="PrivateNotchedOutline-legend-455"
                               style="width: 0.01px;"
                             >
                               <span>
@@ -1101,16 +1812,16 @@ exports[`ProfileTab should render with picture from data loaded 1`] = `
                       </div>
                     </div>
                     <div
-                      class="makeStyles-fileUpload-400"
+                      class="makeStyles-fileUpload-430"
                     >
                       <span
-                        class="makeStyles-fileUploadText-401"
+                        class="makeStyles-fileUploadText-431"
                       >
                         Upload Photo
                       </span>
                       <button
                         aria-label="upload image"
-                        class="MuiButtonBase-root MuiIconButton-root makeStyles-iconUpload-417"
+                        class="MuiButtonBase-root MuiIconButton-root makeStyles-iconUpload-447"
                         tabindex="0"
                         type="button"
                       >
@@ -1137,7 +1848,7 @@ exports[`ProfileTab should render with picture from data loaded 1`] = `
           </div>
         </div>
         <div
-          class="makeStyles-profileFormPaddingTop-429"
+          class="makeStyles-profileFormPaddingTop-459"
         >
           <div
             class="MuiGrid-root MuiGrid-container"
@@ -1146,10 +1857,10 @@ exports[`ProfileTab should render with picture from data loaded 1`] = `
               class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-lg-12"
             >
               <div
-                class="makeStyles-errorInputWrapper-432"
+                class="makeStyles-errorInputWrapper-462"
               >
                 <div
-                  class="MuiFormControl-root makeStyles-formControl-397 makeStyles-inputBottomPadding-428"
+                  class="MuiFormControl-root makeStyles-formControl-427 makeStyles-inputBottomPadding-458"
                 >
                   <h1
                     class="MuiTypography-root MuiTypography-caption MuiTypography-colorSecondary MuiTypography-alignLeft"
@@ -1178,11 +1889,11 @@ exports[`ProfileTab should render with picture from data loaded 1`] = `
                         />
                         <fieldset
                           aria-hidden="true"
-                          class="PrivateNotchedOutline-root-424 MuiOutlinedInput-notchedOutline"
+                          class="PrivateNotchedOutline-root-454 MuiOutlinedInput-notchedOutline"
                           style="padding-left: 8px;"
                         >
                           <legend
-                            class="PrivateNotchedOutline-legend-425"
+                            class="PrivateNotchedOutline-legend-455"
                             style="width: 0.01px;"
                           >
                             <span>
@@ -1196,10 +1907,10 @@ exports[`ProfileTab should render with picture from data loaded 1`] = `
                 </div>
               </div>
               <div
-                class="makeStyles-errorInputWrapper-432"
+                class="makeStyles-errorInputWrapper-462"
               >
                 <div
-                  class="MuiFormControl-root makeStyles-formControl-397 makeStyles-inputBottomPadding-428"
+                  class="MuiFormControl-root makeStyles-formControl-427 makeStyles-inputBottomPadding-458"
                 >
                   <h1
                     class="MuiTypography-root MuiTypography-caption MuiTypography-colorSecondary MuiTypography-alignLeft"
@@ -1227,11 +1938,11 @@ exports[`ProfileTab should render with picture from data loaded 1`] = `
                         />
                         <fieldset
                           aria-hidden="true"
-                          class="PrivateNotchedOutline-root-424 MuiOutlinedInput-notchedOutline"
+                          class="PrivateNotchedOutline-root-454 MuiOutlinedInput-notchedOutline"
                           style="padding-left: 8px;"
                         >
                           <legend
-                            class="PrivateNotchedOutline-legend-425"
+                            class="PrivateNotchedOutline-legend-455"
                             style="width: 0.01px;"
                           >
                             <span>
@@ -1245,10 +1956,10 @@ exports[`ProfileTab should render with picture from data loaded 1`] = `
                 </div>
               </div>
               <div
-                class="makeStyles-errorInputWrapper-432"
+                class="makeStyles-errorInputWrapper-462"
               >
                 <div
-                  class="MuiFormControl-root makeStyles-formControl-397 makeStyles-inputBottomPadding-428"
+                  class="MuiFormControl-root makeStyles-formControl-427 makeStyles-inputBottomPadding-458"
                 >
                   <h1
                     class="MuiTypography-root MuiTypography-caption MuiTypography-colorSecondary MuiTypography-alignLeft"
@@ -1277,11 +1988,11 @@ exports[`ProfileTab should render with picture from data loaded 1`] = `
                         />
                         <fieldset
                           aria-hidden="true"
-                          class="PrivateNotchedOutline-root-424 MuiOutlinedInput-notchedOutline"
+                          class="PrivateNotchedOutline-root-454 MuiOutlinedInput-notchedOutline"
                           style="padding-left: 8px;"
                         >
                           <legend
-                            class="PrivateNotchedOutline-legend-425"
+                            class="PrivateNotchedOutline-legend-455"
                             style="width: 0.01px;"
                           >
                             <span>
@@ -1294,10 +2005,247 @@ exports[`ProfileTab should render with picture from data loaded 1`] = `
                   </div>
                 </div>
               </div>
+              <div
+                class="makeStyles-errorInputWrapper-462"
+              >
+                <div
+                  class="MuiFormControl-root makeStyles-formControl-427 makeStyles-inputBottomPadding-458"
+                >
+                  <h1
+                    class="MuiTypography-root MuiTypography-caption MuiTypography-colorSecondary MuiTypography-alignLeft"
+                  >
+                    Mobile Phone Number
+                     
+                  </h1>
+                  <div>
+                    <div
+                      class="makeStyles-phoneInput-556 undefined  react-tel-input"
+                    >
+                      <div
+                        class="special-label"
+                      >
+                        Phone
+                      </div>
+                      <input
+                        autocomplete="off"
+                        class=" form-control"
+                        data-testid="mobile-user-phone"
+                        name="mobilePhoneNumber"
+                        placeholder="+0 (000) 000-0000"
+                        type="text"
+                        value=""
+                        variant="outlined"
+                      />
+                      <div
+                        class=" flag-dropdown"
+                      >
+                        <div
+                          aria-haspopup="listbox"
+                          class="selected-flag"
+                          role="button"
+                          tabindex="-1"
+                          title=""
+                        >
+                          <div
+                            class="flag 0"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="MuiGrid-root MuiGrid-container"
+              >
+                <div
+                  class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-9 MuiGrid-grid-lg-9"
+                >
+                  <div
+                    class="MuiFormControl-root makeStyles-formControl-427 makeStyles-inputBottomPadding-458 makeStyles-middleInput-496"
+                  >
+                    <h1
+                      class="MuiTypography-root MuiTypography-caption MuiTypography-colorSecondary MuiTypography-alignLeft"
+                    >
+                      Office Phone Number (Optional)
+                       
+                    </h1>
+                    <div>
+                      <div
+                        class="makeStyles-phoneInput-556 undefined  react-tel-input"
+                      >
+                        <div
+                          class="special-label"
+                        >
+                          Phone
+                        </div>
+                        <input
+                          autocomplete="off"
+                          class=" form-control"
+                          data-testid="office-user-phone"
+                          id="officePhoneNumber"
+                          name="officePhoneNumber"
+                          placeholder="+0 (000) 000-0000"
+                          type="text"
+                          value=""
+                          variant="outlined"
+                        />
+                        <div
+                          class=" flag-dropdown"
+                        >
+                          <div
+                            aria-haspopup="listbox"
+                            class="selected-flag"
+                            role="button"
+                            tabindex="-1"
+                            title=""
+                          >
+                            <div
+                              class="flag 0"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-3 MuiGrid-grid-lg-3"
+                >
+                  <div
+                    class="MuiFormControl-root makeStyles-formControl-427 makeStyles-inputBottomPadding-458"
+                  >
+                    <h1
+                      class="MuiTypography-root MuiTypography-caption MuiTypography-colorSecondary MuiTypography-alignLeft"
+                    >
+                      Ext
+                       
+                    </h1>
+                    <div>
+                      <div
+                        class="MuiFormControl-root MuiTextField-root MuiFormControl-fullWidth"
+                      >
+                        <div
+                          class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-fullWidth MuiInputBase-formControl"
+                        >
+                          <input
+                            aria-invalid="false"
+                            autocomplete="off"
+                            class="MuiInputBase-input MuiOutlinedInput-input"
+                            data-testid="office-user-phone"
+                            maxlength="6"
+                            name="officePhoneExtension"
+                            placeholder="Ext"
+                            type="text"
+                            value=""
+                          />
+                          <fieldset
+                            aria-hidden="true"
+                            class="PrivateNotchedOutline-root-454 MuiOutlinedInput-notchedOutline"
+                            style="padding-left: 8px;"
+                          >
+                            <legend
+                              class="PrivateNotchedOutline-legend-455"
+                              style="width: 0.01px;"
+                            >
+                              <span>
+                                ​
+                              </span>
+                            </legend>
+                          </fieldset>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="makeStyles-errorInputWrapper-462"
+              >
+                <div
+                  class=" makeStyles-controlledRadioContainer-560 controlledRadioContainer"
+                  data-testid="controlled-radio"
+                >
+                  <fieldset
+                    class="MuiFormControl-root makeStyles-radioWrapper-512"
+                  >
+                    <legend
+                      class="MuiFormLabel-root makeStyles-controlledRadioLabel-559"
+                      id="radio-label-preferredContactMethod"
+                    >
+                      Preferred Contact Method
+                    </legend>
+                    <div
+                      aria-labelledby="radio-label-preferredContactMethod"
+                      class="MuiFormGroup-root MuiFormGroup-row"
+                      data-testid="controlled-radio-group"
+                      role="radiogroup"
+                    >
+                      <label
+                        class="MuiFormControlLabel-root"
+                      >
+                        <span
+                          aria-disabled="false"
+                          class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-567 MuiRadio-root makeStyles-root-561"
+                        >
+                          <span
+                            class="MuiIconButton-label"
+                          >
+                            <input
+                              checked=""
+                              class="PrivateSwitchBase-input-570"
+                              data-testid="controlled-radio-button"
+                              name="preferredContactMethod"
+                              type="radio"
+                              value="0"
+                            />
+                            <span
+                              class="makeStyles-icon-562 makeStyles-unactiveIcon-564"
+                            />
+                          </span>
+                        </span>
+                        <span
+                          class="MuiTypography-root MuiFormControlLabel-label MuiTypography-body1"
+                        >
+                          Email
+                        </span>
+                      </label>
+                      <label
+                        class="MuiFormControlLabel-root"
+                      >
+                        <span
+                          aria-disabled="false"
+                          class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-567 MuiRadio-root makeStyles-root-561"
+                        >
+                          <span
+                            class="MuiIconButton-label"
+                          >
+                            <input
+                              class="PrivateSwitchBase-input-570"
+                              data-testid="controlled-radio-button"
+                              name="preferredContactMethod"
+                              type="radio"
+                              value="1"
+                            />
+                            <span
+                              class="makeStyles-icon-562 makeStyles-unactiveIcon-564"
+                            />
+                          </span>
+                        </span>
+                        <span
+                          class="MuiTypography-root MuiFormControlLabel-label MuiTypography-body1"
+                        >
+                          Phone
+                        </span>
+                      </label>
+                    </div>
+                  </fieldset>
+                </div>
+              </div>
             </div>
           </div>
           <div
-            class="makeStyles-formButtonWrapper-430"
+            class="makeStyles-formButtonWrapper-460"
           >
             <span
               class=""
@@ -1305,7 +2253,7 @@ exports[`ProfileTab should render with picture from data loaded 1`] = `
               tabindex="-1"
             >
               <button
-                class="MuiButtonBase-root MuiButton-root MuiButton-text makeStyles-discardButton-454 MuiButton-textPrimary Mui-disabled Mui-disabled"
+                class="MuiButtonBase-root MuiButton-root MuiButton-text makeStyles-discardButton-484 MuiButton-textPrimary Mui-disabled Mui-disabled"
                 data-testid="discard-changes-btn"
                 disabled=""
                 tabindex="-1"
@@ -1324,7 +2272,7 @@ exports[`ProfileTab should render with picture from data loaded 1`] = `
               tabindex="-1"
             >
               <button
-                class="MuiButtonBase-root MuiButton-root MuiButton-contained false makeStyles-nextButton-453 makeStyles-noPadding-450 MuiButton-containedPrimary MuiButton-containedSizeLarge MuiButton-sizeLarge Mui-disabled Mui-disabled"
+                class="MuiButtonBase-root MuiButton-root MuiButton-contained false makeStyles-nextButton-483 makeStyles-noPadding-480 MuiButton-containedPrimary MuiButton-containedSizeLarge MuiButton-sizeLarge Mui-disabled Mui-disabled"
                 data-testid="confirm-btn"
                 disabled=""
                 tabindex="-1"
@@ -1334,7 +2282,7 @@ exports[`ProfileTab should render with picture from data loaded 1`] = `
                   class="MuiButton-label"
                 >
                   <span
-                    class="makeStyles-textWrapper-528"
+                    class="makeStyles-textWrapper-573"
                   >
                     Save Changes
                   </span>
@@ -1352,26 +2300,26 @@ exports[`ProfileTab should render with picture from data loaded 1`] = `
 exports[`ProfileTab should render without pending files 1`] = `
 <div>
   <div
-    class="MuiBox-root MuiBox-root-708 makeStyles-box-705"
+    class="MuiBox-root MuiBox-root-768 makeStyles-box-765"
   >
     <div
-      class="makeStyles-formContainer-707 "
+      class="makeStyles-formContainer-767 "
     >
       <div
-        class="makeStyles-formContainerWrapper-706"
+        class="makeStyles-formContainerWrapper-766"
       >
         <div
-          class="makeStyles-profileUploadWrapper-722"
+          class="makeStyles-profileUploadWrapper-782"
         >
           <div
-            class="makeStyles-profileUploadAvatarPosition-723"
+            class="makeStyles-profileUploadAvatarPosition-783"
           >
             <div
-              class="MuiAvatar-root MuiAvatar-circle makeStyles-avatarSettings-735 makeStyles-avatarWrapper-729 MuiAvatar-colorDefault"
+              class="MuiAvatar-root MuiAvatar-circle makeStyles-avatarSettings-795 makeStyles-avatarWrapper-789 MuiAvatar-colorDefault"
             >
               <svg
                 aria-hidden="true"
-                class="MuiSvgIcon-root makeStyles-missingAvatarSettings-739"
+                class="MuiSvgIcon-root makeStyles-missingAvatarSettings-799"
                 focusable="false"
                 viewBox="0 0 24 24"
               >
@@ -1382,10 +2330,10 @@ exports[`ProfileTab should render without pending files 1`] = `
             </div>
           </div>
           <div
-            class="makeStyles-profileUploadInput-724"
+            class="makeStyles-profileUploadInput-784"
           >
             <div
-              class="MuiFormControl-root makeStyles-formControl-749 "
+              class="MuiFormControl-root makeStyles-formControl-809 "
             >
               <h1
                 class="MuiTypography-root MuiTypography-caption MuiTypography-colorSecondary MuiTypography-alignLeft"
@@ -1395,10 +2343,10 @@ exports[`ProfileTab should render without pending files 1`] = `
               </h1>
               <div>
                 <div
-                  class="makeStyles-singleInputUploadItem-768"
+                  class="makeStyles-singleInputUploadItem-828"
                 >
                   <label
-                    class="makeStyles-fileUploadWrapper-709 makeStyles-fileUploadWrapper-751"
+                    class="makeStyles-fileUploadWrapper-769 makeStyles-fileUploadWrapper-811"
                   >
                     <div
                       data-testid="file-upload-wrapper"
@@ -1421,11 +2369,11 @@ exports[`ProfileTab should render without pending files 1`] = `
                           />
                           <fieldset
                             aria-hidden="true"
-                            class="PrivateNotchedOutline-root-776 MuiOutlinedInput-notchedOutline"
+                            class="PrivateNotchedOutline-root-836 MuiOutlinedInput-notchedOutline"
                             style="padding-left: 8px;"
                           >
                             <legend
-                              class="PrivateNotchedOutline-legend-777"
+                              class="PrivateNotchedOutline-legend-837"
                               style="width: 0.01px;"
                             >
                               <span>
@@ -1437,16 +2385,16 @@ exports[`ProfileTab should render without pending files 1`] = `
                       </div>
                     </div>
                     <div
-                      class="makeStyles-fileUpload-752"
+                      class="makeStyles-fileUpload-812"
                     >
                       <span
-                        class="makeStyles-fileUploadText-753"
+                        class="makeStyles-fileUploadText-813"
                       >
                         Upload Photo
                       </span>
                       <button
                         aria-label="upload image"
-                        class="MuiButtonBase-root MuiIconButton-root makeStyles-iconUpload-769"
+                        class="MuiButtonBase-root MuiIconButton-root makeStyles-iconUpload-829"
                         tabindex="0"
                         type="button"
                       >
@@ -1473,7 +2421,7 @@ exports[`ProfileTab should render without pending files 1`] = `
           </div>
         </div>
         <div
-          class="makeStyles-profileFormPaddingTop-781"
+          class="makeStyles-profileFormPaddingTop-841"
         >
           <div
             class="MuiGrid-root MuiGrid-container"
@@ -1482,10 +2430,10 @@ exports[`ProfileTab should render without pending files 1`] = `
               class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-lg-12"
             >
               <div
-                class="makeStyles-errorInputWrapper-784"
+                class="makeStyles-errorInputWrapper-844"
               >
                 <div
-                  class="MuiFormControl-root makeStyles-formControl-749 makeStyles-inputBottomPadding-780"
+                  class="MuiFormControl-root makeStyles-formControl-809 makeStyles-inputBottomPadding-840"
                 >
                   <h1
                     class="MuiTypography-root MuiTypography-caption MuiTypography-colorSecondary MuiTypography-alignLeft"
@@ -1514,11 +2462,11 @@ exports[`ProfileTab should render without pending files 1`] = `
                         />
                         <fieldset
                           aria-hidden="true"
-                          class="PrivateNotchedOutline-root-776 MuiOutlinedInput-notchedOutline"
+                          class="PrivateNotchedOutline-root-836 MuiOutlinedInput-notchedOutline"
                           style="padding-left: 8px;"
                         >
                           <legend
-                            class="PrivateNotchedOutline-legend-777"
+                            class="PrivateNotchedOutline-legend-837"
                             style="width: 0.01px;"
                           >
                             <span>
@@ -1532,10 +2480,10 @@ exports[`ProfileTab should render without pending files 1`] = `
                 </div>
               </div>
               <div
-                class="makeStyles-errorInputWrapper-784"
+                class="makeStyles-errorInputWrapper-844"
               >
                 <div
-                  class="MuiFormControl-root makeStyles-formControl-749 makeStyles-inputBottomPadding-780"
+                  class="MuiFormControl-root makeStyles-formControl-809 makeStyles-inputBottomPadding-840"
                 >
                   <h1
                     class="MuiTypography-root MuiTypography-caption MuiTypography-colorSecondary MuiTypography-alignLeft"
@@ -1563,11 +2511,11 @@ exports[`ProfileTab should render without pending files 1`] = `
                         />
                         <fieldset
                           aria-hidden="true"
-                          class="PrivateNotchedOutline-root-776 MuiOutlinedInput-notchedOutline"
+                          class="PrivateNotchedOutline-root-836 MuiOutlinedInput-notchedOutline"
                           style="padding-left: 8px;"
                         >
                           <legend
-                            class="PrivateNotchedOutline-legend-777"
+                            class="PrivateNotchedOutline-legend-837"
                             style="width: 0.01px;"
                           >
                             <span>
@@ -1581,10 +2529,10 @@ exports[`ProfileTab should render without pending files 1`] = `
                 </div>
               </div>
               <div
-                class="makeStyles-errorInputWrapper-784"
+                class="makeStyles-errorInputWrapper-844"
               >
                 <div
-                  class="MuiFormControl-root makeStyles-formControl-749 makeStyles-inputBottomPadding-780"
+                  class="MuiFormControl-root makeStyles-formControl-809 makeStyles-inputBottomPadding-840"
                 >
                   <h1
                     class="MuiTypography-root MuiTypography-caption MuiTypography-colorSecondary MuiTypography-alignLeft"
@@ -1613,11 +2561,11 @@ exports[`ProfileTab should render without pending files 1`] = `
                         />
                         <fieldset
                           aria-hidden="true"
-                          class="PrivateNotchedOutline-root-776 MuiOutlinedInput-notchedOutline"
+                          class="PrivateNotchedOutline-root-836 MuiOutlinedInput-notchedOutline"
                           style="padding-left: 8px;"
                         >
                           <legend
-                            class="PrivateNotchedOutline-legend-777"
+                            class="PrivateNotchedOutline-legend-837"
                             style="width: 0.01px;"
                           >
                             <span>
@@ -1630,18 +2578,255 @@ exports[`ProfileTab should render without pending files 1`] = `
                   </div>
                 </div>
               </div>
+              <div
+                class="makeStyles-errorInputWrapper-844"
+              >
+                <div
+                  class="MuiFormControl-root makeStyles-formControl-809 makeStyles-inputBottomPadding-840"
+                >
+                  <h1
+                    class="MuiTypography-root MuiTypography-caption MuiTypography-colorSecondary MuiTypography-alignLeft"
+                  >
+                    Mobile Phone Number
+                     
+                  </h1>
+                  <div>
+                    <div
+                      class="makeStyles-phoneInput-938 undefined  react-tel-input"
+                    >
+                      <div
+                        class="special-label"
+                      >
+                        Phone
+                      </div>
+                      <input
+                        autocomplete="off"
+                        class=" form-control"
+                        data-testid="mobile-user-phone"
+                        name="mobilePhoneNumber"
+                        placeholder="+0 (000) 000-0000"
+                        type="text"
+                        value=""
+                        variant="outlined"
+                      />
+                      <div
+                        class=" flag-dropdown"
+                      >
+                        <div
+                          aria-haspopup="listbox"
+                          class="selected-flag"
+                          role="button"
+                          tabindex="-1"
+                          title=""
+                        >
+                          <div
+                            class="flag 0"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="MuiGrid-root MuiGrid-container"
+              >
+                <div
+                  class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-9 MuiGrid-grid-lg-9"
+                >
+                  <div
+                    class="MuiFormControl-root makeStyles-formControl-809 makeStyles-inputBottomPadding-840 makeStyles-middleInput-878"
+                  >
+                    <h1
+                      class="MuiTypography-root MuiTypography-caption MuiTypography-colorSecondary MuiTypography-alignLeft"
+                    >
+                      Office Phone Number (Optional)
+                       
+                    </h1>
+                    <div>
+                      <div
+                        class="makeStyles-phoneInput-938 undefined  react-tel-input"
+                      >
+                        <div
+                          class="special-label"
+                        >
+                          Phone
+                        </div>
+                        <input
+                          autocomplete="off"
+                          class=" form-control"
+                          data-testid="office-user-phone"
+                          id="officePhoneNumber"
+                          name="officePhoneNumber"
+                          placeholder="+0 (000) 000-0000"
+                          type="text"
+                          value=""
+                          variant="outlined"
+                        />
+                        <div
+                          class=" flag-dropdown"
+                        >
+                          <div
+                            aria-haspopup="listbox"
+                            class="selected-flag"
+                            role="button"
+                            tabindex="-1"
+                            title=""
+                          >
+                            <div
+                              class="flag 0"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-3 MuiGrid-grid-lg-3"
+                >
+                  <div
+                    class="MuiFormControl-root makeStyles-formControl-809 makeStyles-inputBottomPadding-840"
+                  >
+                    <h1
+                      class="MuiTypography-root MuiTypography-caption MuiTypography-colorSecondary MuiTypography-alignLeft"
+                    >
+                      Ext
+                       
+                    </h1>
+                    <div>
+                      <div
+                        class="MuiFormControl-root MuiTextField-root MuiFormControl-fullWidth"
+                      >
+                        <div
+                          class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-fullWidth MuiInputBase-formControl"
+                        >
+                          <input
+                            aria-invalid="false"
+                            autocomplete="off"
+                            class="MuiInputBase-input MuiOutlinedInput-input"
+                            data-testid="office-user-phone"
+                            maxlength="6"
+                            name="officePhoneExtension"
+                            placeholder="Ext"
+                            type="text"
+                            value=""
+                          />
+                          <fieldset
+                            aria-hidden="true"
+                            class="PrivateNotchedOutline-root-836 MuiOutlinedInput-notchedOutline"
+                            style="padding-left: 8px;"
+                          >
+                            <legend
+                              class="PrivateNotchedOutline-legend-837"
+                              style="width: 0.01px;"
+                            >
+                              <span>
+                                ​
+                              </span>
+                            </legend>
+                          </fieldset>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="makeStyles-errorInputWrapper-844"
+              >
+                <div
+                  class=" makeStyles-controlledRadioContainer-942 controlledRadioContainer"
+                  data-testid="controlled-radio"
+                >
+                  <fieldset
+                    class="MuiFormControl-root makeStyles-radioWrapper-894"
+                  >
+                    <legend
+                      class="MuiFormLabel-root makeStyles-controlledRadioLabel-941"
+                      id="radio-label-preferredContactMethod"
+                    >
+                      Preferred Contact Method
+                    </legend>
+                    <div
+                      aria-labelledby="radio-label-preferredContactMethod"
+                      class="MuiFormGroup-root MuiFormGroup-row"
+                      data-testid="controlled-radio-group"
+                      role="radiogroup"
+                    >
+                      <label
+                        class="MuiFormControlLabel-root"
+                      >
+                        <span
+                          aria-disabled="false"
+                          class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-949 MuiRadio-root makeStyles-root-943 PrivateSwitchBase-checked-950 Mui-checked"
+                        >
+                          <span
+                            class="MuiIconButton-label"
+                          >
+                            <input
+                              checked=""
+                              class="PrivateSwitchBase-input-952"
+                              data-testid="controlled-radio-button"
+                              name="preferredContactMethod"
+                              type="radio"
+                              value="0"
+                            />
+                            <span
+                              class="makeStyles-icon-944 makeStyles-checkedIcon-947 "
+                            />
+                          </span>
+                        </span>
+                        <span
+                          class="MuiTypography-root MuiFormControlLabel-label MuiTypography-body1"
+                        >
+                          Email
+                        </span>
+                      </label>
+                      <label
+                        class="MuiFormControlLabel-root"
+                      >
+                        <span
+                          aria-disabled="false"
+                          class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-949 MuiRadio-root makeStyles-root-943"
+                        >
+                          <span
+                            class="MuiIconButton-label"
+                          >
+                            <input
+                              class="PrivateSwitchBase-input-952"
+                              data-testid="controlled-radio-button"
+                              name="preferredContactMethod"
+                              type="radio"
+                              value="1"
+                            />
+                            <span
+                              class="makeStyles-icon-944 makeStyles-unactiveIcon-946"
+                            />
+                          </span>
+                        </span>
+                        <span
+                          class="MuiTypography-root MuiFormControlLabel-label MuiTypography-body1"
+                        >
+                          Phone
+                        </span>
+                      </label>
+                    </div>
+                  </fieldset>
+                </div>
+              </div>
             </div>
           </div>
           <div
-            class="makeStyles-formButtonWrapper-782"
+            class="makeStyles-formButtonWrapper-842"
           >
             <span
-              class="makeStyles-noOutline-804"
+              class="makeStyles-noOutline-864"
               data-testid="controlled-button"
               tabindex="-1"
             >
               <button
-                class="MuiButtonBase-root MuiButton-root MuiButton-text makeStyles-discardButton-806 MuiButton-textPrimary"
+                class="MuiButtonBase-root MuiButton-root MuiButton-text makeStyles-discardButton-866 MuiButton-textPrimary"
                 data-testid="discard-changes-btn"
                 tabindex="0"
                 type="button"
@@ -1657,12 +2842,12 @@ exports[`ProfileTab should render without pending files 1`] = `
               </button>
             </span>
             <span
-              class="makeStyles-noOutline-804"
+              class="makeStyles-noOutline-864"
               data-testid="controlled-button"
               tabindex="-1"
             >
               <button
-                class="MuiButtonBase-root MuiButton-root MuiButton-contained false makeStyles-nextButton-805 makeStyles-noPadding-802 MuiButton-containedPrimary MuiButton-containedSizeLarge MuiButton-sizeLarge"
+                class="MuiButtonBase-root MuiButton-root MuiButton-contained false makeStyles-nextButton-865 makeStyles-noPadding-862 MuiButton-containedPrimary MuiButton-containedSizeLarge MuiButton-sizeLarge"
                 data-testid="confirm-btn"
                 tabindex="0"
                 type="button"
@@ -1671,7 +2856,7 @@ exports[`ProfileTab should render without pending files 1`] = `
                   class="MuiButton-label"
                 >
                   <span
-                    class="makeStyles-textWrapper-880"
+                    class="makeStyles-textWrapper-955"
                   >
                     Save Changes
                   </span>

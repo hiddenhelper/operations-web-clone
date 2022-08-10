@@ -11,13 +11,14 @@ import { generalState } from '../../../../../../../state-mgmt/general';
 import AssignSubContractorModal from './AssignSubContractorModal';
 
 export const mapStateToProps = (state: IRootState) => ({
-  userCompanyId: state.auth.companyId,
+  userCompanyId: state.auth.currentCompanyId,
   userRole: state.auth.role,
   subContractorMap: state.general.modalMap,
   count: state.general.modalCount,
   uiRelationMap: state.general.uiRelationMap,
   loading: state.general.loadingMap[GENERAL.LOADING_KEY.FETCH_CLIENT_SUBCONTRACTOR_LIST],
   assignLoading: state.general.loadingMap[GENERAL.LOADING_KEY.ASSIGN_CLIENT_PROJECT],
+  isFcaUser: state.auth.isFcaUser,
 });
 
 export const mapDispatchToProps = (dispatch: Dispatch) => ({

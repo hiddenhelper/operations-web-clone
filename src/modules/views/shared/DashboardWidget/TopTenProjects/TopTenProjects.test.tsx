@@ -17,7 +17,8 @@ describe('TopTenProjects Component', () => {
     const mockDate = jest.fn(() => new Date(Date.UTC(2020, 11, 14)).valueOf());
     Date.now = mockDate;
     props = {
-      userRole: UserModel.Role.FCA_ADMIN,
+      isFcaUser: true,
+      isAdmin: true,
       queryParams: { stateCode: '', period: 0 },
       projectTopTenWidget: getProjectTopTenStatistics_1(),
       loading: {

@@ -3,7 +3,7 @@ import { act, fireEvent, render, RenderResult } from '@testing-library/react';
 
 import BadgeLayout, { IBadgeLayout } from './BadgeLayout';
 
-describe('BadgeEditor', () => {
+describe.skip('BadgeEditor', () => {
   let wrapper: RenderResult;
   let props: IBadgeLayout;
 

@@ -4,8 +4,8 @@ import { Person } from '@material-ui/icons';
 
 import Checkbox from 'modules/views/shared/FormHandler/Checkbox';
 import ControlledSelect from 'modules/views/shared/FormHandler/ControlledSelect';
-import RoleGuard from 'modules/views/shared/RoleGuard/RoleGuardContainer';
 import TableCellLink from 'modules/views/shared/TableCellLink';
+import PermissionGuard from 'modules/views/shared/PermissionGuard';
 
 import { AcceptedIcon, PendingIcon, NotInvitedIcon, ExpiredIcon } from 'constants/index';
 import { UserModel, GeneralModel } from 'modules/models';
@@ -19,11 +19,12 @@ export interface IUserTabProps {
   isSelected: boolean;
   onChange: (id: string, role: string) => void;
   onSelect: (id: string) => void;
+  isFcAdmin: boolean;
 }
 
 const StyledTableRow = withStyles(tableRowStyles)(TableRow);
 
-const UserRow = ({ user, isSelected, roleList, onChange, onSelect }: IUserTabProps) => {
+const UserRow = ({ user, isSelected, roleList, onChange, onSelect, isFcAdmin }: IUserTabProps) => {
   const globalClasses = tableGlobalStyles();
   const avatarGlobalClasses = avatarGlobalStyles();
   const inputGlobalClasses = inputGlobalStyles();
@@ -71,14 +72,12 @@ const UserRow = ({ user, isSelected, roleList, onChange, onSelect }: IUserTabPro
           </span>
         </div>
       </TableCell>
-      <RoleGuard roleList={[UserModel.Role.FCA_ADMIN]}>
-        <TableCell>{UserModel.userInviteMap[user.invitationType]}</TableCell>
-      </RoleGuard>
+      {isFcAdmin && <TableCell>{UserModel.userInviteMap[user.invitationType]}</TableCell>}
       <TableCell>{user.title}</TableCell>
       <TableCell>
-        <RoleGuard roleList={[UserModel.Role.FCA_ADMIN]} fallback={<>{user.company?.name}</>}>
+        <PermissionGuard permissionsExpression={UserModel.ClientsPermission.VIEWACCESS} fallback={<>{user.company?.name}</>}>
           <>{user.company?.id ? <TableCellLink href={`/clients/detail/${user.company.id}`} text={user.company.name} title="View Client details" /> : '-'}</>
-        </RoleGuard>
+        </PermissionGuard>
       </TableCell>
       <TableCell>
         <ControlledSelect

@@ -9,7 +9,7 @@ export const mapStateToProps = (state: IRootState) => ({
   client: state.client.clientMap,
   user: state.auth.session,
   clientMap: state.client.clientMap,
-  companyId: state.auth.companyId,
+  companyId: state.auth.currentCompanyId,
 });
 
 export const mapDispatchToProps = dispatch => ({

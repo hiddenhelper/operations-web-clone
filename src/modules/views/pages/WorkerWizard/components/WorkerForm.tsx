@@ -7,13 +7,13 @@ import IDInformation from './IDInformation';
 import WorkerTrades from './WorkerTrades';
 import RequiredInformation from './RequiredInformation';
 
-import { ClientModel, GeneralModel, UserModel, WorkerModel } from '../../../../models';
+import { ClientModel, GeneralModel, WorkerModel } from '../../../../models';
 import { IFormRules } from '../../../../../utils/useValidator';
 import { getConditionalDefaultValue, getFormattedOptionList, isEmpty } from '../../../../../utils/generalUtils';
 import { useStyles } from '../styles';
 
 export interface IWorkerFormProps {
-  userRole: UserModel.Role;
+  isFcaUser: boolean;
   company: ClientModel.IClient;
   model: WorkerModel.IWorker;
   formRules: IFormRules;
@@ -34,7 +34,7 @@ export interface IWorkerFormProps {
 }
 
 const WorkerForm = ({
-  userRole,
+  isFcaUser,
   company,
   model,
   formRules,
@@ -124,7 +124,7 @@ const WorkerForm = ({
       <RequiredInformation
         model={model}
         company={company}
-        userRole={userRole}
+        isFcaUser={isFcaUser}
         errors={errors}
         uiRelationMap={uiRelationMap}
         loading={searchLoading}

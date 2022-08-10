@@ -1,6 +1,6 @@
 import React, { memo, useCallback, useEffect, useMemo } from 'react';
 
-import { BadgeModel, GeneralModel, ProjectModel } from '../../../../../../../models';
+import { BadgeModel, GeneralModel, ProjectModel, UserModel } from '../../../../../../../models';
 
 import BadgeSummaryModal from '../../../../../../shared/ResourceManagement/BadgeSummaryModal';
 import { getVisitorBadgeText, noop } from '../../../../../../../../utils/generalUtils';
@@ -12,6 +12,7 @@ export interface IVisitorBadgeModalProps {
   badgeLoading: GeneralModel.ILoadingStatus;
   updateLoading: GeneralModel.ILoadingStatus;
   updateBadgeDataLoading: GeneralModel.ILoadingStatus;
+  currentUserPermissions: UserModel.IPermission[];
   clearUpdateLoading: () => void;
   closeModal: () => void;
   clearBadge: () => void;
@@ -29,6 +30,7 @@ const VisitorBadgeModal = ({
   badgeLoading,
   updateLoading,
   updateBadgeDataLoading,
+  currentUserPermissions,
   closeModal,
   fetchBadge,
   clearBadge,
@@ -83,6 +85,7 @@ const VisitorBadgeModal = ({
       updateBadgeDataLoading={updateBadgeDataLoading}
       clearUpdateBadgeLoading={clearUpdateBadgeLoading}
       onPrint={handlePrint}
+      currentUserPermissions={currentUserPermissions}
     />
   );
 };

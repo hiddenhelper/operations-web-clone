@@ -327,32 +327,32 @@ exports[`InvoicesTab should close modal 1`] = `
 exports[`InvoicesTab should open invoice drawer 1`] = `
 <div>
   <div
-    class="makeStyles-tableWrapper-1106"
+    class="makeStyles-tableWrapper-1100"
   >
     <div
-      class="makeStyles-filterActionsContainer-1117 makeStyles-filterActionsContainerPadding-1119"
+      class="makeStyles-filterActionsContainer-1111 makeStyles-filterActionsContainerPadding-1113"
     >
       <div
-        class="MuiBox-root MuiBox-root-1172 makeStyles-filterStatusContainer-1120"
+        class="MuiBox-root MuiBox-root-1166 makeStyles-filterStatusContainer-1114"
       >
         <div
-          class="makeStyles-filterActionsContainerLeft-1118"
+          class="makeStyles-filterActionsContainerLeft-1112"
         >
           <div
-            class="MuiBox-root MuiBox-root-1173 makeStyles-filterStatusContainer-1120 makeStyles-autocompleteFilterStatus-1137"
+            class="MuiBox-root MuiBox-root-1167 makeStyles-filterStatusContainer-1114 makeStyles-autocompleteFilterStatus-1131"
           >
             <div
-              class="makeStyles-floatingFilterWrapper-1126 makeStyles-filterWrapper-1125 makeStyles-buttonContainer-1175 floatingFilterWrapper"
+              class="makeStyles-floatingFilterWrapper-1120 makeStyles-filterWrapper-1119 makeStyles-buttonContainer-1169 floatingFilterWrapper"
             >
               <span
-                class="makeStyles-floatingFilterButton-1127"
+                class="makeStyles-floatingFilterButton-1121"
                 data-testid="controlled-button"
                 tabindex="-1"
               >
                 <button
                   aria-controls="false"
                   aria-haspopup="true"
-                  class="MuiButtonBase-root MuiButton-root MuiButton-text makeStyles-buttonFilter-1135"
+                  class="MuiButtonBase-root MuiButton-root MuiButton-text makeStyles-buttonFilter-1129"
                   data-testid="button-filter-open"
                   tabindex="0"
                   type="button"
@@ -365,7 +365,7 @@ exports[`InvoicesTab should open invoice drawer 1`] = `
                       class="MuiButton-endIcon MuiButton-iconSizeMedium"
                     >
                       <svg
-                        class="makeStyles-dropdownIcon-1129"
+                        class="makeStyles-dropdownIcon-1123"
                       >
                         expand.svg
                       </svg>
@@ -376,23 +376,23 @@ exports[`InvoicesTab should open invoice drawer 1`] = `
             </div>
           </div>
           <hr
-            class="MuiDivider-root makeStyles-dividerColor-1130 MuiDivider-flexItem MuiDivider-vertical"
+            class="MuiDivider-root makeStyles-dividerColor-1124 MuiDivider-flexItem MuiDivider-vertical"
           />
           <div
-            class="MuiBox-root MuiBox-root-1179 makeStyles-filterStatusContainer-1120 makeStyles-leftFilterStatusContainer-1124"
+            class="MuiBox-root MuiBox-root-1173 makeStyles-filterStatusContainer-1114 makeStyles-leftFilterStatusContainer-1118"
           >
             <div
-              class="makeStyles-floatingFilterWrapper-1126 makeStyles-filterWrapper-1125  floatingFilterWrapper"
+              class="makeStyles-floatingFilterWrapper-1120 makeStyles-filterWrapper-1119  floatingFilterWrapper"
             >
               <span
-                class="makeStyles-floatingFilterButton-1127"
+                class="makeStyles-floatingFilterButton-1121"
                 data-testid="controlled-button"
                 tabindex="-1"
               >
                 <button
                   aria-controls="false"
                   aria-haspopup="true"
-                  class="MuiButtonBase-root MuiButton-root MuiButton-text makeStyles-buttonFilter-1135"
+                  class="MuiButtonBase-root MuiButton-root MuiButton-text makeStyles-buttonFilter-1129"
                   data-testid="button-filter-open"
                   tabindex="0"
                   type="button"
@@ -405,7 +405,7 @@ exports[`InvoicesTab should open invoice drawer 1`] = `
                       class="MuiButton-endIcon MuiButton-iconSizeMedium"
                     >
                       <svg
-                        class="makeStyles-dropdownIcon-1129"
+                        class="makeStyles-dropdownIcon-1123"
                       >
                         expand.svg
                       </svg>
@@ -418,7 +418,7 @@ exports[`InvoicesTab should open invoice drawer 1`] = `
         </div>
       </div>
       <button
-        class="MuiButtonBase-root MuiButton-root MuiButton-contained makeStyles-createButton-1147 makeStyles-primaryButtonLarge-1149 MuiButton-containedPrimary MuiButton-containedSizeLarge MuiButton-sizeLarge MuiButton-fullWidth"
+        class="MuiButtonBase-root MuiButton-root MuiButton-contained makeStyles-createButton-1141 makeStyles-primaryButtonLarge-1143 MuiButton-containedPrimary MuiButton-containedSizeLarge MuiButton-sizeLarge MuiButton-fullWidth"
         data-testid="open-invoice-modal-btn"
         tabindex="0"
         type="button"
@@ -485,7 +485,7 @@ exports[`InvoicesTab should open invoice drawer 1`] = `
         class="MuiTableBody-root"
       >
         <tr
-          class="MuiTableRow-root WithStyles(ForwardRef(TableRow))-root-1266 makeStyles-clickableRow-1252"
+          class="MuiTableRow-root WithStyles(ForwardRef(TableRow))-root-1260 makeStyles-clickableRow-1246"
           data-testid="invoice-list-row"
         >
           <td
@@ -494,17 +494,17 @@ exports[`InvoicesTab should open invoice drawer 1`] = `
             720909
           </td>
           <td
-            class="MuiTableCell-root MuiTableCell-body makeStyles-listNameFullWidth-1238"
+            class="MuiTableCell-root MuiTableCell-body makeStyles-listNameFullWidth-1232"
           >
             <span>
               -
             </span>
           </td>
           <td
-            class="MuiTableCell-root MuiTableCell-body makeStyles-listName-1237 makeStyles-listNameFullWidth-1238"
+            class="MuiTableCell-root MuiTableCell-body makeStyles-listName-1231 makeStyles-listNameFullWidth-1232"
           >
             <a
-              class="Link-root-1267"
+              class="Link-root-1261"
               data-testid="invoice-list-row-project-button"
               href="/projects/detail/1"
               title="View Project details"
@@ -518,7 +518,7 @@ exports[`InvoicesTab should open invoice drawer 1`] = `
             Dec 09, 2020
           </td>
           <td
-            class="MuiTableCell-root MuiTableCell-body makeStyles-boldTableCell-1219"
+            class="MuiTableCell-root MuiTableCell-body makeStyles-boldTableCell-1213"
           >
             $ 
             0
@@ -527,13 +527,13 @@ exports[`InvoicesTab should open invoice drawer 1`] = `
             class="MuiTableCell-root MuiTableCell-body"
           >
             <div
-              class="makeStyles-invoiceRowLastCell-1220"
+              class="makeStyles-invoiceRowLastCell-1214"
             >
               <span
-                class="makeStyles-invoiceRowStatusCell-1222"
+                class="makeStyles-invoiceRowStatusCell-1216"
               >
                 <div
-                  class="MuiChip-root makeStyles-statusChip-1254 makeStyles-assigned-1258 makeStyles-invoiceStatusChip-1218 MuiChip-colorPrimary"
+                  class="MuiChip-root makeStyles-statusChip-1248 makeStyles-assigned-1252 makeStyles-invoiceStatusChip-1212 MuiChip-colorPrimary"
                 >
                   <span
                     class="MuiChip-label"
@@ -543,10 +543,10 @@ exports[`InvoicesTab should open invoice drawer 1`] = `
                 </div>
               </span>
               <span
-                class="makeStyles-invoiceRowIconsWrapper-1223"
+                class="makeStyles-invoiceRowIconsWrapper-1217"
               >
                 <span
-                  class="makeStyles-invoiceRowButton-1226"
+                  class="makeStyles-invoiceRowButton-1220"
                   data-testid="controlled-button"
                   tabindex="-1"
                 >
@@ -562,72 +562,19 @@ exports[`InvoicesTab should open invoice drawer 1`] = `
                       class="MuiIconButton-label"
                     >
                       <svg
-                        class="makeStyles-invoiceIcon-1224"
+                        class="makeStyles-invoiceIcon-1218"
                       >
                         invoice.svg
                       </svg>
                     </span>
                   </button>
                 </span>
-                <span
-                  class="makeStyles-invoiceRowButton-1226"
-                  data-testid="controlled-button"
-                  tabindex="-1"
-                >
-                  <div
-                    class="MuiBox-root MuiBox-root-1269 makeStyles-filterStatusContainer-1120 buttonMenuContainer"
-                  >
-                    <div
-                      class="makeStyles-filterWrapper-1125 buttonMenuWrapper"
-                    >
-                      <span
-                        class=""
-                        data-testid="controlled-button"
-                        tabindex="-1"
-                      >
-                        <button
-                          aria-controls="false"
-                          aria-haspopup="true"
-                          class="MuiButtonBase-root MuiButton-root MuiButton-contained makeStyles-invoiceActionsButton-1227 MuiButton-containedPrimary"
-                          data-testid="popover-button"
-                          tabindex="0"
-                          type="button"
-                        >
-                          <span
-                            class="MuiButton-label"
-                          >
-                            
-                            <span
-                              class="MuiButton-endIcon MuiButton-iconSizeMedium"
-                            >
-                              <svg
-                                class="makeStyles-invoiceIcon-1224"
-                              >
-                                three-dots.svg
-                              </svg>
-                            </span>
-                          </span>
-                        </button>
-                      </span>
-                      <span
-                        class=""
-                      >
-                        <div
-                          class="makeStyles-iconInactive-1270"
-                          data-testid="popover-wrapper"
-                        >
-                          
-                        </div>
-                      </span>
-                    </div>
-                  </div>
-                </span>
               </span>
             </div>
           </td>
         </tr>
         <tr
-          class="MuiTableRow-root WithStyles(ForwardRef(TableRow))-root-1266 makeStyles-clickableRow-1252"
+          class="MuiTableRow-root WithStyles(ForwardRef(TableRow))-root-1260 makeStyles-clickableRow-1246"
           data-testid="invoice-list-row"
         >
           <td
@@ -636,10 +583,10 @@ exports[`InvoicesTab should open invoice drawer 1`] = `
             720908
           </td>
           <td
-            class="MuiTableCell-root MuiTableCell-body makeStyles-listNameFullWidth-1238"
+            class="MuiTableCell-root MuiTableCell-body makeStyles-listNameFullWidth-1232"
           >
             <a
-              class="Link-root-1267"
+              class="Link-root-1261"
               data-testid="invoice-list-row-client-button"
               href="/clients/detail/9164e4c4-6521-47bb-97fd-c75ac02b2cf5"
               title="View Client details"
@@ -648,10 +595,10 @@ exports[`InvoicesTab should open invoice drawer 1`] = `
             </a>
           </td>
           <td
-            class="MuiTableCell-root MuiTableCell-body makeStyles-listName-1237 makeStyles-listNameFullWidth-1238"
+            class="MuiTableCell-root MuiTableCell-body makeStyles-listName-1231 makeStyles-listNameFullWidth-1232"
           >
             <a
-              class="Link-root-1267"
+              class="Link-root-1261"
               data-testid="invoice-list-row-project-button"
               href="/projects/detail/9164e4c4-6521-47bb-97fd-c75ac02b2cf2"
               title="View Project details"
@@ -665,7 +612,7 @@ exports[`InvoicesTab should open invoice drawer 1`] = `
             -
           </td>
           <td
-            class="MuiTableCell-root MuiTableCell-body makeStyles-boldTableCell-1219"
+            class="MuiTableCell-root MuiTableCell-body makeStyles-boldTableCell-1213"
           >
             $ 
             0
@@ -674,13 +621,13 @@ exports[`InvoicesTab should open invoice drawer 1`] = `
             class="MuiTableCell-root MuiTableCell-body"
           >
             <div
-              class="makeStyles-invoiceRowLastCell-1220"
+              class="makeStyles-invoiceRowLastCell-1214"
             >
               <span
-                class="makeStyles-invoiceRowStatusCell-1222"
+                class="makeStyles-invoiceRowStatusCell-1216"
               >
                 <div
-                  class="MuiChip-root makeStyles-statusChip-1254 makeStyles-pending-1261 makeStyles-invoiceStatusChip-1218 MuiChip-colorPrimary"
+                  class="MuiChip-root makeStyles-statusChip-1248 makeStyles-pending-1255 makeStyles-invoiceStatusChip-1212 MuiChip-colorPrimary"
                 >
                   <span
                     class="MuiChip-label"
@@ -690,10 +637,10 @@ exports[`InvoicesTab should open invoice drawer 1`] = `
                 </div>
               </span>
               <span
-                class="makeStyles-invoiceRowIconsWrapper-1223"
+                class="makeStyles-invoiceRowIconsWrapper-1217"
               >
                 <span
-                  class="makeStyles-invoiceRowButton-1226"
+                  class="makeStyles-invoiceRowButton-1220"
                   data-testid="controlled-button"
                   tabindex="-1"
                 >
@@ -709,65 +656,12 @@ exports[`InvoicesTab should open invoice drawer 1`] = `
                       class="MuiIconButton-label"
                     >
                       <svg
-                        class="makeStyles-invoiceIcon-1224"
+                        class="makeStyles-invoiceIcon-1218"
                       >
                         invoice.svg
                       </svg>
                     </span>
                   </button>
-                </span>
-                <span
-                  class="makeStyles-invoiceRowButton-1226"
-                  data-testid="controlled-button"
-                  tabindex="-1"
-                >
-                  <div
-                    class="MuiBox-root MuiBox-root-1274 makeStyles-filterStatusContainer-1120 buttonMenuContainer"
-                  >
-                    <div
-                      class="makeStyles-filterWrapper-1125 buttonMenuWrapper"
-                    >
-                      <span
-                        class=""
-                        data-testid="controlled-button"
-                        tabindex="-1"
-                      >
-                        <button
-                          aria-controls="false"
-                          aria-haspopup="true"
-                          class="MuiButtonBase-root MuiButton-root MuiButton-contained makeStyles-invoiceActionsButton-1227 MuiButton-containedPrimary"
-                          data-testid="popover-button"
-                          tabindex="0"
-                          type="button"
-                        >
-                          <span
-                            class="MuiButton-label"
-                          >
-                            
-                            <span
-                              class="MuiButton-endIcon MuiButton-iconSizeMedium"
-                            >
-                              <svg
-                                class="makeStyles-invoiceIcon-1224"
-                              >
-                                three-dots.svg
-                              </svg>
-                            </span>
-                          </span>
-                        </button>
-                      </span>
-                      <span
-                        class=""
-                      >
-                        <div
-                          class="makeStyles-iconInactive-1270"
-                          data-testid="popover-wrapper"
-                        >
-                          
-                        </div>
-                      </span>
-                    </div>
-                  </div>
                 </span>
               </span>
             </div>
@@ -777,7 +671,7 @@ exports[`InvoicesTab should open invoice drawer 1`] = `
     </table>
     <nav
       aria-label="pagination navigation"
-      class="MuiPagination-root  makeStyles-pagination-1275"
+      class="MuiPagination-root  makeStyles-pagination-1263"
       data-testid="pagination"
     >
       <ul
@@ -826,18 +720,18 @@ exports[`InvoicesTab should open invoice drawer 1`] = `
       </ul>
     </nav>
     <div
-      class="MuiDrawer-root MuiDrawer-docked makeStyles-drawer-1280 makeStyles-close-1291 closed"
+      class="MuiDrawer-root MuiDrawer-docked makeStyles-drawer-1268 makeStyles-close-1279 closed"
       data-testid="invoice-drawer-detail"
     >
       <div
-        class="MuiPaper-root MuiDrawer-paper makeStyles-drawerPaper-1281 MuiDrawer-paperAnchorRight MuiDrawer-paperAnchorDockedRight MuiPaper-elevation0"
+        class="MuiPaper-root MuiDrawer-paper makeStyles-drawerPaper-1269 MuiDrawer-paperAnchorRight MuiDrawer-paperAnchorDockedRight MuiPaper-elevation0"
         style="visibility: hidden; webkit-transform: translateX(1024px) translateX(0px); transform: translateX(1024px) translateX(0px);"
       >
         <div
-          class="makeStyles-drawerButtonWrapper-1283"
+          class="makeStyles-drawerButtonWrapper-1271"
         >
           <div
-            class="makeStyles-drawerButton-1284"
+            class="makeStyles-drawerButton-1272"
           >
             <button
               class="MuiButtonBase-root MuiButton-root MuiButton-text"
@@ -859,31 +753,31 @@ exports[`InvoicesTab should open invoice drawer 1`] = `
             </button>
           </div>
           <div
-            class="makeStyles-drawerHeader-1282"
+            class="makeStyles-drawerHeader-1270"
           >
             <p
-              class="MuiTypography-root makeStyles-drawerTitle-1285 MuiTypography-body1 MuiTypography-colorPrimary MuiTypography-alignLeft"
+              class="MuiTypography-root makeStyles-drawerTitle-1273 MuiTypography-body1 MuiTypography-colorPrimary MuiTypography-alignLeft"
             >
               Invoice Information
             </p>
           </div>
         </div>
         <div
-          class="makeStyles-listDetail-1244"
+          class="makeStyles-listDetail-1238"
         >
           <div
-            class="makeStyles-company-1245"
+            class="makeStyles-company-1239"
           >
             <div
-              class="makeStyles-drawerText-1287"
+              class="makeStyles-drawerText-1275"
             >
               <p
-                class="MuiTypography-root makeStyles-listAccent-1246 makeStyles-entityTitle-1243 MuiTypography-body1"
+                class="MuiTypography-root makeStyles-listAccent-1240 makeStyles-entityTitle-1237 MuiTypography-body1"
               >
                 720909
               </p>
               <div
-                class="makeStyles-drawerMainText-1288"
+                class="makeStyles-drawerMainText-1276"
               >
                 <span>
                   Manual Invoice
@@ -891,22 +785,22 @@ exports[`InvoicesTab should open invoice drawer 1`] = `
               </div>
             </div>
             <div
-              class="makeStyles-drawerSection-1286"
+              class="makeStyles-drawerSection-1274"
             >
               <div
-                class="makeStyles-drawerColumnDirection-1295"
+                class="makeStyles-drawerColumnDirection-1283"
               >
                 <div
-                  class="makeStyles-drawerRowDirection-1296"
+                  class="makeStyles-drawerRowDirection-1284"
                 >
                   <svg>
                     monetization.svg
                   </svg>
                   <div
-                    class="makeStyles-drawerText-1287 makeStyles-drawerTextSeparation-1289"
+                    class="makeStyles-drawerText-1275 makeStyles-drawerTextSeparation-1277"
                   >
                     <span
-                      class="makeStyles-listAccent-1246 makeStyles-listIconLabel-1279"
+                      class="makeStyles-listAccent-1240 makeStyles-listIconLabel-1267"
                     >
                       $ 
                       0
@@ -916,19 +810,19 @@ exports[`InvoicesTab should open invoice drawer 1`] = `
               </div>
             </div>
             <div
-              class="makeStyles-drawerSection-1286 makeStyles-drawerProjectColumn-1294"
+              class="makeStyles-drawerSection-1274 makeStyles-drawerProjectColumn-1282"
             >
               <div
-                class="makeStyles-projectWrapper-1292"
+                class="makeStyles-projectWrapper-1280"
               >
                 <svg>
                   location.svg
                 </svg>
                 <div
-                  class="makeStyles-drawerText-1287 makeStyles-drawerTextSeparation-1289"
+                  class="makeStyles-drawerText-1275 makeStyles-drawerTextSeparation-1277"
                 >
                   <span
-                    class="makeStyles-listAccent-1246"
+                    class="makeStyles-listAccent-1240"
                   >
                     -
                   </span>
@@ -942,10 +836,10 @@ exports[`InvoicesTab should open invoice drawer 1`] = `
               </div>
             </div>
             <div
-              class="makeStyles-drawerSection-1286 makeStyles-drawerProjectColumn-1294"
+              class="makeStyles-drawerSection-1274 makeStyles-drawerProjectColumn-1282"
             >
               <div
-                class="makeStyles-projectWrapper-1292"
+                class="makeStyles-projectWrapper-1280"
               >
                 <svg
                   aria-hidden="true"
@@ -958,10 +852,10 @@ exports[`InvoicesTab should open invoice drawer 1`] = `
                   />
                 </svg>
                 <div
-                  class="makeStyles-drawerText-1287 makeStyles-drawerTextSeparation-1289"
+                  class="makeStyles-drawerText-1275 makeStyles-drawerTextSeparation-1277"
                 >
                   <span
-                    class="makeStyles-listAccent-1246"
+                    class="makeStyles-listAccent-1240"
                   >
                     - -
                   </span>
@@ -972,19 +866,19 @@ exports[`InvoicesTab should open invoice drawer 1`] = `
               </div>
             </div>
             <div
-              class="makeStyles-drawerSection-1286 makeStyles-drawerProjectColumn-1294"
+              class="makeStyles-drawerSection-1274 makeStyles-drawerProjectColumn-1282"
             >
               <div
-                class="makeStyles-projectWrapper-1292"
+                class="makeStyles-projectWrapper-1280"
               >
                 <svg>
                   project.svg
                 </svg>
                 <div
-                  class="makeStyles-drawerText-1287 makeStyles-drawerTextSeparation-1289"
+                  class="makeStyles-drawerText-1275 makeStyles-drawerTextSeparation-1277"
                 >
                   <span
-                    class="makeStyles-listAccent-1246"
+                    class="makeStyles-listAccent-1240"
                   >
                     Las Vegas Casino
                   </span>
@@ -995,16 +889,16 @@ exports[`InvoicesTab should open invoice drawer 1`] = `
               </div>
             </div>
             <div
-              class="makeStyles-drawerSection-1286 makeStyles-drawerProjectColumn-1294"
+              class="makeStyles-drawerSection-1274 makeStyles-drawerProjectColumn-1282"
             >
               <div
-                class="makeStyles-projectWrapper-1292"
+                class="makeStyles-projectWrapper-1280"
               >
                 <svg>
                   calendar.svg
                 </svg>
                 <div
-                  class="makeStyles-drawerText-1287 makeStyles-drawerTextSeparation-1289"
+                  class="makeStyles-drawerText-1275 makeStyles-drawerTextSeparation-1277"
                 >
                   <span>
                     Creation Date: 
@@ -1018,16 +912,16 @@ exports[`InvoicesTab should open invoice drawer 1`] = `
               </div>
             </div>
             <div
-              class="makeStyles-drawerSection-1286 makeStyles-drawerProjectColumn-1294"
+              class="makeStyles-drawerSection-1274 makeStyles-drawerProjectColumn-1282"
             >
               <div
-                class="makeStyles-projectWrapper-1292"
+                class="makeStyles-projectWrapper-1280"
               >
                 <svg>
                   notes.svg
                 </svg>
                 <div
-                  class="makeStyles-drawerText-1287 makeStyles-drawerTextSeparation-1289"
+                  class="makeStyles-drawerText-1275 makeStyles-drawerTextSeparation-1277"
                 >
                   <span>
                     Test
@@ -1290,59 +1184,6 @@ exports[`InvoicesTab should open invoice information 1`] = `
                     </span>
                   </button>
                 </span>
-                <span
-                  class="makeStyles-invoiceRowButton-978"
-                  data-testid="controlled-button"
-                  tabindex="-1"
-                >
-                  <div
-                    class="MuiBox-root MuiBox-root-1021 makeStyles-filterStatusContainer-872 buttonMenuContainer"
-                  >
-                    <div
-                      class="makeStyles-filterWrapper-877 buttonMenuWrapper"
-                    >
-                      <span
-                        class=""
-                        data-testid="controlled-button"
-                        tabindex="-1"
-                      >
-                        <button
-                          aria-controls="false"
-                          aria-haspopup="true"
-                          class="MuiButtonBase-root MuiButton-root MuiButton-contained makeStyles-invoiceActionsButton-979 MuiButton-containedPrimary"
-                          data-testid="popover-button"
-                          tabindex="0"
-                          type="button"
-                        >
-                          <span
-                            class="MuiButton-label"
-                          >
-                            
-                            <span
-                              class="MuiButton-endIcon MuiButton-iconSizeMedium"
-                            >
-                              <svg
-                                class="makeStyles-invoiceIcon-976"
-                              >
-                                three-dots.svg
-                              </svg>
-                            </span>
-                          </span>
-                        </button>
-                      </span>
-                      <span
-                        class=""
-                      >
-                        <div
-                          class="makeStyles-iconInactive-1022"
-                          data-testid="popover-wrapper"
-                        >
-                          
-                        </div>
-                      </span>
-                    </div>
-                  </div>
-                </span>
               </span>
             </div>
           </td>
@@ -1437,59 +1278,6 @@ exports[`InvoicesTab should open invoice information 1`] = `
                     </span>
                   </button>
                 </span>
-                <span
-                  class="makeStyles-invoiceRowButton-978"
-                  data-testid="controlled-button"
-                  tabindex="-1"
-                >
-                  <div
-                    class="MuiBox-root MuiBox-root-1026 makeStyles-filterStatusContainer-872 buttonMenuContainer"
-                  >
-                    <div
-                      class="makeStyles-filterWrapper-877 buttonMenuWrapper"
-                    >
-                      <span
-                        class=""
-                        data-testid="controlled-button"
-                        tabindex="-1"
-                      >
-                        <button
-                          aria-controls="false"
-                          aria-haspopup="true"
-                          class="MuiButtonBase-root MuiButton-root MuiButton-contained makeStyles-invoiceActionsButton-979 MuiButton-containedPrimary"
-                          data-testid="popover-button"
-                          tabindex="0"
-                          type="button"
-                        >
-                          <span
-                            class="MuiButton-label"
-                          >
-                            
-                            <span
-                              class="MuiButton-endIcon MuiButton-iconSizeMedium"
-                            >
-                              <svg
-                                class="makeStyles-invoiceIcon-976"
-                              >
-                                three-dots.svg
-                              </svg>
-                            </span>
-                          </span>
-                        </button>
-                      </span>
-                      <span
-                        class=""
-                      >
-                        <div
-                          class="makeStyles-iconInactive-1022"
-                          data-testid="popover-wrapper"
-                        >
-                          
-                        </div>
-                      </span>
-                    </div>
-                  </div>
-                </span>
               </span>
             </div>
           </td>
@@ -1498,7 +1286,7 @@ exports[`InvoicesTab should open invoice information 1`] = `
     </table>
     <nav
       aria-label="pagination navigation"
-      class="MuiPagination-root  makeStyles-pagination-1027"
+      class="MuiPagination-root  makeStyles-pagination-1021"
       data-testid="pagination"
     >
       <ul
@@ -1547,18 +1335,18 @@ exports[`InvoicesTab should open invoice information 1`] = `
       </ul>
     </nav>
     <div
-      class="MuiDrawer-root MuiDrawer-docked makeStyles-drawer-1032 makeStyles-close-1043 closed"
+      class="MuiDrawer-root MuiDrawer-docked makeStyles-drawer-1026 makeStyles-close-1037 closed"
       data-testid="invoice-drawer-detail"
     >
       <div
-        class="MuiPaper-root MuiDrawer-paper makeStyles-drawerPaper-1033 MuiDrawer-paperAnchorRight MuiDrawer-paperAnchorDockedRight MuiPaper-elevation0"
+        class="MuiPaper-root MuiDrawer-paper makeStyles-drawerPaper-1027 MuiDrawer-paperAnchorRight MuiDrawer-paperAnchorDockedRight MuiPaper-elevation0"
         style="visibility: hidden; webkit-transform: translateX(1024px) translateX(0px); transform: translateX(1024px) translateX(0px);"
       >
         <div
-          class="makeStyles-drawerButtonWrapper-1035"
+          class="makeStyles-drawerButtonWrapper-1029"
         >
           <div
-            class="makeStyles-drawerButton-1036"
+            class="makeStyles-drawerButton-1030"
           >
             <button
               class="MuiButtonBase-root MuiButton-root MuiButton-text"
@@ -1580,10 +1368,10 @@ exports[`InvoicesTab should open invoice information 1`] = `
             </button>
           </div>
           <div
-            class="makeStyles-drawerHeader-1034"
+            class="makeStyles-drawerHeader-1028"
           >
             <p
-              class="MuiTypography-root makeStyles-drawerTitle-1037 MuiTypography-body1 MuiTypography-colorPrimary MuiTypography-alignLeft"
+              class="MuiTypography-root makeStyles-drawerTitle-1031 MuiTypography-body1 MuiTypography-colorPrimary MuiTypography-alignLeft"
             >
               Invoice Information
             </p>
@@ -1596,7 +1384,7 @@ exports[`InvoicesTab should open invoice information 1`] = `
             class="makeStyles-company-997"
           >
             <div
-              class="makeStyles-drawerText-1039"
+              class="makeStyles-drawerText-1033"
             >
               <p
                 class="MuiTypography-root makeStyles-listAccent-998 makeStyles-entityTitle-995 MuiTypography-body1"
@@ -1604,7 +1392,7 @@ exports[`InvoicesTab should open invoice information 1`] = `
                 720909
               </p>
               <div
-                class="makeStyles-drawerMainText-1040"
+                class="makeStyles-drawerMainText-1034"
               >
                 <span>
                   Manual Invoice
@@ -1612,22 +1400,22 @@ exports[`InvoicesTab should open invoice information 1`] = `
               </div>
             </div>
             <div
-              class="makeStyles-drawerSection-1038"
+              class="makeStyles-drawerSection-1032"
             >
               <div
-                class="makeStyles-drawerColumnDirection-1047"
+                class="makeStyles-drawerColumnDirection-1041"
               >
                 <div
-                  class="makeStyles-drawerRowDirection-1048"
+                  class="makeStyles-drawerRowDirection-1042"
                 >
                   <svg>
                     monetization.svg
                   </svg>
                   <div
-                    class="makeStyles-drawerText-1039 makeStyles-drawerTextSeparation-1041"
+                    class="makeStyles-drawerText-1033 makeStyles-drawerTextSeparation-1035"
                   >
                     <span
-                      class="makeStyles-listAccent-998 makeStyles-listIconLabel-1031"
+                      class="makeStyles-listAccent-998 makeStyles-listIconLabel-1025"
                     >
                       $ 
                       0
@@ -1637,16 +1425,16 @@ exports[`InvoicesTab should open invoice information 1`] = `
               </div>
             </div>
             <div
-              class="makeStyles-drawerSection-1038 makeStyles-drawerProjectColumn-1046"
+              class="makeStyles-drawerSection-1032 makeStyles-drawerProjectColumn-1040"
             >
               <div
-                class="makeStyles-projectWrapper-1044"
+                class="makeStyles-projectWrapper-1038"
               >
                 <svg>
                   location.svg
                 </svg>
                 <div
-                  class="makeStyles-drawerText-1039 makeStyles-drawerTextSeparation-1041"
+                  class="makeStyles-drawerText-1033 makeStyles-drawerTextSeparation-1035"
                 >
                   <span
                     class="makeStyles-listAccent-998"
@@ -1663,10 +1451,10 @@ exports[`InvoicesTab should open invoice information 1`] = `
               </div>
             </div>
             <div
-              class="makeStyles-drawerSection-1038 makeStyles-drawerProjectColumn-1046"
+              class="makeStyles-drawerSection-1032 makeStyles-drawerProjectColumn-1040"
             >
               <div
-                class="makeStyles-projectWrapper-1044"
+                class="makeStyles-projectWrapper-1038"
               >
                 <svg
                   aria-hidden="true"
@@ -1679,7 +1467,7 @@ exports[`InvoicesTab should open invoice information 1`] = `
                   />
                 </svg>
                 <div
-                  class="makeStyles-drawerText-1039 makeStyles-drawerTextSeparation-1041"
+                  class="makeStyles-drawerText-1033 makeStyles-drawerTextSeparation-1035"
                 >
                   <span
                     class="makeStyles-listAccent-998"
@@ -1693,16 +1481,16 @@ exports[`InvoicesTab should open invoice information 1`] = `
               </div>
             </div>
             <div
-              class="makeStyles-drawerSection-1038 makeStyles-drawerProjectColumn-1046"
+              class="makeStyles-drawerSection-1032 makeStyles-drawerProjectColumn-1040"
             >
               <div
-                class="makeStyles-projectWrapper-1044"
+                class="makeStyles-projectWrapper-1038"
               >
                 <svg>
                   project.svg
                 </svg>
                 <div
-                  class="makeStyles-drawerText-1039 makeStyles-drawerTextSeparation-1041"
+                  class="makeStyles-drawerText-1033 makeStyles-drawerTextSeparation-1035"
                 >
                   <span
                     class="makeStyles-listAccent-998"
@@ -1716,16 +1504,16 @@ exports[`InvoicesTab should open invoice information 1`] = `
               </div>
             </div>
             <div
-              class="makeStyles-drawerSection-1038 makeStyles-drawerProjectColumn-1046"
+              class="makeStyles-drawerSection-1032 makeStyles-drawerProjectColumn-1040"
             >
               <div
-                class="makeStyles-projectWrapper-1044"
+                class="makeStyles-projectWrapper-1038"
               >
                 <svg>
                   calendar.svg
                 </svg>
                 <div
-                  class="makeStyles-drawerText-1039 makeStyles-drawerTextSeparation-1041"
+                  class="makeStyles-drawerText-1033 makeStyles-drawerTextSeparation-1035"
                 >
                   <span>
                     Creation Date: 
@@ -1739,16 +1527,16 @@ exports[`InvoicesTab should open invoice information 1`] = `
               </div>
             </div>
             <div
-              class="makeStyles-drawerSection-1038 makeStyles-drawerProjectColumn-1046"
+              class="makeStyles-drawerSection-1032 makeStyles-drawerProjectColumn-1040"
             >
               <div
-                class="makeStyles-projectWrapper-1044"
+                class="makeStyles-projectWrapper-1038"
               >
                 <svg>
                   notes.svg
                 </svg>
                 <div
-                  class="makeStyles-drawerText-1039 makeStyles-drawerTextSeparation-1041"
+                  class="makeStyles-drawerText-1033 makeStyles-drawerTextSeparation-1035"
                 >
                   <span>
                     Test

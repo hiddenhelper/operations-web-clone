@@ -29,21 +29,6 @@ exports[`WorkerList should render 1`] = `
               </h2>
             </div>
           </div>
-          <button
-            class="MuiButtonBase-root MuiButton-root MuiButton-contained makeStyles-createButton-42 makeStyles-primaryButtonLarge-44 MuiButton-containedPrimary MuiButton-containedSizeLarge MuiButton-sizeLarge MuiButton-fullWidth"
-            data-testid="invite-worker-btn"
-            tabindex="0"
-            type="button"
-          >
-            <span
-              class="MuiButton-label"
-            >
-              Create Worker
-            </span>
-            <span
-              class="MuiTouchRipple-root"
-            />
-          </button>
         </div>
       </div>
       <div
@@ -706,21 +691,6 @@ exports[`WorkerList should show loading 1`] = `
               </h2>
             </div>
           </div>
-          <button
-            class="MuiButtonBase-root MuiButton-root MuiButton-contained makeStyles-createButton-203 makeStyles-primaryButtonLarge-205 MuiButton-containedPrimary MuiButton-containedSizeLarge MuiButton-sizeLarge MuiButton-fullWidth"
-            data-testid="invite-worker-btn"
-            tabindex="0"
-            type="button"
-          >
-            <span
-              class="MuiButton-label"
-            >
-              Create Worker
-            </span>
-            <span
-              class="MuiTouchRipple-root"
-            />
-          </button>
         </div>
       </div>
       <div
@@ -1131,21 +1101,6 @@ exports[`WorkerList should show loading widgets 1`] = `
               </h2>
             </div>
           </div>
-          <button
-            class="MuiButtonBase-root MuiButton-root MuiButton-contained makeStyles-createButton-337 makeStyles-primaryButtonLarge-339 MuiButton-containedPrimary MuiButton-containedSizeLarge MuiButton-sizeLarge MuiButton-fullWidth"
-            data-testid="invite-worker-btn"
-            tabindex="0"
-            type="button"
-          >
-            <span
-              class="MuiButton-label"
-            >
-              Create Worker
-            </span>
-            <span
-              class="MuiTouchRipple-root"
-            />
-          </button>
         </div>
       </div>
       <div

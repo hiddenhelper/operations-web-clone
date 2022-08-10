@@ -15,7 +15,6 @@ import MenuPopover from '../../../../shared/MenuPopover';
 import Pagination from '../../../../shared/Pagination';
 import AssignModal from '../../../../shared/Modal/components/AssignModal';
 import ClientFilter from '../../../../shared/ClientFilter';
-import RoleGuard from '../../../../shared/RoleGuard';
 import UserRow from './components/UserRow';
 import CreateTab from './components/CreateTab';
 import EditTab from './components/EditTab';
@@ -28,6 +27,7 @@ import { tableGlobalStyles } from '../../../../../../assets/styles/Tables/styles
 import { inputGlobalStyles } from '../../../../../../assets/styles/Inputs/styles';
 import { useStyles as buttonStyles } from '../../../../shared/FormHandler/ControlledButton/styles';
 import { useStyles } from '../../../../shared/Modal/components/AssignModal/styles';
+import PermissionGuard from 'modules/views/shared/PermissionGuard';
 
 export interface IAssignUserProps {
   id: string;
@@ -46,6 +46,8 @@ export interface IAssignUserProps {
   assignLoading: GeneralModel.ILoadingStatus;
   userRoleList: GeneralModel.INamedEntity[];
   clientProjectMap?: GeneralModel.IEntityMap<GeneralModel.IEntityMap<ClientModel.IClientProject>>;
+  isFcaUser: boolean;
+  isAdmin: boolean;
   closeModal: () => void;
   clearErrors: () => void;
   fetchUserProjectList: (query: any) => void;
@@ -82,6 +84,8 @@ const AssignUser = ({
   fetchUserloading,
   updateUserLoading,
   assignLoading,
+  isFcaUser,
+  isAdmin,
   saveUser,
   assignUser,
   closeModal,
@@ -276,24 +280,50 @@ const AssignUser = ({
         <>
           {tab === 'assign' && (
             <>
-              <div>
-                <Box className={`${tableGlobalClasses.filterStatusContainer} ${classes.filterStatusSpaced} ${classes.filterAssignSpacing}`}>
-                  <TextField
-                    variant="outlined"
-                    data-testid="assign-search-wrapper"
-                    placeholder="Find a user..."
-                    type="text"
-                    autoComplete="off"
-                    name="find"
-                    value={search}
-                    onChange={onSearchChange}
-                    className={`${inputGlobalClasses.searchInput} ${inputGlobalClasses.searchSvg}`}
-                    inputProps={{
-                      'data-testid': 'search-filter',
-                    }}
-                    InputProps={{
-                      startAdornment: <SearchIcon />,
-                    }}
+              <div className={classes.inputWrapper}>
+                <TextField
+                  variant="outlined"
+                  data-testid="assign-search-wrapper"
+                  placeholder="Find a user..."
+                  type="text"
+                  autoComplete="off"
+                  name="find"
+                  value={search}
+                  onChange={onSearchChange}
+                  className={`${classes.userSearchInput} ${inputGlobalClasses.searchSvg}`}
+                  inputProps={{
+                    'data-testid': 'search-filter',
+                  }}
+                  InputProps={{
+                    startAdornment: <SearchIcon />,
+                  }}
+                />
+              </div>
+              <div className={`${classes.boldFilter} ${classes.filterTextColor} ${classes.usersSelected}`}>
+                {count} Users. {Object.keys(selectedUserMap.original).length} Selected
+              </div>
+              <div className={`${classes.assignFilters} ${classes.assignFiltersCentered}`}>
+                <div className={classes.filterElement}>
+                  <Typography className={classes.filterTextColor}>Show {showSelected ? 'selected' : 'all'}</Typography>
+                  <span className={`${tableGlobalClasses.dropdownIcon} ${classes.boldFilter}`}>
+                    <MenuPopover
+                      menuOptionList={[
+                        { title: 'Show all', callback: onShowAll },
+                        { title: 'Show selected', callback: onShowSelected },
+                      ]}
+                      placement={'bottom-end'}
+                    />
+                  </span>
+                </div>
+                <Divider className={tableGlobalClasses.dividerColor} orientation="vertical" flexItem={true} />
+                <Box className={`${tableGlobalClasses.filterStatusContainer} ${tableGlobalClasses.leftFilterStatusContainer} ${classes.locationModalFilter}`}>
+                  <ClientFilter
+                    queryParams={queryParams}
+                    clientMap={clientProjectMap[id]}
+                    projectId={id}
+                    isFcAdmin={isFcAdmin}
+                    setQueryParams={setQueryParams}
+                    fetchClientList={fetchProjectClientList}
                   />
                   <div className={classes.assignFilters}>
                     <div className={classes.filterElement}>
@@ -325,19 +355,22 @@ const AssignUser = ({
                       {count} Users. {Object.keys(selectedUserMap.original).length} Selected
                     </div>
                     <div className={classes.filterElement}>
-                      <Button
-                        className={`${buttonClasses.saveButton} ${classes.assignButtonWidth}`}
-                        color="primary"
-                        variant="contained"
-                        data-testid="tab-create-new-btn"
-                        onClick={onNewUser}
-                      >
-                        New User
-                      </Button>
+                      <PermissionGuard permissionsExpression={`${UserModel.UsersPermission.MANAGE}`}>
+                        <Button
+                          className={`${buttonClasses.saveButton} ${classes.assignButtonWidth}`}
+                          color="primary"
+                          variant="contained"
+                          data-testid="tab-create-new-btn"
+                          onClick={onNewUser}
+                        >
+                          New User
+                        </Button>
+                      </PermissionGuard>
                     </div>
                   </div>
                 </Box>
               </div>
+
               <div className={classes.assignSkeletonWrapper}>
                 {loading && !loading.isLoading && !isSearching && userList.length === 0 && (
                   <div className={classes.assignViewWrapper}>
@@ -356,7 +389,7 @@ const AssignUser = ({
                     <Table aria-label="user-list">
                       <TableHead>
                         <TableRow>
-                          <RoleGuard roleList={[UserModel.Role.FCA_ADMIN]}>
+                          {isFcAdmin && (
                             <>
                               <TableCell>Name</TableCell>
                               <TableCell>Type</TableCell>
@@ -364,15 +397,15 @@ const AssignUser = ({
                               <TableCell>Client</TableCell>
                               <TableCell>Project Role</TableCell>
                             </>
-                          </RoleGuard>
-                          <RoleGuard roleList={[UserModel.Role.CLIENT_ADMIN, UserModel.Role.REGULAR_USER]}>
+                          )}
+                          {!isFcAdmin && (
                             <>
                               <TableCell>Name</TableCell>
                               <TableCell>Title</TableCell>
                               <TableCell>Company</TableCell>
                               <TableCell>Project Role</TableCell>
                             </>
-                          </RoleGuard>
+                          )}
                         </TableRow>
                       </TableHead>
                       <TableBody>
@@ -384,6 +417,7 @@ const AssignUser = ({
                             roleList={userRoleList}
                             onSelect={onSelectUser}
                             onChange={onChangeRole}
+                            isFcAdmin={isFcAdmin}
                           />
                         ))}
                       </TableBody>
@@ -397,7 +431,8 @@ const AssignUser = ({
           {tab === 'create' && (
             <CreateTab
               userCompanyId={userCompanyId}
-              userRole={currentUserRole}
+              isFcaUser={isFcaUser}
+              isAdmin={isAdmin}
               saveUserLoading={saveUserLoading}
               clientMap={clientMap}
               saveUser={saveUser}
@@ -416,7 +451,8 @@ const AssignUser = ({
               fetchGroupSearch={fetchGroupSearch}
               groupList={groupList}
               companyUserProfile={companyUserProfile}
-              userRole={currentUserRole}
+              isFcaUser={isFcaUser}
+              isAdmin={isAdmin}
             />
           )}
         </>

@@ -9,12 +9,13 @@ import ReviewStep from './components/ReviewStep';
 import PaymentSettingsStep from './components/PaymentSettingsStep';
 import { useStyles } from './styles';
 
-import { GeneralModel, ProjectModel } from 'modules/models';
+import { GeneralModel, ProjectModel, UserModel } from 'modules/models';
 import { LANG } from 'constants/index';
 import { isUUID, getConditionalDefaultValue } from 'utils/generalUtils';
 import { isBilledPerCompany } from 'utils/projectUtils';
 import { useStyles as buttonStyles } from 'modules/views/shared/FormHandler/ControlledButton/styles';
 import { listGlobalStyles } from 'assets/styles';
+import PermissionGuard from 'modules/views/shared/PermissionGuard';
 
 export interface IProjectInvitationProps {
   projectMap: GeneralModel.IEntityMap<ProjectModel.IProject>;
@@ -105,20 +106,28 @@ const ProjectInvitation = ({ projectMap, acceptLoading, navigate, clearPayment, 
         )}
       </div>
       <AppBar position="fixed" color="default" className={classes.floatingActionBar}>
-        <ButtonLoader
-          className={`${buttonClasses.createButton} ${buttonClasses.floatingAppBarButton} ${buttonClasses.primaryButtonLarger}`}
-          color="primary"
-          variant="contained"
-          fullWidth={true}
-          size="large"
-          type="submit"
-          disabled={getConditionalDefaultValue(!step, !serviceAgreementAccept, !selectedPaymentMethod)}
-          data-testid="accept-project"
-          onClick={getConditionalDefaultValue(!step, handleServiceAgreementAccepted, handleProjectAccepted)}
-          isLoading={acceptLoading && acceptLoading.isLoading}
-          text={getConditionalDefaultValue(!step, 'Go to Payment Method', 'Accept Project')}
-          loadingText="Accepting..."
-        />
+        <PermissionGuard
+          permissionsExpression={getConditionalDefaultValue(
+            !step,
+            UserModel.PaymentMethodsPermission.VIEWACCESS,
+            UserModel.ProjectsPermission.ACCEPTSERVICEAGREEMENT
+          )}
+        >
+          <ButtonLoader
+            className={`${buttonClasses.createButton} ${buttonClasses.floatingAppBarButton} ${buttonClasses.primaryButtonLarger}`}
+            color="primary"
+            variant="contained"
+            fullWidth={true}
+            size="large"
+            type="submit"
+            disabled={getConditionalDefaultValue(!step, !serviceAgreementAccept, !selectedPaymentMethod)}
+            data-testid="accept-project"
+            onClick={getConditionalDefaultValue(!step, handleServiceAgreementAccepted, handleProjectAccepted)}
+            isLoading={acceptLoading && acceptLoading.isLoading}
+            text={getConditionalDefaultValue(!step, 'Go to Payment Method', 'Accept Project')}
+            loadingText="Accepting..."
+          />
+        </PermissionGuard>
       </AppBar>
     </Container>
   );

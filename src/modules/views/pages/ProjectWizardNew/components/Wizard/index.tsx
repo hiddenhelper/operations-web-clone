@@ -1,7 +1,7 @@
 import React, { memo, useMemo, useEffect, useCallback, useState } from 'react';
 import { Grid, Drawer } from '@material-ui/core';
 import { Prompt } from 'react-router-dom';
-import { GeneralModel, ProjectNewModel } from 'modules/models';
+import { GeneralModel, ProjectNewModel, UserModel } from 'modules/models';
 import { useForm } from 'utils/useForm';
 import { IUseNavigator } from 'utils/useNavigator';
 import { getNextObjectItem, getPrevObjectItem } from 'utils';
@@ -14,6 +14,7 @@ import StatusChip from 'modules/views/shared/StatusChip';
 import { ButtonLoader } from 'modules/views/shared';
 import { useStyles as statusChipStyles } from 'modules/views/shared/StatusChip/styles';
 import { LANG } from 'constants/locales';
+import PermissionGuard from 'modules/views/shared/PermissionGuard';
 
 const initialBadgesType = {
   generalContractorBadgeType: ProjectNewModel.BadgeType.TEMPLATE,
@@ -310,19 +311,23 @@ const Wizard = <T,>({
         <div className={classes.rightSidebarStatus}>
           Status: <StatusChip styleClasses={statusChipClasses[resourceStatus]} label={status} />
         </div>
-        <ButtonLoader
-          data-testid="approve-btn"
-          className={classes.approveButton}
-          color="primary"
-          variant="contained"
-          fullWidth={true}
-          size="large"
-          disabled={!(!hasChanges && isConfirmEnabled)}
-          isLoading={isLoading}
-          text={buttonLoaderTextMap[resourceStatus].text}
-          loadingText={buttonLoaderTextMap[resourceStatus].loadingText}
-          onClick={onConfirmHandler}
-        />
+        <PermissionGuard
+          permissionsExpression={resourceStatus === 'draft' ? UserModel.DraftProjectsPermission.MANAGE : UserModel.DraftProjectsPermission.APPROVE}
+        >
+          <ButtonLoader
+            data-testid="approve-btn"
+            className={classes.approveButton}
+            color="primary"
+            variant="contained"
+            fullWidth={true}
+            size="large"
+            disabled={!(!hasChanges && isConfirmEnabled)}
+            isLoading={isLoading}
+            text={buttonLoaderTextMap[resourceStatus].text}
+            loadingText={buttonLoaderTextMap[resourceStatus].loadingText}
+            onClick={onConfirmHandler}
+          />
+        </PermissionGuard>
       </div>
       <ProcessOverview completedFields={completedFieldMap} currentStep={currentStep} onChangeStep={onChangeStep} />
     </>

@@ -397,27 +397,7 @@ exports[`ProjectsTab should render 1`] = `
         />
         <div
           class="makeStyles-ctaWrapper-260"
-        >
-          <span
-            class=""
-            data-testid="controlled-button"
-            tabindex="-1"
-          >
-            <a
-              aria-disabled="false"
-              class="MuiButtonBase-root MuiButton-root MuiButton-outlined makeStyles-drawerCTA-344 makeStyles-borderPrimaryButton-336 makeStyles-primaryButtonPadding-338"
-              data-testid="drawerProjectButton"
-              href="/projects/wizard/undefined"
-              tabindex="0"
-            >
-              <span
-                class="MuiButton-label"
-              >
-                Edit
-              </span>
-            </a>
-          </span>
-        </div>
+        />
       </div>
     </div>
   </div>
@@ -657,27 +637,7 @@ exports[`ProjectsTab should render empty 1`] = `
         />
         <div
           class="makeStyles-ctaWrapper-27"
-        >
-          <span
-            class=""
-            data-testid="controlled-button"
-            tabindex="-1"
-          >
-            <a
-              aria-disabled="false"
-              class="MuiButtonBase-root MuiButton-root MuiButton-outlined makeStyles-drawerCTA-127 makeStyles-borderPrimaryButton-119 makeStyles-primaryButtonPadding-121"
-              data-testid="drawerProjectButton"
-              href="/projects/wizard/undefined"
-              tabindex="0"
-            >
-              <span
-                class="MuiButton-label"
-              >
-                Edit
-              </span>
-            </a>
-          </span>
-        </div>
+        />
       </div>
     </div>
   </div>
@@ -1042,27 +1002,7 @@ exports[`ProjectsTab should render secondary values 1`] = `
         />
         <div
           class="makeStyles-ctaWrapper-405"
-        >
-          <span
-            class=""
-            data-testid="controlled-button"
-            tabindex="-1"
-          >
-            <a
-              aria-disabled="false"
-              class="MuiButtonBase-root MuiButton-root MuiButton-outlined makeStyles-drawerCTA-489 makeStyles-borderPrimaryButton-481 makeStyles-primaryButtonPadding-483"
-              data-testid="drawerProjectButton"
-              href="/projects/wizard/undefined"
-              tabindex="0"
-            >
-              <span
-                class="MuiButton-label"
-              >
-                Edit
-              </span>
-            </a>
-          </span>
-        </div>
+        />
       </div>
     </div>
   </div>

@@ -215,7 +215,8 @@ export const sendApproveProjectStart: Epic<IAction, IAction, IRootState, IEpicDe
                 generalState.actions.addToastStart(
                   `Project created successfully! ${state$.value.projectNew.projectMap[payload.id].name} is pending approval now`,
                   GeneralModel.ToastType.SUCCESS
-                )
+                ),
+                actions.fetchDraftProjectStart(payload.id)
               )
             )
           ),

@@ -1,4 +1,4 @@
-import React, { memo, useMemo } from 'react';
+import React, { memo, useEffect, useMemo } from 'react';
 import { Avatar, Box, Typography } from '@material-ui/core';
 import IconButton from '@material-ui/core/IconButton';
 import MenuIcon from '@material-ui/icons/Menu';
@@ -8,36 +8,60 @@ import Search from 'modules/views/shared/Search';
 
 import DefaultAvatarSrc from 'assets/images/avatar.jpg';
 
-import { ClientModel, GeneralModel, UserModel } from 'modules/models';
+import { ClientModel, UserModel } from 'modules/models';
 import { ROUTES } from 'constants/index';
 import { useHideScroll } from 'utils/useHideScroll';
 import { useStyles } from './styles';
-import { RoleMap } from 'modules/models/user';
+import { hasValidPermissions } from 'modules/models/user';
 
 export interface IHeaderProps {
   user: UserModel.IUser;
-  userRole: UserModel.Role;
   accountData: UserModel.IAccount;
-  clientMap: GeneralModel.IEntityMap<ClientModel.IClient>;
+  selfCompany: ClientModel.IClient;
   companyId: string;
-  isGeneralAdmin: boolean;
+  isFcaUser: boolean;
+  isAdmin: boolean;
+  currentUserPermissions: UserModel.IPermission[];
   navigate: (path: string) => void;
   logout: () => void;
   handleDrawerToggle: () => void;
+  fetchSelfClient: () => void;
 }
 
-const Header = ({ user, userRole, accountData, clientMap, companyId, isGeneralAdmin, navigate, logout, handleDrawerToggle }: IHeaderProps) => {
+const Header = ({
+  user,
+  accountData,
+  selfCompany,
+  companyId,
+  isFcaUser,
+  isAdmin,
+  currentUserPermissions,
+  navigate,
+  logout,
+  handleDrawerToggle,
+  fetchSelfClient,
+}: IHeaderProps) => {
   const { isScrollHided, scrollWidth } = useHideScroll();
   const classes = useStyles({ scrollWidth });
+
+  useEffect(() => {
+    if (companyId && !selfCompany) {
+      fetchSelfClient();
+    }
+  }, [companyId, selfCompany, fetchSelfClient]);
 
   const menuList = useMemo(
     () =>
       [
         { title: 'Account Settings', callback: () => navigate(ROUTES.ACCOUNT_SETTINGS.path) },
-        { title: 'Payment Settings', callback: () => navigate(ROUTES.PAYMENT_SETTINGS.path), role: [UserModel.Role.CLIENT_ADMIN] },
+        {
+          title: 'Payment Settings',
+          callback: () => navigate(ROUTES.PAYMENT_SETTINGS.path),
+          permissionsExpression: UserModel.PaymentMethodsPermission.VIEWACCESS,
+        },
         { title: 'Sign Out', callback: logout },
-      ].filter(menuItem => !menuItem.role || menuItem.role.includes(userRole)),
-    [userRole, navigate, logout]
+      ].filter(menuItem => (menuItem.permissionsExpression ? hasValidPermissions(menuItem.permissionsExpression, currentUserPermissions) : true)),
+    [currentUserPermissions, navigate, logout]
   );
 
   const profilePicture = useMemo(() => {
@@ -49,11 +73,11 @@ const Header = ({ user, userRole, accountData, clientMap, companyId, isGeneralAd
   }, [accountData]);
 
   const companyName = useMemo(() => {
-    if (companyId) {
-      return clientMap[companyId] && clientMap[companyId].name ? clientMap[companyId].name : '';
+    if (selfCompany) {
+      return selfCompany.name;
     }
     return null;
-  }, [clientMap, companyId]);
+  }, [selfCompany]);
 
   return (
     <header key="Header" data-testid="header-wrapper" className={`${classes.container} ${isScrollHided ? classes.scrollHided : ''}`}>
@@ -65,9 +89,7 @@ const Header = ({ user, userRole, accountData, clientMap, companyId, isGeneralAd
         <Box className={classes.avatarContainer}>
           <Box className={classes.emailAndRoleWrapper}>
             <Typography className={classes.avatarText}>{user.email}</Typography>
-            <Typography className={classes.userRole}>
-              {userRole === 'FCA_ADMIN' ? RoleMap[userRole] : isGeneralAdmin ? `${companyName} - Admin` : companyName}
-            </Typography>
+            <Typography className={classes.userRole}>{isFcaUser && isAdmin ? 'FCA Admin' : isAdmin ? `${companyName} - Admin` : companyName}</Typography>
           </Box>
           <Avatar className={classes.avatarElement} alt="John Doe" src={profilePicture} />
           <span className={classes.dropdownIcon}>

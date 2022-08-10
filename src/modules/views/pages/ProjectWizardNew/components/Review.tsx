@@ -8,7 +8,6 @@ import CreateIcon from '@material-ui/icons/Create';
 import Card from 'modules/views/shared/ResourceManagement/Card';
 import ReviewButton from 'modules/views/shared/ResourceManagement/ReviewButton';
 
-import RoleGuard from 'modules/views/shared/RoleGuard';
 import { AutocompleteService } from '../../../../services/AutocompleteService';
 
 import { GeneralModel, ResourceModel, UserModel, PaymentModel, ProjectNewModel, ProjectModel, ConsentFormModel } from '../../../../models';
@@ -28,11 +27,12 @@ import { useStyles } from '../styles';
 import Address from 'modules/views/shared/Address';
 import { useParams } from 'react-router-dom';
 import CreditCardItem from 'modules/views/shared/PaymentMethods/components/CreditCardItem';
+import PermissionGuard from 'modules/views/shared/PermissionGuard';
 
 export interface IReviewProps {
   model: ProjectNewModel.IProject;
   userCompanyId: string;
-  userRole: UserModel.Role;
+  isFcaUser: boolean;
   completedFields?: GeneralModel.IStepCompletedMap;
   showAssignClient?: boolean;
   categoryList?: GeneralModel.INamedEntity[];
@@ -51,7 +51,7 @@ export interface IReviewProps {
 const Review = ({
   model,
   userCompanyId,
-  userRole,
+  isFcaUser,
   completedFields = {},
   categoryList = [],
   regionList = [],
@@ -78,12 +78,7 @@ const Review = ({
     selectedPaymentMethod,
   ]);
 
-  const generalContractorsIds = useMemo(() => model?.generalContractors?.map(company => company.id), [model]);
-
-  const isFcAdmin = useMemo(() => userRole === UserModel.Role.FCA_ADMIN, [userRole]);
-  const isClientAdmin = useMemo(() => userRole === UserModel.Role.CLIENT_ADMIN, [userRole]);
-  const isGcClientAdmin = useMemo(() => isClientAdmin && generalContractorsIds?.includes(userCompanyId), [generalContractorsIds, isClientAdmin, userCompanyId]);
-  const hideEditAction = !isFcAdmin || isReviewStep;
+  const hideEditAction = isReviewStep;
 
   const jobSiteMapRef = useMemo(() => React.createRef(), []);
   const badgingSiteMapRef = useMemo(() => React.createRef(), []);
@@ -249,20 +244,22 @@ const Review = ({
     <>
       <Card
         title={ProjectNewModel.projectStepMap[ProjectNewModel.ProjectStep.GENERAL_INFORMATION].title}
-        hideSecondaryAction={!(isFcAdmin || isGcClientAdmin) || isReviewStep}
+        hideSecondaryAction={hideEditAction}
         actionStyleClass={getConditionalDefaultValue(edit, formGlobalClasses.secondaryActionsIcon, '')}
         styleClass={classes.boxShadow}
         secondaryAction={
           edit ? (
-            <IconButton
-              className={buttonClasses.editButton}
-              disableRipple={true}
-              onClick={handleEditGeneralInformation}
-              data-testid="gen-info-edit-button"
-              disabled={model.status === ResourceModel.Status.ARCHIVED}
-            >
-              <CreateIcon />
-            </IconButton>
+            <PermissionGuard permissionsExpression={UserModel.ProjectsPermission.MANAGE}>
+              <IconButton
+                className={buttonClasses.editButton}
+                disableRipple={true}
+                onClick={handleEditGeneralInformation}
+                data-testid="gen-info-edit-button"
+                disabled={model.status === ResourceModel.Status.ARCHIVED}
+              >
+                <CreateIcon />
+              </IconButton>
+            </PermissionGuard>
           ) : (
             <ReviewButton
               stepKey={ProjectNewModel.ProjectStep.GENERAL_INFORMATION}
@@ -294,18 +291,15 @@ const Review = ({
                 <Grid item={true} xs={6} className={'cardBody-item'}>
                   <span className={`${cardGlobalClasses.cardFontAccent} ${classes.spanEllipsis}`}>{getDefaultValue(category?.name)}</span>
                 </Grid>
-                <RoleGuard roleList={[UserModel.Role.FCA_ADMIN]}>
-                  <>
-                    <Grid item={true} xs={6} className={'cardBody-item'}>
-                      <Typography className={cardGlobalClasses.cardFont}>Commercial Construction Value: </Typography>
-                    </Grid>
-                    <Grid item={true} xs={6} className={'cardBody-item'}>
-                      <span className={`${cardGlobalClasses.cardFontAccent} ${classes.spanEllipsis}`}>
-                        {model.ccv ? `$ ${formatNumberWithCommas(model.ccv)}` : '-'}
-                      </span>
-                    </Grid>
-                  </>
-                </RoleGuard>
+                <Grid item={true} xs={6} className={'cardBody-item'}>
+                  <Typography className={cardGlobalClasses.cardFont}>Commercial Construction Value: </Typography>
+                </Grid>
+                <Grid item={true} xs={6} className={'cardBody-item'}>
+                  <span className={`${cardGlobalClasses.cardFontAccent} ${classes.spanEllipsis}`}>
+                    {model.ccv ? `$ ${formatNumberWithCommas(model.ccv)}` : '-'}
+                  </span>
+                </Grid>
+
                 <Grid item={true} xs={6} className={'cardBody-item'}>
                   <Typography className={cardGlobalClasses.cardFont}>FCA Region:</Typography>
                 </Grid>
@@ -466,15 +460,17 @@ const Review = ({
         styleClass={classes.boxShadow}
         secondaryAction={
           edit ? (
-            <IconButton
-              className={buttonClasses.editButton}
-              disableRipple={true}
-              onClick={handleEditBillingModel}
-              data-testid="billing-edit-button"
-              disabled={model.status === ResourceModel.Status.ARCHIVED}
-            >
-              <CreateIcon />
-            </IconButton>
+            isFcaUser && (
+              <IconButton
+                className={buttonClasses.editButton}
+                disableRipple={true}
+                onClick={handleEditBillingModel}
+                data-testid="billing-edit-button"
+                disabled={model.status === ResourceModel.Status.ARCHIVED}
+              >
+                <CreateIcon />
+              </IconButton>
+            )
           ) : (
             <ReviewButton
               stepKey={ProjectModel.ProjectStep.BILLING_MODEL}
@@ -651,15 +647,17 @@ const Review = ({
         styleClass={classes.boxShadow}
         secondaryAction={
           edit ? (
-            <IconButton
-              className={buttonClasses.editButton}
-              disableRipple={true}
-              onClick={handleEditAddresses}
-              data-testid="addr-edit-button"
-              disabled={model.status === ResourceModel.Status.ARCHIVED}
-            >
-              <CreateIcon />
-            </IconButton>
+            isFcaUser && (
+              <IconButton
+                className={buttonClasses.editButton}
+                disableRipple={true}
+                onClick={handleEditAddresses}
+                data-testid="addr-edit-button"
+                disabled={model.status === ResourceModel.Status.ARCHIVED}
+              >
+                <CreateIcon />
+              </IconButton>
+            )
           ) : (
             <ReviewButton
               stepKey={ProjectModel.ProjectStep.ADDRESSES}
@@ -734,15 +732,17 @@ const Review = ({
         styleClass={classes.boxShadow}
         secondaryAction={
           edit ? (
-            <IconButton
-              className={buttonClasses.editButton}
-              disableRipple={true}
-              onClick={handleEditCertifications}
-              data-testid="certs-edit-button"
-              disabled={model.status === ResourceModel.Status.ARCHIVED}
-            >
-              <CreateIcon />
-            </IconButton>
+            isFcaUser && (
+              <IconButton
+                className={buttonClasses.editButton}
+                disableRipple={true}
+                onClick={handleEditCertifications}
+                data-testid="certs-edit-button"
+                disabled={model.status === ResourceModel.Status.ARCHIVED}
+              >
+                <CreateIcon />
+              </IconButton>
+            )
           ) : (
             <ReviewButton
               stepKey={ProjectModel.ProjectStep.CERTIFICATIONS_TRAININGS}
@@ -782,15 +782,17 @@ const Review = ({
         styleClass={classes.boxShadow}
         secondaryAction={
           edit ? (
-            <IconButton
-              className={buttonClasses.editButton}
-              disableRipple={true}
-              onClick={handleEditWorkerConsentForm}
-              data-testid="consent-form-edit-button"
-              disabled={model.status === ResourceModel.Status.ARCHIVED}
-            >
-              <CreateIcon />
-            </IconButton>
+            isFcaUser && (
+              <IconButton
+                className={buttonClasses.editButton}
+                disableRipple={true}
+                onClick={handleEditWorkerConsentForm}
+                data-testid="consent-form-edit-button"
+                disabled={model.status === ResourceModel.Status.ARCHIVED}
+              >
+                <CreateIcon />
+              </IconButton>
+            )
           ) : (
             <ReviewButton
               stepKey={ProjectModel.ProjectStep.WORKER_CONSENT_FORM}
@@ -831,7 +833,7 @@ const Review = ({
           </Grid>
         </div>
       </Card>
-      {isClientAdmin && (
+      {!isFcaUser ? (
         <Card
           title="Credit Card"
           hideSecondaryAction={!edit}
@@ -839,15 +841,17 @@ const Review = ({
           styleClass={classes.boxShadow}
           secondaryAction={
             edit && (
-              <IconButton
-                className={buttonClasses.editButton}
-                disableRipple={true}
-                onClick={handleEditPayment}
-                data-testid="payment-edit-button"
-                disabled={model.status === ResourceModel.Status.ARCHIVED}
-              >
-                <CreateIcon />
-              </IconButton>
+              <PermissionGuard permissionsExpression={UserModel.PaymentMethodsPermission.MANAGE}>
+                <IconButton
+                  className={buttonClasses.editButton}
+                  disableRipple={true}
+                  onClick={handleEditPayment}
+                  data-testid="payment-edit-button"
+                  disabled={model.status === ResourceModel.Status.ARCHIVED}
+                >
+                  <CreateIcon />
+                </IconButton>
+              </PermissionGuard>
             )
           }
         >
@@ -855,7 +859,7 @@ const Review = ({
             <CreditCardItem isSelected={true} paymentMethod={paymentSelected?.[0] === undefined ? initialCard : paymentSelected[0]} setSelected={noop} />
           </div>
         </Card>
-      )}
+      ) : null}
     </>
   );
 };

@@ -7,6 +7,8 @@ export enum ActionType {
   SIGN_OUT_SUCCESS = '[auth] sign out success',
   RECOVER_SESSION_START = '[auth] recover session start',
   RECOVER_SESSION_DONE = '[auth] recover session success',
+  FETCH_USER_PERMISSIONS_START = '[auth] fetch admin permission start',
+  FETCH_USER_PERMISSIONS_SUCCESS = '[auth] fetch user permissions success',
 }
 
 export const actions = {
@@ -16,4 +18,6 @@ export const actions = {
   signOutSuccess: () => ({ type: ActionType.SIGN_OUT_SUCCESS, payload: {} }),
   recoverSessionStart: () => ({ type: ActionType.RECOVER_SESSION_START, payload: {} }),
   recoverSessionDone: () => ({ type: ActionType.RECOVER_SESSION_DONE, payload: {} }),
+  fetchUserPermissionsStart: (id: string) => ({ type: ActionType.FETCH_USER_PERMISSIONS_START, payload: { id } }),
+  fetchUserPermissionsSuccess: (perimissions: any) => ({ type: ActionType.FETCH_USER_PERMISSIONS_SUCCESS, payload: { perimissions } }),
 };

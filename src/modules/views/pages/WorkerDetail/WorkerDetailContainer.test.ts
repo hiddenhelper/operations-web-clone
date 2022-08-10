@@ -16,8 +16,8 @@ describe('WorkerDetailContainer', () => {
   it('should mapStateToProps', () => {
     expect(mapStateToProps(getInitialState())).toEqual({
       workerMap: getInitialState().worker.workerMap,
-      userRole: getInitialState().auth.role,
       workerLoading: undefined,
+      currentUserPermissions: getInitialState().auth.session?.permissions,
     });
   });
 

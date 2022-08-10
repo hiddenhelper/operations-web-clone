@@ -9,9 +9,10 @@ import { statisticsState } from '../../../../state-mgmt/statistics';
 import TopTenProjects from './TopTenProjects';
 
 export const mapStateToProps = (state: IRootState) => ({
-  userRole: state.auth.role,
   projectTopTenWidget: state.statistics.projectTopTenStatistics,
   loading: state.general.loadingMap[GENERAL.LOADING_KEY.FETCH_PROJECTS_TOP_TEN_STATISTICS],
+  isFcaUser: state.auth.isFcaUser,
+  isAdmin: state.auth.isAdmin,
 });
 
 export const mapDispatchToProps = (dispatch: Dispatch) => ({

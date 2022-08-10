@@ -16,6 +16,7 @@ export const mapStateToProps = (state: IRootState) => ({
   updateBadgeDataLoading: state.general.loadingMap[GENERAL.LOADING_KEY.UPDATE_BADGE_DATA],
   printLoading: state.general.loadingMap[GENERAL.LOADING_KEY.PRINT_WORKER_BADGE],
   currentUserRole: state.auth.role,
+  currentUserPermissions: state.auth.session?.permissions,
 });
 
 export const mapDispatchToProps = (dispatch: Dispatch) => ({

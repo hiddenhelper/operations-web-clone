@@ -8,7 +8,8 @@ describe('WorkersTabContainer', () => {
       loading: undefined,
       loadingMore: undefined,
       searchResults: undefined,
-      userRole: getInitialState().auth.role,
+      isFcaUser: getInitialState().auth.isFcaUser,
+      isAdmin: getInitialState().auth.isAdmin,
     });
   });
 

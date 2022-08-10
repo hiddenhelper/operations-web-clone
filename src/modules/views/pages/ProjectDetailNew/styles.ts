@@ -47,7 +47,7 @@ export const useStyles = makeStyles(theme =>
       },
     },
     buttonWithoutFilter: {
-      float: 'right',
+      justifyContent: 'flex-end',
     },
     autocompleteFilterPosition: {
       '& .MuiAutocomplete-root': {
@@ -105,6 +105,7 @@ export const useStyles = makeStyles(theme =>
     },
     statusFilter: {
       display: 'flex',
+      flexWrap: 'wrap',
       '& .MuiButtonBase-root': {
         marginRight: '30px',
         textTransform: 'capitalize',
@@ -136,7 +137,7 @@ export const useStyles = makeStyles(theme =>
       justifyContent: 'space-between',
       paddingTop: '32px',
       marginBottom: '22px',
-      borderBottom: `1px solid ${STYLE.COLOR.LIGHT_GRAY3}`,
+      borderBottom: `1px solid ${STYLE.COLOR.LIGHT_GRAY3}`, // red
     },
     activeFilter: {
       '&::after': {
@@ -523,6 +524,50 @@ export const useStyles = makeStyles(theme =>
     acsListItemWrapper: { marginLeft: 40, width: 'calc(100% - 40px)' },
     acsListItem: acsListItemStyles,
     acsLocationName: { fontSize: `${toREM(15)}`, fontWeight: 700 },
+    assignSubWrapper: {
+      display: 'flex',
+      justifyContent: 'space-between',
+      flexDirection: 'row',
+      flexWrap: 'wrap',
+      '@media(max-width:415px)': {
+        justifyContent: 'space-evenly',
+      },
+    },
+    assignBPSWrapper: {
+      display: 'flex',
+      justifyContent: 'flex-end',
+      '@media(max-width:415px)': {
+        justifyContent: 'flex-start',
+      },
+    },
+    createBadgeWrapper: {
+      display: 'flex',
+      justifyContent: 'space-between',
+      flexDirection: 'row',
+      flexWrap: 'wrap',
+      '@media(max-width:321px)': {
+        justifyContent: 'flex-start',
+      },
+    },
+    assignACSWrapper: {
+      display: 'flex',
+      justifyContent: 'space-between',
+      flexDirection: 'row',
+      flexWrap: 'wrap',
+      '@media(max-width:365px)': {
+        justifyContent: 'flex-start',
+      },
+    },
+    buttonSpacer: {
+      marginBottom: '15px',
+    },
+    buttonLeftSpacer: {
+      marginLeft: '5px',
+    },
+    gridContainer: {
+      cursor: 'pointer',
+      height: '100%',
+    },
   })
 );
 

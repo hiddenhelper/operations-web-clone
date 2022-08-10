@@ -7,8 +7,9 @@ describe('PaymentMethodsContainer', () => {
     expect(mapStateToProps(getInitialState())).toEqual({
       paymentMethods: getInitialState().payment.paymentMethod,
       projectMap: getInitialState().project.projectMap,
-      userCompanyId: getInitialState().auth.companyId,
-      userRole: getInitialState().auth.role,
+      userCompanyId: getInitialState().auth.currentCompanyId,
+      isFcaUser: getInitialState().auth.isFcaUser,
+      isAdmin: getInitialState().auth.isAdmin,
     });
   });
 

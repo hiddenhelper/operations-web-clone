@@ -1,3 +1,4 @@
+import { hasValidPermissions } from 'modules/models/user';
 import React, { memo, useCallback, useEffect, useMemo, useState } from 'react';
 
 import { BadgeModel, GeneralModel, ProjectModel, UserModel } from '../../../../../../../models';
@@ -11,7 +12,7 @@ export interface IProjectBadgeSummaryModalProps {
   updateLoading: GeneralModel.ILoadingStatus;
   updateBadgeDataLoading: GeneralModel.ILoadingStatus;
   printLoading: GeneralModel.ILoadingStatus;
-  currentUserRole: UserModel.Role;
+  currentUserPermissions: UserModel.IPermission[];
   clearUpdateLoading: () => void;
   clearUpdateBadgeLoading: () => void;
   closeModal: () => void;
@@ -38,7 +39,7 @@ const ProjectBadgeModal = ({
   updateLoading,
   updateBadgeDataLoading,
   printLoading,
-  currentUserRole,
+  currentUserPermissions,
   updateBadge,
   clearUpdateLoading,
   clearUpdateBadgeLoading,
@@ -89,15 +90,25 @@ const ProjectBadgeModal = ({
     [modal, currentBadge, setModal]
   );
 
-  const isReactivateAllowed = useMemo(() => projectWorker.badgeStatus !== BadgeModel.BadgeStatus.REVOKED || currentUserRole === UserModel.Role.FCA_ADMIN, [
-    projectWorker.badgeStatus,
-    currentUserRole,
-  ]);
-  const isDeactivateAllowed = useMemo(
-    () => projectWorker.badgeStatus !== BadgeModel.BadgeStatus.REVOKED && projectWorker.badgeStatus !== BadgeModel.BadgeStatus.EXPIRED,
-    [projectWorker.badgeStatus]
+  const isReactivateAllowed = useMemo(
+    () =>
+      projectWorker.badgeStatus !== BadgeModel.BadgeStatus.REVOKED &&
+      hasValidPermissions(`${UserModel.BadgesPermission.ACTIVATE} AND ${UserModel.BadgesPermission.VIEWACCESS}`, currentUserPermissions),
+    [projectWorker.badgeStatus, currentUserPermissions]
   );
-  const isRevokeAllowed = useMemo(() => projectWorker.badgeStatus !== BadgeModel.BadgeStatus.EXPIRED, [projectWorker.badgeStatus]);
+  const isDeactivateAllowed = useMemo(
+    () =>
+      projectWorker.badgeStatus !== BadgeModel.BadgeStatus.REVOKED &&
+      projectWorker.badgeStatus !== BadgeModel.BadgeStatus.EXPIRED &&
+      hasValidPermissions(`${UserModel.BadgesPermission.DEACTIVATE} AND ${UserModel.BadgesPermission.VIEWACCESS}`, currentUserPermissions),
+    [projectWorker.badgeStatus, currentUserPermissions]
+  );
+  const isRevokeAllowed = useMemo(
+    () =>
+      projectWorker.badgeStatus !== BadgeModel.BadgeStatus.EXPIRED &&
+      hasValidPermissions(`${UserModel.BadgesPermission.REVOKE} AND ${UserModel.BadgesPermission.VIEWACCESS}`, currentUserPermissions),
+    [projectWorker.badgeStatus, currentUserPermissions]
+  );
 
   const badgeStatusOptionList = useMemo(
     () =>
@@ -124,8 +135,8 @@ const ProjectBadgeModal = ({
 
   useEffect(() => {
     /* istanbul ignore else */
-    fetchBadge(projectWorker.badgeId);
-  }, [projectWorker, fetchBadge]);
+    if (hasValidPermissions(UserModel.BadgesPermission.VIEWACCESS, currentUserPermissions)) fetchBadge(projectWorker.badgeId);
+  }, [projectWorker, fetchBadge, currentUserPermissions]);
   return (
     <BadgeSummaryModal
       title={`Project Badge (${projectWorker.project.name})`}

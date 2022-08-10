@@ -29,7 +29,7 @@ export const fetchSelfCompanyStart: Epic<IAction, IAction, IRootState, IEpicDepe
     mergeMap(({ payload }) =>
       concat(
         of(generalState.actions.setLoading(GENERAL.LOADING_KEY.FETCH_SELF_COMPANY, true)),
-        deps.apiService.getClient(state$.value.auth.companyId).pipe(map(res => actions.fetchSelfClientSuccess(res))),
+        deps.apiService.getClient(state$.value.auth.currentCompanyId).pipe(map(res => actions.fetchSelfClientSuccess(res))),
         of(generalState.actions.setLoading(GENERAL.LOADING_KEY.FETCH_SELF_COMPANY, false))
       ).pipe(handleError(GENERAL.LOADING_KEY.FETCH_SELF_COMPANY))
     )

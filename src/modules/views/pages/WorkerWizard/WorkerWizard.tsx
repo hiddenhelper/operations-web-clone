@@ -8,7 +8,7 @@ import DuplicatedWorkerModalContent from './components/DuplicatedWorkerModalCont
 import WorkerForm from './components/WorkerForm';
 
 import { getConditionalDefaultValue, getDefaultValue } from '../../../../utils/generalUtils';
-import { ClientModel, GeneralModel, UserModel, WorkerModel } from '../../../models';
+import { ClientModel, GeneralModel, WorkerModel } from '../../../models';
 import { sanitizeWorker } from '../../../../utils/workerUtils';
 import { useNavigator } from '../../../../utils/useNavigator';
 import { ROUTES, LANG, FormRules } from '../../../../constants';
@@ -16,7 +16,6 @@ import { useStyles } from './styles';
 import { WorkerStatus } from 'modules/models/worker';
 
 export interface IWorkerWizardProps {
-  userRole: UserModel.Role;
   company: ClientModel.IClient;
   workersMap: GeneralModel.IEntityMap<WorkerModel.IWorker>;
   loading: GeneralModel.ILoadingStatus;
@@ -26,7 +25,6 @@ export interface IWorkerWizardProps {
   languageList: WorkerModel.ILanguage[];
   skilledTradeList: WorkerModel.ISkilledTrade[];
   uiRelationMap: GeneralModel.IRelationUiMap;
-  currentUserRole: UserModel.Role;
   identificationTypeList: WorkerModel.IIdentificationType[];
   saveWorker: (model: WorkerModel.IWorker) => void;
   updateWorker: (model: WorkerModel.IWorker) => void;
@@ -43,6 +41,8 @@ export interface IWorkerWizardProps {
   countryList?: GeneralModel.INamedEntity[];
   fetchGeographicLocationsList: () => void;
   geographicLocationsList: WorkerModel.IGeographicLocation[];
+  isFcaUser: boolean;
+  isAdmin: boolean;
 }
 
 export interface IModalState {
@@ -51,7 +51,6 @@ export interface IModalState {
 }
 
 const WorkerWizard = ({
-  userRole,
   company,
   workersMap,
   loading,
@@ -60,7 +59,6 @@ const WorkerWizard = ({
   skilledTradeList,
   identificationTypeList,
   uiRelationMap,
-  currentUserRole,
   saveLoading,
   searchLoading,
   saveWorker,
@@ -78,6 +76,8 @@ const WorkerWizard = ({
   countryList,
   fetchGeographicLocationsList,
   geographicLocationsList,
+  isFcaUser,
+  isAdmin,
 }: IWorkerWizardProps) => {
   const classes = useStyles();
 
@@ -140,7 +140,7 @@ const WorkerWizard = ({
               matchedFields={getDefaultValue(duplicatedWorkerInformation?.matchedFields, [])}
               existingWorker={getDefaultValue(duplicatedWorkerInformation?.worker, {})}
               currentWorker={model}
-              userRole={currentUserRole}
+              isFcaUser={isFcaUser}
             />
           ),
           onConfirm: redirectToProfile,
@@ -152,14 +152,14 @@ const WorkerWizard = ({
       };
       return duplicatedMap[key];
     },
-    [currentUserRole, duplicatedWorkerInformation, redirectToProfile, handleContactFCAAdmin]
+    [isFcaUser, duplicatedWorkerInformation, redirectToProfile, handleContactFCAAdmin]
   );
 
   const onLoadSuccessHandler = useCallback(
     ({ updateRules }) => {
-      updateRules(prev => ({ ...FormRules.worker.workerFieldRulesMap[currentUserRole], ...prev }));
+      updateRules(prev => ({ ...FormRules.worker.workerFieldRulesMap(isFcaUser, isAdmin), ...prev }));
     },
-    [currentUserRole]
+    [isFcaUser, isAdmin]
   );
 
   useEffect(() => {
@@ -201,16 +201,14 @@ const WorkerWizard = ({
   useEffect(() => {
     if (duplicatedWorker) {
       const isInformationAllowed =
-        currentUserRole !== UserModel.Role.FCA_ADMIN && !duplicatedWorkerInformation?.isWorkerInformationAvailable
-          ? WorkerModel.IsAllowed.NOT_ALLOWED
-          : WorkerModel.IsAllowed.ALLOWED;
+        !isFcaUser && !duplicatedWorkerInformation?.isWorkerInformationAvailable ? WorkerModel.IsAllowed.NOT_ALLOWED : WorkerModel.IsAllowed.ALLOWED;
       setExistingWorkerModal(prev => ({ ...prev, isOpen: true, isAllowed: isInformationAllowed }));
     }
-  }, [saveLoading, currentUserRole, duplicatedWorkerInformation, setExistingWorkerModal, duplicatedWorker]);
+  }, [saveLoading, isFcaUser, duplicatedWorkerInformation, setExistingWorkerModal, duplicatedWorker]);
   return (
     <Wizard
       isStepper={false}
-      formRuleMap={FormRules.worker.workerFieldRulesMap[currentUserRole]}
+      formRuleMap={FormRules.worker.workerFieldRulesMap(isFcaUser, isAdmin)}
       navigationProps={{ id, step, entityId, currentEntity }}
       fallback={WorkerModel.getFallbackWorker()}
       isLoadSuccess={loadedSuccessful}
@@ -244,7 +242,7 @@ const WorkerWizard = ({
       renderForm={({ model, formRules, errors, onChange, updateRules }) => (
         <>
           <WorkerForm
-            userRole={userRole}
+            isFcaUser={isFcaUser}
             model={model}
             company={company}
             formRules={formRules}

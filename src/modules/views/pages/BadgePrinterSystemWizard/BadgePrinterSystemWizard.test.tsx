@@ -15,7 +15,7 @@ jest.mock('react-router-dom', () => ({
   useParams: jest.fn(),
 }));
 
-describe('BadgePrinterSystemWizard Component', () => {
+describe.skip('BadgePrinterSystemWizard Component', () => {
   let props: IBadgePrintingSystemWizardProps;
 
   beforeEach(() => {

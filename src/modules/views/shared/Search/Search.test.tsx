@@ -24,7 +24,8 @@ describe('Search', () => {
       searchResults: undefined,
       triggerSearch: jest.fn(),
       triggerSearchMore: jest.fn(),
-      userRole: UserModel.Role.FCA_ADMIN,
+      isFcaUser: true,
+      isAdmin: true,
     };
   });
 

@@ -18,9 +18,9 @@ import { getConditionalDefaultValue } from '../../../../../../../utils/generalUt
 import { useStyles as AssignModalStyles } from '../../../../../shared/Modal/components/AssignModal/styles';
 import { useStyles as buttonStyles } from '../../../../../shared/FormHandler/ControlledButton/styles';
 import { useStyles } from '../../../styles';
+import PermissionGuard from 'modules/views/shared/PermissionGuard';
 
 export interface ICreateTabProps {
-  userRole: UserModel.Role;
   userCompanyId: string;
   clientMap: GeneralModel.IEntityMap<ClientModel.IClient>;
   saveUserLoading: GeneralModel.ILoadingStatus;
@@ -28,14 +28,26 @@ export interface ICreateTabProps {
   saveUser: (companyId: string, user: UserModel.IUser) => void;
   fetchGroupSearch: (searchRequest: any) => void;
   groupList: any;
+  isFcaUser: boolean;
+  isAdmin: boolean;
 }
 
-const CreateTab = ({ userRole, userCompanyId, clientMap, saveUserLoading, changeAssignTab, saveUser, fetchGroupSearch, groupList }: ICreateTabProps) => {
+const CreateTab = ({
+  isFcaUser,
+  isAdmin,
+  userCompanyId,
+  clientMap,
+  saveUserLoading,
+  changeAssignTab,
+  saveUser,
+  fetchGroupSearch,
+  groupList,
+}: ICreateTabProps) => {
   const classes = useStyles();
   const assignModalClasses = AssignModalStyles();
   const buttonClasses = buttonStyles();
   const clientList = useMemo(() => Object.values(clientMap).map(item => ({ value: item.id, label: item.name })), [clientMap]);
-  const isFcAdmin = useMemo(() => userRole === UserModel.Role.FCA_ADMIN, [userRole]);
+  const isFcAdmin = useMemo(() => isFcaUser && isAdmin, [isFcaUser, isAdmin]);
 
   const onCreate = useCallback(user => saveUser(getConditionalDefaultValue(isFcAdmin, user.assignClient, userCompanyId), sanitizeUser(user)), [
     saveUser,
@@ -111,16 +123,18 @@ const CreateTab = ({ userRole, userCompanyId, clientMap, saveUserLoading, change
           isFcAdmin={isFcAdmin}
         />
       </div>
-      <ButtonLoader
-        className={`${buttonClasses.saveButton} ${assignModalClasses.assignButtonWidth} ${classes.noMargin} ${classes.createUserButtonPosition}`}
-        color="primary"
-        variant="contained"
-        data-testid="create-user-btn"
-        onClick={onSubmit}
-        text="Create User"
-        loadingText="Creating..."
-        isLoading={saveUserLoading && saveUserLoading.isLoading}
-      />
+      <PermissionGuard permissionsExpression={UserModel.UsersPermission.MANAGE}>
+        <ButtonLoader
+          className={`${buttonClasses.saveButton} ${assignModalClasses.assignButtonWidth} ${classes.noMargin} ${classes.createUserButtonPosition}`}
+          color="primary"
+          variant="contained"
+          data-testid="create-user-btn"
+          onClick={onSubmit}
+          text="Create User"
+          loadingText="Creating..."
+          isLoading={saveUserLoading && saveUserLoading.isLoading}
+        />
+      </PermissionGuard>
     </div>
   );
 };

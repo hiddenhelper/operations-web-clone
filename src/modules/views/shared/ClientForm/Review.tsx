@@ -23,6 +23,7 @@ import { AutocompleteService } from '../../../services/AutocompleteService';
 import { useStyles as buttonStyles } from '../../shared/FormHandler/ControlledButton/styles';
 import { cardGlobalStyles, formGlobalStyles } from '../../../../assets/styles';
 import { tableRowStyles } from './styles';
+import PermissionGuard from '../PermissionGuard';
 
 export interface IReviewProps {
   model: ClientModel.IClient;
@@ -68,15 +69,17 @@ const Review = ({ model, completedFields, userList = [], mwbeList = [], edit = f
         actionStyleClass={getConditionalDefaultValue(edit, formClasses.secondaryActionsIcon, '')}
         secondaryAction={
           edit ? (
-            <IconButton
-              className={buttonClasses.editButton}
-              disableRipple={true}
-              onClick={handleEditGeneralInformation}
-              data-testid="gen-info-edit-button"
-              disabled={model.status === ResourceModel.CompanyStatus.ARCHIVED}
-            >
-              <CreateIcon />
-            </IconButton>
+            <PermissionGuard permissionsExpression={UserModel.ClientsPermission.MANAGE}>
+              <IconButton
+                className={buttonClasses.editButton}
+                disableRipple={true}
+                onClick={handleEditGeneralInformation}
+                data-testid="gen-info-edit-button"
+                disabled={model.status === ResourceModel.CompanyStatus.ARCHIVED}
+              >
+                <CreateIcon />
+              </IconButton>
+            </PermissionGuard>
           ) : (
             <ReviewButton
               stepKey={ClientModel.ClientStep.GENERAL_INFORMATION}
@@ -149,15 +152,17 @@ const Review = ({ model, completedFields, userList = [], mwbeList = [], edit = f
         actionStyleClass={getConditionalDefaultValue(edit, formClasses.secondaryActionsIcon, '')}
         secondaryAction={
           edit ? (
-            <IconButton
-              className={buttonClasses.editButton}
-              disableRipple={true}
-              onClick={handleEditAddresses}
-              data-testid="addr-edit-button"
-              disabled={model.status === ResourceModel.CompanyStatus.ARCHIVED}
-            >
-              <CreateIcon />
-            </IconButton>
+            <PermissionGuard permissionsExpression={UserModel.ClientsPermission.MANAGE}>
+              <IconButton
+                className={buttonClasses.editButton}
+                disableRipple={true}
+                onClick={handleEditAddresses}
+                data-testid="addr-edit-button"
+                disabled={model.status === ResourceModel.CompanyStatus.ARCHIVED}
+              >
+                <CreateIcon />
+              </IconButton>
+            </PermissionGuard>
           ) : (
             <ReviewButton
               stepKey={ClientModel.ClientStep.ADDRESSES}
@@ -209,12 +214,7 @@ const Review = ({ model, completedFields, userList = [], mwbeList = [], edit = f
           secondaryAction={
             <ReviewButton
               stepKey={ClientModel.ClientStep.USERS}
-              completedFields={
-                completedFields && {
-                  ...completedFields[ClientModel.ClientStep.USERS],
-                  required: completedFields[ClientModel.ClientStep.USERS].required,
-                }
-              }
+              completedFields={completedFields && completedFields[ClientModel.ClientStep.USERS]}
               onChangeStep={onChangeStep}
             />
           }

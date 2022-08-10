@@ -6,7 +6,8 @@ import ControlledButton from 'modules/views/shared/FormHandler/ControlledButton'
 import { ButtonLoader } from 'modules/views/shared';
 import { LANG, CheckmarkIcon } from '../../../../../../constants';
 import { useStyles } from '../../wizardStyles';
-import { GeneralModel } from 'modules/models';
+import { GeneralModel, UserModel } from 'modules/models';
+import PermissionGuard from 'modules/views/shared/PermissionGuard';
 
 enum ActionType {
   SAVE = 'save',
@@ -114,19 +115,21 @@ const Header = ({
                       </ControlledButton>
                     </Grid>
                     <Grid item={true}>
-                      <ControlledButton>
-                        <ButtonLoader
-                          data-testid="save-changes-btn"
-                          color="primary"
-                          className={classes.saveButton}
-                          variant={'outlined'}
-                          isLoading={isSaveLoading}
-                          text={LANG.EN.NAVIGATION_TOP.ACTIONS.SAVE}
-                          loadingText={LANG.EN.NAVIGATION_TOP.ACTIONS.SAVING}
-                          onClick={onSaveHandler}
-                          disabled={isSaveLoading}
-                        />
-                      </ControlledButton>
+                      <PermissionGuard permissionsExpression={UserModel.DraftProjectsPermission.MANAGE}>
+                        <ControlledButton>
+                          <ButtonLoader
+                            data-testid="save-changes-btn"
+                            color="primary"
+                            className={classes.saveButton}
+                            variant={'outlined'}
+                            isLoading={isSaveLoading}
+                            text={LANG.EN.NAVIGATION_TOP.ACTIONS.SAVE}
+                            loadingText={LANG.EN.NAVIGATION_TOP.ACTIONS.SAVING}
+                            onClick={onSaveHandler}
+                            disabled={isSaveLoading}
+                          />
+                        </ControlledButton>
+                      </PermissionGuard>
                     </Grid>
                   </Grid>
                 )}

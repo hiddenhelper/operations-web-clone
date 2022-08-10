@@ -427,47 +427,7 @@ exports[`BadgePrinterSystemDrawer should render 1`] = `
         />
         <div
           class="makeStyles-ctaWrapper-75"
-        >
-          <a
-            href="/inventory/badge-printing-system/wizard/77afbfce-1bca-31c3-b512-3a1ed78742bb"
-          >
-            <span
-              class=""
-              data-testid="controlled-button"
-              tabindex="-1"
-            >
-              <button
-                class="MuiButtonBase-root MuiButton-root MuiButton-outlined makeStyles-drawerCTA-41 makeStyles-borderPrimaryButton-33"
-                tabindex="0"
-                type="button"
-              >
-                <span
-                  class="MuiButton-label"
-                >
-                  Edit
-                </span>
-              </button>
-            </span>
-          </a>
-          <span
-            class=""
-            data-testid="controlled-button"
-            tabindex="-1"
-          >
-            <button
-              class="MuiButtonBase-root MuiButton-root MuiButton-outlined makeStyles-drawerCTA-41 makeStyles-warningButton-42"
-              data-testid="deleteBpsBtn"
-              tabindex="0"
-              type="button"
-            >
-              <span
-                class="MuiButton-label"
-              >
-                Delete
-              </span>
-            </button>
-          </span>
-        </div>
+        />
       </div>
     </div>
   </div>
@@ -901,29 +861,7 @@ exports[`BadgePrinterSystemDrawer should render alternative values 1`] = `
         />
         <div
           class="makeStyles-ctaWrapper-292"
-        >
-          <a
-            href="/inventory/badge-printing-system/wizard/6631aacb-21fa-91cc-c5ff-55b12cbaf33b"
-          >
-            <span
-              class=""
-              data-testid="controlled-button"
-              tabindex="-1"
-            >
-              <button
-                class="MuiButtonBase-root MuiButton-root MuiButton-outlined makeStyles-drawerCTA-258 makeStyles-borderPrimaryButton-250"
-                tabindex="0"
-                type="button"
-              >
-                <span
-                  class="MuiButton-label"
-                >
-                  Edit
-                </span>
-              </button>
-            </span>
-          </a>
-        </div>
+        />
       </div>
     </div>
   </div>

@@ -7,7 +7,7 @@ import Edit from '@material-ui/icons/Edit';
 
 import Checkbox from 'modules/views/shared/FormHandler/Checkbox';
 import ControlledDatePicker from 'modules/views/shared/FormHandler/ControlledDatePicker';
-import RoleGuard from 'modules/views/shared/RoleGuard';
+import PermissionGuard from 'modules/views/shared/PermissionGuard';
 import TableCellLink from 'modules/views/shared/TableCellLink';
 
 import { BadgePrintingSystemModel, UserModel } from 'modules/models';
@@ -48,9 +48,9 @@ const BadgePrintingSystemRow = ({ badgePrintingSystem, isSelected, bpsDate, onSe
       <TableCell>
         <div className={`${globalClasses.tableColoredEllipsis} ${classes.assignNameLeftSpace}`}>
           <Checkbox name="badgePrintingSystem" onChange={onSelectHandler} value={badgePrintingSystem.id} isChecked={isSelected} />{' '}
-          <RoleGuard roleList={[UserModel.Role.FCA_ADMIN]} fallback={<>{badgePrintingSystem.name}</>}>
+          <PermissionGuard permissionsExpression={UserModel.BadgePrintingSystemsPermission.MANAGE} fallback={<>{badgePrintingSystem.name}</>}>
             <TableCellLink href={`/inventory/badge-printing-system/wizard/${badgePrintingSystem.id}`} text={badgePrintingSystem.name} title="Edit BPS" />
-          </RoleGuard>
+          </PermissionGuard>
         </div>
       </TableCell>
       <TableCell>{getDefaultValue(badgePrintingSystem?.laptopSerialNumber)}</TableCell>

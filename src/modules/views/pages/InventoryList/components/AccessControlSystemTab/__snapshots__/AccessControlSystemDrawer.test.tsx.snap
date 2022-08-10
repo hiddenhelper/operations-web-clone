@@ -375,47 +375,7 @@ exports[`AccessControlSystemDrawer should render 1`] = `
         />
         <div
           class="makeStyles-ctaWrapper-75"
-        >
-          <a
-            href="/inventory/access-control-system/wizard/13315742-0a3a-4916-af26-e983632a6484"
-          >
-            <span
-              class=""
-              data-testid="controlled-button"
-              tabindex="-1"
-            >
-              <button
-                class="MuiButtonBase-root MuiButton-root MuiButton-outlined makeStyles-drawerCTA-41 makeStyles-borderPrimaryButton-33"
-                tabindex="0"
-                type="button"
-              >
-                <span
-                  class="MuiButton-label"
-                >
-                  Edit
-                </span>
-              </button>
-            </span>
-          </a>
-          <span
-            class=""
-            data-testid="controlled-button"
-            tabindex="-1"
-          >
-            <button
-              class="MuiButtonBase-root MuiButton-root MuiButton-outlined makeStyles-drawerCTA-41 makeStyles-warningButton-42"
-              data-testid="deleteAcsBtn"
-              tabindex="0"
-              type="button"
-            >
-              <span
-                class="MuiButton-label"
-              >
-                Delete
-              </span>
-            </button>
-          </span>
-        </div>
+        />
       </div>
     </div>
   </div>
@@ -792,47 +752,7 @@ exports[`AccessControlSystemDrawer should render alternative reader values 1`] =
         />
         <div
           class="makeStyles-ctaWrapper-393"
-        >
-          <a
-            href="/inventory/access-control-system/wizard/13315742-0a3a-4916-af26-e983632a6484"
-          >
-            <span
-              class=""
-              data-testid="controlled-button"
-              tabindex="-1"
-            >
-              <button
-                class="MuiButtonBase-root MuiButton-root MuiButton-outlined makeStyles-drawerCTA-359 makeStyles-borderPrimaryButton-351"
-                tabindex="0"
-                type="button"
-              >
-                <span
-                  class="MuiButton-label"
-                >
-                  Edit
-                </span>
-              </button>
-            </span>
-          </a>
-          <span
-            class=""
-            data-testid="controlled-button"
-            tabindex="-1"
-          >
-            <button
-              class="MuiButtonBase-root MuiButton-root MuiButton-outlined makeStyles-drawerCTA-359 makeStyles-warningButton-360"
-              data-testid="deleteAcsBtn"
-              tabindex="0"
-              type="button"
-            >
-              <span
-                class="MuiButton-label"
-              >
-                Delete
-              </span>
-            </button>
-          </span>
-        </div>
+        />
       </div>
     </div>
   </div>
@@ -1206,47 +1126,7 @@ exports[`AccessControlSystemDrawer should render alternative values 1`] = `
         />
         <div
           class="makeStyles-ctaWrapper-283"
-        >
-          <a
-            href="/inventory/access-control-system/wizard/13315742-0a3a-4916-af26-e983632a6484"
-          >
-            <span
-              class=""
-              data-testid="controlled-button"
-              tabindex="-1"
-            >
-              <button
-                class="MuiButtonBase-root MuiButton-root MuiButton-outlined makeStyles-drawerCTA-249 makeStyles-borderPrimaryButton-241"
-                tabindex="0"
-                type="button"
-              >
-                <span
-                  class="MuiButton-label"
-                >
-                  Edit
-                </span>
-              </button>
-            </span>
-          </a>
-          <span
-            class=""
-            data-testid="controlled-button"
-            tabindex="-1"
-          >
-            <button
-              class="MuiButtonBase-root MuiButton-root MuiButton-outlined makeStyles-drawerCTA-249 makeStyles-warningButton-250"
-              data-testid="deleteAcsBtn"
-              tabindex="0"
-              type="button"
-            >
-              <span
-                class="MuiButton-label"
-              >
-                Delete
-              </span>
-            </button>
-          </span>
-        </div>
+        />
       </div>
     </div>
   </div>

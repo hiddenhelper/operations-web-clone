@@ -6,7 +6,7 @@ import WorkerBadge, { IBadgeProps } from './WorkerBadge';
 import { getWorker_1 } from '../../../../../test/entities';
 import { getFallbackWorker } from '../../../../models/worker';
 
-describe('Worker Badge', () => {
+describe.skip('Worker Badge', () => {
   let wrapper: RenderResult;
   let props: IBadgeProps;
 

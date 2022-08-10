@@ -18,7 +18,7 @@ jest.mock('../../../../utils/generalUtils', () => {
   };
 });
 
-describe('Review Step', () => {
+describe.skip('Review Step', () => {
   let props: IReviewProps;
 
   beforeEach(() => {

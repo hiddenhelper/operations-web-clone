@@ -9,7 +9,6 @@ import ControlledInput from '../../FormHandler/ControlledInput';
 import ControlledButton from '../../FormHandler/ControlledButton';
 import ControlledRadio from '../../FormHandler/ControlledRadio';
 import ButtonLoader from '../../ButtonLoader';
-import RoleGuard from '../../RoleGuard';
 
 import { UserModel, GeneralModel } from '../../../../models';
 import { LANG } from '../../../../../constants';
@@ -114,99 +113,96 @@ const Profile = ({ model, formRules, hasChanges, errors, loading, onDiscard, onS
               </ControlledInput>
             </ControlledError>
           </div>
-          <RoleGuard roleList={[UserModel.Role.CLIENT_ADMIN, UserModel.Role.REGULAR_USER]}>
-            <>
-              <div className={classes.errorInputWrapper}>
-                <ControlledError
-                  show={!!errors.mobilePhoneNumber}
-                  error={getConditionalDefaultValue(errors.mobilePhoneNumber === 'is required', 'Please enter Mobile Phone Number.', errors.mobilePhoneNumber)}
-                  styleClass={classes.errorPosition}
-                >
-                  <ControlledInput label="Mobile Phone Number" styleClass={`${classes.inputBottomPadding}`}>
-                    <PhoneNumberInput
-                      countryList={countryList}
-                      value={getDefaultValue(model.mobilePhoneNumber, '')}
-                      onChange={onChange}
-                      inputProps={{
-                        variant: 'outlined',
-                        error: !!errors.mobilePhoneNumber,
-                        name: 'mobilePhoneNumber',
-                        'data-testid': 'mobile-user-phone',
-                      }}
-                    />
-                  </ControlledInput>
-                </ControlledError>
-              </div>
-              <Grid container={true}>
-                <Grid item={true} xs={9} lg={9}>
-                  <ControlledError
-                    show={!!errors.officePhoneNumber}
-                    error={getConditionalDefaultValue(errors.officePhoneNumber === 'is required', 'Please enter Phone Number.', errors.officePhoneNumber)}
-                  >
-                    <ControlledInput label="Office Phone Number (Optional)" styleClass={`${classes.inputBottomPadding} ${inputGlobalClasses.middleInput}`}>
-                      <PhoneNumberInput
-                        countryList={countryList}
-                        value={getDefaultValue(model.officePhoneNumber, '')}
-                        onChange={onChange}
-                        inputProps={{
-                          variant: 'outlined',
-                          error: !!errors.officePhoneNumber,
-                          name: 'officePhoneNumber',
-                          'data-testid': 'office-user-phone',
-                          id: 'officePhoneNumber',
-                        }}
-                      />
-                    </ControlledInput>
-                  </ControlledError>
-                </Grid>
-                <Grid item={true} xs={3} lg={3}>
-                  <ControlledError show={!!errors.officePhoneExtension} error={errors.officePhoneExtension}>
-                    <ControlledInput label="Ext" styleClass={`${classes.inputBottomPadding}`}>
-                      <TextField
-                        autoComplete="off"
-                        variant="outlined"
-                        placeholder="Ext"
-                        type="text"
-                        fullWidth={true}
-                        name="officePhoneExtension"
-                        value={getDefaultValue(model.officePhoneExtension, '')}
-                        onChange={onChange}
-                        error={!!errors.officePhoneExtension}
-                        inputProps={{
-                          'data-testid': 'office-user-phone',
-                          maxLength: 6,
-                        }}
-                      />
-                    </ControlledInput>
-                  </ControlledError>
-                </Grid>
-              </Grid>
-              <div className={classes.errorInputWrapper}>
-                <ControlledError show={!!errors.preferredContactMethod} error={errors.preferredContactMethod}>
-                  <ControlledRadio
-                    styleClass={formClasses.radioWrapper}
-                    row={true}
-                    radioItems={[
-                      {
-                        value: UserModel.PreferredContactMethod.EMAIL,
-                        label: LANG.EN.CONTACT_METHOD.EMAIL,
-                      },
-                      {
-                        value: UserModel.PreferredContactMethod.PHONE,
-                        label: LANG.EN.CONTACT_METHOD.PHONE,
-                      },
-                    ]}
-                    formControlProps={{
-                      name: 'preferredContactMethod',
-                      label: 'Preferred Contact Method',
-                      value: parseInt(model.preferredContactMethod as any, 10),
-                      onChange: onChange,
+
+          <div className={classes.errorInputWrapper}>
+            <ControlledError
+              show={!!errors.mobilePhoneNumber}
+              error={getConditionalDefaultValue(errors.mobilePhoneNumber === 'is required', 'Please enter Mobile Phone Number.', errors.mobilePhoneNumber)}
+              styleClass={classes.errorPosition}
+            >
+              <ControlledInput label="Mobile Phone Number" styleClass={`${classes.inputBottomPadding}`}>
+                <PhoneNumberInput
+                  countryList={countryList}
+                  value={getDefaultValue(model.mobilePhoneNumber, '')}
+                  onChange={onChange}
+                  inputProps={{
+                    variant: 'outlined',
+                    error: !!errors.mobilePhoneNumber,
+                    name: 'mobilePhoneNumber',
+                    'data-testid': 'mobile-user-phone',
+                  }}
+                />
+              </ControlledInput>
+            </ControlledError>
+          </div>
+          <Grid container={true}>
+            <Grid item={true} xs={9} lg={9}>
+              <ControlledError
+                show={!!errors.officePhoneNumber}
+                error={getConditionalDefaultValue(errors.officePhoneNumber === 'is required', 'Please enter Phone Number.', errors.officePhoneNumber)}
+              >
+                <ControlledInput label="Office Phone Number (Optional)" styleClass={`${classes.inputBottomPadding} ${inputGlobalClasses.middleInput}`}>
+                  <PhoneNumberInput
+                    countryList={countryList}
+                    value={getDefaultValue(model.officePhoneNumber, '')}
+                    onChange={onChange}
+                    inputProps={{
+                      variant: 'outlined',
+                      error: !!errors.officePhoneNumber,
+                      name: 'officePhoneNumber',
+                      'data-testid': 'office-user-phone',
+                      id: 'officePhoneNumber',
                     }}
                   />
-                </ControlledError>
-              </div>
-            </>
-          </RoleGuard>
+                </ControlledInput>
+              </ControlledError>
+            </Grid>
+            <Grid item={true} xs={3} lg={3}>
+              <ControlledError show={!!errors.officePhoneExtension} error={errors.officePhoneExtension}>
+                <ControlledInput label="Ext" styleClass={`${classes.inputBottomPadding}`}>
+                  <TextField
+                    autoComplete="off"
+                    variant="outlined"
+                    placeholder="Ext"
+                    type="text"
+                    fullWidth={true}
+                    name="officePhoneExtension"
+                    value={getDefaultValue(model.officePhoneExtension, '')}
+                    onChange={onChange}
+                    error={!!errors.officePhoneExtension}
+                    inputProps={{
+                      'data-testid': 'office-user-phone',
+                      maxLength: 6,
+                    }}
+                  />
+                </ControlledInput>
+              </ControlledError>
+            </Grid>
+          </Grid>
+          <div className={classes.errorInputWrapper}>
+            <ControlledError show={!!errors.preferredContactMethod} error={errors.preferredContactMethod}>
+              <ControlledRadio
+                styleClass={formClasses.radioWrapper}
+                row={true}
+                radioItems={[
+                  {
+                    value: UserModel.PreferredContactMethod.EMAIL,
+                    label: LANG.EN.CONTACT_METHOD.EMAIL,
+                  },
+                  {
+                    value: UserModel.PreferredContactMethod.PHONE,
+                    label: LANG.EN.CONTACT_METHOD.PHONE,
+                  },
+                ]}
+                formControlProps={{
+                  name: 'preferredContactMethod',
+                  label: 'Preferred Contact Method',
+                  value: parseInt(model.preferredContactMethod as any, 10),
+                  onChange: onChange,
+                }}
+              />
+            </ControlledError>
+          </div>
         </Grid>
       </Grid>
       <div className={classes.formButtonWrapper}>

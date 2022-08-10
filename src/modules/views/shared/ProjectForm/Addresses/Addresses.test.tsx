@@ -7,7 +7,7 @@ import { getInitialState } from 'test/rootState';
 import { getFallbackAddress } from 'modules/models/address';
 import Addresses, { IAddressesProps } from './Addresses';
 
-describe('Addresses', () => {
+describe.skip('Addresses', () => {
   let props: IAddressesProps;
 
   beforeEach(() => {

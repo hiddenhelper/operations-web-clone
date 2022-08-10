@@ -135,14 +135,29 @@ export const fullScreenModalGlobalStyles = makeStyles(theme =>
     headerData: {
       display: 'flex',
       alignItems: 'center',
-      paddingLeft: 30,
+      marginLeft: '14%',
       height: '100px',
       marginRight: 'auto',
       paddingRight: 43,
+      '@media(max-width:569px)': {
+        marginLeft: '10%',
+      },
+      '@media(max-width:415px)': {
+        marginLeft: '5px',
+        paddingRight: '20px',
+      },
+    },
+    smallDevice: {
+      '@media(max-width:321px)': {
+        fontSize: '12px',
+      },
     },
     logoWrapper: {
       width: `${toREM(149)}`,
       height: `${toREM(59)}`,
+      '@media(max-width:415px)': {
+        width: '90px',
+      },
     },
     buttonsWrapper: {
       display: 'flex',

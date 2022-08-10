@@ -238,7 +238,7 @@ describe('generalUtils', () => {
       expect(getCompletedStepFields(ClientModel.clientStepMap, getClient_1())).toEqual({
         'general-information': { completed: 4, required: 4, title: 'General Information', order: 0 },
         addresses: { completed: 1, required: 5, title: 'Addresses', order: 1 },
-        users: { completed: 10, required: 12, title: 'Users', order: 2 },
+        users: { completed: 8, required: 8, title: 'Users', order: 2 },
         review: { completed: 0, required: 0, title: 'Review', order: 3 },
       });
     });

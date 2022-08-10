@@ -8,7 +8,7 @@ import { actions, ActionType } from './actions';
 import { coreState } from '../core';
 import { actions as accessControlSystemActions } from '../access-control-system/actions';
 import { generalState } from '../general';
-import { GeneralModel, AccessControlSystemModel, UserModel, ProjectModel } from '../../models';
+import { GeneralModel, AccessControlSystemModel, ProjectModel } from '../../models';
 import { GENERAL } from '../../../constants';
 import { getConditionalDefaultValue, isEmpty } from '../../../utils/generalUtils';
 import { getProjectBadgeResourceRequest } from '../../../utils/projectUtils';
@@ -111,10 +111,11 @@ export const fetchBillingTierListStart: Epic<IAction, IAction, IRootState, IEpic
 export const fetchProjectListStart: Epic<IAction, IAction, IRootState, IEpicDependencies> = (action$, state$, deps) =>
   action$.pipe(
     ofType(ActionType.FETCH_PROJECT_LIST_START),
-    mergeMap(({ payload }) =>
-      concat(
+    mergeMap(({ payload }) => {
+      const isFCAAdmin = state$.value.auth.isFcaUser && state$.value.auth.isAdmin;
+      return concat(
         of(generalState.actions.setLoading(GENERAL.LOADING_KEY.FETCH_PROJECT_LIST, true)),
-        state$.value.auth.role === UserModel.Role.FCA_ADMIN
+        isFCAAdmin
           ? deps.apiService.getProjectList(payload.query).pipe(map(res => actions.fetchProjectListSuccess(res.items, res.totalResults)))
           : zip(
               deps.apiService.getProjectList({ ...payload.query, onlyPending: true }),
@@ -123,8 +124,8 @@ export const fetchProjectListStart: Epic<IAction, IAction, IRootState, IEpicDepe
         of(generalState.actions.setLoading(GENERAL.LOADING_KEY.FETCH_PROJECT_LIST, false))
       ).pipe(
         catchError(error => of(coreState.actions.epicError(error), generalState.actions.setLoading(GENERAL.LOADING_KEY.FETCH_PROJECT_LIST, false, true, error)))
-      )
-    )
+      );
+    })
   );
 
 export const fetchProjectSummaryStart: Epic<IAction, IAction, IRootState, IEpicDependencies> = (action$, state$, deps) =>

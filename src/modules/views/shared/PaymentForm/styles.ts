@@ -184,5 +184,8 @@ export const useStyles = makeStyles(theme =>
       float: 'right',
       marginBottom: '10px',
     },
+    trashCanDeleteSVG: {
+      cursor: 'pointer',
+    },
   })
 );

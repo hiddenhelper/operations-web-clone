@@ -12,7 +12,7 @@ import StatusChip from 'modules/views/shared/StatusChip';
 import { useStyles as statusChipStyles } from 'modules/views/shared/StatusChip/styles';
 
 import { ClientsIcon } from '../../../../constants';
-import { GeneralModel, ProcoreModel, UserModel } from 'modules/models';
+import { GeneralModel, ProcoreModel } from 'modules/models';
 import { getConditionalDefaultValue } from 'utils/generalUtils';
 import { tableGlobalStyles } from 'assets/styles';
 import { tableRowStyles } from 'assets/styles/Tables/styles';
@@ -22,12 +22,13 @@ import { useStylesTable } from './styles';
 
 export interface IProcoreClientsProps {
   clients?: ProcoreModel.IProcoreClient[];
-  userRole?: UserModel.Role;
   getProcoreClients: () => void;
   loading: GeneralModel.ILoadingStatus;
+  isFcaUser: boolean;
+  isAdmin: boolean;
 }
 
-const ProcoreClients = ({ clients, getProcoreClients, loading, userRole }: IProcoreClientsProps) => {
+const ProcoreClients = ({ clients, getProcoreClients, loading, isFcaUser, isAdmin }: IProcoreClientsProps) => {
   const classes = useStyles();
   const classesTable = useStylesTable();
   const tableGlobalClasses = tableGlobalStyles();
@@ -47,8 +48,8 @@ const ProcoreClients = ({ clients, getProcoreClients, loading, userRole }: IProc
     getProcoreClients?.();
   }, [getProcoreClients]);
 
-  const emptyText = `There are no ${userRole === UserModel.Role.FCA_ADMIN ? 'Clients' : 'Companies'} assigned`;
-  const title = `Procore ${userRole === UserModel.Role.FCA_ADMIN ? 'Clients' : 'Companies'}`;
+  const emptyText = `There are no ${isFcaUser && isAdmin ? 'Clients' : 'Companies'} assigned`;
+  const title = `Procore ${isFcaUser && isAdmin ? 'Clients' : 'Companies'}`;
 
   return (
     <Container className={tableGlobalClasses.tableWrapper}>

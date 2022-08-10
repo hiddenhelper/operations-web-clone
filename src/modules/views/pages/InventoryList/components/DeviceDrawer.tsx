@@ -13,7 +13,8 @@ import { useStyles } from '../styles';
 import { useStyles as modalStyles } from '../../../shared/Modal/style';
 import { useStyles as buttonStyles } from '../../../shared/FormHandler/ControlledButton/styles';
 import { listGlobalStyles } from '../../../../../assets/styles';
-import { DeviceModel, GeneralModel } from '../../../../models';
+import { DeviceModel, GeneralModel, UserModel } from '../../../../models';
+import PermissionGuard from 'modules/views/shared/PermissionGuard';
 
 export interface IDeviceDrawerProps {
   title: string;
@@ -26,6 +27,7 @@ export interface IDeviceDrawerProps {
   deviceListElement: React.ReactNode;
   deleteLoading: GeneralModel.ILoadingStatus;
   dataTestId: string;
+  type: string;
   onDelete: (id: string) => void;
   onClose: () => void;
   renderSummary: () => React.ReactNode;
@@ -42,6 +44,7 @@ const DeviceDrawer = ({
   deviceListElement,
   deleteLoading,
   dataTestId,
+  type,
   onDelete,
   onClose,
   renderSummary,
@@ -82,26 +85,32 @@ const DeviceDrawer = ({
             {renderSummary()}
             <Divider className={classes.drawerDivider} />
             <div className={listClasses.ctaWrapper}>
-              <Link to={`/inventory/${deviceKey}/wizard/${device.id}`}>
-                <ControlledButton>
-                  <Button disableRipple={true} className={`${buttonClasses.drawerCTA} ${buttonClasses.borderPrimaryButton}`} variant="outlined">
-                    Edit
-                  </Button>
-                </ControlledButton>
-              </Link>
-              {device.status === DeviceModel.DeviceStatus.AVAILABLE && (
-                <ControlledButton>
-                  <Button
-                    disableRipple={true}
-                    className={`${buttonClasses.drawerCTA} ${buttonClasses.warningButton}`}
-                    variant="outlined"
-                    onClick={onDeleteOpen}
-                    data-testid={deleteBtnTestId}
-                  >
-                    Delete
-                  </Button>
-                </ControlledButton>
-              )}
+              <PermissionGuard
+                permissionsExpression={type === 'ACS' ? UserModel.AccessControlSystemsPermission.MANAGE : UserModel.BadgePrintingSystemsPermission.MANAGE}
+              >
+                <>
+                  <Link to={`/inventory/${deviceKey}/wizard/${device.id}`}>
+                    <ControlledButton>
+                      <Button disableRipple={true} className={`${buttonClasses.drawerCTA} ${buttonClasses.borderPrimaryButton}`} variant="outlined">
+                        Edit
+                      </Button>
+                    </ControlledButton>
+                  </Link>
+                  {device.status === DeviceModel.DeviceStatus.AVAILABLE && (
+                    <ControlledButton>
+                      <Button
+                        disableRipple={true}
+                        className={`${buttonClasses.drawerCTA} ${buttonClasses.warningButton}`}
+                        variant="outlined"
+                        onClick={onDeleteOpen}
+                        data-testid={deleteBtnTestId}
+                      >
+                        Delete
+                      </Button>
+                    </ControlledButton>
+                  )}
+                </>
+              </PermissionGuard>
             </div>
           </div>
         )}

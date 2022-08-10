@@ -16,6 +16,8 @@ describe('ClientWizardContainer', () => {
       approveLoading: undefined,
       countryList: [],
       groupList: [],
+      isAdmin: getInitialState().auth.isAdmin,
+      isFcaUser: getInitialState().auth.isFcaUser,
       currentUserRole: null,
     });
   });

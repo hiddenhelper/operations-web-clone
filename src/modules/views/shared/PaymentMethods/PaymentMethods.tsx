@@ -2,7 +2,7 @@ import React, { memo, useCallback, useEffect, useState, useMemo } from 'react';
 import Grid from '@material-ui/core/Grid';
 import CreditCardItem from './components/CreditCardItem/CreditCardItem';
 import NewCreditCardItem from './components/NewCreditCardItem/NewCreditCardItem';
-import { GeneralModel, PaymentModel } from '../../../models';
+import { GeneralModel, PaymentModel, UserModel } from '../../../models';
 import { GENERAL, LANG } from '../../../../constants';
 import { useStylesModalCards } from './styles';
 import Typography from '@material-ui/core/Typography';
@@ -15,6 +15,7 @@ import ControlledSelect from '../FormHandler/ControlledSelect';
 import { getDefaultValue } from '../../../../utils/generalUtils';
 import { useStyles as modalStyles } from '../Modal/style';
 import Alert from '../Modal/components/Alert';
+import PermissionGuard from '../PermissionGuard';
 
 export interface IPaymentMethodsProps {
   compact?: boolean;
@@ -192,63 +193,67 @@ const PaymentMethods = ({
   );
 
   const renderDeleteModalDisclaimer = () => (
-    <Modal
-      show={deleteCardModalDisclaimer.isOpen}
-      styleClass={`${modalClasses.dialogContainer} ${modalClasses.deleteModal}`}
-      render={() => (
-        <DeleteModal
-          title={`Delete Credit Card **** **** **** ${getDefaultValue(deleteCardModalDisclaimer.paymentMethod?.lastFourDigits, '****')}?`}
-          onCancel={onCloseDeleteModalDisclaimer}
-          onConfirm={onConfirmDeleteCard}
-          text="If you do it, this credit card will be removed from your company."
-          confirmLoadingText="Deleting..."
-          isLoading={deleteLoading?.isLoading}
-        />
-      )}
-    />
+    <PermissionGuard permissionsExpression={UserModel.PaymentMethodsPermission.MANAGE}>
+      <Modal
+        show={deleteCardModalDisclaimer.isOpen}
+        styleClass={`${modalClasses.dialogContainer} ${modalClasses.deleteModal}`}
+        render={() => (
+          <DeleteModal
+            title={`Delete Credit Card **** **** **** ${getDefaultValue(deleteCardModalDisclaimer.paymentMethod?.lastFourDigits, '****')}?`}
+            onCancel={onCloseDeleteModalDisclaimer}
+            onConfirm={onConfirmDeleteCard}
+            text="If you do it, this credit card will be removed from your company."
+            confirmLoadingText="Deleting..."
+            isLoading={deleteLoading?.isLoading}
+          />
+        )}
+      />
+    </PermissionGuard>
   );
 
   const renderReplaceCardModal = () => (
-    <Modal
-      show={replaceCardInUseModal.isOpen}
-      onClose={onCloseReplaceCardInUseModal}
-      styleClass={`${modalClasses.dialogContainer}`}
-      render={() => (
-        <Confirm
-          title={`Delete Credit Card **** **** **** ${getDefaultValue(replaceCardInUseModal.paymentMethodInUse?.lastFourDigits, '****')}?`}
-          closeLabel="Cancel"
-          confirmLabel="Delete and Replace"
-          onConfirm={onConfirmReplaceCardInUseModal}
-          onClose={onCloseReplaceCardInUseModal}
-          disableConfirm={replaceCardInUseModal.selectedPaymentMethod === replaceModalInitialState.selectedPaymentMethod}
-          confirmButtonStyleClass={`${classes.replaceModalButton}`}
-          confirmLoadingText="Replacing..."
-          isLoading={deleteLoading?.isLoading}
-          content={
-            <div className={`${classes.replaceModal}`}>
-              <Typography className={`${classes.replaceModalText}`}>
-                There are projects associated with this Credit Card, Please select the credit card you want to use as replacement.
-              </Typography>
-              <ControlledInput label="Replacement Credit Card">
-                <ControlledSelect
-                  name="replace-credit-card-select"
-                  includeNone={true}
-                  noneLabel={'Select a Credit Card'}
-                  inputProps={{
-                    'data-testid': 'replace-credit-card-select',
-                  }}
-                  noneValue={replaceModalInitialState.selectedPaymentMethod}
-                  options={replaceCardInUseModal.paymentMethodsOptions}
-                  onChange={onSelectReplacementChange}
-                  disabled={!replaceCardInUseModal.paymentMethodsOptions.length}
-                  value={replaceCardInUseModal.selectedPaymentMethod}
-                />
-              </ControlledInput>
-            </div>
-          }
-        />
-      )}
-    />
+    <PermissionGuard permissionsExpression={UserModel.PaymentMethodsPermission.MANAGE}>
+      <Modal
+        show={replaceCardInUseModal.isOpen}
+        onClose={onCloseReplaceCardInUseModal}
+        styleClass={`${modalClasses.dialogContainer}`}
+        render={() => (
+          <Confirm
+            title={`Delete Credit Card **** **** **** ${getDefaultValue(replaceCardInUseModal.paymentMethodInUse?.lastFourDigits, '****')}?`}
+            closeLabel="Cancel"
+            confirmLabel="Delete and Replace"
+            onConfirm={onConfirmReplaceCardInUseModal}
+            onClose={onCloseReplaceCardInUseModal}
+            disableConfirm={replaceCardInUseModal.selectedPaymentMethod === replaceModalInitialState.selectedPaymentMethod}
+            confirmButtonStyleClass={`${classes.replaceModalButton}`}
+            confirmLoadingText="Replacing..."
+            isLoading={deleteLoading?.isLoading}
+            content={
+              <div className={`${classes.replaceModal}`}>
+                <Typography className={`${classes.replaceModalText}`}>
+                  There are projects associated with this Credit Card, Please select the credit card you want to use as replacement.
+                </Typography>
+                <ControlledInput label="Replacement Credit Card">
+                  <ControlledSelect
+                    name="replace-credit-card-select"
+                    includeNone={true}
+                    noneLabel={'Select a Credit Card'}
+                    inputProps={{
+                      'data-testid': 'replace-credit-card-select',
+                    }}
+                    noneValue={replaceModalInitialState.selectedPaymentMethod}
+                    options={replaceCardInUseModal.paymentMethodsOptions}
+                    onChange={onSelectReplacementChange}
+                    disabled={!replaceCardInUseModal.paymentMethodsOptions.length}
+                    value={replaceCardInUseModal.selectedPaymentMethod}
+                  />
+                </ControlledInput>
+              </div>
+            }
+          />
+        )}
+      />
+    </PermissionGuard>
   );
 
   const renderAdmin = () => (

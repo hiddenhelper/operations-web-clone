@@ -12,7 +12,8 @@ export const mapStateToProps = ({ auth, general }: IRootState) => ({
   loading: general.loadingMap[GENERAL.LOADING_KEY.FETCH_SEARCH],
   loadingMore: general.loadingMap[GENERAL.LOADING_KEY.FETCH_SEARCH_MORE],
   searchResults: general.searchResults,
-  userRole: auth.role,
+  isFcaUser: auth.isFcaUser,
+  isAdmin: auth.isAdmin,
 });
 
 export const mapDispatchToProps = (dispatch: Dispatch) => ({

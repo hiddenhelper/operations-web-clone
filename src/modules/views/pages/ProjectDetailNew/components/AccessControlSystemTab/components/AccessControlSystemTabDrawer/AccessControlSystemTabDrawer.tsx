@@ -6,12 +6,12 @@ import Button from '@material-ui/core/Button';
 import Drawer from '../../../../../../shared/ResourceManagement/Drawer';
 import ControlledButton from '../../../../../../shared/FormHandler/ControlledButton';
 import AccessControlSystemSummary from '../../../../../../shared/AccessControlSystemSummary';
-import RoleGuard from '../../../../../../shared/RoleGuard';
 
 import { useStyles } from '../../../../styles';
 import { useStyles as buttonStyles } from '../../../../../../shared/FormHandler/ControlledButton/styles';
 import { listGlobalStyles } from '../../../../../../../../assets/styles';
 import { GeneralModel, AccessControlSystemModel, UserModel } from '../../../../../../../models';
+import PermissionGuard from 'modules/views/shared/PermissionGuard';
 
 export interface IAccessControlSystemTabDrawer {
   accessControlSystem: AccessControlSystemModel.IAccessControlSystem;
@@ -45,10 +45,10 @@ const AccessControlSystemTabDrawer = ({ accessControlSystem, isLoading, isOpen, 
         render={() => (
           <>
             <AccessControlSystemSummary device={accessControlSystem} />
-            <RoleGuard roleList={[UserModel.Role.FCA_ADMIN]}>
-              <>
-                <Divider className={classes.drawerDivider} />
-                <div className={listClasses.ctaWrapper} style={{ padding: 0 }}>
+            <>
+              <Divider className={classes.drawerDivider} />
+              <div className={listClasses.ctaWrapper} style={{ padding: 0 }}>
+                <PermissionGuard permissionsExpression={UserModel.AccessControlSystemsPermission.MANAGE}>
                   <ControlledButton>
                     <Button
                       data-testid="acs-edition-modal-open-btn"
@@ -61,6 +61,9 @@ const AccessControlSystemTabDrawer = ({ accessControlSystem, isLoading, isOpen, 
                       Edit Assignment
                     </Button>
                   </ControlledButton>
+                </PermissionGuard>
+
+                <PermissionGuard permissionsExpression={UserModel.AccessControlSystemsPermission.MANAGE}>
                   <ControlledButton>
                     <Button
                       disableRipple={true}
@@ -72,9 +75,9 @@ const AccessControlSystemTabDrawer = ({ accessControlSystem, isLoading, isOpen, 
                       Unassign
                     </Button>
                   </ControlledButton>
-                </div>
-              </>
-            </RoleGuard>
+                </PermissionGuard>
+              </div>
+            </>
           </>
         )}
         onClose={onCloseDrawer}

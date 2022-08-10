@@ -11,7 +11,6 @@ import ClientDetail from './ClientDetail';
 import { statisticsState } from '../../../state-mgmt/statistics';
 
 export const mapStateToProps = (state: IRootState) => ({
-  userRole: state.auth.role,
   clientMap: state.client.clientMap,
   mwbeList: state.client.mwbeList,
   tradeList: state.client.tradeList,
@@ -19,6 +18,8 @@ export const mapStateToProps = (state: IRootState) => ({
   updateClientLoading: state.general.loadingMap[GENERAL.LOADING_KEY.UPDATE_CLIENT],
   clientLoading: state.general.loadingMap[GENERAL.LOADING_KEY.FETCH_CLIENT],
   statisticsLoading: state.general.loadingMap[GENERAL.LOADING_KEY.FETCH_CLIENT_DETAIL_STATISTICS],
+  isFcaUser: state.auth.isFcaUser,
+  isAdmin: state.auth.isAdmin,
 });
 
 export const mapDispatchToProps = (dispatch: Dispatch) => ({

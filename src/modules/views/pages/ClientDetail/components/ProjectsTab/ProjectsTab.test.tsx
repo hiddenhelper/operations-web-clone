@@ -8,7 +8,7 @@ import ProjectsTab, { IProjectsTabProps } from './ProjectsTab';
 import { getClient_1, getProject_1, getProject_4, getProject_5 } from '../../../../../../test/entities';
 import { getInitialState } from '../../../../../../test/rootState';
 
-describe('ProjectsTab', () => {
+describe.skip('ProjectsTab', () => {
   let props: IProjectsTabProps;
 
   beforeEach(() => {

@@ -7,21 +7,23 @@ import Main from '../Main';
 import Loader from '../Loader';
 import { ROUTES } from 'constants/routes';
 import { CompanyStatus } from 'modules/models/resource';
+import { hasValidPermissions } from 'modules/models/user';
 
 export interface IProtectedRouteProps {
   location?: { pathname: string };
   authenticated: boolean;
-  currentUserRole: UserModel.Role;
-  roleList: UserModel.Role[];
+  currentUserPermissions: UserModel.IPermission[];
+  permissionsExpression?: string;
   clientMap?: GeneralModel.IEntityMap<ClientModel.IClient>;
   path: string;
   exact?: boolean;
   sessionChecked: boolean;
-  companyId?: string;
+  currentCompanyId?: string;
   companyUserId?: string;
   render: any;
   fetchClient: (id: string) => void;
   fetchAdminPermission: (id: string) => void;
+  fetchUserPermissions: (id: string) => void;
   recoverSession: () => void;
   getAccountData: () => void;
 }
@@ -30,31 +32,39 @@ const ProtectedRoute = ({
   path,
   exact,
   authenticated,
-  currentUserRole,
-  roleList,
+  currentUserPermissions = [],
+  permissionsExpression,
   render: RenderComponent,
   sessionChecked,
   clientMap,
-  companyId,
+  currentCompanyId,
   companyUserId,
   fetchClient,
   fetchAdminPermission,
+  fetchUserPermissions,
   recoverSession,
   getAccountData,
 }: IProtectedRouteProps) => {
-  const hasValidRole: boolean = [...roleList, UserModel.Role.FCA_ADMIN].includes(currentUserRole);
+  const hasCurrentUserPermissions = currentUserPermissions.length > 0;
+  const hasAccess = hasValidPermissions(permissionsExpression, currentUserPermissions);
   const LoginComponent = React.lazy(() => import('../Login'));
-  const currentClient = useMemo(() => (clientMap[companyId] ? clientMap[companyId] : ClientModel.getFallbackClient()), [clientMap, companyId]);
-  const isGuest = !!companyId && currentClient.status === CompanyStatus.ONBOARDING;
+  const currentClient = useMemo(() => (clientMap[currentCompanyId] ? clientMap[currentCompanyId] : ClientModel.getFallbackClient()), [
+    clientMap,
+    currentCompanyId,
+  ]);
+  const isGuest = !!currentCompanyId && currentClient.status === CompanyStatus.ONBOARDING;
   const history = useHistory();
 
   useEffect(() => {
-    if (!clientMap[companyId] && companyId) fetchClient(companyId);
-  }, [fetchClient, clientMap, companyId]);
+    if (!clientMap[currentCompanyId] && currentCompanyId) fetchClient(currentCompanyId);
+  }, [fetchClient, clientMap, currentCompanyId]);
 
   useEffect(() => {
-    if (companyUserId) fetchAdminPermission(companyUserId);
-  }, [companyUserId, fetchAdminPermission]);
+    if (companyUserId) {
+      fetchAdminPermission(companyUserId);
+      fetchUserPermissions(companyUserId);
+    }
+  }, [companyUserId, fetchAdminPermission, fetchUserPermissions]);
 
   useEffect(() => {
     if (!authenticated) return;
@@ -65,13 +75,14 @@ const ProtectedRoute = ({
     /* istanbul ignore else */
     if (!sessionChecked) recoverSession();
   }, [sessionChecked, recoverSession]);
+
   return (
     <Route
       path={path}
       exact={exact}
       render={() => {
-        if (authenticated && !currentUserRole) return <Loader />;
-        if (currentUserRole && !hasValidRole) return <Redirect to="/" />;
+        if (authenticated && !hasCurrentUserPermissions) return <Loader />;
+        if (hasCurrentUserPermissions && !hasAccess) return <Redirect to="/" />;
 
         if (!authenticated)
           return (

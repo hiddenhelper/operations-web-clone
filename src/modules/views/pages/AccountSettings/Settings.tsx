@@ -17,6 +17,8 @@ export interface ISettingsProps {
   fileMap: GeneralModel.IEntityMap<GeneralModel.IEntityMap<FileModel.IFile>>;
   saveLoading: GeneralModel.ILoadingStatus;
   loadingMap: GeneralModel.IEntityMap<GeneralModel.ILoadingStatus>;
+  isFcaUser: boolean;
+  isAdmin: boolean;
   changePassword: (currentPassword, newPassword) => void;
   clearChangePasswordLoading: () => void;
   updateProfile: (data: UserModel.IAccount) => void;
@@ -44,6 +46,8 @@ const Settings = ({
   fileMap,
   saveLoading,
   loadingMap,
+  isFcaUser,
+  isAdmin,
   changePassword,
   clearChangePasswordLoading,
   updateProfile,
@@ -84,7 +88,8 @@ const Settings = ({
           {queryParams.filter === 'profile' && (
             <ProfileTab
               user={user}
-              userRole={userRole}
+              isFcaUser={isFcaUser}
+              isAdmin={isAdmin}
               accountData={accountData}
               fileMap={fileMap}
               saveLoading={saveLoading}

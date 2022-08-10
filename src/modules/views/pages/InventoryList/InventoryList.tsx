@@ -14,16 +14,25 @@ import { useQueryParamState } from '../../../../utils/useQueryParamState';
 import { getDefaultValue } from '../../../../utils/generalUtils';
 import { tableGlobalStyles, listGlobalStyles } from '../../../../assets/styles';
 import { useStyles } from './styles';
+import { hasValidPermissions } from 'modules/models/user';
 
 export interface IInventoryListProps {
   userRole: UserModel.Role;
   inventoryStatistics: StatisticsModel.IInventoryStatistics;
   statisticsLoading: GeneralModel.ILoadingStatus;
+  currentUserPermissions: UserModel.IPermission[];
   fetchInventoryStatistics: () => void;
   clearInventoryStatistics: () => void;
 }
 
-const InventoryList = ({ userRole, inventoryStatistics, statisticsLoading, fetchInventoryStatistics, clearInventoryStatistics }: IInventoryListProps) => {
+const InventoryList = ({
+  userRole,
+  inventoryStatistics,
+  statisticsLoading,
+  currentUserPermissions,
+  fetchInventoryStatistics,
+  clearInventoryStatistics,
+}: IInventoryListProps) => {
   const classes = useStyles();
   const tableGlobalClasses = tableGlobalStyles();
   const listClasses = listGlobalStyles();
@@ -34,7 +43,16 @@ const InventoryList = ({ userRole, inventoryStatistics, statisticsLoading, fetch
     deviceType: DeviceModel.DeviceType.ACCESS_CONTROL_SYSTEM,
   });
 
-  const filterList = useMemo(() => Object.values(InventoryModel.filterMap).filter(item => item.roleList.includes(userRole)), [userRole]);
+  const filterList = useMemo(
+    () =>
+      Object.values(InventoryModel.filterMap).filter(item => {
+        if (item.roleList) {
+          return item.roleList.includes(userRole);
+        }
+        return hasValidPermissions(item.permissionsExpression, currentUserPermissions);
+      }),
+    [userRole, currentUserPermissions]
+  );
 
   const [isDrawerOpen, setDrawer] = useState<boolean>(false);
 

@@ -5,7 +5,8 @@ import { statisticsState } from '../../../../state-mgmt/statistics';
 describe('ProjectsRevenueContainer', () => {
   it('should mapStateToProps', () => {
     expect(mapStateToProps(getInitialState())).toEqual({
-      userRole: getInitialState().auth.role,
+      isAdmin: getInitialState().auth.isAdmin,
+      isFcaUser: getInitialState().auth.isFcaUser,
       grossRevenueWidgetStatistics: getInitialState().statistics.grossRevenueWidgetStatistics,
       grossRevenueWidgetLoading: undefined,
     });

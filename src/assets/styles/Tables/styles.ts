@@ -129,10 +129,14 @@ export const tableGlobalStyles = makeStyles(theme =>
     },
     filterActionsContainerLeft: {
       display: 'flex',
+      marginBottom: '15px',
+      // width: '250px',
+      justifyContent: 'center',
     },
     filterActionsContainerPadding: {
       paddingTop: `${toREM(10)}`,
       paddingBottom: `${toREM(16)}`,
+      flexWrap: 'wrap',
     },
     filterStatusContainer: {
       width: 'auto',

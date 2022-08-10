@@ -5,9 +5,9 @@ import ClientDrawer from 'modules/views/shared/ClientDrawer';
 import EditTaxesModal from 'modules/views/shared/ClientDrawer/EditTaxesModal';
 import Modal from 'modules/views/shared/Modal';
 import Pagination from 'modules/views/shared/Pagination';
-import RoleGuard from 'modules/views/shared/RoleGuard';
 import StatusChip from 'modules/views/shared/StatusChip';
 import TableCellLink from 'modules/views/shared/TableCellLink';
+import PermissionGuard from 'modules/views/shared/PermissionGuard';
 
 import { GeneralModel, ClientModel, ProjectModel, UserModel } from 'modules/models';
 import { stateMap } from 'constants/index';
@@ -15,6 +15,7 @@ import { getTradesString } from 'utils/tradeUtils';
 import { useStyles as statusChipStyles } from '../../../../../../shared/StatusChip/styles';
 import { useStyles as modalStyles } from '../../../../../../shared/Modal/style';
 import { useStyles, tableRowStyles } from '../../../../styles';
+import { hasValidPermissions } from 'modules/models/user';
 
 const StyledTableRow = withStyles(tableRowStyles)(TableRow);
 
@@ -23,13 +24,13 @@ export interface IListViewProps {
   queryParams: GeneralModel.IQueryParams;
   clientMap: GeneralModel.IEntityMap<GeneralModel.IEntityMap<ClientModel.IClientProject>>;
   clientCount: number;
-  userRole: UserModel.Role;
   mwbeList: GeneralModel.INamedEntity[];
   clientLoading: GeneralModel.ILoadingStatus;
   assignClientLoading: GeneralModel.ILoadingStatus;
   projectClientSummaryLoading: GeneralModel.ILoadingStatus;
   taxConditionLoading: GeneralModel.ILoadingStatus;
   drawer: { open: boolean; id: string };
+  currentUserPermissions: UserModel.IPermission[];
   setDrawer: ({ open: boolean, id: string }) => void;
   closeModal: () => void;
   onPageChange: (page: number) => void;
@@ -37,6 +38,8 @@ export interface IListViewProps {
   fetchProjectClientSummary: (projectId: string, companyId: string) => void;
   updateTaxCondition: (projectId: string, taxCondition: ProjectModel.IClientTaxCondition) => void;
   fetchMwbe: () => void;
+  isFcaUser: boolean;
+  isAdmin: boolean;
 }
 
 const ListView = ({
@@ -44,13 +47,15 @@ const ListView = ({
   queryParams,
   clientMap,
   clientCount,
-  userRole,
   mwbeList,
   clientLoading,
   assignClientLoading,
   projectClientSummaryLoading,
   taxConditionLoading,
   drawer,
+  currentUserPermissions,
+  isFcaUser,
+  isAdmin,
   setDrawer,
   closeModal,
   onPageChange,
@@ -158,11 +163,16 @@ const ListView = ({
         </TableHead>
         <TableBody>
           {clientList.map(client => (
-            <StyledTableRow data-testid="client-list-row" key={client.id} onClick={() => onOpenDrawer(client.id)} className={classes.pointer}>
+            <StyledTableRow
+              data-testid="client-list-row"
+              key={client.id}
+              onClick={() => (hasValidPermissions(UserModel.ClientsPermission.VIEWACCESS, currentUserPermissions) ? onOpenDrawer(client.id) : '')}
+              className={classes.pointer}
+            >
               <TableCell data-testid="project-client-row">
-                <RoleGuard roleList={[UserModel.Role.FCA_ADMIN]} fallback={<>{client.name}</>}>
+                <PermissionGuard shouldbeFCAUser={true} permissionsExpression={UserModel.ClientsPermission.VIEWACCESS} fallback={<>{client.name}</>}>
                   <TableCellLink href={`/clients/detail/${client.id}`} text={client.name} title="View Client details" />
-                </RoleGuard>
+                </PermissionGuard>
               </TableCell>
               <TableCell>{ProjectModel.roleMap[client.role]}</TableCell>
               <TableCell>
@@ -186,32 +196,36 @@ const ListView = ({
         </TableBody>
       </Table>
       <Pagination page={queryParams.page} count={countClients} onChange={onPageChange} />
-      <ClientDrawer
-        isOpen={drawer?.open}
-        isLoading={projectClientSummaryLoading?.isLoading}
-        showTaxExempt={true}
-        showPrimaryButton={userRole === UserModel.Role.FCA_ADMIN}
-        showSecondaryButton={false}
-        buttonText="Edit Taxes"
-        buttonTestId="drawerEditTaxButton"
-        client={currentClient}
-        clientListElement={clientListRef.current}
-        mwbeList={mwbeList}
-        onClose={onCloseDrawer}
-        handleButtonClick={handleEditTaxButtonClick}
-      />
-      <Modal
-        show={showEditTaxModal}
-        styleClass={`${modalClasses.dialogContainer} ${modalClasses.deleteModal} ${classes.taxPopUpContainer}`}
-        render={() => (
-          <EditTaxesModal
-            taxCondition={currentClient.isTaxExempt}
-            loading={taxConditionLoading?.isLoading}
-            onCancel={closeTaxesModal}
-            onConfirm={handleEditTaxConfirm}
-          />
-        )}
-      />
+      <PermissionGuard permissionsExpression={UserModel.ClientsPermission.VIEWACCESS}>
+        <ClientDrawer
+          isOpen={drawer?.open}
+          isLoading={projectClientSummaryLoading?.isLoading}
+          showTaxExempt={true}
+          showPrimaryButton={isFcaUser && isAdmin}
+          showSecondaryButton={false}
+          buttonText="Edit Taxes"
+          buttonTestId="drawerEditTaxButton"
+          client={currentClient}
+          clientListElement={clientListRef.current}
+          mwbeList={mwbeList}
+          onClose={onCloseDrawer}
+          handleButtonClick={handleEditTaxButtonClick}
+        />
+      </PermissionGuard>
+      <PermissionGuard permissionsExpression={UserModel.ClientProjectsPermission.MANAGE}>
+        <Modal
+          show={showEditTaxModal}
+          styleClass={`${modalClasses.dialogContainer} ${modalClasses.deleteModal} ${classes.taxPopUpContainer}`}
+          render={() => (
+            <EditTaxesModal
+              taxCondition={currentClient.isTaxExempt}
+              loading={taxConditionLoading?.isLoading}
+              onCancel={closeTaxesModal}
+              onConfirm={handleEditTaxConfirm}
+            />
+          )}
+        />
+      </PermissionGuard>
     </>
   );
 };

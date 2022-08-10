@@ -5,8 +5,11 @@ export interface IState {
   sessionChecked: boolean;
   session: UserModel.IUser;
   role: UserModel.Role;
-  companyId: string;
+  isFcaUser: boolean;
   companyUserId: string;
+  companyWorkerId: string;
+  currentCompanyId: string;
+  isAdmin: boolean;
 }
 
 export const initialState: IState = {
@@ -14,6 +17,9 @@ export const initialState: IState = {
   sessionChecked: false,
   session: null,
   role: null,
-  companyId: null,
+  isFcaUser: false,
   companyUserId: undefined,
+  companyWorkerId: undefined,
+  currentCompanyId: undefined,
+  isAdmin: false,
 };

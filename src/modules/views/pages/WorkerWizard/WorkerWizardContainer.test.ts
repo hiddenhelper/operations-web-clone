@@ -12,18 +12,18 @@ describe('WorkerWizardContainer', () => {
     expect(mapStateToProps(getInitialState())).toEqual({
       workersMap: getInitialState().worker.workerMap,
       company: getInitialState().client.selfCompany,
-      userRole: getInitialState().auth.role,
       ethnicityList: getInitialState().worker.ethnicityList,
       languageList: getInitialState().worker.languageList,
       skilledTradeList: getInitialState().worker.skilledTradeList,
       identificationTypeList: getInitialState().worker.identificationTypeList,
       uiRelationMap: getInitialState().general.uiRelationMap,
-      currentUserRole: getInitialState().auth.role,
       loading: undefined,
       saveLoading: undefined,
       searchLoading: undefined,
       countryList: [],
       geographicLocationsList: getInitialState().worker.geographicLocationsList,
+      isFcaUser: getInitialState().auth.isFcaUser,
+      isAdmin: getInitialState().auth.isAdmin,
     });
   });
 

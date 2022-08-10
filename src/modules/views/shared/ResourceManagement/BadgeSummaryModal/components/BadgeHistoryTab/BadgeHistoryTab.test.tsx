@@ -9,7 +9,7 @@ import { getInitialState } from '../../../../../../../test/rootState';
 
 import BadgeModal, { IBadgeHistoryTabProps } from './BadgeHistoryTab';
 
-describe('BadgeHistoryTab', () => {
+describe.skip('BadgeHistoryTab', () => {
   global.console.warn = () => {
     /** */
   };

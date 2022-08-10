@@ -12,6 +12,7 @@ import ProjectList from './ProjectList';
 
 export const mapStateToProps = (state: IRootState) => ({
   userRole: state.auth.role,
+  isFcaUser: state.auth.isFcaUser,
   projectMap: state.project.projectMap,
   projectCount: state.project.count,
   projectStatistics: state.statistics.projectStatistics,
@@ -21,6 +22,7 @@ export const mapStateToProps = (state: IRootState) => ({
   deleteLoading: state.general.loadingMap[GENERAL.LOADING_KEY.DELETE_PROJECT],
   statisticsLoading: state.general.loadingMap[GENERAL.LOADING_KEY.FETCH_PROJECT_STATISTICS],
   currentFilter: state.project.currentFilter,
+  currentUserPermissions: state.auth.session?.permissions,
 });
 
 export const mapDispatchToProps = (dispatch: Dispatch) => ({

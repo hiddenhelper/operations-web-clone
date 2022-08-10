@@ -41,6 +41,8 @@ import CertificationsAndTrainings from '../ProjectWizardNew/components/Certifica
 import WorkerConsentForm from '../ProjectWizardNew/components/WorkerConsentForm';
 import Review from '../ProjectWizardNew/containers/Review';
 import StepEditor from './components/StepEditor';
+import { hasValidPermissions } from 'modules/models/user';
+import PermissionGuard from 'modules/views/shared/PermissionGuard';
 
 interface IQueryParams {
   page: number;
@@ -50,10 +52,12 @@ interface IQueryParams {
 
 export interface IProjectDetailProps {
   userRole: UserModel.Role;
+  isFcaUser: boolean;
   projectMap: GeneralModel.IEntityMap<ProjectNewModel.IProject>;
   categoryList: GeneralModel.INamedEntity[];
   regionList: GeneralModel.INamedEntity[];
   fcaNaeList: GeneralModel.INamedEntity[];
+  currentUserPermissions: UserModel.IPermission[];
   billingTierList: ProjectNewModel.IBillingTier[];
   certificationList: GeneralModel.INamedEntity[];
   timeZoneList: GeneralModel.INamedEntity[];
@@ -66,6 +70,7 @@ export interface IProjectDetailProps {
   updatePaymentMethodLoading: GeneralModel.ILoadingStatus;
   statisticsLoading: GeneralModel.ILoadingStatus;
   projectStatistics: StatisticsModel.IProjectDetailStatistics;
+  isAdmin: boolean;
   updateProject: (project: Partial<ProjectNewModel.IProject>) => void;
   fetchCategoryList: () => void;
   fetchRegionList: () => void;
@@ -90,6 +95,7 @@ export interface IProjectDetailProps {
 
 const ProjectDetail = ({
   userRole,
+  isFcaUser,
   projectMap,
   projectLoading,
   updateProjectLoading,
@@ -104,6 +110,8 @@ const ProjectDetail = ({
   consentFormFields,
   projectStatistics,
   statisticsLoading,
+  currentUserPermissions,
+  isAdmin,
   updateProject,
   fetchProject,
   clearProjectMap,
@@ -147,14 +155,9 @@ const ProjectDetail = ({
 
   const projectListRef = useRef();
 
-  const isFcAdmin = useMemo(() => userRole === UserModel.Role.FCA_ADMIN, [userRole]);
+  const isFcAdmin = useMemo(() => isFcaUser && isAdmin, [isFcaUser, isAdmin]);
 
   const projectId = useMemo(() => (/* istanbul ignore next */ isUUID(id) ? id : null), [id]);
-  const currentTab = useMemo(
-    () => getDefaultValue(step, getConditionalDefaultValue(isFcAdmin, ProjectNewModel.DetailTabType.CLIENTS, ProjectNewModel.DetailTabType.COMPANIES)),
-    [step, isFcAdmin]
-  );
-  const prevTab = useRef(currentTab);
 
   const currentProject = useMemo(() => (projectMap[projectId] ? projectMap[projectId] : ProjectNewModel.getFallbackProject()), [projectMap, projectId]);
   const isProjectLoaded = useMemo(() => !!(currentProject.id !== null && projectLoading && !projectLoading.isLoading && !projectLoading.hasError), [
@@ -162,7 +165,27 @@ const ProjectDetail = ({
     projectLoading,
   ]);
 
-  const tabList = useMemo(() => Object.values(ProjectNewModel.tabMap).filter(item => item.roleList.includes(userRole)), [userRole]);
+  const tabList = useMemo(
+    () =>
+      Object.values(ProjectNewModel.tabMap)
+        .filter(item => {
+          if (isFcaUser) {
+            return item.key === ProjectNewModel.DetailTabType.COMPANIES ? false : true;
+          } else {
+            return item.key === ProjectNewModel.DetailTabType.CLIENTS ? false : true;
+          }
+        })
+        .filter(item => {
+          return hasValidPermissions(item.permissionsExpression, currentUserPermissions);
+        }),
+    [isFcaUser, currentUserPermissions]
+  );
+
+  const currentTab = useMemo(() => {
+    return step ? step : tabList[0].key;
+  }, [step, tabList]);
+
+  const prevTab = useRef(currentTab);
 
   const { archiveTitle, archiveText, archiveButtonLabel, archiveCardTitle } = ResourceModel.statusProjectArchiveMap[
     getConditionalDefaultValue(currentProject.status === ResourceModel.Status.ARCHIVED, 1, 0)
@@ -516,7 +539,7 @@ const ProjectDetail = ({
                 editPayment={handleEditPayment}
                 selectedPaymentMethod={selectedPaymentMethod}
               />
-              {isFcAdmin && (
+              <PermissionGuard permissionsExpression={UserModel.ProjectsPermission.MANAGE}>
                 <Card title={archiveCardTitle} styleClass={projectFormClasses.boxShadow}>
                   <Button
                     color="primary"
@@ -528,7 +551,7 @@ const ProjectDetail = ({
                     {archiveButtonLabel}
                   </Button>
                 </Card>
-              )}
+              </PermissionGuard>
               <StepEditor
                 open={editDialogStep.isOpen}
                 step={editDialogStep.step}

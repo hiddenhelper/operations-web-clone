@@ -1,5 +1,4 @@
 import { IFormRules, ruleMap } from '../../utils/useValidator';
-import { UserModel } from '../../modules/models';
 import { requiredAddressRules } from './addressRules';
 
 export const fieldRules: IFormRules = {
@@ -156,22 +155,22 @@ export const trainingRules: IFormRules = {
   },
 };
 
-export const workerFieldRulesMap = {
-  [UserModel.Role.FCA_ADMIN]: {
-    ...fieldRules,
-  },
-  [UserModel.Role.CLIENT_ADMIN]: {
-    ...fieldRules,
-    company: {
-      required: false,
-      rules: [],
-    },
-  },
-  [UserModel.Role.REGULAR_USER]: {
-    ...fieldRules,
-    company: {
-      required: false,
-      rules: [],
-    },
-  },
+export const workerFieldRulesMap = (isFcaUser: boolean, isAdmin: boolean) => {
+  if (isFcaUser && isAdmin) {
+    return {
+      ...fieldRules,
+    };
+  }
+
+  if (!isFcaUser) {
+    return {
+      ...fieldRules,
+      company: {
+        required: false,
+        rules: [],
+      },
+    };
+  }
+
+  return {};
 };

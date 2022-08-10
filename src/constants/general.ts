@@ -206,6 +206,7 @@ export const GENERAL = {
     FETCH_SEARCH: 'fetchSearch',
     FETCH_SEARCH_MORE: 'fetchSearchMore',
     FETCH_ADMIN_PERMISSION: 'fetchAdminPermission',
+    FETCH_USER_PERMISSIONS: 'fetchUserPermissions',
   },
   TRACE_KEY: {
     SAVE_UPLOAD_WORKER_CERTIFICATION: 'saveUploadWorkerCertification',

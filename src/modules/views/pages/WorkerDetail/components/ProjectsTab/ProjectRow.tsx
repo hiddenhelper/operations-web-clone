@@ -6,7 +6,7 @@ import ControlledTooltip from 'modules/views/shared/ResourceManagement/Controlle
 import StatusChip from 'modules/views/shared/StatusChip';
 import TableCellLink from 'modules/views/shared/TableCellLink';
 
-import { BadgeModel, ProjectModel } from 'modules/models';
+import { BadgeModel, ProjectModel, UserModel } from 'modules/models';
 import {
   BadgeActive,
   BadgeDeactivated,
@@ -24,6 +24,7 @@ import { useStyles as statusChipStyles } from '../../../../../views/shared/Statu
 import { tableRowStyles } from '../../../../../../assets/styles/Tables/styles';
 import { listGlobalStyles } from '../../../../../../assets/styles';
 import { useStyles } from '../../styles';
+import PermissionGuard from 'modules/views/shared/PermissionGuard';
 
 export interface IProjectRowProps {
   project: ProjectModel.IWorkerProject;
@@ -83,12 +84,21 @@ const ProjectRow = ({ project, onOpenConsentForm, openBadgeModal, onClick }: IPr
     <StyledTableRow data-testid="project-list-row">
       <TableCell className={listClasses.listName}>
         {project.project?.id ? (
-          <TableCellLink
-            href={`/projects/detail/${project.project.id}`}
-            testId="project-list-row-open-button"
-            text={project.project.name}
-            title="View Project details"
-          />
+          <PermissionGuard
+            permissionsExpression={UserModel.ProjectsPermission.VIEWACCESS}
+            fallback={
+              <TableCell>
+                <span className={classes.projectRowFontColor}>{project.project.name}</span>
+              </TableCell>
+            }
+          >
+            <TableCellLink
+              href={`/projects/detail/${project.project.id}`}
+              testId="project-list-row-open-button"
+              text={project.project.name}
+              title="View Project details"
+            />
+          </PermissionGuard>
         ) : (
           '-'
         )}
@@ -110,13 +120,15 @@ const ProjectRow = ({ project, onOpenConsentForm, openBadgeModal, onClick }: IPr
       <TableCell>
         <div className={classes.projectRowLastCell}>
           <div className={classes.projectRowIconsWrapper}>
-            <ControlledButton>
-              <ControlledTooltip title={BadgeModel.badgeStatusMap[project.badgeStatus]} placement={'left-start'}>
-                <IconButton data-testid="open-badge-modal" onClick={onOpenBadgeModal} disableRipple={true} aria-label="badge-modal" color="default">
-                  {badgeStatusIcon[project.badgeStatus]}
-                </IconButton>
-              </ControlledTooltip>
-            </ControlledButton>
+            <PermissionGuard permissionsExpression={UserModel.BadgesPermission.VIEWACCESS}>
+              <ControlledButton>
+                <ControlledTooltip title={BadgeModel.badgeStatusMap[project.badgeStatus]} placement={'left-start'}>
+                  <IconButton data-testid="open-badge-modal" onClick={onOpenBadgeModal} disableRipple={true} aria-label="badge-modal" color="default">
+                    {badgeStatusIcon[project.badgeStatus]}
+                  </IconButton>
+                </ControlledTooltip>
+              </ControlledButton>
+            </PermissionGuard>
             <ControlledButton>
               <ControlledTooltip title={'Consent Form'} placement={'left-start'}>
                 <span>

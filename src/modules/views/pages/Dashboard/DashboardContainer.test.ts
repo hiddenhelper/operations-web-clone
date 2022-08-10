@@ -5,13 +5,15 @@ import { statisticsState } from '../../../state-mgmt/statistics';
 describe('DashboardContainer', () => {
   it('should mapStateToProps', () => {
     expect(mapStateToProps(getInitialState())).toEqual({
-      userRole: getInitialState().auth.role,
       newBadges: getInitialState().statistics.newBadges,
       grossRevenue: getInitialState().statistics.grossRevenue,
       workersActivity: getInitialState().statistics.workersActivity,
       newBadgesLoading: undefined,
       grossRevenueLoading: undefined,
       workersActivityLoading: undefined,
+      isFcaUser: getInitialState().auth.isFcaUser,
+      isAdmin: getInitialState().auth.isAdmin,
+      currentUserPermissions: getInitialState().auth.session?.permissions,
     });
   });
   it('should mapDispatchToProps', () => {

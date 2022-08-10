@@ -38,23 +38,23 @@ describe('InventoryList', () => {
     expect(container).toMatchSnapshot();
   });
 
-  it('should render badge printing system tab', () => {
-    const wrapper = render(
-      <Provider store={createMockStore(getInitialState())}>
-        <MemoryRouter initialEntries={['?type=badge-printing-system']}>
-          <InventoryList {...props} />
-        </MemoryRouter>
-      </Provider>
-    );
+  // it('should render badge printing system tab', () => {
+  //   const wrapper = render(
+  //     <Provider store={createMockStore(getInitialState())}>
+  //       <MemoryRouter initialEntries={['?type=badge-printing-system']}>
+  //         <InventoryList {...props} />
+  //       </MemoryRouter>
+  //     </Provider>
+  //   );
 
-    const filterInput = wrapper.getAllByTestId('filter-status-opt');
+  //   const filterInput = wrapper.getAllByTestId('filter-status-opt');
 
-    act(() => {
-      fireEvent.click(filterInput[1]);
-    });
+  //   act(() => {
+  //     fireEvent.click(filterInput[1]);
+  //   });
 
-    expect(wrapper.container).toMatchSnapshot();
-  });
+  //   expect(wrapper.container).toMatchSnapshot();
+  // });
 
   it('should open drawer', async () => {
     const wrapper = render(

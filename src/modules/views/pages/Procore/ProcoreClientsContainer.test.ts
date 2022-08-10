@@ -7,7 +7,8 @@ describe('ProcoreClientsContainer', () => {
     expect(mapStateToProps(getInitialState())).toEqual({
       clients: getInitialState().procore.clients,
       loading: undefined,
-      userRole: getInitialState().auth.role,
+      isFcaUser: getInitialState().auth.isFcaUser,
+      isAdmin: getInitialState().auth.isAdmin,
     });
   });
 

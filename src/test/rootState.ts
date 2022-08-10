@@ -41,15 +41,15 @@ export const getInitialState = (): IRootState => ({
 
 export const getAdminInitialState = (): IRootState => ({
   ...getInitialState(),
-  auth: { ...authState.initialState, role: UserModel.Role.FCA_ADMIN, companyId: 'company-id' },
+  auth: { ...authState.initialState, role: UserModel.Role.FCA_ADMIN, currentCompanyId: 'company-id' },
 });
 
 export const getClientAdminInitialState = (): IRootState => ({
   ...getInitialState(),
-  auth: { ...authState.initialState, role: UserModel.Role.CLIENT_ADMIN, companyId: 'company-id' },
+  auth: { ...authState.initialState, role: UserModel.Role.CLIENT_ADMIN, currentCompanyId: 'company-id' },
 });
 
 export const getRegularUserInitialState = (): IRootState => ({
   ...getInitialState(),
-  auth: { ...authState.initialState, role: UserModel.Role.REGULAR_USER, companyId: 'company-id' },
+  auth: { ...authState.initialState, role: UserModel.Role.REGULAR_USER, currentCompanyId: 'company-id' },
 });

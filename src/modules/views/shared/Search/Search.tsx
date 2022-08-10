@@ -6,7 +6,7 @@ import SearchFilters from './components/SearchFilters';
 import SearchInput from './components/SearchInput';
 import WorkerResult from './components/WorkerResult';
 
-import { GeneralModel, SearchModel, UserModel } from 'modules/models';
+import { GeneralModel, SearchModel } from 'modules/models';
 import { useDebounce } from 'utils/useDebounce';
 import { useHideScroll } from 'utils/useHideScroll';
 import { isEmpty } from 'utils/generalUtils';
@@ -23,10 +23,11 @@ export interface IProps {
   searchResults?: GeneralModel.IPagination<SearchModel.IResponse | SearchModel.IWorker>;
   triggerSearch: (search: SearchModel.ISearchParams) => void;
   triggerSearchMore: (search: SearchModel.ISearchParams) => void;
-  userRole: UserModel.Role;
+  isFcaUser: boolean;
+  isAdmin: boolean;
 }
 
-const Search = ({ clearSearch, loading, loadingMore, searchResults, triggerSearch, triggerSearchMore, userRole }: IProps) => {
+const Search = ({ clearSearch, loading, loadingMore, searchResults, triggerSearch, triggerSearchMore, isFcaUser, isAdmin }: IProps) => {
   // TODO: Remove this with a fix for the input styles
   // This is a workaround to keep styles import in order.
   // eslint-disable-next-line
@@ -51,9 +52,9 @@ const Search = ({ clearSearch, loading, loadingMore, searchResults, triggerSearc
   const searchFilters = useMemo(
     () =>
       SearchModel.searchFiltersConfig
-        .filter(filter => !filter.onlyAdmin || (filter.onlyAdmin && userRole === UserModel.Role.FCA_ADMIN))
+        .filter(filter => !filter.onlyAdmin || (filter.onlyAdmin && isFcaUser && isAdmin))
         .map(filter => ({ ...filter, onClick: () => handleFilterChange(filter.value) })),
-    [userRole]
+    [isFcaUser, isAdmin]
   );
 
   const [search, setSearch] = useState<string>();

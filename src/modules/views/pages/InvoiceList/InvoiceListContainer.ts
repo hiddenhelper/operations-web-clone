@@ -10,7 +10,6 @@ import { statisticsState } from '../../../state-mgmt/statistics';
 import InvoiceList from './InvoiceList';
 
 export const mapStateToProps = (state: IRootState) => ({
-  userRole: state.auth.role,
   invoiceMap: state.invoice.invoiceMap,
   invoiceStatistics: state.statistics.invoiceStatistics,
   saveInvoiceLoading: state.general.loadingMap[GENERAL.LOADING_KEY.SAVE_INVOICE],
@@ -18,6 +17,8 @@ export const mapStateToProps = (state: IRootState) => ({
   fetchInvoiceLoading: state.general.loadingMap[GENERAL.LOADING_KEY.FETCH_INVOICE],
   payInvoiceLoading: state.general.loadingMap[GENERAL.LOADING_KEY.PAY_INVOICE],
   invoiceStatisticsLoading: state.general.loadingMap[GENERAL.LOADING_KEY.FETCH_INVOICE_STATISTICS],
+  isFcaUser: state.auth.isFcaUser,
+  isAdmin: state.auth.isAdmin,
 });
 
 export const mapDispatchToProps = (dispatch: Dispatch) => ({

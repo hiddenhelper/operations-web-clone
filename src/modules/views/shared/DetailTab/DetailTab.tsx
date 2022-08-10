@@ -12,7 +12,8 @@ import Pagination from '../Pagination';
 
 import { tableGlobalStyles } from '../../../../assets/styles';
 import { useStyles as buttonStyles } from '../FormHandler/ControlledButton/styles';
-import { GeneralModel } from '../../../models';
+import { GeneralModel, UserModel } from '../../../models';
+import PermissionGuard from '../PermissionGuard';
 
 export interface IDetailTabProps {
   renderFilters: () => React.ReactNode;
@@ -63,6 +64,21 @@ const DetailTab = ({
   const list = useMemo(() => Object.values(entityMap), [entityMap]);
 
   const pageCount = useMemo(() => Math.ceil(count / queryParams.limit), [count, queryParams.limit]);
+  const permissionsExpression = () => {
+    if (buttonLabel === 'Add Certification') {
+      return UserModel.WorkerCertificationsPermission.MANAGE;
+    }
+
+    if (buttonLabel === 'Add Training') {
+      return UserModel.WorkerTrainingsPermission.MANAGE;
+    }
+
+    if (buttonLabel === 'Create Invoice') {
+      return UserModel.InvoicesPermission.MANAGE;
+    }
+
+    return '';
+  };
 
   useEffect(() => {
     fetchList(entityId, queryParams);
@@ -79,18 +95,20 @@ const DetailTab = ({
       <div className={`${tableGlobalClasses.filterActionsContainer} ${tableGlobalClasses.filterActionsContainerPadding}`}>
         <Box className={tableGlobalClasses.filterStatusContainer}>{renderFilters()}</Box>
         {showButton && (
-          <Button
-            className={`${buttonClasses.createButton} ${buttonClasses.primaryButtonLarge}`}
-            color="primary"
-            variant="contained"
-            fullWidth={true}
-            size="large"
-            data-testid={buttonTestId}
-            onClick={onButtonClick}
-            disabled={isDisabledButton}
-          >
-            {buttonLabel}
-          </Button>
+          <PermissionGuard permissionsExpression={permissionsExpression()}>
+            <Button
+              className={`${buttonClasses.createButton} ${buttonClasses.primaryButtonLarge}`}
+              color="primary"
+              variant="contained"
+              fullWidth={true}
+              size="large"
+              data-testid={buttonTestId}
+              onClick={onButtonClick}
+              disabled={isDisabledButton}
+            >
+              {buttonLabel}
+            </Button>
+          </PermissionGuard>
         )}
       </div>
       {renderCustomTable ? (

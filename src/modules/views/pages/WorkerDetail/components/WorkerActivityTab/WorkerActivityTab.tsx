@@ -9,11 +9,12 @@ import TableCellLink from 'modules/views/shared/TableCellLink';
 
 import WorkerProjectFilter from '../WorkerProjectFilter';
 
-import { WorkerModel, ProjectModel, GeneralModel } from 'modules/models';
+import { WorkerModel, ProjectModel, GeneralModel, UserModel } from 'modules/models';
 import { WorkersIcon } from 'constants/index';
 import { getDefaultValue } from 'utils';
 import { listTableRowStyles, tableGlobalStyles } from 'assets/styles';
 import { useStyles } from './styles';
+import PermissionGuard from 'modules/views/shared/PermissionGuard';
 
 export interface IWorkerActivityState {
   projectId: string;
@@ -101,7 +102,12 @@ const WorkerActivityTab = ({
                   <TableCell>{moment(activity.dateTime).format('MMM DD, YYYY, hh:mm A')}</TableCell>
                   <TableCell>
                     {activity?.project?.id ? (
-                      <TableCellLink href={`/projects/detail/${activity.project.id}`} text={activity.project.name} title="View Project detail" />
+                      <PermissionGuard
+                        permissionsExpression={UserModel.ProjectsPermission.VIEWACCESS}
+                        fallback={<TableCell>{activity.project.name}</TableCell>}
+                      >
+                        <TableCellLink href={`/projects/detail/${activity.project.id}`} text={activity.project.name} title="View Project detail" />
+                      </PermissionGuard>
                     ) : (
                       '-'
                     )}

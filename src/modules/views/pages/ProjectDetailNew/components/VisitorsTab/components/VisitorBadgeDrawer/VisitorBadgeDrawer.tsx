@@ -11,7 +11,7 @@ import Drawer from '../../../../../../shared/ResourceManagement/Drawer';
 import Modal from '../../../../../../shared/Modal';
 import Confirm from '../../../../../../shared/Modal/components/Confirm';
 
-import { BadgeModel, GeneralModel } from '../../../../../../../models';
+import { BadgeModel, GeneralModel, UserModel } from '../../../../../../../models';
 import { NotesIcon, CalendarIcon, EBadgeIcon, BadgeVip } from '../../../../../../../../constants';
 import { getDefaultValue, getFormattedDate, formatBadgeCode, getConditionalDefaultValue } from '../../../../../../../../utils/generalUtils';
 import { useStyles as modalStyles } from '../../../../../../shared/Modal/style';
@@ -19,6 +19,7 @@ import { useStyles as buttonStyles } from '../../../../../../shared/FormHandler/
 import { useStyles as drawerStyles } from '../../../../../../shared/ResourceManagement/Drawer/styles';
 import { listGlobalStyles } from '../../../../../../../../assets/styles';
 import { drawerBadgeStyles } from '../../../../styles';
+import PermissionGuard from 'modules/views/shared/PermissionGuard';
 
 export interface IVisitorBadgeDrawerProps {
   badgeVisitor: BadgeModel.IBadgeVisitor;
@@ -125,53 +126,59 @@ const VisitorBadgeDrawer = ({ isOpen, isLoading, updateLoading, badgeVisitor, he
             <Divider className={drawerClasses.drawerDivider} />
             <div className={listClasses.ctaWrapper}>
               {(badgeVisitor.availability === BadgeModel.VisitorAvailability.AVAILABLE || isPending) && (
-                <ControlledButton>
-                  <Button
-                    disableRipple={true}
-                    className={`${buttonClasses.drawerCTA} ${getConditionalDefaultValue(
-                      !isPending && !badgeVisitor.isSynchronizing,
-                      buttonClasses.borderPrimaryButton,
-                      ''
-                    )} ${getConditionalDefaultValue(!isPending && !badgeVisitor.isSynchronizing, buttonClasses.primaryButtonPadding, '')}`}
-                    variant="outlined"
-                    disabled={isPending || badgeVisitor.isSynchronizing}
-                    onClick={onOpenAssignHandler}
-                    data-testid="assign-badgevisitor-btn"
-                  >
-                    Assign Badge
-                  </Button>
-                </ControlledButton>
-              )}
-              {badgeVisitor.availability === BadgeModel.VisitorAvailability.ASSIGNED && (
-                <>
+                <PermissionGuard permissionsExpression={`${UserModel.VisitorsPermission.MANAGE} AND ${UserModel.BadgesPermission.MANAGE}`}>
                   <ControlledButton>
                     <Button
                       disableRipple={true}
                       className={`${buttonClasses.drawerCTA} ${getConditionalDefaultValue(
-                        !badgeVisitor.isSynchronizing,
+                        !isPending && !badgeVisitor.isSynchronizing,
                         buttonClasses.borderPrimaryButton,
                         ''
-                      )}`}
-                      disabled={badgeVisitor.isSynchronizing}
+                      )} ${getConditionalDefaultValue(!isPending && !badgeVisitor.isSynchronizing, buttonClasses.primaryButtonPadding, '')}`}
                       variant="outlined"
-                      data-testid="edit-badgevisitor-btn"
+                      disabled={isPending || badgeVisitor.isSynchronizing}
                       onClick={onOpenAssignHandler}
+                      data-testid="assign-badgevisitor-btn"
                     >
-                      Edit visitor
+                      Assign Badge
                     </Button>
                   </ControlledButton>
-                  <ControlledButton>
-                    <Button
-                      disableRipple={true}
-                      className={`${buttonClasses.drawerCTA} ${getConditionalDefaultValue(!badgeVisitor.isSynchronizing, buttonClasses.warningButton, '')}`}
-                      disabled={badgeVisitor.isSynchronizing}
-                      variant="outlined"
-                      data-testid="unassign-badgevisitor-btn"
-                      onClick={onUnassignHandler}
-                    >
-                      Unassign
-                    </Button>
-                  </ControlledButton>
+                </PermissionGuard>
+              )}
+              {badgeVisitor.availability === BadgeModel.VisitorAvailability.ASSIGNED && (
+                <>
+                  <PermissionGuard permissionsExpression={`${UserModel.VisitorsPermission.MANAGE} AND ${UserModel.BadgesPermission.MANAGE}`}>
+                    <ControlledButton>
+                      <Button
+                        disableRipple={true}
+                        className={`${buttonClasses.drawerCTA} ${getConditionalDefaultValue(
+                          !badgeVisitor.isSynchronizing,
+                          buttonClasses.borderPrimaryButton,
+                          ''
+                        )}`}
+                        disabled={badgeVisitor.isSynchronizing}
+                        variant="outlined"
+                        data-testid="edit-badgevisitor-btn"
+                        onClick={onOpenAssignHandler}
+                      >
+                        Edit visitor
+                      </Button>
+                    </ControlledButton>
+                  </PermissionGuard>
+                  <PermissionGuard permissionsExpression={`${UserModel.VisitorsPermission.MANAGE} AND ${UserModel.BadgesPermission.MANAGE}`}>
+                    <ControlledButton>
+                      <Button
+                        disableRipple={true}
+                        className={`${buttonClasses.drawerCTA} ${getConditionalDefaultValue(!badgeVisitor.isSynchronizing, buttonClasses.warningButton, '')}`}
+                        disabled={badgeVisitor.isSynchronizing}
+                        variant="outlined"
+                        data-testid="unassign-badgevisitor-btn"
+                        onClick={onUnassignHandler}
+                      >
+                        Unassign
+                      </Button>
+                    </ControlledButton>
+                  </PermissionGuard>
                 </>
               )}
             </div>

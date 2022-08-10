@@ -7,7 +7,6 @@ import Hidden from '@material-ui/core/Hidden';
 import { useTheme } from '@material-ui/core/styles';
 
 import LinkTab from '../LinkTab';
-import RoleGuard from '../RoleGuard';
 
 import {
   FCLogoIcon,
@@ -25,49 +24,45 @@ import {
 import { UserModel } from '../../../models';
 import { useStyles } from './styles';
 import { getConditionalDefaultValue, isEmpty } from '../../../../utils/generalUtils';
+import PermissionGuard from '../PermissionGuard';
+import { hasValidPermissions } from 'modules/models/user';
 
 export interface ISidebarProps {
   location: { pathname: string };
-  userRole: UserModel.Role;
   mobileOpen: boolean;
   handleDrawerToggle: () => void;
+  currentUserPermissions: UserModel.IPermission[];
 }
 
-const Sidebar = ({ userRole, location, mobileOpen, handleDrawerToggle }: ISidebarProps) => {
+const Sidebar = ({ location, mobileOpen, currentUserPermissions, handleDrawerToggle }: ISidebarProps) => {
   const styles = useStyles();
   const pathname = location.pathname.split('/')[1] || 'dashboard';
-  const getTabMap = useCallback((role: UserModel.Role) => {
-    const tabMap = {
-      [UserModel.Role.FCA_ADMIN]: {
-        dashboard: 0,
-        projects: 1,
-        clients: 2,
-        workers: 3,
-        invoices: 4,
-        inventory: 5,
-        reports: 6,
-        security: 7,
-        admin: 8,
-      },
-      [UserModel.Role.CLIENT_ADMIN]: {
-        dashboard: 0,
-        projects: 1,
-        workers: 2,
-        invoices: 3,
-        reports: 4,
-      },
-      [UserModel.Role.REGULAR_USER]: {
-        dashboard: 0,
-        projects: 1,
-        workers: 2,
-        invoices: 3,
-        reports: 4,
-      },
+  const getTabMap = useCallback(() => {
+    const hasPermission = permissionsExpression => hasValidPermissions(permissionsExpression, currentUserPermissions);
+    const permissionsTab = {
+      dashboard: 0,
+      projects: hasPermission(UserModel.ProjectsPermission.VIEWACCESS),
+      clients: hasPermission(UserModel.ClientsPermission.VIEWACCESS),
+      workers: hasPermission(UserModel.WorkersPermission.VIEWACCESS),
+      invoices: hasPermission(UserModel.InvoicesPermission.VIEWACCESS),
+      inventory: hasPermission(UserModel.StatisticsPermission.Inventory),
+      reports: hasPermission(''),
+      security: hasPermission(UserModel.AdminPermission.GENERAL),
+      admin: hasPermission(UserModel.AdminPermission.GENERAL),
     };
 
-    return tabMap[role];
-  }, []);
-  const indexTabMap = useMemo(() => getTabMap(userRole) as any, [userRole, getTabMap]);
+    const tabMap = {};
+    Object.keys(permissionsTab).forEach(key => {
+      if (key === 'dashboard') {
+        tabMap[key] = 0;
+      }
+      if (permissionsTab[key]) {
+        tabMap[key] = Object.keys(tabMap).length;
+      }
+    });
+    return tabMap;
+  }, [currentUserPermissions]);
+  const indexTabMap = useMemo(() => getTabMap() as any, [getTabMap]);
   const currentTab = useMemo(() => getConditionalDefaultValue(isEmpty(indexTabMap[pathname]), false, indexTabMap[pathname]), [indexTabMap, pathname]);
   const theme = useTheme();
 
@@ -84,7 +79,7 @@ const Sidebar = ({ userRole, location, mobileOpen, handleDrawerToggle }: ISideba
         data-testid="sidebar-wrapper"
         TabIndicatorProps={{
           style: {
-            display: getConditionalDefaultValue(currentTab === false, 'none', 'flex'),
+            display: currentTab > 0 ? 'flex' : 'none',
           },
         }}
       >
@@ -96,14 +91,16 @@ const Sidebar = ({ userRole, location, mobileOpen, handleDrawerToggle }: ISideba
           icon={<DashboardIcon />}
           index={0}
         />
-        <LinkTab
-          selectedValue={indexTabMap[pathname] === indexTabMap.projects}
-          label="Projects"
-          to={ROUTES.PROJECT_LIST.path}
-          icon={<ProjectsIcon />}
-          index={1}
-        />
-        <RoleGuard roleList={[UserModel.Role.FCA_ADMIN]}>
+        <PermissionGuard permissionsExpression={ROUTES.PROJECT_LIST.permissionsExpression}>
+          <LinkTab
+            selectedValue={indexTabMap[pathname] === indexTabMap.projects}
+            label="Projects"
+            to={ROUTES.PROJECT_LIST.path}
+            icon={<ProjectsIcon />}
+            index={1}
+          />
+        </PermissionGuard>
+        <PermissionGuard shouldbeFCAUser={true} permissionsExpression={ROUTES.CLIENT_LIST.permissionsExpression}>
           <LinkTab
             selectedValue={indexTabMap[pathname] === indexTabMap.clients}
             label="Clients"
@@ -111,8 +108,8 @@ const Sidebar = ({ userRole, location, mobileOpen, handleDrawerToggle }: ISideba
             icon={<ClientsIcon />}
             index={2}
           />
-        </RoleGuard>
-        <RoleGuard roleList={[UserModel.Role.FCA_ADMIN, UserModel.Role.CLIENT_ADMIN, UserModel.Role.REGULAR_USER]}>
+        </PermissionGuard>
+        <PermissionGuard permissionsExpression={ROUTES.WORKER_LIST.permissionsExpression}>
           <LinkTab
             selectedValue={indexTabMap[pathname] === indexTabMap.workers}
             label="Workers"
@@ -120,8 +117,8 @@ const Sidebar = ({ userRole, location, mobileOpen, handleDrawerToggle }: ISideba
             icon={<WorkersIcon />}
             index={3}
           />
-        </RoleGuard>
-        <RoleGuard roleList={[UserModel.Role.FCA_ADMIN, UserModel.Role.CLIENT_ADMIN, UserModel.Role.REGULAR_USER]}>
+        </PermissionGuard>
+        <PermissionGuard permissionsExpression={ROUTES.INVOICE_LIST.permissionsExpression}>
           <LinkTab
             selectedValue={indexTabMap[pathname] === indexTabMap.invoices}
             label="Invoices"
@@ -129,8 +126,8 @@ const Sidebar = ({ userRole, location, mobileOpen, handleDrawerToggle }: ISideba
             icon={<InvoiceIcon />}
             index={4}
           />
-        </RoleGuard>
-        <RoleGuard roleList={[UserModel.Role.FCA_ADMIN]}>
+        </PermissionGuard>
+        <PermissionGuard permissionsExpression={ROUTES.INVENTORY_LIST.permissionsExpression}>
           <LinkTab
             selectedValue={indexTabMap[pathname] === indexTabMap.inventory}
             label="Inventory"
@@ -138,11 +135,11 @@ const Sidebar = ({ userRole, location, mobileOpen, handleDrawerToggle }: ISideba
             icon={<InventoryIcon />}
             index={5}
           />
-        </RoleGuard>
-        <RoleGuard roleList={[UserModel.Role.FCA_ADMIN, UserModel.Role.CLIENT_ADMIN, UserModel.Role.REGULAR_USER]}>
+        </PermissionGuard>
+        <PermissionGuard permissionsExpression={ROUTES.REPORTS.permissionsExpression}>
           <LinkTab selectedValue={indexTabMap[pathname] === indexTabMap.reports} label="Reports" to={ROUTES.REPORTS.path} icon={<ReportIcon />} index={6} />
-        </RoleGuard>
-        <RoleGuard roleList={[UserModel.Role.FCA_ADMIN]}>
+        </PermissionGuard>
+        <PermissionGuard permissionsExpression={ROUTES.SECURITY.permissionsExpression}>
           <LinkTab
             selectedValue={indexTabMap[pathname] === indexTabMap.security}
             label="Security"
@@ -150,12 +147,12 @@ const Sidebar = ({ userRole, location, mobileOpen, handleDrawerToggle }: ISideba
             icon={<SecurityIcon />}
             index={7}
           />
-        </RoleGuard>
-        <RoleGuard roleList={[UserModel.Role.FCA_ADMIN]}>
+        </PermissionGuard>
+        <PermissionGuard permissionsExpression={ROUTES.ADMIN.permissionsExpression}>
           <Box style={{ marginTop: 'auto' }}>
             <LinkTab selectedValue={indexTabMap[pathname] === indexTabMap.admin} label="Admin" to={ROUTES.ADMIN.path} icon={<SettingsFullIcon />} index={8} />
           </Box>
-        </RoleGuard>
+        </PermissionGuard>
       </Tabs>
     </div>
   );

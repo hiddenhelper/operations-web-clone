@@ -54,10 +54,10 @@ export const accountRules: IFormRules = {
   },
 };
 
-export const getAccountRules = (role: UserModel.Role) => ({
+export const getAccountRules = (isFcaUser: boolean, isAdmin: boolean) => ({
   ...accountRules,
   mobilePhoneNumber: {
-    required: role !== UserModel.Role.FCA_ADMIN,
+    required: !(isFcaUser && isAdmin),
     rules: [],
   },
 });
@@ -95,11 +95,11 @@ export const accountDataInitValues = {
   lastName: '',
 };
 
-export const getAccountInitialData = (role: UserModel.Role) => ({
+export const getAccountInitialData = (isFcaUser: boolean, isAdmin: boolean) => ({
   firstName: '',
   lastName: '',
-  mobilePhoneNumber: role === UserModel.Role.FCA_ADMIN ? '' : undefined,
-  officePhoneNumber: role === UserModel.Role.FCA_ADMIN ? '' : undefined,
-  officePhoneExtension: role === UserModel.Role.FCA_ADMIN ? '' : undefined,
-  preferredContactMethod: role === UserModel.Role.FCA_ADMIN ? UserModel.PreferredContactMethod.EMAIL : undefined,
+  mobilePhoneNumber: isFcaUser && isAdmin ? '' : undefined,
+  officePhoneNumber: isFcaUser && isAdmin ? '' : undefined,
+  officePhoneExtension: isFcaUser && isAdmin ? '' : undefined,
+  preferredContactMethod: isFcaUser && isAdmin ? UserModel.PreferredContactMethod.EMAIL : undefined,
 });

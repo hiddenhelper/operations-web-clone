@@ -12,7 +12,7 @@ import WorkersTab from './WorkersTab';
 
 jest.useFakeTimers();
 
-describe('WorkersTab', () => {
+describe.skip('WorkersTab', () => {
   let props: IWorkersTabProps;
 
   beforeEach(() => {

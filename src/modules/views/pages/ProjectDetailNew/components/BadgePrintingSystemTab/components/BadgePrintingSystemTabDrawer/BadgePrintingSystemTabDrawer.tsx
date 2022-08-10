@@ -9,7 +9,7 @@ import Drawer from '../../../../../../shared/ResourceManagement/Drawer';
 import ControlledButton from '../../../../../../shared/FormHandler/ControlledButton';
 import ControlledDatePicker from '../../../../../../shared/FormHandler/ControlledDatePicker';
 import BadgePrintingSystemSummary from '../../../../../../shared/BadgePrintingSystemSummary';
-import RoleGuard from '../../../../../../shared/RoleGuard';
+import PermissionGuard from '../../../../../../shared/PermissionGuard';
 
 import { GeneralModel, BadgePrintingSystemModel, UserModel } from '../../../../../../../models';
 import { getDefaultValue } from '../../../../../../../../utils/generalUtils';
@@ -79,10 +79,10 @@ const BadgePrintingSystemTabDrawer = ({
         render={() => (
           <>
             <BadgePrintingSystemSummary device={badgePrintingSystem} />
-            <RoleGuard roleList={[UserModel.Role.FCA_ADMIN]}>
-              <>
-                <Divider className={classes.drawerDivider} />
-                <div className={listClasses.ctaWrapper}>
+            <>
+              <Divider className={classes.drawerDivider} />
+              <div className={listClasses.ctaWrapper}>
+                <PermissionGuard permissionsExpression={UserModel.BadgePrintingSystemsPermission.MANAGE}>
                   <ControlledButton>
                     <Button
                       data-testid="bps-edition-modal-open-btn"
@@ -94,6 +94,8 @@ const BadgePrintingSystemTabDrawer = ({
                       Edit Date
                     </Button>
                   </ControlledButton>
+                </PermissionGuard>
+                <PermissionGuard permissionsExpression={UserModel.BadgePrintingSystemsPermission.MANAGE}>
                   <ControlledButton>
                     <Button
                       disableRipple={true}
@@ -105,9 +107,9 @@ const BadgePrintingSystemTabDrawer = ({
                       Unassign
                     </Button>
                   </ControlledButton>
-                </div>
-              </>
-            </RoleGuard>
+                </PermissionGuard>
+              </div>
+            </>
           </>
         )}
         onClose={onCloseDrawer}

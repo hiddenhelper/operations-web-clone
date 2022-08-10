@@ -15,6 +15,7 @@ export const mapStateToProps = (state: IRootState) => ({
   userCount: state.user.count,
   userLoading: state.general.loadingMap[GENERAL.LOADING_KEY.FETCH_PROJECT_USER_LIST],
   assignUserLoading: state.general.loadingMap[GENERAL.LOADING_KEY.ASSIGN_USER_PROJECT],
+  isFcaUser: state.auth.isFcaUser,
 });
 
 export const mapDispatchToProps = (dispatch: Dispatch) => ({

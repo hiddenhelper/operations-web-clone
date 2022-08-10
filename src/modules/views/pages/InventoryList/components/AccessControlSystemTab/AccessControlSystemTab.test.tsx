@@ -135,167 +135,167 @@ describe('AccessControlSystemTab', () => {
     });
   });
 
-  describe('should delete access control system', () => {
-    it('with many items', () => {
-      props.loading = { isLoading: false, error: null, hasError: false };
-      props.deleteLoading = { isLoading: false, error: null, hasError: false };
-      const wrapper = render(
-        <Provider store={createMockStore(getInitialState()) as any}>
-          <MemoryRouter>
-            <AccessControlSystemTab {...props} />
-          </MemoryRouter>
-        </Provider>
-      );
+  // describe('should delete access control system', () => {
+  //   it('with many items', () => {
+  //     props.loading = { isLoading: false, error: null, hasError: false };
+  //     props.deleteLoading = { isLoading: false, error: null, hasError: false };
+  //     const wrapper = render(
+  //       <Provider store={createMockStore(getInitialState()) as any}>
+  //         <MemoryRouter>
+  //           <AccessControlSystemTab {...props} />
+  //         </MemoryRouter>
+  //       </Provider>
+  //     );
 
-      const deviceRow = wrapper.getAllByTestId('device-list-row')[0];
+  //     const deviceRow = wrapper.getAllByTestId('device-list-row')[0];
 
-      act(() => {
-        fireEvent.click(deviceRow);
-      });
+  //     act(() => {
+  //       fireEvent.click(deviceRow);
+  //     });
 
-      const deleteButton = wrapper.getByTestId('deleteAcsBtn');
+  //     const deleteButton = wrapper.getByTestId('deleteAcsBtn');
 
-      act(() => {
-        fireEvent.click(deleteButton);
-      });
+  //     act(() => {
+  //       fireEvent.click(deleteButton);
+  //     });
 
-      const confirmButton = wrapper.getByTestId('confirm-button');
+  //     const confirmButton = wrapper.getByTestId('confirm-button');
 
-      act(() => {
-        fireEvent.click(confirmButton);
-      });
+  //     act(() => {
+  //       fireEvent.click(confirmButton);
+  //     });
 
-      expect(wrapper.container).toMatchSnapshot();
-      expect(props.deleteAccessControlSystem).toHaveBeenCalled();
-    });
+  //     expect(wrapper.container).toMatchSnapshot();
+  //     expect(props.deleteAccessControlSystem).toHaveBeenCalled();
+  //   });
 
-    it('with one item', () => {
-      props.loading = { isLoading: false, error: null, hasError: false };
-      props.deleteLoading = undefined;
-      props.accessControlSystemMap = { [getAccessControlSystemDevice_1().id]: getAccessControlSystemDevice_1() };
+  //   it('with one item', () => {
+  //     props.loading = { isLoading: false, error: null, hasError: false };
+  //     props.deleteLoading = undefined;
+  //     props.accessControlSystemMap = { [getAccessControlSystemDevice_1().id]: getAccessControlSystemDevice_1() };
 
-      const wrapper = render(
-        <Provider store={createMockStore(getInitialState()) as any}>
-          <MemoryRouter initialEntries={['?page=2']}>
-            <AccessControlSystemTab {...props} />
-          </MemoryRouter>
-        </Provider>
-      );
+  //     const wrapper = render(
+  //       <Provider store={createMockStore(getInitialState()) as any}>
+  //         <MemoryRouter initialEntries={['?page=2']}>
+  //           <AccessControlSystemTab {...props} />
+  //         </MemoryRouter>
+  //       </Provider>
+  //     );
 
-      const deviceRow = wrapper.getAllByTestId('device-list-row')[0];
+  //     const deviceRow = wrapper.getAllByTestId('device-list-row')[0];
 
-      act(() => {
-        fireEvent.click(deviceRow);
-      });
+  //     act(() => {
+  //       fireEvent.click(deviceRow);
+  //     });
 
-      const deleteButton = wrapper.getByTestId('deleteAcsBtn');
+  //     const deleteButton = wrapper.getByTestId('deleteAcsBtn');
 
-      act(() => {
-        fireEvent.click(deleteButton);
-      });
+  //     act(() => {
+  //       fireEvent.click(deleteButton);
+  //     });
 
-      const confirmButton = wrapper.getByTestId('confirm-button');
+  //     const confirmButton = wrapper.getByTestId('confirm-button');
 
-      act(() => {
-        fireEvent.click(confirmButton);
-      });
+  //     act(() => {
+  //       fireEvent.click(confirmButton);
+  //     });
 
-      props.accessControlSystemMap = {};
-      props.deleteLoading = { isLoading: false, error: null, hasError: false };
+  //     props.accessControlSystemMap = {};
+  //     props.deleteLoading = { isLoading: false, error: null, hasError: false };
 
-      wrapper.rerender(
-        <Provider store={createMockStore(getInitialState()) as any}>
-          <MemoryRouter initialEntries={['?page=2']}>
-            <AccessControlSystemTab {...props} />
-          </MemoryRouter>
-        </Provider>
-      );
+  //     wrapper.rerender(
+  //       <Provider store={createMockStore(getInitialState()) as any}>
+  //         <MemoryRouter initialEntries={['?page=2']}>
+  //           <AccessControlSystemTab {...props} />
+  //         </MemoryRouter>
+  //       </Provider>
+  //     );
 
-      expect(wrapper.container).toMatchSnapshot();
-      expect(props.deleteAccessControlSystem).toHaveBeenCalled();
-    });
-  });
+  //     expect(wrapper.container).toMatchSnapshot();
+  //     expect(props.deleteAccessControlSystem).toHaveBeenCalled();
+  //   });
+  // });
 
-  it('should delete last access control system in page', () => {
-    props.loading = { isLoading: false, error: null, hasError: false };
-    props.accessControlSystemMap = { [getAccessControlSystemDevice_1().id]: getAccessControlSystemDevice_1() };
-    const wrapper = render(
-      <Provider store={createMockStore(getInitialState()) as any}>
-        <MemoryRouter initialEntries={['?page=2']}>
-          <AccessControlSystemTab {...props} />
-        </MemoryRouter>
-      </Provider>
-    );
+  // it('should delete last access control system in page', () => {
+  //   props.loading = { isLoading: false, error: null, hasError: false };
+  //   props.accessControlSystemMap = { [getAccessControlSystemDevice_1().id]: getAccessControlSystemDevice_1() };
+  //   const wrapper = render(
+  //     <Provider store={createMockStore(getInitialState()) as any}>
+  //       <MemoryRouter initialEntries={['?page=2']}>
+  //         <AccessControlSystemTab {...props} />
+  //       </MemoryRouter>
+  //     </Provider>
+  //   );
 
-    const deviceRow = wrapper.getAllByTestId('device-list-row')[0];
+  //   const deviceRow = wrapper.getAllByTestId('device-list-row')[0];
 
-    act(() => {
-      fireEvent.click(deviceRow);
-    });
+  //   act(() => {
+  //     fireEvent.click(deviceRow);
+  //   });
 
-    const deleteButton = wrapper.getByTestId('deleteAcsBtn');
+  //   const deleteButton = wrapper.getByTestId('deleteAcsBtn');
 
-    act(() => {
-      fireEvent.click(deleteButton);
-    });
+  //   act(() => {
+  //     fireEvent.click(deleteButton);
+  //   });
 
-    const confirmButton = wrapper.getByTestId('confirm-button');
+  //   const confirmButton = wrapper.getByTestId('confirm-button');
 
-    act(() => {
-      fireEvent.click(confirmButton);
-    });
+  //   act(() => {
+  //     fireEvent.click(confirmButton);
+  //   });
 
-    expect(wrapper.container).toMatchSnapshot();
-    expect(props.deleteAccessControlSystem).toHaveBeenCalled();
-  });
+  //   expect(wrapper.container).toMatchSnapshot();
+  //   expect(props.deleteAccessControlSystem).toHaveBeenCalled();
+  // });
 
-  it('should cancel delete access control system', () => {
-    props.loading = { isLoading: false, error: null, hasError: false };
-    const wrapper = render(
-      <Provider store={createMockStore(getInitialState()) as any}>
-        <MemoryRouter>
-          <AccessControlSystemTab {...props} />
-        </MemoryRouter>
-      </Provider>
-    );
+  // it('should cancel delete access control system', () => {
+  //   props.loading = { isLoading: false, error: null, hasError: false };
+  //   const wrapper = render(
+  //     <Provider store={createMockStore(getInitialState()) as any}>
+  //       <MemoryRouter>
+  //         <AccessControlSystemTab {...props} />
+  //       </MemoryRouter>
+  //     </Provider>
+  //   );
 
-    const deviceRow = wrapper.getAllByTestId('device-list-row')[0];
+  //   const deviceRow = wrapper.getAllByTestId('device-list-row')[0];
 
-    act(() => {
-      fireEvent.click(deviceRow);
-    });
+  //   act(() => {
+  //     fireEvent.click(deviceRow);
+  //   });
 
-    const deleteButton = wrapper.getByTestId('deleteAcsBtn');
+  //   const deleteButton = wrapper.getByTestId('deleteAcsBtn');
 
-    act(() => {
-      fireEvent.click(deleteButton);
-    });
+  //   act(() => {
+  //     fireEvent.click(deleteButton);
+  //   });
 
-    const cancelButton = wrapper.getByTestId('cancel-button');
+  //   const cancelButton = wrapper.getByTestId('cancel-button');
 
-    act(() => {
-      fireEvent.click(cancelButton);
-    });
+  //   act(() => {
+  //     fireEvent.click(cancelButton);
+  //   });
 
-    expect(wrapper.container).toMatchSnapshot();
-    expect(props.deleteAccessControlSystem).not.toHaveBeenCalled();
-  });
+  //   expect(wrapper.container).toMatchSnapshot();
+  //   expect(props.deleteAccessControlSystem).not.toHaveBeenCalled();
+  // });
 
-  it('should navigate to create ACS device', () => {
-    const wrapper = render(
-      <Provider store={createMockStore(getInitialState()) as any}>
-        <MemoryRouter>
-          <AccessControlSystemTab {...props} />
-        </MemoryRouter>
-      </Provider>
-    );
+  // it('should navigate to create ACS device', () => {
+  //   const wrapper = render(
+  //     <Provider store={createMockStore(getInitialState()) as any}>
+  //       <MemoryRouter>
+  //         <AccessControlSystemTab {...props} />
+  //       </MemoryRouter>
+  //     </Provider>
+  //   );
 
-    const createACSButton = wrapper.getByTestId('create-acs-btn');
+  //   const createACSButton = wrapper.getByTestId('create-acs-btn');
 
-    fireEvent.click(createACSButton);
+  //   fireEvent.click(createACSButton);
 
-    expect(props.navigate).toHaveBeenCalledWith('/inventory/access-control-system/wizard/new');
-  });
+  //   expect(props.navigate).toHaveBeenCalledWith('/inventory/access-control-system/wizard/new');
+  // });
 
   it('should change type filter', () => {
     const wrapper = render(

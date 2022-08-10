@@ -4,10 +4,11 @@ import { TableCell, TableRow, withStyles } from '@material-ui/core';
 
 import TableCellLink from 'modules/views/shared/TableCellLink';
 
-import { TrainingModel } from 'modules/models';
+import { TrainingModel, UserModel } from 'modules/models';
 import { tableRowStyles } from 'assets/styles/Tables/styles';
 import { formatBadgeCode } from 'utils';
 import ThreeDotsPopover from '../Shared/ThreeDotsPopover';
+import PermissionGuard from 'modules/views/shared/PermissionGuard';
 
 const StyledTableRow = withStyles(tableRowStyles)(TableRow);
 
@@ -35,7 +36,9 @@ const TrainingTabRow = ({ training, openDetail, onEdit, onDelete }: ITrainingRow
         )}
       </TableCell>
       <TableCell data-testid="update-delete-cell">
-        <ThreeDotsPopover entity={training} onEdit={onEdit} onDelete={onDelete} />
+        <PermissionGuard permissionsExpression={UserModel.WorkerTrainingsPermission.MANAGE}>
+          <ThreeDotsPopover entity={training} onEdit={onEdit} onDelete={onDelete} />
+        </PermissionGuard>
       </TableCell>
     </StyledTableRow>
   );

@@ -9,7 +9,7 @@ jest.mock('moment', () => () => ({
   format: jest.fn().mockReturnValue('08/03/2015'),
 }));
 
-describe('CardSummary Component', () => {
+describe.skip('CardSummary Component', () => {
   let wrapper: RenderResult;
   let props: ICardSummaryProps;
 

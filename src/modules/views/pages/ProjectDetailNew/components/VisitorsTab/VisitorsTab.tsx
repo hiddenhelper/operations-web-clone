@@ -22,13 +22,15 @@ import VisitorBadgeModal from './components/VisitorBadgeModal';
 import VisitorBadgeDrawer from './components/VisitorBadgeDrawer';
 import AssignVisitorBadgeModal from './components/AssignVisitorBadgeModal';
 import VisitorRow from './VisitorRow';
-import { BadgeModel, GeneralModel, ProjectModel } from '../../../../../models';
+import { BadgeModel, GeneralModel, ProjectModel, UserModel } from '../../../../../models';
 import { EBadgeIcon } from '../../../../../../constants';
 import { noop, getDefaultValue } from '../../../../../../utils/generalUtils';
 import { useStyles as useButtonStyles } from '../../../../shared/FormHandler/ControlledButton/styles';
 import { tableGlobalStyles } from '../../../../../../assets/styles';
 import { useStyles as modalStyles } from '../../../../shared/Modal/style';
 import { useStyles } from '../../styles';
+import PermissionGuard from 'modules/views/shared/PermissionGuard';
+import { hasValidPermissions } from 'modules/models/user';
 
 export interface IVisitorsTabProps {
   projectId: string;
@@ -45,6 +47,7 @@ export interface IVisitorsTabProps {
   updateLoading: GeneralModel.ILoadingStatus;
   updateBadgeDataLoading: GeneralModel.ILoadingStatus;
   badgeVisitorEntityLoading: GeneralModel.ILoadingStatus;
+  currentUserPermissions: UserModel.IPermission[];
   setDrawer: ({ open: boolean, id: string }) => void;
   onPageChange: (page: number) => void;
   unassignBadgeVisitor: (id: string, badgeVisitor: BadgeModel.IBadgeVisitor) => void;
@@ -71,6 +74,7 @@ const VisitorsTab = ({
   updateLoading,
   updateBadgeDataLoading,
   badgeVisitorEntityLoading,
+  currentUserPermissions,
   setDrawer,
   onPageChange,
   saveBadgeVisitor,
@@ -91,7 +95,10 @@ const VisitorsTab = ({
   const [isCreateModalOpen, setCreateModal] = useState<boolean>(false);
   const [badgeNumber, setBadgeNumber] = useState<number>(0);
 
-  const isConfirmDisabled = useMemo(() => badgeNumber === 0 || badgeNumber > 50, [badgeNumber]);
+  const isConfirmDisabled = useMemo(
+    () => badgeNumber === 0 || (badgeNumber > 50 && !hasValidPermissions(UserModel.BadgesPermission.MANAGE, currentUserPermissions)),
+    [badgeNumber, currentUserPermissions]
+  );
   const projectListHeight = (projectListElement as any)?.offsetHeight;
 
   const visitorBadgeList = useMemo(() => (currentProject.id && Object.keys(visitorMap).length ? Object.values(visitorMap[currentProject.id]) : []), [
@@ -172,14 +179,14 @@ const VisitorsTab = ({
 
   useEffect(() => {
     /* istanbul ignore else */
-    fetchBadgeVisitorEntityList(currentProject.id);
+    if (hasValidPermissions(UserModel.BadgesPermission.VIEWACCESS, currentUserPermissions)) fetchBadgeVisitorEntityList(currentProject.id);
     fetchProjectBadgeVisitorList(currentProject.id, queryParams);
-  }, [currentProject.id, queryParams, fetchProjectBadgeVisitorList, fetchBadgeVisitorEntityList]);
+  }, [currentProject.id, queryParams, currentUserPermissions, fetchProjectBadgeVisitorList, fetchBadgeVisitorEntityList]);
 
   useEffect(() => {
     /* istanbul ignore else */
     if (updateLoading && !updateLoading.isLoading && !updateLoading.hasError) {
-      fetchBadgeVisitorEntityList(currentProject.id);
+      if (hasValidPermissions(UserModel.BadgesPermission.VIEWACCESS, currentUserPermissions)) fetchBadgeVisitorEntityList(currentProject.id);
       fetchProjectBadgeVisitorList(currentProject.id, queryParams);
       onCloseDrawer();
       closeModal();
@@ -189,6 +196,7 @@ const VisitorsTab = ({
     updateLoading,
     currentProject.id,
     queryParams,
+    currentUserPermissions,
     closeAssignVisitorBadgeModal,
     closeModal,
     onCloseDrawer,
@@ -217,15 +225,17 @@ const VisitorsTab = ({
   return (
     <>
       <div>
-        <div className={`${tableGlobalClasses.filterActionsContainer} ${tableGlobalClasses.filterActionsContainerPadding}`}>
+        <div className={`${tableGlobalClasses.filterActionsContainer} ${tableGlobalClasses.filterActionsContainerPadding} ${classes.createBadgeWrapper}`}>
           <Box className={`${tableGlobalClasses.filterStatusContainer} ${tableGlobalClasses.autocompleteFilterStatus}`}>
-            <SelectFilter
-              value={getDefaultValue(BadgeModel.visitorEntityMap[queryParams.entity], 'All Entities')}
-              optionList={entityFilterOptionList}
-              onChange={onFilterEntityChange}
-            />
+            <div className={`${classes.buttonSpacer}`}>
+              <SelectFilter
+                value={getDefaultValue(BadgeModel.visitorEntityMap[queryParams.entity], 'All Entities')}
+                optionList={entityFilterOptionList}
+                onChange={onFilterEntityChange}
+              />
+            </div>
           </Box>
-          {isFcAdmin && (
+          <PermissionGuard permissionsExpression={`${UserModel.VisitorsPermission.MANAGE} AND ${UserModel.BadgesPermission.MANAGE}`}>
             <Button
               className={`${buttonStyles.createButton} ${buttonStyles.primaryButtonLarge}`}
               color="primary"
@@ -238,7 +248,7 @@ const VisitorsTab = ({
             >
               Create Badges
             </Button>
-          )}
+          </PermissionGuard>
         </div>
         {(!projectBadgeVisitorLoading || (projectBadgeVisitorLoading && !projectBadgeVisitorLoading.isLoading)) && visitorBadgeList.length === 0 ? (
           <EmptyList styleClass={classes.emptyTabBadgeIcon} icon={<EBadgeIcon />} text="There are no Visitor Badges" />

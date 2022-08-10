@@ -5,7 +5,7 @@ import Sidebar from './Sidebar';
 
 export const mapStateToProps = (state: IRootState) => ({
   location: state.router.location,
-  userRole: state.auth.role,
+  currentUserPermissions: state.auth.session?.permissions,
 });
 
 export default connect(mapStateToProps, null)(Sidebar);

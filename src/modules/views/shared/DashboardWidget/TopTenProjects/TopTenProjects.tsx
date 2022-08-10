@@ -6,21 +6,22 @@ import TableCell from '@material-ui/core/TableCell';
 import DashboardTable from '../DashboardTable';
 import DashboardTableRow from '../DashboardTableRow';
 
-import { GeneralModel, StatisticsModel, UserModel } from '../../../../models';
+import { GeneralModel, StatisticsModel } from '../../../../models';
 import { getConditionalDefaultValue } from '../../../../../utils/generalUtils';
 
 export interface ITopTenProjectsProps {
-  userRole: UserModel.Role;
   queryParams: GeneralModel.IQueryParams;
   projectTopTenWidget: StatisticsModel.IProjectTopTenStatistics[];
   loading: GeneralModel.ILoadingStatus;
+  isFcaUser: boolean;
+  isAdmin: boolean;
   fetchProjectTopTen: (query: GeneralModel.IQueryParams) => void;
 }
 
-const TopTenProjects = ({ userRole, queryParams, projectTopTenWidget, loading, fetchProjectTopTen }: ITopTenProjectsProps) => {
+const TopTenProjects = ({ queryParams, projectTopTenWidget, loading, isFcaUser, isAdmin, fetchProjectTopTen }: ITopTenProjectsProps) => {
   const dataList = useMemo(() => (projectTopTenWidget ? projectTopTenWidget : []), [projectTopTenWidget]);
   const isLoading: boolean = useMemo(() => loading && loading.isLoading, [loading]);
-  const isFcAdmin: boolean = useMemo(() => userRole === UserModel.Role.FCA_ADMIN, [userRole]);
+  const isFcAdmin: boolean = useMemo(() => isFcaUser && isAdmin, [isFcaUser, isAdmin]);
 
   useEffect(() => {
     fetchProjectTopTen(queryParams);

@@ -9,9 +9,21 @@ export const reducer = (state: IState = initialState, { type, payload }: { type:
         authenticated: true,
         session: payload.session,
         role: payload.session['custom:role'],
-        companyId: payload.session['custom:companyid'],
         companyUserId: payload.session['custom:companyuserid'],
+        companyWorkerId: payload.session['custom:companyworkerid'],
+        currentCompanyId: payload.session['custom:currentcompanyid'],
+        isFcaUser: payload.session['custom:currentcompanyid'] === 'ffffffff-ffff-ffff-ffff-ffffffffffff',
+        isAdmin: payload.session['custom:isadmin'] === 'True',
       };
+    case ActionType.FETCH_USER_PERMISSIONS_SUCCESS: {
+      return {
+        ...state,
+        session: {
+          ...state.session,
+          permissions: payload.perimissions,
+        },
+      };
+    }
     case ActionType.SIGN_OUT_SUCCESS:
       return { ...state, authenticated: false };
     case ActionType.RECOVER_SESSION_DONE:

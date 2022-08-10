@@ -10,11 +10,11 @@ const validateUBadgePrice = value => validateBadge(value, 1000, true) && 'Univer
 
 export const userRules: IFormRules = {
   firstName: {
-    required: false,
+    required: true,
     rules: [],
   },
   lastName: {
-    required: false,
+    required: true,
     rules: [],
   },
   email: {
@@ -46,7 +46,7 @@ export const userRules: IFormRules = {
     rules: [],
   },
   preferredContactMethod: {
-    required: false,
+    required: true,
     rules: [],
   },
 };

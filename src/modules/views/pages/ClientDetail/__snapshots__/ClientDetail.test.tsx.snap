@@ -15,7 +15,7 @@ exports[`ClientDetail should archive 1`] = `
         class="client-list-header"
       >
         <p
-          class="MuiTypography-root makeStyles-stepWrapper-3379 MuiTypography-body1 MuiTypography-colorPrimary MuiTypography-alignLeft"
+          class="MuiTypography-root makeStyles-stepWrapper-356 MuiTypography-body1 MuiTypography-colorPrimary MuiTypography-alignLeft"
         >
           <a
             href="/clients"
@@ -27,33 +27,33 @@ exports[`ClientDetail should archive 1`] = `
            Client Detail
         </p>
         <h1
-          class="MuiTypography-root makeStyles-title-3449 MuiTypography-h5 MuiTypography-colorPrimary MuiTypography-alignLeft"
+          class="MuiTypography-root makeStyles-title-426 MuiTypography-h5 MuiTypography-colorPrimary MuiTypography-alignLeft"
         >
           Robert C. Martin
         </h1>
       </div>
       <div
-        class="makeStyles-widgetsWrapper-3456"
+        class="makeStyles-widgetsWrapper-433"
         id="summary-widgets"
       >
         <div
-          class="MuiPaper-root makeStyles-widget-3470 MuiPaper-elevation0 MuiPaper-rounded"
+          class="MuiPaper-root makeStyles-widget-447 MuiPaper-elevation0 MuiPaper-rounded"
         >
           <span
-            class="makeStyles-totalFont-3471"
+            class="makeStyles-totalFont-448"
           >
             5
           </span>
           <div
-            class="makeStyles-contentContainer-3474"
+            class="makeStyles-contentContainer-451"
           >
             <span
-              class="makeStyles-statusFont-3472"
+              class="makeStyles-statusFont-449"
             >
               Projects
             </span>
             <span
-              class="makeStyles-contentFont-3473"
+              class="makeStyles-contentFont-450"
             >
               <a
                 href="/clients/detail/9164e4c4-6521-47bb-97fd-c75ac02b2cf5/projects"
@@ -64,23 +64,23 @@ exports[`ClientDetail should archive 1`] = `
           </div>
         </div>
         <div
-          class="MuiPaper-root makeStyles-widget-3470 MuiPaper-elevation0 MuiPaper-rounded"
+          class="MuiPaper-root makeStyles-widget-447 MuiPaper-elevation0 MuiPaper-rounded"
         >
           <span
-            class="makeStyles-totalFont-3471"
+            class="makeStyles-totalFont-448"
           >
             37
           </span>
           <div
-            class="makeStyles-contentContainer-3474"
+            class="makeStyles-contentContainer-451"
           >
             <span
-              class="makeStyles-statusFont-3472"
+              class="makeStyles-statusFont-449"
             >
               Workers
             </span>
             <span
-              class="makeStyles-contentFont-3473"
+              class="makeStyles-contentFont-450"
             >
               <a
                 href="/clients/detail/9164e4c4-6521-47bb-97fd-c75ac02b2cf5/workers"
@@ -91,35 +91,35 @@ exports[`ClientDetail should archive 1`] = `
           </div>
         </div>
         <div
-          class="MuiPaper-root makeStyles-widget-3470 MuiPaper-elevation0 MuiPaper-rounded"
+          class="MuiPaper-root makeStyles-widget-447 MuiPaper-elevation0 MuiPaper-rounded"
         >
           <span
-            class="makeStyles-totalFont-3471"
+            class="makeStyles-totalFont-448"
           >
             $ 23,678.00
           </span>
           <div
-            class="makeStyles-contentContainer-3474"
+            class="makeStyles-contentContainer-451"
           >
             <span
-              class="makeStyles-statusFont-3472"
+              class="makeStyles-statusFont-449"
             >
               Revenue
             </span>
             <span
-              class="makeStyles-contentFont-3473"
+              class="makeStyles-contentFont-450"
             />
           </div>
         </div>
       </div>
       <div
-        class="makeStyles-tableWrapper-3408"
+        class="makeStyles-tableWrapper-385"
       >
         <div
-          class="makeStyles-filterContainer-3416"
+          class="makeStyles-filterContainer-393"
         >
           <div
-            class="makeStyles-statusFilter-3417"
+            class="makeStyles-statusFilter-394"
           >
             <a
               data-testid="filter-status-opt"
@@ -207,7 +207,7 @@ exports[`ClientDetail should archive 1`] = `
               tabindex="-1"
             >
               <button
-                class="MuiButtonBase-root MuiButton-root MuiButton-text makeStyles-activeFilter-3418"
+                class="MuiButtonBase-root MuiButton-root MuiButton-text makeStyles-activeFilter-395"
                 tabindex="0"
                 type="button"
               >
@@ -224,7 +224,7 @@ exports[`ClientDetail should archive 1`] = `
           </div>
         </div>
         <div
-          class="MuiPaper-root makeStyles-container-3572  MuiPaper-outlined MuiPaper-rounded"
+          class="MuiPaper-root makeStyles-container-1372  MuiPaper-outlined MuiPaper-rounded"
         >
           <div
             class="MuiGrid-root MuiGrid-container MuiGrid-align-items-xs-center MuiGrid-justify-xs-space-between"
@@ -233,7 +233,7 @@ exports[`ClientDetail should archive 1`] = `
               class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-auto"
             >
               <h1
-                class="MuiTypography-root makeStyles-title-3573 MuiTypography-h1"
+                class="MuiTypography-root makeStyles-title-1373 MuiTypography-h1"
               >
                 General Information
               </h1>
@@ -242,10 +242,10 @@ exports[`ClientDetail should archive 1`] = `
               class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-auto"
             >
               <span
-                class="makeStyles-secondaryActionsIcon-3567 makeStyles-secondaryActions-3574"
+                class="makeStyles-secondaryActionsIcon-1367 makeStyles-secondaryActions-1374"
               >
                 <button
-                  class="MuiButtonBase-root MuiIconButton-root makeStyles-editButton-3483"
+                  class="MuiButtonBase-root MuiIconButton-root makeStyles-editButton-464"
                   data-testid="gen-info-edit-button"
                   tabindex="0"
                   type="button"
@@ -269,60 +269,60 @@ exports[`ClientDetail should archive 1`] = `
             </div>
           </div>
           <hr
-            class="MuiDivider-root makeStyles-divider-3575"
+            class="MuiDivider-root makeStyles-divider-1375"
           />
           <div
-            class="makeStyles-reviewGeneralInformation-3527 makeStyles-reviewGeneralInformationDirection-3530"
+            class="makeStyles-reviewGeneralInformation-1327 makeStyles-reviewGeneralInformationDirection-1330"
           >
             <div
-              class="makeStyles-informationBlocksWrapper-3529"
+              class="makeStyles-informationBlocksWrapper-1329"
             >
               <div
-                class="makeStyles-informationBlock-3526"
+                class="makeStyles-informationBlock-1326"
               >
                 <p
-                  class="MuiTypography-root makeStyles-cardFont-3504 makeStyles-cardFontAccent-3506 makeStyles-cardTitle-3509 MuiTypography-body1"
+                  class="MuiTypography-root makeStyles-cardFont-1304 makeStyles-cardFontAccent-1306 makeStyles-cardTitle-1309 MuiTypography-body1"
                 >
                   Client Name
                 </p>
                 <p
-                  class="MuiTypography-root makeStyles-cardFont-3504 MuiTypography-body1"
+                  class="MuiTypography-root makeStyles-cardFont-1304 MuiTypography-body1"
                 >
                   Robert C. Martin
                 </p>
               </div>
               <div
-                class="makeStyles-informationBlock-3526 makeStyles-informationMiddleBlock-3531"
+                class="makeStyles-informationBlock-1326 makeStyles-informationMiddleBlock-1331"
               >
                 <p
-                  class="MuiTypography-root makeStyles-cardFont-3504 makeStyles-cardFontAccent-3506 makeStyles-cardTitle-3509 MuiTypography-body1"
+                  class="MuiTypography-root makeStyles-cardFont-1304 makeStyles-cardFontAccent-1306 makeStyles-cardTitle-1309 MuiTypography-body1"
                 >
                   Legal Information
                 </p>
                 <div
-                  class="makeStyles-cardData-3513"
+                  class="makeStyles-cardData-1313"
                 >
                   <p
-                    class="MuiTypography-root makeStyles-cardFont-3504 makeStyles-cardDataTitle-3514 MuiTypography-body1"
+                    class="MuiTypography-root makeStyles-cardFont-1304 makeStyles-cardDataTitle-1314 MuiTypography-body1"
                   >
                     Taxpayer Identification Number:
                   </p>
                   <p
-                    class="MuiTypography-root makeStyles-cardFont-3504 makeStyles-cardFontAccent-3506 MuiTypography-body1"
+                    class="MuiTypography-root makeStyles-cardFont-1304 makeStyles-cardFontAccent-1306 MuiTypography-body1"
                   >
                     LOZG-780211-7B9
                   </p>
                 </div>
                 <div
-                  class="makeStyles-cardData-3513"
+                  class="makeStyles-cardData-1313"
                 >
                   <p
-                    class="MuiTypography-root makeStyles-cardFont-3504 makeStyles-cardDataTitle-3514 MuiTypography-body1"
+                    class="MuiTypography-root makeStyles-cardFont-1304 makeStyles-cardDataTitle-1314 MuiTypography-body1"
                   >
                     MBE/WBE:
                   </p>
                   <p
-                    class="MuiTypography-root makeStyles-cardFont-3504 makeStyles-cardFontAccent-3506 MuiTypography-body1"
+                    class="MuiTypography-root makeStyles-cardFont-1304 makeStyles-cardFontAccent-1306 MuiTypography-body1"
                   >
                     Option 1
                   </p>
@@ -330,16 +330,16 @@ exports[`ClientDetail should archive 1`] = `
               </div>
             </div>
             <div
-              class="makeStyles-informationBlock-3526 makeStyles-lastInformationBlock-3532"
+              class="makeStyles-informationBlock-1326 makeStyles-lastInformationBlock-1332"
               data-testid="trade-names"
             >
               <p
-                class="MuiTypography-root makeStyles-cardFont-3504 makeStyles-cardFontAccent-3506 makeStyles-cardTitle-3509 makeStyles-lastInformationTitle-3533 MuiTypography-body1"
+                class="MuiTypography-root makeStyles-cardFont-1304 makeStyles-cardFontAccent-1306 makeStyles-cardTitle-1309 makeStyles-lastInformationTitle-1333 MuiTypography-body1"
               >
                 Trades
               </p>
               <span
-                class="makeStyles-cardTrades-3512"
+                class="makeStyles-cardTrades-1312"
               >
                 <span>
                   trade 1, trade 2.
@@ -347,26 +347,26 @@ exports[`ClientDetail should archive 1`] = `
               </span>
             </div>
             <div
-              class="makeStyles-informationBlocksWrapper-3529 makeStyles-lastInformationBlock-3532"
+              class="makeStyles-informationBlocksWrapper-1329 makeStyles-lastInformationBlock-1332"
             >
               <div
-                class="makeStyles-informationBlock-3526 makeStyles-lastInformationTitle-3533"
+                class="makeStyles-informationBlock-1326 makeStyles-lastInformationTitle-1333"
               >
                 <p
-                  class="MuiTypography-root makeStyles-cardFont-3504 makeStyles-cardFontAccent-3506 makeStyles-cardTitle-3509 MuiTypography-body1"
+                  class="MuiTypography-root makeStyles-cardFont-1304 makeStyles-cardFontAccent-1306 makeStyles-cardTitle-1309 MuiTypography-body1"
                 >
                   Universal Badge
                 </p>
                 <div
-                  class="makeStyles-cardData-3513"
+                  class="makeStyles-cardData-1313"
                 >
                   <p
-                    class="MuiTypography-root makeStyles-cardFont-3504 makeStyles-cardDataTitle-3514 MuiTypography-body1"
+                    class="MuiTypography-root makeStyles-cardFont-1304 makeStyles-cardDataTitle-1314 MuiTypography-body1"
                   >
                     Universal Badge:
                   </p>
                   <p
-                    class="MuiTypography-root makeStyles-cardFont-3504 makeStyles-cardFontAccent-3506 MuiTypography-body1"
+                    class="MuiTypography-root makeStyles-cardFont-1304 makeStyles-cardFontAccent-1306 MuiTypography-body1"
                   >
                     Yes
                   </p>
@@ -376,7 +376,7 @@ exports[`ClientDetail should archive 1`] = `
           </div>
         </div>
         <div
-          class="MuiPaper-root makeStyles-container-3572  MuiPaper-outlined MuiPaper-rounded"
+          class="MuiPaper-root makeStyles-container-1372  MuiPaper-outlined MuiPaper-rounded"
         >
           <div
             class="MuiGrid-root MuiGrid-container MuiGrid-align-items-xs-center MuiGrid-justify-xs-space-between"
@@ -385,7 +385,7 @@ exports[`ClientDetail should archive 1`] = `
               class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-auto"
             >
               <h1
-                class="MuiTypography-root makeStyles-title-3573 MuiTypography-h1"
+                class="MuiTypography-root makeStyles-title-1373 MuiTypography-h1"
               >
                 Addresses
               </h1>
@@ -394,10 +394,10 @@ exports[`ClientDetail should archive 1`] = `
               class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-auto"
             >
               <span
-                class="makeStyles-secondaryActionsIcon-3567 makeStyles-secondaryActions-3574"
+                class="makeStyles-secondaryActionsIcon-1367 makeStyles-secondaryActions-1374"
               >
                 <button
-                  class="MuiButtonBase-root MuiIconButton-root makeStyles-editButton-3483"
+                  class="MuiButtonBase-root MuiIconButton-root makeStyles-editButton-464"
                   data-testid="addr-edit-button"
                   tabindex="0"
                   type="button"
@@ -421,24 +421,24 @@ exports[`ClientDetail should archive 1`] = `
             </div>
           </div>
           <hr
-            class="MuiDivider-root makeStyles-divider-3575"
+            class="MuiDivider-root makeStyles-divider-1375"
           />
           <div
-            class="MuiGrid-root makeStyles-addressesWrapper-3549 MuiGrid-container"
+            class="MuiGrid-root makeStyles-addressesWrapper-1349 MuiGrid-container"
           >
             <div
-              class="MuiGrid-root makeStyles-addressItem-3551 MuiGrid-item MuiGrid-grid-xs-4"
+              class="MuiGrid-root makeStyles-addressItem-1351 MuiGrid-item MuiGrid-grid-xs-4"
             >
               <div
-                class="makeStyles-informationBlock-3526 makeStyles-addressInformationBlock-3550"
+                class="makeStyles-informationBlock-1326 makeStyles-addressInformationBlock-1350"
               >
                 <p
-                  class="MuiTypography-root makeStyles-cardFont-3504 makeStyles-cardFontAccent-3506 makeStyles-cardAddressTitle-3515 MuiTypography-body1"
+                  class="MuiTypography-root makeStyles-cardFont-1304 makeStyles-cardFontAccent-1306 makeStyles-cardAddressTitle-1315 MuiTypography-body1"
                 >
                   Billing Address
                 </p>
                 <p
-                  class="MuiTypography-root makeStyles-cardFont-3504  MuiTypography-body1"
+                  class="MuiTypography-root makeStyles-cardFont-1304  MuiTypography-body1"
                 >
                   
                   <span
@@ -448,7 +448,7 @@ exports[`ClientDetail should archive 1`] = `
                   </span>
                 </p>
                 <p
-                  class="MuiTypography-root makeStyles-cardFont-3504  MuiTypography-body1"
+                  class="MuiTypography-root makeStyles-cardFont-1304  MuiTypography-body1"
                 >
                   
                   
@@ -458,19 +458,19 @@ exports[`ClientDetail should archive 1`] = `
               </div>
             </div>
             <hr
-              class="MuiDivider-root makeStyles-dividerColor-3565 MuiDivider-flexItem MuiDivider-vertical"
+              class="MuiDivider-root makeStyles-dividerColor-1365 MuiDivider-flexItem MuiDivider-vertical"
             />
             <div
-              class="MuiGrid-root makeStyles-addressItem-3551 MuiGrid-item MuiGrid-grid-xs-4"
+              class="MuiGrid-root makeStyles-addressItem-1351 MuiGrid-item MuiGrid-grid-xs-4"
             >
               <div>
                 <p
-                  class="MuiTypography-root makeStyles-cardFont-3504 makeStyles-cardFontAccent-3506 makeStyles-cardAddressTitle-3515 MuiTypography-body1"
+                  class="MuiTypography-root makeStyles-cardFont-1304 makeStyles-cardFontAccent-1306 makeStyles-cardAddressTitle-1315 MuiTypography-body1"
                 >
                   Mailing Address
                 </p>
                 <p
-                  class="MuiTypography-root makeStyles-cardFont-3504 makeStyles-cardAddressTitle-3515 MuiTypography-body1"
+                  class="MuiTypography-root makeStyles-cardFont-1304 makeStyles-cardAddressTitle-1315 MuiTypography-body1"
                 >
                   Same as Billing Address
                 </p>
@@ -479,7 +479,7 @@ exports[`ClientDetail should archive 1`] = `
           </div>
         </div>
         <div
-          class="MuiPaper-root makeStyles-container-3572  MuiPaper-outlined MuiPaper-rounded"
+          class="MuiPaper-root makeStyles-container-1372  MuiPaper-outlined MuiPaper-rounded"
         >
           <div
             class="MuiGrid-root MuiGrid-container MuiGrid-align-items-xs-center MuiGrid-justify-xs-space-between"
@@ -488,7 +488,7 @@ exports[`ClientDetail should archive 1`] = `
               class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-auto"
             >
               <h1
-                class="MuiTypography-root makeStyles-title-3573 MuiTypography-h1"
+                class="MuiTypography-root makeStyles-title-1373 MuiTypography-h1"
               >
                 Archive
               </h1>
@@ -497,15 +497,15 @@ exports[`ClientDetail should archive 1`] = `
               class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-auto"
             >
               <span
-                class=" makeStyles-secondaryActions-3574"
+                class=" makeStyles-secondaryActions-1374"
               />
             </div>
           </div>
           <hr
-            class="MuiDivider-root makeStyles-divider-3575"
+            class="MuiDivider-root makeStyles-divider-1375"
           />
           <button
-            class="MuiButtonBase-root MuiButton-root MuiButton-outlined makeStyles-archiveButton-3380 MuiButton-outlinedPrimary"
+            class="MuiButtonBase-root MuiButton-root MuiButton-outlined makeStyles-archiveButton-357 MuiButton-outlinedPrimary"
             data-testid="archive-btn"
             tabindex="0"
             type="button"
@@ -541,7 +541,7 @@ exports[`ClientDetail should discard information 1`] = `
         class="client-list-header"
       >
         <p
-          class="MuiTypography-root makeStyles-stepWrapper-3807 MuiTypography-body1 MuiTypography-colorPrimary MuiTypography-alignLeft"
+          class="MuiTypography-root makeStyles-stepWrapper-356 MuiTypography-body1 MuiTypography-colorPrimary MuiTypography-alignLeft"
         >
           <a
             href="/clients"
@@ -553,33 +553,33 @@ exports[`ClientDetail should discard information 1`] = `
            Client Detail
         </p>
         <h1
-          class="MuiTypography-root makeStyles-title-3877 MuiTypography-h5 MuiTypography-colorPrimary MuiTypography-alignLeft"
+          class="MuiTypography-root makeStyles-title-426 MuiTypography-h5 MuiTypography-colorPrimary MuiTypography-alignLeft"
         >
           Robert C. Martin
         </h1>
       </div>
       <div
-        class="makeStyles-widgetsWrapper-3884"
+        class="makeStyles-widgetsWrapper-433"
         id="summary-widgets"
       >
         <div
-          class="MuiPaper-root makeStyles-widget-3898 MuiPaper-elevation0 MuiPaper-rounded"
+          class="MuiPaper-root makeStyles-widget-447 MuiPaper-elevation0 MuiPaper-rounded"
         >
           <span
-            class="makeStyles-totalFont-3899"
+            class="makeStyles-totalFont-448"
           >
             5
           </span>
           <div
-            class="makeStyles-contentContainer-3902"
+            class="makeStyles-contentContainer-451"
           >
             <span
-              class="makeStyles-statusFont-3900"
+              class="makeStyles-statusFont-449"
             >
               Projects
             </span>
             <span
-              class="makeStyles-contentFont-3901"
+              class="makeStyles-contentFont-450"
             >
               <a
                 href="/clients/detail/9164e4c4-6521-47bb-97fd-c75ac02b2cf5/projects"
@@ -590,23 +590,23 @@ exports[`ClientDetail should discard information 1`] = `
           </div>
         </div>
         <div
-          class="MuiPaper-root makeStyles-widget-3898 MuiPaper-elevation0 MuiPaper-rounded"
+          class="MuiPaper-root makeStyles-widget-447 MuiPaper-elevation0 MuiPaper-rounded"
         >
           <span
-            class="makeStyles-totalFont-3899"
+            class="makeStyles-totalFont-448"
           >
             37
           </span>
           <div
-            class="makeStyles-contentContainer-3902"
+            class="makeStyles-contentContainer-451"
           >
             <span
-              class="makeStyles-statusFont-3900"
+              class="makeStyles-statusFont-449"
             >
               Workers
             </span>
             <span
-              class="makeStyles-contentFont-3901"
+              class="makeStyles-contentFont-450"
             >
               <a
                 href="/clients/detail/9164e4c4-6521-47bb-97fd-c75ac02b2cf5/workers"
@@ -617,35 +617,35 @@ exports[`ClientDetail should discard information 1`] = `
           </div>
         </div>
         <div
-          class="MuiPaper-root makeStyles-widget-3898 MuiPaper-elevation0 MuiPaper-rounded"
+          class="MuiPaper-root makeStyles-widget-447 MuiPaper-elevation0 MuiPaper-rounded"
         >
           <span
-            class="makeStyles-totalFont-3899"
+            class="makeStyles-totalFont-448"
           >
             $ 23,678.00
           </span>
           <div
-            class="makeStyles-contentContainer-3902"
+            class="makeStyles-contentContainer-451"
           >
             <span
-              class="makeStyles-statusFont-3900"
+              class="makeStyles-statusFont-449"
             >
               Revenue
             </span>
             <span
-              class="makeStyles-contentFont-3901"
+              class="makeStyles-contentFont-450"
             />
           </div>
         </div>
       </div>
       <div
-        class="makeStyles-tableWrapper-3836"
+        class="makeStyles-tableWrapper-385"
       >
         <div
-          class="makeStyles-filterContainer-3844"
+          class="makeStyles-filterContainer-393"
         >
           <div
-            class="makeStyles-statusFilter-3845"
+            class="makeStyles-statusFilter-394"
           >
             <a
               data-testid="filter-status-opt"
@@ -733,7 +733,7 @@ exports[`ClientDetail should discard information 1`] = `
               tabindex="-1"
             >
               <button
-                class="MuiButtonBase-root MuiButton-root MuiButton-text makeStyles-activeFilter-3846"
+                class="MuiButtonBase-root MuiButton-root MuiButton-text makeStyles-activeFilter-395"
                 tabindex="0"
                 type="button"
               >
@@ -750,7 +750,7 @@ exports[`ClientDetail should discard information 1`] = `
           </div>
         </div>
         <div
-          class="MuiPaper-root makeStyles-container-4000  MuiPaper-outlined MuiPaper-rounded"
+          class="MuiPaper-root makeStyles-container-1528  MuiPaper-outlined MuiPaper-rounded"
         >
           <div
             class="MuiGrid-root MuiGrid-container MuiGrid-align-items-xs-center MuiGrid-justify-xs-space-between"
@@ -759,7 +759,7 @@ exports[`ClientDetail should discard information 1`] = `
               class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-auto"
             >
               <h1
-                class="MuiTypography-root makeStyles-title-4001 MuiTypography-h1"
+                class="MuiTypography-root makeStyles-title-1529 MuiTypography-h1"
               >
                 General Information
               </h1>
@@ -768,10 +768,10 @@ exports[`ClientDetail should discard information 1`] = `
               class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-auto"
             >
               <span
-                class="makeStyles-secondaryActionsIcon-3995 makeStyles-secondaryActions-4002"
+                class="makeStyles-secondaryActionsIcon-1523 makeStyles-secondaryActions-1530"
               >
                 <button
-                  class="MuiButtonBase-root MuiIconButton-root makeStyles-editButton-3911"
+                  class="MuiButtonBase-root MuiIconButton-root makeStyles-editButton-464"
                   data-testid="gen-info-edit-button"
                   tabindex="0"
                   type="button"
@@ -795,60 +795,60 @@ exports[`ClientDetail should discard information 1`] = `
             </div>
           </div>
           <hr
-            class="MuiDivider-root makeStyles-divider-4003"
+            class="MuiDivider-root makeStyles-divider-1531"
           />
           <div
-            class="makeStyles-reviewGeneralInformation-3955 makeStyles-reviewGeneralInformationDirection-3958"
+            class="makeStyles-reviewGeneralInformation-1483 makeStyles-reviewGeneralInformationDirection-1486"
           >
             <div
-              class="makeStyles-informationBlocksWrapper-3957"
+              class="makeStyles-informationBlocksWrapper-1485"
             >
               <div
-                class="makeStyles-informationBlock-3954"
+                class="makeStyles-informationBlock-1482"
               >
                 <p
-                  class="MuiTypography-root makeStyles-cardFont-3932 makeStyles-cardFontAccent-3934 makeStyles-cardTitle-3937 MuiTypography-body1"
+                  class="MuiTypography-root makeStyles-cardFont-1460 makeStyles-cardFontAccent-1462 makeStyles-cardTitle-1465 MuiTypography-body1"
                 >
                   Client Name
                 </p>
                 <p
-                  class="MuiTypography-root makeStyles-cardFont-3932 MuiTypography-body1"
+                  class="MuiTypography-root makeStyles-cardFont-1460 MuiTypography-body1"
                 >
                   Robert C. Martin
                 </p>
               </div>
               <div
-                class="makeStyles-informationBlock-3954 makeStyles-informationMiddleBlock-3959"
+                class="makeStyles-informationBlock-1482 makeStyles-informationMiddleBlock-1487"
               >
                 <p
-                  class="MuiTypography-root makeStyles-cardFont-3932 makeStyles-cardFontAccent-3934 makeStyles-cardTitle-3937 MuiTypography-body1"
+                  class="MuiTypography-root makeStyles-cardFont-1460 makeStyles-cardFontAccent-1462 makeStyles-cardTitle-1465 MuiTypography-body1"
                 >
                   Legal Information
                 </p>
                 <div
-                  class="makeStyles-cardData-3941"
+                  class="makeStyles-cardData-1469"
                 >
                   <p
-                    class="MuiTypography-root makeStyles-cardFont-3932 makeStyles-cardDataTitle-3942 MuiTypography-body1"
+                    class="MuiTypography-root makeStyles-cardFont-1460 makeStyles-cardDataTitle-1470 MuiTypography-body1"
                   >
                     Taxpayer Identification Number:
                   </p>
                   <p
-                    class="MuiTypography-root makeStyles-cardFont-3932 makeStyles-cardFontAccent-3934 MuiTypography-body1"
+                    class="MuiTypography-root makeStyles-cardFont-1460 makeStyles-cardFontAccent-1462 MuiTypography-body1"
                   >
                     LOZG-780211-7B9
                   </p>
                 </div>
                 <div
-                  class="makeStyles-cardData-3941"
+                  class="makeStyles-cardData-1469"
                 >
                   <p
-                    class="MuiTypography-root makeStyles-cardFont-3932 makeStyles-cardDataTitle-3942 MuiTypography-body1"
+                    class="MuiTypography-root makeStyles-cardFont-1460 makeStyles-cardDataTitle-1470 MuiTypography-body1"
                   >
                     MBE/WBE:
                   </p>
                   <p
-                    class="MuiTypography-root makeStyles-cardFont-3932 makeStyles-cardFontAccent-3934 MuiTypography-body1"
+                    class="MuiTypography-root makeStyles-cardFont-1460 makeStyles-cardFontAccent-1462 MuiTypography-body1"
                   >
                     Option 1
                   </p>
@@ -856,16 +856,16 @@ exports[`ClientDetail should discard information 1`] = `
               </div>
             </div>
             <div
-              class="makeStyles-informationBlock-3954 makeStyles-lastInformationBlock-3960"
+              class="makeStyles-informationBlock-1482 makeStyles-lastInformationBlock-1488"
               data-testid="trade-names"
             >
               <p
-                class="MuiTypography-root makeStyles-cardFont-3932 makeStyles-cardFontAccent-3934 makeStyles-cardTitle-3937 makeStyles-lastInformationTitle-3961 MuiTypography-body1"
+                class="MuiTypography-root makeStyles-cardFont-1460 makeStyles-cardFontAccent-1462 makeStyles-cardTitle-1465 makeStyles-lastInformationTitle-1489 MuiTypography-body1"
               >
                 Trades
               </p>
               <span
-                class="makeStyles-cardTrades-3940"
+                class="makeStyles-cardTrades-1468"
               >
                 <span>
                   trade 1, trade 2.
@@ -873,26 +873,26 @@ exports[`ClientDetail should discard information 1`] = `
               </span>
             </div>
             <div
-              class="makeStyles-informationBlocksWrapper-3957 makeStyles-lastInformationBlock-3960"
+              class="makeStyles-informationBlocksWrapper-1485 makeStyles-lastInformationBlock-1488"
             >
               <div
-                class="makeStyles-informationBlock-3954 makeStyles-lastInformationTitle-3961"
+                class="makeStyles-informationBlock-1482 makeStyles-lastInformationTitle-1489"
               >
                 <p
-                  class="MuiTypography-root makeStyles-cardFont-3932 makeStyles-cardFontAccent-3934 makeStyles-cardTitle-3937 MuiTypography-body1"
+                  class="MuiTypography-root makeStyles-cardFont-1460 makeStyles-cardFontAccent-1462 makeStyles-cardTitle-1465 MuiTypography-body1"
                 >
                   Universal Badge
                 </p>
                 <div
-                  class="makeStyles-cardData-3941"
+                  class="makeStyles-cardData-1469"
                 >
                   <p
-                    class="MuiTypography-root makeStyles-cardFont-3932 makeStyles-cardDataTitle-3942 MuiTypography-body1"
+                    class="MuiTypography-root makeStyles-cardFont-1460 makeStyles-cardDataTitle-1470 MuiTypography-body1"
                   >
                     Universal Badge:
                   </p>
                   <p
-                    class="MuiTypography-root makeStyles-cardFont-3932 makeStyles-cardFontAccent-3934 MuiTypography-body1"
+                    class="MuiTypography-root makeStyles-cardFont-1460 makeStyles-cardFontAccent-1462 MuiTypography-body1"
                   >
                     Yes
                   </p>
@@ -902,7 +902,7 @@ exports[`ClientDetail should discard information 1`] = `
           </div>
         </div>
         <div
-          class="MuiPaper-root makeStyles-container-4000  MuiPaper-outlined MuiPaper-rounded"
+          class="MuiPaper-root makeStyles-container-1528  MuiPaper-outlined MuiPaper-rounded"
         >
           <div
             class="MuiGrid-root MuiGrid-container MuiGrid-align-items-xs-center MuiGrid-justify-xs-space-between"
@@ -911,7 +911,7 @@ exports[`ClientDetail should discard information 1`] = `
               class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-auto"
             >
               <h1
-                class="MuiTypography-root makeStyles-title-4001 MuiTypography-h1"
+                class="MuiTypography-root makeStyles-title-1529 MuiTypography-h1"
               >
                 Addresses
               </h1>
@@ -920,10 +920,10 @@ exports[`ClientDetail should discard information 1`] = `
               class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-auto"
             >
               <span
-                class="makeStyles-secondaryActionsIcon-3995 makeStyles-secondaryActions-4002"
+                class="makeStyles-secondaryActionsIcon-1523 makeStyles-secondaryActions-1530"
               >
                 <button
-                  class="MuiButtonBase-root MuiIconButton-root makeStyles-editButton-3911"
+                  class="MuiButtonBase-root MuiIconButton-root makeStyles-editButton-464"
                   data-testid="addr-edit-button"
                   tabindex="0"
                   type="button"
@@ -947,24 +947,24 @@ exports[`ClientDetail should discard information 1`] = `
             </div>
           </div>
           <hr
-            class="MuiDivider-root makeStyles-divider-4003"
+            class="MuiDivider-root makeStyles-divider-1531"
           />
           <div
-            class="MuiGrid-root makeStyles-addressesWrapper-3977 MuiGrid-container"
+            class="MuiGrid-root makeStyles-addressesWrapper-1505 MuiGrid-container"
           >
             <div
-              class="MuiGrid-root makeStyles-addressItem-3979 MuiGrid-item MuiGrid-grid-xs-4"
+              class="MuiGrid-root makeStyles-addressItem-1507 MuiGrid-item MuiGrid-grid-xs-4"
             >
               <div
-                class="makeStyles-informationBlock-3954 makeStyles-addressInformationBlock-3978"
+                class="makeStyles-informationBlock-1482 makeStyles-addressInformationBlock-1506"
               >
                 <p
-                  class="MuiTypography-root makeStyles-cardFont-3932 makeStyles-cardFontAccent-3934 makeStyles-cardAddressTitle-3943 MuiTypography-body1"
+                  class="MuiTypography-root makeStyles-cardFont-1460 makeStyles-cardFontAccent-1462 makeStyles-cardAddressTitle-1471 MuiTypography-body1"
                 >
                   Billing Address
                 </p>
                 <p
-                  class="MuiTypography-root makeStyles-cardFont-3932  MuiTypography-body1"
+                  class="MuiTypography-root makeStyles-cardFont-1460  MuiTypography-body1"
                 >
                   
                   <span
@@ -974,7 +974,7 @@ exports[`ClientDetail should discard information 1`] = `
                   </span>
                 </p>
                 <p
-                  class="MuiTypography-root makeStyles-cardFont-3932  MuiTypography-body1"
+                  class="MuiTypography-root makeStyles-cardFont-1460  MuiTypography-body1"
                 >
                   
                   
@@ -984,19 +984,19 @@ exports[`ClientDetail should discard information 1`] = `
               </div>
             </div>
             <hr
-              class="MuiDivider-root makeStyles-dividerColor-3993 MuiDivider-flexItem MuiDivider-vertical"
+              class="MuiDivider-root makeStyles-dividerColor-1521 MuiDivider-flexItem MuiDivider-vertical"
             />
             <div
-              class="MuiGrid-root makeStyles-addressItem-3979 MuiGrid-item MuiGrid-grid-xs-4"
+              class="MuiGrid-root makeStyles-addressItem-1507 MuiGrid-item MuiGrid-grid-xs-4"
             >
               <div>
                 <p
-                  class="MuiTypography-root makeStyles-cardFont-3932 makeStyles-cardFontAccent-3934 makeStyles-cardAddressTitle-3943 MuiTypography-body1"
+                  class="MuiTypography-root makeStyles-cardFont-1460 makeStyles-cardFontAccent-1462 makeStyles-cardAddressTitle-1471 MuiTypography-body1"
                 >
                   Mailing Address
                 </p>
                 <p
-                  class="MuiTypography-root makeStyles-cardFont-3932 makeStyles-cardAddressTitle-3943 MuiTypography-body1"
+                  class="MuiTypography-root makeStyles-cardFont-1460 makeStyles-cardAddressTitle-1471 MuiTypography-body1"
                 >
                   Same as Billing Address
                 </p>
@@ -1005,7 +1005,7 @@ exports[`ClientDetail should discard information 1`] = `
           </div>
         </div>
         <div
-          class="MuiPaper-root makeStyles-container-4000  MuiPaper-outlined MuiPaper-rounded"
+          class="MuiPaper-root makeStyles-container-1528  MuiPaper-outlined MuiPaper-rounded"
         >
           <div
             class="MuiGrid-root MuiGrid-container MuiGrid-align-items-xs-center MuiGrid-justify-xs-space-between"
@@ -1014,7 +1014,7 @@ exports[`ClientDetail should discard information 1`] = `
               class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-auto"
             >
               <h1
-                class="MuiTypography-root makeStyles-title-4001 MuiTypography-h1"
+                class="MuiTypography-root makeStyles-title-1529 MuiTypography-h1"
               >
                 Archive
               </h1>
@@ -1023,15 +1023,15 @@ exports[`ClientDetail should discard information 1`] = `
               class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-auto"
             >
               <span
-                class=" makeStyles-secondaryActions-4002"
+                class=" makeStyles-secondaryActions-1530"
               />
             </div>
           </div>
           <hr
-            class="MuiDivider-root makeStyles-divider-4003"
+            class="MuiDivider-root makeStyles-divider-1531"
           />
           <button
-            class="MuiButtonBase-root MuiButton-root MuiButton-outlined makeStyles-archiveButton-3808 MuiButton-outlinedPrimary"
+            class="MuiButtonBase-root MuiButton-root MuiButton-outlined makeStyles-archiveButton-357 MuiButton-outlinedPrimary"
             data-testid="archive-btn"
             tabindex="0"
             type="button"
@@ -1067,7 +1067,7 @@ exports[`ClientDetail should edit developer information 1`] = `
         class="client-list-header"
       >
         <p
-          class="MuiTypography-root makeStyles-stepWrapper-3099 MuiTypography-body1 MuiTypography-colorPrimary MuiTypography-alignLeft"
+          class="MuiTypography-root makeStyles-stepWrapper-356 MuiTypography-body1 MuiTypography-colorPrimary MuiTypography-alignLeft"
         >
           <a
             href="/clients"
@@ -1079,33 +1079,33 @@ exports[`ClientDetail should edit developer information 1`] = `
            Client Detail
         </p>
         <h1
-          class="MuiTypography-root makeStyles-title-3169 MuiTypography-h5 MuiTypography-colorPrimary MuiTypography-alignLeft"
+          class="MuiTypography-root makeStyles-title-426 MuiTypography-h5 MuiTypography-colorPrimary MuiTypography-alignLeft"
         >
           Martin
         </h1>
       </div>
       <div
-        class="makeStyles-widgetsWrapper-3176"
+        class="makeStyles-widgetsWrapper-433"
         id="summary-widgets"
       >
         <div
-          class="MuiPaper-root makeStyles-widget-3190 MuiPaper-elevation0 MuiPaper-rounded"
+          class="MuiPaper-root makeStyles-widget-447 MuiPaper-elevation0 MuiPaper-rounded"
         >
           <span
-            class="makeStyles-totalFont-3191"
+            class="makeStyles-totalFont-448"
           >
             5
           </span>
           <div
-            class="makeStyles-contentContainer-3194"
+            class="makeStyles-contentContainer-451"
           >
             <span
-              class="makeStyles-statusFont-3192"
+              class="makeStyles-statusFont-449"
             >
               Projects
             </span>
             <span
-              class="makeStyles-contentFont-3193"
+              class="makeStyles-contentFont-450"
             >
               <a
                 href="/clients/detail/a521bdcd-264c-4ae8-920a-cad6e481db65/projects"
@@ -1116,23 +1116,23 @@ exports[`ClientDetail should edit developer information 1`] = `
           </div>
         </div>
         <div
-          class="MuiPaper-root makeStyles-widget-3190 MuiPaper-elevation0 MuiPaper-rounded"
+          class="MuiPaper-root makeStyles-widget-447 MuiPaper-elevation0 MuiPaper-rounded"
         >
           <span
-            class="makeStyles-totalFont-3191"
+            class="makeStyles-totalFont-448"
           >
             37
           </span>
           <div
-            class="makeStyles-contentContainer-3194"
+            class="makeStyles-contentContainer-451"
           >
             <span
-              class="makeStyles-statusFont-3192"
+              class="makeStyles-statusFont-449"
             >
               Workers
             </span>
             <span
-              class="makeStyles-contentFont-3193"
+              class="makeStyles-contentFont-450"
             >
               <a
                 href="/clients/detail/a521bdcd-264c-4ae8-920a-cad6e481db65/workers"
@@ -1143,35 +1143,35 @@ exports[`ClientDetail should edit developer information 1`] = `
           </div>
         </div>
         <div
-          class="MuiPaper-root makeStyles-widget-3190 MuiPaper-elevation0 MuiPaper-rounded"
+          class="MuiPaper-root makeStyles-widget-447 MuiPaper-elevation0 MuiPaper-rounded"
         >
           <span
-            class="makeStyles-totalFont-3191"
+            class="makeStyles-totalFont-448"
           >
             $ 23,678.00
           </span>
           <div
-            class="makeStyles-contentContainer-3194"
+            class="makeStyles-contentContainer-451"
           >
             <span
-              class="makeStyles-statusFont-3192"
+              class="makeStyles-statusFont-449"
             >
               Revenue
             </span>
             <span
-              class="makeStyles-contentFont-3193"
+              class="makeStyles-contentFont-450"
             />
           </div>
         </div>
       </div>
       <div
-        class="makeStyles-tableWrapper-3128"
+        class="makeStyles-tableWrapper-385"
       >
         <div
-          class="makeStyles-filterContainer-3136"
+          class="makeStyles-filterContainer-393"
         >
           <div
-            class="makeStyles-statusFilter-3137"
+            class="makeStyles-statusFilter-394"
           >
             <a
               data-testid="filter-status-opt"
@@ -1259,7 +1259,7 @@ exports[`ClientDetail should edit developer information 1`] = `
               tabindex="-1"
             >
               <button
-                class="MuiButtonBase-root MuiButton-root MuiButton-text makeStyles-activeFilter-3138"
+                class="MuiButtonBase-root MuiButton-root MuiButton-text makeStyles-activeFilter-395"
                 tabindex="0"
                 type="button"
               >
@@ -1276,7 +1276,7 @@ exports[`ClientDetail should edit developer information 1`] = `
           </div>
         </div>
         <div
-          class="MuiPaper-root makeStyles-container-3292  MuiPaper-outlined MuiPaper-rounded"
+          class="MuiPaper-root makeStyles-container-1230  MuiPaper-outlined MuiPaper-rounded"
         >
           <div
             class="MuiGrid-root MuiGrid-container MuiGrid-align-items-xs-center MuiGrid-justify-xs-space-between"
@@ -1285,7 +1285,7 @@ exports[`ClientDetail should edit developer information 1`] = `
               class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-auto"
             >
               <h1
-                class="MuiTypography-root makeStyles-title-3293 MuiTypography-h1"
+                class="MuiTypography-root makeStyles-title-1231 MuiTypography-h1"
               >
                 General Information
               </h1>
@@ -1294,10 +1294,10 @@ exports[`ClientDetail should edit developer information 1`] = `
               class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-auto"
             >
               <span
-                class="makeStyles-secondaryActionsIcon-3287 makeStyles-secondaryActions-3294"
+                class="makeStyles-secondaryActionsIcon-1225 makeStyles-secondaryActions-1232"
               >
                 <button
-                  class="MuiButtonBase-root MuiIconButton-root makeStyles-editButton-3203"
+                  class="MuiButtonBase-root MuiIconButton-root makeStyles-editButton-464"
                   data-testid="gen-info-edit-button"
                   tabindex="0"
                   type="button"
@@ -1321,65 +1321,65 @@ exports[`ClientDetail should edit developer information 1`] = `
             </div>
           </div>
           <hr
-            class="MuiDivider-root makeStyles-divider-3295"
+            class="MuiDivider-root makeStyles-divider-1233"
           />
           <div
-            class="makeStyles-reviewGeneralInformation-3247 makeStyles-reviewGeneralInformationDirection-3250"
+            class="makeStyles-reviewGeneralInformation-1185 makeStyles-reviewGeneralInformationDirection-1188"
           >
             <div
-              class="makeStyles-informationBlocksWrapper-3249"
+              class="makeStyles-informationBlocksWrapper-1187"
             >
               <div
-                class="makeStyles-informationBlock-3246"
+                class="makeStyles-informationBlock-1184"
               >
                 <p
-                  class="MuiTypography-root makeStyles-cardFont-3224 makeStyles-cardFontAccent-3226 makeStyles-cardTitle-3229 MuiTypography-body1"
+                  class="MuiTypography-root makeStyles-cardFont-1162 makeStyles-cardFontAccent-1164 makeStyles-cardTitle-1167 MuiTypography-body1"
                 >
                   Client Name
                 </p>
                 <p
-                  class="MuiTypography-root makeStyles-cardFont-3224 MuiTypography-body1"
+                  class="MuiTypography-root makeStyles-cardFont-1162 MuiTypography-body1"
                 >
                   Martin
                 </p>
                 <p
-                  class="MuiTypography-root makeStyles-cardFont-3224 MuiTypography-body1"
+                  class="MuiTypography-root makeStyles-cardFont-1162 MuiTypography-body1"
                 >
                   Developer
                 </p>
               </div>
               <div
-                class="makeStyles-informationBlock-3246 makeStyles-informationMiddleBlock-3251"
+                class="makeStyles-informationBlock-1184 makeStyles-informationMiddleBlock-1189"
               >
                 <p
-                  class="MuiTypography-root makeStyles-cardFont-3224 makeStyles-cardFontAccent-3226 makeStyles-cardTitle-3229 MuiTypography-body1"
+                  class="MuiTypography-root makeStyles-cardFont-1162 makeStyles-cardFontAccent-1164 makeStyles-cardTitle-1167 MuiTypography-body1"
                 >
                   Legal Information
                 </p>
                 <div
-                  class="makeStyles-cardData-3233"
+                  class="makeStyles-cardData-1171"
                 >
                   <p
-                    class="MuiTypography-root makeStyles-cardFont-3224 makeStyles-cardDataTitle-3234 MuiTypography-body1"
+                    class="MuiTypography-root makeStyles-cardFont-1162 makeStyles-cardDataTitle-1172 MuiTypography-body1"
                   >
                     Taxpayer Identification Number:
                   </p>
                   <p
-                    class="MuiTypography-root makeStyles-cardFont-3224 makeStyles-cardFontAccent-3226 MuiTypography-body1"
+                    class="MuiTypography-root makeStyles-cardFont-1162 makeStyles-cardFontAccent-1164 MuiTypography-body1"
                   >
                     -
                   </p>
                 </div>
                 <div
-                  class="makeStyles-cardData-3233"
+                  class="makeStyles-cardData-1171"
                 >
                   <p
-                    class="MuiTypography-root makeStyles-cardFont-3224 makeStyles-cardDataTitle-3234 MuiTypography-body1"
+                    class="MuiTypography-root makeStyles-cardFont-1162 makeStyles-cardDataTitle-1172 MuiTypography-body1"
                   >
                     MBE/WBE:
                   </p>
                   <p
-                    class="MuiTypography-root makeStyles-cardFont-3224 makeStyles-cardFontAccent-3226 MuiTypography-body1"
+                    class="MuiTypography-root makeStyles-cardFont-1162 makeStyles-cardFontAccent-1164 MuiTypography-body1"
                   >
                     Option 1
                   </p>
@@ -1387,16 +1387,16 @@ exports[`ClientDetail should edit developer information 1`] = `
               </div>
             </div>
             <div
-              class="makeStyles-informationBlock-3246 makeStyles-lastInformationBlock-3252"
+              class="makeStyles-informationBlock-1184 makeStyles-lastInformationBlock-1190"
               data-testid="trade-names"
             >
               <p
-                class="MuiTypography-root makeStyles-cardFont-3224 makeStyles-cardFontAccent-3226 makeStyles-cardTitle-3229 makeStyles-lastInformationTitle-3253 MuiTypography-body1"
+                class="MuiTypography-root makeStyles-cardFont-1162 makeStyles-cardFontAccent-1164 makeStyles-cardTitle-1167 makeStyles-lastInformationTitle-1191 MuiTypography-body1"
               >
                 Trades
               </p>
               <span
-                class="makeStyles-cardTrades-3232"
+                class="makeStyles-cardTrades-1170"
               >
                 <span>
                   -
@@ -1404,26 +1404,26 @@ exports[`ClientDetail should edit developer information 1`] = `
               </span>
             </div>
             <div
-              class="makeStyles-informationBlocksWrapper-3249 makeStyles-lastInformationBlock-3252"
+              class="makeStyles-informationBlocksWrapper-1187 makeStyles-lastInformationBlock-1190"
             >
               <div
-                class="makeStyles-informationBlock-3246 makeStyles-lastInformationTitle-3253"
+                class="makeStyles-informationBlock-1184 makeStyles-lastInformationTitle-1191"
               >
                 <p
-                  class="MuiTypography-root makeStyles-cardFont-3224 makeStyles-cardFontAccent-3226 makeStyles-cardTitle-3229 MuiTypography-body1"
+                  class="MuiTypography-root makeStyles-cardFont-1162 makeStyles-cardFontAccent-1164 makeStyles-cardTitle-1167 MuiTypography-body1"
                 >
                   Universal Badge
                 </p>
                 <div
-                  class="makeStyles-cardData-3233"
+                  class="makeStyles-cardData-1171"
                 >
                   <p
-                    class="MuiTypography-root makeStyles-cardFont-3224 makeStyles-cardDataTitle-3234 MuiTypography-body1"
+                    class="MuiTypography-root makeStyles-cardFont-1162 makeStyles-cardDataTitle-1172 MuiTypography-body1"
                   >
                     Universal Badge:
                   </p>
                   <p
-                    class="MuiTypography-root makeStyles-cardFont-3224 makeStyles-cardFontAccent-3226 MuiTypography-body1"
+                    class="MuiTypography-root makeStyles-cardFont-1162 makeStyles-cardFontAccent-1164 MuiTypography-body1"
                   >
                     No
                   </p>
@@ -1433,7 +1433,7 @@ exports[`ClientDetail should edit developer information 1`] = `
           </div>
         </div>
         <div
-          class="MuiPaper-root makeStyles-container-3292  MuiPaper-outlined MuiPaper-rounded"
+          class="MuiPaper-root makeStyles-container-1230  MuiPaper-outlined MuiPaper-rounded"
         >
           <div
             class="MuiGrid-root MuiGrid-container MuiGrid-align-items-xs-center MuiGrid-justify-xs-space-between"
@@ -1442,7 +1442,7 @@ exports[`ClientDetail should edit developer information 1`] = `
               class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-auto"
             >
               <h1
-                class="MuiTypography-root makeStyles-title-3293 MuiTypography-h1"
+                class="MuiTypography-root makeStyles-title-1231 MuiTypography-h1"
               >
                 Addresses
               </h1>
@@ -1451,10 +1451,10 @@ exports[`ClientDetail should edit developer information 1`] = `
               class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-auto"
             >
               <span
-                class="makeStyles-secondaryActionsIcon-3287 makeStyles-secondaryActions-3294"
+                class="makeStyles-secondaryActionsIcon-1225 makeStyles-secondaryActions-1232"
               >
                 <button
-                  class="MuiButtonBase-root MuiIconButton-root makeStyles-editButton-3203"
+                  class="MuiButtonBase-root MuiIconButton-root makeStyles-editButton-464"
                   data-testid="addr-edit-button"
                   tabindex="0"
                   type="button"
@@ -1478,24 +1478,24 @@ exports[`ClientDetail should edit developer information 1`] = `
             </div>
           </div>
           <hr
-            class="MuiDivider-root makeStyles-divider-3295"
+            class="MuiDivider-root makeStyles-divider-1233"
           />
           <div
-            class="MuiGrid-root makeStyles-addressesWrapper-3269 MuiGrid-container"
+            class="MuiGrid-root makeStyles-addressesWrapper-1207 MuiGrid-container"
           >
             <div
-              class="MuiGrid-root makeStyles-addressItem-3271 MuiGrid-item MuiGrid-grid-xs-4"
+              class="MuiGrid-root makeStyles-addressItem-1209 MuiGrid-item MuiGrid-grid-xs-4"
             >
               <div
-                class="makeStyles-informationBlock-3246 makeStyles-addressInformationBlock-3270"
+                class="makeStyles-informationBlock-1184 makeStyles-addressInformationBlock-1208"
               >
                 <p
-                  class="MuiTypography-root makeStyles-cardFont-3224 makeStyles-cardFontAccent-3226 makeStyles-cardAddressTitle-3235 MuiTypography-body1"
+                  class="MuiTypography-root makeStyles-cardFont-1162 makeStyles-cardFontAccent-1164 makeStyles-cardAddressTitle-1173 MuiTypography-body1"
                 >
                   Billing Address
                 </p>
                 <p
-                  class="MuiTypography-root makeStyles-cardFont-3224  MuiTypography-body1"
+                  class="MuiTypography-root makeStyles-cardFont-1162  MuiTypography-body1"
                 >
                   
                   <span
@@ -1505,7 +1505,7 @@ exports[`ClientDetail should edit developer information 1`] = `
                   </span>
                 </p>
                 <p
-                  class="MuiTypography-root makeStyles-cardFont-3224  MuiTypography-body1"
+                  class="MuiTypography-root makeStyles-cardFont-1162  MuiTypography-body1"
                 >
                   
                   
@@ -1515,19 +1515,19 @@ exports[`ClientDetail should edit developer information 1`] = `
               </div>
             </div>
             <hr
-              class="MuiDivider-root makeStyles-dividerColor-3285 MuiDivider-flexItem MuiDivider-vertical"
+              class="MuiDivider-root makeStyles-dividerColor-1223 MuiDivider-flexItem MuiDivider-vertical"
             />
             <div
-              class="MuiGrid-root makeStyles-addressItem-3271 MuiGrid-item MuiGrid-grid-xs-4"
+              class="MuiGrid-root makeStyles-addressItem-1209 MuiGrid-item MuiGrid-grid-xs-4"
             >
               <div>
                 <p
-                  class="MuiTypography-root makeStyles-cardFont-3224 makeStyles-cardFontAccent-3226 makeStyles-cardAddressTitle-3235 MuiTypography-body1"
+                  class="MuiTypography-root makeStyles-cardFont-1162 makeStyles-cardFontAccent-1164 makeStyles-cardAddressTitle-1173 MuiTypography-body1"
                 >
                   Mailing Address
                 </p>
                 <p
-                  class="MuiTypography-root makeStyles-cardFont-3224 makeStyles-cardAddressTitle-3235 MuiTypography-body1"
+                  class="MuiTypography-root makeStyles-cardFont-1162 makeStyles-cardAddressTitle-1173 MuiTypography-body1"
                 >
                   Same as Billing Address
                 </p>
@@ -1536,7 +1536,7 @@ exports[`ClientDetail should edit developer information 1`] = `
           </div>
         </div>
         <div
-          class="MuiPaper-root makeStyles-container-3292  MuiPaper-outlined MuiPaper-rounded"
+          class="MuiPaper-root makeStyles-container-1230  MuiPaper-outlined MuiPaper-rounded"
         >
           <div
             class="MuiGrid-root MuiGrid-container MuiGrid-align-items-xs-center MuiGrid-justify-xs-space-between"
@@ -1545,7 +1545,7 @@ exports[`ClientDetail should edit developer information 1`] = `
               class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-auto"
             >
               <h1
-                class="MuiTypography-root makeStyles-title-3293 MuiTypography-h1"
+                class="MuiTypography-root makeStyles-title-1231 MuiTypography-h1"
               >
                 Archive
               </h1>
@@ -1554,15 +1554,15 @@ exports[`ClientDetail should edit developer information 1`] = `
               class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-auto"
             >
               <span
-                class=" makeStyles-secondaryActions-3294"
+                class=" makeStyles-secondaryActions-1232"
               />
             </div>
           </div>
           <hr
-            class="MuiDivider-root makeStyles-divider-3295"
+            class="MuiDivider-root makeStyles-divider-1233"
           />
           <button
-            class="MuiButtonBase-root MuiButton-root MuiButton-outlined makeStyles-archiveButton-3100 MuiButton-outlinedPrimary"
+            class="MuiButtonBase-root MuiButton-root MuiButton-outlined makeStyles-archiveButton-357 MuiButton-outlinedPrimary"
             data-testid="archive-btn"
             tabindex="0"
             type="button"
@@ -1598,7 +1598,7 @@ exports[`ClientDetail should edit information 1`] = `
         class="client-list-header"
       >
         <p
-          class="MuiTypography-root makeStyles-stepWrapper-2292 MuiTypography-body1 MuiTypography-colorPrimary MuiTypography-alignLeft"
+          class="MuiTypography-root makeStyles-stepWrapper-356 MuiTypography-body1 MuiTypography-colorPrimary MuiTypography-alignLeft"
         >
           <a
             href="/clients"
@@ -1610,33 +1610,33 @@ exports[`ClientDetail should edit information 1`] = `
            Client Detail
         </p>
         <h1
-          class="MuiTypography-root makeStyles-title-2362 MuiTypography-h5 MuiTypography-colorPrimary MuiTypography-alignLeft"
+          class="MuiTypography-root makeStyles-title-426 MuiTypography-h5 MuiTypography-colorPrimary MuiTypography-alignLeft"
         >
           Robert C. Martin
         </h1>
       </div>
       <div
-        class="makeStyles-widgetsWrapper-2369"
+        class="makeStyles-widgetsWrapper-433"
         id="summary-widgets"
       >
         <div
-          class="MuiPaper-root makeStyles-widget-2383 MuiPaper-elevation0 MuiPaper-rounded"
+          class="MuiPaper-root makeStyles-widget-447 MuiPaper-elevation0 MuiPaper-rounded"
         >
           <span
-            class="makeStyles-totalFont-2384"
+            class="makeStyles-totalFont-448"
           >
             5
           </span>
           <div
-            class="makeStyles-contentContainer-2387"
+            class="makeStyles-contentContainer-451"
           >
             <span
-              class="makeStyles-statusFont-2385"
+              class="makeStyles-statusFont-449"
             >
               Projects
             </span>
             <span
-              class="makeStyles-contentFont-2386"
+              class="makeStyles-contentFont-450"
             >
               <a
                 href="/clients/detail/9164e4c4-6521-47bb-97fd-c75ac02b2cf5/projects"
@@ -1647,23 +1647,23 @@ exports[`ClientDetail should edit information 1`] = `
           </div>
         </div>
         <div
-          class="MuiPaper-root makeStyles-widget-2383 MuiPaper-elevation0 MuiPaper-rounded"
+          class="MuiPaper-root makeStyles-widget-447 MuiPaper-elevation0 MuiPaper-rounded"
         >
           <span
-            class="makeStyles-totalFont-2384"
+            class="makeStyles-totalFont-448"
           >
             37
           </span>
           <div
-            class="makeStyles-contentContainer-2387"
+            class="makeStyles-contentContainer-451"
           >
             <span
-              class="makeStyles-statusFont-2385"
+              class="makeStyles-statusFont-449"
             >
               Workers
             </span>
             <span
-              class="makeStyles-contentFont-2386"
+              class="makeStyles-contentFont-450"
             >
               <a
                 href="/clients/detail/9164e4c4-6521-47bb-97fd-c75ac02b2cf5/workers"
@@ -1674,35 +1674,35 @@ exports[`ClientDetail should edit information 1`] = `
           </div>
         </div>
         <div
-          class="MuiPaper-root makeStyles-widget-2383 MuiPaper-elevation0 MuiPaper-rounded"
+          class="MuiPaper-root makeStyles-widget-447 MuiPaper-elevation0 MuiPaper-rounded"
         >
           <span
-            class="makeStyles-totalFont-2384"
+            class="makeStyles-totalFont-448"
           >
             $ 23,678.00
           </span>
           <div
-            class="makeStyles-contentContainer-2387"
+            class="makeStyles-contentContainer-451"
           >
             <span
-              class="makeStyles-statusFont-2385"
+              class="makeStyles-statusFont-449"
             >
               Revenue
             </span>
             <span
-              class="makeStyles-contentFont-2386"
+              class="makeStyles-contentFont-450"
             />
           </div>
         </div>
       </div>
       <div
-        class="makeStyles-tableWrapper-2321"
+        class="makeStyles-tableWrapper-385"
       >
         <div
-          class="makeStyles-filterContainer-2329"
+          class="makeStyles-filterContainer-393"
         >
           <div
-            class="makeStyles-statusFilter-2330"
+            class="makeStyles-statusFilter-394"
           >
             <a
               data-testid="filter-status-opt"
@@ -1790,7 +1790,7 @@ exports[`ClientDetail should edit information 1`] = `
               tabindex="-1"
             >
               <button
-                class="MuiButtonBase-root MuiButton-root MuiButton-text makeStyles-activeFilter-2331"
+                class="MuiButtonBase-root MuiButton-root MuiButton-text makeStyles-activeFilter-395"
                 tabindex="0"
                 type="button"
               >
@@ -1807,7 +1807,7 @@ exports[`ClientDetail should edit information 1`] = `
           </div>
         </div>
         <div
-          class="MuiPaper-root makeStyles-container-2485  MuiPaper-outlined MuiPaper-rounded"
+          class="MuiPaper-root makeStyles-container-833  MuiPaper-outlined MuiPaper-rounded"
         >
           <div
             class="MuiGrid-root MuiGrid-container MuiGrid-align-items-xs-center MuiGrid-justify-xs-space-between"
@@ -1816,7 +1816,7 @@ exports[`ClientDetail should edit information 1`] = `
               class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-auto"
             >
               <h1
-                class="MuiTypography-root makeStyles-title-2486 MuiTypography-h1"
+                class="MuiTypography-root makeStyles-title-834 MuiTypography-h1"
               >
                 General Information
               </h1>
@@ -1825,10 +1825,10 @@ exports[`ClientDetail should edit information 1`] = `
               class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-auto"
             >
               <span
-                class="makeStyles-secondaryActionsIcon-2480 makeStyles-secondaryActions-2487"
+                class="makeStyles-secondaryActionsIcon-828 makeStyles-secondaryActions-835"
               >
                 <button
-                  class="MuiButtonBase-root MuiIconButton-root makeStyles-editButton-2396"
+                  class="MuiButtonBase-root MuiIconButton-root makeStyles-editButton-464"
                   data-testid="gen-info-edit-button"
                   tabindex="0"
                   type="button"
@@ -1852,60 +1852,60 @@ exports[`ClientDetail should edit information 1`] = `
             </div>
           </div>
           <hr
-            class="MuiDivider-root makeStyles-divider-2488"
+            class="MuiDivider-root makeStyles-divider-836"
           />
           <div
-            class="makeStyles-reviewGeneralInformation-2440 makeStyles-reviewGeneralInformationDirection-2443"
+            class="makeStyles-reviewGeneralInformation-788 makeStyles-reviewGeneralInformationDirection-791"
           >
             <div
-              class="makeStyles-informationBlocksWrapper-2442"
+              class="makeStyles-informationBlocksWrapper-790"
             >
               <div
-                class="makeStyles-informationBlock-2439"
+                class="makeStyles-informationBlock-787"
               >
                 <p
-                  class="MuiTypography-root makeStyles-cardFont-2417 makeStyles-cardFontAccent-2419 makeStyles-cardTitle-2422 MuiTypography-body1"
+                  class="MuiTypography-root makeStyles-cardFont-765 makeStyles-cardFontAccent-767 makeStyles-cardTitle-770 MuiTypography-body1"
                 >
                   Client Name
                 </p>
                 <p
-                  class="MuiTypography-root makeStyles-cardFont-2417 MuiTypography-body1"
+                  class="MuiTypography-root makeStyles-cardFont-765 MuiTypography-body1"
                 >
                   Robert C. Martin
                 </p>
               </div>
               <div
-                class="makeStyles-informationBlock-2439 makeStyles-informationMiddleBlock-2444"
+                class="makeStyles-informationBlock-787 makeStyles-informationMiddleBlock-792"
               >
                 <p
-                  class="MuiTypography-root makeStyles-cardFont-2417 makeStyles-cardFontAccent-2419 makeStyles-cardTitle-2422 MuiTypography-body1"
+                  class="MuiTypography-root makeStyles-cardFont-765 makeStyles-cardFontAccent-767 makeStyles-cardTitle-770 MuiTypography-body1"
                 >
                   Legal Information
                 </p>
                 <div
-                  class="makeStyles-cardData-2426"
+                  class="makeStyles-cardData-774"
                 >
                   <p
-                    class="MuiTypography-root makeStyles-cardFont-2417 makeStyles-cardDataTitle-2427 MuiTypography-body1"
+                    class="MuiTypography-root makeStyles-cardFont-765 makeStyles-cardDataTitle-775 MuiTypography-body1"
                   >
                     Taxpayer Identification Number:
                   </p>
                   <p
-                    class="MuiTypography-root makeStyles-cardFont-2417 makeStyles-cardFontAccent-2419 MuiTypography-body1"
+                    class="MuiTypography-root makeStyles-cardFont-765 makeStyles-cardFontAccent-767 MuiTypography-body1"
                   >
                     LOZG-780211-7B9
                   </p>
                 </div>
                 <div
-                  class="makeStyles-cardData-2426"
+                  class="makeStyles-cardData-774"
                 >
                   <p
-                    class="MuiTypography-root makeStyles-cardFont-2417 makeStyles-cardDataTitle-2427 MuiTypography-body1"
+                    class="MuiTypography-root makeStyles-cardFont-765 makeStyles-cardDataTitle-775 MuiTypography-body1"
                   >
                     MBE/WBE:
                   </p>
                   <p
-                    class="MuiTypography-root makeStyles-cardFont-2417 makeStyles-cardFontAccent-2419 MuiTypography-body1"
+                    class="MuiTypography-root makeStyles-cardFont-765 makeStyles-cardFontAccent-767 MuiTypography-body1"
                   >
                     Option 1
                   </p>
@@ -1913,16 +1913,16 @@ exports[`ClientDetail should edit information 1`] = `
               </div>
             </div>
             <div
-              class="makeStyles-informationBlock-2439 makeStyles-lastInformationBlock-2445"
+              class="makeStyles-informationBlock-787 makeStyles-lastInformationBlock-793"
               data-testid="trade-names"
             >
               <p
-                class="MuiTypography-root makeStyles-cardFont-2417 makeStyles-cardFontAccent-2419 makeStyles-cardTitle-2422 makeStyles-lastInformationTitle-2446 MuiTypography-body1"
+                class="MuiTypography-root makeStyles-cardFont-765 makeStyles-cardFontAccent-767 makeStyles-cardTitle-770 makeStyles-lastInformationTitle-794 MuiTypography-body1"
               >
                 Trades
               </p>
               <span
-                class="makeStyles-cardTrades-2425"
+                class="makeStyles-cardTrades-773"
               >
                 <span>
                   trade 1, trade 2.
@@ -1930,26 +1930,26 @@ exports[`ClientDetail should edit information 1`] = `
               </span>
             </div>
             <div
-              class="makeStyles-informationBlocksWrapper-2442 makeStyles-lastInformationBlock-2445"
+              class="makeStyles-informationBlocksWrapper-790 makeStyles-lastInformationBlock-793"
             >
               <div
-                class="makeStyles-informationBlock-2439 makeStyles-lastInformationTitle-2446"
+                class="makeStyles-informationBlock-787 makeStyles-lastInformationTitle-794"
               >
                 <p
-                  class="MuiTypography-root makeStyles-cardFont-2417 makeStyles-cardFontAccent-2419 makeStyles-cardTitle-2422 MuiTypography-body1"
+                  class="MuiTypography-root makeStyles-cardFont-765 makeStyles-cardFontAccent-767 makeStyles-cardTitle-770 MuiTypography-body1"
                 >
                   Universal Badge
                 </p>
                 <div
-                  class="makeStyles-cardData-2426"
+                  class="makeStyles-cardData-774"
                 >
                   <p
-                    class="MuiTypography-root makeStyles-cardFont-2417 makeStyles-cardDataTitle-2427 MuiTypography-body1"
+                    class="MuiTypography-root makeStyles-cardFont-765 makeStyles-cardDataTitle-775 MuiTypography-body1"
                   >
                     Universal Badge:
                   </p>
                   <p
-                    class="MuiTypography-root makeStyles-cardFont-2417 makeStyles-cardFontAccent-2419 MuiTypography-body1"
+                    class="MuiTypography-root makeStyles-cardFont-765 makeStyles-cardFontAccent-767 MuiTypography-body1"
                   >
                     Yes
                   </p>
@@ -1959,7 +1959,7 @@ exports[`ClientDetail should edit information 1`] = `
           </div>
         </div>
         <div
-          class="MuiPaper-root makeStyles-container-2485  MuiPaper-outlined MuiPaper-rounded"
+          class="MuiPaper-root makeStyles-container-833  MuiPaper-outlined MuiPaper-rounded"
         >
           <div
             class="MuiGrid-root MuiGrid-container MuiGrid-align-items-xs-center MuiGrid-justify-xs-space-between"
@@ -1968,7 +1968,7 @@ exports[`ClientDetail should edit information 1`] = `
               class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-auto"
             >
               <h1
-                class="MuiTypography-root makeStyles-title-2486 MuiTypography-h1"
+                class="MuiTypography-root makeStyles-title-834 MuiTypography-h1"
               >
                 Addresses
               </h1>
@@ -1977,10 +1977,10 @@ exports[`ClientDetail should edit information 1`] = `
               class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-auto"
             >
               <span
-                class="makeStyles-secondaryActionsIcon-2480 makeStyles-secondaryActions-2487"
+                class="makeStyles-secondaryActionsIcon-828 makeStyles-secondaryActions-835"
               >
                 <button
-                  class="MuiButtonBase-root MuiIconButton-root makeStyles-editButton-2396"
+                  class="MuiButtonBase-root MuiIconButton-root makeStyles-editButton-464"
                   data-testid="addr-edit-button"
                   tabindex="0"
                   type="button"
@@ -2004,34 +2004,34 @@ exports[`ClientDetail should edit information 1`] = `
             </div>
           </div>
           <hr
-            class="MuiDivider-root makeStyles-divider-2488"
+            class="MuiDivider-root makeStyles-divider-836"
           />
           <div
-            class="MuiGrid-root makeStyles-addressesWrapper-2462 MuiGrid-container"
+            class="MuiGrid-root makeStyles-addressesWrapper-810 MuiGrid-container"
           >
             <div
-              class="MuiGrid-root makeStyles-addressItem-2464 MuiGrid-item MuiGrid-grid-xs-4"
+              class="MuiGrid-root makeStyles-addressItem-812 MuiGrid-item MuiGrid-grid-xs-4"
             >
               <div
-                class="makeStyles-informationBlock-2439 makeStyles-addressInformationBlock-2463"
+                class="makeStyles-informationBlock-787 makeStyles-addressInformationBlock-811"
               >
                 <p
-                  class="MuiTypography-root makeStyles-cardFont-2417 makeStyles-cardFontAccent-2419 makeStyles-cardAddressTitle-2428 MuiTypography-body1"
+                  class="MuiTypography-root makeStyles-cardFont-765 makeStyles-cardFontAccent-767 makeStyles-cardAddressTitle-776 MuiTypography-body1"
                 >
                   Billing Address
                 </p>
                 <p
-                  class="MuiTypography-root makeStyles-cardFont-2417  MuiTypography-body1"
+                  class="MuiTypography-root makeStyles-cardFont-765  MuiTypography-body1"
                 >
                   Apt 3. 
                   <span
-                    class="makeStyles-cardFontAccent-2419 "
+                    class="makeStyles-cardFontAccent-767 "
                   >
                     21 Street
                   </span>
                 </p>
                 <p
-                  class="MuiTypography-root makeStyles-cardFont-2417  MuiTypography-body1"
+                  class="MuiTypography-root makeStyles-cardFont-765  MuiTypography-body1"
                 >
                   Dallas, 
                   
@@ -2040,36 +2040,36 @@ exports[`ClientDetail should edit information 1`] = `
                 </p>
               </div>
               <div
-                class="makeStyles-mapWrapper-2454"
+                class="makeStyles-mapWrapper-802"
                 id="review-billing-map"
               />
             </div>
             <hr
-              class="MuiDivider-root makeStyles-dividerColor-2478 MuiDivider-flexItem MuiDivider-vertical"
+              class="MuiDivider-root makeStyles-dividerColor-826 MuiDivider-flexItem MuiDivider-vertical"
             />
             <div
-              class="MuiGrid-root makeStyles-addressItem-2464 MuiGrid-item MuiGrid-grid-xs-4"
+              class="MuiGrid-root makeStyles-addressItem-812 MuiGrid-item MuiGrid-grid-xs-4"
             >
               <div
-                class="makeStyles-informationBlock-2439 makeStyles-addressInformationBlock-2463"
+                class="makeStyles-informationBlock-787 makeStyles-addressInformationBlock-811"
               >
                 <p
-                  class="MuiTypography-root makeStyles-cardFont-2417 makeStyles-cardFontAccent-2419 makeStyles-cardAddressTitle-2428 MuiTypography-body1"
+                  class="MuiTypography-root makeStyles-cardFont-765 makeStyles-cardFontAccent-767 makeStyles-cardAddressTitle-776 MuiTypography-body1"
                 >
                   Mailing Address
                 </p>
                 <p
-                  class="MuiTypography-root makeStyles-cardFont-2417  MuiTypography-body1"
+                  class="MuiTypography-root makeStyles-cardFont-765  MuiTypography-body1"
                 >
                   Apt 3. 
                   <span
-                    class="makeStyles-cardFontAccent-2419 "
+                    class="makeStyles-cardFontAccent-767 "
                   >
                     21 Street
                   </span>
                 </p>
                 <p
-                  class="MuiTypography-root makeStyles-cardFont-2417  MuiTypography-body1"
+                  class="MuiTypography-root makeStyles-cardFont-765  MuiTypography-body1"
                 >
                   Dallas, 
                   
@@ -2079,7 +2079,7 @@ exports[`ClientDetail should edit information 1`] = `
               </div>
               <div>
                 <div
-                  class="makeStyles-mapWrapper-2454"
+                  class="makeStyles-mapWrapper-802"
                   id="review-mailing-map"
                 />
               </div>
@@ -2087,7 +2087,7 @@ exports[`ClientDetail should edit information 1`] = `
           </div>
         </div>
         <div
-          class="MuiPaper-root makeStyles-container-2485  MuiPaper-outlined MuiPaper-rounded"
+          class="MuiPaper-root makeStyles-container-833  MuiPaper-outlined MuiPaper-rounded"
         >
           <div
             class="MuiGrid-root MuiGrid-container MuiGrid-align-items-xs-center MuiGrid-justify-xs-space-between"
@@ -2096,7 +2096,7 @@ exports[`ClientDetail should edit information 1`] = `
               class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-auto"
             >
               <h1
-                class="MuiTypography-root makeStyles-title-2486 MuiTypography-h1"
+                class="MuiTypography-root makeStyles-title-834 MuiTypography-h1"
               >
                 Archive
               </h1>
@@ -2105,15 +2105,15 @@ exports[`ClientDetail should edit information 1`] = `
               class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-auto"
             >
               <span
-                class=" makeStyles-secondaryActions-2487"
+                class=" makeStyles-secondaryActions-835"
               />
             </div>
           </div>
           <hr
-            class="MuiDivider-root makeStyles-divider-2488"
+            class="MuiDivider-root makeStyles-divider-836"
           />
           <button
-            class="MuiButtonBase-root MuiButton-root MuiButton-outlined makeStyles-archiveButton-2293 MuiButton-outlinedPrimary"
+            class="MuiButtonBase-root MuiButton-root MuiButton-outlined makeStyles-archiveButton-357 MuiButton-outlinedPrimary"
             data-testid="archive-btn"
             tabindex="0"
             type="button"
@@ -2147,7 +2147,7 @@ exports[`ClientDetail should render default values 1`] = `
         class="client-list-header"
       >
         <p
-          class="MuiTypography-root makeStyles-stepWrapper-530 MuiTypography-body1 MuiTypography-colorPrimary MuiTypography-alignLeft"
+          class="MuiTypography-root makeStyles-stepWrapper-356 MuiTypography-body1 MuiTypography-colorPrimary MuiTypography-alignLeft"
         >
           <a
             href="/clients"
@@ -2159,33 +2159,33 @@ exports[`ClientDetail should render default values 1`] = `
            Client Detail
         </p>
         <h1
-          class="MuiTypography-root makeStyles-title-600 MuiTypography-h5 MuiTypography-colorPrimary MuiTypography-alignLeft"
+          class="MuiTypography-root makeStyles-title-426 MuiTypography-h5 MuiTypography-colorPrimary MuiTypography-alignLeft"
         >
           
         </h1>
       </div>
       <div
-        class="makeStyles-widgetsWrapper-607"
+        class="makeStyles-widgetsWrapper-433"
         id="summary-widgets"
       >
         <div
-          class="MuiPaper-root makeStyles-widget-621 MuiPaper-elevation0 MuiPaper-rounded"
+          class="MuiPaper-root makeStyles-widget-447 MuiPaper-elevation0 MuiPaper-rounded"
         >
           <span
-            class="makeStyles-totalFont-622"
+            class="makeStyles-totalFont-448"
           >
             5
           </span>
           <div
-            class="makeStyles-contentContainer-625"
+            class="makeStyles-contentContainer-451"
           >
             <span
-              class="makeStyles-statusFont-623"
+              class="makeStyles-statusFont-449"
             >
               Projects
             </span>
             <span
-              class="makeStyles-contentFont-624"
+              class="makeStyles-contentFont-450"
             >
               <a
                 href="/clients/detail/null/projects"
@@ -2196,23 +2196,23 @@ exports[`ClientDetail should render default values 1`] = `
           </div>
         </div>
         <div
-          class="MuiPaper-root makeStyles-widget-621 MuiPaper-elevation0 MuiPaper-rounded"
+          class="MuiPaper-root makeStyles-widget-447 MuiPaper-elevation0 MuiPaper-rounded"
         >
           <span
-            class="makeStyles-totalFont-622"
+            class="makeStyles-totalFont-448"
           >
             37
           </span>
           <div
-            class="makeStyles-contentContainer-625"
+            class="makeStyles-contentContainer-451"
           >
             <span
-              class="makeStyles-statusFont-623"
+              class="makeStyles-statusFont-449"
             >
               Workers
             </span>
             <span
-              class="makeStyles-contentFont-624"
+              class="makeStyles-contentFont-450"
             >
               <a
                 href="/clients/detail/null/workers"
@@ -2223,35 +2223,35 @@ exports[`ClientDetail should render default values 1`] = `
           </div>
         </div>
         <div
-          class="MuiPaper-root makeStyles-widget-621 MuiPaper-elevation0 MuiPaper-rounded"
+          class="MuiPaper-root makeStyles-widget-447 MuiPaper-elevation0 MuiPaper-rounded"
         >
           <span
-            class="makeStyles-totalFont-622"
+            class="makeStyles-totalFont-448"
           >
             $ 23,678.00
           </span>
           <div
-            class="makeStyles-contentContainer-625"
+            class="makeStyles-contentContainer-451"
           >
             <span
-              class="makeStyles-statusFont-623"
+              class="makeStyles-statusFont-449"
             >
               Revenue
             </span>
             <span
-              class="makeStyles-contentFont-624"
+              class="makeStyles-contentFont-450"
             />
           </div>
         </div>
       </div>
       <div
-        class="makeStyles-tableWrapper-559"
+        class="makeStyles-tableWrapper-385"
       >
         <div
-          class="makeStyles-filterContainer-567"
+          class="makeStyles-filterContainer-393"
         >
           <div
-            class="makeStyles-statusFilter-568"
+            class="makeStyles-statusFilter-394"
           >
             <a
               data-testid="filter-status-opt"
@@ -2259,7 +2259,7 @@ exports[`ClientDetail should render default values 1`] = `
               tabindex="-1"
             >
               <button
-                class="MuiButtonBase-root MuiButton-root MuiButton-text makeStyles-activeFilter-569"
+                class="MuiButtonBase-root MuiButton-root MuiButton-text makeStyles-activeFilter-395"
                 tabindex="0"
                 type="button"
               >
@@ -2375,7 +2375,7 @@ exports[`ClientDetail should render information tab 1`] = `
         class="client-list-header"
       >
         <p
-          class="MuiTypography-root makeStyles-stepWrapper-2081 MuiTypography-body1 MuiTypography-colorPrimary MuiTypography-alignLeft"
+          class="MuiTypography-root makeStyles-stepWrapper-356 MuiTypography-body1 MuiTypography-colorPrimary MuiTypography-alignLeft"
         >
           <a
             href="/clients"
@@ -2387,33 +2387,33 @@ exports[`ClientDetail should render information tab 1`] = `
            Client Detail
         </p>
         <h1
-          class="MuiTypography-root makeStyles-title-2151 MuiTypography-h5 MuiTypography-colorPrimary MuiTypography-alignLeft"
+          class="MuiTypography-root makeStyles-title-426 MuiTypography-h5 MuiTypography-colorPrimary MuiTypography-alignLeft"
         >
           Robert C. Martin
         </h1>
       </div>
       <div
-        class="makeStyles-widgetsWrapper-2158"
+        class="makeStyles-widgetsWrapper-433"
         id="summary-widgets"
       >
         <div
-          class="MuiPaper-root makeStyles-widget-2172 MuiPaper-elevation0 MuiPaper-rounded"
+          class="MuiPaper-root makeStyles-widget-447 MuiPaper-elevation0 MuiPaper-rounded"
         >
           <span
-            class="makeStyles-totalFont-2173"
+            class="makeStyles-totalFont-448"
           >
             5
           </span>
           <div
-            class="makeStyles-contentContainer-2176"
+            class="makeStyles-contentContainer-451"
           >
             <span
-              class="makeStyles-statusFont-2174"
+              class="makeStyles-statusFont-449"
             >
               Projects
             </span>
             <span
-              class="makeStyles-contentFont-2175"
+              class="makeStyles-contentFont-450"
             >
               <a
                 href="/clients/detail/9164e4c4-6521-47bb-97fd-c75ac02b2cf5/projects"
@@ -2424,23 +2424,23 @@ exports[`ClientDetail should render information tab 1`] = `
           </div>
         </div>
         <div
-          class="MuiPaper-root makeStyles-widget-2172 MuiPaper-elevation0 MuiPaper-rounded"
+          class="MuiPaper-root makeStyles-widget-447 MuiPaper-elevation0 MuiPaper-rounded"
         >
           <span
-            class="makeStyles-totalFont-2173"
+            class="makeStyles-totalFont-448"
           >
             37
           </span>
           <div
-            class="makeStyles-contentContainer-2176"
+            class="makeStyles-contentContainer-451"
           >
             <span
-              class="makeStyles-statusFont-2174"
+              class="makeStyles-statusFont-449"
             >
               Workers
             </span>
             <span
-              class="makeStyles-contentFont-2175"
+              class="makeStyles-contentFont-450"
             >
               <a
                 href="/clients/detail/9164e4c4-6521-47bb-97fd-c75ac02b2cf5/workers"
@@ -2451,35 +2451,35 @@ exports[`ClientDetail should render information tab 1`] = `
           </div>
         </div>
         <div
-          class="MuiPaper-root makeStyles-widget-2172 MuiPaper-elevation0 MuiPaper-rounded"
+          class="MuiPaper-root makeStyles-widget-447 MuiPaper-elevation0 MuiPaper-rounded"
         >
           <span
-            class="makeStyles-totalFont-2173"
+            class="makeStyles-totalFont-448"
           >
             $ 23,678.00
           </span>
           <div
-            class="makeStyles-contentContainer-2176"
+            class="makeStyles-contentContainer-451"
           >
             <span
-              class="makeStyles-statusFont-2174"
+              class="makeStyles-statusFont-449"
             >
               Revenue
             </span>
             <span
-              class="makeStyles-contentFont-2175"
+              class="makeStyles-contentFont-450"
             />
           </div>
         </div>
       </div>
       <div
-        class="makeStyles-tableWrapper-2110"
+        class="makeStyles-tableWrapper-385"
       >
         <div
-          class="makeStyles-filterContainer-2118"
+          class="makeStyles-filterContainer-393"
         >
           <div
-            class="makeStyles-statusFilter-2119"
+            class="makeStyles-statusFilter-394"
           >
             <a
               data-testid="filter-status-opt"
@@ -2567,7 +2567,7 @@ exports[`ClientDetail should render information tab 1`] = `
               tabindex="-1"
             >
               <button
-                class="MuiButtonBase-root MuiButton-root MuiButton-text makeStyles-activeFilter-2120"
+                class="MuiButtonBase-root MuiButton-root MuiButton-text makeStyles-activeFilter-395"
                 tabindex="0"
                 type="button"
               >
@@ -2584,7 +2584,7 @@ exports[`ClientDetail should render information tab 1`] = `
           </div>
         </div>
         <div
-          class="MuiPaper-root makeStyles-container-2274  MuiPaper-outlined MuiPaper-rounded"
+          class="MuiPaper-root makeStyles-container-758  MuiPaper-outlined MuiPaper-rounded"
         >
           <div
             class="MuiGrid-root MuiGrid-container MuiGrid-align-items-xs-center MuiGrid-justify-xs-space-between"
@@ -2593,7 +2593,7 @@ exports[`ClientDetail should render information tab 1`] = `
               class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-auto"
             >
               <h1
-                class="MuiTypography-root makeStyles-title-2275 MuiTypography-h1"
+                class="MuiTypography-root makeStyles-title-759 MuiTypography-h1"
               >
                 General Information
               </h1>
@@ -2602,10 +2602,10 @@ exports[`ClientDetail should render information tab 1`] = `
               class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-auto"
             >
               <span
-                class="makeStyles-secondaryActionsIcon-2269 makeStyles-secondaryActions-2276"
+                class="makeStyles-secondaryActionsIcon-753 makeStyles-secondaryActions-760"
               >
                 <button
-                  class="MuiButtonBase-root MuiIconButton-root makeStyles-editButton-2185"
+                  class="MuiButtonBase-root MuiIconButton-root makeStyles-editButton-464"
                   data-testid="gen-info-edit-button"
                   tabindex="0"
                   type="button"
@@ -2629,60 +2629,60 @@ exports[`ClientDetail should render information tab 1`] = `
             </div>
           </div>
           <hr
-            class="MuiDivider-root makeStyles-divider-2277"
+            class="MuiDivider-root makeStyles-divider-761"
           />
           <div
-            class="makeStyles-reviewGeneralInformation-2229 makeStyles-reviewGeneralInformationDirection-2232"
+            class="makeStyles-reviewGeneralInformation-713 makeStyles-reviewGeneralInformationDirection-716"
           >
             <div
-              class="makeStyles-informationBlocksWrapper-2231"
+              class="makeStyles-informationBlocksWrapper-715"
             >
               <div
-                class="makeStyles-informationBlock-2228"
+                class="makeStyles-informationBlock-712"
               >
                 <p
-                  class="MuiTypography-root makeStyles-cardFont-2206 makeStyles-cardFontAccent-2208 makeStyles-cardTitle-2211 MuiTypography-body1"
+                  class="MuiTypography-root makeStyles-cardFont-690 makeStyles-cardFontAccent-692 makeStyles-cardTitle-695 MuiTypography-body1"
                 >
                   Client Name
                 </p>
                 <p
-                  class="MuiTypography-root makeStyles-cardFont-2206 MuiTypography-body1"
+                  class="MuiTypography-root makeStyles-cardFont-690 MuiTypography-body1"
                 >
                   Robert C. Martin
                 </p>
               </div>
               <div
-                class="makeStyles-informationBlock-2228 makeStyles-informationMiddleBlock-2233"
+                class="makeStyles-informationBlock-712 makeStyles-informationMiddleBlock-717"
               >
                 <p
-                  class="MuiTypography-root makeStyles-cardFont-2206 makeStyles-cardFontAccent-2208 makeStyles-cardTitle-2211 MuiTypography-body1"
+                  class="MuiTypography-root makeStyles-cardFont-690 makeStyles-cardFontAccent-692 makeStyles-cardTitle-695 MuiTypography-body1"
                 >
                   Legal Information
                 </p>
                 <div
-                  class="makeStyles-cardData-2215"
+                  class="makeStyles-cardData-699"
                 >
                   <p
-                    class="MuiTypography-root makeStyles-cardFont-2206 makeStyles-cardDataTitle-2216 MuiTypography-body1"
+                    class="MuiTypography-root makeStyles-cardFont-690 makeStyles-cardDataTitle-700 MuiTypography-body1"
                   >
                     Taxpayer Identification Number:
                   </p>
                   <p
-                    class="MuiTypography-root makeStyles-cardFont-2206 makeStyles-cardFontAccent-2208 MuiTypography-body1"
+                    class="MuiTypography-root makeStyles-cardFont-690 makeStyles-cardFontAccent-692 MuiTypography-body1"
                   >
                     LOZG-780211-7B9
                   </p>
                 </div>
                 <div
-                  class="makeStyles-cardData-2215"
+                  class="makeStyles-cardData-699"
                 >
                   <p
-                    class="MuiTypography-root makeStyles-cardFont-2206 makeStyles-cardDataTitle-2216 MuiTypography-body1"
+                    class="MuiTypography-root makeStyles-cardFont-690 makeStyles-cardDataTitle-700 MuiTypography-body1"
                   >
                     MBE/WBE:
                   </p>
                   <p
-                    class="MuiTypography-root makeStyles-cardFont-2206 makeStyles-cardFontAccent-2208 MuiTypography-body1"
+                    class="MuiTypography-root makeStyles-cardFont-690 makeStyles-cardFontAccent-692 MuiTypography-body1"
                   >
                     Option 1
                   </p>
@@ -2690,16 +2690,16 @@ exports[`ClientDetail should render information tab 1`] = `
               </div>
             </div>
             <div
-              class="makeStyles-informationBlock-2228 makeStyles-lastInformationBlock-2234"
+              class="makeStyles-informationBlock-712 makeStyles-lastInformationBlock-718"
               data-testid="trade-names"
             >
               <p
-                class="MuiTypography-root makeStyles-cardFont-2206 makeStyles-cardFontAccent-2208 makeStyles-cardTitle-2211 makeStyles-lastInformationTitle-2235 MuiTypography-body1"
+                class="MuiTypography-root makeStyles-cardFont-690 makeStyles-cardFontAccent-692 makeStyles-cardTitle-695 makeStyles-lastInformationTitle-719 MuiTypography-body1"
               >
                 Trades
               </p>
               <span
-                class="makeStyles-cardTrades-2214"
+                class="makeStyles-cardTrades-698"
               >
                 <span>
                   trade 1, trade 2.
@@ -2707,26 +2707,26 @@ exports[`ClientDetail should render information tab 1`] = `
               </span>
             </div>
             <div
-              class="makeStyles-informationBlocksWrapper-2231 makeStyles-lastInformationBlock-2234"
+              class="makeStyles-informationBlocksWrapper-715 makeStyles-lastInformationBlock-718"
             >
               <div
-                class="makeStyles-informationBlock-2228 makeStyles-lastInformationTitle-2235"
+                class="makeStyles-informationBlock-712 makeStyles-lastInformationTitle-719"
               >
                 <p
-                  class="MuiTypography-root makeStyles-cardFont-2206 makeStyles-cardFontAccent-2208 makeStyles-cardTitle-2211 MuiTypography-body1"
+                  class="MuiTypography-root makeStyles-cardFont-690 makeStyles-cardFontAccent-692 makeStyles-cardTitle-695 MuiTypography-body1"
                 >
                   Universal Badge
                 </p>
                 <div
-                  class="makeStyles-cardData-2215"
+                  class="makeStyles-cardData-699"
                 >
                   <p
-                    class="MuiTypography-root makeStyles-cardFont-2206 makeStyles-cardDataTitle-2216 MuiTypography-body1"
+                    class="MuiTypography-root makeStyles-cardFont-690 makeStyles-cardDataTitle-700 MuiTypography-body1"
                   >
                     Universal Badge:
                   </p>
                   <p
-                    class="MuiTypography-root makeStyles-cardFont-2206 makeStyles-cardFontAccent-2208 MuiTypography-body1"
+                    class="MuiTypography-root makeStyles-cardFont-690 makeStyles-cardFontAccent-692 MuiTypography-body1"
                   >
                     Yes
                   </p>
@@ -2736,7 +2736,7 @@ exports[`ClientDetail should render information tab 1`] = `
           </div>
         </div>
         <div
-          class="MuiPaper-root makeStyles-container-2274  MuiPaper-outlined MuiPaper-rounded"
+          class="MuiPaper-root makeStyles-container-758  MuiPaper-outlined MuiPaper-rounded"
         >
           <div
             class="MuiGrid-root MuiGrid-container MuiGrid-align-items-xs-center MuiGrid-justify-xs-space-between"
@@ -2745,7 +2745,7 @@ exports[`ClientDetail should render information tab 1`] = `
               class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-auto"
             >
               <h1
-                class="MuiTypography-root makeStyles-title-2275 MuiTypography-h1"
+                class="MuiTypography-root makeStyles-title-759 MuiTypography-h1"
               >
                 Addresses
               </h1>
@@ -2754,10 +2754,10 @@ exports[`ClientDetail should render information tab 1`] = `
               class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-auto"
             >
               <span
-                class="makeStyles-secondaryActionsIcon-2269 makeStyles-secondaryActions-2276"
+                class="makeStyles-secondaryActionsIcon-753 makeStyles-secondaryActions-760"
               >
                 <button
-                  class="MuiButtonBase-root MuiIconButton-root makeStyles-editButton-2185"
+                  class="MuiButtonBase-root MuiIconButton-root makeStyles-editButton-464"
                   data-testid="addr-edit-button"
                   tabindex="0"
                   type="button"
@@ -2781,24 +2781,24 @@ exports[`ClientDetail should render information tab 1`] = `
             </div>
           </div>
           <hr
-            class="MuiDivider-root makeStyles-divider-2277"
+            class="MuiDivider-root makeStyles-divider-761"
           />
           <div
-            class="MuiGrid-root makeStyles-addressesWrapper-2251 MuiGrid-container"
+            class="MuiGrid-root makeStyles-addressesWrapper-735 MuiGrid-container"
           >
             <div
-              class="MuiGrid-root makeStyles-addressItem-2253 MuiGrid-item MuiGrid-grid-xs-4"
+              class="MuiGrid-root makeStyles-addressItem-737 MuiGrid-item MuiGrid-grid-xs-4"
             >
               <div
-                class="makeStyles-informationBlock-2228 makeStyles-addressInformationBlock-2252"
+                class="makeStyles-informationBlock-712 makeStyles-addressInformationBlock-736"
               >
                 <p
-                  class="MuiTypography-root makeStyles-cardFont-2206 makeStyles-cardFontAccent-2208 makeStyles-cardAddressTitle-2217 MuiTypography-body1"
+                  class="MuiTypography-root makeStyles-cardFont-690 makeStyles-cardFontAccent-692 makeStyles-cardAddressTitle-701 MuiTypography-body1"
                 >
                   Billing Address
                 </p>
                 <p
-                  class="MuiTypography-root makeStyles-cardFont-2206  MuiTypography-body1"
+                  class="MuiTypography-root makeStyles-cardFont-690  MuiTypography-body1"
                 >
                   
                   <span
@@ -2808,7 +2808,7 @@ exports[`ClientDetail should render information tab 1`] = `
                   </span>
                 </p>
                 <p
-                  class="MuiTypography-root makeStyles-cardFont-2206  MuiTypography-body1"
+                  class="MuiTypography-root makeStyles-cardFont-690  MuiTypography-body1"
                 >
                   
                   
@@ -2818,19 +2818,19 @@ exports[`ClientDetail should render information tab 1`] = `
               </div>
             </div>
             <hr
-              class="MuiDivider-root makeStyles-dividerColor-2267 MuiDivider-flexItem MuiDivider-vertical"
+              class="MuiDivider-root makeStyles-dividerColor-751 MuiDivider-flexItem MuiDivider-vertical"
             />
             <div
-              class="MuiGrid-root makeStyles-addressItem-2253 MuiGrid-item MuiGrid-grid-xs-4"
+              class="MuiGrid-root makeStyles-addressItem-737 MuiGrid-item MuiGrid-grid-xs-4"
             >
               <div>
                 <p
-                  class="MuiTypography-root makeStyles-cardFont-2206 makeStyles-cardFontAccent-2208 makeStyles-cardAddressTitle-2217 MuiTypography-body1"
+                  class="MuiTypography-root makeStyles-cardFont-690 makeStyles-cardFontAccent-692 makeStyles-cardAddressTitle-701 MuiTypography-body1"
                 >
                   Mailing Address
                 </p>
                 <p
-                  class="MuiTypography-root makeStyles-cardFont-2206 makeStyles-cardAddressTitle-2217 MuiTypography-body1"
+                  class="MuiTypography-root makeStyles-cardFont-690 makeStyles-cardAddressTitle-701 MuiTypography-body1"
                 >
                   Same as Billing Address
                 </p>
@@ -2839,7 +2839,7 @@ exports[`ClientDetail should render information tab 1`] = `
           </div>
         </div>
         <div
-          class="MuiPaper-root makeStyles-container-2274  MuiPaper-outlined MuiPaper-rounded"
+          class="MuiPaper-root makeStyles-container-758  MuiPaper-outlined MuiPaper-rounded"
         >
           <div
             class="MuiGrid-root MuiGrid-container MuiGrid-align-items-xs-center MuiGrid-justify-xs-space-between"
@@ -2848,7 +2848,7 @@ exports[`ClientDetail should render information tab 1`] = `
               class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-auto"
             >
               <h1
-                class="MuiTypography-root makeStyles-title-2275 MuiTypography-h1"
+                class="MuiTypography-root makeStyles-title-759 MuiTypography-h1"
               >
                 Archive
               </h1>
@@ -2857,15 +2857,15 @@ exports[`ClientDetail should render information tab 1`] = `
               class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-auto"
             >
               <span
-                class=" makeStyles-secondaryActions-2276"
+                class=" makeStyles-secondaryActions-760"
               />
             </div>
           </div>
           <hr
-            class="MuiDivider-root makeStyles-divider-2277"
+            class="MuiDivider-root makeStyles-divider-761"
           />
           <button
-            class="MuiButtonBase-root MuiButton-root MuiButton-outlined makeStyles-archiveButton-2082 MuiButton-outlinedPrimary"
+            class="MuiButtonBase-root MuiButton-root MuiButton-outlined makeStyles-archiveButton-357 MuiButton-outlinedPrimary"
             data-testid="archive-btn"
             tabindex="0"
             type="button"
@@ -3445,7 +3445,7 @@ exports[`ClientDetail should render loading 1`] = `
         class="client-list-header"
       >
         <p
-          class="MuiTypography-root makeStyles-stepWrapper-666 MuiTypography-body1 MuiTypography-colorPrimary MuiTypography-alignLeft"
+          class="MuiTypography-root makeStyles-stepWrapper-356 MuiTypography-body1 MuiTypography-colorPrimary MuiTypography-alignLeft"
         >
           <a
             href="/clients"
@@ -3457,33 +3457,33 @@ exports[`ClientDetail should render loading 1`] = `
            Client Detail
         </p>
         <h1
-          class="MuiTypography-root makeStyles-title-736 MuiTypography-h5 MuiTypography-colorPrimary MuiTypography-alignLeft"
+          class="MuiTypography-root makeStyles-title-426 MuiTypography-h5 MuiTypography-colorPrimary MuiTypography-alignLeft"
         >
           Robert C. Martin
         </h1>
       </div>
       <div
-        class="makeStyles-widgetsWrapper-743"
+        class="makeStyles-widgetsWrapper-433"
         id="summary-widgets"
       >
         <div
-          class="MuiPaper-root makeStyles-widget-757 MuiPaper-elevation0 MuiPaper-rounded"
+          class="MuiPaper-root makeStyles-widget-447 MuiPaper-elevation0 MuiPaper-rounded"
         >
           <span
-            class="makeStyles-totalFont-758"
+            class="makeStyles-totalFont-448"
           >
             5
           </span>
           <div
-            class="makeStyles-contentContainer-761"
+            class="makeStyles-contentContainer-451"
           >
             <span
-              class="makeStyles-statusFont-759"
+              class="makeStyles-statusFont-449"
             >
               Projects
             </span>
             <span
-              class="makeStyles-contentFont-760"
+              class="makeStyles-contentFont-450"
             >
               <a
                 href="/clients/detail/9164e4c4-6521-47bb-97fd-c75ac02b2cf5/projects"
@@ -3494,23 +3494,23 @@ exports[`ClientDetail should render loading 1`] = `
           </div>
         </div>
         <div
-          class="MuiPaper-root makeStyles-widget-757 MuiPaper-elevation0 MuiPaper-rounded"
+          class="MuiPaper-root makeStyles-widget-447 MuiPaper-elevation0 MuiPaper-rounded"
         >
           <span
-            class="makeStyles-totalFont-758"
+            class="makeStyles-totalFont-448"
           >
             37
           </span>
           <div
-            class="makeStyles-contentContainer-761"
+            class="makeStyles-contentContainer-451"
           >
             <span
-              class="makeStyles-statusFont-759"
+              class="makeStyles-statusFont-449"
             >
               Workers
             </span>
             <span
-              class="makeStyles-contentFont-760"
+              class="makeStyles-contentFont-450"
             >
               <a
                 href="/clients/detail/9164e4c4-6521-47bb-97fd-c75ac02b2cf5/workers"
@@ -3521,35 +3521,35 @@ exports[`ClientDetail should render loading 1`] = `
           </div>
         </div>
         <div
-          class="MuiPaper-root makeStyles-widget-757 MuiPaper-elevation0 MuiPaper-rounded"
+          class="MuiPaper-root makeStyles-widget-447 MuiPaper-elevation0 MuiPaper-rounded"
         >
           <span
-            class="makeStyles-totalFont-758"
+            class="makeStyles-totalFont-448"
           >
             $ 23,678.00
           </span>
           <div
-            class="makeStyles-contentContainer-761"
+            class="makeStyles-contentContainer-451"
           >
             <span
-              class="makeStyles-statusFont-759"
+              class="makeStyles-statusFont-449"
             >
               Revenue
             </span>
             <span
-              class="makeStyles-contentFont-760"
+              class="makeStyles-contentFont-450"
             />
           </div>
         </div>
       </div>
       <div
-        class="makeStyles-tableWrapper-695"
+        class="makeStyles-tableWrapper-385"
       >
         <div
-          class="makeStyles-filterContainer-703"
+          class="makeStyles-filterContainer-393"
         >
           <div
-            class="makeStyles-statusFilter-704"
+            class="makeStyles-statusFilter-394"
           >
             <a
               data-testid="filter-status-opt"
@@ -3557,7 +3557,7 @@ exports[`ClientDetail should render loading 1`] = `
               tabindex="-1"
             >
               <button
-                class="MuiButtonBase-root MuiButton-root MuiButton-text makeStyles-activeFilter-705"
+                class="MuiButtonBase-root MuiButton-root MuiButton-text makeStyles-activeFilter-395"
                 tabindex="0"
                 type="button"
               >
@@ -4112,27 +4112,7 @@ exports[`ClientDetail should render project tab empty list 1`] = `
               />
               <div
                 class="makeStyles-ctaWrapper-91"
-              >
-                <span
-                  class=""
-                  data-testid="controlled-button"
-                  tabindex="-1"
-                >
-                  <a
-                    aria-disabled="false"
-                    class="MuiButtonBase-root MuiButton-root MuiButton-outlined makeStyles-drawerCTA-132 makeStyles-borderPrimaryButton-124 makeStyles-primaryButtonPadding-126"
-                    data-testid="drawerProjectButton"
-                    href="/projects/wizard/undefined"
-                    tabindex="0"
-                  >
-                    <span
-                      class="MuiButton-label"
-                    >
-                      Edit
-                    </span>
-                  </a>
-                </span>
-              </div>
+              />
             </div>
           </div>
         </div>
@@ -4155,7 +4135,7 @@ exports[`ClientDetail should render users tab 1`] = `
         class="client-list-header"
       >
         <p
-          class="MuiTypography-root makeStyles-stepWrapper-1750 MuiTypography-body1 MuiTypography-colorPrimary MuiTypography-alignLeft"
+          class="MuiTypography-root makeStyles-stepWrapper-356 MuiTypography-body1 MuiTypography-colorPrimary MuiTypography-alignLeft"
         >
           <a
             href="/clients"
@@ -4167,33 +4147,33 @@ exports[`ClientDetail should render users tab 1`] = `
            Client Detail
         </p>
         <h1
-          class="MuiTypography-root makeStyles-title-1820 MuiTypography-h5 MuiTypography-colorPrimary MuiTypography-alignLeft"
+          class="MuiTypography-root makeStyles-title-426 MuiTypography-h5 MuiTypography-colorPrimary MuiTypography-alignLeft"
         >
           Robert C. Martin
         </h1>
       </div>
       <div
-        class="makeStyles-widgetsWrapper-1827"
+        class="makeStyles-widgetsWrapper-433"
         id="summary-widgets"
       >
         <div
-          class="MuiPaper-root makeStyles-widget-1841 MuiPaper-elevation0 MuiPaper-rounded"
+          class="MuiPaper-root makeStyles-widget-447 MuiPaper-elevation0 MuiPaper-rounded"
         >
           <span
-            class="makeStyles-totalFont-1842"
+            class="makeStyles-totalFont-448"
           >
             5
           </span>
           <div
-            class="makeStyles-contentContainer-1845"
+            class="makeStyles-contentContainer-451"
           >
             <span
-              class="makeStyles-statusFont-1843"
+              class="makeStyles-statusFont-449"
             >
               Projects
             </span>
             <span
-              class="makeStyles-contentFont-1844"
+              class="makeStyles-contentFont-450"
             >
               <a
                 href="/clients/detail/9164e4c4-6521-47bb-97fd-c75ac02b2cf5/projects"
@@ -4204,23 +4184,23 @@ exports[`ClientDetail should render users tab 1`] = `
           </div>
         </div>
         <div
-          class="MuiPaper-root makeStyles-widget-1841 MuiPaper-elevation0 MuiPaper-rounded"
+          class="MuiPaper-root makeStyles-widget-447 MuiPaper-elevation0 MuiPaper-rounded"
         >
           <span
-            class="makeStyles-totalFont-1842"
+            class="makeStyles-totalFont-448"
           >
             37
           </span>
           <div
-            class="makeStyles-contentContainer-1845"
+            class="makeStyles-contentContainer-451"
           >
             <span
-              class="makeStyles-statusFont-1843"
+              class="makeStyles-statusFont-449"
             >
               Workers
             </span>
             <span
-              class="makeStyles-contentFont-1844"
+              class="makeStyles-contentFont-450"
             >
               <a
                 href="/clients/detail/9164e4c4-6521-47bb-97fd-c75ac02b2cf5/workers"
@@ -4231,35 +4211,35 @@ exports[`ClientDetail should render users tab 1`] = `
           </div>
         </div>
         <div
-          class="MuiPaper-root makeStyles-widget-1841 MuiPaper-elevation0 MuiPaper-rounded"
+          class="MuiPaper-root makeStyles-widget-447 MuiPaper-elevation0 MuiPaper-rounded"
         >
           <span
-            class="makeStyles-totalFont-1842"
+            class="makeStyles-totalFont-448"
           >
             $ 23,678.00
           </span>
           <div
-            class="makeStyles-contentContainer-1845"
+            class="makeStyles-contentContainer-451"
           >
             <span
-              class="makeStyles-statusFont-1843"
+              class="makeStyles-statusFont-449"
             >
               Revenue
             </span>
             <span
-              class="makeStyles-contentFont-1844"
+              class="makeStyles-contentFont-450"
             />
           </div>
         </div>
       </div>
       <div
-        class="makeStyles-tableWrapper-1779"
+        class="makeStyles-tableWrapper-385"
       >
         <div
-          class="makeStyles-filterContainer-1787"
+          class="makeStyles-filterContainer-393"
         >
           <div
-            class="makeStyles-statusFilter-1788"
+            class="makeStyles-statusFilter-394"
           >
             <a
               data-testid="filter-status-opt"
@@ -4287,7 +4267,7 @@ exports[`ClientDetail should render users tab 1`] = `
               tabindex="-1"
             >
               <button
-                class="MuiButtonBase-root MuiButton-root MuiButton-text makeStyles-activeFilter-1789"
+                class="MuiButtonBase-root MuiButton-root MuiButton-text makeStyles-activeFilter-395"
                 tabindex="0"
                 type="button"
               >
@@ -4364,11 +4344,11 @@ exports[`ClientDetail should render users tab 1`] = `
           </div>
         </div>
         <div
-          class=" makeStyles-container-1846"
+          class=" makeStyles-container-633"
         >
           <div>
             <div
-              class="MuiAvatar-root MuiAvatar-circle makeStyles-missingAvatarWrapper-1857 makeStyles-missingAvatarBig-1858 MuiAvatar-colorDefault"
+              class="MuiAvatar-root MuiAvatar-circle makeStyles-missingAvatarWrapper-644 makeStyles-missingAvatarBig-645 MuiAvatar-colorDefault"
             >
               <svg>
                 projects.svg
@@ -4376,7 +4356,7 @@ exports[`ClientDetail should render users tab 1`] = `
             </div>
           </div>
           <p
-            class="MuiTypography-root makeStyles-missingListText-1847 MuiTypography-body1"
+            class="MuiTypography-root makeStyles-missingListText-634 MuiTypography-body1"
           >
             There are no Users assigned
           </p>
@@ -5006,7 +4986,7 @@ exports[`ClientDetail should render workers tab 2`] = `
         class="client-list-header"
       >
         <p
-          class="MuiTypography-root makeStyles-stepWrapper-1905 MuiTypography-body1 MuiTypography-colorPrimary MuiTypography-alignLeft"
+          class="MuiTypography-root makeStyles-stepWrapper-356 MuiTypography-body1 MuiTypography-colorPrimary MuiTypography-alignLeft"
         >
           <a
             href="/clients"
@@ -5018,33 +4998,33 @@ exports[`ClientDetail should render workers tab 2`] = `
            Client Detail
         </p>
         <h1
-          class="MuiTypography-root makeStyles-title-1975 MuiTypography-h5 MuiTypography-colorPrimary MuiTypography-alignLeft"
+          class="MuiTypography-root makeStyles-title-426 MuiTypography-h5 MuiTypography-colorPrimary MuiTypography-alignLeft"
         >
           Robert C. Martin
         </h1>
       </div>
       <div
-        class="makeStyles-widgetsWrapper-1982"
+        class="makeStyles-widgetsWrapper-433"
         id="summary-widgets"
       >
         <div
-          class="MuiPaper-root makeStyles-widget-1996 MuiPaper-elevation0 MuiPaper-rounded"
+          class="MuiPaper-root makeStyles-widget-447 MuiPaper-elevation0 MuiPaper-rounded"
         >
           <span
-            class="makeStyles-totalFont-1997"
+            class="makeStyles-totalFont-448"
           >
             5
           </span>
           <div
-            class="makeStyles-contentContainer-2000"
+            class="makeStyles-contentContainer-451"
           >
             <span
-              class="makeStyles-statusFont-1998"
+              class="makeStyles-statusFont-449"
             >
               Projects
             </span>
             <span
-              class="makeStyles-contentFont-1999"
+              class="makeStyles-contentFont-450"
             >
               <a
                 href="/clients/detail/9164e4c4-6521-47bb-97fd-c75ac02b2cf5/projects"
@@ -5055,23 +5035,23 @@ exports[`ClientDetail should render workers tab 2`] = `
           </div>
         </div>
         <div
-          class="MuiPaper-root makeStyles-widget-1996 MuiPaper-elevation0 MuiPaper-rounded"
+          class="MuiPaper-root makeStyles-widget-447 MuiPaper-elevation0 MuiPaper-rounded"
         >
           <span
-            class="makeStyles-totalFont-1997"
+            class="makeStyles-totalFont-448"
           >
             37
           </span>
           <div
-            class="makeStyles-contentContainer-2000"
+            class="makeStyles-contentContainer-451"
           >
             <span
-              class="makeStyles-statusFont-1998"
+              class="makeStyles-statusFont-449"
             >
               Workers
             </span>
             <span
-              class="makeStyles-contentFont-1999"
+              class="makeStyles-contentFont-450"
             >
               <a
                 href="/clients/detail/9164e4c4-6521-47bb-97fd-c75ac02b2cf5/workers"
@@ -5082,35 +5062,35 @@ exports[`ClientDetail should render workers tab 2`] = `
           </div>
         </div>
         <div
-          class="MuiPaper-root makeStyles-widget-1996 MuiPaper-elevation0 MuiPaper-rounded"
+          class="MuiPaper-root makeStyles-widget-447 MuiPaper-elevation0 MuiPaper-rounded"
         >
           <span
-            class="makeStyles-totalFont-1997"
+            class="makeStyles-totalFont-448"
           >
             $ 23,678.00
           </span>
           <div
-            class="makeStyles-contentContainer-2000"
+            class="makeStyles-contentContainer-451"
           >
             <span
-              class="makeStyles-statusFont-1998"
+              class="makeStyles-statusFont-449"
             >
               Revenue
             </span>
             <span
-              class="makeStyles-contentFont-1999"
+              class="makeStyles-contentFont-450"
             />
           </div>
         </div>
       </div>
       <div
-        class="makeStyles-tableWrapper-1934"
+        class="makeStyles-tableWrapper-385"
       >
         <div
-          class="makeStyles-filterContainer-1942"
+          class="makeStyles-filterContainer-393"
         >
           <div
-            class="makeStyles-statusFilter-1943"
+            class="makeStyles-statusFilter-394"
           >
             <a
               data-testid="filter-status-opt"
@@ -5158,7 +5138,7 @@ exports[`ClientDetail should render workers tab 2`] = `
               tabindex="-1"
             >
               <button
-                class="MuiButtonBase-root MuiButton-root MuiButton-text makeStyles-activeFilter-1944"
+                class="MuiButtonBase-root MuiButton-root MuiButton-text makeStyles-activeFilter-395"
                 tabindex="0"
                 type="button"
               >
@@ -5215,26 +5195,26 @@ exports[`ClientDetail should render workers tab 2`] = `
           </div>
         </div>
         <div
-          class="makeStyles-filterActionsContainer-1945"
+          class="makeStyles-filterActionsContainer-396"
         >
           <div
-            class="makeStyles-filterActionsContainer-1945"
+            class="makeStyles-filterActionsContainer-396"
           >
             <div
-              class="MuiBox-root MuiBox-root-2028 makeStyles-filterStatusContainer-1948 makeStyles-autocompleteFilterStatus-1965 makeStyles-firstFilter-1907"
+              class="MuiBox-root MuiBox-root-652 makeStyles-filterStatusContainer-399 makeStyles-autocompleteFilterStatus-416 makeStyles-firstFilter-358"
             >
               <div
-                class="makeStyles-floatingFilterWrapper-1954 makeStyles-filterWrapper-1953 makeStyles-buttonContainer-2030 floatingFilterWrapper"
+                class="makeStyles-floatingFilterWrapper-405 makeStyles-filterWrapper-404 makeStyles-buttonContainer-486 floatingFilterWrapper"
               >
                 <span
-                  class="makeStyles-floatingFilterButton-1955"
+                  class="makeStyles-floatingFilterButton-406"
                   data-testid="controlled-button"
                   tabindex="-1"
                 >
                   <button
                     aria-controls="false"
                     aria-haspopup="true"
-                    class="MuiButtonBase-root MuiButton-root MuiButton-text makeStyles-buttonFilter-1963"
+                    class="MuiButtonBase-root MuiButton-root MuiButton-text makeStyles-buttonFilter-414"
                     data-testid="button-filter-open"
                     tabindex="0"
                     type="button"
@@ -5247,7 +5227,7 @@ exports[`ClientDetail should render workers tab 2`] = `
                         class="MuiButton-endIcon MuiButton-iconSizeMedium"
                       >
                         <svg
-                          class="makeStyles-dropdownIcon-1957"
+                          class="makeStyles-dropdownIcon-408"
                         >
                           expand.svg
                         </svg>
@@ -5258,20 +5238,20 @@ exports[`ClientDetail should render workers tab 2`] = `
               </div>
             </div>
             <div
-              class="MuiBox-root MuiBox-root-2034 makeStyles-filterStatusContainer-1948 makeStyles-autocompleteFilterStatus-1965"
+              class="MuiBox-root MuiBox-root-654 makeStyles-filterStatusContainer-399 makeStyles-autocompleteFilterStatus-416"
             >
               <div
-                class="makeStyles-floatingFilterWrapper-1954 makeStyles-filterWrapper-1953 makeStyles-buttonContainer-2030 floatingFilterWrapper"
+                class="makeStyles-floatingFilterWrapper-405 makeStyles-filterWrapper-404 makeStyles-buttonContainer-486 floatingFilterWrapper"
               >
                 <span
-                  class="makeStyles-floatingFilterButton-1955"
+                  class="makeStyles-floatingFilterButton-406"
                   data-testid="controlled-button"
                   tabindex="-1"
                 >
                   <button
                     aria-controls="false"
                     aria-haspopup="true"
-                    class="MuiButtonBase-root MuiButton-root MuiButton-text makeStyles-buttonFilter-1963"
+                    class="MuiButtonBase-root MuiButton-root MuiButton-text makeStyles-buttonFilter-414"
                     data-testid="button-filter-open"
                     tabindex="0"
                     type="button"
@@ -5284,7 +5264,7 @@ exports[`ClientDetail should render workers tab 2`] = `
                         class="MuiButton-endIcon MuiButton-iconSizeMedium"
                       >
                         <svg
-                          class="makeStyles-dropdownIcon-1957"
+                          class="makeStyles-dropdownIcon-408"
                         >
                           expand.svg
                         </svg>
@@ -5299,7 +5279,7 @@ exports[`ClientDetail should render workers tab 2`] = `
             href="/workers/wizard/new"
           >
             <button
-              class="MuiButtonBase-root MuiButton-root MuiButton-contained makeStyles-createButton-2003 makeStyles-primaryButtonLarge-2005 MuiButton-containedPrimary MuiButton-containedSizeLarge MuiButton-sizeLarge MuiButton-fullWidth"
+              class="MuiButtonBase-root MuiButton-root MuiButton-contained makeStyles-createButton-458 makeStyles-primaryButtonLarge-460 MuiButton-containedPrimary MuiButton-containedSizeLarge MuiButton-sizeLarge MuiButton-fullWidth"
               tabindex="0"
               type="submit"
             >
@@ -5356,7 +5336,7 @@ exports[`ClientDetail should render workers tab 2`] = `
         </table>
         <nav
           aria-label="pagination navigation"
-          class="MuiPagination-root  makeStyles-pagination-2036"
+          class="MuiPagination-root  makeStyles-pagination-656"
           data-testid="pagination"
         >
           <ul
@@ -5405,18 +5385,18 @@ exports[`ClientDetail should render workers tab 2`] = `
           </ul>
         </nav>
         <div
-          class="MuiDrawer-root MuiDrawer-docked makeStyles-drawer-2037 makeStyles-close-2048 closed"
+          class="MuiDrawer-root MuiDrawer-docked makeStyles-drawer-657 makeStyles-close-668 closed"
           data-testid="worker-drawer-detail"
         >
           <div
-            class="MuiPaper-root MuiDrawer-paper makeStyles-drawerPaper-2038 MuiDrawer-paperAnchorRight MuiDrawer-paperAnchorDockedRight MuiPaper-elevation0"
+            class="MuiPaper-root MuiDrawer-paper makeStyles-drawerPaper-658 MuiDrawer-paperAnchorRight MuiDrawer-paperAnchorDockedRight MuiPaper-elevation0"
             style="visibility: hidden; webkit-transform: translateX(1024px) translateX(0px); transform: translateX(1024px) translateX(0px);"
           >
             <div
-              class="makeStyles-drawerButtonWrapper-2040"
+              class="makeStyles-drawerButtonWrapper-660"
             >
               <div
-                class="makeStyles-drawerButton-2041"
+                class="makeStyles-drawerButton-661"
               >
                 <button
                   class="MuiButtonBase-root MuiButton-root MuiButton-text"
@@ -5438,31 +5418,31 @@ exports[`ClientDetail should render workers tab 2`] = `
                 </button>
               </div>
               <div
-                class="makeStyles-drawerHeader-2039"
+                class="makeStyles-drawerHeader-659"
               >
                 <p
-                  class="MuiTypography-root makeStyles-drawerTitle-2042 MuiTypography-body1 MuiTypography-colorPrimary MuiTypography-alignLeft"
+                  class="MuiTypography-root makeStyles-drawerTitle-662 MuiTypography-body1 MuiTypography-colorPrimary MuiTypography-alignLeft"
                 >
                   Worker Information
                 </p>
               </div>
             </div>
             <div
-              class="makeStyles-listDetail-1986"
+              class="makeStyles-listDetail-437"
             >
               <div
-                class="makeStyles-company-1987"
+                class="makeStyles-company-438"
               >
                 <div
-                  class="makeStyles-drawerText-2044"
+                  class="makeStyles-drawerText-664"
                 >
                   <p
-                    class="MuiTypography-root makeStyles-listAccent-1988 makeStyles-entityTitle-1985 MuiTypography-body1"
+                    class="MuiTypography-root makeStyles-listAccent-439 makeStyles-entityTitle-436 MuiTypography-body1"
                   >
                      
                   </p>
                   <div
-                    class="makeStyles-drawerMainText-2045"
+                    class="makeStyles-drawerMainText-665"
                   >
                     <span>
                       -
@@ -5470,13 +5450,13 @@ exports[`ClientDetail should render workers tab 2`] = `
                   </div>
                 </div>
                 <div
-                  class="makeStyles-drawerSection-2043"
+                  class="makeStyles-drawerSection-663"
                 >
                   <div
-                    class="makeStyles-drawerColumnDirection-2052"
+                    class="makeStyles-drawerColumnDirection-672"
                   >
                     <div
-                      class="makeStyles-drawerRowDirection-2053"
+                      class="makeStyles-drawerRowDirection-673"
                     >
                       <svg
                         aria-hidden="true"
@@ -5489,10 +5469,10 @@ exports[`ClientDetail should render workers tab 2`] = `
                         />
                       </svg>
                       <div
-                        class="makeStyles-drawerText-2044 makeStyles-drawerTextSeparation-2046"
+                        class="makeStyles-drawerText-664 makeStyles-drawerTextSeparation-666"
                       >
                         <p
-                          class="MuiTypography-root makeStyles-cardFont-2056  MuiTypography-body1"
+                          class="MuiTypography-root makeStyles-cardFont-676  MuiTypography-body1"
                         >
                           
                           <span
@@ -5502,7 +5482,7 @@ exports[`ClientDetail should render workers tab 2`] = `
                           </span>
                         </p>
                         <p
-                          class="MuiTypography-root makeStyles-cardFont-2056  MuiTypography-body1"
+                          class="MuiTypography-root makeStyles-cardFont-676  MuiTypography-body1"
                         >
                           
                           
@@ -5510,7 +5490,7 @@ exports[`ClientDetail should render workers tab 2`] = `
                           
                         </p>
                         <p
-                          class="MuiTypography-root makeStyles-cardFont-2056  MuiTypography-body1"
+                          class="MuiTypography-root makeStyles-cardFont-676  MuiTypography-body1"
                         >
                           -
                         </p>
@@ -5519,13 +5499,13 @@ exports[`ClientDetail should render workers tab 2`] = `
                   </div>
                 </div>
                 <div
-                  class="makeStyles-drawerSection-2043"
+                  class="makeStyles-drawerSection-663"
                 >
                   <div
-                    class="makeStyles-drawerColumnDirection-2052"
+                    class="makeStyles-drawerColumnDirection-672"
                   >
                     <div
-                      class="makeStyles-drawerRowDirection-2053"
+                      class="makeStyles-drawerRowDirection-673"
                     >
                       <svg
                         aria-hidden="true"
@@ -5538,19 +5518,19 @@ exports[`ClientDetail should render workers tab 2`] = `
                         />
                       </svg>
                       <div
-                        class="makeStyles-drawerText-2044 makeStyles-drawerTextSeparation-2046"
+                        class="makeStyles-drawerText-664 makeStyles-drawerTextSeparation-666"
                       />
                     </div>
                   </div>
                 </div>
                 <div
-                  class="makeStyles-drawerSection-2043"
+                  class="makeStyles-drawerSection-663"
                 >
                   <div
-                    class="makeStyles-drawerColumnDirection-2052"
+                    class="makeStyles-drawerColumnDirection-672"
                   >
                     <div
-                      class="makeStyles-drawerRowDirection-2053"
+                      class="makeStyles-drawerRowDirection-673"
                     >
                       <svg
                         class="MuiSvgIcon-root"
@@ -5558,17 +5538,17 @@ exports[`ClientDetail should render workers tab 2`] = `
                         emergency-contact.svg
                       </svg>
                       <div
-                        class="makeStyles-drawerText-2044 makeStyles-drawerTextSeparation-2046"
+                        class="makeStyles-drawerText-664 makeStyles-drawerTextSeparation-666"
                       />
                     </div>
                   </div>
                 </div>
               </div>
               <hr
-                class="MuiDivider-root makeStyles-drawerDivider-2047"
+                class="MuiDivider-root makeStyles-drawerDivider-667"
               />
               <div
-                class="makeStyles-ctaWrapper-1989"
+                class="makeStyles-ctaWrapper-440"
               >
                 <span
                   class=""
@@ -5577,7 +5557,7 @@ exports[`ClientDetail should render workers tab 2`] = `
                 >
                   <a
                     aria-disabled="false"
-                    class="MuiButtonBase-root MuiButton-root MuiButton-outlined makeStyles-drawerCTA-2010 makeStyles-borderPrimaryButton-2002 makeStyles-primaryButtonPadding-2004"
+                    class="MuiButtonBase-root MuiButton-root MuiButton-outlined makeStyles-drawerCTA-465 makeStyles-borderPrimaryButton-457 makeStyles-primaryButtonPadding-459"
                     data-testid="drawerButton"
                     href="/workers/detail/null"
                     tabindex="0"
@@ -5614,7 +5594,7 @@ exports[`ClientDetail should show server errors 1`] = `
         class="client-list-header"
       >
         <p
-          class="MuiTypography-root makeStyles-stepWrapper-2836 MuiTypography-body1 MuiTypography-colorPrimary MuiTypography-alignLeft"
+          class="MuiTypography-root makeStyles-stepWrapper-356 MuiTypography-body1 MuiTypography-colorPrimary MuiTypography-alignLeft"
         >
           <a
             href="/clients"
@@ -5626,33 +5606,33 @@ exports[`ClientDetail should show server errors 1`] = `
            Client Detail
         </p>
         <h1
-          class="MuiTypography-root makeStyles-title-2906 MuiTypography-h5 MuiTypography-colorPrimary MuiTypography-alignLeft"
+          class="MuiTypography-root makeStyles-title-426 MuiTypography-h5 MuiTypography-colorPrimary MuiTypography-alignLeft"
         >
           Robert C. Martin
         </h1>
       </div>
       <div
-        class="makeStyles-widgetsWrapper-2913"
+        class="makeStyles-widgetsWrapper-433"
         id="summary-widgets"
       >
         <div
-          class="MuiPaper-root makeStyles-widget-2927 MuiPaper-elevation0 MuiPaper-rounded"
+          class="MuiPaper-root makeStyles-widget-447 MuiPaper-elevation0 MuiPaper-rounded"
         >
           <span
-            class="makeStyles-totalFont-2928"
+            class="makeStyles-totalFont-448"
           >
             5
           </span>
           <div
-            class="makeStyles-contentContainer-2931"
+            class="makeStyles-contentContainer-451"
           >
             <span
-              class="makeStyles-statusFont-2929"
+              class="makeStyles-statusFont-449"
             >
               Projects
             </span>
             <span
-              class="makeStyles-contentFont-2930"
+              class="makeStyles-contentFont-450"
             >
               <a
                 href="/clients/detail/9164e4c4-6521-47bb-97fd-c75ac02b2cf5/projects"
@@ -5663,23 +5643,23 @@ exports[`ClientDetail should show server errors 1`] = `
           </div>
         </div>
         <div
-          class="MuiPaper-root makeStyles-widget-2927 MuiPaper-elevation0 MuiPaper-rounded"
+          class="MuiPaper-root makeStyles-widget-447 MuiPaper-elevation0 MuiPaper-rounded"
         >
           <span
-            class="makeStyles-totalFont-2928"
+            class="makeStyles-totalFont-448"
           >
             37
           </span>
           <div
-            class="makeStyles-contentContainer-2931"
+            class="makeStyles-contentContainer-451"
           >
             <span
-              class="makeStyles-statusFont-2929"
+              class="makeStyles-statusFont-449"
             >
               Workers
             </span>
             <span
-              class="makeStyles-contentFont-2930"
+              class="makeStyles-contentFont-450"
             >
               <a
                 href="/clients/detail/9164e4c4-6521-47bb-97fd-c75ac02b2cf5/workers"
@@ -5690,35 +5670,35 @@ exports[`ClientDetail should show server errors 1`] = `
           </div>
         </div>
         <div
-          class="MuiPaper-root makeStyles-widget-2927 MuiPaper-elevation0 MuiPaper-rounded"
+          class="MuiPaper-root makeStyles-widget-447 MuiPaper-elevation0 MuiPaper-rounded"
         >
           <span
-            class="makeStyles-totalFont-2928"
+            class="makeStyles-totalFont-448"
           >
             $ 23,678.00
           </span>
           <div
-            class="makeStyles-contentContainer-2931"
+            class="makeStyles-contentContainer-451"
           >
             <span
-              class="makeStyles-statusFont-2929"
+              class="makeStyles-statusFont-449"
             >
               Revenue
             </span>
             <span
-              class="makeStyles-contentFont-2930"
+              class="makeStyles-contentFont-450"
             />
           </div>
         </div>
       </div>
       <div
-        class="makeStyles-tableWrapper-2865"
+        class="makeStyles-tableWrapper-385"
       >
         <div
-          class="makeStyles-filterContainer-2873"
+          class="makeStyles-filterContainer-393"
         >
           <div
-            class="makeStyles-statusFilter-2874"
+            class="makeStyles-statusFilter-394"
           >
             <a
               data-testid="filter-status-opt"
@@ -5806,7 +5786,7 @@ exports[`ClientDetail should show server errors 1`] = `
               tabindex="-1"
             >
               <button
-                class="MuiButtonBase-root MuiButton-root MuiButton-text makeStyles-activeFilter-2875"
+                class="MuiButtonBase-root MuiButton-root MuiButton-text makeStyles-activeFilter-395"
                 tabindex="0"
                 type="button"
               >
@@ -5823,7 +5803,7 @@ exports[`ClientDetail should show server errors 1`] = `
           </div>
         </div>
         <div
-          class="MuiPaper-root makeStyles-container-3029  MuiPaper-outlined MuiPaper-rounded"
+          class="MuiPaper-root makeStyles-container-1103  MuiPaper-outlined MuiPaper-rounded"
         >
           <div
             class="MuiGrid-root MuiGrid-container MuiGrid-align-items-xs-center MuiGrid-justify-xs-space-between"
@@ -5832,7 +5812,7 @@ exports[`ClientDetail should show server errors 1`] = `
               class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-auto"
             >
               <h1
-                class="MuiTypography-root makeStyles-title-3030 MuiTypography-h1"
+                class="MuiTypography-root makeStyles-title-1104 MuiTypography-h1"
               >
                 General Information
               </h1>
@@ -5841,10 +5821,10 @@ exports[`ClientDetail should show server errors 1`] = `
               class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-auto"
             >
               <span
-                class="makeStyles-secondaryActionsIcon-3024 makeStyles-secondaryActions-3031"
+                class="makeStyles-secondaryActionsIcon-1098 makeStyles-secondaryActions-1105"
               >
                 <button
-                  class="MuiButtonBase-root MuiIconButton-root makeStyles-editButton-2940"
+                  class="MuiButtonBase-root MuiIconButton-root makeStyles-editButton-464"
                   data-testid="gen-info-edit-button"
                   tabindex="0"
                   type="button"
@@ -5868,60 +5848,60 @@ exports[`ClientDetail should show server errors 1`] = `
             </div>
           </div>
           <hr
-            class="MuiDivider-root makeStyles-divider-3032"
+            class="MuiDivider-root makeStyles-divider-1106"
           />
           <div
-            class="makeStyles-reviewGeneralInformation-2984 makeStyles-reviewGeneralInformationDirection-2987"
+            class="makeStyles-reviewGeneralInformation-1058 makeStyles-reviewGeneralInformationDirection-1061"
           >
             <div
-              class="makeStyles-informationBlocksWrapper-2986"
+              class="makeStyles-informationBlocksWrapper-1060"
             >
               <div
-                class="makeStyles-informationBlock-2983"
+                class="makeStyles-informationBlock-1057"
               >
                 <p
-                  class="MuiTypography-root makeStyles-cardFont-2961 makeStyles-cardFontAccent-2963 makeStyles-cardTitle-2966 MuiTypography-body1"
+                  class="MuiTypography-root makeStyles-cardFont-1035 makeStyles-cardFontAccent-1037 makeStyles-cardTitle-1040 MuiTypography-body1"
                 >
                   Client Name
                 </p>
                 <p
-                  class="MuiTypography-root makeStyles-cardFont-2961 MuiTypography-body1"
+                  class="MuiTypography-root makeStyles-cardFont-1035 MuiTypography-body1"
                 >
                   Robert C. Martin
                 </p>
               </div>
               <div
-                class="makeStyles-informationBlock-2983 makeStyles-informationMiddleBlock-2988"
+                class="makeStyles-informationBlock-1057 makeStyles-informationMiddleBlock-1062"
               >
                 <p
-                  class="MuiTypography-root makeStyles-cardFont-2961 makeStyles-cardFontAccent-2963 makeStyles-cardTitle-2966 MuiTypography-body1"
+                  class="MuiTypography-root makeStyles-cardFont-1035 makeStyles-cardFontAccent-1037 makeStyles-cardTitle-1040 MuiTypography-body1"
                 >
                   Legal Information
                 </p>
                 <div
-                  class="makeStyles-cardData-2970"
+                  class="makeStyles-cardData-1044"
                 >
                   <p
-                    class="MuiTypography-root makeStyles-cardFont-2961 makeStyles-cardDataTitle-2971 MuiTypography-body1"
+                    class="MuiTypography-root makeStyles-cardFont-1035 makeStyles-cardDataTitle-1045 MuiTypography-body1"
                   >
                     Taxpayer Identification Number:
                   </p>
                   <p
-                    class="MuiTypography-root makeStyles-cardFont-2961 makeStyles-cardFontAccent-2963 MuiTypography-body1"
+                    class="MuiTypography-root makeStyles-cardFont-1035 makeStyles-cardFontAccent-1037 MuiTypography-body1"
                   >
                     LOZG-780211-7B9
                   </p>
                 </div>
                 <div
-                  class="makeStyles-cardData-2970"
+                  class="makeStyles-cardData-1044"
                 >
                   <p
-                    class="MuiTypography-root makeStyles-cardFont-2961 makeStyles-cardDataTitle-2971 MuiTypography-body1"
+                    class="MuiTypography-root makeStyles-cardFont-1035 makeStyles-cardDataTitle-1045 MuiTypography-body1"
                   >
                     MBE/WBE:
                   </p>
                   <p
-                    class="MuiTypography-root makeStyles-cardFont-2961 makeStyles-cardFontAccent-2963 MuiTypography-body1"
+                    class="MuiTypography-root makeStyles-cardFont-1035 makeStyles-cardFontAccent-1037 MuiTypography-body1"
                   >
                     Option 1
                   </p>
@@ -5929,16 +5909,16 @@ exports[`ClientDetail should show server errors 1`] = `
               </div>
             </div>
             <div
-              class="makeStyles-informationBlock-2983 makeStyles-lastInformationBlock-2989"
+              class="makeStyles-informationBlock-1057 makeStyles-lastInformationBlock-1063"
               data-testid="trade-names"
             >
               <p
-                class="MuiTypography-root makeStyles-cardFont-2961 makeStyles-cardFontAccent-2963 makeStyles-cardTitle-2966 makeStyles-lastInformationTitle-2990 MuiTypography-body1"
+                class="MuiTypography-root makeStyles-cardFont-1035 makeStyles-cardFontAccent-1037 makeStyles-cardTitle-1040 makeStyles-lastInformationTitle-1064 MuiTypography-body1"
               >
                 Trades
               </p>
               <span
-                class="makeStyles-cardTrades-2969"
+                class="makeStyles-cardTrades-1043"
               >
                 <span>
                   trade 1, trade 2.
@@ -5946,26 +5926,26 @@ exports[`ClientDetail should show server errors 1`] = `
               </span>
             </div>
             <div
-              class="makeStyles-informationBlocksWrapper-2986 makeStyles-lastInformationBlock-2989"
+              class="makeStyles-informationBlocksWrapper-1060 makeStyles-lastInformationBlock-1063"
             >
               <div
-                class="makeStyles-informationBlock-2983 makeStyles-lastInformationTitle-2990"
+                class="makeStyles-informationBlock-1057 makeStyles-lastInformationTitle-1064"
               >
                 <p
-                  class="MuiTypography-root makeStyles-cardFont-2961 makeStyles-cardFontAccent-2963 makeStyles-cardTitle-2966 MuiTypography-body1"
+                  class="MuiTypography-root makeStyles-cardFont-1035 makeStyles-cardFontAccent-1037 makeStyles-cardTitle-1040 MuiTypography-body1"
                 >
                   Universal Badge
                 </p>
                 <div
-                  class="makeStyles-cardData-2970"
+                  class="makeStyles-cardData-1044"
                 >
                   <p
-                    class="MuiTypography-root makeStyles-cardFont-2961 makeStyles-cardDataTitle-2971 MuiTypography-body1"
+                    class="MuiTypography-root makeStyles-cardFont-1035 makeStyles-cardDataTitle-1045 MuiTypography-body1"
                   >
                     Universal Badge:
                   </p>
                   <p
-                    class="MuiTypography-root makeStyles-cardFont-2961 makeStyles-cardFontAccent-2963 MuiTypography-body1"
+                    class="MuiTypography-root makeStyles-cardFont-1035 makeStyles-cardFontAccent-1037 MuiTypography-body1"
                   >
                     Yes
                   </p>
@@ -5975,7 +5955,7 @@ exports[`ClientDetail should show server errors 1`] = `
           </div>
         </div>
         <div
-          class="MuiPaper-root makeStyles-container-3029  MuiPaper-outlined MuiPaper-rounded"
+          class="MuiPaper-root makeStyles-container-1103  MuiPaper-outlined MuiPaper-rounded"
         >
           <div
             class="MuiGrid-root MuiGrid-container MuiGrid-align-items-xs-center MuiGrid-justify-xs-space-between"
@@ -5984,7 +5964,7 @@ exports[`ClientDetail should show server errors 1`] = `
               class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-auto"
             >
               <h1
-                class="MuiTypography-root makeStyles-title-3030 MuiTypography-h1"
+                class="MuiTypography-root makeStyles-title-1104 MuiTypography-h1"
               >
                 Addresses
               </h1>
@@ -5993,10 +5973,10 @@ exports[`ClientDetail should show server errors 1`] = `
               class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-auto"
             >
               <span
-                class="makeStyles-secondaryActionsIcon-3024 makeStyles-secondaryActions-3031"
+                class="makeStyles-secondaryActionsIcon-1098 makeStyles-secondaryActions-1105"
               >
                 <button
-                  class="MuiButtonBase-root MuiIconButton-root makeStyles-editButton-2940"
+                  class="MuiButtonBase-root MuiIconButton-root makeStyles-editButton-464"
                   data-testid="addr-edit-button"
                   tabindex="0"
                   type="button"
@@ -6020,34 +6000,34 @@ exports[`ClientDetail should show server errors 1`] = `
             </div>
           </div>
           <hr
-            class="MuiDivider-root makeStyles-divider-3032"
+            class="MuiDivider-root makeStyles-divider-1106"
           />
           <div
-            class="MuiGrid-root makeStyles-addressesWrapper-3006 MuiGrid-container"
+            class="MuiGrid-root makeStyles-addressesWrapper-1080 MuiGrid-container"
           >
             <div
-              class="MuiGrid-root makeStyles-addressItem-3008 MuiGrid-item MuiGrid-grid-xs-4"
+              class="MuiGrid-root makeStyles-addressItem-1082 MuiGrid-item MuiGrid-grid-xs-4"
             >
               <div
-                class="makeStyles-informationBlock-2983 makeStyles-addressInformationBlock-3007"
+                class="makeStyles-informationBlock-1057 makeStyles-addressInformationBlock-1081"
               >
                 <p
-                  class="MuiTypography-root makeStyles-cardFont-2961 makeStyles-cardFontAccent-2963 makeStyles-cardAddressTitle-2972 MuiTypography-body1"
+                  class="MuiTypography-root makeStyles-cardFont-1035 makeStyles-cardFontAccent-1037 makeStyles-cardAddressTitle-1046 MuiTypography-body1"
                 >
                   Billing Address
                 </p>
                 <p
-                  class="MuiTypography-root makeStyles-cardFont-2961  MuiTypography-body1"
+                  class="MuiTypography-root makeStyles-cardFont-1035  MuiTypography-body1"
                 >
                   Apt 3. 
                   <span
-                    class="makeStyles-cardFontAccent-2963 "
+                    class="makeStyles-cardFontAccent-1037 "
                   >
                     21 Street
                   </span>
                 </p>
                 <p
-                  class="MuiTypography-root makeStyles-cardFont-2961  MuiTypography-body1"
+                  class="MuiTypography-root makeStyles-cardFont-1035  MuiTypography-body1"
                 >
                   Dallas, 
                   
@@ -6056,36 +6036,36 @@ exports[`ClientDetail should show server errors 1`] = `
                 </p>
               </div>
               <div
-                class="makeStyles-mapWrapper-2998"
+                class="makeStyles-mapWrapper-1072"
                 id="review-billing-map"
               />
             </div>
             <hr
-              class="MuiDivider-root makeStyles-dividerColor-3022 MuiDivider-flexItem MuiDivider-vertical"
+              class="MuiDivider-root makeStyles-dividerColor-1096 MuiDivider-flexItem MuiDivider-vertical"
             />
             <div
-              class="MuiGrid-root makeStyles-addressItem-3008 MuiGrid-item MuiGrid-grid-xs-4"
+              class="MuiGrid-root makeStyles-addressItem-1082 MuiGrid-item MuiGrid-grid-xs-4"
             >
               <div
-                class="makeStyles-informationBlock-2983 makeStyles-addressInformationBlock-3007"
+                class="makeStyles-informationBlock-1057 makeStyles-addressInformationBlock-1081"
               >
                 <p
-                  class="MuiTypography-root makeStyles-cardFont-2961 makeStyles-cardFontAccent-2963 makeStyles-cardAddressTitle-2972 MuiTypography-body1"
+                  class="MuiTypography-root makeStyles-cardFont-1035 makeStyles-cardFontAccent-1037 makeStyles-cardAddressTitle-1046 MuiTypography-body1"
                 >
                   Mailing Address
                 </p>
                 <p
-                  class="MuiTypography-root makeStyles-cardFont-2961  MuiTypography-body1"
+                  class="MuiTypography-root makeStyles-cardFont-1035  MuiTypography-body1"
                 >
                   Apt 3. 
                   <span
-                    class="makeStyles-cardFontAccent-2963 "
+                    class="makeStyles-cardFontAccent-1037 "
                   >
                     21 Street
                   </span>
                 </p>
                 <p
-                  class="MuiTypography-root makeStyles-cardFont-2961  MuiTypography-body1"
+                  class="MuiTypography-root makeStyles-cardFont-1035  MuiTypography-body1"
                 >
                   Dallas, 
                   
@@ -6095,7 +6075,7 @@ exports[`ClientDetail should show server errors 1`] = `
               </div>
               <div>
                 <div
-                  class="makeStyles-mapWrapper-2998"
+                  class="makeStyles-mapWrapper-1072"
                   id="review-mailing-map"
                 />
               </div>
@@ -6103,7 +6083,7 @@ exports[`ClientDetail should show server errors 1`] = `
           </div>
         </div>
         <div
-          class="MuiPaper-root makeStyles-container-3029  MuiPaper-outlined MuiPaper-rounded"
+          class="MuiPaper-root makeStyles-container-1103  MuiPaper-outlined MuiPaper-rounded"
         >
           <div
             class="MuiGrid-root MuiGrid-container MuiGrid-align-items-xs-center MuiGrid-justify-xs-space-between"
@@ -6112,7 +6092,7 @@ exports[`ClientDetail should show server errors 1`] = `
               class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-auto"
             >
               <h1
-                class="MuiTypography-root makeStyles-title-3030 MuiTypography-h1"
+                class="MuiTypography-root makeStyles-title-1104 MuiTypography-h1"
               >
                 Archive
               </h1>
@@ -6121,15 +6101,15 @@ exports[`ClientDetail should show server errors 1`] = `
               class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-auto"
             >
               <span
-                class=" makeStyles-secondaryActions-3031"
+                class=" makeStyles-secondaryActions-1105"
               />
             </div>
           </div>
           <hr
-            class="MuiDivider-root makeStyles-divider-3032"
+            class="MuiDivider-root makeStyles-divider-1106"
           />
           <button
-            class="MuiButtonBase-root MuiButton-root MuiButton-outlined makeStyles-archiveButton-2837 MuiButton-outlinedPrimary"
+            class="MuiButtonBase-root MuiButton-root MuiButton-outlined makeStyles-archiveButton-357 MuiButton-outlinedPrimary"
             data-testid="archive-btn"
             tabindex="0"
             type="button"
@@ -6165,7 +6145,7 @@ exports[`ClientDetail should show validations 1`] = `
         class="client-list-header"
       >
         <p
-          class="MuiTypography-root makeStyles-stepWrapper-2573 MuiTypography-body1 MuiTypography-colorPrimary MuiTypography-alignLeft"
+          class="MuiTypography-root makeStyles-stepWrapper-356 MuiTypography-body1 MuiTypography-colorPrimary MuiTypography-alignLeft"
         >
           <a
             href="/clients"
@@ -6177,33 +6157,33 @@ exports[`ClientDetail should show validations 1`] = `
            Client Detail
         </p>
         <h1
-          class="MuiTypography-root makeStyles-title-2643 MuiTypography-h5 MuiTypography-colorPrimary MuiTypography-alignLeft"
+          class="MuiTypography-root makeStyles-title-426 MuiTypography-h5 MuiTypography-colorPrimary MuiTypography-alignLeft"
         >
           Robert C. Martin
         </h1>
       </div>
       <div
-        class="makeStyles-widgetsWrapper-2650"
+        class="makeStyles-widgetsWrapper-433"
         id="summary-widgets"
       >
         <div
-          class="MuiPaper-root makeStyles-widget-2664 MuiPaper-elevation0 MuiPaper-rounded"
+          class="MuiPaper-root makeStyles-widget-447 MuiPaper-elevation0 MuiPaper-rounded"
         >
           <span
-            class="makeStyles-totalFont-2665"
+            class="makeStyles-totalFont-448"
           >
             5
           </span>
           <div
-            class="makeStyles-contentContainer-2668"
+            class="makeStyles-contentContainer-451"
           >
             <span
-              class="makeStyles-statusFont-2666"
+              class="makeStyles-statusFont-449"
             >
               Projects
             </span>
             <span
-              class="makeStyles-contentFont-2667"
+              class="makeStyles-contentFont-450"
             >
               <a
                 href="/clients/detail/9164e4c4-6521-47bb-97fd-c75ac02b2cf5/projects"
@@ -6214,23 +6194,23 @@ exports[`ClientDetail should show validations 1`] = `
           </div>
         </div>
         <div
-          class="MuiPaper-root makeStyles-widget-2664 MuiPaper-elevation0 MuiPaper-rounded"
+          class="MuiPaper-root makeStyles-widget-447 MuiPaper-elevation0 MuiPaper-rounded"
         >
           <span
-            class="makeStyles-totalFont-2665"
+            class="makeStyles-totalFont-448"
           >
             37
           </span>
           <div
-            class="makeStyles-contentContainer-2668"
+            class="makeStyles-contentContainer-451"
           >
             <span
-              class="makeStyles-statusFont-2666"
+              class="makeStyles-statusFont-449"
             >
               Workers
             </span>
             <span
-              class="makeStyles-contentFont-2667"
+              class="makeStyles-contentFont-450"
             >
               <a
                 href="/clients/detail/9164e4c4-6521-47bb-97fd-c75ac02b2cf5/workers"
@@ -6241,35 +6221,35 @@ exports[`ClientDetail should show validations 1`] = `
           </div>
         </div>
         <div
-          class="MuiPaper-root makeStyles-widget-2664 MuiPaper-elevation0 MuiPaper-rounded"
+          class="MuiPaper-root makeStyles-widget-447 MuiPaper-elevation0 MuiPaper-rounded"
         >
           <span
-            class="makeStyles-totalFont-2665"
+            class="makeStyles-totalFont-448"
           >
             $ 23,678.00
           </span>
           <div
-            class="makeStyles-contentContainer-2668"
+            class="makeStyles-contentContainer-451"
           >
             <span
-              class="makeStyles-statusFont-2666"
+              class="makeStyles-statusFont-449"
             >
               Revenue
             </span>
             <span
-              class="makeStyles-contentFont-2667"
+              class="makeStyles-contentFont-450"
             />
           </div>
         </div>
       </div>
       <div
-        class="makeStyles-tableWrapper-2602"
+        class="makeStyles-tableWrapper-385"
       >
         <div
-          class="makeStyles-filterContainer-2610"
+          class="makeStyles-filterContainer-393"
         >
           <div
-            class="makeStyles-statusFilter-2611"
+            class="makeStyles-statusFilter-394"
           >
             <a
               data-testid="filter-status-opt"
@@ -6357,7 +6337,7 @@ exports[`ClientDetail should show validations 1`] = `
               tabindex="-1"
             >
               <button
-                class="MuiButtonBase-root MuiButton-root MuiButton-text makeStyles-activeFilter-2612"
+                class="MuiButtonBase-root MuiButton-root MuiButton-text makeStyles-activeFilter-395"
                 tabindex="0"
                 type="button"
               >
@@ -6374,7 +6354,7 @@ exports[`ClientDetail should show validations 1`] = `
           </div>
         </div>
         <div
-          class="MuiPaper-root makeStyles-container-2766  MuiPaper-outlined MuiPaper-rounded"
+          class="MuiPaper-root makeStyles-container-976  MuiPaper-outlined MuiPaper-rounded"
         >
           <div
             class="MuiGrid-root MuiGrid-container MuiGrid-align-items-xs-center MuiGrid-justify-xs-space-between"
@@ -6383,7 +6363,7 @@ exports[`ClientDetail should show validations 1`] = `
               class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-auto"
             >
               <h1
-                class="MuiTypography-root makeStyles-title-2767 MuiTypography-h1"
+                class="MuiTypography-root makeStyles-title-977 MuiTypography-h1"
               >
                 General Information
               </h1>
@@ -6392,10 +6372,10 @@ exports[`ClientDetail should show validations 1`] = `
               class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-auto"
             >
               <span
-                class="makeStyles-secondaryActionsIcon-2761 makeStyles-secondaryActions-2768"
+                class="makeStyles-secondaryActionsIcon-971 makeStyles-secondaryActions-978"
               >
                 <button
-                  class="MuiButtonBase-root MuiIconButton-root makeStyles-editButton-2677"
+                  class="MuiButtonBase-root MuiIconButton-root makeStyles-editButton-464"
                   data-testid="gen-info-edit-button"
                   tabindex="0"
                   type="button"
@@ -6419,60 +6399,60 @@ exports[`ClientDetail should show validations 1`] = `
             </div>
           </div>
           <hr
-            class="MuiDivider-root makeStyles-divider-2769"
+            class="MuiDivider-root makeStyles-divider-979"
           />
           <div
-            class="makeStyles-reviewGeneralInformation-2721 makeStyles-reviewGeneralInformationDirection-2724"
+            class="makeStyles-reviewGeneralInformation-931 makeStyles-reviewGeneralInformationDirection-934"
           >
             <div
-              class="makeStyles-informationBlocksWrapper-2723"
+              class="makeStyles-informationBlocksWrapper-933"
             >
               <div
-                class="makeStyles-informationBlock-2720"
+                class="makeStyles-informationBlock-930"
               >
                 <p
-                  class="MuiTypography-root makeStyles-cardFont-2698 makeStyles-cardFontAccent-2700 makeStyles-cardTitle-2703 MuiTypography-body1"
+                  class="MuiTypography-root makeStyles-cardFont-908 makeStyles-cardFontAccent-910 makeStyles-cardTitle-913 MuiTypography-body1"
                 >
                   Client Name
                 </p>
                 <p
-                  class="MuiTypography-root makeStyles-cardFont-2698 MuiTypography-body1"
+                  class="MuiTypography-root makeStyles-cardFont-908 MuiTypography-body1"
                 >
                   Robert C. Martin
                 </p>
               </div>
               <div
-                class="makeStyles-informationBlock-2720 makeStyles-informationMiddleBlock-2725"
+                class="makeStyles-informationBlock-930 makeStyles-informationMiddleBlock-935"
               >
                 <p
-                  class="MuiTypography-root makeStyles-cardFont-2698 makeStyles-cardFontAccent-2700 makeStyles-cardTitle-2703 MuiTypography-body1"
+                  class="MuiTypography-root makeStyles-cardFont-908 makeStyles-cardFontAccent-910 makeStyles-cardTitle-913 MuiTypography-body1"
                 >
                   Legal Information
                 </p>
                 <div
-                  class="makeStyles-cardData-2707"
+                  class="makeStyles-cardData-917"
                 >
                   <p
-                    class="MuiTypography-root makeStyles-cardFont-2698 makeStyles-cardDataTitle-2708 MuiTypography-body1"
+                    class="MuiTypography-root makeStyles-cardFont-908 makeStyles-cardDataTitle-918 MuiTypography-body1"
                   >
                     Taxpayer Identification Number:
                   </p>
                   <p
-                    class="MuiTypography-root makeStyles-cardFont-2698 makeStyles-cardFontAccent-2700 MuiTypography-body1"
+                    class="MuiTypography-root makeStyles-cardFont-908 makeStyles-cardFontAccent-910 MuiTypography-body1"
                   >
                     -
                   </p>
                 </div>
                 <div
-                  class="makeStyles-cardData-2707"
+                  class="makeStyles-cardData-917"
                 >
                   <p
-                    class="MuiTypography-root makeStyles-cardFont-2698 makeStyles-cardDataTitle-2708 MuiTypography-body1"
+                    class="MuiTypography-root makeStyles-cardFont-908 makeStyles-cardDataTitle-918 MuiTypography-body1"
                   >
                     MBE/WBE:
                   </p>
                   <p
-                    class="MuiTypography-root makeStyles-cardFont-2698 makeStyles-cardFontAccent-2700 MuiTypography-body1"
+                    class="MuiTypography-root makeStyles-cardFont-908 makeStyles-cardFontAccent-910 MuiTypography-body1"
                   >
                     Option 1
                   </p>
@@ -6480,16 +6460,16 @@ exports[`ClientDetail should show validations 1`] = `
               </div>
             </div>
             <div
-              class="makeStyles-informationBlock-2720 makeStyles-lastInformationBlock-2726"
+              class="makeStyles-informationBlock-930 makeStyles-lastInformationBlock-936"
               data-testid="trade-names"
             >
               <p
-                class="MuiTypography-root makeStyles-cardFont-2698 makeStyles-cardFontAccent-2700 makeStyles-cardTitle-2703 makeStyles-lastInformationTitle-2727 MuiTypography-body1"
+                class="MuiTypography-root makeStyles-cardFont-908 makeStyles-cardFontAccent-910 makeStyles-cardTitle-913 makeStyles-lastInformationTitle-937 MuiTypography-body1"
               >
                 Trades
               </p>
               <span
-                class="makeStyles-cardTrades-2706"
+                class="makeStyles-cardTrades-916"
               >
                 <span>
                   -
@@ -6497,26 +6477,26 @@ exports[`ClientDetail should show validations 1`] = `
               </span>
             </div>
             <div
-              class="makeStyles-informationBlocksWrapper-2723 makeStyles-lastInformationBlock-2726"
+              class="makeStyles-informationBlocksWrapper-933 makeStyles-lastInformationBlock-936"
             >
               <div
-                class="makeStyles-informationBlock-2720 makeStyles-lastInformationTitle-2727"
+                class="makeStyles-informationBlock-930 makeStyles-lastInformationTitle-937"
               >
                 <p
-                  class="MuiTypography-root makeStyles-cardFont-2698 makeStyles-cardFontAccent-2700 makeStyles-cardTitle-2703 MuiTypography-body1"
+                  class="MuiTypography-root makeStyles-cardFont-908 makeStyles-cardFontAccent-910 makeStyles-cardTitle-913 MuiTypography-body1"
                 >
                   Universal Badge
                 </p>
                 <div
-                  class="makeStyles-cardData-2707"
+                  class="makeStyles-cardData-917"
                 >
                   <p
-                    class="MuiTypography-root makeStyles-cardFont-2698 makeStyles-cardDataTitle-2708 MuiTypography-body1"
+                    class="MuiTypography-root makeStyles-cardFont-908 makeStyles-cardDataTitle-918 MuiTypography-body1"
                   >
                     Universal Badge:
                   </p>
                   <p
-                    class="MuiTypography-root makeStyles-cardFont-2698 makeStyles-cardFontAccent-2700 MuiTypography-body1"
+                    class="MuiTypography-root makeStyles-cardFont-908 makeStyles-cardFontAccent-910 MuiTypography-body1"
                   >
                     Yes
                   </p>
@@ -6526,7 +6506,7 @@ exports[`ClientDetail should show validations 1`] = `
           </div>
         </div>
         <div
-          class="MuiPaper-root makeStyles-container-2766  MuiPaper-outlined MuiPaper-rounded"
+          class="MuiPaper-root makeStyles-container-976  MuiPaper-outlined MuiPaper-rounded"
         >
           <div
             class="MuiGrid-root MuiGrid-container MuiGrid-align-items-xs-center MuiGrid-justify-xs-space-between"
@@ -6535,7 +6515,7 @@ exports[`ClientDetail should show validations 1`] = `
               class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-auto"
             >
               <h1
-                class="MuiTypography-root makeStyles-title-2767 MuiTypography-h1"
+                class="MuiTypography-root makeStyles-title-977 MuiTypography-h1"
               >
                 Addresses
               </h1>
@@ -6544,10 +6524,10 @@ exports[`ClientDetail should show validations 1`] = `
               class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-auto"
             >
               <span
-                class="makeStyles-secondaryActionsIcon-2761 makeStyles-secondaryActions-2768"
+                class="makeStyles-secondaryActionsIcon-971 makeStyles-secondaryActions-978"
               >
                 <button
-                  class="MuiButtonBase-root MuiIconButton-root makeStyles-editButton-2677"
+                  class="MuiButtonBase-root MuiIconButton-root makeStyles-editButton-464"
                   data-testid="addr-edit-button"
                   tabindex="0"
                   type="button"
@@ -6571,34 +6551,34 @@ exports[`ClientDetail should show validations 1`] = `
             </div>
           </div>
           <hr
-            class="MuiDivider-root makeStyles-divider-2769"
+            class="MuiDivider-root makeStyles-divider-979"
           />
           <div
-            class="MuiGrid-root makeStyles-addressesWrapper-2743 MuiGrid-container"
+            class="MuiGrid-root makeStyles-addressesWrapper-953 MuiGrid-container"
           >
             <div
-              class="MuiGrid-root makeStyles-addressItem-2745 MuiGrid-item MuiGrid-grid-xs-4"
+              class="MuiGrid-root makeStyles-addressItem-955 MuiGrid-item MuiGrid-grid-xs-4"
             >
               <div
-                class="makeStyles-informationBlock-2720 makeStyles-addressInformationBlock-2744"
+                class="makeStyles-informationBlock-930 makeStyles-addressInformationBlock-954"
               >
                 <p
-                  class="MuiTypography-root makeStyles-cardFont-2698 makeStyles-cardFontAccent-2700 makeStyles-cardAddressTitle-2709 MuiTypography-body1"
+                  class="MuiTypography-root makeStyles-cardFont-908 makeStyles-cardFontAccent-910 makeStyles-cardAddressTitle-919 MuiTypography-body1"
                 >
                   Billing Address
                 </p>
                 <p
-                  class="MuiTypography-root makeStyles-cardFont-2698  MuiTypography-body1"
+                  class="MuiTypography-root makeStyles-cardFont-908  MuiTypography-body1"
                 >
                   Apt 3. 
                   <span
-                    class="makeStyles-cardFontAccent-2700 "
+                    class="makeStyles-cardFontAccent-910 "
                   >
                     21 Street
                   </span>
                 </p>
                 <p
-                  class="MuiTypography-root makeStyles-cardFont-2698  MuiTypography-body1"
+                  class="MuiTypography-root makeStyles-cardFont-908  MuiTypography-body1"
                 >
                   Dallas, 
                   
@@ -6607,36 +6587,36 @@ exports[`ClientDetail should show validations 1`] = `
                 </p>
               </div>
               <div
-                class="makeStyles-mapWrapper-2735"
+                class="makeStyles-mapWrapper-945"
                 id="review-billing-map"
               />
             </div>
             <hr
-              class="MuiDivider-root makeStyles-dividerColor-2759 MuiDivider-flexItem MuiDivider-vertical"
+              class="MuiDivider-root makeStyles-dividerColor-969 MuiDivider-flexItem MuiDivider-vertical"
             />
             <div
-              class="MuiGrid-root makeStyles-addressItem-2745 MuiGrid-item MuiGrid-grid-xs-4"
+              class="MuiGrid-root makeStyles-addressItem-955 MuiGrid-item MuiGrid-grid-xs-4"
             >
               <div
-                class="makeStyles-informationBlock-2720 makeStyles-addressInformationBlock-2744"
+                class="makeStyles-informationBlock-930 makeStyles-addressInformationBlock-954"
               >
                 <p
-                  class="MuiTypography-root makeStyles-cardFont-2698 makeStyles-cardFontAccent-2700 makeStyles-cardAddressTitle-2709 MuiTypography-body1"
+                  class="MuiTypography-root makeStyles-cardFont-908 makeStyles-cardFontAccent-910 makeStyles-cardAddressTitle-919 MuiTypography-body1"
                 >
                   Mailing Address
                 </p>
                 <p
-                  class="MuiTypography-root makeStyles-cardFont-2698  MuiTypography-body1"
+                  class="MuiTypography-root makeStyles-cardFont-908  MuiTypography-body1"
                 >
                   Apt 3. 
                   <span
-                    class="makeStyles-cardFontAccent-2700 "
+                    class="makeStyles-cardFontAccent-910 "
                   >
                     21 Street
                   </span>
                 </p>
                 <p
-                  class="MuiTypography-root makeStyles-cardFont-2698  MuiTypography-body1"
+                  class="MuiTypography-root makeStyles-cardFont-908  MuiTypography-body1"
                 >
                   Dallas, 
                   
@@ -6646,7 +6626,7 @@ exports[`ClientDetail should show validations 1`] = `
               </div>
               <div>
                 <div
-                  class="makeStyles-mapWrapper-2735"
+                  class="makeStyles-mapWrapper-945"
                   id="review-mailing-map"
                 />
               </div>
@@ -6654,7 +6634,7 @@ exports[`ClientDetail should show validations 1`] = `
           </div>
         </div>
         <div
-          class="MuiPaper-root makeStyles-container-2766  MuiPaper-outlined MuiPaper-rounded"
+          class="MuiPaper-root makeStyles-container-976  MuiPaper-outlined MuiPaper-rounded"
         >
           <div
             class="MuiGrid-root MuiGrid-container MuiGrid-align-items-xs-center MuiGrid-justify-xs-space-between"
@@ -6663,7 +6643,7 @@ exports[`ClientDetail should show validations 1`] = `
               class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-auto"
             >
               <h1
-                class="MuiTypography-root makeStyles-title-2767 MuiTypography-h1"
+                class="MuiTypography-root makeStyles-title-977 MuiTypography-h1"
               >
                 Archive
               </h1>
@@ -6672,15 +6652,15 @@ exports[`ClientDetail should show validations 1`] = `
               class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-auto"
             >
               <span
-                class=" makeStyles-secondaryActions-2768"
+                class=" makeStyles-secondaryActions-978"
               />
             </div>
           </div>
           <hr
-            class="MuiDivider-root makeStyles-divider-2769"
+            class="MuiDivider-root makeStyles-divider-979"
           />
           <button
-            class="MuiButtonBase-root MuiButton-root MuiButton-outlined makeStyles-archiveButton-2574 MuiButton-outlinedPrimary"
+            class="MuiButtonBase-root MuiButton-root MuiButton-outlined makeStyles-archiveButton-357 MuiButton-outlinedPrimary"
             data-testid="archive-btn"
             tabindex="0"
             type="button"
@@ -6716,7 +6696,7 @@ exports[`ClientDetail should un archive 1`] = `
         class="client-list-header"
       >
         <p
-          class="MuiTypography-root makeStyles-stepWrapper-3593 MuiTypography-body1 MuiTypography-colorPrimary MuiTypography-alignLeft"
+          class="MuiTypography-root makeStyles-stepWrapper-356 MuiTypography-body1 MuiTypography-colorPrimary MuiTypography-alignLeft"
         >
           <a
             href="/clients"
@@ -6728,11 +6708,11 @@ exports[`ClientDetail should un archive 1`] = `
            Client Detail
         </p>
         <h1
-          class="MuiTypography-root makeStyles-title-3663 MuiTypography-h5 MuiTypography-colorPrimary MuiTypography-alignLeft"
+          class="MuiTypography-root makeStyles-title-426 MuiTypography-h5 MuiTypography-colorPrimary MuiTypography-alignLeft"
         >
           Robert C. Martin
           <div
-            class="MuiChip-root makeStyles-statusChip-3591 MuiChip-colorPrimary"
+            class="MuiChip-root makeStyles-statusChip-354 MuiChip-colorPrimary"
           >
             <span
               class="MuiChip-label"
@@ -6743,27 +6723,27 @@ exports[`ClientDetail should un archive 1`] = `
         </h1>
       </div>
       <div
-        class="makeStyles-widgetsWrapper-3670"
+        class="makeStyles-widgetsWrapper-433"
         id="summary-widgets"
       >
         <div
-          class="MuiPaper-root makeStyles-widget-3684 MuiPaper-elevation0 MuiPaper-rounded"
+          class="MuiPaper-root makeStyles-widget-447 MuiPaper-elevation0 MuiPaper-rounded"
         >
           <span
-            class="makeStyles-totalFont-3685"
+            class="makeStyles-totalFont-448"
           >
             5
           </span>
           <div
-            class="makeStyles-contentContainer-3688"
+            class="makeStyles-contentContainer-451"
           >
             <span
-              class="makeStyles-statusFont-3686"
+              class="makeStyles-statusFont-449"
             >
               Projects
             </span>
             <span
-              class="makeStyles-contentFont-3687"
+              class="makeStyles-contentFont-450"
             >
               <a
                 href="/clients/detail/9164e4c4-6521-47bb-97fd-c75ac02b2cf5/projects"
@@ -6774,23 +6754,23 @@ exports[`ClientDetail should un archive 1`] = `
           </div>
         </div>
         <div
-          class="MuiPaper-root makeStyles-widget-3684 MuiPaper-elevation0 MuiPaper-rounded"
+          class="MuiPaper-root makeStyles-widget-447 MuiPaper-elevation0 MuiPaper-rounded"
         >
           <span
-            class="makeStyles-totalFont-3685"
+            class="makeStyles-totalFont-448"
           >
             37
           </span>
           <div
-            class="makeStyles-contentContainer-3688"
+            class="makeStyles-contentContainer-451"
           >
             <span
-              class="makeStyles-statusFont-3686"
+              class="makeStyles-statusFont-449"
             >
               Workers
             </span>
             <span
-              class="makeStyles-contentFont-3687"
+              class="makeStyles-contentFont-450"
             >
               <a
                 href="/clients/detail/9164e4c4-6521-47bb-97fd-c75ac02b2cf5/workers"
@@ -6801,35 +6781,35 @@ exports[`ClientDetail should un archive 1`] = `
           </div>
         </div>
         <div
-          class="MuiPaper-root makeStyles-widget-3684 MuiPaper-elevation0 MuiPaper-rounded"
+          class="MuiPaper-root makeStyles-widget-447 MuiPaper-elevation0 MuiPaper-rounded"
         >
           <span
-            class="makeStyles-totalFont-3685"
+            class="makeStyles-totalFont-448"
           >
             $ 23,678.00
           </span>
           <div
-            class="makeStyles-contentContainer-3688"
+            class="makeStyles-contentContainer-451"
           >
             <span
-              class="makeStyles-statusFont-3686"
+              class="makeStyles-statusFont-449"
             >
               Revenue
             </span>
             <span
-              class="makeStyles-contentFont-3687"
+              class="makeStyles-contentFont-450"
             />
           </div>
         </div>
       </div>
       <div
-        class="makeStyles-tableWrapper-3622"
+        class="makeStyles-tableWrapper-385"
       >
         <div
-          class="makeStyles-filterContainer-3630"
+          class="makeStyles-filterContainer-393"
         >
           <div
-            class="makeStyles-statusFilter-3631"
+            class="makeStyles-statusFilter-394"
           >
             <a
               data-testid="filter-status-opt"
@@ -6917,7 +6897,7 @@ exports[`ClientDetail should un archive 1`] = `
               tabindex="-1"
             >
               <button
-                class="MuiButtonBase-root MuiButton-root MuiButton-text makeStyles-activeFilter-3632"
+                class="MuiButtonBase-root MuiButton-root MuiButton-text makeStyles-activeFilter-395"
                 tabindex="0"
                 type="button"
               >
@@ -6934,7 +6914,7 @@ exports[`ClientDetail should un archive 1`] = `
           </div>
         </div>
         <div
-          class="MuiPaper-root makeStyles-container-3786  MuiPaper-outlined MuiPaper-rounded"
+          class="MuiPaper-root makeStyles-container-1450  MuiPaper-outlined MuiPaper-rounded"
         >
           <div
             class="MuiGrid-root MuiGrid-container MuiGrid-align-items-xs-center MuiGrid-justify-xs-space-between"
@@ -6943,7 +6923,7 @@ exports[`ClientDetail should un archive 1`] = `
               class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-auto"
             >
               <h1
-                class="MuiTypography-root makeStyles-title-3787 MuiTypography-h1"
+                class="MuiTypography-root makeStyles-title-1451 MuiTypography-h1"
               >
                 General Information
               </h1>
@@ -6952,10 +6932,10 @@ exports[`ClientDetail should un archive 1`] = `
               class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-auto"
             >
               <span
-                class="makeStyles-secondaryActionsIcon-3781 makeStyles-secondaryActions-3788"
+                class="makeStyles-secondaryActionsIcon-1445 makeStyles-secondaryActions-1452"
               >
                 <button
-                  class="MuiButtonBase-root MuiIconButton-root makeStyles-editButton-3697 Mui-disabled Mui-disabled"
+                  class="MuiButtonBase-root MuiIconButton-root makeStyles-editButton-464 Mui-disabled Mui-disabled"
                   data-testid="gen-info-edit-button"
                   disabled=""
                   tabindex="-1"
@@ -6980,60 +6960,60 @@ exports[`ClientDetail should un archive 1`] = `
             </div>
           </div>
           <hr
-            class="MuiDivider-root makeStyles-divider-3789"
+            class="MuiDivider-root makeStyles-divider-1453"
           />
           <div
-            class="makeStyles-reviewGeneralInformation-3741 makeStyles-reviewGeneralInformationDirection-3744"
+            class="makeStyles-reviewGeneralInformation-1405 makeStyles-reviewGeneralInformationDirection-1408"
           >
             <div
-              class="makeStyles-informationBlocksWrapper-3743"
+              class="makeStyles-informationBlocksWrapper-1407"
             >
               <div
-                class="makeStyles-informationBlock-3740"
+                class="makeStyles-informationBlock-1404"
               >
                 <p
-                  class="MuiTypography-root makeStyles-cardFont-3718 makeStyles-cardFontAccent-3720 makeStyles-cardTitle-3723 MuiTypography-body1"
+                  class="MuiTypography-root makeStyles-cardFont-1382 makeStyles-cardFontAccent-1384 makeStyles-cardTitle-1387 MuiTypography-body1"
                 >
                   Client Name
                 </p>
                 <p
-                  class="MuiTypography-root makeStyles-cardFont-3718 MuiTypography-body1"
+                  class="MuiTypography-root makeStyles-cardFont-1382 MuiTypography-body1"
                 >
                   Robert C. Martin
                 </p>
               </div>
               <div
-                class="makeStyles-informationBlock-3740 makeStyles-informationMiddleBlock-3745"
+                class="makeStyles-informationBlock-1404 makeStyles-informationMiddleBlock-1409"
               >
                 <p
-                  class="MuiTypography-root makeStyles-cardFont-3718 makeStyles-cardFontAccent-3720 makeStyles-cardTitle-3723 MuiTypography-body1"
+                  class="MuiTypography-root makeStyles-cardFont-1382 makeStyles-cardFontAccent-1384 makeStyles-cardTitle-1387 MuiTypography-body1"
                 >
                   Legal Information
                 </p>
                 <div
-                  class="makeStyles-cardData-3727"
+                  class="makeStyles-cardData-1391"
                 >
                   <p
-                    class="MuiTypography-root makeStyles-cardFont-3718 makeStyles-cardDataTitle-3728 MuiTypography-body1"
+                    class="MuiTypography-root makeStyles-cardFont-1382 makeStyles-cardDataTitle-1392 MuiTypography-body1"
                   >
                     Taxpayer Identification Number:
                   </p>
                   <p
-                    class="MuiTypography-root makeStyles-cardFont-3718 makeStyles-cardFontAccent-3720 MuiTypography-body1"
+                    class="MuiTypography-root makeStyles-cardFont-1382 makeStyles-cardFontAccent-1384 MuiTypography-body1"
                   >
                     LOZG-780211-7B9
                   </p>
                 </div>
                 <div
-                  class="makeStyles-cardData-3727"
+                  class="makeStyles-cardData-1391"
                 >
                   <p
-                    class="MuiTypography-root makeStyles-cardFont-3718 makeStyles-cardDataTitle-3728 MuiTypography-body1"
+                    class="MuiTypography-root makeStyles-cardFont-1382 makeStyles-cardDataTitle-1392 MuiTypography-body1"
                   >
                     MBE/WBE:
                   </p>
                   <p
-                    class="MuiTypography-root makeStyles-cardFont-3718 makeStyles-cardFontAccent-3720 MuiTypography-body1"
+                    class="MuiTypography-root makeStyles-cardFont-1382 makeStyles-cardFontAccent-1384 MuiTypography-body1"
                   >
                     Option 1
                   </p>
@@ -7041,16 +7021,16 @@ exports[`ClientDetail should un archive 1`] = `
               </div>
             </div>
             <div
-              class="makeStyles-informationBlock-3740 makeStyles-lastInformationBlock-3746"
+              class="makeStyles-informationBlock-1404 makeStyles-lastInformationBlock-1410"
               data-testid="trade-names"
             >
               <p
-                class="MuiTypography-root makeStyles-cardFont-3718 makeStyles-cardFontAccent-3720 makeStyles-cardTitle-3723 makeStyles-lastInformationTitle-3747 MuiTypography-body1"
+                class="MuiTypography-root makeStyles-cardFont-1382 makeStyles-cardFontAccent-1384 makeStyles-cardTitle-1387 makeStyles-lastInformationTitle-1411 MuiTypography-body1"
               >
                 Trades
               </p>
               <span
-                class="makeStyles-cardTrades-3726"
+                class="makeStyles-cardTrades-1390"
               >
                 <span>
                   trade 1, trade 2.
@@ -7058,26 +7038,26 @@ exports[`ClientDetail should un archive 1`] = `
               </span>
             </div>
             <div
-              class="makeStyles-informationBlocksWrapper-3743 makeStyles-lastInformationBlock-3746"
+              class="makeStyles-informationBlocksWrapper-1407 makeStyles-lastInformationBlock-1410"
             >
               <div
-                class="makeStyles-informationBlock-3740 makeStyles-lastInformationTitle-3747"
+                class="makeStyles-informationBlock-1404 makeStyles-lastInformationTitle-1411"
               >
                 <p
-                  class="MuiTypography-root makeStyles-cardFont-3718 makeStyles-cardFontAccent-3720 makeStyles-cardTitle-3723 MuiTypography-body1"
+                  class="MuiTypography-root makeStyles-cardFont-1382 makeStyles-cardFontAccent-1384 makeStyles-cardTitle-1387 MuiTypography-body1"
                 >
                   Universal Badge
                 </p>
                 <div
-                  class="makeStyles-cardData-3727"
+                  class="makeStyles-cardData-1391"
                 >
                   <p
-                    class="MuiTypography-root makeStyles-cardFont-3718 makeStyles-cardDataTitle-3728 MuiTypography-body1"
+                    class="MuiTypography-root makeStyles-cardFont-1382 makeStyles-cardDataTitle-1392 MuiTypography-body1"
                   >
                     Universal Badge:
                   </p>
                   <p
-                    class="MuiTypography-root makeStyles-cardFont-3718 makeStyles-cardFontAccent-3720 MuiTypography-body1"
+                    class="MuiTypography-root makeStyles-cardFont-1382 makeStyles-cardFontAccent-1384 MuiTypography-body1"
                   >
                     Yes
                   </p>
@@ -7087,7 +7067,7 @@ exports[`ClientDetail should un archive 1`] = `
           </div>
         </div>
         <div
-          class="MuiPaper-root makeStyles-container-3786  MuiPaper-outlined MuiPaper-rounded"
+          class="MuiPaper-root makeStyles-container-1450  MuiPaper-outlined MuiPaper-rounded"
         >
           <div
             class="MuiGrid-root MuiGrid-container MuiGrid-align-items-xs-center MuiGrid-justify-xs-space-between"
@@ -7096,7 +7076,7 @@ exports[`ClientDetail should un archive 1`] = `
               class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-auto"
             >
               <h1
-                class="MuiTypography-root makeStyles-title-3787 MuiTypography-h1"
+                class="MuiTypography-root makeStyles-title-1451 MuiTypography-h1"
               >
                 Addresses
               </h1>
@@ -7105,10 +7085,10 @@ exports[`ClientDetail should un archive 1`] = `
               class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-auto"
             >
               <span
-                class="makeStyles-secondaryActionsIcon-3781 makeStyles-secondaryActions-3788"
+                class="makeStyles-secondaryActionsIcon-1445 makeStyles-secondaryActions-1452"
               >
                 <button
-                  class="MuiButtonBase-root MuiIconButton-root makeStyles-editButton-3697 Mui-disabled Mui-disabled"
+                  class="MuiButtonBase-root MuiIconButton-root makeStyles-editButton-464 Mui-disabled Mui-disabled"
                   data-testid="addr-edit-button"
                   disabled=""
                   tabindex="-1"
@@ -7133,24 +7113,24 @@ exports[`ClientDetail should un archive 1`] = `
             </div>
           </div>
           <hr
-            class="MuiDivider-root makeStyles-divider-3789"
+            class="MuiDivider-root makeStyles-divider-1453"
           />
           <div
-            class="MuiGrid-root makeStyles-addressesWrapper-3763 MuiGrid-container"
+            class="MuiGrid-root makeStyles-addressesWrapper-1427 MuiGrid-container"
           >
             <div
-              class="MuiGrid-root makeStyles-addressItem-3765 MuiGrid-item MuiGrid-grid-xs-4"
+              class="MuiGrid-root makeStyles-addressItem-1429 MuiGrid-item MuiGrid-grid-xs-4"
             >
               <div
-                class="makeStyles-informationBlock-3740 makeStyles-addressInformationBlock-3764"
+                class="makeStyles-informationBlock-1404 makeStyles-addressInformationBlock-1428"
               >
                 <p
-                  class="MuiTypography-root makeStyles-cardFont-3718 makeStyles-cardFontAccent-3720 makeStyles-cardAddressTitle-3729 MuiTypography-body1"
+                  class="MuiTypography-root makeStyles-cardFont-1382 makeStyles-cardFontAccent-1384 makeStyles-cardAddressTitle-1393 MuiTypography-body1"
                 >
                   Billing Address
                 </p>
                 <p
-                  class="MuiTypography-root makeStyles-cardFont-3718  MuiTypography-body1"
+                  class="MuiTypography-root makeStyles-cardFont-1382  MuiTypography-body1"
                 >
                   
                   <span
@@ -7160,7 +7140,7 @@ exports[`ClientDetail should un archive 1`] = `
                   </span>
                 </p>
                 <p
-                  class="MuiTypography-root makeStyles-cardFont-3718  MuiTypography-body1"
+                  class="MuiTypography-root makeStyles-cardFont-1382  MuiTypography-body1"
                 >
                   
                   
@@ -7170,19 +7150,19 @@ exports[`ClientDetail should un archive 1`] = `
               </div>
             </div>
             <hr
-              class="MuiDivider-root makeStyles-dividerColor-3779 MuiDivider-flexItem MuiDivider-vertical"
+              class="MuiDivider-root makeStyles-dividerColor-1443 MuiDivider-flexItem MuiDivider-vertical"
             />
             <div
-              class="MuiGrid-root makeStyles-addressItem-3765 MuiGrid-item MuiGrid-grid-xs-4"
+              class="MuiGrid-root makeStyles-addressItem-1429 MuiGrid-item MuiGrid-grid-xs-4"
             >
               <div>
                 <p
-                  class="MuiTypography-root makeStyles-cardFont-3718 makeStyles-cardFontAccent-3720 makeStyles-cardAddressTitle-3729 MuiTypography-body1"
+                  class="MuiTypography-root makeStyles-cardFont-1382 makeStyles-cardFontAccent-1384 makeStyles-cardAddressTitle-1393 MuiTypography-body1"
                 >
                   Mailing Address
                 </p>
                 <p
-                  class="MuiTypography-root makeStyles-cardFont-3718 makeStyles-cardAddressTitle-3729 MuiTypography-body1"
+                  class="MuiTypography-root makeStyles-cardFont-1382 makeStyles-cardAddressTitle-1393 MuiTypography-body1"
                 >
                   Same as Billing Address
                 </p>
@@ -7191,7 +7171,7 @@ exports[`ClientDetail should un archive 1`] = `
           </div>
         </div>
         <div
-          class="MuiPaper-root makeStyles-container-3786  MuiPaper-outlined MuiPaper-rounded"
+          class="MuiPaper-root makeStyles-container-1450  MuiPaper-outlined MuiPaper-rounded"
         >
           <div
             class="MuiGrid-root MuiGrid-container MuiGrid-align-items-xs-center MuiGrid-justify-xs-space-between"
@@ -7200,7 +7180,7 @@ exports[`ClientDetail should un archive 1`] = `
               class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-auto"
             >
               <h1
-                class="MuiTypography-root makeStyles-title-3787 MuiTypography-h1"
+                class="MuiTypography-root makeStyles-title-1451 MuiTypography-h1"
               >
                 Unarchive
               </h1>
@@ -7209,15 +7189,15 @@ exports[`ClientDetail should un archive 1`] = `
               class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-auto"
             >
               <span
-                class=" makeStyles-secondaryActions-3788"
+                class=" makeStyles-secondaryActions-1452"
               />
             </div>
           </div>
           <hr
-            class="MuiDivider-root makeStyles-divider-3789"
+            class="MuiDivider-root makeStyles-divider-1453"
           />
           <button
-            class="MuiButtonBase-root MuiButton-root MuiButton-outlined makeStyles-archiveButton-3594 MuiButton-outlinedPrimary"
+            class="MuiButtonBase-root MuiButton-root MuiButton-outlined makeStyles-archiveButton-357 MuiButton-outlinedPrimary"
             data-testid="archive-btn"
             tabindex="0"
             type="button"

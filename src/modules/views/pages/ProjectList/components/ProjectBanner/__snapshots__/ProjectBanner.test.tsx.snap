@@ -62,6 +62,16 @@ exports[`Project Banner should render 1`] = `
             Jul 15, 2020 to Jul 15, 2020
           </p>
         </div>
+        <div
+          class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-3"
+        >
+          <p
+            class="MuiTypography-root makeStyles-bannerInformation-26 MuiTypography-body1"
+          >
+            -
+             Client/s
+          </p>
+        </div>
       </div>
     </div>
   </div>

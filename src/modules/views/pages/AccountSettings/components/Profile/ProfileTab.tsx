@@ -11,7 +11,8 @@ import { getImageUrl, sanitizeAccountData } from '../../../../../../utils/genera
 
 export interface IProfileTabProps {
   user: UserModel.IUser;
-  userRole: UserModel.Role;
+  isFcaUser: boolean;
+  isAdmin: boolean;
   accountData: UserModel.IAccount;
   fileMap: GeneralModel.IEntityMap<GeneralModel.IEntityMap<FileModel.IFile>>;
   saveLoading: GeneralModel.ILoadingStatus;
@@ -25,7 +26,8 @@ export interface IProfileTabProps {
 
 const ProfileTab = ({
   user,
-  userRole,
+  isFcaUser,
+  isAdmin,
   accountData,
   fileMap,
   saveLoading,
@@ -47,8 +49,8 @@ const ProfileTab = ({
   );
 
   const { model, formRules, errors, hasChanges, onSubmit, onChange, update, discardChanges, setHasChanges } = useForm<UserModel.IAccount>({
-    initValues: FormRules.account.getAccountInitialData(userRole),
-    formRules: FormRules.account.getAccountRules(userRole),
+    initValues: FormRules.account.getAccountInitialData(isFcaUser, isAdmin),
+    formRules: FormRules.account.getAccountRules(isFcaUser, isAdmin),
     onSubmitCallback: onUpdateProfile,
   });
 

@@ -11,8 +11,8 @@ import { IRootState } from '../../../state-mgmt/rootState';
 
 export const mapStateToProps = (state: IRootState) => ({
   workerMap: state.worker.workerMap,
-  userRole: state.auth.role,
   workerLoading: state.general.loadingMap[GENERAL.LOADING_KEY.FETCH_WORKER],
+  currentUserPermissions: state.auth.session?.permissions,
 });
 
 export const mapDispatchToProps = (dispatch: Dispatch) => ({

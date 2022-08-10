@@ -5,9 +5,10 @@ import { statisticsState } from '../../../../state-mgmt/statistics';
 describe('TopTenProjectsContainer', () => {
   it('should mapStateToProps', () => {
     expect(mapStateToProps(getInitialState())).toEqual({
-      userRole: getInitialState().auth.role,
       projectTopTenWidget: getInitialState().statistics.projectTopTenStatistics,
       loading: undefined,
+      isFcaUser: getInitialState().auth.isFcaUser,
+      isAdmin: getInitialState().auth.isAdmin,
     });
   });
   it('should mapDispatchToProps', () => {

@@ -7,7 +7,7 @@ import Avatar from '@material-ui/core/Avatar';
 
 import MatchingField, { MatchType } from '../../../shared/MatchingField/MatchingField';
 
-import { UserModel, WorkerModel } from '../../../../models';
+import { WorkerModel } from '../../../../models';
 
 import { formatPhoneNumber, getConditionalDefaultValue } from '../../../../../utils/generalUtils';
 import { avatarGlobalStyles, modalGlobalStyles } from '../../../../../assets/styles';
@@ -17,10 +17,10 @@ export interface IExistingWorkerModalProps {
   matchedFields: string[];
   existingWorker: WorkerModel.IExistingWorker;
   currentWorker: WorkerModel.IWorker;
-  userRole: UserModel.Role;
+  isFcaUser: boolean;
 }
 
-const DuplicatedWorkerModalContent = ({ existingWorker, matchedFields, currentWorker, userRole }: IExistingWorkerModalProps) => {
+const DuplicatedWorkerModalContent = ({ existingWorker, matchedFields, currentWorker, isFcaUser }: IExistingWorkerModalProps) => {
   const modalClasses = modalGlobalStyles();
   const avatarGlobalClasses = avatarGlobalStyles();
   const classes = useStyles();
@@ -52,7 +52,7 @@ const DuplicatedWorkerModalContent = ({ existingWorker, matchedFields, currentWo
             <MatchingField type={getMatchType('fullName')}>
               <Typography className={classes.workerAccent}>{existingWorker.fullName}</Typography>
             </MatchingField>
-            {existingWorker.companyName && userRole === UserModel.Role.FCA_ADMIN && (
+            {existingWorker.companyName && isFcaUser && (
               <MatchingField type={getMatchType('companyName')}>
                 <Typography className={classes.companyAccent}>{existingWorker.companyName}</Typography>
               </MatchingField>

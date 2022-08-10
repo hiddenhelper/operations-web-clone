@@ -16,7 +16,6 @@ import { useStyles } from '../../../styles';
 import { sanitizeUser } from '../../../../../../../utils/clientUtils';
 
 export interface IEditTabProps {
-  userRole: UserModel.Role;
   fetchUserloading: GeneralModel.ILoadingStatus;
   updateUserLoading: GeneralModel.ILoadingStatus;
   changeAssignTab: () => void;
@@ -25,10 +24,13 @@ export interface IEditTabProps {
   groupList: any;
   companyId: string;
   companyUserProfile: UserModel.IUser | {};
+  isFcaUser: boolean;
+  isAdmin: boolean;
 }
 
 const EditTab = ({
-  userRole,
+  isFcaUser,
+  isAdmin,
   fetchUserloading,
   updateUserLoading,
   changeAssignTab,
@@ -41,7 +43,7 @@ const EditTab = ({
   const classes = useStyles();
   const assignModalClasses = AssignModalStyles();
   const buttonClasses = buttonStyles();
-  const isFcAdmin = useMemo(() => userRole === UserModel.Role.FCA_ADMIN, [userRole]);
+  const isFcAdmin = useMemo(() => isFcaUser && isAdmin, [isFcaUser, isAdmin]);
 
   const onUpdate = useCallback(
     user => {

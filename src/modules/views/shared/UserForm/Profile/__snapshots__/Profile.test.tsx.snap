@@ -161,6 +161,243 @@ exports[`Profile should render 1`] = `
               </div>
             </div>
           </div>
+          <div
+            class="makeStyles-errorInputWrapper-5"
+          >
+            <div
+              class="MuiFormControl-root makeStyles-formControl-103 makeStyles-inputBottomPadding-1"
+            >
+              <h1
+                class="MuiTypography-root MuiTypography-caption MuiTypography-colorSecondary MuiTypography-alignLeft"
+              >
+                Mobile Phone Number
+                 
+              </h1>
+              <div>
+                <div
+                  class="makeStyles-phoneInput-109 undefined  react-tel-input"
+                >
+                  <div
+                    class="special-label"
+                  >
+                    Phone
+                  </div>
+                  <input
+                    autocomplete="off"
+                    class=" form-control"
+                    data-testid="mobile-user-phone"
+                    name="mobilePhoneNumber"
+                    placeholder="+0 (000) 000-0000"
+                    type="text"
+                    value="+54 (87) 1093"
+                    variant="outlined"
+                  />
+                  <div
+                    class=" flag-dropdown"
+                  >
+                    <div
+                      aria-haspopup="listbox"
+                      class="selected-flag"
+                      role="button"
+                      tabindex="-1"
+                      title="Argentina: + 54"
+                    >
+                      <div
+                        class="flag ar"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="MuiGrid-root MuiGrid-container"
+          >
+            <div
+              class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-9 MuiGrid-grid-lg-9"
+            >
+              <div
+                class="MuiFormControl-root makeStyles-formControl-103 makeStyles-inputBottomPadding-1 makeStyles-middleInput-39"
+              >
+                <h1
+                  class="MuiTypography-root MuiTypography-caption MuiTypography-colorSecondary MuiTypography-alignLeft"
+                >
+                  Office Phone Number (Optional)
+                   
+                </h1>
+                <div>
+                  <div
+                    class="makeStyles-phoneInput-109 undefined  react-tel-input"
+                  >
+                    <div
+                      class="special-label"
+                    >
+                      Phone
+                    </div>
+                    <input
+                      autocomplete="off"
+                      class=" form-control"
+                      data-testid="office-user-phone"
+                      id="officePhoneNumber"
+                      name="officePhoneNumber"
+                      placeholder="+0 (000) 000-0000"
+                      type="text"
+                      value="+43 781 983"
+                      variant="outlined"
+                    />
+                    <div
+                      class=" flag-dropdown"
+                    >
+                      <div
+                        aria-haspopup="listbox"
+                        class="selected-flag"
+                        role="button"
+                        tabindex="-1"
+                        title="Austria: + 43"
+                      >
+                        <div
+                          class="flag at"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-3 MuiGrid-grid-lg-3"
+            >
+              <div
+                class="MuiFormControl-root makeStyles-formControl-103 makeStyles-inputBottomPadding-1"
+              >
+                <h1
+                  class="MuiTypography-root MuiTypography-caption MuiTypography-colorSecondary MuiTypography-alignLeft"
+                >
+                  Ext
+                   
+                </h1>
+                <div>
+                  <div
+                    class="MuiFormControl-root MuiTextField-root MuiFormControl-fullWidth"
+                  >
+                    <div
+                      class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-fullWidth MuiInputBase-formControl"
+                    >
+                      <input
+                        aria-invalid="false"
+                        autocomplete="off"
+                        class="MuiInputBase-input MuiOutlinedInput-input"
+                        data-testid="office-user-phone"
+                        maxlength="6"
+                        name="officePhoneExtension"
+                        placeholder="Ext"
+                        type="text"
+                        value=""
+                      />
+                      <fieldset
+                        aria-hidden="true"
+                        class="PrivateNotchedOutline-root-105 MuiOutlinedInput-notchedOutline"
+                        style="padding-left: 8px;"
+                      >
+                        <legend
+                          class="PrivateNotchedOutline-legend-106"
+                          style="width: 0.01px;"
+                        >
+                          <span>
+                            ​
+                          </span>
+                        </legend>
+                      </fieldset>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="makeStyles-errorInputWrapper-5"
+          >
+            <div
+              class=" makeStyles-controlledRadioContainer-113 controlledRadioContainer"
+              data-testid="controlled-radio"
+            >
+              <fieldset
+                class="MuiFormControl-root makeStyles-radioWrapper-55"
+              >
+                <legend
+                  class="MuiFormLabel-root makeStyles-controlledRadioLabel-112"
+                  id="radio-label-preferredContactMethod"
+                >
+                  Preferred Contact Method
+                </legend>
+                <div
+                  aria-labelledby="radio-label-preferredContactMethod"
+                  class="MuiFormGroup-root MuiFormGroup-row"
+                  data-testid="controlled-radio-group"
+                  role="radiogroup"
+                >
+                  <label
+                    class="MuiFormControlLabel-root"
+                  >
+                    <span
+                      aria-disabled="false"
+                      class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-120 MuiRadio-root makeStyles-root-114 PrivateSwitchBase-checked-121 Mui-checked"
+                    >
+                      <span
+                        class="MuiIconButton-label"
+                      >
+                        <input
+                          checked=""
+                          class="PrivateSwitchBase-input-123"
+                          data-testid="controlled-radio-button"
+                          name="preferredContactMethod"
+                          type="radio"
+                          value="0"
+                        />
+                        <span
+                          class="makeStyles-icon-115 makeStyles-checkedIcon-118 "
+                        />
+                      </span>
+                    </span>
+                    <span
+                      class="MuiTypography-root MuiFormControlLabel-label MuiTypography-body1"
+                    >
+                      Email
+                    </span>
+                  </label>
+                  <label
+                    class="MuiFormControlLabel-root"
+                  >
+                    <span
+                      aria-disabled="false"
+                      class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-120 MuiRadio-root makeStyles-root-114"
+                    >
+                      <span
+                        class="MuiIconButton-label"
+                      >
+                        <input
+                          class="PrivateSwitchBase-input-123"
+                          data-testid="controlled-radio-button"
+                          name="preferredContactMethod"
+                          type="radio"
+                          value="1"
+                        />
+                        <span
+                          class="makeStyles-icon-115 makeStyles-unactiveIcon-117"
+                        />
+                      </span>
+                    </span>
+                    <span
+                      class="MuiTypography-root MuiFormControlLabel-label MuiTypography-body1"
+                    >
+                      Phone
+                    </span>
+                  </label>
+                </div>
+              </fieldset>
+            </div>
+          </div>
         </div>
       </div>
       <div
@@ -201,7 +438,7 @@ exports[`Profile should render 1`] = `
               class="MuiButton-label"
             >
               <span
-                class="makeStyles-textWrapper-111"
+                class="makeStyles-textWrapper-126"
               >
                 Save Changes
               </span>
@@ -218,7 +455,7 @@ exports[`Profile should render 2`] = `
 <body>
   <div>
     <div
-      class="makeStyles-profileFormPaddingTop-113"
+      class="makeStyles-profileFormPaddingTop-128"
     >
       <div
         class="MuiGrid-root MuiGrid-container"
@@ -227,10 +464,10 @@ exports[`Profile should render 2`] = `
           class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-lg-12"
         >
           <div
-            class="makeStyles-errorInputWrapper-116"
+            class="makeStyles-errorInputWrapper-131"
           >
             <div
-              class="MuiFormControl-root makeStyles-formControl-214 makeStyles-inputBottomPadding-112"
+              class="MuiFormControl-root makeStyles-formControl-229 makeStyles-inputBottomPadding-127"
             >
               <h1
                 class="MuiTypography-root MuiTypography-caption MuiTypography-colorSecondary MuiTypography-alignLeft"
@@ -259,11 +496,11 @@ exports[`Profile should render 2`] = `
                     />
                     <fieldset
                       aria-hidden="true"
-                      class="PrivateNotchedOutline-root-216 MuiOutlinedInput-notchedOutline"
+                      class="PrivateNotchedOutline-root-231 MuiOutlinedInput-notchedOutline"
                       style="padding-left: 8px;"
                     >
                       <legend
-                        class="PrivateNotchedOutline-legend-217"
+                        class="PrivateNotchedOutline-legend-232"
                         style="width: 0.01px;"
                       >
                         <span>
@@ -277,10 +514,10 @@ exports[`Profile should render 2`] = `
             </div>
           </div>
           <div
-            class="makeStyles-errorInputWrapper-116"
+            class="makeStyles-errorInputWrapper-131"
           >
             <div
-              class="MuiFormControl-root makeStyles-formControl-214 makeStyles-inputBottomPadding-112"
+              class="MuiFormControl-root makeStyles-formControl-229 makeStyles-inputBottomPadding-127"
             >
               <h1
                 class="MuiTypography-root MuiTypography-caption MuiTypography-colorSecondary MuiTypography-alignLeft"
@@ -308,11 +545,11 @@ exports[`Profile should render 2`] = `
                     />
                     <fieldset
                       aria-hidden="true"
-                      class="PrivateNotchedOutline-root-216 MuiOutlinedInput-notchedOutline"
+                      class="PrivateNotchedOutline-root-231 MuiOutlinedInput-notchedOutline"
                       style="padding-left: 8px;"
                     >
                       <legend
-                        class="PrivateNotchedOutline-legend-217"
+                        class="PrivateNotchedOutline-legend-232"
                         style="width: 0.01px;"
                       >
                         <span>
@@ -326,10 +563,10 @@ exports[`Profile should render 2`] = `
             </div>
           </div>
           <div
-            class="makeStyles-errorInputWrapper-116"
+            class="makeStyles-errorInputWrapper-131"
           >
             <div
-              class="MuiFormControl-root makeStyles-formControl-214 makeStyles-inputBottomPadding-112"
+              class="MuiFormControl-root makeStyles-formControl-229 makeStyles-inputBottomPadding-127"
             >
               <h1
                 class="MuiTypography-root MuiTypography-caption MuiTypography-colorSecondary MuiTypography-alignLeft"
@@ -358,11 +595,11 @@ exports[`Profile should render 2`] = `
                     />
                     <fieldset
                       aria-hidden="true"
-                      class="PrivateNotchedOutline-root-216 MuiOutlinedInput-notchedOutline"
+                      class="PrivateNotchedOutline-root-231 MuiOutlinedInput-notchedOutline"
                       style="padding-left: 8px;"
                     >
                       <legend
-                        class="PrivateNotchedOutline-legend-217"
+                        class="PrivateNotchedOutline-legend-232"
                         style="width: 0.01px;"
                       >
                         <span>
@@ -375,10 +612,247 @@ exports[`Profile should render 2`] = `
               </div>
             </div>
           </div>
+          <div
+            class="makeStyles-errorInputWrapper-131"
+          >
+            <div
+              class="MuiFormControl-root makeStyles-formControl-229 makeStyles-inputBottomPadding-127"
+            >
+              <h1
+                class="MuiTypography-root MuiTypography-caption MuiTypography-colorSecondary MuiTypography-alignLeft"
+              >
+                Mobile Phone Number
+                 
+              </h1>
+              <div>
+                <div
+                  class="makeStyles-phoneInput-235 undefined  react-tel-input"
+                >
+                  <div
+                    class="special-label"
+                  >
+                    Phone
+                  </div>
+                  <input
+                    autocomplete="off"
+                    class=" form-control"
+                    data-testid="mobile-user-phone"
+                    name="mobilePhoneNumber"
+                    placeholder="+0 (000) 000-0000"
+                    type="text"
+                    value="+54 (87) 1093"
+                    variant="outlined"
+                  />
+                  <div
+                    class=" flag-dropdown"
+                  >
+                    <div
+                      aria-haspopup="listbox"
+                      class="selected-flag"
+                      role="button"
+                      tabindex="-1"
+                      title="Argentina: + 54"
+                    >
+                      <div
+                        class="flag ar"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="MuiGrid-root MuiGrid-container"
+          >
+            <div
+              class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-9 MuiGrid-grid-lg-9"
+            >
+              <div
+                class="MuiFormControl-root makeStyles-formControl-229 makeStyles-inputBottomPadding-127 makeStyles-middleInput-165"
+              >
+                <h1
+                  class="MuiTypography-root MuiTypography-caption MuiTypography-colorSecondary MuiTypography-alignLeft"
+                >
+                  Office Phone Number (Optional)
+                   
+                </h1>
+                <div>
+                  <div
+                    class="makeStyles-phoneInput-235 undefined  react-tel-input"
+                  >
+                    <div
+                      class="special-label"
+                    >
+                      Phone
+                    </div>
+                    <input
+                      autocomplete="off"
+                      class=" form-control"
+                      data-testid="office-user-phone"
+                      id="officePhoneNumber"
+                      name="officePhoneNumber"
+                      placeholder="+0 (000) 000-0000"
+                      type="text"
+                      value="+43 781 983"
+                      variant="outlined"
+                    />
+                    <div
+                      class=" flag-dropdown"
+                    >
+                      <div
+                        aria-haspopup="listbox"
+                        class="selected-flag"
+                        role="button"
+                        tabindex="-1"
+                        title="Austria: + 43"
+                      >
+                        <div
+                          class="flag at"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-3 MuiGrid-grid-lg-3"
+            >
+              <div
+                class="MuiFormControl-root makeStyles-formControl-229 makeStyles-inputBottomPadding-127"
+              >
+                <h1
+                  class="MuiTypography-root MuiTypography-caption MuiTypography-colorSecondary MuiTypography-alignLeft"
+                >
+                  Ext
+                   
+                </h1>
+                <div>
+                  <div
+                    class="MuiFormControl-root MuiTextField-root MuiFormControl-fullWidth"
+                  >
+                    <div
+                      class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-fullWidth MuiInputBase-formControl"
+                    >
+                      <input
+                        aria-invalid="false"
+                        autocomplete="off"
+                        class="MuiInputBase-input MuiOutlinedInput-input"
+                        data-testid="office-user-phone"
+                        maxlength="6"
+                        name="officePhoneExtension"
+                        placeholder="Ext"
+                        type="text"
+                        value=""
+                      />
+                      <fieldset
+                        aria-hidden="true"
+                        class="PrivateNotchedOutline-root-231 MuiOutlinedInput-notchedOutline"
+                        style="padding-left: 8px;"
+                      >
+                        <legend
+                          class="PrivateNotchedOutline-legend-232"
+                          style="width: 0.01px;"
+                        >
+                          <span>
+                            ​
+                          </span>
+                        </legend>
+                      </fieldset>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="makeStyles-errorInputWrapper-131"
+          >
+            <div
+              class=" makeStyles-controlledRadioContainer-239 controlledRadioContainer"
+              data-testid="controlled-radio"
+            >
+              <fieldset
+                class="MuiFormControl-root makeStyles-radioWrapper-181"
+              >
+                <legend
+                  class="MuiFormLabel-root makeStyles-controlledRadioLabel-238"
+                  id="radio-label-preferredContactMethod"
+                >
+                  Preferred Contact Method
+                </legend>
+                <div
+                  aria-labelledby="radio-label-preferredContactMethod"
+                  class="MuiFormGroup-root MuiFormGroup-row"
+                  data-testid="controlled-radio-group"
+                  role="radiogroup"
+                >
+                  <label
+                    class="MuiFormControlLabel-root"
+                  >
+                    <span
+                      aria-disabled="false"
+                      class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-246 MuiRadio-root makeStyles-root-240 PrivateSwitchBase-checked-247 Mui-checked"
+                    >
+                      <span
+                        class="MuiIconButton-label"
+                      >
+                        <input
+                          checked=""
+                          class="PrivateSwitchBase-input-249"
+                          data-testid="controlled-radio-button"
+                          name="preferredContactMethod"
+                          type="radio"
+                          value="0"
+                        />
+                        <span
+                          class="makeStyles-icon-241 makeStyles-checkedIcon-244 "
+                        />
+                      </span>
+                    </span>
+                    <span
+                      class="MuiTypography-root MuiFormControlLabel-label MuiTypography-body1"
+                    >
+                      Email
+                    </span>
+                  </label>
+                  <label
+                    class="MuiFormControlLabel-root"
+                  >
+                    <span
+                      aria-disabled="false"
+                      class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-246 MuiRadio-root makeStyles-root-240"
+                    >
+                      <span
+                        class="MuiIconButton-label"
+                      >
+                        <input
+                          class="PrivateSwitchBase-input-249"
+                          data-testid="controlled-radio-button"
+                          name="preferredContactMethod"
+                          type="radio"
+                          value="1"
+                        />
+                        <span
+                          class="makeStyles-icon-241 makeStyles-unactiveIcon-243"
+                        />
+                      </span>
+                    </span>
+                    <span
+                      class="MuiTypography-root MuiFormControlLabel-label MuiTypography-body1"
+                    >
+                      Phone
+                    </span>
+                  </label>
+                </div>
+              </fieldset>
+            </div>
+          </div>
         </div>
       </div>
       <div
-        class="makeStyles-formButtonWrapper-114"
+        class="makeStyles-formButtonWrapper-129"
       >
         <span
           class=""
@@ -386,7 +860,7 @@ exports[`Profile should render 2`] = `
           tabindex="-1"
         >
           <button
-            class="MuiButtonBase-root MuiButton-root MuiButton-text makeStyles-discardButton-138 MuiButton-textPrimary Mui-disabled Mui-disabled"
+            class="MuiButtonBase-root MuiButton-root MuiButton-text makeStyles-discardButton-153 MuiButton-textPrimary Mui-disabled Mui-disabled"
             data-testid="discard-changes-btn"
             disabled=""
             tabindex="-1"
@@ -405,7 +879,7 @@ exports[`Profile should render 2`] = `
           tabindex="-1"
         >
           <button
-            class="MuiButtonBase-root MuiButton-root MuiButton-contained false makeStyles-nextButton-137 makeStyles-noPadding-134 MuiButton-containedPrimary MuiButton-containedSizeLarge MuiButton-sizeLarge Mui-disabled Mui-disabled"
+            class="MuiButtonBase-root MuiButton-root MuiButton-contained false makeStyles-nextButton-152 makeStyles-noPadding-149 MuiButton-containedPrimary MuiButton-containedSizeLarge MuiButton-sizeLarge Mui-disabled Mui-disabled"
             data-testid="confirm-btn"
             disabled=""
             tabindex="-1"
@@ -415,7 +889,7 @@ exports[`Profile should render 2`] = `
               class="MuiButton-label"
             >
               <span
-                class="makeStyles-textWrapper-222"
+                class="makeStyles-textWrapper-252"
               >
                 Save Changes
               </span>
@@ -432,7 +906,7 @@ exports[`Profile should show validations 1`] = `
 <body>
   <div>
     <div
-      class="makeStyles-profileFormPaddingTop-224"
+      class="makeStyles-profileFormPaddingTop-254"
     >
       <div
         class="MuiGrid-root MuiGrid-container"
@@ -441,10 +915,10 @@ exports[`Profile should show validations 1`] = `
           class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-lg-12"
         >
           <div
-            class="makeStyles-errorInputWrapper-227"
+            class="makeStyles-errorInputWrapper-257"
           >
             <div
-              class="MuiFormControl-root makeStyles-formControl-325 makeStyles-inputBottomPadding-223"
+              class="MuiFormControl-root makeStyles-formControl-355 makeStyles-inputBottomPadding-253"
             >
               <h1
                 class="MuiTypography-root MuiTypography-caption MuiTypography-colorSecondary MuiTypography-alignLeft"
@@ -473,11 +947,11 @@ exports[`Profile should show validations 1`] = `
                     />
                     <fieldset
                       aria-hidden="true"
-                      class="PrivateNotchedOutline-root-327 MuiOutlinedInput-notchedOutline"
+                      class="PrivateNotchedOutline-root-357 MuiOutlinedInput-notchedOutline"
                       style="padding-left: 8px;"
                     >
                       <legend
-                        class="PrivateNotchedOutline-legend-328"
+                        class="PrivateNotchedOutline-legend-358"
                         style="width: 0.01px;"
                       >
                         <span>
@@ -491,10 +965,10 @@ exports[`Profile should show validations 1`] = `
             </div>
           </div>
           <div
-            class="makeStyles-errorInputWrapper-227"
+            class="makeStyles-errorInputWrapper-257"
           >
             <div
-              class="MuiFormControl-root makeStyles-formControl-325 makeStyles-inputBottomPadding-223"
+              class="MuiFormControl-root makeStyles-formControl-355 makeStyles-inputBottomPadding-253"
             >
               <h1
                 class="MuiTypography-root MuiTypography-caption MuiTypography-colorSecondary MuiTypography-alignLeft"
@@ -522,11 +996,11 @@ exports[`Profile should show validations 1`] = `
                     />
                     <fieldset
                       aria-hidden="true"
-                      class="PrivateNotchedOutline-root-327 MuiOutlinedInput-notchedOutline"
+                      class="PrivateNotchedOutline-root-357 MuiOutlinedInput-notchedOutline"
                       style="padding-left: 8px;"
                     >
                       <legend
-                        class="PrivateNotchedOutline-legend-328"
+                        class="PrivateNotchedOutline-legend-358"
                         style="width: 0.01px;"
                       >
                         <span>
@@ -540,10 +1014,10 @@ exports[`Profile should show validations 1`] = `
             </div>
           </div>
           <div
-            class="makeStyles-errorInputWrapper-227"
+            class="makeStyles-errorInputWrapper-257"
           >
             <div
-              class="MuiFormControl-root makeStyles-formControl-325 makeStyles-inputBottomPadding-223"
+              class="MuiFormControl-root makeStyles-formControl-355 makeStyles-inputBottomPadding-253"
             >
               <h1
                 class="MuiTypography-root MuiTypography-caption MuiTypography-colorSecondary MuiTypography-alignLeft"
@@ -572,11 +1046,11 @@ exports[`Profile should show validations 1`] = `
                     />
                     <fieldset
                       aria-hidden="true"
-                      class="PrivateNotchedOutline-root-327 MuiOutlinedInput-notchedOutline"
+                      class="PrivateNotchedOutline-root-357 MuiOutlinedInput-notchedOutline"
                       style="padding-left: 8px;"
                     >
                       <legend
-                        class="PrivateNotchedOutline-legend-328"
+                        class="PrivateNotchedOutline-legend-358"
                         style="width: 0.01px;"
                       >
                         <span>
@@ -589,10 +1063,247 @@ exports[`Profile should show validations 1`] = `
               </div>
             </div>
           </div>
+          <div
+            class="makeStyles-errorInputWrapper-257"
+          >
+            <div
+              class="MuiFormControl-root makeStyles-formControl-355 makeStyles-inputBottomPadding-253"
+            >
+              <h1
+                class="MuiTypography-root MuiTypography-caption MuiTypography-colorSecondary MuiTypography-alignLeft"
+              >
+                Mobile Phone Number
+                 
+              </h1>
+              <div>
+                <div
+                  class="makeStyles-phoneInput-361 undefined  react-tel-input"
+                >
+                  <div
+                    class="special-label"
+                  >
+                    Phone
+                  </div>
+                  <input
+                    autocomplete="off"
+                    class=" form-control"
+                    data-testid="mobile-user-phone"
+                    name="mobilePhoneNumber"
+                    placeholder="+0 (000) 000-0000"
+                    type="text"
+                    value="+54 (87) 1093"
+                    variant="outlined"
+                  />
+                  <div
+                    class=" flag-dropdown"
+                  >
+                    <div
+                      aria-haspopup="listbox"
+                      class="selected-flag"
+                      role="button"
+                      tabindex="-1"
+                      title="Argentina: + 54"
+                    >
+                      <div
+                        class="flag ar"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="MuiGrid-root MuiGrid-container"
+          >
+            <div
+              class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-9 MuiGrid-grid-lg-9"
+            >
+              <div
+                class="MuiFormControl-root makeStyles-formControl-355 makeStyles-inputBottomPadding-253 makeStyles-middleInput-291"
+              >
+                <h1
+                  class="MuiTypography-root MuiTypography-caption MuiTypography-colorSecondary MuiTypography-alignLeft"
+                >
+                  Office Phone Number (Optional)
+                   
+                </h1>
+                <div>
+                  <div
+                    class="makeStyles-phoneInput-361 undefined  react-tel-input"
+                  >
+                    <div
+                      class="special-label"
+                    >
+                      Phone
+                    </div>
+                    <input
+                      autocomplete="off"
+                      class=" form-control"
+                      data-testid="office-user-phone"
+                      id="officePhoneNumber"
+                      name="officePhoneNumber"
+                      placeholder="+0 (000) 000-0000"
+                      type="text"
+                      value="+43 781 983"
+                      variant="outlined"
+                    />
+                    <div
+                      class=" flag-dropdown"
+                    >
+                      <div
+                        aria-haspopup="listbox"
+                        class="selected-flag"
+                        role="button"
+                        tabindex="-1"
+                        title="Austria: + 43"
+                      >
+                        <div
+                          class="flag at"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-3 MuiGrid-grid-lg-3"
+            >
+              <div
+                class="MuiFormControl-root makeStyles-formControl-355 makeStyles-inputBottomPadding-253"
+              >
+                <h1
+                  class="MuiTypography-root MuiTypography-caption MuiTypography-colorSecondary MuiTypography-alignLeft"
+                >
+                  Ext
+                   
+                </h1>
+                <div>
+                  <div
+                    class="MuiFormControl-root MuiTextField-root MuiFormControl-fullWidth"
+                  >
+                    <div
+                      class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-fullWidth MuiInputBase-formControl"
+                    >
+                      <input
+                        aria-invalid="false"
+                        autocomplete="off"
+                        class="MuiInputBase-input MuiOutlinedInput-input"
+                        data-testid="office-user-phone"
+                        maxlength="6"
+                        name="officePhoneExtension"
+                        placeholder="Ext"
+                        type="text"
+                        value=""
+                      />
+                      <fieldset
+                        aria-hidden="true"
+                        class="PrivateNotchedOutline-root-357 MuiOutlinedInput-notchedOutline"
+                        style="padding-left: 8px;"
+                      >
+                        <legend
+                          class="PrivateNotchedOutline-legend-358"
+                          style="width: 0.01px;"
+                        >
+                          <span>
+                            ​
+                          </span>
+                        </legend>
+                      </fieldset>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="makeStyles-errorInputWrapper-257"
+          >
+            <div
+              class=" makeStyles-controlledRadioContainer-365 controlledRadioContainer"
+              data-testid="controlled-radio"
+            >
+              <fieldset
+                class="MuiFormControl-root makeStyles-radioWrapper-307"
+              >
+                <legend
+                  class="MuiFormLabel-root makeStyles-controlledRadioLabel-364"
+                  id="radio-label-preferredContactMethod"
+                >
+                  Preferred Contact Method
+                </legend>
+                <div
+                  aria-labelledby="radio-label-preferredContactMethod"
+                  class="MuiFormGroup-root MuiFormGroup-row"
+                  data-testid="controlled-radio-group"
+                  role="radiogroup"
+                >
+                  <label
+                    class="MuiFormControlLabel-root"
+                  >
+                    <span
+                      aria-disabled="false"
+                      class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-372 MuiRadio-root makeStyles-root-366 PrivateSwitchBase-checked-373 Mui-checked"
+                    >
+                      <span
+                        class="MuiIconButton-label"
+                      >
+                        <input
+                          checked=""
+                          class="PrivateSwitchBase-input-375"
+                          data-testid="controlled-radio-button"
+                          name="preferredContactMethod"
+                          type="radio"
+                          value="0"
+                        />
+                        <span
+                          class="makeStyles-icon-367 makeStyles-checkedIcon-370 "
+                        />
+                      </span>
+                    </span>
+                    <span
+                      class="MuiTypography-root MuiFormControlLabel-label MuiTypography-body1"
+                    >
+                      Email
+                    </span>
+                  </label>
+                  <label
+                    class="MuiFormControlLabel-root"
+                  >
+                    <span
+                      aria-disabled="false"
+                      class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-372 MuiRadio-root makeStyles-root-366"
+                    >
+                      <span
+                        class="MuiIconButton-label"
+                      >
+                        <input
+                          class="PrivateSwitchBase-input-375"
+                          data-testid="controlled-radio-button"
+                          name="preferredContactMethod"
+                          type="radio"
+                          value="1"
+                        />
+                        <span
+                          class="makeStyles-icon-367 makeStyles-unactiveIcon-369"
+                        />
+                      </span>
+                    </span>
+                    <span
+                      class="MuiTypography-root MuiFormControlLabel-label MuiTypography-body1"
+                    >
+                      Phone
+                    </span>
+                  </label>
+                </div>
+              </fieldset>
+            </div>
+          </div>
         </div>
       </div>
       <div
-        class="makeStyles-formButtonWrapper-225"
+        class="makeStyles-formButtonWrapper-255"
       >
         <span
           class=""
@@ -600,7 +1311,7 @@ exports[`Profile should show validations 1`] = `
           tabindex="-1"
         >
           <button
-            class="MuiButtonBase-root MuiButton-root MuiButton-text makeStyles-discardButton-249 MuiButton-textPrimary Mui-disabled Mui-disabled"
+            class="MuiButtonBase-root MuiButton-root MuiButton-text makeStyles-discardButton-279 MuiButton-textPrimary Mui-disabled Mui-disabled"
             data-testid="discard-changes-btn"
             disabled=""
             tabindex="-1"
@@ -619,7 +1330,7 @@ exports[`Profile should show validations 1`] = `
           tabindex="-1"
         >
           <button
-            class="MuiButtonBase-root MuiButton-root MuiButton-contained false makeStyles-nextButton-248 makeStyles-noPadding-245 MuiButton-containedPrimary MuiButton-containedSizeLarge MuiButton-sizeLarge Mui-disabled Mui-disabled"
+            class="MuiButtonBase-root MuiButton-root MuiButton-contained false makeStyles-nextButton-278 makeStyles-noPadding-275 MuiButton-containedPrimary MuiButton-containedSizeLarge MuiButton-sizeLarge Mui-disabled Mui-disabled"
             data-testid="confirm-btn"
             disabled=""
             tabindex="-1"
@@ -629,7 +1340,7 @@ exports[`Profile should show validations 1`] = `
               class="MuiButton-label"
             >
               <span
-                class="makeStyles-textWrapper-333"
+                class="makeStyles-textWrapper-378"
               >
                 Save Changes
               </span>
@@ -646,7 +1357,7 @@ exports[`Profile should show validations for first name 1`] = `
 <body>
   <div>
     <div
-      class="makeStyles-profileFormPaddingTop-335"
+      class="makeStyles-profileFormPaddingTop-380"
     >
       <div
         class="MuiGrid-root MuiGrid-container"
@@ -655,10 +1366,10 @@ exports[`Profile should show validations for first name 1`] = `
           class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-lg-12"
         >
           <div
-            class="makeStyles-errorInputWrapper-338"
+            class="makeStyles-errorInputWrapper-383"
           >
             <div
-              class="MuiFormControl-root makeStyles-formControl-436 makeStyles-inputBottomPadding-334"
+              class="MuiFormControl-root makeStyles-formControl-481 makeStyles-inputBottomPadding-379"
             >
               <h1
                 class="MuiTypography-root MuiTypography-caption MuiTypography-colorSecondary MuiTypography-alignLeft"
@@ -687,11 +1398,11 @@ exports[`Profile should show validations for first name 1`] = `
                     />
                     <fieldset
                       aria-hidden="true"
-                      class="PrivateNotchedOutline-root-438 MuiOutlinedInput-notchedOutline"
+                      class="PrivateNotchedOutline-root-483 MuiOutlinedInput-notchedOutline"
                       style="padding-left: 8px;"
                     >
                       <legend
-                        class="PrivateNotchedOutline-legend-439"
+                        class="PrivateNotchedOutline-legend-484"
                         style="width: 0.01px;"
                       >
                         <span>
@@ -705,10 +1416,10 @@ exports[`Profile should show validations for first name 1`] = `
             </div>
           </div>
           <div
-            class="makeStyles-errorInputWrapper-338"
+            class="makeStyles-errorInputWrapper-383"
           >
             <div
-              class="MuiFormControl-root makeStyles-formControl-436 makeStyles-inputBottomPadding-334"
+              class="MuiFormControl-root makeStyles-formControl-481 makeStyles-inputBottomPadding-379"
             >
               <h1
                 class="MuiTypography-root MuiTypography-caption MuiTypography-colorSecondary MuiTypography-alignLeft"
@@ -736,11 +1447,11 @@ exports[`Profile should show validations for first name 1`] = `
                     />
                     <fieldset
                       aria-hidden="true"
-                      class="PrivateNotchedOutline-root-438 MuiOutlinedInput-notchedOutline"
+                      class="PrivateNotchedOutline-root-483 MuiOutlinedInput-notchedOutline"
                       style="padding-left: 8px;"
                     >
                       <legend
-                        class="PrivateNotchedOutline-legend-439"
+                        class="PrivateNotchedOutline-legend-484"
                         style="width: 0.01px;"
                       >
                         <span>
@@ -754,10 +1465,10 @@ exports[`Profile should show validations for first name 1`] = `
             </div>
           </div>
           <div
-            class="makeStyles-errorInputWrapper-338"
+            class="makeStyles-errorInputWrapper-383"
           >
             <div
-              class="MuiFormControl-root makeStyles-formControl-436 makeStyles-inputBottomPadding-334"
+              class="MuiFormControl-root makeStyles-formControl-481 makeStyles-inputBottomPadding-379"
             >
               <h1
                 class="MuiTypography-root MuiTypography-caption MuiTypography-colorSecondary MuiTypography-alignLeft"
@@ -786,11 +1497,11 @@ exports[`Profile should show validations for first name 1`] = `
                     />
                     <fieldset
                       aria-hidden="true"
-                      class="PrivateNotchedOutline-root-438 MuiOutlinedInput-notchedOutline"
+                      class="PrivateNotchedOutline-root-483 MuiOutlinedInput-notchedOutline"
                       style="padding-left: 8px;"
                     >
                       <legend
-                        class="PrivateNotchedOutline-legend-439"
+                        class="PrivateNotchedOutline-legend-484"
                         style="width: 0.01px;"
                       >
                         <span>
@@ -803,10 +1514,247 @@ exports[`Profile should show validations for first name 1`] = `
               </div>
             </div>
           </div>
+          <div
+            class="makeStyles-errorInputWrapper-383"
+          >
+            <div
+              class="MuiFormControl-root makeStyles-formControl-481 makeStyles-inputBottomPadding-379"
+            >
+              <h1
+                class="MuiTypography-root MuiTypography-caption MuiTypography-colorSecondary MuiTypography-alignLeft"
+              >
+                Mobile Phone Number
+                 
+              </h1>
+              <div>
+                <div
+                  class="makeStyles-phoneInput-487 undefined  react-tel-input"
+                >
+                  <div
+                    class="special-label"
+                  >
+                    Phone
+                  </div>
+                  <input
+                    autocomplete="off"
+                    class=" form-control"
+                    data-testid="mobile-user-phone"
+                    name="mobilePhoneNumber"
+                    placeholder="+0 (000) 000-0000"
+                    type="text"
+                    value="+54 (87) 1093"
+                    variant="outlined"
+                  />
+                  <div
+                    class=" flag-dropdown"
+                  >
+                    <div
+                      aria-haspopup="listbox"
+                      class="selected-flag"
+                      role="button"
+                      tabindex="-1"
+                      title="Argentina: + 54"
+                    >
+                      <div
+                        class="flag ar"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="MuiGrid-root MuiGrid-container"
+          >
+            <div
+              class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-9 MuiGrid-grid-lg-9"
+            >
+              <div
+                class="MuiFormControl-root makeStyles-formControl-481 makeStyles-inputBottomPadding-379 makeStyles-middleInput-417"
+              >
+                <h1
+                  class="MuiTypography-root MuiTypography-caption MuiTypography-colorSecondary MuiTypography-alignLeft"
+                >
+                  Office Phone Number (Optional)
+                   
+                </h1>
+                <div>
+                  <div
+                    class="makeStyles-phoneInput-487 undefined  react-tel-input"
+                  >
+                    <div
+                      class="special-label"
+                    >
+                      Phone
+                    </div>
+                    <input
+                      autocomplete="off"
+                      class=" form-control"
+                      data-testid="office-user-phone"
+                      id="officePhoneNumber"
+                      name="officePhoneNumber"
+                      placeholder="+0 (000) 000-0000"
+                      type="text"
+                      value="+43 781 983"
+                      variant="outlined"
+                    />
+                    <div
+                      class=" flag-dropdown"
+                    >
+                      <div
+                        aria-haspopup="listbox"
+                        class="selected-flag"
+                        role="button"
+                        tabindex="-1"
+                        title="Austria: + 43"
+                      >
+                        <div
+                          class="flag at"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-3 MuiGrid-grid-lg-3"
+            >
+              <div
+                class="MuiFormControl-root makeStyles-formControl-481 makeStyles-inputBottomPadding-379"
+              >
+                <h1
+                  class="MuiTypography-root MuiTypography-caption MuiTypography-colorSecondary MuiTypography-alignLeft"
+                >
+                  Ext
+                   
+                </h1>
+                <div>
+                  <div
+                    class="MuiFormControl-root MuiTextField-root MuiFormControl-fullWidth"
+                  >
+                    <div
+                      class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-fullWidth MuiInputBase-formControl"
+                    >
+                      <input
+                        aria-invalid="false"
+                        autocomplete="off"
+                        class="MuiInputBase-input MuiOutlinedInput-input"
+                        data-testid="office-user-phone"
+                        maxlength="6"
+                        name="officePhoneExtension"
+                        placeholder="Ext"
+                        type="text"
+                        value=""
+                      />
+                      <fieldset
+                        aria-hidden="true"
+                        class="PrivateNotchedOutline-root-483 MuiOutlinedInput-notchedOutline"
+                        style="padding-left: 8px;"
+                      >
+                        <legend
+                          class="PrivateNotchedOutline-legend-484"
+                          style="width: 0.01px;"
+                        >
+                          <span>
+                            ​
+                          </span>
+                        </legend>
+                      </fieldset>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="makeStyles-errorInputWrapper-383"
+          >
+            <div
+              class=" makeStyles-controlledRadioContainer-491 controlledRadioContainer"
+              data-testid="controlled-radio"
+            >
+              <fieldset
+                class="MuiFormControl-root makeStyles-radioWrapper-433"
+              >
+                <legend
+                  class="MuiFormLabel-root makeStyles-controlledRadioLabel-490"
+                  id="radio-label-preferredContactMethod"
+                >
+                  Preferred Contact Method
+                </legend>
+                <div
+                  aria-labelledby="radio-label-preferredContactMethod"
+                  class="MuiFormGroup-root MuiFormGroup-row"
+                  data-testid="controlled-radio-group"
+                  role="radiogroup"
+                >
+                  <label
+                    class="MuiFormControlLabel-root"
+                  >
+                    <span
+                      aria-disabled="false"
+                      class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-498 MuiRadio-root makeStyles-root-492 PrivateSwitchBase-checked-499 Mui-checked"
+                    >
+                      <span
+                        class="MuiIconButton-label"
+                      >
+                        <input
+                          checked=""
+                          class="PrivateSwitchBase-input-501"
+                          data-testid="controlled-radio-button"
+                          name="preferredContactMethod"
+                          type="radio"
+                          value="0"
+                        />
+                        <span
+                          class="makeStyles-icon-493 makeStyles-checkedIcon-496 "
+                        />
+                      </span>
+                    </span>
+                    <span
+                      class="MuiTypography-root MuiFormControlLabel-label MuiTypography-body1"
+                    >
+                      Email
+                    </span>
+                  </label>
+                  <label
+                    class="MuiFormControlLabel-root"
+                  >
+                    <span
+                      aria-disabled="false"
+                      class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-498 MuiRadio-root makeStyles-root-492"
+                    >
+                      <span
+                        class="MuiIconButton-label"
+                      >
+                        <input
+                          class="PrivateSwitchBase-input-501"
+                          data-testid="controlled-radio-button"
+                          name="preferredContactMethod"
+                          type="radio"
+                          value="1"
+                        />
+                        <span
+                          class="makeStyles-icon-493 makeStyles-unactiveIcon-495"
+                        />
+                      </span>
+                    </span>
+                    <span
+                      class="MuiTypography-root MuiFormControlLabel-label MuiTypography-body1"
+                    >
+                      Phone
+                    </span>
+                  </label>
+                </div>
+              </fieldset>
+            </div>
+          </div>
         </div>
       </div>
       <div
-        class="makeStyles-formButtonWrapper-336"
+        class="makeStyles-formButtonWrapper-381"
       >
         <span
           class=""
@@ -814,7 +1762,7 @@ exports[`Profile should show validations for first name 1`] = `
           tabindex="-1"
         >
           <button
-            class="MuiButtonBase-root MuiButton-root MuiButton-text makeStyles-discardButton-360 MuiButton-textPrimary Mui-disabled Mui-disabled"
+            class="MuiButtonBase-root MuiButton-root MuiButton-text makeStyles-discardButton-405 MuiButton-textPrimary Mui-disabled Mui-disabled"
             data-testid="discard-changes-btn"
             disabled=""
             tabindex="-1"
@@ -833,7 +1781,7 @@ exports[`Profile should show validations for first name 1`] = `
           tabindex="-1"
         >
           <button
-            class="MuiButtonBase-root MuiButton-root MuiButton-contained false makeStyles-nextButton-359 makeStyles-noPadding-356 MuiButton-containedPrimary MuiButton-containedSizeLarge MuiButton-sizeLarge Mui-disabled Mui-disabled"
+            class="MuiButtonBase-root MuiButton-root MuiButton-contained false makeStyles-nextButton-404 makeStyles-noPadding-401 MuiButton-containedPrimary MuiButton-containedSizeLarge MuiButton-sizeLarge Mui-disabled Mui-disabled"
             data-testid="confirm-btn"
             disabled=""
             tabindex="-1"
@@ -843,7 +1791,7 @@ exports[`Profile should show validations for first name 1`] = `
               class="MuiButton-label"
             >
               <span
-                class="makeStyles-textWrapper-444"
+                class="makeStyles-textWrapper-504"
               >
                 Save Changes
               </span>

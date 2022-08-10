@@ -7,11 +7,15 @@ import { InvoiceModel } from '../../../models';
 describe('InvoiceListContainer', () => {
   it('should mapStateToProps', () => {
     expect(mapStateToProps(getInitialState())).toEqual({
-      userRole: getInitialState().auth.role,
       invoiceMap: getInitialState().invoice.invoiceMap,
       invoiceStatistics: getInitialState().statistics.invoiceStatistics,
       payInvoiceLoading: undefined,
       saveInvoiceLoading: undefined,
+      editInvoiceLoading: undefined,
+      fetchInvoiceLoading: undefined,
+      invoiceStatisticsLoading: undefined,
+      isFcaUser: getInitialState().auth.isFcaUser,
+      isAdmin: getInitialState().auth.isAdmin,
     });
   });
 

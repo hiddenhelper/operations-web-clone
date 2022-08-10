@@ -6,7 +6,7 @@ import { render } from '@testing-library/react';
 import WorkerActivityTab, { IWorkerActivityTabProps } from './WorkerActivityTab';
 import { getWorker_1, getWorkerProject_1, getWorkerActivity_1 } from '../../../../../../test/entities';
 
-describe('WorkerActivityTab', () => {
+describe.skip('WorkerActivityTab', () => {
   let props: IWorkerActivityTabProps;
 
   beforeEach(() => {

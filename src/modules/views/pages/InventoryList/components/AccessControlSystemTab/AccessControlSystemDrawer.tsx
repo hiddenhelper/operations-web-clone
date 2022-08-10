@@ -29,6 +29,7 @@ const AccessControlSystemDrawer = ({ isOpen, isLoading, deleteLoading, deviceLis
         isOpen={isOpen}
         deleteLoading={deleteLoading}
         isLoading={isLoading}
+        type="ACS"
         onDelete={onDelete}
         onClose={onClose}
         renderSummary={() => <AccessControlSystemSummary device={device} deviceListElement={deviceListElement} />}

@@ -10,7 +10,6 @@ import { coreState } from '../core';
 import { generalState } from '../general';
 import { handleError, handleToastError } from '../core/operators';
 import { fileState } from '../file';
-import { UserModel } from '../../models';
 
 export const userSignUp: Epic<IAction, IAction, IRootState, IEpicDependencies> = (action$, state$, deps) =>
   action$.pipe(
@@ -193,10 +192,9 @@ export const updateProfileStart: Epic<IAction, IAction, IRootState, IEpicDepende
     mergeMap(({ payload }) =>
       concat(
         of(generalState.actions.setLoading(GENERAL.LOADING_KEY.UPDATE_PROFILE, true)),
-        (state$.value.auth.role === UserModel.Role.FCA_ADMIN
-          ? deps.apiService.updateProfile(payload.data)
-          : deps.apiService.updateCompanyUserProfile(payload.data)
-        ).pipe(map(() => actions.fetchProfileDataSuccess(payload.data))),
+        (state$.value.auth.isFcaUser ? deps.apiService.updateProfile(payload.data) : deps.apiService.updateCompanyUserProfile(payload.data)).pipe(
+          map(() => actions.fetchProfileDataSuccess(payload.data))
+        ),
         of(generalState.actions.setLoading(GENERAL.LOADING_KEY.UPDATE_PROFILE, false)),
         of(generalState.actions.addToastStart(`Profile updated successfully!`, ToastType.SUCCESS))
       ).pipe(handleToastError(GENERAL.LOADING_KEY.UPDATE_PROFILE))
@@ -209,7 +207,7 @@ export const fetchAccountStart: Epic<IAction, IAction, IRootState, IEpicDependen
     mergeMap(() =>
       concat(
         of(generalState.actions.setLoading(GENERAL.LOADING_KEY.FETCH_ACCOUNT, true)),
-        (state$.value.auth.role === UserModel.Role.FCA_ADMIN ? deps.apiService.getAccount() : deps.apiService.getCompanyUserAccount()).pipe(
+        (state$.value.auth.isFcaUser ? deps.apiService.getAccount() : deps.apiService.getCompanyUserAccount()).pipe(
           map(res => actions.fetchProfileDataSuccess(res))
         ),
         of(generalState.actions.setLoading(GENERAL.LOADING_KEY.FETCH_ACCOUNT, false))

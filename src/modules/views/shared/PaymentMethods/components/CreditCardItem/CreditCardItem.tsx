@@ -3,7 +3,7 @@ import { useStyles } from '../../../PaymentForm/styles';
 import Card from '@material-ui/core/Card';
 import Typography from '@material-ui/core/Typography';
 import { AcceptedIcon, CreditCardIcon, TrashCan } from '../../../../../../constants';
-import { PaymentModel } from '../../../../../models';
+import { PaymentModel, UserModel } from '../../../../../models';
 
 import visaLogo from '../../../../../../assets/images/credit-card/card-logo-visa.png';
 import mastercardLogo from '../../../../../../assets/images/credit-card/card-logo-mastercard.png';
@@ -12,6 +12,7 @@ import discoverLogo from '../../../../../../assets/images/credit-card/card-logo-
 import amexLogo from '../../../../../../assets/images/credit-card/card-logo-american-express.png';
 import dinersLogo from '../../../../../../assets/images/credit-card/card-logo-dinners-club.png';
 import unionpayLogo from '../../../../../../assets/images/credit-card/card-logo-union-pay.png';
+import PermissionGuard from 'modules/views/shared/PermissionGuard';
 
 export interface ICreditCardItemProps {
   isSelected?: boolean;
@@ -69,7 +70,9 @@ const CreditCardItem = ({ compact = false, isSelected, admin, deleteCard, paymen
         className={`${classes.cardSelectedIcon} ${classes.cardItemClickable}`}
         onClick={handleDeletePayment}
       >
-        <TrashCan title="Delete Card" style={{ cursor: 'pointer' }} />
+        <PermissionGuard permissionsExpression={UserModel.PaymentMethodsPermission.MANAGE}>
+          <TrashCan title="Delete Card" className={classes.trashCanDeleteSVG} />
+        </PermissionGuard>
       </span>
     </Card>
   );

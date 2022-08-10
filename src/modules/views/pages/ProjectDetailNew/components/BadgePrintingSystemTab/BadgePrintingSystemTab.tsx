@@ -14,7 +14,7 @@ import Confirm from '../../../../shared/Modal/components/Confirm';
 import BadgePrintingSystemModal from './components/BadgePrintingControlSystemModal';
 import BadgePrintingSystemDrawer from './components/BadgePrintingSystemTabDrawer';
 import BadgePrintingSystemRow from './BadgePrintingSystemRow';
-import RoleGuard from '../../../../shared/RoleGuard';
+import PermissionGuard from 'modules/views/shared/PermissionGuard';
 
 import { GeneralModel, BadgePrintingSystemModel, ProjectModel, UserModel } from '../../../../../models';
 import { InventoryIcon } from '../../../../../../constants';
@@ -22,10 +22,12 @@ import { useStyles as buttonStyles } from '../../../../shared/FormHandler/Contro
 import { tableGlobalStyles } from '../../../../../../assets/styles';
 import { useStyles as modalStyles } from '../../../../shared/Modal/style';
 import { useStyles } from '../../styles';
+import { hasValidPermissions } from 'modules/models/user';
 
 export interface IBadgePrintingSystemTabProps {
   queryParams: GeneralModel.IQueryParams;
   currentProject: ProjectModel.IProject;
+  currentUserPermissions: UserModel.IPermission[];
   badgePrintingSystemMap: GeneralModel.IEntityMap<BadgePrintingSystemModel.IBadgePrintingSystem>;
   modalMap: GeneralModel.IEntityMap<BadgePrintingSystemModel.IBadgePrintingSystem>;
   badgePrintingSystemCount: number;
@@ -63,6 +65,7 @@ const BadgePrintingSystemTab = ({
   isModalOpen,
   ctaDisabled,
   drawer,
+  currentUserPermissions,
   badgePrintingSystemSummaryLoading,
   loadBadgePrintingSystemModalLoading,
   unassignBadgePrintingSystemLoading,
@@ -96,11 +99,14 @@ const BadgePrintingSystemTab = ({
 
   const onOpenDrawer = useCallback(
     (bpsId: string) => {
-      fetchBadgePrintingSystemSummary(bpsId);
-      setDrawer({ open: true, id: bpsId });
+      if (hasValidPermissions(UserModel.BadgePrintingSystemsPermission.VIEWACCESS, currentUserPermissions)) {
+        fetchBadgePrintingSystemSummary(bpsId);
+        setDrawer({ open: true, id: bpsId });
+      }
     },
-    [setDrawer, fetchBadgePrintingSystemSummary]
+    [setDrawer, fetchBadgePrintingSystemSummary, currentUserPermissions]
   );
+
   const onCloseDrawer = useCallback(/* istanbul ignore next */ () => setDrawer({ open: false, id: null }), [setDrawer]);
 
   const onCloseUnAssignModal = useCallback(() => {
@@ -154,7 +160,9 @@ const BadgePrintingSystemTab = ({
     <>
       <div>
         <div className={`${tableGlobalClasses.filterActionsContainer} ${tableGlobalClasses.filterActionsContainerPadding} ${classes.buttonWithoutFilter}`}>
-          <RoleGuard roleList={[UserModel.Role.FCA_ADMIN]}>
+          <PermissionGuard
+            permissionsExpression={`${UserModel.BadgePrintingSystemsPermission.MANAGE} AND ${UserModel.BadgePrintingSystemsPermission.VIEWACCESS}`}
+          >
             <Button
               className={`${buttonClasses.createButton} ${buttonClasses.primaryButtonExtraLarge}`}
               color="primary"
@@ -167,7 +175,7 @@ const BadgePrintingSystemTab = ({
             >
               Assign BPS
             </Button>
-          </RoleGuard>
+          </PermissionGuard>
         </div>
         {badgePrintingSystemProjectLoading && !badgePrintingSystemProjectLoading.isLoading && list.length === 0 ? (
           <EmptyList icon={<InventoryIcon />} text="There are no BPS assigned" />

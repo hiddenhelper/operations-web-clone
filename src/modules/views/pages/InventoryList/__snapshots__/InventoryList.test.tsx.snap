@@ -10,19 +10,19 @@ exports[`InventoryList should open drawer 1`] = `
     style="width: 100%; background-color: rgb(245, 245, 245); padding: 2.5rem;"
   >
     <div
-      class="makeStyles-deviceListContent-345"
+      class="makeStyles-deviceListContent-164"
     >
       <div
-        class="MuiBox-root MuiBox-root-409"
+        class="MuiBox-root MuiBox-root-228"
         style="height: 50px; margin-bottom: 13px; width: 100%;"
       >
         <div
-          class="MuiBox-root MuiBox-root-410"
+          class="MuiBox-root MuiBox-root-229"
           style="display: flex; align-items: center; justify-content: space-between;"
         >
           <div>
             <div
-              class="MuiBox-root MuiBox-root-411"
+              class="MuiBox-root MuiBox-root-230"
               style="display: flex; align-items: center; margin-top: 5px;"
             >
               <h2
@@ -36,27 +36,27 @@ exports[`InventoryList should open drawer 1`] = `
         </div>
       </div>
       <div
-        class="makeStyles-widgetsWrapper-395"
+        class="makeStyles-widgetsWrapper-214"
         id="summary-widgets"
       >
         <div
-          class="MuiPaper-root makeStyles-widget-412 MuiPaper-elevation0 MuiPaper-rounded"
+          class="MuiPaper-root makeStyles-widget-231 MuiPaper-elevation0 MuiPaper-rounded"
         >
           <span
-            class="makeStyles-totalFont-413"
+            class="makeStyles-totalFont-232"
           >
             99
           </span>
           <div
-            class="makeStyles-contentContainer-416"
+            class="makeStyles-contentContainer-235"
           >
             <span
-              class="makeStyles-statusFont-414"
+              class="makeStyles-statusFont-233"
             >
               Available ACS
             </span>
             <span
-              class="makeStyles-contentFont-415"
+              class="makeStyles-contentFont-234"
             >
               <a
                 href="/inventory/?deviceType=access-control-system"
@@ -67,23 +67,23 @@ exports[`InventoryList should open drawer 1`] = `
           </div>
         </div>
         <div
-          class="MuiPaper-root makeStyles-widget-412 MuiPaper-elevation0 MuiPaper-rounded"
+          class="MuiPaper-root makeStyles-widget-231 MuiPaper-elevation0 MuiPaper-rounded"
         >
           <span
-            class="makeStyles-totalFont-413"
+            class="makeStyles-totalFont-232"
           >
             99
           </span>
           <div
-            class="makeStyles-contentContainer-416"
+            class="makeStyles-contentContainer-235"
           >
             <span
-              class="makeStyles-statusFont-414"
+              class="makeStyles-statusFont-233"
             >
               Available BPS
             </span>
             <span
-              class="makeStyles-contentFont-415"
+              class="makeStyles-contentFont-234"
             >
               <a
                 href="/inventory/?deviceType=badge-printing-system"
@@ -94,93 +94,62 @@ exports[`InventoryList should open drawer 1`] = `
           </div>
         </div>
         <div
-          class="MuiPaper-root makeStyles-widget-412 MuiPaper-elevation0 MuiPaper-rounded"
+          class="MuiPaper-root makeStyles-widget-231 MuiPaper-elevation0 MuiPaper-rounded"
         >
           <span
-            class="makeStyles-totalFont-413"
+            class="makeStyles-totalFont-232"
           >
             35
           </span>
           <div
-            class="makeStyles-contentContainer-416"
+            class="makeStyles-contentContainer-235"
           >
             <span
-              class="makeStyles-statusFont-414"
+              class="makeStyles-statusFont-233"
             >
               Devices Assigned
             </span>
             <span
-              class="makeStyles-contentFont-415"
+              class="makeStyles-contentFont-234"
             />
           </div>
         </div>
       </div>
       <div
-        class="makeStyles-tableWrapper-347"
+        class="makeStyles-tableWrapper-166"
       >
         <div
-          class="makeStyles-filterContainer-355"
+          class="makeStyles-filterContainer-174"
         >
           <div
-            class="makeStyles-statusFilter-356"
-          >
-            <button
-              class="MuiButtonBase-root MuiButton-root MuiButton-text makeStyles-activeFilter-357"
-              data-testid="filter-status-opt"
-              tabindex="0"
-              type="button"
-            >
-              <span
-                class="MuiButton-label"
-              >
-                Access Control System
-              </span>
-              <span
-                class="MuiTouchRipple-root"
-              />
-            </button>
-            <button
-              class="MuiButtonBase-root MuiButton-root MuiButton-text"
-              data-testid="filter-status-opt"
-              tabindex="0"
-              type="button"
-            >
-              <span
-                class="MuiButton-label"
-              >
-                Badge Printing System
-              </span>
-              <span
-                class="MuiTouchRipple-root"
-              />
-            </button>
-          </div>
+            class="makeStyles-statusFilter-175"
+          />
         </div>
         <div>
           <div
-            class="makeStyles-tableWrapper-347"
+            class="makeStyles-tableWrapper-166"
           >
             <div
-              class="makeStyles-filterActionsContainer-358 makeStyles-filterActionsContainerPadding-360"
+              class="makeStyles-filterActionsContainer-177 makeStyles-filterActionsContainerPadding-179"
             >
               <div
-                class="makeStyles-filterActionsContainerLeft-359"
+                class="makeStyles-filterActionsContainerLeft-178"
               >
                 <div
-                  class="MuiBox-root MuiBox-root-444 makeStyles-filterStatusContainer-361 makeStyles-leftFilterStatusContainer-365"
+                  class="MuiBox-root MuiBox-root-263 makeStyles-filterStatusContainer-180 makeStyles-leftFilterStatusContainer-184"
                 >
                   <div
-                    class="makeStyles-floatingFilterWrapper-367 makeStyles-filterWrapper-366  floatingFilterWrapper"
+                    class="makeStyles-floatingFilterWrapper-186 makeStyles-filterWrapper-185  floatingFilterWrapper"
                   >
                     <span
-                      class="makeStyles-floatingFilterButton-368"
+                      class="makeStyles-floatingFilterButton-187"
                       data-testid="controlled-button"
                       tabindex="-1"
                     >
                       <button
                         aria-controls="false"
                         aria-haspopup="true"
-                        class="MuiButtonBase-root MuiButton-root MuiButton-text makeStyles-buttonFilter-376"
+                        class="MuiButtonBase-root MuiButton-root MuiButton-text makeStyles-buttonFilter-195"
                         data-testid="button-filter-open"
                         tabindex="0"
                         type="button"
@@ -193,7 +162,7 @@ exports[`InventoryList should open drawer 1`] = `
                             class="MuiButton-endIcon MuiButton-iconSizeMedium"
                           >
                             <svg
-                              class="makeStyles-dropdownIcon-370"
+                              class="makeStyles-dropdownIcon-189"
                             >
                               expand.svg
                             </svg>
@@ -204,23 +173,23 @@ exports[`InventoryList should open drawer 1`] = `
                   </div>
                 </div>
                 <hr
-                  class="MuiDivider-root makeStyles-dividerColor-371 MuiDivider-flexItem MuiDivider-vertical"
+                  class="MuiDivider-root makeStyles-dividerColor-190 MuiDivider-flexItem MuiDivider-vertical"
                 />
                 <div
-                  class="MuiBox-root MuiBox-root-445 makeStyles-filterStatusContainer-361 makeStyles-leftFilterStatusContainer-365"
+                  class="MuiBox-root MuiBox-root-264 makeStyles-filterStatusContainer-180 makeStyles-leftFilterStatusContainer-184"
                 >
                   <div
-                    class="makeStyles-floatingFilterWrapper-367 makeStyles-filterWrapper-366  floatingFilterWrapper"
+                    class="makeStyles-floatingFilterWrapper-186 makeStyles-filterWrapper-185  floatingFilterWrapper"
                   >
                     <span
-                      class="makeStyles-floatingFilterButton-368"
+                      class="makeStyles-floatingFilterButton-187"
                       data-testid="controlled-button"
                       tabindex="-1"
                     >
                       <button
                         aria-controls="false"
                         aria-haspopup="true"
-                        class="MuiButtonBase-root MuiButton-root MuiButton-text makeStyles-buttonFilter-376"
+                        class="MuiButtonBase-root MuiButton-root MuiButton-text makeStyles-buttonFilter-195"
                         data-testid="button-filter-open"
                         tabindex="0"
                         type="button"
@@ -233,7 +202,7 @@ exports[`InventoryList should open drawer 1`] = `
                             class="MuiButton-endIcon MuiButton-iconSizeMedium"
                           >
                             <svg
-                              class="makeStyles-dropdownIcon-370"
+                              class="makeStyles-dropdownIcon-189"
                             >
                               expand.svg
                             </svg>
@@ -244,21 +213,6 @@ exports[`InventoryList should open drawer 1`] = `
                   </div>
                 </div>
               </div>
-              <button
-                class="MuiButtonBase-root MuiButton-root MuiButton-contained makeStyles-createButton-419 makeStyles-primaryButtonExtraLarge-423 makeStyles-noPadding-432 MuiButton-containedPrimary MuiButton-containedSizeLarge MuiButton-sizeLarge MuiButton-fullWidth"
-                data-testid="create-acs-btn"
-                tabindex="0"
-                type="button"
-              >
-                <span
-                  class="MuiButton-label"
-                >
-                  Create New ACS
-                </span>
-                <span
-                  class="MuiTouchRipple-root"
-                />
-              </button>
             </div>
             <table
               aria-label="device-list"
@@ -306,11 +260,11 @@ exports[`InventoryList should open drawer 1`] = `
                 class="MuiTableBody-root"
               >
                 <tr
-                  class="MuiTableRow-root WithStyles(ForwardRef(TableRow))-root-458 makeStyles-clickableRow-407"
+                  class="MuiTableRow-root WithStyles(ForwardRef(TableRow))-root-277 makeStyles-clickableRow-226"
                   data-testid="device-list-row"
                 >
                   <td
-                    class="MuiTableCell-root MuiTableCell-body makeStyles-listName-392 makeStyles-listNameFullWidth-393 makeStyles-clickableTableCell-408"
+                    class="MuiTableCell-root MuiTableCell-body"
                   >
                     Turnstile
                   </td>
@@ -322,13 +276,11 @@ exports[`InventoryList should open drawer 1`] = `
                   <td
                     class="MuiTableCell-root MuiTableCell-body"
                   >
-                    <a
-                      class="Link-root-459"
-                      href="/projects/detail/acsId"
-                      title="View Project detail"
+                    <td
+                      class="MuiTableCell-root MuiTableCell-body"
                     >
                       Orlando International Airport
-                    </a>
+                    </td>
                   </td>
                   <td
                     class="MuiTableCell-root MuiTableCell-body"
@@ -339,7 +291,7 @@ exports[`InventoryList should open drawer 1`] = `
                     class="MuiTableCell-root MuiTableCell-body"
                   >
                     <div
-                      class="MuiChip-root makeStyles-statusChip-446 makeStyles-available-451  MuiChip-colorPrimary"
+                      class="MuiChip-root makeStyles-statusChip-265 makeStyles-available-270  MuiChip-colorPrimary"
                     >
                       <span
                         class="MuiChip-label"
@@ -353,7 +305,7 @@ exports[`InventoryList should open drawer 1`] = `
             </table>
             <nav
               aria-label="pagination navigation"
-              class="MuiPagination-root  makeStyles-pagination-460"
+              class="MuiPagination-root  makeStyles-pagination-278"
               data-testid="pagination"
             >
               <ul
@@ -405,18 +357,18 @@ exports[`InventoryList should open drawer 1`] = `
             </nav>
           </div>
           <div
-            class="MuiDrawer-root MuiDrawer-docked makeStyles-drawer-486 open"
+            class="MuiDrawer-root MuiDrawer-docked makeStyles-drawer-304 open"
             data-testid="acs-drawer-detail"
           >
             <div
-              class="MuiPaper-root MuiDrawer-paper makeStyles-drawerPaper-487 MuiDrawer-paperAnchorRight MuiDrawer-paperAnchorDockedRight MuiPaper-elevation0"
+              class="MuiPaper-root MuiDrawer-paper makeStyles-drawerPaper-305 MuiDrawer-paperAnchorRight MuiDrawer-paperAnchorDockedRight MuiPaper-elevation0"
               style="webkit-transform: none; transform: none; webkit-transition: -webkit-transform 225ms cubic-bezier(0.0, 0, 0.2, 1) 0ms; transition: transform 225ms cubic-bezier(0.0, 0, 0.2, 1) 0ms;"
             >
               <div
-                class="makeStyles-drawerButtonWrapper-489"
+                class="makeStyles-drawerButtonWrapper-307"
               >
                 <div
-                  class="makeStyles-drawerButton-490"
+                  class="makeStyles-drawerButton-308"
                 >
                   <button
                     class="MuiButtonBase-root MuiButton-root MuiButton-text"
@@ -438,37 +390,37 @@ exports[`InventoryList should open drawer 1`] = `
                   </button>
                 </div>
                 <div
-                  class="makeStyles-drawerHeader-488"
+                  class="makeStyles-drawerHeader-306"
                 >
                   <p
-                    class="MuiTypography-root makeStyles-drawerTitle-491 MuiTypography-body1 MuiTypography-colorPrimary MuiTypography-alignLeft"
+                    class="MuiTypography-root makeStyles-drawerTitle-309 MuiTypography-body1 MuiTypography-colorPrimary MuiTypography-alignLeft"
                   >
                     Device Information
                   </p>
                 </div>
               </div>
               <div
-                class="makeStyles-listDetail-399"
+                class="makeStyles-listDetail-218"
               >
                 <div
-                  class="makeStyles-summaryDeviceDetail-503"
+                  class="makeStyles-summaryDeviceDetail-321"
                 >
                   <div
-                    class="makeStyles-company-504"
+                    class="makeStyles-company-322"
                   >
                     <div
-                      class="makeStyles-drawerOverflowWrapper-514"
+                      class="makeStyles-drawerOverflowWrapper-332"
                     >
                       <div
-                        class="makeStyles-summaryText-507"
+                        class="makeStyles-summaryText-325"
                       >
                         <p
-                          class="MuiTypography-root makeStyles-deviceAccent-505 makeStyles-entityTitle-510 MuiTypography-body1"
+                          class="MuiTypography-root makeStyles-deviceAccent-323 makeStyles-entityTitle-328 MuiTypography-body1"
                         >
                           NRFFJE3149 - 4991
                         </p>
                         <div
-                          class="makeStyles-summaryMainText-508"
+                          class="makeStyles-summaryMainText-326"
                         >
                           <span>
                             Turnstile
@@ -483,10 +435,10 @@ exports[`InventoryList should open drawer 1`] = `
                         </div>
                       </div>
                       <div
-                        class="makeStyles-summarySection-506 makeStyles-drawerdevices-511"
+                        class="makeStyles-summarySection-324 makeStyles-drawerdevices-329"
                       >
                         <div
-                          class="makeStyles-deviceWrapper-512"
+                          class="makeStyles-deviceWrapper-330"
                         >
                           <svg
                             aria-hidden="true"
@@ -499,7 +451,7 @@ exports[`InventoryList should open drawer 1`] = `
                             />
                           </svg>
                           <div
-                            class="makeStyles-summaryText-507 makeStyles-summaryTextSeparation-509"
+                            class="makeStyles-summaryText-325 makeStyles-summaryTextSeparation-327"
                           >
                             <span>
                               Front gate
@@ -508,16 +460,16 @@ exports[`InventoryList should open drawer 1`] = `
                         </div>
                       </div>
                       <div
-                        class="makeStyles-summarySection-506"
+                        class="makeStyles-summarySection-324"
                       >
                         <div
-                          class="makeStyles-summaryRowDirection-513"
+                          class="makeStyles-summaryRowDirection-331"
                         >
                           <svg>
                             device-status.svg
                           </svg>
                           <div
-                            class="makeStyles-summaryText-507 makeStyles-summaryTextSeparation-509"
+                            class="makeStyles-summaryText-325 makeStyles-summaryTextSeparation-327"
                           >
                             <span>
                               Available
@@ -545,16 +497,16 @@ exports[`InventoryList should open drawer 1`] = `
                         </div>
                       </div>
                       <div
-                        class="makeStyles-summarySection-506"
+                        class="makeStyles-summarySection-324"
                       >
                         <div
-                          class="makeStyles-summaryRowDirection-513"
+                          class="makeStyles-summaryRowDirection-331"
                         >
                           <svg>
                             notes.svg
                           </svg>
                           <div
-                            class="makeStyles-summaryText-507 makeStyles-summaryTextSeparation-509"
+                            class="makeStyles-summaryText-325 makeStyles-summaryTextSeparation-327"
                           >
                             <span>
                               Working Properly
@@ -563,19 +515,19 @@ exports[`InventoryList should open drawer 1`] = `
                         </div>
                       </div>
                       <div
-                        class="makeStyles-summarySection-506"
+                        class="makeStyles-summarySection-324"
                       >
                         <div
-                          class="makeStyles-summaryText-507"
+                          class="makeStyles-summaryText-325"
                         >
                           <p
-                            class="MuiTypography-root makeStyles-deviceAccent-505 makeStyles-entityTitle-510 MuiTypography-body1"
+                            class="MuiTypography-root makeStyles-deviceAccent-323 makeStyles-entityTitle-328 MuiTypography-body1"
                           >
                             Reader 
                             1
                           </p>
                           <div
-                            class="makeStyles-summaryMainText-508"
+                            class="makeStyles-summaryMainText-326"
                           >
                             <span>
                               MXT-NEKFOEFJ31293
@@ -599,13 +551,13 @@ exports[`InventoryList should open drawer 1`] = `
                         </div>
                       </div>
                       <div
-                        class="makeStyles-summarySection-506"
+                        class="makeStyles-summarySection-324"
                       >
                         <svg>
                           info.svg
                         </svg>
                         <div
-                          class="makeStyles-summaryText-507 makeStyles-summaryTextSeparation-509"
+                          class="makeStyles-summaryText-325 makeStyles-summaryTextSeparation-327"
                         >
                           <span>
                             SSH Port Connection: 
@@ -626,16 +578,16 @@ exports[`InventoryList should open drawer 1`] = `
                         </div>
                       </div>
                       <div
-                        class="makeStyles-summarySection-506 makeStyles-drawerdevices-511"
+                        class="makeStyles-summarySection-324 makeStyles-drawerdevices-329"
                       >
                         <div
-                          class="makeStyles-deviceWrapper-512"
+                          class="makeStyles-deviceWrapper-330"
                         >
                           <svg>
                             device-status.svg
                           </svg>
                           <div
-                            class="makeStyles-summaryText-507 makeStyles-summaryTextSeparation-509"
+                            class="makeStyles-summaryText-325 makeStyles-summaryTextSeparation-327"
                           >
                             <span>
                               Last Repair: 
@@ -649,16 +601,16 @@ exports[`InventoryList should open drawer 1`] = `
                         </div>
                       </div>
                       <div
-                        class="makeStyles-summarySection-506"
+                        class="makeStyles-summarySection-324"
                       >
                         <div
-                          class="makeStyles-summaryRowDirection-513"
+                          class="makeStyles-summaryRowDirection-331"
                         >
                           <svg>
                             notes.svg
                           </svg>
                           <div
-                            class="makeStyles-summaryText-507 makeStyles-summaryTextSeparation-509"
+                            class="makeStyles-summaryText-325 makeStyles-summaryTextSeparation-327"
                           >
                             <span>
                               Working properly as well.
@@ -667,19 +619,19 @@ exports[`InventoryList should open drawer 1`] = `
                         </div>
                       </div>
                       <div
-                        class="makeStyles-summarySection-506"
+                        class="makeStyles-summarySection-324"
                       >
                         <div
-                          class="makeStyles-summaryText-507"
+                          class="makeStyles-summaryText-325"
                         >
                           <p
-                            class="MuiTypography-root makeStyles-deviceAccent-505 makeStyles-entityTitle-510 MuiTypography-body1"
+                            class="MuiTypography-root makeStyles-deviceAccent-323 makeStyles-entityTitle-328 MuiTypography-body1"
                           >
                             Reader 
                             2
                           </p>
                           <div
-                            class="makeStyles-summaryMainText-508"
+                            class="makeStyles-summaryMainText-326"
                           >
                             <span>
                               TMX-ZZZFOEFJ312F0
@@ -703,13 +655,13 @@ exports[`InventoryList should open drawer 1`] = `
                         </div>
                       </div>
                       <div
-                        class="makeStyles-summarySection-506"
+                        class="makeStyles-summarySection-324"
                       >
                         <svg>
                           info.svg
                         </svg>
                         <div
-                          class="makeStyles-summaryText-507 makeStyles-summaryTextSeparation-509"
+                          class="makeStyles-summaryText-325 makeStyles-summaryTextSeparation-327"
                         >
                           <span>
                             SSH Port Connection: 
@@ -730,16 +682,16 @@ exports[`InventoryList should open drawer 1`] = `
                         </div>
                       </div>
                       <div
-                        class="makeStyles-summarySection-506 makeStyles-drawerdevices-511"
+                        class="makeStyles-summarySection-324 makeStyles-drawerdevices-329"
                       >
                         <div
-                          class="makeStyles-deviceWrapper-512"
+                          class="makeStyles-deviceWrapper-330"
                         >
                           <svg>
                             device-status.svg
                           </svg>
                           <div
-                            class="makeStyles-summaryText-507 makeStyles-summaryTextSeparation-509"
+                            class="makeStyles-summaryText-325 makeStyles-summaryTextSeparation-327"
                           >
                             <span>
                               Last Repair: 
@@ -753,16 +705,16 @@ exports[`InventoryList should open drawer 1`] = `
                         </div>
                       </div>
                       <div
-                        class="makeStyles-summarySection-506"
+                        class="makeStyles-summarySection-324"
                       >
                         <div
-                          class="makeStyles-summaryRowDirection-513"
+                          class="makeStyles-summaryRowDirection-331"
                         >
                           <svg>
                             notes.svg
                           </svg>
                           <div
-                            class="makeStyles-summaryText-507 makeStyles-summaryTextSeparation-509"
+                            class="makeStyles-summaryText-325 makeStyles-summaryTextSeparation-327"
                           >
                             <span>
                               Working properly as well.
@@ -774,51 +726,11 @@ exports[`InventoryList should open drawer 1`] = `
                   </div>
                 </div>
                 <hr
-                  class="MuiDivider-root makeStyles-drawerDivider-344"
+                  class="MuiDivider-root makeStyles-drawerDivider-163"
                 />
                 <div
-                  class="makeStyles-ctaWrapper-402"
-                >
-                  <a
-                    href="/inventory/access-control-system/wizard/13315742-0a3a-4916-af26-e983632a6484"
-                  >
-                    <span
-                      class=""
-                      data-testid="controlled-button"
-                      tabindex="-1"
-                    >
-                      <button
-                        class="MuiButtonBase-root MuiButton-root MuiButton-outlined makeStyles-drawerCTA-426 makeStyles-borderPrimaryButton-418"
-                        tabindex="0"
-                        type="button"
-                      >
-                        <span
-                          class="MuiButton-label"
-                        >
-                          Edit
-                        </span>
-                      </button>
-                    </span>
-                  </a>
-                  <span
-                    class=""
-                    data-testid="controlled-button"
-                    tabindex="-1"
-                  >
-                    <button
-                      class="MuiButtonBase-root MuiButton-root MuiButton-outlined makeStyles-drawerCTA-426 makeStyles-warningButton-427"
-                      data-testid="deleteAcsBtn"
-                      tabindex="0"
-                      type="button"
-                    >
-                      <span
-                        class="MuiButton-label"
-                      >
-                        Delete
-                      </span>
-                    </button>
-                  </span>
-                </div>
+                  class="makeStyles-ctaWrapper-221"
+                />
               </div>
             </div>
           </div>
@@ -948,38 +860,7 @@ exports[`InventoryList should render access control system tab 1`] = `
         >
           <div
             class="makeStyles-statusFilter-16"
-          >
-            <button
-              class="MuiButtonBase-root MuiButton-root MuiButton-text makeStyles-activeFilter-17"
-              data-testid="filter-status-opt"
-              tabindex="0"
-              type="button"
-            >
-              <span
-                class="MuiButton-label"
-              >
-                Access Control System
-              </span>
-              <span
-                class="MuiTouchRipple-root"
-              />
-            </button>
-            <button
-              class="MuiButtonBase-root MuiButton-root MuiButton-text"
-              data-testid="filter-status-opt"
-              tabindex="0"
-              type="button"
-            >
-              <span
-                class="MuiButton-label"
-              >
-                Badge Printing System
-              </span>
-              <span
-                class="MuiTouchRipple-root"
-              />
-            </button>
-          </div>
+          />
         </div>
         <div>
           <div
@@ -1069,21 +950,6 @@ exports[`InventoryList should render access control system tab 1`] = `
                   </div>
                 </div>
               </div>
-              <button
-                class="MuiButtonBase-root MuiButton-root MuiButton-contained makeStyles-createButton-79 makeStyles-primaryButtonExtraLarge-83 makeStyles-noPadding-92 MuiButton-containedPrimary MuiButton-containedSizeLarge MuiButton-sizeLarge MuiButton-fullWidth"
-                data-testid="create-acs-btn"
-                tabindex="0"
-                type="button"
-              >
-                <span
-                  class="MuiButton-label"
-                >
-                  Create New ACS
-                </span>
-                <span
-                  class="MuiTouchRipple-root"
-                />
-              </button>
             </div>
             Loading...
           </div>
@@ -1306,686 +1172,7 @@ exports[`InventoryList should render access control system tab 1`] = `
                 />
                 <div
                   class="makeStyles-ctaWrapper-62"
-                >
-                  <a
-                    href="/inventory/access-control-system/wizard/null"
-                  >
-                    <span
-                      class=""
-                      data-testid="controlled-button"
-                      tabindex="-1"
-                    >
-                      <button
-                        class="MuiButtonBase-root MuiButton-root MuiButton-outlined makeStyles-drawerCTA-86 makeStyles-borderPrimaryButton-78"
-                        tabindex="0"
-                        type="button"
-                      >
-                        <span
-                          class="MuiButton-label"
-                        >
-                          Edit
-                        </span>
-                      </button>
-                    </span>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-`;
-
-exports[`InventoryList should render badge printing system tab 1`] = `
-<div>
-  <div
-    style="width: 100%; background-color: rgb(245, 245, 245); padding: 2.5rem;"
-  >
-    <div
-      class=""
-    >
-      <div
-        class="MuiBox-root MuiBox-root-228"
-        style="height: 50px; margin-bottom: 13px; width: 100%;"
-      >
-        <div
-          class="MuiBox-root MuiBox-root-229"
-          style="display: flex; align-items: center; justify-content: space-between;"
-        >
-          <div>
-            <div
-              class="MuiBox-root MuiBox-root-230"
-              style="display: flex; align-items: center; margin-top: 5px;"
-            >
-              <h2
-                class="MuiTypography-root MuiTypography-h1"
-                style="color: rgb(68, 68, 68); font-size: 2.25rem; font-weight: 600; letter-spacing: 0; margin-right: 0.5rem;"
-              >
-                Inventory
-              </h2>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div
-        class="makeStyles-widgetsWrapper-214"
-        id="summary-widgets"
-      >
-        <div
-          class="MuiPaper-root makeStyles-widget-231 MuiPaper-elevation0 MuiPaper-rounded"
-        >
-          <span
-            class="makeStyles-totalFont-232"
-          >
-            99
-          </span>
-          <div
-            class="makeStyles-contentContainer-235"
-          >
-            <span
-              class="makeStyles-statusFont-233"
-            >
-              Available ACS
-            </span>
-            <span
-              class="makeStyles-contentFont-234"
-            >
-              <a
-                href="/inventory/?deviceType=access-control-system"
-              >
-                Review
-              </a>
-            </span>
-          </div>
-        </div>
-        <div
-          class="MuiPaper-root makeStyles-widget-231 MuiPaper-elevation0 MuiPaper-rounded"
-        >
-          <span
-            class="makeStyles-totalFont-232"
-          >
-            99
-          </span>
-          <div
-            class="makeStyles-contentContainer-235"
-          >
-            <span
-              class="makeStyles-statusFont-233"
-            >
-              Available BPS
-            </span>
-            <span
-              class="makeStyles-contentFont-234"
-            >
-              <a
-                href="/inventory/?deviceType=badge-printing-system"
-              >
-                Review
-              </a>
-            </span>
-          </div>
-        </div>
-        <div
-          class="MuiPaper-root makeStyles-widget-231 MuiPaper-elevation0 MuiPaper-rounded"
-        >
-          <span
-            class="makeStyles-totalFont-232"
-          >
-            35
-          </span>
-          <div
-            class="makeStyles-contentContainer-235"
-          >
-            <span
-              class="makeStyles-statusFont-233"
-            >
-              Devices Assigned
-            </span>
-            <span
-              class="makeStyles-contentFont-234"
-            />
-          </div>
-        </div>
-      </div>
-      <div
-        class="makeStyles-tableWrapper-166"
-      >
-        <div
-          class="makeStyles-filterContainer-174"
-        >
-          <div
-            class="makeStyles-statusFilter-175"
-          >
-            <button
-              class="MuiButtonBase-root MuiButton-root MuiButton-text"
-              data-testid="filter-status-opt"
-              tabindex="0"
-              type="button"
-            >
-              <span
-                class="MuiButton-label"
-              >
-                Access Control System
-              </span>
-              <span
-                class="MuiTouchRipple-root"
-              />
-            </button>
-            <button
-              class="MuiButtonBase-root MuiButton-root MuiButton-text makeStyles-activeFilter-176"
-              data-testid="filter-status-opt"
-              tabindex="0"
-              type="button"
-            >
-              <span
-                class="MuiButton-label"
-              >
-                Badge Printing System
-              </span>
-              <span
-                class="MuiTouchRipple-root"
-              />
-            </button>
-          </div>
-        </div>
-        <div>
-          <div
-            class="makeStyles-filterActionsContainer-177 makeStyles-filterActionsContainerPadding-179"
-          >
-            <div
-              class="MuiBox-root MuiBox-root-319 makeStyles-filterStatusContainer-180 makeStyles-leftFilterStatusContainer-184"
-            >
-              <div
-                class="makeStyles-floatingFilterWrapper-186 makeStyles-filterWrapper-185  floatingFilterWrapper"
-              >
-                <span
-                  class="makeStyles-floatingFilterButton-187"
-                  data-testid="controlled-button"
-                  tabindex="-1"
-                >
-                  <button
-                    aria-controls="false"
-                    aria-haspopup="true"
-                    class="MuiButtonBase-root MuiButton-root MuiButton-text makeStyles-buttonFilter-195"
-                    data-testid="button-filter-open"
-                    tabindex="0"
-                    type="button"
-                  >
-                    <span
-                      class="MuiButton-label"
-                    >
-                      All Status
-                      <span
-                        class="MuiButton-endIcon MuiButton-iconSizeMedium"
-                      >
-                        <svg
-                          class="makeStyles-dropdownIcon-189"
-                        >
-                          expand.svg
-                        </svg>
-                      </span>
-                    </span>
-                  </button>
-                </span>
-              </div>
-            </div>
-            <button
-              class="MuiButtonBase-root MuiButton-root MuiButton-contained makeStyles-createButton-238 makeStyles-primaryButtonExtraLarge-242 MuiButton-containedPrimary MuiButton-containedSizeLarge MuiButton-sizeLarge MuiButton-fullWidth"
-              data-testid="create-bps-btn"
-              tabindex="0"
-              type="button"
-            >
-              <span
-                class="MuiButton-label"
-              >
-                Create New BPS
-              </span>
-              <span
-                class="MuiTouchRipple-root"
-              />
-            </button>
-          </div>
-          Loading...
-          <div
-            class="MuiDrawer-root MuiDrawer-docked makeStyles-drawer-290 makeStyles-close-301 closed"
-            data-testid="bps-drawer-detail"
-          >
-            <div
-              class="MuiPaper-root MuiDrawer-paper makeStyles-drawerPaper-291 MuiDrawer-paperAnchorRight MuiDrawer-paperAnchorDockedRight MuiPaper-elevation0"
-              style="visibility: hidden; webkit-transform: translateX(1024px) translateX(0px); transform: translateX(1024px) translateX(0px);"
-            >
-              <div
-                class="makeStyles-drawerButtonWrapper-293"
-              >
-                <div
-                  class="makeStyles-drawerButton-294"
-                >
-                  <button
-                    class="MuiButtonBase-root MuiButton-root MuiButton-text"
-                    data-testid="drawer-close-btn"
-                    style="outline: none;"
-                    tabindex="0"
-                    type="button"
-                  >
-                    <span
-                      class="MuiButton-label"
-                    >
-                      <svg>
-                        close.svg
-                      </svg>
-                    </span>
-                    <span
-                      class="MuiTouchRipple-root"
-                    />
-                  </button>
-                </div>
-                <div
-                  class="makeStyles-drawerHeader-292"
-                >
-                  <p
-                    class="MuiTypography-root makeStyles-drawerTitle-295 MuiTypography-body1 MuiTypography-colorPrimary MuiTypography-alignLeft"
-                  >
-                    BPS Information
-                  </p>
-                </div>
-              </div>
-              <div
-                class="makeStyles-listDetail-218"
-              >
-                <div
-                  class="makeStyles-summaryDeviceDetail-320"
-                >
-                  <div
-                    class="makeStyles-company-324"
-                  >
-                    <div
-                      class="makeStyles-drawerOverflowWrapper-339"
-                    >
-                      <div
-                        class="makeStyles-drawerText-331"
-                      >
-                        <p
-                          class="MuiTypography-root makeStyles-deviceAccent-325 makeStyles-entityTitle-334 MuiTypography-body1"
-                        />
-                        <div
-                          class="makeStyles-drawerMainText-332"
-                        >
-                          <span>
-                            No project assigned
-                          </span>
-                          <span />
-                        </div>
-                      </div>
-                      <div
-                        class="makeStyles-drawerSection-327"
-                      >
-                        <svg
-                          class="makeStyles-drawerNotesIcon-328"
-                        >
-                          notes.svg
-                        </svg>
-                        <div
-                          class="makeStyles-drawerText-331 makeStyles-drawerTextSeparation-333"
-                        >
-                          <span>
-                            -
-                          </span>
-                        </div>
-                      </div>
-                      <div
-                        class="makeStyles-drawerSection-327"
-                      >
-                        <div
-                          class="makeStyles-drawerText-331"
-                        >
-                          <p
-                            class="MuiTypography-root makeStyles-deviceAccent-325 makeStyles-entityTitle-334 MuiTypography-body1"
-                          >
-                            Laptop
-                          </p>
-                          <div
-                            class="makeStyles-drawerMainText-332"
-                          >
-                            <span>
-                              -
-                            </span>
-                            <span>
-                              -
-                            </span>
-                            <span>
-                              -
-                            </span>
-                          </div>
-                        </div>
-                      </div>
-                      <div
-                        class="makeStyles-drawerSection-327"
-                      >
-                        <div
-                          class="makeStyles-drawerColumnDirection-338"
-                        >
-                          <div
-                            class="makeStyles-drawerRowDirection-337"
-                          >
-                            <svg
-                              class="makeStyles-drawerMonetizationIcon-330 makeStyles-bpsIconSize-340"
-                            >
-                              monetization.svg
-                            </svg>
-                            <div
-                              class="makeStyles-drawerText-331 makeStyles-drawerTextSeparation-333"
-                            >
-                              <span>
-                                $
-                                -
-                              </span>
-                              <span>
-                                -
-                              </span>
-                              <span>
-                                Invoiced 
-                                -
-                              </span>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div
-                        class="makeStyles-drawerSection-327"
-                      >
-                        <div
-                          class="makeStyles-drawerRowDirection-337"
-                        >
-                          <svg
-                            class="makeStyles-bpsIconSize-340"
-                          >
-                            device-status.svg
-                          </svg>
-                          <div
-                            class="makeStyles-drawerText-331 makeStyles-drawerTextSeparation-333"
-                          >
-                            <span>
-                              Order/Purchase Date:
-                               
-                              
-                            </span>
-                            <span>
-                              Warranty Expiration Date:
-                               
-                              
-                            </span>
-                            <span>
-                              In Service Date:
-                               
-                              
-                            </span>
-                          </div>
-                        </div>
-                      </div>
-                      <div
-                        class="makeStyles-drawerSection-327"
-                      >
-                        <svg
-                          class="makeStyles-drawerSecondaryNotesIcon-329"
-                        >
-                          notes.svg
-                        </svg>
-                        <div
-                          class="makeStyles-drawerText-331 makeStyles-drawerTextSeparation-333"
-                        >
-                          <span>
-                            -
-                          </span>
-                        </div>
-                      </div>
-                      <div
-                        class="makeStyles-drawerSection-327"
-                      >
-                        <div
-                          class="makeStyles-drawerText-331"
-                        >
-                          <p
-                            class="MuiTypography-root makeStyles-deviceAccent-325 makeStyles-entityTitle-334 MuiTypography-body1"
-                          >
-                            Printer
-                          </p>
-                          <div
-                            class="makeStyles-drawerMainText-332"
-                          >
-                            <span>
-                              -
-                            </span>
-                            <span>
-                              -
-                            </span>
-                            <span>
-                              -
-                            </span>
-                          </div>
-                        </div>
-                      </div>
-                      <div
-                        class="makeStyles-drawerSection-327"
-                      >
-                        <div
-                          class="makeStyles-drawerColumnDirection-338"
-                        >
-                          <div
-                            class="makeStyles-drawerRowDirection-337"
-                          >
-                            <svg
-                              class="makeStyles-drawerMonetizationIcon-330"
-                            >
-                              monetization.svg
-                            </svg>
-                            <div
-                              class="makeStyles-drawerText-331 makeStyles-drawerTextSeparation-333"
-                            >
-                              <span>
-                                $
-                                -
-                              </span>
-                              <span>
-                                -
-                              </span>
-                              <span>
-                                Invoiced 
-                                -
-                              </span>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div
-                        class="makeStyles-drawerSection-327"
-                      >
-                        <div
-                          class="makeStyles-drawerRowDirection-337"
-                        >
-                          <svg
-                            class="makeStyles-bpsIconSize-340"
-                          >
-                            device-status.svg
-                          </svg>
-                          <div
-                            class="makeStyles-drawerText-331 makeStyles-drawerTextSeparation-333"
-                          >
-                            <span>
-                              Order/Purchase Date:
-                               
-                              
-                            </span>
-                            <span>
-                              Warranty Expiration Date:
-                               
-                              
-                            </span>
-                            <span>
-                              Last Maintenance Date:
-                               
-                              
-                            </span>
-                            <span>
-                              In Service Date:
-                               
-                              
-                            </span>
-                          </div>
-                        </div>
-                      </div>
-                      <div
-                        class="makeStyles-drawerSection-327"
-                      >
-                        <svg
-                          class="makeStyles-drawerSecondaryNotesIcon-329"
-                        >
-                          notes.svg
-                        </svg>
-                        <div
-                          class="makeStyles-drawerText-331 makeStyles-drawerTextSeparation-333"
-                        >
-                          <span>
-                            -
-                          </span>
-                        </div>
-                      </div>
-                      <div
-                        class="makeStyles-drawerSection-327"
-                      >
-                        <div
-                          class="makeStyles-drawerText-331"
-                        >
-                          <p
-                            class="MuiTypography-root makeStyles-deviceAccent-325 makeStyles-entityTitle-334 MuiTypography-body1"
-                          >
-                            Scanner
-                          </p>
-                          <div
-                            class="makeStyles-drawerMainText-332"
-                          >
-                            <span>
-                              -
-                            </span>
-                            <span>
-                              -
-                            </span>
-                          </div>
-                        </div>
-                      </div>
-                      <div
-                        class="makeStyles-drawerSection-327"
-                      >
-                        <div
-                          class="makeStyles-drawerColumnDirection-338"
-                        >
-                          <div
-                            class="makeStyles-drawerRowDirection-337"
-                          >
-                            <svg
-                              class="makeStyles-drawerMonetizationIcon-330"
-                            >
-                              monetization.svg
-                            </svg>
-                            <div
-                              class="makeStyles-drawerText-331 makeStyles-drawerTextSeparation-333"
-                            >
-                              <span>
-                                $
-                                -
-                              </span>
-                              <span>
-                                -
-                              </span>
-                              <span>
-                                Invoiced 
-                                -
-                              </span>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div
-                        class="makeStyles-drawerSection-327"
-                      >
-                        <div
-                          class="makeStyles-drawerRowDirection-337"
-                        >
-                          <svg
-                            class="makeStyles-bpsIconSize-340"
-                          >
-                            device-status.svg
-                          </svg>
-                          <div
-                            class="makeStyles-drawerText-331 makeStyles-drawerTextSeparation-333"
-                          >
-                            <span>
-                              Order/Purchase Date:
-                               
-                              
-                            </span>
-                            <span>
-                              Warranty Expiration Date:
-                               
-                              
-                            </span>
-                            <span>
-                              In Service Date:
-                               
-                              
-                            </span>
-                          </div>
-                        </div>
-                      </div>
-                      <div
-                        class="makeStyles-drawerSection-327"
-                      >
-                        <svg
-                          class="makeStyles-drawerSecondaryNotesIcon-329"
-                        >
-                          notes.svg
-                        </svg>
-                        <div
-                          class="makeStyles-drawerText-331 makeStyles-drawerTextSeparation-333"
-                        >
-                          <span>
-                            -
-                          </span>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <hr
-                  class="MuiDivider-root makeStyles-drawerDivider-163"
                 />
-                <div
-                  class="makeStyles-ctaWrapper-221"
-                >
-                  <a
-                    href="/inventory/badge-printing-system/wizard/null"
-                  >
-                    <span
-                      class=""
-                      data-testid="controlled-button"
-                      tabindex="-1"
-                    >
-                      <button
-                        class="MuiButtonBase-root MuiButton-root MuiButton-outlined makeStyles-drawerCTA-245 makeStyles-borderPrimaryButton-237"
-                        tabindex="0"
-                        type="button"
-                      >
-                        <span
-                          class="MuiButton-label"
-                        >
-                          Edit
-                        </span>
-                      </button>
-                    </span>
-                  </a>
-                </div>
               </div>
             </div>
           </div>

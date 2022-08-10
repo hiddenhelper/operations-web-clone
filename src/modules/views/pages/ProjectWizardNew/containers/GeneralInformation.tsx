@@ -15,10 +15,9 @@ class GeneralInformation extends React.Component<any, any> {
   };
 
   public render(): React.ReactNode {
-    const { userRole, reviewMode, categoryList, regionList, fcaNaeList, timeZoneList, errors, model, onChange } = this.props;
+    const { reviewMode, categoryList, regionList, fcaNaeList, timeZoneList, errors, model, onChange, isFcaUser } = this.props;
     return (
       <GeneralInformationComponent
-        userRole={userRole}
         errors={errors}
         model={model}
         reviewMode={reviewMode}
@@ -27,18 +26,19 @@ class GeneralInformation extends React.Component<any, any> {
         fcaNaeList={fcaNaeList}
         timeZoneList={timeZoneList}
         onChange={onChange}
+        isFcaUser={isFcaUser}
       />
     );
   }
 }
 
 const mapStateToProps = (state: IRootState) => ({
-  userRole: state.auth.role,
   reviewMode: state.projectNew.reviewMode,
   categoryList: state.projectNew.categoryList,
   regionList: state.projectNew.regionList,
   fcaNaeList: state.projectNew.fcaNaeList,
   timeZoneList: state.general.timeZoneList,
+  isFcaUser: state.auth.isFcaUser,
 });
 
 const mapDispatchToProps = {

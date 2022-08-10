@@ -12,7 +12,7 @@ import { UserModel, ProjectModel, GeneralModel } from '../../../../../models';
 import AssignUser from './AssignUser';
 
 export const mapStateToProps = (state: IRootState) => ({
-  userCompanyId: state.auth.companyId,
+  userCompanyId: state.auth.currentCompanyId,
   currentUserRole: state.auth.role,
   userRoleList: state.user.roleList,
   userMap: state.general.modalMap,
@@ -26,6 +26,8 @@ export const mapStateToProps = (state: IRootState) => ({
   fetchUserloading: state.general.loadingMap[GENERAL.LOADING_KEY.FETCH_USER_PROFILE],
   groupList: state.user.groupList,
   companyUserProfile: state.user.companyUserProfile,
+  isFcaUser: state.auth.isFcaUser,
+  isAdmin: state.auth.isAdmin,
 });
 
 export const mapDispatchToProps = (dispatch: Dispatch) => ({

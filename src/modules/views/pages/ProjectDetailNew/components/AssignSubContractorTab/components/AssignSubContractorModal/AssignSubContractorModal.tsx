@@ -18,7 +18,7 @@ import AutocompleteFilter from '../../../../../../shared/AutocompleteFilter';
 import AssignEntityOption from '../../../../../../shared/AssignEntityOption';
 import SubContractorRow from './SubContractorRow';
 
-import { GeneralModel, ClientModel, ProjectModel, ResourceModel, UserModel } from '../../../../../../../models';
+import { GeneralModel, ClientModel, ProjectModel, ResourceModel } from '../../../../../../../models';
 import { SearchIcon } from '../../../../../../../../constants';
 import { useDebounce } from '../../../../../../../../utils/useDebounce';
 import { useLocationFilter } from '../../../../../../../../utils/useLocationFilter';
@@ -32,7 +32,7 @@ export interface IAssignSubContractorModalProps {
   id: string;
   count: number;
   userCompanyId: string;
-  userRole: UserModel.Role;
+  isFcaUser: boolean;
   subContractorMap: GeneralModel.IEntityMap<ClientModel.IClient>;
   uiRelationMap: GeneralModel.IRelationUiMap;
   loading: GeneralModel.ILoadingStatus;
@@ -57,7 +57,7 @@ enum TabStep {
 const AssignSubContractorModal = ({
   id,
   count,
-  userRole,
+  isFcaUser,
   userCompanyId,
   uiRelationMap,
   subContractorMap,
@@ -88,8 +88,7 @@ const AssignSubContractorModal = ({
   const [isSearching, setSearching] = useState<boolean>(false);
   const [search, setSearch] = useState<string>('');
   const [showSelected, setShowSelected] = useState<boolean>(false);
-  const isFCAdmin = useMemo(() => userRole === UserModel.Role.FCA_ADMIN, [userRole]);
-  const [tabStep, setTabStep] = useState<TabStep>(getConditionalDefaultValue(isFCAdmin, TabStep.SPONSOR, TabStep.ASSIGN));
+  const [tabStep, setTabStep] = useState<TabStep>(getConditionalDefaultValue(isFcaUser, TabStep.SPONSOR, TabStep.ASSIGN));
   const [sponsor, setSponsor] = useState(null);
   const debouncedSearch = useDebounce(search, 350);
 
@@ -110,8 +109,8 @@ const AssignSubContractorModal = ({
   const assignDisabled = useMemo(
     () =>
       Object.keys(selectedSubcontractorMap.original).length === 0 ||
-      (isFCAdmin && Object.entries(selectedSubcontractorMap.original).some(([, val]) => isEmpty(val.isTaxExempt))),
-    [selectedSubcontractorMap.original, isFCAdmin]
+      (isFcaUser && Object.entries(selectedSubcontractorMap.original).some(([, val]) => isEmpty(val.isTaxExempt))),
+    [selectedSubcontractorMap.original, isFcaUser]
   );
 
   const hideOverflow = useMemo(() => {
@@ -168,10 +167,10 @@ const AssignSubContractorModal = ({
           role: ProjectModel.CompanyRole.SUB_CONTRACTOR,
           isTaxExempt: selectedSubcontractorMap.original[itemId].isTaxExempt,
         })),
-        getConditionalDefaultValue(userRole === UserModel.Role.FCA_ADMIN, sponsor?.id, userCompanyId)
+        isFcaUser ? sponsor?.id : userCompanyId
       );
     },
-    [assignSubcontractor, id, userRole, userCompanyId, selectedSubcontractorMap, sponsor]
+    [assignSubcontractor, id, isFcaUser, userCompanyId, selectedSubcontractorMap, sponsor]
   );
 
   const onPageChange = useCallback(
@@ -282,7 +281,7 @@ const AssignSubContractorModal = ({
     <AssignModal
       title={'Assign Subcontractors'}
       titleAdditionalText={getConditionalDefaultValue(
-        !isFCAdmin,
+        !isFcaUser,
         'All Companies you add will pay taxes. If you want to make a change, please contact an FCA Admin.',
         null
       )}
@@ -392,7 +391,7 @@ const AssignSubContractorModal = ({
                           <TableCell>Name</TableCell>
                           <TableCell>Location</TableCell>
                           <TableCell>Trades</TableCell>
-                          {isFCAdmin && <TableCell>Tax Condition</TableCell>}
+                          {isFcaUser && <TableCell>Tax Condition</TableCell>}
                         </TableRow>
                       </TableHead>
                       <TableBody>
@@ -402,7 +401,7 @@ const AssignSubContractorModal = ({
                             subContractor={subContractor}
                             isSelected={!!selectedSubcontractorMap.original[subContractor.id]}
                             isTaxExempt={selectedSubcontractorMap.original[subContractor.id]?.isTaxExempt}
-                            showTaxCondition={isFCAdmin}
+                            showTaxCondition={isFcaUser}
                             onSelect={onSelectSubcontractor}
                             onChangeTaxExempt={onChangeTaxExempt}
                           />

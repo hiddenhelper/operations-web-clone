@@ -9,11 +9,12 @@ import SelectFilter from 'modules/views/shared/SelectFilter';
 import TableCellLink from 'modules/views/shared/TableCellLink';
 import ProjectDrawer from 'modules/views/pages/ProjectList/components/ProjectDrawer';
 
-import { ProjectModel, GeneralModel } from 'modules/models';
+import { ProjectModel, GeneralModel, UserModel } from 'modules/models';
 import { getDefaultValue } from 'utils';
 import { ProjectsIcon } from 'constants/index';
 import { listGlobalStyles, tableGlobalStyles } from 'assets/styles';
 import { useStyles, tableRowStyles } from '../../styles';
+import PermissionGuard from 'modules/views/shared/PermissionGuard';
 
 const StyledTableRow = withStyles(tableRowStyles)(TableRow);
 
@@ -89,62 +90,70 @@ const ProjectsTab = ({
   return (
     <>
       <div className={`${tableGlobalClasses.filterActionsContainer} ${tableGlobalClasses.filterActionsContainerPadding}`}>
-        <Box className={tableGlobalClasses.filterStatusContainer}>
-          <SelectFilter
-            value={getDefaultValue(ProjectModel.roleMap[queryParams.role], 'All Roles')}
-            optionList={ProjectModel.roleListOptions}
-            onChange={onFilterRoleChange}
-          />
-        </Box>
+        <PermissionGuard permissionsExpression={UserModel.ClientProjectsPermission.VIEWACCESS}>
+          <Box className={tableGlobalClasses.filterStatusContainer}>
+            <SelectFilter
+              value={getDefaultValue(ProjectModel.roleMap[queryParams.role], 'All Roles')}
+              optionList={ProjectModel.roleListOptions}
+              onChange={onFilterRoleChange}
+            />
+          </Box>
+        </PermissionGuard>
       </div>
       {projectList.length === 0 ? (
         <EmptyList icon={<ProjectsIcon />} text="There are no Projects assigned" />
       ) : (
         <>
-          <Table aria-label="project-list">
-            <TableHead>
-              <TableRow>
-                <TableCell>Project Name</TableCell>
-                <TableCell>Job Site Address</TableCell>
-                <TableCell>Estimated Date</TableCell>
-                <TableCell>Clients</TableCell>
-              </TableRow>
-            </TableHead>
-            <TableBody>
-              {projectList.map(project => (
-                <StyledTableRow
-                  data-testid="project-client-list-row"
-                  key={project.id}
-                  onClick={() => openSummary(project.id)}
-                  className={listClasses.clickableRow}
-                >
-                  <TableCell className={`${classes.cellAvatarRowDirection} ${tableGlobalClasses.cellAvatar}`}>
-                    <Avatar>
-                      <Room />
-                    </Avatar>
-                    <TableCellLink href={`/projects/detail/${project.id}`} text={project.name} title="View Project detail" />
-                  </TableCell>
-                  <TableCell>
-                    {project.jobSiteAddress && project.jobSiteAddress.line1 ? `${project.jobSiteAddress.line1}, ` : '-'}
-                    {project.jobSiteAddress && project.jobSiteAddress.line2}
-                    {project.jobSiteAddress && project.jobSiteAddress.stateName && project.jobSiteAddress.city
-                      ? ` ${project.jobSiteAddress.stateName}, ${project.jobSiteAddress.city}`
-                      : ''}
-                  </TableCell>
-                  <TableCell>
-                    {project.startDate && project.endDate
-                      ? moment(project.startDate).format('MMM DD, YYYY') + ' to ' + moment(project.endDate).format('MMM dd, YYYY')
-                      : '-'}
-                  </TableCell>
-                  <TableCell>{project.clientCount}</TableCell>
-                </StyledTableRow>
-              ))}
-            </TableBody>
-          </Table>
-          <Pagination page={queryParams.pageNumber} count={pageCount} onChange={onPageChange} />
+          <PermissionGuard permissionsExpression={UserModel.ClientProjectsPermission.VIEWACCESS}>
+            <Table aria-label="project-list">
+              <TableHead>
+                <TableRow>
+                  <TableCell>Project Name</TableCell>
+                  <TableCell>Job Site Address</TableCell>
+                  <TableCell>Estimated Date</TableCell>
+                  <TableCell>Clients</TableCell>
+                </TableRow>
+              </TableHead>
+              <TableBody>
+                {projectList.map(project => (
+                  <StyledTableRow
+                    data-testid="project-client-list-row"
+                    key={project.id}
+                    onClick={() => openSummary(project.id)}
+                    className={listClasses.clickableRow}
+                  >
+                    <TableCell className={`${classes.cellAvatarRowDirection} ${tableGlobalClasses.cellAvatar}`}>
+                      <Avatar>
+                        <Room />
+                      </Avatar>
+                      <TableCellLink href={`/projects/detail/${project.id}`} text={project.name} title="View Project detail" />
+                    </TableCell>
+                    <TableCell>
+                      {project.jobSiteAddress && project.jobSiteAddress.line1 ? `${project.jobSiteAddress.line1}, ` : '-'}
+                      {project.jobSiteAddress && project.jobSiteAddress.line2}
+                      {project.jobSiteAddress && project.jobSiteAddress.stateName && project.jobSiteAddress.city
+                        ? ` ${project.jobSiteAddress.stateName}, ${project.jobSiteAddress.city}`
+                        : ''}
+                    </TableCell>
+                    <TableCell>
+                      {project.startDate && project.endDate
+                        ? moment(project.startDate).format('MMM DD, YYYY') + ' to ' + moment(project.endDate).format('MMM dd, YYYY')
+                        : '-'}
+                    </TableCell>
+                    <TableCell>{project.clientCount}</TableCell>
+                  </StyledTableRow>
+                ))}
+              </TableBody>
+            </Table>
+          </PermissionGuard>
+          <PermissionGuard permissionsExpression={UserModel.ClientProjectsPermission.VIEWACCESS}>
+            <Pagination page={queryParams.pageNumber} count={pageCount} onChange={onPageChange} />
+          </PermissionGuard>
         </>
       )}
-      <ProjectDrawer project={currentProject} isOpen={drawer} isLoading={loadingSummary && loadingSummary.isLoading} onClose={closeSummary} />
+      <PermissionGuard permissionsExpression={UserModel.ClientProjectsPermission.VIEWACCESS}>
+        <ProjectDrawer project={currentProject} isOpen={drawer} isLoading={loadingSummary && loadingSummary.isLoading} onClose={closeSummary} />
+      </PermissionGuard>
     </>
   );
 };

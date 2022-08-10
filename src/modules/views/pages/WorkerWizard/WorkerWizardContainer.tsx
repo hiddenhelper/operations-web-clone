@@ -12,7 +12,6 @@ import { clientState } from '../../../state-mgmt/client';
 import WorkerWizard from './WorkerWizard';
 
 export const mapStateToProps = (state: IRootState) => ({
-  userRole: state.auth.role,
   company: state.client.selfCompany,
   workersMap: state.worker.workerMap,
   loading: state.general.loadingMap[GENERAL.LOADING_KEY.FETCH_WORKER],
@@ -23,9 +22,10 @@ export const mapStateToProps = (state: IRootState) => ({
   skilledTradeList: state.worker.skilledTradeList,
   identificationTypeList: state.worker.identificationTypeList,
   uiRelationMap: state.general.uiRelationMap,
-  currentUserRole: state.auth.role,
   countryList: state.general.countryList,
   geographicLocationsList: state.worker.geographicLocationsList,
+  isFcaUser: state.auth.isFcaUser,
+  isAdmin: state.auth.isAdmin,
 });
 
 export const mapDispatchToProps = (dispatch: Dispatch) => ({

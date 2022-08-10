@@ -1,7 +1,7 @@
 import React, { memo, useCallback } from 'react';
 import { Radio, TableCell, TableRow, withStyles } from '@material-ui/core';
 
-import RoleGuard from 'modules/views/shared/RoleGuard';
+import PermissionGuard from 'modules/views/shared/PermissionGuard';
 import TableCellLink from 'modules/views/shared/TableCellLink';
 
 import { AccessControlSystemModel, UserModel } from 'modules/models';
@@ -39,9 +39,9 @@ const AccessControlSystemRow = ({ accessControlSystem, isSelected, onSelect }: I
             data-testid="acs-radio-item"
             onClick={onSelectHandler}
           />
-          <RoleGuard roleList={[UserModel.Role.FCA_ADMIN]} fallback={<>{acsType}</>}>
+          <PermissionGuard permissionsExpression={UserModel.AccessControlSystemsPermission.MANAGE} fallback={<>{acsType}</>}>
             <TableCellLink href={`/inventory/access-control-system/wizard/${accessControlSystem.id}`} text={acsType} title="Edit ACS" />
-          </RoleGuard>
+          </PermissionGuard>
         </div>
       </TableCell>
       <TableCell>{getDefaultValue(accessControlSystem?.serialNumber, '-')}</TableCell>

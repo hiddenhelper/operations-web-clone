@@ -16,7 +16,7 @@ import BadgeTab from './components/BadgeTab';
 import BadgeHistoryTab from './components/BadgeHistoryTab';
 import ControlledMaskInput from '../../FormHandler/ControlledMaskInput';
 
-import { BadgeModel, GeneralModel } from '../../../../models';
+import { BadgeModel, GeneralModel, UserModel } from '../../../../models';
 import { getConditionalDefaultValue, getDefaultValue, TAG_ID_MASK } from '../../../../../utils/generalUtils';
 import { useForm } from '../../../../../utils/useForm';
 import { useStyles as buttonStyles } from '../../FormHandler/ControlledButton/styles';
@@ -27,6 +27,8 @@ import { useStyles as modalStyles } from '../../Modal/style';
 import { useStyles } from './styles';
 import { validateBadgeTagId } from '../../../../../utils/projectUtils';
 import { ruleMap } from 'utils/useValidator';
+import { hasValidPermissions } from 'modules/models/user';
+import PermissionGuard from '../../PermissionGuard';
 
 export interface IBadgeSummaryModalProps {
   title: string;
@@ -43,6 +45,7 @@ export interface IBadgeSummaryModalProps {
   isBadgePending: boolean;
   isReactivateAllowed?: boolean;
   isVisitor: boolean;
+  currentUserPermissions?: UserModel.IPermission[];
   clearUpdateLoading: () => void;
   clearUpdateBadgeLoading?: () => void;
   closeModal: () => void;
@@ -79,6 +82,7 @@ const BadgeSummaryModal = ({
   isBadgePending,
   isVisitor,
   currentBadgeForm,
+  currentUserPermissions,
   updateBadge,
   onModalClose,
   onModalConfirm,
@@ -267,6 +271,10 @@ const BadgeSummaryModal = ({
       clearBadge();
     }
   }, [updateBadgeDataLoading, clearBadge, closeModal, onCloseModal, clearUpdateLoading, clearUpdateBadgeLoading]);
+
+  const saveButtonDisabled = currentUserPermissions
+    ? !hasValidPermissions(`${UserModel.VisitorsPermission.MANAGE} AND ${UserModel.BadgesPermission.MANAGE}`, currentUserPermissions)
+    : false;
   return (
     <>
       <FormModal
@@ -277,18 +285,21 @@ const BadgeSummaryModal = ({
         handleClose={closeModal}
         handleDiscard={onDiscard}
         styleClass={classes.modalContainer}
+        isButtonDisabled={saveButtonDisabled}
         renderHeader={() => (
           <DialogTitle className={classes.modalTitleContainer} disableTypography={true} data-testid="badge-title">
             <Typography className={modalGlobalClasses.title} color="secondary" align="left" component="h1" variant="h6">
               {title}
             </Typography>
             <div className={classes.modalButtonWrapper}>
-              <ButtonPrinter
-                styleClasses={`${classes.printButton} ${buttonClasses.badgeButtonContainer}`}
-                isLoading={printLoading && printLoading.isLoading}
-                disabled={!isRequiredDocumentationCompleted}
-                onPrint={onPrint}
-              />
+              <PermissionGuard permissionsExpression={UserModel.BadgesPermission.VIEWACCESS}>
+                <ButtonPrinter
+                  styleClasses={`${classes.printButton} ${buttonClasses.badgeButtonContainer}`}
+                  isLoading={printLoading && printLoading.isLoading}
+                  disabled={!isRequiredDocumentationCompleted}
+                  onPrint={onPrint}
+                />
+              </PermissionGuard>
             </div>
           </DialogTitle>
         )}

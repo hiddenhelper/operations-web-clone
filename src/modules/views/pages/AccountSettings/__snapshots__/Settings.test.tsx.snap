@@ -6,16 +6,16 @@ exports[`Settings should change filter option 1`] = `
     style="width: 100%; background-color: rgb(245, 245, 245); padding: 2.5rem;"
   >
     <div
-      class="MuiBox-root MuiBox-root-258"
+      class="MuiBox-root MuiBox-root-273"
       style="height: 50px; margin-bottom: 13px; width: 100%;"
     >
       <div
-        class="MuiBox-root MuiBox-root-259"
+        class="MuiBox-root MuiBox-root-274"
         style="display: flex; align-items: center; justify-content: space-between;"
       >
         <div>
           <div
-            class="MuiBox-root MuiBox-root-260"
+            class="MuiBox-root MuiBox-root-275"
             style="display: flex; align-items: center; margin-top: 5px;"
           >
             <h2
@@ -29,13 +29,13 @@ exports[`Settings should change filter option 1`] = `
       </div>
     </div>
     <div
-      class="makeStyles-tableWrapper-219"
+      class="makeStyles-tableWrapper-234"
     >
       <div
-        class="makeStyles-filterContainer-227 makeStyles-filterContainerTopPadding-236"
+        class="makeStyles-filterContainer-242 makeStyles-filterContainerTopPadding-251"
       >
         <div
-          class="makeStyles-statusFilter-228"
+          class="makeStyles-statusFilter-243"
         >
           <button
             class="MuiButtonBase-root MuiButton-root MuiButton-text"
@@ -53,7 +53,7 @@ exports[`Settings should change filter option 1`] = `
             />
           </button>
           <button
-            class="MuiButtonBase-root MuiButton-root MuiButton-text makeStyles-activeFilter-229"
+            class="MuiButtonBase-root MuiButton-root MuiButton-text makeStyles-activeFilter-244"
             data-testid="filter-status-opt"
             tabindex="0"
             type="button"
@@ -71,19 +71,19 @@ exports[`Settings should change filter option 1`] = `
       </div>
     </div>
     <div
-      class="MuiBox-root MuiBox-root-437 makeStyles-box-261"
+      class="MuiBox-root MuiBox-root-467 makeStyles-box-276"
     >
       <div
-        class="makeStyles-formContainer-263 "
+        class="makeStyles-formContainer-278 "
       >
         <div
-          class="makeStyles-formContainerWrapper-262"
+          class="makeStyles-formContainerWrapper-277"
         >
           <div
-            class="makeStyles-currentPasswordSpacing-282"
+            class="makeStyles-currentPasswordSpacing-297"
           >
             <div
-              class="MuiFormControl-root makeStyles-formControl-305 makeStyles-loginLabels-303 "
+              class="MuiFormControl-root makeStyles-formControl-320 makeStyles-loginLabels-318 "
             >
               <h1
                 class="MuiTypography-root MuiTypography-caption MuiTypography-colorSecondary MuiTypography-alignLeft"
@@ -96,13 +96,13 @@ exports[`Settings should change filter option 1`] = `
               >
                 <div
                   aria-describedby="confirm-password-password"
-                  class="MuiFormControl-root MuiTextField-root makeStyles-textField-304 MuiFormControl-fullWidth"
+                  class="MuiFormControl-root MuiTextField-root makeStyles-textField-319 MuiFormControl-fullWidth"
                 >
                   <div
                     class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-fullWidth MuiInputBase-formControl MuiInputBase-adornedStart MuiOutlinedInput-adornedStart MuiInputBase-adornedEnd MuiOutlinedInput-adornedEnd"
                   >
                     <div
-                      class="MuiInputAdornment-root     makeStyles-loginIcons-302 MuiInputAdornment-positionStart"
+                      class="MuiInputAdornment-root     makeStyles-loginIcons-317 MuiInputAdornment-positionStart"
                     >
                       <svg
                         aria-hidden="true"
@@ -140,7 +140,7 @@ exports[`Settings should change filter option 1`] = `
                           class="MuiIconButton-label"
                         >
                           <svg
-                            class=" makeStyles-inactiveIcon-440 makeStyles-inactiveIcon-440"
+                            class=" makeStyles-inactiveIcon-470 makeStyles-inactiveIcon-470"
                           >
                             visibility-off.svg
                           </svg>
@@ -152,11 +152,11 @@ exports[`Settings should change filter option 1`] = `
                     </div>
                     <fieldset
                       aria-hidden="true"
-                      class="PrivateNotchedOutline-root-332 MuiOutlinedInput-notchedOutline"
+                      class="PrivateNotchedOutline-root-347 MuiOutlinedInput-notchedOutline"
                       style="padding-left: 8px;"
                     >
                       <legend
-                        class="PrivateNotchedOutline-legend-333"
+                        class="PrivateNotchedOutline-legend-348"
                         style="width: 0.01px;"
                       >
                         <span>
@@ -170,7 +170,7 @@ exports[`Settings should change filter option 1`] = `
             </div>
           </div>
           <div
-            class="MuiFormControl-root makeStyles-formControl-305 makeStyles-loginLabels-303 "
+            class="MuiFormControl-root makeStyles-formControl-320 makeStyles-loginLabels-318 "
           >
             <h1
               class="MuiTypography-root MuiTypography-caption MuiTypography-colorSecondary MuiTypography-alignLeft"
@@ -183,13 +183,13 @@ exports[`Settings should change filter option 1`] = `
             >
               <div
                 aria-describedby="confirm-password-password"
-                class="MuiFormControl-root MuiTextField-root makeStyles-textField-304 MuiFormControl-fullWidth"
+                class="MuiFormControl-root MuiTextField-root makeStyles-textField-319 MuiFormControl-fullWidth"
               >
                 <div
                   class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-fullWidth MuiInputBase-formControl MuiInputBase-adornedStart MuiOutlinedInput-adornedStart MuiInputBase-adornedEnd MuiOutlinedInput-adornedEnd"
                 >
                   <div
-                    class="MuiInputAdornment-root     makeStyles-loginIcons-302 MuiInputAdornment-positionStart"
+                    class="MuiInputAdornment-root     makeStyles-loginIcons-317 MuiInputAdornment-positionStart"
                   >
                     <svg
                       aria-hidden="true"
@@ -227,7 +227,7 @@ exports[`Settings should change filter option 1`] = `
                         class="MuiIconButton-label"
                       >
                         <svg
-                          class=" makeStyles-inactiveIcon-440 makeStyles-inactiveIcon-440"
+                          class=" makeStyles-inactiveIcon-470 makeStyles-inactiveIcon-470"
                         >
                           visibility-off.svg
                         </svg>
@@ -239,11 +239,11 @@ exports[`Settings should change filter option 1`] = `
                   </div>
                   <fieldset
                     aria-hidden="true"
-                    class="PrivateNotchedOutline-root-332 MuiOutlinedInput-notchedOutline"
+                    class="PrivateNotchedOutline-root-347 MuiOutlinedInput-notchedOutline"
                     style="padding-left: 8px;"
                   >
                     <legend
-                      class="PrivateNotchedOutline-legend-333"
+                      class="PrivateNotchedOutline-legend-348"
                       style="width: 0.01px;"
                     >
                       <span>
@@ -256,12 +256,12 @@ exports[`Settings should change filter option 1`] = `
             </div>
           </div>
           <p
-            class="MuiTypography-root makeStyles-inputSubtitle-446 MuiTypography-body1"
+            class="MuiTypography-root makeStyles-inputSubtitle-476 MuiTypography-body1"
           >
             Password must have at least 8 characters, one lowercase letter, one uppercase letter, one number and one symbol.
           </p>
           <div
-            class="MuiFormControl-root makeStyles-formControl-305 makeStyles-loginLabels-303 "
+            class="MuiFormControl-root makeStyles-formControl-320 makeStyles-loginLabels-318 "
           >
             <h1
               class="MuiTypography-root MuiTypography-caption MuiTypography-colorSecondary MuiTypography-alignLeft"
@@ -274,13 +274,13 @@ exports[`Settings should change filter option 1`] = `
             >
               <div
                 aria-describedby="confirm-password-password"
-                class="MuiFormControl-root MuiTextField-root makeStyles-textField-304 MuiFormControl-fullWidth"
+                class="MuiFormControl-root MuiTextField-root makeStyles-textField-319 MuiFormControl-fullWidth"
               >
                 <div
                   class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-fullWidth MuiInputBase-formControl MuiInputBase-adornedStart MuiOutlinedInput-adornedStart MuiInputBase-adornedEnd MuiOutlinedInput-adornedEnd"
                 >
                   <div
-                    class="MuiInputAdornment-root     makeStyles-loginIcons-302 MuiInputAdornment-positionStart"
+                    class="MuiInputAdornment-root     makeStyles-loginIcons-317 MuiInputAdornment-positionStart"
                   >
                     <svg
                       aria-hidden="true"
@@ -318,7 +318,7 @@ exports[`Settings should change filter option 1`] = `
                         class="MuiIconButton-label"
                       >
                         <svg
-                          class=" makeStyles-inactiveIcon-440 makeStyles-inactiveIcon-440"
+                          class=" makeStyles-inactiveIcon-470 makeStyles-inactiveIcon-470"
                         >
                           visibility-off.svg
                         </svg>
@@ -330,11 +330,11 @@ exports[`Settings should change filter option 1`] = `
                   </div>
                   <fieldset
                     aria-hidden="true"
-                    class="PrivateNotchedOutline-root-332 MuiOutlinedInput-notchedOutline"
+                    class="PrivateNotchedOutline-root-347 MuiOutlinedInput-notchedOutline"
                     style="padding-left: 8px;"
                   >
                     <legend
-                      class="PrivateNotchedOutline-legend-333"
+                      class="PrivateNotchedOutline-legend-348"
                       style="width: 0.01px;"
                     >
                       <span>
@@ -348,15 +348,15 @@ exports[`Settings should change filter option 1`] = `
           </div>
         </div>
         <div
-          class="makeStyles-formButtonWrapper-276 makeStyles-passwordButtonWrapper-277"
+          class="makeStyles-formButtonWrapper-291 makeStyles-passwordButtonWrapper-292"
         >
           <span
-            class="makeStyles-noOutline-360"
+            class="makeStyles-noOutline-375"
             data-testid="controlled-button"
             tabindex="-1"
           >
             <button
-              class="MuiButtonBase-root MuiButton-root MuiButton-text makeStyles-discardButton-362 MuiButton-textPrimary Mui-disabled Mui-disabled"
+              class="MuiButtonBase-root MuiButton-root MuiButton-text makeStyles-discardButton-377 MuiButton-textPrimary Mui-disabled Mui-disabled"
               data-testid="discard-changes-btn"
               disabled=""
               tabindex="-1"
@@ -375,7 +375,7 @@ exports[`Settings should change filter option 1`] = `
             tabindex="-1"
           >
             <button
-              class="MuiButtonBase-root MuiButton-root MuiButton-contained false makeStyles-nextButton-361 makeStyles-noPadding-358  MuiButton-containedPrimary MuiButton-containedSizeLarge MuiButton-sizeLarge Mui-disabled Mui-disabled"
+              class="MuiButtonBase-root MuiButton-root MuiButton-contained false makeStyles-nextButton-376 makeStyles-noPadding-373  MuiButton-containedPrimary MuiButton-containedSizeLarge MuiButton-sizeLarge Mui-disabled Mui-disabled"
               data-testid="next-changes-btn"
               disabled=""
               tabindex="-1"
@@ -385,7 +385,7 @@ exports[`Settings should change filter option 1`] = `
                 class="MuiButton-label"
               >
                 <span
-                  class="makeStyles-textWrapper-436"
+                  class="makeStyles-textWrapper-466"
                 >
                   Save Changes
                 </span>
@@ -748,6 +748,243 @@ exports[`Settings should render 1`] = `
                     </div>
                   </div>
                 </div>
+                <div
+                  class="makeStyles-errorInputWrapper-122"
+                >
+                  <div
+                    class="MuiFormControl-root makeStyles-formControl-87 makeStyles-inputBottomPadding-118"
+                  >
+                    <h1
+                      class="MuiTypography-root MuiTypography-caption MuiTypography-colorSecondary MuiTypography-alignLeft"
+                    >
+                      Mobile Phone Number
+                       
+                    </h1>
+                    <div>
+                      <div
+                        class="makeStyles-phoneInput-216 undefined  react-tel-input"
+                      >
+                        <div
+                          class="special-label"
+                        >
+                          Phone
+                        </div>
+                        <input
+                          autocomplete="off"
+                          class=" form-control"
+                          data-testid="mobile-user-phone"
+                          name="mobilePhoneNumber"
+                          placeholder="+0 (000) 000-0000"
+                          type="text"
+                          value=""
+                          variant="outlined"
+                        />
+                        <div
+                          class=" flag-dropdown"
+                        >
+                          <div
+                            aria-haspopup="listbox"
+                            class="selected-flag"
+                            role="button"
+                            tabindex="-1"
+                            title=""
+                          >
+                            <div
+                              class="flag 0"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="MuiGrid-root MuiGrid-container"
+                >
+                  <div
+                    class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-9 MuiGrid-grid-lg-9"
+                  >
+                    <div
+                      class="MuiFormControl-root makeStyles-formControl-87 makeStyles-inputBottomPadding-118 makeStyles-middleInput-156"
+                    >
+                      <h1
+                        class="MuiTypography-root MuiTypography-caption MuiTypography-colorSecondary MuiTypography-alignLeft"
+                      >
+                        Office Phone Number (Optional)
+                         
+                      </h1>
+                      <div>
+                        <div
+                          class="makeStyles-phoneInput-216 undefined  react-tel-input"
+                        >
+                          <div
+                            class="special-label"
+                          >
+                            Phone
+                          </div>
+                          <input
+                            autocomplete="off"
+                            class=" form-control"
+                            data-testid="office-user-phone"
+                            id="officePhoneNumber"
+                            name="officePhoneNumber"
+                            placeholder="+0 (000) 000-0000"
+                            type="text"
+                            value=""
+                            variant="outlined"
+                          />
+                          <div
+                            class=" flag-dropdown"
+                          >
+                            <div
+                              aria-haspopup="listbox"
+                              class="selected-flag"
+                              role="button"
+                              tabindex="-1"
+                              title=""
+                            >
+                              <div
+                                class="flag 0"
+                              />
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-3 MuiGrid-grid-lg-3"
+                  >
+                    <div
+                      class="MuiFormControl-root makeStyles-formControl-87 makeStyles-inputBottomPadding-118"
+                    >
+                      <h1
+                        class="MuiTypography-root MuiTypography-caption MuiTypography-colorSecondary MuiTypography-alignLeft"
+                      >
+                        Ext
+                         
+                      </h1>
+                      <div>
+                        <div
+                          class="MuiFormControl-root MuiTextField-root MuiFormControl-fullWidth"
+                        >
+                          <div
+                            class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-fullWidth MuiInputBase-formControl"
+                          >
+                            <input
+                              aria-invalid="false"
+                              autocomplete="off"
+                              class="MuiInputBase-input MuiOutlinedInput-input"
+                              data-testid="office-user-phone"
+                              maxlength="6"
+                              name="officePhoneExtension"
+                              placeholder="Ext"
+                              type="text"
+                              value=""
+                            />
+                            <fieldset
+                              aria-hidden="true"
+                              class="PrivateNotchedOutline-root-114 MuiOutlinedInput-notchedOutline"
+                              style="padding-left: 8px;"
+                            >
+                              <legend
+                                class="PrivateNotchedOutline-legend-115"
+                                style="width: 0.01px;"
+                              >
+                                <span>
+                                  ​
+                                </span>
+                              </legend>
+                            </fieldset>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="makeStyles-errorInputWrapper-122"
+                >
+                  <div
+                    class=" makeStyles-controlledRadioContainer-220 controlledRadioContainer"
+                    data-testid="controlled-radio"
+                  >
+                    <fieldset
+                      class="MuiFormControl-root makeStyles-radioWrapper-172"
+                    >
+                      <legend
+                        class="MuiFormLabel-root makeStyles-controlledRadioLabel-219"
+                        id="radio-label-preferredContactMethod"
+                      >
+                        Preferred Contact Method
+                      </legend>
+                      <div
+                        aria-labelledby="radio-label-preferredContactMethod"
+                        class="MuiFormGroup-root MuiFormGroup-row"
+                        data-testid="controlled-radio-group"
+                        role="radiogroup"
+                      >
+                        <label
+                          class="MuiFormControlLabel-root"
+                        >
+                          <span
+                            aria-disabled="false"
+                            class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-227 MuiRadio-root makeStyles-root-221 PrivateSwitchBase-checked-228 Mui-checked"
+                          >
+                            <span
+                              class="MuiIconButton-label"
+                            >
+                              <input
+                                checked=""
+                                class="PrivateSwitchBase-input-230"
+                                data-testid="controlled-radio-button"
+                                name="preferredContactMethod"
+                                type="radio"
+                                value="0"
+                              />
+                              <span
+                                class="makeStyles-icon-222 makeStyles-checkedIcon-225 "
+                              />
+                            </span>
+                          </span>
+                          <span
+                            class="MuiTypography-root MuiFormControlLabel-label MuiTypography-body1"
+                          >
+                            Email
+                          </span>
+                        </label>
+                        <label
+                          class="MuiFormControlLabel-root"
+                        >
+                          <span
+                            aria-disabled="false"
+                            class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-227 MuiRadio-root makeStyles-root-221"
+                          >
+                            <span
+                              class="MuiIconButton-label"
+                            >
+                              <input
+                                class="PrivateSwitchBase-input-230"
+                                data-testid="controlled-radio-button"
+                                name="preferredContactMethod"
+                                type="radio"
+                                value="1"
+                              />
+                              <span
+                                class="makeStyles-icon-222 makeStyles-unactiveIcon-224"
+                              />
+                            </span>
+                          </span>
+                          <span
+                            class="MuiTypography-root MuiFormControlLabel-label MuiTypography-body1"
+                          >
+                            Phone
+                          </span>
+                        </label>
+                      </div>
+                    </fieldset>
+                  </div>
+                </div>
               </div>
             </div>
             <div
@@ -788,7 +1025,7 @@ exports[`Settings should render 1`] = `
                     class="MuiButton-label"
                   >
                     <span
-                      class="makeStyles-textWrapper-218"
+                      class="makeStyles-textWrapper-233"
                     >
                       Save Changes
                     </span>

@@ -20,6 +20,8 @@ export const mapStateToProps = (state: IRootState) => ({
   countryList: state.general.countryList,
   groupList: state.user.groupList,
   currentUserRole: state.auth.role,
+  isFcaUser: state.auth.isFcaUser,
+  isAdmin: state.auth.isAdmin,
 });
 
 export const mapDispatchToProps = (dispatch: Dispatch) => ({

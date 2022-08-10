@@ -2,7 +2,7 @@ import React, { memo, useCallback } from 'react';
 import moment from 'moment';
 import { TableCell, TableRow, withStyles } from '@material-ui/core';
 
-import RoleGuard from 'modules/views/shared/RoleGuard';
+import PermissionGuard from 'modules/views/shared/PermissionGuard';
 import TableCellLink from 'modules/views/shared/TableCellLink';
 
 import { BadgePrintingSystemModel, UserModel } from 'modules/models';
@@ -24,9 +24,9 @@ const BadgePrintingSystemRow = ({ badgePrinterSystem, openDrawer }: IBadgePrinti
   return (
     <StyledTableRow data-testid="bps-list-row" key={badgePrinterSystem.id} onClick={onClick} className={listClasses.clickableRow}>
       <TableCell>
-        <RoleGuard roleList={[UserModel.Role.FCA_ADMIN]} fallback={<>{badgePrinterSystem.name}</>}>
+        <PermissionGuard permissionsExpression={UserModel.BadgePrintingSystemsPermission.MANAGE} fallback={<>{badgePrinterSystem.name}</>}>
           <TableCellLink href={`/inventory/badge-printing-system/wizard/${badgePrinterSystem.id}`} text={badgePrinterSystem.name} title="Edit BPS" />
-        </RoleGuard>
+        </PermissionGuard>
       </TableCell>
       <TableCell>{badgePrinterSystem.laptopSerialNumber}</TableCell>
       <TableCell>{badgePrinterSystem.printerSerialNumber}</TableCell>

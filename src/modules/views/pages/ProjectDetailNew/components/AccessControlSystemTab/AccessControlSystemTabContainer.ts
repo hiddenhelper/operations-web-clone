@@ -16,6 +16,7 @@ export const mapStateToProps = (state: IRootState) => ({
   accessControlSystemCount: state.accessControlSystem.count,
   modalMap: state.general.modalMap,
   modalCount: state.general.modalCount,
+  currentUserPermissions: state.auth.session?.permissions,
   assignAccessControlSystemLoading: state.general.loadingMap[GENERAL.LOADING_KEY.ASSIGN_ACCESS_CONTROL_SYSTEM_PROJECT],
   accessControlSystemSummaryLoading: state.general.loadingMap[GENERAL.LOADING_KEY.FETCH_ACCESS_CONTROL_SYSTEM_SUMMARY],
   assignLoading: state.general.loadingMap[GENERAL.LOADING_KEY.ASSIGN_ACCESS_CONTROL_SYSTEM_PROJECT],

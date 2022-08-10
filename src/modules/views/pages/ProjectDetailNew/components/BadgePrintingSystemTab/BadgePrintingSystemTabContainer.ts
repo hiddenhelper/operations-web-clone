@@ -14,6 +14,7 @@ export const mapStateToProps = (state: IRootState) => ({
   badgePrintingSystemCount: state.badgePrinterSystem.count,
   modalMap: state.general.modalMap,
   modalCount: state.general.modalCount,
+  currentUserPermissions: state.auth.session?.permissions,
   badgePrintingSystemSummaryLoading: state.general.loadingMap[GENERAL.LOADING_KEY.FETCH_BADGE_PRINTER_SYSTEM_SUMMARY],
   loadBadgePrintingSystemModalLoading: state.general.loadingMap[GENERAL.LOADING_KEY.FETCH_BADGE_PRINTER_SYSTEM_LIST],
   unassignBadgePrintingSystemLoading: state.general.loadingMap[GENERAL.LOADING_KEY.UNASSIGN_BADGE_PRINTING_SYSTEM_PROJECT],

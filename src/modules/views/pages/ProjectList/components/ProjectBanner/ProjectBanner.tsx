@@ -6,9 +6,7 @@ import Typography from '@material-ui/core/Typography';
 import Avatar from '@material-ui/core/Avatar';
 import RoomIcon from '@material-ui/icons/Room';
 
-import RoleGuard from '../../../../shared/RoleGuard';
-
-import { ProjectModel, UserModel } from '../../../../../models';
+import { ProjectModel } from '../../../../../models';
 import { getConditionalDefaultValue, getDefaultValue } from '../../../../../../utils/generalUtils';
 import { avatarGlobalStyles } from '../../../../../../assets/styles/Avatars/styles';
 import { useStyles } from '../../styles';
@@ -59,11 +57,9 @@ const ProjectBanner = ({ project, onOpen }: IProjectBannerProps) => {
               )}
             </Typography>
           </Grid>
-          <RoleGuard roleList={[UserModel.Role.FCA_ADMIN]}>
-            <Grid item={true} xs={3}>
-              <Typography className={classes.bannerInformation}>{getDefaultValue(project.clientCount)} Client/s</Typography>
-            </Grid>
-          </RoleGuard>
+          <Grid item={true} xs={3}>
+            <Typography className={classes.bannerInformation}>{getDefaultValue(project.clientCount)} Client/s</Typography>
+          </Grid>
         </Grid>
       </div>
     </Paper>

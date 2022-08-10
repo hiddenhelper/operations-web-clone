@@ -603,6 +603,15 @@ export class ApiService {
     return this.protectedRequest('projectRoles', { method: 'GET' });
   }
 
+  public getUserPermissions(companyUserId: string): Observable<any> {
+    return this.securityRequest(
+      `users/${companyUserId}/availablepermissions?IncludeDirectPermissions=true&IncludeGroupPermissions=true&IncludeScopePermissions=true&MakeItFlat=true`,
+      {
+        method: 'GET',
+      }
+    );
+  }
+
   public resetPassword(email: string): Observable<any> {
     return this.publicRequest('users/resetPassword', { method: 'POST', body: { email } });
   }
@@ -1201,14 +1210,14 @@ export class ApiService {
     }
   }
 
-  private errorFormatter(error: AjaxResponse) {
+  private errorFormatter(error) {
     return {
       ...error,
-      title: error.response?.title ? error.response.title : LANG.EN.ERRORS.DEFAULT,
+      title: error.response?.message || error.response?.title || LANG.EN.ERRORS.DEFAULT,
       errors: error.response?.errors ? error.response.errors : {},
       response: {
         ...error.response,
-        title: error.response?.title ? error.response.title : LANG.EN.ERRORS.DEFAULT,
+        title: error.response?.message || error.response?.title || LANG.EN.ERRORS.DEFAULT,
         errors: error.response?.errors ? error.response.errors : {},
       },
     };

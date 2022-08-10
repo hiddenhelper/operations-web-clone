@@ -7,7 +7,7 @@ import CreateIcon from '@material-ui/icons/Create';
 
 import Card from '../../../shared/ResourceManagement/Card';
 
-import { GeneralModel, WorkerModel } from '../../../../models';
+import { GeneralModel, WorkerModel, UserModel } from '../../../../models';
 import {
   getConditionalDefaultValue,
   getDefaultValue,
@@ -21,15 +21,15 @@ import { useStyles } from '../styles';
 import { useStyles as buttonStyles } from '../../../shared/FormHandler/ControlledButton/styles';
 import { cardGlobalStyles, formGlobalStyles } from '../../../../../assets/styles';
 import { AddressFields } from '../../../../models/address';
+import PermissionGuard from 'modules/views/shared/PermissionGuard';
 
 export interface IReviewProps {
   model: WorkerModel.IWorker;
   edit?: boolean;
-  isFCAdmin: boolean;
   onPageChange?: (key: string) => void;
 }
 
-const Review = ({ model, edit, isFCAdmin, onPageChange }: IReviewProps) => {
+const Review = ({ model, edit, onPageChange }: IReviewProps) => {
   const classes = useStyles();
   const buttonClasses = buttonStyles();
   const cardGlobalClasses = cardGlobalStyles();
@@ -46,15 +46,11 @@ const Review = ({ model, edit, isFCAdmin, onPageChange }: IReviewProps) => {
         hideSecondaryAction={false}
         actionStyleClass={getConditionalDefaultValue(edit, formGlobalClasses.secondaryActionsIcon, '')}
         secondaryAction={
-          <IconButton
-            className={buttonClasses.editButton}
-            disableRipple={true}
-            onClick={handleEditReview}
-            data-testid="review-info-edit-button"
-            disabled={!isFCAdmin}
-          >
-            <CreateIcon />
-          </IconButton>
+          <PermissionGuard permissionsExpression={UserModel.WorkersPermission.MANAGE}>
+            <IconButton className={buttonClasses.editButton} disableRipple={true} onClick={handleEditReview} data-testid="review-info-edit-button">
+              <CreateIcon />
+            </IconButton>
+          </PermissionGuard>
         }
       >
         <div className={classes.reviewCardBody}>

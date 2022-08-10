@@ -193,7 +193,10 @@ const UserRow = ({
               show={!!getErrors('email', index)}
               error={getConditionalDefaultValue(getErrors('email', index) === 'is required', 'Please enter Email Address.', getErrors('email', index))}
             >
-              <ControlledInput styleClass={`${formClasses.userWrapper} ${!showInviteAs ? formClasses.userInputControl : ''}`} label="Email Address">
+              <ControlledInput
+                styleClass={`${formClasses.userWrapper} ${!showInviteAs ? formClasses.userInputControl : ''}`}
+                label={`Email Address ${Number(user.preferredContactMethod) !== UserModel.PreferredContactMethod.EMAIL ? '(Optional)' : ''}`}
+              >
                 <TextField
                   autoComplete="off"
                   variant="outlined"
@@ -201,7 +204,7 @@ const UserRow = ({
                   type="text"
                   fullWidth={true}
                   name="email"
-                  required={userRules.email.required}
+                  required={userRules.email.required || Number(user.preferredContactMethod) === UserModel.PreferredContactMethod.EMAIL}
                   value={user.email || ''}
                   onChange={onChangeHandler}
                   error={!!getErrors('email', index)}
@@ -284,7 +287,7 @@ const UserRow = ({
                     variant: 'outlined',
                     error: !!getErrors('mobilePhoneNumber', index),
                     name: 'mobilePhoneNumber',
-                    required: formRules?.mobilePhoneNumber?.required || userRules.mobilePhoneNumber.required,
+                    required: userRules.mobilePhoneNumber.required || Number(user.preferredContactMethod) === UserModel.PreferredContactMethod.PHONE,
                     'data-testid': 'mobile-user-phone',
                   }}
                 />

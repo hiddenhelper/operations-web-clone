@@ -19,7 +19,9 @@ export const mapStateToProps = (state: IRootState) => ({
   payLoading: state.general.loadingMap[GENERAL.LOADING_KEY.PAY_INVOICE],
   voidLoading: state.general.loadingMap[GENERAL.LOADING_KEY.MARK_AS_VOID_INVOICE],
   confirmInvoiceLoading: state.general.loadingMap[GENERAL.LOADING_KEY.CONFIRM_INVOICE],
-  userRole: state.auth.role,
+  currentUserPermissions: state.auth.session.permissions,
+  isFcaUser: state.auth.isFcaUser,
+  isAdmin: state.auth.isAdmin,
 });
 
 export const mapDispatchToProps = (dispatch: Dispatch) => ({

@@ -8,7 +8,7 @@ import StatusWidget from '../../shared/StatusWidget';
 import ButtonTab from '../../shared/ButtonTab';
 import Container from '../../shared/Container';
 import SelectFilter from '../../shared/SelectFilter';
-import RoleGuard from '../../shared/RoleGuard';
+import PermissionGuard from 'modules/views/shared/PermissionGuard';
 import InvoiceTable from '../../shared/InvoiceTable';
 import CreateInvoiceModal from '../../shared/CreateInvoiceModal';
 import PageTitle from '../../shared/PageTitle';
@@ -23,7 +23,6 @@ import { useStyles } from './styles';
 import { useTimeZone } from '../../../../utils/useTimeZone';
 
 export interface IInvoiceListProps {
-  userRole: UserModel.Role;
   invoiceMap: GeneralModel.IEntityMap<InvoiceModel.IInvoice>;
   saveInvoiceLoading: GeneralModel.ILoadingStatus;
   editInvoiceLoading: GeneralModel.ILoadingStatus;
@@ -31,6 +30,8 @@ export interface IInvoiceListProps {
   invoiceStatistics: StatisticsModel.IInvoiceStatistics;
   fetchInvoiceLoading: GeneralModel.ILoadingStatus;
   payInvoiceLoading: GeneralModel.ILoadingStatus;
+  isFcaUser: boolean;
+  isAdmin: boolean;
   saveInvoice: (invoice: InvoiceModel.IInvoice, action: InvoiceModel.InvoiceStep) => void;
   editInvoice: (id: string, invoice: InvoiceModel.IInvoice, action: InvoiceModel.InvoiceStep) => void;
   fetchInvoiceList: (params: GeneralModel.IQueryParams) => void;
@@ -40,7 +41,6 @@ export interface IInvoiceListProps {
 }
 
 const InvoiceList = ({
-  userRole,
   invoiceMap,
   saveInvoiceLoading,
   editInvoiceLoading,
@@ -48,6 +48,8 @@ const InvoiceList = ({
   invoiceStatisticsLoading,
   fetchInvoiceLoading,
   payInvoiceLoading,
+  isFcaUser,
+  isAdmin,
   saveInvoice,
   editInvoice,
   fetchInvoiceList,
@@ -70,7 +72,7 @@ const InvoiceList = ({
   const [submitAction, setSubmitAction] = useState<InvoiceModel.InvoiceStep>(null);
 
   const currentInvoice = useMemo(() => invoiceMap[invoiceId] || InvoiceModel.getFallbackInvoice(), [invoiceId, invoiceMap]);
-  const isFcAdmin = useMemo(() => userRole === UserModel.Role.FCA_ADMIN, [userRole]);
+  const isFcAdmin = useMemo(() => isFcaUser && isAdmin, [isFcaUser, isAdmin]);
   const filterList = useMemo(() => Object.values(InvoiceModel.filterMap).sort((a, b) => a.order - b.order), []);
 
   const onConfirm = useCallback(
@@ -147,7 +149,12 @@ const InvoiceList = ({
           <PageTitle
             title="Invoices"
             right={
-              <RoleGuard roleList={[UserModel.Role.FCA_ADMIN]}>
+              <PermissionGuard
+                permissionsExpression={`
+                  ${UserModel.InvoicesPermission.MANAGE} AND
+                  ${UserModel.ClientsPermission.VIEWACCESS}
+                `}
+              >
                 <Button
                   className={`${buttonClasses.createButton} ${buttonClasses.primaryButtonLarge}`}
                   color="primary"
@@ -159,7 +166,7 @@ const InvoiceList = ({
                 >
                   Create Invoice
                 </Button>
-              </RoleGuard>
+              </PermissionGuard>
             }
           />
           <div className={listClasses.widgetsWrapper} id="summary-widgets">

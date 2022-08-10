@@ -35,9 +35,9 @@ import { sanitizeClient } from '../../../../utils/clientUtils';
 import { tableGlobalStyles, listGlobalStyles } from '../../../../assets/styles';
 import { useStyles as modalStyles } from '../../shared/Modal/style';
 import { useStyles } from './styles';
+import PermissionGuard from 'modules/views/shared/PermissionGuard';
 
 export interface IClientDetailProps {
-  userRole: UserModel.Role;
   clientMap: GeneralModel.IEntityMap<ClientModel.IClient>;
   mwbeList: GeneralModel.INamedEntity[];
   tradeList: GeneralModel.INamedEntity[];
@@ -45,6 +45,8 @@ export interface IClientDetailProps {
   updateClientLoading: GeneralModel.ILoadingStatus;
   clientLoading: GeneralModel.ILoadingStatus;
   statisticsLoading: GeneralModel.ILoadingStatus;
+  isFcaUser: boolean;
+  isAdmin: boolean;
   fetchClient: (id: string) => void;
   clearClientMap: () => void;
   fetchMwbe: () => void;
@@ -59,7 +61,6 @@ export interface IClientDetailProps {
 }
 
 const ClientDetail = ({
-  userRole,
   clientMap,
   mwbeList,
   tradeList,
@@ -67,6 +68,8 @@ const ClientDetail = ({
   updateClientLoading,
   clientLoading,
   statisticsLoading,
+  isFcaUser,
+  isAdmin,
   fetchClient,
   clearClientMap,
   fetchMwbe,
@@ -110,7 +113,7 @@ const ClientDetail = ({
   ]);
 
   const isArchived = useMemo(() => currentClient.status === ResourceModel.CompanyStatus.ARCHIVED, [currentClient.status]);
-  const isFcAdmin = useMemo(() => userRole === UserModel.Role.FCA_ADMIN, [userRole]);
+  const isFcAdmin = useMemo(() => isFcaUser && isAdmin, [isFcaUser, isAdmin]);
 
   const onPageChange = useCallback(
     newPage => {
@@ -232,24 +235,45 @@ const ClientDetail = ({
           </Typography>
         </div>
         <div className={listClasses.widgetsWrapper} id="summary-widgets">
-          <StatusWidget
-            total={getDefaultValue(clientStatistics?.projects, 0)}
-            status="Projects"
-            content={<Link to={`/clients/detail/${clientId}/projects`}>Review</Link>}
-            loading={statisticsLoading?.isLoading}
-          />
-          <StatusWidget
-            total={getDefaultValue(clientStatistics?.workers, 0)}
-            status="Workers"
-            content={<Link to={`/clients/detail/${clientId}/workers`}>Review</Link>}
-            loading={statisticsLoading?.isLoading}
-          />
-          <StatusWidget
-            total={`$ ${getDefaultValue(formatNumberWithCommas(getFormattedDecimalNumber(clientStatistics?.revenue)), 0)}`}
-            status="Revenue"
-            content={null}
-            loading={statisticsLoading?.isLoading}
-          />
+          <PermissionGuard
+            permissionsExpression={`
+            ${UserModel.ClientsPermission.VIEWACCESS} AND
+            ${UserModel.ClientProjectsPermission.VIEWACCESS}
+            `}
+          >
+            <StatusWidget
+              total={getDefaultValue(clientStatistics?.projects, 0)}
+              status="Projects"
+              content={<Link to={`/clients/detail/${clientId}/projects`}>Review</Link>}
+              loading={statisticsLoading?.isLoading}
+            />
+          </PermissionGuard>
+          <PermissionGuard
+            permissionsExpression={`
+            ${UserModel.ClientsPermission.VIEWACCESS} AND
+            ${UserModel.ClientProjectsPermission.VIEWACCESS}
+            `}
+          >
+            <StatusWidget
+              total={getDefaultValue(clientStatistics?.workers, 0)}
+              status="Workers"
+              content={<Link to={`/clients/detail/${clientId}/workers`}>Review</Link>}
+              loading={statisticsLoading?.isLoading}
+            />
+          </PermissionGuard>
+          <PermissionGuard
+            permissionsExpression={`
+            ${UserModel.ClientsPermission.VIEWACCESS} AND
+            ${UserModel.ClientProjectsPermission.VIEWACCESS}
+            `}
+          >
+            <StatusWidget
+              total={`$ ${getDefaultValue(formatNumberWithCommas(getFormattedDecimalNumber(clientStatistics?.revenue)), 0)}`}
+              status="Revenue"
+              content={null}
+              loading={statisticsLoading?.isLoading}
+            />
+          </PermissionGuard>
         </div>
         <div className={tableGlobalClasses.tableWrapper}>
           <div className={tableGlobalClasses.filterContainer}>
@@ -263,14 +287,21 @@ const ClientDetail = ({
           </div>
           {!isClientLoaded && 'Loading...'}
           {isClientLoaded && currentTab === 'projects' && (
-            <ProjectsTab
-              clientId={currentClient.id}
-              queryParams={queryParams}
-              setQueryParams={setQueryParams}
-              onPageChange={onPageChange}
-              drawer={drawer.open}
-              setDrawer={setDrawer}
-            />
+            <PermissionGuard
+              permissionsExpression={`
+                ${UserModel.ClientsPermission.MANAGE} AND
+                ${UserModel.ClientsPermission.VIEWACCESS}
+              `}
+            >
+              <ProjectsTab
+                clientId={currentClient.id}
+                queryParams={queryParams}
+                setQueryParams={setQueryParams}
+                onPageChange={onPageChange}
+                drawer={drawer.open}
+                setDrawer={setDrawer}
+              />
+            </PermissionGuard>
           )}
           {isClientLoaded && currentTab === 'users' && <UsersTab clientId={currentClient.id} queryParams={queryParams} onPageChange={onPageChange} />}
           {isClientLoaded && currentTab === 'workers' && (
@@ -303,9 +334,17 @@ const ClientDetail = ({
             <>
               <Review model={currentClient} edit={true} editAction={handleEditDialogOpen} mwbeList={mwbeList} />
               <Card title={archiveCardTitle}>
-                <Button color="primary" variant="outlined" className={classes.archiveButton} onClick={handleArchiveClientDialogOpen} data-testid="archive-btn">
-                  {archiveButtonLabel}
-                </Button>
+                <PermissionGuard permissionsExpression={UserModel.ClientsPermission.MANAGE}>
+                  <Button
+                    color="primary"
+                    variant="outlined"
+                    className={classes.archiveButton}
+                    onClick={handleArchiveClientDialogOpen}
+                    data-testid="archive-btn"
+                  >
+                    {archiveButtonLabel}
+                  </Button>
+                </PermissionGuard>
               </Card>
             </>
           )}

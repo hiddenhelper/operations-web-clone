@@ -13,6 +13,8 @@ import { useStyles } from './styles';
 import { useStyles as statusChipStyles } from '../../StatusChip/styles';
 import { generalGlobalStyles } from '../../../../../assets/styles';
 import { useHideScroll } from '../../../../../utils/useHideScroll';
+import PermissionGuard from '../../PermissionGuard';
+import { UserModel } from 'modules/models';
 
 export interface INavigationTopProps {
   breadCrumb: { route: string; title: string; pluralTitle: string };
@@ -99,19 +101,21 @@ const NavigationTop = ({
         <div className={classes.rightSidebarStatus}>
           Status: <StatusChip styleClasses={statusChipClasses[resourceStatus]} label={status} />
         </div>
-        <ButtonLoader
-          data-testid="approve-btn"
-          className={classes.approveButton}
-          color="primary"
-          variant="contained"
-          fullWidth={true}
-          size="large"
-          disabled={isConfirmEnabled}
-          isLoading={isLoading}
-          text={buttonLoaderTextMap[resourceStatus].text}
-          loadingText={buttonLoaderTextMap[resourceStatus].loadingText}
-          onClick={onConfirmHandler}
-        />
+        <PermissionGuard permissionsExpression={UserModel.DraftClientsPermission.APPROVE}>
+          <ButtonLoader
+            data-testid="approve-btn"
+            className={classes.approveButton}
+            color="primary"
+            variant="contained"
+            fullWidth={true}
+            size="large"
+            disabled={isConfirmEnabled}
+            isLoading={isLoading}
+            text={buttonLoaderTextMap[resourceStatus].text}
+            loadingText={buttonLoaderTextMap[resourceStatus].loadingText}
+            onClick={onConfirmHandler}
+          />
+        </PermissionGuard>
       </Grid>
     </Grid>
   );
