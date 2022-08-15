@@ -12,8 +12,8 @@ export enum WorkerStatusFilter {
 }
 
 export enum WorkerStatus {
-  ACTIVE = 0,
   PENDING_REGISTRATION = 1,
+  ACTIVE = 0,
   EXPIRED = 2,
   NOT_INVITED = 3,
   MIGRATED = 4,

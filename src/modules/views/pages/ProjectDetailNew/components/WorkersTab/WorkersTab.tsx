@@ -30,7 +30,7 @@ export interface IWorkersTabProps {
   summaryLoading: GeneralModel.ILoadingStatus;
   isModalOpen: boolean;
   ctaDisabled: boolean;
-  isFcAdmin: boolean;
+  isFcaUser: boolean;
   modalMap: GeneralModel.IEntityMap<WorkerModel.IWorker>;
   drawer: { open: boolean; id: string };
   setDrawer: ({ open: boolean, id: string }) => void;
@@ -62,7 +62,7 @@ const WorkersTab = ({
   summaryLoading,
   isModalOpen,
   ctaDisabled,
-  isFcAdmin,
+  isFcaUser,
   modalCount,
   modalMap,
   drawer,
@@ -134,7 +134,7 @@ const WorkersTab = ({
             queryParams={queryParams}
             clientMap={clientMap[projectId]}
             projectId={projectId}
-            isFcAdmin={isFcAdmin}
+            isFcaUser={isFcaUser}
             setQueryParams={setQueryParams}
             fetchClientList={fetchProjectClientList}
           />
@@ -161,8 +161,8 @@ const WorkersTab = ({
               <TableHead>
                 <TableRow>
                   <TableCell>Name</TableCell>
-                  {isFcAdmin && <TableCell>Client</TableCell>}
-                  {!isFcAdmin && <TableCell>Company</TableCell>}
+                  {isFcaUser && <TableCell>Client</TableCell>}
+                  {!isFcaUser && <TableCell>Company</TableCell>}
                   <TableCell>Trades</TableCell>
                   <TableCell>Status in Project</TableCell>
                 </TableRow>
@@ -197,7 +197,7 @@ const WorkersTab = ({
           <WorkerModal
             projectId={currentProject.id}
             count={modalCount}
-            isFcAdmin={isFcAdmin}
+            isFcaUser={isFcaUser}
             clientProjectMap={clientMap}
             loading={loadWorkerModalLoading}
             assignLoading={assignLoading}

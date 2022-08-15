@@ -14,10 +14,10 @@ export const saveWorkerStart: Epic<IAction, IAction, IRootState, IEpicDependenci
   action$.pipe(
     ofType(ActionType.SAVE_WORKER_START),
     mergeMap(({ payload }) => {
-      const isFCAAdmin = state$.value.auth.isFcaUser && state$.value.auth.isAdmin;
+      const isFcaUser = state$.value.auth.isFcaUser;
       return concat(
         of(generalState.actions.setLoading(GENERAL.LOADING_KEY.SAVE_WORKER, true)),
-        (isFCAAdmin ? deps.apiService.saveWorker(payload.worker) : deps.apiService.saveSelfWorker(payload.worker)).pipe(
+        (isFcaUser ? deps.apiService.saveWorker(payload.worker) : deps.apiService.saveSelfWorker(payload.worker)).pipe(
           mergeMap(res =>
             of(
               actions.fetchWorkerListSuccess([res], 1),
@@ -76,10 +76,10 @@ export const fetchWorkerListStart: Epic<IAction, IAction, IRootState, IEpicDepen
   action$.pipe(
     ofType(ActionType.FETCH_WORKER_LIST_START),
     mergeMap(({ payload }) => {
-      const isFCAAdmin = state$.value.auth.isFcaUser && state$.value.auth.isAdmin;
+      const isFcaUser = state$.value.auth.isFcaUser;
       return concat(
         of(generalState.actions.setLoading(GENERAL.LOADING_KEY.FETCH_WORKER_LIST, true)),
-        (isFCAAdmin ? deps.apiService.getWorkerList(payload.query) : deps.apiService.getSelfWorkerList(payload.query)).pipe(
+        (isFcaUser ? deps.apiService.getWorkerList(payload.query) : deps.apiService.getSelfWorkerList(payload.query)).pipe(
           map(res => actions.fetchWorkerListSuccess(res.items, res.totalResults))
         ),
         of(generalState.actions.setLoading(GENERAL.LOADING_KEY.FETCH_WORKER_LIST, false))

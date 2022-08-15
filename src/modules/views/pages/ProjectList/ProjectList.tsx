@@ -27,9 +27,11 @@ import { useLocationFilter } from '../../../../utils/useLocationFilter';
 import { tableGlobalStyles } from '../../../../assets/styles/Tables/styles';
 import { useStyles as buttonStyles } from '../../shared/FormHandler/ControlledButton/styles';
 import { listGlobalStyles } from '../../../../assets/styles';
+import { useStyles as classStyles } from './styles';
 import { useTimeZone } from '../../../../utils/useTimeZone';
 import { hasValidPermissions } from 'modules/models/user';
 import PermissionGuard from 'modules/views/shared/PermissionGuard';
+import StatusWidget from 'modules/views/shared/StatusWidget';
 
 export interface IProjectListProps {
   userRole: UserModel.Role;
@@ -80,6 +82,7 @@ const ProjectList = ({
   deleteProject,
   updateCurrentFilter,
 }: IProjectListProps) => {
+  const classes = classStyles();
   const tableGlobalClasses = tableGlobalStyles();
   const buttonClasses = buttonStyles();
   const listClasses = listGlobalStyles();
@@ -241,44 +244,79 @@ const ProjectList = ({
             </PermissionGuard>
           }
         />
-        <div className={listClasses.widgetsWrapper} id="summary-widgets">
-          {/* <StatusWidget
-            total={getConditionalDefaultValue(isFcaUser, getDefaultValue(projectStatistics?.draft, 0), getDefaultValue(projectStatistics?.pending, 0))}
-            status={ProjectModel.widgetMap[userRole].First.status}
-            content={
-              <p className={classes.reviewLink} onClick={() => setFilter(ResourceModel.Status.DRAFT)}>
-                {ProjectModel.widgetMap[userRole].First.content}
-              </p>
-            }
-            loading={statisticsLoading?.isLoading}
-          /> */}
-          {/* <StatusWidget
-            total={getConditionalDefaultValue(
-              isFcaUser,
-              getDefaultValue(projectStatistics?.pendingApproval, 0),
-              getDefaultValue(projectStatistics?.accepted, 0)
+        <PermissionGuard permissionsExpression={UserModel.StatisticsPermission.Projects}>
+          <div className={listClasses.widgetsWrapper} id="summary-widgets">
+            {isFcaUser ? (
+              <StatusWidget
+                total={getDefaultValue(projectStatistics?.draft, 0)}
+                status={ProjectModel.widgetMap.Draft.status}
+                content={
+                  <p className={classes.reviewLink} onClick={() => setFilter(ResourceModel.Status.DRAFT)}>
+                    {ProjectModel.widgetMap.Draft.content}
+                  </p>
+                }
+                loading={statisticsLoading?.isLoading}
+              />
+            ) : (
+              <StatusWidget
+                total={getDefaultValue(projectStatistics?.pending, 0)}
+                status={ProjectModel.widgetMap.Invitation.status}
+                content={
+                  <p className={classes.reviewLink} onClick={() => setFilter(ResourceModel.Status.DRAFT)}>
+                    {ProjectModel.widgetMap.Invitation.content}
+                  </p>
+                }
+                loading={statisticsLoading?.isLoading}
+              />
             )}
-            status={ProjectModel.widgetMap[userRole].Second.status}
-            content={
-              <p className={classes.reviewLink} onClick={() => setFilter(ResourceModel.Status.PENDING_APPROVAL)}>
-                {ProjectModel.widgetMap[userRole].Second.content}
-              </p>
-            }
-            loading={statisticsLoading?.isLoading}
-          /> */}
-          {/* <StatusWidget
-            total={ProjectModel.widgetMap[userRole].Third.total(
-              getConditionalDefaultValue(isFcaUser, getDefaultValue(projectStatistics?.active, 0), getDefaultValue(projectStatistics?.billing, 0))
+            {isFcaUser ? (
+              <StatusWidget
+                total={getDefaultValue(projectStatistics?.pendingApproval, 0)}
+                status={ProjectModel.widgetMap.Pending.status}
+                content={
+                  <p className={classes.reviewLink} onClick={() => setFilter(ResourceModel.Status.PENDING_APPROVAL)}>
+                    {ProjectModel.widgetMap.Pending.content}
+                  </p>
+                }
+                loading={statisticsLoading?.isLoading}
+              />
+            ) : (
+              <StatusWidget
+                total={getDefaultValue(projectStatistics?.accepted, 0)}
+                status={ProjectModel.widgetMap.Active.status}
+                content={
+                  <p className={classes.reviewLink} onClick={() => setFilter(ResourceModel.Status.PENDING_APPROVAL)}>
+                    {ProjectModel.widgetMap.Active.content}
+                  </p>
+                }
+                loading={statisticsLoading?.isLoading}
+              />
             )}
-            status={ProjectModel.widgetMap[userRole].Third.status}
-            content={
-              <p className={classes.reviewLink} onClick={() => setFilter(ResourceModel.Status.ACTIVE)}>
-                {ProjectModel.widgetMap[userRole].Third.content}
-              </p>
-            }
-            loading={statisticsLoading?.isLoading}
-          /> */}
-        </div>
+            {isFcaUser ? (
+              <StatusWidget
+                total={getDefaultValue(projectStatistics?.active, 0)}
+                status={ProjectModel.widgetMap.Active.status}
+                content={
+                  <p className={classes.reviewLink} onClick={() => setFilter(ResourceModel.Status.ACTIVE)}>
+                    {ProjectModel.widgetMap.Active.content}
+                  </p>
+                }
+                loading={statisticsLoading?.isLoading}
+              />
+            ) : (
+              <StatusWidget
+                total={ProjectModel.widgetMap.Invoices.total(getDefaultValue(projectStatistics?.billing, 0))}
+                status={ProjectModel.widgetMap.Invoices.status}
+                content={
+                  <p className={classes.reviewLink} onClick={() => setFilter(ResourceModel.Status.ACTIVE)}>
+                    {ProjectModel.widgetMap.Invoices.content}
+                  </p>
+                }
+                loading={statisticsLoading?.isLoading}
+              />
+            )}
+          </div>
+        </PermissionGuard>
         <div className={tableGlobalClasses.tableWrapper}>
           <div className={tableGlobalClasses.filterContainer}>
             <div className={tableGlobalClasses.statusFilter}>

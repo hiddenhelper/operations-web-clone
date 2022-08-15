@@ -13,15 +13,16 @@ import ClientRow from './components/ClientRow';
 
 import { ClientModel, GeneralModel, ResourceModel, StatisticsModel, UserModel } from 'modules/models';
 import { getDrawerButton } from 'utils/clientUtils';
-import { getConditionalDefaultValue, getDefaultValue, sortByOrder } from 'utils/generalUtils';
+import { getConditionalDefaultValue, getDefaultValue } from 'utils/generalUtils';
 import { useQueryParamState } from 'utils/useQueryParamState';
 import { listGlobalStyles, tableGlobalStyles } from 'assets/styles';
 import { useStyles as buttonStyles } from 'modules/views/shared/FormHandler/ControlledButton/styles';
 import { useStyles } from './styles';
 import PermissionGuard from 'modules/views/shared/PermissionGuard';
+import { hasValidPermissions } from 'modules/models/user';
 
 export interface IClientListProps {
-  userRole: UserModel.Role;
+  currentUserPermissions: UserModel.IPermission[];
   clientMap: GeneralModel.IEntityMap<ClientModel.IClient>;
   mwbeList: GeneralModel.INamedEntity[];
   clientCount: number;
@@ -47,7 +48,7 @@ interface IQueryParams {
 }
 
 const ClientList = ({
-  userRole,
+  currentUserPermissions,
   clientCount,
   clientMap,
   mwbeList,
@@ -69,24 +70,26 @@ const ClientList = ({
   const tableGlobalClasses = tableGlobalStyles();
   const buttonClasses = buttonStyles();
   const classes = useStyles();
-
   const clientListRef = useRef();
-  const [queryParams, setQueryParams] = useQueryParamState<IQueryParams>({
-    filter: ResourceModel.companyFilterMap[ResourceModel.CompanyStatus.DRAFT].key,
-    page: 1,
-    limit: 15,
-  });
   const [openDrawer, setOpenDrawer] = useState<boolean>(false);
   const [companyId, setCompanyId] = useState<string>(null);
   const currentClient = useMemo(() => clientMap[companyId] || ClientModel.getFallbackClient(), [clientMap, companyId]);
   const clientList: ClientModel.IClient[] = useMemo(() => Object.values(clientMap), [clientMap]);
+  // console.log(clientList);
   const filterList = useMemo(
     () =>
-      Object.values(ResourceModel.companyFilterMap)
-        .filter(item => item.roleList.includes(userRole))
-        .sort(sortByOrder),
-    [userRole]
+      Object.values(ResourceModel.companyFilterMap).filter(item => {
+        return hasValidPermissions(item.permissionsExpression, currentUserPermissions);
+      }),
+    [currentUserPermissions]
   );
+  // console.log(filterList);
+
+  const [queryParams, setQueryParams] = useQueryParamState<IQueryParams>({
+    filter: filterList[2].key,
+    page: 1,
+    limit: 15,
+  });
 
   const pageCount = useMemo(() => Math.ceil(clientCount / queryParams.limit), [clientCount, queryParams.limit]);
 
@@ -118,6 +121,7 @@ const ClientList = ({
   );
 
   const closeClient = useCallback(() => setOpenDrawer(false), [setOpenDrawer]);
+
   const setFilter = useCallback(
     filter => {
       setQueryParams({ filter: ResourceModel.companyFilterMap[filter].key, page: 1 });
@@ -230,21 +234,23 @@ const ClientList = ({
         />
         <div className={listClasses.widgetsWrapper} id="summary-widgets">
           <StatusWidget
-            total={getDefaultValue(clientStatistics?.draft, 0)}
-            status="Draft"
-            content={<Link to="/clients/?filter=draft">Review</Link>}
+            total={getDefaultValue(clientStatistics?.active, 0)}
+            status="Active"
+            content={<Link to="/clients/?filter=active">Review</Link>}
             loading={statisticsLoading?.isLoading}
           />
+          <PermissionGuard permissionsExpression={UserModel.DraftClientsPermission.VIEWACCESS}>
+            <StatusWidget
+              total={getDefaultValue(clientStatistics?.draft, 0)}
+              status="Draft"
+              content={<Link to="/clients/?filter=draft">Review</Link>}
+              loading={statisticsLoading?.isLoading}
+            />
+          </PermissionGuard>
           <StatusWidget
             total={getDefaultValue(clientStatistics?.pendingApproval, 0)}
             status="Pending Approval"
             content={<Link to="/clients/?filter=pending-approval">Review</Link>}
-            loading={statisticsLoading?.isLoading}
-          />
-          <StatusWidget
-            total={getDefaultValue(clientStatistics?.active, 0)}
-            status="Active"
-            content={<Link to="/clients/?filter=active">Review</Link>}
             loading={statisticsLoading?.isLoading}
           />
         </div>
@@ -258,24 +264,20 @@ const ClientList = ({
           </div>
           {listLoading && !listLoading.isLoading ? (
             <>
-              <PermissionGuard permissionsExpression={UserModel.DraftClientsPermission.VIEWACCESS}>
-                <Table aria-label="company-list">
-                  <TableHead>
-                    <TableRow>
-                      <TableCell>Name</TableCell>
-                      <TableCell>Trades</TableCell>
-                    </TableRow>
-                  </TableHead>
-                  <TableBody>
-                    {clientList.map(company => (
-                      <ClientRow key={company.id} company={company} onOpen={openClient} />
-                    ))}
-                  </TableBody>
-                </Table>
-              </PermissionGuard>
-              <PermissionGuard permissionsExpression={UserModel.DraftClientsPermission.VIEWACCESS}>
-                <Pagination page={queryParams.page} count={pageCount} onChange={onPageChange} />
-              </PermissionGuard>
+              <Table aria-label="company-list">
+                <TableHead>
+                  <TableRow>
+                    <TableCell>Name</TableCell>
+                    <TableCell>Trades</TableCell>
+                  </TableRow>
+                </TableHead>
+                <TableBody>
+                  {clientList.map(company => (
+                    <ClientRow key={company.id} company={company} onOpen={openClient} />
+                  ))}
+                </TableBody>
+              </Table>
+              <Pagination page={queryParams.page} count={pageCount} onChange={onPageChange} />
             </>
           ) : (
             'Loading...'

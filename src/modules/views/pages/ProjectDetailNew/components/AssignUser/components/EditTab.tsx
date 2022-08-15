@@ -1,4 +1,4 @@
-import React, { memo, useCallback, useEffect, useMemo } from 'react';
+import React, { memo, useCallback, useEffect } from 'react';
 
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
@@ -43,7 +43,6 @@ const EditTab = ({
   const classes = useStyles();
   const assignModalClasses = AssignModalStyles();
   const buttonClasses = buttonStyles();
-  const isFcAdmin = useMemo(() => isFcaUser && isAdmin, [isFcaUser, isAdmin]);
 
   const onUpdate = useCallback(
     user => {
@@ -128,7 +127,7 @@ const EditTab = ({
               fetchGroupSearch={fetchGroupSearch}
               groupList={groupList}
               companyId={companyId}
-              isFcAdmin={isFcAdmin}
+              isFcaUser={isFcaUser}
             />
           </div>
           <ButtonLoader

@@ -54,7 +54,7 @@ describe.skip('InvoicesTab', () => {
         [getInvoice_2().id]: getInvoice_2(),
       },
       listElement: {},
-      isFcAdmin: true,
+      isFcaUser: true,
       drawer: false,
       onPageChange: jest.fn(),
       fetchProjectInvoiceList: jest.fn(),

@@ -75,7 +75,7 @@ const GeneralInformation = ({
   );
   return (
     <>
-      {isFcaUser && isAdmin && (
+      {isFcaUser && (
         <>
           <Card title="Project Name">
             <ControlledError show={!!errors.name} error={!!errors.name && errors.name === 'is required' ? 'Please enter Project Name.' : errors.name}>

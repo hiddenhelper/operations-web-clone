@@ -35,7 +35,7 @@ export interface IAssignUserProps {
   count: number;
   currentUserRole: UserModel.Role;
   userCompanyId: string;
-  isFcAdmin: boolean;
+  isFcaUser: boolean;
   isEditUser: boolean;
   userMap: GeneralModel.IEntityMap<UserModel.IUser>;
   clientMap: GeneralModel.IEntityMap<ClientModel.IClient>;
@@ -46,8 +46,7 @@ export interface IAssignUserProps {
   assignLoading: GeneralModel.ILoadingStatus;
   userRoleList: GeneralModel.INamedEntity[];
   clientProjectMap?: GeneralModel.IEntityMap<GeneralModel.IEntityMap<ClientModel.IClientProject>>;
-  isFcaUser: boolean;
-  isAdmin: boolean;
+  isAdmin?: boolean;
   closeModal: () => void;
   clearErrors: () => void;
   fetchUserProjectList: (query: any) => void;
@@ -77,7 +76,6 @@ const AssignUser = ({
   userCompanyId,
   userRoleList,
   count,
-  isFcAdmin,
   isEditUser,
   loading,
   saveUserLoading,
@@ -321,7 +319,7 @@ const AssignUser = ({
                     queryParams={queryParams}
                     clientMap={clientProjectMap[id]}
                     projectId={id}
-                    isFcAdmin={isFcAdmin}
+                    isFcaUser={isFcaUser}
                     setQueryParams={setQueryParams}
                     fetchClientList={fetchProjectClientList}
                   />
@@ -346,7 +344,7 @@ const AssignUser = ({
                         queryParams={queryParams}
                         clientMap={clientProjectMap[id]}
                         projectId={id}
-                        isFcAdmin={isFcAdmin}
+                        isFcaUser={isFcaUser}
                         setQueryParams={setQueryParams}
                         fetchClientList={fetchProjectClientList}
                       />
@@ -389,7 +387,7 @@ const AssignUser = ({
                     <Table aria-label="user-list">
                       <TableHead>
                         <TableRow>
-                          {isFcAdmin && (
+                          {isFcaUser && (
                             <>
                               <TableCell>Name</TableCell>
                               <TableCell>Type</TableCell>
@@ -398,7 +396,7 @@ const AssignUser = ({
                               <TableCell>Project Role</TableCell>
                             </>
                           )}
-                          {!isFcAdmin && (
+                          {!isFcaUser && (
                             <>
                               <TableCell>Name</TableCell>
                               <TableCell>Title</TableCell>
@@ -417,7 +415,7 @@ const AssignUser = ({
                             roleList={userRoleList}
                             onSelect={onSelectUser}
                             onChange={onChangeRole}
-                            isFcAdmin={isFcAdmin}
+                            isFcaUser={isFcaUser}
                           />
                         ))}
                       </TableBody>

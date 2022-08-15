@@ -25,7 +25,6 @@ export interface IUsersProps {
 }
 
 const Users = ({ isFcaUser, isAdmin, userList = [], errors, onChange, countryList, groupList, fetchGroupSearch, companyId }: IUsersProps) => {
-  const isFcAdmin = useMemo(() => isFcaUser && isAdmin, [isFcaUser, isAdmin]);
   const formClasses = formGlobalStyles();
   const buttonGlobalStyles = buttonStyles();
   const currentUserList = useMemo(() => getConditionalDefaultValue(userList.length === 0, [UserModel.getFallbackUser()], userList), [userList]);
@@ -88,7 +87,7 @@ const Users = ({ isFcaUser, isAdmin, userList = [], errors, onChange, countryLis
           fetchGroupSearch={fetchGroupSearch}
           companyId={companyId}
           groupList={groupList}
-          isFcAdmin={isFcAdmin}
+          isFcaUser={isFcaUser}
         />
       ))}
       <ControlledButton>

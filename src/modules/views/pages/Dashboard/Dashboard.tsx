@@ -112,7 +112,7 @@ const Dashboard = ({
           />
           <DashboardStatusWidget
             loading={getDefaultValue(grossRevenueLoading?.isLoading, true)}
-            title={getConditionalDefaultValue(isFcaUser && isAdmin, 'Revenue', 'Project Invoices')}
+            title={getConditionalDefaultValue(isFcaUser, 'Revenue', 'Project Invoices')}
             content={`$ ${formatNumberWithCommas(getDefaultValue(Math.trunc(grossRevenue?.total), 0))}`}
             renderActivity={
               <span className={statusWidgetClasses.widgetStatus}>

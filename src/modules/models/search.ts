@@ -1,3 +1,4 @@
+import { UserModel } from '.';
 import { IAddress } from './address';
 import { Status } from './resource';
 import { WorkerStatus } from './worker';
@@ -26,14 +27,45 @@ export interface IFilterConfig {
   label: FilterLabel;
   onlyAdmin: boolean;
   value: SearchType;
+  permissionsExpression?: string;
 }
 
 export const searchFiltersConfig: IFilterConfig[] = [
-  { value: SearchType.Project, label: filterLabelsMap[SearchType.Project], onlyAdmin: false, active: true },
-  { value: SearchType.Company, label: filterLabelsMap[SearchType.Company], onlyAdmin: true, active: true },
-  { value: SearchType.Worker, label: filterLabelsMap[SearchType.Worker], onlyAdmin: false, active: true },
-  { value: SearchType.Users, label: filterLabelsMap[SearchType.Users], onlyAdmin: false, active: false },
-  { value: SearchType.Inventory, label: filterLabelsMap[SearchType.Inventory], onlyAdmin: true, active: false },
+  {
+    value: SearchType.Project,
+    label: filterLabelsMap[SearchType.Project],
+    onlyAdmin: false,
+    active: true,
+    permissionsExpression: UserModel.ProjectsPermission.VIEWACCESS,
+  },
+  {
+    value: SearchType.Company,
+    label: filterLabelsMap[SearchType.Company],
+    onlyAdmin: true,
+    active: true,
+    permissionsExpression: UserModel.ClientsPermission.VIEWACCESS,
+  },
+  {
+    value: SearchType.Worker,
+    label: filterLabelsMap[SearchType.Worker],
+    onlyAdmin: false,
+    active: true,
+    permissionsExpression: UserModel.WorkersPermission.VIEWACCESS,
+  },
+  {
+    value: SearchType.Users,
+    label: filterLabelsMap[SearchType.Users],
+    onlyAdmin: false,
+    active: false,
+    permissionsExpression: UserModel.UsersPermission.VIEWACCESS,
+  },
+  {
+    value: SearchType.Inventory,
+    label: filterLabelsMap[SearchType.Inventory],
+    onlyAdmin: true,
+    active: false,
+    permissionsExpression: UserModel.InventoryPermission.STATISTICS,
+  },
 ];
 
 export interface ISearchParams {

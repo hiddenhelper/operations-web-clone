@@ -49,10 +49,10 @@ export const fetchProjectStatisticsStart: Epic<IAction, IAction, IRootState, IEp
   action$.pipe(
     ofType(ActionType.FETCH_PROJECT_STATISTICS_START),
     mergeMap(() => {
-      const isFCAAdmin = state$.value.auth.isFcaUser && state$.value.auth.isAdmin;
+      const isFcaUser = state$.value.auth.isFcaUser;
       return concat(
         of(generalState.actions.setLoading(GENERAL.LOADING_KEY.FETCH_PROJECT_STATISTICS, true)),
-        (isFCAAdmin ? deps.apiService.getProjectStatistics() : deps.apiService.getCompanyProjectStatistics()).pipe(
+        (isFcaUser ? deps.apiService.getProjectStatistics() : deps.apiService.getCompanyProjectStatistics()).pipe(
           map(res => actions.fetchProjectStatisticsSuccess(res))
         ),
         of(generalState.actions.setLoading(GENERAL.LOADING_KEY.FETCH_PROJECT_STATISTICS, false))
@@ -100,10 +100,10 @@ export const fetchWorkerStatisticsStart: Epic<IAction, IAction, IRootState, IEpi
   action$.pipe(
     ofType(ActionType.FETCH_WORKER_STATISTICS_START),
     mergeMap(() => {
-      const isFCAAdmin = state$.value.auth.isFcaUser && state$.value.auth.isAdmin;
+      const isFcaUser = state$.value.auth.isFcaUser;
       return concat(
         of(generalState.actions.setLoading(GENERAL.LOADING_KEY.FETCH_WORKER_STATISTICS, true)),
-        (isFCAAdmin ? deps.apiService.getWorkerStatistics() : deps.apiService.getSelfWorkerStatistics()).pipe(
+        (isFcaUser ? deps.apiService.getWorkerStatistics() : deps.apiService.getSelfWorkerStatistics()).pipe(
           map(res => actions.fetchWorkerStatisticsSuccess(res))
         ),
         of(generalState.actions.setLoading(GENERAL.LOADING_KEY.FETCH_WORKER_STATISTICS, false))

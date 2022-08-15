@@ -24,6 +24,7 @@ describe('WorkerWizardContainer', () => {
       geographicLocationsList: getInitialState().worker.geographicLocationsList,
       isFcaUser: getInitialState().auth.isFcaUser,
       isAdmin: getInitialState().auth.isAdmin,
+      selfCompany: getInitialState().client.selfCompany,
     });
   });
 

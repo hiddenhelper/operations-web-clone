@@ -19,10 +19,10 @@ export interface IWorkerModalRowProps {
   isSelected: boolean;
   worker: WorkerModel.IWorker;
   onSelect: (id: string) => void;
-  isFcAdmin: boolean;
+  isFcaUser: boolean;
 }
 
-const WorkerModalRow = ({ worker, isSelected, onSelect, isFcAdmin }: IWorkerModalRowProps) => {
+const WorkerModalRow = ({ worker, isSelected, onSelect, isFcaUser }: IWorkerModalRowProps) => {
   const globalClasses = tableGlobalStyles();
   const avatarGlobalClasses = avatarGlobalStyles();
   const classes = useStyles();
@@ -49,7 +49,7 @@ const WorkerModalRow = ({ worker, isSelected, onSelect, isFcAdmin }: IWorkerModa
           <TableCellLink href={`/workers/detail/${worker.id}`} text={`${worker.firstName} ${worker.lastName}`} title="View Worker details" />
         </div>
       </TableCell>
-      {isFcAdmin && (
+      {isFcaUser && (
         <TableCell>
           {worker?.company?.id ? <TableCellLink href={`/clients/detail/${worker.company.id}`} text={worker.company.name} title="View Client details" /> : '-'}
         </TableCell>
@@ -57,7 +57,7 @@ const WorkerModalRow = ({ worker, isSelected, onSelect, isFcAdmin }: IWorkerModa
 
       <TableCell>{getTradesString(worker?.trades, worker?.otherTrade)}</TableCell>
       <TableCell>{`${getDefaultValue(worker.projectsCount, 0)} Project${getConditionalDefaultValue(worker.projectsCount === 1, '', 's')}`}</TableCell>
-      {!isFcAdmin && <TableCell>{getDefaultValue(worker?.company?.name)}</TableCell>}
+      {!isFcaUser && <TableCell>{getDefaultValue(worker?.company?.name)}</TableCell>}
     </StyledTableRow>
   );
 };

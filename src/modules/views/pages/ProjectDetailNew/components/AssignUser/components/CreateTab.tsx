@@ -47,17 +47,16 @@ const CreateTab = ({
   const assignModalClasses = AssignModalStyles();
   const buttonClasses = buttonStyles();
   const clientList = useMemo(() => Object.values(clientMap).map(item => ({ value: item.id, label: item.name })), [clientMap]);
-  const isFcAdmin = useMemo(() => isFcaUser && isAdmin, [isFcaUser, isAdmin]);
 
-  const onCreate = useCallback(user => saveUser(getConditionalDefaultValue(isFcAdmin, user.assignClient, userCompanyId), sanitizeUser(user)), [
+  const onCreate = useCallback(user => saveUser(getConditionalDefaultValue(isFcaUser, user.assignClient, userCompanyId), sanitizeUser(user)), [
     saveUser,
     userCompanyId,
-    isFcAdmin,
+    isFcaUser,
   ]);
 
   const { model, errors, onChange, onSubmit, updateRules } = useForm<any>({
     initValues: { ...UserModel.getFallbackUser(), assignClient: '' } as any,
-    formRules: userActiveRules({ assignClientRequired: isFcAdmin }),
+    formRules: userActiveRules({ assignClientRequired: isFcaUser }),
     onSubmitCallback: onCreate,
   });
 
@@ -87,7 +86,7 @@ const CreateTab = ({
           <CloseIcon />
         </Button>
       </div>
-      {isFcAdmin && (
+      {isFcaUser && (
         <div className={`${classes.createUserAssignWrapper} ${classes.errorPosition}`}>
           <div className={classes.createUserAssignInput}>
             <ControlledError
@@ -118,9 +117,9 @@ const CreateTab = ({
           getErrors={getErrors}
           onChange={onChange}
           fetchGroupSearch={fetchGroupSearch}
-          companyId={isFcAdmin ? model.assignClient : userCompanyId}
+          companyId={isFcaUser ? model.assignClient : userCompanyId}
           groupList={groupList}
-          isFcAdmin={isFcAdmin}
+          isFcaUser={isFcaUser}
         />
       </div>
       <PermissionGuard permissionsExpression={UserModel.UsersPermission.MANAGE}>

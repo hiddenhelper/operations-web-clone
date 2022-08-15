@@ -34,7 +34,6 @@ import { hasValidPermissions } from 'modules/models/user';
 
 export interface IVisitorsTabProps {
   projectId: string;
-  isFcAdmin: boolean;
   queryParams: GeneralModel.IQueryParams;
   currentProject: ProjectModel.IProject;
   visitorCount: number;
@@ -61,7 +60,6 @@ export interface IVisitorsTabProps {
 
 const VisitorsTab = ({
   projectId,
-  isFcAdmin,
   visitorCount,
   queryParams,
   currentProject,

@@ -12,7 +12,7 @@ import { useHideScroll } from 'utils/useHideScroll';
 import { isEmpty } from 'utils/generalUtils';
 import { useStyles } from './styles';
 
-const DEFAULT_FILTER = SearchModel.searchFiltersConfig[0];
+const DEFAULT_FILTER = SearchModel.SearchType.NotSet;
 const MIN_SEARCH_LENGHT = 3;
 const PAGE_SIZE = 30;
 
@@ -43,7 +43,7 @@ const Search = ({ clearSearch, loading, loadingMore, searchResults, triggerSearc
 
   const classes = useStyles({ isActive });
 
-  const [selectedFilter, setSelectedFilter] = useState<SearchModel.SearchType>(DEFAULT_FILTER.value);
+  const [selectedFilter, setSelectedFilter] = useState<SearchModel.SearchType>(DEFAULT_FILTER);
   const selectedFilterName = SearchModel.filterLabelsMap[selectedFilter];
   const handleFilterChange = (newFilter: SearchModel.SearchType) => {
     setSelectedFilter(newFilter);
@@ -52,9 +52,9 @@ const Search = ({ clearSearch, loading, loadingMore, searchResults, triggerSearc
   const searchFilters = useMemo(
     () =>
       SearchModel.searchFiltersConfig
-        .filter(filter => !filter.onlyAdmin || (filter.onlyAdmin && isFcaUser && isAdmin))
+        .filter(filter => !filter.onlyAdmin || (filter.onlyAdmin && isFcaUser))
         .map(filter => ({ ...filter, onClick: () => handleFilterChange(filter.value) })),
-    [isFcaUser, isAdmin]
+    [isFcaUser]
   );
 
   const [search, setSearch] = useState<string>();
@@ -67,7 +67,7 @@ const Search = ({ clearSearch, loading, loadingMore, searchResults, triggerSearc
   const handleClose = () => {
     setIsActive(false);
     setSearch(null);
-    setSelectedFilter(DEFAULT_FILTER.value);
+    setSelectedFilter(DEFAULT_FILTER);
   };
 
   useEffect(() => {
@@ -163,7 +163,11 @@ const Search = ({ clearSearch, loading, loadingMore, searchResults, triggerSearc
             handleClear={handleClearSearch}
             inputRef={inputRef}
             isActive={isActive}
-            onChange={handleSearchChange}
+            onChange={e => {
+              if (selectedFilter > SearchModel.SearchType.NotSet) {
+                handleSearchChange(e);
+              }
+            }}
             onClick={() => setIsActive(true)}
             onClose={handleClose}
             search={search}

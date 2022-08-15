@@ -30,7 +30,7 @@ import { sanitizeWorker } from 'utils/workerUtils';
 
 export interface IWorkerModalProps {
   projectId: string;
-  isFcAdmin: boolean;
+  isFcaUser: boolean;
   count: number;
   loading: GeneralModel.ILoadingStatus;
   assignLoading: GeneralModel.ILoadingStatus;
@@ -69,7 +69,7 @@ const phoneIsValid = (value: string) => {
 
 const WorkerModal = ({
   projectId,
-  isFcAdmin,
+  isFcaUser,
   workerMap,
   count,
   loading,
@@ -323,7 +323,7 @@ const WorkerModal = ({
                         queryParams={queryParams}
                         clientMap={clientProjectMap[projectId]}
                         projectId={projectId}
-                        isFcAdmin={isFcAdmin}
+                        isFcaUser={isFcaUser}
                         setQueryParams={setQueryParams}
                         fetchClientList={fetchProjectClientList}
                       />
@@ -353,7 +353,7 @@ const WorkerModal = ({
                   <Table aria-label="worker-list">
                     <TableHead>
                       <TableRow>
-                        {isFcAdmin && (
+                        {isFcaUser && (
                           <>
                             <TableCell>Worker</TableCell>
                             <TableCell>Client</TableCell>
@@ -361,7 +361,7 @@ const WorkerModal = ({
                             <TableCell>Projects Assigned</TableCell>
                           </>
                         )}
-                        {!isFcAdmin && (
+                        {!isFcaUser && (
                           <>
                             <TableCell>Worker</TableCell>
                             <TableCell>Trades</TableCell>
@@ -378,7 +378,7 @@ const WorkerModal = ({
                           worker={worker}
                           isSelected={!!selectedWorkerMap.original[worker.id]}
                           onSelect={onSelectWorker}
-                          isFcAdmin={isFcAdmin}
+                          isFcaUser={isFcaUser}
                         />
                       ))}
                     </TableBody>

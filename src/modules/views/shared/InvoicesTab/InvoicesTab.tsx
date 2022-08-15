@@ -17,7 +17,6 @@ import { useStyles } from './styles';
 import { useTimeZone } from '../../../../utils/useTimeZone';
 
 export interface IInvoicesTabProps {
-  isFcAdmin: boolean;
   isCreateInvoiceDisabled: boolean;
   entity?: any;
   entityType: ResourceModel.Type;
@@ -49,7 +48,6 @@ export interface IInvoicesTabProps {
 }
 
 const InvoicesTab = ({
-  isFcAdmin,
   entity,
   entityType,
   clientMap,
@@ -189,7 +187,6 @@ const InvoicesTab = ({
             setInvoiceModal={setInvoiceModal}
             setDrawer={handleSetDrawer}
             setQueryParams={setQueryParams}
-            clientColumnVisible={clientColumnVisible}
             projectColumnVisible={projectColumnVisible}
           />
         )}

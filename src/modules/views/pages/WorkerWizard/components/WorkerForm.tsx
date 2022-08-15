@@ -31,6 +31,7 @@ export interface IWorkerFormProps {
   searchCompanies: (params: GeneralModel.IQueryParams, tempId) => void;
   countryList?: GeneralModel.INamedEntity[];
   geographicLocationsList: WorkerModel.IGeographicLocation[];
+  selfCompany: ClientModel.IClient;
 }
 
 const WorkerForm = ({
@@ -52,6 +53,7 @@ const WorkerForm = ({
   searchCompanies,
   countryList,
   geographicLocationsList,
+  selfCompany,
 }: IWorkerFormProps) => {
   const classes = useStyles();
   const ethnicityListOptions = useMemo(() => ethnicityList.map(getFormattedOptionList), [ethnicityList]);
@@ -137,6 +139,7 @@ const WorkerForm = ({
         emailHasChanges={emailHasChanges}
         countryList={countryList}
         updateRules={updateRules}
+        selfCompany={selfCompany}
       />
       <PersonalInformation
         model={model}

@@ -42,7 +42,6 @@ import WorkerConsentForm from '../ProjectWizardNew/components/WorkerConsentForm'
 import Review from '../ProjectWizardNew/containers/Review';
 import StepEditor from './components/StepEditor';
 import { hasValidPermissions } from 'modules/models/user';
-import PermissionGuard from 'modules/views/shared/PermissionGuard';
 
 interface IQueryParams {
   page: number;
@@ -154,8 +153,6 @@ const ProjectDetail = ({
   const [modalSelectedPaymentMethod, setModalSelectedPaymentMethod] = useState(null);
 
   const projectListRef = useRef();
-
-  const isFcAdmin = useMemo(() => isFcaUser && isAdmin, [isFcaUser, isAdmin]);
 
   const projectId = useMemo(() => (/* istanbul ignore next */ isUUID(id) ? id : null), [id]);
 
@@ -306,28 +303,28 @@ const ProjectDetail = ({
 
   useEffect(() => {
     /* istanbul ignore else */
-    if (isFcAdmin && !categoryList.length) fetchCategoryList();
-  }, [categoryList, isFcAdmin, fetchCategoryList]);
+    if (isFcaUser && !categoryList.length) fetchCategoryList();
+  }, [categoryList, isFcaUser, fetchCategoryList]);
 
   useEffect(() => {
     /* istanbul ignore else */
-    if (isFcAdmin && !regionList.length) fetchRegionList();
-  }, [regionList, isFcAdmin, fetchRegionList]);
+    if (isFcaUser && !regionList.length) fetchRegionList();
+  }, [regionList, isFcaUser, fetchRegionList]);
 
   useEffect(() => {
     /* istanbul ignore else */
-    if (isFcAdmin && !fcaNaeList.length) fetchNaeList();
-  }, [fcaNaeList, isFcAdmin, fetchNaeList]);
+    if (isFcaUser && !fcaNaeList.length) fetchNaeList();
+  }, [fcaNaeList, isFcaUser, fetchNaeList]);
 
   useEffect(() => {
     /* istanbul ignore else */
-    if (isFcAdmin && !timeZoneList.length) fetchTimeZoneList();
-  }, [timeZoneList, isFcAdmin, fetchTimeZoneList]);
+    if (isFcaUser && !timeZoneList.length) fetchTimeZoneList();
+  }, [timeZoneList, isFcaUser, fetchTimeZoneList]);
 
   useEffect(() => {
     /* istanbul ignore else */
-    if (isFcAdmin && !billingTierList.length) fetchBillingTierList();
-  }, [billingTierList, isFcAdmin, fetchBillingTierList]);
+    if (isFcaUser && !billingTierList.length) fetchBillingTierList();
+  }, [billingTierList, isFcaUser, fetchBillingTierList]);
 
   useEffect(() => {
     /* istanbul ignore else */
@@ -341,8 +338,8 @@ const ProjectDetail = ({
 
   useEffect(() => {
     /* istanbul ignore else */
-    if (isFcAdmin && !consentFormFields.length) fetchConsentFormFields();
-  }, [consentFormFields, isFcAdmin, fetchConsentFormFields]);
+    if (isFcaUser && !consentFormFields.length) fetchConsentFormFields();
+  }, [consentFormFields, isFcaUser, fetchConsentFormFields]);
 
   useEffect(() => {
     /* istanbul ignore else */
@@ -400,7 +397,7 @@ const ProjectDetail = ({
         <div className={listClasses.widgetsWrapper} id="summary-widgets">
           <StatusWidget
             total={getDefaultValue(projectStatistics?.companiesCount, 0)}
-            status={getConditionalDefaultValue(isFcAdmin, 'Clients', 'Companies')}
+            status={getConditionalDefaultValue(isFcaUser, 'Clients', 'Companies')}
             content={<Link to={`/projects/detail/${projectId}/clients`}>Review</Link>}
             loading={statisticsLoading?.isLoading}
           />
@@ -412,7 +409,7 @@ const ProjectDetail = ({
           />
           <StatusWidget
             total={`$ ${getDefaultValue(formatNumberWithCommas(getFormattedDecimalNumber(projectStatistics?.totalBilling)), 0)}`}
-            status={getConditionalDefaultValue(isFcAdmin, 'Revenue', 'Invoices')}
+            status={getConditionalDefaultValue(isFcaUser, 'Revenue', 'Invoices')}
             content={null}
             loading={statisticsLoading?.isLoading}
           />
@@ -447,7 +444,6 @@ const ProjectDetail = ({
               isModalOpen={isModalOpen}
               projectId={projectId}
               ctaDisabled={isCtaDisabled}
-              isFcAdmin={isFcAdmin}
               openModal={openModal}
               closeModal={closeModal}
               onPageChange={onPageChange}
@@ -461,7 +457,6 @@ const ProjectDetail = ({
               currentProject={currentProject}
               isModalOpen={isModalOpen}
               ctaDisabled={isCtaDisabled}
-              isFcAdmin={isFcAdmin}
               drawer={drawer}
               setDrawer={setDrawer}
               openModal={openModal}
@@ -473,7 +468,6 @@ const ProjectDetail = ({
           {isProjectLoaded && currentTab === ProjectNewModel.DetailTabType.VISITORS && (
             <VisitorsTab
               projectId={projectId}
-              isFcAdmin={isFcAdmin}
               queryParams={queryParams}
               currentProject={currentProject}
               ctaDisabled={isCtaDisabled}
@@ -515,7 +509,6 @@ const ProjectDetail = ({
           )}
           {isProjectLoaded && currentTab === ProjectNewModel.DetailTabType.INVOICES && (
             <InvoicesTab
-              isFcAdmin={isFcAdmin}
               entity={currentProject}
               entityType={ResourceModel.Type.PROJECT}
               queryParams={queryParams}
@@ -539,7 +532,7 @@ const ProjectDetail = ({
                 editPayment={handleEditPayment}
                 selectedPaymentMethod={selectedPaymentMethod}
               />
-              <PermissionGuard permissionsExpression={UserModel.ProjectsPermission.MANAGE}>
+              {isFcaUser && (
                 <Card title={archiveCardTitle} styleClass={projectFormClasses.boxShadow}>
                   <Button
                     color="primary"
@@ -551,7 +544,7 @@ const ProjectDetail = ({
                     {archiveButtonLabel}
                   </Button>
                 </Card>
-              </PermissionGuard>
+              )}
               <StepEditor
                 open={editDialogStep.isOpen}
                 step={editDialogStep.step}

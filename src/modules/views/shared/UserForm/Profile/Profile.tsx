@@ -30,9 +30,10 @@ export interface IProfile {
   onDiscard: () => void;
   onChange: (model: any) => void;
   countryList?: GeneralModel.INamedEntity[];
+  isFcaUser: boolean;
 }
 
-const Profile = ({ model, formRules, hasChanges, errors, loading, onDiscard, onSubmit, onChange, countryList }: IProfile) => {
+const Profile = ({ model, formRules, hasChanges, errors, loading, onDiscard, onSubmit, onChange, countryList, isFcaUser }: IProfile) => {
   const classes = useStyles();
   const buttonClasses = buttonStyles();
   const inputGlobalClasses = inputGlobalStyles();
@@ -222,7 +223,7 @@ const Profile = ({ model, formRules, hasChanges, errors, loading, onDiscard, onS
             variant="contained"
             size="large"
             onClick={onSubmit}
-            disabled={!hasChanges}
+            disabled={!hasChanges || !model.firstName || !model.lastName || (!isFcaUser && !model.mobilePhoneNumber)}
           />
         </ControlledButton>
       </div>
