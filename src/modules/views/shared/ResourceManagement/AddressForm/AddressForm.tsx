@@ -47,16 +47,17 @@ const AddressForm = ({
   fetchCountryList,
   onChange,
 }: IAddressFormProps) => {
+  console.log('address model', addressModel);
   const classes = useStyles();
   const formClasses = formGlobalStyles();
   const generalGlobalClasses = generalGlobalStyles();
 
   const [response, setResponse] = useState(null);
 
-  const [query, setQuery] = useState<string>('');
+  // const [query, setQuery] = useState<string>('');
   const [countryCode, setCountryCode] = useState<CountryCode>(CountryCode.UNITED_STATES);
   const [zipCode, setZipCode] = useState<string>(getDefaultValue(addressModel.zipCode, ''));
-  const [stringAdd, setStringAdd]=useState<string>(getDefaultValue(addressModel.line1, ''));
+  const [stringAdd, setStringAdd] = useState<string>(getDefaultValue(addressModel.line1, ''));
 
   const mapInputRef = useMemo(() => React.createRef(), []);
   const inputRef = useMemo(() => React.createRef(), []);
@@ -76,14 +77,6 @@ const AddressForm = ({
   //   },
   //   [errors, modelProperty]
   // );
-
-  const handleStateChange = useCallback(
-    /* istanbul ignore next */ e => {
-      let newQuery = `${addressModel.line1}, ${stateMap[e.target.value]}`;
-      setQuery(newQuery);
-    },
-    [setQuery, addressModel]
-  );
 
   const handleSecondaryAddressInputChange = useCallback(
     e => {
@@ -105,14 +98,14 @@ const AddressForm = ({
     event => {
       setCountryCode(getCountryCodeById(event.target.value));
       const updatedData = {
-        line1: '',
-        stateCode: null,
-        zipCode: null,
+        // line1: '',
+        // stateCode: null,
+        // zipCode: null,
         countryId: event.target.value,
-        city: null,
-        county: null,
-        borough: null,
-        stateName: null,
+        // city: null,
+        // county: null,
+        // borough: null,
+        // stateName: null,
       };
 
       onChange(
@@ -127,6 +120,29 @@ const AddressForm = ({
       );
     },
     [modelProperty, setCountryCode, getCountryCodeById, onChange]
+  );
+
+  const handleStateChange = useCallback(
+    /* istanbul ignore next */ e => {
+      // let newQuery = `${addressModel.line1}, ${stateMap[e.target.value]}`;
+      // setQuery(newQuery);
+      const updatedData = {
+        stateCode: e.target.value,
+        stateName: stateMap[e.target.value],
+      };
+
+      onChange(
+        /* istanbul ignore next */ prevState => ({
+          ...prevState,
+          ...updatedData,
+          [modelProperty]: {
+            ...prevState[modelProperty],
+            ...updatedData,
+          },
+        })
+      );
+    },
+    [onChange, modelProperty]
   );
 
   const handleZipCodeChange = useCallback(
@@ -182,6 +198,7 @@ const AddressForm = ({
           ...newData,
         },
       }));
+      setStringAdd(newData.line1);
       setResponse(null);
     }
   }, [response, countryList, modelProperty, nyBoroughList, setResponse, onChange, getCountryCodeById, setCountryCode]);
@@ -193,12 +210,16 @@ const AddressForm = ({
   useEffect(() => {
     fetchCountryList();
   }, [fetchCountryList]);
- const handleSetStringAdd = useCallback(
-  /* istanbul ignore next */ 
-  (event) => {
-    setStringAdd(event.target.value);
-    handleSecondaryAddressInputChange(event)
-  },[setStringAdd,handleSecondaryAddressInputChange]);
+
+  const handleSetStringAdd = useCallback(
+    /* istanbul ignore next */
+
+    event => {
+      setStringAdd(event.target.value);
+      handleSecondaryAddressInputChange(event);
+    },
+    [setStringAdd, handleSecondaryAddressInputChange]
+  );
 
   return (
     <Grid container={true}>
@@ -211,17 +232,17 @@ const AddressForm = ({
                   mapInputRef={mapInputRef}
                   location={addressModel.latitude && addressModel.longitude ? { lat: addressModel.latitude, lng: addressModel.longitude } : null}
                   inputRef={inputRef}
-                  forcedQuery={query}
-                  valueToShow={stringAdd}
-                  handleSetStringAdd={handleSetStringAdd}
+                  // forcedQuery={query}
+                  valueToShow={stringAdd || addressModel.line1}
                   onAddressResponse={handleAddressResponse}
-                  name='line1'
                   customLabel={optional ? 'Address Line 1 (Optional)' : null}
                   customPlaceholder={getDefaultValue(line1Placeholder, null)}
                   // error={getErrors('line1')}
                   error={!!errors.line1 && errors.line1 === 'is required' ? 'Line 1 is required.' : errors.line1}
                   showRequiredMark={labelRules?.line1?.required}
                   required={labelRules?.line1?.required}
+                  handleSetStringAdd={handleSetStringAdd}
+                  name="line1"
                 />
               </Grid>
               <Grid item={true} xs={12}>
