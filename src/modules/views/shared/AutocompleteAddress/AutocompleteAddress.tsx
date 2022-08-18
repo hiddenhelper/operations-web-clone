@@ -17,6 +17,7 @@ export interface IAutocompleteAddressProps {
   };
   inputRef: React.RefObject<any>;
   valueToShow: string;
+  handleSetStringAdd:(value:string)=>void;
   forcedQuery?: string;
   error?: string;
   customLabel?: string;
@@ -24,10 +25,12 @@ export interface IAutocompleteAddressProps {
   showRequiredMark?: boolean;
   onAddressResponse: (address: IAutocompletedAddress, geometry: IGeometry) => void;
   required?: boolean;
+  name?: string;
 }
 
 const AutocompleteAddress = ({
   valueToShow,
+  handleSetStringAdd,
   mapInputRef,
   location,
   inputRef,
@@ -38,6 +41,7 @@ const AutocompleteAddress = ({
   showRequiredMark,
   onAddressResponse,
   required,
+  name,
 }: IAutocompleteAddressProps) => {
   const [searching, setSearching] = useState(false);
   const [query, setQuery] = useState(valueToShow);
@@ -48,6 +52,7 @@ const AutocompleteAddress = ({
   const disableSearch = useCallback(() => setSearching(false), [setSearching]);
   const handleQueryChange = useCallback(
     e => {
+      handleSetStringAdd(e);
       setQuery(e.target.value);
       setSearching(true);
     },
@@ -98,7 +103,7 @@ const AutocompleteAddress = ({
             value={searching ? query : valueToShow}
             inputRef={inputRef}
             autoComplete="off"
-            name="name"
+            name={name || "name"}
             fullWidth={true}
             onFocus={enableSearch}
             onBlur={disableSearch}

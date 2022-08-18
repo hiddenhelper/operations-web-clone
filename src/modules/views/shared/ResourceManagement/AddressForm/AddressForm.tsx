@@ -56,6 +56,7 @@ const AddressForm = ({
   const [query, setQuery] = useState<string>('');
   const [countryCode, setCountryCode] = useState<CountryCode>(CountryCode.UNITED_STATES);
   const [zipCode, setZipCode] = useState<string>(getDefaultValue(addressModel.zipCode, ''));
+  const [stringAdd, setStringAdd]=useState<string>(getDefaultValue(addressModel.line1, ''));
 
   const mapInputRef = useMemo(() => React.createRef(), []);
   const inputRef = useMemo(() => React.createRef(), []);
@@ -192,6 +193,13 @@ const AddressForm = ({
   useEffect(() => {
     fetchCountryList();
   }, [fetchCountryList]);
+ const handleSetStringAdd = useCallback(
+  /* istanbul ignore next */ 
+  (event) => {
+    setStringAdd(event.target.value);
+    handleSecondaryAddressInputChange(event)
+  },[setStringAdd,handleSecondaryAddressInputChange]);
+
   return (
     <Grid container={true}>
       <Grid item={true} xs={12}>
@@ -204,8 +212,10 @@ const AddressForm = ({
                   location={addressModel.latitude && addressModel.longitude ? { lat: addressModel.latitude, lng: addressModel.longitude } : null}
                   inputRef={inputRef}
                   forcedQuery={query}
-                  valueToShow={getDefaultValue(addressModel.line1, '')}
+                  valueToShow={stringAdd}
+                  handleSetStringAdd={handleSetStringAdd}
                   onAddressResponse={handleAddressResponse}
+                  name='line1'
                   customLabel={optional ? 'Address Line 1 (Optional)' : null}
                   customPlaceholder={getDefaultValue(line1Placeholder, null)}
                   // error={getErrors('line1')}
