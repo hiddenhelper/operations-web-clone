@@ -75,11 +75,11 @@ export const requiredAddressRules = {
     rules: [validateZipCode],
   },
   latitude: {
-    required: true,
+    required: false,
     rules: [],
   },
   longitude: {
-    required: true,
+    required: false,
     rules: [],
   },
   county: {

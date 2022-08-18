@@ -47,7 +47,6 @@ const AddressForm = ({
   fetchCountryList,
   onChange,
 }: IAddressFormProps) => {
-  console.log('address model', addressModel);
   const classes = useStyles();
   const formClasses = formGlobalStyles();
   const generalGlobalClasses = generalGlobalStyles();
