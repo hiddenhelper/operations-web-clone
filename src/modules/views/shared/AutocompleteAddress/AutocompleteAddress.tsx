@@ -17,7 +17,7 @@ export interface IAutocompleteAddressProps {
   };
   inputRef: React.RefObject<any>;
   valueToShow: string;
-  handleSetStringAdd:(value:string)=>void;
+  handleSetStringAdd?:(value:string)=>void;
   forcedQuery?: string;
   error?: string;
   customLabel?: string;
