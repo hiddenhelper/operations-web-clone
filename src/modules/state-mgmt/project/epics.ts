@@ -112,10 +112,10 @@ export const fetchProjectListStart: Epic<IAction, IAction, IRootState, IEpicDepe
   action$.pipe(
     ofType(ActionType.FETCH_PROJECT_LIST_START),
     mergeMap(({ payload }) => {
-      const isFCAAdmin = state$.value.auth.isFcaUser && state$.value.auth.isAdmin;
+      const isFcaUser = state$.value.auth.isFcaUser;
       return concat(
         of(generalState.actions.setLoading(GENERAL.LOADING_KEY.FETCH_PROJECT_LIST, true)),
-        isFCAAdmin
+        isFcaUser
           ? deps.apiService.getProjectList(payload.query).pipe(map(res => actions.fetchProjectListSuccess(res.items, res.totalResults)))
           : zip(
               deps.apiService.getProjectList({ ...payload.query, onlyPending: true }),

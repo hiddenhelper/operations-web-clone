@@ -130,43 +130,55 @@ export const keyFilterMap = {
   [filterMap[Status.ARCHIVED].key]: filterMap[Status.ARCHIVED].id,
 };
 
-export const companyFilterMap: { [k: number]: { id: number; key: string; title: string; roleList: Role[]; order?: number } } = {
+export const companyFilterMap: { [k: number]: { id: number; key: string; title: string; order?: number; permissionsExpression?: string } } = {
   [FilterType.SELF_PROJECT]: {
     id: FilterType.SELF_PROJECT,
     key: 'my-projects',
     title: filterTypeMap[FilterType.SELF_PROJECT],
-    roleList: [Role.CLIENT_ADMIN, Role.REGULAR_USER],
     order: 0,
+    permissionsExpression: UserModel.ClientsPermission.VIEWACCESS,
   },
-  [CompanyStatus.DRAFT]: { id: CompanyStatus.DRAFT, key: 'draft', title: CompanyStatusMap[CompanyStatus.DRAFT], roleList: [Role.FCA_ADMIN], order: 1 },
+  [CompanyStatus.DRAFT]: {
+    id: CompanyStatus.DRAFT,
+    key: 'draft',
+    title: CompanyStatusMap[CompanyStatus.DRAFT],
+    order: 1,
+    permissionsExpression: UserModel.DraftClientsPermission.VIEWACCESS,
+  },
   [CompanyStatus.ONBOARDING]: {
     id: CompanyStatus.ONBOARDING,
     key: 'onboarding',
     title: CompanyStatusMap[CompanyStatus.ONBOARDING],
-    roleList: [Role.FCA_ADMIN],
     order: 2,
+    permissionsExpression: UserModel.ClientsPermission.VIEWACCESS,
   },
   [CompanyStatus.PENDING_APPROVAL]: {
     id: CompanyStatus.PENDING_APPROVAL,
     key: 'pending-approval',
     title: CompanyStatusMap[CompanyStatus.PENDING_APPROVAL],
-    roleList: [Role.FCA_ADMIN],
     order: 3,
+    permissionsExpression: UserModel.ClientsPermission.VIEWACCESS,
   },
   [CompanyStatus.REJECTED]: {
     id: CompanyStatus.REJECTED,
     key: 'rejected',
     title: CompanyStatusMap[CompanyStatus.REJECTED],
-    roleList: [Role.FCA_ADMIN],
     order: 4,
+    permissionsExpression: UserModel.ClientsPermission.VIEWACCESS,
   },
-  [CompanyStatus.ACTIVE]: { id: CompanyStatus.ACTIVE, key: 'active', title: CompanyStatusMap[CompanyStatus.ACTIVE], roleList: [Role.FCA_ADMIN], order: 5 },
+  [CompanyStatus.ACTIVE]: {
+    id: CompanyStatus.ACTIVE,
+    key: 'active',
+    title: CompanyStatusMap[CompanyStatus.ACTIVE],
+    order: 5,
+    permissionsExpression: UserModel.ClientsPermission.VIEWACCESS,
+  },
   [CompanyStatus.ARCHIVED]: {
     id: CompanyStatus.ARCHIVED,
     key: 'archived',
     title: CompanyStatusMap[CompanyStatus.ARCHIVED],
-    roleList: [Role.FCA_ADMIN],
     order: 6,
+    permissionsExpression: UserModel.ClientsPermission.VIEWACCESS,
   },
 };
 

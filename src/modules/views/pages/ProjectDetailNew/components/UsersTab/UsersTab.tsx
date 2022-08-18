@@ -28,10 +28,9 @@ export interface IUsersTabProps {
   isModalOpen: boolean;
   projectId: string;
   ctaDisabled: boolean;
-  isFcAdmin: boolean;
+  isFcaUser: boolean;
   userLoading: GeneralModel.ILoadingStatus;
   assignUserLoading: GeneralModel.ILoadingStatus;
-  isFcaUser: boolean;
   openModal: () => void;
   closeModal: () => void;
   onPageChange: (page: number) => void;
@@ -50,10 +49,9 @@ const UsersTab = ({
   projectId,
   clientMap,
   ctaDisabled,
-  isFcAdmin,
+  isFcaUser,
   assignUserLoading,
   userLoading,
-  isFcaUser,
   fetchUserList,
   openModal,
   closeModal,
@@ -133,7 +131,7 @@ const UsersTab = ({
           queryParams={queryParams}
           clientMap={clientMap[projectId]}
           projectId={projectId}
-          isFcAdmin={isFcAdmin}
+          isFcaUser={isFcaUser}
           setQueryParams={setQueryParams}
           fetchClientList={fetchProjectClientList}
         />
@@ -226,7 +224,7 @@ const UsersTab = ({
         </>
       )}
 
-      {isModalOpen && <AssignUser id={projectId} closeModal={onCloseModal} isFcAdmin={isFcAdmin} isEditUser={isEditUser} companyId={userCompanyId} />}
+      {isModalOpen && <AssignUser id={projectId} closeModal={onCloseModal} isEditUser={isEditUser} companyId={userCompanyId} />}
     </>
   );
 };

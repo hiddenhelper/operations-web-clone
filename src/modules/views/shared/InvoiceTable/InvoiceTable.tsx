@@ -36,7 +36,6 @@ export interface IInvoiceTableProps {
   payLoading: GeneralModel.ILoadingStatus;
   voidLoading: GeneralModel.ILoadingStatus;
   confirmInvoiceLoading: GeneralModel.ILoadingStatus;
-  clientColumnVisible?: boolean;
   projectColumnVisible?: boolean;
   paymentColumnVisible?: boolean;
   currentUserPermissions?: UserModel.IPermission[];
@@ -72,7 +71,6 @@ const InvoiceTable = ({
   payLoading,
   voidLoading,
   confirmInvoiceLoading,
-  clientColumnVisible = true,
   projectColumnVisible = true,
   paymentColumnVisible = false,
   currentUserPermissions,
@@ -250,7 +248,6 @@ const InvoiceTable = ({
   useEffect(() => {
     if (invoiceToConfirm.invoice) setConfirmActionModal({ isOpen: true, content: modalContentMap[invoiceToConfirm.action] });
   }, [invoiceToConfirm, modalContentMap]);
-  const isFcAdmin: boolean = useMemo(() => isFcaUser && isAdmin, [isFcaUser, isAdmin]);
 
   useEffect(() => {
     setQueryParams({ ...queryParams });
@@ -267,7 +264,7 @@ const InvoiceTable = ({
                 <TableHead>
                   <TableRow>
                     <TableCell>Number</TableCell>
-                    {clientColumnVisible ? <TableCell>Client</TableCell> : null}
+                    {isFcaUser ? <TableCell>Client</TableCell> : null}
                     {projectColumnVisible ? <TableCell>Project</TableCell> : null}
                     <TableCell>Creation Date</TableCell>
                     {paymentColumnVisible ? <TableCell>Payment Date</TableCell> : null}
@@ -286,8 +283,7 @@ const InvoiceTable = ({
                       onOpen={openInvoice}
                       handleSelectOption={handleSelectOption}
                       onInvoiceInformationClick={onOpenInvoiceInformation}
-                      isFcAdmin={isFcAdmin}
-                      clientColumnVisible={clientColumnVisible}
+                      isFcaUser={isFcaUser}
                       projectColumnVisible={projectColumnVisible}
                       paymentColumnVisible={paymentColumnVisible}
                     />

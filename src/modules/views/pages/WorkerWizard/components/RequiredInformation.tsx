@@ -36,6 +36,7 @@ export interface IRequiredInformationProps {
   emailHasChanges: boolean;
   countryList?: GeneralModel.INamedEntity[];
   updateRules: (s: IFormRules | ((p: IFormRules) => IFormRules)) => void;
+  selfCompany: ClientModel.IClient;
 }
 
 const RequiredInformation = ({
@@ -54,6 +55,7 @@ const RequiredInformation = ({
   emailHasChanges,
   countryList,
   updateRules,
+  selfCompany,
 }: IRequiredInformationProps) => {
   const inputGlobalClasses = inputGlobalStyles();
   const datePickerClasses = datePickerStyles();
@@ -168,39 +170,54 @@ const RequiredInformation = ({
     if (!isFcaUser && !company) fetchCompany();
   }, [isFcaUser, company, fetchCompany]);
 
+  useEffect(() => {
+    if (!isFcaUser) {
+      console.log('item', selfCompany);
+      onChange(
+        /* istanbul ignore next */ prevModel => ({
+          ...prevModel,
+          company: selfCompany,
+        })
+      );
+    }
+    // eslint-disable-next-line
+  }, [isFcaUser]);
+
   const today = new Date();
   return (
     <Card title="Required Information">
       <Grid container={true} className={classes.workerFormContainer}>
         <PermissionGuard permissionsExpression={UserModel.ClientsPermission.VIEWACCESS}>
-          <Grid item={true} xl={12} lg={12} md={12} sm={12} xs={12}>
-            <div className={inputGlobalClasses.inputPaddingBottom}>
-              <div className={classes.errorInputWrapper}>
-                <ControlledError
-                  show={!!errors.company}
-                  error={getConditionalDefaultValue(errors?.company === 'is required', 'Client Name is required.', errors.company)}
-                >
-                  <AssignEntity
-                    index={0}
-                    tempId={workerTempId}
-                    optionLabel="name"
-                    result={uiRelationMap[workerTempId]?.searchResult || []}
-                    isLoading={isLoading}
-                    showCreateNew={false}
-                    assignValue={model.company}
-                    placeholder="Client Name"
-                    existRelation={uiRelationMap && uiRelationMap[workerTempId]}
-                    onSelect={onSelect}
-                    search={searchCompanies}
-                    renderOption={clientRenderOption}
-                    onReset={onReset}
-                    showError={!!errors.company}
-                    disabled={hasProjects}
-                  />
-                </ControlledError>
+          {isFcaUser && (
+            <Grid item={true} xl={12} lg={12} md={12} sm={12} xs={12}>
+              <div className={inputGlobalClasses.inputPaddingBottom}>
+                <div className={classes.errorInputWrapper}>
+                  <ControlledError
+                    show={!!errors.company}
+                    error={getConditionalDefaultValue(errors?.company === 'is required', 'Client Name is required.', errors.company)}
+                  >
+                    <AssignEntity
+                      index={0}
+                      tempId={workerTempId}
+                      optionLabel="name"
+                      result={uiRelationMap[workerTempId]?.searchResult || []}
+                      isLoading={isLoading}
+                      showCreateNew={false}
+                      assignValue={model.company}
+                      placeholder="Client Name"
+                      existRelation={uiRelationMap && uiRelationMap[workerTempId]}
+                      onSelect={onSelect}
+                      search={searchCompanies}
+                      renderOption={clientRenderOption}
+                      onReset={onReset}
+                      showError={!!errors.company}
+                      disabled={hasProjects}
+                    />
+                  </ControlledError>
+                </div>
               </div>
-            </div>
-          </Grid>
+            </Grid>
+          )}
         </PermissionGuard>
 
         <Grid item={true} xl={6} lg={6}>

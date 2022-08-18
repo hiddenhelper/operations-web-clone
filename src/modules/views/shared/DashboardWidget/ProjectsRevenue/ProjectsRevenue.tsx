@@ -24,7 +24,7 @@ const ProjectsRevenue = ({
 }: IProjectsRevenueProps) => {
   return (
     <DashboardRevenue
-      title={getConditionalDefaultValue(isFcaUser && isAdmin, 'Projects Revenue', 'Projects Invoices')}
+      title={getConditionalDefaultValue(isFcaUser, 'Projects Revenue', 'Projects Invoices')}
       total={getConditionalDefaultValue(grossRevenueWidgetStatistics?.totalRevenue, `$${Math.trunc(grossRevenueWidgetStatistics?.totalRevenue)}`, null)}
       data={grossRevenueWidgetStatistics}
       loading={grossRevenueWidgetLoading}

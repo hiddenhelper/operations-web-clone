@@ -72,7 +72,6 @@ const InvoiceList = ({
   const [submitAction, setSubmitAction] = useState<InvoiceModel.InvoiceStep>(null);
 
   const currentInvoice = useMemo(() => invoiceMap[invoiceId] || InvoiceModel.getFallbackInvoice(), [invoiceId, invoiceMap]);
-  const isFcAdmin = useMemo(() => isFcaUser && isAdmin, [isFcaUser, isAdmin]);
   const filterList = useMemo(() => Object.values(InvoiceModel.filterMap).sort((a, b) => a.order - b.order), []);
 
   const onConfirm = useCallback(
@@ -184,7 +183,7 @@ const InvoiceList = ({
             />
             <StatusWidget
               total={`$ ${getDefaultValue(formatNumberWithCommas(getFormattedDecimalNumber(invoiceStatistics?.revenue)), 0)}`}
-              status={getConditionalDefaultValue(isFcAdmin, 'Revenue', 'Invoices')}
+              status={getConditionalDefaultValue(isFcaUser, 'Revenue', 'Invoices')}
               content={null}
               loading={invoiceStatisticsLoading?.isLoading}
             />
@@ -212,7 +211,6 @@ const InvoiceList = ({
               queryParams={queryParams}
               isDrawerOpen={isDrawerOpen}
               paymentColumnVisible={queryParams.isPaid}
-              clientColumnVisible={isFcAdmin}
               setDrawer={setDrawer}
               setInvoiceId={setInvoiceId}
               setInvoiceModal={setInvoiceModal}

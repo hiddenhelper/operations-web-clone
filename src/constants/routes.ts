@@ -7,17 +7,11 @@ export const ROUTES = {
     permissionsExpression: UserModel.ProjectsPermission.VIEWACCESS,
   },
   DASHBOARD_CLIENTS: { path: '/dashboard/clients', permissionsExpression: UserModel.ClientsPermission.VIEWACCESS },
-
   DASHBOARD_WORKERS: { path: '/dashboard/workers', permissionsExpression: UserModel.WorkersPermission.VIEWACCESS },
-
   CLIENT_WIZARD: { path: '/clients/wizard/:id/:step?', permissionsExpression: UserModel.DraftClientsPermission.MANAGE },
-
   CLIENT_INVITE: { path: '/clients/invite/:id', permissionsExpression: UserModel.DraftClientsPermission.MANAGE },
-
   CLIENT_DETAIL: { path: '/clients/detail/:id/:step?', permissionsExpression: UserModel.ClientsPermission.VIEWACCESS },
-
   CLIENT_LIST: { path: '/clients', permissionsExpression: UserModel.ClientsPermission.VIEWACCESS },
-
   PROJECT_WIZARD: {
     path: '/projects/wizard/:id/:step?',
     permissionsExpression: UserModel.DraftProjectsPermission.VIEWACCESS,

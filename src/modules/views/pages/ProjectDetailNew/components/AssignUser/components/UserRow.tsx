@@ -19,12 +19,12 @@ export interface IUserTabProps {
   isSelected: boolean;
   onChange: (id: string, role: string) => void;
   onSelect: (id: string) => void;
-  isFcAdmin: boolean;
+  isFcaUser: boolean;
 }
 
 const StyledTableRow = withStyles(tableRowStyles)(TableRow);
 
-const UserRow = ({ user, isSelected, roleList, onChange, onSelect, isFcAdmin }: IUserTabProps) => {
+const UserRow = ({ user, isSelected, roleList, onChange, onSelect, isFcaUser }: IUserTabProps) => {
   const globalClasses = tableGlobalStyles();
   const avatarGlobalClasses = avatarGlobalStyles();
   const inputGlobalClasses = inputGlobalStyles();
@@ -72,7 +72,7 @@ const UserRow = ({ user, isSelected, roleList, onChange, onSelect, isFcAdmin }: 
           </span>
         </div>
       </TableCell>
-      {isFcAdmin && <TableCell>{UserModel.userInviteMap[user.invitationType]}</TableCell>}
+      {isFcaUser && <TableCell>{UserModel.userInviteMap[user.invitationType]}</TableCell>}
       <TableCell>{user.title}</TableCell>
       <TableCell>
         <PermissionGuard permissionsExpression={UserModel.ClientsPermission.VIEWACCESS} fallback={<>{user.company?.name}</>}>

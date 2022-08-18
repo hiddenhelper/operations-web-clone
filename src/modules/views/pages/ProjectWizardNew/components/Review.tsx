@@ -834,31 +834,33 @@ const Review = ({
         </div>
       </Card>
       {!isFcaUser ? (
-        <Card
-          title="Credit Card"
-          hideSecondaryAction={!edit}
-          actionStyleClass={getConditionalDefaultValue(edit, formGlobalClasses.secondaryActionsIcon, '')}
-          styleClass={classes.boxShadow}
-          secondaryAction={
-            edit && (
-              <PermissionGuard permissionsExpression={UserModel.PaymentMethodsPermission.MANAGE}>
-                <IconButton
-                  className={buttonClasses.editButton}
-                  disableRipple={true}
-                  onClick={handleEditPayment}
-                  data-testid="payment-edit-button"
-                  disabled={model.status === ResourceModel.Status.ARCHIVED}
-                >
-                  <CreateIcon />
-                </IconButton>
-              </PermissionGuard>
-            )
-          }
-        >
-          <div className={classes.cardContainer}>
-            <CreditCardItem isSelected={true} paymentMethod={paymentSelected?.[0] === undefined ? initialCard : paymentSelected[0]} setSelected={noop} />
-          </div>
-        </Card>
+        <PermissionGuard permissionsExpression={UserModel.PaymentMethodsPermission.VIEWACCESS}>
+          <Card
+            title="Credit Card"
+            hideSecondaryAction={!edit}
+            actionStyleClass={getConditionalDefaultValue(edit, formGlobalClasses.secondaryActionsIcon, '')}
+            styleClass={classes.boxShadow}
+            secondaryAction={
+              edit && (
+                <PermissionGuard permissionsExpression={UserModel.PaymentMethodsPermission.MANAGE}>
+                  <IconButton
+                    className={buttonClasses.editButton}
+                    disableRipple={true}
+                    onClick={handleEditPayment}
+                    data-testid="payment-edit-button"
+                    disabled={model.status === ResourceModel.Status.ARCHIVED}
+                  >
+                    <CreateIcon />
+                  </IconButton>
+                </PermissionGuard>
+              )
+            }
+          >
+            <div className={classes.cardContainer}>
+              <CreditCardItem isSelected={true} paymentMethod={paymentSelected?.[0] === undefined ? initialCard : paymentSelected[0]} setSelected={noop} />
+            </div>
+          </Card>
+        </PermissionGuard>
       ) : null}
     </>
   );

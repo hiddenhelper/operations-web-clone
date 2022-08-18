@@ -20,10 +20,9 @@ const StyledTableRow = withStyles(tableRowStyles)(TableRow);
 
 export interface IInvoiceRowProps {
   invoice: InvoiceModel.IInvoice;
-  isFcAdmin: boolean;
+  isFcaUser: boolean;
   showContextActions?: boolean;
   showStatus?: boolean;
-  clientColumnVisible?: boolean;
   projectColumnVisible?: boolean;
   paymentColumnVisible?: boolean;
   navigate: (path: string) => void;
@@ -34,10 +33,9 @@ export interface IInvoiceRowProps {
 
 const InvoiceRow = ({
   invoice,
-  isFcAdmin,
+  isFcaUser,
   showContextActions,
   showStatus,
-  clientColumnVisible,
   projectColumnVisible,
   paymentColumnVisible,
   navigate,
@@ -116,9 +114,9 @@ const InvoiceRow = ({
   return (
     <StyledTableRow data-testid="invoice-list-row" key={invoice.id} onClick={onInvoiceClick} className={listClasses.clickableRow}>
       <TableCell>{getDefaultValue(invoice.invoiceNumber)}</TableCell>
-      {!!clientColumnVisible && (
+      {!!isFcaUser && (
         <TableCell className={listClasses.listNameFullWidth}>
-          {isFcAdmin && invoice.company?.id ? (
+          {isFcaUser && invoice.company?.id ? (
             <PermissionGuard permissionsExpression={UserModel.ClientsPermission.VIEWACCESS} fallback={<>{getDefaultValue(invoice.project.name)}</>}>
               <TableCellLink
                 href={`/clients/detail/${invoice.company.id}`}

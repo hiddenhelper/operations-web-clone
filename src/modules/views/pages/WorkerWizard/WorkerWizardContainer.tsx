@@ -26,6 +26,7 @@ export const mapStateToProps = (state: IRootState) => ({
   geographicLocationsList: state.worker.geographicLocationsList,
   isFcaUser: state.auth.isFcaUser,
   isAdmin: state.auth.isAdmin,
+  selfCompany: state.client.selfCompany,
 });
 
 export const mapDispatchToProps = (dispatch: Dispatch) => ({

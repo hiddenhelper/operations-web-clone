@@ -11,7 +11,6 @@ import { statisticsState } from '../../../state-mgmt/statistics';
 import ClientList from './ClientList';
 
 export const mapStateToProps = (state: IRootState) => ({
-  userRole: state.auth.role,
   clientMap: state.client.clientMap,
   clientCount: state.client.count,
   mwbeList: state.client.mwbeList,
@@ -20,6 +19,7 @@ export const mapStateToProps = (state: IRootState) => ({
   deleteLoading: state.general.loadingMap[GENERAL.LOADING_KEY.DELETE_CLIENT],
   clientStatistics: state.statistics.clientStatistics,
   statisticsLoading: state.general.loadingMap[GENERAL.LOADING_KEY.FETCH_CLIENT_STATISTICS],
+  currentUserPermissions: state.auth.session?.permissions,
 });
 
 export const mapDispatchToProps = (dispatch: Dispatch) => ({

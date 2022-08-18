@@ -17,7 +17,7 @@ describe('ClientFilter', () => {
         [getClient_1().id]: getClient_1() as any,
       },
       projectId: getProject_1().id,
-      isFcAdmin: true,
+      isFcaUser: true,
       setQueryParams: jest.fn(),
       fetchClientList: jest.fn(),
     };

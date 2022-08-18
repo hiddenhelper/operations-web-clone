@@ -48,8 +48,8 @@ const ProcoreClients = ({ clients, getProcoreClients, loading, isFcaUser, isAdmi
     getProcoreClients?.();
   }, [getProcoreClients]);
 
-  const emptyText = `There are no ${isFcaUser && isAdmin ? 'Clients' : 'Companies'} assigned`;
-  const title = `Procore ${isFcaUser && isAdmin ? 'Clients' : 'Companies'}`;
+  const emptyText = `There are no ${isFcaUser ? 'Clients' : 'Companies'} assigned`;
+  const title = `Procore ${isFcaUser ? 'Clients' : 'Companies'}`;
 
   return (
     <Container className={tableGlobalClasses.tableWrapper}>

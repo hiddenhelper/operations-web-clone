@@ -14,16 +14,16 @@ export interface IClientFilterProps {
   queryParams: GeneralModel.IQueryParams;
   clientMap?: GeneralModel.IEntityMap<ClientModel.IClientProject>;
   projectId: string;
-  isFcAdmin: boolean;
+  isFcaUser: boolean;
   setQueryParams: (params: GeneralModel.IQueryParams) => void;
   fetchClientList?: (id: string, query: GeneralModel.IQueryParams) => void;
 }
 
-const ClientFilter = ({ queryParams, clientMap = {}, projectId, isFcAdmin, setQueryParams, fetchClientList }: IClientFilterProps) => {
+const ClientFilter = ({ queryParams, clientMap = {}, projectId, isFcaUser, setQueryParams, fetchClientList }: IClientFilterProps) => {
   const classes = useStyles();
   const tableGlobalClasses = tableGlobalStyles();
 
-  const clientLabel = useMemo(() => getConditionalDefaultValue(isFcAdmin, 'All Clients', 'All Companies'), [isFcAdmin]);
+  const clientLabel = useMemo(() => getConditionalDefaultValue(isFcaUser, 'All Clients', 'All Companies'), [isFcaUser]);
 
   const entityTabList: GeneralModel.INamedEntity[] = useMemo(() => Object.values(clientMap), [clientMap]);
   const clientList = useMemo(() => entityTabList.reduce((tot, item) => [...tot, { id: item?.id, name: item?.name }], [{ id: '', name: clientLabel }]), [

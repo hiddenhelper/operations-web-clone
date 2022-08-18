@@ -113,7 +113,6 @@ const ClientDetail = ({
   ]);
 
   const isArchived = useMemo(() => currentClient.status === ResourceModel.CompanyStatus.ARCHIVED, [currentClient.status]);
-  const isFcAdmin = useMemo(() => isFcaUser && isAdmin, [isFcaUser, isAdmin]);
 
   const onPageChange = useCallback(
     newPage => {
@@ -316,7 +315,6 @@ const ClientDetail = ({
           )}
           {isClientLoaded && currentTab === 'invoices' && (
             <InvoicesTab
-              isFcAdmin={isFcAdmin}
               entity={currentClient}
               entityType={ResourceModel.Type.CLIENT}
               queryParams={queryParams}

@@ -89,7 +89,7 @@ const Header = ({
         <Box className={classes.avatarContainer}>
           <Box className={classes.emailAndRoleWrapper}>
             <Typography className={classes.avatarText}>{user.email}</Typography>
-            <Typography className={classes.userRole}>{isFcaUser && isAdmin ? 'FCA Admin' : isAdmin ? `${companyName} - Admin` : companyName}</Typography>
+            <Typography className={classes.userRole}>{isAdmin ? `${companyName} - Admin` : `${companyName} - User`}</Typography>
           </Box>
           <Avatar className={classes.avatarElement} alt="John Doe" src={profilePicture} />
           <span className={classes.dropdownIcon}>

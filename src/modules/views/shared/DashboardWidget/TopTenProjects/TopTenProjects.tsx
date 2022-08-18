@@ -21,7 +21,6 @@ export interface ITopTenProjectsProps {
 const TopTenProjects = ({ queryParams, projectTopTenWidget, loading, isFcaUser, isAdmin, fetchProjectTopTen }: ITopTenProjectsProps) => {
   const dataList = useMemo(() => (projectTopTenWidget ? projectTopTenWidget : []), [projectTopTenWidget]);
   const isLoading: boolean = useMemo(() => loading && loading.isLoading, [loading]);
-  const isFcAdmin: boolean = useMemo(() => isFcaUser && isAdmin, [isFcaUser, isAdmin]);
 
   useEffect(() => {
     fetchProjectTopTen(queryParams);
@@ -34,9 +33,9 @@ const TopTenProjects = ({ queryParams, projectTopTenWidget, loading, isFcaUser, 
         <TableRow>
           <TableCell>Name</TableCell>
           <TableCell>Creation Date</TableCell>
-          <TableCell>{getConditionalDefaultValue(isFcAdmin, 'Clients', 'Companies')}</TableCell>
+          <TableCell>{getConditionalDefaultValue(isFcaUser, 'Clients', 'Companies')}</TableCell>
           <TableCell>Workers</TableCell>
-          <TableCell>{getConditionalDefaultValue(isFcAdmin, 'Revenue', 'Invoices')}</TableCell>
+          <TableCell>{getConditionalDefaultValue(isFcaUser, 'Revenue', 'Invoices')}</TableCell>
         </TableRow>
       )}
       renderBody={() => (

@@ -156,7 +156,7 @@ export const trainingRules: IFormRules = {
 };
 
 export const workerFieldRulesMap = (isFcaUser: boolean, isAdmin: boolean) => {
-  if (isFcaUser && isAdmin) {
+  if (isFcaUser) {
     return {
       ...fieldRules,
     };

@@ -542,56 +542,30 @@ export const tabMap: { [key: string]: { id: string; key: string; title: string; 
 };
 
 export const widgetMap = {
-  [Role.FCA_ADMIN]: {
-    First: {
-      status: 'Draft',
-      content: 'Review',
-      total: (value: number) => value,
-    },
-    Second: {
-      status: 'Pending Approval',
-      content: 'Review',
-      total: (value: number) => value,
-    },
-    Third: {
-      status: 'Active',
-      content: 'Review',
-      total: (value: number) => value,
-    },
+  Draft: {
+    status: 'Draft',
+    content: 'Review',
+    total: (value: number) => value,
   },
-  [Role.CLIENT_ADMIN]: {
-    First: {
-      status: 'Pending Invitation',
-      content: '',
-      total: (value: number) => value,
-    },
-    Second: {
-      status: 'Active',
-      content: '',
-      total: (value: number) => value,
-    },
-    Third: {
-      status: 'Invoices',
-      content: '',
-      total: (value: number) => `$ ${formatNumberWithCommas(value)}`,
-    },
+  Pending: {
+    status: 'Pending Approval',
+    content: 'Review',
+    total: (value: number) => value,
   },
-  [Role.REGULAR_USER]: {
-    First: {
-      status: 'Pending Invitation',
-      content: '',
-      total: (value: number) => value,
-    },
-    Second: {
-      status: 'Active',
-      content: '',
-      total: (value: number) => value,
-    },
-    Third: {
-      status: 'Invoices',
-      content: '',
-      total: (value: number) => `$ ${formatNumberWithCommas(value)}`,
-    },
+  Active: {
+    status: 'Active',
+    content: 'Review',
+    total: (value: number) => value,
+  },
+  Invitation: {
+    status: 'Pending Invitation',
+    content: '',
+    total: (value: number) => value,
+  },
+  Invoices: {
+    status: 'Invoices',
+    content: '',
+    total: (value: number) => `$ ${formatNumberWithCommas(value)}`,
   },
 };
 

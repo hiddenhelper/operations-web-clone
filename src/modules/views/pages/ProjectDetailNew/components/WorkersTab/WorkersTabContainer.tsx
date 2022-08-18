@@ -23,6 +23,7 @@ export const mapStateToProps = (state: IRootState) => ({
   assignLoading: state.general.loadingMap[GENERAL.LOADING_KEY.ASSIGN_WORKER_PROJECT],
   summaryLoading: state.general.loadingMap[GENERAL.LOADING_KEY.FETCH_WORKER],
   countryList: state.general.countryList,
+  isFcaUser: state.auth.isFcaUser,
   assignWorkerProjectError: state.general.loadingMap?.assignWorkerProject,
 });
 

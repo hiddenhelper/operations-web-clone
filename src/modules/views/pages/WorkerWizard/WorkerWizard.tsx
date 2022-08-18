@@ -43,6 +43,7 @@ export interface IWorkerWizardProps {
   geographicLocationsList: WorkerModel.IGeographicLocation[];
   isFcaUser: boolean;
   isAdmin: boolean;
+  selfCompany: ClientModel.IClient;
 }
 
 export interface IModalState {
@@ -78,6 +79,7 @@ const WorkerWizard = ({
   geographicLocationsList,
   isFcaUser,
   isAdmin,
+  selfCompany,
 }: IWorkerWizardProps) => {
   const classes = useStyles();
 
@@ -260,6 +262,7 @@ const WorkerWizard = ({
             isEdit={!!entityId}
             countryList={countryList}
             geographicLocationsList={geographicLocationsList}
+            selfCompany={selfCompany}
           />
           <Modal
             show={existingWorkerModal.isOpen}

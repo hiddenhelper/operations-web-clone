@@ -36,7 +36,7 @@ export interface IUsersProps {
   companyId?: string;
   fetchGroupSearch?: (searchRequest: any) => void;
   groupList?: any;
-  isFcAdmin?: boolean;
+  isFcaUser?: boolean;
 }
 
 const UserRow = ({
@@ -56,7 +56,7 @@ const UserRow = ({
   companyId,
   fetchGroupSearch,
   groupList,
-  isFcAdmin,
+  isFcaUser,
 }: IUsersProps) => {
   const [userInviteGroupList, setUserInviteGroupList] = useState(UserModel.userInviteList);
   const formClasses = formGlobalStyles();
@@ -102,17 +102,16 @@ const UserRow = ({
           };
         })
         .filter(group => !group.label.toLowerCase().includes('worker'));
-      const filteredList = isFcAdmin === false ? dropdownList.filter(group => !group.label.includes('OSR')) : dropdownList;
+      const filteredList = isFcaUser ? dropdownList : dropdownList.filter(group => !group.label.includes('OSR'));
       setUserInviteGroupList([...UserModel.userInviteList, ...filteredList]);
       return;
     }
 
     setUserInviteGroupList(UserModel.userInviteList);
-  }, [groupList, isFcAdmin]);
+  }, [groupList, isFcaUser]);
 
   useEffect(() => {
     if (!companyId) return;
-
     let searchRequest = {
       paging: {
         clientSidePagination: true,
@@ -122,7 +121,7 @@ const UserRow = ({
         {
           field: 'labels.name',
           operator: 'equals',
-          value: !isFcAdmin ? 'Admin:User' : 'Admin:User:OSR',
+          value: isFcaUser ? 'Admin:User:OSR' : 'Admin:User',
         },
         {
           field: 'companyId',
@@ -133,7 +132,7 @@ const UserRow = ({
     };
 
     fetchGroupSearch(searchRequest);
-  }, [companyId, fetchGroupSearch, isFcAdmin]);
+  }, [companyId, fetchGroupSearch, isFcaUser]);
 
   return (
     <Grid data-testid="user-row-item" container={true} className={`${formClasses.formWrapper} ${isListItem ? formClasses.rowsWrapper : ''}`}>

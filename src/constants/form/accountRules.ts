@@ -57,7 +57,7 @@ export const accountRules: IFormRules = {
 export const getAccountRules = (isFcaUser: boolean, isAdmin: boolean) => ({
   ...accountRules,
   mobilePhoneNumber: {
-    required: !(isFcaUser && isAdmin),
+    required: isFcaUser,
     rules: [],
   },
 });
@@ -98,8 +98,8 @@ export const accountDataInitValues = {
 export const getAccountInitialData = (isFcaUser: boolean, isAdmin: boolean) => ({
   firstName: '',
   lastName: '',
-  mobilePhoneNumber: isFcaUser && isAdmin ? '' : undefined,
-  officePhoneNumber: isFcaUser && isAdmin ? '' : undefined,
-  officePhoneExtension: isFcaUser && isAdmin ? '' : undefined,
-  preferredContactMethod: isFcaUser && isAdmin ? UserModel.PreferredContactMethod.EMAIL : undefined,
+  mobilePhoneNumber: isFcaUser ? '' : undefined,
+  officePhoneNumber: isFcaUser ? '' : undefined,
+  officePhoneExtension: isFcaUser ? '' : undefined,
+  preferredContactMethod: isFcaUser ? UserModel.PreferredContactMethod.EMAIL : undefined,
 });

@@ -288,7 +288,7 @@ const Review = ({
                 <Grid item={true} xs={6} className={'cardBody-item'}>
                   <span className={`${cardGlobalClasses.cardFontAccent} ${classes.spanEllipsis}`}>{getDefaultValue(category?.name)}</span>
                 </Grid>
-                {isFcaUser && isAdmin && (
+                {isFcaUser && (
                   <>
                     <Grid item={true} xs={6} className={'cardBody-item'}>
                       <Typography className={cardGlobalClasses.cardFont}>Commercial Construction Value: </Typography>
@@ -814,7 +814,7 @@ const Review = ({
         </div>
       </Card>
       {!isFcaUser ? (
-        <PermissionGuard permissionsExpression={UserModel.PaymentMethodsPermission.MANAGE}>
+        <PermissionGuard permissionsExpression={UserModel.PaymentMethodsPermission.VIEWACCESS}>
           <Card
             title="Credit Card"
             hideSecondaryAction={!edit}
@@ -822,15 +822,17 @@ const Review = ({
             styleClass={classes.boxShadow}
             secondaryAction={
               edit && (
-                <IconButton
-                  className={buttonClasses.editButton}
-                  disableRipple={true}
-                  onClick={handleEditPayment}
-                  data-testid="payment-edit-button"
-                  disabled={model.status === ResourceModel.Status.ARCHIVED}
-                >
-                  <CreateIcon />
-                </IconButton>
+                <PermissionGuard permissionsExpression={UserModel.PaymentMethodsPermission.MANAGE}>
+                  <IconButton
+                    className={buttonClasses.editButton}
+                    disableRipple={true}
+                    onClick={handleEditPayment}
+                    data-testid="payment-edit-button"
+                    disabled={model.status === ResourceModel.Status.ARCHIVED}
+                  >
+                    <CreateIcon />
+                  </IconButton>
+                </PermissionGuard>
               )
             }
           >
